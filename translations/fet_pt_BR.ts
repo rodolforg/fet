@@ -1153,7 +1153,7 @@ there won&apos;t be removed an additional number of %1 activities
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="336"/>
         <source>Activity tag is a field which can be used or not, depending on your wish (optional field). It is designed to help you with some constraints. Each activity has a list of activity tags (which may be empty).</source>
-        <translation type="unfinished"></translation>
+        <translation>O marcador de atividade é um campo opcional pode você usa (ou não), dependendo do seu desejo. Ele foi projetado para ajudá-lo com algumas restrições. Cada atividade possui uma lista de marcadores de atividades (que podem estar vazias).</translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="354"/>
@@ -35997,8 +35997,8 @@ Please modify your data correspondingly and try again</source>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="441"/>
-        <source>Group activities in initial form item comments</source>
-        <translation>Comentários para um grupo de atividades na ordem inicial</translation>
+        <source>Group activities in initial order item comments</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="443"/>

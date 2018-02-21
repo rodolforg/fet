@@ -1396,7 +1396,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="888"/>
         <source>Current algorithm cannot schedule 3 activities in the same day if consecutive is checked, so you will get no solution in such extreme cases (for instance, if you have 3 lessons and a teacher which works only 1 day per week, and select &apos;force consecutive if same day&apos;, you will get an imposssible timetable. But these are extremely unlikely cases).</source>
-        <translation>現在のアルゴリズムでは連続して行うがチェックされた場合、同日に３つのアクティビティをスケジュールすることは出来ません。この様な極端なケースでは解が得られません。（例：３つの講義と週に１日だけ担当を持つ１人の教師がいる場合、同日に連続して行うを選択すると不可能なタイムテーブルを取得します。しかし、これは教師の負担が大きい為、ありそうにないケースです）。</translation>
+        <translation>現在のアルゴリズムでは連続して行うがチェックされた場合、同日に３つのアクティビティをスケジュールすることは出来ません。この様な極端なケースでは解が得られません。（例：３つの講義と週に１日だけ担当を持つ１人の教師がいる場合、同日に連続して行うを選択すると不可能な時間割を取得します。しかし、これは教師の負担が大きい為、ありそうにないケースです）。</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="903"/>
@@ -1421,7 +1421,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="865"/>
         <source>If you choose a value greater or equal with 1 for min days, a time constraint min days between activities will be added automatically (you can see this constraint in the time constraints list or you can see this constraint in the detailed description of the activity). You can select a weight percentage for this constraint. If you select 100%, the constraint must be respected all the time. If you select 95%, there is a small chance that the timetable will not respect this constraint. Recommended values are 95.0%-100.0% (maybe you could try with 95%, then 99.75%, or even 100.0%, but the generation time might be larger). Generally, 99.75% might be a good value. Note: if you put a value less than 100% and the constraint is too tough, FET is able to find that this constraint is impossible and will break it. 99.75% might be better than 95% but possibly slower. The percentage is subjective (if you put 95% you may get 6 soft conflicts and if you put 99.75% you may get 3 soft conflicts). Starting with FET-5.3.6, it is possible to change this value for all constraints in one click, in constraint min days between activities dialog.</source>
-        <translation>最小曜日に1以上の値を選択すると、アクティビティー間の時間制約最小時間が自動的に追加されます（時間制約リストにこの制約が表示されるか、アクティビティーの詳細な説明でこの制約が表示されます） 。この制約の重量パーセンテージを選択できます。 100％を選択すると、その制約は常に尊重されなければなりません。 95％を選択すると、タイムテーブルがこの制約を遵守しないという小さなチャンスがあります。推奨値は95.0％〜100.0％です（おそらく95％、次に99.75％、さらには100.0％で試すこともできますが、生成時間は長くなる可能性があります）。一般的に、99.75％は良い値かもしれません。注意：100％未満の値を入力したときに制約が厳しくなると、FETはこの制約が不可能であり、それを壊すことがあります。 99.75％は95％より良いかもしれませんが、おそらく遅くなります。パーセンテージは主観的です（95％を置くと6つのソフトコンフリクトが発生し、99.75％を置くと3つのソフトコンフリクトが発生する可能性があります）。 FET-5.3.6から、1回のクリックですべての制約に対してこの値を変更することができます。</translation>
+        <translation>最小曜日に1以上の値を選択すると、アクティビティー間の時間制約最小時間が自動的に追加されます（時間制約リストにこの制約が表示されるか、アクティビティーの詳細な説明でこの制約が表示されます） 。この制約の重量パーセンテージを選択できます。 100％を選択すると、その制約は常に尊重されなければなりません。 95％を選択すると、時間割がこの制約を遵守しないという小さなチャンスがあります。推奨値は95.0％〜100.0％です（おそらく95％、次に99.75％、さらには100.0％で試すこともできますが、生成時間は長くなる可能性があります）。一般的に、99.75％は良い値かもしれません。注意：100％未満の値を入力したときに制約が厳しくなると、FETはこの制約が不可能であり、それを壊すことがあります。 99.75％は95％より良いかもしれませんが、おそらく遅くなります。パーセンテージは主観的です（95％を置くと6つのソフトコンフリクトが発生し、99.75％を置くと3つのソフトコンフリクトが発生する可能性があります）。 FET-5.3.6から、1回のクリックですべての制約に対してこの値を変更することができます。</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="879"/>
@@ -2008,7 +2008,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="274"/>
         <source>You specified max simultaneous activities to be 0. This is not perfect from efficiency point of view, because you can use instead constraint activity(ies) preferred time slots, and help FET to find a timetable easier and faster, with an equivalent result. Please correct.</source>
-        <translation>これは効率的な観点からは完璧ではありません。制約アクティビティの代わりに優先度の高いタイムスロットを使用し、FETがタイムテーブルを簡単かつ迅速に見つけるのを助けることができます。 正しいものに変更してください。</translation>
+        <translation>これは効率的な観点からは完璧ではありません。制約アクティビティの代わりに優先度の高いタイムスロットを使用し、FETが時間割を簡単かつ迅速に見つけるのを助けることができます。 正しいものに変更してください。</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="282"/>
@@ -2354,7 +2354,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="274"/>
         <source>You specified max occupied time slots to be 0. This is not perfect from efficiency point of view, because you can use instead constraint activity(ies) preferred time slots, and help FET to find a timetable easier and faster, with an equivalent result. Please correct.</source>
-        <translation>最大占有タイムスロットを0に指定しました。これは、制約アクティビティの優先タイムスロットを使用し、FETがタイムテーブルをより簡単かつ迅速に見つけるのを助けることができ、同等の結果を得ることができるので、効率的な観点からは完璧ではありません。 正してください。</translation>
+        <translation>最大占有タイムスロットを0に指定しました。これは、制約アクティビティの優先タイムスロットを使用し、FETが時間割をより簡単かつ迅速に見つけるのを助けることができ、同等の結果を得ることができるので、効率的な観点からは完璧ではありません。 正してください。</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="282"/>
@@ -2499,7 +2499,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
 
   ベストプラクティスは、制約ブレーク時間を使用することです。
 
-  100％未満の重みが必要な場合は、この制約を使用できますが、不可能なタイムテーブルを取得しないように注意してください（教師/学生がギャップや早期のギャップに拘束されている場合、 その日の早い時期に許可されていないスロットとそれより後に許可されたスロットがある場合、この可能性のあるギャップは教師と学生のタイムテーブルでカウントされます）</translation>
+  100％未満の重みが必要な場合は、この制約を使用できますが、不可能な時間割を取得しないように注意してください（教師/学生がギャップや早期のギャップに拘束されている場合、 その日の早い時期に許可されていないスロットとそれより後に許可されたスロットがある場合、この可能性のあるギャップは教師と学生の時間割でカウントされます）</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="306"/>
@@ -2515,11 +2515,11 @@ You can choose the minimum distance in days between each pair of activities. Ple
  The best practice would be to use constraint teacher not available times.
 
  If you need weight under 100%, then you can use this constraint, but be careful not to obtain an impossible timetable (if your teacher is constrained on gaps and if you leave a not allowed slot between 2 allowed slots, this possible gap might be counted in teacher&apos;s timetable)</source>
-        <translation>あなたは教師だけを指定しました。 これは小さな問題かもしれません.2つの許可されたスロットの間に許可されていないスロットを指定すると、この許可されていないスロットは教師のタイムテーブルのギャップとしてカウントされます。
+        <translation>あなたは教師だけを指定しました。 これは小さな問題かもしれません.2つの許可されたスロットの間に許可されていないスロットを指定すると、この許可されていないスロットは教師の時間割のギャップとしてカウントされます。
 
-  ベストプラクティスは、制約のある教師を利用できない時間に使用することです。
+  ベストプラクティスは、制約のある教師を利用できない時間に使用することです。
 
-  100％以下の重みが必要な場合は、この制約を使用できますが、不可能なタイムテーブルを取得しないように注意してください（教師がギャップに拘束され、2つのスロット間に許可されていないスロットを残すと、 教師のタイムテーブルでカウントされます）</translation>
+  100％以下の重みが必要な場合は、この制約を使用できますが、不可能な時間割を取得しないように注意してください（教師がギャップに拘束され、2つのスロット間に許可されていないスロットを残すと、 教師の時間割でカウントされます）</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="331"/>
@@ -2530,9 +2530,9 @@ You can choose the minimum distance in days between each pair of activities. Ple
  If you need weight under 100%, then you can use this constraint, but be careful not to obtain an impossible timetable (if your students set is constrained on gaps or early gaps and if you leave a not allowed slot between 2 allowed slots (or a not allowed slot before allowed slots), this possible gap might be counted in students&apos; timetable)</source>
         <translation>あなたは学生セットのみを指定しました。 許可された2つのスロット（または許可されたスロットの前に許可されていないスロット）の間に許可されていないスロットを指定すると、この許可されていないスロットは学生のギャップ（または早いギャップ）としてカウントされます。
 
-  ベストプラクティスは、制限時間のない学生を使用することです。
+  ベストプラクティスは、制限時間のない学生を使用することです。
 
-  100％未満の重みが必要な場合は、この制約を使用できますが、不可能なタイムテーブルを取得しないように注意してください（学生セットがギャップや早期のギャップに拘束されている場合、 許可されたスロットの前に許可されていないスロット）、この可能性のあるギャップは、学生のタイムテーブルでカウントされ得る）</translation>
+  100％未満の重みが必要な場合は、この制約を使用できますが、不可能な時間割を取得しないように注意してください（学生セットがギャップや早期のギャップに拘束されている場合、 許可されたスロットの前に許可されていないスロット）、この可能性のあるギャップは、学生の時間割でカウントされ得る）</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="373"/>
@@ -2649,9 +2649,9 @@ You can choose the minimum distance in days between each pair of activities. Ple
  If you need weight under 100%, then you can use this constraint, but be careful not to obtain an impossible timetable (if your teachers/students are constrained on gaps or early gaps and if you leave a not allowed slot between 2 allowed slots or a not allowed slot early in the day and more allowed slots after it, this possible gap might be counted in teachers&apos; and students&apos; timetable)</source>
         <translation>すべてのアクティビティを指定しました。 これは小さな問題かもしれません.2つの許可されたスロットの間に許可されていないスロットを指定すると、この許可されていないスロットは、教師のギャップとしてカウントされます。
 
-  ベストプラクティスは、制約ブレーク時間を使用することです。
+  ベストプラクティスは、制約ブレーク時間を使用することです。
 
-  100％未満の重みが必要な場合は、この制約を使用できますが、不可能なタイムテーブルを取得しないように注意してください（教師/学生がギャップや早期のギャップに拘束されている場合、 その日の早い時期に許可されていないスロットとそれより後に許可されたスロットがある場合、この可能性のあるギャップは教師と学生のタイムテーブルでカウントされます）</translation>
+  100％未満の重みが必要な場合は、この制約を使用できますが、不可能な時間割を取得しないように注意してください（教師/学生がギャップや早期のギャップに拘束されている場合、 その日の早い時期に許可されていないスロットとそれより後に許可されたスロットがある場合、この可能性のあるギャップは教師と学生の時間割でカウントされます）</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="306"/>
@@ -2667,11 +2667,11 @@ You can choose the minimum distance in days between each pair of activities. Ple
  The best practice would be to use constraint teacher not available times.
 
  If you need weight under 100%, then you can use this constraint, but be careful not to obtain an impossible timetable (if your teacher is constrained on gaps and if you leave a not allowed slot between 2 allowed slots, this possible gap might be counted in teacher&apos;s timetable)</source>
-        <translation>あなたは教師だけを指定しました。 これは小さな問題かもしれません.2つの許可されたスロットの間に許可されていないスロットを指定すると、この許可されていないスロットは教師のタイムテーブルのギャップとしてカウントされます。
+        <translation>あなたは教師だけを指定しました。 これは小さな問題かもしれません.2つの許可されたスロットの間に許可されていないスロットを指定すると、この許可されていないスロットは教師の時間割のギャップとしてカウントされます。
 
-  ベストプラクティスは、制約のある教師を利用できない時間に使用することです。
+  ベストプラクティスは、制約のある教師を利用できない時間に使用することです。
 
-  100％以下の重みが必要な場合は、この制約を使用できますが、不可能なタイムテーブルを取得しないように注意してください（教師がギャップに拘束され、2つのスロット間に許可されていないスロットを残すと、 教師のタイムテーブルでカウントされます）</translation>
+  100％以下の重みが必要な場合は、この制約を使用できますが、不可能な時間割を取得しないように注意してください（教師がギャップに拘束され、2つのスロット間に許可されていないスロットを残すと、 教師の時間割でカウントされます）</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="331"/>
@@ -2682,9 +2682,9 @@ You can choose the minimum distance in days between each pair of activities. Ple
  If you need weight under 100%, then you can use this constraint, but be careful not to obtain an impossible timetable (if your students set is constrained on gaps or early gaps and if you leave a not allowed slot between 2 allowed slots (or a not allowed slot before allowed slots), this possible gap might be counted in students&apos; timetable)</source>
         <translation>あなたは学生セットのみを指定しました。 許可された2つのスロット（または許可されたスロットの前に許可されていないスロット）の間に許可されていないスロットを指定すると、この許可されていないスロットは学生のギャップ（または早いギャップ）としてカウントされます。
 
-  ベストプラクティスは、制限時間のない学生を使用することです。
+  ベストプラクティスは、制限時間のない学生を使用することです。
 
-  100％未満の重みが必要な場合は、この制約を使用できますが、不可能なタイムテーブルを取得しないように注意してください（学生セットがギャップや早期のギャップに拘束されている場合、 許可されたスロットの前に許可されていないスロット）、この可能性のあるギャップは、学生のタイムテーブルでカウントされます）</translation>
+  100％未満の重みが必要な場合は、この制約を使用できますが、不可能な時間割を取得しないように注意してください（学生セットがギャップや早期のギャップに拘束されている場合、 許可されたスロットの前に許可されていないスロット）、この可能性のあるギャップは、学生の時間割でカウントされます）</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="373"/>
@@ -4679,7 +4679,7 @@ force activities consecutive</source>
         <location filename="../src/interface/addconstraintroomnotavailabletimesform_template.ui" line="14"/>
         <source>Add room not available times</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>利用不可時間を追加</translation>
+        <translation>部屋の利用不可時間を追加</translation>
     </message>
 </context>
 <context>
@@ -4879,13 +4879,13 @@ force activities consecutive</source>
     <message>
         <location filename="../src/interface/addconstraintstudentsearlymaxbeginningsatsecondhourform_template.ui" line="32"/>
         <source>This represents the maximum allowed beginnings at the second available hour (in a week). You might want to allow your students to begin in some days later, at the second available hour, so you might put &quot;max beginnings at second hour&quot; greater than 0 (the timetable will be easier for FET). Default 0 is given for students which need to begin all classes at the first available hour. You might want to choose a greater value and lower it as you find new timetables</source>
-        <translation>これは、利用可能な２時間目（1週間）の最大許容開始時間を表します。 ２時間目の利用可能な時間帯の何日後に学生が開始できるようにすることができます。そのため、「最も早い開始時間は2時間目」とすることができます。 最初の利用可能時間にすべてのクラスを開始する必要がある学生の場合、デフォルトの０が与えられます。 新しいタイムテーブルを見つけると、より大きな値を選択したり、値を下げることが出来ます</translation>
+        <translation>これは、利用可能な２時間目（1週間）の最大許容開始時間を表します。 ２時間目の利用可能な時間帯の何日後に学生が開始できるようにすることができます。そのため、「最も早い開始時間は2時間目」とすることができます。 最初の利用可能時間にすべてのクラスを開始する必要がある学生の場合、デフォルトの０が与えられます。 新しい時間割を見つけると、より大きな値を選択したり、値を下げることが出来ます</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsearlymaxbeginningsatsecondhourform_template.ui" line="70"/>
         <source>You have to use weight percentage 100%, because otherwise you will get poor timetables. Currently, the algorithm only accepts 100% weight percentage for this constraint (or no constraint).
 Note: students set not available and break are not counted as gaps (early gaps).</source>
-        <translation>あなたは重み100％を使用しなければなりません。そうしないと、タイムテーブルが貧弱なものになるためです。 現在のところ、アルゴリズムはこの制約の100％の重み（または制約なし）しか受け付けません。
+        <translation>あなたは重み100％を使用しなければなりません。そうしないと、時間割が貧弱なものになるためです。 現在のところ、アルゴリズムはこの制約の100％の重み（または制約なし）しか受け付けません。
 注：学生セットは利用できず、休憩はギャップとしてカウントされません（早期ギャップ）。</translation>
     </message>
     <message>
@@ -5204,7 +5204,11 @@ Note: students set not available and break are not counted as gaps (early gaps).
 Note: students set not available and break are not counted as gaps.
 
 IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this constraint, but instead use the safer/better max gaps per week.</source>
-        <translation>重みを１００％にする必要があります。　注意：学生セットは利用出来ず、休憩はギャップとしてカウントされません。</translation>
+        <translation>重みを100％にする必要があります。
+注意：学生セットの利用不可および休憩はギャップとしてカウントされません。
+
+重要：合計ギャップが0になるようにするには、この制約を使用しないことを強く推奨します。代わりに、安全でより良い、週当たりの最大ギャップの制約を使用してください。
+</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxgapsperdayform_template.ui" line="67"/>
@@ -5290,7 +5294,7 @@ IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this 
         <location filename="../src/interface/addconstraintstudentsmaxgapsperweekform_template.ui" line="32"/>
         <source>You have to use weight percentage 100%, because otherwise you will get poor timetables. Currently, the algorithm only accepts 100% weight percentage for this constraint (or no constraint).
 Note: students set not available and break are not counted as gaps.</source>
-        <translation>あなたは重み100％を使用しなければなりません。そうしないと、タイムテーブルが貧弱になるためです。 現在のところ、アルゴリズムはこの制約の100％の重み（または制約なし）しか受け付けません。
+        <translation>あなたは重み100％を使用しなければなりません。そうしないと、時間割が貧弱になるためです。 現在のところ、アルゴリズムはこの制約の100％の重み（または制約なし）しか受け付けません。
 注：学生セットは利用できず、休憩はギャップとしてカウントされません。</translation>
     </message>
 </context>
@@ -5564,7 +5568,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentsminhoursdailyform.cpp" line="80"/>
         <source>If you allow empty days, the min hours must be at least 2 (to make it a non-trivial constraint)</source>
-        <translation>空の日を許可する場合、最小時間は少なくとも2にする必要があります（これは単純な制約にはなりません）</translation>
+        <translation>空き日を許可する場合、最小時間は少なくとも2にする必要があります（これは単純な制約にはなりません）</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsminhoursdailyform.cpp" line="91"/>
@@ -5580,7 +5584,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentsminhoursdailyform.cpp" line="105"/>
         <source>Advanced usage is not enabled. To be able to select &apos;Allow empty days&apos; for the constraints of type min hours daily for students, you must enable the option from the Settings-&gt;Advanced menu.</source>
         <comment>&apos;Allow empty days&apos; is an option which the user can enable and then he can select it.</comment>
-        <translation>高度な使用法は有効になっていません。 「空の日を許可する」の選択は、学生の１日あたりの最小時間の制約の場合では、設定 - 詳細メニューからオプションを有効にする必要があります。</translation>
+        <translation>高度な使用法は有効になっていません。 「空き日を許可する」の選択は、学生の１日あたりの最小時間の制約の場合では、設定 - 詳細メニューからオプションを有効にする必要があります。</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsminhoursdailyform.cpp" line="111"/>
@@ -5590,7 +5594,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentsminhoursdailyform.cpp" line="108"/>
         <source>Explanation: only select this option if your institution allows empty days for students and a timetable is possible with empty days for students. Otherwise, it is IMPERATIVE (for performance reasons) to not select this option (or FET may not be able to find a timetable).</source>
-        <translation>説明：あなたの施設が学生のための空の日を許可し、空の日があっても時間割がく編成できる場合にのみ、このオプションを選択してください。 それ以外の場合は、パフォーマンス上の理由から、このオプションを選択しないでください。（またはFETがタイムテーブルを見つけることができない可能性があります）。</translation>
+        <translation>説明：あなたの施設が学生のための空き日を許可し、空き日があっても時間割がく編成できる場合にのみ、このオプションを選択してください。 それ以外の場合は、パフォーマンス上の理由から、このオプションを選択しないでください。（またはFETが時間割を見つけることができない可能性があります）。</translation>
     </message>
 </context>
 <context>
@@ -5598,7 +5602,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentsminhoursdailyform_template.ui" line="95"/>
         <source>Allow empty days</source>
-        <translation>空の日を許可する</translation>
+        <translation>空き日を許可する</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsminhoursdailyform_template.ui" line="111"/>
@@ -5922,7 +5926,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="32"/>
         <source>This represents the maximum allowed beginnings at the second available hour (in a week). You might want to allow your students to begin in some days later, at the second available hour, so you might put &quot;max beginnings at second hour&quot; greater than 0 (the timetable will be easier for FET). Default 0 is given for students which need to begin all classes at the first available hour. You might want to choose a greater value and lower it as you find new timetables</source>
-        <translation>これは、利用可能な2時間目（1週間）の最大許容開始時間を表します。 2日目の利用可能な時間帯に学生が数日後に開始できるようにすることができます。そのため、「最大開始時間は2時間目」とすることができます。 ０より大きい（タイムテーブルはFETの方が簡単です）。 最初の利用可能時間にすべてのクラスを開始する必要がある学生の場合、デフォルトの０が与えられます。 新しいタイムテーブルを見つけると、より大きな値を選択したり、値を下げることが出来ます
+        <translation>これは、利用可能な2時間目（1週間）の最大許容開始時間を表します。 2日目の利用可能な時間帯に学生が数日後に開始できるようにすることができます。そのため、「最大開始時間は2時間目」とすることができます。 ０より大きい（時間割はFETの方が簡単です）。 最初の利用可能時間にすべてのクラスを開始する必要がある学生の場合、デフォルトの０が与えられます。 新しい時間割を見つけると、より大きな値を選択したり、値を下げることが出来ます
 </translation>
     </message>
     <message>
@@ -6435,10 +6439,10 @@ Note: students set not available and break are not counted as gaps (early gaps).
 Note: students set not available and break are not counted as gaps.
 
 IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this constraint, but instead use the safer/better max gaps per week.</source>
-        <translation>重み100％を使用する必要があります
-注：学生セットは利用できず、休憩はギャップとしてカウントされません。
+        <translation>重みを100％にする必要があります。
+注意：学生セットの利用不可および休憩はギャップとしてカウントされません。
 
-重要：合計ギャップが0にしたい場合、この制約を使用しないでください。代わりに、1週間当たりのより安全な（より良い）最大ギャップを使用することを強く推奨します。
+重要：合計ギャップが0になるようにするには、この制約を使用しないことを強く推奨します。代わりに、安全でより良い、週当たりの最大ギャップの制約を使用してください。
 </translation>
     </message>
     <message>
@@ -6854,12 +6858,12 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="99"/>
         <source>Empty days for students min hours daily constraints are not enabled. You must enable them from the Settings-&gt;Advanced menu.</source>
-        <translation>学生の１日あたり最小時間制約のための空の日は有効になっていません。 [設定] - [詳細設定]メニューから有効にする必要があります。</translation>
+        <translation>学生の１日あたり最小時間制約のための空き日は有効になっていません。 [設定] - [詳細設定]メニューから有効にする必要があります。</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="104"/>
         <source>If you allow empty days, the min hours must be at least 2 (to make it a non-trivial constraint)</source>
-        <translation>空の日を許可する場合、最小時間は少なくとも2にする必要があります（これは単純な制約にはなりません）</translation>
+        <translation>空き日を許可する場合、最小時間は少なくとも2にする必要があります（これは単純な制約にはなりません）</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="114"/>
@@ -6880,7 +6884,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="137"/>
         <source>Advanced usage is not enabled. To be able to select &apos;Allow empty days&apos; for the constraints of type min hours daily for students, you must enable the option from the Settings-&gt;Advanced menu.</source>
         <comment>&apos;Allow empty days&apos; is an option which the user can enable and then he can select it.</comment>
-        <translation>高度な使用は有効になっていません。 学生の1日の最小時間タイプの制約に&apos;空の日を許可する&apos; を選択できるようにするには、設定 - 詳細設定メニューからオプションを有効にする必要があります。
+        <translation>高度な使用は有効になっていません。 学生の1日の最小時間タイプの制約に&apos;空き日を許可する&apos; を選択できるようにするには、設定 - 詳細設定メニューからオプションを有効にする必要があります。
 </translation>
     </message>
     <message>
@@ -6891,7 +6895,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="140"/>
         <source>Explanation: only select this option if your institution allows empty days for students and a timetable is possible with empty days for students. Otherwise, it is IMPERATIVE (for performance reasons) to not select this option (or FET may not be able to find a timetable).</source>
-        <translation>説明：あなたの施設が学生のための空の日を許可し、学生のための空の日があっても時間割が編成可能な場合にのみ、このオプションを選択してください。 それ以外の場合は、パフォーマンス上の理由（またはFETがタイムテーブルを見つけることができない可能性があります）から、このオプションを選択しないでください。
+        <translation>説明：あなたの施設が学生のための空き日を許可し、学生のための空き日があっても時間割が編成可能な場合にのみ、このオプションを選択してください。 それ以外の場合は、パフォーマンス上の理由（またはFETが時間割を見つけることができない可能性があります）から、このオプションを選択しないでください。
 </translation>
     </message>
 </context>
@@ -6916,7 +6920,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform_template.ui" line="127"/>
         <source>Allow empty days</source>
-        <translation>空の日を許可</translation>
+        <translation>空き日を許可</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform_template.ui" line="143"/>
@@ -8336,7 +8340,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermaxgapsperdayform_template.ui" line="32"/>
         <source>You must use weight percentage 100%, because otherwise you will get poor timetables. Try to fix firstly a rather large value for max gaps per day and lower it as you find new timetables. The default 1 given here might be too low for your school, in which case you need to use higher values.
 Note: teacher not available and break are not counted as gaps.</source>
-        <translation>重み100％を使用する必要があります。そうしない場合、タイムテーブルが貧弱になるためです。最初に、1日あたりの最大ギャップの値を大きくし、新しいタイムテーブルを生成できたらそれを下げてください。ここで与えられたデフォルト値１はあなたの学校では低すぎるかもしれません。その場合、より高い値を使う必要があります。
+        <translation>重み100％を使用する必要があります。そうしない場合、時間割が貧弱になるためです。最初に、1日あたりの最大ギャップの値を大きくし、新しい時間割を生成できたらそれを下げてください。ここで与えられたデフォルト値１はあなたの学校では低すぎるかもしれません。その場合、より高い値を使う必要があります。
 注：教師が空いていない場合、および休憩はギャップとしてカウントされません。</translation>
     </message>
     <message>
@@ -8414,7 +8418,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermaxgapsperweekform_template.ui" line="32"/>
         <source>You must use weight percentage 100%, because otherwise you will get poor timetables. Try to fix firstly a rather large value for max gaps per week and lower it as you find new timetables. The default 3 given here might be too low for your school, in which case you need to use higher values.
 Note: teacher not available and break are not counted as gaps.</source>
-        <translation>重み100％を使用する必要があります。そうしない場合、タイムテーブルが貧弱になるためです。最初に、週あたりの最大ギャップの値を大きくし、新しいタイムテーブルを生成できたらそれを下げてください。ここで与えられたデフォルト値３はあなたの学校では低すぎるかもしれません。その場合、より高い値を使う必要があります。
+        <translation>重み100％を使用する必要があります。そうしない場合、時間割が貧弱になるためです。最初に、週あたりの最大ギャップの値を大きくし、新しい時間割を生成できたらそれを下げてください。ここで与えられたデフォルト値３はあなたの学校では低すぎるかもしれません。その場合、より高い値を使う必要があります。
 注：教師が空いていない場合、および休憩はギャップとしてカウントされません。</translation>
     </message>
     <message>
@@ -8794,7 +8798,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform.cpp" line="93"/>
         <source>Allow empty days check box must be checked. If you need to not allow empty days for a teacher, please use the constraint teacher min days per week</source>
-        <translation>空の日を許可するチェックボックスをオンにする必要があります。 １人の教師の空き日を許さないようにする必要がある場合、教師の週当たりの最小日制約を使ってください</translation>
+        <translation>空き日を許可するチェックボックスをオンにする必要があります。 １人の教師の空き日を許さないようにする必要がある場合、教師の週当たりの最小日制約を使ってください</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform.cpp" line="105"/>
@@ -8809,7 +8813,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform.cpp" line="119"/>
         <source>This check box must remain checked. If you really need to not allow empty days for this teacher, please use constraint teacher min days per week</source>
-        <translation>このチェックボックスはオンのままにする必要があります。 あなたがこの教師に本当に空の日を許可しない様にする必要がある場合は、教師の週当たりの最小日制約を使用してください</translation>
+        <translation>このチェックボックスはオンのままにする必要があります。 あなたがこの教師に本当に空き日を許可しない様にする必要がある場合は、教師の週当たりの最小日制約を使用してください</translation>
     </message>
 </context>
 <context>
@@ -8817,7 +8821,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform_template.ui" line="32"/>
         <source>It is recommended to start with 2 min hours and strenghen them as you find new timetables.</source>
-        <translation>最低2時間から始まり、新しいタイムテーブルを見つけるように強化することをお勧めします。</translation>
+        <translation>最低2時間から始まり、新しい時間割を見つけるように強化することをお勧めします。</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform_template.ui" line="93"/>
@@ -8832,7 +8836,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform_template.ui" line="133"/>
         <source>Allow empty days</source>
-        <translation>空の日を許可</translation>
+        <translation>空き日を許可</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform_template.ui" line="145"/>
@@ -9483,7 +9487,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmaxgapsperdayform_template.ui" line="32"/>
         <source>It is recommended to use only one constraint of this type. You must use weight percentage 100%, because otherwise you will get poor timetables. Try to fix firstly a rather large value for max gaps per day and lower it as you find new timetables. The default given here, 1, might be too low for your school and you might need to use higher values.
 Note: teacher not available and break are not counted as gaps.</source>
-        <translation>このタイプの制約は1つだけ使用することをお勧めします。重み100％を使用する必要があります。そうしないと、タイムテーブルが貧弱になるためです。最初に、1日あたりの最大ギャップの値を大きくし、新しいタイムテーブルが生成出来たらそれを下げてください。 ここで与えられているデフォルト値は１であり、あなたの学校では低すぎるかもしれませんし、より高い値を使う必要があるかもしれません。
+        <translation>このタイプの制約は1つだけ使用することをお勧めします。重み100％を使用する必要があります。そうしないと、時間割が貧弱になるためです。最初に、1日あたりの最大ギャップの値を大きくし、新しい時間割が生成出来たらそれを下げてください。 ここで与えられているデフォルト値は１であり、あなたの学校では低すぎるかもしれませんし、より高い値を使う必要があるかもしれません。
 注：教師が空いていない場合、休憩はギャップとしてカウントされません。</translation>
     </message>
     <message>
@@ -9550,7 +9554,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmaxgapsperweekform_template.ui" line="32"/>
         <source>It is recommended to use only one constraint of this type. You must use weight percentage 100%, because otherwise you will get poor timetables. Try to fix firstly a rather large value for max gaps per week and lower it as you find new timetables. The default given here, 3, might be too low for your school and you might need to use higher values.
 Note: teacher not available and break are not counted as gaps.</source>
-        <translation>このタイプの制約は1つだけ使用することをお勧めします。重み100％を使用する必要があります。そうしないと、タイムテーブルが貧弱になるためです。最初に、週あたりの最大ギャップの値を大きくし、新しいタイムテーブルが生成出来たらそれを下げてください。 ここで与えられているデフォルト値は３であり、あなたの学校では低すぎるかもしれませんし、より高い値を使う必要があるかもしれません。
+        <translation>このタイプの制約は1つだけ使用することをお勧めします。重み100％を使用する必要があります。そうしないと、時間割が貧弱になるためです。最初に、週あたりの最大ギャップの値を大きくし、新しい時間割が生成出来たらそれを下げてください。 ここで与えられているデフォルト値は３であり、あなたの学校では低すぎるかもしれませんし、より高い値を使う必要があるかもしれません。
 注：教師が空いていない場合、休憩はギャップとしてカウントされません。</translation>
     </message>
     <message>
@@ -9879,7 +9883,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform.cpp" line="76"/>
         <source>Allow empty days check box must be checked. If you need to not allow empty days for the teachers, please use the constraint teachers min days per week</source>
-        <translation>空の日を許可するチェックボックスをオンにする必要があります。 この教師の空き日を許さないようにする必要がある場合、教師の週当たりの最小日制約を使ってください</translation>
+        <translation>空き日を許可するチェックボックスをオンにする必要があります。 この教師の空き日を許さないようにする必要がある場合、教師の週当たりの最小日制約を使ってください</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform.cpp" line="88"/>
@@ -9894,7 +9898,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform.cpp" line="102"/>
         <source>This check box must remain checked. If you really need to not allow empty days for the teachers, please use constraint teachers min days per week</source>
-        <translation>このチェックボックスはオンのままにする必要があります。 あなたがこれらの教師に本当に空の日を許可しない様にする必要がある場合は、教師の週当たりの最小日制約を使用してください</translation>
+        <translation>このチェックボックスはオンのままにする必要があります。 あなたがこれらの教師に本当に空き日を許可しない様にする必要がある場合は、教師の週当たりの最小日制約を使用してください</translation>
     </message>
 </context>
 <context>
@@ -9933,7 +9937,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform_template.ui" line="101"/>
         <source>Allow empty days</source>
-        <translation>空の日を許可する</translation>
+        <translation>空き日を許可する</translation>
     </message>
 </context>
 <context>
@@ -17374,7 +17378,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintroomnotavailabletimesform_template.ui" line="14"/>
         <source>Constraints room not available times</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>部屋が利用不可の時間の制約</translation>
+        <translation>部屋の利用不可時間の制約</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintroomnotavailabletimesform_template.ui" line="28"/>
@@ -19380,7 +19384,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8393"/>
         <source>(nonstandard, students may have empty days)</source>
-        <translation>（非標準、学生には空の日があるかもしれません）</translation>
+        <translation>（非標準、学生には空き日があるかもしれません）</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8396"/>
@@ -19400,7 +19404,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8399"/>
         <source>Allow empty days=%1</source>
-        <translation>空の日を許可= %1</translation>
+        <translation>空き日を許可= %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8402"/>
@@ -19465,7 +19469,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentsminhoursdailyform_template.ui" line="26"/>
         <source>IMPORTANT: allow empty days for students is a nonstandard option. Only select it if your institution permits that and if a timetable with empty days for students exists. Otherwise do not  select it, for a good performance of generation. Press Help button for more information.</source>
-        <translation>重要：学生が非標準のオプションである場合、空の日を許可します。 あなたの機関がそれを許可し、学生のための空の日の時間割が存在する場合にのみ、それを選択してください。 そうでなければ、選択しないでください。 詳細については、ヘルプボタンを押してください。</translation>
+        <translation>重要：学生が非標準のオプションである場合、空き日を許可します。 あなたの機関がそれを許可し、学生のための空き日の時間割が存在する場合にのみ、それを選択してください。 そうでなければ、選択しないでください。 詳細については、ヘルプボタンを押してください。</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminhoursdailyform_template.ui" line="44"/>
@@ -22309,7 +22313,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8613"/>
         <source>(nonstandard, students may have empty days)</source>
-        <translation>（非標準、学生には空の日があるかもしれません）</translation>
+        <translation>（非標準、学生には空き日があるかもしれません）</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8616"/>
@@ -22334,7 +22338,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8620"/>
         <source>Allow empty days=%1</source>
-        <translation>空の日を許可= %1</translation>
+        <translation>空き日を許可= %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8623"/>
@@ -22411,7 +22415,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssetminhoursdailyform_template.ui" line="26"/>
         <source>IMPORTANT: allow empty days for students is a nonstandard option. Only select it if your institution permits that and if a timetable with empty days for students exists. Otherwise do not select it, for a good performance of generation. Press Help button for more information.</source>
-        <translation>重要：学生が非標準のオプションである場合、空の日を許可します。 あなたの機関がそれを許可し、学生のための空の日の時間割が存在する場合にのみ、それを選択してください。 そうでなければ、選択しないでください。 詳細については、ヘルプボタンを押してください。</translation>
+        <translation>重要：学生が非標準のオプションである場合、空き日を許可します。 あなたの機関がそれを許可し、学生のための空き日の時間割が存在する場合にのみ、それを選択してください。 そうでなければ、選択しないでください。 詳細については、ヘルプボタンを押してください。</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetminhoursdailyform_template.ui" line="44"/>
@@ -26625,7 +26629,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13950"/>
         <source>Cannot generate a timetable with a constraint teacher min hours daily with allow empty days=false. Please modify it, so that it allows empty days. If you need a facility like that, please use constraint teacher min days per week</source>
-        <translation>空の日を未許可として、教師の１日の最小時間制約を使って時間割を生成することはできません。 空の日ができるように変更してください。 そのような融通が必要な場合は、教師の週あたりの最小日の制約を使用してください</translation>
+        <translation>空き日を未許可として、教師の１日の最小時間制約を使って時間割を生成することはできません。 空き日ができるように変更してください。 そのような融通が必要な場合は、教師の週あたりの最小日の制約を使用してください</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13953"/>
@@ -26689,7 +26693,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14014"/>
         <source>Allow empty days=%1</source>
-        <translation>空の日を許可= %1</translation>
+        <translation>空き日を許可= %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14017"/>
@@ -29089,7 +29093,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13710"/>
         <source>Cannot generate a timetable with a constraint teachers min hours daily with allow empty days=false. Please modify it, so that it allows empty days. If you need a facility like that, please use constraint teachers min days per week</source>
-        <translation>空の日を未許可として、教師の１日の最小時間制約を使って時間割を生成することはできません。 空の日が可能なように変更してください。 そのような融通が必要な場合は、教師の週あたりの最小日の制約を使用してください</translation>
+        <translation>空き日を未許可として、教師の１日の最小時間制約を使って時間割を生成することはできません。 空き日が可能なように変更してください。 そのような融通が必要な場合は、教師の週あたりの最小日の制約を使用してください</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13713"/>
@@ -29143,7 +29147,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13771"/>
         <source>Allow empty days=%1</source>
-        <translation>空の日を許可= %1</translation>
+        <translation>空き日を許可= %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13774"/>
@@ -29596,7 +29600,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="42"/>
         <source>It is a good practice NOT to add this type of constraint to activities which are constrained to be in different days by min days between activities constraints. Please read Help/Important tips, tip number 3).</source>
-        <translation type="unfinished">アクティビティー制約の間の日数が異なる日に制限されたアクティビティーにこのタイプの制約を追加しないことをお勧めします。 ヘルプ/重要なヒント、ヒント3をお読みください）。</translation>
+        <translation>アクティビティー制約の間の最小日数により、アクティビティが異なる日になるよう制約されたアクティビティーにこのタイプの制約を追加しないことをお勧めします。 ヘルプ/重要なヒント、ヒント3をお読みください）。</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="60"/>
@@ -29606,7 +29610,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="26"/>
         <source>This constraint forces 3 activities to be in the same day, one immediately following the other, as a block of 3 activities, in any order, possibly separated by breaks</source>
-        <translation type="unfinished"></translation>
+        <translation>この制約は、3つのアクティビティを同じ日に強制します。１つのアクティビティに続くように他のアクティビティをおき、3つのアクティビティを1つのブロックとします。休憩によって分割させることも出来ます</translation>
     </message>
 </context>
 <context>
@@ -29623,14 +29627,14 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="12332"/>
         <source>Following constraint is wrong (refers to inexistent activity ids):
 %1</source>
-        <translation type="unfinished">以下の制約は誤っています（存在しないアクティビティidを参照するため）。修正してください：
+        <translation>以下の制約は誤っています（存在しないアクティビティidを参照するため）。修正してください：
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12341"/>
         <source>Following constraint is wrong (refers to same activities):
 %1</source>
-        <translation type="unfinished">以下の制約は誤っています（同じアクティビティを参照するため）。修正してください：
+        <translation>以下の制約は誤っています（同じアクティビティを参照するため）。修正してください：
 %1</translation>
     </message>
     <message>
@@ -29642,19 +29646,19 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12386"/>
         <source>Two activities consecutive:</source>
-        <translation type="unfinished"></translation>
+        <translation>2つのアクティビティが連続：</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12389"/>
         <source>first act. id: %1</source>
         <comment>act.=activity</comment>
-        <translation type="unfinished">最初のアクティid：%1</translation>
+        <translation>最初のアクティid：%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12391"/>
         <source>second act. id: %1</source>
         <comment>act.=activity</comment>
-        <translation type="unfinished">２番目のアクティid：%1</translation>
+        <translation>２番目のアクティid：%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12393"/>
@@ -29670,7 +29674,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12401"/>
         <source>Two activities consecutive (second activity must be placed immediately after the first activity, in the same day, possibly separated by breaks)</source>
-        <translation type="unfinished"></translation>
+        <translation>2つのアクティビティが連続しています（2つ目のアクティビティは、同じ日の最初のアクティビティの直後に置かれます。休憩で分割される可能性があります）</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12404"/>
@@ -29681,13 +29685,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="12406"/>
         <source>First activity id=%1 (%2)</source>
         <comment>%1 is the id, %2 is the detailed description of the activity.</comment>
-        <translation type="unfinished">最初のアクティビティ id = %1(%2)</translation>
+        <translation>最初のアクティビティ id = %1(%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12411"/>
         <source>Second activity id=%1 (%2)</source>
         <comment>%1 is the id, %2 is the detailed description of the activity.</comment>
-        <translation type="unfinished">２番目のアクティビティ id = %1(%2)</translation>
+        <translation>２番目のアクティビティ id = %1(%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12417"/>
@@ -29704,7 +29708,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="12474"/>
         <source>Time constraint two activities consecutive broken for first activity with id=%1 (%2) and second activity with id=%3 (%4), increases conflicts total by %5</source>
         <comment>%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.</comment>
-        <translation type="unfinished"></translation>
+        <translation>2つのアクティビティを連続とする時間制約は壊れています： id =%1（%2）の１つ目のアクティビティ、id =%3（%4）の2つ目のアクティビティでです。%5による衝突の合計の増加</translation>
     </message>
 </context>
 <context>
@@ -29797,7 +29801,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="42"/>
         <source>It is a good practice NOT to add this type of constraint to activities which are constrained to be in different days by min days between activities constraints. Please read Help/Important tips, tip number 3).</source>
-        <translation type="unfinished">アクティビティー制約の間の日数が異なる日に制限されたアクティビティーにこのタイプの制約を追加しないことをお勧めします。 ヘルプ/重要なヒント、ヒント3をお読みください）。</translation>
+        <translation>アクティビティー制約の間の最小日数により、アクティビティが異なる日になるよう制約されたアクティビティーにこのタイプの制約を追加しないことをお勧めします。 ヘルプ/重要なヒント、ヒント3をお読みください）。</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="60"/>
@@ -29808,12 +29812,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="14"/>
         <source>Constraints two activies consecutive</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>2つのアクティビティを連続とする制約</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="26"/>
         <source>This constraint forces two activities A1 and A2: A2 to be immediately after A1, same day, possibly separated by breaks</source>
-        <translation type="unfinished"></translation>
+        <translation>この制約は、2つのアクティビティA1とA2に以下を強制します：A2がA1の同日かつ直後にあることを強制します。休憩により分割される場合があります</translation>
     </message>
 </context>
 <context>
@@ -29830,14 +29834,14 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="12606"/>
         <source>Following constraint is wrong (refers to inexistent activity ids):
 %1</source>
-        <translation type="unfinished">以下の制約は誤っています（存在しないアクティビティidを参照するため）。修正してください：
+        <translation>以下の制約は誤っています（存在しないアクティビティidを参照するため）。修正してください：
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12615"/>
         <source>Following constraint is wrong (refers to same activities):
 %1</source>
-        <translation type="unfinished">以下の制約は誤っています（同じアクティビティを参照するため）。修正してください：
+        <translation>以下の制約は誤っています（同じアクティビティを参照するため）。修正してください：
 %1</translation>
     </message>
     <message>
@@ -29850,13 +29854,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="12663"/>
         <source>first act. id: %1</source>
         <comment>act.=activity</comment>
-        <translation type="unfinished">最初のアクティid：%1</translation>
+        <translation>最初のアクティid：%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12665"/>
         <source>second act. id: %1</source>
         <comment>act.=activity</comment>
-        <translation type="unfinished">２番目のアクティid：%1</translation>
+        <translation>２番目のアクティid：%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12667"/>
@@ -29872,12 +29876,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12660"/>
         <source>Two activities grouped:</source>
-        <translation type="unfinished"></translation>
+        <translation>グループにした2つのアクティビティ：</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12675"/>
         <source>Two activities grouped (the activities must be placed in the same day, one immediately following the other, in any order, possibly separated by breaks)</source>
-        <translation type="unfinished"></translation>
+        <translation>グループにした2つのアクティビティ（2つ目のアクティビティは同じ日に置かれ、一方の直後にもう一方が置かれます。休憩により分割される可能性があります）</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12678"/>
@@ -29888,13 +29892,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="12680"/>
         <source>First activity id=%1 (%2)</source>
         <comment>%1 is the id, %2 is the detailed description of the activity.</comment>
-        <translation type="unfinished">最初のアクティビティ id = %1(%2)</translation>
+        <translation>最初のアクティビティ id = %1(%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12685"/>
         <source>Second activity id=%1 (%2)</source>
         <comment>%1 is the id, %2 is the detailed description of the activity.</comment>
-        <translation type="unfinished">２番目のアクティビティ id = %1(%2)</translation>
+        <translation>２番目のアクティビティ id = %1(%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12691"/>
@@ -29911,7 +29915,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="12760"/>
         <source>Time constraint two activities grouped broken for first activity with id=%1 (%2) and second activity with id=%3 (%4), increases conflicts total by %5</source>
         <comment>%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.</comment>
-        <translation type="unfinished"></translation>
+        <translation>2つのアクティビティをグループとする時間制約は壊れています： id =%1（%2）の１つ目のアクティビティ、id =%3（%4）の2つ目のアクティビティでです。%5による衝突の合計の増加があります</translation>
     </message>
 </context>
 <context>
@@ -30004,7 +30008,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="42"/>
         <source>It is a good practice NOT to add this type of constraint to activities which are constrained to be in different days by min days between activities constraints. Please read Help/Important tips, tip number 3).</source>
-        <translation type="unfinished">アクティビティー制約の間の日数が異なる日に制限されたアクティビティーにこのタイプの制約を追加しないことをお勧めします。 ヘルプ/重要なヒント、ヒント3をお読みください）。</translation>
+        <translation>アクティビティー制約の間の最小日数により、アクティビティが異なる日になるよう制約されたアクティビティーにこのタイプの制約を追加しないことをお勧めします。 ヘルプ/重要なヒント、ヒント3をお読みください）。</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="60"/>
@@ -30020,7 +30024,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="26"/>
         <source>This constraint forces two activities to be in the same day, one immediately following the other, in any order, possibly separated by breaks</source>
-        <translation type="unfinished"></translation>
+        <translation>この制約は2つのアクティビティが同日になることを強制します。1つ目の直後に2つ目が置かれます。これは休憩により分割される場合があります</translation>
     </message>
 </context>
 <context>
@@ -30037,14 +30041,14 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="13261"/>
         <source>Following constraint is wrong (refers to inexistent activity ids):
 %1</source>
-        <translation type="unfinished">以下の制約は誤っています（存在しないアクティビティidを参照するため）。修正してください：
+        <translation>以下の制約は誤っています（存在しないアクティビティidを参照するため）。修正してください：
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13270"/>
         <source>Following constraint is wrong (refers to same activities):
 %1</source>
-        <translation type="unfinished">以下の制約は誤っています（同じアクティビティを参照するため）。修正してください：
+        <translation>以下の制約は誤っています（同じアクティビティを参照するため）。修正してください：
 %1</translation>
     </message>
     <message>
@@ -30057,13 +30061,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="13318"/>
         <source>first act. id: %1</source>
         <comment>act.=activity</comment>
-        <translation type="unfinished">最初のアクティid：%1</translation>
+        <translation>最初のアクティid：%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13320"/>
         <source>second act. id: %1</source>
         <comment>act.=activity</comment>
-        <translation type="unfinished">２番目のアクティid：%1</translation>
+        <translation>２番目のアクティid：%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13322"/>
@@ -30079,12 +30083,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13315"/>
         <source>Two activities ordered:</source>
-        <translation type="unfinished"></translation>
+        <translation>2つのアクティビティの順序付け：</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13330"/>
         <source>Two activities ordered (second activity must be placed at any time in the week after the first activity)</source>
-        <translation type="unfinished"></translation>
+        <translation>2つのアクティビティが順序付けされています(2つ目のアクティビティは、1つ目のアクティビティより後であれば、その週のいつでも良い)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13333"/>
@@ -30095,13 +30099,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="13335"/>
         <source>First activity id=%1 (%2)</source>
         <comment>%1 is the id, %2 is the detailed description of the activity.</comment>
-        <translation type="unfinished">最初のアクティビティ id = %1(%2)</translation>
+        <translation>最初のアクティビティ id = %1(%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13340"/>
         <source>Second activity id=%1 (%2)</source>
         <comment>%1 is the id, %2 is the detailed description of the activity.</comment>
-        <translation type="unfinished">２番目のアクティビティ id = %1(%2)</translation>
+        <translation>２番目のアクティビティ id = %1(%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13346"/>
@@ -30118,7 +30122,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="13388"/>
         <source>Time constraint two activities ordered broken for first activity with id=%1 (%2) and second activity with id=%3 (%4), increases conflicts total by %5</source>
         <comment>%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.</comment>
-        <translation type="unfinished"></translation>
+        <translation>2つのアクティビティの順序付け時間制約は壊れています： id =%1（%2）の１つ目のアクティビティ、id =%3（%4）の2つ目のアクティビティでです。%5による衝突の合計の増加があります</translation>
     </message>
 </context>
 <context>
@@ -30162,7 +30166,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="14"/>
         <source>Constraints two activies ordered</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>2つのアクティビティの順序の制約</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="74"/>
@@ -30222,7 +30226,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="26"/>
         <source>This constraint forces two activities A1 and A2: A2 to be after A1, separated by any time interval in the week</source>
-        <translation type="unfinished"></translation>
+        <translation>この制約は、2つのアクティビティA1とA2に以下を強制します：A2がA1の後にあること。その週で任意の時間間隔で分割します</translation>
     </message>
 </context>
 <context>
@@ -30236,24 +30240,24 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/daysform.cpp" line="127"/>
         <source>Empty names not allowed</source>
-        <translation type="unfinished"></translation>
+        <translation>空の名前は許可されていません</translation>
     </message>
     <message>
         <location filename="../src/interface/daysform.cpp" line="134"/>
         <source>Duplicates not allowed</source>
-        <translation type="unfinished"></translation>
+        <translation>重複は許可されていません</translation>
     </message>
     <message>
         <location filename="../src/interface/daysform.cpp" line="165"/>
         <source>%1 constraints will be removed.</source>
         <comment>%1 is the number of constraints</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1の制約が取り除かれます。</translation>
     </message>
     <message>
         <location filename="../src/interface/daysform.cpp" line="169"/>
         <source>%1 constraints will be modified.</source>
         <comment>%1 is the number of constraints</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1の制約が変更されます。</translation>
     </message>
     <message>
         <location filename="../src/interface/daysform.cpp" line="172"/>
@@ -30775,68 +30779,68 @@ Import of data will be easier with these settings.</source>
         <location filename="../src/engine/messageboxes.cpp" line="34"/>
         <location filename="../src/engine/messageboxes.cpp" line="44"/>
         <source>Title: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>タイトル：%1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="35"/>
         <location filename="../src/engine/messageboxes.cpp" line="45"/>
         <source>Message: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>メッセージ：%1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="48"/>
         <source>Button 0 text: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>テキストのボタン0：%1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="50"/>
         <source>Button 1 text: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>テキストのボタン1：%1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="52"/>
         <source>Button 2 text: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>テキストのボタン2：%1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="54"/>
         <source>Default button: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>デフォルトボタン：%1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="55"/>
         <source>Escape button: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>エスケープボタン：%1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="57"/>
         <source>Pressing default button %1</source>
-        <translation type="unfinished"></translation>
+        <translation>デフォルトボタンを押す：%1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="252"/>
         <source>Progress title: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>進捗状況のタイトル：%1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="258"/>
         <source>Progress label: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>進捗状況のラベル：%1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="264"/>
         <source>Progress range: %1..%2</source>
-        <translation type="unfinished"></translation>
+        <translation>進捗状況の範囲：%1..%2</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="271"/>
         <source>Progress setModal(true)</source>
-        <translation type="unfinished"></translation>
+        <translation>進捗状況のセットモデル(正)</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="273"/>
         <source>Progress setModal(false)</source>
-        <translation type="unfinished"></translation>
+        <translation>進捗状況のセットモデル(誤)</translation>
     </message>
 </context>
 <context>
@@ -31482,68 +31486,68 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/fetmainform.cpp" line="2058"/>
         <source>Warn if using not perfect constraints:</source>
         <comment>this is a warning if user uses not perfect constraints</comment>
-        <translation>完全な制約を使用しない場合に警告する：</translation>
+        <translation>完全でない制約を使用する場合に警告する：</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2064"/>
         <source>Enable students min hours daily with empty days:</source>
-        <translation>空の日に1日の最低時間を有効にする：</translation>
+        <translation>空き日と1日の最低時間を有効にする：</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2066"/>
         <source>This will enable you to modify the students min hours daily constraints, to allow empty days. It is IMPERATIVE (for performance reasons) to allow empty days for students min hours daily only if your institution allows empty days for students and if a solution with empty days is possible. Select only if you know what you&apos;re doing.</source>
-        <translation>この作業により、学生達の１日の最低時間制約を修正し、空の日を許可することができます。あなたの施設が学生に空の日を許可し、空の日がある解決策がある場合にのみ可能です。学生の１日の最低時間で空の日を許可するのは、パフォーマンス上の理由からです。これが何を行うのか理解している場合にのみ選択してください。</translation>
+        <translation>この作業により、学生達の１日の最低時間制約を修正し、空き日を許可することができます。あなたの施設が学生に空き日を許可し、空き日がある解決策がある場合にのみ可能です。学生の１日の最低時間で空き日を許可するのは、パフォーマンス上の理由からです。これが何を行うのか理解している場合にのみ選択してください。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2070"/>
         <source>Warn if using students min hours daily with empty days:</source>
         <comment>this is a warning if user has constraints min hours daily for students with allowed empty days</comment>
-        <translation>学生の１日の最低時間に空の日を使用する場合は警告：</translation>
+        <translation>学生の１日の最低時間と空き日を使用する場合は警告：</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2072"/>
         <source>If you use constraints students min hours daily with allowed empty days, you&apos;ll get a warning before generating. Uncheck this option to get rid of that warning (it is recommended to keep the warning).</source>
-        <translation type="unfinished">許可された空の日数を指定して、毎日制約時間の学生を使用すると、生成する前に警告が表示されます。その警告を取り除くには、このオプションのチェックを外します（警告を保持することを推奨します）。</translation>
+        <translation>許可された空き日数を指定して、学生の１日の最小時間の制約を使用すると、時間割を生成する前に警告が表示されます。その警告を取り除くには、このオプションのチェックを外します（警告を保持することを推奨します）。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2077"/>
         <source>Confirmations: unselect the corresponding check boxes if you want to skip introduction and confirmation to various advanced dialogs.</source>
-        <translation type="unfinished">確認：さまざまな詳細ダイアログへの紹介と確認をスキップする場合は、対応するチェックボックスの選択を解除します。</translation>
+        <translation>確認：個々の詳細ダイアログの説明と確認をスキップする場合は、対応するチェックボックスの選択を解除します。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2081"/>
         <source>Duplicate vertical headers to the right (in timetable settings) - select this if you want the timetables to duplicate the table left vertical headers to the right part of the tables</source>
-        <translation type="unfinished">右に重複する垂直ヘッダー（タイムテーブル設定で） - タイムテーブルでテーブルを複製して、テーブルの右側の部分に垂直ヘッダーを残す場合は、これを選択します</translation>
+        <translation>右側への垂直ヘッダー（時間割設定内）を複製する -時間割で表の右側の部分に垂直ヘッダーを残したままにする場合は、これを選択します</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2086"/>
         <source>If you have many subgroups and you don&apos;t explicitly use them, it is recommended to use the three global settings: hide subgroups in combo boxes, hide subgroups in activity planning, and do not write subgroups timetables on hard disk.</source>
-        <translation type="unfinished">サブグループが多数あり、明示的に使用しない場合は、コンボボックスでサブグループを非表示にし、アクティビティ計画でサブグループを非表示にし、サブグループのタイムテーブルをハードディスクに書き込まないという3つのグローバル設定を使用することをお勧めします。</translation>
+        <translation>サブグループが多数あり、それらを明確に使用しない場合、コンボボックスでサブグループを非表示、アクティビティ計画でサブグループを非表示、サブグループの時間割をハードディスクに書き込まないという3つのグローバル設定を使用することをお勧めします。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2097"/>
         <source>If you are only working on a timetable, and you do not need to publish it, you may want to disable writing some categories of timetables on the hard disk, for operativity (the generation speed is not affected, only the overhead to write the partial/complete timetables when stopping/finishing the simulation). The timetables taking the longest time are the subgroups, groups AND years ones.</source>
-        <translation type="unfinished">タイムテーブルでのみ作業していて、公開する必要がない場合は、ハードディスク上のタイムテーブルのいくつかのカテゴリの書き込みを無効にすることができます（生成速度には影響ありません。 /シミュレーションを停止/終了するときの完全なタイムテーブル）。最も長い時間をとっている時間割は、サブグループ、グループ、および年のものです。</translation>
+        <translation>時間割でのみ作業していて、それを公開する必要がない場合、ハードディスク上へのいくつかのカテゴリの時間割の書き込みを無効にすることができます（時間割生成速度には影響ありません。シミュレーションを停止/終了するときの部分的/完全な時間割を書き込む処理コストのみ）。最も長い時間をとっている時間割は、サブグループ、グループ、および年のものです。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2101"/>
         <source>(Also the conflicts timetable might take long to write, if the file is large.)</source>
-        <translation type="unfinished">（ファイルが大きい場合は、競合のタイムテーブルも書き込みに時間がかかることがあります）</translation>
+        <translation>（ファイルが大きい場合は、衝突する時間割も書き込みに時間がかかることがあります）</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2103"/>
         <source>After that, you can re-enable writing of the timetables and re-generate.</source>
-        <translation type="unfinished">その後、タイムテーブルの書き込みを再度有効にして、再生成することができます。</translation>
+        <translation>その後、時間割の書き込みを再度有効にして、再度生成することができます。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2106"/>
         <source>Show tool tips for constraints with tables: in the add/modify constraint dialogs which use tables, like the &apos;not available times&apos; ones, each table cell will have a tool tip to show the current day/hour (column/row name).</source>
-        <translation type="unfinished">表を使用した制約のツールヒントを表示する：「使用できない時間」のような表を使用する制約の追加/変更ダイアログでは、各表のセルに現在の日/時間（列/行の名前）を示すツールヒントが表示されます。</translation>
+        <translation>表を使用した制約のツールヒントを表示する：「使用できない時間」のような表を使用する制約の追加/変更ダイアログでは、各表のセルに現在の日/時間（列/行の名前）を示すツールヒントが表示されます。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2116"/>
         <source>You will find in the statistics only active activities count. The inactive ones are not counted.</source>
-        <translation type="unfinished">統計では、アクティブなアクティビティ数のみが表示されます。非アクティブなものは数えられません。</translation>
+        <translation>統計では、有効なアクティビティ数のみが表示されます。無効なものはカウントされません。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2120"/>
@@ -31554,7 +31558,7 @@ Each subgroup should have a number of hours per week close to the average of all
 Please read FAQ for detailed description on how divisions work. The key is that the subgroups are independent and represent the smallest unit of students. Each subgroup receives the activities of the parent year and parent group and of itself.
 
 Having a subgroup with too little working hours per week means that you inputted activities in a wrong manner, and also that some constraints like no gaps, early or min hours daily for this subgroup are interpreted in a wrong manner (if subgroup has only 2 activities, then these must be placed in the first hours, which is too hard and wrong).</source>
-        <translation type="unfinished">学生の統計は、理解するのが最も難しいかもしれません。年の区分を使用している場合は、おそらく最も関連性の高い統計は各サブグループの統計です（したがって、サブグループのみをチェックすることができます）。年間またはグループにはさらに多くの時間が表示されることがありますが、これらは重要ではありません。無視してください。各年またはグループには、含まれるすべてのサブグループの活動も含まれます。
+        <translation>学生の統計は、理解するのが最も難しいかもしれません。年の区分を使用している場合は、おそらく最も関連性の高い統計は各サブグループの統計です（したがって、サブグループのみをチェックすることができます）。年間またはグループにはさらに多くの時間が表示されることがありますが、これらは重要ではありません。無視してください。各年またはグループには、含まれるすべてのサブグループの活動も含まれます。
 
 各サブグループは、すべてのサブグループの平均に近く、各学生セットの通常の就業時間に近い週当たりの時間数を有するべきである。サブグループの価値がはるかに低い場合は、年/グループ/サブグループを間違って使用した可能性があります。
 
@@ -31565,7 +31569,8 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2149"/>
         <source>Activities rooms statistics: this menu will show the activities which may be scheduled in an unspecified room, if they are referred to by space constraints with weight under 100.0%, and the activities which will certainly be scheduled in an unspecified room, if they are not referred to by any space constraints. Remember that home rooms constraints are effective only on activities which have only the exact specified teacher or students set (activities with more teachers or students sets are not affected by home rooms constraints, you need to have preferred rooms constraints for such activities to ensure they will not end up in an unspecified room).</source>
-        <translation type="unfinished">活動室の統計：このメニューは、100.0％未満の体重の宇宙拘束によって参照された場合、不特定の部屋で予定されている活動と、指定されていない部屋で確かに予定されている活動を表示します任意の空間制約によって参照される。ホームルームの制約は、厳密に指定された教師または学生のみが設定されているアクティビティにのみ有効であることを覚えておいてください（ホームルームの制約によって影響を受けない教師や学生セットが多いアクティビティの場合、不特定の部屋では終わらない）。</translation>
+        <translation>アクティビティの部屋の統計：このメニューでは、指定されていない部屋で予定されているアクティビティを表示します。100.0％未満の重みのスペース制約と指定されていない部屋で予定されているアクティビティによって参照された場合、スペース制約によって参照されない場合です。ホームルームの制約は、正確に指定された教師または学生セットのみが設定されているアクティビティでのみ有効であることを忘れないでください
+（より多くの教師や学生セットを持つアクティビティはホームルームの制約の影響を受けないため、そのようなアクティビティのための推奨されるな部屋の制約により、不特定の部屋に終わらないようにする必要があります）。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2156"/>
@@ -31575,28 +31580,28 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="3142"/>
         <source>Feature is not enabled. To use this type of feature you must enable it from the Settings-&gt;Advanced menu.</source>
-        <translation type="unfinished">機能が有効になっていません。このタイプの機能を使用するには、[設定]  - &gt; [詳細設定]メニューから有効にする必要があります。</translation>
+        <translation>機能が有効になっていません。このタイプの機能を使用するには、[設定]  - &gt; [詳細設定]メニューから有効にする必要があります。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="3146"/>
         <source>The feature must be used with caution, by experienced users.</source>
-        <translation type="unfinished">この機能は、経験豊富なユーザーが注意して使用する必要があります。</translation>
+        <translation>この機能は、経験豊富なユーザーが注意して使用する必要があります。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="3673"/>
         <source>Additionally, you may find on the FET homepage other contact information.</source>
-        <translation type="unfinished">FETのホームページでさらに他の連絡先情報を見つけることができます。</translation>
+        <translation>FETのホームページでさらに他の連絡先情報を得ることができます。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="3745"/>
         <source>Your current data has no name. Please save it as a file with a certain name before proceeding.</source>
-        <translation type="unfinished">現在のデータには名前がありません。先に進む前に、特定の名前のファイルとして保存してください。</translation>
+        <translation>現在のデータには名前がありません。先に進む前に、特定の名前のファイルとして保存してください。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="3953"/>
         <location filename="../src/interface/fetmainform.cpp" line="3977"/>
         <source>The timetable is not generated, but anyway FET will proceed now</source>
-        <translation type="unfinished">時刻表は生成されませんが、とにかくFETは今すぐ実行されます</translation>
+        <translation>時間割は生成されませんが、FETは今すぐ実行されます</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4015"/>
@@ -31611,7 +31616,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="628"/>
         <source>SSL is not available (this might be caused by missing SSL libraries). Because of this, FET cannot check for updates on startup (it cannot get the file %1).</source>
-        <translation type="unfinished"></translation>
+        <translation>SSLは利用できません（これはSSLライブラリが見つからないことによるものの可能性があります）。 このため、FETは起動時に更新をチェックできません（ファイル %1 を取得できません）。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="744"/>
@@ -31666,50 +31671,50 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1994"/>
         <source>Teacher %1 is not qualified to teach subject %2.</source>
-        <translation type="unfinished">教師 %1 は科目 %2 を教える資格がありません。</translation>
+        <translation>教師 %1 は科目 %2 を教える資格がありません。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2001"/>
         <source>All the teachers are qualified to teach their activities.</source>
-        <translation type="unfinished">すべての教師は、彼らのアクティビティを教える資格があります。</translation>
+        <translation>すべての教師は、それらのアクティビティを教える資格があります。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2044"/>
         <source>the three timetable view dialogs</source>
-        <translation type="unfinished">3つの時間割ビューダイアログ</translation>
+        <translation>3つの時間割ビューダイアログ</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2089"/>
         <source>Note that using the global menu setting to hide subgroups in activity planning is a different thing from the check box in the activity planning dialog, and the global setting works better and faster.</source>
-        <translation type="unfinished">グローバルメニュー設定を使用してアクティビティプランニングのサブグループを非表示にすることは、アクティビティプランニングダイアログのチェックボックスとは異なることであり、グローバル設定はより良くかつ迅速に機能することに注意してください。</translation>
+        <translation>グローバルメニュー設定を使用してアクティビティ計画のサブグループを非表示にすることは、アクティビティ計画ダイアログのチェックボックスとは異なるものであり、グローバル設定はより良くかつ迅速に機能することに注意してください。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2092"/>
         <source>If you hide subgroups in combo boxes, the affected dialogs (like the activities dialog or the add constraint students set not available times dialog) will load much faster if you have many subgroups.</source>
-        <translation type="unfinished">複数ボックスの組合せでサブグループを非表示にすると、影響を受けるダイアログ（アクティビティダイアログや生徒セットの制約追加の無効時間のダイアログなど）は、サブグループが多数ある場合には非常に高速になります。</translation>
+        <translation>コンボボックスでサブグループを非表示にすると、影響を受けるダイアログ（アクティビティダイアログや学生セットの利用不可時間の制約追加のダイアログなど）は、サブグループが多数ある場合には非常に高速にロードされます。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="3667"/>
         <source>FET homepage: %1</source>
         <comment>%1 is FET homepage, begins with https://...</comment>
-        <translation type="unfinished">FET ホームページ %1</translation>
+        <translation>FET ホームページ %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="3669"/>
         <source>Documentation (online help contents): %1</source>
         <comment>%1 is web page of FET Doc(umentation), which is the contents of the online help, it begins with https://...</comment>
-        <translation type="unfinished"></translation>
+        <translation>ドキュメンテーション（オンラインのヘルプコンテンツ） %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="3671"/>
         <source>Forum: %1</source>
         <comment>%1 is web page of FET forum, begins with https://...</comment>
-        <translation type="unfinished">FETフォーラム %1</translation>
+        <translation>FETフォーラム %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4130"/>
         <source>The geometry and any other saved settings of all the windows and dialogs will be reset to default</source>
-        <translation type="unfinished">すべてのウィンドウとダイアログの配置とその他の保存された設定はデフォルトにリセットされます</translation>
+        <translation>全てのウィンドウとダイアログの配置とその他の保存された設定はデフォルトにリセットされます</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4130"/>
@@ -31839,7 +31844,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4217"/>
         <source>Warn if using constraints students min hours daily with empty days will be %1</source>
         <comment>%1 is true or false. This is a warning if user uses a nonstandard constraint students min hours daily with allowed empty days</comment>
-        <translation type="unfinished">学生の日の最小時間に空の日の使用を許可%1 になる制約を使用すると警告します</translation>
+        <translation>学生の１日の最小時間の制約を使用し、空き日が%1となる場合に警告します</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4217"/>
@@ -31850,7 +31855,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4222"/>
         <source>Confirm activity planning will be %1</source>
         <comment>%1 is true or false</comment>
-        <translation type="unfinished">アクティビティプランニングが %1 になることを確認する</translation>
+        <translation>アクティビティ計画の確認は %1 になります</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4222"/>
@@ -31861,7 +31866,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4224"/>
         <source>Confirm spread activities over the week will be %1</source>
         <comment>%1 is true or false</comment>
-        <translation type="unfinished">1週間以上の展開アクティビティが %1 になることを確認する</translation>
+        <translation>1週間以上に展開されたアクティビティの確認は %1 になります</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4224"/>
@@ -31872,7 +31877,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4226"/>
         <source>Confirm remove redundant constraints will be %1</source>
         <comment>%1 is true or false</comment>
-        <translation type="unfinished">取り除く不要な制約が %1 になることを確認する</translation>
+        <translation>取り除く不要な制約を確認するは %1 になります</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4226"/>
@@ -31888,7 +31893,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4232"/>
         <source>Enable group activities in the initial order of generation will be %1</source>
         <comment>%1 is true or false</comment>
-        <translation type="unfinished">生成の初期指示のグループアクティビティが %1 となるを有効にする</translation>
+        <translation>時間割生成の初期指示のグループアクティビティを有効にするは %1 になります</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4232"/>
@@ -31899,7 +31904,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4234"/>
         <source>Warn if using group activities in the initial order of generation will be %1</source>
         <comment>%1 is true or false</comment>
-        <translation type="unfinished">生成の初期指示が %1 のグループアクティビティを使用する場合に警告する</translation>
+        <translation>時間割生成の初期指示のグループアクティビティを使用する場合に警告するは %1になります</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4234"/>
@@ -31915,7 +31920,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4238"/>
         <source>Show subgroups in combo boxes will be %1</source>
         <comment>%1 is true or false</comment>
-        <translation>複数のボックスが %1 のサブグループを表示する</translation>
+        <translation>コンボボックスのサブグループを表示するは %1 になります</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4240"/>
@@ -31926,7 +31931,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4240"/>
         <source>Show subgroups in activity planning will be %1</source>
         <comment>%1 is true or false</comment>
-        <translation type="unfinished">アクティビティプランニングが %1 となるサブグループを表示する</translation>
+        <translation>アクティビティ計画のサブグループを表示するは %1 となります</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4244"/>
@@ -32102,7 +32107,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4803"/>
         <source>Please use such constraints only if you are sure that there exists a timetable with empty days for students. If your instution requires each day for the students to be not empty, or if there does not exist a solution with empty days for students, it is IMPERATIVE (for performance reasons) that you use the standard constraint which does not allow empty days. Otherwise, the timetable may be impossible to find.</source>
-        <translation type="unfinished"></translation>
+        <translation>このような制約は、学生の空き日のある時間割があることを確信している場合にのみ使用してください。 あなたの期間が学生に空き日がないようにするために毎日の講義を必要とする場合や、学生の空き日のある時間割の解決策が存在しない場合は、空き日を許可しない標準の制約を使用することが不可欠です（パフォーマンスを理由として）。 さもなければ、時間割を見つけることが不可能かもしれません。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4848"/>
@@ -32117,7 +32122,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="924"/>
         <source>The file %1 from the FET homepage, indicating the current FET version, is incorrect.</source>
-        <translation type="unfinished">FETホームページからのファイル %1 は、現在のFETバージョンを示しますが、誤っています。</translation>
+        <translation>FETホームページからのファイル %1 は、現在のFETバージョンを示しますが、誤っています。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="949"/>
@@ -32138,7 +32143,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="3990"/>
         <location filename="../src/interface/fetmainform.cpp" line="4000"/>
         <source>Please generate, firstly</source>
-        <translation type="unfinished">最初に生成してください</translation>
+        <translation>初めに時間割を生成してください</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="3774"/>
@@ -32149,14 +32154,14 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="3902"/>
         <location filename="../src/interface/fetmainform.cpp" line="3923"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished"></translation>
+        <translation>いくつかの部屋を追加または削除したため、時間割を表示できません。時間割を再度生成してから表示してください</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="3820"/>
         <location filename="../src/interface/fetmainform.cpp" line="3845"/>
         <location filename="../src/interface/fetmainform.cpp" line="3927"/>
         <source>Cannot display the timetable, because you added or removed some teachers. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished"></translation>
+        <translation>何人かの教師を追加または削除したため、時間割を表示できません。時間割を再度生成してから表示してください</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="745"/>
@@ -32167,17 +32172,17 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4047"/>
         <source>Invalid current language - making it en_US (US English)</source>
-        <translation type="unfinished"></translation>
+        <translation>現在の言語は無効です - アメリカ英語にします</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4104"/>
         <source>Invalid language selected - making it en_US (US English)</source>
-        <translation type="unfinished"></translation>
+        <translation>選択した言語は無効です - アメリカ英語にします</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4127"/>
         <source>That means:</source>
-        <translation type="unfinished"></translation>
+        <translation>意味：</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4133"/>
@@ -32213,31 +32218,31 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4298"/>
         <location filename="../src/interface/fetmainform.cpp" line="4300"/>
         <source>true</source>
-        <translation type="unfinished"></translation>
+        <translation>真</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4143"/>
         <source>Use colors in FET graphical user interface will be %1</source>
         <comment>%1 is true or false</comment>
-        <translation type="unfinished"></translation>
+        <translation>FETのグラフィカルユーザーインターフェイスで色を使用するは、%1になります</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4196"/>
         <source>Duplicate vertical headers to the right will be %1</source>
         <comment>%1 is true or false</comment>
-        <translation type="unfinished"></translation>
+        <translation>右に重複する縦のヘッダーは %1 になります</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4211"/>
         <source>Warn if using not perfect constraints will be %1</source>
         <comment>%1 is true or false. This is a warning if user uses not perfect constraints</comment>
-        <translation type="unfinished"></translation>
+        <translation>完全でない制約を使用する場合に警告するは %1 になります</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4228"/>
         <source>Confirm save data and timetable as will be %1</source>
         <comment>%1 is true or false</comment>
-        <translation type="unfinished"></translation>
+        <translation>データと時間割の保存を確認するは %1 になります</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4300"/>
@@ -32248,19 +32253,19 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4697"/>
         <location filename="../src/interface/fetmainform.cpp" line="4727"/>
         <source>These kinds of constraints are good, but not perfectly optimized. Adding such constraints may make your timetable solve too slow or even impossible.</source>
-        <translation type="unfinished"></translation>
+        <translation>これらの種類の制約は良好ですが、完全には最適化されていません。このような制約を加えると、時間割生成があまりにも遅くなったり、不可能になったりすることがあります。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4700"/>
         <location filename="../src/interface/fetmainform.cpp" line="4730"/>
         <source>It is recommended to use such constraints only at the end, after you generated successfully with all the other constraints.</source>
-        <translation type="unfinished"></translation>
+        <translation>このような制約は、他のすべての制約を使用して正常に時間割を生成した後で、最後にのみ使用することをお勧めします。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4702"/>
         <location filename="../src/interface/fetmainform.cpp" line="4732"/>
         <source>If your timetable is too difficult, it may be from these kinds of constraints, so you may need to remove them and retry.</source>
-        <translation type="unfinished"></translation>
+        <translation>時間割生成が難しい場合、この種の制約による可能性がありますので、削除して再度時間割を生成してみてください。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4704"/>
@@ -32268,7 +32273,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4808"/>
         <location filename="../src/interface/fetmainform.cpp" line="4851"/>
         <source>Continue only if you know what you are doing.</source>
-        <translation type="unfinished"></translation>
+        <translation>何を行うか理解している場合にのみ続けてください。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4755"/>
@@ -32276,7 +32281,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4826"/>
         <location filename="../src/interface/fetmainform.cpp" line="4871"/>
         <source>It is recommended to keep this warning active, but if you really want, you can disable it.</source>
-        <translation type="unfinished"></translation>
+        <translation>この警告は有効にしておくことをお勧めしますが、本当に必要な場合は無効にすることができます。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4757"/>
@@ -32284,7 +32289,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4828"/>
         <location filename="../src/interface/fetmainform.cpp" line="4873"/>
         <source>Disable it only if you know what you are doing.</source>
-        <translation type="unfinished"></translation>
+        <translation>何を行うか理解している場合にのみ、それを無効にします。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4759"/>
@@ -32292,17 +32297,17 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4830"/>
         <location filename="../src/interface/fetmainform.cpp" line="4875"/>
         <source>Are you sure you want to disable it?</source>
-        <translation type="unfinished"></translation>
+        <translation>本当にそれを無効にしてもよろしいですか？</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="3725"/>
         <source>Please input at least one active activity before generating</source>
-        <translation type="unfinished"></translation>
+        <translation>時間割を生成する前に少なくとも1つの有効なアクティビティを入力してください</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="3756"/>
         <source>Please input at least one active activity before generating multiple</source>
-        <translation type="unfinished"></translation>
+        <translation>時間割を複数生成する前に少なくとも1つの有効なアクティビティを入力してください</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1497"/>
@@ -32314,71 +32319,71 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1497"/>
         <source>You have not yet generated a timetable - please generate firstly</source>
-        <translation type="unfinished"></translation>
+        <translation>生成した時間割がまだありません。- 初めに時間割を生成してください</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1507"/>
         <location filename="../src/interface/fetmainform.cpp" line="1515"/>
         <source>It seems that you have an incomplete timetable. Saving of timetable does not work for incomplete timetables. Please generate a complete timetable</source>
-        <translation type="unfinished"></translation>
+        <translation>不完全な時間割があるようです。時間割の保存は、不完全な時間割では機能しません。完全な時間割を生成してください</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1615"/>
         <source>File exists</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイルが存在しています</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1617"/>
         <source>For safety (so you don&apos;t lose work), it is not allowed to overwrite an existing file with locking and saving a current data+timetable</source>
-        <translation type="unfinished"></translation>
+        <translation>安全のため（作業を失うことはありません）、既存のファイルをロックして上書きし、現在のデータと時間割を保存することはできません</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1620"/>
         <source>Please choose a non-existing name</source>
-        <translation type="unfinished"></translation>
+        <translation>既存でない名前を選択してください</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4124"/>
         <source>Are you sure you want to reset all settings to defaults?</source>
-        <translation type="unfinished"></translation>
+        <translation>本当に全ての設定をデフォルトに戻しますか？</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1171"/>
         <source>New file generated</source>
-        <translation type="unfinished"></translation>
+        <translation>新しいファイルが生成されました</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1237"/>
         <source>Please do not use a filename starting with white space(s), the html css code does not work. File was not loaded. Please rename it, removing the white space(s) from the beginning and open it after that with FET.</source>
-        <translation type="unfinished"></translation>
+        <translation>空白で始まるファイル名を使用しないでください。HTML CSSコードが機能しません。ファイルが読み込まれませんでした。名前を変更し、空白を削除してからFETでファイルを開いてください。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1250"/>
         <source>Please do not use a filename ending with white space(s) before the &apos;.fet&apos; termination or at the end of the filename, problems might arise. File was not loaded. Please rename it, removing the white space(s) at the end and open it after that with FET.</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイルの拡張子&apos;.fet&apos;の前、またはファイル名の最後に空白で終わるファイル名を使用しないでください。問題が発生する可能性があります。ファイルが読み込まれませんでした。名前を変更し、ファイル名末尾の空白を削除してから再度FETで開いてください。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1297"/>
         <source>File opened</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイルが開かれました</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1344"/>
         <location filename="../src/interface/fetmainform.cpp" line="1564"/>
         <source>Please do not use a filename starting with white space(s), the html css code does not work.</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイル名の頭に空白を使用しないでください。html cssコードが機能しません。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1363"/>
         <location filename="../src/interface/fetmainform.cpp" line="1583"/>
         <source>Please do not use a filename ending with white space(s) before the &apos;.fet&apos; termination, problems might arise.</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイルの拡張子&apos;.fet&apos;の直前に空白を使用しないでください。問題が発生する可能性があります。</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1409"/>
         <location filename="../src/interface/fetmainform.cpp" line="1790"/>
         <source>File saved</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイルが保存されました</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2060"/>
@@ -32389,43 +32394,43 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4133"/>
         <source>Show shortcut buttons in main window will be %1</source>
         <comment>%1 is true or false</comment>
-        <translation type="unfinished"></translation>
+        <translation>メインウィンドウにショートカットボタンを表示するは %1 になります</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4136"/>
         <source>In the shortcuts tab from the main window, the first section will be selected/shown</source>
         <comment>Option refers to the main window tab widget for shortcuts, which currently contains 5 tabs: File, Data, Time, Space, Timetable (so it will select/show File tab).</comment>
-        <translation type="unfinished"></translation>
+        <translation>メインウィンドウのショートカットタブで、最初のセクションは選択/表示されます</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4140"/>
         <source>Check for updates at startup will be %1</source>
         <comment>%1 is true or false</comment>
-        <translation type="unfinished"></translation>
+        <translation>起動時のアップデート確認は %1 になります</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4175"/>
         <source>Working directory will be %1</source>
         <comment>%1 is the directory</comment>
-        <translation type="unfinished"></translation>
+        <translation>作業ディレクトリは %1 になります</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4178"/>
         <source>Output directory will be %1</source>
         <comment>%1 is the directory</comment>
-        <translation type="unfinished"></translation>
+        <translation>出力ディレクトリは %1 になります</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4181"/>
         <source>Import directory will be %1</source>
         <comment>%1 is the directory</comment>
-        <translation type="unfinished"></translation>
+        <translation>インポートディレクトリは %1 になります</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4184"/>
         <source>Html level of the timetables will be %1</source>
         <comment>%1 is default html level</comment>
-        <translation type="unfinished"></translation>
+        <translation>時間割のhtmlレベルは %1 になります</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4187"/>
@@ -32482,7 +32487,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4289"/>
         <source>activity tags</source>
-        <translation type="unfinished">アクティビティタグ</translation>
+        <translation>アクティビティタグ</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4294"/>
@@ -32537,13 +32542,13 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4541"/>
         <location filename="../src/interface/fetmainform.cpp" line="4562"/>
         <source>FET question</source>
-        <translation type="unfinished"></translation>
+        <translation>FETの質問</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4543"/>
         <location filename="../src/interface/fetmainform.cpp" line="4564"/>
         <source>&amp;Continue</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;続ける</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4559"/>
@@ -32555,7 +32560,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="1333"/>
         <location filename="../src/interface/fetmainform.cpp" line="1553"/>
         <source>All files</source>
-        <translation type="unfinished"></translation>
+        <translation>全てのファイル</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="784"/>
@@ -32596,7 +32601,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1222"/>
         <source>Choose a file to open</source>
-        <translation type="unfinished"></translation>
+        <translation>開くファイルを選択する</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1224"/>
@@ -32604,7 +32609,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="1552"/>
         <source>FET XML files</source>
         <comment>Instructions for translators: FET XML is a type of file format (using text mode). So this field means files in the FET XML format</comment>
-        <translation type="unfinished"></translation>
+        <translation>FET XML ファイル</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2031"/>
@@ -32640,102 +32645,102 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="740"/>
         <source>Arabic</source>
-        <translation type="unfinished"></translation>
+        <translation>アラビア語</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="741"/>
         <source>Catalan</source>
-        <translation type="unfinished"></translation>
+        <translation>カタロニア語</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="742"/>
         <source>German</source>
-        <translation type="unfinished"></translation>
+        <translation>ドイツ語</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="743"/>
         <source>Greek</source>
-        <translation type="unfinished"></translation>
+        <translation>ギリシャ語</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="746"/>
         <source>Spanish</source>
-        <translation type="unfinished"></translation>
+        <translation>スペイン語</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="747"/>
         <source>French</source>
-        <translation type="unfinished"></translation>
+        <translation>フランス語</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="748"/>
         <source>Hungarian</source>
-        <translation type="unfinished"></translation>
+        <translation>ハンガリー語</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="749"/>
         <source>Indonesian</source>
-        <translation type="unfinished"></translation>
+        <translation>インドネシア語</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="750"/>
         <source>Italian</source>
-        <translation type="unfinished"></translation>
+        <translation>イタリア語</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="751"/>
         <source>Lithuanian</source>
-        <translation type="unfinished"></translation>
+        <translation>リトアニア語</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="752"/>
         <source>Macedonian</source>
-        <translation type="unfinished"></translation>
+        <translation>マケドニア語</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="753"/>
         <source>Malay</source>
-        <translation type="unfinished"></translation>
+        <translation>マレー語</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="754"/>
         <source>Dutch</source>
-        <translation type="unfinished"></translation>
+        <translation>オランダ語</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="755"/>
         <source>Polish</source>
-        <translation type="unfinished"></translation>
+        <translation>ポーランド語</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="756"/>
         <source>Romanian</source>
-        <translation type="unfinished"></translation>
+        <translation>ルーマニア語</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="757"/>
         <source>Turkish</source>
-        <translation type="unfinished"></translation>
+        <translation>トルコ語</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="760"/>
         <source>Ukrainian</source>
-        <translation type="unfinished"></translation>
+        <translation>ウクライナ語</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="761"/>
         <source>Brazilian Portuguese</source>
-        <translation type="unfinished"></translation>
+        <translation>ブラジルポルトガル語</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="758"/>
         <source>Russian</source>
-        <translation type="unfinished"></translation>
+        <translation>ロシア語</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="759"/>
         <source>Persian</source>
-        <translation type="unfinished"></translation>
+        <translation>ペルシア語</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4647"/>
@@ -33725,7 +33730,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="2503"/>
         <source>Categories of timetables to be written on disk</source>
         <comment>It means that the user selects the categories of timetables to be written on disk after the generation (soft conflicts, XML, days horizontal, time vertical, subgroups, teachers, etc.)</comment>
-        <translation>ディスクに書き込まれるタイムテーブルのカテゴリ（複）</translation>
+        <translation>ディスクに書き込まれる時間割のカテゴリ（複）</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2514"/>
@@ -34250,7 +34255,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fet.cpp" line="292"/>
         <source>Output directory %1 does not exist and cannot be created - output directory will be made the default value %2</source>
-        <translation type="unfinished"></translation>
+        <translation>出力ディレクトリ%1が存在せず、作成ができません - 出力ディレクトリはデフォルト値 %2 で作成されます</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="805"/>
@@ -34261,49 +34266,49 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fet.cpp" line="844"/>
         <source>To start FET in interface mode, please do not give any command-line parameters to the FET executable</source>
-        <translation type="unfinished"></translation>
+        <translation>インタフェースモードでFETを起動するには、コマンドラインパラメータをFETの実行可能ファイルに与えないでください</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="1184"/>
         <source>This is the list of max placed activities, chronologically. If FET could reach maximum n-th activity, look at the n+1-st activity in the initial order of the activities</source>
-        <translation type="unfinished"></translation>
+        <translation>これは、時系列に配置された最大のアクティビティのリストです。 FETが最大n番目のアクティビティに到達できる場合、アクティビティの最初の順序でn + 1番目アクティビティを調べます</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="1475"/>
         <source>FET managed to schedule correctly the first %1 most difficult activities. You can see initial order of placing the activities in the corresponding output file. The activity which might cause problems might be the next activity in the initial order of evaluation. This activity is listed below:</source>
-        <translation type="unfinished"></translation>
+        <translation>FETは、最初の%1の最も困難なアクティビティを正しくスケジュールすることができました。アクティビティを対応する出力ファイルに配置する最初の順序を確認できます。問題の原因となる可能性があるアクティビティは、評価の最初の順序で次のアクティビティとなる可能性があります。このアクティビティは以下のとおりです：</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="1482"/>
         <location filename="../src/interface/fet.cpp" line="1502"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
-        <translation type="unfinished"></translation>
+        <translation>アId:%1（%2）</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="1487"/>
         <source>Difficult activity cannot be computed - please report possible bug</source>
-        <translation type="unfinished"></translation>
+        <translation>困難なアクティビティを計算することが出来ません。可能性のあるバグを報告してください</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="1491"/>
         <source>Here are the placed activities which lead to an inconsistency, in order from the first one to the last (the last one FET failed to schedule and the last ones are most likely impossible):</source>
-        <translation type="unfinished"></translation>
+        <translation>最初のものから最後のものへ順番に矛盾が生じるように配置されたアクティビティがあります（最後のアクティビティでFETはスケジュールに失敗しました。最後のアクティビティは不可能である可能性が高いです）：</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="1498"/>
         <source>No: %1</source>
-        <translation type="unfinished">番号: %1</translation>
+        <translation>番号: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="805"/>
         <source>Cannot create or use %1 directory (where the results should be stored) - you can continue operation, but you might not be able to work with FET. Maybe you can try to change the output directory from the &apos;Settings&apos; menu. If this is a bug - please report it.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 ディレクトリ（結果を格納する場所）を作成または使用することができません。操作は続行できますが、FETで作業することはできません。 「設定」メニューから出力ディレクトリを変更することができます。これがバグの場合は、報告してください。</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="814"/>
         <source>You don&apos;t have write permissions in the output directory (FET cannot open or create file %1) - you might not be able to work correctly with FET. Maybe you can try to change the output directory from the &apos;Settings&apos; menu. If this is a bug - please report it.</source>
-        <translation type="unfinished"></translation>
+        <translation>出力ディレクトリに書き込み権限がありません（FETはファイル%1を開いたり作成することができません）。FETでは正しく動作しない可能性があります。 「設定」メニューから出力ディレクトリを変更することができます。これがバグの場合は、報告してください。</translation>
     </message>
 </context>
 <context>
@@ -34320,41 +34325,41 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="104"/>
         <source>Timetable impossible to generate</source>
-        <translation type="unfinished"></translation>
+        <translation>時間割を生成することができません</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="109"/>
         <source>Time exceeded for current timetable</source>
-        <translation type="unfinished"></translation>
+        <translation>現在の時間割で時間超過をしました</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="127"/>
         <source>%1 h</source>
         <comment>hours</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 時間</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="131"/>
         <source>%1 m</source>
         <comment>minutes</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 分</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="135"/>
         <source>%1 s</source>
         <comment>seconds</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 秒</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="139"/>
         <source>Max placed activities: %1 (at %2)</source>
         <comment>%1 represents the maximum number of activities placed, %2 is a time interval</comment>
-        <translation type="unfinished"></translation>
+        <translation>最大で配置されたアクティビティ：%1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="160"/>
         <source>Timetable breaks %1 soft constraints, has %2 soft conflicts total, and was generated in %3 hours, %4 minutes and %5 seconds.</source>
-        <translation type="unfinished"></translation>
+        <translation>時間割は%1のソフト制約を破り、合計%2のソフトな衝突があります。%3時間,%4分,%5秒で生成されました。</translation>
     </message>
 </context>
 <context>
@@ -35803,7 +35808,7 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/engine/activity.cpp" line="86"/>
         <location filename="../src/engine/activity.cpp" line="102"/>
         <source>Group activities in initial order item</source>
-        <translation type="unfinished"></translation>
+        <translation>最初の順序アイテムのグループアクティビティ</translation>
     </message>
     <message>
         <location filename="../src/engine/activity.cpp" line="88"/>
@@ -35826,7 +35831,7 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/engine/activity.cpp" line="101"/>
         <source>Timetable generation option</source>
-        <translation type="unfinished"></translation>
+        <translation>時間割生成のオプション</translation>
     </message>
     <message>
         <location filename="../src/engine/activity.cpp" line="103"/>
@@ -35869,7 +35874,7 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="396"/>
         <source>%1 / %2 items</source>
         <comment>%1 represents the number of visible active &apos;group activities in initial order&apos; items, %2 represents the total number of visible items</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 / %2 項目</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="246"/>
@@ -35887,12 +35892,12 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="371"/>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="432"/>
         <source>Invalid selected item</source>
-        <translation type="unfinished"></translation>
+        <translation>選択された項目は無効です</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="278"/>
         <source>Remove item?</source>
-        <translation type="unfinished"></translation>
+        <translation>項目を取り除きますか？</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="282"/>
@@ -35912,12 +35917,12 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="315"/>
         <source>This option is an advanced one. It is intended for experienced users. It is useful in cases of peculiar uses of constraints. In most cases, FET will care automatically about a good initial order of the activities before the generation will begin, but in some very rare cases you can help FET. An example is: if you use constraints activities occupy max time slots from selection in such a way that some activities are clearly meant to be near each other when the generation starts, but FET is not clever enough to deduce that. Other usage might be that you want to leave some activities at the end and, in case the timetable cannot be found, you can use a partial one. In this case, you need to begin to generate once (you can interrupt generation after only a few activities were placed), see the initial order of the activities, and use the option to group the first activities with the ones you wish to bring forward. The group of activities will be put near the earliest one in the group.</source>
-        <translation type="unfinished"></translation>
+        <translation>このオプションは高度なものです。経験豊富なユーザーを対象としています。制約の特異な使用の場合に便利です。ほとんどの場合、FETは世代が始まる前にアクティビティの最初の順番を自動的に配慮しますが、ごくまれにユーザーはFETを助けることができます。たとえば、制約を使用する場合、アクティビティは時間割生成が開始されるときに互いに近くにあることを明確に意味するように、選択からの最大タイムスロットを占有しますが、FETはそれを十分に推測することができません。他の使用法として、最後にいくつかのアクティビティを残したい場合や、時間割が見つけられない場合は、部分的に使用することができます。この場合、一度時間割を生成する必要があります（いくつかのアクティビティを配置した後に時間割生成を中断することができます）。アクティビティの最初の順序を確認し、最初のアクティビティをグループ化するオプションを使用します。アクティビティのグループは、そのグループ内の最も早いものの近くに配置されます。</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="327"/>
         <source>Note: Each activity id must appear at most once in all the active &apos;group activities in initial order&apos; items.</source>
-        <translation type="unfinished"></translation>
+        <translation>注：各アクティビティIDは、アクティブな「初期順序のグループアクティビティ」内のすべてのアクティビティIDに最大で1回のみ指定する必要があります。</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="329"/>
@@ -35927,12 +35932,12 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="409"/>
         <source>Sort items?</source>
-        <translation type="unfinished"></translation>
+        <translation>項目をソートしますか？</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="410"/>
         <source>This will sort the &apos;group activities in initial order&apos; items list ascending according to their comments. You can obtain a custom ordering by adding comments to some or all items, for example &apos;rank #1 ... other comments&apos;, &apos;rank #2 ... other different comments&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>コメントに応じて昇順に並ぶ「初期順序のグループアクティビティ」項目のリストがソートされます。たとえば、「ランク＃1 ...その他のコメント」、「ランク＃2 ...他の異なるコメント」など、一部またはすべての項目にコメントを追加することで、カスタムした順序を取得できます。</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="413"/>
@@ -35941,7 +35946,7 @@ Please modify your data correspondingly and try again</source>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="441"/>
-        <source>Group activities in initial form item comments</source>
+        <source>Group activities in initial order item comments</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -35961,17 +35966,17 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform_template.ui" line="14"/>
         <source>Group activities in initial order items</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>最初の順序項目のグループアクティビティ</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform_template.ui" line="28"/>
         <source>Items</source>
-        <translation type="unfinished"></translation>
+        <translation>項目</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform_template.ui" line="45"/>
         <source>Current item</source>
-        <translation type="unfinished"></translation>
+        <translation>現在の項目</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform_template.ui" line="58"/>
@@ -36086,17 +36091,17 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/interface/groupsform.cpp" line="451"/>
         <location filename="../src/interface/groupsform.cpp" line="464"/>
         <source>Invalid selected group</source>
-        <translation type="unfinished"></translation>
+        <translation>選択されたグループは無効です</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="148"/>
         <source>This group exists only in year %1. This means that all the related activities and constraints will be removed. Do you want to continue?</source>
-        <translation type="unfinished"></translation>
+        <translation>このグループは年%1にのみ存在します。つまり、関連するすべてのアクティビティと制約が削除されます。続けますか？</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="151"/>
         <source>This group exists in more places, listed below. It will only be removed from the current year, and the related activities and constraints will not be removed. Do you want to continue?</source>
-        <translation type="unfinished"></translation>
+        <translation>このグループは、以下の多くの場所に存在します。現在年からのみ削除され、関連するアクティビティや制約は削除されません。続けますか？</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="158"/>
@@ -36107,17 +36112,17 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="219"/>
         <source>This group exists only in year %1. All the related activities and constraints will be removed. Do you want to continue?</source>
-        <translation type="unfinished"></translation>
+        <translation>このグループは年%1にのみ存在します。関連するすべてのアクティビティと制約は削除されます。続けますか？</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="222"/>
         <source>This group exists in more places, listed below. It will be removed from all these places. All the related activities and constraints will be removed. Do you want to continue?</source>
-        <translation type="unfinished"></translation>
+        <translation>このグループは、以下の多くの場所に存在します。これらのすべての場所から削除されます。関連するすべてのアクティビティと制約は削除されます。続けますか？</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="475"/>
         <source>Students group comments</source>
-        <translation type="unfinished"></translation>
+        <translation>学生グループのコメント</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="477"/>
@@ -36240,17 +36245,17 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="14"/>
         <source>About FET - Free Timetabling Software</source>
-        <translation type="unfinished"></translation>
+        <translation>FET -Free Timetabling Software - について</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="27"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>このソフトウェアについて</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="112"/>
         <source>Translators</source>
-        <translation type="unfinished"></translation>
+        <translation>翻訳者</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="133"/>
@@ -36481,7 +36486,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="362"/>
         <source>References</source>
-        <translation type="unfinished"></translation>
+        <translation>参照</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="986"/>
@@ -36491,7 +36496,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="69"/>
         <source>Authors</source>
-        <translation type="unfinished"></translation>
+        <translation>作者</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
@@ -36543,7 +36548,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="396"/>
         <source>Thanks to</source>
-        <translation type="unfinished"></translation>
+        <translation>協力</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="417"/>
@@ -37570,7 +37575,7 @@ Add another constraint: min 1 day between activities with id-s 2 and 3, consecut
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="970"/>
         <source>If you have many subgroups and you don&apos;t explicitly use them, it is recommended to use the three global settings: hide subgroups in combo boxes, hide subgroups in activity planning, and do not write subgroups timetables on hard disk.</source>
-        <translation type="unfinished">サブグループが多数あり、明示的に使用しない場合は、コンボボックスでサブグループを非表示にし、アクティビティ計画でサブグループを非表示にし、サブグループのタイムテーブルをハードディスクに書き込まないという3つのグローバル設定を使用することをお勧めします。</translation>
+        <translation type="unfinished">サブグループが多数あり、明示的に使用しない場合は、コンボボックスでサブグループを非表示にし、アクティビティ計画でサブグループを非表示にし、サブグループの時間割をハードディスクに書き込まないという3つのグローバル設定を使用することをお勧めします。</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="973"/>
@@ -37585,17 +37590,17 @@ Add another constraint: min 1 day between activities with id-s 2 and 3, consecut
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="981"/>
         <source>If you are only working on a timetable, and you do not need to publish it, you may want to disable writing some categories of timetables on the hard disk, for operativity (the generation speed is not affected, only the overhead to write the partial/complete timetables when stopping/finishing the simulation). The timetables taking the longest time are the subgroups, groups AND years ones.</source>
-        <translation type="unfinished">タイムテーブルでのみ作業していて、公開する必要がない場合は、ハードディスク上のタイムテーブルのいくつかのカテゴリの書き込みを無効にすることができます（生成速度には影響ありません。 /シミュレーションを停止/終了するときの完全なタイムテーブル）。最も長い時間をとっている時間割は、サブグループ、グループ、および年のものです。</translation>
+        <translation type="unfinished">時間割でのみ作業していて、公開する必要がない場合は、ハードディスク上の時間割のいくつかのカテゴリの書き込みを無効にすることができます（生成速度には影響ありません。 /シミュレーションを停止/終了するときの完全な時間割）。最も長い時間をとっている時間割は、サブグループ、グループ、および年のものです。</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="985"/>
         <source>(Also the conflicts timetable might take long to write, if the file is large.)</source>
-        <translation type="unfinished">（ファイルが大きい場合は、競合のタイムテーブルも書き込みに時間がかかることがあります）</translation>
+        <translation type="unfinished">（ファイルが大きい場合は、競合の時間割も書き込みに時間がかかることがあります）</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="987"/>
         <source>After that, you can re-enable writing of the timetables and re-generate.</source>
-        <translation type="unfinished">その後、タイムテーブルの書き込みを再度有効にして、再生成することができます。</translation>
+        <translation type="unfinished">その後、時間割の書き込みを再度有効にして、再生成することができます。</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="993"/>
@@ -37672,7 +37677,7 @@ A: Each room can host a single activity at the same time. How to implement what 
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="49"/>
         <source>Last modified on %1.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">最終変更 %1.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="49"/>
@@ -38086,12 +38091,12 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="49"/>
         <source>12 October 2009</source>
-        <translation type="unfinished"></translation>
+        <translation>2009年10月12日</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="49"/>
         <source>Last modified on %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>最終変更 %1.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="51"/>
@@ -38253,47 +38258,47 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="26"/>
         <source>Important information about imperfect constraints:</source>
-        <translation type="unfinished"></translation>
+        <translation>不完全な制約に関する重要な情報：</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="30"/>
         <source>The imperfect constraints are 6: students (set) max gaps per day and teacher(s) or students (set) activity tag max hours daily.</source>
-        <translation type="unfinished"></translation>
+        <translation>不完全な制約は、学生（セット）の1日あたりの最大ギャップと教師または学生（セット）のアクティビティタグの1日の最大時間の合計6つです。</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="34"/>
         <source>You are advised to leave the imperfect constraints as a last resort if you really need them. Generate the timetable with all other constraints and only after that you may try them. The imperfect constraints may make your timetable too hard to find or even impossible, in some conditions.</source>
-        <translation type="unfinished"></translation>
+        <translation>不完全な制約が本当に必要な場合、最後の手段として残すことをお勧めします。 時間割を他のすべての制約と一緒に生成してから、試してみてください。 不完全な制約によって、時間割の生成が困難となる、または不可能になる場合もあります。</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="39"/>
         <source>Notation: ATS = affected students set or teacher - the teacher or students specified in an imperfect constraint.</source>
-        <translation type="unfinished"></translation>
+        <translation>表記：ATS =影響を受けた学生セットまたは教師 - 不完全な制約で指定された教師または学生。</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="43"/>
         <source>Max gaps per day: it is not fully optimized for use with other constraints for students: min/max hours daily. It is also not tested thoroughly.</source>
-        <translation type="unfinished"></translation>
+        <translation>1日の最大ギャップ：学生への他の制約との併用には完全に最適化されていません：日々の最小/最大時間。 また、完全にテストされていません。</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="45"/>
         <source>If your students need 0 maximum total gaps, do not use max gaps per day constraint, better use the safe and tested max gaps per week (with 0 gaps allowed).</source>
-        <translation type="unfinished"></translation>
+        <translation>学生の最大合計ギャップが0である必要がある場合は、1日あたりの最大ギャップの制約を使用せず、安全かつテストされた1週間あたりの最大ギャップを使用する方がよいです（ギャップは0です）。</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="49"/>
         <source>Activity tag max hours daily: it is not fully optimized for this situation: if the ATS have max gaps constraints and the number of total available slots per week for the ATS is much larger than the working hours per week and the ATS has many activities with the specified activity tag (more than 0.5-0.75 of total hours). In such cases, a remedy may be to add constraint ATS max hours daily (without specifying an activity tag).</source>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティタグの1日あたりの最大稼働時間：ATSの最大ギャップ制約があり、ATSの利用可能なスロットの総数が週当たりの稼働時間よりもはるかに多く、ATSに指定されたアクティビティタグのアクティビティが多くある場合（合計時間の0.5-0.75以上）の状況には完全に最適化されていません。 そのような場合、救済策として、（アクティビティタグを指定せずに）日々の制約のATS最大時間を追加することがあります。</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="54"/>
         <source>Read FAQ question 1/25 September 2009 for some more details about activity tag max hours daily constraint.</source>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティタグの日々の最大時間の制約についての詳細は、よくある質問１/2009年9月25日を読んでください。</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="56"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
 </context>
 <context>
@@ -38301,47 +38306,47 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helponstudentsminhoursdaily.cpp" line="26"/>
         <source>Important information about constraints students (set) min hours daily:</source>
-        <translation type="unfinished"></translation>
+        <translation>学生（セット）の１日の最小時間の制約に関する重要な情報：</translation>
     </message>
     <message>
         <location filename="../src/interface/helponstudentsminhoursdaily.cpp" line="30"/>
         <source>Normally, these constraints do not allow empty days for students (and the check boxes in the dialogs are not selectable).</source>
-        <translation type="unfinished"></translation>
+        <translation>通常、これらの制約は学生の空き日を許可しません（ダイアログのチェックボックスは選択できません）。</translation>
     </message>
     <message>
         <location filename="../src/interface/helponstudentsminhoursdaily.cpp" line="32"/>
         <source>If you really need this constraint to allow empty days for students, you must enable the option from Settings-&gt;Advanced menu and select the check box.</source>
-        <translation type="unfinished"></translation>
+        <translation>学生の空き日を許可するため、この制約が本当に必要な場合は、[設定] - &gt; [詳細設定]メニューからオプションを有効にして、チェックボックスをオンにする必要があります。</translation>
     </message>
     <message>
         <location filename="../src/interface/helponstudentsminhoursdaily.cpp" line="34"/>
         <source>Be very careful: if your school does not allow empty days for students or if a timetable does not exist with empty days for students, you MUST keep the constraints the usual way, without allowing empty days.</source>
-        <translation type="unfinished"></translation>
+        <translation>非常に注意してください：あなたの機関が学生の空き日を許可しない場合や、学生の空き日がある時間割が存在しない場合は、空き日を許可せずに通常の方法で制約を守らなければなりません。</translation>
     </message>
     <message>
         <location filename="../src/interface/helponstudentsminhoursdaily.cpp" line="37"/>
         <source>The reason is performance: speed of generation and the ability of FET to find a solution.</source>
-        <translation type="unfinished"></translation>
+        <translation>理由はパフォーマンス：時間割生成のスピードとFETが解を見つける能力。</translation>
     </message>
     <message>
         <location filename="../src/interface/helponstudentsminhoursdaily.cpp" line="39"/>
         <source>If you allow empty days to these constraints and a solution exists only with non-empty days, FET might not be able to find it.</source>
-        <translation type="unfinished"></translation>
+        <translation>これらの制約のために空き日を許可し、空き日がない場合だけに解が存在する場合、FETはそれを見つけることができません。</translation>
     </message>
     <message>
         <location filename="../src/interface/helponstudentsminhoursdaily.cpp" line="41"/>
         <source>For normal schools or high-schools, probably you won&apos;t need to enable this option. Maybe for universities you will need to enable this option.</source>
-        <translation type="unfinished"></translation>
+        <translation>普通の学校や高等学校では、おそらくこのオプションを有効にする必要はありません。 おそらく、大学ではこのオプションを有効にする必要があります。</translation>
     </message>
     <message>
         <location filename="../src/interface/helponstudentsminhoursdaily.cpp" line="43"/>
         <source>So, remember: don&apos;t allow empty days unless you need it.</source>
-        <translation type="unfinished"></translation>
+        <translation>覚えておいてください：必要がない限り、空の日を許可しないでください。</translation>
     </message>
     <message>
         <location filename="../src/interface/helponstudentsminhoursdaily.cpp" line="45"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
 </context>
 <context>
@@ -38409,12 +38414,12 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helptipsform.cpp" line="49"/>
         <source>19 August 2009</source>
-        <translation type="unfinished"></translation>
+        <translation>2009年8月19日</translation>
     </message>
     <message>
         <location filename="../src/interface/helptipsform.cpp" line="49"/>
         <source>Last modified on %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>最終変更 %1.</translation>
     </message>
     <message>
         <location filename="../src/interface/helptipsform.cpp" line="80"/>
@@ -38452,24 +38457,24 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/hoursform.cpp" line="154"/>
         <source>Empty names not allowed</source>
-        <translation type="unfinished"></translation>
+        <translation>空の名前は許可されていません</translation>
     </message>
     <message>
         <location filename="../src/interface/hoursform.cpp" line="161"/>
         <source>Duplicates not allowed</source>
-        <translation type="unfinished"></translation>
+        <translation>重複は許可されていません</translation>
     </message>
     <message>
         <location filename="../src/interface/hoursform.cpp" line="192"/>
         <source>%1 constraints will be removed.</source>
         <comment>%1 is the number of constraints</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1の制約が取り除かれます。</translation>
     </message>
     <message>
         <location filename="../src/interface/hoursform.cpp" line="196"/>
         <source>%1 constraints will be modified.</source>
         <comment>%1 is the number of constraints</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1の制約が変更されます。</translation>
     </message>
     <message>
         <location filename="../src/interface/hoursform.cpp" line="199"/>
@@ -39539,7 +39544,8 @@ is:</source>
         <location filename="../src/interface/institutionnameform.cpp" line="58"/>
         <source>Cannot update institution name during simulation
 Please stop simulation before this</source>
-        <translation type="unfinished"></translation>
+        <translation>シミュレーション中に機関名を更新できません
+変更前にシミュレーションを停止してください</translation>
     </message>
 </context>
 <context>
@@ -39604,7 +39610,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/longtextmessagebox.cpp" line="70"/>
         <source>You have met a FET bug. The problem is in file %1 line %2, the reason is that a confirmation dialog box does not get exactly 2 arguments. Please report bug. FET will now continue. You probably don&apos;t have any problems with your data file - you can save it.</source>
-        <translation type="unfinished"></translation>
+        <translation>FETのバグにあたりました。 問題はファイル%1の %2 行にあります。理由として、確認ダイアログボックスが正確に2つの引数を取得していないからです。 バグを報告してください。 FETは動作を続けます。 おそらくデータファイルに問題はありません。保存することができます。</translation>
     </message>
 </context>
 <context>
@@ -39618,7 +39624,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyactivityform.cpp" line="447"/>
         <source>Do you really want to have the activity without teacher(s)?</source>
-        <translation type="unfinished"></translation>
+        <translation>本当にアクティビティを教師なしで行いますか？</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform.cpp" line="467"/>
@@ -39633,7 +39639,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyactivityform.cpp" line="485"/>
         <source>Do you really want to have the activity without student set(s)?</source>
-        <translation type="unfinished"></translation>
+        <translation>本当にアクティビティを学生セットなしで行いますか？</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform.cpp" line="558"/>
@@ -39648,7 +39654,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyactivityform.cpp" line="562"/>
         <source>&apos;Split&apos; means &apos;Is split into ... activities per week&apos;. This value cannot be changed. If you need to modify it, please remove the corresponding activities and add a new split activity.</source>
-        <translation type="unfinished"></translation>
+        <translation>「分割」とは、「1週間内で分割された活動」を意味します。 この値は変更できません。 変更が必要な場合は、対応するアクティビティを削除し、新しい分割アクティビティを追加してください。</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform.cpp" line="565"/>
@@ -39658,7 +39664,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyactivityform.cpp" line="571"/>
         <source>FET - help on modifying activity(ies)</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - アクティビティ変更のヘルプ</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform.cpp" line="577"/>
@@ -40104,7 +40110,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiesendstudentsdayform_template.ui" line="14"/>
         <source>Modify activities end students day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティが学生の日に終了するを変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesendstudentsdayform_template.ui" line="52"/>
@@ -40139,12 +40145,12 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="314"/>
         <source>You specified max simultaneous activities to be 0. This is not perfect from efficiency point of view, because you can use instead constraint activity(ies) preferred time slots, and help FET to find a timetable easier and faster, with an equivalent result. Please correct.</source>
-        <translation type="unfinished">これは効率的な観点からは完璧ではありません。制約アクティビティの代わりに優先度の高いタイムスロットを使用し、FETがタイムテーブルを簡単かつ迅速に見つけるのを助けることができます。 正しいものに変更してください。</translation>
+        <translation>最大同時アクティビティを0に指定しました。これは効率的な観点からは完璧ではありません。代わりにアクティビティ推奨タイムスロット制約を使用して、FETが時間割をより簡単かつ迅速に見つけるのを助け、同等の結果を得ることができます 正しいものに変更してください。</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="324"/>
         <source>Empty list of activities</source>
-        <translation type="unfinished">アクティビティのリストを空にする</translation>
+        <translation>アクティビティのリストを空にする</translation>
     </message>
 </context>
 <context>
@@ -40153,7 +40159,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="14"/>
         <source>Modify activities max simultaneous in selected time slots</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>選択したタイムスロットで同時に行う最大のアクティビティを変更する</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="24"/>
@@ -40292,7 +40298,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="14"/>
         <source>Modify activities not overlapping</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>重複しないアクティビティを変更する</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="72"/>
@@ -40339,7 +40345,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="26"/>
         <source>This constraint means that the activities should not be placed in common timeslots. You don&apos;t need to add this constraint for activities sharing a teacher or students set.</source>
-        <translation type="unfinished">この制約は、アクティビティを共通のタイムスロットに配置すべきでないことを意味します。 教師または学生セットを共有するアクティビティにこの制約を追加する必要はありません。</translation>
+        <translation>この制約は、アクティビティを共通のタイムスロットに配置すべきでないことを意味します。 教師または学生セットを共有するアクティビティにこの制約を追加する必要はありません。</translation>
     </message>
 </context>
 <context>
@@ -40373,7 +40379,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="14"/>
         <source>Modify activities occupy max different rooms</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティが占有する最大の異なる部屋の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="20"/>
@@ -40449,7 +40455,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="314"/>
         <source>You specified max occupied time slots to be 0. This is not perfect from efficiency point of view, because you can use instead constraint activity(ies) preferred time slots, and help FET to find a timetable easier and faster, with an equivalent result. Please correct.</source>
-        <translation>最大占有タイムスロットを0に指定しました。これは、制約アクティビティの優先タイムスロットを使用し、FETがタイムテーブルをより簡単かつ迅速に見つけるのを助けることができ、同等の結果を得ることができるので、効率的な観点からは完璧ではありません。 正してください。</translation>
+        <translation>最大占有タイムスロットを0に指定しました。これは、制約アクティビティの優先タイムスロットを使用し、FETが時間割をより簡単かつ迅速に見つけるのを助けることができ、同等の結果を得ることができるので、効率的な観点からは完璧ではありません。 正してください。</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="324"/>
@@ -40463,7 +40469,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="14"/>
         <source>Modify activities occupy max time slots from selection</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティが占有する選択からの最大タイムスロットを変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="24"/>
@@ -40578,7 +40584,11 @@ Please stop simulation before this</source>
  The best practice would be to use constraint break times.
 
  If you need weight under 100%, then you can use this constraint, but be careful not to obtain an impossible timetable (if your teachers/students are constrained on gaps or early gaps and if you leave a not allowed slot between 2 allowed slots or a not allowed slot early in the day and more allowed slots after it, this possible gap might be counted in teachers&apos; and students&apos; timetable)</source>
-        <translation type="unfinished"></translation>
+        <translation>すべてのアクティビティを指定しました。 これは小さな問題かもしれません.2つの許可されたスロットの間に許可されていないスロットを指定すると、この許可されていないスロットは、教師と学生の時間割でギャップとしてカウントされます。
+
+  ベストプラクティスは、休憩時間の制約を使用することです。
+
+  100％未満の重みが必要な場合は、この制約を使用できますが、不可能な時間割を取得しないように注意してください（教師/学生がギャップや早期のギャップに拘束されている場合、2つの許可されたスロットの間に許可されていないスロットを残すか、許可されていないスロットをその日の早いほうに残し、その後に許可されるスロットを増やすと、この可能性のあるギャップは教師と学生の時間割でカウントされる可能性があります。）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="362"/>
@@ -40594,11 +40604,11 @@ Please stop simulation before this</source>
  The best practice would be to use constraint teacher not available times.
 
  If you need weight under 100%, then you can use this constraint, but be careful not to obtain an impossible timetable (if your teacher is constrained on gaps and if you leave a not allowed slot between 2 allowed slots, this possible gap might be counted in teacher&apos;s timetable)</source>
-        <translation>あなたは教師だけを指定しました。 これは小さな問題かもしれません.2つの許可されたスロットの間に許可されていないスロットを指定すると、この許可されていないスロットは教師のタイムテーブルのギャップとしてカウントされます。
+        <translation>あなたは教師だけを指定しました。 これは小さな問題かもしれません.2つの許可されたスロットの間に許可されていないスロットを指定すると、この許可されていないスロットは教師の時間割のギャップとしてカウントされます。
 
-  ベストプラクティスは、制約のある教師を利用できない時間に使用することです。
+  ベストプラクティスは、制約のある教師を利用できない時間に使用することです。
 
-  100％以下の重みが必要な場合は、この制約を使用できますが、不可能なタイムテーブルを取得しないように注意してください（教師がギャップに拘束され、2つのスロット間に許可されていないスロットを残すと、 教師のタイムテーブルでカウントされます）</translation>
+  100％以下の重みが必要な場合は、この制約を使用できますが、不可能な時間割を取得しないように注意してください（教師がギャップに拘束され、2つのスロット間に許可されていないスロットを残すと、 教師の時間割でカウントされます）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="387"/>
@@ -40607,7 +40617,11 @@ Please stop simulation before this</source>
  The best practice would be to use constraint students set not available times.
 
  If you need weight under 100%, then you can use this constraint, but be careful not to obtain an impossible timetable (if your students set is constrained on gaps or early gaps and if you leave a not allowed slot between 2 allowed slots (or a not allowed slot before allowed slots), this possible gap might be counted in students&apos; timetable)</source>
-        <translation type="unfinished"></translation>
+        <translation>あなたは学生セットのみを指定しました。 許可された2つのスロット（または許可されたスロットの前に許可されていないスロット）の間に許可されていないスロットを指定すると、この許可されていないスロットは学生のギャップ（または早いギャップ）としてカウントされます。
+
+  ベストプラクティスは、学生が利用不可の制約を使用することです。
+
+  100％未満の重みが必要な場合は、この制約を使用できますが、不可能な時間割を取得しないように注意してください（学生セットがギャップや早期のギャップに制約されている場合、 許可されたスロットを許可された２つのスロットの間に残す場合（または、許可されたスロットの前に許可されていないスロットを置く）、この可能性のあるギャップは、学生の時間割でカウントされることがあります）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="418"/>
@@ -40657,7 +40671,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform_template.ui" line="14"/>
         <source>Modify activities preferred starting times</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティの推奨開始時間の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform_template.ui" line="129"/>
@@ -40725,11 +40739,11 @@ Please stop simulation before this</source>
  The best practice would be to use constraint teacher not available times.
 
  If you need weight under 100%, then you can use this constraint, but be careful not to obtain an impossible timetable (if your teacher is constrained on gaps and if you leave a not allowed slot between 2 allowed slots, this possible gap might be counted in teacher&apos;s timetable)</source>
-        <translation>あなたは教師だけを指定しました。 これは小さな問題かもしれません.2つの許可されたスロットの間に許可されていないスロットを指定すると、この許可されていないスロットは教師のタイムテーブルのギャップとしてカウントされます。
+        <translation type="unfinished">あなたは教師だけを指定しました。 これは小さな問題かもしれません.2つの許可されたスロットの間に許可されていないスロットを指定すると、この許可されていないスロットは教師の時間割のギャップとしてカウントされます。
 
-  ベストプラクティスは、制約のある教師を利用できない時間に使用することです。
+  ベストプラクティスは、制約のある教師を利用できない時間に使用することです。
 
-  100％以下の重みが必要な場合は、この制約を使用できますが、不可能なタイムテーブルを取得しないように注意してください（教師がギャップに拘束され、2つのスロット間に許可されていないスロットを残すと、 教師のタイムテーブルでカウントされます）</translation>
+  100％以下の重みが必要な場合は、この制約を使用できますが、不可能な時間割を取得しないように注意してください（教師がギャップに拘束され、2つのスロット間に許可されていないスロットを残すと、 教師の時間割でカウントされます）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="386"/>
@@ -40844,7 +40858,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui" line="14"/>
         <source>Modify activities same room if consecutive</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>連続する場合は同じ部屋とするを変更する</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui" line="20"/>
@@ -40949,7 +40963,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="14"/>
         <source>Modify activities same starting day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティが同じ日に開始を変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="56"/>
@@ -41045,7 +41059,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform_template.ui" line="14"/>
         <source>Modify activities same starting hour</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティは同じ時間に開始を変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform_template.ui" line="56"/>
@@ -41141,7 +41155,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform_template.ui" line="14"/>
         <source>Modify activities same starting time</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティは同じ時間に開始を変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform_template.ui" line="56"/>
@@ -41217,7 +41231,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform_template.ui" line="14"/>
         <source>Modify activity ends students day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティは学生の日に終了するを変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform_template.ui" line="20"/>
@@ -41312,7 +41326,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomform_template.ui" line="14"/>
         <source>Modify activity preferred room</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティの推奨される部屋を変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomform_template.ui" line="55"/>
@@ -41332,7 +41346,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomform_template.ui" line="111"/>
         <source>Select this if you want this constraint not to be unlockable from the &apos;Timetable&apos; menu (recommended). You can always remove this constraint from the constraints dialogs or uncheck &quot;permanently locked&quot; checkbox by editing this constraint</source>
-        <translation type="unfinished"></translation>
+        <translation>この制約を[時間割]メニューからロック解除できないようにする場合は、これを選択します（推奨）。 制約ダイアログからこの制約を削除するか、この制約を編集して「恒久的にロック」チェックボックスをオフにすることができます</translation>
     </message>
 </context>
 <context>
@@ -41387,7 +41401,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomsform_template.ui" line="14"/>
         <source>Modify activity preferred rooms</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティの推奨される部屋を変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomsform_template.ui" line="41"/>
@@ -41493,7 +41507,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="14"/>
         <source>Modify activity preferred starting time</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティの推奨開始時間の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="163"/>
@@ -41518,7 +41532,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="216"/>
         <source>Select this if you want this constraint not to be unlockable from the &apos;Timetable&apos; menu (recommended). You can always remove this constraint from the constraints dialogs or uncheck &quot;permanently locked&quot; checkbox by editing this constraint</source>
-        <translation type="unfinished"></translation>
+        <translation>この制約を[時間割]メニューからロック解除できないようにする場合は、これを選択します（推奨）。 制約ダイアログからこの制約をいつでも削除でき、この制約を編集して「恒久的にロック」チェックボックスをオフにすることができます</translation>
     </message>
 </context>
 <context>
@@ -41583,7 +41597,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform_template.ui" line="14"/>
         <source>Modify activity preferred starting times</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティの推奨開始時間の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform_template.ui" line="20"/>
@@ -41678,7 +41692,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform_template.ui" line="14"/>
         <source>Modify activity preferred time slots</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティの推奨されるタイムスロットの変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform_template.ui" line="20"/>
@@ -41774,7 +41788,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomform_template.ui" line="14"/>
         <source>Modify activity tag preferred room</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティタグの推奨される部屋の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomform_template.ui" line="28"/>
@@ -41828,7 +41842,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomsform_template.ui" line="14"/>
         <source>Modify activity tag preferred rooms</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティタグの推奨される部屋の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomsform_template.ui" line="41"/>
@@ -41887,7 +41901,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintbasiccompulsoryspaceform_template.ui" line="14"/>
         <source>Modify basic compulsory space</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>基本の強制的なスペースの変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintbasiccompulsoryspaceform_template.ui" line="28"/>
@@ -41937,7 +41951,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintbasiccompulsorytimeform_template.ui" line="14"/>
         <source>Modify basic compulsory time</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>基本の強制時間を変更する</translation>
     </message>
 </context>
 <context>
@@ -42375,7 +42389,7 @@ force activities consecutive</source>
         <location filename="../src/interface/modifyconstraintroomnotavailabletimesform_template.ui" line="14"/>
         <source>Modify room not available times</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>部屋の利用不可時間の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintroomnotavailabletimesform_template.ui" line="28"/>
@@ -42727,7 +42741,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/modifyconstraintstudentsmaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Modify students max building changes per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>学生の週当たりの最大建物移動の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxbuildingchangesperweekform_template.ui" line="28"/>
@@ -42775,7 +42789,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/modifyconstraintstudentsmaxdaysperweekform_template.ui" line="14"/>
         <source>Modify students max days per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>学生の週当たりの最大日数の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxdaysperweekform_template.ui" line="28"/>
@@ -42823,7 +42837,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/modifyconstraintstudentsmaxgapsperdayform_template.ui" line="14"/>
         <source>Modify students max gaps per day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>学生の１日当たりの最大ギャップの変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxgapsperdayform_template.ui" line="90"/>
@@ -42836,7 +42850,11 @@ Note: students set not available and break are not counted as gaps (early gaps).
 Note: students set not available and break are not counted as gaps.
 
 IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this constraint, but instead use the safer/better max gaps per week.</source>
-        <translation type="unfinished"></translation>
+        <translation>重みを100％にする必要があります。
+注意：学生セットの利用不可および休憩はギャップとしてカウントされません。
+
+重要：合計ギャップが0になるようにするには、この制約を使用しないことを強く推奨します。代わりに、安全でより良い、週当たりの最大ギャップの制約を使用してください。
+</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxgapsperdayform_template.ui" line="69"/>
@@ -42879,7 +42897,7 @@ IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this 
         <location filename="../src/interface/modifyconstraintstudentsmaxgapsperweekform_template.ui" line="14"/>
         <source>Modify students max gaps per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>学生の週当たりの最大ギャップの変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxgapsperweekform_template.ui" line="105"/>
@@ -42905,7 +42923,8 @@ IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this 
         <location filename="../src/interface/modifyconstraintstudentsmaxgapsperweekform_template.ui" line="32"/>
         <source>You have to use weight percentage 100%, because otherwise you will get poor timetables. Currently, the algorithm only accepts 100% weight percentage for this constraint (or no constraint).
 Note: students set not available and break are not counted as gaps.</source>
-        <translation type="unfinished"></translation>
+        <translation>重み100％を使用しなければなりません。そうしないと、時間割が貧弱になるからです。 現在のところ、アルゴリズムはこの制約に100％の重み（または制約なし）しか受け付けません。
+注：学生セットは利用できず、休憩はギャップとしてカウントされません。</translation>
     </message>
 </context>
 <context>
@@ -42927,7 +42946,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentsmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Modify students max hours continuously</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>学生の最大連続時間の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxhourscontinuouslyform_template.ui" line="56"/>
@@ -42980,7 +42999,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentsmaxhoursdailyform_template.ui" line="14"/>
         <source>Modify students max hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>学生の日々の最大時間の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxhoursdailyform_template.ui" line="56"/>
@@ -43019,7 +43038,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentsmaxspanperdayform_template.ui" line="14"/>
         <source>Modify students max span per day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>学生の１日当たりの最大スパンの変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxspanperdayform_template.ui" line="44"/>
@@ -43127,7 +43146,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsminhoursdailyform.cpp" line="84"/>
         <source>If you allow empty days, the min hours must be at least 2 (to make it a non-trivial constraint)</source>
-        <translation>空の日を許可する場合、最小時間は少なくとも2にする必要があります（これは単純な制約にはなりません）</translation>
+        <translation>空き日を許可する場合、最小時間は少なくとも2にする必要があります（これは単純な制約にはなりません）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsminhoursdailyform.cpp" line="110"/>
@@ -43157,7 +43176,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentsminhoursdailyform_template.ui" line="14"/>
         <source>Modify students min hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>学生の日々の最小時間の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsminhoursdailyform_template.ui" line="62"/>
@@ -43167,7 +43186,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsminhoursdailyform_template.ui" line="95"/>
         <source>Allow empty days</source>
-        <translation>空の日を許可</translation>
+        <translation>空き日を許可</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsminhoursdailyform_template.ui" line="110"/>
@@ -43284,7 +43303,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Modify students set activity tag max hours continuously</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>学生セットのアクティビティタグ最大連続時間の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="60"/>
@@ -43329,7 +43348,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Modify students set activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>学生セットのアクティビティタグの日々の最大時間の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="28"/>
@@ -43595,7 +43614,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="158"/>
         <source>Start hour cannot be greater or equal than end hour</source>
-        <translation type="unfinished">開始時間は終了時間より早い時間にしてください</translation>
+        <translation>開始時間は終了時間より早い時間にしてください</translation>
     </message>
 </context>
 <context>
@@ -43779,7 +43798,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/modifyconstraintstudentssetmaxdaysperweekform_template.ui" line="14"/>
         <source>Modify students set max days per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>学生セットの週当たりの最大日数の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxdaysperweekform_template.ui" line="28"/>
@@ -43838,7 +43857,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperdayform_template.ui" line="14"/>
         <source>Modify students set max gaps per day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>学生セットの1日当たりの最大ギャップの変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperdayform_template.ui" line="32"/>
@@ -43846,7 +43865,10 @@ Note: students set not available and break are not counted as gaps (early gaps).
 Note: students set not available and break are not counted as gaps.
 
 IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this constraint, but instead use the safer/better max gaps per week.</source>
-        <translation type="unfinished"></translation>
+        <translation>重みを100％にする必要があります。
+注意：学生セットの利用不可と休憩はギャップとしてカウントされません。
+
+重要：合計ギャップが0になるようにするには、この制約を使用しないことを強く推奨します。代わりに、安全でより良い、週当たりの最大ギャップを使用してください。</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperdayform_template.ui" line="126"/>
@@ -43915,7 +43937,7 @@ IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this 
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform_template.ui" line="14"/>
         <source>Modify students set max gaps per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>学生セットの週当たりの最大ギャップの変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform_template.ui" line="124"/>
@@ -43936,7 +43958,8 @@ IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this 
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform_template.ui" line="32"/>
         <source>You have to use weight percentage 100%, because otherwise you will get poor timetables. Currently, the algorithm only accepts 100% weight percentage for this constraint (or no constraint).
 Note: students set not available and break are not counted as gaps.</source>
-        <translation type="unfinished"></translation>
+        <translation>重み100％を使用しなければなりません。そうしないと、時間割が貧弱になるためです。 現在のところ、アルゴリズムはこの制約に100％の重み（または制約なし）しか受け付けません。
+注：学生セットの利用不可と休憩はギャップとしてカウントされません。</translation>
     </message>
 </context>
 <context>
@@ -43969,7 +43992,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentssetmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Modify students set max hours continuously</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>学生セットの最大連続時間の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxhourscontinuouslyform_template.ui" line="118"/>
@@ -44023,7 +44046,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentssetmaxhoursdailyform_template.ui" line="14"/>
         <source>Modify students set max hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>学生セットの日々の最大時間の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxhoursdailyform_template.ui" line="155"/>
@@ -44078,7 +44101,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform_template.ui" line="14"/>
         <source>Modify students set max span per day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>学生セットの1日当たりの最大スパンの変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform_template.ui" line="22"/>
@@ -44131,7 +44154,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="14"/>
         <source>Modify students set min gaps between building changes</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>学生セットの建物移動間の最小ギャップの変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="28"/>
@@ -44203,7 +44226,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="129"/>
         <source>If you allow empty days, the min hours must be at least 2 (to make it a non-trivial constraint)</source>
-        <translation>空の日を許可する場合、最小時間は少なくとも2にする必要があります（これは単純な制約にはなりません）</translation>
+        <translation>空き日を許可する場合、最小時間は少なくとも2にする必要があります（これは単純な制約にはなりません）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="137"/>
@@ -44238,7 +44261,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform_template.ui" line="14"/>
         <source>Modify students set min hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>学生セットの日々の最小時間の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform_template.ui" line="33"/>
@@ -44253,7 +44276,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform_template.ui" line="87"/>
         <source>Allow empty days</source>
-        <translation>空の日を許可</translation>
+        <translation>空き日を許可</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform_template.ui" line="96"/>
@@ -44352,7 +44375,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform.cpp" line="266"/>
         <source>A constraint of this type exists for the same students set - cannot proceed</source>
-        <translation type="unfinished"></translation>
+        <translation>このタイプの制約は同じ学生セットに対して存在しています - 操作を進めることができません</translation>
     </message>
 </context>
 <context>
@@ -44399,13 +44422,13 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform_template.ui" line="14"/>
         <source>Modify students set not available times</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>学生セットの利用不可時間の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform_template.ui" line="26"/>
         <source>This constraint does not induce gaps (or early not respected) for students. If a students set has lessons before and after this not available period, there will be no gaps counted</source>
         <extracomment>&apos;Early not respected&apos; means early gaps (first hour is free), in case you use a constraint students (set) early max beginnings at second hour</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>この制約は、学生にギャップ（または早期は尊重しない）を引き起こしません。 学生セットにこの利用不可時間の前後に授業がある場合、ギャップはカウントされません</translation>
     </message>
 </context>
 <context>
@@ -45813,7 +45836,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform.cpp" line="95"/>
         <source>Allow empty days check box must be checked. If you need to not allow empty days for a teacher, please use the constraint teacher min days per week</source>
-        <translation>空の日を許可するチェックボックスをオンにする必要があります。 １人の教師に空き日を許さないようにする必要がある場合、教師の週当たりの最小日制約を使ってください</translation>
+        <translation>空き日を許可するチェックボックスをオンにする必要があります。 １人の教師に空き日を許さないようにする必要がある場合、教師の週当たりの最小日制約を使ってください</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform.cpp" line="106"/>
@@ -45823,7 +45846,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform.cpp" line="133"/>
         <source>This check box must remain checked. If you really need to not allow empty days for this teacher, please use constraint teacher min days per week</source>
-        <translation>このチェックボックスはオンのままにする必要があります。 あなたがこの教師に本当に空の日を許可しない様にする必要がある場合は、教師の週当たりの最小日制約を使用してください</translation>
+        <translation>このチェックボックスはオンのままにする必要があります。 あなたがこの教師に本当に空き日を許可しない様にする必要がある場合は、教師の週当たりの最小日制約を使用してください</translation>
     </message>
 </context>
 <context>
@@ -45862,7 +45885,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform_template.ui" line="129"/>
         <source>Allow empty days</source>
-        <translation>空の日を許可</translation>
+        <translation>空き日を許可</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform_template.ui" line="141"/>
@@ -46699,12 +46722,12 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachersminhoursdailyform.cpp" line="79"/>
         <source>Allow empty days check box must be checked. If you need to not allow empty days for the teachers, please use the constraint teachers min days per week</source>
-        <translation>空の日を許可するチェックボックスをオンにする必要があります。 この教師の空き日を許さないようにする必要がある場合、教師の週当たりの最小日制約を使ってください</translation>
+        <translation>空き日を許可するチェックボックスをオンにする必要があります。 この教師の空き日を許さないようにする必要がある場合、教師の週当たりの最小日制約を使ってください</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersminhoursdailyform.cpp" line="108"/>
         <source>This check box must remain checked. If you really need to not allow empty days for the teachers, please use constraint teachers min days per week</source>
-        <translation>このチェックボックスはオンのままにする必要があります。 あなたがこれらの教師に本当に空の日を許可しない様にする必要がある場合は、教師の週当たりの最小日制約を使用してください</translation>
+        <translation>このチェックボックスはオンのままにする必要があります。 あなたがこれらの教師に本当に空き日を許可しない様にする必要がある場合は、教師の週当たりの最小日制約を使用してください</translation>
     </message>
 </context>
 <context>
@@ -46733,7 +46756,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachersminhoursdailyform_template.ui" line="97"/>
         <source>Allow empty days</source>
-        <translation>空の日を許可</translation>
+        <translation>空き日を許可</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersminhoursdailyform_template.ui" line="109"/>
@@ -49341,7 +49364,7 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="477"/>
         <source>Add a second constraint or not?</source>
-        <translation type="unfinished"></translation>
+        <translation>2つ目の制約を追加しますか？</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="487"/>
@@ -49361,27 +49384,27 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="561"/>
         <source>Invalid weight (percentage) - must be &gt;=0 and &lt;=100.0</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み（％）　０～１００．０％の必要があります</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="459"/>
         <source>You selected min days between activities %1 (above 1) and weight %2 (under 100.0). Would you like to add also a second constraint to ensure that almost certainly the distance between activities is at least %3 (%1-1) days? If yes, please select weight (recommended 95.0%-100.0%) and click Yes. If no, please click No (only one constraint will be added)</source>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティ%1（1より大きい）と重み%2（100.0未満）の間の最小日を選択しました。ほとんどのアクティビティ間の距離が少なくとも%3 （%1-1）日であることを保証するために、2つ目の制約を追加しますか？追加する場合は、重み（推奨95.0%-100.0%）を選択し、[はい]をクリックしてください。追加しない場合は、[いいえ]をクリックしてください（1つの制約のみが追加されます）</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="475"/>
         <source>Recommended answer is Yes, 95% (or higher).</source>
-        <translation type="unfinished"></translation>
+        <translation>推奨回答　はい 95%（または、それ以上）。</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="464"/>
         <source>(Yes means to add an additional constraint min %1 days between activities, weight 0.0%-100.0%. If you say Yes, you will have 2 constraints min days added for current activities. Adding the second constraint might lead to impossible timetables if the condition is too tight, but you can remove the second constraint at any time).</source>
-        <translation type="unfinished"></translation>
+        <translation>([はい]は、アクティビティ間に追加の制約として最小%1日を追加することを意味します。重み0.0％-100.0％。「はい」と答えた場合、現在のアクティビティに対して2つの制約が追加されます。2つ目の制約は条件が厳しい場合は、不可能な時間割につながる可能性がありますが、いつでも削除ができます）。</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="469"/>
         <source>Note: 95% is usually enough for min days constraints referring to same activities. The weights are cumulated if referring to the same activities. If you have 2 constraints with say 95% (say min n days and min n-1 days), the min n days constraint is skipped with probability 5%, then min n-1 days constraint is skipped with probability 0.25%=5%*5%, so you&apos;ll get in 99.75% cases the min n-1 days constraint respected.</source>
-        <translation type="unfinished"></translation>
+        <translation>注：95％は通常、同じアクティビティを参照する最小日の制約で十分です。同じアクティビティを参照すると、重みが累積されます。 95％（例えば、最小n日と最小n-1日）という2つの制約がある場合、最小n日制約は確率5％でスキップされ、最小n-1日制約はスキップされて確率0.25％= 5％ * 5％となるので、99.75％のケースでn-1日の制約が尊重されます。</translation>
     </message>
 </context>
 <context>
@@ -49404,7 +49427,7 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/settingstimetablehtmllevelform.cpp" line="88"/>
         <source>This level might generate very large timetables, maybe 1 MB per file and 20 MB for all files of a timetable or even more. Are you sure you have enough disk space?</source>
-        <translation>このレベルでは、非常に大きなタイムテーブルが生成される可能性があります。ファイルごとに1 MB、時間割のすべてのファイルに対して20 MBかそれ以上となる可能性があります。 十分なディスク容量がありますか？</translation>
+        <translation>このレベルでは、非常に大きな時間割が生成される可能性があります。ファイルごとに1 MB、時間割のすべてのファイルに対して20 MBかそれ以上となる可能性があります。 十分なディスク容量がありますか？</translation>
     </message>
 </context>
 <context>
@@ -49661,7 +49684,7 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="804"/>
         <source>If you have many subgroups and you don&apos;t explicitly use them, it is recommended to use the three global settings: hide subgroups in combo boxes, hide subgroups in activity planning, and do not write subgroups timetables on hard disk.</source>
-        <translation type="unfinished">サブグループが多数あり、明示的に使用しない場合は、コンボボックスでサブグループを非表示にし、アクティビティ計画でサブグループを非表示にし、サブグループのタイムテーブルをハードディスクに書き込まないという3つのグローバル設定を使用することをお勧めします。</translation>
+        <translation type="unfinished">サブグループが多数あり、明示的に使用しない場合は、コンボボックスでサブグループを非表示にし、アクティビティ計画でサブグループを非表示にし、サブグループの時間割をハードディスクに書き込まないという3つのグローバル設定を使用することをお勧めします。</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="811"/>
@@ -49742,7 +49765,7 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="467"/>
         <source>Empty names not allowed</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">空の名前は許可されていません</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="494"/>
@@ -50644,209 +50667,209 @@ Please report error. FET will now abort current operation</source>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="175"/>
         <source>Portrait</source>
-        <translation type="unfinished">ポートレート</translation>
+        <translation>ポートレート</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="175"/>
         <source>Landscape</source>
-        <translation type="unfinished">ランドスケープ</translation>
+        <translation>ランドスケープ</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="192"/>
         <source>Custom</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished">カスタム</translation>
+        <translation>カスタム</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="194"/>
         <source>A0</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished">A0</translation>
+        <translation>A0</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="195"/>
         <source>A1</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished">A1</translation>
+        <translation>A1</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="196"/>
         <source>A2</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished">A2</translation>
+        <translation>A2</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="197"/>
         <source>A3</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished">A3</translation>
+        <translation>A3</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="198"/>
         <source>A4</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished">A4</translation>
+        <translation>A4</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="199"/>
         <source>A5</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished">A5</translation>
+        <translation>A5</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="200"/>
         <source>A6</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished">A6</translation>
+        <translation>A6</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="201"/>
         <source>A7</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished">A7</translation>
+        <translation>A7</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="202"/>
         <source>A8</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished">A8</translation>
+        <translation>A8</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="203"/>
         <source>A9</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished">A9</translation>
+        <translation>A9</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="204"/>
         <source>B0</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation>B0</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="205"/>
         <source>B1</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation>B1</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="206"/>
         <source>B2</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation>B2</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="207"/>
         <source>B3</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation>B3</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="208"/>
         <source>B4</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation>B4</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="209"/>
         <source>B5</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation>B5</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="210"/>
         <source>B6</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation>B6</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="211"/>
         <source>B7</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation>B7</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="212"/>
         <source>B8</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation>B8</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="213"/>
         <source>B9</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation>B9</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="214"/>
         <source>B10</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation>B10</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="215"/>
         <source>C5E</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation>C5E</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="216"/>
         <source>Comm10E</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation>Comm10E</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="217"/>
         <source>DLE</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation>DLE</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="218"/>
         <source>Executive</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation>エグゼクティブ</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="219"/>
         <source>Folio</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation>フォリオ</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="220"/>
         <source>Ledger</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation>レジャー</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="221"/>
         <source>Legal</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation>リーガル</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="222"/>
         <source>Letter</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation>レター</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="223"/>
         <source>Tabloid</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished">タブロイド</translation>
+        <translation>タブロイド</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="251"/>
         <source>Activity tags</source>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティタグ</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="264"/>
         <source>Font size: %1 pt</source>
         <comment>pt means points for font size, when printing the statistics</comment>
-        <translation type="unfinished"></translation>
+        <translation>フォントサイズ %1 pt</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="288"/>
@@ -50918,25 +50941,25 @@ Bottom: %4</source>
         <location filename="../src/interface/statisticsprintform.cpp" line="440"/>
         <source>Teaser</source>
         <comment>Small print preview. Please keep translation short</comment>
-        <translation type="unfinished">小プレビュー</translation>
+        <translation>小プレビュー</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="441"/>
         <source>Preview</source>
         <comment>Full print preview. Please keep translation short</comment>
-        <translation type="unfinished">プレビュー</translation>
+        <translation>プレビュー</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="442"/>
         <source>Print</source>
         <comment>Please keep translation short</comment>
-        <translation type="unfinished">印刷</translation>
+        <translation>印刷</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="444"/>
         <source>Close</source>
         <comment>Please keep translation short</comment>
-        <translation type="unfinished">閉じる</translation>
+        <translation>閉じる</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="867"/>
@@ -50948,7 +50971,7 @@ Bottom: %4</source>
         <location filename="../src/interface/statisticsprintform.cpp" line="983"/>
         <location filename="../src/interface/statisticsprintform.cpp" line="1000"/>
         <source>FET warning</source>
-        <translation type="unfinished"></translation>
+        <translation>FETの注意</translation>
     </message>
 </context>
 <context>
@@ -50957,13 +50980,13 @@ Bottom: %4</source>
         <location filename="../src/engine/studentsset.cpp" line="196"/>
         <source>GN:%1</source>
         <comment>Group name</comment>
-        <translation type="unfinished"></translation>
+        <translation>グ名：%1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="198"/>
         <source>NoS:%1</source>
         <comment>Number of students</comment>
-        <translation type="unfinished">学生数：%1</translation>
+        <translation>学生数：%1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="202"/>
@@ -50974,32 +50997,32 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="210"/>
         <source>Students set - group</source>
-        <translation type="unfinished"></translation>
+        <translation>学生セット - グループ</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="212"/>
         <source>Group name=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>グループ名= %1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="214"/>
         <source>Number of students=%1</source>
-        <translation type="unfinished">学生数=%1</translation>
+        <translation>学生数=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="219"/>
         <source>Comments=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>コメント=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="231"/>
         <source>Time constraints directly related to this students group:</source>
-        <translation type="unfinished"></translation>
+        <translation>この学生グループに直接関連する時間制約：</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="242"/>
         <source>Space constraints directly related to this students group:</source>
-        <translation type="unfinished"></translation>
+        <translation>この学生グループに直接関連するスペース制約：</translation>
     </message>
 </context>
 <context>
@@ -51042,12 +51065,12 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/studentsstatisticsform.cpp" line="462"/>
         <source>The check boxes &apos;%1&apos;, &apos;%2&apos; and &apos;%3&apos;: they permit you to show/hide information related to years, groups or subgroups</source>
-        <translation type="unfinished"></translation>
+        <translation>チェックボックス &apos;%1&apos;, &apos;%2&apos;, &apos;%3&apos;：年、グループ、サブグループに関する情報の表示/非表示を許可します</translation>
     </message>
     <message>
         <location filename="../src/interface/studentsstatisticsform.cpp" line="121"/>
         <source>Students set %1 from activity with id %2 is inexistent in the students list. Please correct this.</source>
-        <translation type="unfinished"></translation>
+        <translation>id %2のアクティビティの学生セット%1 は、学生リストに存在しません。 これを修正してください。</translation>
     </message>
     <message>
         <location filename="../src/interface/studentsstatisticsform.cpp" line="125"/>
@@ -51057,7 +51080,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/studentsstatisticsform.cpp" line="469"/>
         <source>The check box &apos;%1&apos;: it has effect only if you have overlapping groups/years, and means that FET will show the complete tree structure, even if that means that some subgroups/groups will appear twice or more in the table, with the same information. For instance, if you have year Y1, groups G1 and G2, subgroups S1, S2, S3, with structure: Y1 (G1 (S1, S2), G2 (S1, S3)), S1 will appear twice in the table with the same information attached</source>
-        <translation type="unfinished"></translation>
+        <translation>チェックボックス &apos;%1&apos;：グループ/年が重複している場合にのみ有効です。つまり、テーブルに同じ情報の複数のサブグループ/グループが表示されても、FETは完全なツリー構造を表示します。 たとえば、年Y1、グループG1およびG2、サブグループS1、S2、S3があり、Y1（G1（S1、S2）、G2（S1、S3））という構造の場合、同じ情報が付与されているS1は表に複数出現します</translation>
     </message>
     <message>
         <location filename="../src/interface/studentsstatisticsform.cpp" line="463"/>
@@ -51115,13 +51138,13 @@ Bottom: %4</source>
         <location filename="../src/engine/studentsset.cpp" line="284"/>
         <source>SgN:%1</source>
         <comment>Subgroup name</comment>
-        <translation type="unfinished"></translation>
+        <translation>サグ名：%1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="286"/>
         <source>NoS:%1</source>
         <comment>Number of students</comment>
-        <translation type="unfinished">学生数：%1</translation>
+        <translation>学生数：%1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="290"/>
@@ -51132,17 +51155,17 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="298"/>
         <source>Students set - subgroup</source>
-        <translation type="unfinished"></translation>
+        <translation>学生セット - サブグループ</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="300"/>
         <source>Subgroup name=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>サブグループ名= %1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="302"/>
         <source>Number of students=%1</source>
-        <translation type="unfinished">学生数=%1</translation>
+        <translation>学生数=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="307"/>
@@ -51152,12 +51175,12 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="319"/>
         <source>Time constraints directly related to this students subgroup:</source>
-        <translation type="unfinished"></translation>
+        <translation>この学生サブグループに直接関連する時間制約：</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="330"/>
         <source>Space constraints directly related to this students subgroup:</source>
-        <translation type="unfinished"></translation>
+        <translation>この学生サブグループに直接関連するスペース制約：</translation>
     </message>
 </context>
 <context>
@@ -51235,7 +51258,7 @@ Bottom: %4</source>
         <location filename="../src/interface/subactivitiesform.cpp" line="333"/>
         <location filename="../src/interface/subactivitiesform.cpp" line="435"/>
         <source>Invalid selected subactivity</source>
-        <translation type="unfinished"></translation>
+        <translation>選択したサブアクティビティは無効です</translation>
     </message>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="393"/>
@@ -51265,7 +51288,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="446"/>
         <source>Subactivity comments</source>
-        <translation type="unfinished"></translation>
+        <translation>サブアクティビティのコメント</translation>
     </message>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="448"/>
@@ -51290,7 +51313,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="423"/>
         <source>To modify a subactivity, you can also double click it.</source>
-        <translation type="unfinished"></translation>
+        <translation>ダブルクリックでもサブアクティビティの変更をすることができます。</translation>
     </message>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="425"/>
@@ -51416,7 +51439,7 @@ Bottom: %4</source>
         <location filename="../src/interface/subgroupsform.cpp" line="522"/>
         <location filename="../src/interface/subgroupsform.cpp" line="550"/>
         <source>Invalid selected group</source>
-        <translation type="unfinished"></translation>
+        <translation>選択されたグループは無効です</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform.cpp" line="153"/>
@@ -51426,17 +51449,17 @@ Bottom: %4</source>
         <location filename="../src/interface/subgroupsform.cpp" line="558"/>
         <location filename="../src/interface/subgroupsform.cpp" line="571"/>
         <source>Invalid selected subgroup</source>
-        <translation type="unfinished"></translation>
+        <translation>選択されたサブグループは無効です</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform.cpp" line="172"/>
         <source>This subgroup exists only in year %1, group %2. This means that all the related activities and constraints will be removed. Do you want to continue?</source>
-        <translation type="unfinished"></translation>
+        <translation>このサブグループは年%1、グループ%2にのみ存在します。つまり、関連するすべてのアクティビティと制約が削除されます。続けますか？</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform.cpp" line="175"/>
         <source>This subgroup exists in more places, listed below. It will only be removed from the current year/group, and the related activities and constraints will not be removed. Do you want to continue?</source>
-        <translation type="unfinished"></translation>
+        <translation>このサブグループは、以下の多くの場所に存在します。現在の年とグループからのみ削除され、関連するアクティビティや制約は削除されません。続けますか？</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform.cpp" line="183"/>
@@ -51447,17 +51470,17 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/subgroupsform.cpp" line="254"/>
         <source>This subgroup exists only in year %1, group %2. All the related activities and constraints will be removed. Do you want to continue?</source>
-        <translation type="unfinished"></translation>
+        <translation>このサブグループは年%1とグループ%2にのみ存在します。関連するすべてのアクティビティと制約が削除されます。続けますか？</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform.cpp" line="257"/>
         <source>This subgroup exists in more places, listed below. It will be removed from all these places. All the related activities and constraints will be removed. Do you want to continue?</source>
-        <translation type="unfinished"></translation>
+        <translation>このサブグループは、以下の多くの場所に存在します。これらのすべての場所から削除されます。関連するすべてのアクティビティと制約は削除されます。続けますか？</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform.cpp" line="582"/>
         <source>Students subgroup comments</source>
-        <translation type="unfinished"></translation>
+        <translation>学生サブグループのコメント</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform.cpp" line="584"/>
@@ -51626,23 +51649,23 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="97"/>
         <source>Please enter subject&apos;s name</source>
-        <translation type="unfinished"></translation>
+        <translation>科目の名前を入力してください</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="97"/>
         <source>Add subject</source>
-        <translation type="unfinished"></translation>
+        <translation>科目の追加</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="103"/>
         <location filename="../src/interface/subjectsform.cpp" line="180"/>
         <source>Subject insertion dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>科目挿入ダイアログ</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="104"/>
         <source>Could not insert item. Must be a duplicate</source>
-        <translation type="unfinished"></translation>
+        <translation>アイテムを挿入することが出来ません。重複の必要があります</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="114"/>
@@ -51895,7 +51918,7 @@ Bottom: %4</source>
         <location filename="../src/interface/teachersubjectsqualificationsform_template.ui" line="14"/>
         <source>Teacher subjects qualifications</source>
         <extracomment>This is the title of the dialog to input the qualification of teachers to teach certain subjects</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>教師の科目資格</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersubjectsqualificationsform_template.ui" line="28"/>
@@ -53401,7 +53424,7 @@ Bottom: %4</source>
         <location filename="../src/interface/fet.cpp" line="1378"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">アId:%1（%2）</translation>
     </message>
 </context>
 <context>
@@ -53532,21 +53555,21 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegenerateform.cpp" line="733"/>
         <source>%1 h</source>
         <comment>hours</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1 時間</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="713"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="737"/>
         <source>%1 m</source>
         <comment>minutes</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1 分</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="718"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="741"/>
         <source>%1 s</source>
         <comment>seconds</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1 秒</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="756"/>
@@ -53650,7 +53673,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegenerateform.cpp" line="913"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">アId:%1（%2）</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="280"/>
@@ -53660,7 +53683,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="283"/>
         <source>Here are the placed activities which lead to an inconsistency, in order from the first one to the last (the last one FET failed to schedule and the last ones are most likely impossible):</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">最初のものから最後のものへ順番に矛盾が生じるように配置されたアクティビティがあります（最後のアクティビティでFETはスケジュールに失敗しました。最後のアクティビティは不可能である可能性が高いです）：</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="535"/>
@@ -53728,7 +53751,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegenerateform.cpp" line="273"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="426"/>
         <source>Difficult activity cannot be computed - please report possible bug</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">困難なアクティビティを計算することが出来ません。可能性のあるバグを報告してください</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="259"/>
@@ -53745,7 +53768,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegenerateform.cpp" line="745"/>
         <source>Max placed activities: %1 (at %2)</source>
         <comment>%1 represents the maximum number of activities placed, %2 is a time interval</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">最大で配置されたアクティビティ：%1 (%2)</translation>
     </message>
 </context>
 <context>
@@ -53869,25 +53892,25 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="497"/>
         <source>%1 h</source>
         <comment>hours</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1 時間</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="501"/>
         <source>%1 m</source>
         <comment>minutes</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1 分</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="505"/>
         <source>%1 s</source>
         <comment>seconds</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1 秒</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="509"/>
         <source>Max placed activities: %1 (at %2)</source>
         <comment>%1 represents the maximum number of activities placed, %2 is a time interval</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">最大で配置されたアクティビティ：%1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="512"/>
@@ -54026,7 +54049,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform_template.ui" line="20"/>
         <source>Current timetable: 0 out of 0 activities placed</source>
-        <translation>現在のタイムテーブル：０のうち０が配置されました</translation>
+        <translation>現在の時間割：０のうち０が配置されました</translation>
     </message>
 </context>
 <context>
@@ -54249,115 +54272,115 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableprintform.cpp" line="270"/>
         <source>B0</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">B0</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="271"/>
         <source>B1</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">B1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="272"/>
         <source>B2</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">B2</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="273"/>
         <source>B3</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">B3</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="274"/>
         <source>B4</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">B4</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="275"/>
         <source>B5</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">B5</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="276"/>
         <source>B6</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">B6</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="277"/>
         <source>B7</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">B7</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="278"/>
         <source>B8</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">B8</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="279"/>
         <source>B9</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">B9</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="280"/>
         <source>B10</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">B10</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="281"/>
         <source>C5E</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">C5E</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="282"/>
         <source>Comm10E</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Comm10E</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="283"/>
         <source>DLE</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">DLE</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="284"/>
         <source>Executive</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">エグゼクティブ</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="285"/>
         <source>Folio</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">フォリオ</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="286"/>
         <source>Ledger</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">レジャー</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="287"/>
         <source>Legal</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">リーガル</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="288"/>
         <source>Letter</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">レター</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="289"/>
@@ -54389,7 +54412,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableprintform.cpp" line="336"/>
         <source>Font size: %1 pt</source>
         <comment>pt means points for font size, when printing the timetable</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">フォントサイズ %1 pt</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="360"/>
@@ -54754,7 +54777,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="201"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">いくつかの部屋を追加または削除したため、時間割を表示できません。時間割を再度生成してから表示してください</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="237"/>
@@ -54983,7 +55006,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="661"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="783"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">いくつかの部屋を追加または削除したため、時間割を表示できません。時間割を再度生成してから表示してください</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="308"/>
@@ -55016,7 +55039,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="671"/>
         <source>Cannot display the timetable, because you added or removed some teachers. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">何人かの教師を追加または削除したため、時間割を表示できません。時間割を再度生成してから表示してください</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="680"/>
@@ -55290,7 +55313,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="516"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="638"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">いくつかの部屋を追加または削除したため、時間割を表示できません。時間割を再度生成してから表示してください</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="340"/>
@@ -55527,7 +55550,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="772"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="934"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">いくつかの部屋を追加または削除したため、時間割を表示できません。時間割を再度生成してから表示してください</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="760"/>
@@ -55768,7 +55791,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="187"/>
         <source>Cannot display the timetable, because you added or removed some teachers. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">何人かの教師を追加または削除したため、時間割を表示できません。時間割を再度生成してから表示してください</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="223"/>
@@ -55794,7 +55817,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="443"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="554"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">いくつかの部屋を追加または削除したため、時間割を表示できません。時間割を再度生成してから表示してください</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="263"/>
@@ -55995,7 +56018,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="204"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="649"/>
         <source>Cannot display the timetable, because you added or removed some teachers. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">何人かの教師を追加または削除したため、時間割を表示できません。時間割を再度生成してから表示してください</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="307"/>
@@ -56021,7 +56044,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="639"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="749"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">いくつかの部屋を追加または削除したため、時間割を表示できません。時間割を再度生成してから表示してください</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="627"/>

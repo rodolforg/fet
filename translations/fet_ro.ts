@@ -36013,8 +36013,8 @@ Vă rog modificați datele dvs. corespunzător și încercați din nou</translat
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="441"/>
-        <source>Group activities in initial form item comments</source>
-        <translation>Dialog comentarii grupează activitățile în ordinea inițială</translation>
+        <source>Group activities in initial order item comments</source>
+        <translation>Comentarii item grupează activități în ordinea inițială</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="443"/>

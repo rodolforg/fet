@@ -1157,7 +1157,7 @@ werden weitere %1 Aktivitäten nicht modifiziert
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="336"/>
         <source>Activity tag is a field which can be used or not, depending on your wish (optional field). It is designed to help you with some constraints. Each activity has a list of activity tags (which may be empty).</source>
-        <translation type="unfinished"></translation>
+        <translation>Die Aktivitätskennzeichnung ist ein optionales Feld, welches auf Bedarf verwendet werden kann. Es kann von einigen Einschränkungen genutzt werdeb. Jede Aktivität hat eine Liste von Kennzeichnungen. Diese Liste kann leer sein.</translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="354"/>
@@ -36035,8 +36035,8 @@ Bitte korrigieren Sie das und versuchen es nochmals.</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="441"/>
-        <source>Group activities in initial form item comments</source>
-        <translation>Kommentare für das Zusammenfassen von Aktivitäten für die Anfangsordnung</translation>
+        <source>Group activities in initial order item comments</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="443"/>

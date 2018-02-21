@@ -36014,8 +36014,8 @@ Modifica i dati e prova di nuovo</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="441"/>
-        <source>Group activities in initial form item comments</source>
-        <translation>Commenti agli elementi di attività aggregate in ordine iniziale</translation>
+        <source>Group activities in initial order item comments</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="443"/>

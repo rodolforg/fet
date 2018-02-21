@@ -36039,7 +36039,7 @@ Silakan ubah data anda dan dicoba lagi</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="441"/>
-        <source>Group activities in initial form item comments</source>
+        <source>Group activities in initial order item comments</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
