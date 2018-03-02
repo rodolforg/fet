@@ -3152,7 +3152,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="429"/>
         <source>Add multiple constraints: this is a check box. Select this if you want to input only the representatives of sub-activities and FET to add multiple constraints, for all sub-activities from the same components, in turn, respectively. There will be added more constraints activities same starting time, one for each corresponding tuple. The number of sub-activities must match for the representants and be careful to the order, to be what you need</source>
-        <translation type="unfinished">Προσθήκη πολλαπλών περιορισμών: πρόκειται για πλαίσιο ελέγχου. Επιλέξτε το αν θέλετε να εισαγάγετε μόνον τις υποδραστηριότητες-&quot;εκπροσώπους&quot; από κάθε ομάδα υποδραστηριοτήτων και το FET να προσθέσει αυτόματα πολλαπλούς περιορισμούς, για όλες τις υποδραστηριότητες που σχετίζονται με τις υποδραστηριότητες-&quot;εκπροσώπους&quot;. Πρόκειται να προστεθούν περισσότεροι περιορισμοί &quot;ίδιος χρόνος έναρξης&quot;, ένας για κάθε αντίστοιχη πλειάδα (ομάδα υποδραστηριοτήτων). Ο αριθμός των υποδραστηριοτήτων που σχετίζονται με την κάθε υποδραστηριότητα-&quot;εκπρόσωπο&quot; πρέπει να είναι ο ίδιος. Να είστε προσεκτικοί αναφορικά με την διάταξη (σειρά), έτσι ώστε να είναι αυτή που χρειάζεστε</translation>
+        <translation>Προσθήκη πολλαπλών περιορισμών: πρόκειται για πλαίσιο ελέγχου. Επιλέξτε το αν θέλετε να εισαγάγετε μόνον τις υποδραστηριότητες-&quot;εκπροσώπους&quot; από κάθε ομάδα υποδραστηριοτήτων και το FET να προσθέσει αυτόματα πολλαπλούς περιορισμούς, για όλες τις υποδραστηριότητες που σχετίζονται με τις υποδραστηριότητες-&quot;εκπροσώπους&quot;. Πρόκειται να προστεθούν περισσότεροι περιορισμοί &quot;ίδιος χρόνος έναρξης&quot;, ένας για κάθε αντίστοιχη πλειάδα (ομάδα υποδραστηριοτήτων). Ο αριθμός των υποδραστηριοτήτων που σχετίζονται με την κάθε υποδραστηριότητα-&quot;εκπρόσωπο&quot; πρέπει να είναι ο ίδιος. Να είστε προσεκτικοί αναφορικά με την διάταξη (σειρά), έτσι ώστε να είναι αυτή που χρειάζεστε</translation>
     </message>
 </context>
 <context>
@@ -10943,14 +10943,14 @@ Note: teacher not available and break are not counted as gaps.</source>
         <source>Matches regular expr.</source>
         <comment>A text string matches a regular expression (regexp). Regular expressions are a complex notion, see definition on the internet if you don&apos;t know about them or how to translate the words.  
 Definition from Wikipedia: &apos;In computing, regular expressions, also referred to as regex or regexp, provide a concise and flexible means for identifying strings of text, such as particular characters, words, or patterns of characters. A regular expression is written in a formal language that can be interpreted by a regular expression processor, a program that either serves as a parser generator or examines text and identifies parts that match the provided specification.</comment>
-        <translation type="unfinished">Ταιριάζει με κανονική παράσταση (regexp)</translation>
+        <translation>Ταιριάζει με κανονική παράσταση (regexp)</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedfilterform.cpp" line="72"/>
         <source>Does not match reg. expr.</source>
         <comment>A text string does not match a regular expression (regexp). Regular expressions are a complex notion, see definition on the internet if you don&apos;t know about them or how to translate the words.  
 Definition from Wikipedia: &apos;In computing, regular expressions, also referred to as regex or regexp, provide a concise and flexible means for identifying strings of text, such as particular characters, words, or patterns of characters. A regular expression is written in a formal language that can be interpreted by a regular expression processor, a program that either serves as a parser generator or examines text and identifies parts that match the provided specification.</comment>
-        <translation type="unfinished">Δεν ταιριάζει με κανονική παράσταση</translation>
+        <translation>Δεν ταιριάζει με κανονική παράσταση</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedfilterform.cpp" line="109"/>
@@ -11091,7 +11091,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1855"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2164"/>
         <source>Last confirmation needed</source>
-        <translation type="unfinished"></translation>
+        <translation>Τελευταία απαραίτητη επιβεβαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="269"/>
@@ -30596,12 +30596,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/export.cpp" line="452"/>
         <source>Please specify the separator between fields:</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ προσδιορίστε τον χαρακτήρα διαχωρισμού για τα πεδία:</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="459"/>
         <source>Use field separator:</source>
-        <translation type="unfinished"></translation>
+        <translation>Χρήση του χαρακτήρα διαχωρισμού για τα πεδία:</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="466"/>
@@ -30616,7 +30616,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/export.cpp" line="482"/>
         <source>The first line is the heading.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η πρώτη γραμμή είναι η κεφαλίδα.</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="489"/>
@@ -30638,7 +30638,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/export.cpp" line="1158"/>
         <location filename="../src/engine/export.cpp" line="1242"/>
         <source>FET critical. Cannot open file %1 for writing. Please check your disk&apos;s free space. Saving of %1 aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>FET -κρίσιμο σφάλμα. Αδύνατο το άνοιγμα του αρχείου %1 για εγγραφή. Παρακαλώ ελέγξτε τον ελεύθερο χώρο του δίσκου σας. Η εγγραφή του %1 διακόπηκε.</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="591"/>
@@ -30647,12 +30647,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/export.cpp" line="818"/>
         <location filename="../src/engine/export.cpp" line="828"/>
         <source>Warning! Import of activities will fail, because %1 includes set separator +.</source>
-        <translation type="unfinished"></translation>
+        <translation>Προειδοποίηση! Η εισαγωγή των δραστηριοτήτων δεν θα πραγματοποιηθεί, διότι το %1 περιλαμβάνει τον χαρακτήρα διαχωρισμού &quot;+&quot;.</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="594"/>
         <source>%1 activity tags exported.</source>
-        <translation type="unfinished"></translation>
+        <translation>Εξήχθησαν %1 ετικέτες δραστηριοτήτων.</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="596"/>
@@ -34372,7 +34372,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fet.cpp" line="1498"/>
         <source>No: %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Αρ.: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="805"/>
@@ -34920,18 +34920,18 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="1243"/>
         <source>Cannot optimize, because you have constraint students set max span per day for students %1 with weight (percentage) below 100. Please make weight 100% and try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;ομάδα μαθητών - μέγιστη παραμονή ανά ημέρα&quot; για τους μαθητές %1 με ποσοστό βαρύτητας μικρότερο του 100%. Παρακαλώ δώστε στην βαρύτητα την τιμή 100% και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="1259"/>
         <source>Cannot optimize, because you have constraint students max span per day with weight (percentage) below 100. Please make weight 100% and try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;μαθητές - μέγιστη παραμονή ανά ημέρα&quot; με ποσοστό βαρύτητας μικρότερο του 100%. Παρακαλώ δώστε στην βαρύτητα την τιμή 100% και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="1480"/>
         <location filename="../src/engine/generate_pre.cpp" line="1498"/>
         <source>Cannot optimize for subgroup %1, because there is a constraint of type max %2 hours continuously which cannot be respected because of activity with id %3 (which has duration %4).</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση για το υποτμήμα %1, διότι υπάρχει περιορισμός του τύπου &quot;μέγιστες %2 ώρες συνεχόμενα&quot; ο οποίος δεν μπορεί να τηρηθεί εξαιτίας της δραστηριότητας με ατ %3 (η οποία δραστηριότητα έχει διάρκεια %4).</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="1593"/>
@@ -34941,55 +34941,59 @@ Having a subgroup with too little working hours per week means that you inputted
  Example: you are allowed to use 3 constraints: 6 hours 95%, 7 hours 100% and 8 hours 100%, which can be compressed into 2 constraints: 6 hours 95%, 7 hours 100%
 
  Please modify your data accordingly and try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση για το υποτμήμα %1, διότι υπάρχουν πάρα πολλοί περιορισμοί του τύπου &quot;ετικέτα δραστηριότητας - μέγιστες ώρες ημερησίως&quot; που σχετίζονται με το υποτμήμα αυτό, και δεν μπορούν να συμπτυχθούν σε 2 περιορισμούς αυτού του τύπου. Δύο περιορισμοί &quot;μέγιστες ώρες&quot; μπορούν να συμπτυχθούν σε έναν και μοναδικό περιορισμό, αν οι μέγιστες ώρες για τον πρώτο περιορισμό είναι λιγότερες και το ποσοστό βαρύτητας του πρώτου περιορισμού είναι μεγαλύτερο. Είναι δυνατόν να χρησιμοποιήσετε οποιονδήποτε αριθμό τέτοιων περιορισμών για υποτμήμα, αλλά η &quot;συνισταμένη&quot; τους θα πρέπει να είναι κατά μέγιστο 2 περιορισμοί του τύπου &quot;ετικέτα δραστηριότητας - μέγιστες ώρες ημερησίως&quot;.
+
+Παράδειγμα: επιτρέπεται να χρησιμοποιήσετε 3 περιορισμούς 6 ώρες 95%, 7 ώρες 100% και 8 ώρες 100%, οι οποίοι μπορούν να συμπτυχθούν σε δύο περιορισμούς: 6 ώρες 95%, 7 ώρες 100%
+
+Παρακαλώ τροποποιήσετε τα δεδομένα σας κατά τα ανωτέρω και προσπαθήστε ξανά.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="1726"/>
         <source>Cannot optimize for subgroup %1, because there is a constraint activity tag %2 max %3 hours daily for it with weight 100% which cannot be satisfied, considering the number of available slots (%4) and total duration of activities with this activity tag (%5). Please correct and try again.</source>
         <comment>%2 is the activity tag for this constraint, %3 is the max number of hours daily for this constraint</comment>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση για το υποτμήμα %1, διότι υπάρχει περιορισμός &quot;ετικέτα δραστηριότητας %2 - μέγιστες %3 ώρες ημερησίως&quot; για το υποτμήμα αυτό με ποσοστό βαρύτητας 100% ο οποίος (περιορισμός) δεν μπορεί να ικανοποιηθεί, λαμβανομένων υπόψη του αριθμού των διαθέσιμων περιόδων (%4) και της συνολικής διάρκειας των δραστηριοτήτων με την συγκεκριμένη ετικέτα (%5). Παρακαλώ διορθώστε και προσπαθήστε ξανά.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2022"/>
         <source>Cannot optimize, because you have activity id = %1 with duration = %2 and a constraint teacher(s) activity tag max %3 hours daily with weight = 100% for the teacher %4 and activity tag %5. The activity&apos;s duration is higher than the teacher&apos;s max hours daily with this activity tag (which the activity contains). Please correct and try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε την δραστηριότητα με ατ = %1 και διάρκεια = %2 και τον περιορισμό &quot;εκπαιδευτικός(οί) + ετικέτα δραστηριότητας - μέγιστες %3 ώρες ημερησίως&quot; με βαρύτητα = 100% για τον εκπαιδευτικό %4 και την ετικέτα δραστηριότητας %5. Η διάρκεια της δραστηριότητας είναι μεγαλύτερη από τις μέγιστες ώρες ημερησίως για τον εκπαιδευτικό με την συγκεκριμένη ετικέτα δραστηριότητας (την οποία περιλαμβάνει η δραστηριότητα). Παρακαλώ διορθώστε και προσπαθήστε ξανά.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2379"/>
         <source>For subgroup %1 you have too little activities to respect the constraint(s) of type min hours daily (the constraint(s) do not allow empty days). Please modify your data accordingly and try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Για το υποτμήμα %1 έχετε πολύ λίγες δραστηριότητες και ως εκ τούτου δεν μπορεί να τηρηθεί ο περιορισμός (οι περιορισμοί) του τύπου &quot;ελάχιστες ώρες ημερησίως&quot; (ο περιορισμός (οι περιορισμοί) δεν επιτρέπει (δεν επιτρέπουν) τις κενές ημέρες). Παρακαλώ τροποποιήστε τα δεδομένα σας κατά τα ανωτέρω και προσπαθήστε ξανά.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2398"/>
         <source>For subgroup %1 cannot respect the constraint(s) of type min hours daily (the constraint(s) do not allow empty days) on day %2, because of students set not available and/or break. Please modify your data accordingly and try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Για το υποτμήμα %1 δεν είναι εφικτή η τήρηση του περιορισμού (των περιορισμών) του τύπου &quot;ελάχιστες ώρες ημερησίως&quot; (ο περιορισμός (οι περιορισμοί) δεν επιτρέπει (δεν επιτρέπουν) κενές ημέρες) για την ημέρα %2, διότι υπάρχει περιορισμός &quot;ομάδα μαθητών - μη διαθέσιμοι χρόνοι&quot; ή/και περιορισμός &quot;διάλειμμα&quot;. Παρακαλώ τροποποιήστε τα δεδομένα σας κατά τα ανωτέρω και προσπαθείστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2435"/>
         <source>Cannot optimize, because you have constraint students min %1 hours daily for subgroup %2 and the constraint allows empty days. The number of min hours daily should be at least 2, to make a non-trivial constraint. Please correct and try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;μαθητές - ελάχιστες %1 ώρες ημερησίως&quot; για το υποτμήμα %2 και ο περιορισμός επιτρέπει τις κενές ημέρες. Ο αριθμός των ελάχιστων ωρών ημερησίως οφείλει να είναι τουλάχιστον 2, προκειμένου να έχει λόγο ύπαρξης ο περιορισμός αυτός. Παρακαλώ διορθώστε και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2636"/>
         <location filename="../src/engine/generate_pre.cpp" line="2699"/>
         <source>Cannot optimize for teacher %1, because there is a constraint of type max %2 hours daily with 100% weight which cannot be respected because of number of days per week, number of hours per day, teacher max days per week, teacher not available and/or breaks. The number of total hours for this teacher is %3 and the number of available slots is, considering max hours daily and all other constraints, %4.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση για τον εκπαιδευτικό %1, διότι υπάρχει περιορισμός του τύπου &quot;μέγιστες %2 ώρες ημερησίως&quot; με βαρύτητα 100% ο οποίος δεν μπορεί να τηρηθεί εξαιτίας του αριθμού των ημερών ανά εβδομάδα, του αριθμού των ωρών ανά ημέρα, των περιορισμών &quot;εκπαιδευτικός - μέγιστες ημέρες ανά εβδομάδα&quot;, &quot;εκπαιδευτικός - μη διαθέσιμοι χρόνοι&quot; ή/και &quot;διαλείμματα&quot;. Ο συνολικός αριθμός των ωρών για αυτόν τον εκπαιδευτικό είναι %3 και ο αριθμός των διαθέσιμων περιόδων (λαμβανομένων υπόψη των περιορισμών &quot;μέγιστες ώρες ημερησίως&quot; καθώς και όλων των υπόλοιπων περιορισμών) είναι %4.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2742"/>
         <source>Cannot optimize, because you have constraint teacher max span per day for teacher %1 with weight (percentage) below 100. Please make weight 100% and try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικός - μέγιστη παραμονή ανά ημέρα&quot; για τον εκπαιδευτικό %1 με ποσοστό βαρύτητας μικρότερο του 100%. Παρακαλώ δώστε την τιμή 100% για το ποσοστό βαρύτητας και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2758"/>
         <source>Cannot optimize, because you have constraint teachers max span per day with weight (percentage) below 100. Please make weight 100% and try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικοί - μέγιστη παραμονή ανά ημέρα&quot; με ποσοστό βαρύτητας μικρότερο του 100%. Παρακαλώ δώστε στην βαρύτητα την τιμή 100% και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2972"/>
         <location filename="../src/engine/generate_pre.cpp" line="2990"/>
         <source>Cannot optimize for teacher %1, because there is a constraint of type max %2 hours continuously which cannot be respected because of activity with id %3 (which has duration %4).</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση για τον εκπαιδευτικό %1, διότι υπάρχει περιορισμός του τύπου &quot;μέγιστες %2 ώρες συνεχόμενα&quot; ο οποίος δεν μπορεί να τηρηθεί εξαιτίας της δραστηριότητας με ατ %3 (η οποία έχει διάρκεια %4).</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3085"/>
@@ -34999,154 +35003,158 @@ Having a subgroup with too little working hours per week means that you inputted
  Example: you are allowed to use 3 constraints: 6 hours 95%, 7 hours 100% and 8 hours 100%, which can be compressed into 2 constraints: 6 hours 95%, 7 hours 100%
 
  Please modify your data accordingly and try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση για τον εκπαιδευτικό %1, διότι υπάρχουν πάρα πολλοί περιορισμοί του τύπου &quot;ετικέτα δραστηριότητας - μέγιστες ώρες ημερησίως&quot; που σχετίζονται με αυτόν τον εκπαιδευτικό, και δεν μπορούν να συμπτυχθούν σε 2 περιορισμούς αυτού του τύπου. Δύο περιορισμοί &quot;μέγιστες ώρες&quot; μπορούν να συμπτυχθούν σε έναν και μοναδικό περιορισμό, αν οι μέγιστες ώρες για τον πρώτο περιορισμό είναι λιγότερες και το ποσοστό βαρύτητας του πρώτου περιορισμού είναι μεγαλύτερο. Είναι δυνατόν να χρησιμοποιήσετε οποιονδήποτε αριθμό τέτοιων περιορισμών για εκπαιδευτικό, αλλά η &quot;συνισταμένη&quot; τους θα πρέπει να είναι κατά μέγιστο 2 περιορισμοί του τύπου &quot;ετικέτα δραστηριότητας - μέγιστες ώρες ημερησίως&quot;.
+
+Παράδειγμα: επιτρέπεται να χρησιμοποιήσετε 3 περιορισμούς 6 ώρες 95%, 7 ώρες 100% και 8 ώρες 100%, οι οποίοι μπορούν να συμπτυχθούν σε δύο περιορισμούς: 6 ώρες 95%, 7 ώρες 100%
+
+Παρακαλώ τροποποιήσετε τα δεδομένα σας κατά τα ανωτέρω και προσπαθήστε ξανά.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3218"/>
         <source>Cannot optimize for teacher %1, because there is a constraint activity tag %2 max %3 hours daily for it with weight 100% which cannot be satisfied, considering the number of available slots (%4) and total duration of activities with this activity tag (%5). Please correct and try again.</source>
         <comment>%2 is the activity tag for this constraint, %3 is the max number of hours daily for this constraint</comment>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση για τον εκπαιδευτικό %1, διότι υπάρχει περιορισμός &quot;εκπαιδευτικός + ετικέτα δραστηριότητας %2 - μέγιστες %3 ώρες ημερησίως&quot; για αυτόν τον εκπαιδευτικό με βαρύτητα 100%, ο οποίος (περιορισμός) δεν μπορεί να ικανοποιηθεί, λαμβανομένων υπόψη του αριθμού των διαθέσιμων περιόδων (%4) και της συνολικής διάρκειας των δραστηριοτήτων με αυτήν την ετικέτα δραστηριότητας (%5). Παρακαλώ διορθώστε και προσπαθήστε ξανά.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3434"/>
         <source>Cannot optimize, because you have constraint teacher min hours daily for teacher %1 with weight (percentage) below 100. Starting with FET version 5.4.0 it is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικός - ελάχιστες ώρες ημερησίως&quot; για τον εκπαιδευτικό %1 με ποσοστό βαρύτητας μικρότερο του 100%. Από την έκδοση 5.4.0 του FET και μετά, επιτρέπεται μόνον η χρήση της τιμής 100% για την βαρύτητα τέτοιων περιορισμών. Παρακαλώ δώστε στην βαρύτητα την τιμή 100% και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3451"/>
         <source>Cannot optimize, because you have constraint teacher min hours daily for teacher %1 with %2 min hours daily, and the number of working hours per day is only %3. Please correct and try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικός - ελάχιστες ώρες ημερησίως&quot; για τον εκπαιδευτικό %1 με %2 ελάχιστες ώρες ημερησίως, και ο αριθμός των διαθέσιμων ωρών εργασίας (διδασκαλίας) ανά ημέρα είναι μόνον %3. Παρακαλώ διορθώστε και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3477"/>
         <source>Cannot optimize, because you have constraint teachers min hours daily with weight (percentage) below 100. Starting with FET version 5.4.0 it is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικοί - ελάχιστες ώρες ημερησίως&quot; με ποσοστό βαρύτητας μικρότερο του 100%. Από την έκδοση 5.4.0 του FET και μετά, επιτρέπεται μόνον η χρήση της τιμής 100% για την βαρύτητα τέτοιων περιορισμών. Παρακαλώ δώστε στην βαρύτητα την τιμή 100% και προσπαθείστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3493"/>
         <source>Cannot optimize, because you have constraint teachers min hours daily with %1 min hours daily, and the number of working hours per day is only %2. Please correct and try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικοί - ελάχιστες ώρες ημερησίως&quot; με %1 ελάχιστες ώρες ημερησίως, και ο αριθμός των διαθέσιμων ωρών εργασίας (διδασκαλίας) ανά ημέρα είναι μόνον %2. Παρακαλώ διορθώστε και προσπαθείστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3574"/>
         <source>Cannot optimize, because you have constraint teacher min days per week for teacher %1 with weight (percentage) below 100. Please make weight 100% and try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικός - ελάχιστες ημέρες ανά εβδομάδα&quot; για τον εκπαιδευτικό %1 με ποσοστό βαρύτητας μικρότερο του 100%. Παρακαλώ δώστε στην βαρύτητα την τιμή 100% και προσπαθείστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3590"/>
         <source>Cannot optimize, because you have constraint teacher min days per week for teacher %1 with %2 min days per week, and the number of working days per week is only %3. Please correct and try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικός - ελάχιστες ημέρες ανά εβδομάδα&quot; για τον εκπαιδευτικό %1 με %2 ελάχιστες ημέρες ανά εβδομάδα, και ο αριθμός των διαθέσιμων ημερών εργασίας (διδασκαλίας) ανά εβδομάδα είναι μόνον %3. Παρακαλώ διορθώστε και προσπαθείστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3616"/>
         <source>Cannot optimize, because you have constraint teachers min days per week with weight (percentage) below 100. Please make weight 100% and try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικοί - ελάχιστες ημέρες ανά εβδομάδα&quot; με ποσοστό βαρύτητας μικρότερο του 100%. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθείστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3631"/>
         <source>Cannot optimize, because you have constraint teachers min days per week with %1 min days per week, and the number of working days per week is only %2. Please correct and try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικοί - ελάχιστες ημέρες ανά εβδομάδα&quot; με %1 ελάχιστες ημέρες ανά εβδομάδα, και ο αριθμός των διαθέσιμων ημερών εργασίας (διδασκαλίας) ανά εβδομάδα είναι μόνον %2. Παρακαλώ διορθώστε και προσπαθείστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3658"/>
         <source>Cannot optimize because for teacher %1 you have min days per week %2 and he has only %3 activities - impossible. Please correct and try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι για τον εκπαιδευτικό %1 έχετε ελάχιστες ημέρες ανά εβδομάδα %2 και (ο εκπαιδευτικός) έχει μόνον %3 δραστηριότητες - αδύνατον. Παρακαλώ διορθώστε και προσπαθείστε ξανά.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3678"/>
         <source>Cannot optimize because for teacher %1 you have min days per week %2 and min hours daily %3 and he has only %4 working hours - impossible. Please correct and try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι για τον εκπαιδευτικό %1 έχετε ελάχιστες ημέρες ανά εβδομάδα %2 και ελάχιστες ώρες ημερησίως %3 και (ο εκπαιδευτικός) έχει μόνον %4 ώρες εργασίας (διδασκαλίας) - αδύνατον. Παρακαλώ διορθώστε και προσπαθείστε ξανά.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3703"/>
         <source>Cannot optimize because for teacher %1 you have min days per week %2 &gt; max days per week %3 - impossible (min days must be &lt;= max days). Please correct and try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι για τον εκπαιδευτικό %1 έχετε ελάχιστες ημέρες ανά εβδομάδα %2 &gt; μέγιστες ημέρες ανά εβδομάδα %3 - αδύνατον (οι ελάχιστες ημέρες πρέπει να είναι &lt;= σε σχέση με τις μέγιστες ημέρες). Παρακαλώ διορθώστε και προσπαθείστε ξανά.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3738"/>
         <source>Cannot optimize because for teacher %1 you have min days per week %2 and only %3 available days considering breaks and not available and min hours daily for this teacher. Please correct and try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι για τον εκπαιδευτικό %1 έχετε ελάχιστες ημέρες ανά εβδομάδα %2 και μόνον %3 διαθέσιμες ημέρες, λαμβανομένων υπόψη των διαλειμμάτων και των περιορισμών &quot;εκπαιδευτικός - μη διαθέσιμοι χρόνοι&quot; και &quot;εκπαιδευτικός - ελάχιστες ώρες ημερησίως&quot; για τον συγκεκριμένο εκπαιδευτικό. Παρακαλώ διορθώστε και προσπαθείστε ξανά.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3745"/>
         <source>Cannot optimize because for teacher %1 you have min days per week %2 and only %3 available days considering breaks and not available for this teacher. Please correct and try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι για τον εκπαιδευτικό %1 έχετε ελάχιστες ημέρες ανά εβδομάδα %2 και μόνον %3 διαθέσιμες ημέρες, λαμβανομένων υπόψη των διαλειμμάτων και του περιορισμού &quot;εκπαιδευτικός - μη διαθέσιμοι χρόνοι&quot; για τον συγκεκριμένο εκπαιδευτικό. Παρακαλώ διορθώστε και προσπαθείστε ξανά.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4081"/>
         <source>The constraint is impossible to respect, because there are the activities with id-s %1 and %2 which conflict one with another, because they have common students sets or teachers or must be not overlapping. FET will allow you to continue, because the weight of this constraint is below 100.0%, but anyway most probably you have made a mistake in this constraint, so it is recommended to modify it.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η τήρηση του περιορισμού, διότι υπάρχουν οι δραστηριότητες με ατ %1 και %2 οι οποίες συγκρούονται μεταξύ τους, δεδομένου ότι έχουν κοινές ομάδες μαθητών ή κοινούς εκπαιδευτικούς ή δεν πρέπει να αλληλεπικαλύπτονται. Το FET θα σας επιτρέψει να συνεχίσετε, αφού το ποσοστό βαρύτητας για αυτόν τον περιορισμό είναι μικρότερο του 100.0%. Πάντως, κατά πάσα πιθανότητα έχετε κάνει κάποιο λάθος στον περιορισμό αυτό, οπότε συνιστάται να τον τροποποιήσετε.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4101"/>
         <source>The constraint is impossible to respect, because there are the activities with id-s %1 and %2 which conflict one with another, because they have common students sets or teachers or must be not overlapping. The weight of this constraint is 100.0%, so your timetable is impossible. Please correct this constraint.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η τήρηση του περιορισμού, διότι υπάρχουν οι δραστηριότητες με ατ %1 και %2 οι οποίες συγκρούονται μεταξύ τους, δεδομένου ότι έχουν κοινές ομάδες μαθητών ή κοινούς εκπαιδευτικούς ή δεν πρέπει να αλληλεπικαλύπτονται. Το ποσοστό βαρύτητας αυτού του περιορισμού είναι 100.0%, οπότε είναι αδύνατη η επίλυση του ωρολογίου προγράμματος. Παρακαλώ διορθώστε αυτόν τον περιορισμό.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4203"/>
         <source>You have a set of impossible constraints activities same starting time, considering all the indirect links between activities same starting time constraints</source>
-        <translation type="unfinished"></translation>
+        <translation>Έχετε ένα σύνολο περιορισμών &quot;δραστηριότητες - ίδιος χρόνος έναρξης&quot; που είναι αδύνατον να τηρηθούν, λαμβανομένων υπόψη όλων των έμμεσων &quot;συνδέσμων&quot; ανάμεσα στους περιορισμούς &quot;δραστηριότητες - ίδιος χρόνος έναρξης&quot;</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4206"/>
         <source>The activities with ids %1 and %2 must be simultaneous (request determined indirectly), but they have common teachers and/or students sets or must be not overlapping</source>
-        <translation type="unfinished"></translation>
+        <translation>Οι δραστηριότητες με ατ %1 και %2 πρέπει να είναι ταυτόχρονες (απαίτηση η οποία έχει καθοριστεί έμμεσα), αλλά έχουν κοινούς εκπαιδευτικούς ή/και κοινές ομάδες μαθητών ή δεν πρέπει να αλληλοεπικαλύπτονται</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4406"/>
         <source>Cannot optimize for teacher %1, because the number of hours for teacher is %2 and you have only %3 allowed days from constraint teacher max days per week x %4 hours in a day. Probably there is an error in your data</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση για τον εκπαιδευτικό %1, διότι ο αριθμός των ωρών για τον εκπαιδευτικό είναι %2 και έχετε μόνον %3 επιτρεπτές ημέρες από τον περιορισμό &quot;εκπαιδευτικός - μέγιστες ημέρες ανά εβδομάδα&quot; x %4 ώρες την ημέρα. Πιθανώς να υπάρχει σφάλμα στα δεδομένα σας</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4462"/>
         <source>Cannot optimize for teacher %1, because of too constrained teacher max days per week, teacher not available and/or breaks. The number of total hours for this teacher is %2 and the number of available slots is, considering max days per week and all other constraints, %3.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση για τον εκπαιδευτικό %1, διότι ο συγκεκριμένος εκπαιδευτικός είναι υπερβολικά περιορισμένος από περιορισμούς του τύπου &quot;εκπαιδευτικός - μέγιστες ημέρες την εβδομάδα&quot;, &quot;εκπαιδευτικός - μη διαθέσιμοι χρόνοι&quot; ή/και διαλείμματα. Ο συνολικός αριθμός των ωρών για τον συγκεκριμένο εκπαιδευτικό είναι %2 και ο αριθμός των διαθέσιμων περιόδων (λαμβανομένων υπόψη του περιορισμού &quot;μέγιστες ημέρες ανά εβδομάδα&quot; καθώς και όλων των άλλων περιορισμών) είναι %3.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4501"/>
         <source>Cannot optimize, because you have constraint teachers max gaps per week with weight (percentage) below 100. Please make weight 100% and try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικοί - μέγιστα κενά ανά εβδομάδα&quot; με ποσοστό βαρύτητας μικρότερο του 100%. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4518"/>
         <source>Cannot optimize, because you have constraint teacher max gaps per week with weight (percentage) below 100 for teacher %1. Please make weight 100% and try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικός - μέγιστα κενά ανά εβδομάδα&quot; με ποσοστό βαρύτητας μικρότερο του 100% για τον εκπαιδευτικό %1. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4612"/>
         <source>Cannot optimize, because you have constraint teachers max gaps per day with weight (percentage) below 100. Please make weight 100% and try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικοί - μέγιστα κενά ανά ημέρα&quot; με ποσοστό βαρύτητας μικρότερο του 100%. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4629"/>
         <source>Cannot optimize, because you have constraint teacher max gaps per day with weight (percentage) below 100 for teacher %1. Please make weight 100% and try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικός - μέγιστα κενά ανά ημέρα&quot; με ποσοστό βαρύτητας μικρότερο του 100% για τον εκπαιδευτικό %1. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4728"/>
         <source>Cannot optimize for subgroup %1, because the number of hours for subgroup is %2 and you have only %3 days x %4 hours in a week.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση για το υποτμήμα %1, διότι ο αριθμός των ωρών για το συγκεκριμένο υποτμήμα είναι %2 και έχετε μόνον %3 ημέρες x %4 ώρες μέσα στην εβδομάδα.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4751"/>
         <source>Cannot optimize for subgroup %1, because the number of hours for subgroup is %2 and you have only %3 free slots from constraints students set not available and/or break. Maybe you inputted wrong constraints students set not available or break or the number of hours per week is less because of a misunderstanding</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η βελτιστοποίηση για το υποτμήμα %1, διότι ο αριθμός των ωρών για το υποτμήμα είναι %2 και έχετε μόνον %3 ελεύθερες περιόδους, λαμβανομένων υπόψη των περιορισμών &quot;ομάδα μαθητών - μη διαθέσιμοι χρόνοι&quot; ή/και &quot;διάλειμμα&quot;. Πιθανώς να έχετε εισαγάγει εσφαλμένους περιορισμούς &quot;ομάδα μαθητών - μη διαθέσιμοι χρόνοι&quot; ή &quot;διάλειμμα&quot; ή ο αριθμός των ωρών ανά εβδομάδα να είναι τελικά μικρότερος εξαιτίας κάποιας παρερμηνείας</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="5964"/>
         <source>Cannot generate, because you do not have a constraint of type basic compulsory time or its weight is lower than 100.0%.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η δημιουργία ωρολογίου προγράμματος, διότι δεν έχετε περιορισμό του τύπου &quot;βασικός υποχρεωτικός χρονικός περιορισμός&quot; ή το ποσοστό βαρύτητας του περιορισμού αυτού είναι μικρότερο από 100.0%.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="5966"/>
         <location filename="../src/engine/generate_pre.cpp" line="7136"/>
         <source>Please add a constraint of this type with weight 100%.</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ προσθέστε περιορισμό αυτού του τύπου με ποσοστό βαρύτητας 100%.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="5968"/>
         <source>You can add this constraint from the menu Data -&gt; Time constraints -&gt; Miscellaneous -&gt; Basic compulsory time constraints.</source>
-        <translation type="unfinished"></translation>
+        <translation>Μπορείτε να προσθέσετε τον περιορισμό αυτόν από το μενού &quot;Δεδομένα -&gt; Χρονικοί περιορισμοί -&gt; Διάφοροι -&gt; Βασικοί υποχρεωτικοί χρονικοί περιορισμοί&quot;.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="5974"/>
@@ -35260,21 +35268,21 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/engine/generate_pre.cpp" line="938"/>
         <location filename="../src/engine/generate_pre.cpp" line="961"/>
         <source>Are you sure you want to continue?</source>
-        <translation type="unfinished">Είστε σίγουροι πως θέλετε να συνεχίσετε;</translation>
+        <translation>Είστε σίγουροι πως θέλετε να συνεχίσετε;</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="918"/>
         <location filename="../src/engine/generate_pre.cpp" line="941"/>
         <location filename="../src/engine/generate_pre.cpp" line="964"/>
         <source>Yes</source>
-        <translation type="unfinished">Ναι</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="918"/>
         <location filename="../src/engine/generate_pre.cpp" line="941"/>
         <location filename="../src/engine/generate_pre.cpp" line="964"/>
         <source>No</source>
-        <translation type="unfinished">Όχι</translation>
+        <translation>Όχι</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="931"/>
@@ -35294,7 +35302,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="959"/>
         <source>Use with caution.</source>
-        <translation type="unfinished">Χρήση με προσοχή.</translation>
+        <translation>Χρήση με προσοχή.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="1137"/>
@@ -35606,7 +35614,7 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/engine/generate_pre.cpp" line="5970"/>
         <location filename="../src/engine/generate_pre.cpp" line="7140"/>
         <source>Explanation:</source>
-        <translation type="unfinished">Επεξήγηση:</translation>
+        <translation>Επεξήγηση:</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="5972"/>
@@ -35629,7 +35637,7 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/engine/generate_pre.cpp" line="6006"/>
         <location filename="../src/engine/generate_pre.cpp" line="6021"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="6006"/>
@@ -35827,33 +35835,33 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/engine/generate_pre.cpp" line="9404"/>
         <source>No: %1</source>
         <comment>Number</comment>
-        <translation type="unfinished"></translation>
+        <translation>Αρ.: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9408"/>
         <source>Id: %1</source>
         <comment>Id of activity</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ατ: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9411"/>
         <source>Teachers: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Εκπαιδευτικοί: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9413"/>
         <source>Subject: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Αντικείμενο: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9416"/>
         <source>Activity tags: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ετικέτες δραστηριοτήτων: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9418"/>
         <source>Students: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Μαθητές: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9422"/>
@@ -36021,7 +36029,7 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="441"/>
         <source>Group activities in initial order item comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Ομαδοποίηση δραστηριοτήτων στο αρχικό στάδιο δημιουργίας ωρολογίου προγράμματος - σχόλια</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="443"/>
@@ -36170,12 +36178,12 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="148"/>
         <source>This group exists only in year %1. This means that all the related activities and constraints will be removed. Do you want to continue?</source>
-        <translation type="unfinished"></translation>
+        <translation>Το τμήμα αυτό υπάρχει μόνον στο έτος %1. Αυτό σημαίνει ότι όλες οι σχετικές (με το τμήμα αυτό) δραστηριότητες καθώς και όλοι οι σχετικοί περιορισμοί θα διαγραφούν. Θέλετε να συνεχίσετε;</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="151"/>
         <source>This group exists in more places, listed below. It will only be removed from the current year, and the related activities and constraints will not be removed. Do you want to continue?</source>
-        <translation type="unfinished"></translation>
+        <translation>Το τμήμα αυτό υπάρχει σε περισσότερα &quot;μέρη&quot;, τα οποία παρατίθενται παρακάτω. Θα διαγραφεί μόνον από το τρέχον έτος, ενώ δεν πρόκειται να διαγραφούν οι σχετικές (με το τμήμα αυτό) δραστηριότητες, ούτε και οι σχετικοί περιορισμοί. Θέλετε να συνεχίσετε;</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="158"/>
@@ -36196,7 +36204,7 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="475"/>
         <source>Students group comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Ομάδα μαθητών - σχόλια</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="477"/>
@@ -36325,6 +36333,24 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/interface/helpaboutform_template.ui" line="27"/>
         <source>About</source>
         <translation>Σχετικά</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2018 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.35.3 (March 2018).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;https://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="90"/>
@@ -36603,7 +36629,12 @@ p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;You may find references for the algorithms and techniques used in this program on the FET documentation web page, &lt;/span&gt;&lt;a href=&quot;https://lalescu.ro/liviu/fet/doc/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://lalescu.ro/liviu/fet/doc/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Μπορείτε να βρείτε αναφορές για τους αλγόριθμους και τις τεχνικές που χρησιμοποιήθηκαν στο πρόγραμμα αυτό, στην ιστοσελίδα του FET που αφορά την τεκμηρίωση του λογισμικού, &lt;/span&gt;&lt;a href=&quot;https://lalescu.ro/liviu/fet/doc/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://lalescu.ro/liviu/fet/doc/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="417"/>
@@ -37164,27 +37195,9 @@ p, li { white-space: pre-wrap; }
         <translation>Συγγραφείς</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2018 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.35.3 (February 2018).&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;https://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="396"/>
         <source>Thanks to</source>
-        <translation type="unfinished"></translation>
+        <translation>Ευχαριστίες προς</translation>
     </message>
 </context>
 <context>
@@ -38386,7 +38399,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="56"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
 </context>
 <context>
@@ -48072,7 +48085,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/removeredundantform.cpp" line="213"/>
         <source>Last confirmation needed</source>
-        <translation type="unfinished"></translation>
+        <translation>Τελευταία απαραίτητη επιβεβαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/removeredundantform.cpp" line="217"/>
@@ -50254,7 +50267,7 @@ Please report error. FET will now abort current operation</source>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="302"/>
         <source>Last confirmation needed</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Τελευταία απαραίτητη επιβεβαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="306"/>
@@ -51611,7 +51624,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/subgroupsform.cpp" line="175"/>
         <source>This subgroup exists in more places, listed below. It will only be removed from the current year/group, and the related activities and constraints will not be removed. Do you want to continue?</source>
-        <translation>Το υποτμήμα αυτό υπάρχει σε περισσότερα μέρη, τα οποία παρατίθεται παρακάτω. Θα διαγραφεί μόνον από το τρέχον τμήμα/έτος, ενώ οι δραστηριότητες και οι περιορισμοί που σχετίζονται με το αυτό υποτμήμα δεν θα διαγραφούν. Θέλετε να συνεχίσετε;</translation>
+        <translation>Το υποτμήμα αυτό υπάρχει σε περισσότερα &quot;μέρη&quot;, τα οποία παρατίθεται παρακάτω. Θα διαγραφεί μόνον από το τρέχον τμήμα/έτος, ενώ οι δραστηριότητες και οι περιορισμοί που σχετίζονται με το αυτό υποτμήμα δεν θα διαγραφούν. Θέλετε να συνεχίσετε;</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform.cpp" line="183"/>
@@ -53570,7 +53583,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/fet.cpp" line="1374"/>
         <source>No: %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Αρ.: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="1378"/>
@@ -53647,7 +53660,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegenerateform.cpp" line="541"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="909"/>
         <source>No: %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Αρ.: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="306"/>
@@ -53662,7 +53675,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegenerateform.cpp" line="931"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="963"/>
         <source>OK</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="397"/>
@@ -53846,7 +53859,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegenerateform.cpp" line="618"/>
         <source>Soft conflicts</source>
         <comment>Title of dialog</comment>
-        <translation type="unfinished">Ήπιες συγκρούσεις</translation>
+        <translation>Ήπιες συγκρούσεις</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="629"/>

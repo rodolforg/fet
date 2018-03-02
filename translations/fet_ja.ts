@@ -1156,7 +1156,7 @@ there won&apos;t be removed an additional number of %1 activities
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="336"/>
         <source>Activity tag is a field which can be used or not, depending on your wish (optional field). It is designed to help you with some constraints. Each activity has a list of activity tags (which may be empty).</source>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティタグは、希望に応じて使用するかどうかを指定するフィールドです（オプションフィールド）。 これは、いくつかの制約をサポートするように設計されています。 各アクティビティには、アクティビティタグのリスト（空の場合もあります）があります。</translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="354"/>
@@ -4886,7 +4886,7 @@ force activities consecutive</source>
         <source>You have to use weight percentage 100%, because otherwise you will get poor timetables. Currently, the algorithm only accepts 100% weight percentage for this constraint (or no constraint).
 Note: students set not available and break are not counted as gaps (early gaps).</source>
         <translation>あなたは重み100％を使用しなければなりません。そうしないと、時間割が貧弱なものになるためです。 現在のところ、アルゴリズムはこの制約の100％の重み（または制約なし）しか受け付けません。
-注：学生セットは利用できず、休憩はギャップとしてカウントされません（早期ギャップ）。</translation>
+注：学生セットの利用不可、休憩はギャップとしてカウントされません（早期ギャップ）。</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsearlymaxbeginningsatsecondhourform_template.ui" line="141"/>
@@ -5295,7 +5295,7 @@ IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this 
         <source>You have to use weight percentage 100%, because otherwise you will get poor timetables. Currently, the algorithm only accepts 100% weight percentage for this constraint (or no constraint).
 Note: students set not available and break are not counted as gaps.</source>
         <translation>あなたは重み100％を使用しなければなりません。そうしないと、時間割が貧弱になるためです。 現在のところ、アルゴリズムはこの制約の100％の重み（または制約なし）しか受け付けません。
-注：学生セットは利用できず、休憩はギャップとしてカウントされません。</translation>
+注：学生セットの利用不可、休憩はギャップとしてカウントされません。</translation>
     </message>
 </context>
 <context>
@@ -5934,7 +5934,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <source>You have to use weight percentage 100%, because otherwise you will get poor timetables. Currently, the algorithm only accepts 100% weight percentage for this constraint (or no constraint).
 Note: students set not available and break are not counted as gaps (early gaps).</source>
         <translation>あなたは重み100％を使用しなければなりません。そうしないと、時間割が貧弱になるからです。 現在のところ、アルゴリズムはこの制約の100％の重み（または制約なし）しか受け付けません。
-注：学生セットは利用できず、休憩はギャップとしてカウントされません（早期ギャップ）。</translation>
+注：学生セットの利用不可、休憩はギャップとしてカウントされません（早期ギャップ）。</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="173"/>
@@ -6546,7 +6546,7 @@ IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this 
         <source>You have to use weight percentage 100%, because otherwise you will get poor timetables. Currently, the algorithm only accepts 100% weight percentage for this constraint (or no constraint).
 Note: students set not available and break are not counted as gaps.</source>
         <translation>あなたは重み100％を使用しなければなりません。そうしないと、時間割が貧弱になるからです。 現在のところ、アルゴリズムはこの制約の100％の重み（または制約なし）しか受け付けません。
-注：学生セットは利用できず、休憩はギャップとしてカウントされません。</translation>
+注：学生セットの利用不可、休憩はギャップとしてカウントされません。</translation>
     </message>
 </context>
 <context>
@@ -36253,6 +36253,24 @@ Please modify your data correspondingly and try again</source>
         <translation>このソフトウェアについて</translation>
     </message>
     <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2018 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.35.3 (March 2018).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;https://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="112"/>
         <source>Translators</source>
         <translation>翻訳者</translation>
@@ -36497,24 +36515,6 @@ p, li { white-space: pre-wrap; }
         <location filename="../src/interface/helpaboutform_template.ui" line="69"/>
         <source>Authors</source>
         <translation>作者</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2018 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.35.3 (February 2018).&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;https://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="90"/>
@@ -42924,7 +42924,7 @@ IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this 
         <source>You have to use weight percentage 100%, because otherwise you will get poor timetables. Currently, the algorithm only accepts 100% weight percentage for this constraint (or no constraint).
 Note: students set not available and break are not counted as gaps.</source>
         <translation>重み100％を使用しなければなりません。そうしないと、時間割が貧弱になるからです。 現在のところ、アルゴリズムはこの制約に100％の重み（または制約なし）しか受け付けません。
-注：学生セットは利用できず、休憩はギャップとしてカウントされません。</translation>
+注：学生セットの利用不可、休憩はギャップとしてカウントされません。</translation>
     </message>
 </context>
 <context>
@@ -43108,12 +43108,12 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsminhoursdailyform.cpp" line="44"/>
         <source>Advanced usage: enabled</source>
-        <translation type="unfinished"></translation>
+        <translation>高度な使用法：有効</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsminhoursdailyform.cpp" line="46"/>
         <source>Advanced usage: not enabled</source>
-        <translation type="unfinished"></translation>
+        <translation>高度な使用法：無効</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsminhoursdailyform.cpp" line="68"/>
@@ -43623,7 +43623,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Modify students set interval max days per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>学生セットの１週当たりのインターバル最大日数の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform_template.ui" line="22"/>
@@ -44187,12 +44187,12 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="47"/>
         <source>Advanced usage: enabled</source>
-        <translation type="unfinished"></translation>
+        <translation>高度な使用法：有効</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="49"/>
         <source>Advanced usage: not enabled</source>
-        <translation type="unfinished"></translation>
+        <translation>高度な使用法：無効</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="113"/>
@@ -44221,7 +44221,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="124"/>
         <source>Empty days for students min hours daily constraints are not enabled. You must enable them from the Settings-&gt;Advanced menu.</source>
-        <translation type="unfinished"></translation>
+        <translation>学生の日々の最小時間のための空き日の制約は有効になっていません。 設定 - &gt;詳細設定メニューから有効にする必要があります。</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="129"/>
@@ -44237,7 +44237,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="164"/>
         <source>Advanced usage is not enabled. To be able to select &apos;Allow empty days&apos; for the constraints of type min hours daily for students, you must enable the option from the Settings-&gt;Advanced menu.</source>
         <comment>&apos;Allow empty days&apos; is an option which the user can enable and then he can select it.</comment>
-        <translation type="unfinished"></translation>
+        <translation>高度な使用法は有効になっていません。 学生の日々の最小時間タイプの制約に「空き日を許可する」を選択できるようにするには、[設定] - &gt; [詳細設定]メニューからオプションを有効にする必要があります。</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="170"/>
@@ -44247,7 +44247,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="167"/>
         <source>Explanation: only select this option if your institution allows empty days for students and a timetable is possible with empty days for students. Otherwise, it is IMPERATIVE (for performance reasons) to not select this option (or FET may not be able to find a timetable).</source>
-        <translation type="unfinished"></translation>
+        <translation>説明：あなたの機関が学生の空き日を許可し、学生の空き日で時間割の編成が可能な場合にのみ、このオプションを選択してください。 それ以外の場合は、パフォーマンス上の理由から、このオプションを選択しないでください（またはFETがタイムテーブルを見つけることができない可能性があります）。</translation>
     </message>
 </context>
 <context>
@@ -44460,7 +44460,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredstartingtimesform_template.ui" line="14"/>
         <source>Modify subactivities preferred starting times</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>サブアクティビティの推奨開始時間の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredstartingtimesform_template.ui" line="124"/>
@@ -44550,7 +44550,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredtimeslotsform_template.ui" line="14"/>
         <source>Modify subactivities preferred time slots</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>サブアクティビティの推奨タイムスロットの変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredtimeslotsform_template.ui" line="159"/>
@@ -44738,7 +44738,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintsubjectactivitytagpreferredroomsform_template.ui" line="14"/>
         <source>Modify subject activity tag preferred rooms</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>科目アクティビティタグの推奨する部屋の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectactivitytagpreferredroomsform_template.ui" line="33"/>
@@ -44808,7 +44808,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintsubjectpreferredroomform_template.ui" line="14"/>
         <source>Modify subject preferred room</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>科目の推奨される部屋の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectpreferredroomform_template.ui" line="28"/>
@@ -44867,7 +44867,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintsubjectpreferredroomsform_template.ui" line="14"/>
         <source>Modify subject preferred rooms</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>科目の推奨される部屋の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectpreferredroomsform_template.ui" line="41"/>
@@ -44946,7 +44946,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Modify teacher activity tag max hours continuously</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>教師のアクティビティタグの最大連続時間の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhourscontinuouslyform_template.ui" line="60"/>
@@ -44995,7 +44995,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Modify teacher activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>教師のアクティビティタグの１日の最大時間を変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhoursdailyform_template.ui" line="28"/>
@@ -45054,7 +45054,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteacherhomeroomform_template.ui" line="14"/>
         <source>Modify teacher home room</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>教師のホームルームの変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherhomeroomform_template.ui" line="20"/>
@@ -45122,7 +45122,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteacherhomeroomsform_template.ui" line="14"/>
         <source>Modify teacher home rooms</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>教師のホームルームの変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherhomeroomsform_template.ui" line="41"/>
@@ -45191,7 +45191,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteacherintervalmaxdaysperweekform.cpp" line="135"/>
         <source>Start hour cannot be greater or equal than end hour</source>
-        <translation type="unfinished">開始時間は終了時間より早い時間にしてください</translation>
+        <translation>開始時間は終了時間より早い時間にしてください</translation>
     </message>
 </context>
 <context>
@@ -45200,7 +45200,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteacherintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Modify teacher interval max days per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>教師の１週当たりのインターバル最大日数の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherintervalmaxdaysperweekform_template.ui" line="22"/>
@@ -45263,7 +45263,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachermaxbuildingchangesperdayform_template.ui" line="14"/>
         <source>Modify teacher max building changes per day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>教師の１日の最大の建物移動の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxbuildingchangesperdayform_template.ui" line="28"/>
@@ -45316,7 +45316,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachermaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Modify teacher max building changes per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>教師の週あたりの最大の建物移動の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxbuildingchangesperweekform_template.ui" line="28"/>
@@ -45385,7 +45385,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachermaxdaysperweekform_template.ui" line="14"/>
         <source>Modify teacher max days per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>教師の週当たりの最大日数の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxdaysperweekform_template.ui" line="28"/>
@@ -45449,7 +45449,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperdayform_template.ui" line="14"/>
         <source>Modify teacher max gaps per day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>教師の１日当たりの最大ギャップの変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperdayform_template.ui" line="120"/>
@@ -45465,7 +45465,8 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperdayform_template.ui" line="32"/>
         <source>You must use weight percentage 100%, because otherwise you will get poor timetables. Try to fix firstly a rather large value for max gaps per day and lower it as you find new timetables.
 Note: teacher not available and break are not counted as gaps.</source>
-        <translation type="unfinished"></translation>
+        <translation>重み100％を使用しなければなりません。そうしないと、時間割が貧弱になるためです。 まず、1日あたりの最大ギャップの値を大きくし、新しい時間割を見つけたらそれを下げていってください。
+注：教師の利用不可と休憩はギャップにカウントされません。</translation>
     </message>
 </context>
 <context>
@@ -45499,7 +45500,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperweekform_template.ui" line="14"/>
         <source>Modify teacher max gaps per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>教師の週当たりの最大ギャップの変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperweekform_template.ui" line="141"/>
@@ -45530,7 +45531,8 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperweekform_template.ui" line="32"/>
         <source>You must use weight percentage 100%, because otherwise you will get poor timetables. Try to fix firstly a rather large value for max gaps per week and lower it as you find new timetables.
 Note: teacher not available and break are not counted as gaps.</source>
-        <translation type="unfinished"></translation>
+        <translation>重み100％を使用しなければなりません。そうしないと、時間割が貧弱になるためです。 まず、週あたりの最大ギャップの値を大きくし、新しい時間割を見つけたらそれを下げていってください。
+注：教師の利用不可と休憩はギャップにカウントされません。</translation>
     </message>
 </context>
 <context>
@@ -45568,7 +45570,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachermaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Modify teacher max hours continuously</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>教師の最大連続時間の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxhourscontinuouslyform_template.ui" line="118"/>
@@ -45622,7 +45624,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachermaxhoursdailyform_template.ui" line="14"/>
         <source>Modify teacher max hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>教師の日々の最大時間の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxhoursdailyform_template.ui" line="118"/>
@@ -45672,7 +45674,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachermaxspanperdayform_template.ui" line="14"/>
         <source>Modify teacher max span per day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>教師の１日当たりの最大スパンの変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxspanperdayform_template.ui" line="44"/>
@@ -45731,7 +45733,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachermindaysperweekform_template.ui" line="14"/>
         <source>Modify teacher min days per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>教師の週当たりの最小日数の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermindaysperweekform_template.ui" line="26"/>
@@ -45784,7 +45786,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachermingapsbetweenbuildingchangesform_template.ui" line="14"/>
         <source>Modify teacher min gaps between building changes</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>教師の建物移動間の最小ギャップの変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermingapsbetweenbuildingchangesform_template.ui" line="28"/>
@@ -45870,7 +45872,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform_template.ui" line="14"/>
         <source>Modify teacher min hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>教師の日々の最小時間を変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform_template.ui" line="32"/>
@@ -46026,12 +46028,12 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachernotavailabletimesform_template.ui" line="14"/>
         <source>Modify teacher not available times</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>教師の利用不可時間の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachernotavailabletimesform_template.ui" line="26"/>
         <source>This constraint does not induce gaps for teachers. If a teacher has lessons before and after this not available period, there will be no gaps counted</source>
-        <translation type="unfinished"></translation>
+        <translation>この制約は教師のためのギャップを引き起こしません。 教師がこの利用不可時間の前後で授業がある場合は、ギャップにカウントされません</translation>
     </message>
 </context>
 <context>
@@ -46078,7 +46080,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachersactivitytagmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Modify teachers activity tag max hours continuously</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>教師のアクティビティタグの最大連続時間の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersactivitytagmaxhourscontinuouslyform_template.ui" line="28"/>
@@ -46121,7 +46123,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachersactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Modify teachers activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>教師のアクティビティタグの日々の最大時間の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersactivitytagmaxhoursdailyform_template.ui" line="28"/>
@@ -46198,7 +46200,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachersintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Modify teachers interval max days per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>教師の１週当たりのインターバル最大日数の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersintervalmaxdaysperweekform_template.ui" line="22"/>
@@ -46352,7 +46354,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachersmaxdaysperweekform_template.ui" line="14"/>
         <source>Modify teachers max days per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>教師の週当たりの最大日数の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxdaysperweekform_template.ui" line="56"/>
@@ -46391,7 +46393,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachersmaxgapsperdayform_template.ui" line="14"/>
         <source>Modify teachers max gaps per day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>教師の１日当たりの最大ギャップの変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxgapsperdayform_template.ui" line="105"/>
@@ -46417,7 +46419,8 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachersmaxgapsperdayform_template.ui" line="32"/>
         <source>It is recommended to use only one constraint of this type. You must use weight percentage 100%, because otherwise you will get poor timetables. Try to fix firstly a rather large value for max gaps per day and lower it as you find new timetables.
 Note: teacher not available and break are not counted as gaps.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">重み100％を使用する必要があります。そうしない場合、時間割が貧弱になるためです。最初に、1日あたりの最大ギャップの値を大きくし、新しい時間割を生成できたらそれを下げてください。ここで与えられたデフォルト値１はあなたの学校では低すぎるかもしれません。その場合、より高い値を使う必要があります。
+注：教師が空いていない場合、および休憩はギャップとしてカウントされません。</translation>
     </message>
 </context>
 <context>
@@ -46445,7 +46448,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachersmaxgapsperweekform_template.ui" line="14"/>
         <source>Modify teachers max gaps per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>教師の週当たりの最大ギャップの変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxgapsperweekform_template.ui" line="105"/>
@@ -46503,7 +46506,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachersmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Modify teachers max hours continuously</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>教師の最大連続時間の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxhourscontinuouslyform_template.ui" line="56"/>
@@ -46865,7 +46868,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintthreeactivitiesgroupedform_template.ui" line="14"/>
         <source>Modify three activities grouped</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>３つのアクティビティのグループ化の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintthreeactivitiesgroupedform_template.ui" line="28"/>
@@ -46935,7 +46938,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="14"/>
         <source>Modify two activities consecutive</source>
-        <translation type="unfinished"></translation>
+        <translation>２つの連続したアクティビティの変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="22"/>
@@ -47007,7 +47010,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstrainttwoactivitiesgroupedform_template.ui" line="14"/>
         <source>Modify two activities grouped</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>２つのアクティビティのグループ化の変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesgroupedform_template.ui" line="22"/>
@@ -47133,7 +47136,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifygroupactivitiesininitialorderitemform_template.ui" line="14"/>
         <source>Modify group activities in initial order item</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>最初のオーダー項目のグループアクティビティの変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifygroupactivitiesininitialorderitemform_template.ui" line="20"/>
@@ -47345,7 +47348,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifystudentssubgroupform_template.ui" line="14"/>
         <source>Modify students subgroup</source>
         <extracomment>Title of the dialog to modify a students subgroup</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>学生サブグループの変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentssubgroupform_template.ui" line="43"/>
@@ -47622,7 +47625,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="14"/>
         <source>Modify subactivity</source>
         <extracomment>Title of dialog to modify a subactivity</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>サブアクティビティの変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="46"/>
@@ -47891,7 +47894,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/removeredundantconfirmationform.cpp" line="41"/>
         <source>Please read carefully the description below:</source>
-        <translation type="unfinished">下の説明を注意してお読みください:</translation>
+        <translation>以下の説明を注意してお読みください：</translation>
     </message>
     <message>
         <location filename="../src/interface/removeredundantconfirmationform.cpp" line="43"/>
@@ -48273,7 +48276,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/engine/rules.cpp" line="10984"/>
         <location filename="../src/engine/rules.cpp" line="14987"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="460"/>
@@ -48285,7 +48288,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/engine/rules.cpp" line="676"/>
         <location filename="../src/engine/rules.cpp" line="758"/>
         <source>Canceled</source>
-        <translation type="unfinished">キャンセルされた</translation>
+        <translation>キャンセルされた</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="644"/>
@@ -48332,7 +48335,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/engine/rules.cpp" line="10989"/>
         <location filename="../src/engine/rules.cpp" line="15002"/>
         <source>Skip rest</source>
-        <translation type="unfinished">全てスキップ</translation>
+        <translation>全てスキップ</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="649"/>
@@ -48374,7 +48377,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/engine/rules.cpp" line="10989"/>
         <location filename="../src/engine/rules.cpp" line="15002"/>
         <source>See next</source>
-        <translation type="unfinished">次を見る</translation>
+        <translation>次を見る</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="664"/>
@@ -48487,7 +48490,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/engine/rules.cpp" line="7074"/>
         <location filename="../src/engine/rules.cpp" line="7200"/>
         <source>FET critical</source>
-        <translation type="unfinished">FET　重要</translation>
+        <translation>FET　重要</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="4685"/>
@@ -48623,84 +48626,84 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/engine/rules.cpp" line="4787"/>
         <source>08:00</source>
         <comment>Hour name</comment>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="114"/>
         <location filename="../src/engine/rules.cpp" line="4788"/>
         <source>09:00</source>
         <comment>Hour name</comment>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="115"/>
         <location filename="../src/engine/rules.cpp" line="4789"/>
         <source>10:00</source>
         <comment>Hour name</comment>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="116"/>
         <location filename="../src/engine/rules.cpp" line="4790"/>
         <source>11:00</source>
         <comment>Hour name</comment>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="117"/>
         <location filename="../src/engine/rules.cpp" line="4791"/>
         <source>12:00</source>
         <comment>Hour name</comment>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="118"/>
         <location filename="../src/engine/rules.cpp" line="4792"/>
         <source>13:00</source>
         <comment>Hour name</comment>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="119"/>
         <location filename="../src/engine/rules.cpp" line="4793"/>
         <source>14:00</source>
         <comment>Hour name</comment>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="120"/>
         <location filename="../src/engine/rules.cpp" line="4794"/>
         <source>15:00</source>
         <comment>Hour name</comment>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="121"/>
         <location filename="../src/engine/rules.cpp" line="4795"/>
         <source>16:00</source>
         <comment>Hour name</comment>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="122"/>
         <location filename="../src/engine/rules.cpp" line="4796"/>
         <source>17:00</source>
         <comment>Hour name</comment>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="123"/>
         <location filename="../src/engine/rules.cpp" line="4797"/>
         <source>18:00</source>
         <comment>Hour name</comment>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="124"/>
         <location filename="../src/engine/rules.cpp" line="4798"/>
         <source>19:00</source>
         <comment>Hour name</comment>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="162"/>
@@ -49542,7 +49545,7 @@ not added - must be a duplicate</source>
         <location filename="../src/interface/splityearform.cpp" line="514"/>
         <location filename="../src/interface/splityearform.cpp" line="734"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="121"/>
@@ -49550,7 +49553,7 @@ not added - must be a duplicate</source>
         <location filename="../src/interface/splityearform.cpp" line="415"/>
         <location filename="../src/interface/splityearform.cpp" line="621"/>
         <source>FET warning</source>
-        <translation type="unfinished"></translation>
+        <translation>FETの注意</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="140"/>
@@ -49594,7 +49597,7 @@ not added - must be a duplicate</source>
         <location filename="../src/interface/splityearform.cpp" line="615"/>
         <location filename="../src/interface/splityearform.cpp" line="860"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">FETの確認</translation>
+        <translation>FETの確認</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="324"/>
@@ -49765,7 +49768,7 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="467"/>
         <source>Empty names not allowed</source>
-        <translation type="unfinished">空の名前は許可されていません</translation>
+        <translation>空の名前は許可されていません</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="494"/>
@@ -49785,12 +49788,12 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="616"/>
         <source>Yes</source>
-        <translation type="unfinished">はい</translation>
+        <translation>はい</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="616"/>
         <source>No</source>
-        <translation type="unfinished">いいえ</translation>
+        <translation>いいえ</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="621"/>
@@ -49835,7 +49838,7 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="841"/>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -50598,18 +50601,18 @@ Please report error. FET will now abort current operation</source>
         <location filename="../src/interface/statisticsprintform.cpp" line="126"/>
         <source>All</source>
         <comment>Refers to a list of items, select all. Please keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translation>全て</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="128"/>
         <source>None</source>
         <comment>Refers to a list of items, select none. Please keep translation short</comment>
-        <translation type="unfinished">無し</translation>
+        <translation>無し</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="137"/>
         <source>Print</source>
-        <translation type="unfinished">印刷</translation>
+        <translation>印刷</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="139"/>
@@ -52411,7 +52414,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="10352"/>
         <location filename="../src/engine/timetableexport.cpp" line="10365"/>
         <source>Year</source>
-        <translation type="unfinished">年</translation>
+        <translation>年</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2580"/>
@@ -52459,7 +52462,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="4547"/>
         <location filename="../src/engine/timetableexport.cpp" line="4589"/>
         <source>back to the top</source>
-        <translation type="unfinished"></translation>
+        <translation>トップに戻る</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="4116"/>
@@ -52836,7 +52839,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="9746"/>
         <location filename="../src/engine/timetableexport.cpp" line="9865"/>
         <source>Single gap</source>
-        <translation type="unfinished"></translation>
+        <translation>単一のギャップ</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9747"/>
@@ -52848,7 +52851,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="9748"/>
         <location filename="../src/engine/timetableexport.cpp" line="9867"/>
         <source>Big gap</source>
-        <translation type="unfinished"></translation>
+        <translation>大きなギャップ</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9749"/>
@@ -52884,12 +52887,12 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="9754"/>
         <source>Not available</source>
         <comment>It refers to a teacher</comment>
-        <translation type="unfinished"></translation>
+        <translation>利用不可</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9873"/>
         <source>Not available</source>
-        <translation type="unfinished"></translation>
+        <translation>利用不可</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9939"/>
@@ -52915,7 +52918,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="10324"/>
         <location filename="../src/engine/timetableexport.cpp" line="10518"/>
         <source>Hours per week</source>
-        <translation type="unfinished"></translation>
+        <translation>１週あたりの時間</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10060"/>
@@ -52936,13 +52939,13 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="10062"/>
         <location filename="../src/engine/timetableexport.cpp" line="10275"/>
         <source>Gaps per day</source>
-        <translation type="unfinished"></translation>
+        <translation>１日あたりのギャップ</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10063"/>
         <location filename="../src/engine/timetableexport.cpp" line="10276"/>
         <source>Hours per day</source>
-        <translation type="unfinished"></translation>
+        <translation>１日あたりの時間</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10066"/>
@@ -52954,19 +52957,19 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="10073"/>
         <location filename="../src/engine/timetableexport.cpp" line="10286"/>
         <source>Average</source>
-        <translation type="unfinished"></translation>
+        <translation>平均</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10080"/>
         <location filename="../src/engine/timetableexport.cpp" line="10293"/>
         <source>Min</source>
-        <translation type="unfinished"></translation>
+        <translation>最小</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10087"/>
         <location filename="../src/engine/timetableexport.cpp" line="10300"/>
         <source>Max</source>
-        <translation type="unfinished"></translation>
+        <translation>最大</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10105"/>
@@ -53081,7 +53084,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="899"/>
         <location filename="../src/engine/timetableexport.cpp" line="905"/>
         <source>FET - Critical</source>
-        <translation type="unfinished"></translation>
+        <translation>FET　重要</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="889"/>
@@ -53275,27 +53278,27 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2042"/>
         <source>Timetables</source>
-        <translation type="unfinished">時間割（複）</translation>
+        <translation>時間割</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2044"/>
         <source>Days Horizontal</source>
-        <translation type="unfinished"></translation>
+        <translation>日で横並び</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2044"/>
         <source>Days Vertical</source>
-        <translation type="unfinished"></translation>
+        <translation>日で垂直</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2044"/>
         <source>Time Horizontal</source>
-        <translation type="unfinished"></translation>
+        <translation>時間で横並び</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2044"/>
         <source>Time Vertical</source>
-        <translation type="unfinished"></translation>
+        <translation>時間で垂直</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2054"/>
@@ -53348,22 +53351,22 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2106"/>
         <source>Years</source>
-        <translation type="unfinished">年</translation>
+        <translation>年</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2132"/>
         <source>Teachers</source>
-        <translation type="unfinished">教師</translation>
+        <translation>教師</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2176"/>
         <source>Rooms</source>
-        <translation type="unfinished"></translation>
+        <translation>部屋</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2202"/>
         <source>Subjects</source>
-        <translation type="unfinished"></translation>
+        <translation>科目</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="1996"/>
@@ -53385,7 +53388,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="7625"/>
         <location filename="../src/engine/timetableexport.cpp" line="7642"/>
         <source>All Activities</source>
-        <translation type="unfinished"></translation>
+        <translation>全てのアクティビティ</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2030"/>
@@ -53396,7 +53399,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="2009"/>
         <location filename="../src/engine/timetableexport.cpp" line="2026"/>
         <source>teachers</source>
-        <translation type="unfinished">教師たち</translation>
+        <translation>教師</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2022"/>
@@ -53418,13 +53421,13 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/fet.cpp" line="1374"/>
         <source>No: %1</source>
-        <translation type="unfinished">番号: %1</translation>
+        <translation>番号: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="1378"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
-        <translation type="unfinished">アId:%1（%2）</translation>
+        <translation>アId:%1（%2）</translation>
     </message>
 </context>
 <context>
@@ -54899,13 +54902,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="653"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="726"/>
         <source>The following constraint will be deleted:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">以下の制約は削除されます：</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="666"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="739"/>
         <source>Skip information</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">説明をスキップ</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="666"/>
@@ -55013,13 +55016,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="318"/>
         <source>px</source>
         <comment>Abbreviation for pixels</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ピク</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="316"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="326"/>
         <source>Automatic</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">自動</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="415"/>
@@ -55133,13 +55136,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="912"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="997"/>
         <source>The following constraint will be deleted:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">以下の制約は削除されます：</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="925"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1010"/>
         <source>Skip information</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">説明をスキップ</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="925"/>
@@ -55425,13 +55428,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="747"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="820"/>
         <source>The following constraint will be deleted:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">以下の制約は削除されます：</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="760"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="833"/>
         <source>Skip information</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">説明をスキップ</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="760"/>
@@ -55511,13 +55514,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="390"/>
         <source>px</source>
         <comment>Abbreviation for pixels</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ピク</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="388"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="398"/>
         <source>Automatic</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">自動</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="486"/>
@@ -55650,13 +55653,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1106"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1191"/>
         <source>The following constraint will be deleted:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">以下の制約は削除されます：</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1119"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1204"/>
         <source>Skip information</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">説明をスキップ</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1119"/>
@@ -55916,13 +55919,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="645"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="719"/>
         <source>The following constraint will be deleted:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">以下の制約は削除されます：</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="658"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="732"/>
         <source>Skip information</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">説明をスキップ</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="658"/>
@@ -56018,20 +56021,20 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="204"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="649"/>
         <source>Cannot display the timetable, because you added or removed some teachers. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished">何人かの教師を追加または削除したため、時間割を表示できません。時間割を再度生成してから表示してください</translation>
+        <translation>何人かの教師を追加または削除したため、時間割を表示できません。時間割を再度生成してから表示してください</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="307"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="317"/>
         <source>px</source>
         <comment>Abbreviation for pixels</comment>
-        <translation type="unfinished"></translation>
+        <translation>ピク</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="315"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="325"/>
         <source>Automatic</source>
-        <translation type="unfinished"></translation>
+        <translation>自動</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="407"/>
@@ -56044,7 +56047,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="639"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="749"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished">いくつかの部屋を追加または削除したため、時間割を表示できません。時間割を再度生成してから表示してください</translation>
+        <translation>いくつかの部屋を追加または削除したため、時間割を表示できません。時間割を再度生成してから表示してください</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="627"/>
@@ -56084,7 +56087,8 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="738"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
-        <translation type="unfinished">コースの割り当て。これを行う前にはシミュレーションを止めてください。</translation>
+        <translation>コースの割り当て。
+これを行う前にはシミュレーションを止めてください。</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="829"/>
@@ -56144,19 +56148,19 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="878"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="963"/>
         <source>The following constraint will be deleted:</source>
-        <translation type="unfinished"></translation>
+        <translation>以下の制約は削除されます：</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="891"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="976"/>
         <source>Skip information</source>
-        <translation type="unfinished"></translation>
+        <translation>説明をスキップ</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="891"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="976"/>
         <source>See next</source>
-        <translation type="unfinished">次を見る</translation>
+        <translation>次を見る</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="913"/>
