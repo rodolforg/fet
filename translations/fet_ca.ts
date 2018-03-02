@@ -78,17 +78,17 @@
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="427"/>
         <source>different students</source>
-        <translation>alumnes diferents</translation>
+        <translation>estudiants diferents</translation>
     </message>
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="429"/>
         <source>different boolean variable &apos;must compute n total students&apos;</source>
-        <translation>variable booleana diferent &quot;cal comptbilitzarr n alumnes totals</translation>
+        <translation>variable booleana diferent &quot;cal comptabilitzar n estudiants totals</translation>
     </message>
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="431"/>
         <source>different number of students</source>
-        <translation>nombre d&apos;alumnes diferent</translation>
+        <translation>nombre d&apos;estudiants diferent</translation>
     </message>
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="434"/>
@@ -133,7 +133,7 @@
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="553"/>
         <source>Explanation of the short description of an activity: first comes the id. If the activity is inactive, an X follows. Then the duration. Then, if the activity is split, a slash and the total duration. Then teachers, subject, activity tag (if it is not void) and students. Then the number of students (if specified).</source>
-        <translation>Explicació de la descripció curta d&apos;una activitat: primer ve la id. Si l&apos;activitat és inactiva, segueix una X. Llavors la durada. Després, si l&apos;activitat està auto dividida, una barra i la durada total. Llavors el professorat, matèria, etiqueta d&apos;activitat (si no està buida) i els alumnes. A continuació el nombre d&apos;alumnes (si s&apos;especifica).</translation>
+        <translation>Explicació de la descripció curta d&apos;una activitat: primer ve la id. Si l&apos;activitat és inactiva, segueix una X. Llavors la durada. Després, si l&apos;activitat està auto dividida, una barra i la durada total. Llavors el professorat, matèria, etiqueta d&apos;activitat (si no està buida) i els estudiants. A continuació el nombre d&apos;estudiants (si s&apos;especifica).</translation>
     </message>
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="557"/>
@@ -151,7 +151,7 @@
         <location filename="../src/interface/activitiesform.cpp" line="563"/>
         <source>if you use colors in interface (see Settings/Interface menu), they will appear with different background color.</source>
         <comment>It refers to inactive activities</comment>
-        <translation>Si fas servir colors a la interfície (vegeu el menu Configuració/Interfície), apareixeran amb diferent color de fons.</translation>
+        <translation>Si fas servir colors a la interfície (vegeu el menú Configuració/Interfície), apareixeran amb diferent color de fons.</translation>
     </message>
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="565"/>
@@ -210,7 +210,7 @@
         <location filename="../src/interface/activitiesform_template.ui" line="91"/>
         <source>Students</source>
         <comment>It refers to students sets, but I want to keep the string short</comment>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/activitiesform_template.ui" line="110"/>
@@ -362,12 +362,12 @@
     <message>
         <location filename="../src/engine/activity.cpp" line="644"/>
         <source>No students sets for this activity</source>
-        <translation>Cap grup d&apos;alumnes per aquesta activitat</translation>
+        <translation>Cap grup d&apos;estudiants per aquesta activitat</translation>
     </message>
     <message>
         <location filename="../src/engine/activity.cpp" line="649"/>
         <source>Students=%1</source>
-        <translation>Alumnes=%1</translation>
+        <translation>Estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/activity.cpp" line="676"/>
@@ -399,7 +399,7 @@
         <location filename="../src/engine/activity.cpp" line="660"/>
         <location filename="../src/engine/activity.cpp" line="664"/>
         <source>Total number of students=%1</source>
-        <translation>Nombre total d&apos;alumnes=%1</translation>
+        <translation>Nombre total d&apos;estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/activity.cpp" line="665"/>
@@ -455,12 +455,12 @@
     <message>
         <location filename="../src/interface/activityplanningconfirmationform.cpp" line="47"/>
         <source>This is a simple activity planning dialog. You need to add all teachers, subjects and the students structure before you can work with it. It is also recommended to add the necessary activity tags before using this dialog.</source>
-        <translation>Aquest és un quadre de diàleg simple de planificació d&apos;activitats. Necessites afegir tots el professorat, matèries i l&apos;estructura dels alumnes abans que puguis treballar-hi. També es recomana afegir les etiquetes d&apos;activitat necessàries abans d&apos;usar aquest quadre de diàleg.</translation>
+        <translation>Aquest és un quadre de diàleg simple de planificació d&apos;activitats. Necessites afegir tots el professorat, matèries i l&apos;estructura dels estudiants abans que puguis treballar-hi. També es recomana afegir les etiquetes d&apos;activitat necessàries abans d&apos;usar aquest quadre de diàleg.</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningconfirmationform.cpp" line="51"/>
         <source>The main work will be done in the upper table with the students-subjects matrix. Select an &apos;action&apos; from the right side and activate a table cell to do that action (activate with the mouse double-click or click, depending on your platform, or by pressing Enter). The number of hours is summed in the heading, so you can always check if your planning fits your needs.</source>
-        <translation>La major part del treball es farà en la taula superior amb la matriu alumnes-matèries. Selecciona una &quot;acció&quot; de la dreta i activa una cel·la de taula per fer aquella acció (activa-la amb el click o doble click del ratolí, depenent de la teva plataforma, o apretant la tecla Enter). El nombre d&apos;hores es suma a l&apos;encapçalament, així pots sempre comprovar si la planificació es correspon a les teves necessitats.</translation>
+        <translation>La major part del treball es farà en la taula superior amb la matriu estudiants-matèries. Selecciona una &quot;acció&quot; de la dreta i activa una cel·la de taula per fer aquella acció (activa-la amb el click o doble click del ratolí, depenent de la teva plataforma, o apretant la tecla Enter). El nombre d&apos;hores es suma a l&apos;encapçalament, així pots sempre comprovar si la planificació es correspon a les teves necessitats.</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningconfirmationform.cpp" line="57"/>
@@ -666,7 +666,7 @@
         <location filename="../src/interface/activityplanningform.cpp" line="1018"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1433"/>
         <source>Modify %1 activities of students set %2?</source>
-        <translation>Voleu modificar %1 activitats del grup d&apos;alumnes %2?</translation>
+        <translation>Voleu modificar %1 activitats del grup d&apos;estudiants %2?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1022"/>
@@ -719,7 +719,7 @@ no es poden modificar %1 activitats addicionals
         <location filename="../src/interface/activityplanningform.cpp" line="1040"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1455"/>
         <source>There are activities affecting other students sets. Should the related activities also be modified?</source>
-        <translation>Hi ha activitats que afecten a altres grups d&apos;alumnes. També s&apos;han de modificar les activitats relacionades?</translation>
+        <translation>Hi ha activitats que afecten a altres grups d&apos;estudiants. També s&apos;han de modificar les activitats relacionades?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1061"/>
@@ -757,7 +757,7 @@ no es poden eliminar %1 activitats addicionals
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1919"/>
         <source>This cell contains activities that relate to other students. Should the related activities also be modified?</source>
-        <translation>Aquesta cel·la conté activitats relacionades amb altres alumnes. S&apos;haurien d&apos;esborrar també les activitats relacionades?</translation>
+        <translation>Aquesta cel·la conté activitats relacionades amb altres estudiants. S&apos;haurien d&apos;esborrar també les activitats relacionades?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2064"/>
@@ -794,7 +794,7 @@ no es poden eliminar %1 activitats addicionals
         <location filename="../src/interface/activityplanningform.cpp" line="888"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1274"/>
         <source>Delete %1 activities of students set %2?</source>
-        <translation>Esborra %1 activitats del conjunt d&apos;alumnes %2?</translation>
+        <translation>Esborra %1 activitats del conjunt d&apos;estudiants %2?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="292"/>
@@ -818,7 +818,7 @@ no es poden eliminar %1 activitats addicionals
         <location filename="../src/interface/activityplanningform.cpp" line="901"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1287"/>
         <source>There are activities affecting other students sets. Should the related activities also be deleted?</source>
-        <translation>Hi ha activitats que afecten altres conjunts d&apos;alumnes. S&apos;haurien d&apos;esborrar també les activitats relacionades?</translation>
+        <translation>Hi ha activitats que afecten altres conjunts d&apos;estudiants. S&apos;haurien d&apos;esborrar també les activitats relacionades?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="922"/>
@@ -846,7 +846,7 @@ no es poden eliminar %1 activitats addicionals
         <location filename="../src/interface/activityplanningform.cpp" line="1869"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1891"/>
         <source>students=%1</source>
-        <translation>alumnes=%1</translation>
+        <translation>estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1778"/>
@@ -919,7 +919,7 @@ no es poden eliminar %1 activitats addicionals
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1783"/>
         <source>This cell contains activities that relate to other students. Should the related activities also be deleted?</source>
-        <translation>Aquesta cel·la conté activitats relacionades amb altres alumnes. També s&apos;haurien d&apos;esborrar les acctivitats relacionades?</translation>
+        <translation>Aquesta cel·la conté activitats relacionades amb altres estudiants. També s&apos;haurien d&apos;esborrar les acctivitats relacionades?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2200"/>
@@ -936,7 +936,7 @@ no es poden eliminar %1 activitats addicionals
         <location filename="../src/interface/activityplanningform.cpp" line="2664"/>
         <source>Students</source>
         <comment>Please keep translation short</comment>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2908"/>
@@ -947,12 +947,12 @@ no es poden eliminar %1 activitats addicionals
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2949"/>
         <source>There are no activities without teachers and without students.</source>
-        <translation>No hi ha activitats sense professors ni alumnes.</translation>
+        <translation>No hi ha activitats sense professors ni estudiants.</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2951"/>
         <source>Activities without teachers and without students:</source>
-        <translation>Activitats sense professors ni alumnes:</translation>
+        <translation>Activitats sense professors ni estudiants:</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2954"/>
@@ -967,12 +967,12 @@ no es poden eliminar %1 activitats addicionals
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2959"/>
         <source>There are no activities without students.</source>
-        <translation>No hi ha activitats sense alumnes.</translation>
+        <translation>No hi ha activitats sense estudiants.</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2961"/>
         <source>Activities without students:</source>
-        <translation>Activitats sense alumnes:</translation>
+        <translation>Activitats sense estudiants:</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2963"/>
@@ -1156,7 +1156,7 @@ no es poden eliminar %1 activitats addicionals
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="336"/>
         <source>Activity tag is a field which can be used or not, depending on your wish (optional field). It is designed to help you with some constraints. Each activity has a list of activity tags (which may be empty).</source>
-        <translation type="unfinished"></translation>
+        <translation>L&apos;etiqueta d&apos;activitat és un camp que es pot utilitzar o no, depenent del vostre desig (camp opcional). Està dissenyat per ajudar-vos amb algunes restriccions. Cada activitat té una llista d&apos;etiquetes d&apos;activitat (que poden estar buides).</translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="354"/>
@@ -1344,7 +1344,7 @@ no es poden eliminar %1 activitats addicionals
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="803"/>
         <source>&apos;Students&apos; (the text near the spin box), means &apos;Number of students (-1 for automatic)&apos;</source>
-        <translation>&apos;Alumnes&apos; (el text al costat de la casella giratòria), significa &apos;Nombre d&apos;alumnes (´1 per automàtic)&apos;</translation>
+        <translation>&apos;Estudiants&apos; (el text al costat de la casella giratòria), significa &apos;Nombre d&apos;estudiants (´1 per automàtic)&apos;</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="805"/>
@@ -1379,7 +1379,7 @@ no es poden eliminar %1 activitats addicionals
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="831"/>
         <source>The same procedure (double click) applies to students sets and activity tags.</source>
-        <translation>El mateix procediment (doble click) s&apos;aplica a etiquetes de conjunts d&apos;alumnes i d&apos;activitat.</translation>
+        <translation>El mateix procediment (doble click) s&apos;aplica a etiquetes de conjunts d&apos;estudiants i d&apos;activitat.</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="903"/>
@@ -1436,7 +1436,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="899"/>
         <source>Starting with version 5.0.0, it is possible to add activities with no students or no teachers</source>
-        <translation>A partir de la versió 5.0.0 és possible afegir activitats sense alumnes ni professors</translation>
+        <translation>A partir de la versió 5.0.0 és possible afegir activitats sense estudiants ni professors</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="910"/>
@@ -1471,7 +1471,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="620"/>
         <source>Do you really want to add an activity without student set(s)?</source>
-        <translation>Segur que vols afegir una activitat sense grup(s) d&apos;alumnes?</translation>
+        <translation>Segur que vols afegir una activitat sense grup(s) d&apos;estudiants?</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="697"/>
@@ -1489,7 +1489,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="26"/>
         <source>Teachers</source>
-        <translation>Professors</translation>
+        <translation>Professorat</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="56"/>
@@ -1519,7 +1519,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
         <location filename="../src/interface/addactivityform_template.ui" line="71"/>
         <source>Students</source>
         <comment>It refers to sets of students, but I want to keep text short</comment>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="114"/>
@@ -1540,7 +1540,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
         <location filename="../src/interface/addactivityform_template.ui" line="235"/>
         <source>Students</source>
         <comment>It refers to the number of students, but I want to keep text small</comment>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="257"/>
@@ -1966,12 +1966,12 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
         <location filename="../src/interface/addconstraintactivitiesendstudentsdayform_template.ui" line="14"/>
         <source>Add activities end students day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix &quot;activitats acaben el dia dels alumnes&quot;</translation>
+        <translation>Afegeix &quot;activitats acaben el dia dels estudiants&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesendstudentsdayform_template.ui" line="84"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesendstudentsdayform_template.ui" line="67"/>
@@ -1986,7 +1986,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
     <message>
         <location filename="../src/interface/addconstraintactivitiesendstudentsdayform_template.ui" line="26"/>
         <source>Instructions: you can choose a set of activities with a certain teacher (or blank for all teachers), students set, subject and activity tag.</source>
-        <translation>Instruccions: pots escollir un grup d&apos;activitats amb un professor determinat (o en blanc per tots el professorat), grup d&apos;alumnes, matèria i etiqueta de matèria.</translation>
+        <translation>Instruccions: pots escollir un grup d&apos;activitats amb un professor determinat (o en blanc per tots el professorat), grup d&apos;estudiants, matèria i etiqueta de matèria.</translation>
     </message>
 </context>
 <context>
@@ -2052,7 +2052,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
     <message>
         <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="46"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="56"/>
@@ -2204,7 +2204,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
     <message>
         <location filename="../src/interface/addconstraintactivitiesnotoverlappingform_template.ui" line="52"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesnotoverlappingform_template.ui" line="62"/>
@@ -2230,7 +2230,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
     <message>
         <location filename="../src/interface/addconstraintactivitiesnotoverlappingform_template.ui" line="26"/>
         <source>This constraint means that the activities should not be placed in common timeslots. You don&apos;t need to add this constraint for activities sharing a teacher or students set.</source>
-        <translation>Aquesta restricció significa que les activitats no s&apos;haurien de posar en franges comunes. No cal afegir aquesta restricció per a les activitats que comparteixen un professor o un grup d&apos;alumnes.</translation>
+        <translation>Aquesta restricció significa que les activitats no s&apos;haurien de posar en franges comunes. No cal afegir aquesta restricció per a les activitats que comparteixen un professor o un grup d&apos;estudiants.</translation>
     </message>
 </context>
 <context>
@@ -2291,7 +2291,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
     <message>
         <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Grup d&apos;alumnes</translation>
+        <translation>Grup d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="46"/>
@@ -2398,7 +2398,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
     <message>
         <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="46"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="56"/>
@@ -2495,11 +2495,11 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
  The best practice would be to use constraint break times.
 
  If you need weight under 100%, then you can use this constraint, but be careful not to obtain an impossible timetable (if your teachers/students are constrained on gaps or early gaps and if you leave a not allowed slot between 2 allowed slots or a not allowed slot early in the day and more allowed slots after it, this possible gap might be counted in teachers&apos; and students&apos; timetable)</source>
-        <translation>Has especificat totes les activitats. Això podria generar un petit problema: si especifiques una franja no permesa entre dues franges permeses, aquesta franja no permesa es comptarà com a buit en l&apos;horari del professorat i els alumnes.
+        <translation>Has especificat totes les activitats. Això podria generar un petit problema: si especifiques una franja no permesa entre dues franges permeses, aquesta franja no permesa es comptarà com a buit en l&apos;horari del professorat i els estudiants.
 
  El millor seria fer servir una restricció de pauses.
 
- Si necessites una ponderació per sota del 100%, pots usar aquesta restricció, però ves amb compte de no obtenir un horari impossible (si els teus professors/alumnes tenen restriccions de buits o de buits d&apos;hora i si deixes una franja no permesa entre 2 franges permeses, o una franja no permesa a primeres hores del dia i més franges permeses després d&apos;això, aquest possible buit es podria comptar en l&apos;horari del professorat i els alumnes)</translation>
+ Si necessites una ponderació per sota del 100%, pots usar aquesta restricció, però ves amb compte de no obtenir un horari impossible (si els teus professors/estudiants tenen restriccions de buits o de buits d&apos;hora i si deixes una franja no permesa entre 2 franges permeses, o una franja no permesa a primeres hores del dia i més franges permeses després d&apos;això, aquest possible buit es podria comptar en l&apos;horari del professorat i els estudiants)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="306"/>
@@ -2528,11 +2528,11 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
  The best practice would be to use constraint students set not available times.
 
  If you need weight under 100%, then you can use this constraint, but be careful not to obtain an impossible timetable (if your students set is constrained on gaps or early gaps and if you leave a not allowed slot between 2 allowed slots (or a not allowed slot before allowed slots), this possible gap might be counted in students&apos; timetable)</source>
-        <translation>Només has especificat el conjunt d&apos;alumnes. Això podria suposar un petit problema: si especifiques una franja no permesa entre dues franges permeses (o una franja no permesa abans de franges permeses) , aquesta franja no permesa es comptarà com a buit (o buit d&apos;hora) en l&apos;horari dels alumnes.
+        <translation>Només has especificat el conjunt d&apos;estudiants. Això podria suposar un petit problema: si especifiques una franja no permesa entre dues franges permeses (o una franja no permesa abans de franges permeses) , aquesta franja no permesa es comptarà com a buit (o buit d&apos;hora) en l&apos;horari dels estudiants.
 
- El millor seria usar la restricció temps no disponibles per un conjunt d&apos;alumnes.
+ El millor seria usar la restricció temps no disponibles per un conjunt d&apos;estudiants.
 
- Si necessites un pes per sota del 100%, pots fer servir aquesta restricció, però vigila que no obtinguis un horari impossible (si el teu conjunt d&apos;alumnes té restriccions de buits o de buit d&apos;hora i si li deixes una franja no permesa entre dues franges permeses (o una franja no permesa abans de franges permeses), aquest possible buit podria ser comptat en l&apos;horari dels alumnes)</translation>
+ Si necessites un pes per sota del 100%, pots fer servir aquesta restricció, però vigila que no obtinguis un horari impossible (si el teu conjunt d&apos;estudiants té restriccions de buits o de buit d&apos;hora i si li deixes una franja no permesa entre dues franges permeses (o una franja no permesa abans de franges permeses), aquest possible buit podria ser comptat en l&apos;horari dels estudiants)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="373"/>
@@ -2561,7 +2561,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform_template.ui" line="38"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform_template.ui" line="51"/>
@@ -2647,11 +2647,11 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
  The best practice would be to use constraint break times.
 
  If you need weight under 100%, then you can use this constraint, but be careful not to obtain an impossible timetable (if your teachers/students are constrained on gaps or early gaps and if you leave a not allowed slot between 2 allowed slots or a not allowed slot early in the day and more allowed slots after it, this possible gap might be counted in teachers&apos; and students&apos; timetable)</source>
-        <translation>Has especificat totes les activitats. Això podria generar un petit problema: si especifiques una franja no permesa entre dues franges permeses, aquesta franja no permesa es comptarà com a buit en l&apos;horari del professorat i els alumnes.
+        <translation>Has especificat totes les activitats. Això podria generar un petit problema: si especifiques una franja no permesa entre dues franges permeses, aquesta franja no permesa es comptarà com a buit en l&apos;horari del professorat i els estudiants.
 
  El millor seria fer servir una restricció de pauses.
 
- Si necessites una ponderació per sota del 100%, pots usar aquesta restricció, però ves amb compte de no obtenir un horari impossible (si els teus professors/alumnes tenen restriccions de buits o de buits d&apos;hora i si deixes una franja no permesa entre 2 franges permeses, o una franja no permesa a primeres hores del dia i més franges permeses després d&apos;això, aquest possible buit es podria comptar en l&apos;horari del professorat i els alumnes)</translation>
+ Si necessites una ponderació per sota del 100%, pots usar aquesta restricció, però ves amb compte de no obtenir un horari impossible (si els teus professors/estudiants tenen restriccions de buits o de buits d&apos;hora i si deixes una franja no permesa entre 2 franges permeses, o una franja no permesa a primeres hores del dia i més franges permeses després d&apos;això, aquest possible buit es podria comptar en l&apos;horari del professorat i els estudiants)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="306"/>
@@ -2680,11 +2680,11 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
  The best practice would be to use constraint students set not available times.
 
  If you need weight under 100%, then you can use this constraint, but be careful not to obtain an impossible timetable (if your students set is constrained on gaps or early gaps and if you leave a not allowed slot between 2 allowed slots (or a not allowed slot before allowed slots), this possible gap might be counted in students&apos; timetable)</source>
-        <translation>Només has especificat el conjunt d&apos;alumnes. Això podria suposar un petit problema: si especifiques una franja no permesa entre dues franges permeses (o una franja no permesa abans de franges permeses) , aquesta franja no permesa es comptarà com a buit (o buit d&apos;hora) en l&apos;horari dels alumnes.
+        <translation>Només has especificat el conjunt d&apos;estudiants. Això podria suposar un petit problema: si especifiques una franja no permesa entre dues franges permeses (o una franja no permesa abans de franges permeses) , aquesta franja no permesa es comptarà com a buit (o buit d&apos;hora) en l&apos;horari dels estudiants.
 
- El millor seria usar la restricció temps no disponibles per un conjunt d&apos;alumnes.
+ El millor seria usar la restricció temps no disponibles per un conjunt d&apos;estudiants.
 
- Si necessites un pes per sota del 100%, pots fer servir aquesta restricció, però vigila que no obtinguis un horari impossible (si el teu conjunt d&apos;alumnes té restriccions de buits o de buit d&apos;hora i si li deixes una franja no permesa entre dues franges permeses (o una franja no permesa abans de franges permeses), aquest possible buit podria ser comptat en l&apos;horari dels alumnes)</translation>
+ Si necessites un pes per sota del 100%, pots fer servir aquesta restricció, però vigila que no obtinguis un horari impossible (si el teu conjunt d&apos;estudiants té restriccions de buits o de buit d&apos;hora i si li deixes una franja no permesa entre dues franges permeses (o una franja no permesa abans de franges permeses), aquest possible buit podria ser comptat en l&apos;horari dels estudiants)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="373"/>
@@ -2735,7 +2735,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform_template.ui" line="38"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform_template.ui" line="51"/>
@@ -2828,7 +2828,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
     <message>
         <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Grup d&apos;alumnes</translation>
+        <translation>Grup d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform_template.ui" line="46"/>
@@ -2956,7 +2956,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingdayform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingdayform_template.ui" line="46"/>
@@ -3048,7 +3048,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartinghourform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartinghourform_template.ui" line="46"/>
@@ -3203,7 +3203,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingtimeform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingtimeform_template.ui" line="46"/>
@@ -3274,7 +3274,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
         <location filename="../src/interface/addconstraintactivityendsstudentsdayform_template.ui" line="14"/>
         <source>Add activity ends students day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix &quot;activitats acaben el dia dels alumnes&quot;</translation>
+        <translation>Afegeix &quot;activitats acaben el dia dels estudiants&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivityendsstudentsdayform_template.ui" line="89"/>
@@ -3304,7 +3304,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
     <message>
         <location filename="../src/interface/addconstraintactivityendsstudentsdayform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivityendsstudentsdayform_template.ui" line="26"/>
@@ -3400,7 +3400,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredroomform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredroomform_template.ui" line="26"/>
@@ -3501,7 +3501,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredroomsform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredroomsform_template.ui" line="26"/>
@@ -3624,7 +3624,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform_template.ui" line="26"/>
@@ -3720,7 +3720,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform_template.ui" line="26"/>
@@ -3834,7 +3834,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform_template.ui" line="26"/>
@@ -4222,7 +4222,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
     <message>
         <location filename="../src/interface/addconstraintbreaktimesform_template.ui" line="26"/>
         <source>The important thing is that a break does not induce gaps for teachers or students</source>
-        <translation>El que és important és que un esbarjo no compta com a buit per als professors ni per als alumnes</translation>
+        <translation>El que és important és que un esbarjo no compta com a buit per als professors ni per als estudiants</translation>
     </message>
 </context>
 <context>
@@ -4298,7 +4298,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
     <message>
         <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform_template.ui" line="46"/>
@@ -4427,7 +4427,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform_template.ui" line="46"/>
@@ -4564,7 +4564,7 @@ força-les consecutives</translation>
     <message>
         <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform_template.ui" line="46"/>
@@ -4741,7 +4741,7 @@ força-les consecutives</translation>
         <location filename="../src/interface/addconstraintstudentsactivitytagmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Add students activity tag max hours continuously</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix max hores contínues per etiqueta d&apos;act d&apos;alumnes</translation>
+        <translation>Afegeix max hores contínues per etiqueta d&apos;act d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsactivitytagmaxhourscontinuouslyform_template.ui" line="155"/>
@@ -4797,7 +4797,7 @@ força-les consecutives</translation>
         <location filename="../src/interface/addconstraintstudentsactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Add students activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix max hores diàries per etiqueta d&apos;act d&apos;alumnes</translation>
+        <translation>Afegeix max hores diàries per etiqueta d&apos;act d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsactivitytagmaxhoursdailyform_template.ui" line="28"/>
@@ -4879,19 +4879,19 @@ força-les consecutives</translation>
         <location filename="../src/interface/addconstraintstudentsearlymaxbeginningsatsecondhourform_template.ui" line="14"/>
         <source>Add students early max beginnings at second hour</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix max inicis d&apos;alumnes d&apos;hora a segona hora</translation>
+        <translation>Afegeix max inicis d&apos;estudiants d&apos;hora a segona hora</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsearlymaxbeginningsatsecondhourform_template.ui" line="32"/>
         <source>This represents the maximum allowed beginnings at the second available hour (in a week). You might want to allow your students to begin in some days later, at the second available hour, so you might put &quot;max beginnings at second hour&quot; greater than 0 (the timetable will be easier for FET). Default 0 is given for students which need to begin all classes at the first available hour. You might want to choose a greater value and lower it as you find new timetables</source>
-        <translation>Això representa el màxim permès d&apos;inicis a la 2a hora disponible (per setmana). Pots voler permetre que els teus alumnes comencin alguns dies més tard, a la 2a hora disponible, per tant pots posar &quot;max inicis a 2a&quot; més gran que 0 (l&apos;horari serà més fàcil per FET). Es dón el 0 per defecte pels alumnes que han de començar totes les classes a la 1a hora disponible. Pots voler triar un valor més gran i reduir-lo conforme trobes nous horaris</translation>
+        <translation>Això representa el màxim permès d&apos;inicis a la 2a hora disponible (per setmana). Pots voler permetre que els teus estudiants comencin alguns dies més tard, a la 2a hora disponible, per tant pots posar &quot;max inicis a 2a&quot; més gran que 0 (l&apos;horari serà més fàcil per FET). Es dón el 0 per defecte pels estudiants que han de començar totes les classes a la 1a hora disponible. Pots voler triar un valor més gran i reduir-lo conforme trobes nous horaris</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsearlymaxbeginningsatsecondhourform_template.ui" line="70"/>
         <source>You have to use weight percentage 100%, because otherwise you will get poor timetables. Currently, the algorithm only accepts 100% weight percentage for this constraint (or no constraint).
 Note: students set not available and break are not counted as gaps (early gaps).</source>
         <translation>Has de fer servir ponderació del 100%, perquè sinó obtindràs horaris pobres. Actualment l&apos;algoritme només accepta pesos del 100% per aquesta restricció (o sense restricció).
-Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a buits (buits d&apos;hora).</translation>
+Nota: els no disponibles i els esbarjos no se&apos;ls compten als estudiants com a buits (buits d&apos;hora).</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsearlymaxbeginningsatsecondhourform_template.ui" line="141"/>
@@ -4959,7 +4959,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentsintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Add students interval max days per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix max dies per setmana en un interval per tots els alumnes</translation>
+        <translation>Afegeix max dies per setmana en un interval per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsintervalmaxdaysperweekform_template.ui" line="22"/>
@@ -5025,7 +5025,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentsmaxbuildingchangesperdayform_template.ui" line="14"/>
         <source>Add students max building changes per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix canvis d&apos;edifici d&apos;alumnes max per dia</translation>
+        <translation>Afegeix canvis d&apos;edifici d&apos;estudiants max per dia</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxbuildingchangesperdayform_template.ui" line="22"/>
@@ -5081,7 +5081,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentsmaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Add students max building changes per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix canvis d&apos;edifici d&apos;alumnes max per setmana</translation>
+        <translation>Afegeix canvis d&apos;edifici d&apos;estudiants max per setmana</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxbuildingchangesperweekform_template.ui" line="22"/>
@@ -5143,7 +5143,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentsmaxdaysperweekform_template.ui" line="14"/>
         <source>Add students max days per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegir el nombre màxim de dies setmanals dels alumnes</translation>
+        <translation>Afegir el nombre màxim de dies setmanals dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxdaysperweekform_template.ui" line="22"/>
@@ -5205,7 +5205,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentsmaxgapsperdayform_template.ui" line="14"/>
         <source>Add students max gaps per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix max buits per dia pels alumnes</translation>
+        <translation>Afegeix max buits per dia pels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxgapsperdayform_template.ui" line="32"/>
@@ -5214,7 +5214,7 @@ Note: students set not available and break are not counted as gaps.
 
 IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this constraint, but instead use the safer/better max gaps per week.</source>
         <translation>Has de fer servir ponderació del 100%
-Nota: els no disponibles i les pauses dels conjunts d&apos;alumnes no es compten com a buits.
+Nota: els no disponibles i les pauses dels conjunts d&apos;estudiants no es compten com a buits.
 
 IMPORTANT: si vols un total de 0 buits es recomana NO fer servir aquesta restricció, sinó usar la de max buits per setmana, que és millor/més segura.</translation>
     </message>
@@ -5286,7 +5286,7 @@ IMPORTANT: si vols un total de 0 buits es recomana NO fer servir aquesta restric
         <location filename="../src/interface/addconstraintstudentsmaxgapsperweekform_template.ui" line="14"/>
         <source>Add students max gaps per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix max buits per setmana pels alumnes</translation>
+        <translation>Afegeix max buits per setmana pels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxgapsperweekform_template.ui" line="65"/>
@@ -5303,7 +5303,7 @@ IMPORTANT: si vols un total de 0 buits es recomana NO fer servir aquesta restric
         <source>You have to use weight percentage 100%, because otherwise you will get poor timetables. Currently, the algorithm only accepts 100% weight percentage for this constraint (or no constraint).
 Note: students set not available and break are not counted as gaps.</source>
         <translation>Has de fer servir pes de percentatge 100%, perquè sinó obtindràs horaris pobres. Actualment l&apos;algoritme només accepta pesos del 100% per aquesta restricció (o sense restricció).
-Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a buits (buits d&apos;hora).</translation>
+Nota: els no disponibles i els esbarjos no se&apos;ls compten als estudiants com a buits (buits d&apos;hora).</translation>
     </message>
 </context>
 <context>
@@ -5352,7 +5352,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentsmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Add students max hours continuously</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix max hores contínues pels alumnes</translation>
+        <translation>Afegeix max hores contínues pels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxhourscontinuouslyform_template.ui" line="28"/>
@@ -5408,7 +5408,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentsmaxhoursdailyform_template.ui" line="14"/>
         <source>Add students max hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix max hores diàries pels alumnes</translation>
+        <translation>Afegeix max hores diàries pels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxhoursdailyform_template.ui" line="28"/>
@@ -5455,7 +5455,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentsmaxspanperdayform_template.ui" line="14"/>
         <source>Add students max span per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegir la durada màxima diària dels alumnes</translation>
+        <translation>Afegir la durada màxima diària dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxspanperdayform_template.ui" line="26"/>
@@ -5514,7 +5514,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="14"/>
         <source>Add students min gaps between building changes</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix min buits entre canvis d&apos;edifici pels alumnes</translation>
+        <translation>Afegeix min buits entre canvis d&apos;edifici pels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="50"/>
@@ -5574,7 +5574,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentsminhoursdailyform.cpp" line="75"/>
         <source>Empty days for students min hours daily constraints are not enabled. You must enable them from the Settings-&gt;Advanced menu.</source>
-        <translation>Les restriccions dies buits per tots els alumnes min hores diàries no està habilitada. L&apos;has d&apos;habilitar des del menu Configuració-&gt;Avançada.</translation>
+        <translation>Les restriccions dies buits per tots els estudiants min hores diàries no està habilitada. L&apos;has d&apos;habilitar des del menú Configuració-&gt;Avançada.</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsminhoursdailyform.cpp" line="80"/>
@@ -5595,7 +5595,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentsminhoursdailyform.cpp" line="105"/>
         <source>Advanced usage is not enabled. To be able to select &apos;Allow empty days&apos; for the constraints of type min hours daily for students, you must enable the option from the Settings-&gt;Advanced menu.</source>
         <comment>&apos;Allow empty days&apos; is an option which the user can enable and then he can select it.</comment>
-        <translation>L&apos;ús avançat no està habilitat. Per poder seleccionar &quot;Permet dies buits&quot; per les restriccions del tipus min hores diàries per tots els alumnes, has d&apos;habilitar l&apos;opció des del menú Configuració-&gt;Avançat.</translation>
+        <translation>L&apos;ús avançat no està habilitat. Per poder seleccionar &quot;Permet dies buits&quot; per les restriccions del tipus min hores diàries per tots els estudiants, has d&apos;habilitar l&apos;opció des del menú Configuració-&gt;Avançat.</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsminhoursdailyform.cpp" line="111"/>
@@ -5605,7 +5605,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentsminhoursdailyform.cpp" line="108"/>
         <source>Explanation: only select this option if your institution allows empty days for students and a timetable is possible with empty days for students. Otherwise, it is IMPERATIVE (for performance reasons) to not select this option (or FET may not be able to find a timetable).</source>
-        <translation>Explicació: només selecciona aquesta opció si la teva institució permet dies buits pels alumnes i si una solució amb dies buits és possible. En cas contrari, és IMPERATIU (per motius de rendiment) no seleccionar aquesta opció (o FET pot no trobar un horari).</translation>
+        <translation>Explicació: només selecciona aquesta opció si la teva institució permet dies buits pels estudiants i si una solució amb dies buits és possible. En cas contrari, és IMPERATIU (per motius de rendiment) no seleccionar aquesta opció (o FET pot no trobar un horari).</translation>
     </message>
 </context>
 <context>
@@ -5629,7 +5629,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentsminhoursdailyform_template.ui" line="14"/>
         <source>Add students min hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix min hores diàries pels alumnes</translation>
+        <translation>Afegeix min hores diàries pels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsminhoursdailyform_template.ui" line="39"/>
@@ -5679,7 +5679,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentsminrestinghoursform_template.ui" line="14"/>
         <source>Add students min resting hours</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegir el mínim d&apos;hores de descans dels alumnes</translation>
+        <translation>Afegir el mínim d&apos;hores de descans dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsminrestinghoursform_template.ui" line="36"/>
@@ -5730,7 +5730,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="106"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="113"/>
@@ -5753,7 +5753,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="28"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="60"/>
@@ -5774,7 +5774,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Add students set activity tag max hours continuously</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix max hores contínues per etiqueta d&apos;act per conjunt d&apos;alumnes</translation>
+        <translation>Afegeix max hores contínues per etiqueta d&apos;act per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="196"/>
@@ -5812,7 +5812,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="107"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="114"/>
@@ -5836,12 +5836,12 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Add students set activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix max hores diàries per etiqueta d&apos;act d&apos;alumnes</translation>
+        <translation>Afegeix max hores diàries per etiqueta d&apos;act d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="28"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="60"/>
@@ -5895,7 +5895,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="92"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="104"/>
@@ -5913,7 +5913,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="122"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="180"/>
@@ -5934,19 +5934,19 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="14"/>
         <source>Add students set early max beginnings at second hour</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix max inicis d&apos;un conjunt d&apos;alumnes d&apos;hora a segona hora</translation>
+        <translation>Afegeix max inicis d&apos;un conjunt d&apos;estudiants d&apos;hora a segona hora</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="32"/>
         <source>This represents the maximum allowed beginnings at the second available hour (in a week). You might want to allow your students to begin in some days later, at the second available hour, so you might put &quot;max beginnings at second hour&quot; greater than 0 (the timetable will be easier for FET). Default 0 is given for students which need to begin all classes at the first available hour. You might want to choose a greater value and lower it as you find new timetables</source>
-        <translation>Això representa el màxim permès d&apos;inicis a la 2a hora disponible (per setmana). Pots voler permetre que els teus alumnes comencin alguns dies més tard, a la 2a hora disponible, per tant pots posar &quot;max inicis a 2a&quot; més gran que 0 (l&apos;horari serà més fàcil per FET). Es dón el 0 per defecte pels alumnes que han de començar totes les classes a la 1a hora disponible. Pots voler triar un valor més gran i reduir-lo conforme trobes nous horaris</translation>
+        <translation>Això representa el màxim permès d&apos;inicis a la 2a hora disponible (per setmana). Pots voler permetre que els teus estudiants comencin alguns dies més tard, a la 2a hora disponible, per tant pots posar &quot;max inicis a 2a&quot; més gran que 0 (l&apos;horari serà més fàcil per FET). Es dón el 0 per defecte pels estudiants que han de començar totes les classes a la 1a hora disponible. Pots voler triar un valor més gran i reduir-lo conforme trobes nous horaris</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="70"/>
         <source>You have to use weight percentage 100%, because otherwise you will get poor timetables. Currently, the algorithm only accepts 100% weight percentage for this constraint (or no constraint).
 Note: students set not available and break are not counted as gaps (early gaps).</source>
         <translation>Has de fer servir ponderació del 100%, perquè sinó obtindràs horaris pobres. Actualment l&apos;algoritme només accepta pesos del 100% per aquesta restricció (o sense restricció).
-Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a buits (buits d&apos;hora).</translation>
+Nota: els no disponibles i els esbarjos no se&apos;ls compten als estudiants com a buits (buits d&apos;hora).</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="173"/>
@@ -5991,7 +5991,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentssethomeroomform_template.ui" line="14"/>
         <source>Add students set home room</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix aula pròpia de conjunt d&apos;alumnes</translation>
+        <translation>Afegeix aula pròpia de conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssethomeroomform_template.ui" line="45"/>
@@ -6016,7 +6016,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssethomeroomform_template.ui" line="22"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
 </context>
 <context>
@@ -6071,7 +6071,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentssethomeroomsform_template.ui" line="14"/>
         <source>Add students set home rooms</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix aules pròpies de conjunt d&apos;alumnes</translation>
+        <translation>Afegeix aules pròpies de conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssethomeroomsform_template.ui" line="41"/>
@@ -6081,7 +6081,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssethomeroomsform_template.ui" line="20"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssethomeroomsform_template.ui" line="64"/>
@@ -6127,7 +6127,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="130"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="138"/>
@@ -6161,12 +6161,12 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Add students set interval max days per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix max dies per setmana en un interval per conjunt d&apos;alumnes</translation>
+        <translation>Afegeix max dies per setmana en un interval per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform_template.ui" line="28"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform_template.ui" line="58"/>
@@ -6217,7 +6217,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="92"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="101"/>
@@ -6236,7 +6236,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform_template.ui" line="14"/>
         <source>Add students set max building changes per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix max canvis d&apos;edifici per dia per conjunt d&apos;alumnes</translation>
+        <translation>Afegeix max canvis d&apos;edifici per dia per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform_template.ui" line="22"/>
@@ -6251,7 +6251,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform_template.ui" line="46"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform_template.ui" line="82"/>
@@ -6282,7 +6282,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="92"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="101"/>
@@ -6301,7 +6301,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Add students set max building changes per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix max canvis d&apos;edifici per setmana per conjunt d&apos;alumnes</translation>
+        <translation>Afegeix max canvis d&apos;edifici per setmana per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform_template.ui" line="22"/>
@@ -6316,7 +6316,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform_template.ui" line="46"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform_template.ui" line="82"/>
@@ -6353,7 +6353,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform.cpp" line="102"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform.cpp" line="111"/>
@@ -6372,7 +6372,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform_template.ui" line="14"/>
         <source>Add students set max days per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegir el nombre màxim de dies setmanals dels alumnes</translation>
+        <translation>Afegir el nombre màxim de dies setmanals dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform_template.ui" line="22"/>
@@ -6397,7 +6397,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform_template.ui" line="128"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
 </context>
 <context>
@@ -6424,7 +6424,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform.cpp" line="99"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform.cpp" line="108"/>
@@ -6443,7 +6443,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform_template.ui" line="14"/>
         <source>Add students set max gaps per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix max buits per dia per un conjunt d&apos;alumnes</translation>
+        <translation>Afegeix max buits per dia per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform_template.ui" line="32"/>
@@ -6452,14 +6452,14 @@ Note: students set not available and break are not counted as gaps.
 
 IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this constraint, but instead use the safer/better max gaps per week.</source>
         <translation>Has de fer servir ponderació del 100%
-Nota: els no disponibles i les pauses dels conjunts d&apos;alumnes no es compten com a buits.
+Nota: els no disponibles i les pauses dels conjunts d&apos;estudiants no es compten com a buits.
 
 IMPORTANT: si vols un total de 0 buits es recomana NO fer servir aquesta restricció, sinó usar la de max buits per setmana, que és millor/més segura.</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform_template.ui" line="67"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform_template.ui" line="99"/>
@@ -6506,7 +6506,7 @@ IMPORTANT: si vols un total de 0 buits es recomana NO fer servir aquesta restric
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform.cpp" line="100"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform.cpp" line="109"/>
@@ -6535,7 +6535,7 @@ IMPORTANT: si vols un total de 0 buits es recomana NO fer servir aquesta restric
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform_template.ui" line="14"/>
         <source>Add students set max gaps per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix max buits per setmana per un conjunt d&apos;alumnes</translation>
+        <translation>Afegeix max buits per setmana per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform_template.ui" line="97"/>
@@ -6550,14 +6550,14 @@ IMPORTANT: si vols un total de 0 buits es recomana NO fer servir aquesta restric
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform_template.ui" line="65"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform_template.ui" line="32"/>
         <source>You have to use weight percentage 100%, because otherwise you will get poor timetables. Currently, the algorithm only accepts 100% weight percentage for this constraint (or no constraint).
 Note: students set not available and break are not counted as gaps.</source>
         <translation>Has de fer servir pes de percentatge 100%, perquè sinó obtindràs horaris pobres. Actualment l&apos;algoritme només accepta pesos del 100% per aquesta restricció (o sense restricció).
-Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a buits (buits d&apos;hora).</translation>
+Nota: els no disponibles i els esbarjos no se&apos;ls compten als estudiants com a buits (buits d&apos;hora).</translation>
     </message>
 </context>
 <context>
@@ -6578,7 +6578,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform.cpp" line="95"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform.cpp" line="104"/>
@@ -6601,13 +6601,13 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform_template.ui" line="28"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Add students set max hours continuously</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix max hores contínues per un conjunt d&apos;alumnes</translation>
+        <translation>Afegeix max hores contínues per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform_template.ui" line="155"/>
@@ -6645,7 +6645,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform.cpp" line="94"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform.cpp" line="103"/>
@@ -6668,13 +6668,13 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform_template.ui" line="28"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform_template.ui" line="14"/>
         <source>Add students set max hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix max hores diàries per un conjunt d&apos;alumnes</translation>
+        <translation>Afegeix max hores diàries per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform_template.ui" line="155"/>
@@ -6718,7 +6718,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="99"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="108"/>
@@ -6737,12 +6737,12 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform_template.ui" line="14"/>
         <source>Add students set max span per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegir la durada màxima diària dels alumnes</translation>
+        <translation>Afegir la durada màxima diària dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform_template.ui" line="26"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform_template.ui" line="42"/>
@@ -6783,7 +6783,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="92"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="101"/>
@@ -6802,7 +6802,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="14"/>
         <source>Add students set min gaps between building changes</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix mín buits entre canvis d&apos;edifici per conjunt d&apos;alumnes</translation>
+        <translation>Afegeix mín buits entre canvis d&apos;edifici per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="22"/>
@@ -6817,7 +6817,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="46"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="82"/>
@@ -6871,7 +6871,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="99"/>
         <source>Empty days for students min hours daily constraints are not enabled. You must enable them from the Settings-&gt;Advanced menu.</source>
-        <translation>Les restriccions dies buits per tots els alumnes min hores diàries no està habilitada. L&apos;has d&apos;habilitar des del menu Configuració-&gt;Avançada.</translation>
+        <translation>Les restriccions dies buits per tots els estudiants min hores diàries no està habilitada. L&apos;has d&apos;habilitar des del menú Configuració-&gt;Avançada.</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="104"/>
@@ -6881,7 +6881,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="114"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="123"/>
@@ -6897,7 +6897,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="137"/>
         <source>Advanced usage is not enabled. To be able to select &apos;Allow empty days&apos; for the constraints of type min hours daily for students, you must enable the option from the Settings-&gt;Advanced menu.</source>
         <comment>&apos;Allow empty days&apos; is an option which the user can enable and then he can select it.</comment>
-        <translation>L&apos;ús avançat no està habilitat. Per poder seleccionar &quot;Permet dies buits&quot; per les restriccions del tipus min hores diàries per tots els alumnes, has d&apos;habilitar l&apos;opció des del menú Configuració-&gt;Avançat.</translation>
+        <translation>L&apos;ús avançat no està habilitat. Per poder seleccionar &quot;Permet dies buits&quot; per les restriccions del tipus min hores diàries per tots els estudiants, has d&apos;habilitar l&apos;opció des del menú Configuració-&gt;Avançat.</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="143"/>
@@ -6907,7 +6907,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="140"/>
         <source>Explanation: only select this option if your institution allows empty days for students and a timetable is possible with empty days for students. Otherwise, it is IMPERATIVE (for performance reasons) to not select this option (or FET may not be able to find a timetable).</source>
-        <translation>Explicació: només selecciona aquesta opció si la teva institució permet dies buits pels alumnes i si una solució amb dies buits és possible. En cas contrari, és IMPERATIU (per motius de rendiment) no seleccionar aquesta opció (o FET pot no trobar un horari).</translation>
+        <translation>Explicació: només selecciona aquesta opció si la teva institució permet dies buits pels estudiants i si una solució amb dies buits és possible. En cas contrari, és IMPERATIU (per motius de rendiment) no seleccionar aquesta opció (o FET pot no trobar un horari).</translation>
     </message>
 </context>
 <context>
@@ -6915,13 +6915,13 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform_template.ui" line="39"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform_template.ui" line="14"/>
         <source>Add students set min hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix min hores diàries per un conjunt d&apos;alumnes</translation>
+        <translation>Afegeix min hores diàries per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform_template.ui" line="71"/>
@@ -6973,7 +6973,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="101"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="110"/>
@@ -6997,7 +6997,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetminrestinghoursform_template.ui" line="44"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminrestinghoursform_template.ui" line="80"/>
@@ -7043,17 +7043,17 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="215"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="236"/>
         <source>Constraint NOT added - there must be another constraint of this type referring to the same students set. Please edit that one</source>
-        <translation>Restricció NO afegida - hi deu haver una altra restricció d&apos;aquest tipus referida al mateix grup d&apos;alumnes. Si us plau edita aquella</translation>
+        <translation>Restricció NO afegida - hi deu haver una altra restricció d&apos;aquest tipus referida al mateix grup d&apos;estudiants. Si us plau edita aquella</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="246"/>
         <source>This constraint does not induce gaps (or early gaps) for students. If a student set has lessons before and after a not available period, gaps will not be counted.</source>
-        <translation>Aquesta restricció no genera buits (o buits d&apos;hora) pels alumnes. Si un grup d&apos;alumnes té classes abans i després d&apos;un període no disponible, els buits no es comptaran.</translation>
+        <translation>Aquesta restricció no genera buits (o buits d&apos;hora) pels estudiants. Si un grup d&apos;estudiants té classes abans i després d&apos;un període no disponible, els buits no es comptaran.</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="255"/>
@@ -7063,7 +7063,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="251"/>
         <source>If you really need to use weight under 100%, you can use activities preferred times with only the students set specified, but this might generate problems, as possible gaps will be counted and you may obtain an impossible timetable</source>
-        <translation>Si realment vols fer servir un pes inferior al 100%, pots usar hores preferides d&apos;activitat especificant només el grup d&apos;alumnes, però això podria generar problemes, com que els possibles buits es comptaran i podries obtenir un horari impossible</translation>
+        <translation>Si realment vols fer servir un pes inferior al 100%, pots usar hores preferides d&apos;activitat especificant només el grup d&apos;estudiants, però això podria generar problemes, com que els possibles buits es comptaran i podries obtenir un horari impossible</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="233"/>
@@ -7086,13 +7086,13 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform_template.ui" line="76"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform_template.ui" line="14"/>
         <source>Add students set not available times</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Afegeix temps no disponibles per un conjunt d&apos;alumnes</translation>
+        <translation>Afegeix temps no disponibles per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform_template.ui" line="120"/>
@@ -7126,7 +7126,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform_template.ui" line="26"/>
         <source>Note: this constraint does not induce gaps (or early not respected) for students. If a students set has lessons before and after a not available period, there will be no gaps counted</source>
         <extracomment>&apos;Early not respected&apos; means early gaps (first hour is free), in case you use a constraint students (set) early max beginnings at second hour</extracomment>
-        <translation>Aquesta restricció no genera buits (o buits d&apos;hora) pels alumnes. Si un grup d&apos;alumnes té classes abans i després d&apos;un període no disponible, els buits no es comptaran</translation>
+        <translation>Aquesta restricció no genera buits (o buits d&apos;hora) pels estudiants. Si un grup d&apos;estudiants té classes abans i després d&apos;un període no disponible, els buits no es comptaran</translation>
     </message>
 </context>
 <context>
@@ -7203,7 +7203,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform_template.ui" line="121"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform_template.ui" line="134"/>
@@ -7310,7 +7310,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform_template.ui" line="91"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform_template.ui" line="104"/>
@@ -10093,7 +10093,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als professors com
     <message>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform_template.ui" line="26"/>
@@ -10221,7 +10221,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als professors com
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="26"/>
@@ -10321,7 +10321,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als professors com
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesgroupedform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesgroupedform_template.ui" line="26"/>
@@ -10427,7 +10427,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als professors com
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="26"/>
@@ -10491,7 +10491,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als professors com
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform_template.ui" line="46"/>
@@ -10673,7 +10673,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als professors com
     <message>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="95"/>
         <source>Note: the number of students for the added group will be the number of students of the already existing group (you can modify the number of students in the modify group dialog).</source>
-        <translation>Nota: el nombre d&apos;alumnes per al grup afegit serà el nombre d&apos;alumnes del grup ja existent (pots modificar el nombre d&apos;alumnes en el quadre de diàleg de modifca grup).</translation>
+        <translation>Nota: el nombre d&apos;estudiants per al grup afegit serà el nombre d&apos;estudiants del grup ja existent (pots modificar el nombre d&apos;estudiants en el quadre de diàleg de modifca grup).</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="97"/>
@@ -10707,7 +10707,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als professors com
         <location filename="../src/interface/addstudentsgroupform_template.ui" line="14"/>
         <source>Add students group</source>
         <extracomment>This is the title of the dialog to add a students group</extracomment>
-        <translation>Afegeix grup d&apos;alumnes</translation>
+        <translation>Afegeix grup d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform_template.ui" line="43"/>
@@ -10717,7 +10717,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als professors com
     <message>
         <location filename="../src/interface/addstudentsgroupform_template.ui" line="60"/>
         <source>Number of students</source>
-        <translation>Nombre d&apos;alumnes</translation>
+        <translation>Nombre d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform_template.ui" line="22"/>
@@ -10773,7 +10773,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als professors com
     <message>
         <location filename="../src/interface/addstudentssubgroupform.cpp" line="96"/>
         <source>Note: the number of students for the added subgroup will be the number of students of the already existing subgroup (you can modify the number of students in the modify subgroup dialog).</source>
-        <translation>Nota: el nombre d&apos;alumnes per al subgrup afegit serà el nombre d&apos;alumnes del subgrup ja existent (pots modificar el nombre d&apos;alumnes en el quadre de diàleg de modifca subgrup).</translation>
+        <translation>Nota: el nombre d&apos;estudiants per al subgrup afegit serà el nombre d&apos;estudiants del subgrup ja existent (pots modificar el nombre d&apos;estudiants en el quadre de diàleg de modifca subgrup).</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform.cpp" line="98"/>
@@ -10811,7 +10811,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als professors com
     <message>
         <location filename="../src/interface/addstudentssubgroupform_template.ui" line="81"/>
         <source>Number of students</source>
-        <translation>Nombre d&apos;alumnes</translation>
+        <translation>Nombre d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform_template.ui" line="64"/>
@@ -10822,7 +10822,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als professors com
         <location filename="../src/interface/addstudentssubgroupform_template.ui" line="14"/>
         <source>Add students subgroup</source>
         <extracomment>The title of the dialog to add a students subgroup</extracomment>
-        <translation>Afegeix subgrup d&apos;alumnes</translation>
+        <translation>Afegeix subgrup d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform_template.ui" line="43"/>
@@ -10883,7 +10883,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als professors com
         <location filename="../src/interface/addstudentsyearform_template.ui" line="14"/>
         <source>Add students year</source>
         <extracomment>Title of the dialog of adding a students year</extracomment>
-        <translation>Afegeix curs d&apos;alumnes</translation>
+        <translation>Afegeix curs d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsyearform_template.ui" line="22"/>
@@ -10893,7 +10893,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als professors com
     <message>
         <location filename="../src/interface/addstudentsyearform_template.ui" line="39"/>
         <source>Number of students</source>
-        <translation>Nombre d&apos;alumnes</translation>
+        <translation>Nombre d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsyearform_template.ui" line="73"/>
@@ -11212,22 +11212,22 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="629"/>
         <source>FET - Lock all activities which end each students set&apos;s day</source>
-        <translation>FET - Bloqueja totes les activitats que acaben el dia de cada grug d&apos;alumnes</translation>
+        <translation>FET - Bloqueja totes les activitats que acaben el dia de cada grug d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="635"/>
         <source>All activities which end each students set&apos;s day will be locked</source>
-        <translation>Totes les activitats que acaben el dia de cada conjunt d&apos;alumnes es bloquejaran</translation>
+        <translation>Totes les activitats que acaben el dia de cada conjunt d&apos;estudiants es bloquejaran</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="923"/>
         <source>FET - Unlock all activities which end each students set&apos;s day</source>
-        <translation>FET - Desbloqueja totes les activitats que acaben el dia de cada grug d&apos;alumnes</translation>
+        <translation>FET - Desbloqueja totes les activitats que acaben el dia de cada grug d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="929"/>
         <source>All activities which end each students set&apos;s day will be unlocked</source>
-        <translation>Totes les activitats que acaben el dia de cada conjunt d&apos;alumnes es desbloquejaran</translation>
+        <translation>Totes les activitats que acaben el dia de cada conjunt d&apos;estudiants es desbloquejaran</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1176"/>
@@ -11998,12 +11998,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15747"/>
         <source>students=%1</source>
-        <translation>alumnes=%1</translation>
+        <translation>estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15749"/>
         <source>all students</source>
-        <translation>tots els alumnes</translation>
+        <translation>tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15752"/>
@@ -12055,12 +12055,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15785"/>
         <source>Students=%1</source>
-        <translation>Alumnes=%1</translation>
+        <translation>Estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15787"/>
         <source>All students</source>
-        <translation>Tots els alumnes</translation>
+        <translation>Tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15791"/>
@@ -12085,7 +12085,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15802"/>
         <source>must end students&apos; day</source>
-        <translation>ha d&apos;acabar el dia dels alumnes</translation>
+        <translation>ha d&apos;acabar el dia dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15805"/>
@@ -12107,13 +12107,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="15856"/>
         <source>Time constraint activities end students&apos; day broken for activity with id=%1 (%2), increases conflicts total by %3</source>
         <comment>%1 is the id, %2 is the detailed description of the activity</comment>
-        <translation>La restricció de temps activitats acaben el dia dels alumnes s&apos;ha trencat per l&apos;activitat amb id=%1 (%2), i incrementa el nombre total de conflictes en %3</translation>
+        <translation>La restricció de temps activitats acaben el dia dels estudiants s&apos;ha trencat per l&apos;activitat amb id=%1 (%2), i incrementa el nombre total de conflictes en %3</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15762"/>
         <source>Activities with %1, %2, %3, %4, must end students&apos; day</source>
         <comment>%1...%4 are conditions for the activities</comment>
-        <translation>Activitats amb %1, %2, %3, %4 han d&apos;acabar el dia dels alumnes</translation>
+        <translation>Activitats amb %1, %2, %3, %4 han d&apos;acabar el dia dels estudiants</translation>
     </message>
 </context>
 <context>
@@ -12157,7 +12157,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintactivitiesendstudentsdayform_template.ui" line="14"/>
         <source>Constraints activities end students day</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions activitats acaben el dia dels alumnes</translation>
+        <translation>Restriccions activitats acaben el dia dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesendstudentsdayform_template.ui" line="83"/>
@@ -12363,12 +12363,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="310"/>
         <source>Uses of this constraint are probably wide. The main reason it was added was to enable users to specify that each time slot needs to have a specified number of free teachers, for supervision of students.</source>
-        <translation>Els usos d&apos;aquesta restricció probablement són amplis. El principal motiu pel qual es va afegir és que permet que els usuaris especifiquin que cada període de temps necessita un nombre de professors específic, per guàrdies d&apos;alumnes.</translation>
+        <translation>Els usos d&apos;aquesta restricció probablement són amplis. El principal motiu pel qual es va afegir és que permet que els usuaris especifiquin que cada període de temps necessita un nombre de professors específic, per guàrdies d&apos;estudiants.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="313"/>
         <source>Note that if you have activities with two or more teachers, you might need to use a trick for that: add one (or more) dummy activities, no teachers/no students, same starting time with the initial activity.</source>
-        <translation>Si teniu activitats amb dos o més professors, podeu necessitar un truc per això: agregau una (o més) activitats ficticies, sense professorat/alumnes, a la mateixa hora d&apos;inici de l&apos;activitat inicial.</translation>
+        <translation>Si teniu activitats amb dos o més professors, podeu necessitar un truc per això: agregau una (o més) activitats ficticies, sense professorat/estudiants, a la mateixa hora d&apos;inici de l&apos;activitat inicial.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="316"/>
@@ -12412,7 +12412,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="95"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="108"/>
@@ -12638,7 +12638,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiesnotoverlappingform_template.ui" line="71"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
 </context>
 <context>
@@ -12811,7 +12811,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform_template.ui" line="95"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform_template.ui" line="108"/>
@@ -13061,7 +13061,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="95"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="108"/>
@@ -13160,12 +13160,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10922"/>
         <source>students=%1</source>
-        <translation>alumnes=%1</translation>
+        <translation>estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10924"/>
         <source>all students</source>
-        <translation>tots els alumnes</translation>
+        <translation>tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10927"/>
@@ -13232,12 +13232,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10974"/>
         <source>Students=%1</source>
-        <translation>Alumnes=%1</translation>
+        <translation>Estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10976"/>
         <source>All students</source>
-        <translation>Tots els alumnes</translation>
+        <translation>Tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10980"/>
@@ -13440,12 +13440,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9628"/>
         <source>students=%1</source>
-        <translation>alumnes=%1</translation>
+        <translation>estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9630"/>
         <source>all students</source>
-        <translation>tots els alumnes</translation>
+        <translation>tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9633"/>
@@ -13512,12 +13512,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9678"/>
         <source>Students=%1</source>
-        <translation>Alumnes=%1</translation>
+        <translation>Estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9680"/>
         <source>All students</source>
-        <translation>Tots els alumnes</translation>
+        <translation>Tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9683"/>
@@ -13791,7 +13791,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiessameroomifconsecutiveform_template.ui" line="62"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessameroomifconsecutiveform_template.ui" line="75"/>
@@ -14007,7 +14007,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="99"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="112"/>
@@ -14208,7 +14208,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="77"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="90"/>
@@ -14365,7 +14365,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="327"/>
         <source>If you divide the years by categories (the students have optional courses), you may not need this kind of constraint. If the year is for instance divided by language, English/French/German, sometimes people think that it is needed that these optional activities to have the same starting time. But solutions exist without adding same starting time constraints. Some people try to avoid students gaps by using this constraint, because they need to do it this way in other timetabling software. But it is not the best practice to do it with such a constraint. The correct way is to add a max 0 gaps per week constraint for students and maybe also an early max 0 beginnings at second hour constraint for students.</source>
-        <translation>Si dividiu els anys per categories (els alumnes tenen cursos opcionals) és possible que no necessiteu aquest tipus de resctriccions. Si dividiu l&apos;any, per exemple per l&apos;opció d&apos;idioma, Francés/Alemany/Angles, a vegades es desitja que aquestes matèries opcionals tenguin la mateixa hora d&apos;inici. Però existeixen solucions sense restriccions del tipus «mateixa hora d&apos;inici». És possible que desitjeu evitar buits als horaris dels alumnes fent servir aquesta restricció degut a què és necessari fer-ho així amb d&apos;altres programes de generació d&apos;horaris. Fer ús d&apos;aquestes restriccions no és la millor pràctica. La forma correcta és agregar una restricció d&apos;un màxim de 0 de buits setmanals per als alumnes i, tal vegada, també fer servir una restricció de limitació d&apos;inici de joranada màxim a 0 de la segona hora de l&apos;alumnat.</translation>
+        <translation>Si dividiu els anys per categories (els estudiants tenen cursos opcionals) és possible que no necessiteu aquest tipus de resctriccions. Si dividiu l&apos;any, per exemple per l&apos;opció d&apos;idioma, Francés/Alemany/Angles, a vegades es desitja que aquestes matèries opcionals tenguin la mateixa hora d&apos;inici. Però existeixen solucions sense restriccions del tipus «mateixa hora d&apos;inici». És possible que desitjeu evitar buits als horaris dels estudiants fent servir aquesta restricció degut a què és necessari fer-ho així amb d&apos;altres programes de generació d&apos;horaris. Fer ús d&apos;aquestes restriccions no és la millor pràctica. La forma correcta és agregar una restricció d&apos;un màxim de 0 de buits setmanals per als estudiants i, tal vegada, també fer servir una restricció de limitació d&apos;inici de joranada màxim a 0 de la segona hora de l&apos;alumnat.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="334"/>
@@ -14444,7 +14444,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingtimeform_template.ui" line="121"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingtimeform_template.ui" line="192"/>
@@ -14476,7 +14476,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="13539"/>
         <source>Act. id: %1 (%2) must end students&apos; day</source>
         <comment>%1 is the id, %2 is the detailed description of the activity.</comment>
-        <translation>Act. id: %1 (%2) ha d&apos;acabar el dia dels alumnes</translation>
+        <translation>Act. id: %1 (%2) ha d&apos;acabar el dia dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13545"/>
@@ -14492,7 +14492,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13553"/>
         <source>Activity must end students&apos; day</source>
-        <translation>L&apos;activitat ha d&apos;acabar el dia dels alumnes</translation>
+        <translation>L&apos;activitat ha d&apos;acabar el dia dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13554"/>
@@ -14520,7 +14520,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="13606"/>
         <source>Time constraint activity ends students&apos; day broken for activity with id=%1 (%2), increases conflicts total by %3</source>
         <comment>%1 is the id, %2 is the detailed description of the activity</comment>
-        <translation>La restricció de temps activitat acaba el dia dels alumnes s&apos;ha trencat per l&apos;activitat amb id=%1 (%2), i incrementa el nombre total de conflictes en %3</translation>
+        <translation>La restricció de temps activitat acaba el dia dels estudiants s&apos;ha trencat per l&apos;activitat amb id=%1 (%2), i incrementa el nombre total de conflictes en %3</translation>
     </message>
 </context>
 <context>
@@ -14564,7 +14564,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintactivityendsstudentsdayform_template.ui" line="14"/>
         <source>Constraints activity ends students day</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions activitat acaba el dia dels alumnes</translation>
+        <translation>Restriccions activitat acaba el dia dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivityendsstudentsdayform_template.ui" line="26"/>
@@ -14619,7 +14619,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivityendsstudentsdayform_template.ui" line="71"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
 </context>
 <context>
@@ -14696,7 +14696,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="855"/>
         <source>This activity is permanently locked, which means you cannot unlock it from the &apos;Timetable&apos; menu (you can unlock this activity by removing the constraint from the constraints dialog or by setting the &apos;permanently locked&apos; attribute false when editing this constraint)</source>
-        <translation>Aquesta activitat està permanentment bloquejada, que vol dir que no la pots desbloquejar des del menu Horari (pots desbloquejar aquesta activitat treient-li la restricció des del quadre de diàleg de restriccions o posant l&apos;atribut &quot;fals&quot; a permanentment bloquejada quan editis aquesta restricció)</translation>
+        <translation>Aquesta activitat està permanentment bloquejada, que vol dir que no la pots desbloquejar des del menú Horari (pots desbloquejar aquesta activitat treient-li la restricció des del quadre de diàleg de restriccions o posant l&apos;atribut &quot;fals&quot; a permanentment bloquejada quan editis aquesta restricció)</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="860"/>
@@ -14822,7 +14822,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitypreferredroomform_template.ui" line="71"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitypreferredroomform_template.ui" line="97"/>
@@ -15011,7 +15011,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitypreferredroomsform_template.ui" line="79"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitypreferredroomsform_template.ui" line="105"/>
@@ -15088,7 +15088,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8959"/>
         <source>This activity is permanently locked, which means you cannot unlock it from the &apos;Timetable&apos; menu (you can unlock this activity by removing the constraint from the constraints dialog or by setting the &apos;permanently locked&apos; attribute false when editing this constraint)</source>
-        <translation>Aquesta activitat està permanentment bloquejada, que vol dir que no la pots desbloquejar des del menu Horari (pots desbloquejar aquesta activitat treient-li la restricció des del quadre de diàleg de restriccions o posant l&apos;atribut &quot;fals&quot; a permanentment bloquejada quan editis aquesta restricció)</translation>
+        <translation>Aquesta activitat està permanentment bloquejada, que vol dir que no la pots desbloquejar des del menú Horari (pots desbloquejar aquesta activitat treient-li la restricció des del quadre de diàleg de restriccions o posant l&apos;atribut &quot;fals&quot; a permanentment bloquejada quan editis aquesta restricció)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8964"/>
@@ -15240,7 +15240,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitypreferredstartingtimeform_template.ui" line="71"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
 </context>
 <context>
@@ -15434,7 +15434,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitypreferredstartingtimesform_template.ui" line="71"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitypreferredstartingtimesform_template.ui" line="36"/>
@@ -15640,7 +15640,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitypreferredtimeslotsform_template.ui" line="87"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitypreferredtimeslotsform_template.ui" line="52"/>
@@ -16032,7 +16032,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="167"/>
         <source>activities with more students than the capacity of the room</source>
-        <translation>activitats amb més alumnes que la capacitat de l&apos;aula</translation>
+        <translation>activitats amb més estudiants que la capacitat de l&apos;aula</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="170"/>
@@ -16208,7 +16208,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="205"/>
         <source>students assigned to more than one activity simultaneously</source>
-        <translation>alumnes assignats a més d&apos;una activitat simultàniament</translation>
+        <translation>estudiants assignats a més d&apos;una activitat simultàniament</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="208"/>
@@ -16743,7 +16743,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform_template.ui" line="71"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform_template.ui" line="26"/>
@@ -16920,37 +16920,37 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="316"/>
         <source>FET has meet a critical error - aborting current operation, please report bug (old weight is not -1 and not (&gt;=0.0 and &lt;=100.0))</source>
-        <translation>FET ha trobat un error crític - cancel·lant l&apos;actual operació, siusplau comunica el bug (la ponderació antiga no és -1 ni (&gt;=0,0 i &lt;=100,0))</translation>
+        <translation>FET ha trobat un error crític - cancel·lant l&apos;operació actual, siusplau comunica el bug (la ponderació antiga no és -1 ni (&gt;=0,0 i &lt;=100,0))</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="326"/>
         <source>FET has met a critical error - aborting current operation, please report bug (new weight is not -1 and not (&gt;=0.0 and &lt;=100.0))</source>
-        <translation>FET ha trobat un error crític - cancel·lant l&apos;actual operació, siusplau comunica el bug (la ponderació nova no és -1 ni (&gt;=0,0 i &lt;=100,0))</translation>
+        <translation>FET ha trobat un error crític - cancel·lant l&apos;operació actual, siusplau comunica el bug (la ponderació nova no és -1 ni (&gt;=0,0 i &lt;=100,0))</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="335"/>
         <source>FET has met a critical error - aborting current operation, please report bug (old consecutive is not any, yes or no)</source>
-        <translation>FET ha trobat un error crític - cancel·lant l&apos;actual operació, siusplau comunica el bug (l&apos;antic consecutiu no és ni sí ni no)</translation>
+        <translation>FET ha trobat un error crític - cancel·lant l&apos;operació actual, siusplau comunica el bug (l&apos;antic consecutiu no és ni sí ni no)</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="341"/>
         <source>FET has met a critical error - aborting current operation, please report bug (new consecutive is not no_change, yes or no)</source>
-        <translation>FET ha trobat un error crític - cancel·lant l&apos;actual operació, siusplau comunica el bug (el nou consecutiu no és ni no_change, ni sí ni no)</translation>
+        <translation>FET ha trobat un error crític - cancel·lant l&apos;operació actual, siusplau comunica el bug (el nou consecutiu no és ni no_change, ni sí ni no)</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="351"/>
         <source>FET has met a critical error - aborting current operation, please report bug (old min days is not -1 or 1..ndaysperweek)</source>
-        <translation>FET ha trobat un error crític - cancel·lant l&apos;actual operació, siusplau comunica el bug (l&apos;antic min dies no és ni -1 ni 1..ndaysperweek)</translation>
+        <translation>FET ha trobat un error crític - cancel·lant l&apos;operació actual, siusplau comunica el bug (l&apos;antic min dies no és ni -1 ni 1..ndaysperweek)</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="361"/>
         <source>FET has met a critical error - aborting current operation, please report bug (new min days is not -1 or 1..ndaysperweek)</source>
-        <translation>FET ha trobat un error crític - cancel·lant l&apos;actual operació, siusplau comunica el bug (el nou  min dies no és ni -1 ni 1..ndaysperweek)</translation>
+        <translation>FET ha trobat un error crític - cancel·lant l&apos;operació actual, siusplau comunica el bug (el nou  min dies no és ni -1 ni 1..ndaysperweek)</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="371"/>
         <source>FET has met a critical error - aborting current operation, please report bug (old nActivities is not -1 or &gt;=1)</source>
-        <translation>FET ha trobat un error crític - cancel·lant l&apos;actual operació, siusplau comunica el bug (l&apos;antic nActivities  no és ni -1 ni &gt;=1)</translation>
+        <translation>FET ha trobat un error crític - cancel·lant l&apos;operació actual, siusplau comunica el bug (l&apos;antic nActivities  no és ni -1 ni &gt;=1)</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="427"/>
@@ -16960,7 +16960,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="429"/>
         <source>NOTE: If you are using constraints of type activities same starting time or activities same starting day, it is important (after current operation) to apply the operation of removing redundant constraints.</source>
-        <translation>NOTA: si estàs usant restriccions del tipus mateixa hora d&apos;inici o activitats comencen mateix dia, és important (després de l&apos;actual operació) que apliquis l&apos;operació de treure les restriccions redundants.</translation>
+        <translation>NOTA: si estàs usant restriccions del tipus mateixa hora d&apos;inici o activitats comencen mateix dia, és important (després de l&apos;operació actual) que apliquis l&apos;operació de treure les restriccions redundants.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="431"/>
@@ -17024,7 +17024,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform_template.ui" line="71"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform_template.ui" line="141"/>
@@ -17236,7 +17236,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintmingapsbetweenactivitiesform_template.ui" line="103"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmingapsbetweenactivitiesform_template.ui" line="58"/>
@@ -17461,7 +17461,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7794"/>
         <source>Students for activity tag %1 have max %2 hours continuously</source>
-        <translation>Tots els alumnes tenen max %2 hores contínues per etiqueta d&apos;activitat %1</translation>
+        <translation>Tots els estudiants tenen max %2 hores contínues per etiqueta d&apos;activitat %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7796"/>
@@ -17477,7 +17477,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7806"/>
         <source>All students, for an activity tag, must respect the maximum number of hours continuously</source>
-        <translation>Tots els alumnes, per una etiqueta d&apos;activitat, han de respectar el màxim nombre d&apos;hores contínues</translation>
+        <translation>Tots els estudiants, per una etiqueta d&apos;activitat, han de respectar el màxim nombre d&apos;hores contínues</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7807"/>
@@ -17509,7 +17509,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="7871"/>
         <location filename="../src/engine/timeconstraint.cpp" line="7899"/>
         <source>Time constraint students, activity tag %1, max %2 hours continuously, broken for subgroup %3, on day %4, length=%5.</source>
-        <translation>La restricció de temps max %2 hores contínues per etiqueta d&apos;activitat d&apos;alumnes %1 trencada pel subgrup %3, el dia %4, durada=%5.</translation>
+        <translation>La restricció de temps max %2 hores contínues per etiqueta d&apos;activitat d&apos;estudiants %1 trencada pel subgrup %3, el dia %4, durada=%5.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7882"/>
@@ -17584,7 +17584,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsactivitytagmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Constraints students activity tag max hours continuously</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions max hores contínues per etiqueta d&apos;activitat d&apos;alumnes</translation>
+        <translation>Restriccions max hores contínues per etiqueta d&apos;activitat d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsactivitytagmaxhourscontinuouslyform_template.ui" line="97"/>
@@ -17599,7 +17599,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentsactivitytagmaxhourscontinuouslyform_template.ui" line="26"/>
         <source>This constraint ensures that all students do not have more than max hours continuously of activities with the specified activity tag</source>
-        <translation>Aquesta restricció assegura que tots els alumnes no tenen més del max hores contínues d&apos;activitats amb l&apos;etiqueta d&apos;activitat especificada</translation>
+        <translation>Aquesta restricció assegura que tots els estudiants no tenen més del max hores contínues d&apos;activitats amb l&apos;etiqueta d&apos;activitat especificada</translation>
     </message>
 </context>
 <context>
@@ -17613,7 +17613,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16518"/>
         <source>Students for activity tag %1 have max %2 hours daily</source>
-        <translation>Tots els alumnes tenen un màxim de %2 hores diàries per l&apos;etiqueta d&apos;activitat %1</translation>
+        <translation>Tots els estudiants tenen un màxim de %2 hores diàries per l&apos;etiqueta d&apos;activitat %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16520"/>
@@ -17635,7 +17635,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16531"/>
         <source>All students, for an activity tag, must respect the maximum number of hours daily</source>
-        <translation>Tots els alumnes, per una etiqueta d&apos;activitat, han de respectar el màxim nombre d&apos;hores diàries</translation>
+        <translation>Tots els estudiants, per una etiqueta d&apos;activitat, han de respectar el màxim nombre d&apos;hores diàries</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16532"/>
@@ -17666,7 +17666,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16591"/>
         <source>Time constraint students, activity tag %1, max %2 hours daily, broken for subgroup %3, on day %4, length=%5.</source>
-        <translation>La restricció de temps max %2 hores diàries per etiqueta d&apos;activitat d&apos;alumnes %1 trencada pel subgrup %3, el dia %4, durada=%5.</translation>
+        <translation>La restricció de temps max %2 hores diàries per etiqueta d&apos;activitat d&apos;estudiants %1 trencada pel subgrup %3, el dia %4, durada=%5.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16602"/>
@@ -17715,12 +17715,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Constraints students activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions max hores diàries per etiqueta d&apos;activitat d&apos;alumnes</translation>
+        <translation>Restriccions max hores diàries per etiqueta d&apos;activitat d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsactivitytagmaxhoursdailyform_template.ui" line="26"/>
         <source>This constraint ensures that all students do not have more than max hours daily of activities with the specified activity tag.</source>
-        <translation>Aquesta restricció assegura que tots els alumnes no tenen més del max hores diàries d&apos;activitats amb l&apos;etiqueta d&apos;activitat especificada.</translation>
+        <translation>Aquesta restricció assegura que tots els estudiants no tenen més del max hores diàries d&apos;activitats amb l&apos;etiqueta d&apos;activitat especificada.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsactivitytagmaxhoursdailyform_template.ui" line="42"/>
@@ -17779,7 +17779,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6274"/>
         <source>Students must arrive early, respecting maximum %1 arrivals at second hour</source>
-        <translation>Els alumnes han d&apos;arribar d&apos;hora, respectant un màxim de %1 arribades a 2a hora</translation>
+        <translation>Els estudiants han d&apos;arribar d&apos;hora, respectant un màxim de %1 arribades a 2a hora</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6277"/>
@@ -17795,7 +17795,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6287"/>
         <source>All students must begin their activities early, respecting maximum %1 later arrivals, at second hour</source>
-        <translation>Tots els alumnes hauran de començar les seves activitats d&apos;hora, respectant un nombre màxim de %1 arribades posteriors, a la segona hora</translation>
+        <translation>Tots els estudiants hauran de començar les seves activitats d&apos;hora, respectant un nombre màxim de %1 arribades posteriors, a la segona hora</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6289"/>
@@ -17821,12 +17821,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6346"/>
         <source>Constraint students early max %1 beginnings at second hour broken for subgroup %2, on day %3, because students have an illegal gap, increases conflicts total by %4</source>
-        <translation>La restricció de max %1 inicis d&apos;hora a 2a hora pels alumnes trencada pel subgrup %2, el dia %3, perquè els alumnes tenen un buit il·legal, s&apos;incrementa el total de conflictes en %4</translation>
+        <translation>La restricció de max %1 inicis d&apos;hora a 2a hora pels estudiants trencada pel subgrup %2, el dia %3, perquè els estudiants tenen un buit il·legal, s&apos;incrementa el total de conflictes en %4</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6372"/>
         <source>Constraint students early max %1 beginnings at second hour broken for subgroup %2, because students have too many arrivals at second hour, increases conflicts total by %3</source>
-        <translation>La restricció de max %1 inicis d&apos;hora a 2a hora pels alumnes trencada pel subgrup %2, perquè els alumnes tenen massa arribades a segona hora, s&apos;incrementa el total de conflictes en %3</translation>
+        <translation>La restricció de max %1 inicis d&apos;hora a 2a hora pels estudiants trencada pel subgrup %2, perquè els estudiants tenen massa arribades a segona hora, s&apos;incrementa el total de conflictes en %3</translation>
     </message>
 </context>
 <context>
@@ -17870,7 +17870,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsearlymaxbeginningsatsecondhourform_template.ui" line="14"/>
         <source>Constraints students early max beginnings at second hour</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions de max inicis d&apos;hora a 2a hora per tots els alumnes</translation>
+        <translation>Restriccions de max inicis d&apos;hora a 2a hora per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsearlymaxbeginningsatsecondhourform_template.ui" line="28"/>
@@ -17942,7 +17942,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15465"/>
         <source>Students interval max days per week</source>
-        <translation>Max dies per setmana en un interval per tots els alumnes</translation>
+        <translation>Max dies per setmana en un interval per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15466"/>
@@ -17983,7 +17983,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15483"/>
         <source>All students respect working in an hourly interval a maximum number of days per week</source>
-        <translation>Tots els alumnes respecten treballar en un interval d&apos;hores un màxim nombre de dies per setmana</translation>
+        <translation>Tots els estudiants respecten treballar en un interval d&apos;hores un màxim nombre de dies per setmana</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15484"/>
@@ -18020,7 +18020,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15541"/>
         <source>Time constraint students interval max days per week broken for subgroup: %1, allowed %2 days, required %3 days.</source>
-        <translation>La restricció de temps max dies per setmana en un interval per tots els alumnes trencada pel subgrup: %1, permesos %2 dies, requerits %3 dies.</translation>
+        <translation>La restricció de temps max dies per setmana en un interval per tots els estudiants trencada pel subgrup: %1, permesos %2 dies, requerits %3 dies.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15546"/>
@@ -18069,7 +18069,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Constraints students interval max days per week</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions de max dies per setmana en un interval per tots els alumnes</translation>
+        <translation>Restriccions de max dies per setmana en un interval per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsintervalmaxdaysperweekform_template.ui" line="28"/>
@@ -18113,7 +18113,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4179"/>
         <source>Students max building changes per day</source>
-        <translation>Max canvis d&apos;edifici per dia per tots els alumnes</translation>
+        <translation>Max canvis d&apos;edifici per dia per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4181"/>
@@ -18135,7 +18135,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4194"/>
         <source>Students maximum building changes per day</source>
-        <translation>Màxim canvis d&apos;edifici per dia per tots els alumnes</translation>
+        <translation>Màxim canvis d&apos;edifici per dia per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4196"/>
@@ -18161,7 +18161,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4270"/>
         <source>Space constraint students max building changes per day broken for students=%1 on day %2</source>
-        <translation>Restricció de lloc pels alumnes max canvis d&apos;edifici per dia trencada pels alumnes=%1 el dia %2</translation>
+        <translation>Restricció de lloc pels estudiants max canvis d&apos;edifici per dia trencada pels estudiants=%1 el dia %2</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4274"/>
@@ -18210,7 +18210,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxbuildingchangesperdayform_template.ui" line="14"/>
         <source>Constraints students max building changes per day</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions max canvis d&apos;edifici per dia per tots els alumnes</translation>
+        <translation>Restriccions max canvis d&apos;edifici per dia per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxbuildingchangesperdayform_template.ui" line="28"/>
@@ -18254,7 +18254,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4703"/>
         <source>Students max building changes per week</source>
-        <translation>Max canvis d&apos;edifici per setmana per tots els alumnes</translation>
+        <translation>Max canvis d&apos;edifici per setmana per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4705"/>
@@ -18276,7 +18276,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4718"/>
         <source>Students maximum building changes per week</source>
-        <translation>Màxims canvis d&apos;edifici per setmana per tots els alumnes</translation>
+        <translation>Màxims canvis d&apos;edifici per setmana per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4720"/>
@@ -18302,7 +18302,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4795"/>
         <source>Space constraint students max building changes per week broken for students=%1</source>
-        <translation>Restricció de lloc pels alumnes max canvis d&apos;edifici per setmana trencada pels alumnes=%1</translation>
+        <translation>Restricció de lloc pels estudiants max canvis d&apos;edifici per setmana trencada pels estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4798"/>
@@ -18351,7 +18351,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Constraints students max building changes per week</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions canvis d&apos;edifici per setmana per tots els alumnes</translation>
+        <translation>Restriccions canvis d&apos;edifici per setmana per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxbuildingchangesperweekform_template.ui" line="28"/>
@@ -18395,7 +18395,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18486"/>
         <source>Students max days per week</source>
-        <translation>Nombre màxim de dies setmanals dels alumnes</translation>
+        <translation>Nombre màxim de dies setmanals dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18487"/>
@@ -18417,7 +18417,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18497"/>
         <source>All students must respect the maximum number of days per week</source>
-        <translation>Tots els alumnes han de respectar el màxim nombre de dies setmanals</translation>
+        <translation>Tots els estudiants han de respectar el màxim nombre de dies setmanals</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18498"/>
@@ -18492,7 +18492,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxdaysperweekform_template.ui" line="14"/>
         <source>Constraints students max days per week</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions del nombre màxim de dies per setmana dels alumnes</translation>
+        <translation>Restriccions del nombre màxim de dies per setmana dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxdaysperweekform_template.ui" line="28"/>
@@ -18536,7 +18536,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17028"/>
         <source>Students max gaps per day</source>
-        <translation>Max buits per dia per tot els alumnes</translation>
+        <translation>Max buits per dia per tot els estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17029"/>
@@ -18564,7 +18564,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17041"/>
         <source>All students must respect the maximum number of gaps per day</source>
-        <translation>Tots els alumnes han de respectar el màxim nombre de buits per dia</translation>
+        <translation>Tots els estudiants han de respectar el màxim nombre de buits per dia</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17042"/>
@@ -18595,7 +18595,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17103"/>
         <source>Time constraint students max gaps per day broken for subgroup: %1, it has %2 extra gaps, on day %3, conflicts increase=%4</source>
-        <translation>La restricció de temps max buits per dia pels alumnes trencada pel subgrup: %1, buits sobrants %2, el dia %3, augment de conflictes=%4</translation>
+        <translation>La restricció de temps max buits per dia pels estudiants trencada pel subgrup: %1, buits sobrants %2, el dia %3, augment de conflictes=%4</translation>
     </message>
 </context>
 <context>
@@ -18639,7 +18639,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxgapsperdayform_template.ui" line="14"/>
         <source>Constraints students max gaps per day</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions max buits per dia per tots els alumnes</translation>
+        <translation>Restriccions max buits per dia per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperdayform_template.ui" line="26"/>
@@ -18693,7 +18693,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5803"/>
         <source>Students max gaps per week</source>
-        <translation>Max buits per setmana per tots els alumnes</translation>
+        <translation>Max buits per setmana per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5804"/>
@@ -18715,7 +18715,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5815"/>
         <source>All students must respect the maximum number of gaps per week</source>
-        <translation>Tots els alumnes han de respectar el màxim nombre de buits per setmana</translation>
+        <translation>Tots els estudiants han de respectar el màxim nombre de buits per setmana</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5816"/>
@@ -18746,7 +18746,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5877"/>
         <source>Time constraint students max gaps per week broken for subgroup: %1, it has %2 extra gaps, conflicts increase=%3</source>
-        <translation>La restricció de temps max buits per setmana pels alumnes trencada pel subgrup: %1, buits sobrants %2, augment de conflictes=%3</translation>
+        <translation>La restricció de temps max buits per setmana pels estudiants trencada pel subgrup: %1, buits sobrants %2, augment de conflictes=%3</translation>
     </message>
 </context>
 <context>
@@ -18790,7 +18790,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxgapsperweekform_template.ui" line="14"/>
         <source>Constraints students max gaps per week</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions max buits per setmana per tots els alumnes</translation>
+        <translation>Restriccions max buits per setmana per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperweekform_template.ui" line="28"/>
@@ -18834,7 +18834,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7266"/>
         <source>Students max hours continuously</source>
-        <translation>Max hores contínues per tots els alumnes</translation>
+        <translation>Max hores contínues per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7267"/>
@@ -18856,7 +18856,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7278"/>
         <source>All students must respect the maximum number of hours continuously</source>
-        <translation>Tots els alumnes han de respectar el màxim nombre d&apos;hores contínues</translation>
+        <translation>Tots els estudiants han de respectar el màxim nombre d&apos;hores contínues</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7279"/>
@@ -18883,7 +18883,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="7320"/>
         <location filename="../src/engine/timeconstraint.cpp" line="7347"/>
         <source>Time constraint students max %1 hours continuously broken for subgroup %2, on day %3, length=%4.</source>
-        <translation>La restricció de temps max %1 hores contínues pels alumnes trencada pel subgrup %2, el dia %3, durada=%4.</translation>
+        <translation>La restricció de temps max %1 hores contínues pels estudiants trencada pel subgrup %2, el dia %3, durada=%4.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7330"/>
@@ -18933,7 +18933,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Constraints students max hours continuously</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions max hores contínues per tots els alumnes</translation>
+        <translation>Restriccions max hores contínues per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhourscontinuouslyform_template.ui" line="28"/>
@@ -18977,7 +18977,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6810"/>
         <source>Students max hours daily</source>
-        <translation>Max hores diàries per tots els alumnes</translation>
+        <translation>Max hores diàries per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6811"/>
@@ -18999,7 +18999,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6822"/>
         <source>All students must respect the maximum number of hours daily</source>
-        <translation>Tots els alumnes han de respectar el màxim nombre d&apos;hores diàries</translation>
+        <translation>Tots els estudiants han de respectar el màxim nombre d&apos;hores diàries</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6823"/>
@@ -19025,7 +19025,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6871"/>
         <source>Time constraint students max hours daily broken for subgroup: %1, day: %2, lenght=%3, conflict increase=%4</source>
-        <translation>La restricció de temps max hores diàries pels alumnes trencada pel subgrup %1, el dia %2, durada=%3, augment de conflictes=%4</translation>
+        <translation>La restricció de temps max hores diàries pels estudiants trencada pel subgrup %1, el dia %2, durada=%3, augment de conflictes=%4</translation>
     </message>
 </context>
 <context>
@@ -19069,7 +19069,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxhoursdailyform_template.ui" line="14"/>
         <source>Constraints students max hours daily</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions max hores diàries per tots els alumnes</translation>
+        <translation>Restriccions max hores diàries per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhoursdailyform_template.ui" line="28"/>
@@ -19113,7 +19113,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19311"/>
         <source>Students max span per day</source>
-        <translation>Durada màxima diària dels alumnes</translation>
+        <translation>Durada màxima diària dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19312"/>
@@ -19135,7 +19135,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19323"/>
         <source>All students must respect the maximum number of span (in hours) per day</source>
-        <translation>Tots els alumnes han de respectar la durada màxima diària (en hores)</translation>
+        <translation>Tots els estudiants han de respectar la durada màxima diària (en hores)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19324"/>
@@ -19200,7 +19200,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="14"/>
         <source>Constraints students max span per day</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions de la durada màxima diària dels alumnes</translation>
+        <translation>Restriccions de la durada màxima diària dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="26"/>
@@ -19249,7 +19249,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5238"/>
         <source>Students min gaps between building changes</source>
-        <translation>Mín buits entre canvis d&apos;edifici per tots els alumnes</translation>
+        <translation>Mín buits entre canvis d&apos;edifici per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5240"/>
@@ -19271,7 +19271,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5253"/>
         <source>Students minimum gaps between building changes</source>
-        <translation>Mín buits entre canvis d&apos;edifici per tots els alumnes</translation>
+        <translation>Mín buits entre canvis d&apos;edifici per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5255"/>
@@ -19297,7 +19297,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5333"/>
         <source>Space constraint students min gaps between building changes broken for students=%1 on day %2</source>
-        <translation>La restricció de lloc min buits entre canvis d&apos;edifici pels alumnes s&apos;ha trencat pels alumnes=%1 en el dia %2</translation>
+        <translation>La restricció de lloc min buits entre canvis d&apos;edifici pels estudiants s&apos;ha trencat pels estudiants=%1 en el dia %2</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5337"/>
@@ -19346,7 +19346,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="14"/>
         <source>Constraints students min gaps between building changes</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions min buits entre canvis d&apos;edifici per tots els alumnes</translation>
+        <translation>Restriccions min buits entre canvis d&apos;edifici per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="28"/>
@@ -19390,7 +19390,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8379"/>
         <source>Students min hours daily</source>
-        <translation>Min hores diàries per tots els alumnes</translation>
+        <translation>Min hores diàries per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8380"/>
@@ -19418,12 +19418,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8393"/>
         <source>(nonstandard, students may have empty days)</source>
-        <translation>(no estàndard, els alumnes poden tenir dies buits)</translation>
+        <translation>(no estàndard, els estudiants poden tenir dies buits)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8396"/>
         <source>All students must respect the minimum number of hours daily</source>
-        <translation>Tots els alumnes han de respectar el mínim nombre d&apos;hores diàries</translation>
+        <translation>Tots els estudiants han de respectar el mínim nombre d&apos;hores diàries</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8397"/>
@@ -19454,7 +19454,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8449"/>
         <source>Time constraint students min hours daily broken for subgroup: %1, day: %2, lenght=%3, conflict increase=%4</source>
-        <translation>La restricció de temps min hores diàries pels alumnes trencada pel subgrup %1, el dia %2, durada=%3, augment de conflictes=%4</translation>
+        <translation>La restricció de temps min hores diàries pels estudiants trencada pel subgrup %1, el dia %2, durada=%3, augment de conflictes=%4</translation>
     </message>
 </context>
 <context>
@@ -19498,7 +19498,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsminhoursdailyform_template.ui" line="14"/>
         <source>Constraints students min hours daily</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions min hores diàries per tots els alumnes</translation>
+        <translation>Restriccions min hores diàries per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminhoursdailyform_template.ui" line="44"/>
@@ -19523,7 +19523,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentsminhoursdailyform_template.ui" line="26"/>
         <source>IMPORTANT: allow empty days for students is a nonstandard option. Only select it if your institution permits that and if a timetable with empty days for students exists. Otherwise do not  select it, for a good performance of generation. Press Help button for more information.</source>
-        <translation>IMPORTANT: permet dies buits per a tots els alumnes és una opció no estàndard. Només selecciona-la si la teva institució ho permet i si existeix un horari per alumnes amb dies buits. En cas contrari, no ho seleccionis, per obtenir una bona generació d&apos;horaris. Clica el botó Ajuda per més informació.</translation>
+        <translation>IMPORTANT: permet dies buits per a tots els estudiants és una opció no estàndard. Només selecciona-la si la teva institució ho permet i si existeix un horari per estudiants amb dies buits. En cas contrari, no ho seleccionis, per obtenir una bona generació d&apos;horaris. Clica el botó Ajuda per més informació.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminhoursdailyform_template.ui" line="61"/>
@@ -19552,7 +19552,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="20151"/>
         <source>Students min resting hours</source>
-        <translation>Mínim d&apos;hores de descans dels alumnes</translation>
+        <translation>Mínim d&apos;hores de descans dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="20152"/>
@@ -19580,7 +19580,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="20164"/>
         <source>All students must respect the minimum resting hours (between days)</source>
-        <translation>Tots els alumnes han de respectar el mínim &apos;hores de descans (entre dies)</translation>
+        <translation>Tots els estudiants han de respectar el mínim &apos;hores de descans (entre dies)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="20165"/>
@@ -19650,7 +19650,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsminrestinghoursform_template.ui" line="14"/>
         <source>Constraints students min resting hours</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions del mínim d&apos;hores de descans dels alumnes</translation>
+        <translation>Restriccions del mínim d&apos;hores de descans dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminrestinghoursform_template.ui" line="26"/>
@@ -19699,7 +19699,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8039"/>
         <source>Students set %1 for activity tag %2 has max %3 hours continuously</source>
-        <translation>Un conjunt d&apos;alumnes %1 té max %3 hores contínues per etiqueta d&apos;activitat %2</translation>
+        <translation>Un conjunt d&apos;estudiants %1 té max %3 hores contínues per etiqueta d&apos;activitat %2</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8041"/>
@@ -19715,7 +19715,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8051"/>
         <source>A students set, for an activity tag, must respect the maximum number of hours continuously</source>
-        <translation>Un conjunt d&apos;alumnes, per una etiqueta d&apos;activitat, ha de respectar el màxim nombre d&apos;hores contínues</translation>
+        <translation>Un conjunt d&apos;estudiants, per una etiqueta d&apos;activitat, ha de respectar el màxim nombre d&apos;hores contínues</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8052"/>
@@ -19725,7 +19725,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8053"/>
         <source>Students set=%1</source>
-        <translation>Grup d&apos;alumnes=%1</translation>
+        <translation>Grup d&apos;estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8054"/>
@@ -19757,14 +19757,14 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="8080"/>
         <source>Constraint students set max hours continuously is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>La restricció max hores contínues per conjunt d&apos;alumnes és incorrecta perquè es refereix a un conjunt d&apos;alumnes inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica un possible bug. La restricció és:
+        <translation>La restricció max hores contínues per conjunt d&apos;estudiants és incorrecta perquè es refereix a un conjunt d&apos;estudiants inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica un possible bug. La restricció és:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8196"/>
         <location filename="../src/engine/timeconstraint.cpp" line="8223"/>
         <source>Time constraint students set max %1 hours continuously broken for subgroup %2, on day %3, length=%4.</source>
-        <translation>La restricció de temps max %1 hores diàries per conjunt d&apos;alumnes trencada pel subgrup %2, el dia %3, durada=%4.</translation>
+        <translation>La restricció de temps max %1 hores diàries per conjunt d&apos;estudiants trencada pel subgrup %2, el dia %3, durada=%4.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8206"/>
@@ -19839,7 +19839,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Constraints students set activity tag max hours continuously</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions max hores contínues per etiqueta d&apos;activitat de conjunt d&apos;alumnes</translation>
+        <translation>Restriccions max hores contínues per etiqueta d&apos;activitat de conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="100"/>
@@ -19854,7 +19854,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="26"/>
         <source>This constraint ensures that the specified students do not have more than max hours continuously of activities with the specified activity tag</source>
-        <translation>Aquesta restricció assegura que tots els alumnes no tenen més del max hores contínues d&apos;activitats amb l&apos;etiqueta d&apos;activitat especificada</translation>
+        <translation>Aquesta restricció assegura que tots els estudiants no tenen més del max hores contínues d&apos;activitats amb l&apos;etiqueta d&apos;activitat especificada</translation>
     </message>
 </context>
 <context>
@@ -19868,7 +19868,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16732"/>
         <source>Students set %1 for activity tag %2 has max %3 hours daily</source>
-        <translation>Un conjunt d&apos;alumnes %1 té max %3 hores diàries per etiqueta d&apos;activitat %2</translation>
+        <translation>Un conjunt d&apos;estudiants %1 té max %3 hores diàries per etiqueta d&apos;activitat %2</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16734"/>
@@ -19890,7 +19890,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16745"/>
         <source>A students set, for an activity tag, must respect the maximum number of hours daily</source>
-        <translation>Un conjunt d&apos;alumnes, per una etiqueta d&apos;activitat, ha de respectar el màxim nombre d&apos;hores diàries</translation>
+        <translation>Un conjunt d&apos;estudiants, per una etiqueta d&apos;activitat, ha de respectar el màxim nombre d&apos;hores diàries</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16746"/>
@@ -19900,7 +19900,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16747"/>
         <source>Students set=%1</source>
-        <translation>Grup d&apos;alumnes=%1</translation>
+        <translation>Grup d&apos;estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16748"/>
@@ -19932,13 +19932,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="16774"/>
         <source>Constraint students set max hours daily is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>La restricció max hores diàries per conjunt d&apos;alumnes és incorrecta perquè es refereix a un conjunt d&apos;alumnes inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica un possible bug. La restricció és:
+        <translation>La restricció max hores diàries per conjunt d&apos;estudiants és incorrecta perquè es refereix a un conjunt d&apos;estudiants inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica un possible bug. La restricció és:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16885"/>
         <source>Time constraint students set, activity tag %1, max %2 hours daily, broken for subgroup %3, on day %4, length=%5.</source>
-        <translation>La restricció de temps max %2 hores diàries per etiqueta d&apos;activitat de conjunt d&apos;alumnes %1 trencada pel subgrup %3, el dia %4, durada=%5.</translation>
+        <translation>La restricció de temps max %2 hores diàries per etiqueta d&apos;activitat de conjunt d&apos;estudiants %1 trencada pel subgrup %3, el dia %4, durada=%5.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16896"/>
@@ -19987,7 +19987,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Constraints students set activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions max hores diàries per etiqueta d&apos;activitat de conjunt d&apos;alumnes</translation>
+        <translation>Restriccions max hores diàries per etiqueta d&apos;activitat de conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="130"/>
@@ -20022,7 +20022,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="26"/>
         <source>This constraint ensures that the specified students do not have more than max hours daily of activities with the specified activity tag.</source>
-        <translation>Aquesta restricció assegura que els alumnes especificats no tenen més del max hores contínues d&apos;activitats amb l&apos;etiqueta d&apos;activitat especificada.</translation>
+        <translation>Aquesta restricció assegura que els estudiants especificats no tenen més del max hores contínues d&apos;activitats amb l&apos;etiqueta d&apos;activitat especificada.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="42"/>
@@ -20051,7 +20051,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="6484"/>
         <source>Constraint students set early is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>La restricció conjunt d&apos;alumnes d&apos;hora és incorrecta perquè es refereix a un conjunt d&apos;alumnes inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica el bug potencial. La restricció és:
+        <translation>La restricció conjunt d&apos;estudiants d&apos;hora és incorrecta perquè es refereix a un conjunt d&apos;estudiants inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica el bug potencial. La restricció és:
 %1</translation>
     </message>
     <message>
@@ -20063,7 +20063,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6567"/>
         <source>Students set must arrive early, respecting maximum %1 arrivals at second hour</source>
-        <translation>Un conjunt d&apos;alumnes ha d&apos;arribar d&apos;hora, respectant un màxim de %1 arribades a segona hora</translation>
+        <translation>Un conjunt d&apos;estudiants ha d&apos;arribar d&apos;hora, respectant un màxim de %1 arribades a segona hora</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6569"/>
@@ -20100,7 +20100,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6584"/>
         <source>Students set=%1</source>
-        <translation>Grup d&apos;alumnes=%1</translation>
+        <translation>Grup d&apos;estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6585"/>
@@ -20121,12 +20121,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6641"/>
         <source>Constraint students set early max %1 beginnings at second hour broken for subgroup %2, on day %3, because students have an illegal gap, increases conflicts total by %4</source>
-        <translation>La restricció de max %1 inicis d&apos;hora a 2a hora per un conjunt d&apos;alumnes trencada pel subgrup %2, el dia %3, perquè els alumnes tenen un buit il·legal, s&apos;incrementa el total de conflictes en %4</translation>
+        <translation>La restricció de max %1 inicis d&apos;hora a 2a hora per un conjunt d&apos;estudiants trencada pel subgrup %2, el dia %3, perquè els estudiants tenen un buit il·legal, s&apos;incrementa el total de conflictes en %4</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6666"/>
         <source>Constraint students set early max %1 beginnings at second hour broken for subgroup %2, because students have too many arrivals at second hour, increases conflicts total by %3</source>
-        <translation>La restricció de max %1 inicis d&apos;hora a 2a hora per un conjunt d&apos;alumnes trencada pel subgrup %2, perquè els alumnes tenen massa arribades a segona hora, s&apos;incrementa el total de conflictes en %3</translation>
+        <translation>La restricció de max %1 inicis d&apos;hora a 2a hora per un conjunt d&apos;estudiants trencada pel subgrup %2, perquè els estudiants tenen massa arribades a segona hora, s&apos;incrementa el total de conflictes en %3</translation>
     </message>
 </context>
 <context>
@@ -20170,7 +20170,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="14"/>
         <source>Constraints students set early max beginnings at second hour</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions de max inicis d&apos;hora a 2a hora al dia per conjunt d&apos;alumnes</translation>
+        <translation>Restriccions de max inicis d&apos;hora a 2a hora al dia per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="28"/>
@@ -20219,7 +20219,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="1344"/>
         <location filename="../src/engine/spaceconstraint.cpp" line="1360"/>
         <source>Students set home room</source>
-        <translation>Aula pròpia d&apos;un conjunt d&apos;alumnes</translation>
+        <translation>Aula pròpia d&apos;un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1301"/>
@@ -20270,7 +20270,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1363"/>
         <source>Students=%1</source>
-        <translation>Alumnes=%1</translation>
+        <translation>Estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1368"/>
@@ -20287,7 +20287,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="1430"/>
         <source>Space constraint students set home room broken for activity with id %1 (%2)</source>
         <comment>%1 is activity id, %2 is detailed description of activity</comment>
-        <translation>Restricció de lloc aula pròpia de conjunt d&apos;alumnes trencada per l&apos;activitat amb id %1 (%2)</translation>
+        <translation>Restricció de lloc aula pròpia de conjunt d&apos;estudiants trencada per l&apos;activitat amb id %1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1435"/>
@@ -20336,7 +20336,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssethomeroomform_template.ui" line="14"/>
         <source>Constraints students set home room</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions aula pròpia de conjunt d&apos;alumnes</translation>
+        <translation>Restriccions aula pròpia de conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomform_template.ui" line="104"/>
@@ -20376,7 +20376,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomform_template.ui" line="26"/>
         <source>Note: a home room for a students set means that every activity which has this and ONLY this students set will have this as home room (not other superior or inferior set). You can add home rooms for a group, for a year or for a subgroup, careful not to make impossible timetables. Preferred rooms override the home rooms.</source>
-        <translation>Nota: una aula pròpia per un grup d&apos;alumnes vol dir que cada activitat que té aquest i NOMÉS aquest grup d&apos;alumnes la tindrà com a aula pròpia (no un altre grup inferior o superior). Pots afegir aules pròpies per un grup, per un curs o per un subgrup, amb compte de no fer horaris impossibles. Aules preferides substitueixen aules pròpies.</translation>
+        <translation>Nota: una aula pròpia per un grup d&apos;estudiants vol dir que cada activitat que té aquest i NOMÉS aquest grup d&apos;estudiants la tindrà com a aula pròpia (no un altre grup inferior o superior). Pots afegir aules pròpies per un grup, per un curs o per un subgrup, amb compte de no fer horaris impossibles. Aules preferides substitueixen aules pròpies.</translation>
     </message>
 </context>
 <context>
@@ -20403,7 +20403,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="1624"/>
         <location filename="../src/engine/spaceconstraint.cpp" line="1641"/>
         <source>Students set home rooms</source>
-        <translation>Aules pròpies dun conjunt d&apos;alumnes</translation>
+        <translation>Aules pròpies dun conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1625"/>
@@ -20436,7 +20436,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1644"/>
         <source>Students=%1</source>
-        <translation>Alumnes=%1</translation>
+        <translation>Estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1647"/>
@@ -20458,7 +20458,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="1717"/>
         <source>Space constraint students set home rooms broken for activity with id %1 (%2)</source>
         <comment>%1 is activity id, %2 is detailed description of activity</comment>
-        <translation>Restricció de lloc aules pròpies de conjunt d&apos;alumnes trencada per l&apos;activitat amb id=%1 (%2)</translation>
+        <translation>Restricció de lloc aules pròpies de conjunt d&apos;estudiants trencada per l&apos;activitat amb id=%1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1722"/>
@@ -20507,7 +20507,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssethomeroomsform_template.ui" line="14"/>
         <source>Constraints students set home rooms</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions aules pròpies de conjunt d&apos;alumnes</translation>
+        <translation>Restriccions aules pròpies de conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomsform_template.ui" line="104"/>
@@ -20547,7 +20547,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomsform_template.ui" line="26"/>
         <source>Note: a home room for a students set means that every activity which has this and ONLY this students set will have these home rooms (not other superior or inferior set). You can add home rooms for a group, for a year or for a subgroup, careful not to make impossible timetables. Preferred rooms override the home rooms.</source>
-        <translation>Nota: una aula pròpia per un grup d&apos;alumnes vol dir que cada activitat que té aquest i NOMÉS aquest grup d&apos;alumnes la tindrà com a aula pròpia (no un altre grup inferior o superior). Pots afegir aules pròpies per un grup, per un curs o per un subgrup, amb compte de no fer horaris impossibles. Aules preferides substitueixen aules pròpies.</translation>
+        <translation>Nota: una aula pròpia per un grup d&apos;estudiants vol dir que cada activitat que té aquest i NOMÉS aquest grup d&apos;estudiants la tindrà com a aula pròpia (no un altre grup inferior o superior). Pots afegir aules pròpies per un grup, per un curs o per un subgrup, amb compte de no fer horaris impossibles. Aules preferides substitueixen aules pròpies.</translation>
     </message>
 </context>
 <context>
@@ -20585,7 +20585,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="15125"/>
         <source>Constraint students set interval max days per week is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>La restricció max dies per setmana en un interval per tots els alumnes és incorrecta perquè es refereix a un conjunt d&apos;alumnes inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica un possible bug. La restricció és:
+        <translation>La restricció max dies per setmana en un interval per tots els estudiants és incorrecta perquè es refereix a un conjunt d&apos;estudiants inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica un possible bug. La restricció és:
 %1</translation>
     </message>
     <message>
@@ -20597,7 +20597,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15214"/>
         <source>Students set interval max days per week</source>
-        <translation>Max dies per setmana en un interval per un conjunt d&apos;alumnes</translation>
+        <translation>Max dies per setmana en un interval per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15215"/>
@@ -20644,7 +20644,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15233"/>
         <source>A students set respects working in an hourly interval a maximum number of days per week</source>
-        <translation>Un conjunt d&apos;alumnes respecta treballar en un interval d&apos;hores un màxim nombre de dies per setmana</translation>
+        <translation>Un conjunt d&apos;estudiants respecta treballar en un interval d&apos;hores un màxim nombre de dies per setmana</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15234"/>
@@ -20654,7 +20654,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15235"/>
         <source>Students set=%1</source>
-        <translation>Grup d&apos;alumnes=%1</translation>
+        <translation>Grup d&apos;estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15236"/>
@@ -20686,7 +20686,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15292"/>
         <source>Time constraint students set interval max days per week broken for subgroup: %1, allowed %2 days, required %3 days.</source>
-        <translation>La restricció de temps max dies per setmana en un interval per conjunt d&apos;alumnes trencada pel subgrup: %1, permesos %2 dies, requerits %3 dies.</translation>
+        <translation>La restricció de temps max dies per setmana en un interval per conjunt d&apos;estudiants trencada pel subgrup: %1, permesos %2 dies, requerits %3 dies.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15297"/>
@@ -20735,7 +20735,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Constraints students set interval max days per week</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions de max dies per setmana en un interval per conjunt d&apos;alumnes</translation>
+        <translation>Restriccions de max dies per setmana en un interval per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetintervalmaxdaysperweekform_template.ui" line="28"/>
@@ -20784,7 +20784,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="3861"/>
         <source>Constraint students set max building changes per day is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>La restricció max canvis d&apos;edifici per dia per un conjunt d&apos;alumnes és incorrecta perquè es refereix a un conjunt d&apos;alumnes inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica el bug potencial. La restricció és:
+        <translation>La restricció max canvis d&apos;edifici per dia per un conjunt d&apos;estudiants és incorrecta perquè es refereix a un conjunt d&apos;estudiants inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica el bug potencial. La restricció és:
 %1</translation>
     </message>
     <message>
@@ -20796,7 +20796,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3940"/>
         <source>Students set max building changes per day</source>
-        <translation>Max canvis d&apos;edifici per dia per un conjunt d&apos;alumnes</translation>
+        <translation>Max canvis d&apos;edifici per dia per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3942"/>
@@ -20824,7 +20824,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3957"/>
         <source>Students set maximum building changes per day</source>
-        <translation>Max canvis d&apos;edifici per dia per un conjunt d&apos;alumnes</translation>
+        <translation>Max canvis d&apos;edifici per dia per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3959"/>
@@ -20834,7 +20834,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3961"/>
         <source>Students=%1</source>
-        <translation>Alumnes=%1</translation>
+        <translation>Estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3963"/>
@@ -20855,7 +20855,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4035"/>
         <source>Space constraint students set max building changes per day broken for students=%1 on day %2</source>
-        <translation>Restricció de lloc max canvis d&apos;edifici per dia per conjunt d&apos;alumnes trencada pels alumnes=%1 el dia %2</translation>
+        <translation>Restricció de lloc max canvis d&apos;edifici per dia per conjunt d&apos;estudiants trencada pels estudiants=%1 el dia %2</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4039"/>
@@ -20904,7 +20904,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperdayform_template.ui" line="14"/>
         <source>Constraints students set max building changes per day</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions max canvis d&apos;edifici per dia per conjunt d&apos;alumnes</translation>
+        <translation>Restriccions max canvis d&apos;edifici per dia per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperdayform_template.ui" line="28"/>
@@ -20953,7 +20953,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="4385"/>
         <source>Constraint students set max building changes per week is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>La restricció max canvis d&apos;edifici per setmana per un conjunt d&apos;alumnes és incorrecta perquè es refereix a un conjunt d&apos;alumnes inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica el bug potencial. La restricció és:
+        <translation>La restricció max canvis d&apos;edifici per setmana per un conjunt d&apos;estudiants és incorrecta perquè es refereix a un conjunt d&apos;estudiants inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica el bug potencial. La restricció és:
 %1</translation>
     </message>
     <message>
@@ -20965,7 +20965,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4464"/>
         <source>Students set max building changes per week</source>
-        <translation>Max canvis d&apos;edifici per setmana per un conjunt d&apos;alumnes</translation>
+        <translation>Max canvis d&apos;edifici per setmana per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4466"/>
@@ -20993,7 +20993,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4481"/>
         <source>Students set maximum building changes per week</source>
-        <translation>Max canvis d&apos;edifici per setmana per un conjunt d&apos;alumnes</translation>
+        <translation>Max canvis d&apos;edifici per setmana per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4483"/>
@@ -21003,7 +21003,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4485"/>
         <source>Students=%1</source>
-        <translation>Alumnes=%1</translation>
+        <translation>Estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4487"/>
@@ -21024,7 +21024,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4560"/>
         <source>Space constraint students set max building changes per week broken for students=%1</source>
-        <translation>Restricció de lloc max canvis d&apos;edifici per setmana per conjunt d&apos;alumnes trencada pels alumnes=%1</translation>
+        <translation>Restricció de lloc max canvis d&apos;edifici per setmana per conjunt d&apos;estudiants trencada pels estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4563"/>
@@ -21073,7 +21073,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Constraints students set max building changes per week</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions max canvis d&apos;edifici per setmana per conjunt d&apos;alumnes</translation>
+        <translation>Restriccions max canvis d&apos;edifici per setmana per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperweekform_template.ui" line="28"/>
@@ -21122,7 +21122,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="18208"/>
         <source>Constraint students set max days per week is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>La restricció del nombre màxim de dies per setmana per un grup és incorrecta perquè es refereix a un grup d&apos;alumnes inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica un possible error. La restricció és:
+        <translation>La restricció del nombre màxim de dies per setmana per un grup és incorrecta perquè es refereix a un grup d&apos;estudiants inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica un possible error. La restricció és:
 %1</translation>
     </message>
     <message>
@@ -21172,7 +21172,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18303"/>
         <source>Students set=%1</source>
-        <translation>Grup d&apos;alumnes=%1</translation>
+        <translation>Grup d&apos;estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18305"/>
@@ -21292,7 +21292,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="17210"/>
         <source>Constraint students set max gaps per day is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>La restricció max buits per dia pels alumnes és incorrecta perquè es refereix a un conjunt d&apos;alumnes inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica un possible bug. La restricció és:
+        <translation>La restricció max buits per dia pels estudiants és incorrecta perquè es refereix a un conjunt d&apos;estudiants inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica un possible bug. La restricció és:
 %1</translation>
     </message>
     <message>
@@ -21304,7 +21304,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17292"/>
         <source>Students set max gaps per day</source>
-        <translation>Max buits per dia per un conjunt d&apos;alumnes</translation>
+        <translation>Max buits per dia per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17293"/>
@@ -21338,7 +21338,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17305"/>
         <source>A students set must respect the maximum number of gaps per day</source>
-        <translation>Un conjunt d&apos;alumnes ha de respectar el màxim nombre de buits per dia</translation>
+        <translation>Un conjunt d&apos;estudiants ha de respectar el màxim nombre de buits per dia</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17306"/>
@@ -21358,7 +21358,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17309"/>
         <source>Students=%1</source>
-        <translation>Alumnes=%1</translation>
+        <translation>Estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17312"/>
@@ -21374,7 +21374,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17369"/>
         <source>Time constraint students set max gaps per day broken for subgroup: %1, extra gaps=%2, on day %3, conflicts increase=%4</source>
-        <translation>La restricció de temps max buits per dia per conjunt d&apos;alumnes trencada pel subgrup: %1, buits sobrants %2, el dia %3, augment de conflictes=%4</translation>
+        <translation>La restricció de temps max buits per dia per conjunt d&apos;estudiants trencada pel subgrup: %1, buits sobrants %2, el dia %3, augment de conflictes=%4</translation>
     </message>
 </context>
 <context>
@@ -21418,7 +21418,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetmaxgapsperdayform_template.ui" line="14"/>
         <source>Constraints students set max gaps per day</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions max buits per dia per conjunt d&apos;alumnes</translation>
+        <translation>Restriccions max buits per dia per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxgapsperdayform_template.ui" line="26"/>
@@ -21477,7 +21477,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="5982"/>
         <source>Constraint students set max gaps per week is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>La restricció max buits per setmana pels alumnes és incorrecta perquè es refereix a un conjunt d&apos;alumnes inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica un possible bug. La restricció és:
+        <translation>La restricció max buits per setmana pels estudiants és incorrecta perquè es refereix a un conjunt d&apos;estudiants inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica un possible bug. La restricció és:
 %1</translation>
     </message>
     <message>
@@ -21489,7 +21489,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6063"/>
         <source>Students set max gaps per week</source>
-        <translation>Max buits per setmana per un conjunt d&apos;alumnes</translation>
+        <translation>Max buits per setmana per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6064"/>
@@ -21517,7 +21517,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6075"/>
         <source>A students set must respect the maximum number of gaps per week</source>
-        <translation>Un conjunt d&apos;alumnes ha de respectar el màxim nombre de buits per setmana</translation>
+        <translation>Un conjunt d&apos;estudiants ha de respectar el màxim nombre de buits per setmana</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6076"/>
@@ -21537,7 +21537,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6079"/>
         <source>Students=%1</source>
-        <translation>Alumnes=%1</translation>
+        <translation>Estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6082"/>
@@ -21553,7 +21553,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6139"/>
         <source>Time constraint students set max gaps per week broken for subgroup: %1, extra gaps=%2, conflicts increase=%3</source>
-        <translation>La restricció de temps max buits per setmana per conjunt d&apos;alumnes trencada pel subgrup: %1, buits sobrants %2, augment de conflictes=%3</translation>
+        <translation>La restricció de temps max buits per setmana per conjunt d&apos;estudiants trencada pel subgrup: %1, buits sobrants %2, augment de conflictes=%3</translation>
     </message>
 </context>
 <context>
@@ -21597,7 +21597,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetmaxgapsperweekform_template.ui" line="14"/>
         <source>Constraints students set max gaps per week</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions max buits per setmana per conjunt d&apos;alumnes</translation>
+        <translation>Restriccions max buits per setmana per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxgapsperweekform_template.ui" line="28"/>
@@ -21646,7 +21646,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7486"/>
         <source>Students set max hours continuously</source>
-        <translation>Max hores contínues per un conjunt d&apos;alumnes</translation>
+        <translation>Max hores contínues per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7487"/>
@@ -21674,7 +21674,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7499"/>
         <source>A students set must respect the maximum number of hours continuously</source>
-        <translation>Un conjunt d&apos;alumnes ha de respectar el màxim nombre d&apos;hores contínues</translation>
+        <translation>Un conjunt d&apos;estudiants ha de respectar el màxim nombre d&apos;hores contínues</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7500"/>
@@ -21684,7 +21684,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7501"/>
         <source>Students set=%1</source>
-        <translation>Grup d&apos;alumnes=%1</translation>
+        <translation>Grup d&apos;estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7502"/>
@@ -21711,14 +21711,14 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="7523"/>
         <source>Constraint students set max hours continuously is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>La restricció max hores contínues per conjunt d&apos;alumnes és incorrecta perquè es refereix a un conjunt d&apos;alumnes inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica un possible bug. La restricció és:
+        <translation>La restricció max hores contínues per conjunt d&apos;estudiants és incorrecta perquè es refereix a un conjunt d&apos;estudiants inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica un possible bug. La restricció és:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7599"/>
         <location filename="../src/engine/timeconstraint.cpp" line="7626"/>
         <source>Time constraint students set max %1 hours continuously broken for subgroup %2, on day %3, length=%4.</source>
-        <translation>La restricció de temps max %1 hores diàries per conjunt d&apos;alumnes trencada pel subgrup %2, el dia %3, durada=%4.</translation>
+        <translation>La restricció de temps max %1 hores diàries per conjunt d&apos;estudiants trencada pel subgrup %2, el dia %3, durada=%4.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7609"/>
@@ -21768,7 +21768,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Constraints students set max hours continuously</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions max hores contínues per conjunt d&apos;alumnes</translation>
+        <translation>Restriccions max hores contínues per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxhourscontinuouslyform_template.ui" line="28"/>
@@ -21817,7 +21817,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7005"/>
         <source>Students set max hours daily</source>
-        <translation>Max hores diàries per un conjunt d&apos;alumnes</translation>
+        <translation>Max hores diàries per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7006"/>
@@ -21845,7 +21845,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7018"/>
         <source>A students set must respect the maximum number of hours daily</source>
-        <translation>Un conjunt d&apos;alumnes ha de respectar el màxim nombre d&apos;hores diàries</translation>
+        <translation>Un conjunt d&apos;estudiants ha de respectar el màxim nombre d&apos;hores diàries</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7019"/>
@@ -21855,7 +21855,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7020"/>
         <source>Students set=%1</source>
-        <translation>Grup d&apos;alumnes=%1</translation>
+        <translation>Grup d&apos;estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7021"/>
@@ -21882,13 +21882,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="7042"/>
         <source>Constraint students set max hours daily is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>La restricció max hores diàries per conjunt d&apos;alumnes és incorrecta perquè es refereix a un conjunt d&apos;alumnes inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica un possible bug. La restricció és:
+        <translation>La restricció max hores diàries per conjunt d&apos;estudiants és incorrecta perquè es refereix a un conjunt d&apos;estudiants inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica un possible bug. La restricció és:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7125"/>
         <source>Time constraint students set max hours daily broken for subgroup: %1, day: %2, lenght=%3, conflicts increase=%4</source>
-        <translation>La restricció de temps max hores diàries per conjunt d&apos;alumnes trencada pel subgrup %1, el dia %2, durada=%3, augment de conflictes=%4</translation>
+        <translation>La restricció de temps max hores diàries per conjunt d&apos;estudiants trencada pel subgrup %1, el dia %2, durada=%3, augment de conflictes=%4</translation>
     </message>
 </context>
 <context>
@@ -21932,7 +21932,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetmaxhoursdailyform_template.ui" line="14"/>
         <source>Constraints students set max hours daily</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions max hores diàries per conjunt d&apos;alumnes</translation>
+        <translation>Restriccions max hores diàries per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxhoursdailyform_template.ui" line="28"/>
@@ -22019,7 +22019,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19084"/>
         <source>Students set=%1</source>
-        <translation>Grup d&apos;alumnes=%1</translation>
+        <translation>Grup d&apos;estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19085"/>
@@ -22046,7 +22046,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="19106"/>
         <source>Constraint students set max span per day is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>La restricció de la durada màxima diària per un grup és incorrecta perquè es refereix a un grup d&apos;alumnes inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica un possible error. La restricció és:
+        <translation>La restricció de la durada màxima diària per un grup és incorrecta perquè es refereix a un grup d&apos;estudiants inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica un possible error. La restricció és:
 %1</translation>
     </message>
 </context>
@@ -22145,7 +22145,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="4908"/>
         <source>Constraint students set min gaps between building changes is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>La restricció mín buits entre canvis d&apos;edifici per un conjunt d&apos;alumnes és incorrecta perquè es refereix a un conjunt d&apos;alumnes inexistent. Siusplau corregeix-la (treure-la pot ser una solució): Siusplau comunica el bug potencial. La restricció és:
+        <translation>La restricció mín buits entre canvis d&apos;edifici per un conjunt d&apos;estudiants és incorrecta perquè es refereix a un conjunt d&apos;estudiants inexistent. Siusplau corregeix-la (treure-la pot ser una solució): Siusplau comunica el bug potencial. La restricció és:
 %1</translation>
     </message>
     <message>
@@ -22157,7 +22157,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4987"/>
         <source>Students set min gaps between building changes</source>
-        <translation>Min buits entre canvis d&apos;edifici per un conjunt d&apos;alumnes</translation>
+        <translation>Min buits entre canvis d&apos;edifici per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4989"/>
@@ -22185,7 +22185,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5004"/>
         <source>Students set minimum gaps between building changes</source>
-        <translation>Mínim buits entre canvis d&apos;edifici per un conjunt d&apos;alumnes</translation>
+        <translation>Mínim buits entre canvis d&apos;edifici per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5006"/>
@@ -22195,7 +22195,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5008"/>
         <source>Students=%1</source>
-        <translation>Alumnes=%1</translation>
+        <translation>Estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5010"/>
@@ -22216,7 +22216,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5086"/>
         <source>Space constraint students set min gaps between building changes broken for students=%1 on day %2</source>
-        <translation>La restricció de lloc min buits entre canvis d&apos;edifici per un conjunt d&apos;alumnes s&apos;ha trencat pels alumnes=%1 en el dia %2</translation>
+        <translation>La restricció de lloc min buits entre canvis d&apos;edifici per un conjunt d&apos;estudiants s&apos;ha trencat pels estudiants=%1 en el dia %2</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5090"/>
@@ -22265,7 +22265,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="14"/>
         <source>Constraints students set min gaps between building changes</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions min buits entre canvis d&apos;edifici per conjunt d&apos;alumnes</translation>
+        <translation>Restriccions min buits entre canvis d&apos;edifici per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="28"/>
@@ -22314,7 +22314,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8598"/>
         <source>Students set min hours daily</source>
-        <translation>Min hores diàries per un conjunt d&apos;alumnes</translation>
+        <translation>Min hores diàries per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8599"/>
@@ -22348,12 +22348,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8613"/>
         <source>(nonstandard, students may have empty days)</source>
-        <translation>(no estàndard, els alumnes poden tenir dies buits)</translation>
+        <translation>(no estàndard, els estudiants poden tenir dies buits)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8616"/>
         <source>A students set must respect the minimum number of hours daily</source>
-        <translation>Un conjunt d&apos;alumnes ha de respectar el mínim nombre d&apos;hores diàries</translation>
+        <translation>Un conjunt d&apos;estudiants ha de respectar el mínim nombre d&apos;hores diàries</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8617"/>
@@ -22363,7 +22363,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8618"/>
         <source>Students set=%1</source>
-        <translation>Grup d&apos;alumnes=%1</translation>
+        <translation>Grup d&apos;estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8619"/>
@@ -22395,13 +22395,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="8641"/>
         <source>Constraint students set min hours daily is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>La restricció min hores diàries per conjunt d&apos;alumnes és incorrecta perquè es refereix a un conjunt d&apos;alumnes inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica un possible bug. La restricció és:
+        <translation>La restricció min hores diàries per conjunt d&apos;estudiants és incorrecta perquè es refereix a un conjunt d&apos;estudiants inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica un possible bug. La restricció és:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8728"/>
         <source>Time constraint students set min hours daily broken for subgroup: %1, day: %2, lenght=%3, conflicts increase=%4</source>
-        <translation>La restricció de temps min hores diàries per conjunt d&apos;alumnes trencada pel subgrup %1, el dia %2, durada=%3, augment de conflictes=%4</translation>
+        <translation>La restricció de temps min hores diàries per conjunt d&apos;estudiants trencada pel subgrup %1, el dia %2, durada=%3, augment de conflictes=%4</translation>
     </message>
 </context>
 <context>
@@ -22445,7 +22445,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetminhoursdailyform_template.ui" line="14"/>
         <source>Constraints students set min hours daily</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>Restriccions min hores diàries per conjunt d&apos;alumnes</translation>
+        <translation>Restriccions min hores diàries per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetminhoursdailyform_template.ui" line="44"/>
@@ -22470,7 +22470,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssetminhoursdailyform_template.ui" line="26"/>
         <source>IMPORTANT: allow empty days for students is a nonstandard option. Only select it if your institution permits that and if a timetable with empty days for students exists. Otherwise do not select it, for a good performance of generation. Press Help button for more information.</source>
-        <translation>IMPORTANT: permet dies buits per a tots els alumnes és una opció no estàndard. Només selecciona-la si la teva institució ho permet i si existeix un horari per alumnes amb dies buits. En cas contrari, no ho seleccionis, per obtenir una bona generació d&apos;horaris. Clica el botó Ajuda per més informació.</translation>
+        <translation>IMPORTANT: permet dies buits per a tots els estudiants és una opció no estàndard. Només selecciona-la si la teva institució ho permet i si existeix un horari per estudiants amb dies buits. En cas contrari, no ho seleccionis, per obtenir una bona generació d&apos;horaris. Clica el botó Ajuda per més informació.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetminhoursdailyform_template.ui" line="61"/>
@@ -22548,7 +22548,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19922"/>
         <source>Students set=%1</source>
-        <translation>Grup d&apos;alumnes=%1</translation>
+        <translation>Grup d&apos;estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19923"/>
@@ -22625,7 +22625,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetminrestinghoursform_template.ui" line="14"/>
         <source>Constraints students set min resting hours</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restriccions del mínim d&apos;hores de descans dels alumnes</translation>
+        <translation>Restriccions del mínim d&apos;hores de descans dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetminrestinghoursform_template.ui" line="28"/>
@@ -22679,7 +22679,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="823"/>
         <source>Constraint students set not available is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>La restricció temps no disponibles d&apos;un conjunt d&apos;alumnes és incorrecta perquè es refereix a un conjunt d&apos;alumnes inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica un possible bug. La restricció és:
+        <translation>La restricció temps no disponibles d&apos;un conjunt d&apos;estudiants és incorrecta perquè es refereix a un conjunt d&apos;estudiants inexistent. Siusplau corregeix-la (treure-la pot ser una solució). Siusplau comunica un possible bug. La restricció és:
 %1</translation>
     </message>
     <message>
@@ -22692,14 +22692,14 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="833"/>
         <source>Constraint students set not available times is wrong because it refers to removed day. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>La restricció temps no disponibles d&apos;un conjunt d&apos;alumnes és incorrecta perquè fa referència a un dia esborrat. Siusplau corregeix-la i torna-ho a provar. Corregir vol dir editar la restricció i actualitzar la informació. La restricció és:
+        <translation>La restricció temps no disponibles d&apos;un conjunt d&apos;estudiants és incorrecta perquè fa referència a un dia esborrat. Siusplau corregeix-la i torna-ho a provar. Corregir vol dir editar la restricció i actualitzar la informació. La restricció és:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="840"/>
         <source>Constraint students set not available times is wrong because an hour is too late (after the last acceptable slot). Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>La restricció temps no disponibles d&apos;un conjunt d&apos;alumnes és incorrecta perquè una hora és massa tard (després de l&apos;última franja acceptable). Siusplau corregeix-la i torna-ho a provar. Corregir vol dir editar la restricció i actualitzar la informació. La restricció és:
+        <translation>La restricció temps no disponibles d&apos;un conjunt d&apos;estudiants és incorrecta perquè una hora és massa tard (després de l&apos;última franja acceptable). Siusplau corregeix-la i torna-ho a provar. Corregir vol dir editar la restricció i actualitzar la informació. La restricció és:
 %1</translation>
     </message>
     <message>
@@ -22711,7 +22711,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="928"/>
         <source>Students set not available</source>
-        <translation>Conjunt d&apos;alumnes no disponible</translation>
+        <translation>Conjunt d&apos;estudiants no disponible</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="929"/>
@@ -22739,7 +22739,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="952"/>
         <source>A students set is not available</source>
-        <translation>Un conjunt d&apos;alumnes no està disponible</translation>
+        <translation>Un conjunt d&apos;estudiants no està disponible</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="953"/>
@@ -22749,7 +22749,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="955"/>
         <source>Students=%1</source>
-        <translation>Alumnes=%1</translation>
+        <translation>Estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="957"/>
@@ -22781,7 +22781,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="1012"/>
         <source>Time constraint students set not available</source>
-        <translation>Restricció de temps conjunt d&apos;alumnes no disponible</translation>
+        <translation>Restricció de temps conjunt d&apos;estudiants no disponible</translation>
     </message>
 </context>
 <context>
@@ -22825,7 +22825,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetnotavailabletimesform_template.ui" line="14"/>
         <source>Constraints students set not available times</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>Restriccions d&apos;hores no disponibles per conjunt d&apos;alumnes</translation>
+        <translation>Restriccions d&apos;hores no disponibles per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetnotavailabletimesform_template.ui" line="28"/>
@@ -22924,12 +22924,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11404"/>
         <source>students=%1</source>
-        <translation>alumnes=%1</translation>
+        <translation>estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11406"/>
         <source>all students</source>
-        <translation>tots els alumnes</translation>
+        <translation>tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11409"/>
@@ -22996,12 +22996,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11456"/>
         <source>Students=%1</source>
-        <translation>Alumnes=%1</translation>
+        <translation>Estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11458"/>
         <source>All students</source>
-        <translation>Tots els alumnes</translation>
+        <translation>Tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11462"/>
@@ -23098,7 +23098,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredstartingtimesform.cpp" line="187"/>
         <source>This is simple: just add 2 constraints of this type, with the component number 1, (then 2) and the corresponding subject (you can also define teacher, students set and activity tag, of course).</source>
-        <translation>Aquesta és fàcil: simplement afegeix 2 restriccions d&apos;aquest tipus, amb el nombre de component 1 (després 2) i la matèria corresponent (també pots definir el professor, el conjunt d&apos;alumnes i l&apos;etiqueta d&apos;activitat, per descomptat).</translation>
+        <translation>Aquesta és fàcil: simplement afegeix 2 restriccions d&apos;aquest tipus, amb el nombre de component 1 (després 2) i la matèria corresponent (també pots definir el professor, el conjunt d&apos;estudiants i l&apos;etiqueta d&apos;activitat, per descomptat).</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredstartingtimesform.cpp" line="192"/>
@@ -23113,7 +23113,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredstartingtimesform.cpp" line="199"/>
         <source>Note: if a teacher or a students set cannot have lessons in some slots because of this constraint, gaps will be counted (if you have max gaps constraints). So be careful if you add this constraint for all sub-activities, for only a teacher or for only a students set</source>
-        <translation>Nota: si un professor o un conjunt d&apos;alumnes no pot tenir classes en algunes franges a causa d&apos;aquesta restricció, els buits es comptaran (si tens restriccions de max buits). Per tant ves amb compte d&apos;afegir aquesta restricció per només un professor o només un conjunt d&apos;alumnes</translation>
+        <translation>Nota: si un professor o un conjunt d&apos;estudiants no pot tenir classes en algunes franges a causa d&apos;aquesta restricció, els buits es comptaran (si tens restriccions de max buits). Per tant ves amb compte d&apos;afegir aquesta restricció per només un professor o només un conjunt d&apos;estudiants</translation>
     </message>
 </context>
 <context>
@@ -23234,12 +23234,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10123"/>
         <source>students=%1</source>
-        <translation>alumnes=%1</translation>
+        <translation>estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10125"/>
         <source>all students</source>
-        <translation>tots els alumnes</translation>
+        <translation>tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10128"/>
@@ -23306,12 +23306,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10175"/>
         <source>Students=%1</source>
-        <translation>Alumnes=%1</translation>
+        <translation>Estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10177"/>
         <source>All students</source>
-        <translation>Tots els alumnes</translation>
+        <translation>Tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10181"/>
@@ -23408,7 +23408,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredtimeslotsform.cpp" line="187"/>
         <source>This is simple: just add 2 constraints of this type, with the component number 1, (then 2) and the corresponding subject (you can also define teacher, students set and activity tag, of course).</source>
-        <translation>Aquesta és fàcil: simplement afegeix 2 restriccions d&apos;aquest tipus, amb el nombre de component 1 (després 2) i la matèria corresponent (també pots definir el professor, el conjunt d&apos;alumnes i l&apos;etiqueta d&apos;activitat, per descomptat).</translation>
+        <translation>Aquesta és fàcil: simplement afegeix 2 restriccions d&apos;aquest tipus, amb el nombre de component 1 (després 2) i la matèria corresponent (també pots definir el professor, el conjunt d&apos;estudiants i l&apos;etiqueta d&apos;activitat, per descomptat).</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredtimeslotsform.cpp" line="193"/>
@@ -23423,7 +23423,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredtimeslotsform.cpp" line="200"/>
         <source>Note: if a teacher or a students set cannot have lessons in some slots because of this constraint, gaps will be counted (if you have max gaps constraints). So be careful if you add this constraint for all sub-activities, for only a teacher or for only a students set</source>
-        <translation>Nota: si un professor o un conjunt d&apos;alumnes no pot tenir classes en algunes franges a causa d&apos;aquesta restricció, els buits es comptaran (si tens restriccions de max buits). Per tant ves amb compte d&apos;afegir aquesta restricció per només un professor o només un conjunt d&apos;alumnes</translation>
+        <translation>Nota: si un professor o un conjunt d&apos;estudiants no pot tenir classes en algunes franges a causa d&apos;aquesta restricció, els buits es comptaran (si tens restriccions de max buits). Per tant ves amb compte d&apos;afegir aquesta restricció per només un professor o només un conjunt d&apos;estudiants</translation>
     </message>
 </context>
 <context>
@@ -29595,7 +29595,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="109"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="122"/>
@@ -29806,7 +29806,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="109"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="122"/>
@@ -30013,7 +30013,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="109"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="122"/>
@@ -30216,7 +30216,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="93"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="106"/>
@@ -30771,7 +30771,7 @@ La importació de dades serà més fàcil amb aquesta configuració.</translatio
         <location filename="../src/engine/export.cpp" line="1107"/>
         <location filename="../src/engine/export.cpp" line="1117"/>
         <source>There are subactivities which were modified separately - so the components had different values for subject, activity tags, teachers, students or number of students from the representative subactivity. The export was done, but it is not very accurate.</source>
-        <translation>Hi ha subactivitats que s&apos;han modificat separadament - per tant els seus components tenen valors per matèria, etiquetes d&apos;activitat, professors, alumnes o nombre d&apos;alumnes que són diferents de la subactivitat representativa. L&apos;exportació s&apos;ha fet, però no és molt acurada.</translation>
+        <translation>Hi ha subactivitats que s&apos;han modificat separadament - per tant els seus components tenen valors per matèria, etiquetes d&apos;activitat, professors, estudiants o nombre d&apos;estudiants que són diferents de la subactivitat representativa. L&apos;exportació s&apos;ha fet, però no és molt acurada.</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="1001"/>
@@ -30786,12 +30786,12 @@ La importació de dades serà més fàcil amb aquesta configuració.</translatio
     <message>
         <location filename="../src/engine/export.cpp" line="1007"/>
         <source>different students</source>
-        <translation>alumnes diferents</translation>
+        <translation>estudiants diferents</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="1011"/>
         <source>different number of students</source>
-        <translation>nombre d&apos;alumnes diferent</translation>
+        <translation>nombre d&apos;estudiants diferent</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="1005"/>
@@ -30801,7 +30801,7 @@ La importació de dades serà més fàcil amb aquesta configuració.</translatio
     <message>
         <location filename="../src/engine/export.cpp" line="1009"/>
         <source>different boolean variable &apos;must compute n total students&apos;</source>
-        <translation>variable booleana diferent &quot;cal comptbilitzarr n alumnes totals</translation>
+        <translation>variable booleana diferent &quot;cal comptbilitzarr n estudiants totals</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="123"/>
@@ -31496,17 +31496,17 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2049"/>
         <source>This will enable the menu for 4 constraints: teacher(s) or students (set) activity tag max hours daily. These 4 constraints are good, but not perfect and may bring slow down of generation or impossible timetables if used unproperly. Select only if you know what you&apos;re doing.</source>
-        <translation>Això habilitarà el menu per 4 restriccions: etiqueta d&apos;activitat per (professor(s) o (conjunt de)alumnes max hores diàries. Aquestes 4 restriccions són bones, però no perfectes, i poden ralentir la generació, o trobar horaris impossibles si no s&apos;usen apropiadament. Tria-les només si saps el que estàs fent.</translation>
+        <translation>Això habilitarà el menú per 4 restriccions: etiqueta d&apos;activitat per (professor(s) o (conjunt de)estudiants max hores diàries. Aquestes 4 restriccions són bones, però no perfectes, i poden ralentir la generació, o trobar horaris impossibles si no s&apos;usen apropiadament. Tria-les només si saps el que estàs fent.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2052"/>
         <source>Enable students max gaps per day:</source>
-        <translation>Habilita max buits per dia per tots els alumnes:</translation>
+        <translation>Habilita max buits per dia per tots els estudiants:</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2054"/>
         <source>This will enable the menu for 2 constraints: students (set) max gaps per day. These 2 constraints are good, but not perfect and may bring slow down of generation or impossible timetables if used unproperly. Select only if you know what you&apos;re doing.</source>
-        <translation>Això habilitarà el menu per 2 restriccions: (conjunt de)alumnes max buits diaris. Aquestes 2 restriccions són bones, però no perfectes, i poden ralentir la generació, o trobar horaris impossibles si no s&apos;usen apropiadament. Tria-les només si saps el que estàs fent.</translation>
+        <translation>Això habilitarà el menú per 2 restriccions: (conjunt de)estudiants max buits diaris. Aquestes 2 restriccions són bones, però no perfectes, i poden ralentir la generació, o trobar horaris impossibles si no s&apos;usen apropiadament. Tria-les només si saps el que estàs fent.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2058"/>
@@ -31517,23 +31517,23 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2064"/>
         <source>Enable students min hours daily with empty days:</source>
-        <translation>Habilita min hores diàries amb dies buits per tots els alumnes:</translation>
+        <translation>Habilita min hores diàries amb dies buits per tots els estudiants:</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2066"/>
         <source>This will enable you to modify the students min hours daily constraints, to allow empty days. It is IMPERATIVE (for performance reasons) to allow empty days for students min hours daily only if your institution allows empty days for students and if a solution with empty days is possible. Select only if you know what you&apos;re doing.</source>
-        <translation>Això et permetrà modificar les restriccions min hores diàries per tots els alumnes, per poder permetre dies buits. És IMPERATIU (per motius de rendiment) permetre dies buits per tots els alumnes min hores diàries només si la teva institució permet dies buits pels alumnes i si una solució amb dies buits és possible. selecciona-la només si saps el que estàs fent.</translation>
+        <translation>Això et permetrà modificar les restriccions min hores diàries per tots els estudiants, per poder permetre dies buits. És IMPERATIU (per motius de rendiment) permetre dies buits per tots els estudiants min hores diàries només si la teva institució permet dies buits pels estudiants i si una solució amb dies buits és possible. selecciona-la només si saps el que estàs fent.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2070"/>
         <source>Warn if using students min hours daily with empty days:</source>
         <comment>this is a warning if user has constraints min hours daily for students with allowed empty days</comment>
-        <translation>Avisa si s&apos;usa min hores diàries amb dies buits per tots els alumnes:</translation>
+        <translation>Avisa si s&apos;usa min hores diàries amb dies buits per tots els estudiants:</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2072"/>
         <source>If you use constraints students min hours daily with allowed empty days, you&apos;ll get a warning before generating. Uncheck this option to get rid of that warning (it is recommended to keep the warning).</source>
-        <translation>Si uses restriccions min hores diàries per tots els alumnes amb dies buits permesos, rebràs un avís abans de generar. Desmarca aquesta opció per desfer-te d&apos;aquest avís (es recomana deixar l&apos;avís).</translation>
+        <translation>Si uses restriccions min hores diàries per tots els estudiants amb dies buits permesos, rebràs un avís abans de generar. Desmarca aquesta opció per desfer-te d&apos;aquest avís (es recomana deixar l&apos;avís).</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2077"/>
@@ -31559,15 +31559,15 @@ Each subgroup should have a number of hours per week close to the average of all
 Please read FAQ for detailed description on how divisions work. The key is that the subgroups are independent and represent the smallest unit of students. Each subgroup receives the activities of the parent year and parent group and of itself.
 
 Having a subgroup with too little working hours per week means that you inputted activities in a wrong manner, and also that some constraints like no gaps, early or min hours daily for this subgroup are interpreted in a wrong manner (if subgroup has only 2 activities, then these must be placed in the first hours, which is too hard and wrong).</source>
-        <translation>Les estadístiques d&apos;alumnes podrien ser més difícils d&apos;entendre. Si estàs utilitzant divisions de cursos: probablement les estadístiques més rellevants són les dels subgrups (així que pots marcar només la casella de subgrups). potser veuràs més hores pels cursos i grups, però no són siginificatives, siusplau ignora-les, ja que cada curs i grup comptarà les activitats dels subgrups que conté.
+        <translation>Les estadístiques d&apos;estudiants podrien ser més difícils d&apos;entendre. Si estàs utilitzant divisions de cursos: probablement les estadístiques més rellevants són les dels subgrups (així que pots marcar només la casella de subgrups). Potser veuràs més hores pels cursos i grups, però no són significatives, siusplau ignora-les, ja que cada curs i grup comptarà les activitats dels subgrups que conté.
 
-Cada subgrup hauria de tenir un nombre d&apos;hores per setmana semblant a la mitjana de tots els subgrups i proper al nombre normal d&apos;hores laborables per a cada conjunt d&apos;alumnes. Cada subgrup rep les activitats del grup superior, del curs superios, i d&apos;ell mateix.
+Cada subgrup hauria de tenir un nombre d&apos;hores per setmana semblant a la mitjana de tots els subgrups i proper al nombre normal d&apos;hores laborables per a cada conjunt d&apos;estudiants. Cada subgrup rep les activitats del grup superior, del curs superios, i d&apos;ell mateix.
 Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has introduit les activitats de manera incorrecta, i també que algunes restriccions com cap buit, d&apos;hora, o min hores diàries per aquest subgrup són interpretades de manera errònia (si el subgrup només té 2 activitats s&apos;hauran de col·locar a les primeres hores, la qual cosa és massa difícil i incorrecta).</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2149"/>
         <source>Activities rooms statistics: this menu will show the activities which may be scheduled in an unspecified room, if they are referred to by space constraints with weight under 100.0%, and the activities which will certainly be scheduled in an unspecified room, if they are not referred to by any space constraints. Remember that home rooms constraints are effective only on activities which have only the exact specified teacher or students set (activities with more teachers or students sets are not affected by home rooms constraints, you need to have preferred rooms constraints for such activities to ensure they will not end up in an unspecified room).</source>
-        <translation>Estadítiques de les aules d&apos;activitats: aquest menú mostrarà activitats que poden programar-se a una aula no especificada, si estan subjectes a restriccions d&apos;espai amb un pes inferior al 100% i activitats que, sens dubtem es programaran a una aula no especificada si no es refereixen a cap restricció d&apos;espai. Recordau que algunes limitacions d&apos;espai només són efectives amb activitats que tenen exactament un professor o grup específic (per les activitats amb múltiples professors o grups no afectades per les restriccions d&apos;aula de base cal fer servir restriccions d&apos;aules preferides per tal d&apos;assegurar-se que no acaben asignades a una aula no especificada).</translation>
+        <translation>Estadítiques de les aules d&apos;activitats: aquest menú mostrarà activitats que poden programar-se a una aula no especificada, si estan subjectes a restriccions d&apos;espai amb una ponderació inferior al 100% i activitats que, sens dubtem es programaran a una aula no especificada si no es refereixen a cap restricció d&apos;espai. Recordau que algunes limitacions d&apos;espai només són efectives amb activitats que tenen exactament un professor o grup específic (per les activitats amb múltiples professors o grups no afectades per les restriccions d&apos;aula de base cal fer servir restriccions d&apos;aules preferides per tal d&apos;assegurar-se que no acaben asignades a una aula no especificada).</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2156"/>
@@ -31989,7 +31989,7 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
         <location filename="../src/interface/fetmainform.cpp" line="4208"/>
         <source>Enable students max gaps per day will be %1</source>
         <comment>%1 is true or false</comment>
-        <translation>Habilita max buits per dia per tots els alumnes serà %1</translation>
+        <translation>Habilita max buits per dia per tots els estudiants serà %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4208"/>
@@ -32273,7 +32273,7 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4803"/>
         <source>Please use such constraints only if you are sure that there exists a timetable with empty days for students. If your instution requires each day for the students to be not empty, or if there does not exist a solution with empty days for students, it is IMPERATIVE (for performance reasons) that you use the standard constraint which does not allow empty days. Otherwise, the timetable may be impossible to find.</source>
-        <translation>Siusplau usa aquestes restriccions si estàs segur que hi ha un horari amb diei la teva institució requereix que cap dels dies dels alumnes estigui buit, o si no hi ha una solució amb dies buits per als alumnes, és IMPERATIU (per motius d&apos;execució) que utilitzis la restricció standardque no permet dies buits. En cas contrari, l&apos;horari pot ser impossible de trobar.</translation>
+        <translation>Siusplau usa aquestes restriccions si estàs segur que hi ha un horari amb diei la teva institució requereix que cap dels dies dels estudiants estigui buit, o si no hi ha una solució amb dies buits per als estudiants, és IMPERATIU (per motius d&apos;execució) que utilitzis la restricció standardque no permet dies buits. En cas contrari, l&apos;horari pot ser impossible de trobar.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4848"/>
@@ -32447,7 +32447,7 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2060"/>
         <source>If you use a not perfect constraint (activity tag max hours daily or students max gaps per day), you&apos;ll get a warning before generating. Uncheck this option to get rid of that warning (it is recommended to keep the warning).</source>
-        <translation>Si utilitzes una restricció imperfecta (max hores diàries per etiqueta d&apos;activitat o max buits per dia per tots els alumnes), obtindràs un avís abans de generar. Desactiva aquesta opció per desfer-te d&apos;aquest avís (es recomana mantenir l&apos;avís).</translation>
+        <translation>Si utilitzes una restricció imperfecta (max hores diàries per etiqueta d&apos;activitat o max buits per dia per tots els estudiants), obtindràs un avís abans de generar. Desactiva aquesta opció per desfer-te d&apos;aquest avís (es recomana mantenir l&apos;avís).</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="3665"/>
@@ -32513,13 +32513,13 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
         <location filename="../src/interface/fetmainform.cpp" line="4214"/>
         <source>Enable constraints students min hours daily with empty days will be %1</source>
         <comment>%1 is true or false</comment>
-        <translation>Habilita min hores diàries amb dies buits per tots els alumnes serà %1</translation>
+        <translation>Habilita min hores diàries amb dies buits per tots els estudiants serà %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4217"/>
         <source>Warn if using constraints students min hours daily with empty days will be %1</source>
         <comment>%1 is true or false. This is a warning if user uses a nonstandard constraint students min hours daily with allowed empty days</comment>
-        <translation>Avisa si l&apos;ús de restriccions min hores diàries amb dies buits per tots els alumnes és %1</translation>
+        <translation>Avisa si l&apos;ús de restriccions min hores diàries amb dies buits per tots els estudiants és %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4285"/>
@@ -32620,7 +32620,7 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="780"/>
         <source>Constraint is not enabled. To use this type of constraint you must enable it from the Settings-&gt;Advanced menu.</source>
-        <translation>La restricció no està habilitada. Per usar aquesta mena de restricció has d&apos;habilitar-la manualment des del menu Configuració-&gt;Avançat.</translation>
+        <translation>La restricció no està habilitada. Per usar aquesta mena de restricció has d&apos;habilitar-la manualment des del menú Configuració-&gt;Avançat.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="944"/>
@@ -32787,7 +32787,7 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2142"/>
         <source>Students&apos; statistics form contains a check box named &apos;%1&apos;. This has effect only if you have overlapping groups/years, and means that FET will show the complete tree structure, even if that means that some subgroups/groups will appear twice or more in the table, with the same information. For instance, if you have year Y1, groups G1 and G2, subgroups S1, S2, S3, with structure: Y1 (G1 (S1, S2), G2 (S1, S3)), S1 will appear twice in the table</source>
-        <translation>El formulari d&apos;estadístiques dels alumnes conté una casella de verificació anomenada &quot;%1&quot;. Això només té efecte si tens grups/cursos superposats, i significa que FET mostrarà l&apos;estructura d&apos;arbre completa, inclús si això significa que alguns subgrups/grups apareixeran dues o més vegades en la taula, amb la mateixa informació. Per exemple, si tens un curs C1, grups G1 i G2, subgrups S1, S2, S3, amb l&apos;estructura C1(G1(S1, S2), G2 (S1, S3)), S1 apareixerà dues vegades a la taula</translation>
+        <translation>El formulari d&apos;estadístiques dels estudiants conté una casella de verificació anomenada &quot;%1&quot;. Això només té efecte si tens grups/cursos superposats, i significa que FET mostrarà l&apos;estructura d&apos;arbre completa, inclús si això significa que alguns subgrups/grups apareixeran dues o més vegades en la taula, amb la mateixa informació. Per exemple, si tens un curs C1, grups G1 i G2, subgrups S1, S2, S3, amb l&apos;estructura C1(G1(S1, S2), G2 (S1, S3)), S1 apareixerà dues vegades a la taula</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2146"/>
@@ -32886,12 +32886,12 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
         <location filename="../src/interface/fetmainform_template.ui" line="864"/>
         <source>Online</source>
         <extracomment>menu Help-&gt;Online (means on the internet)</extracomment>
-        <translation>En línia (online)</translation>
+        <translation>A la xarxa</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1269"/>
         <source>Interface</source>
-        <translation>Intefície</translation>
+        <translation>Interfície</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1282"/>
@@ -32937,13 +32937,13 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
         <location filename="../src/interface/fetmainform_template.ui" line="1406"/>
         <source>&amp;Teachers</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different</extracomment>
-        <translation>&amp;Professors</translation>
+        <translation>&amp;Professorat</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1012"/>
         <location filename="../src/interface/fetmainform_template.ui" line="1173"/>
         <source>Teachers</source>
-        <translation>Professors</translation>
+        <translation>Professorat</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1411"/>
@@ -33006,7 +33006,7 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="951"/>
         <source>View (&amp;students)</source>
-        <translation>Visualitza (&amp;alumnes)</translation>
+        <translation>Visualitza (&amp;estudiants)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="944"/>
@@ -33075,27 +33075,27 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2189"/>
         <source>Max hours daily with an activity tag for a students set</source>
-        <translation>Max hores diàries amb una etiqueta d&apos;activitat per un conjunt d&apos;alumnes</translation>
+        <translation>Max hores diàries amb una etiqueta d&apos;activitat per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2197"/>
         <source>Max hours daily with an activity tag for all students</source>
-        <translation>Max hores diàries amb una etiqueta d&apos;activitat per tots els alumnes</translation>
+        <translation>Max hores diàries amb una etiqueta d&apos;activitat per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2205"/>
         <source>Max gaps per day for a students set</source>
-        <translation>Max buits per dia per un conjunt d&apos;alumnes</translation>
+        <translation>Max buits per dia per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2213"/>
         <source>Max gaps per day for all students</source>
-        <translation>Max buits per dia per tots els alumnes</translation>
+        <translation>Max buits per dia per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2224"/>
         <source>Enable students max gaps per day</source>
-        <translation>Habilita max buits per dia per tots els alumnes</translation>
+        <translation>Habilita max buits per dia per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2235"/>
@@ -33205,7 +33205,7 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1615"/>
         <source>Students statistics</source>
-        <translation>Estadístiques d&apos;alumnes</translation>
+        <translation>Estadístiques d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1620"/>
@@ -33230,12 +33230,12 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1645"/>
         <source>Max hours daily for a students set</source>
-        <translation>Max hores diàries per un conjunt d&apos;alumnes</translation>
+        <translation>Max hores diàries per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1650"/>
         <source>Max hours daily for all students</source>
-        <translation>Max hores diàries per tots els alumnes</translation>
+        <translation>Max hores diàries per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1655"/>
@@ -33250,17 +33250,17 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1671"/>
         <source>Min hours daily for all students</source>
-        <translation>Mín hores diàries per tots els alumnes</translation>
+        <translation>Mín hores diàries per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1676"/>
         <source>Min hours daily for a students set</source>
-        <translation>Mín hores diàries per un conjunt d&apos;alumnes</translation>
+        <translation>Mín hores diàries per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1691"/>
         <source>An activity ends students day</source>
-        <translation>Una activitat acaba el dia dels alumnes</translation>
+        <translation>Una activitat acaba el dia dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1696"/>
@@ -33285,17 +33285,17 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1527"/>
         <source>Max gaps per week for a students set</source>
-        <translation>Max buits per setmana per un conjunt d&apos;alumnes</translation>
+        <translation>Max buits per setmana per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1532"/>
         <source>Max gaps per week for all students</source>
-        <translation>Max buits per setmana per tots els alumnes</translation>
+        <translation>Max buits per setmana per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1537"/>
         <source>All students begin early (max beginnings at second hour)</source>
-        <translation>Tots els alumnes comencen d&apos;hora (max inicis a segona hora)</translation>
+        <translation>Tots els estudiants comencen d&apos;hora (max inicis a segona hora)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1188"/>
@@ -33305,7 +33305,7 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1635"/>
         <source>A students set begins early (max beginnings at second hour)</source>
-        <translation>Un conjunt d&apos;alumnes comença d&apos;hora (max inicis a 2a hora)</translation>
+        <translation>Un conjunt d&apos;estudiants comença d&apos;hora (max inicis a 2a hora)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1721"/>
@@ -33325,12 +33325,12 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1502"/>
         <source>A students set&apos;s not available times</source>
-        <translation>Hores no disponibles per un conjunt d&apos;alumnes</translation>
+        <translation>Hores no disponibles per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1507"/>
         <source>Break times (all teachers+all students not available)</source>
-        <translation>Hores de pausa (tots el professorat+tots els alumnes no disponibles)</translation>
+        <translation>Hores de pausa (tots el professorat+tots els estudiants no disponibles)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1547"/>
@@ -33345,12 +33345,12 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1600"/>
         <source>A set of students has a home room</source>
-        <translation>Un conjunt d&apos;alumnes té una aula pròpia</translation>
+        <translation>Un conjunt d&apos;estudiants té una aula pròpia</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1605"/>
         <source>A set of students has a set of home rooms</source>
-        <translation>Un conjunt d&apos;alumnes té un conjunt d&apos;aules pròpies</translation>
+        <translation>Un conjunt d&apos;estudiants té un conjunt d&apos;aules pròpies</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="190"/>
@@ -33404,32 +33404,32 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1806"/>
         <source>Max building changes per day for a students set</source>
-        <translation>Max canvis d&apos;edifici per dia per conjunt d&apos;alumnes</translation>
+        <translation>Max canvis d&apos;edifici per dia per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1811"/>
         <source>Max building changes per day for all students</source>
-        <translation>Max canvis d&apos;edifici per dia per tots els alumnes</translation>
+        <translation>Max canvis d&apos;edifici per dia per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1816"/>
         <source>Max building changes per week for a students set</source>
-        <translation>Max canvis d&apos;edifici per setmana per conjunt d&apos;alumnes</translation>
+        <translation>Max canvis d&apos;edifici per setmana per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1821"/>
         <source>Max building changes per week for all students</source>
-        <translation>Max canvis d&apos;edifici per setmana per tots els alumnes</translation>
+        <translation>Max canvis d&apos;edifici per setmana per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1826"/>
         <source>Min gaps between building changes for a students set</source>
-        <translation>Mín buits entre canvis d&apos;edifici per conjunt d&apos;alumnes</translation>
+        <translation>Mín buits entre canvis d&apos;edifici per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1831"/>
         <source>Min gaps between building changes for all students</source>
-        <translation>Mín buits entre canvis d&apos;edifici per tots els alumnes</translation>
+        <translation>Mín buits entre canvis d&apos;edifici per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1836"/>
@@ -33479,12 +33479,12 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1891"/>
         <source>Max hours continuously for a students set</source>
-        <translation>Max hores contínues per un conjunt d&apos;alumnes</translation>
+        <translation>Max hores contínues per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1896"/>
         <source>Max hours continuously for all students</source>
-        <translation>Max hores contínues per tots els alumnes</translation>
+        <translation>Max hores contínues per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1901"/>
@@ -33597,7 +33597,7 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
         <location filename="../src/interface/fetmainform_template.ui" line="726"/>
         <source>Teachers</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short</comment>
-        <translation>Professors</translation>
+        <translation>Professorat</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="280"/>
@@ -33606,7 +33606,7 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
         <location filename="../src/interface/fetmainform_template.ui" line="733"/>
         <source>Students</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short</comment>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="259"/>
@@ -33847,12 +33847,12 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1741"/>
         <source>Max span per day for a students set</source>
-        <translation>Durada màxima diària per grup d&apos;alumnes</translation>
+        <translation>Durada màxima diària per grup d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1746"/>
         <source>Max span per day for all students</source>
-        <translation>Durada màxima diària per a tots els alumnes</translation>
+        <translation>Durada màxima diària per a tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1751"/>
@@ -33872,7 +33872,7 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1766"/>
         <source>Min resting hours for all students</source>
-        <translation>Mínim d&apos;hores de descans per a tots els alumnes</translation>
+        <translation>Mínim d&apos;hores de descans per a tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1771"/>
@@ -33943,17 +33943,17 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1981"/>
         <source>A students set works in an hourly interval max days per week</source>
-        <translation>Un conjunt d&apos;alumnes treballa en un interval d&apos;hores max dies per setmana</translation>
+        <translation>Un conjunt d&apos;estudiants treballa en un interval d&apos;hores max dies per setmana</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1986"/>
         <source>All students work in an hourly interval max days per week</source>
-        <translation>Tots els alumnes treballen en un interval d&apos;hores max dies per setmana</translation>
+        <translation>Tots els estudiants treballen en un interval d&apos;hores max dies per setmana</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1991"/>
         <source>A set of activities end students day</source>
-        <translation>Un conjunt d&apos;activitats acaba el dia dels alumnes</translation>
+        <translation>Un conjunt d&apos;activitats acaba el dia dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2093"/>
@@ -33969,12 +33969,12 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2302"/>
         <source>Enable students min hours daily with empty days</source>
-        <translation>Habilita min hores diàries amb dies buits per tots els alumnes</translation>
+        <translation>Habilita min hores diàries amb dies buits per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2313"/>
         <source>Warn if using students min hours daily with empty days</source>
-        <translation>Avisa si s&apos;usa min hores diàries amb dies buits per tots els alumnes</translation>
+        <translation>Avisa si s&apos;usa min hores diàries amb dies buits per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2318"/>
@@ -34002,7 +34002,7 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2362"/>
         <source>Confirm save data and timetable as</source>
-        <translation>Confirma desar dades i horari com a</translation>
+        <translation>Confirma desar dades i horari com a...</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2367"/>
@@ -34046,7 +34046,7 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2400"/>
         <source>Max days per week for all students</source>
-        <translation>Màxim de dies setmanals dels alumnes</translation>
+        <translation>Màxim de dies setmanals dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2411"/>
@@ -34167,12 +34167,12 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2037"/>
         <source>Lock all activities which end students day</source>
-        <translation>Bloqueja totes les activitats que acaben el dia dels alumnes</translation>
+        <translation>Bloqueja totes les activitats que acaben el dia dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2042"/>
         <source>Unlock all activities which end students day</source>
-        <translation>Desbloqueja totes les activitats que acaben el dia dels alumnes</translation>
+        <translation>Desbloqueja totes les activitats que acaben el dia dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2047"/>
@@ -34187,12 +34187,12 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2057"/>
         <source>Max hours continuously with an activity tag for a students set</source>
-        <translation>Max hores contínues amb una etiqueta d&apos;activitat per un conjunt d&apos;alumnes</translation>
+        <translation>Max hores contínues amb una etiqueta d&apos;activitat per un conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2062"/>
         <source>Max hours continuously with an activity tag for all students</source>
-        <translation>Max hores contínues amb una etiqueta d&apos;activitat per tots els alumnes</translation>
+        <translation>Max hores contínues amb una etiqueta d&apos;activitat per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2067"/>
@@ -34218,7 +34218,7 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
         <location filename="../src/interface/fetmainform_template.ui" line="1044"/>
         <location filename="../src/interface/fetmainform_template.ui" line="1158"/>
         <source>Students</source>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2098"/>
@@ -34873,7 +34873,7 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="1243"/>
         <source>Cannot optimize, because you have constraint students set max span per day for students %1 with weight (percentage) below 100. Please make weight 100% and try again</source>
-        <translation>No es pot optimitzar, perquè tens una restricció per als alumnes %1 de duració màxima diària per grup amb ponderació (percentatge) per a sota de 100. Siusplau fes la ponderació 100% i torna-ho a provar</translation>
+        <translation>No es pot optimitzar, perquè tens una restricció per als estudiants %1 de duració màxima diària per grup amb ponderació (percentatge) per a sota de 100. Siusplau fes la ponderació 100% i torna-ho a provar</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="1259"/>
@@ -34919,7 +34919,7 @@ Siusplau modifica les teves dades segons això i torna-ho a intentar.</translati
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2398"/>
         <source>For subgroup %1 cannot respect the constraint(s) of type min hours daily (the constraint(s) do not allow empty days) on day %2, because of students set not available and/or break. Please modify your data accordingly and try again</source>
-        <translation>Per al subrup %1 no es pot respectar la(s) restricció(ns) del tipus min hores diàries (la restricció no permet dies buits) en el dia %2, a causa que el conjunt d&apos;alumnes no està disponible o té pausa. Siusplau modifica les dades com convingui i torna-ho a provar</translation>
+        <translation>Per al subrup %1 no es pot respectar la(s) restricció(ns) del tipus min hores diàries (la restricció no permet dies buits) en el dia %2, a causa que el conjunt d&apos;estudiants no està disponible o té pausa. Siusplau modifica les dades com convingui i torna-ho a provar</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2636"/>
@@ -35031,12 +35031,12 @@ Siusplau modifica les teves dades segons això i torna-ho a intentar.</translati
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4081"/>
         <source>The constraint is impossible to respect, because there are the activities with id-s %1 and %2 which conflict one with another, because they have common students sets or teachers or must be not overlapping. FET will allow you to continue, because the weight of this constraint is below 100.0%, but anyway most probably you have made a mistake in this constraint, so it is recommended to modify it.</source>
-        <translation>La restricció és impossible de respectar perquè hi ha activitats amb id-s %1 i %2 que entren en conflicte l&apos;una amb l&apos;altra, ja que tenen en comú conjunts d&apos;alumnes o professors o no s&apos;han de superposar. FET et permetrà continuar, perquè la ponderació d&apos;aquestes restriccions és menor que 100%, però el més probable és que hagis comès un error en aquesta restricció, per tant és recomanable modificar-la.</translation>
+        <translation>La restricció és impossible de respectar perquè hi ha activitats amb id-s %1 i %2 que entren en conflicte l&apos;una amb l&apos;altra, ja que tenen en comú conjunts d&apos;estudiants o professors o no s&apos;han de superposar. FET et permetrà continuar, perquè la ponderació d&apos;aquestes restriccions és menor que 100%, però el més probable és que hagis comès un error en aquesta restricció, per tant és recomanable modificar-la.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4101"/>
         <source>The constraint is impossible to respect, because there are the activities with id-s %1 and %2 which conflict one with another, because they have common students sets or teachers or must be not overlapping. The weight of this constraint is 100.0%, so your timetable is impossible. Please correct this constraint.</source>
-        <translation>La restricció és impossible de respectar perquè hi ha activitats amb id-s %1 i %2 que entren en conflicte l&apos;una amb l&apos;altra, ja que tenen en comú conjunts d&apos;alumnes o professors o no s&apos;han de superposar. La ponderació d&apos;aquesta restricció és 100,0%, per tant el teu horari és impossible. Siusplau corregeix aquesta restricció.</translation>
+        <translation>La restricció és impossible de respectar perquè hi ha activitats amb id-s %1 i %2 que entren en conflicte l&apos;una amb l&apos;altra, ja que tenen en comú conjunts d&apos;estudiants o professors o no s&apos;han de superposar. La ponderació d&apos;aquesta restricció és 100,0%, per tant el teu horari és impossible. Siusplau corregeix aquesta restricció.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4203"/>
@@ -35046,7 +35046,7 @@ Siusplau modifica les teves dades segons això i torna-ho a intentar.</translati
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4206"/>
         <source>The activities with ids %1 and %2 must be simultaneous (request determined indirectly), but they have common teachers and/or students sets or must be not overlapping</source>
-        <translation>Les activitats amb ids %1 i %2 han de ser simult¡anies (reuqeriment determinat indirectament), però tenen en comú professors i/o conjunts d&apos;alumnes o no s&apos;han de superposar</translation>
+        <translation>Les activitats amb ids %1 i %2 han de ser simult¡anies (reuqeriment determinat indirectament), però tenen en comú professors i/o conjunts d&apos;estudiants o no s&apos;han de superposar</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4406"/>
@@ -35086,7 +35086,7 @@ Siusplau modifica les teves dades segons això i torna-ho a intentar.</translati
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4751"/>
         <source>Cannot optimize for subgroup %1, because the number of hours for subgroup is %2 and you have only %3 free slots from constraints students set not available and/or break. Maybe you inputted wrong constraints students set not available or break or the number of hours per week is less because of a misunderstanding</source>
-        <translation>No es pot optimitzar per al subgrup %1, perquè el nombre d&apos;hores per al subgrup és %2 i només tens %3 franges lliures a les restriccions conjunt d&apos;alumnes no disponible i/o pausa. Potser has entrat restriccions de conjunt d&apos;alumnes no disponible errònies, o pauses o el nombre d&apos;hores per setmana és menys a causa d&apos;un malentès</translation>
+        <translation>No es pot optimitzar per al subgrup %1, perquè el nombre d&apos;hores per al subgrup és %2 i només tens %3 franges lliures a les restriccions conjunt d&apos;estudiants no disponible i/o pausa. Potser has entrat restriccions de conjunt d&apos;estudiants no disponible errònies, o pauses o el nombre d&apos;hores per setmana és menys a causa d&apos;un malentès</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="5964"/>
@@ -35137,7 +35137,7 @@ Siusplau modifica les teves dades segons això i torna-ho a intentar.</translati
         <location filename="../src/engine/generate_pre.cpp" line="6867"/>
         <location filename="../src/engine/generate_pre.cpp" line="6922"/>
         <source>Cannot optimize for subgroup %1, because it has more than three constraints interval max days per week. Please modify your data correspondingly (leave maximum three constraints of type constraint students (set) interval max days per week for each subgroup) and try again</source>
-        <translation>No es pot optimitzar per al subgrup %1, perquè té més de tres restriccions max dies per setmana en un interval. Siusplau modifica les teves dades de manera que correspongui (deixa màxim tres restriccions del tipus restricció de (conjunt d&apos;)alumnes max dies per setmana en un interval per cada subgrup) i torna-ho a intentar</translation>
+        <translation>No es pot optimitzar per al subgrup %1, perquè té més de tres restriccions max dies per setmana en un interval. Siusplau modifica les teves dades de manera que correspongui (deixa màxim tres restriccions del tipus restricció de (conjunt d&apos;)estudiants max dies per setmana en un interval per cada subgrup) i torna-ho a intentar</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="5974"/>
@@ -35153,32 +35153,32 @@ Siusplau modifica les teves dades segons això i torna-ho a intentar.</translati
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="527"/>
         <source>There are %1 subgroups (from the total of %2 subgroups) which have the same activities as other subgroups. They are listed below. If the constraints relating to these subgroups are also the same, you can make the generation (directly proportional) faster by completely removing the subgroups which are equivalent to other subgroups (leaving only one representant for each equivalence set). (The generation algorithm will not completely remove the equivalent subgroups automatically.)</source>
-        <translation>Hi ha %1 subgruos (d&apos;un total de %2 subgrups) que tenen les mateixes activitats que altres subgrups. Estan llistats a continuació. Si les restriccions relatives en aquests subgrups són també iguals, poden fer la generació (directament proporcional) sigui més ràpida eliminant completament els subgrups equivalents (deixant només un representant de cada conjunt semblant). (L&apos;algoritme de generació no eliminarà completament els subgrups equivalents automàticament)</translation>
+        <translation>Hi ha %1 subgrups (d&apos;un total de %2 subgrups) que tenen les mateixes activitats que altres subgrups. Estan llistats a continuació. Si les restriccions relatives en aquests subgrups són també iguals, poden fer la generació (directament proporcional) sigui més ràpida eliminant completament els subgrups equivalents (deixant només un representant de cada conjunt semblant). (L&apos;algoritme de generació no eliminarà completament els subgrups equivalents automàticament)</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="535"/>
         <source>You can deactivate this message from the &apos;Settings&apos; menu.</source>
-        <translation>Podeu desactivat aquest missatge en el menú «Configuració».</translation>
+        <translation>Podeu desactivar aquest missatge en el menú «Configuració».</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="931"/>
         <source>Your data contains constraints students min hours daily which allow empty days.</source>
-        <translation>Les teves dades contenen restriccions de hores diàries pels alumnes que permeten dies buits.</translation>
+        <translation>Les teves dades contenen restriccions de hores diàries pels estudiants que permeten dies buits.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="933"/>
         <source>These constraints are nonstandard. They are recommended only if the students can have free days and a solution with free days for students exists. Otherwise the solution might be impossible for FET to find.</source>
-        <translation>Aquestes restriccions no són estandard. Només es recomanen si els alumnes poden tenir dies lliures i existeix una solució amb dies lliures per als alumnes. En cas contrari podria ser que FET trobés impossible de solucionar-ho.</translation>
+        <translation>Aquestes restriccions no són estandard. Només es recomanen si els estudiants poden tenir dies lliures i existeix una solució amb dies lliures per als estudiants. En cas contrari podria ser que FET trobés impossible de solucionar-ho.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2242"/>
         <source>Cannot optimize, because you have constraint students min hours daily with %1 min hours daily, and the number of working hours per day is only %2. Please correct and try again</source>
-        <translation>No es pot optimitzar, perquè tens una restricció min hores diàries per als alumnes amb %1 min hores diàries, i el nombre d&apos;hores lectives per dia és només %2. Siusplau corregeix-ho i torna-ho a provar</translation>
+        <translation>No es pot optimitzar, perquè tens una restricció min hores diàries per als estudiants amb %1 min hores diàries, i el nombre d&apos;hores lectives per dia és només %2. Siusplau corregeix-ho i torna-ho a provar</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2277"/>
         <source>Cannot optimize, because you have constraint students set min hours daily for students set %1 with %2 min hours daily, and the number of working hours per day is only %3. Please correct and try again</source>
-        <translation>No es pot optimitzar, perquè tens una restricció min hores diàries per al conjunt d&apos;alumnes %1, amb %2 min hores diàries, i el nombre d&apos;hores lectives diàries és només %3. Siusplau corregeix-ho i torna-ho a provar</translation>
+        <translation>No es pot optimitzar, perquè tens una restricció min hores diàries per al conjunt d&apos;estudiants %1, amb %2 min hores diàries, i el nombre d&apos;hores lectives diàries és només %3. Siusplau corregeix-ho i torna-ho a provar</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="5976"/>
@@ -35202,7 +35202,7 @@ Siusplau modifica les teves dades segons això i torna-ho a intentar.</translati
         <location filename="../src/engine/generate_pre.cpp" line="6517"/>
         <source>%1 cannot be respected because subgroup %2 has at most %3 available days from students set not available and breaks. Please lower the weight of this constraint to a value below 100% (it depends on your situation, if 0% is too little, make it 90%, 95% or even 99.75%. Even a large weight should not slow down much the program. A situation where you may need to make it larger than 0% is for instance if you have 5 activities with 4 possible days. You want to spread them 1, 1, 1 and 2, not 2, 2 and 1)</source>
         <comment>%1 is the detailed description of a constraint</comment>
-        <translation>%1 no es pot respectar perquè el subgrup %2 té com a molt %3 dies disponibles a causa de conjunt d&apos;alumnes no disponible, i pauses. Siusplau abaixa la ponderació d&apos;aquesta restricció a un valor menor de 100% (depèn de la teva situació, si 0% és massa poc, fes-la 90%, 95% o inclús 99,75%. Inclús una ponderació gran no hauria de ralentizar el programa. Una situació en què l&apos;hauries de fer més gran que 0% és per exemple si tens 5 activitats amb 4 dies possibles. les voldràs distribuir 1, 1, 1 i 2, i no 2, 2 i 1)</translation>
+        <translation>%1 no es pot respectar perquè el subgrup %2 té com a molt %3 dies disponibles a causa de conjunt d&apos;estudiants no disponible, i pauses. Siusplau abaixa la ponderació d&apos;aquesta restricció a un valor menor de 100% (depèn de la teva situació, si 0% és massa poc, fes-la 90%, 95% o inclús 99,75%. Inclús una ponderació gran no hauria de ralentizar el programa. Una situació en què l&apos;hauries de fer més gran que 0% és per exemple si tens 5 activitats amb 4 dies possibles. les voldràs distribuir 1, 1, 1 i 2, i no 2, 2 i 1)</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="6612"/>
@@ -35248,7 +35248,7 @@ Siusplau modifica les teves dades segons això i torna-ho a intentar.</translati
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="909"/>
         <source>Your data contains constraints students max gaps per day and/or activity tag max hours daily.</source>
-        <translation>Les teves dades contenen restriccions de max buits per dia pels alumnes i/o max hores diàries per una etiqueta d&apos;activitat.</translation>
+        <translation>Les teves dades contenen restriccions de max buits per dia pels estudiants i/o max hores diàries per una etiqueta d&apos;activitat.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="913"/>
@@ -35311,7 +35311,7 @@ Siusplau modifica les teves dades segons això i torna-ho a intentar.</translati
         <location filename="../src/engine/generate_pre.cpp" line="1137"/>
         <location filename="../src/engine/generate_pre.cpp" line="1200"/>
         <source>Cannot optimize for subgroup %1, because there is a constraint of type max %2 hours daily with 100% weight which cannot be respected because of number of days per week, number of hours per day, students (set) max days per week, students set not available and/or breaks. The number of total hours for this subgroup is %3 and the number of available slots is, considering max hours daily and all other constraints, %4.</source>
-        <translation>No es pot optimitzar per al subgruo %1, perquè hi ha una restricció del tipus max %2 hores diàries amb ponderació 100% que no es pot respectar a causa del nombre de dies per setmana, nombre d&apos;hores per dia, alumnes indisponibles i/o esplais. El nombre total d&apos;hores per a aquest subgrup  és %3 i el nombre de franges disponibles, considerant max hores diàries i altres restriccions, %4.</translation>
+        <translation>No es pot optimitzar per al subgruo %1, perquè hi ha una restricció del tipus max %2 hores diàries amb ponderació 100% que no es pot respectar a causa del nombre de dies per setmana, nombre d&apos;hores per dia, estudiants indisponibles i/o esplais. El nombre total d&apos;hores per a aquest subgrup  és %3 i el nombre de franges disponibles, considerant max hores diàries i altres restriccions, %4.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="1147"/>
@@ -35332,7 +35332,7 @@ Siusplau modifica les teves dades segons això i torna-ho a intentar.</translati
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="1336"/>
         <source>Cannot optimize for subgroup %1, because there is a constraint of type max %2 span per day with 100% weight which cannot be respected because of number of days per week, number of hours per day, students (set) max days per week, students set not available and/or breaks. The number of total hours for this subgroup is %3 and the number of available slots is, considering max span per day and all other constraints, %4.</source>
-        <translation>No es pot optimitzar per al subgruo %1, perquè hi ha una restricció del tipus max %2 duració diària amb ponderació 100% que no es pot respectar a causa del nombre de dies per setmana, nombre d&apos;hores per dia, màx. dies per setmana pels alumnes (grups), grups indisponibles i/o esplais. El nombre total d&apos;hores per a aquest subgrup  és %3 i el nombre de franges disponibles, considerant max hores diàries i altres restriccions, %4.</translation>
+        <translation>No es pot optimitzar per al subgruo %1, perquè hi ha una restricció del tipus max %2 duració diària amb ponderació 100% que no es pot respectar a causa del nombre de dies per setmana, nombre d&apos;hores per dia, màx. dies per setmana pels estudiants (grups), grups indisponibles i/o esplais. El nombre total d&apos;hores per a aquest subgrup  és %3 i el nombre de franges disponibles, considerant max hores diàries i altres restriccions, %4.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="1404"/>
@@ -35383,18 +35383,18 @@ Siusplau modifica les teves dades segons això i torna-ho a intentar.</translati
         <location filename="../src/engine/generate_pre.cpp" line="2075"/>
         <location filename="../src/engine/generate_pre.cpp" line="2096"/>
         <source>Cannot optimize, because you have activity id = %1 with duration = %2 and a constraint students (set) max %3 hours daily with weight = 100% for the subgroup %4. The activity&apos;s duration is higher than the subgroup&apos;s max hours daily. Please correct and try again.</source>
-        <translation>No es pot optimitzar perquè tens una activitat amb id.=%1 amb durada =%2 i una restricció pels alumnes (conjunt) del tipus màx. %3 hores diàries amb pes =100% per al subgrup %4. La durada de l&apos;activitat és major al nombre d&apos;hores màximes diàries del subgrup. Corregiu-lo i intenteu-ho de nou.</translation>
+        <translation>No es pot optimitzar perquè tens una activitat amb id.=%1 amb durada =%2 i una restricció pels estudiants (conjunt) del tipus màx. %3 hores diàries amb pes =100% per al subgrup %4. La durada de l&apos;activitat és major al nombre d&apos;hores màximes diàries del subgrup. Corregiu-lo i intenteu-ho de nou.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2117"/>
         <location filename="../src/engine/generate_pre.cpp" line="2137"/>
         <source>Cannot optimize, because you have activity id = %1 with duration = %2 and a constraint students (set) max %3 hours continuously with weight = 100% for the subgroup %4. The activity&apos;s duration is higher than the subgroup&apos;s max hours continuously. Please correct and try again.</source>
-        <translation>No es pot optimitzar perquè tens una activitat amb id.=%1 amb durada =%2 i una restricció pels alumnes (conjunt) del tipus màx. %3 hores continues amb pes =100% per al subgrup %4. La durada de l&apos;activitat és major al nombre d&apos;hores màximes continues del subgrup. Corregiu-lo i intenteu-ho de nou.</translation>
+        <translation>No es pot optimitzar perquè tens una activitat amb id.=%1 amb durada =%2 i una restricció pels estudiants (conjunt) del tipus màx. %3 hores continues amb pes =100% per al subgrup %4. La durada de l&apos;activitat és major al nombre d&apos;hores màximes continues del subgrup. Corregiu-lo i intenteu-ho de nou.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2160"/>
         <source>Cannot optimize, because you have activity id = %1 with duration = %2 and a constraint students (set) activity tag max %3 hours daily with weight = 100% for the subgroup %4 and activity tag %5. The activity&apos;s duration is higher than the subgroup&apos;s max hours daily with this activity tag (which the activity contains). Please correct and try again.</source>
-        <translation>No es pot optimitzar perquè tens una activitat amb id.=%1 amb durada =%2 i una restricció pels alumnes (conjunt) del tipus màx. %3 hores diàries amb pes =100% per al subgrup %4 i codi d&apos;activitat %5. La durada de l&apos;activitat és major al nombre d&apos;hores màximes dels subgrups amb aquest codi d&apos;activitat (i l&apos;activitat que el conté). Corregiu-lo i intenteu-ho de nou.</translation>
+        <translation>No es pot optimitzar perquè tens una activitat amb id.=%1 amb durada =%2 i una restricció pels estudiants (conjunt) del tipus màx. %3 hores diàries amb pes =100% per al subgrup %4 i codi d&apos;activitat %5. La durada de l&apos;activitat és major al nombre d&apos;hores màximes dels subgrups amb aquest codi d&apos;activitat (i l&apos;activitat que el conté). Corregiu-lo i intenteu-ho de nou.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2186"/>
@@ -35404,12 +35404,12 @@ Siusplau modifica les teves dades segons això i torna-ho a intentar.</translati
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2227"/>
         <source>Cannot optimize for students, because the constraint of type min hours daily relating to students has no 100% weight. Please modify your data accordingly and try again</source>
-        <translation>No es pot optimitza per als alumnes, perquè la restricció del tipus min hores diàries per als alumnes no té ponderació 100%. Siusplau modifica les teves dades segons convingui i torna-ho a provar</translation>
+        <translation>No es pot optimitza per als estudiants, perquè la restricció del tipus min hores diàries per als estudiants no té ponderació 100%. Siusplau modifica les teves dades segons convingui i torna-ho a provar</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2261"/>
         <source>Cannot optimize for students set %1, because the constraint of type min hours daily relating to him has no 100% weight. Please modify your data accordingly and try again</source>
-        <translation>No es pot optimitza per al conjunt d&apos;alumnes %1, perquè la restricció del tipus min hores diàries per als alumnes no té ponderació 100%. Siusplau modifica les teves dades segons convingui i torna-ho a provar</translation>
+        <translation>No es pot optimitza per al conjunt d&apos;estudiants %1, perquè la restricció del tipus min hores diàries per als estudiants no té ponderació 100%. Siusplau modifica les teves dades segons convingui i torna-ho a provar</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2314"/>
@@ -35425,7 +35425,7 @@ Siusplau modifica les teves dades segons això i torna-ho a intentar.</translati
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2435"/>
         <source>Cannot optimize, because you have constraint students min %1 hours daily for subgroup %2 and the constraint allows empty days. The number of min hours daily should be at least 2, to make a non-trivial constraint. Please correct and try again</source>
-        <translation>No es pot optimitzar, perquè tens una restricció min %1 hores diàries per a tots els alumnes per al subgrup %2 i la restricció permet dies buits. El nombre de min hores diàries hauria de ser almenys de 2, per fer una restricció no trivial. Siusplau corregeix-la i torna-ho a provar</translation>
+        <translation>No es pot optimitzar, perquè tens una restricció min %1 hores diàries per a tots els estudiants per al subgrup %2 i la restricció permet dies buits. El nombre de min hores diàries hauria de ser almenys de 2, per fer una restricció no trivial. Siusplau corregeix-la i torna-ho a provar</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2511"/>
@@ -35522,7 +35522,7 @@ Siusplau modifica les teves dades segons això i torna-ho a intentar.</translati
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3977"/>
         <source>Cannot optimize, because you have constraint students min resting hours with %1 min resting hours, and the number of working hours per day is only %2. Please correct and try again</source>
-        <translation>No es pot optimitzar, perquè tens una restricció tipus mínim d&apos;hores diàries de descans per als alumnes amb %1 min d&apos;hores de descans i el nombre d&apos;hores lectives per dia és només %2. Siusplau corregeix-ho i torna-ho a provar</translation>
+        <translation>No es pot optimitzar, perquè tens una restricció tipus mínim d&apos;hores diàries de descans per als estudiants amb %1 min d&apos;hores de descans i el nombre d&apos;hores lectives per dia és només %2. Siusplau corregeix-ho i torna-ho a provar</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4361"/>
@@ -35569,7 +35569,7 @@ Siusplau modifica les teves dades segons això i torna-ho a intentar.</translati
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4972"/>
         <source>Cannot optimize, because you have constraint students set max days per week with weight (percentage) below 100 for students set %1. It is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
-        <translation>No es pot optimitzar perquè hi ha una restricció del tipus hores màxims de dies setmanals pels alumnes amb una ponderació (%) menor a 100 pel grup %1. Només és possible fer servir la ponderació del 100% per a aquestes restriccions. Canviau la ponderació al 100% i intentau-ho de nou</translation>
+        <translation>No es pot optimitzar perquè hi ha una restricció del tipus hores màxims de dies setmanals pels estudiants amb una ponderació (%) menor a 100 pel grup %1. Només és possible fer servir la ponderació del 100% per a aquestes restriccions. Canviau la ponderació al 100% i intentau-ho de nou</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4998"/>
@@ -35602,7 +35602,7 @@ Siusplau modifica les teves dades de manera que correspongui i torna-ho a intent
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="5431"/>
         <source>Cannot optimize, because you have constraints of type students set not available with weight percentage less than 100% for students set %1. Currently, FET can only optimize with constraints students set not available with 100% weight (or no constraint). Please modify your data accordingly and try again.</source>
-        <translation>No es pot optimitzar, perquè tens restriccions del tipus conjunt d&apos;alumnes no disponible amb ponderacions menys de 100% per al conjunt d&apos;alumnes %1. Actualment, FET només pot optimitzar amb restriccions conjunt d&apos;alumnes no disponible amb ponderació 100% (o sense restricció). Siusplau modifica les teves dades segons correspongui i torna-ho a intentar.</translation>
+        <translation>No es pot optimitzar, perquè tens restriccions del tipus conjunt d&apos;estudiants no disponible amb ponderacions menys de 100% per al conjunt d&apos;estudiants %1. Actualment, FET només pot optimitzar amb restriccions conjunt d&apos;estudiants no disponible amb ponderació 100% (o sense restricció). Siusplau modifica les teves dades segons correspongui i torna-ho a intentar.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="5474"/>
@@ -35655,7 +35655,7 @@ Siusplau modifica les teves dades de manera que correspongui i torna-ho a intent
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="6343"/>
         <source>Cannot optimize, because you have constraints of type activity activity ends students day for activity with id==%1 with weight percentage under 100%. Constraint activity ends students day can only have weight percentage 100%. Please modify your data accordingly (remove or edit constraint) and try again.</source>
-        <translation>No es pot optimitzar, perquè tens restriccions del tipus una activitat acaba el dia dels alumnes amb id==%1 amb ponderació per sota de 100%. Les restriccions activitat acaba el dia dels alumnes només pot tenir ponderació del 100%. Siusplau modifica les teves dades segons correspongui (esborra o edita la restricció) i torna-ho a intentar.</translation>
+        <translation>No es pot optimitzar, perquè tens restriccions del tipus una activitat acaba el dia dels estudiants amb id==%1 amb ponderació per sota de 100%. Les restriccions activitat acaba el dia dels estudiants només pot tenir ponderació del 100%. Siusplau modifica les teves dades segons correspongui (esborra o edita la restricció) i torna-ho a intentar.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="6703"/>
@@ -35670,12 +35670,12 @@ Siusplau modifica les teves dades de manera que correspongui i torna-ho a intent
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="6833"/>
         <source>Cannot optimize, because you have constraint students set interval max days per week with weight (percentage) below 100 for students set %1. Starting with FET version 5.6.2 it is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
-        <translation>No es pot optimitzar, perquè tens una restricció max dies per setmana en un interval per al conjunt d&apos;alumnes %1 amb ponderació (percentatge) sota 100. A partir de la versió de FET 5.6.2 només és possible usar ponderació 100% per aquestes restriccions. Siusplau fes la ponderació 100% i torna-ho a intentar</translation>
+        <translation>No es pot optimitzar, perquè tens una restricció max dies per setmana en un interval per al conjunt d&apos;estudiants %1 amb ponderació (percentatge) sota 100. A partir de la versió de FET 5.6.2 només és possible usar ponderació 100% per aquestes restriccions. Siusplau fes la ponderació 100% i torna-ho a intentar</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="6886"/>
         <source>Cannot optimize, because you have constraint students interval max days per week with weight (percentage) below 100. Starting with FET version 5.6.2 it is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
-        <translation>No es pot optimitzar, perquè tens una restricció max dies per setmana en un interval per a tots els alumnes amb ponderació (percentatge) sota 100. A partir de la versió de FET 5.6.2 només és possible usar ponderació 100% per aquestes restriccions. Siusplau fes la ponderació 100% i torna-ho a intentar</translation>
+        <translation>No es pot optimitzar, perquè tens una restricció max dies per setmana en un interval per a tots els estudiants amb ponderació (percentatge) sota 100. A partir de la versió de FET 5.6.2 només és possible usar ponderació 100% per aquestes restriccions. Siusplau fes la ponderació 100% i torna-ho a intentar</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="6959"/>
@@ -35696,7 +35696,7 @@ Siusplau modifica les teves dades de manera que correspongui i torna-ho a intent
         <location filename="../src/engine/generate_pre.cpp" line="7216"/>
         <location filename="../src/engine/generate_pre.cpp" line="7254"/>
         <source>Cannot generate timetable, because you have more than one constraint of type students set home room(s) for students set %1. Please leave only one of them</source>
-        <translation>No es pot generar l&apos;horari, perquè té més d&apos;una restricció del tipus conjunt d&apos;alumnes aula(es) pròpia(es) per conjunt d&apos;alumnes %1. Siusplau deixa&apos;n només una</translation>
+        <translation>No es pot generar l&apos;horari, perquè té més d&apos;una restricció del tipus conjunt d&apos;estudiants aula(es) pròpia(es) per conjunt d&apos;estudiants %1. Siusplau deixa&apos;n només una</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="7299"/>
@@ -35707,7 +35707,7 @@ Siusplau modifica les teves dades de manera que correspongui i torna-ho a intent
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="7892"/>
         <source>Cannot generate timetable, because for activity with id==%1 you have no allowed home room (from constraints students set home room(s) and teacher home room(s))</source>
-        <translation>No es pot generar l&apos;horari, perquè per a l&apos;activitat amb id==%1 no tens cap aula pròpia permesa (de les restriccions aula(es) pròpia(es) de conjunt d&apos;alumnes i  aula(es) pròpia(es) de professor</translation>
+        <translation>No es pot generar l&apos;horari, perquè per a l&apos;activitat amb id==%1 no tens cap aula pròpia permesa (de les restriccions aula(es) pròpia(es) de conjunt d&apos;estudiants i  aula(es) pròpia(es) de professor</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="7915"/>
@@ -35717,12 +35717,12 @@ Siusplau modifica les teves dades de manera que correspongui i torna-ho a intent
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="7936"/>
         <source>Cannot generate timetable, because for activity with id==%1 you have no allowed preferred room (from the allowed number of students and preferred room(s) constraints)</source>
-        <translation>No es pot generar l&apos;horari, perquè per a l&apos;activitat amb id==%1 no tens cap aula preferida permesa (de les restriccions nombre d&apos;alumnes permesos i aula(es) preferida(es)</translation>
+        <translation>No es pot generar l&apos;horari, perquè per a l&apos;activitat amb id==%1 no tens cap aula preferida permesa (de les restriccions nombre d&apos;estudiants permesos i aula(es) preferida(es)</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="7986"/>
         <source>Cannot generate timetable, because for activity with id==%1 you have no allowed home room (from the allowed number of students)</source>
-        <translation>No es pot generar l&apos;horari, perquè per a l&apos;activitat amb id==%1 no tens cap aula pròpia permesa (del nombre d&apos;alumnes permesos)</translation>
+        <translation>No es pot generar l&apos;horari, perquè per a l&apos;activitat amb id==%1 no tens cap aula pròpia permesa (del nombre d&apos;estudiants permesos)</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="8020"/>
@@ -35732,32 +35732,32 @@ Siusplau modifica les teves dades de manera que correspongui i torna-ho a intent
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="8055"/>
         <source>Cannot optimize, because there is a space constraint students set max building changes per day with weight under 100%. Please correct and try again</source>
-        <translation>No es pot optimitzar, perquè tens una restricció max canvis d&apos;edifici per dia per a un conjunt d&apos;alumnes amb ponderació per sota de 100%. Siusplau corregeix-ho i torna-ho a provar</translation>
+        <translation>No es pot optimitzar, perquè tens una restricció max canvis d&apos;edifici per dia per a un conjunt d&apos;estudiants amb ponderació per sota de 100%. Siusplau corregeix-ho i torna-ho a provar</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="8079"/>
         <source>Cannot optimize, because there is a space constraint students max building changes per day with weight under 100%. Please correct and try again</source>
-        <translation>No es pot optimitzar, perquè tens una restricció max canvis d&apos;edifici per dia per tots els alumnes amb ponderació per sota de 100%. Siusplau corregeix-ho i torna-ho a provar</translation>
+        <translation>No es pot optimitzar, perquè tens una restricció max canvis d&apos;edifici per dia per tots els estudiants amb ponderació per sota de 100%. Siusplau corregeix-ho i torna-ho a provar</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="8118"/>
         <source>Cannot optimize, because there is a space constraint students set max building changes per week with weight under 100%. Please correct and try again</source>
-        <translation>No es pot optimitzar, perquè tens una restricció max canvis d&apos;edifici per setmana per a un conjunt d&apos;alumnes amb ponderació per sota de 100%. Siusplau corregeix-ho i torna-ho a provar</translation>
+        <translation>No es pot optimitzar, perquè tens una restricció max canvis d&apos;edifici per setmana per a un conjunt d&apos;estudiants amb ponderació per sota de 100%. Siusplau corregeix-ho i torna-ho a provar</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="8142"/>
         <source>Cannot optimize, because there is a space constraint students max building changes per week with weight under 100%. Please correct and try again</source>
-        <translation>No es pot optimitzar, perquè tens una restricció max canvis d&apos;edifici per setmana per tots els alumnes amb ponderació per sota de 100%. Siusplau corregeix-ho i torna-ho a provar</translation>
+        <translation>No es pot optimitzar, perquè tens una restricció max canvis d&apos;edifici per setmana per tots els estudiants amb ponderació per sota de 100%. Siusplau corregeix-ho i torna-ho a provar</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="8181"/>
         <source>Cannot optimize, because there is a space constraint students set min gaps between building changes with weight under 100%. Please correct and try again</source>
-        <translation>No es pot optimitzar, perquè tens una restricció min buits entre canvis d&apos;edifici per a un conjunt d&apos;alumnes amb ponderació per sota de 100%. Siusplau corregeix-ho i torna-ho a provar</translation>
+        <translation>No es pot optimitzar, perquè tens una restricció min buits entre canvis d&apos;edifici per a un conjunt d&apos;estudiants amb ponderació per sota de 100%. Siusplau corregeix-ho i torna-ho a provar</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="8205"/>
         <source>Cannot optimize, because there is a space constraint students min gaps between building changes with weight under 100%. Please correct and try again</source>
-        <translation>No es pot optimitzar, perquè tens una restricció d&apos;espai min buits entre canvis d&apos;edifici per a tots els alumnes amb ponderació per sota de 100%. Siusplau corregeix-ho i torna-ho a provar</translation>
+        <translation>No es pot optimitzar, perquè tens una restricció d&apos;espai min buits entre canvis d&apos;edifici per a tots els estudiants amb ponderació per sota de 100%. Siusplau corregeix-ho i torna-ho a provar</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="8245"/>
@@ -35829,7 +35829,7 @@ Siusplau modifica les teves dades de manera que correspongui i torna-ho a intent
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9411"/>
         <source>Teachers: %1</source>
-        <translation>Professors: %1</translation>
+        <translation>Professorat: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9413"/>
@@ -35844,7 +35844,7 @@ Siusplau modifica les teves dades de manera que correspongui i torna-ho a intent
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9418"/>
         <source>Students: %1</source>
-        <translation>Alumnes: %1</translation>
+        <translation>Estudiants: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9422"/>
@@ -36012,7 +36012,7 @@ Siusplau modifica les teves dades de manera que correspongui i torna-ho a intent
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="441"/>
         <source>Group activities in initial order item comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Agrupar les activitats en l&apos;ordre inicial dels comentaris</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="443"/>
@@ -36056,7 +36056,7 @@ Siusplau modifica les teves dades de manera que correspongui i torna-ho a intent
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform_template.ui" line="77"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform_template.ui" line="90"/>
@@ -36188,7 +36188,7 @@ Siusplau modifica les teves dades de manera que correspongui i torna-ho a intent
     <message>
         <location filename="../src/interface/groupsform.cpp" line="475"/>
         <source>Students group comments</source>
-        <translation>Comentaris del grup d&apos;alumnes</translation>
+        <translation>Comentaris del grup d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="477"/>
@@ -36229,7 +36229,7 @@ Siusplau modifica les teves dades de manera que correspongui i torna-ho a intent
         <location filename="../src/interface/groupsform_template.ui" line="14"/>
         <source>FET - groups of students</source>
         <extracomment>The title of the form which lists the students groups</extracomment>
-        <translation>FET - grups d&apos;alumnes</translation>
+        <translation>FET - grups d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform_template.ui" line="33"/>
@@ -36317,24 +36317,6 @@ Siusplau modifica les teves dades de manera que correspongui i torna-ho a intent
         <location filename="../src/interface/helpaboutform_template.ui" line="27"/>
         <source>About</source>
         <translation>Crèdits</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2018 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.35.3 (February 2018).&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;https://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="90"/>
@@ -37160,6 +37142,24 @@ p, li { white-space: pre-wrap; }
         <translation>Autors</translation>
     </message>
     <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2018 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.35.3 (March 2018).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;https://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="396"/>
         <source>Thanks to</source>
         <translation>Agraïments</translation>
@@ -37170,12 +37170,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="79"/>
         <source>Q: What are the maximum limits FET can handle?</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Quins són els límits màxims de FET?</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="81"/>
         <source>A: There are indeed maximum limits for the generation algorithm (all these limits can be increased on demand, as a custom version, because this requires a bit more memory).</source>
-        <translation type="unfinished"></translation>
+        <translation>R:De fet, hi ha límits màxims per a l&apos;algorisme de generació (tots aquests límits es poden augmentar segons la demanda, com a versió personalitzada, ja que això requereix una mica més de memòria).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="83"/>
@@ -37185,32 +37185,32 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="86"/>
         <source>Maximum total number of hours (periods) per day: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Nombre màxim total d&apos;hores diàries (periòdes): %1</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="88"/>
         <source>Maximum number of working days per week: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Nombre màxim total de dies laborables setmanals: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="90"/>
         <source>Maximum total number of teachers: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Nombre total màxim de professorat: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="92"/>
         <source>Maximum total number of sets of students: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Nombre total màxim de grups: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="96"/>
         <source>Virtually unlimited number of activity tags</source>
-        <translation type="unfinished"></translation>
+        <translation>Un nombre pràcticament il·limitat d&apos;etiquetes d&apos;activitat</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="98"/>
         <source>Maximum number of activities: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Màxim nombre d&apos;activitats: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="100"/>
@@ -37225,21 +37225,25 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="104"/>
         <source>Virtually unlimited number of teachers and students sets for each activity</source>
-        <translation type="unfinished"></translation>
+        <translation>Un nombre pràcticament il·limitat de professorat i grups d&apos;estudiants per a cada activitat</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="114"/>
         <source>Q: Why some activities appear indented while others not?
 
 A: The activities are indented for easier visualization. The non-indented ones are the representatives of a larger split activity (their id is the group id of the larger split activity), while indented ones are the other components of this larger split activity.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Per què algunes activitats apareixen indentades mentre que d&apos;altres no?
+
+A: Les activitats estan indentades per facilitar la visualització. Les que no estan indentats són les representants d&apos;una activitat dividida més gran (la seva identificació és l&apos;identificador de grup de l&apos;activitat de divisió més gran), mentre que les indentats són les altres components d&apos;aquesta activitat de divisió més gran.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="123"/>
         <source>Q: Is it possible to use non-integer weights for constraints?
 
 A: Yes. If a constraint is allowed values under 100%, you can use any weight, even fractional numbers like 99.75%. It might help in constraints like min days, preferred rooms or max hours daily. The precision in FET is limited to %1 decimal digits after the decimal point, but probably nobody will use such a fine precision.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: És possible fer servir nombres fraccionaris en la ponderació (%) de les restriccions?
+
+R: Si. Les restriccions permeten fer servir valors inferiors al 100%, podeu fer servir qualsevol valor, inclosos els fraccionaris com 99,75%. Això pot ajudar en restriccions com «minim de dies», «aules preferides» o «màxim d&apos;hores diàries». La precissió de FET estpa limitada a %1 dígits decimals, però probablement nigú farà servir aquesta precissió.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="132"/>
@@ -37248,7 +37252,11 @@ A: Yes. If a constraint is allowed values under 100%, you can use any weight, ev
 A: You can specify the maximum number of beginnings at second available hour (arrivals at third hour not possible).
 
 If you input only partial data, please use with caution. If you add a constraint with max 0 beginnings at second hour: you might for instance input only 4+4 hourly activities of math with the same teacher for 2 students sets (each group of 4 activities must be ballanced - in different days). Then it is clear that you cannot place all 8 activities in a 5 days week without breaking the students early constraint, so you will get no possible timetable.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Ajuda sobre ConstraintStudentsEarlyMaxBeginningsAtSecondHour.
+
+R: Podeu especificar el nombre màxim d&apos;inicis a la segona hora disponible (els començaments a tercera hora no estan permesos).
+
+Si només introduiu dades parcials, utilitzeu-lo amb precaució. Si afegiu una restricción amb un màxim de 0 inicis a segona hora, podeu, per exemple, posar només 4+4 activitats per hora de matemàtiqeus amb el mateix professorat per a 2 grups (cal que cada grup de 4 activitats estigui equilibrat - en diferents dies). Consequencia, és clar que no podeu col·locar les 8 activitats en una setmana de 5 dies sense trencar la restricció inicial dels estudiants, de manera que no obtindreu cap horari.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="143"/>
@@ -37257,7 +37265,11 @@ If you input only partial data, please use with caution. If you add a constraint
 A: One possible approach: in FET you can have each activity with more teachers and students sets. If you have for instance students set S which must attend subject Language1, English (with teacher TE) or French (teacher TF), you might choose not divide S and add an activity with Language1, S and TE and TF. The drawback: each activity can take place in a single room, you cannot tell FET that this activity should be in 2 or more rooms at the same time, and from here derive other problems: if some room is not available, if capacity of room is too low for the number of students in S FET cannot find timetable, and maybe others.
 
 Another possible approach: you may choose to define students into sections (see question below).</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Qué passa amb les matèries opcionals o grups d&apos;estudiants que s&apos;agrupen segons les opcions?
+
+R: Amb FET podeu assignar a cada activitat més d&apos;un docent i més d&apos;un grup d&apos;estudiants. Per exempl, si teniuy un grup S que assisteix a Llengua 1, Anglès (amb el professor TA) o Francés (professort TF), podeu elegir no dividir el grup S y afegir una activitat amb Idioma1, S + TA + TF. L&apos;inconvenient és que cada activitat només pot tenir lloc en una única aula, no es pot fer que FET assigni les activitats a 2 o més aules al mateix temps, i d&apos;aquí provenen altres problemes: si no hi ha aules disponibles, o la capacitat de les disponibles és insuficient pel nombre d&apos;estudiants de S, FET no aconseguirà construir un horari, i també poden presentar-se altres problemes.
+
+Una altra possibilitat és optar per agrupar els estudiants en seccions (vegeu la següent pregunta).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="156"/>
@@ -37266,22 +37278,26 @@ Another possible approach: you may choose to define students into sections (see 
 A: FET can automatically divide years by categories of options.
 
 Add years and the option &apos;Divide ...&apos; in the years dialog is the easiest way. You can also add manually years, groups and subgroups.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Com es defineixen seccions amb els estudiants?
+
+R: FET pot dividir automàticament els anys per categories d&apos;opcions.
+
+Afegiu anys i feu servir l&apos;opció «Dividir...» en el diàleg d&apos;anys és la forma més fàcil. També podeu afegir manualment els anys, grups i subgrups.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="161"/>
         <source>Important: you must consider that each year contains groups which contain independent subgroups. Subgroups should have all the activities of the year and group plus additional optional activities. Please check menu statistics/students for subgroups, each subgroup should have a reasonable number of working hours per week, close to the average of hours per week for all subgroups.</source>
-        <translation type="unfinished"></translation>
+        <translation>Important: cada any conté grups i cada grup pot dividirse en subgrups independents. Els subgrups han de tenir totes les activitats de l&apos;any i els grups poden tenir més activitats addicionals. Consulteu el menu «estadística/estudiants» per subgrups, cada subgrup hauria de tenir un nombre raonable d&apos;hores setmanals, propera a la mitjana d&apos;hores setmanals de tots els sugbrups.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="165"/>
         <source>An impossible timetable might be caused by incorrect years division. Please check statistics/students for all subgroups, each subgroup should have the necessary hours, not less. If you have for instance some subgroups with less than say 20 hours per week you might get an impossible timetable, probably because of incorrect division of years and incorrectly added activities. All the subgroups are independent. If you have a subgroup with only 2 hours per week and constraint early, then these 2 activities must be placed in the first hours of the day, which is probably much too hard (wrong).</source>
-        <translation type="unfinished"></translation>
+        <translation>La impossibilitat de generar un horari podria ser causada per una divisió d&apos;anys incorrecta. Consulteu el menu «estadística/estudiants» per subgrups, cada subgrup hauria de tenir el nombre d&apos;hores setmanals justes, no menys. Per exemple, si teniu subgrups amb menys de 20 hores setmanals, la generació d&apos;un horari pot ésser impossible, probablement degut a la incorrecte divisió d&apos;anys i adjudicació d&apos;activitats. Tots els subgrups són independents. Si teniu un subgrup amb només 2 hores setmanals i una restricción de començament matiner, cal posar les dues activitats en les primeres hores del dia, la qual cosa és, probablement, difícil (incorrecte).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="177"/>
         <source>Another possibility: you can see that each activity has allowed more teachers/students sets. If you need to split year Y according to Language1 (with teachers T1 and T2), you might not split Y and add an activity with Y and teachers T1 and T2 and subject &apos;Language1&apos;. This is a small trick, which might be easier to use than to divide a year.</source>
-        <translation type="unfinished"></translation>
+        <translation>Una altra possibilitat: podeu veure que s&apos;han assignat, a cada activitat, més professorat/grups. Si necessitau dividir l&apos;any A per Idioma1 (amb el professorat P1 i P2), pot ésser que no volgueu dividir l&apos;activitat A i opteu per afegir una activitat A amb el professorat P1 i P2 amb la matèria «Idioma1». Aquest és un petit truc més senzill que dividir l&apos;any.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="185"/>
@@ -37292,7 +37308,13 @@ A: FET was designed to allow any school structure:
 - independent subgroups (non-overlapping);
 
 - overlapping groups (several subgroups) and years (several groups).</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Quina és l&apos;estructura d&apos;estudiants que por manejar FET?
+
+R: FET està dissenyat per a treballar amb qualsevol organització escolar:
+
+- subgrups independents (sense superposició);
+
+- grups interdependents (amb subgrups) i anys (amb grups).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="194"/>
@@ -37310,19 +37332,34 @@ Activity2: teacher B, group boys, subject sport;
 Activity3: teacher C, group physics, subject optional physics.
 
 NEW: the thing is automatic now. Just select year-&gt;divide in the years dialog. Please see above entries in the FAQ.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Com es pot treballar amb organitzacions d&apos;estudiants interdependets?
+
+R: Si teniu grups amb estudiants comuns, podeu definir subgrups independents més petits que no tenguin estudiants comuns amb cap altre subgrup. Exemple: teniu 1 grup, de la matèria d&apos;esport (que agrupa els estudiants per sexe) i amb la matèria de física, que és opcional, i només alguns estudiants la cursen (sí, FET gestiona matèries opcionals). Llavors, definiu 4 subgrups: estudiants per sexe i si cursen o no física. ës molt fàcil, definiu
+
+grup femení=subgrup amb al·lotes que cursen  física + al·lotes que no cursen física,
+grup masculí=subgrup d&apos;al·lots que cursen física + al·lots que no cursen física
+grup física= al·lots que cursen física + al·lotes que cursen física.
+
+Afegiu les activitats que desitjeu als grups corresponents:
+Activitat1: professor A, grup femení, matèira esport;
+Activitat2: professor B, grup masculí, matèria esport;
+Activitat3: professor C, grup física, matèria opcional física.
+
+Novetat: ara, això es pot fer automàticament. Només cal seleccionar any-&gt;dividir en el diàleg dels anys. Llegiu les entrades anteriors de les PMF.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="213"/>
         <source>Q: Can you add more students sets or teachers to a single activity?
 
 A: Yes, you can add several students sets (subgroups, groups or years) and several teachers per activity.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: És possible assignar més d&apos;un grup d&apos;estudiants o professorat a una activitat?
+
+R: Si, podeu afegir més d&apos;un grup (o subgrups, grups o anys) i diversos professors per activitat.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="244"/>
         <source>If you need to balance 3 activities in a 5 days week, you can add, in the new version 5.5.8 and higher, directly from the add activity dialog, 2 constraints. You just have to input min days 2, and FET will ask if you want to add a second constraint with min days 1. This way, you can ensure that the activities are balanced better (at least one day apart, usually 2 days apart)</source>
-        <translation type="unfinished"></translation>
+        <translation>Si necessitau equilibrar 3 activitats en una setmana de 5 dies, podeu afegir, a partir de la versió 5.5.8, directament en el diàleg d&apos;afegir activitats, 2 restriccions. Només heu d&apos;establir «min. de dies» a 2 i FET demanarà si voleu afegir una nova restricció amb «min. de dies» a 1. D&apos;aquesta manera, vos assegureu que les activitats estaran més equilibrades (amb almenys un dia entre elles i, en general, amb 2 dies entre elles)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="253"/>
@@ -37331,31 +37368,39 @@ A: Yes, you can add several students sets (subgroups, groups or years) and sever
 A: Yes, but this is not easy. All the part regarding data representation and gradually construction of the solution is working, only the interface has to be updated.
 
 Anyway, when you add a compulsory ConstraintActivityPreferredStartingTime, it means that you fixed that activity. You can use this feature for a semi-automatic or even manual timetabling, but it is not so convenient.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Puc fer servir FET per a construir horaris interactivament?
+
+R: Sí, però no és fàcil. La part de representació de dades i construcción per passos d&apos;horaris funciona, només està pendent l&apos;actualització de la interfície del programa.
+
+En qualsevol cas, si afegiu la restricción obligatòria ConstraintActivityPreferredStartingTime, estau fitxant l&apos;activitat. Podeu fer servir aquest tipus de restricció per a la construcció semiautomàtica o manual d&apos;un horari, tot i què no és un métode pràctic.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="274"/>
         <source>Q: I added an activity with min days constraint. But I cannot see the min days value in modify activity dialog
 
 A: Min days is a time constraint. You can see it in the time constraints dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>P: He afegit una restricció de «min. de dies» però no puc veurer-la en el diàleg de modificació d&apos;activitats.
+
+R: «Min. de dies» és una restricció de temps. Podeu veurer-le en el diàleg de restriccions de temps</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="293"/>
         <source>Q: How to choose the weight percentage of constraint min days between activities?
 
 A: You can use for the constraint min days the weight you want. It can be 95%, 99%, 99.75% or even 100%, but please make sure your timetable is not too constrained. Please take care of the impossible constraints, they should have under 100% weight (percentage) - best would be 0%. For instance, if a teacher teaches only two days per week and has 3 math lessons for a group, then it is clear that the constraint cannot be respected, so the correct way is to specify under 100% weight (percentage) for the corresponding min days constraint - best would be 0%.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Com elegir la ponderació de la restricció «min. de dies entre activitats»?
+
+R: Podeu fer servir la ponderació que desitjeu per a la restricció «min. de dies entre activitats»: 95%, 99%, 99.75% or 100%, però assegurau-vos de no restringir massa el vostre horari. Aneu amb compte amb les restriccions impossibles, haurien de tenir ponderacions inferiors al 100% - seria desitjable el 0%. Per exemple, si un professor treballa només dos dias per setmana i s&apos;encarrega de 3 hores a un grup, és clar que no es pot respectar la restricció, de manera que la forma correcte és especificar una ponderació inferior al 100% per a la restricció «min. de dies» - i 0% és desitjable.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="300"/>
         <source>You could try at first the 95% minimum recommended value, then highten the weight percentage up to maybe 100%. I am not sure here, I have not enough sample files (please contribute with advice). If you would like to change the 95% for another value for all constraints of this type, the easiest way is in Data/Time constraints/Min days between activities dialog, where starting with version 5.3.6 there is a simple command for that.</source>
-        <translation type="unfinished"></translation>
+        <translation>Podeu començar provant el valor mínim recomanat del 95%, després augmentar el percentatge, tal vegada arribant al 100%. No n&apos;estic segur, no tenc dades de proves (us agraïrem més informació). Si desitjau canviar el 95% per un altra valor per a totes les restriccions d&apos;aquest tipus, la manera més fàcil és amb el diàleg «Dades/Restriccions de temps/Min. de dies entre activitats» on, a partir de la versió 5.3.6 hi ha una ordre molt simple per fer-ho.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="305"/>
         <source>You might want to choose different weights for different constraint min days (for instance, higher on subjects with less activities per week)</source>
-        <translation type="unfinished">Podeu elegir diferents ponderacions per a les distintes restriccions del mínim de dies (per exemple, major ponderació en matèries amb menor activitats setmanals)</translation>
+        <translation>Podeu elegir diferents ponderacions per a les distintes restriccions del mínim de dies (per exemple, major ponderació en matèries amb menor activitats setmanals)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="311"/>
@@ -37364,7 +37409,11 @@ A: You can use for the constraint min days the weight you want. It can be 95%, 9
 A: From the way the algorithm is conceived, the automatic generation is faster if you use students set (or teacher) not available and/or constraint activity(ies) preferred time slots or constraint activity preferred starting time to specify impossible slots, in addition to possible use of students (set) or teacher(s) max hours daily, whenever it is possible. For instance, if you know that year 5 will only have hours from 8:00 to 13:00, it is better to add students set not available in addition to students set max hours daily. So, if possible, try to follow this advice. This trick helps guide FET better towards a solution.
 
 Each constraint of type not available or preferred times which filters out impossible slots might bring an improvement in speed.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Hi ha restriccions més eficients pel que fa a la velocitat de generació d&apos;horaris que d&apos;altres, fins i tot si aconsegueixen el mateix resultat?
+
+R: Amb el disseny de l&apos;algoritme, la generació automàtica és més ràpida si es fan servir grups (o professorat) no disponible i/o restriccions d&apos;activitats del tipus «franges horàries preferides» o «hora d&apos;inici preferida» per a especificar franges horàries impossibles, afegint l&apos;ús de restriccions per a estudiants (grups) o professorat del tipus «max. d&apos;hores diàries» sempre que sigui possible. Per exempl, si sabeu que l&apos;any 5è només classes de 8:00 a 13:00, és millor afegir restriccions de grups d&apos;estudiants no disponibles juntament amb max. d&apos;hores per dia. En fi, si és possible, procura seguir aquest consell. Aquest truc ajuda a FET cap a solucions millors.
+
+Cada restricció del tipus «no disponible» o «hores preferides» que filtra les franges horàries impossibles pot millorar la velocitat.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="391"/>
@@ -37375,7 +37424,13 @@ A: You can specify a set of activities by selecting a teacher (if empty - all te
 Starting means that an activity may only start at these periods.
 
 Time slots means more restrictive, that activity may only start and end and take place in these intervals (if activity has duration 2 and on Monday is allowed 8:00, 9:00 and 10:00, then activity can only start at 8:00 or 9:00).</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Ajuda sobre les restriccions del tipus «franja d&apos;inici» o «franja preferida» per a les activitats (conjut d&apos;activitats amb un conjunt de franges d&apos;inici o preferides)
+
+R: Podeu especificar un conjunt d&apos;activitats seleccionant un professor (si està buit - tot el professorat), un grup (si està buit - tots els grups), una matèria (si està buit - totes les matèries) i una etiqueta d&apos;activitat (si està buit - totes les etiquetes) i un conjunt de franges horàries permeses.
+
+Iniciar significa que una activitat només pot començar en aquests períodes.
+
+Les franges horàries són més restrictives, l&apos;activitat només pot començar, finalitzar i desenvolupar-se en aquests intervals (si l&apos;activitat té una durada de 2 i el dilluns pot començar a les 8:00, 9:00 i 10:00. llavors només pot començar a les 8:00 o les 9:00).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="515"/>
@@ -37394,7 +37449,21 @@ A: I have a very good solution for you, but it is a bit complicated to add.
 Suppose you have activities A1 and A2. Add dummy A3, with duration 1, no teachers and no students. Add constraint two activities consecutive, A2 and A3 (A2 followed by A3). Add constraint activities not overlapping, A1 and A3.
 
 There is only a small problem: A2 cannot be put in the last period. To correct that: increase the number of hours with 1 and constraint all the real activities (without A3) to take place in the first periods. You can do that by adding an activity tag to A1 and A2 named Early and an activity tag to A3 named Any, and constraint activities preferred time slots for activity tag Early to be in the first n-1 slots of each day.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Necessito saber com establir la següent restricció:
+
+Si l&apos;Activitat1 es fa primer, llavors l&apos;Activitat2 pot anar a continuació. Però, si l&apos;Activitat2 és la primera, llavors cal que hi hagi almenys un període abans de fer l&apos;Activitat1.
+
+Per exemple, si l&apos;algoritme col·loca Dansa a la 1a hora, llavors Lluita es pot col·locar a 2a hora, però si és Lluita la col·locada a 1a, llavors cal que Dansa sigui col·locada, com a poc, a 3a hora o després.
+
+Més simple, però menys efectiu, seria fer servir una restricció del tipus:
+
+Activitat1 i Activitat2 no consecutives.
+
+R: Hi ha una bona solució per aquesta situació, però és complicat afegir-la.
+
+Suposau que teniu les activitats A1 i A2. Afegiu una activitat fictícia A3, amb durada 1, sense professorat ni estudiants. Afegiu una restricció «dues activitats consecutives», A2 i A3 (A2 seguida de A3). Afegiu una restricció «activitats sense solapament», A1 i A3.
+
+Només hi ha un petit problema: A2 no es podrà col·locar la darrera. Per a corregir això, augmentau el nombre d&apos;hores amb 1 i restringiu ttes les activitats reals (no la A3) per a què siguin col·locades en els primer períodes. Podeu fer-ho afegint una etiqueta d&apos;activitat a A1 i A2 anomenada «Matinera» i una altra a A3 anomenada «Qualsevol» i restriccions d&apos;activitats del tipus «franges horaries preferides» per a l&apos;etiqueta «Matinera» per a que siguin col·locades en les n-1 primeres franges de cada dia.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="534"/>
@@ -37403,14 +37472,20 @@ There is only a small problem: A2 cannot be put in the last period. To correct t
 A: Time slots is more restrictive, means all hours of an activity must be in the allowed intervals.
 
 Example: Preferred times Monday 8,9 and 10. If activity A has duration 2, then starting means that activity A can start at 8, 9 or 10 on Monday, while time slots means that activity A can start on Monday at 8 or 9 (10 is not allowed, because the last hour of activity is not allowed there).</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Quina és la diferència entre les hores d&apos;inici preferent i les franges horàries preferents?
+
+R: Les franges horàries són més restrictives, fan que totes les hores d&apos;una activitat es col·loquin, necessariament, en els intervals permesos.
+
+Exemple: hores d&apos;inici preferent, dilluns, 8, 9 o 10. Si l&apos;activitat A té una durada de 2, l&apos;inici preferit suposa que l&apos;activitat A pot començar a les 8, les 9 o les 10 del dilluns, mentre que la franja horària suposa que l&apos;activitat A pot començar només a les 8 o a les 9 (no pot començar a les 10 degut a què no és possible col·locar la segona hora).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="557"/>
         <source>Q: What type of files uses FET?
 
 A: FET uses text files, xml or html or txt or csv (comma separated values - for import/export). The used encoding is UTF-8.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Quin tipus d&apos;arxius fa servir FET?
+
+R: FET fa servir arxius de text, XML,HTML, TXT o CSV (valors separats per delimitadors - per importar/exportar). Es fa servir la codificació UTF-8.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="564"/>
@@ -37427,7 +37502,19 @@ Time slots means more restrictive, that activity may only start and end and take
 This is useful if you need for instance, if Maths lessons are 4-5 per week, to constrain that the first component and the second component must be early. You will add 2 constraints for that, with component number 1 and 2, both with subject Maths. Or, if you want for activities split into 4 that 2 lessons are early and for activities split into 5 that 3 activities are early, add constraint Maths with split number 3, 4 and 5 (nice trick).
 
 Another thing: if you have 1 or 2 lessons per week for a subject, say biology, and want to constrain one of the components if there are 2 per week, and none if there is only 1, you can add such a constraint for component number=2.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Ajuda sobre les restriccions de temps d&apos;inici preferent i franges horàries preferents a les subactivitats (un conjunt de subactivitats amb una conjunt d&apos;hores d&apos;inici preferent o franges horàries preferents)
+
+R: Seleccionau el nombre de components d&apos;una activitat (p. ex. teniu una activitat dividida en 5 activitats per setmana, llavors teniu els components 1,2,3,4 o 5). Només es restringirà el nombre seleccionat d&apos;aquesta activitat dividida (l&apos;activitat del corresponet component).
+
+També podeu especificar un conjunt de subactivitats seleccionant un professor (sense professorat - tot el professorat), un grup d&apos;aumnes (sense grup - tots els estudiants), una matèria (sense matèria - totes les matèries) y una etiqueta d&apos;activitat (sense etiqueta - totes les etiquetes) i un connjunt de franges horàries preferides.
+
+Les hores d&apos;inici fan que l&apos;activitat només pugui iniciar-se en els perìodes seleccionats.
+
+Les franges horàries són més restricctives, degut a què l&apos;activitat només por començar i acabar en els intervals establerts (si l&apos;activitat té una durada de 2 i el dilluns pot començar a les 8:00, 9:00 i 10:00, l&apos;activitat només podrà començar a les 8:00 o les 9:00.
+
+Això és útil si necessitau, per exemple, que les matemàtiques amb 4-5 sessions setmanals, se restringeixin el primer i segon component a primeres hores. Haureu d&apos;afegir 2 restriccions amb els components 1 i 2 i la matèria matemàtiques. O, si voleu, per a les activitats dividides en 4 períodes, 2 d&apos;ells a principi de jornada i per les dividides en 5, 3 d&apos;elles a principi de jornada, afegiu restriccions a matemàtiques amb els números de divisió 3, 4 i 5 (un bon truc).
+
+Un altra qüestió: si teniu 1 o 2 sessions setmanals d&apos;una matèria, biologia, i voleu restringir un dels components si té dues sessions setmanals i un amb un sessió setmanal, afegiu una restricció per al component número 2.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="601"/>
@@ -37436,7 +37523,11 @@ Another thing: if you have 1 or 2 lessons per week for a subject, say biology, a
 A: I have a nice trick: add a dummy activity, 1 hour duration, with only this teacher (no students sets, any subject), additional to the real activity.
 
 This trick just passed through my mind as I was trying to write you that you have to do it the hard way (add constraints for each teacher)</source>
-        <translation type="unfinished"></translation>
+        <translation>P: En el vostre centre hi ha bona part del professorat que només treballa poques hores setmanals. És desagradable conduir una hora fins el centre. Per això, establiu la constricció de, almenys 2 hores de treball diàries per a tot el professorat. Malauradament, hi ha un docent que només treballa 1 hora setmanal. I FET no pot generar un horari. Algun suggeriment per a solucionar aquesta situació?
+
+R: Hi ha un truc per això: afegiu una activitat fictícia, amb 1 hora de durada, amb només el docent implicat (sense grups i qualsevol matèria) a més de l&apos;activitat real.
+
+Aquesta opció l&apos;he pensant mentre estava escrivint una manera més complicada de fer-ho (afagir restriccions per a cada docent)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="622"/>
@@ -37449,12 +37540,20 @@ Hour 11:00 Break
 Hour 12:00 Math (second hour of act. 100)?
 
 A: No, the activity must respect the break, so it is before or after the break with all the hours of it.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Tenc una activitat amb durada doble. És possible que s&apos;estengui durant el període de descans, com:
+
+Activitat Matemàtiques, durada 2, id=100
+
+Hora 10:00 Matemàtiques (primer hora de l&apos;act. 100)
+Hora 11:00 Descans
+Hora 12:00 Matemàtiques (segona hora de l&apos;act. 100)?
+
+R: No, cal que l&apos;activitat respecti el descans, de manera que l&apos;activitat es col·locarà abans o desprès del descans amb totes les seves hores.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="629"/>
         <source>Alternative solutions: either you can split that activity into two subactivities with duration 1 (without a min days constraint between them), and add a two activities consecutive constraint, or you can choose to not add the break constraint in your file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Solucions alternatives: podeu dividir l&apos;activitat en dues subactivitats amb 1 hora de durada (sense restricció de «min. de dies» entre elles) i afagir una restricció de «dues activitats consecutives» o podeu optar per no afegir la restricció de descans en el vostre arxiu.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="662"/>
@@ -37467,17 +37566,25 @@ Any other ideas...?
 A: I have another idea: choose 2 activities of this teacher which clearly cannot be on the same day, and add constraint min days between activities, 2 days, 100%.
 
 Or add a dummy activity for this teacher, split into 2 per week, min days = 2, with 100%. You just need to take care that this teacher has place for these dummy activities (enough slots in the day) and to consider these dummy activities as possible gaps, so if teacher has max gaps 2 then make max gaps for him 0.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: (de Horatiu Halmajan) M&apos;he trobat amb la següent situació: un docent demana un màxim de dos dies de feina, però que no siguin consecutius. Quina és la forma de fer això amb FET?
+
+L&apos;única forma (manual) que he trobat és que el docent no estigui disponible els dimarts i dijous, deixant disponibles el dilluns, dimecres i divendres (dos dies no son consecutius).
+
+I hi ha alguna altra possibilitats?
+
+R: Jo tenc una altra idea: seleccionar 2 activitats d&apos;aquest docent que no puguin col·locar-se el mateix dia, i afegir una restricció «min. de dies entre activitats» amb el valor 2 i ponderació del 100%.
+
+O podeu afegir una activitat fictícia per a aquest docente, dividida en 2 setmanals, amb «min. de dies» a 2 i 100% de ponderació. Només heu d&apos;anar en cura de que hi hagi espai per a aquestes activitats fictícies (prou franges horàries al dia) i considerar aquestes activitats fictícies com a espais buits, de manera que si el docent té «max. buits» a 2, llavors establir el valor a 0.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="743"/>
         <source>The first hint for other users is to start with minimum number of constraints and if FET would generate the plan then thinking about adding the next ones.</source>
-        <translation type="unfinished"></translation>
+        <translation>El primer consell per a altres usuaris és començar amb el mínim nombre de restriccions i, si FET genera un horari correcte, llavors pensar en afegir les següents.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="746"/>
         <source>The second hint is not to change too many constraints in one simulation as it may lead to impossible timetable and then it is difficult to say which particular constraint was too much.</source>
-        <translation type="unfinished"></translation>
+        <translation>El segon consell és no canviar massa restriccions a la vegada en una simulació degut a que pot fer impossible la generació d&apos;un horari i que sigui difícil arribar a saber quina és la restricció que imposibilitat la generació.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="797"/>
@@ -37497,39 +37604,56 @@ Here is an example to explain this (it is an impractical example, but it is bett
 3) Why can FET find a timetable the third time (with locked A1, A2, A3, A4 and A5)? Because activities with more students sets are scheduled firstly (in general, locked activities are placed in descending order of the sum of the number of teachers and subgroups) and a locked activity is never rescheduled. So, FET puts A1 first, then A2, A3, A4 and A5. Since it retries more times separately for each activity, it is able to find a timetable easily.
 
 Practical solution to case 2)? Reduce weights of constraints which have weight below 100% or lock (to a corresponding slot) the activity which corresponds to A1 in your data file.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Aquest és un problema que probablement no es presentarà a la pràctica, però que és possible. Suposem que l&apos;usuari aconsegueix un horari, bloqueja algunes activitats i torna a generar l&apos;horari, però FET atura la generació a una activitat i avisa de la imposibilitat de generar un horari.
+
+R: De fet, és una situació que es pot produir (encara que és poc probable). Pot passar si teniu ponderacions inferiors al 100% i que poden obviar-se en la generació de l&apos;horari.
+
+Aquest és un exemple d&apos;aquesta situació (és un cas poc pràctic però simple): teniu 4 grups d&apos;estudiants  (Y1, Y2, Y3, Y4), 5 activitats A1 (Y1,Y2,Y3,Y4), A2 (Y1), A3 (Y2), A4 (Y3), A5 (Y4). Només teniu un dia setmanal amb 2 hores. Afegiu una restricció «max. hores per dia» dels estudiants amb el valor 1 i 95% de ponderació.
+1) Iniciau la generació. Després d&apos;un temps (tal vegada uns minuts), FET trobarà una solució (ignorant la restricció del màxim d&apos;hores diàries per a tots els grups).
+2) Llavors, bloquejau A2, A3, A4 i A5 i tornau a generar l&apos;horari. En alguns casos, FET avisa que no pot col·locar l&apos;activitat A1.
+3) Si bloquejau les activitats A1, A2, A3, A4 i A5, FET genera un horari ràpidament.
+
+1) Per què FET pot generar l&apos;horari la primera vegada? Degut a que en alguns casos, FET ignora totes les restriccions per a les activitats A2, A3, A4 i A5 (no hi ha activitats bloquejades i pot provar més possibilitats de col·locar/recol·locar activitats fins aconseguir col·locar l&apos;activitat A1 i, llavors, col·locar la resta.
+
+2) Per què a vegades FET no pot generar l&apos;horari en el segon intent (després d&apos;haver bloquejat A2, A3, A4 i A5)? Degut a què les activitats A2, A3, A4 i A5 estan bloquejades i col·locades a l&apos;horari abans. FET primer intenta col·locar A1. Però per posar A1, cal trencar una restricció del 95% 4 vegades, perquè hi ha 4 grups d&apos;estudiants a A1. El pes del 95% 4 vegades seguit és equivalent amb una restricció amb un pes del 100% (5% ^ 4) = 99.99999375%, que és una restricció molt forta, dificilment es trenca. FET tornarà a intentar col·locar altres vegades l&apos;activitat A1, de manera que en alguns casos trobarà un horari fins i tot en aquestes condicions.
+
+3) Per què FET pot trobar un calendari la tercera vegada (amb A1, A2, A3, A4 i A5 bloqujades)? Com que les activitats amb més grups estan col·locades a l&apos;horari en primer lloc (en general, les activitats bloquejades es col·loquen en ordre descendent de la suma del nombre de professors i subgrups) i una activitat bloquejada mai no es recol·locarà. Per tant, FET posa A1 primer, després A2, A3, A4 i A5. Com que es prova de col·locar més vegades per separat per a cada activitat, es pot trobar un calendari fàcilment.
+
+Solució pràctica del cas 2)? Redueix les ponderacions de les restriccions que tenen una ponderació inferior al 100% o bloqueig (a una franja horària adequada) l&apos;activitat que correspon a A1 en el vostre fitxer de dades.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="823"/>
         <source>Q: I tried to work on a fixed timetable, to move an activity to another time slot. Now I got stuck - FET says: impossible to generate.</source>
-        <translation type="unfinished"></translation>
+        <translation>R: Vaig intentar treballar en un horari fixat, per moure una activitat a un altre franja horària. I em vaig quedar atrapat - FET diu: és impossible generar l&apos;horari.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="825"/>
         <source>A: There is this potential problem. Suppose you have max hours daily for students = 4 hours, 99%. You generated successfully (maybe you got some days with more than 4 hours, it does not matter for our discussion). Now, if you have a day with 4 hours and try to move another activity to this day, some students will have 5 hours in this day. If in this day all activities have more students sets, FET may report an impossible timetable. Why? Because if you have an activity with say 4 subgroups, 99% is assumed for each subgroup, resulting in a very strong constraint for this activity. (100%-(1%^4)). Even if FET retries more times for each activity, it is not enough.
 
  A solution: lower the weight of this constraint from 99% to 90% or less.</source>
-        <translation type="unfinished"></translation>
+        <translation>R: És un problema potencial. Suposem que teniu hores «màx. d&apos;hores diàries» per als estudiants = 4 hores, el 99%. Heu generat correctament (potser porteu uns dies amb més de 4 hores, no fa al cas). Ara, si teniu un dia amb 4 hores i intenteu moure una altra activitat fins a aquest dia, alguns estudiants tindran 5 hores en aquest dia. Si en aquest dia totes les activitats tenen més grups, FET pot informar de la impossibilitat de generar l&apos;horari. Per què? Perquè si teniu una activitat amb 4 subgrups, s&apos;assumeix el 99% per a cada subgrup, el que resulta en una restricció molt forta per a aquesta activitat. (100% - (1% ^ 4)). Tot i que FET faci més intents per a cada activitat, no n&apos;hi ha prou.
+
+Una solució: baixau la ponderació de la restricció del 99% al 90% o menys.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="839"/>
         <source>Q: A trick to deal with fortnightly activities (my institution has a lot of fortnightly activities):</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Un truc per a activitats quincenals (el meu centre en té moltes):</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="841"/>
         <source>A: I divided hours in two, the first half (8.00 to 8.30, 9.00 to 9.30, ...) represents week A, the second half (8.30 to 9.00, 9.30 to 10.00, ...) represents week B, fortnightly activities have duration 1, weekly activities have duration 2.</source>
-        <translation type="unfinished"></translation>
+        <translation>R: Dividiu les hores en dues, la primera meitat (8.00 a 8.30, de 9.00 a 9.30, ...) representen la setmana A, la segona meitat (de 8.30 a 9.00, de 9.30 a 10.00, ...) representen la setmana B, les activitats quinzenals tenen durada 1, les activitats setmanals tenen durada 2.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="845"/>
         <source>I created an activity tag &apos;Start hour&apos;. It should be added to each weekly activity to make sure they start at the same time (same day + same hour) on each week. Otherwise, an activity with duration 2 can start on a second half of hour in the timetable, so this activity is placed on a certain day and at a certain hour on week A, and on the same day but at the next hour on week B.</source>
-        <translation type="unfinished"></translation>
+        <translation>Afagiu una etiqueta d&apos;activitat «Hora d&apos;inici». Cal afegir-la per a cada activitat setmanal per assegurar-se l&apos;inici a la mateix hora (mateix dia + mateixa hora) cada setmana. En cas contrari, una activitat amb durada 2 podria començar a la segona meitat de l&apos;hora a l&apos;horari, de manera que l&apos;activitat es col·locarà en un dia i hora determinats a la setmana A i al mateix dia, però a l&apos;hora següent a la setmana B.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="859"/>
         <source>Q: I need to add a split activity with total duration 4, which can be either 2+2 or 2+1+1 (two hours in a day and two hours in another day, or two hours in a day, one hour in another day and one hour in another day).</source>
-        <translation type="unfinished"></translation>
+        <translation>P: He d&apos;afegir una activitat dividida amb una durada total de 4, que pot ser 2 + 2 o 2 + 1 + 1 (dues hores un dia i dues hores en un altre dia o dues hores un dia, i les altres dues en dos dies distints).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="862"/>
@@ -37538,97 +37662,102 @@ Practical solution to case 2)? Reduce weights of constraints which have weight b
 Add two constraints min 1 day between activities with id-s 1 and 2 and between activities with id-s 1 and 3, 100% weight percentage.
 
 Add another constraint: min 1 day between activities with id-s 2 and 3, consecutive if same day = yes, 0% weight percentage.</source>
-        <translation type="unfinished"></translation>
+        <translation>R: Afegiu 3 activitats (suposem que les seves id. són 1, 2 i 3), amb durades respectivament 2, 1 i 1. És preferible afegir-les com a 3 activitats individuals/independents (consulteu la nota més avall).
+
+Afegiu dues restriccions «min. 1 dia entre activitats» amb id. 1 i 2 i «entre activitats» amb identificadors 1 i 3, 100% de ponderació.
+
+Afegiu una altra restricció: «min. 1 dia entre les activitats» amb id. 2 i 3, «consecutives si mateix dia» = sí, 0% de ponderació.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="867"/>
         <source>Note: It is advisable to add the 3 activities as single/independent ones (not a larger split activity with 3 components). The reason is that if you want to apply spreading of activities over the week, this operation won&apos;t add/remove constraints of type min days between activities for these 3 activities. Also, if you add a split activity, you need to take care not to add a default constraint min days between the 3 components.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nota: És aconsellable afegir les 3 activitats com a individuals/independents (no una activitat dividida més gran amb 3 components). El motiu és que si voleu aplicar la distribució d&apos;activitats durant la setmana, aquesta operació no afegirà ni eliminarà les restriccions de tipus «min de dies entre les activitats» d&apos;aquestes 3 activitats. A més, si afegiu una activitat dividida, heu de tenir cura de no afegir una restricció predeterminada «mín. de dies» entre els 3 components.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="877"/>
         <source>Q: I would like to specify that a teacher should have activities in certain time slots, no matter which activities.</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>P: M&apos;agradaria especificar que un professor hauria de tenir activitats en certes franges horàries, independentment de les activitats.</translatorcomment>
+        <translation></translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="879"/>
         <source>A: Please use constraint activities occupy max time slots from selection (the exact menu entry is &apos;A set of activities occupies max time slots from selection&apos;. See that constraint&apos;s Help button for more details.</source>
-        <translation type="unfinished"></translation>
+        <translation>R: si us plau, utilitzeu la restricció «max. de franges horàries»per a les activitats seleccinades (amb l&apos;opció del menú «Un conjunt d&apos;activitats ocupa el màxim de períodes de temps de la selecció&quot;. Vegeu el botó d&apos;Ajuda de la restricció per obtenir més detalls.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="886"/>
         <source>Q: How to easily find the activities with unspecified room in the timetable (after the timetable was generated)?</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Com trobar fàcilment les activitats amb amb aula no especificada en el horari (després de generar l&apos;horari)?</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="888"/>
         <source>A: A trick is this: open the file representing the activities timetable in XML form (this file can be found in the results directory, with a name like: file_activities.xml) with a text editor, and search for the text &lt;Room&gt;&lt;/Room&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>A: Un truc: obre el fitxer que representa l&apos;horari d&apos;activitats en format XML (aquest fitxer es pot trobar al directori de resultats, amb un nom com: file_activities.xml) amb un editor de text i cerca el text &lt;Room&gt;&lt;/Room&gt;</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="895"/>
         <source>Q: The students and/or teachers should have in each day some activities without interruption, then some continuous gaps, then again some activities without interruption. This situation can appear in these cases: schools in Morocco and Algeria, which have morning and afternoon shifts, and also in some universities in which students would prefer to have at most a single cluster of gaps, no matter how long, in each day. How to treat such situations in FET?</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Els estudiants i/o professorat haurien de tenir cada dia algunes activitats sense interrupcions, després d&apos;alguns espais buits, i de nou, algunes activitats sense interrupcions. Aquesta situació pot aparèixer en aquests casos: escoles al Marroc i Algèria, que tenen torns al matí i a la tarda, i també en algunes universitats en què els estudiants prefereixen tenir com a màxim un sol grup d&apos;espais buits, per molt de temps, cada dia. Com tractar aquestes situacions amb FET?</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="901"/>
         <source>A: A nice way to treat such situations would be to consider the number of FET days = 2 * the number of real days. Each real day corresponds to two FET days, one for the morning and one for the afternoon. Then, add constraints max zero gaps, and maybe min two hours daily with allow empty days true. You may need to devise some other tricks, in addition.</source>
-        <translation type="unfinished"></translation>
+        <translation>R: Una bona manera de tractar aquestes situacions seria considerar el nombre de dies FET = 2 * el nombre de dies reals. Cada dia real correspon a dos dies FET, un per al matí i un per a la tarda. A continuació, afegiu restriccions «màx. espais buits» a zero, i potser «min de dues hores diàries» amb «permetre dies buits» a vertader. És possible que necessiteu idear altres trucs, addicionals.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="909"/>
         <source>Q: How can I add a comment to a (sub)activity or to a constraint?</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Com afegir un comentari a una (sub)activitat o a una restricció?</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="911"/>
         <source>A: You can add a comment to a (sub)activity by clicking the &apos;Comments&apos; button in the (sub)activities dialog. You can add a comment to a constraint by clicking the &apos;Comments&apos; button in the all time/space constraints dialogs.</source>
-        <translation type="unfinished"></translation>
+        <translation>R: Podeu afegir un comentari a una (sub)activitat clicant el botó «Comentaris» del diàleg d&apos;(sub)activitats. Podeu afegir un comentari a una restricció clicant el botó «Comentaris» en els diàlegs de restriccions de temps/espai.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="918"/>
         <source>Q: How can I activate/deactivate a constraint?</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Com puc activar/desactivar una restricció?</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="920"/>
         <source>A: You can activate/deactivate a constraint by clicking the &apos;Activate&apos;/&apos;Deactivate&apos; buttons in the all time/space constraints dialogs.</source>
-        <translation type="unfinished"></translation>
+        <translation>A: Podeu activar/desactivar una restricció clicant els botons «Activar/Desactiva» en els diàlegs de restriccions de temps/espai.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="937"/>
         <source>Q: How can I specify that some activities must be in the same room (at different time slots, of course, because a single room can hold a single activity in a certain time slot)? This is needed for instance to constrain the Physics activities of a certain students set to take place in the same room, be it Lab-1 or Lab-2</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Com puc especificar que algunes activitats han d&apos;estar a la mateixa aula (en diferents espais horaris, per descomptat, perquè una sola aula pot realitzar una única activitat en un temps determinat)? Això es necessita, per exemple, per restringir les activitats de física d&apos;un determinat alumne que se celebra a la mateixa sala, ja sigui Lab-1 o Lab-2</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="941"/>
         <source>A: You can use the constraint activities occupy max different rooms, with max different rooms = 1.</source>
-        <translation type="unfinished"></translation>
+        <translation>R: Podeu utilitzar la restricció «activitats que ocupen un màxim d&apos;aules diferents», amb màxim d&apos;aules diferents = 1.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="947"/>
         <source>Q: How can I backup/restore the FET settings on a computer, or share them between different computers?</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Com puc fer una còpia de seguretat/restauració de la configuració  de FET en una computadora o compartir-les entre ordinadors diferents?</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="949"/>
         <source>A: GNU/Linux: Usually, in your %1 directory you will find a directory &quot;%2&quot; containing the file &quot;%3&quot;. If you copy this file to another computer, the FET settings will be copied. You can also make a backup of this file and copy it on the same computer, later, to restore the previous settings. If you remove this file, all FET settings on this computer will be reset to defaults.</source>
-        <translation type="unfinished"></translation>
+        <translation>R: GNU/Linux: en general, al vostre directori %1 trobareu un directori &quot;%2&quot; que conté el fitxer &quot;%3&quot;. Si copieu aquest fitxer a un altre ordinador, es copiaran els paràmetres de FET. També podeu fer una còpia de seguretat d&apos;aquest fitxer i copiar-lo a la mateixa computadora, més tard, per restaurar la configuració anterior. Si elimineu aquest fitxer, tota la configuració FET d&apos;aquesta computadora es restablirà als valors predeterminats.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="955"/>
         <source>Mac OS X: It seems that the configuration file might be %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Mac OS X: sembla que el fitxer de configuració pot ser %1</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="957"/>
         <source>Windows: Run regedit.exe (Registry Editor) and search for the key &quot;%1&quot;. You will find a section with this name, with the subsection &quot;%2&quot;. You can export this section to a file, and import it from this file on the same or another computer. If you remove this section, all FET settings will be reset to defaults.</source>
-        <translation type="unfinished"></translation>
+        <translation>Windows: executeu «regedit.exe» (editor del registre) i cerqueu la clau &quot;%1&quot;. Trobareu una secció amb aquest nom, amb la subsecció &quot;%2&quot;. Podeu exportar aquesta secció a un fitxer i importar-lo des d&apos;aquest fitxer a la mateixa o en una altra computadora. Si elimineu aquesta secció, tota la configuració de FET es restablirà als valors predeterminats.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="965"/>
         <source>Q: I have many subgroups and I don&apos;t explicitly use them. Can I hide them in the combo boxes, to add easier the constraints? Also, can I make the FET interface work faster?</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Tinc molts subgrups i no els ús explícitament. Puc ocultar-los a les llistes desplegables, per afegir més fàcilment les restriccions? A més, puc fer que la interfície  de FET funcioni més ràpidament?</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="968"/>
@@ -37671,52 +37800,52 @@ Add another constraint: min 1 day between activities with id-s 2 and 3, consecut
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="993"/>
         <source>Q: How about dividing a students year automatically into many subgroups?</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Què significa dividir un any d&apos;estudiants automàticament en molts subgrups?</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="997"/>
         <source>About using a large number of categories, divisions per category and subgroups: it is highly recommended to keep these to a minimum, especially the number of categories, by using any kind of tricks. Otherwise the timetable might become impossible (taking too much time to generate).</source>
-        <translation type="unfinished">Respecte a l&apos;ús d&apos;un nombre elevat de categories, divisions per categories i subgrups, es recomana fer-ne servir el mínim possible, especialement les categories, fent servir qualsevol truc. D&apos;altra manera, pot ésser que no sigui possible generar els horaris (o que faci falta molt de temps.</translation>
+        <translation>Respecte a l&apos;ús d&apos;un nombre elevat de categories, divisions per categories i subgrups, es recomana fer-ne servir el mínim possible, especialement en el nombre de categories, fent servir qualsevol truc. D&apos;altra manera, pot ésser que no sigui possible generar els horaris (o que faci falta molt de temps).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="1001"/>
         <source>Maybe a reasonable number of categories could be 2, 3 or maximum 4. The divide year dialog allows much higher values, but these are not at all recommended.</source>
-        <translation type="unfinished">Tal vegada, un nombre raonable de categories és 2, 3 o 4 com a màxim. El diàleg de divisió d&apos;any permet valors més alts, però no és recomanable fer-los servir.</translation>
+        <translation>Tal vegada, un nombre raonable de categories és 2, 3 o 4 com a màxim. El diàleg de divisió d&apos;any permet valors més alts, però no és recomanable fer-los servir.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="1004"/>
         <source>Maybe an alternative to dividing a year into many categories/subgroups would be to enter individual students as FET subgroups and add into each group the corresponding subgroups. But this is hard to do from the FET interface - maybe a solution would be to use an automatic tool to convert your institution data into a file in .fet format.</source>
-        <translation type="unfinished">Pot ésser una alternativa a dividir un any en moltes categories/subgrups és afegir els alumnes individualment com a subgrups FET i afegir, en cada grup, els grups corresponents. Però això és difícil de fer amb la interfície de FET - una possible solució és fer servir una eina automàtica per a convertir les seves dades en un arxiu en format .fet.</translation>
+        <translation>Una alternativa a dividir un any en moltes categories/subgrups és afegir els estudiants individualment com a subgrups FET i afegir, en cada grup, els subgrups corresponents. Però això és difícil de fer amb la interfície de FET - una possible solució és fer servir una eina automàtica per a convertir les seves dades en un arxiu en format .fet.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="1008"/>
         <source>Or you might use the FET feature to import students sets from comma separated values (CSV) files.</source>
-        <translation type="unfinished">Podeu, també, fer servir la funció FET per a importar grups d&apos;arxius CSV (valors separats per delimitadors).</translation>
+        <translation>Podeu, també, fer servir la funció FET per a importar grups d&apos;arxius CSV (valors separats per delimitadors).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="1010"/>
         <source>In such cases (individual students as FET subgroups), remember that a smaller number of total subgroups means faster generation time, so you might want to consider a single subgroup for two or more students who have the exact same activities and constraints.</source>
-        <translation type="unfinished">En aquests casos (alumnes individuals com a subgrups FET), recordau que el número menor del total de subgrups suposa una generació d&apos;horaris més ràpida, per la qual cosa, és possible que desitjeu considerar un únic subgrup per a dos o més alumnes que tenen exactament les mateixes activitats i restriccions.</translation>
+        <translation>En aquests casos (estudiants individuals com a subgrups FET), recordau que el número menor del total de subgrups suposa una generació d&apos;horaris més ràpida, per la qual cosa, és possible que desitjeu considerar un únic subgrup per a dos o més estudiants que tenen exactament les mateixes activitats i restriccions.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="1017"/>
         <source>Q: Does the order of constraints have influence on their importance while generating the timetable?</source>
-        <translation type="unfinished"></translation>
+        <translation>P: De quina manera l&apos;ordre de les restriccions influeix en la seva importància quan es genera l&apos;horari?</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="1021"/>
         <source>The order of the constraints is only important to the interaction with the user. It is only the weight percentage which counts while generating the timetable. Note however that you may get different timetables for different constraints order.</source>
-        <translation type="unfinished"></translation>
+        <translation>L&apos;order de les restriccions només és important en la interacció amb l&apos;usuari. Només la ponderació es té en consideració en la generació dels horaris. Teniu present que podeu generar diferents horaris amb ordenacions distintes de les restriccions.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="850"/>
         <source>Add time constraint: activities with all teachers, all students, all subjects, activity tag = &apos;Start hour&apos; have a set of preferred starting times: Monday 8.00, Monday 9.00, ...</source>
-        <translation type="unfinished"></translation>
+        <translation>Afegir restriccions de temps: activitats amb tot el professorat, estudiants, matèries, etiquetes d&apos;activitats = «Hora d&apos;inici» amb un conjunt d&apos;hores d&apos;inici preferides: dilluns 8:00, dimarts 9:00,...</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="47"/>
         <source>Frequently asked questions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Preguntes més freqüents.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="837"/>
@@ -37726,19 +37855,21 @@ Add another constraint: min 1 day between activities with id-s 2 and 3, consecut
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="853"/>
         <source>It works fine and I got good timetables with strong teachers time constraints.</source>
-        <translation type="unfinished"></translation>
+        <translation>Funciona bé i tinc bons horaris amb restriccions de temps del professorat estrictes.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="871"/>
         <source>There may be other solutions possible, but this one seems perfect with respect to efficiency.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hi pot haver altres solucions, però aquesta sembla perfecte en relació a la eficàcia.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="323"/>
         <source>Q: I have a sports room which allows more than 1 activity simultaneously in it. How to make the preferred room constraints? Can FET accept more than one activity at the same time in a single room?
 
 A: Each room can host a single activity at the same time. How to implement what you need? You can add more rooms (sport1, sport2, sport3) and instead of a single preferred room add more preferred rooms.</source>
-        <translation type="unfinished"></translation>
+        <translation>P. Tenc una sala d&apos;esports que permet més d&apos;una activitat simultànea. Com puc definir la restricció d&apos;aula preferida? Pot FET acceptar més d&apos;una activitat a la mateix hora en una aula individual?
+
+R: Cada aula admet una activitat al mateix temps. Com fer el què demanau? Podeu afegir més aules (Depo1, Depo2, Dep3) i, enlloc d&apos;una aula preferida, afegir més aules preferides.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="49"/>
@@ -37762,22 +37893,32 @@ A: - Students - organized into sets (years (or forms, or classes), containing gr
 - Buildings.
 - Activities: a coupling of one or more teachers, a subject and one or more students set. This is usually named a course, a lecture, a laboratory and so on. An activity can have optionally an activity tag, to help you with some constraints.
 - Constraints. They can be: time constraints (referring to the allocated day and hour) or space constraints (referring to rooms allocation). They have a weight percentage, from 0.0% to 100.0%. 100% means that the constraint will always be respected and if this constraint is impossible, FET will not be able to generate a timetable.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Com s&apos;estructuren les dades d&apos;entrada de FET?
+
+A: - Estudiants - organitzats en grups (anys, o cursos o classes, que contenen grups, que contenen subgrups).
+
+- Professorat.
+- Assignatures (els noms dels cursos possibles, p. ex. Matemàtiques, Física, etc.).
+- Etiquetes d&apos;activitat (podeu utilitzar-les o no, l&apos;opció és vostra: el tipus d&apos;activitat: laboratori, curs, seminari o qualsevol altra informació adjunta a una activitat).
+- Aules.
+- Edificis.
+- Activitats: un agrupament d&apos;un o més professors, una assignatura i un o més grups. Normalment se sol anomenar un curs, una conferència, un laboratori, etc. Una activitat pot tenir opcionalment una etiqueta d&apos;activitat, per ajudar-vos amb algunes restriccions.
+- Restriccions. Poden ser: restriccions de temps (referint-se al dia i hora assignats) o restriccions d&apos;espai (referint-se a l&apos;assignació de sales). Tenen una ponderació, del 0,0% al 100,0%. El 100% significa que sempre es respectarà la restricció i, si aquesta restricció és impossible, FET no podrà generar un calendari.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="94"/>
         <source>Virtually unlimited number of subjects</source>
-        <translation type="unfinished"></translation>
+        <translation>Un nombre pràcticament il·limitat de matèries</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="106"/>
         <source>Virtually unlimited number of time constraints</source>
-        <translation type="unfinished"></translation>
+        <translation>Un nombre pràcticament il·limitat de restriccions de temps</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="108"/>
         <source>Virtually unlimited number of space constraints</source>
-        <translation type="unfinished"></translation>
+        <translation>Un nombre pràcticament il·limitat de restriccions d&apos;espai</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="220"/>
@@ -37794,7 +37935,19 @@ The weight is recommended to be between 95.0%-100.0%. The best might be 99.75% o
 You can specify consecutive if same day. Please be careful, even if constraint min days between activities has 0% weight, if you select this consecutive if same day, this consecutive will be forced. You will not be able to find a timetable with the two activities in the same day, separated by break, not available or other activities, even if the constraint has weight 0%, if you select consecutive if same day.
 
 Currently FET can put at most 2 activities in the same day if &apos;consecutive if same day&apos; is true. FET cannot put 3 or more activities in the same day if &apos;consecutive if same day&apos; is true.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Ajuda sobre «ConstraintMinDaysBetweenActivities».
+
+R: Es refereix a un conjunt d&apos;activitats i implica una constant, N. Per a cada parell d&apos;activitats del conjunt, no permet que la distància (en dies) entre elles sigui inferior a N. Si especifiqueu N = 1, llavors aquesta restricció significa que no es poden programar dues activitats el mateix dia. N = 2 vol dir que cada dues activitats s&apos;han de separar almenys un dia.
+
+Exemple: 3 activitats i N = 2. És possible col·locar-les el dilluns, dimecres i divendres (setmana de 5 dies).
+
+Exemple 2: 2 activitats, N = 3. És possible col·locar-les el dilluns i dijous, el dilluns i el divendres, el dimarts i el divendres (setmana de 5 dies).
+
+Es recomana que la pondereació estigui entre el 95,0% -100,0%. El millor podria ser un 99,75% o un valor inferior al 100%, perquè FET pot detectar restriccions impossibles d&apos;aquesta manera i evitar-les. La ponderació és subjectiva.
+
+Podeu especificar «consecutives si estan en el mateix dia». Si us plau, tingueu cura, fins i tot si la restricció «min. de dies entre activitats» té un 0% de ponderació, si seleccioneu «consecutices si en el mateix dia», aquest consecutiu serà obligat. No podràs trobar un horari amb «les dues activitats si en el mateix dia», «separades per buits», «no disponibles» o «altres activitats», fins i tot si la restricció té una ponderació del 0%, si seleccioneu «consecutives si en el mateix dia».
+
+Actualment, FET pot col·locar com a màxim 2 activitats el mateix dia si «consecutives si en el mateix dia» té el valor a vertader. FET no pot col·locar 3 o més activitats en el mateix dia si «consecutives si en el mateix dia» té el valor a vertader.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="236"/>
@@ -37810,14 +37963,27 @@ Activities 1 and 2, min days 1, consecutive if same day=true, weight=100%-5%*5%=
 You may however add 2 constraints for the same activities if you want 95% with min 2 days and 100% with min 1 day. These are not duplicates.
 
 You might get an impossible timetable with duplicates, so beware.</source>
-        <translation type="unfinished"></translation>
+        <translation>Important: no introduïu duplicats innecessaris. Si introduïu, per exemple, 2 restriccions:
+
+1. Activitats 1 i 2, «mín. de dies» 1, «consecutives si en el mateix dia» = vertader, ponderació = 95%
+2. Activitats 1 i 2, «mín. de dies» 1, «consecutives si en el mateix dia» = fals, ponderació = 95%
+(aquestes són restriccions diferents),
+llavors, el resultat d&apos;aquestes dues restriccions serà una restricció:
+
+Activitats 1 i 2, «mín. de dies» 1, «consecutives si en el mateix dia» = vertader, ponderació = 100% -5% * 5% = 99,75%, massa alt. Això és degut a l&apos;algoritme de FET.
+
+Tanmateix, podeu afegir 2 restriccions per a les mateixes activitats si voleu un 95% amb min. 2 dies i 100% amb min. 1 dia. Aquestes no són duplicats.
+
+Podeu obtenir un calendari impossible amb duplicats, així que anau en compte.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="263"/>
         <source>Q: Is it possible to make a timetable where the students learn in two shifts? (for instance, the lowest forms in the morning and the highest forms in the afternoon)?
 
 A: Yes, you have to add more constraint students set not available accordingly (for the lowest forms not available Mon, Tue, Wed, Th, Fr each from middle hour to last hour and for highest forms from first hour to middle hour). The constraints no gaps and early work correctly with these not available: if not available, a students set will not have gaps or early broken for the period of non-availability.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Es pot fer un horari on els estudiants tenen dos torns? (per exemple, menuts el matí i els més grans a la tarda)?
+
+A: Sí, heu d&apos;afegir més restriccions «gruop no disponible» en conseqüència (pels menuts, no disponibles, Dll, Dm, Dm, Dj, Dv des de mitjan dematí fins a última hora i pels grans, de primera hora fins mitjan dematí). Les restriccions no contenen buits i treballen correctament amb aquestes no disponibles: si no està disponible, un grup no tindrà buits ni es trencarà durant el període de no disponibilitat.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="341"/>
@@ -37826,7 +37992,11 @@ A: Yes, you have to add more constraint students set not available accordingly (
 A: A bit difficult. You have to choose a day for this 0 hour. Then add breaks or not available to prevent other activities in other days at hour 0, then add students set not available to prevent other students sets from having hours at this hour 0. Or variants of this.
 
 Zsolt Udvari used another trick: considered the last hour to be hour 0. But this is not always applicable.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Es pot treballar amb 0 hores?
+
+R: És una mica difícil. Heu de triar un dia per aquesta hora 0. A continuació, afegiu buits o no disponibles per evitar altres activitats en altres dies a l&apos;hora 0, i després afegiu grups no disponibles per evitar que altres grups tinguin hores a aquesta hora 0. O variants d&apos;això.
+
+Zsolt Udvari ha utilitzat un altre truc: va considerà l&apos;última hora com a hora 0. Però això no sempre és aplicable.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="351"/>
@@ -37842,7 +38012,18 @@ weight = 99% means: In average FET retries 100 times to place an activity withou
 weight = 99.99% means: In average FET retries 10000 times to place an activity without a conflict. If it isn&apos;t able to place the activity without a conflict after average 10000 times it keeps the conflict and tries to place the next activity.
 
 Also, activities might get unallocated, and the cycle would be opened.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Com es gestiona FET les ponderacions? Què volen dir?
+
+R: Les ponderacions inferiors al 100% són optatius, perquè FET pot incomplir-les si és necessari.
+
+Volker Dirr va intentar expressar com FET gestiona les ponderacions inferiors al 100%:
+
+ponderació = 50% significa: en mitjana, que FET es intenta dues vegades col·locar una activitat sense conflictes. Si no és capaç d&apos;ubicar l&apos;activitat sense un conflicte després de 2 intents, manté el conflicte i intenta col·locar la següent activitat.
+ponderació = 75% significa: en mitjana, que FET es intenta quatre vegades col·locar una activitat sense conflictes. Si no és capaç d&apos;ubicar l&apos;activitat sense un conflicte després de 4 intents, manté el conflicte i intenta col·locar la següent activitat.
+ponderació = 99% significa: en mitjana, que FET es intenta 100 vegades col·locar una activitat sense conflictes. Si no és capaç d&apos;ubicar l&apos;activitat sense un conflicte després de 100 intents, manté el conflicte i intenta col·locar la següent activitat.
+ponderació = 99.99% significa: en mitjana, que FET es intenta 10000 vegades col·locar una activitat sense conflictes. Si no és capaç d&apos;ubicar l&apos;activitat sense un conflicte després de 10000 intents, manté el conflicte i intenta col·locar la següent activitat.
+
+A més, les activitats podrien quedar sense assignar i el cicle s&apos;obriria.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="402"/>
@@ -37851,14 +38032,20 @@ Also, activities might get unallocated, and the cycle would be opened.</source>
 A: The statistics are important to check your data before generating.
 
 When seeing the students statistics, probably the most useful are for subgroups. Each subgroup should have a reasonable amount of hours, and if you are having subgroups with too little hours, like 2 per week, probably you misunderstood FET notation. Each subgroup is independent of the others and should have a number of hours per week close to the average of all subgroups. Do not input empty subgroups with only a few activities.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Ajuda sobre el menú d&apos;estadística.
+
+R: Les estadístiques són importants per comprovar les dades abans de generar.
+
+Al veure les estadístiques dels estudiants, probablement les més útils són per als subgrups. Cada subgrup hauria de tenir una quantitat d&apos;hores raonables, i si teniu subgrups amb poques hores, com 2 per setmana, probablement no us heu entès la notació FET. Cada subgrup és independent dels altres i hauria de tenir un nombre d&apos;hores setmanals properes a la mitjana de tots els subgrups. No introduïu subgrups buits amb només algunes activitats.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="413"/>
         <source>Q: What if I enter accidentally duplicate constraints?
 
 A: It is not a good practice to allow unnecessary duplicate constraints. For min days between activities and other constraints, the combined weight becomes very high. For instance, if you have 2 constraints with weight 95%, the outcome is a constraint with weight 100%-5%*5%=99.75%, very high. You might get an impossible timetable with duplicates, so beware. For constraint activity(ies) preferred (starting time(s) or time slots) the chosen weight is the largest value, so you can use more constraints of this type for same activities.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Què passa si afegeixo accidentalment les restriccions duplicades?
+
+R: No és una bona pràctica permetre restriccions duplicades innecessàries. Per a «mínim de dies entre activitats» i altres restriccions, la ponderació combinada es fa molt alta. Per exemple, si teniu 2 restriccions amb ponderació del 95%, el resultat és una restricció amb ponderació del 100% -5% * 5% = 99,75%, molt alta. Podeu obtenir un horari impossible amb duplicats, així que aneu en compte. Per a les activitats de restricció preferides (temps d&apos;inici o franges de temps), la ponderació escollida és el valor més gran, de manera que podeu utilitzar més restriccions d&apos;aquest tipus per a les mateixes activitats.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="424"/>
@@ -37946,7 +38133,88 @@ contains groups 1_a, 1_b
 You will have the possibility to add any activity, for a year or group
 
 Currently, the interface for students is difficult to use. I am thinking of that. Maybe it is more simple for you if you try to work on the xml .fet file.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Més informació sobre l&apos;organització dels grups d&apos;estudiants.
+
+R: L&apos;organització dels grups d&apos;estudiants és molt flexible i permet adaptar-la a qualsevol estructura institucional.
+
+La idea principal és que els subgrups són independents. Cada subgrup ha de ser la unitat docent més petita o fins i tot un sol estudiant.
+
+Els grups poden contenir qualsevol subgrup. Els grups es poden superposar.
+
+Els anys (cursos) poden contenir qualsevol grup.
+
+No necessiteu seguir exactament la jerarquia de la vostra institució, podeu modelar la vostra estructura per poder utilitzar FET millor.
+
+Exemple: teniu una facultat amb anys (cursos) (1, 2, ..., 5), seccions (1_a, 1_b, ...) i subseccions (1_a_x, 1_a_y, ...). Cada subsecció té idiomes opcionals en anglès o francès o alemany (per exemple, un conjunt d&apos;estudiants que estudia l&apos;anglès és ENG i que no estudia l&apos;anglès és !ENG). A continuació, l&apos;estructura correcta és:
+
+subgrups
+
+1_a_x_ENG_FRE_GER,
+1_a_x_!ENG_FRE_GER,
+1_a_x_ENG_!FRE_GER,
+1_a_x_!ENG_!FRE_GER,
+1_a_x_ENG_FRE_!GER,
+1_a_x_!ENG_FRE_!GER,
+1_a_x_ENG_!FRE_!GER,
+1_a_x_!ENG_!FRE_!GER,
+
+1_a_y_ENG_FRE_GER,
+...i el mateix per a 1_a_y (8 subgrups)
+
+(podeu considerar no afegir subgrups buits, per exemple, si cada estudiant té un sol idioma, podeu conservar només 3 subgrups de 8)
+
+grups:
+
+1_a
+amb els subgrups:
+
+    1_a_x_ENG_FRE_GER,
+    t1_a_x_!ENG_FRE_GER,
+    1_a_x_ENG_!FRE_GER,
+    1_a_x_!ENG_!FRE_GER,
+    1_a_x_ENG_FRE_!GER,
+    1_a_x_!ENG_FRE_!GER,
+    1_a_x_ENG_!FRE_!GER,
+    1_a_x_!ENG_!FRE_!GER,
+    1_a_y_ENG_FRE_GER,
+...i el mateix per a 1_a_y (8 subgrups)
+
+1_a_x
+
+amb els subgrups:
+
+    1_a_x_ENG_FRE_GER,
+    1_a_x_!ENG_FRE_GER,
+    1_a_x_ENG_!FRE_GER,
+    1_a_x_!ENG_!FRE_GER,
+    1_a_x_ENG_FRE_!GER,
+    1_a_x_!ENG_FRE_!GER,
+    1_a_x_ENG_!FRE_!GER,
+    1_a_x_!ENG_!FRE_!GER,
+
+1_a_y
+contains subgroups:
+
+    1_a_y_ENG_FRE_GER,
+... (8 subgroups)
+
+1_a_x_ENG
+
+amb els subgrups:
+
+    1_a_x_ENG_FRE_GER,
+    1_a_x_ENG_!FRE_GER,
+    1_a_x_ENG_FRE_!GER,
+    1_a_x_ENG_!FRE_!GER
+cursos:
+
+1
+
+camb els subgrups 1_a, 1_b
+
+Tindreu la possibilitat d&apos;afegir qualsevol activitat, durant un any (curs) o grup.
+
+Actualment, la interfície per als estudiants és difícil d&apos;utilitzar. Estic pensant en això. Potser us resultarà més senzill si intenteu treballar amb el fitxer (en format xml) .fet.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="492"/>
@@ -37961,7 +38229,17 @@ The best way to add the activities would be:
 1. If you add &apos;force consecutive if same day&apos;, then couple extra activities in pairs to obtain a number of activities equal to the number of days per week. Example: 7 activities with duration 1 in a 5 days week, then transform into 5 activities with durations: 2,2,1,1,1 and add a single container activity with these 5 components (possibly raising the weight of added constraint min days between activities up to 100%)
 
 2. If you don&apos;t add &apos;force consecutive if same day&apos;, then add a larger activity split into a number of activities equal with the number of days per week and the remaining components into other larger split activity. For example, suppose you need to add 7 activities with duration 1 in a 5 days week. Add 2 larger container activities, first one split into 5 activities with duration 1 and second one split into 2 activities with duration 1 (possibly raising the weight of added constraints min days between activities for each of the 2 containers up to 100%)</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Exemple: tinc 7 hores de matemàtiques per setmana de 5 dies (7 és més gran que 5). Com s&apos;afegeix correctament aquesta activitat dividida?
+
+Pregunta completa: tinc una activitat complexa dividida en un nombre d&apos;activitats majora a la quantitat de dies per setmana. Com afegir-la i restringir «min. de dies entre les activitats»?
+
+R: Si afegiu directament una activitat dividida en un nombre d&apos;activitats majora a la quantitat de dies per setmana i també afegeiu una restricció de «min. de dies entre les activitats», seria una pràctica molt dolenta amb la manera com funciona l&apos;algoritme de generació (retarda la generació i fa que sigui més difícil trobar una solució).
+
+La millor manera d&apos;afegir les activitats seria:
+
+1. Si afegiu la restricció «força consecutiva el mateix dia», feu dues activitats addicionals per parelles per obtenir diverses activitats iguals al nombre de dies a la setmana. Exemple: 7 activitats amb durada 1 (hora) en una setmana de 5 dies, després es transformen en 5 activitats amb durades: 2,2,1,1,1 i afegeixen una sola activitat dividida amb aquests 5 components (possiblement augmentant la ponderació de la restricció «min. de dies entre les activitats» fins al 100%).
+
+2. Si no afegiu «força consecutiva el mateix dia», afegiu una activitat més gran dividida en una sèrie d&apos;activitats iguals al nombre de dies a la setmana i els components restants a una altra activitat de divisió més gran. Per exemple, suposem que cal afegir 7 activitats amb durada 1 (hora) en una setmana de 5 dies. Afegiu 2 activitats dividides, la primera es divideix en 5 activitats amb una durada 1 (hora) i una altra dividida en 2 activitats amb durada 1 (hora) (possiblement augmentant la ponderació de les restriccions «min. de dies entre les activitats» de cada una de les 2 activitats dividides fins al 100%)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="544"/>
@@ -37970,57 +38248,71 @@ The best way to add the activities would be:
 A: I had many users wanting to put a gap between activities of same teachers or between activities with same teacher and subject, if they are on the same day. This constraint does that. If you want for instance to make teacher John to have at least one gap between all his activities, select filter &apos;John&apos; and add all his activities to a constraint of this type. If you want to make teacher John to have at least one gap between all his Math activities, select filter &apos;John&apos; and &apos;Math&apos; and add all these activities to a constraint of this type.
 
 Please take care that the selected activities are not forced consecutive by constraint two activities consecutive or by constraint min days between activities which have consecutive if same day selected.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Què significa la restricció «min. de buits (hores)» entre un conjunt d&apos;activitats?
+
+R: Tinc molts usuaris que volen deixar una bretxa entre les activitats dels mateixos professors o entre activitats amb el mateix professor i matèria, si són el mateix dia. Aquesta restricció fa això. Si voleu, per exemple, fer que el professor John tingui com a mínim un buit entre totes les seves activitats, seleccioneu el filtre «John» i afegiu a totes les seves activitats a una restricció d&apos;aquest tipus. Si voleu fer que el professor John tingui com a mínim una bretxa entre totes les activitats «matemàtiques», seleccioneu el filtre &apos;John&apos; i &apos;Matemàtiques&apos; i afegiu  totes aquestes activitats a una restricció d&apos;aquest tipus.
+
+Si us plau, tingueu en compte que les activitats seleccionades no es veuen obligades a col·locar-se consecutives per la restricció de dues activitats consecutives o per restriccions de dies mínims entre les activitats que siguin consecutives amb «el mateix dia» seleccionat.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="583"/>
         <source>Q: Help on constraints teacher(s) or students (set) hourly interval max days per week
 
 A: This is a constraint suggested by users, to allow you to specify an hourly interval for students or teachers, and to say that in this interval they must work at most max days per week. This is useful if for instance you want teachers not to have more than 2 days per week activities in the last 2 hours of the day.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Ajuda sobre les restriccions del tipus «interval màxim horari de dies per setmana» pel professorat o estudiants (grups)
+
+R: Aquest tipus de restriccions és un suggeriment d&apos;un usuari, amb l&apos;objectiu de poder especificar un interval horari per a estudiants i professorat, i establir, en l&apos;interval, la quantitat màxima de dies per setmana de treball. És útil si desitjau que el professorat no tengui més de 2 dies per setmana activitats en les 2 darreres hores del dia.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="592"/>
         <source>Q: Help on constraint activities end students day (or activity ends students day).
 
 A: If you have activities which you want to put in the last slots of a day (like say the meetings with the class master), please use the new constraint a set of activities end students day (or singular activity ends students day). This constraint can have weight only 100%, because of the way the algorithm works.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Ajuda sobre restriccions d&apos;activitats «final de jornada dels estudiants» (o «l&apos;activitat acaba la jornada dels estudiants»).
+
+R: Si teniu activitats que voleu col·locar a les últimes hores d&apos;un dia (p. ex. les reunions amb el mestre de classe), feu servir la nova restricció  «conjunt d&apos;activitats al final de la jornada dels estudiants» (o «activitat singular al final de jornada dels estudiants»). Aquesta restricció pot tenir només un 100% de ponderació, a causa del funcionament de l&apos;algorisme.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="741"/>
         <source>3 hints from an anonymous Polish user, who uses FET for very large data:</source>
-        <translation type="unfinished"></translation>
+        <translation>3 suggeriments d&apos;un usuari anònim de Polònia que fa servir FET amb moltes dades:</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="749"/>
         <source>For instance even when two consecutive activities are placed at one day (the same group and the same teacher) sometimes they are placed at different rooms what would force them to needless changing room. I guess that FET is focused on fulfilling constraints but not on optimizing timetable. Sometimes simple changing of two activities makes plan better both for students and teachers. I think that manually improving generated plan is faster than creating many many more constraints and repeating simulations. And this is the third hint.</source>
-        <translation type="unfinished"></translation>
+        <translation>Per exemple, fins i tot quan dues activitats consecutives es col·loquen en un dia (el mateix grup i el mateix professor) de vegades es col·loquen a diferents aules, el que  obligaria a canviar d&apos;aula innecessàriament. Suposo que FET se centra a complir restriccions però no a optimitzar l&apos;horari. De vegades el simple canvi de dues activitats fa que l&apos;horari sigui millor tant per als estudiants com per als professors. Crec que millorar manualment l&apos;horari generat és més ràpid que crear moltes més restriccions i repetir simulacions. I aquesta és la tercera pista.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="795"/>
         <source>This is an advanced question which probably will never appear in practice, you may skip it at first reading.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aquesta és una pregunta difícil que planteja una situació poc freqüent i que podeu deixar en la primera lectura.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="613"/>
         <source>Q: What about the automatic search for updates? Should I enable it?
 
 A: It is recommended to enable automatic search for updates. I didn&apos;t set it as default because people might be annoyed if I release too fast new versions. But if you can cope with that, it is recommended to always have the latest version and enable searching for updates at startup.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Qué passa amb les actualitzacions automàtiques? Cal activar-la?
+
+R: Es recomana activar la comprovació automàtica d&apos;actualitzacions. No està configurada per defecte degut a què a molts usuaris els podria resultar molest si les actualitzacions són molt freqüents. Però si això no vos resulta molest, es recomanable tenir el més prest possible la darrera actualització i permetre al programa que comprovi si hi ha actualitzacions en engegar-se.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="281"/>
         <source>Q: Can I work with fortnightly activities like in older FET versions?
 
 A: You have to use some tricks. It would be difficult to consider fortnightly activities into the new FET algorithm (from 5.0.0 up). But I think you can apply this: for instance, I suppose that you would like the first week to have activity A1 (teacher T1, student S1) and A2 (T2, S2), and second week A3 (T1, S2) and A4 (T2, S1) (simultaneously). You could define a weekly activity A (T1, T2, S1, S2). If you need 2 rooms for A, then you can define dummy A&apos; (no teachers, no students) and constraint activities same starting time A and A&apos; and add rooms for A and A&apos; .</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Puc treballar amb activitats quinzenals com en versions anteriors de FET?
+
+R: Has d&apos;usar alguns trucs. Seria difícil considerar les activitats quinzenals en el nou algoritme FET (des de la versió 5.0.0). Però crec que podeu aplicar això: per exemple, suposo que voleu que la primera setmana tingui l&apos;activitat A1 (docent T1, estudiant S1) i A2 (T2, S2), i la segona setmana A3 (T1, S2) i A4 (T2, S1) (simultàniament). Podeu definir una activitat setmanal A (T1, T2, S1, S2). Si necessiteu 2 habitacions per a A, podeu definir l&apos;activitat fictícia A&apos;(sense professors ni estudiants) i restriccions «mateix temps d&apos;inici» per a  A i A&apos; i afegir aules per A i A&apos;.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="332"/>
         <source>Q: I got an impossible to solve timetable!
 
 A: If you get an impossible timetable, maybe the constraints students (set) early are too difficult. Maybe you can allow more arrivals at second hour. Also teachers&apos; min hours daily might be too strong. Please also check the statistics to be correct. Remove other constraints until you get a possible timetable.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Tenc un horari impossible de resoldre!
+
+R: Si teniu un horari impossible de generar, és possible que les restriccions d&apos;inici matiner dels estudiants (grups) siguin impossibles. Tal vegada podeu admetre més començaments de jornada a segona hora. A més, les restriccions «min, d&apos;hores diàries» del professorat poden ésser massa estrictes. Comprovau que les estadístiques són correctes. Eliminau altres restriccions fins que sigui possible la generació d&apos;un horari.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="490"/>
@@ -38041,26 +38333,32 @@ A: If you get an impossible timetable, maybe the constraints students (set) earl
 Since I started working on our school&apos;s timetable I had a problem with a specific day and teacher. No matter what I tried in FET I couldn&apos;t reduce the in-school hours for this specific teacher and day down from 7 (7 hours is the full school day, so he had 6 teaching hours and 1 gap). It was too much (other teachers have 5 teaching hours max) but he didn&apos;t mind so we kept FET solution.Just a month ago this teacher had some major operation and couldn&apos;t teach so much hours in one day anymore. So I started again to experiment with the timetable and what was wrong. After a LOT of test and failures the idea hit me just as I was waking up to go to school; I hadn&apos;t enough teachers for early and late hours! I checked and it was true! Let me explain. We have 6 classes in total and every class has 7 hours per day. This means that I need 6 teachers for the first hour and 6 teachers for the 7th hour, a total of 12 teachers. But I only had 11 teachers to cover first and last hour! I had 16 teachers in total for that day but their restrictions prevented 6 of them to teach first and last hours (and it wasn&apos;t just cases of teacher not available but usually restrictions on teaching on specific hours and max gaps, so it was very difficult to look through it). So this specific teacher (because of the restrictions on the other teachers and the loose restrictions on himself) had to teach 6 hours with 1 gap so that he could cover a first and a last hour!
 
 ...Not that I will fall again for it but based on the difficulty to diagnose on my part it will help others that might face the same problem.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pregunta i resposta d&apos;Anestis Vovos: una situació molt difícil de diagnosticar i encara sense solució.
+
+Des que vaig començar a treballar a l&apos;horari de l&apos;escola vaig tenir un problema amb un dia concret i un professor. No importa el que he provat a FET, no he pogut reduir les hores presencials d&apos;aquest professor específic i dia de les 7 (7 hores és la jornada completa de l&apos;escola, així que ha tingut 6 hores lectives i 1 bretxa). Era massa (altres professors tenien 5 hores lectives com a màxim.) Però no li importava, així que vam mantenir la solució FET. Fa un mes, aquest professor tenia una operació important i ja no podia ensenyar tantes hores en un dia. Així que vaig tornar a començar a experimentar amb l&apos;horari i aquest dia. Després d&apos;un munt de proves i fracassos, la idea em va colpejar a mesura que m&apos;estava despertant per anar a l&apos;escola; no tenia professors suficients per a les primeres i darreres hores. Ho vaig comprovar i era veritat! Deixa&apos;m explicar. Tenim 6 classes en total i cada classe té 7 hores diàries. Això vol dir que necessito 6 professors per primera hora i 6 professors per a la 7a hora, un total de 12 professors. Però només tinc 11 professors per cobrir primera i última hora! Vaig tenir 16 professors en total per a aquell dia, però les seves restriccions impedien que 6 d&apos;ells ensenyessin les primeres i últimes hores (i no només es tractava de casos de docents no disponibles, sinó que generalment eren restriccions en l&apos;ensenyament en hores específiques i en els màxims espais, per la qual cosa era molt difícil d&apos;arreglar-ho). Així, doncs, aquest professor específic (a causa de les restriccions als altres professors i les restriccions soltes a si mateix) va haver d&apos;ensenyar 6 hores amb 1 espai per poder cobrir una primera i una última hora.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="654"/>
         <source>Q: I want to define hard subjects (Math, Physics and Chemistry) and I want students not to have more than 1 (or another variant 2) difficult subjects in a row.
 
 A: Define activity tag &apos;Difficult&apos; and add it to all MA, PH and CH lessons. Then add constraint maximum 1 (or 2) hours continuously for all students and an activity tag &apos;Difficult&apos;. Please take care if you may have double lessons.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Vull definir matèries «difícils» (Matemàtiques, Física i Química) i vull que els estudiants no tinguin més d&apos;1 (o una altra variant 2) matèries difícils seguides.
+
+A: defineix l&apos;etiqueta d&apos;activitat «Difícil» i afegeix-la a totes les lliçons MAT, F i Q. A continuació, afegiu una restricció de «màxim 1 (o 2) hores de manera contínua» per a tots els grups i una etiqueta d&apos;activitat «Difícil». Tingueu cura si podeu tenir sessions dobles.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="678"/>
         <source>Q: (by Horatiu Halmajan) The students must have max 4 gaps per week, maximum 2 per day, continuous gaps. How to solve this?
 
 A: Add for each subgroup a dummy activity (no teachers) split into 4 per week, duration 1, min days between activities 1, weight 0%, select consecutive if same day. FET will never put more than 2 of these dummy activities in a day. Add max gaps for students = 0 per week.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: (per Horatiu Halmajan) Els estudiants han de tenir «max. 4 espais per setmana», «max. 2 per dia», «hores buides juntes». Com resoldre això?
+
+A: Afegiu per a cada subgrup una activitat fictícia (sense professors) dividida en 4 per setmana, durada 1, mínim entre les activitats 1, i ponderació 0%, seleccioneu «consecutives en el mateix dia». FET mai no posarà més de 2 d&apos;aquestes activitats simulades en un dia. Afegiu un màxim de buits per a estudiants = 0 per setmana.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="687"/>
         <source>Advice: to treat gaps for students or teachers, if FET constraints are not enough, you can use dummy activities. For instance, if a students set can have maximum 3 gaps, add an activity split into 3 per week, with no teachers.</source>
-        <translation type="unfinished"></translation>
+        <translation>Consell: per a tractar buits dels estudiants o el professorat, si les restriccions de FET no són suficients, podeu fer servir activitats fictícies. Per exemple, si un grup pot tenir un màxim de 3 buits, afegiu una activitat dividida en 3 semanals, sense professorat.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="694"/>
@@ -38069,7 +38367,11 @@ A: Add for each subgroup a dummy activity (no teachers) split into 4 per week, d
 If A1 and A2 are constrained not to be in the same day with 95% weight or any other weight, it is a bad practice to add a constraint grouped or consecutive to them. If they are constrained with weight 100% not to be in the same day, the timetable is impossible; if the weight is under 100%, the timetable is more difficult to find than using the correct way.
 
 The correct way would probably be to consider A1 and A2 = a single activity A12&apos;, or to modify the related constraint min days between activities. Or maybe you can find other ways.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pregunta 1/16 d&apos;agost de 2009: Com afegir restriccions «dues activitats agrupades», «dues activitats consecutives» i «tres activitats agrupades» si les activitats es veuen obligades a no estar en el mateix dia per restriccions «mínim de dies entre les activitats»?
+
+Si A1 i A2 no poden coincidir en el mateix dia amb una ponderació del 95% o amb cap altre, és una mala pràctica afegir una restricció agrupada o consecutiva. Si es limiten amb la ponderació del 100% a no estar en el mateix dia, l&apos;horari és impossible; si el pes és inferior al 100%, l&apos;horari és més difícil de trobar que fent-ho correctament.
+
+Probablement, la manera correcta seria considerar A1 i A2 = una única activitat A12&apos;, o modificar els límits de restricció «min. de dies entre les activitats». O potser vostè pot trobar altres maneres.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="707"/>
@@ -38090,47 +38392,63 @@ Conclusion: if, for the ATS, the ratio &apos;tag duration&apos;/&apos;total dura
 So, it is a very bad idea to make all activities (of a teacher or students set) have an activity tag and add constraint teacher(s) or students (set) activity tag max hours daily. You should use in this case constraint teacher(s) or students (set) max hours daily.
 
 Probably, in practice this problem will not appear and you need not to worry. But theoretically it exists.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pregunta 1/25 de setembre de 2009: una observació sobre les restriccions a una etiqueta d&apos;activitat dels docents o dels estudiants (grups) «max. d&apos;hores diàries»:
+
+Aquesta restricció s&apos;aplica correctament i funciona bé, però no és perfecte, el que significa que, en casos inusuals i extrems, el temps necessari per generar un horari pot ser més llarg o molt més llarg del que realment és necessari. Heu de donar-li a FET una mà en aquestes situacions extremes.
+
+Notació: PCEA = professorat o conjunt d&apos;estudiants afectats, significa que els professors o els grups d&apos;estudiants afectats (inclosos) a aquesta restricció d&apos;etiqueta d&apos;activitat «màxim d&apos;hores diàries» (el problema no apareix per a professors o grups d&apos;estudiants que no es veuen afectats, que no tenen la restricció «hores màximes diàries» a l&apos;etiqueta d&apos;activitat).
+
+Per casos extrems, la generació d&apos;horaris pot ser més llarga o més llarga del que hauria de ser. Aquests casos es refereixen a situacions en què la durada total de les activitats amb l&apos;etiqueta d&apos;activitat especificada del PCEA és alta en comparació amb el nombre total d&apos;hores de totes les activitats del PCE, combinades amb altres condicions que teniu en les dades. Si la relació de la durada de les activitats amb aquesta etiqueta d&apos;activitat del PCEA sobre la durada total de les activitats del PCEA és superior a 0,50-0,75 o un valor normal (baix cost raonable) i s&apos;utilitzen restriccions per controlar els buits o per a l&apos;hora del PCEA i el nombre d&apos;hores per dia és superior a les possibles hores del PCE, la velocitat de generació pot ser més lenta o molt més lenta del que hauria de ser.
+
+En aquests casos, se us aconsella que utilitzeu les restriccions pels docents o estudiants (fixades) «hores màximes diàries» per als PCEA (sense etiqueta d&apos;activitat), o les restriccions «no disponibles» en espais que són clarament impossibles.
+
+Per exemple, si els estudiants tenen 20 hores d&apos;activitats amb l&apos;etiqueta d&apos;activitat AT i altres 4 hores d&apos;activitats sense etiqueta d&apos;activitat (tenen 24 hores en total, la relació és de 20/24 = 0,80), i les limita a 0 buits per setmana i 0 començaments a la segona hora i també el nombre d&apos;hores al dia és gran, per exemple 12. A continuació, afegiu una etiqueta d&apos;activitat pels estudiants de restricció màx. 4 hores al dia, sols, no serà suficient (el temps per generar un horari pot esser més llarg o més llarg del necessari). Una solució millor necessitarà que afegiu també una de restricció pels estudiants «màx. 5 hores diàries (si és possible)» i/o fer que les darrers hores no estiguin disponibles per als estudiants (és una manera de guiar FET a la solució) o trobar altres formes de compensar la situació.
+
+Conclusió: si, per a el PCEA, la relació «duració de l&apos;etiqueta»/«durada total» és superior a 0,50-0,75 i s&apos;utilitza, per al PCEA, les restriccions per als buits o les hores d&apos;inici i pel PCEA, el nombre de franges horàries disponibles per setmana és molt més alt que el nombre total d&apos;hores de treball del PCEA setmanal, potser haureu d&apos;abordar aquest problema (afegir restriccions al PCEA del tipus «màxim d&apos;hores diàries» o «no disponibles» o trobar alguna altra forma de guiar FET).
+
+Per tant, és una mala idea fer que totes les activitats (d&apos;un professor o un conjunt d&apos;estudiants) tinguin una etiqueta d&apos;activitat i afegiu una restricció al professorat o als estudiants del tipus «max. d&apos;hores diàries». En aquest cas, haureu d&apos;utilitzar una restricció «max. d&apos;hores diàries» pel professorat o estudiants.
+
+Probablement, a la pràctica, aquest problema no apareixerà i no haureu de preocupar-vos. Però, teòricament, pot passar.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="759"/>
         <source>Q: Why the constraints activity tag max hours daily and students max gaps per day are disabled in the FET menu?</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Per què les restriccions de etiquetes d&apos;activitats del tipus «max. d&apos;hores diàries» i «max. de buits diaris» de l&apos;alumnat estan deshabilitades en el menu de FET?</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="761"/>
         <source>A: These 6 constraints (4 for activity tag and 2 for students max gaps per day) are the only ones which are not perfectly optimized in FET. For some combinations of constraints, they may slow down the generation or even make the timetable impossible. That is why they are not enabled by default. You need to activate them from the advanced settings menu. It is recommended to add such constraints at the end of your work, after you added all the other constraints and verified that your timetable is possible.</source>
-        <translation type="unfinished"></translation>
+        <translation>R: Aquestes 6 restriccions (4 per a l&apos;«etiqueta d&apos;activitat» i 2 per a «max. de buits per dia» dels estudiants) són les úniques que no estan perfectament optimitzats a FET. Per a algunes combinacions de restriccions, poden frenar la generació o fins i tot fer impossible l&apos;horari. És per això que no estan habilitades per defecte. Cal activar-les des del menú de configuració avançada. Es recomana afegir aquestes restriccions al final del treball, després d&apos;haver afegit totes les restriccions restants i verificar que el vostre horari és possible.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="766"/>
         <source>If these constraints are disabled, they have an icon attached in the menu to signify that. If they are enabled, they have another icon attached to them, to signify that they are enabled, but must be used with caution.</source>
-        <translation type="unfinished"></translation>
+        <translation>Si aquestes restriccions estan desactivades, tenen un icone adjunt en el menu per a indicar-ho. Si estan activades, tenen un altra tipus d&apos;icone que ho indica, però cal fer-les sevir amb precaució.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="769"/>
         <source>Use these constraints with caution, not to obtain impossible timetables.</source>
-        <translation type="unfinished"></translation>
+        <translation>Feu servir aquestes restriccions amb molta cura, per a no fer impossible la generació d&apos;horaris.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="775"/>
         <source>Q: Why don&apos;t you implement the not perfect constraints (activity tag max hours daily and students max gaps per day) in a perfect way?</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Per què no implementar les restriccions no optimitzades («max. d&apos;hores diaries» per a etiquetes d&apos;activitats i «max. de buits diaris» per a grups) de la manera correcte?</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="777"/>
         <source>A: Activity tag max hours daily cannot be implemented perfectly, generation would take too much (because of complexity of checks). Students max gaps per day can be implemented perfectly, but it would change the algorithm for students a lot and I am afraid to change something that is working well. Very much testing would be needed, and I have not enough sample files. While changing the algorithm, it would be easy to make critical bugs and some files may not solve anymore.</source>
-        <translation type="unfinished"></translation>
+        <translation>R: l&apos;etiqueta d&apos;activitat «max. d&apos;hores diàries» no es pot implementar a la perfecció, la generació trigaria massa (a causa de la complexitat dels controls). La restricció «max. de buits per dia» dels estudiants es pot implementar a la perfecció, però canviaria molt l&apos;algoritme dels estudiants i cal ésser prudent en canviar alguna cosa que funciona bé. Es necessitaran moltes proves, i no tinc prou fitxers de mostra. Si canvies l&apos;algoritme, seria fàcil fer errors crítics i alguns fitxers poden no resoldre&apos;s més.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="788"/>
         <source>A: More users asked for shortcut buttons for the most commonly used functions. It is possible to show such buttons, if you select the corresponding option from the Settings-&gt;Interface menu (shortcuts are shown, by default).</source>
-        <translation type="unfinished"></translation>
+        <translation>R: Molts usuaris demanen tecles ràpides per a les funcions d&apos;ús freqüent. És possible activar-les seleccionant l&apos;opció corresponent en el menú Configuració-&gt;Interfície (les tecles ràpides es mostren per defecte).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="786"/>
         <source>Q: Help on shortcut buttons in the main form.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Ajuda sobre les tecles ràpides del formulari principal.</translation>
     </message>
 </context>
 <context>
@@ -38177,7 +38495,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="58"/>
         <source>An impossible timetable might also be caused by incorrect years division. Please check statistics/students for all subgroups, each subgroup should have the necessary hours, not less. If you have for instance some subgroups with less than say 20 hours per week you might get an impossible timetable, probably because of incorrect division of years and incorrectly added activities. All the subgroups are independent and should have an amount of working hours per week close to the average for all subgroups. Please see FAQ for more information.</source>
-        <translation>Un horari impossible també podrias ser causat per una divisió incorrecta dels cursos. Siusplau comprova estadístiques/alumnes per a tots els subgrups, cada subgrup hauria de tenir les hores necessàries, no menys. Si tens, per exemple alguns subgrups amb menys de posem 20 hores per setmana podries obtenir un horari impossible, probablement a causa de la divisió incorrecta de cursos i activitats incorrectament afegides. Tots els subgrups són independents i haurien de tenir una quantitat d&apos;hores laborables per setmana propera a la mitjana de tots els subgrups. Siusplau mira les PMF per obtenir més informació.</translation>
+        <translation>Un horari impossible també podrias ser causat per una divisió incorrecta dels cursos. Siusplau comprova estadístiques/estudiants per a tots els subgrups, cada subgrup hauria de tenir les hores necessàries, no menys. Si tens, per exemple alguns subgrups amb menys de posem 20 hores per setmana podries obtenir un horari impossible, probablement a causa de la divisió incorrecta de cursos i activitats incorrectament afegides. Tots els subgrups són independents i haurien de tenir una quantitat d&apos;hores laborables per setmana propera a la mitjana de tots els subgrups. Siusplau mira les PMF per obtenir més informació.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="64"/>
@@ -38207,7 +38525,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="122"/>
         <source>7) It is possible to work with institutions in which the students work in shifts (for instance, lowest forms in the morning and highest forms in the afternoon). Please see in the Help/Frequently Asked Questions the solution to how to do that (the essence is to add corresponding constraints students set not available).</source>
-        <translation>7) És possible treballar amb institucions en les quals els alumnes asisteixen per torns (p. ex. un de matí i l&apos;altra d&apos;horabaixa). Consultau la solució en l&apos;Ajuda/Preguntes més freqüents (en resum, consisteix en afegir restriccions corresponents a grups no disponibles).</translation>
+        <translation>7) És possible treballar amb institucions en les quals els estudiants assisteixen per torns (p. ex. un de matí i l&apos;altra d&apos;horabaixa). Consultau la solució en l&apos;Ajuda/Preguntes més freqüents (en resum, consisteix en afegir restriccions corresponents a grups no disponibles).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="134"/>
@@ -38217,12 +38535,12 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="148"/>
         <source>14) It is recommended to remove redundant min days between activities constraints after adding constraints same starting day or time (read Help/Important tips).</source>
-        <translation>14) Es recomana eliminar restriccions de número mínim de dies entre activitats redundants despŕes d&apos;agregar les restriccions de mateix dia o hora d&apos;inici (vegeu Ajuda/Consells importants).</translation>
+        <translation>14) Es recomana eliminar restriccions de número mínim de dies entre activitats redundants després d&apos;agregar les restriccions de mateix dia o hora d&apos;inici (vegeu Ajuda/Consells importants).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="151"/>
         <source>15) If you want for instance teachers (or students) not to have more than 2 times per week activities in the last hours, you have to use the constraint teacher(s) or students (set) hourly interval max days per week. Please read FAQ for more details.</source>
-        <translation>15) Si desitjau, per exempe, que el professorat (o alumnat) no tengui més de 2 vegades a la setmana activitats a les darreres hores, heu de fer servir la restricció d&apos;intervals horaris limitats setmanalment del professorat o de l&apos;alumnat (grups). Llegiu les PMF per a més detalls.</translation>
+        <translation>15) Si desitjau, per exemple, que el professorat (o alumnat) no tengui més de 2 vegades a la setmana activitats a les darreres hores, heu de fer servir la restricció d&apos;intervals horaris limitats setmanalment del professorat o de l&apos;alumnat (grups). Llegiu les PMF per a més detalls.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="155"/>
@@ -38242,12 +38560,12 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="99"/>
         <source>2) If you have a course lesson with say 4-5 activities per week, difficult lessons (Maths), which you would like to schedule in the beginning of the day (say 3 out of 4-5 need to be in the first half of the day), the best approach is to use constraint subactivities preferred time slots or starting times, specifying possibly the subject and component number: 1, 2 and maybe 3, adding 3 constraints for this subject (see FAQ for more details). You can also add constraints for component numbers 3, 4 and 5 for subject Maths (this way, if activity is split into 4 it will get 2 early, if it is split into 5 it will get 3 early - a nice trick). Similarly, if you have say Bio with 1 or 2 splits per week, you can add constraint with component number = 2.</source>
-        <translation>2) Si tenie alguna matèria amb, diguen-en, 4-5 activitats setmanals, matèries difícils (matemàtiques) que desitjau programar al principi de la jornada (diguem-ne que 3 de les 4-5, requereixen la primera hora del dia), el millot enfocament és usar restriccions de franges horàries o hores d&apos;inici preferides per a les subactivitats, possiblement indicant el número de components i matèria: 1, 2 o tal vegada 3, afegint 2 restriccions per a la matèria (veure PMF per a més detalls). També podeu agregar restriccions de nombre de components 3,4,i 5 per a matemàtiques (d&apos;aquesta manera, si l&apos;activitats es divideix en 4, 2 es col·locoran d&apos;hora, si està dividida en 5, 3 quederan d&apos;hora). De la mateixa manera, si teniu, per exemple, Bio amb intervals de 1 o 2 setmanals, podeu afegir una restricció amb nombre de component = 2.</translation>
+        <translation>2) Si teniu alguna matèria amb, diguen-ne, 4-5 activitats setmanals, matèries difícils (matemàtiques) que desitjau programar al principi de la jornada (diguem-ne que 3 de les 4-5, requereixen la primera hora del dia), el millor enfocament és usar restriccions de franges horàries o hores d&apos;inici preferides per a les subactivitats, possiblement indicant el número de components i matèria: 1, 2 o tal vegada 3, afegint 2 restriccions per a la matèria (veure PMF per a més detalls). També podeu agregar restriccions de nombre de components 3,4,i 5 per a matemàtiques (d&apos;aquesta manera, si l&apos;activitats es divideix en 4, 2 es col·locoran d&apos;hora, si està dividida en 5, 3 quederan d&apos;hora). De la mateixa manera, si teniu, per exemple, Bio amb intervals de 1 o 2 setmanals, podeu afegir una restricció amb nombre de component = 2.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="106"/>
         <source>3) From the way the algorithm is conceived, the automatic generation is faster if you use students set (or teacher) not available and/or constraint activity(ies) preferred time slots or preferred starting times to specify impossible slots, in addition to possible use of students (set) or teacher(s) max hours daily, whenever it is possible. For instance, if you know that year 5 will only have hours from 8:00 to 13:00, it is better to add students set not available in addition to students set max hours daily. So, if possible, try to follow this advice. This trick helps guide FET better towards a solution.</source>
-        <translation>3) La concepció de l&apos;algoritme de construcció, la generació automàtica és més ràpida si feu servir grups (o professorat) no disponilbles i/o restriccions de franges horàries preferides d&apos;activitat(s) o bé hora d&apos;inici preferida per a especificar franges horàries impossibles, a més de fer servir el màxim d&apos;hores diàries per a l&apos;alumnat (grups) o professorat, sempre que sigui possible. Per exemple, si sabeu que curs 5 només té classes de 8:00 a 13:00, es millor afegir grups no disponibles a més del màxim d&apos;hores diàries per a l&apos;alumnat. Si es possible, seguiu aquests consell. Aquest truc, ajuda a FET a aconseguir una solució millor.</translation>
+        <translation>3) Amb la concepció de l&apos;algoritme de construcció, la generació automàtica és més ràpida si feu servir grups (o professorat) no disponilbles i/o restriccions de franges horàries preferides d&apos;activitat(s) o bé hora d&apos;inici preferida per a especificar franges horàries impossibles, a més de fer servir el màxim d&apos;hores diàries per a l&apos;alumnat (grups) o professorat, sempre que sigui possible. Per exemple, si sabeu que curs 5 només té classes de 8:00 a 13:00, es millor afegir grups no disponibles a més del màxim d&apos;hores diàries per a l&apos;alumnat. Si es possible, seguiu aquests consell. Aquest truc, ajuda a FET a aconseguir una solució millor.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="112"/>
@@ -38257,17 +38575,17 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="114"/>
         <source>4) Constraint students (set) early: if you input only partial data, you might get impossible timetables (see FAQ for details).</source>
-        <translation>4) Restringir alumnes (grups) d&apos;hora: si afegiu només dades parcials, podeu obtenir horaris impossibles (vegue les PMF per a més detalls).</translation>
+        <translation>4) Restringir estudiants (grups) d&apos;hora: si afegiu només dades parcials, podeu obtenir horaris impossibles (vegue les PMF per a més detalls).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="116"/>
         <source>5) For teacher(s) gaps: please note that FET will take care of teacher(s) gaps only if you tell it so, by adding constraint teacher(s) max gaps per week. It is normal to add such constraint(s) after you saw that the data is solvable, using for max gaps a value which seems acceptable, lowering it as you find timetables.</source>
-        <translation>5) Per els espais buits del professorat, teniu present que FET els tractarà només fent-li saber, mitjançant les contriccions de màxim de buits setmanals. És normal afegir aquetes restriccions després de comprovar que és possible obtenir un horari, fent servir pel màxim de buits un valor que pareixi acceptable, i fent-lo més petit així com aneu obtenint nous horaris.</translation>
+        <translation>5) Per els espais buits del professorat, teniu present que FET els tractarà només fent-li saber, mitjançant les restriccions de màxim de buits setmanals. És normal afegir aquetes restriccions després de comprovar que és possible obtenir un horari, fent servir pel màxim de buits un valor que pareixi acceptable, i fent-lo més petit així com aneu obtenint nous horaris.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="120"/>
         <source>6) Rooms: You might firstly try to generate a timetable without rooms, to see if it is possible, then add rooms and rooms related constraints.</source>
-        <translation>6) Aules: primer, podeu generar un horari sense aules, per comporvar si és possible fer-ho i, a continuació, afegir-hi les aules i les restriccions relacionades amb les aules.</translation>
+        <translation>6) Aules: primer, podeu generar un horari sense aules, per comprovar si és possible fer-ho i, a continuació, afegir-hi les aules i les restriccions relacionades amb les aules.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="126"/>
@@ -38329,7 +38647,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="30"/>
         <source>The imperfect constraints are 6: students (set) max gaps per day and teacher(s) or students (set) activity tag max hours daily.</source>
-        <translation>Les restriccions imperfectes són 6: (conjunt d&apos;)alumnes max buits per dia i max hores diàries per etiqueta d&apos;activitat per professor(s) o (conjunt d&apos;)alumnes.</translation>
+        <translation>Les restriccions imperfectes són 6: (conjunt d&apos;)estudiants max buits per dia i max hores diàries per etiqueta d&apos;activitat per professor(s) o (conjunt d&apos;)estudiants.</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="34"/>
@@ -38339,17 +38657,17 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="39"/>
         <source>Notation: ATS = affected students set or teacher - the teacher or students specified in an imperfect constraint.</source>
-        <translation>Notació: ATS = conjunt d&apos;alumnes o professor afectats - el professor o alumnes especificats en una restricció imperfecta.</translation>
+        <translation>Notació: ATS = conjunt d&apos;estudiants o professor afectats - el professor o estudiants especificats en una restricció imperfecta.</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="43"/>
         <source>Max gaps per day: it is not fully optimized for use with other constraints for students: min/max hours daily. It is also not tested thoroughly.</source>
-        <translation>Max buits per dia: no està completament optimitzada per ser usada amb altres restriccions d&apos;alumnes: min/max hores diàries. Tampoc està provada completament.</translation>
+        <translation>Max buits per dia: no està completament optimitzada per ser usada amb altres restriccions d&apos;estudiants: min/max hores diàries. Tampoc està provada completament.</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="45"/>
         <source>If your students need 0 maximum total gaps, do not use max gaps per day constraint, better use the safe and tested max gaps per week (with 0 gaps allowed).</source>
-        <translation>Si els teus alumnes necessiten 0 max buits totals, no usis la restricció max buits per dia, millor usa la max buits per setmana (amb 0 buits permesos) que està comprovada i és segura).</translation>
+        <translation>Si els teus estudiants necessiten 0 max buits totals, no usis la restricció max buits per dia, millor usa la max buits per setmana (amb 0 buits permesos) que està comprovada i és segura).</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="49"/>
@@ -38372,22 +38690,22 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helponstudentsminhoursdaily.cpp" line="26"/>
         <source>Important information about constraints students (set) min hours daily:</source>
-        <translation>Informació important sobre les restriccions min hores diàries per (conjunt d&apos;) alumnes:</translation>
+        <translation>Informació important sobre les restriccions min hores diàries per (conjunt d&apos;) estudiants:</translation>
     </message>
     <message>
         <location filename="../src/interface/helponstudentsminhoursdaily.cpp" line="30"/>
         <source>Normally, these constraints do not allow empty days for students (and the check boxes in the dialogs are not selectable).</source>
-        <translation>Normalment, aquestes restriccions no permeten dies buits per als alumnes (i les caselles de verificació dels quadres de diàleg no són seleccionables).</translation>
+        <translation>Normalment, aquestes restriccions no permeten dies buits per als estudiants (i les caselles de verificació dels quadres de diàleg no són seleccionables).</translation>
     </message>
     <message>
         <location filename="../src/interface/helponstudentsminhoursdaily.cpp" line="32"/>
         <source>If you really need this constraint to allow empty days for students, you must enable the option from Settings-&gt;Advanced menu and select the check box.</source>
-        <translation>Si realment necessites aquesta restricció per permetre dies buits per als alumnes, has d&apos;habilitar l&apos;opció des del menú Configuració-&gt;Avançada i seleccionar la casella de verificació.</translation>
+        <translation>Si realment necessites aquesta restricció per permetre dies buits per als estudiants, has d&apos;habilitar l&apos;opció des del menú Configuració-&gt;Avançada i seleccionar la casella de verificació.</translation>
     </message>
     <message>
         <location filename="../src/interface/helponstudentsminhoursdaily.cpp" line="34"/>
         <source>Be very careful: if your school does not allow empty days for students or if a timetable does not exist with empty days for students, you MUST keep the constraints the usual way, without allowing empty days.</source>
-        <translation>Ves amb compte: si la teva escola no permet dies buits per als alumnes o si un horari no existeix amb dies buits per als alumnes, HAS de deixar les restriccions de la manera usual, sense permetre dies buits.</translation>
+        <translation>Ves amb compte: si la teva escola no permet dies buits per als estudiants o si un horari no existeix amb dies buits per als estudiants, HAS de deixar les restriccions de la manera usual, sense permetre dies buits.</translation>
     </message>
     <message>
         <location filename="../src/interface/helponstudentsminhoursdaily.cpp" line="37"/>
@@ -39464,7 +39782,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="2238"/>
         <source>FET can&apos;t import activities, because FET needs to know the structure of the students sets. You must add (or import) years, groups and subgroups first.</source>
-        <translation>FET no pot importar activitats, perquè FET necessita saber l&apos;estructura dels conjunts d&apos;alumnes. Has d&apos;afegir (o importar) cursos, grups i subgrups primer.</translation>
+        <translation>FET no pot importar activitats, perquè FET necessita saber l&apos;estructura dels conjunts d&apos;estudiants. Has d&apos;afegir (o importar) cursos, grups i subgrups primer.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="2240"/>
@@ -39487,12 +39805,12 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="118"/>
         <source>Students Sets</source>
-        <translation>Conjunts d&apos;Alumnes</translation>
+        <translation>Conjunts d&apos;Estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="119"/>
         <source>Teachers</source>
-        <translation>Professors</translation>
+        <translation>Professorat</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1082"/>
@@ -39502,17 +39820,17 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="107"/>
         <source>Number of Students per Year</source>
-        <translation>Nombre d&apos;Alumnes per Curs</translation>
+        <translation>Nombre d&apos;Estudiants per Curs</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="109"/>
         <source>Number of Students per Group</source>
-        <translation>Nombre d&apos;Alumnes per Grup</translation>
+        <translation>Nombre d&apos;Estudiants per Grup</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="111"/>
         <source>Number of Students per Subgroup</source>
-        <translation>Nombre d&apos;Alumnes per Subgrup</translation>
+        <translation>Nombre d&apos;Estudiants per Subgrup</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1029"/>
@@ -39709,7 +40027,7 @@ Siusplau atura la simulació abans</translation>
     <message>
         <location filename="../src/interface/modifyactivityform.cpp" line="485"/>
         <source>Do you really want to have the activity without student set(s)?</source>
-        <translation>Segur que vols tenir una activitat sense grup(s) d&apos;alumnes?</translation>
+        <translation>Segur que vols tenir una activitat sense grup(s) d&apos;estudiants?</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform.cpp" line="558"/>
@@ -39719,7 +40037,7 @@ Siusplau atura la simulació abans</translation>
     <message>
         <location filename="../src/interface/modifyactivityform.cpp" line="560"/>
         <source>&apos;Students&apos; (the text near the spin box), means &apos;Number of students (-1 for automatic)&apos;</source>
-        <translation>&apos;Alumnes&apos; (el text al costat de la casella giratòria), significa &apos;Nombre d&apos;alumnes (´1 per automàtic)&apos;</translation>
+        <translation>&apos;Estudiants&apos; (el text al costat de la casella giratòria), significa &apos;Nombre d&apos;estudiants (´1 per automàtic)&apos;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform.cpp" line="562"/>
@@ -39769,7 +40087,7 @@ Siusplau atura la simulació abans</translation>
         <location filename="../src/interface/modifyactivityform_template.ui" line="232"/>
         <source>Students</source>
         <comment>This refers to the number of students, but I want to keep the text short</comment>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="257"/>
@@ -40049,7 +40367,7 @@ Siusplau atura la simulació abans</translation>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="26"/>
         <source>Teachers</source>
-        <translation>Professors</translation>
+        <translation>Professorat</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="14"/>
@@ -40068,7 +40386,7 @@ Siusplau atura la simulació abans</translation>
         <location filename="../src/interface/modifyactivityform_template.ui" line="71"/>
         <source>Students</source>
         <comment>Refers to sets of students, but I want to keep text short</comment>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="201"/>
@@ -40180,12 +40498,12 @@ Siusplau atura la simulació abans</translation>
         <location filename="../src/interface/modifyconstraintactivitiesendstudentsdayform_template.ui" line="14"/>
         <source>Modify activities end students day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica activitats acaben dia dels alumnes</translation>
+        <translation>Modifica activitats acaben dia dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesendstudentsdayform_template.ui" line="52"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesendstudentsdayform_template.ui" line="65"/>
@@ -40249,7 +40567,7 @@ Siusplau atura la simulació abans</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="46"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="56"/>
@@ -40378,7 +40696,7 @@ Siusplau atura la simulació abans</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="52"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="62"/>
@@ -40415,7 +40733,7 @@ Siusplau atura la simulació abans</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="26"/>
         <source>This constraint means that the activities should not be placed in common timeslots. You don&apos;t need to add this constraint for activities sharing a teacher or students set.</source>
-        <translation>Aquesta restricció significa que les activitats no s&apos;haurien de posar en franges comunes. No cal afegir aquesta restricció per a les activitats que comparteixen un professor o un grup d&apos;alumnes.</translation>
+        <translation>Aquesta restricció significa que les activitats no s&apos;haurien de posar en franges comunes. No cal afegir aquesta restricció per a les activitats que comparteixen un professor o un grup d&apos;estudiants.</translation>
     </message>
 </context>
 <context>
@@ -40464,7 +40782,7 @@ Siusplau atura la simulació abans</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="46"/>
@@ -40559,7 +40877,7 @@ Siusplau atura la simulació abans</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="46"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="56"/>
@@ -40654,11 +40972,11 @@ Siusplau atura la simulació abans</translation>
  The best practice would be to use constraint break times.
 
  If you need weight under 100%, then you can use this constraint, but be careful not to obtain an impossible timetable (if your teachers/students are constrained on gaps or early gaps and if you leave a not allowed slot between 2 allowed slots or a not allowed slot early in the day and more allowed slots after it, this possible gap might be counted in teachers&apos; and students&apos; timetable)</source>
-        <translation>Has especificat totes les activitats. Això podria generar un petit problema: si especifiques una franja no permesa entre dues franges permeses, aquesta franja no permesa es comptarà com a buit en l&apos;horari del professorat i els alumnes.
+        <translation>Has especificat totes les activitats. Això podria generar un petit problema: si especifiques una franja no permesa entre dues franges permeses, aquesta franja no permesa es comptarà com a buit en l&apos;horari del professorat i els estudiants.
 
  El millor seria fer servir una restricció de pauses.
 
- Si necessites una ponderació per sota del 100%, pots usar aquesta restricció, però ves amb compte de no obtenir un horari impossible (si els teus professors/alumnes tenen restriccions de buits o de buits d&apos;hora i si deixes una franja no permesa entre 2 franges permeses, o una franja no permesa a primeres hores del dia i més franges permeses després d&apos;això, aquest possible buit es podria comptar en l&apos;horari del professorat i els alumnes)</translation>
+ Si necessites una ponderació per sota del 100%, pots usar aquesta restricció, però ves amb compte de no obtenir un horari impossible (si els teus professors/estudiants tenen restriccions de buits o de buits d&apos;hora i si deixes una franja no permesa entre 2 franges permeses, o una franja no permesa a primeres hores del dia i més franges permeses després d&apos;això, aquest possible buit es podria comptar en l&apos;horari del professorat i els estudiants)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="362"/>
@@ -40687,11 +41005,11 @@ Siusplau atura la simulació abans</translation>
  The best practice would be to use constraint students set not available times.
 
  If you need weight under 100%, then you can use this constraint, but be careful not to obtain an impossible timetable (if your students set is constrained on gaps or early gaps and if you leave a not allowed slot between 2 allowed slots (or a not allowed slot before allowed slots), this possible gap might be counted in students&apos; timetable)</source>
-        <translation>Només has especificat el conjunt d&apos;alumnes. Això podria suposar un petit problema: si especifiques una franja no permesa entre dues franges permeses (o una franja no permesa abans de franges permeses) , aquesta franja no permesa es comptarà com a buit (o buit d&apos;hora) en l&apos;horari dels alumnes.
+        <translation>Només has especificat el conjunt d&apos;estudiants. Això podria suposar un petit problema: si especifiques una franja no permesa entre dues franges permeses (o una franja no permesa abans de franges permeses) , aquesta franja no permesa es comptarà com a buit (o buit d&apos;hora) en l&apos;horari dels estudiants.
 
- El millor seria usar la restricció temps no disponibles per un conjunt d&apos;alumnes.
+ El millor seria usar la restricció temps no disponibles per un conjunt d&apos;estudiants.
 
- Si necessites un pes per sota del 100%, pots fer servir aquesta restricció, però vigila que no obtinguis un horari impossible (si el teu conjunt d&apos;alumnes té restriccions de buits o de buit d&apos;hora i si li deixes una franja no permesa entre dues franges permeses (o una franja no permesa abans de franges permeses), aquest possible buit podria ser comptat en l&apos;horari dels alumnes)</translation>
+ Si necessites un pes per sota del 100%, pots fer servir aquesta restricció, però vigila que no obtinguis un horari impossible (si el teu conjunt d&apos;estudiants té restriccions de buits o de buit d&apos;hora i si li deixes una franja no permesa entre dues franges permeses (o una franja no permesa abans de franges permeses), aquest possible buit podria ser comptat en l&apos;horari dels estudiants)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="418"/>
@@ -40714,7 +41032,7 @@ Siusplau atura la simulació abans</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform_template.ui" line="54"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform_template.ui" line="64"/>
@@ -40793,11 +41111,11 @@ Siusplau atura la simulació abans</translation>
  The best practice would be to use constraint break times.
 
  If you need weight under 100%, then you can use this constraint, but be careful not to obtain an impossible timetable (if your teachers/students are constrained on gaps or early gaps and if you leave a not allowed slot between 2 allowed slots or a not allowed slot early in the day and more allowed slots after it, this possible gap might be counted in teachers&apos; and students&apos; timetable)</source>
-        <translation>Has especificat totes les activitats. Això podria generar un petit problema: si especifiques una franja no permesa entre dues franges permeses, aquesta franja no permesa es comptarà com a buit en l&apos;horari del professorat i els alumnes.
+        <translation>Has especificat totes les activitats. Això podria generar un petit problema: si especifiques una franja no permesa entre dues franges permeses, aquesta franja no permesa es comptarà com a buit en l&apos;horari del professorat i els estudiants.
 
  El millor seria fer servir una restricció de pauses.
 
- Si necessites una ponderació per sota del 100%, pots usar aquesta restricció, però ves amb compte de no obtenir un horari impossible (si els teus professors/alumnes tenen restriccions de buits o de buits d&apos;hora i si deixes una franja no permesa entre 2 franges permeses, o una franja no permesa a primeres hores del dia i més franges permeses després d&apos;això, aquest possible buit es podria comptar en l&apos;horari del professorat i els alumnes)</translation>
+ Si necessites una ponderació per sota del 100%, pots usar aquesta restricció, però ves amb compte de no obtenir un horari impossible (si els teus professors/estudiants tenen restriccions de buits o de buits d&apos;hora i si deixes una franja no permesa entre 2 franges permeses, o una franja no permesa a primeres hores del dia i més franges permeses després d&apos;això, aquest possible buit es podria comptar en l&apos;horari del professorat i els estudiants)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="361"/>
@@ -40826,11 +41144,11 @@ Siusplau atura la simulació abans</translation>
  The best practice would be to use constraint students set not available times.
 
  If you need weight under 100%, then you can use this constraint, but be careful not to obtain an impossible timetable (if your students set is constrained on gaps or early gaps and if you leave a not allowed slot between 2 allowed slots (or a not allowed slot before allowed slots), this possible gap might be counted in students&apos; timetable)</source>
-        <translation>Només has especificat el conjunt d&apos;alumnes. Això podria suposar un petit problema: si especifiques una franja no permesa entre dues franges permeses (o una franja no permesa abans de franges permeses) , aquesta franja no permesa es comptarà com a buit (o buit d&apos;hora) en l&apos;horari dels alumnes.
+        <translation>Només has especificat el conjunt d&apos;estudiants. Això podria suposar un petit problema: si especifiques una franja no permesa entre dues franges permeses (o una franja no permesa abans de franges permeses) , aquesta franja no permesa es comptarà com a buit (o buit d&apos;hora) en l&apos;horari dels estudiants.
 
- El millor seria usar la restricció temps no disponibles per un conjunt d&apos;alumnes.
+ El millor seria usar la restricció temps no disponibles per un conjunt d&apos;estudiants.
 
- Si necessites un pes per sota del 100%, pots fer servir aquesta restricció, però vigila que no obtinguis un horari impossible (si el teu conjunt d&apos;alumnes té restriccions de buits o de buit d&apos;hora i si li deixes una franja no permesa entre dues franges permeses (o una franja no permesa abans de franges permeses), aquest possible buit podria ser comptat en l&apos;horari dels alumnes)</translation>
+ Si necessites un pes per sota del 100%, pots fer servir aquesta restricció, però vigila que no obtinguis un horari impossible (si el teu conjunt d&apos;estudiants té restriccions de buits o de buit d&apos;hora i si li deixes una franja no permesa entre dues franges permeses (o una franja no permesa abans de franges permeses), aquest possible buit podria ser comptat en l&apos;horari dels estudiants)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="417"/>
@@ -40853,7 +41171,7 @@ Siusplau atura la simulació abans</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform_template.ui" line="54"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform_template.ui" line="64"/>
@@ -40951,7 +41269,7 @@ Siusplau atura la simulació abans</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui" line="46"/>
@@ -41051,7 +41369,7 @@ Siusplau atura la simulació abans</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="46"/>
@@ -41147,7 +41465,7 @@ Siusplau atura la simulació abans</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform_template.ui" line="46"/>
@@ -41243,7 +41561,7 @@ Siusplau atura la simulació abans</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform_template.ui" line="46"/>
@@ -41309,7 +41627,7 @@ Siusplau atura la simulació abans</translation>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform_template.ui" line="14"/>
         <source>Modify activity ends students day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica activitat acaba dia dels alumnes</translation>
+        <translation>Modifica activitat acaba dia dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform_template.ui" line="20"/>
@@ -41319,7 +41637,7 @@ Siusplau atura la simulació abans</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform_template.ui" line="26"/>
@@ -41545,7 +41863,7 @@ Siusplau atura la simulació abans</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="26"/>
@@ -41686,7 +42004,7 @@ Siusplau atura la simulació abans</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform_template.ui" line="26"/>
@@ -41781,7 +42099,7 @@ Siusplau atura la simulació abans</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform_template.ui" line="26"/>
@@ -42092,7 +42410,7 @@ Siusplau atura la simulació abans</translation>
     <message>
         <location filename="../src/interface/modifyconstraintbreaktimesform_template.ui" line="26"/>
         <source>The important thing is that a break does not induce gaps for teachers or students</source>
-        <translation>El que és important és que un esbarjo no compta com a buit per als professors ni per als alumnes</translation>
+        <translation>El que és important és que un esbarjo no compta com a buit per als professors ni per als estudiants</translation>
     </message>
 </context>
 <context>
@@ -42156,7 +42474,7 @@ Siusplau atura la simulació abans</translation>
     <message>
         <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform_template.ui" line="46"/>
@@ -42279,7 +42597,7 @@ Siusplau atura la simulació abans</translation>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform_template.ui" line="46"/>
@@ -42404,7 +42722,7 @@ força-les consecutives</translation>
     <message>
         <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform_template.ui" line="46"/>
@@ -42548,7 +42866,7 @@ força-les consecutives</translation>
         <location filename="../src/interface/modifyconstraintstudentsactivitytagmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Modify students activity tag max hours continuously</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica max hores contínues per etiqueta d&apos;activitat d&apos;alumnes</translation>
+        <translation>Modifica max hores contínues per etiqueta d&apos;activitat d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsactivitytagmaxhourscontinuouslyform_template.ui" line="121"/>
@@ -42593,7 +42911,7 @@ força-les consecutives</translation>
         <location filename="../src/interface/modifyconstraintstudentsactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Modify students activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica max hores diàries per etiqueta d&apos;activitat d&apos;alumnes</translation>
+        <translation>Modifica max hores diàries per etiqueta d&apos;activitat d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsactivitytagmaxhoursdailyform_template.ui" line="28"/>
@@ -42668,19 +42986,19 @@ força-les consecutives</translation>
         <location filename="../src/interface/modifyconstraintstudentsearlymaxbeginningsatsecondhourform_template.ui" line="14"/>
         <source>Modify students early max beginnings at second hour</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica max inicis d&apos;hora a segona hora per tots els alumnes</translation>
+        <translation>Modifica max inicis d&apos;hora a segona hora per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsearlymaxbeginningsatsecondhourform_template.ui" line="70"/>
         <source>You have to use weight percentage 100%, because otherwise you will get poor timetables. Currently, the algorithm only accepts 100% weight percentage for this constraint (or no constraint).
 Note: students set not available and break are not counted as gaps (early gaps).</source>
         <translation>Has de fer servir ponderació del 100%, perquè sinó obtindràs horaris pobres. Actualment l&apos;algoritme només accepta pesos del 100% per aquesta restricció (o sense restricció).
-Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a buits (buits d&apos;hora).</translation>
+Nota: els no disponibles i els esbarjos no se&apos;ls compten als estudiants com a buits (buits d&apos;hora).</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsearlymaxbeginningsatsecondhourform_template.ui" line="32"/>
         <source>This represents the maximum allowed beginnings at the second available hour (in a week). You might want to allow your students to begin in some days later, at the second available hour, so you might put &quot;max beginnings at second hour&quot; greater than 0 (the timetable will be easier for FET). You might want to choose a greater value and lower it as you find new timetables</source>
-        <translation>Això representa el màxim permès d&apos;inicis a la 2a hora disponible (per setmana). Pots voler permetre que els teus alumnes comencin alguns dies més tard, a la 2a hora disponible, per tant pots posar &quot;max inicis a 2a&quot; més gran que 0 (l&apos;horari serà més fàcil per FET). Pots voler triar un valor més gran i reduir-lo conforme trobes nous horaris</translation>
+        <translation>Això representa el màxim permès d&apos;inicis a la 2a hora disponible (per setmana). Pots voler permetre que els teus estudiants comencin alguns dies més tard, a la 2a hora disponible, per tant pots posar &quot;max inicis a 2a&quot; més gran que 0 (l&apos;horari serà més fàcil per FET). Pots voler triar un valor més gran i reduir-lo conforme trobes nous horaris</translation>
     </message>
 </context>
 <context>
@@ -42731,7 +43049,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/modifyconstraintstudentsintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Modify students interval max days per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica max dies per setmana en un interval per tots els alumnes</translation>
+        <translation>Modifica max dies per setmana en un interval per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsintervalmaxdaysperweekform_template.ui" line="22"/>
@@ -42783,7 +43101,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/modifyconstraintstudentsmaxbuildingchangesperdayform_template.ui" line="14"/>
         <source>Modify students max building changes per day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica max canvis d&apos;edifici per dia per tots els alumnes</translation>
+        <translation>Modifica max canvis d&apos;edifici per dia per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxbuildingchangesperdayform_template.ui" line="50"/>
@@ -42827,7 +43145,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/modifyconstraintstudentsmaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Modify students max building changes per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica max canvis d&apos;edifici per setmana per tots els alumnes</translation>
+        <translation>Modifica max canvis d&apos;edifici per setmana per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxbuildingchangesperweekform_template.ui" line="28"/>
@@ -42875,7 +43193,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/modifyconstraintstudentsmaxdaysperweekform_template.ui" line="14"/>
         <source>Modify students max days per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica màxim de dies setmanals dels alumnes</translation>
+        <translation>Modifica màxim de dies setmanals dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxdaysperweekform_template.ui" line="28"/>
@@ -42923,7 +43241,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/modifyconstraintstudentsmaxgapsperdayform_template.ui" line="14"/>
         <source>Modify students max gaps per day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica max buits per dia per tots els alumnes</translation>
+        <translation>Modifica max buits per dia per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxgapsperdayform_template.ui" line="90"/>
@@ -42937,7 +43255,7 @@ Note: students set not available and break are not counted as gaps.
 
 IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this constraint, but instead use the safer/better max gaps per week.</source>
         <translation>Has de fer servir ponderació del 100%
-Nota: els no disponibles i les pauses dels conjunts d&apos;alumnes no es compten com a buits.
+Nota: els no disponibles i les pauses dels conjunts d&apos;estudiants no es compten com a buits.
 
 IMPORTANT: si vols un total de 0 buits es recomana NO fer servir aquesta restricció, sinó usar la de max buits per setmana, que és millor/més segura.</translation>
     </message>
@@ -42982,7 +43300,7 @@ IMPORTANT: si vols un total de 0 buits es recomana NO fer servir aquesta restric
         <location filename="../src/interface/modifyconstraintstudentsmaxgapsperweekform_template.ui" line="14"/>
         <source>Modify students max gaps per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica max buits per setmana per tots els alumnes</translation>
+        <translation>Modifica max buits per setmana per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxgapsperweekform_template.ui" line="105"/>
@@ -43009,7 +43327,7 @@ IMPORTANT: si vols un total de 0 buits es recomana NO fer servir aquesta restric
         <source>You have to use weight percentage 100%, because otherwise you will get poor timetables. Currently, the algorithm only accepts 100% weight percentage for this constraint (or no constraint).
 Note: students set not available and break are not counted as gaps.</source>
         <translation>Has de fer servir pes de percentatge 100%, perquè sinó obtindràs horaris pobres. Actualment l&apos;algoritme només accepta pesos del 100% per aquesta restricció (o sense restricció).
-Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a buits (buits d&apos;hora).</translation>
+Nota: els no disponibles i els esbarjos no se&apos;ls compten als estudiants com a buits (buits d&apos;hora).</translation>
     </message>
 </context>
 <context>
@@ -43031,7 +43349,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/modifyconstraintstudentsmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Modify students max hours continuously</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica max hores contínues dels alumnes</translation>
+        <translation>Modifica max hores contínues dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxhourscontinuouslyform_template.ui" line="56"/>
@@ -43085,7 +43403,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/modifyconstraintstudentsmaxhoursdailyform_template.ui" line="14"/>
         <source>Modify students max hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica max hores diàries per tots els alumnes</translation>
+        <translation>Modifica max hores diàries per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxhoursdailyform_template.ui" line="56"/>
@@ -43125,7 +43443,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/modifyconstraintstudentsmaxspanperdayform_template.ui" line="14"/>
         <source>Modify students max span per day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modificar la durada màxima diària dels alumnes</translation>
+        <translation>Modificar la durada màxima diària dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxspanperdayform_template.ui" line="44"/>
@@ -43167,7 +43485,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/modifyconstraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="14"/>
         <source>Modify students min gaps between building changes</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica mín buits entre canvis d&apos;edifici per tots els alumnes</translation>
+        <translation>Modifica mín buits entre canvis d&apos;edifici per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="28"/>
@@ -43228,7 +43546,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentsminhoursdailyform.cpp" line="79"/>
         <source>Empty days for students min hours daily constraints are not enabled. You must enable them from the Settings-&gt;Advanced menu.</source>
-        <translation>Les restriccions dies buits per tots els alumnes min hores diàries no està habilitada. L&apos;has d&apos;habilitar des del menu Configuració-&gt;Avançada.</translation>
+        <translation>Les restriccions dies buits per tots els estudiants min hores diàries no està habilitada. L&apos;has d&apos;habilitar des del menu Configuració-&gt;Avançada.</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsminhoursdailyform.cpp" line="84"/>
@@ -43239,7 +43557,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/modifyconstraintstudentsminhoursdailyform.cpp" line="110"/>
         <source>Advanced usage is not enabled. To be able to select &apos;Allow empty days&apos; for the constraints of type min hours daily for students, you must enable the option from the Settings-&gt;Advanced menu.</source>
         <comment>&apos;Allow empty days&apos; is an option which the user can enable and then he can select it.</comment>
-        <translation>L&apos;ús avançat no està habilitat. Per poder seleccionar &quot;Permet dies buits&quot; per les restriccions del tipus min hores diàries per tots els alumnes, has d&apos;habilitar l&apos;opció des del menú Configuració-&gt;Avançat.</translation>
+        <translation>L&apos;ús avançat no està habilitat. Per poder seleccionar &quot;Permet dies buits&quot; per les restriccions del tipus min hores diàries per tots els estudiants, has d&apos;habilitar l&apos;opció des del menú Configuració-&gt;Avançat.</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsminhoursdailyform.cpp" line="116"/>
@@ -43249,7 +43567,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentsminhoursdailyform.cpp" line="113"/>
         <source>Explanation: only select this option if your institution allows empty days for students and a timetable is possible with empty days for students. Otherwise, it is IMPERATIVE (for performance reasons) to not select this option (or FET may not be able to find a timetable).</source>
-        <translation>Explicació: només selecciona aquesta opció si la teva institució permet dies buits pels alumnes i si una solució amb dies buits és possible. En cas contrari, és IMPERATIU (per motius de rendiment) no seleccionar aquesta opció (o FET pot no trobar un horari).</translation>
+        <translation>Explicació: només selecciona aquesta opció si la teva institució permet dies buits pels estudiants i si una solució amb dies buits és possible. En cas contrari, és IMPERATIU (per motius de rendiment) no seleccionar aquesta opció (o FET pot no trobar un horari).</translation>
     </message>
 </context>
 <context>
@@ -43263,7 +43581,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/modifyconstraintstudentsminhoursdailyform_template.ui" line="14"/>
         <source>Modify students min hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica min hores diàries per tots els alumnes</translation>
+        <translation>Modifica min hores diàries per tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsminhoursdailyform_template.ui" line="62"/>
@@ -43311,7 +43629,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/modifyconstraintstudentsminrestinghoursform_template.ui" line="14"/>
         <source>Modify students min resting hours</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Canviar el mínim d&apos;hores de descans dels alumnes</translation>
+        <translation>Canviar el mínim d&apos;hores de descans dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsminrestinghoursform_template.ui" line="28"/>
@@ -43356,7 +43674,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="132"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="139"/>
@@ -43384,13 +43702,13 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="28"/>
         <source>Students</source>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Modify students set activity tag max hours continuously</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica max hores contínues per etiqueta d&apos;activitat de conjunt d&apos;alumnes</translation>
+        <translation>Modifica max hores contínues per etiqueta d&apos;activitat de conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="60"/>
@@ -43422,7 +43740,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="133"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="140"/>
@@ -43436,12 +43754,12 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Modify students set activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica max hores diàries per etiqueta d&apos;activitat de conjunt d&apos;alumnes</translation>
+        <translation>Modifica max hores diàries per etiqueta d&apos;activitat de conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="28"/>
         <source>Students</source>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="60"/>
@@ -43493,7 +43811,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="111"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
 </context>
 <context>
@@ -43506,13 +43824,13 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="122"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="14"/>
         <source>Modify students set early max beginnings at second hour</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica max inicis d&apos;hora a segona hora per conjunt d&apos;alumnes</translation>
+        <translation>Modifica max inicis d&apos;hora a segona hora per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="173"/>
@@ -43534,12 +43852,12 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <source>You have to use weight percentage 100%, because otherwise you will get poor timetables. Currently, the algorithm only accepts 100% weight percentage for this constraint (or no constraint).
 Note: students set not available and break are not counted as gaps (early gaps).</source>
         <translation>Has de fer servir ponderació del 100%, perquè sinó obtindràs horaris pobres. Actualment l&apos;algoritme només accepta pesos del 100% per aquesta restricció (o sense restricció).
-Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a buits (buits d&apos;hora).</translation>
+Nota: els no disponibles i els esbarjos no se&apos;ls compten als estudiants com a buits (buits d&apos;hora).</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="32"/>
         <source>This represents the maximum allowed beginnings at the second available hour (in a week). You might want to allow your students to begin in some days later, at the second available hour, so you might put &quot;max beginnings at second hour&quot; greater than 0 (the timetable will be easier for FET). You might want to choose a greater value and lower it as you find new timetables</source>
-        <translation>Això representa el màxim permès d&apos;inicis a la 2a hora disponible (per setmana). Pots voler permetre que els teus alumnes comencin alguns dies més tard, a la 2a hora disponible, per tant pots posar &quot;max inicis a 2a&quot; més gran que 0 (l&apos;horari serà més fàcil per FET). Pots voler triar un valor més gran i reduir-lo conforme trobes nous horaris</translation>
+        <translation>Això representa el màxim permès d&apos;inicis a la 2a hora disponible (per setmana). Pots voler permetre que els teus estudiants comencin alguns dies més tard, a la 2a hora disponible, per tant pots posar &quot;max inicis a 2a&quot; més gran que 0 (l&apos;horari serà més fàcil per FET). Pots voler triar un valor més gran i reduir-lo conforme trobes nous horaris</translation>
     </message>
 </context>
 <context>
@@ -43567,7 +43885,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/modifyconstraintstudentssethomeroomform_template.ui" line="14"/>
         <source>Modify students set home room</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica aula pròpia de conjunt d&apos;alumnes</translation>
+        <translation>Modifica aula pròpia de conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssethomeroomform_template.ui" line="20"/>
@@ -43592,7 +43910,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssethomeroomform_template.ui" line="98"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
 </context>
 <context>
@@ -43635,7 +43953,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/modifyconstraintstudentssethomeroomsform_template.ui" line="14"/>
         <source>Modify students set home rooms</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica aules pròpies de conjunt d&apos;alumnes</translation>
+        <translation>Modifica aules pròpies de conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssethomeroomsform_template.ui" line="41"/>
@@ -43645,7 +43963,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssethomeroomsform_template.ui" line="20"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssethomeroomsform_template.ui" line="64"/>
@@ -43689,7 +44007,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="140"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="148"/>
@@ -43713,7 +44031,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Modify students set interval max days per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica max dies per setmana en un interval per conjunt d&apos;alumnes</translation>
+        <translation>Modifica max dies per setmana en un interval per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform_template.ui" line="22"/>
@@ -43728,7 +44046,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform_template.ui" line="46"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform_template.ui" line="82"/>
@@ -43767,7 +44085,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="114"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
 </context>
 <context>
@@ -43776,12 +44094,12 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperdayform_template.ui" line="14"/>
         <source>Modify students set max building changes per day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica max canvis d&apos;edifici per dia per conjunt d&apos;alumnes</translation>
+        <translation>Modifica max canvis d&apos;edifici per dia per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperdayform_template.ui" line="28"/>
         <source>Students</source>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperdayform_template.ui" line="80"/>
@@ -43820,7 +44138,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="113"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
 </context>
 <context>
@@ -43829,12 +44147,12 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Modify students set max building changes per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica max canvis d&apos;edifici per setmana per conjunt d&apos;alumnes</translation>
+        <translation>Modifica max canvis d&apos;edifici per setmana per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperweekform_template.ui" line="28"/>
         <source>Students</source>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperweekform_template.ui" line="80"/>
@@ -43879,7 +44197,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxdaysperweekform.cpp" line="124"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
 </context>
 <context>
@@ -43888,12 +44206,12 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/modifyconstraintstudentssetmaxdaysperweekform_template.ui" line="14"/>
         <source>Modify students set max days per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica màxim de dies setmanals dels alumnes</translation>
+        <translation>Modifica màxim de dies setmanals dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxdaysperweekform_template.ui" line="28"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxdaysperweekform_template.ui" line="64"/>
@@ -43938,7 +44256,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperdayform.cpp" line="119"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
 </context>
 <context>
@@ -43947,7 +44265,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperdayform_template.ui" line="14"/>
         <source>Modify students set max gaps per day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica max buits per dia per conjunt d&apos;alumnes</translation>
+        <translation>Modifica max buits per dia per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperdayform_template.ui" line="32"/>
@@ -43956,7 +44274,7 @@ Note: students set not available and break are not counted as gaps.
 
 IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this constraint, but instead use the safer/better max gaps per week.</source>
         <translation>Has de fer servir ponderació del 100%
-Nota: els no disponibles i les pauses dels conjunts d&apos;alumnes no es compten com a buits.
+Nota: els no disponibles i les pauses dels conjunts d&apos;estudiants no es compten com a buits.
 
 IMPORTANT: si vols un total de 0 buits es recomana NO fer servir aquesta restricció, sinó usar la de max buits per setmana, que és millor/més segura.</translation>
     </message>
@@ -43973,7 +44291,7 @@ IMPORTANT: si vols un total de 0 buits es recomana NO fer servir aquesta restric
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperdayform_template.ui" line="69"/>
         <source>Students</source>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperdayform_template.ui" line="143"/>
@@ -44008,7 +44326,7 @@ IMPORTANT: si vols un total de 0 buits es recomana NO fer servir aquesta restric
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform.cpp" line="118"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
 </context>
 <context>
@@ -44027,7 +44345,7 @@ IMPORTANT: si vols un total de 0 buits es recomana NO fer servir aquesta restric
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform_template.ui" line="14"/>
         <source>Modify students set max gaps per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica max buits per setmana per conjunt d&apos;alumnes</translation>
+        <translation>Modifica max buits per setmana per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform_template.ui" line="124"/>
@@ -44042,14 +44360,14 @@ IMPORTANT: si vols un total de 0 buits es recomana NO fer servir aquesta restric
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform_template.ui" line="67"/>
         <source>Students</source>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform_template.ui" line="32"/>
         <source>You have to use weight percentage 100%, because otherwise you will get poor timetables. Currently, the algorithm only accepts 100% weight percentage for this constraint (or no constraint).
 Note: students set not available and break are not counted as gaps.</source>
         <translation>Has de fer servir pes de percentatge 100%, perquè sinó obtindràs horaris pobres. Actualment l&apos;algoritme només accepta pesos del 100% per aquesta restricció (o sense restricció).
-Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a buits (buits d&apos;hora).</translation>
+Nota: els no disponibles i els esbarjos no se&apos;ls compten als estudiants com a buits (buits d&apos;hora).</translation>
     </message>
 </context>
 <context>
@@ -44068,7 +44386,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxhourscontinuouslyform.cpp" line="113"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
 </context>
 <context>
@@ -44076,13 +44394,13 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxhourscontinuouslyform_template.ui" line="28"/>
         <source>Students</source>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Modify students set max hours continuously</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica max hores contínues per conjunt d&apos;alumnes</translation>
+        <translation>Modifica max hores contínues per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxhourscontinuouslyform_template.ui" line="118"/>
@@ -44123,7 +44441,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxhoursdailyform.cpp" line="113"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
 </context>
 <context>
@@ -44131,13 +44449,13 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxhoursdailyform_template.ui" line="28"/>
         <source>Students</source>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxhoursdailyform_template.ui" line="14"/>
         <source>Modify students set max hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica max hores diàries per conjunt d&apos;alumnes</translation>
+        <translation>Modifica max hores diàries per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxhoursdailyform_template.ui" line="155"/>
@@ -44184,7 +44502,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform.cpp" line="119"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
 </context>
 <context>
@@ -44193,7 +44511,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform_template.ui" line="14"/>
         <source>Modify students set max span per day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modificar la durada màxima diària dels alumnes</translation>
+        <translation>Modificar la durada màxima diària dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform_template.ui" line="22"/>
@@ -44213,7 +44531,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform_template.ui" line="79"/>
         <source>Students</source>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform_template.ui" line="115"/>
@@ -44237,7 +44555,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="113"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
 </context>
 <context>
@@ -44246,12 +44564,12 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/modifyconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="14"/>
         <source>Modify students set min gaps between building changes</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica mín buits entre canvis d&apos;edifici per conjunt d&apos;alumnes</translation>
+        <translation>Modifica mín buits entre canvis d&apos;edifici per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="28"/>
         <source>Students</source>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="80"/>
@@ -44313,7 +44631,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="124"/>
         <source>Empty days for students min hours daily constraints are not enabled. You must enable them from the Settings-&gt;Advanced menu.</source>
-        <translation>Les restriccions dies buits per tots els alumnes min hores diàries no està habilitada. L&apos;has d&apos;habilitar des del menu Configuració-&gt;Avançada.</translation>
+        <translation>Les restriccions dies buits per tots els estudiants min hores diàries no està habilitada. L&apos;has d&apos;habilitar des del menu Configuració-&gt;Avançada.</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="129"/>
@@ -44323,13 +44641,13 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="137"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="164"/>
         <source>Advanced usage is not enabled. To be able to select &apos;Allow empty days&apos; for the constraints of type min hours daily for students, you must enable the option from the Settings-&gt;Advanced menu.</source>
         <comment>&apos;Allow empty days&apos; is an option which the user can enable and then he can select it.</comment>
-        <translation>L&apos;ús avançat no està habilitat. Per poder seleccionar &quot;Permet dies buits&quot; per les restriccions del tipus min hores diàries per tots els alumnes, has d&apos;habilitar l&apos;opció des del menú Configuració-&gt;Avançat.</translation>
+        <translation>L&apos;ús avançat no està habilitat. Per poder seleccionar &quot;Permet dies buits&quot; per les restriccions del tipus min hores diàries per tots els estudiants, has d&apos;habilitar l&apos;opció des del menú Configuració-&gt;Avançat.</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="170"/>
@@ -44339,7 +44657,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="167"/>
         <source>Explanation: only select this option if your institution allows empty days for students and a timetable is possible with empty days for students. Otherwise, it is IMPERATIVE (for performance reasons) to not select this option (or FET may not be able to find a timetable).</source>
-        <translation>Explicació: només selecciona aquesta opció si la teva institució permet dies buits pels alumnes i si una solució amb dies buits és possible. En cas contrari, és IMPERATIU (per motius de rendiment) no seleccionar aquesta opció (o FET pot no trobar un horari).</translation>
+        <translation>Explicació: només selecciona aquesta opció si la teva institució permet dies buits pels estudiants i si una solució amb dies buits és possible. En cas contrari, és IMPERATIU (per motius de rendiment) no seleccionar aquesta opció (o FET pot no trobar un horari).</translation>
     </message>
 </context>
 <context>
@@ -44353,12 +44671,12 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform_template.ui" line="14"/>
         <source>Modify students set min hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica min hores diàries per conjunt d&apos;alumnes</translation>
+        <translation>Modifica min hores diàries per conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform_template.ui" line="33"/>
         <source>Students</source>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform_template.ui" line="57"/>
@@ -44403,7 +44721,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform.cpp" line="120"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
 </context>
 <context>
@@ -44442,7 +44760,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform_template.ui" line="113"/>
         <source>Students</source>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
 </context>
 <context>
@@ -44462,12 +44780,12 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform.cpp" line="257"/>
         <source>Invalid students set</source>
-        <translation>Conjunt d&apos;alumnes no vàlid</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform.cpp" line="266"/>
         <source>A constraint of this type exists for the same students set - cannot proceed</source>
-        <translation>Hi ha una altra restricció d&apos;aquest tipus pel mateix grup d&apos;alumnes - no es pot seguir</translation>
+        <translation>Hi ha una altra restricció d&apos;aquest tipus pel mateix grup d&apos;estudiants - no es pot seguir</translation>
     </message>
 </context>
 <context>
@@ -44475,7 +44793,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform_template.ui" line="76"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform_template.ui" line="96"/>
@@ -44514,13 +44832,13 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
         <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform_template.ui" line="14"/>
         <source>Modify students set not available times</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modifica hores no disponibles de conjunt d&apos;alumnes</translation>
+        <translation>Modifica hores no disponibles de conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform_template.ui" line="26"/>
         <source>This constraint does not induce gaps (or early not respected) for students. If a students set has lessons before and after this not available period, there will be no gaps counted</source>
         <extracomment>&apos;Early not respected&apos; means early gaps (first hour is free), in case you use a constraint students (set) early max beginnings at second hour</extracomment>
-        <translation>Aquesta restricció no genera buits (o buits d&apos;hora) pels alumnes. Si un grup d&apos;alumnes té classes abans i després d&apos;un període no disponible, els buits no es comptaran</translation>
+        <translation>Aquesta restricció no genera buits (o buits d&apos;hora) pels estudiants. Si un grup d&apos;estudiants té classes abans i després d&apos;un període no disponible, els buits no es comptaran</translation>
     </message>
 </context>
 <context>
@@ -44600,7 +44918,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredstartingtimesform_template.ui" line="91"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredstartingtimesform_template.ui" line="101"/>
@@ -44678,7 +44996,7 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als alumnes com a 
     <message>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredtimeslotsform_template.ui" line="91"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredtimeslotsform_template.ui" line="101"/>
@@ -47260,7 +47578,7 @@ Nota: els no disponibles i les pauses no se&apos;ls compten als professors com a
     <message>
         <location filename="../src/interface/modifygroupactivitiesininitialorderitemform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifygroupactivitiesininitialorderitemform_template.ui" line="46"/>
@@ -47399,7 +47717,7 @@ Nota: els no disponibles i les pauses no se&apos;ls compten als professors com a
         <location filename="../src/interface/modifystudentsgroupform_template.ui" line="14"/>
         <source>Modify students group</source>
         <extracomment>The dialog to modify a students group</extracomment>
-        <translation>Modifica grup d&apos;alumnes</translation>
+        <translation>Modifica grup d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsgroupform_template.ui" line="93"/>
@@ -47409,7 +47727,7 @@ Nota: els no disponibles i les pauses no se&apos;ls compten als professors com a
     <message>
         <location filename="../src/interface/modifystudentsgroupform_template.ui" line="66"/>
         <source>Number of students</source>
-        <translation>Nombre d&apos;alumnes</translation>
+        <translation>Nombre d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsgroupform_template.ui" line="100"/>
@@ -47446,7 +47764,7 @@ Nota: els no disponibles i les pauses no se&apos;ls compten als professors com a
     <message>
         <location filename="../src/interface/modifystudentssubgroupform_template.ui" line="81"/>
         <source>Number of students</source>
-        <translation>Nombre d&apos;alumnes</translation>
+        <translation>Nombre d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentssubgroupform_template.ui" line="64"/>
@@ -47457,7 +47775,7 @@ Nota: els no disponibles i les pauses no se&apos;ls compten als professors com a
         <location filename="../src/interface/modifystudentssubgroupform_template.ui" line="14"/>
         <source>Modify students subgroup</source>
         <extracomment>Title of the dialog to modify a students subgroup</extracomment>
-        <translation>Modifica subgrup d&apos;alumnes</translation>
+        <translation>Modifica subgrup d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentssubgroupform_template.ui" line="43"/>
@@ -47563,7 +47881,7 @@ Nota: els no disponibles i les pauses no se&apos;ls compten als professors com a
     <message>
         <location filename="../src/interface/modifystudentsyearform_template.ui" line="39"/>
         <source>Number of students</source>
-        <translation>Nombre d&apos;alumnes</translation>
+        <translation>Nombre d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsyearform_template.ui" line="22"/>
@@ -47574,7 +47892,7 @@ Nota: els no disponibles i les pauses no se&apos;ls compten als professors com a
         <location filename="../src/interface/modifystudentsyearform_template.ui" line="14"/>
         <source>Modify students year</source>
         <extracomment>Title of dialog to modify a students year</extracomment>
-        <translation>Modifica curs d&apos;alumnes</translation>
+        <translation>Modifica curs d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsyearform_template.ui" line="66"/>
@@ -47613,7 +47931,7 @@ Nota: els no disponibles i les pauses no se&apos;ls compten als professors com a
     <message>
         <location filename="../src/interface/modifysubactivityform.cpp" line="375"/>
         <source>Do you really want to have the subactivity without student set(s)?</source>
-        <translation>Segur que vols tenir una subactivitat sense conjunt(s) d&apos;alumnes?</translation>
+        <translation>Segur que vols tenir una subactivitat sense conjunt(s) d&apos;estudiants?</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform.cpp" line="435"/>
@@ -47623,7 +47941,7 @@ Nota: els no disponibles i les pauses no se&apos;ls compten als professors com a
     <message>
         <location filename="../src/interface/modifysubactivityform.cpp" line="437"/>
         <source>&apos;Students&apos; (the text near the spin box), means &apos;Number of students (-1 for automatic)&apos;</source>
-        <translation>&apos;Alumnes&apos; (el text al costat de la casella giratòria), significa &apos;Nombre d&apos;alumnes (´1 per automàtic)&apos;</translation>
+        <translation>&apos;Estudiants&apos; (el text al costat de la casella giratòria), significa &apos;Nombre d&apos;estudiants (´1 per automàtic)&apos;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform.cpp" line="443"/>
@@ -47651,7 +47969,7 @@ Nota: els no disponibles i les pauses no se&apos;ls compten als professors com a
     <message>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="29"/>
         <source>Teachers</source>
-        <translation>Professors</translation>
+        <translation>Professorat</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="59"/>
@@ -47664,7 +47982,7 @@ Nota: els no disponibles i les pauses no se&apos;ls compten als professors com a
         <location filename="../src/interface/modifysubactivityform_template.ui" line="74"/>
         <source>Students</source>
         <comment>This refers to sets of students, but I want to keep the string short</comment>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="207"/>
@@ -47696,7 +48014,7 @@ Nota: els no disponibles i les pauses no se&apos;ls compten als professors com a
         <location filename="../src/interface/modifysubactivityform_template.ui" line="236"/>
         <source>Students</source>
         <comment>This refers to the number of students, but I want to keep string short</comment>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="312"/>
@@ -49021,22 +49339,22 @@ Teniu en compte que la ponderació (%) predeterminada per a les restriccions del
     <message>
         <location filename="../src/engine/rules.cpp" line="6455"/>
         <source>File contains constraint students no gaps, which is old (it was improved in FET 5.5.0), and will be converted to the similar constraint of this type, constraint students max gaps per week, with max gaps=0. If you like, you can modify this constraint to allow more gaps per week (normally not accepted in schools)</source>
-        <translation>L&apos;arxiu té restriccions d&apos;alumnes sense buit que són obsoletes. S&apos;han millorat a partir de la versión 5.5.0 de FET. Seran reconvertides en les equivalents de màxim de buits setmanals per a l&apos;alumnat amb un màxim de 0 buits. Podeu modificar la restricció per a permetre més buits setmanals (tot i què no freqüent fer-ho)</translation>
+        <translation>L&apos;arxiu té restriccions d&apos;estudiants sense buit que són obsoletes. S&apos;han millorat a partir de la versión 5.5.0 de FET. Seran reconvertides en les equivalents de màxim de buits setmanals per a l&apos;alumnat amb un màxim de 0 buits. Podeu modificar la restricció per a permetre més buits setmanals (tot i què no freqüent fer-ho)</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="6469"/>
         <source>File contains constraint students set no gaps, which is old (it was improved in FET 5.5.0), and will be converted to the similar constraint of this type, constraint students set max gaps per week, with max gaps=0. If you like, you can modify this constraint to allow more gaps per week (normally not accepted in schools)</source>
-        <translation>L&apos;arxiu té restriccions d&apos;alumnes sense buit que són obsoletes. S&apos;han millorat a partir de la versión 5.5.0 de FET. Seran reconvertides en les equivalents de màxim de buits setmanals per a l&apos;alumnat amb un màxim de 0 buits. Podeu modificar la restricció per a permetre més buits setmanals (tot i què no freqüent fer-ho)</translation>
+        <translation>L&apos;arxiu té restriccions d&apos;estudiants sense buit que són obsoletes. S&apos;han millorat a partir de la versión 5.5.0 de FET. Seran reconvertides en les equivalents de màxim de buits setmanals per a l&apos;alumnat amb un màxim de 0 buits. Podeu modificar la restricció per a permetre més buits setmanals (tot i què no freqüent fer-ho)</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="6497"/>
         <source>File contains constraint students early, which is old (it was improved in FET 5.5.0), and will be converted to the similar constraint of this type, constraint students early max beginnings at second hour, with max beginnings=0. If you like, you can modify this constraint to allow more beginnings at second available hour (above 0 - this will make the timetable easier)</source>
-        <translation>L&apos;arxiu té restriccions d&apos;alumnes de començament de jornada a primera hora que són obsoletes (s&apos;ha millorat a partir de la versión 5.5.0 de FET) i seran reconvertides en les equivalents de començament a segona hora, amb un max. començament=0. Podeu modificar la restricció per a permetre començar al jornada a segona hora (posant el valor superior a 0 - això farà més fàcil la generació d&apos;horaris)</translation>
+        <translation>L&apos;arxiu té restriccions d&apos;estudiants de començament de jornada a primera hora que són obsoletes (s&apos;ha millorat a partir de la versión 5.5.0 de FET) i seran reconvertides en les equivalents de començament a segona hora, amb un max. començament=0. Podeu modificar la restricció per a permetre començar al jornada a segona hora (posant el valor superior a 0 - això farà més fàcil la generació d&apos;horaris)</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="6514"/>
         <source>File contains constraint students set early, which is old (it was improved in FET 5.5.0), and will be converted to the similar constraint of this type, constraint students set early max beginnings at second hour, with max beginnings=0. If you like, you can modify this constraint to allow more beginnings at second available hour (above 0 - this will make the timetable easier)</source>
-        <translation>L&apos;arxiu té restriccions d&apos;alumnes de començament de jornada a primera hora que són obsoletes (s&apos;ha millorat a partir de la versión 5.5.5 de FET) i seran reconvertides en les equivalents de començament a segona hora, amb un max. començament=0. Podeu modificar la restricció per a permetre començar al jornada a segona hora (posant el valor superior a 0 - això farà més fàcil la generació d&apos;horaris)</translation>
+        <translation>L&apos;arxiu té restriccions d&apos;estudiants de començament de jornada a primera hora que són obsoletes (s&apos;ha millorat a partir de la versión 5.5.5 de FET) i seran reconvertides en les equivalents de començament a segona hora, amb un max. començament=0. Podeu modificar la restricció per a permetre començar al jornada a segona hora (posant el valor superior a 0 - això farà més fàcil la generació d&apos;horaris)</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="6531"/>
@@ -49393,7 +49711,7 @@ sense afegir - deu ser un duplicat</translation>
         <location filename="../src/engine/rules.cpp" line="10553"/>
         <source>Found constraint students min hours daily with tag allow empty days which is not &apos;true&apos;, &apos;false&apos;, &apos;yes&apos;, &apos;no&apos;, &apos;1&apos; or &apos;0&apos;. The tag will be considered false</source>
         <comment>Instructions for translators: please leave the &apos;true&apos;, &apos;false&apos;, &apos;yes&apos; and &apos;no&apos; fields untranslated, as they are in English</comment>
-        <translation>S&apos;ha trobat una restricció min. d&apos;hores diàries per als alumnes amb l&apos;etiqueta permetre dies lliures sense cap dels valors &apos;true&apos;, &apos;false&apos;, &apos;yes&apos;, &apos;no&apos;, &apos;1&apos; o &apos;0&apos;. L&apos;etiqueta es considerarà «false»</translation>
+        <translation>S&apos;ha trobat una restricció min. d&apos;hores diàries per als estudiants amb l&apos;etiqueta permetre dies lliures sense cap dels valors &apos;true&apos;, &apos;false&apos;, &apos;yes&apos;, &apos;no&apos;, &apos;1&apos; o &apos;0&apos;. L&apos;etiqueta es considerarà «false»</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="10644"/>
@@ -49625,7 +49943,7 @@ sense afegir - deu ser un duplicat</translation>
 - style (or hide) line 1, line 2 and line 3 of the activity cells</source>
         <translation>Nivell 3 -  ss avançat
 - totes les característiques del nivell 2 amb fitxers més o menys el doble de grans que el nivell 2
-- donar estil (o amagar) totes les matèries, etiquetes d&apos;activitat, professors, conjunts d&apos;alumnes i aules
+- donar estil (o amagar) totes les matèries, etiquetes d&apos;activitat, professors, conjunts d&apos;estudiants i aules
 - donar estil (o amagar) les línies 1, 2 i 3 de les cel·les d&apos;activitats</translation>
     </message>
     <message>
@@ -49635,7 +49953,7 @@ sense afegir - deu ser un duplicat</translation>
 - style every single subject, activity tag, teacher, students set and room</source>
         <translation>Nivell 4 - css complet
 - totes les característiques del nivell 3 amb uns fitxers 2,5 vegades més grans que el nivell 2
-- dóna estil a totes les matèries, activitats, etiquetes d&apos;activitat, professors, conjunts d&apos;alumnes i aules</translation>
+- dóna estil a totes les matèries, activitats, etiquetes d&apos;activitat, professors, conjunts d&apos;estudiants i aules</translation>
     </message>
     <message>
         <location filename="../src/interface/settingstimetablehtmllevelform_template.ui" line="83"/>
@@ -49645,7 +49963,7 @@ sense afegir - deu ser un duplicat</translation>
 (needs JavaScript - just move mouse over a word and wait a little bit)</source>
         <translation>Nivell 5 - JavaScript
 - totes les característiques del nivell 4 amb uns fitxers unes 3,5 vegades més grans que el nivell 2
-- destacat de les matèries, etiquetes d&apos;activitat, professors, conjunts d&apos;alumnes i aules que són iguals
+- destacat de les matèries, etiquetes d&apos;activitat, professors, conjunts d&apos;estudiants i aules que són iguals
 (necessita JavaScript - només cal moure el ratolí sobre una paraula i esperar uns instants)</translation>
     </message>
     <message>
@@ -49656,7 +49974,7 @@ sense afegir - deu ser un duplicat</translation>
 (also useful to hide activities with special activity tags)</source>
         <translation>Nivell 6 - css sobrecarregat
 - totes les característiques del nivell 5 amb uns fitxers unes 5 vegades més grans que els del nivell 2
-- dóna estil a la cel·la de totes les matèries, etiquetes d&apos;activitat, professors o alumnes
+- dóna estil a la cel·la de totes les matèries, etiquetes d&apos;activitat, professors o estudiants
 (també útil per amagar les activitats que tenen una etiqueta d&apos;activitat especial)</translation>
     </message>
 </context>
@@ -49830,7 +50148,7 @@ sense afegir - deu ser un duplicat</translation>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="757"/>
         <source>You might first want to consider if dividing a year is necessary and on what options. Please remember that FET can handle activities with multiple teachers/students sets. If you have say students set 9a, which is split into 2 parts: English (teacher TE) and French (teacher TF), and language activities must be simultaneous, then you might not want to divide according to this category, but add more larger activities, with students set 9a and teachers TE+TF. The only drawback is that each activity can take place only in one room in FET, so you might need to find a way to overcome that.</source>
-        <translation>Considera primer si dividir un curs és necessari i amb quines opcions. Siusplau recorda que FET pot suportar activitats amb múltiples professors/conjunts d&apos;alumnes. Si tens per exemple el conjunt d&apos;alumnes 9a que es divideix en dues parts: Anglès (professor PA) i Francès (PF), i les activitats d&apos;idiomes han de ser simultànies, pots no voler dividir en aquesta categoria, sinó afegir activitats més grans, amb conjunt d&apos;alumnes 9a i professors PA+PF. L&apos;únic inconvenient és que cada activitat només pot tenir una aula al FET, així que pots necessitar una manera de superar això.</translation>
+        <translation>Considera primer si dividir un curs és necessari i amb quines opcions. Siusplau recorda que FET pot suportar activitats amb múltiples professors/conjunts d&apos;estudiants. Si tens per exemple el conjunt d&apos;estudiants 9a que es divideix en dues parts: Anglès (professor PA) i Francès (PF), i les activitats d&apos;idiomes han de ser simultànies, pots no voler dividir en aquesta categoria, sinó afegir activitats més grans, amb conjunt d&apos;estudiants 9a i professors PA+PF. L&apos;únic inconvenient és que cada activitat només pot tenir una aula al FET, així que pots necessitar una manera de superar això.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="765"/>
@@ -49865,7 +50183,7 @@ sense afegir - deu ser un duplicat</translation>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="823"/>
         <source>Maybe an alternative to dividing a year into many categories/subgroups would be to enter individual students as FET subgroups and add into each group the corresponding subgroups. But this is hard to do from the FET interface - maybe a solution would be to use an automatic tool to convert your institution data into a file in .fet format.</source>
-        <translation>Pot ésser una alternativa a dividir un any en moltes categories/subgrups és afegir els alumnes individualment com a subgrups FET i afegir, en cada grup, els grups corresponents. Però això és difícil de fer amb la interfície de FET - una possible solució és fer servir una eina automàtica per a convertir les seves dades en un arxiu en format .fet.</translation>
+        <translation>Pot ésser una alternativa a dividir un any en moltes categories/subgrups és afegir els estudiants individualment com a subgrups FET i afegir, en cada grup, els grups corresponents. Però això és difícil de fer amb la interfície de FET - una possible solució és fer servir una eina automàtica per a convertir les seves dades en un arxiu en format .fet.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="861"/>
@@ -49976,7 +50294,7 @@ sense afegir - deu ser un duplicat</translation>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="829"/>
         <source>In such cases (individual students as FET subgroups), remember that a smaller number of total subgroups means faster generation time, so you might want to consider a single subgroup for two or more students who have the exact same activities and constraints.</source>
-        <translation>En aquests casos (alumnes individuals com a subgrups FET), recordau que el número menor del total de subgrups suposa una generació d&apos;horaris més ràpida, per la qual cosa, és possible que desitjeu considerar un únic subgrup per a dos o més alumnes que tenen exactament les mateixes activitats i restriccions.</translation>
+        <translation>En aquests casos (estudiants individuals com a subgrups FET), recordau que el número menor del total de subgrups suposa una generació d&apos;horaris més ràpida, per la qual cosa, és possible que desitjeu considerar un únic subgrup per a dos o més estudiants que tenen exactament les mateixes activitats i restriccions.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="835"/>
@@ -50241,7 +50559,7 @@ sense afegir - deu ser un duplicat</translation>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="101"/>
         <source>You found a probable bug in FET - min 1 day should be selected automatically for all split activities. Please report error. FET will now abort current operation</source>
-        <translation>Has trobat un probable bug a FET - min 1 dia s&apos;hauria de seleccionar automàticament per totes les activitats dividides. Siusplau comunica l&apos;error. FET cancel·larà l&apos;actual operació</translation>
+        <translation>Has trobat un probable bug a FET - min 1 dia s&apos;hauria de seleccionar automàticament per totes les activitats dividides. Siusplau comunica l&apos;error. FET cancel·larà l&apos;operació actual</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="172"/>
@@ -50252,7 +50570,7 @@ Please report error. FET will now abort current operation</source>
         <translation>Has trobat un probable bug a FET - restricció %1
 restringeix l&apos;activitat no vàlida id %2
 
-Siusplau comunica l&apos;error. FET cancel·larà l&apos;actual operació</translation>
+Siusplau comunica l&apos;error. FET cancel·larà l&apos;operació actual</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="241"/>
@@ -50302,7 +50620,7 @@ Siusplau comunica l&apos;error. FET cancel·larà l&apos;actual operació</trans
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="408"/>
         <source>NOTE: If you are using constraints of type activities same starting time or activities same starting day, it is important (after current operation) to apply the operation of removing redundant constraints.</source>
-        <translation>NOTA: si estàs usant restriccions del tipus mateixa hora d&apos;inici o activitats comencen mateix dia, és important (després de l&apos;actual operació) que apliquis l&apos;operació de treure les restriccions redundants.</translation>
+        <translation>NOTA: si estàs usant restriccions del tipus mateixa hora d&apos;inici o activitats comencen mateix dia, és important (després de l&apos;operació actual) que apliquis l&apos;operació de treure les restriccions redundants.</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="410"/>
@@ -50573,13 +50891,13 @@ Siusplau comunica l&apos;error. FET cancel·larà l&apos;actual operació</trans
         <location filename="../src/engine/statisticsexport.cpp" line="554"/>
         <location filename="../src/engine/statisticsexport.cpp" line="559"/>
         <source>Teachers</source>
-        <translation>Professors</translation>
+        <translation>Professorat</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="554"/>
         <location filename="../src/engine/statisticsexport.cpp" line="565"/>
         <source>Students</source>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="554"/>
@@ -50600,7 +50918,7 @@ Siusplau comunica l&apos;error. FET cancel·larà l&apos;actual operació</trans
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="679"/>
         <source>Teachers - Subjects Matrix</source>
-        <translation>Professors - Matriu de matèries</translation>
+        <translation>Professorat - Matriu de matèries</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="702"/>
@@ -50616,7 +50934,7 @@ Siusplau comunica l&apos;error. FET cancel·larà l&apos;actual operació</trans
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="977"/>
         <source>Subjects - Teachers Matrix</source>
-        <translation>Matèries - Matriu de Professors</translation>
+        <translation>Matèries - Matriu de Professorat</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="1001"/>
@@ -50626,12 +50944,12 @@ Siusplau comunica l&apos;error. FET cancel·larà l&apos;actual operació</trans
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="1273"/>
         <source>Teachers - Students Matrix</source>
-        <translation>Professors - Matriu d&apos;Alumnes</translation>
+        <translation>Professorat - Matriu d&apos;Estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="1867"/>
         <source>Subjects - Students Matrix</source>
-        <translation>Matèries - Matriu d&apos;Alumnes</translation>
+        <translation>Matèries - Matriu d&apos;Estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="703"/>
@@ -50713,32 +51031,32 @@ Siusplau comunica l&apos;error. FET cancel·larà l&apos;actual operació</trans
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="1297"/>
         <source>Processing teachers with students...please wait</source>
-        <translation>Processant professors amb alumnes...siusplau espera</translation>
+        <translation>Processant professors amb estudiants...siusplau espera</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="1570"/>
         <source>Students - Teachers Matrix</source>
-        <translation>Alumnes - Matriu de professorat</translation>
+        <translation>Estudiants - Matriu de professorat</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="1594"/>
         <source>Processing students with teachers...please wait</source>
-        <translation>Processant alumnes amb professors...siusplau espera</translation>
+        <translation>Processant estudiants amb professors...siusplau espera</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="1891"/>
         <source>Processing subjects with students...please wait</source>
-        <translation>Processant matèries amb alumnes...siusplau espera</translation>
+        <translation>Processant matèries amb estudiants...siusplau espera</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="2163"/>
         <source>Students - Subjects Matrix</source>
-        <translation>Alumnes - Matrius de matèries</translation>
+        <translation>Estudiants - Matrius de matèries</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="2187"/>
         <source>Processing students with subjects...please wait</source>
-        <translation>Processant alumnes amb matèries...siusplau espera</translation>
+        <translation>Processant estudiants amb matèries...siusplau espera</translation>
     </message>
 </context>
 <context>
@@ -50768,12 +51086,12 @@ Siusplau comunica l&apos;error. FET cancel·larà l&apos;actual operació</trans
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="139"/>
         <source>students-subjects</source>
-        <translation>alumnes-matèries</translation>
+        <translation>estudiants-matèries</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="140"/>
         <source>students-teachers</source>
-        <translation>alumnes-professorat</translation>
+        <translation>estudiants-professorat</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="141"/>
@@ -50783,12 +51101,12 @@ Siusplau comunica l&apos;error. FET cancel·larà l&apos;actual operació</trans
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="142"/>
         <source>teachers-students</source>
-        <translation>professorat-alumnes</translation>
+        <translation>professorat-estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="143"/>
         <source>subjects-students</source>
-        <translation>matèries-alumnes</translation>
+        <translation>matèries-estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="144"/>
@@ -51155,7 +51473,7 @@ Inferior: %4</translation>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="210"/>
         <source>Students set - group</source>
-        <translation>Conjunt d&apos;alumnes - grup</translation>
+        <translation>Conjunt d&apos;estudiants - grup</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="212"/>
@@ -51165,7 +51483,7 @@ Inferior: %4</translation>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="214"/>
         <source>Number of students=%1</source>
-        <translation>Número d&apos;alumnes=%1</translation>
+        <translation>Número d&apos;estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="219"/>
@@ -51175,12 +51493,12 @@ Inferior: %4</translation>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="231"/>
         <source>Time constraints directly related to this students group:</source>
-        <translation>Restriccions de temps directament relacionades amb aquest grup d&apos;alumnes:</translation>
+        <translation>Restriccions de temps directament relacionades amb aquest grup d&apos;estudiants:</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="242"/>
         <source>Space constraints directly related to this students group:</source>
-        <translation>restriccions de lloc directament relacionades amb aquest grup d&apos;alumnes:</translation>
+        <translation>restriccions de lloc directament relacionades amb aquest grup d&apos;estudiants:</translation>
     </message>
 </context>
 <context>
@@ -51188,7 +51506,7 @@ Inferior: %4</translation>
     <message>
         <location filename="../src/interface/studentsstatisticsform.cpp" line="372"/>
         <source>Students set</source>
-        <translation>Conjunt d&apos;alumnes</translation>
+        <translation>Conjunt d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/studentsstatisticsform.cpp" line="373"/>
@@ -51262,7 +51580,7 @@ Inferior: %4</translation>
         <location filename="../src/interface/studentsstatisticsform_template.ui" line="14"/>
         <source>Students statistics</source>
         <extracomment>Title of dialog to see the students statistics</extracomment>
-        <translation>Estadístiques d&apos;alumnes</translation>
+        <translation>Estadístiques d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/studentsstatisticsform_template.ui" line="29"/>
@@ -51313,7 +51631,7 @@ Inferior: %4</translation>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="298"/>
         <source>Students set - subgroup</source>
-        <translation>Conjunt d&apos;alumnes - subgrup</translation>
+        <translation>Conjunt d&apos;estudiants - subgrup</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="300"/>
@@ -51323,7 +51641,7 @@ Inferior: %4</translation>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="302"/>
         <source>Number of students=%1</source>
-        <translation>Número d&apos;alumnes=%1</translation>
+        <translation>Número d&apos;estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="307"/>
@@ -51333,12 +51651,12 @@ Inferior: %4</translation>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="319"/>
         <source>Time constraints directly related to this students subgroup:</source>
-        <translation>Restriccions de temps directament relacionades amb aquest subgrup d&apos;alumnes:</translation>
+        <translation>Restriccions de temps directament relacionades amb aquest subgrup d&apos;estudiants:</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="330"/>
         <source>Space constraints directly related to this students subgroup:</source>
-        <translation>Restriccions de lloc directament relacionades amb aquest subgrup d&apos;alumnes:</translation>
+        <translation>Restriccions de lloc directament relacionades amb aquest subgrup d&apos;estudiants:</translation>
     </message>
 </context>
 <context>
@@ -51364,7 +51682,7 @@ Inferior: %4</translation>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="97"/>
         <source>Students set - year</source>
-        <translation>Conjunt d&apos;alumnes - curs</translation>
+        <translation>Conjunt d&apos;estudiants - curs</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="99"/>
@@ -51374,7 +51692,7 @@ Inferior: %4</translation>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="101"/>
         <source>Number of students=%1</source>
-        <translation>Número d&apos;alumnes=%1</translation>
+        <translation>Número d&apos;estudiants=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="106"/>
@@ -51384,12 +51702,12 @@ Inferior: %4</translation>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="118"/>
         <source>Time constraints directly related to this students year:</source>
-        <translation>Restriccions de temps directament relacionades amb aquest curs d&apos;alumnes:</translation>
+        <translation>Restriccions de temps directament relacionades amb aquest curs d&apos;estudiants:</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="129"/>
         <source>Space constraints directly related to this students year:</source>
-        <translation>Restriccions de lloc directament relacionades amb aquest curs d&apos;alumnes:</translation>
+        <translation>Restriccions de lloc directament relacionades amb aquest curs d&apos;estudiants:</translation>
     </message>
 </context>
 <context>
@@ -51436,7 +51754,7 @@ Inferior: %4</translation>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="408"/>
         <source>Explanation of the short description of an activity: first comes the id. If the activity is inactive, an X follows. Then the duration. Then, if the activity is split, a slash and the total duration. Then teachers, subject, activity tag (if it is not void) and students. Then the number of students (if specified).</source>
-        <translation>Explicació de la descripció curta d&apos;una activitat: primer ve la id. Si l&apos;activitat és inactiva, segueix una X. Llavors la durada. Després, si l&apos;activitat està auto dividida, una barra i la durada total. Llavors el professorat, matèria, etiqueta d&apos;activitat (si no està buida) i els alumnes. A continuació el nombre d&apos;alumnes (si s&apos;especifica).</translation>
+        <translation>Explicació de la descripció curta d&apos;una activitat: primer ve la id. Si l&apos;activitat és inactiva, segueix una X. Llavors la durada. Després, si l&apos;activitat està auto dividida, una barra i la durada total. Llavors el professorat, matèria, etiqueta d&apos;activitat (si no està buida) i els estudiants. A continuació el nombre d&apos;estudiants (si s&apos;especifica).</translation>
     </message>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="412"/>
@@ -51511,7 +51829,7 @@ Inferior: %4</translation>
         <location filename="../src/interface/subactivitiesform_template.ui" line="91"/>
         <source>Students</source>
         <comment>It refers to students sets, but I want to keep the string short</comment>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/subactivitiesform_template.ui" line="110"/>
@@ -51638,7 +51956,7 @@ Inferior: %4</translation>
     <message>
         <location filename="../src/interface/subgroupsform.cpp" line="582"/>
         <source>Students subgroup comments</source>
-        <translation>Comentaris del subgrup d&apos;alumnes</translation>
+        <translation>Comentaris del subgrup d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform.cpp" line="584"/>
@@ -51679,7 +51997,7 @@ Inferior: %4</translation>
         <location filename="../src/interface/subgroupsform_template.ui" line="14"/>
         <source>Subgroups of students</source>
         <extracomment>The name of the dialog which lists the subgroups of students</extracomment>
-        <translation>Subgrups d&apos;alumnes</translation>
+        <translation>Subgrups d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="33"/>
@@ -52257,7 +52575,7 @@ Inferior: %4</translation>
         <location filename="../src/interface/teachersform_template.ui" line="14"/>
         <source>Teachers</source>
         <extracomment>Title of dialog</extracomment>
-        <translation>Professors</translation>
+        <translation>Professorat</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform_template.ui" line="37"/>
@@ -52700,12 +53018,12 @@ Inferior: %4</translation>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2004"/>
         <source>students</source>
-        <translation>alumnes</translation>
+        <translation>estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2006"/>
         <source>students - disabled</source>
-        <translation>alumnes - desactivat</translation>
+        <translation>estudiants - desactivat</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2011"/>
@@ -53178,7 +53496,7 @@ Inferior: %4</translation>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10271"/>
         <source>All students</source>
-        <translation>Tots els alumnes</translation>
+        <translation>Tots els estudiants</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10353"/>
@@ -53512,7 +53830,7 @@ Inferior: %4</translation>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2132"/>
         <source>Teachers</source>
-        <translation>Professors</translation>
+        <translation>Professorat</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2176"/>
@@ -53921,7 +54239,7 @@ Inferior: %4</translation>
         <location filename="../src/interface/timetablegenerateform.cpp" line="259"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="412"/>
         <source>Please check constraints related to following possibly problematic activity (or teacher(s), or students set(s)):</source>
-        <translation>Siusplau comprova les restriccions relatives a les següents possibles activitats problemàtiques (o professor(s) o conjunt(s) d&apos;alumnes):</translation>
+        <translation>Siusplau comprova les restriccions relatives a les següents possibles activitats problemàtiques (o professor(s) o conjunt(s) d&apos;estudiants):</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="745"/>
@@ -54241,7 +54559,7 @@ Inferior: %4</translation>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="170"/>
         <source>Teachers</source>
-        <translation>Professors</translation>
+        <translation>Professorat</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="172"/>
@@ -54310,7 +54628,7 @@ Inferior: %4</translation>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="176"/>
         <source>Students Statistics</source>
-        <translation>Estadítiques Alumnes</translation>
+        <translation>Estadítiques Estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="177"/>
@@ -55377,7 +55695,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="100"/>
         <source>Students</source>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="107"/>
@@ -55387,7 +55705,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="114"/>
         <source>Teachers</source>
-        <translation>Professors</translation>
+        <translation>Professorat</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="132"/>
@@ -55451,13 +55769,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="510"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="632"/>
         <source>Timetable not available in view students timetable dialog - please generate a new timetable</source>
-        <translation>Horari no disponible en el quadre de diàleg de visualitza l&apos;horari dels alumnes - siusplau genera un horari nou</translation>
+        <translation>Horari no disponible en el quadre de diàleg de visualitza l&apos;horari dels estudiants - siusplau genera un horari nou</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="238"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="271"/>
         <source>Invalid year - please close this dialog and open a new students view timetable dialog</source>
-        <translation>Curs no vàlid - siusplau tanca aquest quadre de diàleg i obre&apos;n un altre de visualització d&apos;horari dels alumnes</translation>
+        <translation>Curs no vàlid - siusplau tanca aquest quadre de diàleg i obre&apos;n un altre de visualització d&apos;horari dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="279"/>
@@ -55467,13 +55785,13 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="281"/>
         <source>Solution: please try to select a different year and after that select the current year again, to refresh the groups list, or close this dialog and open again the students view timetable dialog</source>
-        <translation>Solució: siusplau intenta seleccionar un curs diferent i després torna a seleccionar el curs actual, per tal de refrescar la llista de grups, o bé tanca aquest quadre de diàleg i torna a obrir-ne un de visualitza horari dels alumnes</translation>
+        <translation>Solució: siusplau intenta seleccionar un curs diferent i després torna a seleccionar el curs actual, per tal de refrescar la llista de grups, o bé tanca aquest quadre de diàleg i torna a obrir-ne un de visualitza horari dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="311"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="504"/>
         <source>Timetable not available in view students timetable dialog - please generate a new timetable or close the timetable view students dialog</source>
-        <translation>Horari no disponible en el quadre de diàleg de visualitza l&apos;horari dels alumnes - siusplau genera un horari nou o tanca el quadre de diàleg de visualitza l&apos;horari dels alumnes</translation>
+        <translation>Horari no disponible en el quadre de diàleg de visualitza l&apos;horari dels estudiants - siusplau genera un horari nou o tanca el quadre de diàleg de visualitza l&apos;horari dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="318"/>
@@ -55485,13 +55803,13 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="340"/>
         <source>You have an old timetable view students dialog opened - please close it</source>
-        <translation>Tens obert un quadre de diàleg de visualitza alumnes d&apos;un horari antic - siusplau tanca&apos;l</translation>
+        <translation>Tens obert un quadre de diàleg de visualitza estudiants d&apos;un horari antic - siusplau tanca&apos;l</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="538"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="667"/>
         <source>Invalid students set - please close this dialog and open a new view students timetable dialog</source>
-        <translation>Conjunt d&apos;alumnes no vàlid - siusplau tanca aquest quadre de diàleg i obre&apos;n un altre de visualització d&apos;horari dels alumnes</translation>
+        <translation>Conjunt d&apos;estudiants no vàlid - siusplau tanca aquest quadre de diàleg i obre&apos;n un altre de visualització d&apos;horari dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="567"/>
@@ -55501,7 +55819,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="595"/>
         <source>Students subgroup is not available 100% in this slot</source>
-        <translation>Subgrup d&apos;alumnes no disponible al 100% en aquest espai de temps</translation>
+        <translation>Subgrup d&apos;estudiants no disponible al 100% en aquest espai de temps</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="599"/>
@@ -55624,7 +55942,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform_template.ui" line="14"/>
         <source>View students days horizontal timetable</source>
         <extracomment>Title of dialog</extracomment>
-        <translation>Veure horaris dels alumnes amb els dies en horitzontal</translation>
+        <translation>Veure horaris dels estudiants amb els dies en horitzontal</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform_template.ui" line="39"/>
@@ -55710,7 +56028,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="486"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="766"/>
         <source>Timetable not available in view students timetable dialog - please generate a new timetable or close the timetable view students dialog</source>
-        <translation>Horari no disponible en el quadre de diàleg de visualitza l&apos;horari dels alumnes - siusplau genera un horari nou o tanca el quadre de diàleg de visualitza l&apos;horari dels alumnes</translation>
+        <translation>Horari no disponible en el quadre de diàleg de visualitza l&apos;horari dels estudiants - siusplau genera un horari nou o tanca el quadre de diàleg de visualitza l&apos;horari dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="493"/>
@@ -55723,12 +56041,12 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="760"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="928"/>
         <source>Timetable not available in view students timetable dialog - please generate a new timetable</source>
-        <translation>Horari no disponible en el quadre de diàleg de visualitza l&apos;horari dels alumnes - siusplau genera un horari nou</translation>
+        <translation>Horari no disponible en el quadre de diàleg de visualitza l&apos;horari dels estudiants - siusplau genera un horari nou</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="792"/>
         <source>The students set is invalid - please close this dialog and open a new view students timetable</source>
-        <translation>Grup no vàlid - siusplau tanca aquest quadre de diàleg i obre&apos;n un altre de visualització d&apos;horari dels alumnes</translation>
+        <translation>Grup no vàlid - siusplau tanca aquest quadre de diàleg i obre&apos;n un altre de visualització d&apos;horari dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="861"/>
@@ -55738,7 +56056,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="890"/>
         <source>Students set is not available 100% in this slot</source>
-        <translation>Grup d&apos;alumnes no disponible al 100% en aquesta franja horària</translation>
+        <translation>Grup d&apos;estudiants no disponible al 100% en aquesta franja horària</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="894"/>
@@ -55864,7 +56182,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="14"/>
         <source>View students time horizontal timetable</source>
         <extracomment>Title of dialog to view the students timetable</extracomment>
-        <translation>Veure horaris dels alumnes amb els dies en horitzontal</translation>
+        <translation>Veure horaris dels estudiants amb els dies en horitzontal</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="39"/>
@@ -56388,7 +56706,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="100"/>
         <source>Students</source>
-        <translation>Alumnes</translation>
+        <translation>Estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="107"/>
@@ -56611,7 +56929,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/yearsform.cpp" line="317"/>
         <source>Students year comments</source>
-        <translation>Comentaris de l&apos;any dels alumnes</translation>
+        <translation>Comentaris de l&apos;any dels estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/yearsform.cpp" line="319"/>
@@ -56630,7 +56948,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/yearsform_template.ui" line="14"/>
         <source>Years (forms, classes) of students</source>
         <extracomment>Title of dialog</extracomment>
-        <translation>Cursos (nivells, anys) d&apos;alumnes</translation>
+        <translation>Cursos (nivells, anys) d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/yearsform_template.ui" line="37"/>
