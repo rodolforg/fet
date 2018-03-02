@@ -33,10 +33,11 @@ extern Matrix2D<bool> breakDayHour;
 extern Matrix3D<bool> teacherNotAvailableDayHour;
 
 //critical function here - must be optimized for speed
-Solution::Solution()
+Solution::Solution(const Rules &rules)
 	: conflictsTotal(0),
 	  teachersMatrixReady(false), subgroupsMatrixReady(false), roomsMatrixReady(false),
-	  nPlacedActivities(0), _fitness(-1)
+	  nPlacedActivities(0), _fitness(-1),
+	  rules(&rules)
 {
 	for(int i=0; i<MAX_ACTIVITIES; i++){
 		this->times[i]=UNALLOCATED_TIME;
@@ -49,7 +50,7 @@ void Solution::copy(const Rules &r, const Solution &c){
 
 	assert(r.internalStructureComputed);
 
-	for(int i=0; i<r.nInternalActivities; i++){
+	for(int i=0; i<MAX_ACTIVITIES; i++){
 		this->times[i] = c.times[i];
 		this->rooms[i]=c.rooms[i];
 	}
@@ -68,11 +69,11 @@ void Solution::copy(const Rules &r, const Solution &c){
 	nPlacedActivities=c.nPlacedActivities;
 }
 
-void Solution::makeUnallocated(const Rules &r){
-	assert(r.initialized);
-	assert(r.internalStructureComputed);
+void Solution::makeUnallocated(){
+	assert(rules->initialized);
+	assert(rules->internalStructureComputed);
 
-	for(int i=0; i<r.nInternalActivities; i++){
+	for(int i=0; i<rules->nInternalActivities; i++){
 		this->times[i]=UNALLOCATED_TIME;
 		this->rooms[i]=UNALLOCATED_SPACE;
 	}
@@ -83,6 +84,9 @@ void Solution::makeUnallocated(const Rules &r){
 void Solution::resetFitness()
 {
 	_fitness = -1;
+	teachersMatrixReady=false;
+	subgroupsMatrixReady=false;
+	roomsMatrixReady=false;
 }
 
 double Solution::fitness(const Rules &r, QString* conflictsString){
@@ -261,7 +265,7 @@ void Solution::getTeachersTimetable(const Rules &r, Matrix3D<int>& a, Matrix3D<Q
 				a[i][j][k]=UNALLOCATED_ACTIVITY;
 
 	const Activity *act;
-	for(i=0; i<r.nInternalActivities; i++) 
+	for(i=0; i<r.nInternalActivities; i++)
 		if(this->times[i]!=UNALLOCATED_TIME) {
 			act=&r.internalActivitiesList[i];
 			int hour=this->times[i]/r.nDaysPerWeek;

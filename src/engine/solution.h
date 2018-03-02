@@ -37,7 +37,7 @@ This class represents a solution (time and space allocation for the activities).
 class Solution{
 	friend class Generate;
 public:
-	Solution();
+	Solution(const Rules& rules);
 
 	QList<double> conflictsWeightList;
 	QList<QString> conflictsDescriptionList;
@@ -74,7 +74,7 @@ public:
 	Marks the starting time of all the activities as undefined
 	(all activities are unallocated).
 	*/
-	void makeUnallocated(const Rules& r);
+	void makeUnallocated();
 
 	/**
 	  Clean fitness cached value.
@@ -124,6 +124,7 @@ private:
 	otherwise the user has to reset this value to -1
 	*/
 	double _fitness;
+	const Rules *rules;
 };
 
 #endif

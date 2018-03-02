@@ -227,7 +227,7 @@ bool WRITE_TIMETABLES_ACTIVITY_TAGS=true;
 bool WRITE_TIMETABLES_ACTIVITIES=true;
 
 bool CachedSchedule::cached_schedule_ready = false;
-Solution CachedSchedule::cachedSolution;
+Solution CachedSchedule::cachedSolution(gt.rules);
 
 Matrix3D<int> CachedSchedule::teachers_timetable_weekly;
 Matrix3D<int> CachedSchedule::students_timetable_weekly;
@@ -250,6 +250,9 @@ void CachedSchedule::update(const Solution &solution) {
 	solution.getRoomsTimetable(gt.rules, rooms_timetable_weekly);
 
 	cachedSolution.copy(gt.rules, solution);
+	cachedSolution.roomsMatrixReady = false;
+	cachedSolution.subgroupsMatrixReady = false;
+	cachedSolution.teachersMatrixReady = false;
 
 	cached_schedule_ready=true;
 }

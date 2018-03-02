@@ -1585,7 +1585,7 @@ inline bool skipRandom(double weightPercentage)
 
 
 Generate::Generate(const Timetable &gt)
-	: abortOptimization(false), gt(gt)
+	: abortOptimization(false), gt(gt), highestStageSolution(gt.rules), c(gt.rules)
 {
 	difficultActivities.reserve(MAX_ACTIVITIES);
 	difficultActivities.resize(MAX_ACTIVITIES);
@@ -2590,7 +2590,7 @@ Generate::Status Generate::generate(int maxSeconds, bool threaded, QTextStream* 
 if(threaded){
 		myMutex.lock();
 }
-	c.makeUnallocated(gt.rules);
+	c.makeUnallocated();
 
 	difficultActivities.resize(0);
 	maxncallsrandomswap=-1;

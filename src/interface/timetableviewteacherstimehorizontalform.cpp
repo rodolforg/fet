@@ -506,6 +506,7 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 					item->setText(s);
 				}
 				item->setToolTip(s);
+				item->setData(Qt::UserRole, ai);
 
 				int columnSpan = ai!=UNALLOCATED_ACTIVITY? gt.rules.internalActivitiesList[ai].duration : 1;
 				if (columnSpan != teachersTimetableTable->columnSpan(t, tableColumnIdx))

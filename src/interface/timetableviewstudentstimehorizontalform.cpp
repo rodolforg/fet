@@ -69,6 +69,8 @@
 
 #include "timetableexport.h"
 
+#include "interface/timeshorizontalheaderview.h"
+
 extern bool simulation_running;
 
 //extern Matrix3D<bool> subgroupNotAvailableDayHour;
@@ -87,11 +89,14 @@ extern const int MINIMUM_HEIGHT_SPIN_BOX_VALUE;
 const int MINIMUM_WIDTH_SPIN_BOX_VALUE=9;
 const int MINIMUM_HEIGHT_SPIN_BOX_VALUE=9;
 
+#include <QDebug>
 
 TimetableViewStudentsTimeHorizontalForm::TimetableViewStudentsTimeHorizontalForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);
 	
+	studentsTimetableTable->setHorizontalHeader(new TimesHorizontalHeaderView(Qt::Horizontal));
+
 	closePushButton->setDefault(true);
 	
 	detailsTextEdit->setReadOnly(true);
@@ -390,6 +395,9 @@ TimetableViewStudentsTimeHorizontalForm::TimetableViewStudentsTimeHorizontalForm
 	connect(subjectsCheckBox, SIGNAL(toggled(bool)), this, SLOT(updateStudentsTimetableTable()));
 	connect(teachersCheckBox, SIGNAL(toggled(bool)), this, SLOT(updateStudentsTimetableTable()));
 	
+	studentsTimetableTable->setTimetableDirection(TIMES_HORIZONTAL);
+	studentsTimetableTable->setSolution(&gt.rules, CachedSchedule::getCachedSolution());
+	connect(studentsTimetableTable, SIGNAL(solution_changed()), &communicationSpinBox, SLOT(increaseValue()));
 	//added by Volker Dirr
 	connect(&communicationSpinBox, SIGNAL(valueChanged()), this, SLOT(updateStudentsTimetableTable()));
 	
@@ -637,6 +645,7 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 				else
 					item->setText(s);
 				item->setToolTip(s);
+				item->setData(Qt::UserRole, ai);
 
 				int columnSpan = ai!=UNALLOCATED_ACTIVITY? gt.rules.internalActivitiesList[ai].duration : 1;
 				if (columnSpan != studentsTimetableTable->columnSpan(t, tableColumnIdx))

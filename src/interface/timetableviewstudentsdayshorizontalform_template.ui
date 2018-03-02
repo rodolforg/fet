@@ -122,7 +122,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QTableWidget" name="studentsTimetableTable">
+         <widget class="EditableTimetableWidget" name="studentsTimetableTable">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
             <horstretch>0</horstretch>
@@ -162,6 +162,13 @@
   </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>EditableTimetableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>editabletimetablewidget.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

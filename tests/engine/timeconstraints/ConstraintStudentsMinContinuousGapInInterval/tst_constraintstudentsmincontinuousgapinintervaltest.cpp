@@ -168,7 +168,7 @@ void ConstraintStudentsMinContinuousGapInIntervalTest::OneStudentsSet_FitnessAcc
 
 	rules.computeInternalStructure(NULL);
 
-	Solution c;
+	Solution c(rules);
 	c.setTime(0, 1);
 
 	QList<double> cl;
@@ -187,7 +187,7 @@ void ConstraintStudentsMinContinuousGapInIntervalTest::AllStudents_FitnessAccept
 
 	rules.computeInternalStructure(NULL);
 
-	Solution c;
+	Solution c(rules);
 	c.setTime(0, 1);
 
 	QList<double> cl;
@@ -219,7 +219,7 @@ void ConstraintStudentsMinContinuousGapInIntervalTest::OneStudentsSet_CheckFitne
 
 	rules.computeInternalStructure(NULL);
 
-	Solution c;
+	Solution c(rules);
 
 	QList<double> cl;
 	QStringList dl;
@@ -304,7 +304,7 @@ void ConstraintStudentsMinContinuousGapInIntervalTest::OneStudentsGroup_CheckFit
 
 	rules.computeInternalStructure(NULL);
 
-	Solution c;
+	Solution c(rules);
 
 	QList<double> cl;
 	QStringList dl;
@@ -389,7 +389,7 @@ void ConstraintStudentsMinContinuousGapInIntervalTest::AllStudents_CheckFitness(
 
 	rules.computeInternalStructure(NULL);
 
-	Solution c;
+	Solution c(rules);
 
 	QList<double> cl;
 	QStringList dl;
@@ -475,7 +475,7 @@ void ConstraintStudentsMinContinuousGapInIntervalTest::OneStudentsSet_CheckFitne
 
 	rules.computeInternalStructure(NULL);
 
-	Solution c;
+	Solution c(rules);
 
 	QList<double> cl;
 	QStringList dl;
@@ -515,7 +515,7 @@ void ConstraintStudentsMinContinuousGapInIntervalTest::AllStudents_CheckFitness_
 
 	rules.computeInternalStructure(NULL);
 
-	Solution c;
+	Solution c(rules);
 
 	QList<double> cl;
 	QStringList dl;

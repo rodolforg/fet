@@ -188,6 +188,9 @@ TimetableViewStudentsDaysHorizontalForm::TimetableViewStudentsDaysHorizontalForm
 	if(yearsListWidget->count()>0)
 		yearsListWidget->setCurrentRow(0);
 
+	studentsTimetableTable->setSolution(&gt.rules, CachedSchedule::getCachedSolution());
+
+	connect(studentsTimetableTable, SIGNAL(solution_changed()), &communicationSpinBox, SLOT(increaseValue()));
 	//added by Volker Dirr
 	connect(&communicationSpinBox, SIGNAL(valueChanged()), this, SLOT(updateStudentsTimetableTable()));
 }
@@ -353,6 +356,8 @@ void TimetableViewStudentsDaysHorizontalForm::updateStudentsTimetableTable(){
 	for(int k=0; k<gt.rules.nDaysPerWeek && k<studentsTimetableTable->columnCount(); k++){
 		for(int j=0; j<gt.rules.nHoursPerDay && j<studentsTimetableTable->rowCount(); ){
 			int nextJ = j+1;
+			bool draggable = false;
+			bool droppable = true;
 
 			//begin by Marco Vassura
 			// add colors (start)
@@ -427,6 +432,7 @@ void TimetableViewStudentsDaysHorizontalForm::updateStudentsTimetableTable(){
 						nextJ++;
 				}
 			}
+			studentsTimetableTable->item(j, k)->setData(Qt::UserRole, ai);
 			studentsTimetableTable->item(j, k)->setText(s);
 
 			int rowspan = nextJ - j;

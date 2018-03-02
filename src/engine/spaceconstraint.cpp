@@ -3728,6 +3728,7 @@ double ConstraintStudentsSetMaxBuildingChangesPerDay::fitness(
 				
 				for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 					assert(h2+dur<r.nHoursPerDay);
+// Possible break while manually timetabling
 					assert(crtBuildingsTimetable[d2][h2+dur]==-1);
 					if(c.room(ai)!=UNSPECIFIED_ROOM && c.room(ai)!=UNALLOCATED_SPACE){
 						assert(c.room(ai)>=0 && c.room(ai)<r.nInternalRooms);
@@ -3955,6 +3956,7 @@ double ConstraintStudentsMaxBuildingChangesPerDay::fitness(
 				
 				for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 					assert(h2+dur<r.nHoursPerDay);
+// Possible crash while manually timetabling
 					assert(crtBuildingsTimetable[d2][h2+dur]==-1);
 					if(c.room(ai)!=UNSPECIFIED_ROOM && c.room(ai)!=UNALLOCATED_SPACE){
 						assert(c.room(ai)>=0 && c.room(ai)<r.nInternalRooms);
@@ -4236,6 +4238,7 @@ double ConstraintStudentsSetMaxBuildingChangesPerWeek::fitness(
 				
 				for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 					assert(h2+dur<r.nHoursPerDay);
+// Possible crash while manually timetabling
 					assert(crtBuildingsTimetable[d2][h2+dur]==-1);
 					if(c.room(ai)!=UNSPECIFIED_ROOM && c.room(ai)!=UNALLOCATED_SPACE){
 						assert(c.room(ai)>=0 && c.room(ai)<r.nInternalRooms);
@@ -4463,6 +4466,7 @@ double ConstraintStudentsMaxBuildingChangesPerWeek::fitness(
 				
 				for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 					assert(h2+dur<r.nHoursPerDay);
+// Possible crash while manually timetabling
 					assert(crtBuildingsTimetable[d2][h2+dur]==-1);
 					if(c.room(ai)!=UNSPECIFIED_ROOM && c.room(ai)!=UNALLOCATED_SPACE){
 						assert(c.room(ai)>=0 && c.room(ai)<r.nInternalRooms);
@@ -4743,6 +4747,7 @@ double ConstraintStudentsSetMinGapsBetweenBuildingChanges::fitness(
 				
 				for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 					assert(h2+dur<r.nHoursPerDay);
+// Possible crash while manually timetabling
 					assert(crtBuildingsTimetable[d2][h2+dur]==-1);
 					if(c.room(ai)!=UNSPECIFIED_ROOM && c.room(ai)!=UNALLOCATED_SPACE){
 						assert(c.room(ai)>=0 && c.room(ai)<r.nInternalRooms);
@@ -4982,6 +4987,7 @@ double ConstraintStudentsMinGapsBetweenBuildingChanges::fitness(
 				
 				for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 					assert(h2+dur<r.nHoursPerDay);
+					// Possible crash while manually timetabling
 					assert(crtBuildingsTimetable[d2][h2+dur]==-1);
 					if(c.room(ai)!=UNSPECIFIED_ROOM && c.room(ai)!=UNALLOCATED_SPACE){
 						assert(c.room(ai)>=0 && c.room(ai)<r.nInternalRooms);
@@ -5239,6 +5245,7 @@ double ConstraintTeacherMaxBuildingChangesPerDay::fitness(
 			
 			for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 				assert(h2+dur<r.nHoursPerDay);
+				// Possible crash while manually timetabling
 				assert(crtBuildingsTimetable[d2][h2+dur]==-1);
 				if(c.room(ai)!=UNSPECIFIED_ROOM && c.room(ai)!=UNALLOCATED_SPACE){
 					assert(c.room(ai)>=0 && c.room(ai)<r.nInternalRooms);
@@ -5466,6 +5473,7 @@ double ConstraintTeachersMaxBuildingChangesPerDay::fitness(
 				
 				for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 					assert(h2+dur<r.nHoursPerDay);
+					// Possible crash while manually timetabling
 					assert(crtBuildingsTimetable[d2][h2+dur]==-1);
 					if(c.room(ai)!=UNSPECIFIED_ROOM && c.room(ai)!=UNALLOCATED_SPACE){
 						assert(c.room(ai)>=0 && c.room(ai)<r.nInternalRooms);
@@ -5711,6 +5719,7 @@ double ConstraintTeacherMaxBuildingChangesPerWeek::fitness(
 			
 			for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 				assert(h2+dur<r.nHoursPerDay);
+// Possible crash while manually timetabling
 				assert(crtBuildingsTimetable[d2][h2+dur]==-1);
 				if(c.room(ai)!=UNSPECIFIED_ROOM && c.room(ai)!=UNALLOCATED_SPACE){
 					assert(c.room(ai)>=0 && c.room(ai)<r.nInternalRooms);
@@ -5938,6 +5947,7 @@ double ConstraintTeachersMaxBuildingChangesPerWeek::fitness(
 				
 				for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 					assert(h2+dur<r.nHoursPerDay);
+// Possible crash while manually timetabling
 					assert(crtBuildingsTimetable[d2][h2+dur]==-1);
 					if(c.room(ai)!=UNSPECIFIED_ROOM && c.room(ai)!=UNALLOCATED_SPACE){
 						assert(c.room(ai)>=0 && c.room(ai)<r.nInternalRooms);
@@ -6183,6 +6193,7 @@ double ConstraintTeacherMinGapsBetweenBuildingChanges::fitness(
 			
 			for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 				assert(h2+dur<r.nHoursPerDay);
+// Possible crash while manually timetabling
 				assert(crtBuildingsTimetable[d2][h2+dur]==-1);
 				if(c.room(ai)!=UNSPECIFIED_ROOM && c.room(ai)!=UNALLOCATED_SPACE){
 					assert(c.room(ai)>=0 && c.room(ai)<r.nInternalRooms);
@@ -6422,6 +6433,7 @@ double ConstraintTeachersMinGapsBetweenBuildingChanges::fitness(
 				
 				for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 					assert(h2+dur<r.nHoursPerDay);
+// Possible crash while manually timetabling
 					assert(crtBuildingsTimetable[d2][h2+dur]==-1);
 					if(c.room(ai)!=UNSPECIFIED_ROOM && c.room(ai)!=UNALLOCATED_SPACE){
 						assert(c.room(ai)>=0 && c.room(ai)<r.nInternalRooms);

@@ -19,7 +19,7 @@
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>
-     <widget class="QTableWidget" name="studentsTimetableTable"/>
+     <widget class="EditableTimetableWidget" name="studentsTimetableTable"/>
      <widget class="QSplitter" name="verticalSplitter">
       <property name="orientation">
        <enum>Qt::Vertical</enum>
@@ -186,6 +186,13 @@
   </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>EditableTimetableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>editabletimetablewidget.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

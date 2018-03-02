@@ -90,7 +90,9 @@ TimetableViewTeachersDaysHorizontalForm::TimetableViewTeachersDaysHorizontalForm
 	horizontalSplitter->setStretchFactor(1, 10);
 
 	teachersTimetableTable->setSelectionMode(QAbstractItemView::ExtendedSelection);
-	
+	teachersTimetableTable->setDragDropMode(QAbstractItemView::DragDrop);
+	teachersTimetableTable->setSolution(&gt.rules, CachedSchedule::getCachedSolution());
+
 	teachersListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
 
 	connect(closePushButton, SIGNAL(clicked()), this, SLOT(close()));
@@ -152,7 +154,7 @@ TimetableViewTeachersDaysHorizontalForm::TimetableViewTeachersDaysHorizontalForm
 		for(int k=0; k<gt.rules.nDaysPerWeek; k++){
 			QTableWidgetItem* item= new QTableWidgetItem();
 			item->setTextAlignment(Qt::AlignCenter);
-			item->setFlags(Qt::ItemIsSelectable|Qt::ItemIsEnabled);
+			item->setFlags(Qt::ItemIsSelectable|Qt::ItemIsEnabled|Qt::ItemIsDragEnabled|Qt::ItemIsDropEnabled);
 
 			teachersTimetableTable->setItem(j, k, item);
 			
@@ -187,6 +189,7 @@ TimetableViewTeachersDaysHorizontalForm::TimetableViewTeachersDaysHorizontalForm
 		teachersListWidget->setCurrentRow(0);
 
 	//added by Volker Dirr
+	connect(teachersTimetableTable, SIGNAL(solution_changed()), &communicationSpinBox, SLOT(increaseValue()));
 	connect(&communicationSpinBox, SIGNAL(valueChanged()), this, SLOT(updateTeachersTimetableTable()));
 }
 
@@ -226,7 +229,7 @@ void TimetableViewTeachersDaysHorizontalForm::teacherChanged(const QString &teac
 
 	updateTeachersTimetableTable();
 }
-
+#include "generate_pre.h"
 void TimetableViewTeachersDaysHorizontalForm::updateTeachersTimetableTable(){
 	if(!CachedSchedule::isValid()){
 		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view teachers timetable dialog - please generate a new timetable "
@@ -239,6 +242,9 @@ void TimetableViewTeachersDaysHorizontalForm::updateTeachersTimetableTable(){
 		return;
 	}
 
+	teachersTimetableTable->setSolution(&gt.rules, CachedSchedule::getCachedSolution());
+
+	computeNotAllowedTimesPercentages(this);
 	QString s;
 	QString teachername;
 
@@ -269,6 +275,8 @@ void TimetableViewTeachersDaysHorizontalForm::updateTeachersTimetableTable(){
 	for(int k=0; k<gt.rules.nDaysPerWeek && k<teachersTimetableTable->columnCount(); k++){
 		for(int j=0; j<gt.rules.nHoursPerDay && j<teachersTimetableTable->rowCount(); ){
 			int nextJ = j+1;
+			bool draggable = false;
+			bool droppable = true;
 
 			//begin by Marco Vassura
 			// add colors (start)
@@ -338,6 +346,8 @@ void TimetableViewTeachersDaysHorizontalForm::updateTeachersTimetableTable(){
 
 				while (nextJ < gt.rules.nHoursPerDay && ai == CachedSchedule::teachers_timetable_weekly[teacher][k][nextJ])
 					nextJ++;
+
+				draggable = true;
 			}
 			else{
 				if(teacherNotAvailableDayHour[teacher][k][j]) {
@@ -345,15 +355,25 @@ void TimetableViewTeachersDaysHorizontalForm::updateTeachersTimetableTable(){
 						s+="-x-";
 					while (nextJ < gt.rules.nHoursPerDay && teacherNotAvailableDayHour[teacher][k][nextJ])
 						nextJ++;
+
+					droppable = false;
 				}
 				else if(breakDayHour[k][j]) {
 					if (PRINT_BREAK_TIME_SLOTS)
 						s+="-X-";
 					while (nextJ < gt.rules.nHoursPerDay && breakDayHour[k][nextJ])
 						nextJ++;
+
+					droppable = false;
 				}
 			}
 			teachersTimetableTable->item(j, k)->setText(s);
+			teachersTimetableTable->item(j,k)->setData(Qt::UserRole, ai);
+
+			Qt::ItemFlags flags = Qt::ItemIsSelectable|Qt::ItemIsEnabled;
+			flags.setFlag(Qt::ItemIsDragEnabled, draggable);
+			flags.setFlag(Qt::ItemIsDropEnabled, droppable);
+			teachersTimetableTable->item(j, k)->setFlags(flags);
 
 			int rowspan = nextJ - j;
 			if (rowspan != teachersTimetableTable->rowSpan(j,k))

@@ -491,6 +491,7 @@ SOURCES += \
     interface/constraintstudentssetmincontinuousgapinintervalform.cpp \
     interface/constraintstudentsmincontinuousgapinintervalform.cpp \
 	interface/editcommentsform.cpp \
+	interface/editabletimetablewidget.cpp \
 	interface/timetabletimehorizontalitemdelegate.cpp \
 
 HEADERS += \
@@ -989,6 +990,7 @@ HEADERS += \
     interface/constraintstudentssetmincontinuousgapinintervalform.h \
     interface/constraintstudentsmincontinuousgapinintervalform.h \
 	interface/editcommentsform.h \
+	interface/editabletimetablewidget.h \
 	interface/timetabletimehorizontalitemdelegate.h \
 
 FORMS += \
@@ -1369,7 +1371,7 @@ TEMPLATE = app
 
 DEFINES += QT_DEPRECATED_WARNINGS
 
-CONFIG += release warn_on
+CONFIG += warn_on
 QT += network
 
 greaterThan(QT_MAJOR_VERSION, 4){

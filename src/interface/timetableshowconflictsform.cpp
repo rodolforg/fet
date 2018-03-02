@@ -25,6 +25,7 @@ extern Timetable gt;
 extern QString conflictsStringTitle;
 extern QString conflictsString;
 
+#include "timetableexport.h"
 TimetableShowConflictsForm::TimetableShowConflictsForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);
@@ -39,7 +40,7 @@ TimetableShowConflictsForm::TimetableShowConflictsForm(QWidget* parent): QDialog
 	restoreFETDialogGeometry(this);
 	
 	setWindowTitle(conflictsStringTitle);
-	conflictsTextEdit->setPlainText(conflictsString);
+	conflictsTextEdit->setPlainText(CachedSchedule::getCachedSolution().severeConflictList.join("\n") +"\n\n\n" + conflictsString);
 }
 
 TimetableShowConflictsForm::~TimetableShowConflictsForm()
