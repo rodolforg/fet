@@ -675,7 +675,7 @@ ErrorCode TimetableExport::writeRandomSeedFile(const QString& filename, bool bef
 
 	QFile file(s);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(s));
 	}
 	QTextStream tos(&file);
@@ -702,7 +702,7 @@ ErrorCode TimetableExport::writeRandomSeedFile(const QString& filename, bool bef
 	}
 	
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(s).arg(file.error()));
 	}
 	file.close();
@@ -711,7 +711,7 @@ ErrorCode TimetableExport::writeRandomSeedFile(const QString& filename, bool bef
 
 ErrorCode TimetableExport::writeTimetableDataFile(const QString& filename){
 	if(!CachedSchedule::isValid()){
-		return ErrorCode(ErrorCode::ERROR, tr("Timetable not generated - cannot save it - this should not happen (please report bug)"));
+		return ErrorCode(ErrorCode::Error, tr("Timetable not generated - cannot save it - this should not happen (please report bug)"));
 	}
 
 	const Solution* tc=&CachedSchedule::getCachedSolution();
@@ -720,12 +720,12 @@ ErrorCode TimetableExport::writeTimetableDataFile(const QString& filename){
 		//Activity* act=&gt.rules.internalActivitiesList[ai];
 		int time=tc->times[ai];
 		if(time==UNALLOCATED_TIME){
-			return ErrorCode(ErrorCode::ERROR, tr("Incomplete timetable - this should not happen - please report bug"));
+			return ErrorCode(ErrorCode::Error, tr("Incomplete timetable - this should not happen - please report bug"));
 		}
 		
 		int ri=tc->rooms[ai];
 		if(ri==UNALLOCATED_SPACE){
-			return ErrorCode(ErrorCode::ERROR, tr("Incomplete timetable - this should not happen - please report bug"));
+			return ErrorCode(ErrorCode::Error, tr("Incomplete timetable - this should not happen - please report bug"));
 		}
 	}
 	
@@ -893,7 +893,7 @@ ErrorCode TimetableExport::writeTimetableDataFile(const QString& filename){
 	rules2.groupActivitiesInInitialOrderList.clear();
 
 	if(erc){
-		return ErrorCode(ErrorCode::ERROR, tr("Could not save the data + timetable file on the hard disk - maybe hard disk is full"));
+		return ErrorCode(ErrorCode::Error, tr("Could not save the data + timetable file on the hard disk - maybe hard disk is full"));
 	}
 
 	return ErrorCode();
@@ -985,7 +985,7 @@ ErrorCode TimetableExport::writeReportForMultiple(const QString& description, bo
 
 	QFile file(filename);
 	if(!file.open(QIODevice::Append)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(filename));
 	}
 	QTextStream tos(&file);
@@ -997,7 +997,7 @@ ErrorCode TimetableExport::writeReportForMultiple(const QString& description, bo
 	tos<<description<<endl;
 	
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(filename).arg(file.error()));
 	}
 	file.close();
@@ -1050,7 +1050,7 @@ ErrorCode TimetableExport::writeConflictsTxt(const QString& filename, const QStr
 
 	QFile file(filename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(filename));
 	}
 	QTextStream tos(&file);
@@ -1090,7 +1090,7 @@ ErrorCode TimetableExport::writeConflictsTxt(const QString& filename, const QStr
 	}
 	
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(filename).arg(file.error()));
 	}
 	file.close();
@@ -1111,7 +1111,7 @@ ErrorCode TimetableExport::writeSubgroupsTimetableXml(const QString& xmlfilename
 	//Now we print the results to an XML file
 	QFile file(xmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(xmlfilename));
 	}
 	QTextStream tos(&file);
@@ -1158,7 +1158,7 @@ ErrorCode TimetableExport::writeSubgroupsTimetableXml(const QString& xmlfilename
 	tos << "</" << protect(STUDENTS_TIMETABLE_TAG) << ">\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(xmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -1179,7 +1179,7 @@ ErrorCode TimetableExport::writeTeachersTimetableXml(const QString& xmlfilename)
 	//Writing the timetable in xml format
 	QFile file(xmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(xmlfilename));
 	}
 	QTextStream tos(&file);
@@ -1223,7 +1223,7 @@ ErrorCode TimetableExport::writeTeachersTimetableXml(const QString& xmlfilename)
 	tos << "</" << protect(TEACHERS_TIMETABLE_TAG) << ">\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(xmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -1244,7 +1244,7 @@ ErrorCode TimetableExport::writeActivitiesTimetableXml(const QString& xmlfilenam
 	//Writing the timetable in xml format
 	QFile file(xmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(xmlfilename));
 	}
 	QTextStream tos(&file);
@@ -1287,7 +1287,7 @@ ErrorCode TimetableExport::writeActivitiesTimetableXml(const QString& xmlfilenam
 	tos << "</" << protect(ACTIVITIES_TIMETABLE_TAG) << ">\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(xmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -1304,7 +1304,7 @@ ErrorCode TimetableExport::writeIndexHtml(const QString& htmlfilename, const QSt
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -1623,7 +1623,7 @@ ErrorCode TimetableExport::writeIndexHtml(const QString& htmlfilename, const QSt
 	tos<<"  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -1656,7 +1656,7 @@ ErrorCode TimetableExport::writeStylesheetCss(const QString& cssfilename, const 
 	//Now we print the results to a CSS file
 	QFile file(cssfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(cssfilename));
 	}
 	QTextStream tos(&file);
@@ -1876,7 +1876,7 @@ ErrorCode TimetableExport::writeStylesheetCss(const QString& cssfilename, const 
 	tos<<"/* "<<TimetableExport::tr("End of file.")<<" */\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(cssfilename).arg(file.error()));
 	}
 	file.close();
@@ -1898,7 +1898,7 @@ ErrorCode TimetableExport::writeSubgroupsTimetableDaysHorizontalHtml(const QStri
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -1932,7 +1932,7 @@ ErrorCode TimetableExport::writeSubgroupsTimetableDaysHorizontalHtml(const QStri
 	tos<<"  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -1954,7 +1954,7 @@ ErrorCode TimetableExport::writeSubgroupsTimetableDaysVerticalHtml(const QString
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -1989,7 +1989,7 @@ ErrorCode TimetableExport::writeSubgroupsTimetableDaysVerticalHtml(const QString
 	tos<<"  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -2011,7 +2011,7 @@ ErrorCode TimetableExport::writeSubgroupsTimetableTimeVerticalHtml(const QString
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -2026,7 +2026,7 @@ ErrorCode TimetableExport::writeSubgroupsTimetableTimeVerticalHtml(const QString
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}	
 	file.close();
@@ -2048,7 +2048,7 @@ ErrorCode TimetableExport::writeSubgroupsTimetableTimeHorizontalHtml(const QStri
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -2063,7 +2063,7 @@ ErrorCode TimetableExport::writeSubgroupsTimetableTimeHorizontalHtml(const QStri
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -2085,7 +2085,7 @@ ErrorCode TimetableExport::writeSubgroupsTimetableTimeVerticalDailyHtml(const QS
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -2104,7 +2104,7 @@ ErrorCode TimetableExport::writeSubgroupsTimetableTimeVerticalDailyHtml(const QS
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}	
 	file.close();
@@ -2126,7 +2126,7 @@ ErrorCode TimetableExport::writeSubgroupsTimetableTimeHorizontalDailyHtml(const 
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -2144,7 +2144,7 @@ ErrorCode TimetableExport::writeSubgroupsTimetableTimeHorizontalDailyHtml(const 
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -2167,7 +2167,7 @@ ErrorCode TimetableExport::writeGroupsTimetableDaysHorizontalHtml(const QString&
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -2199,7 +2199,7 @@ ErrorCode TimetableExport::writeGroupsTimetableDaysHorizontalHtml(const QString&
 	tos<<"  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -2221,7 +2221,7 @@ ErrorCode TimetableExport::writeGroupsTimetableDaysVerticalHtml(const QString& h
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -2253,7 +2253,7 @@ ErrorCode TimetableExport::writeGroupsTimetableDaysVerticalHtml(const QString& h
 	tos<<"  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -2275,7 +2275,7 @@ ErrorCode TimetableExport::writeGroupsTimetableTimeVerticalHtml(const QString& h
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -2292,7 +2292,7 @@ ErrorCode TimetableExport::writeGroupsTimetableTimeVerticalHtml(const QString& h
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -2314,7 +2314,7 @@ ErrorCode TimetableExport::writeGroupsTimetableTimeHorizontalHtml(const QString&
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -2330,7 +2330,7 @@ ErrorCode TimetableExport::writeGroupsTimetableTimeHorizontalHtml(const QString&
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -2352,7 +2352,7 @@ ErrorCode TimetableExport::writeGroupsTimetableTimeVerticalDailyHtml(const QStri
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -2371,7 +2371,7 @@ ErrorCode TimetableExport::writeGroupsTimetableTimeVerticalDailyHtml(const QStri
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -2393,7 +2393,7 @@ ErrorCode TimetableExport::writeGroupsTimetableTimeHorizontalDailyHtml(const QSt
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -2412,7 +2412,7 @@ ErrorCode TimetableExport::writeGroupsTimetableTimeHorizontalDailyHtml(const QSt
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -2436,7 +2436,7 @@ ErrorCode TimetableExport::writeYearsTimetableDaysHorizontalHtml(const QString& 
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -2463,7 +2463,7 @@ ErrorCode TimetableExport::writeYearsTimetableDaysHorizontalHtml(const QString& 
 	tos<<"  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -2485,7 +2485,7 @@ ErrorCode TimetableExport::writeYearsTimetableDaysVerticalHtml(const QString& ht
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -2512,7 +2512,7 @@ ErrorCode TimetableExport::writeYearsTimetableDaysVerticalHtml(const QString& ht
 	tos<<"  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -2534,7 +2534,7 @@ ErrorCode TimetableExport::writeYearsTimetableTimeVerticalHtml(const QString& ht
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -2551,7 +2551,7 @@ ErrorCode TimetableExport::writeYearsTimetableTimeVerticalHtml(const QString& ht
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -2573,7 +2573,7 @@ ErrorCode TimetableExport::writeYearsTimetableTimeHorizontalHtml(const QString& 
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -2590,7 +2590,7 @@ ErrorCode TimetableExport::writeYearsTimetableTimeHorizontalHtml(const QString& 
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -2612,7 +2612,7 @@ ErrorCode TimetableExport::writeYearsTimetableTimeVerticalDailyHtml(const QStrin
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -2631,7 +2631,7 @@ ErrorCode TimetableExport::writeYearsTimetableTimeVerticalDailyHtml(const QStrin
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -2653,7 +2653,7 @@ ErrorCode TimetableExport::writeYearsTimetableTimeHorizontalDailyHtml(const QStr
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -2672,7 +2672,7 @@ ErrorCode TimetableExport::writeYearsTimetableTimeHorizontalDailyHtml(const QStr
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -2696,7 +2696,7 @@ ErrorCode TimetableExport::writeAllActivitiesTimetableDaysHorizontalHtml(const Q
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -2708,7 +2708,7 @@ ErrorCode TimetableExport::writeAllActivitiesTimetableDaysHorizontalHtml(const Q
 	tos<<"  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -2730,7 +2730,7 @@ ErrorCode TimetableExport::writeAllActivitiesTimetableDaysVerticalHtml(const QSt
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -2742,7 +2742,7 @@ ErrorCode TimetableExport::writeAllActivitiesTimetableDaysVerticalHtml(const QSt
 	tos<<"  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -2764,7 +2764,7 @@ ErrorCode TimetableExport::writeAllActivitiesTimetableTimeVerticalHtml(const QSt
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -2778,7 +2778,7 @@ ErrorCode TimetableExport::writeAllActivitiesTimetableTimeVerticalHtml(const QSt
 	tos<<"  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -2800,7 +2800,7 @@ ErrorCode TimetableExport::writeAllActivitiesTimetableTimeHorizontalHtml(const Q
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -2814,7 +2814,7 @@ ErrorCode TimetableExport::writeAllActivitiesTimetableTimeHorizontalHtml(const Q
 	tos<<"  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -2836,7 +2836,7 @@ ErrorCode TimetableExport::writeAllActivitiesTimetableTimeVerticalDailyHtml(cons
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -2853,7 +2853,7 @@ ErrorCode TimetableExport::writeAllActivitiesTimetableTimeVerticalDailyHtml(cons
 	tos<<"  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -2875,7 +2875,7 @@ ErrorCode TimetableExport::writeAllActivitiesTimetableTimeHorizontalDailyHtml(co
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -2894,7 +2894,7 @@ ErrorCode TimetableExport::writeAllActivitiesTimetableTimeHorizontalDailyHtml(co
 	tos<<"  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -2918,7 +2918,7 @@ ErrorCode TimetableExport::writeTeachersTimetableDaysHorizontalHtml(const QStrin
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -2943,7 +2943,7 @@ ErrorCode TimetableExport::writeTeachersTimetableDaysHorizontalHtml(const QStrin
 	tos<<"  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -2965,7 +2965,7 @@ ErrorCode TimetableExport::writeTeachersTimetableDaysVerticalHtml(const QString&
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -2989,7 +2989,7 @@ ErrorCode TimetableExport::writeTeachersTimetableDaysVerticalHtml(const QString&
 	tos<<"  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -3011,7 +3011,7 @@ ErrorCode TimetableExport::writeTeachersTimetableTimeVerticalHtml(const QString&
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -3024,7 +3024,7 @@ ErrorCode TimetableExport::writeTeachersTimetableTimeVerticalHtml(const QString&
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -3046,7 +3046,7 @@ ErrorCode TimetableExport::writeTeachersTimetableTimeHorizontalHtml(const QStrin
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -3059,7 +3059,7 @@ ErrorCode TimetableExport::writeTeachersTimetableTimeHorizontalHtml(const QStrin
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -3081,7 +3081,7 @@ ErrorCode TimetableExport::writeTeachersTimetableTimeVerticalDailyHtml(const QSt
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -3099,7 +3099,7 @@ ErrorCode TimetableExport::writeTeachersTimetableTimeVerticalDailyHtml(const QSt
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -3121,7 +3121,7 @@ ErrorCode TimetableExport::writeTeachersTimetableTimeHorizontalDailyHtml(const Q
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -3140,7 +3140,7 @@ ErrorCode TimetableExport::writeTeachersTimetableTimeHorizontalDailyHtml(const Q
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -3162,7 +3162,7 @@ ErrorCode TimetableExport::writeRoomsTimetableDaysHorizontalHtml(const QString& 
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -3190,7 +3190,7 @@ ErrorCode TimetableExport::writeRoomsTimetableDaysHorizontalHtml(const QString& 
 	tos<<"  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -3212,7 +3212,7 @@ ErrorCode TimetableExport::writeRoomsTimetableDaysVerticalHtml(const QString& ht
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -3240,7 +3240,7 @@ ErrorCode TimetableExport::writeRoomsTimetableDaysVerticalHtml(const QString& ht
 	tos<<"  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -3262,7 +3262,7 @@ ErrorCode TimetableExport::writeRoomsTimetableTimeVerticalHtml(const QString& ht
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -3280,7 +3280,7 @@ ErrorCode TimetableExport::writeRoomsTimetableTimeVerticalHtml(const QString& ht
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -3302,7 +3302,7 @@ ErrorCode TimetableExport::writeRoomsTimetableTimeHorizontalHtml(const QString& 
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -3321,7 +3321,7 @@ ErrorCode TimetableExport::writeRoomsTimetableTimeHorizontalHtml(const QString& 
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -3343,7 +3343,7 @@ ErrorCode TimetableExport::writeRoomsTimetableTimeVerticalDailyHtml(const QStrin
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -3366,7 +3366,7 @@ ErrorCode TimetableExport::writeRoomsTimetableTimeVerticalDailyHtml(const QStrin
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -3388,7 +3388,7 @@ ErrorCode TimetableExport::writeRoomsTimetableTimeHorizontalDailyHtml(const QStr
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -3412,7 +3412,7 @@ ErrorCode TimetableExport::writeRoomsTimetableTimeHorizontalDailyHtml(const QStr
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -3436,7 +3436,7 @@ ErrorCode TimetableExport::writeSubjectsTimetableDaysHorizontalHtml(const QStrin
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -3462,7 +3462,7 @@ ErrorCode TimetableExport::writeSubjectsTimetableDaysHorizontalHtml(const QStrin
 	tos<<"  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -3484,7 +3484,7 @@ ErrorCode TimetableExport::writeSubjectsTimetableDaysVerticalHtml(const QString&
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -3509,7 +3509,7 @@ ErrorCode TimetableExport::writeSubjectsTimetableDaysVerticalHtml(const QString&
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -3531,7 +3531,7 @@ ErrorCode TimetableExport::writeSubjectsTimetableTimeVerticalHtml(const QString&
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -3545,7 +3545,7 @@ ErrorCode TimetableExport::writeSubjectsTimetableTimeVerticalHtml(const QString&
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -3567,7 +3567,7 @@ ErrorCode TimetableExport::writeSubjectsTimetableTimeHorizontalHtml(const QStrin
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -3582,7 +3582,7 @@ ErrorCode TimetableExport::writeSubjectsTimetableTimeHorizontalHtml(const QStrin
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -3604,7 +3604,7 @@ ErrorCode TimetableExport::writeSubjectsTimetableTimeVerticalDailyHtml(const QSt
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -3624,7 +3624,7 @@ ErrorCode TimetableExport::writeSubjectsTimetableTimeVerticalDailyHtml(const QSt
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -3646,7 +3646,7 @@ ErrorCode TimetableExport::writeSubjectsTimetableTimeHorizontalDailyHtml(const Q
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -3665,7 +3665,7 @@ ErrorCode TimetableExport::writeSubjectsTimetableTimeHorizontalDailyHtml(const Q
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -3689,7 +3689,7 @@ ErrorCode TimetableExport::writeActivityTagsTimetableDaysHorizontalHtml(const QS
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -3719,7 +3719,7 @@ ErrorCode TimetableExport::writeActivityTagsTimetableDaysHorizontalHtml(const QS
 	tos<<"  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -3741,7 +3741,7 @@ ErrorCode TimetableExport::writeActivityTagsTimetableDaysVerticalHtml(const QStr
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -3770,7 +3770,7 @@ ErrorCode TimetableExport::writeActivityTagsTimetableDaysVerticalHtml(const QStr
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -3792,7 +3792,7 @@ ErrorCode TimetableExport::writeActivityTagsTimetableTimeVerticalHtml(const QStr
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -3806,7 +3806,7 @@ ErrorCode TimetableExport::writeActivityTagsTimetableTimeVerticalHtml(const QStr
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -3828,7 +3828,7 @@ ErrorCode TimetableExport::writeActivityTagsTimetableTimeHorizontalHtml(const QS
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -3843,7 +3843,7 @@ ErrorCode TimetableExport::writeActivityTagsTimetableTimeHorizontalHtml(const QS
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -3865,7 +3865,7 @@ ErrorCode TimetableExport::writeActivityTagsTimetableTimeVerticalDailyHtml(const
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -3885,7 +3885,7 @@ ErrorCode TimetableExport::writeActivityTagsTimetableTimeVerticalDailyHtml(const
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -3907,7 +3907,7 @@ ErrorCode TimetableExport::writeActivityTagsTimetableTimeHorizontalDailyHtml(con
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -3926,7 +3926,7 @@ ErrorCode TimetableExport::writeActivityTagsTimetableTimeHorizontalDailyHtml(con
 	tos << "  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -3948,7 +3948,7 @@ ErrorCode TimetableExport::writeTeachersFreePeriodsTimetableDaysHorizontalHtml(c
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -3974,7 +3974,7 @@ ErrorCode TimetableExport::writeTeachersFreePeriodsTimetableDaysHorizontalHtml(c
 	tos<<"  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -3996,7 +3996,7 @@ ErrorCode TimetableExport::writeTeachersFreePeriodsTimetableDaysVerticalHtml(con
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -4022,7 +4022,7 @@ ErrorCode TimetableExport::writeTeachersFreePeriodsTimetableDaysVerticalHtml(con
 	tos<<"  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -4044,7 +4044,7 @@ ErrorCode TimetableExport::writeTeachersStatisticsHtml(const QString& htmlfilena
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -4058,7 +4058,7 @@ ErrorCode TimetableExport::writeTeachersStatisticsHtml(const QString& htmlfilena
 	tos<<"  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();
@@ -4080,7 +4080,7 @@ ErrorCode TimetableExport::writeStudentsStatisticsHtml(const QString& htmlfilena
 	//Now we print the results to an HTML file
 	QFile file(htmlfilename);
 	if(!file.open(QIODevice::WriteOnly)){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Cannot open file %1 for writing. Please check your disk's free space. Saving of %1 aborted.").arg(htmlfilename));
 	}
 	QTextStream tos(&file);
@@ -4094,7 +4094,7 @@ ErrorCode TimetableExport::writeStudentsStatisticsHtml(const QString& htmlfilena
 	tos<<"  </body>\n</html>\n";
 
 	if(file.error()>0){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 TimetableExport::tr("Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(htmlfilename).arg(file.error()));
 	}
 	file.close();

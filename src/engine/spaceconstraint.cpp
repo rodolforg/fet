@@ -495,7 +495,7 @@ ErrorCode ConstraintRoomNotAvailableTimes::computeInternalStructure(const Rules&
 	room_ID=r.roomsHash.value(room, -1);
 	
 	if(this->room_ID<0){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint room not available times is wrong because it refers to inexistent room."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}	
@@ -503,12 +503,12 @@ ErrorCode ConstraintRoomNotAvailableTimes::computeInternalStructure(const Rules&
 	assert(days.count()==hours.count());
 	for(int k=0; k<days.count(); k++){
 		if(this->days.at(k) >= r.nDaysPerWeek){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint room not available times is wrong because it refers to removed day. Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}		
 		if(this->hours.at(k) >= r.nHoursPerDay){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint room not available times is wrong because an hour is too late (after the last acceptable slot). Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
@@ -713,7 +713,7 @@ ErrorCode ConstraintActivityPreferredRoom::computeInternalStructure(const Rules&
 	//assert(_room>=0);
 
 	if(this->_room<0){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
 	}
 
@@ -947,7 +947,7 @@ ErrorCode ConstraintActivityPreferredRooms::computeInternalStructure(const Rules
 		}*/
 		
 	if(ac==r.nInternalActivities){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	
@@ -957,7 +957,7 @@ ErrorCode ConstraintActivityPreferredRooms::computeInternalStructure(const Rules
 		int t=r.roomsHash.value(rm, -1);
 
 		if(t<0){
-			return ErrorCode(ErrorCode::FATAL,
+			return ErrorCode(ErrorCode::Fatal,
 				tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
 		}
 
@@ -1212,7 +1212,7 @@ ErrorCode ConstraintStudentsSetHomeRoom::computeInternalStructure(const Rules& r
 	//this->_room = r.searchRoom(this->roomName);
 	_room=r.roomsHash.value(roomName, -1);
 	if(this->_room<0){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	assert(this->_room>=0);
@@ -1478,7 +1478,7 @@ ErrorCode ConstraintStudentsSetHomeRooms::computeInternalStructure(const Rules& 
 		//int t=r.searchRoom(rm);
 		int t=r.roomsHash.value(rm, -1);
 		if(t<0){
-			return ErrorCode(ErrorCode::FATAL,
+			return ErrorCode(ErrorCode::Fatal,
 				tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
 		}
 		else{
@@ -1751,7 +1751,7 @@ ErrorCode ConstraintTeacherHomeRoom::computeInternalStructure(const Rules& r)
 	//this->_room = r.searchRoom(this->roomName);
 	_room=r.roomsHash.value(roomName, -1);
 	if(this->_room<0){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	assert(this->_room>=0);
@@ -2015,7 +2015,7 @@ ErrorCode ConstraintTeacherHomeRooms::computeInternalStructure(const Rules& r)
 		//int t=r.searchRoom(rm);
 		int t=r.roomsHash.value(rm, -1);
 		if(t<0){
-			return ErrorCode(ErrorCode::FATAL,
+			return ErrorCode(ErrorCode::Fatal,
 				tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
 		}
 		else{
@@ -2271,7 +2271,7 @@ ErrorCode ConstraintSubjectPreferredRoom::computeInternalStructure(const Rules& 
 	//this->_room = r.searchRoom(this->roomName);
 	_room=r.roomsHash.value(roomName, -1);
 	if(this->_room<0){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	assert(this->_room>=0);
@@ -2501,7 +2501,7 @@ ErrorCode ConstraintSubjectPreferredRooms::computeInternalStructure(const Rules&
 		//int t=r.searchRoom(rm);
 		int t=r.roomsHash.value(rm, -1);
 		if(t<0){
-			return ErrorCode(ErrorCode::FATAL,
+			return ErrorCode(ErrorCode::Fatal,
 				tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
 		}
 		assert(t>=0);
@@ -2747,7 +2747,7 @@ ErrorCode ConstraintSubjectActivityTagPreferredRoom::computeInternalStructure(co
 	//this->_room = r.searchRoom(this->roomName);
 	_room=r.roomsHash.value(roomName, -1);
 	if(this->_room<0){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	assert(this->_room>=0);
@@ -2986,7 +2986,7 @@ ErrorCode ConstraintSubjectActivityTagPreferredRooms::computeInternalStructure(c
 		//int t=r.searchRoom(rm);
 		int t=r.roomsHash.value(rm, -1);
 		if(t<0){
-			return ErrorCode(ErrorCode::FATAL,
+			return ErrorCode(ErrorCode::Fatal,
 				tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
 		}
 		assert(t>=0);
@@ -3231,7 +3231,7 @@ ErrorCode ConstraintActivityTagPreferredRoom::computeInternalStructure(const Rul
 	//this->_room = r.searchRoom(this->roomName);
 	_room=r.roomsHash.value(roomName, -1);
 	if(this->_room<0){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	assert(this->_room>=0);
@@ -3462,7 +3462,7 @@ ErrorCode ConstraintActivityTagPreferredRooms::computeInternalStructure(const Ru
 		//int t=r.searchRoom(rm);
 		int t=r.roomsHash.value(rm, -1);
 		if(t<0){
-			return ErrorCode(ErrorCode::FATAL,
+			return ErrorCode(ErrorCode::Fatal,
 				tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
 		}
 		assert(t>=0);
@@ -3689,7 +3689,7 @@ ErrorCode ConstraintStudentsSetMaxBuildingChangesPerDay::computeInternalStructur
 	StudentsSet* ss=r.studentsHash.value(studentsName, NULL);
 			
 	if(ss==NULL){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students set max building changes per day is wrong because it refers to inexistent students set."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
@@ -4200,7 +4200,7 @@ ErrorCode ConstraintStudentsSetMaxBuildingChangesPerWeek::computeInternalStructu
 	StudentsSet* ss=r.studentsHash.value(studentsName, NULL);
 			
 	if(ss==NULL){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students set max building changes per week is wrong because it refers to inexistent students set."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}												
@@ -4709,7 +4709,7 @@ ErrorCode ConstraintStudentsSetMinGapsBetweenBuildingChanges::computeInternalStr
 	StudentsSet* ss=r.studentsHash.value(studentsName, NULL);
 			
 	if(ss==NULL){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students set min gaps between building changes is wrong because it refers to inexistent students set."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}												
@@ -5242,7 +5242,7 @@ ErrorCode ConstraintTeacherMaxBuildingChangesPerDay::computeInternalStructure(co
 	teacher_ID=r.teachersHash.value(teacherName, -1);
 	
 	if(this->teacher_ID<0){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint teacher max building changes per day is wrong because it refers to inexistent teacher."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}	
@@ -5717,7 +5717,7 @@ ErrorCode ConstraintTeacherMaxBuildingChangesPerWeek::computeInternalStructure(c
 	teacher_ID=r.teachersHash.value(teacherName, -1);
 	
 	if(this->teacher_ID<0){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint teacher max building changes per week is wrong because it refers to inexistent teacher."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}	
@@ -6192,7 +6192,7 @@ ErrorCode ConstraintTeacherMinGapsBetweenBuildingChanges::computeInternalStructu
 	teacher_ID=r.teachersHash.value(teacherName, -1);
 	
 	if(this->teacher_ID<0){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint teacher min gaps between building changes is wrong because it refers to inexistent teacher."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}	
@@ -6709,7 +6709,7 @@ ErrorCode ConstraintActivitiesOccupyMaxDifferentRooms::computeInternalStructure(
 	///////////////////////
 	
 	if(this->_activitiesIndices.count()<2){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (refers to less than two activities). Please correct it:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	else{
@@ -6977,7 +6977,7 @@ ErrorCode ConstraintActivitiesSameRoomIfConsecutive::computeInternalStructure(co
 	///////////////////////
 	
 	if(this->_activitiesIndices.count()<2){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (refers to less than two activities). Please correct it:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	else{
