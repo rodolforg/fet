@@ -21,19 +21,10 @@ File centerwidgetonscreen.cpp
 
 #include "centerwidgetonscreen.h"
 
-#include <QtGlobal>
-
-#include "rules.h"
-#include "timetable.h"
-
-#include "fetmainform.h"
-
 #include <QWidget>
 #include <QApplication>
 #include <QDesktopWidget>
 #include <QRect>
-#include <QSize>
-#include <QPoint>
 
 #include <QCoreApplication>
 #include <QMessageBox>
@@ -42,10 +33,6 @@ File centerwidgetonscreen.cpp
 
 #include <QHeaderView>
 #include <QTableWidget>
-#include <QTableWidgetItem>
-#include <QAbstractItemView>
-
-extern Timetable gt;
 
 void centerWidgetOnScreen(QWidget* widget)
 {
