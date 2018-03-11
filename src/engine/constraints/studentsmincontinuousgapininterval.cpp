@@ -17,6 +17,7 @@ MinContinuousGapInIntervalForStudents::MinContinuousGapInIntervalForStudents()
 
 bool MinContinuousGapInIntervalForStudents::prepare(const Rules &rules)
 {
+	int errorGroupId = ErrorCode::nextGroupId();
 	errors.clear();
 
 	bool ok=true;
@@ -96,12 +97,12 @@ bool MinContinuousGapInIntervalForStudents::prepare(const Rules &rules)
 			}
 			if (!fits) {
 				ok = false;
-				errors.append(
+				errors.append(ErrorCode(ErrorCode::Error,
 							GeneratePreTranslate::tr("Cannot optimize for student set %1, because it has more than %2 constraints min continuous gap in interval"
 							". Please modify your data correspondingly (leave maximum %2 constraints of type"
 							" constraint student set(s) min continuous gap in interval for each student set) and try again")
 							.arg(rules.internalSubgroupsList[sbg]->name)
-							.arg(MAX)
+							.arg(MAX), errorGroupId)
 							);
 			}
 		}

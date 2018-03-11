@@ -14,6 +14,7 @@ bool MinDaysBetweenActivities::prepare(const Rules &rules)
 	weightPercentages.resize(rules.nInternalActivities);
 	consecutiveIfSameDay.resize(rules.nInternalActivities);
 
+	int errorGroupId = ErrorCode::nextGroupId();
 	errors.clear();
 
 	bool ok=true;
@@ -42,9 +43,9 @@ bool MinDaysBetweenActivities::prepare(const Rules &rules)
 
 							if(!mdset.contains(md)){
 								mdset.insert(md);
-								errors.append(
+								errors.append(ErrorCode(ErrorCode::Error,
 											GeneratePreTranslate::tr("Cannot optimize, because you have a constraint min days with duplicate activities. The constraint "
-											"is: %1. Please correct that.").arg(md->getDetailedDescription(rules))
+											"is: %1. Please correct that.").arg(md->getDetailedDescription(rules)), errorGroupId)
 											);
 								continue;
 							}

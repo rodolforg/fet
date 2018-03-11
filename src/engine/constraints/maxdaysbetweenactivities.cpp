@@ -13,6 +13,7 @@ bool MaxDaysBetweenActivities::prepare(const Rules &rules)
 	maxDays.resize(rules.nInternalActivities);
 	weightPercentages.resize(rules.nInternalActivities);
 
+	int errorGroupId = ErrorCode::nextGroupId();
 	errors.clear();
 
 	bool ok=true;
@@ -41,9 +42,9 @@ bool MaxDaysBetweenActivities::prepare(const Rules &rules)
 							if(!mdset.contains(md)){
 								mdset.insert(md);
 
-								errors.append(
+								errors.append(ErrorCode(ErrorCode::Error,
 											GeneratePreTranslate::tr("Cannot optimize, because you have a constraint max days between activities with duplicate activities. The constraint "
-											"is: %1. Please correct that.").arg(md->getDetailedDescription(rules))
+											"is: %1. Please correct that.").arg(md->getDetailedDescription(rules)), errorGroupId)
 											);
 								continue;
 							}

@@ -13,6 +13,7 @@ bool MinGapsBetweenActivities::prepare(const Rules &rules)
 	minGaps.resize(rules.nInternalActivities);
 	weightPercentages.resize(rules.nInternalActivities);
 
+	int errorGroupId = ErrorCode::nextGroupId();
 	errors.clear();
 
 	bool ok=true;
@@ -43,9 +44,9 @@ bool MinGapsBetweenActivities::prepare(const Rules &rules)
 							if(!mgset.contains(mg)){
 								mgset.insert(mg);
 
-								errors.append(
+								errors.append(ErrorCode(ErrorCode::Error,
 											GeneratePreTranslate::tr("Cannot optimize, because you have a constraint min gaps between activities with duplicate activities. The constraint "
-											"is: %1. Please correct that.").arg(mg->getDetailedDescription(rules))
+											"is: %1. Please correct that.").arg(mg->getDetailedDescription(rules)), errorGroupId)
 											);
 								continue;
 							}

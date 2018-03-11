@@ -18,6 +18,7 @@ MinContinuousGapInIntervalForTeachers::MinContinuousGapInIntervalForTeachers()
 
 bool MinContinuousGapInIntervalForTeachers::prepare(const Rules &rules)
 {
+	int errorGroupId = ErrorCode::nextGroupId();
 	errors.clear();
 
 	bool ok=true;
@@ -98,12 +99,12 @@ bool MinContinuousGapInIntervalForTeachers::prepare(const Rules &rules)
 			}
 			if (!fits) {
 				ok = false;
-				errors.append(
+				errors.append(ErrorCode(ErrorCode::Error,
 							GeneratePreTranslate::tr("Cannot optimize for teacher %1, because it has more than %2 constraints min continuous gap in interval"
 							". Please modify your data correspondingly (leave maximum %2 constraints of type"
 							" constraint teacher(s) min continuous gap in interval for each teacher) and try again")
 							.arg(rules.internalTeachersList[t]->name)
-							.arg(MAX)
+							.arg(MAX), errorGroupId)
 							);
 			}
 		}

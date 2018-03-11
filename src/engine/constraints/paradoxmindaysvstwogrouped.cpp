@@ -9,6 +9,7 @@ ParadoxMinDaysVsTwoGrouped::ParadoxMinDaysVsTwoGrouped()
 bool ParadoxMinDaysVsTwoGrouped::prepare(const Rules& rules)
 {
 	bool ok = true;
+	int errorGroupId = ErrorCode::nextGroupId();
 	errors.clear();
 
 	QSet<QPair<int,int> > groups;
@@ -39,7 +40,7 @@ bool ParadoxMinDaysVsTwoGrouped::prepare(const Rules& rules)
 							s+="\n\n";
 							s+=GeneratePreTranslate::tr("Please modify your data accordingly and try again");
 
-							errors << s;
+							errors << ErrorCode(ErrorCode::Error, s, errorGroupId);
 
 							ok = false;
 						}

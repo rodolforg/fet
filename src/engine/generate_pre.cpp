@@ -428,11 +428,12 @@ static int nIncompatibleFromFather[MAX_ACTIVITIES];
 int fatherActivityInInitialOrder[MAX_ACTIVITIES];
 ////////////////////////////////////
 
-static void reportSkippableErrors(QWidget *parent, const QStringList& errorList)
+// TODO move this away from engine
+static void reportSkippableErrors(QWidget *parent, const ErrorList& errorList)
 {
-	foreach (QString errorMsg, errorList) {
+	foreach (ErrorCode error, errorList) {
 		int r=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
-			   errorMsg,
+			   error.message,
 			   GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
 			   1, 0 );
 

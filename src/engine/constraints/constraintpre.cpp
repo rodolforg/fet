@@ -4,7 +4,7 @@ ConstraintPre::ConstraintPre()
 {
 }
 
-QStringList ConstraintPre::getErrors() const
+ErrorList ConstraintPre::getErrors() const
 {
 	return errors;
 }

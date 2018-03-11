@@ -9,6 +9,7 @@ ParadoxMinDaysVsConsecutive::ParadoxMinDaysVsConsecutive()
 bool ParadoxMinDaysVsConsecutive::prepare(const Rules& rules)
 {
 	bool ok = true;
+	int errorGroupId = ErrorCode::nextGroupId();
 	errors.clear();
 
 	for(int ai1=0; ai1<rules.nInternalActivities; ai1++){
@@ -31,7 +32,7 @@ bool ParadoxMinDaysVsConsecutive::prepare(const Rules& rules)
 							s+="\n\n";
 							s+=GeneratePreTranslate::tr("Please modify your data accordingly and try again");
 
-							errors << s;
+							errors << ErrorCode(ErrorCode::Error, s, errorGroupId);
 
 							ok = false;
 						}

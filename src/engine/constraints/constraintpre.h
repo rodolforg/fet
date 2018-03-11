@@ -10,10 +10,10 @@ public:
 
 	virtual bool prepare(const Rules &rules) = 0;
 
-	virtual QStringList getErrors() const;
+	virtual ErrorList getErrors() const;
 
 protected:
-	QStringList errors;
+	ErrorList errors;
 };
 
 #endif // CONSTRAINTPRE_H
