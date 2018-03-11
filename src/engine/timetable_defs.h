@@ -160,16 +160,6 @@ const int UNALLOCATED_SPACE = MAX_ROOMS;
 const int UNSPECIFIED_ROOM = MAX_ROOMS+1;
 
 /**
-The maximum number of time constraints
-*/
-//const int MAX_TIME_CONSTRAINTS = 60000;
-
-/**
-The maximum number of space constraints
-*/
-//const int MAX_SPACE_CONSTRAINTS = 60000;
-
-/**
 File and directory separator
 */
 extern const QString FILE_SEP;
