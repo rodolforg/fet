@@ -201,16 +201,6 @@ A function used in html saving
 QString protect2vert(const QString& str);
 
 /**
-A function used in html saving
-*/
-//QString protect2id(const QString& str);
-
-/**
-A function used in html saving
-*/
-//QString protect2java(const QString& str);
-
-/**
 This constants represents free periods of a teacher in the teachers free periods timetable
 */
 const int TEACHER_HAS_SINGLE_GAP = 0;
