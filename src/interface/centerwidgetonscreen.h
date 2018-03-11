@@ -27,13 +27,9 @@ File centerwidgetonscreen.h
 class QWidget;
 class QTableWidget;
 
-class Rules;
-
 void centerWidgetOnScreen(QWidget* widget);
 void forceCenterWidgetOnScreen(QWidget* widget);
 //void centerWidgetOnParent(QWidget* widget, QWidget* parent);
-
-int maxScreenWidth(QWidget* widget);
 
 int maxRecommendedWidth(QWidget* widget);
 
