@@ -234,7 +234,6 @@ void TeachersForm::qualifiedSubjects()
 	Teacher* tch=gt.rules.teachersList.at(teacher_ID);
 
 	TeacherSubjectsQualificationsForm form(this, tch);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 
 	teacherChanged(teachersListWidget->currentRow());

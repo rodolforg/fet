@@ -108,7 +108,6 @@ void RoomsForm::filterChanged()
 void RoomsForm::addRoom()
 {
 	AddRoomForm addRoomForm(this);
-	setParentAndOtherThings(&addRoomForm, this);
 	addRoomForm.exec();
 	
 	filterChanged();
@@ -233,7 +232,6 @@ void RoomsForm::modifyRoom()
 	
 	Room* rm=visibleRoomsList.at(ci);
 	ModifyRoomForm form(this, rm->name, rm->building, rm->capacity);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 
 	filterChanged();

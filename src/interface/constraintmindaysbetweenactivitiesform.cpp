@@ -87,7 +87,6 @@ void ConstraintMinDaysBetweenActivitiesForm::changeSelectively()
 {
 	ChangeMinDaysSelectivelyForm dialog(this);
 	
-	setParentAndOtherThings(&dialog, this);
 	bool result=dialog.exec();
 
 	if(result==QDialog::Accepted){

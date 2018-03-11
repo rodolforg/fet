@@ -808,7 +808,6 @@ void AddActivityForm::addActivity()
 		if(!errors.hasError()){
 			if(minD>1 && weight<100.0){
 				SecondMinDaysDialog second(this, minD, weight);
-				setParentAndOtherThings(&second, this);
 				int code=second.exec();
 
 				if(code==QDialog::Accepted){
@@ -983,7 +982,6 @@ void AddActivityForm::help()
 	dialog.resize(700,500);
 	centerWidgetOnScreen(&dialog);
 
-	setParentAndOtherThings(&dialog, this);
 	dialog.exec();
 }
 

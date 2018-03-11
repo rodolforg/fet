@@ -890,7 +890,6 @@ void FetMainForm::on_timetablesToWriteOnDiskAction_triggered()
 	}
 
 	TimetablesToWriteOnDiskForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
@@ -1494,7 +1493,6 @@ void FetMainForm::on_timetableSaveTimetableAsAction_triggered()
 		int confirm;
 		
 		SaveTimetableConfirmationForm c_form(this);
-		setParentAndOtherThings(&c_form, this);
 		confirm=c_form.exec();
 		
 		if(confirm==QDialog::Accepted){
@@ -1724,7 +1722,6 @@ void FetMainForm::on_dataInstitutionNameAction_triggered()
 	}
 
 	InstitutionNameForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
@@ -1737,7 +1734,6 @@ void FetMainForm::on_dataCommentsAction_triggered()
 	}
 
 	CommentsForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
@@ -1750,7 +1746,6 @@ void FetMainForm::on_dataDaysAction_triggered()
 	}
 
 	DaysForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
@@ -1763,7 +1758,6 @@ void FetMainForm::on_dataHoursAction_triggered()
 	}
 
 	HoursForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
@@ -1776,14 +1770,12 @@ void FetMainForm::on_dataTeachersAction_triggered()
 	}
 
 	TeachersForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
 void FetMainForm::on_dataTeachersStatisticsAction_triggered()
 {
 	TeachersStatisticsForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
@@ -1796,14 +1788,12 @@ void FetMainForm::on_dataSubjectsAction_triggered()
 	}
 
 	SubjectsForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
 void FetMainForm::on_dataSubjectsStatisticsAction_triggered()
 {
 	SubjectsStatisticsForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
@@ -1816,7 +1806,6 @@ void FetMainForm::on_dataActivityTagsAction_triggered()
 	}
 
 	ActivityTagsForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
@@ -1829,7 +1818,6 @@ void FetMainForm::on_dataYearsAction_triggered()
 	}
 
 	YearsForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
@@ -1842,7 +1830,6 @@ void FetMainForm::on_dataGroupsAction_triggered()
 	}
 
 	GroupsForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
@@ -1855,21 +1842,18 @@ void FetMainForm::on_dataSubgroupsAction_triggered()
 	}
 
 	SubgroupsForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
 void FetMainForm::on_dataStudentsStatisticsAction_triggered()
 {
 	StudentsStatisticsForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
 void FetMainForm::on_dataActivitiesRoomsStatisticsAction_triggered()
 {
 	ActivitiesRoomsStatisticsForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
@@ -2079,7 +2063,6 @@ void FetMainForm::on_dataActivitiesAction_triggered()
 	}
 
 	ActivitiesForm form(this, "", "", "", "");
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
@@ -2092,7 +2075,6 @@ void FetMainForm::on_dataSubactivitiesAction_triggered()
 	}
 
 	SubactivitiesForm form(this, "", "", "", "");
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
@@ -2105,7 +2087,6 @@ void FetMainForm::on_dataRoomsAction_triggered()
 	}
 
 	RoomsForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
@@ -2118,7 +2099,6 @@ void FetMainForm::on_dataBuildingsAction_triggered()
 	}
 
 	BuildingsForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
@@ -2133,7 +2113,6 @@ void FetMainForm::openConstraintDialog(int dialogIdx)
 	}
 
 	QDialog *form = ConstraintDialogHelper::constraintActions[dialogIdx].constructor(this);
-	setParentAndOtherThings(form, this);
 	form->exec();
 	delete form;
 }
@@ -2164,7 +2143,6 @@ void FetMainForm::on_dataTimeConstraintsTeachersActivityTagMaxHoursDailyAction_t
 	}
 
 	ConstraintTeachersActivityTagMaxHoursDailyForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
@@ -2182,7 +2160,6 @@ void FetMainForm::on_dataTimeConstraintsTeacherActivityTagMaxHoursDailyAction_tr
 	}
 
 	ConstraintTeacherActivityTagMaxHoursDailyForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
@@ -2207,7 +2184,6 @@ void FetMainForm::on_groupActivitiesInInitialOrderAction_triggered()
 	}
 
 	GroupActivitiesInInitialOrderItemsForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
@@ -2225,7 +2201,6 @@ void FetMainForm::on_dataTimeConstraintsStudentsSetMaxGapsPerDayAction_triggered
 	}
 
 	ConstraintStudentsSetMaxGapsPerDayForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
@@ -2243,7 +2218,6 @@ void FetMainForm::on_dataTimeConstraintsStudentsMaxGapsPerDayAction_triggered()
 	}
 
 	ConstraintStudentsMaxGapsPerDayForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
@@ -2261,7 +2235,6 @@ void FetMainForm::on_dataTimeConstraintsStudentsSetActivityTagMaxHoursDailyActio
 	}
 
 	ConstraintStudentsSetActivityTagMaxHoursDailyForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
@@ -2279,7 +2252,6 @@ void FetMainForm::on_dataTimeConstraintsStudentsActivityTagMaxHoursDailyAction_t
 	}
 
 	ConstraintStudentsActivityTagMaxHoursDailyForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
@@ -2390,7 +2362,6 @@ void FetMainForm::on_timetableGenerateAction_triggered()
 		return;
 	}
 	TimetableGenerateForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 	
 	LockUnlock::increaseCommunicationSpinBox();
@@ -2421,7 +2392,6 @@ void FetMainForm::on_timetableGenerateMultipleAction_triggered()
 		return;
 	}
 	TimetableGenerateMultipleForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 
 	LockUnlock::increaseCommunicationSpinBox();
@@ -2747,7 +2717,6 @@ void FetMainForm::on_languageAction_triggered()
 	centerWidgetOnScreen(&dialog);
 	restoreFETDialogGeometry(&dialog, settingsName);
 	
-	setParentAndOtherThings(&dialog, this);
 	bool ok=dialog.exec();
 	saveFETDialogGeometry(&dialog, settingsName);
 	if(!ok)
@@ -3093,7 +3062,6 @@ void FetMainForm::on_settingsTimetableHtmlLevelAction_triggered()
 	}
 
 	SettingsTimetableHtmlLevelForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
@@ -3139,7 +3107,6 @@ void FetMainForm::on_activityPlanningAction_triggered()
 		int confirm;
 	
 		ActivityPlanningConfirmationForm c_form(this);
-		setParentAndOtherThings(&c_form, this);
 		confirm=c_form.exec();
 
 		if(confirm==QDialog::Accepted){
@@ -3207,7 +3174,6 @@ void FetMainForm::on_spreadActivitiesAction_triggered()
 		int confirm;
 	
 		SpreadConfirmationForm c_form(this);
-		setParentAndOtherThings(&c_form, this);
 		confirm=c_form.exec();
 
 		if(confirm==QDialog::Accepted){
@@ -3219,7 +3185,6 @@ void FetMainForm::on_spreadActivitiesAction_triggered()
 	}
 
 	SpreadMinDaysConstraintsFiveDaysForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
@@ -3259,7 +3224,6 @@ void FetMainForm::on_removeRedundantConstraintsAction_triggered()
 		int confirm;
 	
 		RemoveRedundantConfirmationForm c_form(this);
-		setParentAndOtherThings(&c_form, this);
 		confirm=c_form.exec();
 
 		if(confirm==QDialog::Accepted){
@@ -3271,7 +3235,6 @@ void FetMainForm::on_removeRedundantConstraintsAction_triggered()
 	}
 
 	RemoveRedundantForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 
@@ -3303,7 +3266,6 @@ void FetMainForm::on_randomSeedAction_triggered()
 {
 	RandomSeedDialog dialog(this);
 	
-	setParentAndOtherThings(&dialog, this);
 	int te=dialog.exec();
 	
 	if(te==QDialog::Accepted){

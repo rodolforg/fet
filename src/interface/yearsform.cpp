@@ -92,7 +92,6 @@ YearsForm::~YearsForm()
 void YearsForm::addYear()
 {
 	AddStudentsYearForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 
 	yearsListWidget->clear();
@@ -228,7 +227,6 @@ void YearsForm::modifyYear()
 	int numberOfStudents=sset->numberOfStudents;
 
 	ModifyStudentsYearForm form(this, yearName, numberOfStudents);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 
 	yearsListWidget->clear();
@@ -282,7 +280,6 @@ void YearsForm::divideYear()
 	QString yearName=yearsListWidget->currentItem()->text();
 	
 	SplitYearForm form(this, yearName);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 }
 

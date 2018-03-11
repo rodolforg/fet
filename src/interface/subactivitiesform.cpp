@@ -341,7 +341,6 @@ void SubactivitiesForm::modifySubactivity()
 	
 	ModifySubactivityForm modifySubactivityForm(this, act->id, act->activityGroupId);
 	int t;
-	setParentAndOtherThings(&modifySubactivityForm, this);
 	t=modifySubactivityForm.exec();
 
 	if(t==QDialog::Accepted){

@@ -450,6 +450,5 @@ void ModifySubactivityForm::help()
 	dialog.resize(600,470);
 	centerWidgetOnScreen(&dialog);
 
-	setParentAndOtherThings(&dialog, this);
 	dialog.exec();
 }

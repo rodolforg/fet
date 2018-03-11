@@ -201,7 +201,6 @@ void StartActivityPlanning::startActivityPlanning(QWidget* parent){
 	}
 	
 	ActivityPlanningForm apfd(parent);
-	setParentAndOtherThings(&apfd, parent);
 	apfd.exec();
 	
 	statisticValues.allStudentsNames.clear();
@@ -775,42 +774,34 @@ void ActivityPlanningForm::activitiesTableHorizontalHeaderClicked(int column){
 	if(RBActivity->isChecked()){
 		if(swapAxis->checkState()==Qt::Checked){
 			ActivitiesForm form(this, "", statisticValues.allStudentsNames[column], "", "");
-			setParentAndOtherThings(&form, this);
 			form.exec();
 		} else {
 			ActivitiesForm form(this, "", "", statisticValues.allSubjectsNames[column], "");
-			setParentAndOtherThings(&form, this);
 			form.exec();
 		}
 	} else if(RBSubactivity->isChecked()) {
 		if(swapAxis->checkState()==Qt::Checked){
 			SubactivitiesForm form(this, "", statisticValues.allStudentsNames[column], "", "");
-			setParentAndOtherThings(&form, this);
 			form.exec();
 		} else {
 			SubactivitiesForm form(this, "", "", statisticValues.allSubjectsNames[column], "");
-			setParentAndOtherThings(&form, this);
 			form.exec();
 		}
 	} else if(RBAdd->isChecked()) {
 		if(swapAxis->checkState()==Qt::Checked){
 			AddActivityForm addActivityForm(this, "", statisticValues.allStudentsNames[column], "", "");
-			setParentAndOtherThings(&addActivityForm, this);
 			addActivityForm.exec();
 		} else {
 			AddActivityForm addActivityForm(this, "", "", statisticValues.allSubjectsNames[column], "");
-			setParentAndOtherThings(&addActivityForm, this);
 			addActivityForm.exec();
 		}
 	} else if(RBModify->isChecked()) {
 		//Normaly there are too many activities. So just entering the activity form
 		if(swapAxis->checkState()==Qt::Checked){
 			ActivitiesForm form(this, "", statisticValues.allStudentsNames[column], "", "");
-			setParentAndOtherThings(&form, this);
 			form.exec();
 		} else {
 			ActivitiesForm form(this, "", "", statisticValues.allSubjectsNames[column], "");
-			setParentAndOtherThings(&form, this);
 			form.exec();
 		}
 	} else if(RBDelete->isChecked()) {
@@ -1127,42 +1118,34 @@ void ActivityPlanningForm::activitiesTableVerticalHeaderClicked(int row){
 	if(RBActivity->isChecked()){
 		if(swapAxis->checkState()==Qt::Checked){
 			ActivitiesForm form(this, "", "", statisticValues.allSubjectsNames[row], "");
-			setParentAndOtherThings(&form, this);
 			form.exec();
 		} else {
 			ActivitiesForm form(this, "", statisticValues.allStudentsNames[row], "", "");
-			setParentAndOtherThings(&form, this);
 			form.exec();
 		}
 	} else if(RBSubactivity->isChecked()) {
 		if(swapAxis->checkState()==Qt::Checked){
 			SubactivitiesForm form(this, "", "", statisticValues.allSubjectsNames[row], "");
-			setParentAndOtherThings(&form, this);
 			form.exec();
 		} else {
 			SubactivitiesForm form(this, "", statisticValues.allStudentsNames[row], "", "");
-			setParentAndOtherThings(&form, this);
 			form.exec();
 		}
 	} else if(RBAdd->isChecked()) {
 		if(swapAxis->checkState()==Qt::Checked){
 			AddActivityForm addActivityForm(this, "", "", statisticValues.allSubjectsNames[row], "");
-			setParentAndOtherThings(&addActivityForm, this);
 			addActivityForm.exec();
 		} else {
 			AddActivityForm addActivityForm(this, "", statisticValues.allStudentsNames[row], "", "");
-			setParentAndOtherThings(&addActivityForm, this);
 			addActivityForm.exec();	
 		}
 	} else if(RBModify->isChecked()) {
 		//Normaly there are too many activities. So just entering the activity form
 		if(swapAxis->checkState()==Qt::Checked){
 			ActivitiesForm form(this, "", "", statisticValues.allSubjectsNames[row], "");
-			setParentAndOtherThings(&form, this);
 			form.exec();
 		} else {
 			ActivitiesForm form(this, "", statisticValues.allStudentsNames[row], "", "");
-			setParentAndOtherThings(&form, this);
 			form.exec();
 		}
 	} else if(RBDelete->isChecked()) {
@@ -1499,15 +1482,12 @@ void ActivityPlanningForm::activitiesCellSelected(const QModelIndex& index){
 	}
 	if(RBActivity->isChecked()){
 		ActivitiesForm form(this, "", statisticValues.allStudentsNames[students], statisticValues.allSubjectsNames[subject], "");
-		setParentAndOtherThings(&form, this);
 		form.exec();
 	} else if(RBSubactivity->isChecked()) {
 		SubactivitiesForm form(this, "", statisticValues.allStudentsNames[students], statisticValues.allSubjectsNames[subject], "");
-		setParentAndOtherThings(&form, this);
 		form.exec();
 	} else if(RBAdd->isChecked()) {
 		AddActivityForm addActivityForm(this, "", statisticValues.allStudentsNames[students], statisticValues.allSubjectsNames[subject], "");
-		setParentAndOtherThings(&addActivityForm, this);
 		addActivityForm.exec();
 	} else if(RBModify->isChecked()) {
 		QList<int> tmpActivities;
@@ -1549,7 +1529,6 @@ void ActivityPlanningForm::activitiesCellSelected(const QModelIndex& index){
 			
 			if(!sameAgid){
 				ActivitiesForm form(this, "", statisticValues.allStudentsNames[students], statisticValues.allSubjectsNames[subject], "");
-				setParentAndOtherThings(&form, this);
 				form.exec();
 				
 				return;
@@ -1649,7 +1628,6 @@ void ActivityPlanningForm::activitiesCellSelected(const QModelIndex& index){
 							return;*/
 							
 						ActivitiesForm form(this, "", statisticValues.allStudentsNames[students], statisticValues.allSubjectsNames[subject], "");
-						setParentAndOtherThings(&form, this);
 						form.exec();
 				
 						return;
@@ -1657,7 +1635,6 @@ void ActivityPlanningForm::activitiesCellSelected(const QModelIndex& index){
 				}
 				ModifyActivityForm modifyActivityForm(this, act->id, act->activityGroupId);
 				//int t;
-				setParentAndOtherThings(&modifyActivityForm, this);
 				modifyActivityForm.exec();
 				//similar to activitiesform.cpp (end)
 				return;
@@ -1666,7 +1643,6 @@ void ActivityPlanningForm::activitiesCellSelected(const QModelIndex& index){
 		//else if(tmpSubactivities.count()>=1){
 		else{
 			ActivitiesForm form(this, "", statisticValues.allStudentsNames[students], statisticValues.allSubjectsNames[subject], "");
-			setParentAndOtherThings(&form, this);
 			form.exec();
 		}
 	} else if(RBDelete->isChecked()) {
@@ -1972,20 +1948,16 @@ void ActivityPlanningForm::teachersTableHorizontalHeaderClicked(int column){
 	}
 	if(RBActivity->isChecked()){
 		ActivitiesForm form(this, statisticValues.allTeachersNames[column], "", "", "");
-		setParentAndOtherThings(&form, this);
 		form.exec();
 	} else if(RBSubactivity->isChecked()) {
 		SubactivitiesForm form(this, statisticValues.allTeachersNames[column], "", "", "");
-		setParentAndOtherThings(&form, this);
 		form.exec();
 	} else if(RBAdd->isChecked()) {
 		AddActivityForm addActivityForm(this, statisticValues.allTeachersNames[column], "", "", "");
-		setParentAndOtherThings(&addActivityForm, this);
 		addActivityForm.exec();	
 	} else if(RBModify->isChecked()) {
 		//Just enter the activity dialog, because in normal case there are too many activities related to a teacher.
 		ActivitiesForm form(this, statisticValues.allTeachersNames[column], "", "", "");
-		setParentAndOtherThings(&form, this);
 		form.exec();
 	} else if(RBDelete->isChecked()) {
 		//bool affectOtherTeachers=false;
@@ -2227,20 +2199,16 @@ void ActivityPlanningForm::teachersCellSelected(const QModelIndex& index){
 	} else {
 		if(RBActivity->isChecked()){
 			ActivitiesForm form(this, statisticValues.allTeachersNames[itcol], "", "", "");
-			setParentAndOtherThings(&form, this);
 			form.exec();
 		} else if(RBSubactivity->isChecked()) {
 			SubactivitiesForm form(this, statisticValues.allTeachersNames[itcol], "", "", "");
-			setParentAndOtherThings(&form, this);
 			form.exec();
 		} else if(RBAdd->isChecked()) {
 			AddActivityForm addActivityForm(this, statisticValues.allTeachersNames[itcol], "", "", "");
-			setParentAndOtherThings(&addActivityForm, this);
 			addActivityForm.exec();	
 		} else if(RBModify->isChecked()) {
 			//Just enter the activity dialog, because in normal case there are too many activities related to a teacher.
 			ActivitiesForm form(this, statisticValues.allTeachersNames[itcol], "", "", "");
-			setParentAndOtherThings(&form, this);
 			form.exec();
 		} else if(RBDelete->isChecked()) {
 			//bool affectOtherTeachers=false;

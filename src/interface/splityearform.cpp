@@ -848,7 +848,6 @@ void SplitYearForm::help()
 	dialog.resize(700,500);
 	centerWidgetOnScreen(&dialog);
 
-	setParentAndOtherThings(&dialog, this);
 	dialog.exec();
 }
 

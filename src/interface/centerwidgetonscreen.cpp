@@ -126,20 +126,6 @@ void restoreFETDialogGeometry(QWidget* widget, const QString& alternativeName)
 	}
 }
 
-void setParentAndOtherThings(QWidget* widget, QWidget* parent)
-{
-	Q_UNUSED(widget);
-	Q_UNUSED(parent);
-
-/*	if(!widget->parentWidget()){
-		widget->setParent(parent, Qt::Dialog);
-	
-		QRect rect=widget->geometry();
-		rect.translate(widget->geometry().x() - widget->frameGeometry().x(), widget->geometry().y() - widget->frameGeometry().y());
-		widget->setGeometry(rect);
-	}*/
-}
-
 void setStretchAvailabilityTableNicely(QTableWidget* notAllowedTimesTable)
 {
 #if QT_VERSION >= 0x050000

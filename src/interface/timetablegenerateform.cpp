@@ -839,7 +839,6 @@ void TimetableGenerateForm::showDialog(const QString &title, const QString &msg,
 	centerWidgetOnScreen(&dialog);
 	restoreFETDialogGeometry(&dialog, settingsName);
 
-	setParentAndOtherThings(&dialog, this);
 #ifndef Q_WS_QWS
 	if (beep) {
 		QApplication::beep();

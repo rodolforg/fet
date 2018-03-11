@@ -108,7 +108,6 @@ void BuildingsForm::filterChanged()
 void BuildingsForm::addBuilding()
 {
 	AddBuildingForm addBuildingForm(this);
-	setParentAndOtherThings(&addBuildingForm, this);
 	addBuildingForm.exec();
 	
 	filterChanged();
@@ -231,7 +230,6 @@ void BuildingsForm::modifyBuilding()
 	
 	Building* bu=visibleBuildingsList.at(ci);
 	ModifyBuildingForm form(this, bu->name);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 
 	filterChanged();

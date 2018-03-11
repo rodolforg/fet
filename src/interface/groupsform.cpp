@@ -105,7 +105,6 @@ void GroupsForm::addGroup()
 	assert(yearIndex>=0);
 
 	AddStudentsGroupForm form(this, yearName);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 
 	yearChanged(yearsListWidget->currentItem()->text());
@@ -389,7 +388,6 @@ void GroupsForm::modifyGroup()
 	int numberOfStudents=sset->numberOfStudents;
 	
 	ModifyStudentsGroupForm form(this, yearName, groupName, numberOfStudents);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 
 	yearChanged(yearsListWidget->currentItem()->text());

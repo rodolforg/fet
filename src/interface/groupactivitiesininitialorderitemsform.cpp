@@ -206,7 +206,6 @@ void GroupActivitiesInInitialOrderItemsForm::itemChanged(int index)
 void GroupActivitiesInInitialOrderItemsForm::addItem()
 {
 	AddGroupActivitiesInInitialOrderItemForm form(this);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 
 	filterChanged();
@@ -227,7 +226,6 @@ void GroupActivitiesInInitialOrderItemsForm::modifyItem()
 	GroupActivitiesInInitialOrderItem* item=visibleItemsList[i];
 
 	ModifyGroupActivitiesInInitialOrderItemForm form(this, item);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 
 	filterChanged();

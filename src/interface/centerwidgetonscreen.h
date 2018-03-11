@@ -36,8 +36,6 @@ int maxRecommendedWidth(QWidget* widget);
 void saveFETDialogGeometry(QWidget* widget, const QString& alternativeName=QString());
 void restoreFETDialogGeometry(QWidget* widget, const QString& alternativeName=QString());
 
-void setParentAndOtherThings(QWidget* widget, QWidget* parent);
-
 void setStretchAvailabilityTableNicely(QTableWidget* notAllowedTimesTable);
 
 void showWarningForInvisibleSubgroupConstraint(QWidget* parent, const QString& initialSubgroupName);

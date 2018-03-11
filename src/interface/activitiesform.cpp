@@ -379,7 +379,6 @@ void ActivitiesForm::addActivity()
 	QString atn=activityTagsComboBox->currentText();
 	
 	AddActivityForm addActivityForm(this, tn, stn, sn, atn);
-	setParentAndOtherThings(&addActivityForm, this);
 	addActivityForm.exec();
 
 	if(gt.rules.activitiesList.count()!=nInitialActs){
@@ -487,7 +486,6 @@ void ActivitiesForm::modifyActivity()
 	
 	ModifyActivityForm modifyActivityForm(this, act->id, act->activityGroupId);
 	int t;
-	setParentAndOtherThings(&modifyActivityForm, this);
 	t=modifyActivityForm.exec();
 	
 	if(t==QDialog::Accepted){

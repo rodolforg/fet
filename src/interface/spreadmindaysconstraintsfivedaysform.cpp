@@ -354,7 +354,6 @@ void SpreadMinDaysConstraintsFiveDaysForm::wasAccepted()
 	acceptPB->setFocus();
 	acceptPB->setDefault(true);
 	
-	setParentAndOtherThings(&dialog, this);
 	int res=dialog.exec();
 	saveFETDialogGeometry(&dialog, settingsName);
 	

@@ -119,7 +119,6 @@ void SubgroupsForm::addSubgroup()
 	assert(groupIndex>=0);
 
 	AddStudentsSubgroupForm form(this, yearName, groupName);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 
 	groupChanged(groupsListWidget->currentItem()->text());
@@ -478,7 +477,6 @@ void SubgroupsForm::modifySubgroup()
 	int numberOfStudents=sset->numberOfStudents;
 	
 	ModifyStudentsSubgroupForm form(this, yearName, groupName, subgroupName, numberOfStudents);
-	setParentAndOtherThings(&form, this);
 	form.exec();
 
 	groupChanged(groupName);
