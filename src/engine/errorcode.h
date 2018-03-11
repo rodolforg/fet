@@ -22,12 +22,12 @@ class ErrorCode
 {
 public:
 	enum Severity {
-		FATAL,
-		ERROR,
-		WARNING,
-		INFO,
-		VERBOSE,
-		NO_ERROR
+		Fatal,
+		Error,
+		Warning,
+		Info,
+		Verbose,
+		NoError
 	};
 
 	ErrorCode();

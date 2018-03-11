@@ -114,7 +114,7 @@ ErrorList Rules::computeInternalStructure()
 	//After that, the space constraints.
 
 	if(this->teachersList.size()>MAX_TEACHERS){
-		errors << ErrorCode(ErrorCode::FATAL,
+		errors << ErrorCode(ErrorCode::Fatal,
 		 tr("You have too many teachers. You need to increase the variable MAX_TEACHERS (which is currently %1).")
 		 .arg(MAX_TEACHERS));
 		return errors;
@@ -257,7 +257,7 @@ ErrorList Rules::computeInternalStructure()
 	}
 	int tmpNSubgroups=allSubgroupsList.count();
 	if(tmpNSubgroups>MAX_TOTAL_SUBGROUPS){
-		errors << ErrorCode(ErrorCode::FATAL,
+		errors << ErrorCode(ErrorCode::Fatal,
 		 tr("You have too many total subgroups. You need to increase the variable MAX_TOTAL_SUBGROUPS (which is currently %1).")
 		 .arg(MAX_TOTAL_SUBGROUPS));
 		return errors;
@@ -271,21 +271,21 @@ ErrorList Rules::computeInternalStructure()
 			activeActivitiesCounter++;
 	}
 	if(activeActivitiesCounter>MAX_ACTIVITIES){
-		errors << ErrorCode(ErrorCode::FATAL,
+		errors << ErrorCode(ErrorCode::Fatal,
 		 tr("You have too many active activities. You need to increase the variable MAX_ACTIVITIES (which is currently %1).")
 		 .arg(MAX_ACTIVITIES));
 		return errors;
 	}
 
 	if(this->buildingsList.size()>MAX_BUILDINGS){
-		errors << ErrorCode(ErrorCode::FATAL,
+		errors << ErrorCode(ErrorCode::Fatal,
 		 tr("You have too many buildings. You need to increase the variable MAX_BUILDINGS (which is currently %1).")
 		 .arg(MAX_BUILDINGS));
 		return errors;
 	}
 	
 	if(this->roomsList.size()>MAX_ROOMS){
-		errors << ErrorCode(ErrorCode::FATAL,
+		errors << ErrorCode(ErrorCode::Fatal,
 		 tr("You have too many rooms. You need to increase the variable MAX_ROOMS (which is currently %1).")
 		 .arg(MAX_ROOMS));
 		return errors;
@@ -423,7 +423,7 @@ ErrorList Rules::computeInternalStructure()
 		act=this->activitiesList[i];
 		if(act->active){
 			if(shouldAbortInternalStructureComputation){
-				errors << ErrorCode(ErrorCode::WARNING, tr("Canceled"));
+				errors << ErrorCode(ErrorCode::Warning, tr("Canceled"));
 				emit internalStructureComputationFinished(false);
 				return errors;
 			}
@@ -589,7 +589,7 @@ ErrorList Rules::computeInternalStructure()
 				s+="\n";
 				s+=tctr->getDetailedDescription(*this);
 				
-			errors << ErrorCode(ErrorCode::WARNING, s, skipInactiveTimeConstraintsId);
+			errors << ErrorCode(ErrorCode::Warning, s, skipInactiveTimeConstraintsId);
 		}
 		else{
 			_c++;
@@ -605,7 +605,7 @@ ErrorList Rules::computeInternalStructure()
 	
 	for(int tctrindex=0; tctrindex<this->timeConstraintsList.size(); tctrindex++){
 		if(shouldAbortInternalStructureComputation){
-			errors << ErrorCode(ErrorCode::WARNING, tr("Canceled"));
+			errors << ErrorCode(ErrorCode::Warning, tr("Canceled"));
 			emit internalStructureComputationFinished(false);
 			return errors;
 		}
@@ -660,7 +660,7 @@ ErrorList Rules::computeInternalStructure()
 				s+="\n";
 				s+=sctr->getDetailedDescription(*this);
 				
-			errors << ErrorCode(ErrorCode::WARNING, s, skipInactiveSpaceConstraintsId);
+			errors << ErrorCode(ErrorCode::Warning, s, skipInactiveSpaceConstraintsId);
 		}
 		else{
 			_c++;
@@ -676,7 +676,7 @@ ErrorList Rules::computeInternalStructure()
 
 	for(int sctrindex=0; sctrindex<this->spaceConstraintsList.size(); sctrindex++){
 		if(shouldAbortInternalStructureComputation){
-			errors << ErrorCode(ErrorCode::WARNING, tr("Canceled"));
+			errors << ErrorCode(ErrorCode::Warning, tr("Canceled"));
 			emit internalStructureComputationFinished(false);
 			return errors;
 		}
@@ -740,7 +740,7 @@ ErrorList Rules::computeInternalStructure()
 			}
 
 			if(!fetBugs.isEmpty() || !userErrors.isEmpty()){
-				errors << ErrorCode(ErrorCode::FATAL, fetBugs.join("\n\n")+userErrors.join("\n\n"));
+				errors << ErrorCode(ErrorCode::Fatal, fetBugs.join("\n\n")+userErrors.join("\n\n"));
 				emit internalStructureComputationFinished(false);
 				return errors;
 			}
@@ -2746,17 +2746,17 @@ ErrorList Rules::addSimpleActivityFast(int _id,
 	//check for duplicates - idea and code by Volker Dirr
 	int t=QStringList(_teachersNames).removeDuplicates();
 	if(t>0)
-		errors << ErrorCode(ErrorCode::WARNING, tr("Activity with Id=%1 contains %2 duplicate teachers - please correct that")
+		errors << ErrorCode(ErrorCode::Warning, tr("Activity with Id=%1 contains %2 duplicate teachers - please correct that")
 		 .arg(_id).arg(t));
 
 	t=QStringList(_studentsNames).removeDuplicates();
 	if(t>0)
-		errors << ErrorCode(ErrorCode::WARNING, tr("Activity with Id=%1 contains %2 duplicate students sets - please correct that")
+		errors << ErrorCode(ErrorCode::Warning, tr("Activity with Id=%1 contains %2 duplicate students sets - please correct that")
 		 .arg(_id).arg(t));
 
 	t=QStringList(_activityTagsNames).removeDuplicates();
 	if(t>0)
-		errors << ErrorCode(ErrorCode::WARNING, tr("Activity with Id=%1 contains %2 duplicate activity tags - please correct that")
+		errors << ErrorCode(ErrorCode::Warning, tr("Activity with Id=%1 contains %2 duplicate activity tags - please correct that")
 		 .arg(_id).arg(t));
 
 	Activity *act=new Activity(_id, _activityGroupId, _teachersNames, _subjectName, _activityTagsNames,
@@ -2882,17 +2882,17 @@ ErrorList Rules::addSplitActivityFast(
 	ErrorList errors;
 	int t=QStringList(_teachersNames).removeDuplicates();
 	if(t>0)
-		errors << ErrorCode(ErrorCode::WARNING, tr("Activities with group_Id=%1 contain %2 duplicate teachers - please correct that")
+		errors << ErrorCode(ErrorCode::Warning, tr("Activities with group_Id=%1 contain %2 duplicate teachers - please correct that")
 		 .arg(_activityGroupId).arg(t));
 
 	t=QStringList(_studentsNames).removeDuplicates();
 	if(t>0)
-		errors << ErrorCode(ErrorCode::WARNING, tr("Activities with group_Id=%1 contain %2 duplicate students sets - please correct that")
+		errors << ErrorCode(ErrorCode::Warning, tr("Activities with group_Id=%1 contain %2 duplicate students sets - please correct that")
 		 .arg(_activityGroupId).arg(t));
 
 	t=QStringList(_activityTagsNames).removeDuplicates();
 	if(t>0)
-		errors << ErrorCode(ErrorCode::WARNING, tr("Activities with group_Id=%1 contain %2 duplicate activity tags - please correct that")
+		errors << ErrorCode(ErrorCode::Warning, tr("Activities with group_Id=%1 contain %2 duplicate activity tags - please correct that")
 		 .arg(_activityGroupId).arg(t));
 
 	assert(_firstActivityId==_activityGroupId);
@@ -4491,7 +4491,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 
 	QFile file(fileName);
 	if(!file.open(QIODevice::ReadOnly)){
-		errors << ErrorCode(ErrorCode::FATAL, tr("Could not open file - not existing or in use"));
+		errors << ErrorCode(ErrorCode::Fatal, tr("Could not open file - not existing or in use"));
 		return errors;
 	}
 	
@@ -4508,7 +4508,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 
 	bool t=logDir.mkpath(logPathString);
 	if(!t){
-		errors << ErrorCode(ErrorCode::FATAL, tr("Cannot create or use directory %1 - cannot continue").arg(QDir::toNativeSeparators(logPathString)));
+		errors << ErrorCode(ErrorCode::Fatal, tr("Cannot create or use directory %1 - cannot continue").arg(QDir::toNativeSeparators(logPathString)));
 		return errors;
 	}
 	
@@ -4533,7 +4533,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 			" as html files").arg(QDir::toNativeSeparators(logFilePath))+
 			"\n\n"+tr("A solution is to remove that file (if it exists already) or set its permissions to allow writing")+
 			"\n\n"+tr("Please report possible bug");
-		errors << ErrorCode(ErrorCode::ERROR, s);
+		errors << ErrorCode(ErrorCode::Error, s);
 		canWriteLogFile=false;
 	}
 	QTextStream logStream;
@@ -4583,7 +4583,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 			int tfile=fileVerReCap.indexIn(file_version);
 			filev[0]=filev[1]=filev[2]=-1;
 			if(tfile!=0){
-				errors << ErrorCode(ErrorCode::WARNING, tr("File contains a version numbering scheme which"
+				errors << ErrorCode(ErrorCode::Warning, tr("File contains a version numbering scheme which"
 				" is not matched by v.v.va (3 numbers separated by points, followed by any string a, which may be empty). File will be opened, but you are advised"
 				" to check the version of the .fet file (in the beginning of the file). If this is a FET bug, please report it")+"\n\n"+
 				tr("If you are opening a file older than FET format version 5, it will be converted to latest FET data format"));
@@ -4610,7 +4610,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 			int tfet=fetVerReCap.indexIn(FET_VERSION);
 			fetv[0]=fetv[1]=fetv[2]=-1;
 			if(tfet!=0){
-				errors << ErrorCode(ErrorCode::WARNING, tr("FET version does not respect the format v.v.va"
+				errors << ErrorCode(ErrorCode::Warning, tr("FET version does not respect the format v.v.va"
 				" (3 numbers separated by points, followed by any string a, which may be empty). This is probably a bug in FET - please report it"));
 				if(VERBOSE){
 					cout<<"FET version not matched by regexp"<<endl;
@@ -4641,7 +4641,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 				version5AndAbove=true;
 		}
 	} else {
-		errors << ErrorCode(ErrorCode::FATAL, tr("The opened file is not a valid FET file"));
+		errors << ErrorCode(ErrorCode::Fatal, tr("The opened file is not a valid FET file"));
 		return errors;
 	}
 	if(!okAbove3_12_17){
@@ -4649,13 +4649,13 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 			cout<<"Invalid fet 3.12.17 or above"<<endl;
 		}
 		logFile.close();
-		errors << ErrorCode(ErrorCode::FATAL, tr("File does not have a corresponding beginning tag - it should be %1 or %2. File is incorrect..."
+		errors << ErrorCode(ErrorCode::Fatal, tr("File does not have a corresponding beginning tag - it should be %1 or %2. File is incorrect..."
 			"it cannot be opened").arg("fet").arg("FET"));
 		return errors;
 	}
 	
 	if(!version5AndAbove){
-		errors << ErrorCode(ErrorCode::INFO,
+		errors << ErrorCode(ErrorCode::Info,
 		 tr("Opening older file - it will be converted to latest format, automatically "
 		 "assigning weight percentages to constraints and dropping parity for activities. "
 		 "You are advised to make a backup of your old file before saving in new format.\n\n"
@@ -4667,7 +4667,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 	}
 	
 	if(warning){
-		errors << ErrorCode(ErrorCode::WARNING,
+		errors << ErrorCode(ErrorCode::Warning,
 		 tr("Opening a file generated with a newer version than your current FET software ... file will be opened but it is recommended to update your FET software to the latest version")
 		 +"\n\n"+tr("Your FET version: %1, file version: %2").arg(FET_VERSION).arg(file_version));
 	}
@@ -4931,7 +4931,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 					}
 					bool tmp2=teachersRead.contains(teacher->name);
 					if(tmp2){
-						errors << ErrorCode(ErrorCode::WARNING,
+						errors << ErrorCode(ErrorCode::Warning,
 						 tr("Duplicate teacher %1 found - ignoring").arg(teacher->name));
 						log.verbose("   Teacher not added - duplicate\n");
 						
@@ -4985,7 +4985,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 					}
 					bool tmp2=subjectsRead.contains(subject->name);
 					if(tmp2){
-						errors << ErrorCode(ErrorCode::WARNING,
+						errors << ErrorCode(ErrorCode::Warning,
 						 tr("Duplicate subject %1 found - ignoring").arg(subject->name));
 						log.verbose("   Subject not added - duplicate\n");
 						
@@ -5013,7 +5013,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 		else if(xmlReader.name()=="Subject_Tags_List"){
 			QSet<QString> activityTagsRead;
 		
-			errors << ErrorCode(ErrorCode::INFO, tr("Your file contains subject tags list"
+			errors << ErrorCode(ErrorCode::Info, tr("Your file contains subject tags list"
 			  ", which is named in versions>=5.5.0 activity tags list"));
 		
 			int tmp=0;
@@ -5042,7 +5042,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 					}
 					bool tmp2=activityTagsRead.contains(activityTag->name);
 					if(tmp2){
-						errors << ErrorCode(ErrorCode::WARNING,
+						errors << ErrorCode(ErrorCode::Warning,
 						 tr("Duplicate activity tag %1 found - ignoring").arg(activityTag->name));
 						log.verbose("   Activity tag not added - duplicate\n");
 						
@@ -5104,7 +5104,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 					}
 					bool tmp2=activityTagsRead.contains(activityTag->name);
 					if(tmp2){
-						errors << ErrorCode(ErrorCode::WARNING,
+						errors << ErrorCode(ErrorCode::Warning,
 						 tr("Duplicate activity tag %1 found - ignoring").arg(activityTag->name));
 						log.verbose("   Activity tag not added - duplicate\n");
 						
@@ -5623,7 +5623,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 							}
 							else{
 								if(!(text=="no" || text=="false" || text=="0")){
-									errors << ErrorCode(ErrorCode::WARNING,
+									errors << ErrorCode(ErrorCode::Warning,
 									 tr("Found activity active tag which is not 'true', 'false', 'yes', 'no', '1' or '0'."
 									 " The activity will be considered not active",
 									 "Instructions for translators: please leave the 'true', 'false', 'yes' and 'no' fields untranslated, as they are in English"));
@@ -5802,7 +5802,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 			log.minimum("Added "+CustomFETString::number(na)+" activities\n");
 		}
 		else if(xmlReader.name()=="Equipments_List"){
-			errors << ErrorCode(ErrorCode::WARNING,
+			errors << ErrorCode(ErrorCode::Warning,
 			 tr("File contains deprecated equipments list - will be ignored"));
 			xmlReader.skipCurrentElement();
 			//NOT! log.numberOfUnrecognizedFields++; because this entry was once allowed
@@ -5839,7 +5839,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 
 					bool tmp2=buildingsRead.contains(bu->name);
 					if(tmp2){
-						errors << ErrorCode(ErrorCode::WARNING,
+						errors << ErrorCode(ErrorCode::Warning,
 						 tr("Duplicate building %1 found - ignoring").arg(bu->name));
 						log.verbose("   Building not added - duplicate\n");
 						
@@ -5916,7 +5916,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 					}
 					bool tmp2=roomsRead.contains(rm->name);
 					if(tmp2){
-						errors << ErrorCode(ErrorCode::WARNING,
+						errors << ErrorCode(ErrorCode::Warning,
 						 tr("Duplicate room %1 found - ignoring").arg(rm->name));
 						log.verbose("   Room not added - duplicate\n");
 						
@@ -5970,7 +5970,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 					crt_constraint=readBasicCompulsoryTime(xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintTeacherNotAvailable"){
-					errors << ErrorCode(ErrorCode::INFO,
+					errors << ErrorCode(ErrorCode::Info,
 						 tr("File contains constraint teacher not available, which is old (it was improved in FET 5.5.0), and will be converted"
 						 " to the similar constraint of this type, constraint teacher not available times (a matrix)."),
 							reportTeacherNotAvailableChangeId);
@@ -6013,7 +6013,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 					crt_constraint=readStudentsIntervalMaxDaysPerWeek(errors, xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintStudentsSetNotAvailable"){
-					errors << ErrorCode(ErrorCode::INFO,
+					errors << ErrorCode(ErrorCode::Info,
 						 tr("File contains constraint students set not available, which is old (it was improved in FET 5.5.0), and will be converted"
 						 " to the similar constraint of this type, constraint students set not available times (a matrix)."),
 							reportStudentsSetNotAvailableChangeId);
@@ -6082,19 +6082,19 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 				else if((xmlReader.name()=="ConstraintTeachersSubgroupsMaxHoursDaily"
 				 //TODO: erase the line below. It is only kept for compatibility with older versions
 				 || xmlReader.name()=="ConstraintTeachersSubgroupsNoMoreThanXHoursDaily") && !skipDeprecatedConstraints){
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 					 tr("File contains deprecated constraint teachers subgroups max hours daily - will be ignored\n"),
 										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintStudentsNHoursDaily" && !skipDeprecatedConstraints){
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 					 tr("File contains deprecated constraint students n hours daily - will be ignored\n"),
 										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintStudentsSetNHoursDaily" && !skipDeprecatedConstraints){
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 					 tr("File contains deprecated constraint students set n hours daily - will be ignored\n"),
 										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
@@ -6132,7 +6132,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 					crt_constraint=readStudentsSetMinHoursDaily(errors, xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintActivityPreferredTime"){
-					errors << ErrorCode(ErrorCode::INFO,
+					errors << ErrorCode(ErrorCode::Info,
 						 tr("File contains old constraint type activity preferred time, which will be converted"
 						 " to the newer similar constraint of this type, constraint activity preferred STARTING time."
 						 " This improvement is done in versions 5.5.9 and above"),
@@ -6179,13 +6179,13 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 					crt_constraint=readTwoActivitiesOrdered(xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintActivityEndsDay" && !skipDeprecatedConstraints ){
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 					 tr("File contains deprecated constraint activity ends day - will be ignored\n"),
 										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintActivityPreferredTimes"){
-					errors << ErrorCode(ErrorCode::INFO,
+					errors << ErrorCode(ErrorCode::Info,
 						 tr("Your file contains old constraint activity preferred times, which will be converted to"
 						 " new equivalent constraint activity preferred starting times. Beginning with FET-5.5.9 it is possible"
 						 " to specify: 1. the starting times of an activity (constraint activity preferred starting times)"
@@ -6202,7 +6202,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 					crt_constraint=readActivityPreferredStartingTimes(xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintBreak"){
-					errors << ErrorCode(ErrorCode::INFO,
+					errors << ErrorCode(ErrorCode::Info,
 						 tr("File contains constraint break, which is old (it was improved in FET 5.5.0), and will be converted"
 						 " to the similar constraint of this type, constraint break times (a matrix)."),
 						  reportBreakChangeId);
@@ -6228,7 +6228,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 					crt_constraint=readTeacherMaxGapsPerDay(xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintStudentsNoGaps"){
-					errors << ErrorCode(ErrorCode::INFO,
+					errors << ErrorCode(ErrorCode::Info,
 						 tr("File contains constraint students no gaps, which is old (it was improved in FET 5.5.0), and will be converted"
 						 " to the similar constraint of this type, constraint students max gaps per week,"
 						 " with max gaps=0. If you like, you can modify this constraint to allow"
@@ -6238,7 +6238,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 					crt_constraint=readStudentsNoGaps(xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintStudentsSetNoGaps"){
-					errors << ErrorCode(ErrorCode::INFO,
+					errors << ErrorCode(ErrorCode::Info,
 						 tr("File contains constraint students set no gaps, which is old (it was improved in FET 5.5.0), and will be converted"
 						 " to the similar constraint of this type, constraint students set max gaps per week,"
 						 " with max gaps=0. If you like, you can modify this constraint to allow"
@@ -6262,7 +6262,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 				}
 
 				else if(xmlReader.name()=="ConstraintStudentsEarly"){
-					errors << ErrorCode(ErrorCode::INFO,
+					errors << ErrorCode(ErrorCode::Info,
 						 tr("File contains constraint students early, which is old (it was improved in FET 5.5.0), and will be converted"
 						 " to the similar constraint of this type, constraint students early max beginnings at second hour,"
 						 " with max beginnings=0. If you like, you can modify this constraint to allow"
@@ -6275,7 +6275,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 					crt_constraint=readStudentsEarlyMaxBeginningsAtSecondHour(xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintStudentsSetEarly"){
-					errors << ErrorCode(ErrorCode::INFO,
+					errors << ErrorCode(ErrorCode::Info,
 						 tr("File contains constraint students set early, which is old (it was improved in FET 5.5.0), and will be converted"
 						 " to the similar constraint of this type, constraint students set early max beginnings at second hour,"
 						 " with max beginnings=0. If you like, you can modify this constraint to allow"
@@ -6288,7 +6288,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 					crt_constraint=readStudentsSetEarlyMaxBeginningsAtSecondHour(xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintActivitiesPreferredTimes"){
-					errors << ErrorCode(ErrorCode::INFO,
+					errors << ErrorCode(ErrorCode::Info,
 						 tr("Your file contains old constraint activities preferred times, which will be converted to"
 						 " new equivalent constraint activities preferred starting times. Beginning with FET-5.5.9 it is possible"
 						 " to specify: 1. the starting times of several activities (constraint activities preferred starting times)"
@@ -6323,13 +6323,13 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 ////////////////
 
 				else if(xmlReader.name()=="ConstraintTeachersSubjectTagsMaxHoursContinuously" && !skipDeprecatedConstraints){
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 					 tr("File contains deprecated constraint teachers subject tags max hours continuously - will be ignored\n"),
 										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintTeachersSubjectTagMaxHoursContinuously" && !skipDeprecatedConstraints){
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 					 tr("File contains deprecated constraint teachers subject tag max hours continuously - will be ignored\n"),
 										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
@@ -6383,7 +6383,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 					assert(crt_constraint!=NULL);
 					bool tmp=this->addTimeConstraint(crt_constraint);
 					if(!tmp){
-						errors << ErrorCode(ErrorCode::WARNING,
+						errors << ErrorCode(ErrorCode::Warning,
 							 tr("Constraint\n%1\nnot added - must be a duplicate").
 							 arg(crt_constraint->getDetailedDescription(*this)), seeNextWarnNotAddedTimeConstraintId);
 						delete crt_constraint;
@@ -6412,7 +6412,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 					crt_constraint=readBasicCompulsorySpace(xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintRoomNotAvailable"){
-					errors << ErrorCode(ErrorCode::INFO,
+					errors << ErrorCode(ErrorCode::Info,
 						 tr("File contains constraint room not available, which is old (it was improved in FET 5.5.0), and will be converted"
 						 " to the similar constraint of this type, constraint room not available times (a matrix)."),
 							reportRoomNotAvailableChange);
@@ -6424,14 +6424,14 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 				}
 				else if(xmlReader.name()=="ConstraintRoomTypeNotAllowedSubjects" && !skipDeprecatedConstraints){
 				
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 					 tr("File contains deprecated constraint room type not allowed subjects - will be ignored\n"),
 										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintSubjectRequiresEquipments" && !skipDeprecatedConstraints){
 				
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 					 tr("File contains deprecated constraint subject requires equipments - will be ignored\n"),
 										skipDeprecatedConstraintsId);
 
@@ -6439,35 +6439,35 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 				}
 				else if(xmlReader.name()=="ConstraintSubjectSubjectTagRequireEquipments" && !skipDeprecatedConstraints){
 				
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 					 tr("File contains deprecated constraint subject tag requires equipments - will be ignored\n"),
 										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintTeacherRequiresRoom" && !skipDeprecatedConstraints){
 				
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 					 tr("File contains deprecated constraint teacher requires room - will be ignored\n"),
 										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintTeacherSubjectRequireRoom" && !skipDeprecatedConstraints){
 				
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 					 tr("File contains deprecated constraint teacher subject require room - will be ignored\n"),
 										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintMinimizeNumberOfRoomsForStudents" && !skipDeprecatedConstraints){
 				
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 					 tr("File contains deprecated constraint minimize number of rooms for students - will be ignored\n"),
 										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintMinimizeNumberOfRoomsForTeachers" && !skipDeprecatedConstraints){
 				
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 					 tr("File contains deprecated constraint minimize number of rooms for teachers - will be ignored\n"),
 										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
@@ -6483,7 +6483,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 				}
 				else if(xmlReader.name()=="ConstraintActivitiesSameRoom" && !skipDeprecatedConstraints){
 				
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 					 tr("File contains deprecated constraint activities same room - will be ignored\n"),
 										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
@@ -6527,28 +6527,28 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 				}
 				else if(xmlReader.name()=="ConstraintMaxBuildingChangesPerDayForTeachers" && !skipDeprecatedConstraints){
 				
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 					 tr("File contains deprecated constraint max building changes per day for teachers - will be ignored\n"),
 										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintMaxBuildingChangesPerDayForStudents" && !skipDeprecatedConstraints){
 				
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 					 tr("File contains deprecated constraint max building changes per day for students - will be ignored\n"),
 										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintMaxRoomChangesPerDayForTeachers" && !skipDeprecatedConstraints){
 				
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 					 tr("File contains deprecated constraint max room changes per day for teachers - will be ignored\n"),
 										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintMaxRoomChangesPerDayForStudents" && !skipDeprecatedConstraints){
 				
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 					 tr("File contains deprecated constraint max room changes per day for students - will be ignored\n"),
 										skipDeprecatedConstraintsId);
 
@@ -6611,7 +6611,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 					
 					bool tmp=this->addSpaceConstraint(crt_constraint);
 					if(!tmp){
-						errors << ErrorCode(ErrorCode::WARNING,
+						errors << ErrorCode(ErrorCode::Warning,
 							 tr("Constraint\n%1\nnot added - must be a duplicate").
 							 arg(crt_constraint->getDetailedDescription(*this)), seeNextWarnNotAddedSpaceConstraintId);
 						delete crt_constraint;
@@ -6686,7 +6686,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 	}
 	
 	if(xmlReader.error()){
-		errors << ErrorCode(ErrorCode::FATAL,
+		errors << ErrorCode(ErrorCode::Fatal,
 		 tr("Could not read file - XML parse error at line %1, column %2:\n%3", "The error description is %3")
 		 .arg(xmlReader.lineNumber())
 		 .arg(xmlReader.columnNumber())
@@ -6713,7 +6713,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 	}
 
 	if(logFile.error()>0){
-		errors << ErrorCode(ErrorCode::ERROR,
+		errors << ErrorCode(ErrorCode::Error,
 		 tr("Saving of logging gave error code %1, which means you cannot see the log of reading the file. Please check your disk free space")
 		 .arg(logFile.error()));
 	}
@@ -6756,7 +6756,7 @@ ErrorCode Rules::write(const QString& filename) const
 
 	QFile file(filenameTmp);
 	if(!file.open(QIODevice::WriteOnly | QIODevice::Truncate)){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Cannot open %1 for writing ... please check write permissions of the selected directory or your disk free space. Saving of file aborted").arg(QFileInfo(filenameTmp).fileName()));
 	}
 
@@ -6885,7 +6885,7 @@ ErrorCode Rules::write(const QString& filename) const
 				.arg(file.error());
 
 		file.close();
-		return ErrorCode(ErrorCode::FATAL, msg);
+		return ErrorCode(ErrorCode::Fatal, msg);
 	}
 	
 	file.close();
@@ -7586,7 +7586,7 @@ TimeConstraint* Rules::readTeacherIntervalMaxDaysPerWeek(ErrorList& errors, QXml
 			QString text=xmlReader.readElementText();
 			cn->maxDaysPerWeek=text.toInt();
 			if(cn->maxDaysPerWeek>this->nDaysPerWeek){
-				errors << ErrorCode(ErrorCode::WARNING,
+				errors << ErrorCode(ErrorCode::Warning,
 					tr("Constraint TeacherIntervalMaxDaysPerWeek max days corrupt for teacher %1, max days %2 >nDaysPerWeek, constraint added, please correct constraint")
 					.arg(cn->teacherName)
 					.arg(text));
@@ -7658,7 +7658,7 @@ TimeConstraint* Rules::readTeachersIntervalMaxDaysPerWeek(ErrorList& errors, QXm
 			QString text=xmlReader.readElementText();
 			cn->maxDaysPerWeek=text.toInt();
 			if(cn->maxDaysPerWeek>this->nDaysPerWeek){
-				errors << ErrorCode(ErrorCode::WARNING,
+				errors << ErrorCode(ErrorCode::Warning,
 					tr("Constraint TeachersIntervalMaxDaysPerWeek max days corrupt, max days %1 >nDaysPerWeek, constraint added, please correct constraint")
 					.arg(text));
 			}
@@ -7728,7 +7728,7 @@ TimeConstraint* Rules::readStudentsSetMaxDaysPerWeek(ErrorList& errors, QXmlStre
 			QString text=xmlReader.readElementText();
 			cn->maxDaysPerWeek=text.toInt();
 			if(cn->maxDaysPerWeek>this->nDaysPerWeek){
-				errors << ErrorCode(ErrorCode::WARNING,
+				errors << ErrorCode(ErrorCode::Warning,
 					tr("Constraint StudentsSetMaxDaysPerWeek max days corrupt for students set %1, max days %2 >nDaysPerWeek, constraint added, please correct constraint")
 					.arg(cn->students)
 					.arg(text));
@@ -7756,7 +7756,7 @@ TimeConstraint* Rules::readStudentsMaxDaysPerWeek(ErrorList& errors, QXmlStreamR
 			QString text=xmlReader.readElementText();
 			cn->maxDaysPerWeek=text.toInt();
 			if(cn->maxDaysPerWeek>this->nDaysPerWeek){
-				errors << ErrorCode(ErrorCode::WARNING,
+				errors << ErrorCode(ErrorCode::Warning,
 					tr("Constraint StudentsMaxDaysPerWeek max days corrupt, max days %1 >nDaysPerWeek, constraint added, please correct constraint")
 					.arg(text));
 			}
@@ -7791,7 +7791,7 @@ TimeConstraint* Rules::readStudentsSetIntervalMaxDaysPerWeek(ErrorList& errors, 
 			QString text=xmlReader.readElementText();
 			cn->maxDaysPerWeek=text.toInt();
 			if(cn->maxDaysPerWeek>this->nDaysPerWeek){
-				errors << ErrorCode(ErrorCode::WARNING,
+				errors << ErrorCode(ErrorCode::Warning,
 					tr("Constraint StudentsSetIntervalMaxDaysPerWeek max days corrupt for students set %1, max days %2 >nDaysPerWeek, constraint added, please correct constraint")
 					.arg(cn->students)
 					.arg(text));
@@ -7859,7 +7859,7 @@ TimeConstraint* Rules::readStudentsIntervalMaxDaysPerWeek(ErrorList& errors, QXm
 			QString text=xmlReader.readElementText();
 			cn->maxDaysPerWeek=text.toInt();
 			if(cn->maxDaysPerWeek>this->nDaysPerWeek){
-				errors << ErrorCode(ErrorCode::WARNING,
+				errors << ErrorCode(ErrorCode::Warning,
 					tr("Constraint StudentsIntervalMaxDaysPerWeek max days corrupt: max days %1 >nDaysPerWeek, constraint added, please correct constraint")
 					.arg(text));
 			}
@@ -8173,7 +8173,7 @@ TimeConstraint* Rules::readMinNDaysBetweenActivities(ErrorList& errors, QXmlStre
 			}
 			else{
 				if(!(text=="no" || text=="false" || text=="0")){
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 						tr("Found constraint min days between activities with tag consecutive if same day"
 						" which is not 'true', 'false', 'yes', 'no', '1' or '0'."
 						" The tag will be considered false",
@@ -8280,7 +8280,7 @@ TimeConstraint* Rules::readMinDaysBetweenActivities(ErrorList& errors, QXmlStrea
 			}
 			else{
 				if(!(text=="no" || text=="false" || text=="0")){
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 						tr("Found constraint min days between activities with tag consecutive if same day"
 						" which is not 'true', 'false', 'yes', 'no', '1' or '0'."
 						" The tag will be considered false",
@@ -8860,7 +8860,7 @@ TimeConstraint* Rules::readTeachersMinHoursDaily(ErrorList& errors, QXmlStreamRe
 			}
 			else{
 				if(!(text=="no" || text=="false" || text=="0")){
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 						tr("Found constraint teachers min hours daily with tag allow empty days"
 						" which is not 'true', 'false', 'yes', 'no', '1' or '0'."
 						" The tag will be considered false",
@@ -8909,7 +8909,7 @@ TimeConstraint* Rules::readTeacherMinHoursDaily(ErrorList& errors, QXmlStreamRea
 			}
 			else{
 				if(!(text=="no" || text=="false" || text=="0")){
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 						tr("Found constraint teacher min hours daily with tag allow empty days"
 						" which is not 'true', 'false', 'yes', 'no', '1' or '0'."
 						" The tag will be considered false",
@@ -9292,7 +9292,7 @@ TimeConstraint* Rules::readStudentsMinHoursDaily(ErrorList& errors, QXmlStreamRe
 			}
 			else{
 				if(!(text=="no" || text=="false" || text=="0")){
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 						tr("Found constraint students min hours daily with tag allow empty days"
 						" which is not 'true', 'false', 'yes', 'no', '1' or '0'."
 						" The tag will be considered false",
@@ -9355,7 +9355,7 @@ TimeConstraint* Rules::readStudentsSetMinHoursDaily(ErrorList& errors, QXmlStrea
 			}
 			else{
 				if(!(text=="no" || text=="false" || text=="0")){
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 						tr("Found constraint students set min hours daily with tag allow empty days"
 						" which is not 'true', 'false', 'yes', 'no', '1' or '0'."
 						" The tag will be considered false",
@@ -9405,7 +9405,7 @@ int reportUnspecifiedPermanentlyLockedTimeId, int reportUnspecifiedDayOrHourPref
 			}
 			else{
 				if(!(text=="no" || text=="false" || text=="0")){
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 						tr("Found constraint activity preferred starting time with tag permanently locked"
 						" which is not 'true', 'false', 'yes', 'no', '1' or '0'."
 						" The tag will be considered false",
@@ -9459,7 +9459,7 @@ int reportUnspecifiedPermanentlyLockedTimeId, int reportUnspecifiedDayOrHourPref
 	//crt_constraint=cn;
 
 	if(cn->hour>=0 && cn->day>=0 && !foundLocked){
-		errors << ErrorCode(ErrorCode::INFO,
+		errors << ErrorCode(ErrorCode::Info,
 			tr("Found constraint activity preferred starting time, with unspecified tag"
 			" 'permanently locked' - this tag will be set to 'false' by default. You can always modify it"
 			" by editing the constraint in the 'Data' menu")+"\n\n"
@@ -9478,7 +9478,7 @@ int reportUnspecifiedPermanentlyLockedTimeId, int reportUnspecifiedDayOrHourPref
 	}
 
 	if(cn->hour==-1 || cn->day==-1){
-		errors << ErrorCode(ErrorCode::INFO,
+		errors << ErrorCode(ErrorCode::Info,
 				tr("Found constraint activity preferred starting time, with unspecified day or hour."
 				" This constraint will be transformed into constraint activity preferred starting times (a set of times, not only one)."
 				" This change is done in FET versions 5.8.1 and higher."
@@ -9535,7 +9535,7 @@ int reportUnspecifiedPermanentlyLockedTimeId, int reportUnspecifiedDayOrHourPref
 			}
 			else{
 				if(!(text=="no" || text=="false" || text=="0")){
-					errors << ErrorCode(ErrorCode::WARNING,
+					errors << ErrorCode(ErrorCode::Warning,
 						tr("Found constraint activity preferred starting time with tag permanently locked"
 						" which is not 'true', 'false', 'yes', 'no', '1' or '0'."
 						" The tag will be considered false",
@@ -9589,7 +9589,7 @@ int reportUnspecifiedPermanentlyLockedTimeId, int reportUnspecifiedDayOrHourPref
 	//crt_constraint=cn;
 
 	if(cn->hour>=0 && cn->day>=0 && !foundLocked){
-		errors << ErrorCode(ErrorCode::INFO,
+		errors << ErrorCode(ErrorCode::Info,
 			tr("Found constraint activity preferred starting time, with unspecified tag"
 			" 'permanently locked' - this tag will be set to 'false' by default. You can always modify it"
 			" by editing the constraint in the 'Data' menu")+"\n\n"
@@ -9608,7 +9608,7 @@ int reportUnspecifiedPermanentlyLockedTimeId, int reportUnspecifiedDayOrHourPref
 	}
 
 	if(cn->hour==-1 || cn->day==-1){
-		errors << ErrorCode(ErrorCode::INFO,
+		errors << ErrorCode(ErrorCode::Info,
 				tr("Found constraint activity preferred starting time, with unspecified day or hour."
 				" This constraint will be transformed into constraint activity preferred starting times (a set of times, not only one)."
 				" This change is done in FET versions 5.8.1 and higher."
@@ -12442,7 +12442,7 @@ SpaceConstraint* Rules::readActivityPreferredRoom(ErrorCode& erc, QXmlStreamRead
 			}
 			else{
 				if(!(text=="no" || text=="false" || text=="0")){
-					erc = ErrorCode(ErrorCode::WARNING,
+					erc = ErrorCode(ErrorCode::Warning,
 						tr("Found constraint activity preferred room with tag permanently locked"
 						" which is not 'true', 'false', 'yes', 'no', '1' or '0'."
 						" The tag will be considered false",
@@ -12473,7 +12473,7 @@ SpaceConstraint* Rules::readActivityPreferredRoom(ErrorCode& erc, QXmlStreamRead
 		}
 	}
 	if(!foundLocked && reportUnspecifiedPermanentlyLockedSpaceId){
-		erc = ErrorCode(ErrorCode::INFO,
+		erc = ErrorCode(ErrorCode::Info,
 			tr("Found constraint activity preferred room, with unspecified tag"
 			" 'permanently locked' - this tag will be set to 'false' by default. You can always modify it"
 			" by editing the constraint in the 'Data' menu")+"\n\n"

@@ -618,7 +618,7 @@ ErrorCode ConstraintTeacherNotAvailableTimes::computeInternalStructure(const Rul
 	teacher_ID=r.teachersHash.value(teacher, -1);
 
 	if(this->teacher_ID<0){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint teacher not available times is wrong because it refers to inexistent teacher."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}	
@@ -626,12 +626,12 @@ ErrorCode ConstraintTeacherNotAvailableTimes::computeInternalStructure(const Rul
 	assert(days.count()==hours.count());
 	for(int k=0; k<days.count(); k++){
 		if(this->days.at(k) >= r.nDaysPerWeek){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint teacher not available times is wrong because it refers to removed day. Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}		
 		if(this->hours.at(k) >= r.nHoursPerDay){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint teacher not available times is wrong because an hour is too late (after the last acceptable slot). Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
@@ -804,7 +804,7 @@ ErrorCode ConstraintStudentsSetNotAvailableTimes::computeInternalStructure(const
 	StudentsSet* ss=r.studentsHash.value(students, NULL);
 	
 	if(ss==NULL){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students set not available is wrong because it refers to inexistent students set."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}	
@@ -812,12 +812,12 @@ ErrorCode ConstraintStudentsSetNotAvailableTimes::computeInternalStructure(const
 	assert(days.count()==hours.count());
 	for(int k=0; k<days.count(); k++){
 		if(this->days.at(k) >= r.nDaysPerWeek){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint students set not available times is wrong because it refers to removed day. Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}		
 		if(this->hours.at(k) >= r.nHoursPerDay){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint students set not available times is wrong because an hour is too late (after the last acceptable slot). Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
@@ -1108,7 +1108,7 @@ ErrorCode ConstraintActivitiesSameStartingTime::computeInternalStructure(const R
 	this->_n_activities=this->_activities.count();
 	
 	if(this->_n_activities<=1){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (because you need 2 or more activities). Please correct it:\n%1").arg(this->getDetailedDescription(r)));
 	}
 
@@ -1376,7 +1376,7 @@ ErrorCode ConstraintActivitiesNotOverlapping::computeInternalStructure(const Rul
 	this->_n_activities=this->_activities.count();
 	
 	if(this->_n_activities<=1){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (because you need 2 or more activities). Please correct it:\n%1").arg(this->getDetailedDescription(r)));
 	}
 
@@ -1674,7 +1674,7 @@ ErrorCode ConstraintMinDaysBetweenActivities::computeInternalStructure(const Rul
 	this->_n_activities=this->_activities.count();
 	
 	if(this->_n_activities<=1){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (because you need 2 or more activities). Please correct it:\n%1").arg(this->getDetailedDescription(r)));
 	}
 
@@ -1972,7 +1972,7 @@ ErrorCode ConstraintMaxDaysBetweenActivities::computeInternalStructure(const Rul
 	this->_n_activities=this->_activities.count();
 	
 	if(this->_n_activities<=1){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (because you need 2 or more activities). Please correct it:\n%1").arg(this->getDetailedDescription(r)));
 	}
 
@@ -2259,7 +2259,7 @@ ErrorCode ConstraintMinGapsBetweenActivities::computeInternalStructure(const Rul
 	this->_n_activities=this->_activities.count();
 	
 	if(this->_n_activities<=1){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (because you need 2 or more activities). Please correct it:\n%1").arg(this->getDetailedDescription(r)));
 	}
 
@@ -5148,12 +5148,12 @@ ErrorCode ConstraintBreakTimes::computeInternalStructure(const Rules& r)
 	assert(days.count()==hours.count());
 	for(int k=0; k<days.count(); k++){
 		if(this->days.at(k) >= r.nDaysPerWeek){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint break times is wrong because it refers to removed day. Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}		
 		if(this->hours.at(k) >= r.nHoursPerDay){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint break times is wrong because an hour is too late (after the last acceptable slot). Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
@@ -5526,7 +5526,7 @@ ErrorCode ConstraintStudentsSetMaxGapsPerWeek::computeInternalStructure(const Ru
 	StudentsSet* ss=r.studentsHash.value(students, NULL);
 
 	if(ss==NULL){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students set max gaps per week is wrong because it refers to inexistent students set."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}	
@@ -6013,7 +6013,7 @@ ErrorCode ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::computeInternalSt
 	StudentsSet* ss=r.studentsHash.value(students, NULL);
 
 	if(ss==NULL){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students set early is wrong because it refers to inexistent students set."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}	
@@ -6553,7 +6553,7 @@ ErrorCode ConstraintStudentsSetMaxHoursDaily::computeInternalStructure(const Rul
 	StudentsSet* ss=r.studentsHash.value(students, NULL);
 	
 	if(ss==NULL){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students set max hours daily is wrong because it refers to inexistent students set."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}	
@@ -7018,7 +7018,7 @@ ErrorCode ConstraintStudentsSetMaxHoursContinuously::computeInternalStructure(co
 	StudentsSet* ss=r.studentsHash.value(students, NULL);
 	
 	if(ss==NULL){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students set max hours continuously is wrong because it refers to inexistent students set."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}	
@@ -7556,7 +7556,7 @@ ErrorCode ConstraintStudentsSetActivityTagMaxHoursContinuously::computeInternalS
 	StudentsSet* ss=r.studentsHash.value(students, NULL);
 	
 	if(ss==NULL){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students set max hours continuously is wrong because it refers to inexistent students set."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}	
@@ -8096,7 +8096,7 @@ ErrorCode ConstraintStudentsSetMinHoursDaily::computeInternalStructure(const Rul
 	StudentsSet* ss=r.studentsHash.value(students, NULL);
 	
 	if(ss==NULL){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students set min hours daily is wrong because it refers to inexistent students set."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}	
@@ -8308,22 +8308,22 @@ ErrorCode ConstraintActivityPreferredStartingTime::computeInternalStructure(cons
 	int i=r.activitiesHash.value(activityId, r.nInternalActivities);
 	
 	if(i==r.nInternalActivities){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (because it refers to invalid activity id). Please correct it (maybe removing it is a solution):\n%1").arg(this->getDetailedDescription(r)));
 	}
 
 	if(this->day >= r.nDaysPerWeek){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 tr("Constraint activity preferred starting time is wrong because it refers to removed day. Please correct"
 		 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if(this->hour == r.nHoursPerDay){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 tr("Constraint activity preferred starting time is wrong because preferred hour is too late (after the last acceptable slot). Please correct"
 		 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if(this->hour > r.nHoursPerDay){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 tr("Constraint activity preferred starting time is wrong because it refers to removed hour. Please correct"
 		 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
@@ -8555,29 +8555,29 @@ ErrorCode ConstraintActivityPreferredTimeSlots::computeInternalStructure(const R
 	int i=r.activitiesHash.value(p_activityId, r.nInternalActivities);
 
 	if(i==r.nInternalActivities){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (because it refers to invalid activity id). Please correct it (maybe removing it is a solution):\n%1").arg(this->getDetailedDescription(r)));
 	}
 
 	for(int k=0; k<p_nPreferredTimeSlots_L; k++){
 		if(this->p_days_L[k] >= r.nDaysPerWeek){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint activity preferred time slots is wrong because it refers to removed day. Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}		
 		if(this->p_hours_L[k] == r.nHoursPerDay){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint activity preferred time slots is wrong because a preferred hour is too late (after the last acceptable slot). Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
 		if(this->p_hours_L[k] > r.nHoursPerDay){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint activity preferred time slots is wrong because it refers to removed hour. Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
 
 		if(this->p_hours_L[k]<0 || this->p_days_L[k]<0){
-			return ErrorCode(ErrorCode::FATAL,
+			return ErrorCode(ErrorCode::Fatal,
 			 tr("Constraint activity preferred time slots is wrong because it has hour or day not specified for a slot (-1). Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
@@ -8904,22 +8904,22 @@ ErrorCode ConstraintActivitiesPreferredTimeSlots::computeInternalStructure(const
 	//////////////////////	
 	for(int k=0; k<p_nPreferredTimeSlots_L; k++){
 		if(this->p_days_L[k] >= r.nDaysPerWeek){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint activities preferred time slots is wrong because it refers to removed day. Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
 		if(this->p_hours_L[k] == r.nHoursPerDay){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint activities preferred time slots is wrong because a preferred hour is too late (after the last acceptable slot). Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
 		if(this->p_hours_L[k] > r.nHoursPerDay){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint activities preferred time slots is wrong because it refers to removed hour. Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
 		if(this->p_hours_L[k]<0 || this->p_days_L[k]<0){
-			return ErrorCode(ErrorCode::FATAL,
+			return ErrorCode(ErrorCode::Fatal,
 			 tr("Constraint activities preferred time slots is wrong because hour or day is not specified for a slot (-1). Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
@@ -8929,7 +8929,7 @@ ErrorCode ConstraintActivitiesPreferredTimeSlots::computeInternalStructure(const
 	if(this->p_nActivities>0)
 		return ErrorCode();
 	else{
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (refers to no activities). Please correct it:\n%1").arg(this->getDetailedDescription(r)));
 	}
 }
@@ -9386,22 +9386,22 @@ ErrorCode ConstraintSubactivitiesPreferredTimeSlots::computeInternalStructure(co
 	//////////////////////	
 	for(int k=0; k<p_nPreferredTimeSlots_L; k++){
 		if(this->p_days_L[k] >= r.nDaysPerWeek){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint subactivities preferred time slots is wrong because it refers to removed day. Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
 		if(this->p_hours_L[k] == r.nHoursPerDay){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint subactivities preferred time slots is wrong because a preferred hour is too late (after the last acceptable slot). Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
 		if(this->p_hours_L[k] > r.nHoursPerDay){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint subactivities preferred time slots is wrong because it refers to removed hour. Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
 		if(this->p_hours_L[k]<0 || this->p_days_L[k]<0){
-			return ErrorCode(ErrorCode::FATAL,
+			return ErrorCode(ErrorCode::Fatal,
 			 tr("Constraint subactivities preferred time slots is wrong because hour or day is not specified for a slot (-1). Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
@@ -9411,7 +9411,7 @@ ErrorCode ConstraintSubactivitiesPreferredTimeSlots::computeInternalStructure(co
 	if(this->p_nActivities>0)
 		return ErrorCode();
 	else{
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (refers to no activities). Please correct it:\n%1").arg(this->getDetailedDescription(r)));
 	}
 }
@@ -9819,23 +9819,23 @@ ErrorCode ConstraintActivityPreferredStartingTimes::computeInternalStructure(con
 	int i=r.activitiesHash.value(activityId, r.nInternalActivities);
 
 	if(i==r.nInternalActivities){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (because it refers to invalid activity id). Please correct it (maybe removing it is a solution):\n%1").arg(this->getDetailedDescription(r)));
 	}
 
 	for(int k=0; k<nPreferredStartingTimes_L; k++){
 		if(this->days_L[k] >= r.nDaysPerWeek){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint activity preferred starting times is wrong because it refers to removed day. Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}		
 		if(this->hours_L[k] == r.nHoursPerDay){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint activity preferred starting times is wrong because a preferred hour is too late (after the last acceptable slot). Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
 		if(this->hours_L[k] > r.nHoursPerDay){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint activity preferred starting times is wrong because it refers to removed hour. Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
@@ -10157,17 +10157,17 @@ ErrorCode ConstraintActivitiesPreferredStartingTimes::computeInternalStructure(c
 	//////////////////////	
 	for(int k=0; k<nPreferredStartingTimes_L; k++){
 		if(this->days_L[k] >= r.nDaysPerWeek){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint activities preferred starting times is wrong because it refers to removed day. Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
 		if(this->hours_L[k] == r.nHoursPerDay){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint activities preferred starting times is wrong because a preferred hour is too late (after the last acceptable slot). Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
 		if(this->hours_L[k] > r.nHoursPerDay){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint activities preferred starting times is wrong because it refers to removed hour. Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
@@ -10177,7 +10177,7 @@ ErrorCode ConstraintActivitiesPreferredStartingTimes::computeInternalStructure(c
 	if(this->nActivities>0)
 		return ErrorCode();
 	else{
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (refers to no activities). Please correct it:\n%1").arg(this->getDetailedDescription(r)));
 	}
 }
@@ -10629,17 +10629,17 @@ ErrorCode ConstraintSubactivitiesPreferredStartingTimes::computeInternalStructur
 	//////////////////////	
 	for(int k=0; k<nPreferredStartingTimes_L; k++){
 		if(this->days_L[k] >= r.nDaysPerWeek){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint subactivities preferred starting times is wrong because it refers to removed day. Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
 		if(this->hours_L[k] == r.nHoursPerDay){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint subactivities preferred starting times is wrong because a preferred hour is too late (after the last acceptable slot). Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
 		if(this->hours_L[k] > r.nHoursPerDay){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint subactivities preferred starting times is wrong because it refers to removed hour. Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
@@ -10649,7 +10649,7 @@ ErrorCode ConstraintSubactivitiesPreferredStartingTimes::computeInternalStructur
 	if(this->nActivities>0)
 		return ErrorCode();
 	else{
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (refers to no activities). Please correct it:\n%1").arg(this->getDetailedDescription(r)));
 	}
 }
@@ -11058,7 +11058,7 @@ ErrorCode ConstraintActivitiesSameStartingHour::computeInternalStructure(const R
 	this->_n_activities=this->_activities.count();
 	
 	if(this->_n_activities<=1){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (because you need 2 or more activities). Please correct it:\n%1").arg(this->getDetailedDescription(r)));
 	}
 
@@ -11325,7 +11325,7 @@ ErrorCode ConstraintActivitiesSameStartingDay::computeInternalStructure(const Ru
 	this->_n_activities=this->_activities.count();
 	
 	if(this->_n_activities<=1){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (because you need 2 or more activities). Please correct it:\n%1").arg(this->getDetailedDescription(r)));
 	}
 
@@ -11573,7 +11573,7 @@ ErrorCode ConstraintTwoActivitiesConsecutive::computeInternalStructure(const Rul
 	int i=r.activitiesHash.value(firstActivityId, r.nInternalActivities);
 	
 	if(i==r.nInternalActivities){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (refers to inexistent activity ids):\n%1").arg(this->getDetailedDescription(r)));
 	}
 
@@ -11590,14 +11590,14 @@ ErrorCode ConstraintTwoActivitiesConsecutive::computeInternalStructure(const Rul
 	i=r.activitiesHash.value(secondActivityId, r.nInternalActivities);
 	
 	if(i==r.nInternalActivities){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (refers to inexistent activity ids):\n%1").arg(this->getDetailedDescription(r)));
 	}
 
 	this->secondActivityIndex=i;
 	
 	if(firstActivityIndex==secondActivityIndex){	
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (refers to same activities):\n%1").arg(this->getDetailedDescription(r)));
 	}
 	assert(firstActivityIndex!=secondActivityIndex);
@@ -11833,7 +11833,7 @@ ErrorCode ConstraintTwoActivitiesGrouped::computeInternalStructure(const Rules& 
 	int i=r.activitiesHash.value(firstActivityId, r.nInternalActivities);
 	
 	if(i==r.nInternalActivities){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (refers to inexistent activity ids):\n%1").arg(this->getDetailedDescription(r)));
 	}
 
@@ -11850,14 +11850,14 @@ ErrorCode ConstraintTwoActivitiesGrouped::computeInternalStructure(const Rules& 
 	i=r.activitiesHash.value(secondActivityId, r.nInternalActivities);
 	
 	if(i==r.nInternalActivities){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (refers to inexistent activity ids):\n%1").arg(this->getDetailedDescription(r)));
 	}
 
 	this->secondActivityIndex=i;
 	
 	if(firstActivityIndex==secondActivityIndex){	
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (refers to same activities):\n%1").arg(this->getDetailedDescription(r)));
 	}
 	assert(firstActivityIndex!=secondActivityIndex);
@@ -12106,7 +12106,7 @@ ErrorCode ConstraintThreeActivitiesGrouped::computeInternalStructure(const Rules
 	int i=r.activitiesHash.value(firstActivityId, r.nInternalActivities);
 	
 	if(i==r.nInternalActivities){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (refers to inexistent activity ids):\n%1").arg(this->getDetailedDescription(r)));
 	}
 
@@ -12123,7 +12123,7 @@ ErrorCode ConstraintThreeActivitiesGrouped::computeInternalStructure(const Rules
 	i=r.activitiesHash.value(secondActivityId, r.nInternalActivities);
 	
 	if(i==r.nInternalActivities){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (refers to inexistent activity ids):\n%1").arg(this->getDetailedDescription(r)));
 	}
 
@@ -12140,14 +12140,14 @@ ErrorCode ConstraintThreeActivitiesGrouped::computeInternalStructure(const Rules
 	i=r.activitiesHash.value(thirdActivityId, r.nInternalActivities);
 	
 	if(i==r.nInternalActivities){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (refers to inexistent activity ids):\n%1").arg(this->getDetailedDescription(r)));
 	}
 
 	this->thirdActivityIndex=i;
 	
 	if(firstActivityIndex==secondActivityIndex || firstActivityIndex==thirdActivityIndex || secondActivityIndex==thirdActivityIndex){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (refers to same activities):\n%1").arg(this->getDetailedDescription(r)));
 	}
 	assert(firstActivityIndex!=secondActivityIndex && firstActivityIndex!=thirdActivityIndex && secondActivityIndex!=thirdActivityIndex);
@@ -12458,7 +12458,7 @@ ErrorCode ConstraintTwoActivitiesOrdered::computeInternalStructure(const Rules& 
 	int i=r.activitiesHash.value(firstActivityId, r.nInternalActivities);
 	
 	if(i==r.nInternalActivities){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (refers to inexistent activity ids):\n%1").arg(this->getDetailedDescription(r)));
 	}
 
@@ -12475,14 +12475,14 @@ ErrorCode ConstraintTwoActivitiesOrdered::computeInternalStructure(const Rules& 
 	i=r.activitiesHash.value(secondActivityId, r.nInternalActivities);
 	
 	if(i==r.nInternalActivities){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (refers to inexistent activity ids):\n%1").arg(this->getDetailedDescription(r)));
 	}
 
 	this->secondActivityIndex=i;
 	
 	if(firstActivityIndex==secondActivityIndex){	
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (refers to same activities):\n%1").arg(this->getDetailedDescription(r)));
 	}
 	assert(firstActivityIndex!=secondActivityIndex);
@@ -12702,7 +12702,7 @@ ErrorCode ConstraintActivityEndsStudentsDay::computeInternalStructure(const Rule
 	int i=r.activitiesHash.value(activityId, r.nInternalActivities);
 	
 	if(i==r.nInternalActivities){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (because it refers to invalid activity id). Please correct it (maybe removing it is a solution):\n%1").arg(this->getDetailedDescription(r)));
 	}
 
@@ -12907,7 +12907,7 @@ ErrorCode ConstraintTeachersMinHoursDaily::computeInternalStructure(const Rules&
 			" so that it allows empty days. If you need a facility like that, please use constraint teachers min days per week");
 		s+="\n\n";
 		s+=tr("Constraint is:")+"\n"+this->getDetailedDescription(r);
-		return ErrorCode(ErrorCode::FATAL, s);
+		return ErrorCode(ErrorCode::Fatal, s);
 	}
 	
 	return ErrorCode();
@@ -13117,7 +13117,7 @@ ErrorCode ConstraintTeacherMinHoursDaily::computeInternalStructure(const Rules& 
 			" so that it allows empty days. If you need a facility like that, please use constraint teacher min days per week");
 		s+="\n\n";
 		s+=tr("Constraint is:")+"\n"+this->getDetailedDescription(r);
-		return ErrorCode(ErrorCode::FATAL, s);
+		return ErrorCode(ErrorCode::Fatal, s);
 	}
 	
 	return ErrorCode();
@@ -13709,17 +13709,17 @@ ErrorCode ConstraintTeacherIntervalMaxDaysPerWeek::computeInternalStructure(cons
 	teacher_ID=r.teachersHash.value(teacherName, -1);
 	assert(this->teacher_ID>=0);
 	if(this->startHour>=this->endHour){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint teacher interval max days per week is wrong because start hour >= end hour."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if(this->startHour<0){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint teacher interval max days per week is wrong because start hour < first hour of the day."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if(this->endHour>r.nHoursPerDay){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 tr("Constraint teacher interval max days per week is wrong because end hour > number of hours per day."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
@@ -13950,17 +13950,17 @@ ConstraintTeachersIntervalMaxDaysPerWeek::ConstraintTeachersIntervalMaxDaysPerWe
 ErrorCode ConstraintTeachersIntervalMaxDaysPerWeek::computeInternalStructure(const Rules& r)
 {
 	if(this->startHour>=this->endHour){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint teachers interval max days per week is wrong because start hour >= end hour."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if(this->startHour<0){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint teachers interval max days per week is wrong because start hour < first hour of the day."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if(this->endHour>r.nHoursPerDay){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 tr("Constraint teachers interval max days per week is wrong because end hour > number of hours per day."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
@@ -14190,17 +14190,17 @@ ConstraintStudentsSetIntervalMaxDaysPerWeek::ConstraintStudentsSetIntervalMaxDay
 ErrorCode ConstraintStudentsSetIntervalMaxDaysPerWeek::computeInternalStructure(const Rules& r)
 {
 	if(this->startHour>=this->endHour){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students set interval max days per week is wrong because start hour >= end hour."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if(this->startHour<0){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students set interval max days per week is wrong because start hour < first hour of the day."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if(this->endHour>r.nHoursPerDay){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 tr("Constraint students set interval max days per week is wrong because end hour > number of hours per day."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
@@ -14210,7 +14210,7 @@ ErrorCode ConstraintStudentsSetIntervalMaxDaysPerWeek::computeInternalStructure(
 	StudentsSet* ss=r.studentsHash.value(students, NULL);
 
 	if(ss==NULL){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students set interval max days per week is wrong because it refers to inexistent students set."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}	
@@ -14480,17 +14480,17 @@ ConstraintStudentsIntervalMaxDaysPerWeek::ConstraintStudentsIntervalMaxDaysPerWe
 ErrorCode ConstraintStudentsIntervalMaxDaysPerWeek::computeInternalStructure(const Rules& r)
 {
 	if(this->startHour>=this->endHour){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students interval max days per week is wrong because start hour >= end hour."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if(this->startHour<0){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students interval max days per week is wrong because start hour < first hour of the day."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if(this->endHour>r.nHoursPerDay){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 tr("Constraint students interval max days per week is wrong because end hour > number of hours per day."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
@@ -14763,7 +14763,7 @@ ErrorCode ConstraintActivitiesEndStudentsDay::computeInternalStructure(const Rul
 	if(this->nActivities>0)
 		return ErrorCode();
 	else{
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (refers to no activities). Please correct it:\n%1").arg(this->getDetailedDescription(r)));
 	}
 }
@@ -15798,7 +15798,7 @@ ErrorCode ConstraintStudentsSetActivityTagMaxHoursDaily::computeInternalStructur
 	StudentsSet* ss=r.studentsHash.value(students, NULL);
 	
 	if(ss==NULL){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students set max hours daily is wrong because it refers to inexistent students set."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}	
@@ -16219,7 +16219,7 @@ ErrorCode ConstraintStudentsSetMaxGapsPerDay::computeInternalStructure(const Rul
 	StudentsSet* ss=r.studentsHash.value(students, NULL);
 
 	if(ss==NULL){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students set max gaps per day is wrong because it refers to inexistent students set."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}	
@@ -16500,22 +16500,22 @@ ErrorCode ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::computeInternalSt
 	
 	for(int k=0; k<this->selectedDays.count(); k++){
 		if(this->selectedDays.at(k) >= r.nDaysPerWeek){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint activities occupy max time slots from selection is wrong because it refers to removed day. Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
 		if(this->selectedHours.at(k) == r.nHoursPerDay){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint activities occupy max time slots from selection is wrong because a preferred hour is too late (after the last acceptable slot). Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
 		if(this->selectedHours.at(k) > r.nHoursPerDay){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint activities occupy max time slots from selection is wrong because it refers to removed hour. Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
 		if(this->selectedDays.at(k)<0 || this->selectedHours.at(k)<0){
-			return ErrorCode(ErrorCode::FATAL,
+			return ErrorCode(ErrorCode::Fatal,
 			 tr("Constraint activities occupy max time slots from selection is wrong because hour or day is not specified for a slot (-1). Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
@@ -16525,7 +16525,7 @@ ErrorCode ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::computeInternalSt
 	if(this->_activitiesIndices.count()>0)
 		return ErrorCode();
 	else{
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (refers to no activities). Please correct it:\n%1").arg(this->getDetailedDescription(r)));
 	}
 }
@@ -16852,22 +16852,22 @@ ErrorCode ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::computeInterna
 	
 	for(int k=0; k<this->selectedDays.count(); k++){
 		if(this->selectedDays.at(k) >= r.nDaysPerWeek){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint activities max simultaneous in selected time slots is wrong because it refers to removed day. Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
 		if(this->selectedHours.at(k) == r.nHoursPerDay){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint activities max simultaneous in selected time slots is wrong because a preferred hour is too late (after the last acceptable slot). Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
 		if(this->selectedHours.at(k) > r.nHoursPerDay){
-			return ErrorCode(ErrorCode::ERROR,
+			return ErrorCode(ErrorCode::Error,
 			 tr("Constraint activities max simultaneous in selected time slots is wrong because it refers to removed hour. Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
 		if(this->selectedDays.at(k)<0 || this->selectedHours.at(k)<0){
-			return ErrorCode(ErrorCode::FATAL,
+			return ErrorCode(ErrorCode::Fatal,
 			 tr("Constraint activities max simultaneous in selected time slots is wrong because hour or day is not specified for a slot (-1). Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 		}
@@ -16877,7 +16877,7 @@ ErrorCode ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::computeInterna
 	if(this->_activitiesIndices.count()>0)
 		return ErrorCode();
 	else{
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 			tr("Following constraint is wrong (refers to no activities). Please correct it:\n%1").arg(this->getDetailedDescription(r)));
 	}
 }
@@ -17175,7 +17175,7 @@ ErrorCode ConstraintStudentsSetMaxDaysPerWeek::computeInternalStructure(const Ru
 	StudentsSet* ss=r.studentsHash.value(students, NULL);
 
 	if(ss==NULL){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students set max days per week is wrong because it refers to inexistent students set."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}	
@@ -18043,7 +18043,7 @@ ErrorCode ConstraintStudentsSetMaxSpanPerDay::computeInternalStructure(const Rul
 	StudentsSet* ss=r.studentsHash.value(students, NULL);
 	
 	if(ss==NULL){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students set max span per day is wrong because it refers to inexistent students set."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}	
@@ -18858,7 +18858,7 @@ ErrorCode ConstraintStudentsSetMinRestingHours::computeInternalStructure(const R
 	StudentsSet* ss=r.studentsHash.value(students, NULL);
 	
 	if(ss==NULL){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students set min resting hours is wrong because it refers to inexistent students set."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}	
@@ -19242,37 +19242,37 @@ ErrorCode ConstraintTeacherMinContinuousGapInInterval::computeInternalStructure(
 	teacher_ID=r.teachersHash.value(teacherName, -1);
 	assert(this->teacher_ID>=0);
 	if (weightPercentage < 0) {
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint teacher min continuous gap in interval is wrong because weight < 0%."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if (weightPercentage > 100) {
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint teacher min continuous gap in interval is wrong because weight > 100%."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if (startHour >= endHour){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint teacher min continuous gap in interval is wrong because start hour >= end hour."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if (startHour < 0){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint teacher min continuous gap in interval is wrong because start hour < first hour of the day."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if (endHour > r.nHoursPerDay){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 tr("Constraint teacher min continuous gap in interval is wrong because end hour > number of hours per day."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if (minGapDuration < 0){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint teacher min continuous gap in interval is wrong because gap duration < 0."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if (minGapDuration > endHour-startHour){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint teacher min continuous gap in interval is wrong because minimum gap duration > interval."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
@@ -19494,37 +19494,37 @@ QString ConstraintTeachersMinContinuousGapInInterval::getXmlDescription(const Ru
 ErrorCode ConstraintTeachersMinContinuousGapInInterval::computeInternalStructure(const Rules& r)
 {
 	if (weightPercentage < 0) {
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint teachers min continuous gap in interval is wrong because weight < 0%."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if (weightPercentage > 100) {
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint teachers min continuous gap in interval is wrong because weight > 100%."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if (startHour >= endHour){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint teachers min continuous gap in interval is wrong because start hour >= end hour."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if (startHour < 0){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint teachers min continuous gap in interval is wrong because start hour < first hour of the day."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if (endHour > r.nHoursPerDay){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 tr("Constraint teachers min continuous gap in interval is wrong because end hour > number of hours per day."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if (minGapDuration < 0){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint teachers min continuous gap in interval is wrong because gap duration < 0."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if (minGapDuration > endHour-startHour){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint teachers min continuous gap in interval is wrong because minimum gap duration > interval."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
@@ -19747,7 +19747,7 @@ ErrorCode ConstraintStudentsSetMinContinuousGapInInterval::computeInternalStruct
 {
 	StudentsSet* ss=r.studentsHash.value(students, NULL);
 	if(ss==NULL){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students set min continuous gap in interval is wrong because it refers to inexistent students set."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
@@ -19793,37 +19793,37 @@ ErrorCode ConstraintStudentsSetMinContinuousGapInInterval::computeInternalStruct
 		assert(0);
 
 	if (weightPercentage < 0) {
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students set min continuous gap in interval is wrong because weight < 0%."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if (weightPercentage > 100) {
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students set min continuous gap in interval is wrong because weight > 100%."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if (startHour >= endHour){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students set min continuous gap in interval is wrong because start hour >= end hour."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if (startHour < 0){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students set min continuous gap in interval is wrong because start hour < first hour of the day."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if (endHour > r.nHoursPerDay){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 tr("Constraint students set min continuous gap in interval is wrong because end hour > number of hours per day."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if (minGapDuration < 0){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students set min continuous gap in interval is wrong because gap duration < 0."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if (minGapDuration > endHour-startHour){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students set min continuous gap in interval is wrong because minimum gap duration > interval."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
@@ -20044,37 +20044,37 @@ QString ConstraintStudentsMinContinuousGapInInterval::getXmlDescription(const Ru
 ErrorCode ConstraintStudentsMinContinuousGapInInterval::computeInternalStructure(const Rules& r)
 {
 	if (weightPercentage < 0) {
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students min continuous gap in interval is wrong because weight < 0%."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if (weightPercentage > 100) {
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students min continuous gap in interval is wrong because weight > 100%."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if (startHour >= endHour){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students min continuous gap in interval is wrong because start hour >= end hour."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if (startHour < 0){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students min continuous gap in interval is wrong because start hour < first hour of the day."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if (endHour > r.nHoursPerDay){
-		return ErrorCode(ErrorCode::ERROR,
+		return ErrorCode(ErrorCode::Error,
 		 tr("Constraint students min continuous gap in interval is wrong because end hour > number of hours per day."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if (minGapDuration < 0){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students min continuous gap in interval is wrong because gap duration < 0."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}
 	if (minGapDuration > endHour-startHour){
-		return ErrorCode(ErrorCode::FATAL,
+		return ErrorCode(ErrorCode::Fatal,
 		 tr("Constraint students min continuous gap in interval is wrong because minimum gap duration > interval."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 	}

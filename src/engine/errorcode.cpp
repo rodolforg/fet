@@ -17,7 +17,7 @@
 #include <QCoreApplication>
 
 ErrorCode::ErrorCode()
-	: severity(NO_ERROR), groupId(0)
+	: severity(NoError), groupId(0)
 {
 }
 
@@ -28,7 +28,7 @@ ErrorCode::ErrorCode(ErrorCode::Severity severity, QString message, int groupId)
 
 bool ErrorCode::isError() const
 {
-	return severity == ERROR || severity == FATAL;
+	return severity == Error || severity == Fatal;
 }
 
 QString ErrorCode::getSeverityTitle() const
@@ -39,13 +39,13 @@ QString ErrorCode::getSeverityTitle() const
 QString ErrorCode::getSeverityTitle(ErrorCode::Severity severity)
 {
 	switch (severity) {
-	case FATAL:
+	case Fatal:
 		return QCoreApplication::translate("Rules", "FET critical");
-	case ERROR:
+	case Error:
 		return QCoreApplication::translate("Rules", "FET error");
-	case WARNING:
+	case Warning:
 		return QCoreApplication::translate("Rules", "FET warning");
-	case INFO:
+	case Info:
 		return QCoreApplication::translate("Rules", "FET information");
 	default:
 		return QCoreApplication::translate("Rules", "FET message");
@@ -62,7 +62,7 @@ int ErrorCode::_nextGroupId = 0;
 
 ErrorCode::operator bool() const
 {
-	return severity != NO_ERROR;
+	return severity != NoError;
 }
 
 bool ErrorList::hasError() const
@@ -77,7 +77,7 @@ bool ErrorList::hasError() const
 bool ErrorList::hasFatal() const
 {
 	foreach (const ErrorCode& erc, *this) {
-		if (erc.severity == ErrorCode::FATAL)
+		if (erc.severity == ErrorCode::Fatal)
 			return true;
 	}
 	return false;

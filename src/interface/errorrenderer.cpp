@@ -23,19 +23,19 @@
 void ErrorRenderer::renderErrorCode(QWidget* parent, const ErrorCode& erc)
 {
 	switch (erc.severity) {
-	case ErrorCode::FATAL:
+	case ErrorCode::Fatal:
 		QMessageBox::critical(parent, erc.getSeverityTitle(), erc.message);
 		break;
-	case ErrorCode::ERROR:
+	case ErrorCode::Error:
 		LongTextMessageBox::mediumInformation(parent, erc.getSeverityTitle(), erc.message);
 		break;
-	case ErrorCode::WARNING:
+	case ErrorCode::Warning:
 		LongTextMessageBox::mediumInformation(parent, erc.getSeverityTitle(), erc.message);
 		break;
-	case ErrorCode::INFO:
+	case ErrorCode::Info:
 		LongTextMessageBox::mediumInformation(parent, erc.getSeverityTitle(), erc.message);
 		break;
-	case ErrorCode::VERBOSE:
+	case ErrorCode::Verbose:
 		if (VERBOSE)
 			LongTextMessageBox::mediumInformation(parent, erc.getSeverityTitle(), erc.message);
 		break;
@@ -48,28 +48,28 @@ bool ErrorRenderer::renderSkippableErrorCode(QWidget* parent, const ErrorCode& e
 {
 	int skip = 1;
 	switch (erc.severity) {
-	case ErrorCode::FATAL:
+	case ErrorCode::Fatal:
 		QMessageBox::critical(parent, erc.getSeverityTitle(), erc.message);
 		return false;
-	case ErrorCode::ERROR:
+	case ErrorCode::Error:
 		skip = LongTextMessageBox::mediumConfirmation(parent, erc.getSeverityTitle(), erc.message,
 													  QCoreApplication::translate("Rules", "Skip rest"),
 													  QCoreApplication::translate("Rules", "See next"),
 													  QString(), 1, 0 );
 		break;
-	case ErrorCode::WARNING:
+	case ErrorCode::Warning:
 		skip = LongTextMessageBox::mediumConfirmation(parent, erc.getSeverityTitle(), erc.message,
 													  QCoreApplication::translate("Rules", "Skip rest"),
 													  QCoreApplication::translate("Rules", "See next"),
 													  QString(), 1, 0 );
 		break;
-	case ErrorCode::INFO:
+	case ErrorCode::Info:
 		skip = LongTextMessageBox::mediumConfirmation(parent, erc.getSeverityTitle(), erc.message,
 													  QCoreApplication::translate("Rules", "Skip rest"),
 													  QCoreApplication::translate("Rules", "See next"),
 													  QString(), 1, 0 );
 		break;
-	case ErrorCode::VERBOSE:
+	case ErrorCode::Verbose:
 		if (VERBOSE)
 			skip = LongTextMessageBox::mediumConfirmation(parent, erc.getSeverityTitle(), erc.message,
 														  QCoreApplication::translate("Rules", "Skip rest"),
