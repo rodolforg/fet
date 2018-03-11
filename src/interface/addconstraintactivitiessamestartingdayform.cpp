@@ -26,6 +26,8 @@
 #include <QAbstractItemView>
 #include <QScrollBar>
 
+#include "fetguisettings.h"
+
 AddConstraintActivitiesSameStartingDayForm::AddConstraintActivitiesSameStartingDayForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);

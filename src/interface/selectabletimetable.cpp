@@ -6,6 +6,7 @@
 #include <QVector>
 
 #include "tablewidgetupdatebug.h"
+#include "fetguisettings.h"
 
 class ChangeRowCommand : public QUndoCommand
 {

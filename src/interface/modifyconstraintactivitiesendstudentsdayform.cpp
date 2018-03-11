@@ -20,6 +20,8 @@
 #include "modifyconstraintactivitiesendstudentsdayform.h"
 #include "timeconstraint.h"
 
+#include "fetguisettings.h"
+
 ModifyConstraintActivitiesEndStudentsDayForm::ModifyConstraintActivitiesEndStudentsDayForm(QWidget* parent, ConstraintActivitiesEndStudentsDay* ctr): QDialog(parent)
 {
 	setupUi(this);

@@ -20,6 +20,8 @@
 #include "modifyconstraintstudentssetnotavailabletimesform.h"
 #include "timeconstraint.h"
 
+#include "fetguisettings.h"
+
 ModifyConstraintStudentsSetNotAvailableTimesForm::ModifyConstraintStudentsSetNotAvailableTimesForm(QWidget* parent, ConstraintStudentsSetNotAvailableTimes* ctr): QDialog(parent)
 {
 	setupUi(this);

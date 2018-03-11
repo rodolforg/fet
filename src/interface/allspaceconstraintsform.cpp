@@ -15,6 +15,8 @@
  *                                                                         *
  ***************************************************************************/
 
+#include "fetguisettings.h"
+
 #include "longtextmessagebox.h"
 
 #include "allspaceconstraintsform.h"

@@ -30,6 +30,8 @@
 #include <algorithm>
 using namespace std;
 
+#include "fetguisettings.h"
+
 GroupActivitiesInInitialOrderItemsForm::GroupActivitiesInInitialOrderItemsForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);

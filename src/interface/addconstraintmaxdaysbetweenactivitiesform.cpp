@@ -19,8 +19,6 @@
 
 #include <QMessageBox>
 
-
-
 #include "longtextmessagebox.h"
 
 #include "addconstraintmaxdaysbetweenactivitiesform.h"
@@ -29,6 +27,8 @@
 #include <QListWidget>
 #include <QAbstractItemView>
 #include <QScrollBar>
+
+#include "fetguisettings.h"
 
 AddConstraintMaxDaysBetweenActivitiesForm::AddConstraintMaxDaysBetweenActivitiesForm(QWidget* parent): QDialog(parent)
 {

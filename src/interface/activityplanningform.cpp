@@ -28,6 +28,7 @@
 
 #include "timetable.h"
 #include "timetable_defs.h"
+#include "fetguisettings.h"
 
 // BE CAREFUL: DON'T USE INTERNAL VARIABLES HERE, because maybe computeInternalStructure() is not done!
 

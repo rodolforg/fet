@@ -17,11 +17,11 @@
 
 #include <QMessageBox>
 
-
-
 #include "longtextmessagebox.h"
 
 #include "addconstraintactivitiesendstudentsdayform.h"
+
+#include "fetguisettings.h"
 
 AddConstraintActivitiesEndStudentsDayForm::AddConstraintActivitiesEndStudentsDayForm(QWidget* parent): QDialog(parent)
 {

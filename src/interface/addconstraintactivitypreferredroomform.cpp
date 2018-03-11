@@ -25,6 +25,8 @@
 #include <QSet>
 #include "lockunlock.h"
 
+#include "fetguisettings.h"
+
 AddConstraintActivityPreferredRoomForm::AddConstraintActivityPreferredRoomForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);

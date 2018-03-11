@@ -26,6 +26,8 @@
 #include <QAbstractItemView>
 #include <QScrollBar>
 
+#include "fetguisettings.h"
+
 AddConstraintMinDaysBetweenActivitiesForm::AddConstraintMinDaysBetweenActivitiesForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);

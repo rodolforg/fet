@@ -26,7 +26,7 @@
 #include "longtextmessagebox.h"
 
 #include "centerwidgetonscreen.h"
-#include "timetable_defs.h"
+#include "fetguisettings.h"
 
 ConstraintBaseDialog::ConstraintBaseDialog(QWidget* parent): QDialog(parent),
 	  filterWidget(NULL)

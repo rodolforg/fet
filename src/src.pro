@@ -494,6 +494,7 @@ SOURCES += \
     interface/constraintstudentsmincontinuousgapinintervalform.cpp \
     interface/editcommentsform.cpp \
 	interface/errorrenderer.cpp \
+	interface/fetguisettings.cpp \
 
 HEADERS += \
 	engine/timetableexport.h \
@@ -994,6 +995,7 @@ HEADERS += \
     interface/constraintstudentsmincontinuousgapinintervalform.h \
     interface/editcommentsform.h \
 	interface/errorrenderer.h \
+	interface/fetguisettings.h \
 
 FORMS += \
 	interface/fetmainform_template.ui \

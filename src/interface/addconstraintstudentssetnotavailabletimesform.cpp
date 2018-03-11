@@ -22,6 +22,8 @@
 #include "addconstraintstudentssetnotavailabletimesform.h"
 #include "timeconstraint.h"
 
+#include "fetguisettings.h"
+
 AddConstraintStudentsSetNotAvailableTimesForm::AddConstraintStudentsSetNotAvailableTimesForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);

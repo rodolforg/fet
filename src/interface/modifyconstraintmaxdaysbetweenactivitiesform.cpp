@@ -26,6 +26,8 @@
 #include <QAbstractItemView>
 #include <QScrollBar>
 
+#include "fetguisettings.h"
+
 ModifyConstraintMaxDaysBetweenActivitiesForm::ModifyConstraintMaxDaysBetweenActivitiesForm(QWidget* parent, ConstraintMaxDaysBetweenActivities* ctr): QDialog(parent)
 {
 	setupUi(this);

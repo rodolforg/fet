@@ -24,6 +24,8 @@
 #include <QAbstractItemView>
 #include <QScrollBar>
 
+#include "fetguisettings.h"
+
 ModifyConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::ModifyConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm(QWidget* parent, ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots* ctr): QDialog(parent)
 {
 	setupUi(this);

@@ -47,21 +47,12 @@ extern bool LANGUAGE_STYLE_RIGHT_TO_LEFT;
 
 extern QString LANGUAGE_FOR_HTML;
 
-extern bool USE_GUI_COLORS;
-
-extern bool SHOW_SUBGROUPS_IN_COMBO_BOXES;
-extern bool SHOW_SUBGROUPS_IN_ACTIVITY_PLANNING;
-
-extern bool SHOW_TOOLTIPS_FOR_CONSTRAINTS_WITH_TABLES;
-
 extern bool SHOW_WARNING_FOR_NOT_PERFECT_CONSTRAINTS;
 
 extern bool SHOW_WARNING_FOR_SUBGROUPS_WITH_THE_SAME_ACTIVITIES;
 
-extern bool ENABLE_STUDENTS_MIN_HOURS_DAILY_WITH_ALLOW_EMPTY_DAYS;
 extern bool SHOW_WARNING_FOR_STUDENTS_MIN_HOURS_DAILY_WITH_ALLOW_EMPTY_DAYS;
 
-extern bool ENABLE_GROUP_ACTIVITIES_IN_INITIAL_ORDER;
 extern bool SHOW_WARNING_FOR_GROUP_ACTIVITIES_IN_INITIAL_ORDER;
 
 extern bool VERBOSE;
@@ -237,10 +228,6 @@ const int TEACHER_HAS_A_FREE_DAY = 7;
 const int TEACHER_IS_NOT_AVAILABLE = 8;
 
 const int TEACHERS_FREE_PERIODS_N_CATEGORIES = 9;
-
-extern bool checkForUpdates;
-
-extern QString internetVersion;
 
 ///////tricks to save work to reconvert old code
 const int CUSTOM_DOUBLE_PRECISION=6; //number of digits after the decimal dot for the weights

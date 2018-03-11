@@ -22,6 +22,8 @@
 #include "addconstraintstudentssethomeroomform.h"
 #include "spaceconstraint.h"
 
+#include "fetguisettings.h"
+
 AddConstraintStudentsSetHomeRoomForm::AddConstraintStudentsSetHomeRoomForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);

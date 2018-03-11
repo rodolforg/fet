@@ -17,10 +17,10 @@
 
 #include <QMessageBox>
 
-
-
 #include "modifyconstraintactivityendsstudentsdayform.h"
 #include "timeconstraint.h"
+
+#include "fetguisettings.h"
 
 ModifyConstraintActivityEndsStudentsDayForm::ModifyConstraintActivityEndsStudentsDayForm(QWidget* parent, ConstraintActivityEndsStudentsDay* ctr): QDialog(parent)
 {

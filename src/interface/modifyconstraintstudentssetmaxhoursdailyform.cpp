@@ -20,6 +20,8 @@
 #include "modifyconstraintstudentssetmaxhoursdailyform.h"
 #include "timeconstraint.h"
 
+#include "fetguisettings.h"
+
 ModifyConstraintStudentsSetMaxHoursDailyForm::ModifyConstraintStudentsSetMaxHoursDailyForm(QWidget* parent, ConstraintStudentsSetMaxHoursDaily* ctr): QDialog(parent)
 {
 	setupUi(this);

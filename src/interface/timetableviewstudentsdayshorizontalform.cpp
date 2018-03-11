@@ -24,6 +24,8 @@
 #include "fetmainform.h"
 #include "timetableviewstudentsdayshorizontalform.h"
 #include "timetable_defs.h"
+#include "fetguisettings.h"
+
 #include "timetable.h"
 #include "fet.h"
 #include "solution.h"

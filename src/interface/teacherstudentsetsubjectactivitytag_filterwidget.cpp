@@ -2,6 +2,8 @@
 #include "ui_teacherstudentsetsubjectactivitytag_filterwidget.h"
 #include <QDebug>
 
+#include "fetguisettings.h"
+
 TeacherStudentSetSubjectActivityTag_FilterWidget::TeacherStudentSetSubjectActivityTag_FilterWidget(const Rules &rules) :
 	QWidget(),
 	ui(new Ui::TeacherStudentSetSubjectActivityTag_FilterWidget)

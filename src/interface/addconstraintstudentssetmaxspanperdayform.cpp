@@ -22,6 +22,8 @@
 #include "addconstraintstudentssetmaxspanperdayform.h"
 #include "timeconstraint.h"
 
+#include "fetguisettings.h"
+
 AddConstraintStudentsSetMaxSpanPerDayForm::AddConstraintStudentsSetMaxSpanPerDayForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);

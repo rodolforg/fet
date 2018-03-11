@@ -27,10 +27,6 @@ File timetable_defs.cpp
 
 #include <QLocale>
 
-bool checkForUpdates;
-
-QString internetVersion;
-
 /**
 FET version
 */

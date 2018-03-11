@@ -25,6 +25,8 @@
 #include <QAbstractItemView>
 #include <QScrollBar>
 
+#include "fetguisettings.h"
+
 ModifyConstraintActivitiesSameStartingHourForm::ModifyConstraintActivitiesSameStartingHourForm(QWidget* parent, ConstraintActivitiesSameStartingHour* ctr): QDialog(parent)
 {
 	setupUi(this);

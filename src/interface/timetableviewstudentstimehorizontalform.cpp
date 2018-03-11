@@ -15,6 +15,8 @@
  *                                                                         *
  ***************************************************************************/
 
+#include "fetguisettings.h"
+
 #include <QtGlobal>
 
 #include "tablewidgetupdatebug.h"

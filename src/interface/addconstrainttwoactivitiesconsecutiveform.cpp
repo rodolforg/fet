@@ -22,6 +22,8 @@
 #include "addconstrainttwoactivitiesconsecutiveform.h"
 #include "timeconstraint.h"
 
+#include "fetguisettings.h"
+
 AddConstraintTwoActivitiesConsecutiveForm::AddConstraintTwoActivitiesConsecutiveForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);

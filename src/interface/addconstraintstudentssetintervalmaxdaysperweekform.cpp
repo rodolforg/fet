@@ -22,6 +22,8 @@
 #include "addconstraintstudentssetintervalmaxdaysperweekform.h"
 #include "timeconstraint.h"
 
+#include "fetguisettings.h"
+
 AddConstraintStudentsSetIntervalMaxDaysPerWeekForm::AddConstraintStudentsSetIntervalMaxDaysPerWeekForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);

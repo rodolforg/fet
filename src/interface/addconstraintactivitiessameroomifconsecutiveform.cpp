@@ -26,6 +26,8 @@
 #include <QAbstractItemView>
 #include <QScrollBar>
 
+#include "fetguisettings.h"
+
 AddConstraintActivitiesSameRoomIfConsecutiveForm::AddConstraintActivitiesSameRoomIfConsecutiveForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);

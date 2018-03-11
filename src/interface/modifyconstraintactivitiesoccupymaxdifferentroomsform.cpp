@@ -26,6 +26,8 @@
 #include <QAbstractItemView>
 #include <QScrollBar>
 
+#include "fetguisettings.h"
+
 ModifyConstraintActivitiesOccupyMaxDifferentRoomsForm::ModifyConstraintActivitiesOccupyMaxDifferentRoomsForm(QWidget* parent, ConstraintActivitiesOccupyMaxDifferentRooms* ctr): QDialog(parent)
 {
 	setupUi(this);

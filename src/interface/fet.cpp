@@ -68,6 +68,8 @@ static QSet<QString> languagesSet;
 #include "timetableviewteacherstimehorizontalform.h"
 #include "timetableviewroomsdayshorizontalform.h"
 #include "timetableviewroomstimehorizontalform.h"
+
+#include "fetguisettings.h"
 #endif
 
 #include <QCoreApplication>

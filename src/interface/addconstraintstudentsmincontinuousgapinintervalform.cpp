@@ -16,6 +16,8 @@
 #include <QMessageBox>
 #include "longtextmessagebox.h"
 
+#include "fetguisettings.h"
+
 AddConstraintStudentsMinContinuousGapInIntervalForm::AddConstraintStudentsMinContinuousGapInIntervalForm(QWidget *parent, bool forAllStudents) :
 	QDialog(parent),
 	ui(new Ui::AddConstraintStudentsMinContinuousGapInIntervalForm),

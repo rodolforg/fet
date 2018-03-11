@@ -17,14 +17,14 @@
 
 #include <QMessageBox>
 
-
-
 #include "longtextmessagebox.h"
 
 #include "addconstraintstudentssethomeroomsform.h"
 
 #include <QListWidget>
 #include <QAbstractItemView>
+
+#include "fetguisettings.h"
 
 AddConstraintStudentsSetHomeRoomsForm::AddConstraintStudentsSetHomeRoomsForm(QWidget* parent): QDialog(parent)
 {

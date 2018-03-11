@@ -22,6 +22,8 @@
 #include "addconstraintactivitypreferredstartingtimesform.h"
 #include "timeconstraint.h"
 
+#include "fetguisettings.h"
+
 AddConstraintActivityPreferredStartingTimesForm::AddConstraintActivityPreferredStartingTimesForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);

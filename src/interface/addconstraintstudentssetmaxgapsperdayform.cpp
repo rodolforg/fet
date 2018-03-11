@@ -22,6 +22,8 @@
 #include "addconstraintstudentssetmaxgapsperdayform.h"
 #include "timeconstraint.h"
 
+#include "fetguisettings.h"
+
 AddConstraintStudentsSetMaxGapsPerDayForm::AddConstraintStudentsSetMaxGapsPerDayForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);

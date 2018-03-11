@@ -20,6 +20,8 @@
 #include "modifyconstraintactivitiespreferredtimeslotsform.h"
 #include "timeconstraint.h"
 
+#include "fetguisettings.h"
+
 ModifyConstraintActivitiesPreferredTimeSlotsForm::ModifyConstraintActivitiesPreferredTimeSlotsForm(QWidget* parent, ConstraintActivitiesPreferredTimeSlots* ctr): QDialog(parent)
 {
 	setupUi(this);

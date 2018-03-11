@@ -25,6 +25,8 @@
 #include <QListWidget>
 #include <QAbstractItemView>
 
+#include "fetguisettings.h"
+
 AddConstraintActivityPreferredRoomsForm::AddConstraintActivityPreferredRoomsForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);

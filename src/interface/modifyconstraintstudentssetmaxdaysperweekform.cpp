@@ -20,6 +20,8 @@
 #include "modifyconstraintstudentssetmaxdaysperweekform.h"
 #include "timeconstraint.h"
 
+#include "fetguisettings.h"
+
 ModifyConstraintStudentsSetMaxDaysPerWeekForm::ModifyConstraintStudentsSetMaxDaysPerWeekForm(QWidget* parent, ConstraintStudentsSetMaxDaysPerWeek* ctr): QDialog(parent)
 {
 	setupUi(this);

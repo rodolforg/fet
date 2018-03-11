@@ -22,6 +22,8 @@
 #include "addconstraintstudentssetminrestinghoursform.h"
 #include "timeconstraint.h"
 
+#include "fetguisettings.h"
+
 AddConstraintStudentsSetMinRestingHoursForm::AddConstraintStudentsSetMinRestingHoursForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);

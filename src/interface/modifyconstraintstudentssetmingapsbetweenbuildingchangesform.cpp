@@ -20,6 +20,8 @@
 #include "modifyconstraintstudentssetmingapsbetweenbuildingchangesform.h"
 #include "spaceconstraint.h"
 
+#include "fetguisettings.h"
+
 ModifyConstraintStudentsSetMinGapsBetweenBuildingChangesForm::ModifyConstraintStudentsSetMinGapsBetweenBuildingChangesForm(QWidget* parent, ConstraintStudentsSetMinGapsBetweenBuildingChanges* ctr): QDialog(parent)
 {
 	setupUi(this);

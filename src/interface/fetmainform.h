@@ -30,9 +30,6 @@
 class QNetworkAccessManager;
 class QNetworkReply;
 
-extern bool ENABLE_ACTIVITY_TAG_MAX_HOURS_DAILY;
-extern bool ENABLE_STUDENTS_MAX_GAPS_PER_DAY;
-
 class FetMainForm: public QMainWindow, public Ui::FetMainForm_template
 {
 	Q_OBJECT

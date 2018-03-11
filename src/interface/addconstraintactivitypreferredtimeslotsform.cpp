@@ -22,6 +22,8 @@
 
 #include <QMessageBox>
 
+#include "fetguisettings.h"
+
 AddConstraintActivityPreferredTimeSlotsForm::AddConstraintActivityPreferredTimeSlotsForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);

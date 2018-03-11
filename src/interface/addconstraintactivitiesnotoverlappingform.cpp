@@ -25,6 +25,8 @@
 #include <QAbstractItemView>
 #include <QScrollBar>
 
+#include "fetguisettings.h"
+
 AddConstraintActivitiesNotOverlappingForm::AddConstraintActivitiesNotOverlappingForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);

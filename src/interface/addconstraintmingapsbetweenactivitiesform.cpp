@@ -27,6 +27,8 @@
 #include <QAbstractItemView>
 #include <QScrollBar>
 
+#include "fetguisettings.h"
+
 AddConstraintMinGapsBetweenActivitiesForm::AddConstraintMinGapsBetweenActivitiesForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);

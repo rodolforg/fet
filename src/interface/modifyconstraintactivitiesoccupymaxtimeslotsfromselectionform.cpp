@@ -24,6 +24,8 @@
 #include <QAbstractItemView>
 #include <QScrollBar>
 
+#include "fetguisettings.h"
+
 ModifyConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm::ModifyConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm(QWidget* parent, ConstraintActivitiesOccupyMaxTimeSlotsFromSelection* ctr): QDialog(parent)
 {
 	setupUi(this);

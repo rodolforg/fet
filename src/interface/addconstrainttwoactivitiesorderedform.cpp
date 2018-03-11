@@ -22,6 +22,8 @@
 #include "addconstrainttwoactivitiesorderedform.h"
 #include "timeconstraint.h"
 
+#include "fetguisettings.h"
+
 AddConstraintTwoActivitiesOrderedForm::AddConstraintTwoActivitiesOrderedForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);

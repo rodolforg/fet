@@ -22,6 +22,8 @@
 #include <QListWidget>
 #include <QAbstractItemView>
 
+#include "fetguisettings.h"
+
 ModifyConstraintStudentsSetHomeRoomsForm::ModifyConstraintStudentsSetHomeRoomsForm(QWidget* parent, ConstraintStudentsSetHomeRooms* ctr): QDialog(parent)
 {
 	setupUi(this);

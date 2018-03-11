@@ -22,6 +22,8 @@
 #include "addconstraintthreeactivitiesgroupedform.h"
 #include "timeconstraint.h"
 
+#include "fetguisettings.h"
+
 AddConstraintThreeActivitiesGroupedForm::AddConstraintThreeActivitiesGroupedForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);

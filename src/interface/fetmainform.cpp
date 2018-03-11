@@ -15,7 +15,8 @@
  *                                                                         *
  ***************************************************************************/
 
-#include "timetable_defs.h"
+#include "fetguisettings.h"
+
 #include "timetable.h"
 #include "timetableexport.h"
 #include "solution.h"
@@ -271,20 +272,6 @@ bool simulation_running; //true if the user started an allocation of the timetab
 
 QString conflictsString; //the string that contains a log of the broken constraints
 QString conflictsStringTitle;
-
-bool USE_GUI_COLORS=false;
-
-bool SHOW_SUBGROUPS_IN_COMBO_BOXES=true;
-bool SHOW_SUBGROUPS_IN_ACTIVITY_PLANNING=true;
-
-bool SHOW_TOOLTIPS_FOR_CONSTRAINTS_WITH_TABLES=false;
-
-bool ENABLE_ACTIVITY_TAG_MAX_HOURS_DAILY=false;
-bool ENABLE_STUDENTS_MAX_GAPS_PER_DAY=false;
-
-bool ENABLE_STUDENTS_MIN_HOURS_DAILY_WITH_ALLOW_EMPTY_DAYS=false;
-
-bool ENABLE_GROUP_ACTIVITIES_IN_INITIAL_ORDER=false;
 
 const int STATUS_BAR_MILLISECONDS=2500;
 

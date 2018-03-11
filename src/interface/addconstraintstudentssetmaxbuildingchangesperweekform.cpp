@@ -22,6 +22,8 @@
 #include "addconstraintstudentssetmaxbuildingchangesperweekform.h"
 #include "spaceconstraint.h"
 
+#include "fetguisettings.h"
+
 AddConstraintStudentsSetMaxBuildingChangesPerWeekForm::AddConstraintStudentsSetMaxBuildingChangesPerWeekForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);

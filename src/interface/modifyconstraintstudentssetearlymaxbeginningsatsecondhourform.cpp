@@ -20,6 +20,8 @@
 #include "modifyconstraintstudentssetearlymaxbeginningsatsecondhourform.h"
 #include "timeconstraint.h"
 
+#include "fetguisettings.h"
+
 ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm(QWidget* parent, ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour* ctr): QDialog(parent)
 {
 	setupUi(this);

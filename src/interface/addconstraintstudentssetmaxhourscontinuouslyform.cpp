@@ -22,6 +22,7 @@
 #include "addconstraintstudentssetmaxhourscontinuouslyform.h"
 #include "timeconstraint.h"
 
+#include "fetguisettings.h"
 
 AddConstraintStudentsSetMaxHoursContinuouslyForm::AddConstraintStudentsSetMaxHoursContinuouslyForm(QWidget* parent): QDialog(parent)
 {

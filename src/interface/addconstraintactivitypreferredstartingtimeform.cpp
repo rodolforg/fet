@@ -25,6 +25,8 @@
 #include <QSet>
 #include "lockunlock.h"
 
+#include "fetguisettings.h"
+
 AddConstraintActivityPreferredStartingTimeForm::AddConstraintActivityPreferredStartingTimeForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);

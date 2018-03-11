@@ -18,6 +18,7 @@
 #include "timetable_defs.h"
 #include "fet.h"
 #include "timetable.h"
+#include "fetguisettings.h"
 
 #include "studentsset.h"
 
