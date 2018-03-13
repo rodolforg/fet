@@ -25,10 +25,6 @@ File fet.h
 #include "timetable_defs.h"
 #include "timetable.h"
 
-#include "matrix.h"
-
-class QWidget;
-
 class FetTranslate: public QObject{
 	Q_OBJECT
 };
