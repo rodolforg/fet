@@ -16,6 +16,7 @@
  ***************************************************************************/
 
 #include "timetableshowconflictsform.h"
+#include "centerwidgetonscreen.h"
 
 #include "timetable.h"
 

@@ -21,6 +21,8 @@
 
 #include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
+#include "centerwidgetonscreen.h"
+
 ConstraintSubjectActivityTagPreferredRoomForm::ConstraintSubjectActivityTagPreferredRoomForm(QWidget* parent): SpaceConstraintBaseDialog(parent)
 {
 	const char *context = "ConstraintSubjectActivityTagPreferredRoomForm_template";

@@ -20,10 +20,6 @@
 
 #include "ui_modifystudentsyearform_template.h"
 
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
-
 class ModifyStudentsYearForm : public QDialog, Ui::ModifyStudentsYearForm_template {
 	Q_OBJECT
 public:

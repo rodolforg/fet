@@ -25,6 +25,7 @@
 #include "interface/editcommentsform.h"
 
 #include "longtextmessagebox.h"
+#include "centerwidgetonscreen.h"
 
 #include <QMessageBox>
 

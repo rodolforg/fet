@@ -22,6 +22,7 @@
 #include "tablewidgetupdatebug.h"
 
 #include "longtextmessagebox.h"
+#include "centerwidgetonscreen.h"
 
 #include "fetmainform.h"
 #include "timetableviewstudentstimehorizontalform.h"

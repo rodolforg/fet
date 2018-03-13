@@ -18,7 +18,10 @@
 #include <QMessageBox>
 
 #include "modifyconstraintroomnotavailabletimesform.h"
-#include "spaceconstraint.h"
+#include "timetable.h"
+#include "fet.h"
+
+#include "centerwidgetonscreen.h"
 
 ModifyConstraintRoomNotAvailableTimesForm::ModifyConstraintRoomNotAvailableTimesForm(QWidget* parent, ConstraintRoomNotAvailableTimes* ctr): QDialog(parent)
 {

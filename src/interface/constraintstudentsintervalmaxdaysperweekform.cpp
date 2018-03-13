@@ -19,6 +19,8 @@
 #include "addconstraintstudentsintervalmaxdaysperweekform.h"
 #include "modifyconstraintstudentsintervalmaxdaysperweekform.h"
 
+#include "centerwidgetonscreen.h"
+
 ConstraintStudentsIntervalMaxDaysPerWeekForm::ConstraintStudentsIntervalMaxDaysPerWeekForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type

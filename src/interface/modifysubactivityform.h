@@ -20,9 +20,7 @@
 
 #include "ui_modifysubactivityform_template.h"
 
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "activity.h"
 
 #include <QSet>
 //#include <QHash>

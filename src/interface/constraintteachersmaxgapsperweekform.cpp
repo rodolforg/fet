@@ -19,6 +19,8 @@
 #include "addconstraintteachersmaxgapsperweekform.h"
 #include "modifyconstraintteachersmaxgapsperweekform.h"
 
+#include "centerwidgetonscreen.h"
+
 ConstraintTeachersMaxGapsPerWeekForm::ConstraintTeachersMaxGapsPerWeekForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type

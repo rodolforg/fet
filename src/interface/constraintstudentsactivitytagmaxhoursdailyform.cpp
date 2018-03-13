@@ -23,6 +23,8 @@
 
 #include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
+#include "centerwidgetonscreen.h"
+
 ConstraintStudentsActivityTagMaxHoursDailyForm::ConstraintStudentsActivityTagMaxHoursDailyForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type

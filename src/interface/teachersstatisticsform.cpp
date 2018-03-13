@@ -15,6 +15,8 @@
  *                                                                         *
  ***************************************************************************/
 
+#include "centerwidgetonscreen.h"
+
 #include "teachersstatisticsform.h"
 
 #include "timetable_defs.h"

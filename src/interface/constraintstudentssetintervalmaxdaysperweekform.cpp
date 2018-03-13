@@ -21,6 +21,8 @@
 
 #include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
+#include "centerwidgetonscreen.h"
+
 ConstraintStudentsSetIntervalMaxDaysPerWeekForm::ConstraintStudentsSetIntervalMaxDaysPerWeekForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type

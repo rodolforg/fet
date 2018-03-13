@@ -16,6 +16,9 @@
  ***************************************************************************/
 
 #include "modifyactivityform.h"
+
+#include "centerwidgetonscreen.h"
+
 #include "teacher.h"
 #include "subject.h"
 #include "studentsset.h"

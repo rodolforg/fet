@@ -19,9 +19,7 @@
 #define MODIFYCONSTRAINTROOMNOTAVAILABLETIMESFORM_H
 
 #include "ui_modifyconstraintroomnotavailabletimesform_template.h"
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "spaceconstraint.h"
 
 class ModifyConstraintRoomNotAvailableTimesForm : public QDialog, Ui::ModifyConstraintRoomNotAvailableTimesForm_template  {
 	Q_OBJECT	

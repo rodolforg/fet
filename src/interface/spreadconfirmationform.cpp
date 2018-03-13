@@ -19,6 +19,8 @@
 
 #include "timetable_defs.h"
 
+#include "centerwidgetonscreen.h"
+
 SpreadConfirmationForm::SpreadConfirmationForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);

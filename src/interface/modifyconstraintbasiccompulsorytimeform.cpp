@@ -16,8 +16,7 @@
  ***************************************************************************/
 
 #include <QMessageBox>
-
-
+#include "centerwidgetonscreen.h"
 
 #include "modifyconstraintbasiccompulsorytimeform.h"
 #include "timeconstraint.h"

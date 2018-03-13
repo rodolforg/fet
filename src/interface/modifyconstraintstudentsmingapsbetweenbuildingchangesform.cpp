@@ -16,6 +16,7 @@
  ***************************************************************************/
 
 #include <QMessageBox>
+#include "centerwidgetonscreen.h"
 
 #include "modifyconstraintstudentsmingapsbetweenbuildingchangesform.h"
 #include "spaceconstraint.h"

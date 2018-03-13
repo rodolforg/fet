@@ -19,6 +19,8 @@
 #include "addconstraintteachersminhoursdailyform.h"
 #include "modifyconstraintteachersminhoursdailyform.h"
 
+#include "centerwidgetonscreen.h"
+
 ConstraintTeachersMinHoursDailyForm::ConstraintTeachersMinHoursDailyForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type

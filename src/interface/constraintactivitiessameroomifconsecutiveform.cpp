@@ -21,6 +21,8 @@
 
 #include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
+#include "centerwidgetonscreen.h"
+
 ConstraintActivitiesSameRoomIfConsecutiveForm::ConstraintActivitiesSameRoomIfConsecutiveForm(QWidget* parent): SpaceConstraintBaseDialog(parent)
 {
 	const char *context = "ConstraintActivitiesSameRoomIfConsecutiveForm_template";

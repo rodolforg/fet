@@ -20,10 +20,6 @@
 
 #include "ui_addbuildingform_template.h"
 
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
-
 class AddBuildingForm : public QDialog, Ui::AddBuildingForm_template {
 	Q_OBJECT
 public: 

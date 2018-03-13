@@ -17,6 +17,11 @@
 
 #include "addbuildingform.h"
 
+#include "timetable.h"
+#include "fet.h"
+
+#include "centerwidgetonscreen.h"
+
 #include <QMessageBox>
 
 AddBuildingForm::AddBuildingForm(QWidget* parent): QDialog(parent)

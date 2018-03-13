@@ -20,6 +20,7 @@
 #include "settingstimetablehtmllevelform.h"
 
 #include <QMessageBox>
+#include "centerwidgetonscreen.h"
 
 SettingsTimetableHtmlLevelForm::SettingsTimetableHtmlLevelForm(QWidget* parent): QDialog(parent)
 {

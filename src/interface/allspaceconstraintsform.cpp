@@ -16,6 +16,7 @@
  ***************************************************************************/
 
 #include "fetguisettings.h"
+#include "centerwidgetonscreen.h"
 
 #include "longtextmessagebox.h"
 

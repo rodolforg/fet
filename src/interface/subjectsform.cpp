@@ -21,6 +21,8 @@
 #include "subject.h"
 #include "interface/editcommentsform.h"
 
+#include "centerwidgetonscreen.h"
+
 #include <QInputDialog>
 
 #include <QMessageBox>

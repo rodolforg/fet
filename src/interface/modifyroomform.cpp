@@ -17,6 +17,10 @@
 
 #include "modifyroomform.h"
 
+#include "timetable.h"
+#include "fet.h"
+
+#include "centerwidgetonscreen.h"
 #include <QMessageBox>
 
 ModifyRoomForm::ModifyRoomForm(QWidget* parent, const QString& initialRoomName, const QString& initialRoomBuilding, int initialRoomCapacity): QDialog(parent)

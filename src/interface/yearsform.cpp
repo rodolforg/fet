@@ -27,6 +27,7 @@
 #include "splityearform.h"
 
 #include <QMessageBox>
+#include "centerwidgetonscreen.h"
 
 #include <QListWidget>
 #include <QScrollBar>

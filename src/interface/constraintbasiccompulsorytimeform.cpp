@@ -21,6 +21,8 @@
 
 #include <QMessageBox>
 
+#include "centerwidgetonscreen.h"
+
 ConstraintBasicCompulsoryTimeForm::ConstraintBasicCompulsoryTimeForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type

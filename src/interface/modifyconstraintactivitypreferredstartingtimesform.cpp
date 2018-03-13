@@ -18,7 +18,10 @@
 #include <QMessageBox>
 
 #include "modifyconstraintactivitypreferredstartingtimesform.h"
-#include "timeconstraint.h"
+#include "timetable.h"
+#include "fet.h"
+
+#include "centerwidgetonscreen.h"
 
 #include "fetguisettings.h"
 

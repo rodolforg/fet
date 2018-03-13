@@ -19,6 +19,8 @@
 #include "addconstraintactivitiesendstudentsdayform.h"
 #include "modifyconstraintactivitiesendstudentsdayform.h"
 
+#include "centerwidgetonscreen.h"
+
 ConstraintActivitiesEndStudentsDayForm::ConstraintActivitiesEndStudentsDayForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type

@@ -20,7 +20,6 @@
 
 #include "ui_modifyactivityform_template.h"
 
-#include "timetable_defs.h"
 #include "timetable.h"
 #include "fet.h"
 

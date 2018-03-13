@@ -19,9 +19,7 @@
 #define MODIFYCONSTRAINTACTIVITYPREFERREDSTARTINGTIMESFORM_H
 
 #include "ui_modifyconstraintactivitypreferredstartingtimesform_template.h"
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "timeconstraint.h"
 
 class ModifyConstraintActivityPreferredStartingTimesForm : public QDialog, Ui::ModifyConstraintActivityPreferredStartingTimesForm_template  {
 	Q_OBJECT

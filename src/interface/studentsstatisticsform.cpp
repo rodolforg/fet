@@ -32,6 +32,7 @@
 #include <QProgressDialog>
 
 #include "longtextmessagebox.h"
+#include "centerwidgetonscreen.h"
 
 #include <QMessageBox>
 #include <QApplication>

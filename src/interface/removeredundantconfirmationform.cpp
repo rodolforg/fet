@@ -19,6 +19,8 @@
 
 #include "timetable_defs.h"
 
+#include "centerwidgetonscreen.h"
+
 RemoveRedundantConfirmationForm::RemoveRedundantConfirmationForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);

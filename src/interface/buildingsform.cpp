@@ -24,6 +24,7 @@
 #include "interface/editcommentsform.h"
 
 #include <QMessageBox>
+#include "centerwidgetonscreen.h"
 
 #include <QListWidget>
 #include <QScrollBar>

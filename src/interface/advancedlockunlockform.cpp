@@ -26,6 +26,7 @@
 #endif
 
 #include <QMessageBox>
+#include "centerwidgetonscreen.h"
 
 #include "lockunlock.h"
 #include "advancedlockunlockform.h"

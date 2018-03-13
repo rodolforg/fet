@@ -42,6 +42,7 @@
 #include <QProgressDialog>
 
 #include "longtextmessagebox.h"
+#include "centerwidgetonscreen.h"
 
 QMutex myMutex;
 

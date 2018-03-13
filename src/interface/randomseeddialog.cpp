@@ -3,6 +3,7 @@
 #include "timetable_defs.h"
 #include "randomknuth.h"
 #include "longtextmessagebox.h"
+#include "centerwidgetonscreen.h"
 
 RandomSeedDialog::RandomSeedDialog(QWidget* parent): QDialog(parent)
 {

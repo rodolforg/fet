@@ -19,6 +19,8 @@
 #include "addconstraintstudentsmaxhourscontinuouslyform.h"
 #include "modifyconstraintstudentsmaxhourscontinuouslyform.h"
 
+#include "centerwidgetonscreen.h"
+
 ConstraintStudentsMaxHoursContinuouslyForm::ConstraintStudentsMaxHoursContinuouslyForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type

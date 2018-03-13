@@ -22,6 +22,8 @@
 
 #include "lockunlock.h"
 
+#include "centerwidgetonscreen.h"
+
 ModifyConstraintActivityPreferredRoomForm::ModifyConstraintActivityPreferredRoomForm(QWidget* parent, ConstraintActivityPreferredRoom* ctr): QDialog(parent)
 {
 	setupUi(this);

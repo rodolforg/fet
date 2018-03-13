@@ -20,6 +20,7 @@
 #include <QMessageBox>
 
 #include "longtextmessagebox.h"
+#include "centerwidgetonscreen.h"
 
 #include "addconstraintmaxdaysbetweenactivitiesform.h"
 #include "spaceconstraint.h"

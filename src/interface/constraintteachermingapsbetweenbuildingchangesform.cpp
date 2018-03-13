@@ -21,6 +21,8 @@
 
 #include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
+#include "centerwidgetonscreen.h"
+
 ConstraintTeacherMinGapsBetweenBuildingChangesForm::ConstraintTeacherMinGapsBetweenBuildingChangesForm(QWidget* parent): SpaceConstraintBaseDialog(parent)
 {
 	const char *context = "ConstraintTeacherMinGapsBetweenBuildingChangesForm_template";

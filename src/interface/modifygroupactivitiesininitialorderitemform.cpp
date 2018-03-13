@@ -16,6 +16,7 @@
  ***************************************************************************/
 
 #include <QMessageBox>
+#include "centerwidgetonscreen.h"
 
 #include "modifygroupactivitiesininitialorderitemform.h"
 #include "spaceconstraint.h"

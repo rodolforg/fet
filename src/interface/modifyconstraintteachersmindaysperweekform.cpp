@@ -15,12 +15,11 @@
  *                                                                         *
  ***************************************************************************/
 
-
-
 #include "modifyconstraintteachersmindaysperweekform.h"
 #include "timeconstraint.h"
 
 #include <QMessageBox>
+#include "centerwidgetonscreen.h"
 
 ModifyConstraintTeachersMinDaysPerWeekForm::ModifyConstraintTeachersMinDaysPerWeekForm(QWidget* parent, ConstraintTeachersMinDaysPerWeek* ctr): QDialog(parent)
 {

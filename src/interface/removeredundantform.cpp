@@ -17,6 +17,8 @@
 
 #include "removeredundantform.h"
 
+#include "centerwidgetonscreen.h"
+
 #include "timetable.h"
 
 extern Timetable gt;

@@ -29,10 +29,6 @@ File timetable_defs.h
 
 #include <QString>
 
-#ifndef FET_COMMAND_LINE
-#include "centerwidgetonscreen.h"
-#endif
-
 /**
 The version number
 */

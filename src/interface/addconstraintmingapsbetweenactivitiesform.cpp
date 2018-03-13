@@ -20,6 +20,7 @@
 #include <QList>
 
 #include "longtextmessagebox.h"
+#include "centerwidgetonscreen.h"
 
 #include "addconstraintmingapsbetweenactivitiesform.h"
 

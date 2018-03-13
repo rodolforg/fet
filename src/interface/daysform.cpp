@@ -25,6 +25,7 @@
 #include <QLabel>
 #include <QLineEdit>
 #include <QMessageBox>
+#include "centerwidgetonscreen.h"
 
 static QLineEdit* daysNames[MAX_DAYS_PER_WEEK];
 static int nDays;

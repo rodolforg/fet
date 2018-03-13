@@ -21,6 +21,8 @@
 #include "addconstraintbasiccompulsoryspaceform.h"
 #include "modifyconstraintbasiccompulsoryspaceform.h"
 
+#include "centerwidgetonscreen.h"
+
 ConstraintBasicCompulsorySpaceForm::ConstraintBasicCompulsorySpaceForm(QWidget* parent): SpaceConstraintBaseDialog(parent)
 {
 	const char *context = "ConstraintBasicCompulsorySpaceForm_template";

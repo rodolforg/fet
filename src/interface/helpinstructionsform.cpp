@@ -17,7 +17,7 @@
 
 #include "helpinstructionsform.h"
 
-#include "timetable_defs.h"
+#include "centerwidgetonscreen.h"
 
 HelpInstructionsForm::HelpInstructionsForm(QWidget* parent): QDialog(parent)
 {

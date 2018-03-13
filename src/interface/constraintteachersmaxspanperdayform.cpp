@@ -19,6 +19,8 @@
 #include "addconstraintteachersmaxspanperdayform.h"
 #include "modifyconstraintteachersmaxspanperdayform.h"
 
+#include "centerwidgetonscreen.h"
+
 ConstraintTeachersMaxSpanPerDayForm::ConstraintTeachersMaxSpanPerDayForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type

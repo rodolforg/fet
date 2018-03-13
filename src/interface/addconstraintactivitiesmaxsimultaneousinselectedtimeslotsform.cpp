@@ -18,6 +18,7 @@
 #include <QMessageBox>
 
 #include "longtextmessagebox.h"
+#include "centerwidgetonscreen.h"
 
 #include "addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.h"
 #include "timeconstraint.h"

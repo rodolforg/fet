@@ -23,6 +23,8 @@
 #include "teachersubjectsqualificationsform.h"
 #include "interface/editcommentsform.h"
 
+#include "centerwidgetonscreen.h"
+
 #include <QInputDialog>
 
 #include <QMessageBox>

@@ -19,6 +19,8 @@
 #include "addconstraintteachersmingapsbetweenbuildingchangesform.h"
 #include "modifyconstraintteachersmingapsbetweenbuildingchangesform.h"
 
+#include "centerwidgetonscreen.h"
+
 ConstraintTeachersMinGapsBetweenBuildingChangesForm::ConstraintTeachersMinGapsBetweenBuildingChangesForm(QWidget* parent): SpaceConstraintBaseDialog(parent)
 {
 	const char *context = "ConstraintTeachersMinGapsBetweenBuildingChangesForm_template";

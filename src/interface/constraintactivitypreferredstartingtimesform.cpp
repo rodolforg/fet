@@ -21,6 +21,7 @@
 
 #include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
+#include "centerwidgetonscreen.h"
 
 ConstraintActivityPreferredStartingTimesForm::ConstraintActivityPreferredStartingTimesForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {

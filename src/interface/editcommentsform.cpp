@@ -1,7 +1,7 @@
 #include "editcommentsform.h"
 #include "ui_editcommentsform_template.h"
 
-#include "interface/centerwidgetonscreen.h"
+#include "centerwidgetonscreen.h"
 
 EditCommentsForm::EditCommentsForm(const QString &settingsName, QWidget *parent, const QString &title) :
 	QDialog(parent),

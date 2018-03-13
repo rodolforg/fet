@@ -20,10 +20,6 @@
 
 #include "ui_addactivityform_template.h"
 
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
-
 #include <QSet>
 //#include <QHash>
 #include <QList>

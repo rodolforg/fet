@@ -16,6 +16,7 @@
  ***************************************************************************/
 
 #include <QMessageBox>
+#include "centerwidgetonscreen.h"
 
 #include "constraintmindaysbetweenactivitiesform.h"
 #include "addconstraintmindaysbetweenactivitiesform.h"

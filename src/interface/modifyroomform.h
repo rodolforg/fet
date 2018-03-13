@@ -20,10 +20,6 @@
 
 #include "ui_modifyroomform_template.h"
 
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
-
 class ModifyRoomForm : public QDialog, Ui::ModifyRoomForm_template {
 	Q_OBJECT
 	

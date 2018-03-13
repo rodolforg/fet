@@ -20,6 +20,7 @@
 #include "fet.h"
 
 #include <QMessageBox>
+#include "centerwidgetonscreen.h"
 
 ChangeMinDaysSelectivelyForm::ChangeMinDaysSelectivelyForm(QWidget* parent)
 	: QDialog(parent),

@@ -16,6 +16,7 @@
  ***************************************************************************/
 
 #include <QMessageBox>
+#include "centerwidgetonscreen.h"
 
 #include "modifyconstraintstudentsactivitytagmaxhourscontinuouslyform.h"
 #include "timeconstraint.h"

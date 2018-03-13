@@ -19,6 +19,8 @@
 #include "addconstraintteachersmaxbuildingchangesperweekform.h"
 #include "modifyconstraintteachersmaxbuildingchangesperweekform.h"
 
+#include "centerwidgetonscreen.h"
+
 ConstraintTeachersMaxBuildingChangesPerWeekForm::ConstraintTeachersMaxBuildingChangesPerWeekForm(QWidget* parent): SpaceConstraintBaseDialog(parent)
 {
 	const char *context = "ConstraintTeachersMaxBuildingChangesPerWeekForm_template";

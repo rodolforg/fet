@@ -16,6 +16,7 @@
  ***************************************************************************/
 
 #include <QMessageBox>
+#include "centerwidgetonscreen.h"
 
 #include "modifyconstraintsubactivitiespreferredstartingtimesform.h"
 #include "timeconstraint.h"

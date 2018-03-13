@@ -20,10 +20,6 @@
 
 #include "ui_addstudentssubgroupform_template.h"
 
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
-
 class AddStudentsSubgroupForm : public QDialog, Ui::AddStudentsSubgroupForm_template {
 	Q_OBJECT
 public:

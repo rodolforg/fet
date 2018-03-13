@@ -18,6 +18,7 @@
 #include <QMessageBox>
 
 #include "longtextmessagebox.h"
+#include "centerwidgetonscreen.h"
 
 #include "addconstraintstudentsmingapsbetweenbuildingchangesform.h"
 #include "spaceconstraint.h"

@@ -17,6 +17,10 @@
 
 #include "modifystudentsyearform.h"
 
+#include "timetable.h"
+#include "fet.h"
+
+#include "centerwidgetonscreen.h"
 #include "longtextmessagebox.h"
 
 #include <QMessageBox>

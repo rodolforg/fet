@@ -21,6 +21,8 @@
 
 #include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
+#include "centerwidgetonscreen.h"
+
 ConstraintStudentsSetMaxBuildingChangesPerDayForm::ConstraintStudentsSetMaxBuildingChangesPerDayForm(QWidget* parent): SpaceConstraintBaseDialog(parent)
 {
 	const char *context = "ConstraintStudentsSetMaxBuildingChangesPerDayForm_template";

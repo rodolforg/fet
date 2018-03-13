@@ -19,6 +19,8 @@
 #include "addconstraintbreaktimesform.h"
 #include "modifyconstraintbreaktimesform.h"
 
+#include "centerwidgetonscreen.h"
+
 ConstraintBreakTimesForm::ConstraintBreakTimesForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type

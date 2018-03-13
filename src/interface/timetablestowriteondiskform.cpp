@@ -19,6 +19,8 @@
 
 #include "timetablestowriteondiskform.h"
 
+#include "centerwidgetonscreen.h"
+
 TimetablesToWriteOnDiskForm::TimetablesToWriteOnDiskForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);

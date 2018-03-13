@@ -56,6 +56,8 @@
 
 #include "sparseitemmodel.h"
 
+#include "centerwidgetonscreen.h"
+
 #include <QString>
 #include <QStringList>
 #include <QHash>

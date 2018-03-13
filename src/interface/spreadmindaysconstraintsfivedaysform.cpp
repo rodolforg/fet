@@ -19,6 +19,7 @@
 #include <QList>
 
 #include <QMessageBox>
+#include "centerwidgetonscreen.h"
 
 #include <QPushButton>
 #include <QCheckBox>

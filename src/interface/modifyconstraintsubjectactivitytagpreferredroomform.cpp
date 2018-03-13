@@ -16,6 +16,7 @@
  ***************************************************************************/
 
 #include <QMessageBox>
+#include "centerwidgetonscreen.h"
 
 #include "modifyconstraintsubjectactivitytagpreferredroomform.h"
 #include "spaceconstraint.h"

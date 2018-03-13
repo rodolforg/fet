@@ -17,6 +17,10 @@
 
 #include "addstudentssubgroupform.h"
 
+#include "timetable.h"
+#include "fet.h"
+
+#include "centerwidgetonscreen.h"
 #include <QMessageBox>
 
 AddStudentsSubgroupForm::AddStudentsSubgroupForm(QWidget* parent, const QString& yearName, const QString& groupName): QDialog(parent)

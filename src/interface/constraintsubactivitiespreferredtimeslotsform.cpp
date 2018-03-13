@@ -19,6 +19,8 @@
 #include "addconstraintsubactivitiespreferredtimeslotsform.h"
 #include "modifyconstraintsubactivitiespreferredtimeslotsform.h"
 
+#include "centerwidgetonscreen.h"
+
 ConstraintSubactivitiesPreferredTimeSlotsForm::ConstraintSubactivitiesPreferredTimeSlotsForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type

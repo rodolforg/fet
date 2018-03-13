@@ -20,6 +20,7 @@
 #include "addconstraintactivitypreferredtimeslotsform.h"
 #include "timeconstraint.h"
 
+#include "centerwidgetonscreen.h"
 #include <QMessageBox>
 
 #include "fetguisettings.h"

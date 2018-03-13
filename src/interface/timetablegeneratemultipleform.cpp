@@ -16,6 +16,7 @@
  ***************************************************************************/
 
 #include "longtextmessagebox.h"
+#include "centerwidgetonscreen.h"
 
 #include "generate.h"
 

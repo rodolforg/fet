@@ -15,6 +15,7 @@
 
 #include <QMessageBox>
 #include "longtextmessagebox.h"
+#include "centerwidgetonscreen.h"
 
 AddConstraintTeachersMinContinuousGapInIntervalForm::AddConstraintTeachersMinContinuousGapInIntervalForm(QWidget *parent, bool forAllTeachers) :
 	QDialog(parent),

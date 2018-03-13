@@ -20,8 +20,6 @@
 
 #include "ui_modifybuildingform_template.h"
 
-#include "rules.h"
-
 class ModifyBuildingForm : public QDialog, Ui::ModifyBuildingForm_template {
 	Q_OBJECT
 	

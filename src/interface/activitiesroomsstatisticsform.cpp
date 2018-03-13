@@ -17,6 +17,8 @@
 
 #include "activitiesroomsstatisticsform.h"
 
+#include "centerwidgetonscreen.h"
+
 #include "timetable_defs.h"
 #include "timetable.h"
 

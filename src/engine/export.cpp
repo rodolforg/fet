@@ -40,13 +40,13 @@ File export.cpp
 #endif
 
 #include <QMessageBox>
+
+#include "centerwidgetonscreen.h"
 #endif
 
 #include <QHash>
 #include <QSet>
 #include <QTextStream>
-
-void centerWidgetOnScreen(QWidget* widget);
 
 #include "timetable_defs.h"		//needed, because of LocaleString
 #include "export.h"
