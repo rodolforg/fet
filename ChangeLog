@@ -2041,3 +2041,7 @@ Versions 5.35.0 - 5.35.v
 	- Updated the Catalan translation (which is now complete), by Innocent De Marchi, who is the new translator.
 	- Updated the Japanese translation, by Taro Tada.
 	- Updated the Greek translation, by Vangelis Karafillidis.
+- Version 5.35.4
+	- Fixed a compilation bug under the MSVC compiler (reported by Volker Dirr).
+	- The Help -> About section of FET is now fully translatable.
+	- Added a new example file from Brazil, by francescotorres.
