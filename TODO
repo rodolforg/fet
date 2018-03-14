@@ -5822,3 +5822,17 @@ Liviu and rodolforg:
 
 Constraint two activities not consecutive (to say that the situation A1, then immediately A2 is forbidden, any
 other situation is acceptable).
+
+348---------------------------------------------------------
+From Fernando A F Lordão (on forum):
+
+I would suggest the use of the current filter values as default values when the user presses the "Add" button for constraints.
+
+For instance, I noticed the importance of this when I was inserting teachers time constraints (SCREEN "Constraints teacher not available times"). Let me explain...
+
+As I had many constraints already set inherited from the previous semester, I was firstly filtering by name and modifying the preferences previously saved.
+At this moment, when I was filtering by a given name and that name had NO constraints yet, I was forced to "Add" a new constraint to that teacher and several
+times I included the constraint with the first name on the list, having so to step back and remove the wrong constraint.
+
+I think this mistake happens because our brain thinks: "I have already chosen the name", but it does NOT take into account that it was on the previous screen.
+So, how about we give a hand to the brain and inherit the values from filters to the next "Add" screen.
