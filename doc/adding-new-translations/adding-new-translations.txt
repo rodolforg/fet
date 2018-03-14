@@ -28,10 +28,6 @@ Open the file "fet-v.v.v/translations/fet_**.ts" (for example, fet_it.ts)
 with the Qt Linguist and edit it, then save it.
 
 You do not have to translate all the fields. Just leave the corresponding fields marked as unfinished (untranslated).
-Especially, there are 5 weird looking large fields in HelpAboutForm_template. These fields begin with
-something like: "<!DOCTYPE HTML...". You are advised not to translate these 5 fields (but leave their translation
-empty and leave them marked as unfinished, because otherwise the corresponding text might appear incomplete when
-using FET in your language). They are big, difficult to translate and will suffer ulterior modifications.
 
 There are some comments in the translation file, they are not to be translated, they just help you.
 You can see that for instance in the "FET xml files" field.
