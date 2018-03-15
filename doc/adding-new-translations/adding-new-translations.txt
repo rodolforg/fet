@@ -30,7 +30,7 @@ with the Qt Linguist and edit it, then save it.
 You do not have to translate all the fields. Just leave the corresponding fields marked as unfinished (untranslated).
 
 There are some comments in the translation file, they are not to be translated, they just help you.
-You can see that for instance in the "FET xml files" field.
+You can see that for instance in the "FET XML files" field.
 
 Please translate the FetMainForm_template section firstly. This is the main form (the menu and the shortcuts).
 Please double check the translation of the main menu practically from FET (see below how to check your translation
