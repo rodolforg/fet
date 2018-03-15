@@ -263,7 +263,6 @@ HelpAboutForm::HelpAboutForm(QWidget* parent): QDialog(parent)
 	 "section about Brazilian Portuguese translation, or contact forum user %5)", "%1 is the name of the translator, %2 is his email or web address, "
 	 "%3 is the short name of the translator, %4 is the address of the forum, %5 is forum user name of the translator")
 	 .arg("Alexandre R. Soares").arg("alexrsoares AT zoho.com").arg("Alexandre R. Soares").arg("https://lalescu.ro/liviu/fet/forum/").arg("khemis");
-	translators+=QString(" - ")+tr("rewrote the translation from zero");
 	translators+=QString("<br /><br /><br />");
 
 	translators+=QString("ro - ")+tr("Romanian translation");
