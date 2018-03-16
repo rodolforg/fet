@@ -36312,7 +36312,7 @@ Vă rog modificați datele dvs. corespunzător și încercați din nou</translat
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="73"/>
         <source>FET is free software for automatically scheduling the timetable of a school, high-school or university.</source>
-        <translation>FET este un program liber pentru generarea automată a orarului unei școli, unui liceu sau unei universități.</translation>
+        <translation>FET este un program liber pentru generarea automată a orarului unei școli, al unui liceu sau al unei universități.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="75"/>
@@ -36420,16 +36420,16 @@ Vă rog modificați datele dvs. corespunzător și încercați din nou</translat
         <translation>traducător curent: %1 (%2 (Alternativ, pentru a contacta pe %3 vizitați forumul FET - %4, secțiunea despre portugheză braziliană, sau contactați utilizatorul de forum %5)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="286"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="285"/>
         <source>%1 (to contact %2 visit FET forum - %3, section about Slovak translation, or contact forum user %4)</source>
         <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
         <translation>%1 (pentru a contacta pe %2 vizitați forumul FET - %3, secțiunea despre traducerea slovacă, sau contactați utilizatorul de forum %4)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="326"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="325"/>
         <source>former translator: %1 (to contact %2 visit FET forum - %3, section about Vietnamese translation, or contact forum user %4)</source>
         <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation>traducător retras: %1 (pentru a contacta pe %2 vizitați forumul FET - %3, secțiunea despre traducerea vietnameză , sau contactați utilizatorul de forum %4)</translation>
+        <translation>traducător retras: %1 (pentru a contacta pe %2 vizitați forumul FET - %3, secțiunea despre traducerea vietnameză, sau contactați utilizatorul de forum %4)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="116"/>
@@ -36438,8 +36438,8 @@ Vă rog modificați datele dvs. corespunzător și încercați din nou</translat
         <location filename="../src/interface/helpaboutform.cpp" line="163"/>
         <location filename="../src/interface/helpaboutform.cpp" line="176"/>
         <location filename="../src/interface/helpaboutform.cpp" line="187"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="309"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="330"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="308"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="329"/>
         <source>current translator: %1 (%2)</source>
         <comment>%1 is the name of the translator, %2 is his email or web address</comment>
         <translation>traducător curent: %1 (%2)</translation>
@@ -36467,15 +36467,15 @@ Vă rog modificați datele dvs. corespunzător și încercați din nou</translat
         <location filename="../src/interface/helpaboutform.cpp" line="241"/>
         <location filename="../src/interface/helpaboutform.cpp" line="246"/>
         <location filename="../src/interface/helpaboutform.cpp" line="251"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="271"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="276"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="281"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="293"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="298"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="300"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="314"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="335"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="340"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="270"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="275"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="280"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="292"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="297"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="299"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="313"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="334"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="339"/>
         <source>%1 (%2)</source>
         <comment>%1 is the name of the translator, %2 is his email or web address</comment>
         <translation>%1 (%2)</translation>
@@ -36501,8 +36501,8 @@ Vă rog modificați datele dvs. corespunzător și încercați din nou</translat
         <location filename="../src/interface/helpaboutform.cpp" line="256"/>
         <location filename="../src/interface/helpaboutform.cpp" line="258"/>
         <location filename="../src/interface/helpaboutform.cpp" line="260"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="305"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="307"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="304"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="306"/>
         <source>former translator: %1 (%2)</source>
         <comment>%1 is the name of the translator, %2 is his email or web address</comment>
         <translation>traducător retras: %1 (%2)</translation>
@@ -36516,7 +36516,6 @@ Vă rog modificați datele dvs. corespunzător și încercați din nou</translat
         <location filename="../src/interface/helpaboutform.cpp" line="156"/>
         <location filename="../src/interface/helpaboutform.cpp" line="164"/>
         <location filename="../src/interface/helpaboutform.cpp" line="188"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="266"/>
         <source>rewrote the translation from zero</source>
         <translation>a rescris traducerea de la zero</translation>
     </message>
@@ -36607,78 +36606,78 @@ Vă rog modificați datele dvs. corespunzător și încercați din nou</translat
         <translation>Traducerea braziliană portugheză</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="269"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="268"/>
         <source>Romanian translation</source>
         <translation>Traducerea română</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="274"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="273"/>
         <source>Russian translation</source>
         <translation>Traducerea rusă</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="279"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="278"/>
         <source>Sinhala translation</source>
         <translation>Traducerea singaleză</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="284"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="283"/>
         <source>Slovak translation</source>
         <translation>Traducerea slovacă</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="291"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="290"/>
         <source>Albanian translation</source>
         <translation>Traducerea albaneză</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="296"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="295"/>
         <source>Serbian translation</source>
         <translation>Traducerea sârbă</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="303"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="302"/>
         <source>Turkish translation</source>
         <translation>Traducerea turcă</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="312"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="311"/>
         <source>Ukrainian translation</source>
         <translation>Traducerea ucraineană</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="317"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="316"/>
         <source>Uzbek translation</source>
         <translation>Traducerea uzbecă</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="319"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="318"/>
         <source>%1 (%2, or visit FET forum - %3, section about Uzbek translation, or contact forum user %4)</source>
         <comment>%1 is the current translator, %2 is his email or web address, %3 is the FET forum address, %4 is the username of the translator</comment>
         <translation>%1 (%2, sau vizitați forumul FET - %3, secțiunea despre traducerea uzbecă, sau contactați utilizatorul de forum %4)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="324"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="323"/>
         <source>Vietnamese translation</source>
         <translation>Traducerea vietnameză</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="333"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="332"/>
         <source>Chinese Simplified translation</source>
         <translation>traducerea chineză simplificată</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="338"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="337"/>
         <source>Chinese Traditional translation</source>
         <translation>traducerea chineză tradițională</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="346"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="345"/>
         <source>You may find references for the algorithms and techniques used in this program on the FET documentation web page, %1</source>
         <translation>Puteți găsi referințe pentru algoritmii și tehnicile folosite în acest program pe pagina web de documentație FET, %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="352"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="351"/>
         <source>chronologically</source>
         <translation>cronologic</translation>
     </message>
@@ -38993,6 +38992,11 @@ Probabil, în practică această problemă nu va apărea și nu trebuie să vă 
         <translation>Încărcare abandonată de utilizator.</translation>
     </message>
     <message>
+        <location filename="../src/engine/import.cpp" line="1020"/>
+        <source>Warning in line %1: Field with building name doesn&apos;t relate to a room</source>
+        <translation>Avertisment în linia %1: câmpul cu numele clădirii nu are legătură cu o sală</translation>
+    </message>
+    <message>
         <location filename="../src/engine/import.cpp" line="1141"/>
         <source>FET import %1 question</source>
         <translation>FET import %1 întrebare</translation>
@@ -39222,11 +39226,6 @@ Probabil, în practică această problemă nu va apărea și nu trebuie să vă 
         <location filename="../src/engine/import.cpp" line="1037"/>
         <source>Skipped line %1: Field &apos;%2&apos; doesn&apos;t contain an integer value.</source>
         <translation>Ignorat linia %1: câmpul &apos;%2&apos; nu conține valoare întreagă.</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/import.cpp" line="1020"/>
-        <source>Warning in line %1: Field with building name doesn&apos;t affect to a room</source>
-        <translation>Avertisment în linia %1: câmpul cu numele clădirii nu afectează sala</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1065"/>

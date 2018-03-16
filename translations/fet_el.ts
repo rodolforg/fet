@@ -10470,7 +10470,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform.cpp" line="220"/>
         <source>Added group activities in initial order item</source>
-        <translation>Προστέθηκε στοιχείο αναφορικά με την ομαδοποίηση δραστηριοτήτων στο αρχικό στάδιο</translation>
+        <translation>Προστέθηκε στοιχείο αναφορικά με την ομαδοποίηση δραστηριοτήτων στην αρχική σειρά</translation>
     </message>
 </context>
 <context>
@@ -10479,7 +10479,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform_template.ui" line="14"/>
         <source>Add group activities in initial order item</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Προσθήκη: &quot;Ομαδοποίηση δραστηριοτήτων στο αρχικό στάδιο - στοιχείο&quot;</translation>
+        <translation>Προσθήκη: &quot;Ομαδοποίηση δραστηριοτήτων στην αρχική σειρά - στοιχείο&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform_template.ui" line="20"/>
@@ -30742,7 +30742,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/export.cpp" line="480"/>
         <source>Please specify the contents of the first line:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Παρακαλώ καθορίστε τα περιεχόμενα της πρώτης γραμμής:</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="652"/>
@@ -31549,7 +31549,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2041"/>
         <source>group activities in initial order items, the inactive items will have a distinctive background color</source>
-        <translation>&quot;ομαδοποίηση δραστηριοτήτων στο αρχικό στάδιο δημιουργίας ωρολογίου προγράμματος&quot;, τα ανενεργά στοιχεία θα έχουν διαφορετικό χρώμα φόντου</translation>
+        <translation>Στοιχεία της &quot;ομαδοποίησης δραστηριοτήτων στην αρχική σειρά&quot;: Τα ανενεργά στοιχεία θα έχουν διαφορετικό χρώμα φόντου</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2047"/>
@@ -31966,7 +31966,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4232"/>
         <source>Enable group activities in the initial order of generation will be %1</source>
         <comment>%1 is true or false</comment>
-        <translation>Η ενεργοποίηση &quot;ομαδοποίηση δραστηριοτήτων στο αρχικό στάδιο δημιουργίας ωρολογίου προγράμματος&quot; θα είναι %1</translation>
+        <translation>Η ενεργοποίηση &quot;ομαδοποίηση δραστηριοτήτων στην αρχική σειρά δημιουργίας ωρολογίου προγράμματος&quot; θα είναι %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4232"/>
@@ -31977,7 +31977,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4234"/>
         <source>Warn if using group activities in the initial order of generation will be %1</source>
         <comment>%1 is true or false</comment>
-        <translation>Προειδοποίησε αν η χρήση &quot;ομαδοποίηση δραστηριοτήτων στο αρχικό στάδιο δημιουργίας&quot; πρόκειται να είναι %1</translation>
+        <translation>Προειδοποίησε αν η χρήση &quot;ομαδοποίηση δραστηριοτήτων στην αρχική σειρά δημιουργίας ωρολογίου προγράμματος&quot; πρόκειται να είναι %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4234"/>
@@ -33778,17 +33778,17 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2432"/>
         <source>Group activities in the initial order of generation</source>
-        <translation>Ομαδοποίηση δραστηριοτήτων στο αρχικό στάδιο δημιουργίας ωρολογίου</translation>
+        <translation>Ομαδοποίηση δραστηριοτήτων στην αρχική σειρά δημιουργίας ωρολογίου προγράμματος</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2443"/>
         <source>Enable group activities in initial order</source>
-        <translation>Ενεργοποίηση &quot;ομαδοποίηση δραστηριοτήτων στο αρχικό στάδιο&quot;</translation>
+        <translation>Ενεργοποίηση &quot;ομαδοποίηση δραστηριοτήτων στην αρχική σειρά&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2454"/>
         <source>Warn if using group activities in initial order</source>
-        <translation>Προειδοποίηση αν χρησιμοποιείται &quot;ομαδοποίηση δραστηριοτήτων στο αρχικό στάδιο&quot;</translation>
+        <translation>Προειδοποίηση αν χρησιμοποιείται &quot;ομαδοποίηση δραστηριοτήτων στην αρχική σειρά&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2465"/>
@@ -35043,7 +35043,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3590"/>
         <source>Cannot optimize, because you have constraint teacher min days per week for teacher %1 with %2 min days per week, and the number of working days per week is only %3. Please correct and try again</source>
-        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικός - ελάχιστες ημέρες ανά εβδομάδα&quot; για τον εκπαιδευτικό %1 με ελάχιστες %2 ημέρες ανά εβδομάδα, και ο αριθμός των διαθέσιμων ημερών εργασίας (ωρών για δραστηριότητες) ανά εβδομάδα είναι μόνον %3. Παρακαλώ διορθώστε και προσπαθείστε ξανά</translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικός - ελάχιστες ημέρες ανά εβδομάδα&quot; για τον εκπαιδευτικό %1 με ελάχιστες %2 ημέρες ανά εβδομάδα, και ο αριθμός των διαθέσιμων ημερών εργασίας (ημερών για δραστηριότητες) ανά εβδομάδα είναι μόνον %3. Παρακαλώ διορθώστε και προσπαθείστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3616"/>
@@ -35296,7 +35296,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="954"/>
         <source>Your data contains the option to group activities in the initial order.</source>
-        <translation>Τα δεδομένα σας περιλαμβάνουν την επιλογή για &quot;ομαδοποίηση των δραστηριοτήτων στο αρχικό στάδιο δημιουργίας του ωρολογίου προγράμματος&quot;.</translation>
+        <translation>Τα δεδομένα σας περιλαμβάνουν την επιλογή για &quot;ομαδοποίηση των δραστηριοτήτων στην αρχική σειρά&quot;.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="956"/>
@@ -35844,17 +35844,17 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9136"/>
         <source>Group activities in initial order item number %1 is ignored, because it contains less than two active activities</source>
-        <translation>Θα αγνοηθεί το στοιχείο με αριθμό %1 από την &quot;ομαδοποίηση δραστηριοτήτων στο αρχικό στάδιο δημιουργίας ωρολογίου προγράμματος&quot;, διότι περιλαμβάνει λιγότερες από δύο ενεργές δραστηριότητες</translation>
+        <translation>Θα αγνοηθεί το στοιχείο με αριθμό %1 από την &quot;ομαδοποίηση δραστηριοτήτων στην αρχική σειρά&quot;, διότι περιλαμβάνει λιγότερες από δύο ενεργές δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9395"/>
         <source>This is the initial evaluation order of activities computed by FET. If the generation gets stuck after a certain number of activities, please check the activity corresponding to this number+1. You might find errors in your input.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αυτή είναι η αρχική σειρά αξιολόγησης των δραστηριοτήτων όπως έχει υπολογιστεί από το FET. Αν η δημιουργία του ωρολογίου προγράμματος &quot;κολλάει&quot; μετά από έναν ορισμένο αριθμό δραστηριοτήτων, ελέγξτε τη δραστηριότητα που αντιστοιχεί στον αριθμό αυτό+1. Μπορεί να βρείτε σφάλματα στα στοιχεία που έχετε εισαγάγει.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9399"/>
         <source>The initial order of activities (id-s):</source>
-        <translation type="unfinished"></translation>
+        <translation>Η αρχική σειρά των δραστηριοτήτων (ατ):</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9404"/>
@@ -35906,7 +35906,7 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9436"/>
         <source>End - the order of activities (id-s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Τέλος - η σειρά των δραστηριοτήτων (ατ)</translation>
     </message>
 </context>
 <context>
@@ -35915,7 +35915,7 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/engine/activity.cpp" line="86"/>
         <location filename="../src/engine/activity.cpp" line="102"/>
         <source>Group activities in initial order item</source>
-        <translation>Ομαδοποίηση δραστηριοτήτων στο αρχικό στάδιο - στοιχείο</translation>
+        <translation>Ομαδοποίηση δραστηριοτήτων στην αρχική σειρά - στοιχείο</translation>
     </message>
     <message>
         <location filename="../src/engine/activity.cpp" line="88"/>
@@ -36029,7 +36029,7 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="327"/>
         <source>Note: Each activity id must appear at most once in all the active &apos;group activities in initial order&apos; items.</source>
-        <translation>Σημείωση: Ο κάθε ατ δραστηριότητας πρέπει να εμφανίζεται μία φορά κατά μέγιστο σε όλα τα ενεργά στοιχεία &quot;ομαδοποίηση δραστηριοτήτων στο αρχικό στάδιο&quot;.</translation>
+        <translation>Σημείωση: Ο κάθε ατ δραστηριότητας πρέπει να εμφανίζεται μία φορά κατά μέγιστο σε όλα τα ενεργά στοιχεία &quot;ομαδοποίηση δραστηριοτήτων στην αρχική σειρά&quot;.</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="329"/>
@@ -36044,7 +36044,7 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="410"/>
         <source>This will sort the &apos;group activities in initial order&apos; items list ascending according to their comments. You can obtain a custom ordering by adding comments to some or all items, for example &apos;rank #1 ... other comments&apos;, &apos;rank #2 ... other different comments&apos;.</source>
-        <translation>Αυτό θα ταξινομήσει την λίστα στοιχείων &quot;ομαδοποίηση δραστηριοτήτων στο αρχικό στάδιο&quot; σε αύξουσα σειρά με κριτήριο τα σχόλιά τους. Μπορείτε να πετύχετε μία προσαρμοσμένη ταξινόμηση προσθέτοντας σχόλια σε μερικά ή σε όλα τα στοιχεία, για παράδειγμα &quot;σειρά κατάταξης #1 ... (άλλα σχόλια)&quot;, &quot;σειρά κατάταξης #2 ... (άλλα διαφορετικά σχόλια&quot;).</translation>
+        <translation>Αυτό θα ταξινομήσει την λίστα στοιχείων &quot;ομαδοποίηση δραστηριοτήτων στην αρχική σειρά&quot; σε αύξουσα σειρά με κριτήριο τα σχόλιά τους. Μπορείτε να πετύχετε μία προσαρμοσμένη ταξινόμηση προσθέτοντας σχόλια σε μερικά ή σε όλα τα στοιχεία, για παράδειγμα &quot;σειρά κατάταξης #1 ... (άλλα σχόλια)&quot;, &quot;σειρά κατάταξης #2 ... (άλλα διαφορετικά σχόλια&quot;).</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="413"/>
@@ -36054,7 +36054,7 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="441"/>
         <source>Group activities in initial order item comments</source>
-        <translation>Ομαδοποίηση δραστηριοτήτων στο αρχικό στάδιο δημιουργίας ωρολογίου προγράμματος - σχόλια</translation>
+        <translation>Ομαδοποίηση δραστηριοτήτων στην αρχική σειρά δημιουργίας ωρολογίου προγράμματος - σχόλια</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="443"/>
@@ -36073,7 +36073,7 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform_template.ui" line="14"/>
         <source>Group activities in initial order items</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Ομαδοποίηση δραστηριοτήτων στο αρχικό στάδιο - στοιχεία</translation>
+        <translation>Ομαδοποίηση δραστηριοτήτων στην αρχική σειρά - στοιχεία</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform_template.ui" line="28"/>
@@ -36424,62 +36424,14 @@ Please modify your data correspondingly and try again</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="121"/>
-        <source>former translator: %1 (to contact %2 visit FET forum - %3, section about Catalan translation, or contact forum user %4)</source>
-        <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="149"/>
-        <source>former translator: %1 (to contact %2 visit FET forum - %3, section about Greek translation, or contact forum user %4)</source>
-        <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="153"/>
-        <source>current translator: %1 (to contact %2 visit FET forum - %3, section about Greek translation, or contact forum user %4)</source>
-        <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="193"/>
-        <source>%1 (to contact %2 visit FET forum - %3, section about Galician translation, or contact forum user %4)</source>
-        <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="224"/>
-        <source>%1 (to contact %2 visit FET forum - %3, section about Japanese translation, or contact forum user %4)</source>
-        <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="262"/>
-        <source>current translator: %1 (%2). (Alternatively, to contact %3 visit FET forum - %4, section about Brazilian Portuguese translation, or contact forum user %5)</source>
-        <comment>%1 is the name of the translator, %2 is his email or web address, %3 is the short name of the translator, %4 is the address of the forum, %5 is forum user name of the translator</comment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="286"/>
-        <source>%1 (to contact %2 visit FET forum - %3, section about Slovak translation, or contact forum user %4)</source>
-        <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="326"/>
-        <source>former translator: %1 (to contact %2 visit FET forum - %3, section about Vietnamese translation, or contact forum user %4)</source>
-        <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../src/interface/helpaboutform.cpp" line="116"/>
         <location filename="../src/interface/helpaboutform.cpp" line="125"/>
         <location filename="../src/interface/helpaboutform.cpp" line="142"/>
         <location filename="../src/interface/helpaboutform.cpp" line="163"/>
         <location filename="../src/interface/helpaboutform.cpp" line="176"/>
         <location filename="../src/interface/helpaboutform.cpp" line="187"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="309"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="330"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="308"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="329"/>
         <source>current translator: %1 (%2)</source>
         <comment>%1 is the name of the translator, %2 is his email or web address</comment>
         <translation type="unfinished"></translation>
@@ -36487,6 +36439,12 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="119"/>
         <source>Catalan translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform.cpp" line="121"/>
+        <source>former translator: %1 (to contact %2 visit FET forum - %3, section about Catalan translation, or contact forum user %4)</source>
+        <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -36507,15 +36465,15 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/interface/helpaboutform.cpp" line="241"/>
         <location filename="../src/interface/helpaboutform.cpp" line="246"/>
         <location filename="../src/interface/helpaboutform.cpp" line="251"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="271"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="276"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="281"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="293"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="298"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="300"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="314"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="335"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="340"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="270"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="275"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="280"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="292"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="297"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="299"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="313"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="334"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="339"/>
         <source>%1 (%2)</source>
         <comment>%1 is the name of the translator, %2 is his email or web address</comment>
         <translation type="unfinished"></translation>
@@ -36541,8 +36499,8 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/interface/helpaboutform.cpp" line="256"/>
         <location filename="../src/interface/helpaboutform.cpp" line="258"/>
         <location filename="../src/interface/helpaboutform.cpp" line="260"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="305"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="307"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="304"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="306"/>
         <source>former translator: %1 (%2)</source>
         <comment>%1 is the name of the translator, %2 is his email or web address</comment>
         <translation type="unfinished"></translation>
@@ -36553,10 +36511,21 @@ Please modify your data correspondingly and try again</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../src/interface/helpaboutform.cpp" line="149"/>
+        <source>former translator: %1 (to contact %2 visit FET forum - %3, section about Greek translation, or contact forum user %4)</source>
+        <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform.cpp" line="153"/>
+        <source>current translator: %1 (to contact %2 visit FET forum - %3, section about Greek translation, or contact forum user %4)</source>
+        <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/interface/helpaboutform.cpp" line="156"/>
         <location filename="../src/interface/helpaboutform.cpp" line="164"/>
         <location filename="../src/interface/helpaboutform.cpp" line="188"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="266"/>
         <source>rewrote the translation from zero</source>
         <translation type="unfinished"></translation>
     </message>
@@ -36583,6 +36552,12 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="191"/>
         <source>Galician translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform.cpp" line="193"/>
+        <source>%1 (to contact %2 visit FET forum - %3, section about Galician translation, or contact forum user %4)</source>
+        <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -36617,6 +36592,12 @@ Please modify your data correspondingly and try again</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../src/interface/helpaboutform.cpp" line="224"/>
+        <source>%1 (to contact %2 visit FET forum - %3, section about Japanese translation, or contact forum user %4)</source>
+        <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/interface/helpaboutform.cpp" line="229"/>
         <source>Lithuanian translation</source>
         <translation type="unfinished"></translation>
@@ -36647,78 +36628,96 @@ Please modify your data correspondingly and try again</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="269"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="262"/>
+        <source>current translator: %1 (%2). (Alternatively, to contact %3 visit FET forum - %4, section about Brazilian Portuguese translation, or contact forum user %5)</source>
+        <comment>%1 is the name of the translator, %2 is his email or web address, %3 is the short name of the translator, %4 is the address of the forum, %5 is forum user name of the translator</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform.cpp" line="268"/>
         <source>Romanian translation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="274"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="273"/>
         <source>Russian translation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="279"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="278"/>
         <source>Sinhala translation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="284"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="283"/>
         <source>Slovak translation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="291"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="285"/>
+        <source>%1 (to contact %2 visit FET forum - %3, section about Slovak translation, or contact forum user %4)</source>
+        <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform.cpp" line="290"/>
         <source>Albanian translation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="296"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="295"/>
         <source>Serbian translation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="303"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="302"/>
         <source>Turkish translation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="312"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="311"/>
         <source>Ukrainian translation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="317"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="316"/>
         <source>Uzbek translation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="319"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="318"/>
         <source>%1 (%2, or visit FET forum - %3, section about Uzbek translation, or contact forum user %4)</source>
         <comment>%1 is the current translator, %2 is his email or web address, %3 is the FET forum address, %4 is the username of the translator</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="324"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="323"/>
         <source>Vietnamese translation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="333"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="325"/>
+        <source>former translator: %1 (to contact %2 visit FET forum - %3, section about Vietnamese translation, or contact forum user %4)</source>
+        <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform.cpp" line="332"/>
         <source>Chinese Simplified translation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="338"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="337"/>
         <source>Chinese Traditional translation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="346"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="345"/>
         <source>You may find references for the algorithms and techniques used in this program on the FET documentation web page, %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="352"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="351"/>
         <source>chronologically</source>
         <translation type="unfinished"></translation>
     </message>
@@ -36776,52 +36775,52 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="83"/>
         <source>These limits are:</source>
-        <translation type="unfinished"></translation>
+        <translation>Τα όρια αυτά είναι:</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="86"/>
         <source>Maximum total number of hours (periods) per day: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Μέγιστος συνολικός αριθμός ωρών (περιόδων) ανά ημέρα: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="88"/>
         <source>Maximum number of working days per week: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Μέγιστος αριθμός εργάσιμων ημερών ανά εβδομάδα: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="90"/>
         <source>Maximum total number of teachers: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Μέγιστος συνολικός αριθμός εκπαιδευτικών: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="92"/>
         <source>Maximum total number of sets of students: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Μέγιστος συνολικός αριθμός ομάδων μαθητών: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="96"/>
         <source>Virtually unlimited number of activity tags</source>
-        <translation type="unfinished"></translation>
+        <translation>Πρακτικά απεριόριστος αριθμός ετικετών δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="98"/>
         <source>Maximum number of activities: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Μέγιστος αριθμός δραστηριοτήτων: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="100"/>
         <source>Maximum number of rooms: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Μέγιστος αριθμός αιθουσών: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="102"/>
         <source>Maximum number of buildings: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Μέγιστος αριθμός κτιρίων: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="104"/>
         <source>Virtually unlimited number of teachers and students sets for each activity</source>
-        <translation type="unfinished"></translation>
+        <translation>Πρακτικά απεριόριστος αριθμός εκπαιδευτικών και ομάδων μαθητών για κάθε δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="114"/>
@@ -36835,7 +36834,9 @@ A: The activities are indented for easier visualization. The non-indented ones a
         <source>Q: Is it possible to use non-integer weights for constraints?
 
 A: Yes. If a constraint is allowed values under 100%, you can use any weight, even fractional numbers like 99.75%. It might help in constraints like min days, preferred rooms or max hours daily. The precision in FET is limited to %1 decimal digits after the decimal point, but probably nobody will use such a fine precision.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Είναι δυνατόν να χρησιμοποιηθούν μη ακέραιες τιμές ποσοστών βαρύτητας για τους περιορισμούς;
+
+Α: Ναι. Αν για κάποιον περιορισμό επιτρέπονται τιμές ποσοστού βαρύτητας μικρότερες του 100%, μπορείτε να χρησιμοποιήσετε οποιαδήποτε βαρύτητα, ακόμη και αριθμούς με δεκαδικά ψηφία όπως 99.75%. Αυτό μπορεί να βοηθήσει σε περιορισμούς όπως &quot;ελάχιστες ημέρες&quot;, &quot;προτιμητέες αίθουσες&quot; ή &quot;μέγιστες ώρες ημερησίως&quot;. Η ακρίβεια στο FET περιορίζεται σε %1 δεκαδικά ψηφία μετά την υποδιαστολή, αλλά πιθανότητα κανένας δεν πρόκειται να χρησιμοποιήσει τόσο μεγάλη ακρίβεια.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="132"/>
@@ -37159,7 +37160,7 @@ Add another constraint: min 1 day between activities with id-s 2 and 3, consecut
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="888"/>
         <source>A: A trick is this: open the file representing the activities timetable in XML form (this file can be found in the results directory, with a name like: file_activities.xml) with a text editor, and search for the text &lt;Room&gt;&lt;/Room&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Α: Ένα τέχνασμα (τρικ) είναι το εξής: ανοίξτε με κάποια εφαρμογή κειμενογράφου το αρχείο (σε φορμά XML) το οποίο αντιπροσωπεύει το ωρολόγιο πρόγραμμα των δραστηριοτήτων (το αρχείο αυτό βρίσκεται στον κατάλογο αποτελεσμάτων, με όνομα της μοφρής: file_activities.xml), και αναζητήστε για το κείμενο &lt;Room&gt;&lt;/Room&gt;</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="895"/>
@@ -37169,7 +37170,7 @@ Add another constraint: min 1 day between activities with id-s 2 and 3, consecut
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="901"/>
         <source>A: A nice way to treat such situations would be to consider the number of FET days = 2 * the number of real days. Each real day corresponds to two FET days, one for the morning and one for the afternoon. Then, add constraints max zero gaps, and maybe min two hours daily with allow empty days true. You may need to devise some other tricks, in addition.</source>
-        <translation type="unfinished"></translation>
+        <translation>Α: Ένας καλός τρόπος αντιμετώπισης τέτοιων καταστάσεων θα ήταν να θεωρήσετε τον αριθμό των ημερών στο FET = 2 * (τον αριθμό των πραγματικών ημερών). Έτσι, κάθε πραγματική ημέρα θα αντιστοιχεί σε δύο ημέρες στο FET, μία για το πρωί και μία για το απόγευμα. Μετά, προσθέστε περιορισμούς &quot;μέγιστα κενά&quot; = 0, και πιθανώς &quot;ελάχιστες ώρες ημερησίως&quot; = 2 με &quot;κενές ημέρες - επιτρεπτές&quot; = &quot;αληθής&quot;. Μπορεί επιπρόσθετα να χρειαστεί να επινοήσετε και κάποια άλλα τεχνάσματα (τρικ).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="909"/>
@@ -37232,7 +37233,7 @@ Add another constraint: min 1 day between activities with id-s 2 and 3, consecut
         <location filename="../src/interface/helpfaqform.cpp" line="1019"/>
         <source>A:</source>
         <comment>Answer</comment>
-        <translation type="unfinished"></translation>
+        <translation>Α:</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="970"/>
@@ -37257,7 +37258,7 @@ Add another constraint: min 1 day between activities with id-s 2 and 3, consecut
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="985"/>
         <source>(Also the conflicts timetable might take long to write, if the file is large.)</source>
-        <translation type="unfinished">(Επίσης, ο πίνακας των συγκρούσεων μπορεί να χρειαστεί αρκετή ώρα για να γραφτεί, αν το αρχείο είναι μεγάλο.)</translation>
+        <translation>(Επίσης, ο πίνακας των συγκρούσεων μπορεί να χρειαστεί αρκετή ώρα για να γραφτεί, αν το αρχείο είναι μεγάλο.)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="987"/>
@@ -37317,7 +37318,7 @@ Add another constraint: min 1 day between activities with id-s 2 and 3, consecut
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="837"/>
         <source>-- This entry by Regis Bouguin --</source>
-        <translation type="unfinished"></translation>
+        <translation>-- Καταχώρηση από τον Regis Bouguin --</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="853"/>
@@ -37344,7 +37345,7 @@ A: Each room can host a single activity at the same time. How to implement what 
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="49"/>
         <source>7 February 2016</source>
-        <translation type="unfinished"></translation>
+        <translation>7 Φεβρουαρίου 2016</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="55"/>
@@ -37585,7 +37586,7 @@ A: If you have activities which you want to put in the last slots of a day (like
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="741"/>
         <source>3 hints from an anonymous Polish user, who uses FET for very large data:</source>
-        <translation type="unfinished"></translation>
+        <translation>3 υποδείξεις από ανώνυμο Πολωνό χρήστη, ο οποίος χρησιμοποιεί το FET για πολύ μεγάλο όγκο δεδομένων:</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="749"/>
@@ -37716,7 +37717,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="777"/>
         <source>A: Activity tag max hours daily cannot be implemented perfectly, generation would take too much (because of complexity of checks). Students max gaps per day can be implemented perfectly, but it would change the algorithm for students a lot and I am afraid to change something that is working well. Very much testing would be needed, and I have not enough sample files. While changing the algorithm, it would be easy to make critical bugs and some files may not solve anymore.</source>
-        <translation type="unfinished"></translation>
+        <translation>Α: Ο περιορισμός &quot;ετικέτα δραστηριότητας - μέγιστες ώρες ημερησίως&quot; δεν μπορεί να υλοποιηθεί τέλεια (να βελτιστοποιηθεί πλήρως), και για τον λόγο αυτό η δημιουργία του ωρολογίου προγράμματος απαιτεί πολύ χρόνο (εξαιτίας της περιπλοκότητας των απαιτούμενων ελέγχων). Ο περιορισμός &quot;μέγιστα κενά ανά ημέρα&quot; μπορεί να υλοιποηθεί τέλεια (να βελτιστοποιηθεί πλήρως), αλλά αυτό θα απαιτούσε μεγάλες αλλαγές στον αλγόριθμο και συγκεκριμένα στο τμήμα του αλγορίθμου που αφορά τους μαθητές. Ως εκ τούτου, δεν θα τολμούσα να αλλάξω κάτι το οποίο δουλεύει καλά. Επίσης, αυτές οι αλλαγές θα απαιτούσαν πολλές δοκιμές (πολλούς πρακτικούς ελέγχους), και δεν έχω αρκετά αρχεία δειγμάτων (αρχεία .fet) ώστε να πραγματοποιήσω τέτοια έκταση δοκιμών. Τέλος, εξαιτίας της αλλαγής του αλγορίθμου θα υπήρχε ισχυρό ενδεχόμενο να προκύψουν κρίσιμα σφάλματα λογισμικού (bugs) και κατ&apos; επέκταση πιθανώς κάποια ήδη υπάρχοντα αρχεία .fet να μην ήταν δυνατόν πλέον να επιλυθούν.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="788"/>
@@ -38543,7 +38544,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="157"/>
         <source>Please specify the %1 field:</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ καθορίστε το πεδίο %1:</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="159"/>
@@ -38616,12 +38617,12 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="655"/>
         <source>Please specify the used separator between fields:</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ προσδιορίστε τον χρησιμοποιούμενο χαρακτήρα διαχωρισμού ανάμεσα στα πεδία:</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="662"/>
         <source>Used field separator:</source>
-        <translation type="unfinished"></translation>
+        <translation>Χρησιμοποιούμενος χαρακτήρας διαχωρισμού πεδίων:</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="669"/>
@@ -38636,12 +38637,12 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="685"/>
         <source>The first line is the heading. Don&apos;t import that line.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η πρώτη γραμμή είναι η κεφαλίδα. Να μην γίνει εισαγωγή της γραμμής αυτής.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="686"/>
         <source>The first line contains data. Import that line.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η πρώτη γραμμή περιέχει δεδομένα.  Να γίνει εισαγωγή της γραμμής αυτής.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="692"/>
@@ -38703,6 +38704,11 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <translation>Φόρτωση - ακύρωση από τον χρήστη.</translation>
     </message>
     <message>
+        <location filename="../src/engine/import.cpp" line="1020"/>
+        <source>Warning in line %1: Field with building name doesn&apos;t relate to a room</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/engine/import.cpp" line="1141"/>
         <source>FET import %1 question</source>
         <translation type="unfinished"></translation>
@@ -38710,12 +38716,12 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="1177"/>
         <source>Following data found in the file:</source>
-        <translation type="unfinished"></translation>
+        <translation>Στο αρχείο βρέθηκαν τα παρακάτω δεδομένα:</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1179"/>
         <source>There is no usable data in the file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Δεν υπάρχουν χρησιμοποιήσιμα δεδομένα στο αρχείο.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1191"/>
@@ -38725,7 +38731,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="1219"/>
         <source>FET noticed %1 warnings with the current data.</source>
-        <translation type="unfinished"></translation>
+        <translation>Το FET σημείωσε %1 προειδοποιήσεις με τα τρέχοντα δεδομένα.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1230"/>
@@ -38744,7 +38750,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <location filename="../src/engine/import.cpp" line="1556"/>
         <location filename="../src/engine/import.cpp" line="1632"/>
         <source>%1 is already in FET data.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1: υπάρχει ήδη στα δεδομένα του FET.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1362"/>
@@ -38890,7 +38896,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="683"/>
         <source>Please specify the contents of the first line:</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ καθορίστε τα περιεχόμενα της πρώτης γραμμής:</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="777"/>
@@ -38905,17 +38911,17 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="890"/>
         <source>Warning: FET expected field separator or text separator in line %1. Import might be incorrect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Προειδοποίηση: Το FET ανέμενε χαρακτήρα διαχωρισμού πεδίων ή χαρακτήρα διαχωρισμού κειμένου στην γραμμή %1. Η εισαγωγή πιθανώς να είναι εσφαλμένη.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="898"/>
         <source>Warning: FET expected closing text separator in line %1. Import might be incorrect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Προειδοποίηση: Το FET ανέμενε χαρακτήρα &quot;κλεισίματος&quot; διαχωρισμού στην γραμμή %1. Η εισαγωγή μπορεί να είναι εσφαλμένη.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="924"/>
         <source>Skipped line %1: FET expected %2 fields but found %3 fields.</source>
-        <translation type="unfinished"></translation>
+        <translation>Παράβλεψη γραμμής %1: Το FET ανέμενε %2 πεδία, αντί των %3 πεδίων που βρέθηκαν.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="933"/>
@@ -38929,24 +38935,19 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <location filename="../src/engine/import.cpp" line="1547"/>
         <location filename="../src/engine/import.cpp" line="1623"/>
         <source>Skipped line %1: Field &apos;%2&apos; is empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Παράβλεψη γραμμής %1: Το πεδίο &quot;%2&quot; είναι κενό.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1002"/>
         <location filename="../src/engine/import.cpp" line="1026"/>
         <location filename="../src/engine/import.cpp" line="1037"/>
         <source>Skipped line %1: Field &apos;%2&apos; doesn&apos;t contain an integer value.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/engine/import.cpp" line="1020"/>
-        <source>Warning in line %1: Field with building name doesn&apos;t affect to a room</source>
-        <translation type="unfinished"></translation>
+        <translation>Παράβλεψη γραμμής %1. Το πεδίο &quot;%2&quot; δεν περιέχει ακέραια τιμή.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1065"/>
         <source>Skipped line %1: Field &apos;%2&apos; contain an unknown value.</source>
-        <translation type="unfinished"></translation>
+        <translation>Παράβλεψη γραμμής %1: Το πεδίο &quot;%2&quot; περιέχει άγνωστη τιμή.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1084"/>
@@ -38962,7 +38963,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <location filename="../src/engine/import.cpp" line="1407"/>
         <location filename="../src/engine/import.cpp" line="1416"/>
         <source>Skipped line %1: Field &apos;%2&apos; is already in a previous line.</source>
-        <translation type="unfinished"></translation>
+        <translation>Παράβλεψη γραμμής %1: Το πεδίο &quot;%2&quot; υπάρχει ήδη σε προηγούμενη γραμμή.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1506"/>
@@ -39002,7 +39003,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="1824"/>
         <source>Subgroup name %1 is already in FET data (in the same or in another group).</source>
-        <translation type="unfinished"></translation>
+        <translation>Το όνομα υποτμήματος %1 υπάρχει ήδη στα δεδομένα του FET (στο ίδιο ή σε σε άλλο τμήμα).</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1951"/>
@@ -39013,7 +39014,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="2007"/>
         <source>Subgroup name %1 exists in another group. It means that some groups share the same subgroup.</source>
-        <translation type="unfinished"></translation>
+        <translation>Το όνομα υποτμήματος %1 υπάρχει ήδη σε υποτμήμα άλλου τμήματος. Αυτό σημαίνει ότι το ίδιο υποτμήμα συμπεριλαμβάνεται σε περισσότερα του ενός τμήματα.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="2052"/>
@@ -39045,12 +39046,12 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="2595"/>
         <source>Warning: found tags for the &apos;consecutive&apos; field of min days which are not a valid boolean value (%1) - making them %2</source>
-        <translation type="unfinished"></translation>
+        <translation>Προειδοποίηση: στις &quot;ελάχιστες ημέρες&quot; εντοπίστηκαν ετικέτες του πεδίου &quot;διαδοχικές&quot; οι οποίες ετικέτες δεν έχουν αποδεκτή boolean τιμή (%1) - οι ετικέτες αυτές θα γίνουν %2</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1009"/>
         <source>Skipped line %1: Fields &apos;%2&apos; and &apos;%3&apos; haven&apos;t the same value.</source>
-        <translation type="unfinished"></translation>
+        <translation>Παράβλεψη γραμμής %1. Τα πεδία &quot;%2&quot; και &quot;%3&quot; δεν έχουν την ίδια τιμή.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1746"/>
@@ -39070,7 +39071,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="2245"/>
         <source>Students set %1 doesn&apos;t exist. You must add (or import) years, groups and subgroups first.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η ομάδα μαθητών %1 δεν υπάρχει. Πρέπει πρώτα να προσθέσετε (ή να εισαγάγετε) έτη, τμήματα και υποτμήματα.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="2282"/>
@@ -39113,17 +39114,17 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="1029"/>
         <source>Skipped line %1: Field &apos;%2&apos; contains an invalid integer value.</source>
-        <translation type="unfinished"></translation>
+        <translation>Παράβλεψη γραμμής %1. Το πεδίο &quot;%2&quot; περιέχει μη αποδεκτή ακέραια τιμή.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1046"/>
         <source>Skipped line %1: Field &apos;%2&apos; doesn&apos;t contain a number (double) value.</source>
-        <translation type="unfinished"></translation>
+        <translation>Παράβλεψη γραμμής %1. Το πεδίο &quot;%2&quot; δεν περιέχει αριθμητική τιμή (double).</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1049"/>
         <source>Skipped line %1: Field &apos;%2&apos; contains an number (double) value.</source>
-        <translation type="unfinished"></translation>
+        <translation>Παράβλεψη γραμμής %1. Το πεδίο &quot;%2&quot; περιέχει μη αποδεκτή αριθμητική τιμή (double).</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="648"/>
@@ -39138,7 +39139,8 @@ is:</source>
         <location filename="../src/engine/import.cpp" line="1152"/>
         <source>There are several problems in file
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Υπάρχουν αρκετά προβλήματα στο αρχείο
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1154"/>
@@ -39150,12 +39152,12 @@ is:</source>
     <message>
         <location filename="../src/engine/import.cpp" line="1014"/>
         <source>Skipped line %1: Field &apos;%2&apos; contains too many subactivities.</source>
-        <translation type="unfinished"></translation>
+        <translation>Παράβλεψη γραμμής %1. Το πεδίο &quot;%2&quot; περιέχει υπερβολικά πολλές υποδραστηριότητες.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="981"/>
         <source>Skipped line %1: Field &apos;%2&apos; produces too many subactivities.</source>
-        <translation type="unfinished"></translation>
+        <translation>Παράβλεψη γραμμής %1. Το πεδίο &quot;%2&quot; παράγει υπερβολικά πολλές υποδραστηριότητες.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="125"/>
@@ -39165,7 +39167,7 @@ is:</source>
     <message>
         <location filename="../src/engine/import.cpp" line="508"/>
         <source>Text Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Αρχεία Κειμένου</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="508"/>
@@ -39190,12 +39192,12 @@ is:</source>
     <message>
         <location filename="../src/engine/import.cpp" line="985"/>
         <source>Skipped line %1: Field &apos;%2&apos; contain incorrect data.</source>
-        <translation type="unfinished"></translation>
+        <translation>Παράβλεψη γραμμής %1: Το πεδίο &quot;%2&quot; περιέχει εσφαλμένα δεδομένα.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="528"/>
         <source>The first line of the file is empty. Please fix this.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η πρώτη γραμμή του αρχείου είναι κενή. Παρακαλώ διορθώστε.</translation>
     </message>
 </context>
 <context>
@@ -46841,7 +46843,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifygroupactivitiesininitialorderitemform_template.ui" line="14"/>
         <source>Modify group activities in initial order item</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Τροποποίηση: &quot;Ομαδοποίηση δραστηριοτήτων στο αρχικό στάδιο - στοιχείο&quot;</translation>
+        <translation>Τροποποίηση: &quot;Ομαδοποίηση δραστηριοτήτων στην αρχική σειρά - στοιχείο&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifygroupactivitiesininitialorderitemform_template.ui" line="20"/>
@@ -48281,7 +48283,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/engine/rules.cpp" line="4748"/>
         <source>File does not have a corresponding beginning tag - it should be %1 or %2. File is incorrect...it cannot be opened</source>
-        <translation type="unfinished"></translation>
+        <translation>Το αρχείο δεν έχει ορθή ετικέτα έναρξης - θα έπρεπε να είναι %1 ή %2. Το αρχείο είναι εσφαλμένο και δεν μπορεί να ανοιχθεί</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="4767"/>
@@ -48363,7 +48365,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/engine/rules.cpp" line="5029"/>
         <source>The teacher %1 has attached an inexistent qualified subject %2. Please note that starting with FET version %3 the list of subjects (tag &lt;Subjects_List&gt; in the .fet XML file) must appear before the list of teachers (tag &lt;Teachers_List&gt; in the .fet XML file)</source>
         <comment>Please keep &lt;Subjects_List&gt; and &lt;Teachers_List&gt; untranslated, as in the original English string</comment>
-        <translation type="unfinished"></translation>
+        <translation>Το αντικείμενο εντός προσόντων %2 που έχει αποδοθεί στον εκπαιδευτικό %1 είναι ανύπαρκτο. Παρακαλώ σημειώστε ότι από την έκδοση %3 του FET και μετά, η λίστα των αντικειμένων (ετικέτα &lt;Subjects_List&gt; στο αρχείο XML .fet) πρέπει να εμφανίζεται πριν την λίστα των εκπαιδευτικών (ετικέτα &lt;Teachers_List&gt; του αρχείου XML .fet)</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="5059"/>
@@ -48516,7 +48518,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/engine/rules.cpp" line="799"/>
         <source>All &apos;group activities in the initial order for timetable generation&apos; items should contain at least two activities ids. This is not true for item number %1. Please report potential bug.</source>
-        <translation>Όλα τα στοιχεία της &quot;ομαδοποίησης δραστηριοτήτων στο αρχικό στάδιο δημιουργίας ωρολογίου προγράμματος&quot; θα πρέπει να περιλαμβάνουν (το καθένα) τουλάχιστον δύο ατ δραστηριοτήτων. Αυτό δεν ισχύσει για το στοιχείο με αριθμό %1. Παρακαλώ να αναφέρετε το πιθανό σφάλμα λογισμικού (bug).</translation>
+        <translation>Όλα τα στοιχεία της &quot;ομαδοποίησης δραστηριοτήτων στην αρχική σειρά για δημιουργία ωρολογίου προγράμματος&quot; θα πρέπει να περιλαμβάνουν (το καθένα) τουλάχιστον δύο ατ δραστηριοτήτων. Αυτό δεν ισχύσει για το στοιχείο με αριθμό %1. Παρακαλώ να αναφέρετε το πιθανό σφάλμα λογισμικού (bug).</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="2822"/>
@@ -48858,7 +48860,7 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/engine/rules.cpp" line="7032"/>
         <source>Saving of logging gave error code %1, which means you cannot see the log of reading the file. Please check your disk free space</source>
-        <translation type="unfinished"></translation>
+        <translation>Η αποθήκευση του αρχείου καταγραφής &quot;επέστρεψε&quot; τον κωδικό σφάλματος %1. Αυτό σημαίνει ότι δεν μπορείτε να διαβάσετε το αρχείο καταγραφής. Παρακαλώ ελέγξτε τον ελεύθερο χώρο στον δίσκο σας</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="7075"/>
@@ -48868,7 +48870,7 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/engine/rules.cpp" line="7201"/>
         <source>Saved file gave error code %1, which means saving is compromised. Please check your disk free space</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Το αποθηκευμένο αρχείο &quot;επέστρεψε&quot; κωδικό σφάλματος %1, το οποίο σημαίνει ότι η αποθήκευση έχει ???παραβιαστεί???. Παρακαλώ ελέγξτε τον ελεύθερο χώρο στον δίσκο σας</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="7509"/>
@@ -48963,7 +48965,7 @@ not added - must be a duplicate</source>
         <location filename="../src/engine/rules.cpp" line="14725"/>
         <location filename="../src/engine/rules.cpp" line="14729"/>
         <source>Field missing: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Λείπει το πεδίο: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="8080"/>
@@ -49006,7 +49008,7 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/engine/rules.cpp" line="806"/>
         <source>All &apos;group activities in the initial order for timetable generation&apos; items should have different activities ids. (Each activity id must appear at most once in all the items.) This is not true for item number %1 and activity id %2.</source>
-        <translation type="unfinished">Όλα τα στοιχεία στην &quot;ομαδοποίηση δραστηριοτήτων κατά το αρχικό στάδιο δημιουργίας του ωρολογίου προγράμματος&quot; πρέπει να έχουν διαφορετικούς ατ δραστηριοτήτων. (Κάθε ατ δραστηριότητας πρέπει να εμφανίζεται μία φορά κατά μέγιστο σε όλα τα στοιχεία). Αυτό δεν ισχύει για τον στοιχείο με αριθμό %1 και τον ατ δραστηριότητας %2.</translation>
+        <translation>Όλα τα στοιχεία στην &quot;ομαδοποίηση δραστηριοτήτων στην αρχική σειρά για δημιουργία ωρολογίου προγράμματος&quot; πρέπει να έχουν διαφορετικούς ατ δραστηριοτήτων. (Κάθε ατ δραστηριότητας πρέπει να εμφανίζεται μία φορά κατά μέγιστο σε όλα τα στοιχεία). Αυτό δεν ισχύει για τον στοιχείο με αριθμό %1 και τον ατ δραστηριότητας %2.</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="5982"/>
@@ -49024,13 +49026,13 @@ not added - must be a duplicate</source>
         <location filename="../src/engine/rules.cpp" line="9905"/>
         <source>Found constraint teachers min hours daily with tag allow empty days which is not &apos;true&apos;, &apos;false&apos;, &apos;yes&apos;, &apos;no&apos;, &apos;1&apos; or &apos;0&apos;. The tag will be considered false</source>
         <comment>Instructions for translators: please leave the &apos;true&apos;, &apos;false&apos;, &apos;yes&apos; and &apos;no&apos; fields untranslated, as they are in English</comment>
-        <translation type="unfinished"></translation>
+        <translation>Εντοπίστηκε περιορισμός &quot;εκπαιδευτικοί - ελάχιστες ώρες ημερησίως&quot; με ετικέτα &quot;κενές ημέρες - επιτρεπτές&quot;, χωρίς να έχει αποδοθεί στην ετικέτα κάποια από τις τιμές &quot;true&quot; (αληθής), &quot;false&quot; (ψευδής), &quot;yes&quot; (ναι), &quot;no&quot; (όχι), &quot;1&quot; ή &quot;0&quot;. Ως τιμή της ετικέτας αυτής θα εκληφθεί η &quot;ψευδής&quot; (false)</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="9982"/>
         <source>Found constraint teacher min hours daily with tag allow empty days which is not &apos;true&apos;, &apos;false&apos;, &apos;yes&apos;, &apos;no&apos;, &apos;1&apos; or &apos;0&apos;. The tag will be considered false</source>
         <comment>Instructions for translators: please leave the &apos;true&apos;, &apos;false&apos;, &apos;yes&apos; and &apos;no&apos; fields untranslated, as they are in English</comment>
-        <translation type="unfinished"></translation>
+        <translation>Εντοπίστηκε περιορισμός &quot;εκπαιδευτικός - ελάχιστες ώρες ημερησίως&quot; με ετικέτα &quot;κενές ημέρες - επιτρεπτές&quot;, χωρίς να έχει αποδοθεί στην ετικέτα κάποια από τις τιμές &quot;true&quot; (αληθής), &quot;false&quot; (ψευδής), &quot;yes&quot; (ναι), &quot;no&quot; (όχι), &quot;1&quot; ή &quot;0&quot;. Ως τιμή της ετικέτας αυτής θα εκληφθεί η &quot;ψευδής&quot; (false)</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="4891"/>
@@ -52569,7 +52571,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="1727"/>
         <source>Number of broken soft constraints: %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Αριθμός μη τηρηθέντων ήπιων περιορισμών: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="1728"/>
@@ -52579,7 +52581,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="1743"/>
         <source>Number of broken constraints: %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Αριθμός μη τηρηθέντων περιορισμών: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="1744"/>
@@ -53255,7 +53257,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="140"/>
         <source>Data is wrong. Please correct and try again</source>
-        <translation type="unfinished">Εσφαλμένα δεδομένα. Παρακαλώ διορθώστε και προσπαθείστε ξανά</translation>
+        <translation>Εσφαλμένα δεδομένα. Παρακαλώ διορθώστε και προσπαθείστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="146"/>
@@ -53279,7 +53281,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="159"/>
         <source>Cannot generate - please modify your data</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η δημιουργία ωρολογίου προγράμματος - παρακαλώ τροποποιήστε τα δεδομένα σας</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="213"/>
@@ -53288,7 +53290,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegenerateform.cpp" line="803"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="852"/>
         <source>Number of broken constraints: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Αριθμός μη τηρηθέντων περιορισμών: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="215"/>
@@ -53297,7 +53299,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegenerateform.cpp" line="805"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="854"/>
         <source>Total conflicts:</source>
-        <translation type="unfinished"></translation>
+        <translation>Συνολικές συγκρούσεις:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="219"/>
@@ -53306,20 +53308,20 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegenerateform.cpp" line="809"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="858"/>
         <source>Conflicts listing (in decreasing order):</source>
-        <translation type="unfinished"></translation>
+        <translation>Λίστα συγκρούσεων (σε φθίνουσα σειρά):</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="290"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="541"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="909"/>
         <source>No: %1</source>
-        <translation type="unfinished">Αρ.: %1</translation>
+        <translation>Αρ.: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="306"/>
         <source>Generation stopped</source>
         <comment>The title of a dialog, meaning that the generation of the timetable was stopped.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Διακοπή δημιουργίας</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="312"/>
@@ -53345,18 +53347,18 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegenerateform.cpp" line="557"/>
         <source>Generation impossible</source>
         <comment>The title of a dialog, meaning that the generation of the timetable is impossible.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Δημιουργία αδύνατη</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="621"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="664"/>
         <source>Number of broken soft constraints: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Αριθμός μη τηρηθέντων ήπιων περιορισμών: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="625"/>
         <source>Total soft conflicts:</source>
-        <translation type="unfinished"></translation>
+        <translation>Συνολικές ήπιες συγκρούσεις:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="701"/>
@@ -53392,7 +53394,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="756"/>
         <source>Please wait. It might take 5 to 20 minutes or even more for very difficult timetables</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Παρακαλώ περιμένετε. Πιθανώς να απαιτηθούν 5 έως 20 λεπτά ή ίσως και ακόμη περισσότερο για πολύ δύσκολα ωρολόγια προγράμματα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="758"/>
@@ -53646,7 +53648,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegenerateform_template.ui" line="78"/>
         <source>View initial order of placing the activities</source>
-        <translation>Προβολή αρχικής διάταξης της τοποθέτησης των δραστηριοτήτων</translation>
+        <translation>Προβολή αρχικής σειράς τοποθέτησης των δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform_template.ui" line="88"/>
@@ -53775,7 +53777,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="353"/>
         <source>Number of broken soft constraints: %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Αριθμός μη τηρηθέντων ήπιων περιορισμών: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="357"/>

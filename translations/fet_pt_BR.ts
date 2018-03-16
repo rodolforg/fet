@@ -1522,7 +1522,7 @@ Você pode escolher a distância mínima em dias entre cada par de atividades. P
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="114"/>
         <source>Years</source>
-        <translation>Anos</translation>
+        <translation>Turmas</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="124"/>
@@ -14349,7 +14349,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="327"/>
         <source>If you divide the years by categories (the students have optional courses), you may not need this kind of constraint. If the year is for instance divided by language, English/French/German, sometimes people think that it is needed that these optional activities to have the same starting time. But solutions exist without adding same starting time constraints. Some people try to avoid students gaps by using this constraint, because they need to do it this way in other timetabling software. But it is not the best practice to do it with such a constraint. The correct way is to add a max 0 gaps per week constraint for students and maybe also an early max 0 beginnings at second hour constraint for students.</source>
-        <translation>Se você dividir os anos (separar em &quot;subturmas&quot;) por categorias (os alunos têm cursos opcionais), você pode não precisar deste tipo de restrição. Se o ano é, por exemplo, dividido por idioma, Inglês/Espanhol/Alemão, às vezes as pessoas pensam que é necessário que estas atividades opcionais tenham mesmo tempo de início. Mas as soluções existem, sem acrescentar mesmas restrições de tempo de início. Algumas pessoas tentam evitar lacunas para alunos usando essa restrição, porque precisam fazê-lo desta forma em outro software de horários. Mas não é a melhor prática fazê-lo com tal restrição. A maneira correta é adicionar uma restrição de máx 0 lacunas por semana para os alunos e talvez também uma restrição para os alunos com ínicio máx 0 para iniciar na segunda hora.</translation>
+        <translation>Se você dividir os anos (separar em &quot;subturmas&quot;) por categorias (os alunos têm cursos opcionais), você pode não precisar deste tipo de restrição. Por exemplo, se a turma for dividida por idioma, Inglês/Espanhol/Alemão, às vezes as pessoas pensam que é necessário que estas atividades opcionais tenham mesmo tempo de início. Mas as soluções existem, sem acrescentar mesmas restrições de tempo de início. Algumas pessoas tentam evitar lacunas para alunos usando essa restrição, porque precisam fazê-lo desta forma em outro software de horários. Mas não é a melhor prática fazê-lo com tal restrição. A maneira correta é adicionar uma restrição de máx 0 lacunas por semana para os alunos e talvez também uma restrição para os alunos com ínicio máx 0 para iniciar na segunda hora.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="334"/>
@@ -20360,7 +20360,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomform_template.ui" line="26"/>
         <source>Note: a home room for a students set means that every activity which has this and ONLY this students set will have this as home room (not other superior or inferior set). You can add home rooms for a group, for a year or for a subgroup, careful not to make impossible timetables. Preferred rooms override the home rooms.</source>
-        <translation>Nota: uma sala principal para uma turma significa que cada atividade que tiver essa e APENAS essa turma terá este como sala reservada (e não outro conjunto superior ou inferior). Você pode adicionar esse tipo de sala para um grupo, para um ano ou para um subgrupo, cuidando para não levar a horários impossíveis. &quot;Salas reservadas&quot; terão preferência sobre &quot;salas principais&quot;.</translation>
+        <translation>Nota: uma sala principal para uma turma significa que cada atividade que tiver essa e APENAS essa turma terá este como sala reservada (e não outro conjunto superior ou inferior). Você pode adicionar esse tipo de sala para um grupo, para uma turma ou para um subgrupo, cuidando para não levar a horários impossíveis. &quot;Salas reservadas&quot; terão preferência sobre &quot;salas principais&quot;.</translation>
     </message>
 </context>
 <context>
@@ -20531,7 +20531,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomsform_template.ui" line="26"/>
         <source>Note: a home room for a students set means that every activity which has this and ONLY this students set will have these home rooms (not other superior or inferior set). You can add home rooms for a group, for a year or for a subgroup, careful not to make impossible timetables. Preferred rooms override the home rooms.</source>
-        <translation>Nota: uma sala principal para uma turma é aquela que cada atividade com essa e SOMENTE essa turma, ocorrerá nessa sala principal. Você pode incluir salas principais para um grupo, para um ano ou para um subgrupo, mas seja cuidadoso para não levar a horários impossíveis. &quot;Salas reservadas&quot; terão preferência sobre salas principais.</translation>
+        <translation>Nota: uma sala principal para uma turma é aquela que cada atividade com essa e SOMENTE essa turma, ocorrerá nessa sala principal. Você pode incluir salas principais para um grupo, para uma turma ou para um subgrupo, mas seja cuidadoso para não levar a horários impossíveis. &quot;Salas reservadas&quot; terão preferência sobre salas principais.</translation>
     </message>
 </context>
 <context>
@@ -31521,7 +31521,7 @@ Having a subgroup with too little working hours per week means that you inputted
 
 Cada subgrupo deve ter um número de horas por semana perto da média de todos os subgrupos e perto do número normal de horas de trabalho (jornada) de cada turma. Se um subgrupo tiver um valor muito menor, talvez você tenha usado incorretamente os anos/grupos/subgrupos para as atividades.
 
-Por favor, leia Perguntas Frequentes para uma descrição detalhada de como as divisões funcionam. A chave é que os subgrupos são independentes e representam a menor unidade de alunos. Cada subgrupo recebe as atividades do ano-pai e grupo-pai e de si mesmo.
+Por favor, leia Perguntas Frequentes para uma descrição detalhada de como as divisões funcionam. A chave é que os subgrupos são independentes e representam a menor unidade de alunos. Cada subgrupo recebe as atividades da turma-pai (turma de origem) e grupo-pai e de si mesmo.
 
 Ter um subgrupo com poucas horas de trabalho por semana significa que você digitou atividades de forma errada, e também que algumas restrições, como &quot;sem lacunas&quot;, &quot;cedo&quot; ou &quot;mín horas diárias&quot; para esse subgrupo são interpretados de forma errada (se subgrupo tiver apenas 2 atividades, então estas devem ser colocadas nas primeiras horas, o que é muito difícil e errado).</translation>
     </message>
@@ -32572,7 +32572,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2142"/>
         <source>Students&apos; statistics form contains a check box named &apos;%1&apos;. This has effect only if you have overlapping groups/years, and means that FET will show the complete tree structure, even if that means that some subgroups/groups will appear twice or more in the table, with the same information. For instance, if you have year Y1, groups G1 and G2, subgroups S1, S2, S3, with structure: Y1 (G1 (S1, S2), G2 (S1, S3)), S1 will appear twice in the table</source>
-        <translation>Os dados estatísticos dos alunos contém uma caixa de seleção com o nome &quot;%1&quot;. Isso tem efeito apenas se você tiver que se sobrepor grupos/ano, e significa que FET mostrará a estrutura de árvore completa, mesmo que isso signifique que alguns subgrupos/grupos apareçam duas ou mais vezes na tabela, com a mesma informação. Por exemplo, se você tiver ano A1, grupos G1 e G2, os subgrupos S1, S2, S3, com a estrutura: A1 (G1 (S1, S2), G2 (S1, S3)), S1 será exibido duas vezes na tabela</translation>
+        <translation>Os dados estatísticos dos alunos contém uma caixa de seleção com o nome &quot;%1&quot;. Isso tem efeito apenas se você tiver que se sobrepor grupos/turma, e significa que FET mostrará a estrutura de árvore completa, mesmo que isso signifique que alguns subgrupos/grupos apareçam duas ou mais vezes na tabela, com a mesma informação. Por exemplo, se você tiver turma A1, grupos G1 e G2, os subgrupos S1, S2, S3, com a estrutura: A1 (G1 (S1, S2), G2 (S1, S3)), S1 será exibido duas vezes na tabela</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2146"/>
@@ -36132,7 +36132,7 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/interface/groupsform.cpp" line="425"/>
         <location filename="../src/interface/groupsform.cpp" line="444"/>
         <source>Invalid selected year</source>
-        <translation>Ano selecionado inválido</translation>
+        <translation>Turma selecionada inválido</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="130"/>
@@ -36147,12 +36147,12 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="148"/>
         <source>This group exists only in year %1. This means that all the related activities and constraints will be removed. Do you want to continue?</source>
-        <translation>Esse grupo existe apenas para o ano %1. Isso quer dizer que todas as atividades e restrições relacionadas serão removidas. Deseja continuar?</translation>
+        <translation>Esse grupo existe apenas para a turma %1. Isso quer dizer que todas as atividades e restrições relacionadas serão removidas. Deseja continuar?</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="151"/>
         <source>This group exists in more places, listed below. It will only be removed from the current year, and the related activities and constraints will not be removed. Do you want to continue?</source>
-        <translation>Esse grupo também existe nos lugares listados abaixo. Serão removidas apenas desse ano, e as atividades e restrições relacionadas serão removidas. Deseja continuar?</translation>
+        <translation>Esse grupo também existe nos lugares listados abaixo. Serão removidas apenas dessa turma, e as atividades e restrições relacionadas serão removidas. Deseja continuar?</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="158"/>
@@ -36163,7 +36163,7 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="219"/>
         <source>This group exists only in year %1. All the related activities and constraints will be removed. Do you want to continue?</source>
-        <translation>Esse grupo existe apenas para o ano %1. Todas as atividades e restrições relacionadas serão removidas. Deseja continuar?</translation>
+        <translation>Esse grupo existe apenas para a turma %1. Todas as atividades e restrições relacionadas serão removidas. Deseja continuar?</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="222"/>
@@ -36219,7 +36219,7 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/groupsform_template.ui" line="33"/>
         <source>Year</source>
-        <translation>Ano</translation>
+        <translation>Turma</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform_template.ui" line="50"/>
@@ -36296,124 +36296,124 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="73"/>
         <source>FET is free software for automatically scheduling the timetable of a school, high-school or university.</source>
-        <translation type="unfinished"></translation>
+        <translation>FET é um programa gratuito para criar automaticamente horários de aula de uma escola ou universidade.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="75"/>
         <source>Copyright (C) %1-%2 %3.</source>
         <comment>%1 is the year of the first FET release, %2 is the current release year, %3 are the FET authors</comment>
-        <translation type="unfinished"></translation>
+        <translation>Copyright (C) %1-%2 %3.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="78"/>
         <source>Version: %1 (%2 %3).</source>
         <comment>%1 is the current FET version, %2 is the current release month, %3 is the current release year</comment>
-        <translation type="unfinished"></translation>
+        <translation>Versão: %1 (%2 %3).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>Licensed under the GNU Affero General Public License version 3 or later.</source>
-        <translation type="unfinished"></translation>
+        <translation>Licenciado sob a GNU Affero General Public License versão 3 ou posterior.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="83"/>
         <source>FET homepage: %1</source>
         <comment>%1 is the FET homepage</comment>
-        <translation type="unfinished">Portal FET: %1</translation>
+        <translation>Portal FET: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="92"/>
         <source>XHTML timetable export.</source>
-        <translation type="unfinished"></translation>
+        <translation>Exportação do horário em XHTML.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="94"/>
         <source>CSV import and export.</source>
-        <translation type="unfinished"></translation>
+        <translation>Importar e exportar CSV.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="96"/>
         <source>Advanced statistics print/export.</source>
-        <translation type="unfinished"></translation>
+        <translation>Estatísticas avançadas de impressão/exportação.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="98"/>
         <source>Speed improvements in the timetable generation.</source>
-        <translation type="unfinished"></translation>
+        <translation>Melhorias na rapidez para gerar horários</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="100"/>
         <source>Locking the activities.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bloqueio de atividades.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="102"/>
         <source>Activity planning dialog.</source>
-        <translation type="unfinished"></translation>
+        <translation>Janela de planejamento de atividades.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="104"/>
         <source>Print timetable dialog.</source>
-        <translation type="unfinished"></translation>
+        <translation>Janela de impressão de horarios.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="110"/>
         <source>Arabic translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Árabe (tradução)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="112"/>
         <source>former translator: %1 (to contact %2 visit FET forum - %3, section about Arabic translation, or contact forum user %4)</source>
         <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>tradutor anterior: %1 (contate %2 no fórum FET - %3, seção sobre tradução árabe, ou contate usuário do fórum %4)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="121"/>
         <source>former translator: %1 (to contact %2 visit FET forum - %3, section about Catalan translation, or contact forum user %4)</source>
         <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>tradutor anterior: %1 (contate %2 no fórum FET - %3, seção sobre tradução catalã, ou contate usuário do fórum %4)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="149"/>
         <source>former translator: %1 (to contact %2 visit FET forum - %3, section about Greek translation, or contact forum user %4)</source>
         <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>tradutor anterior: %1 (contate %2 no fórum FET - %3, seção sobre tradução grega, ou contate usuário do fórum %4)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="153"/>
         <source>current translator: %1 (to contact %2 visit FET forum - %3, section about Greek translation, or contact forum user %4)</source>
         <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>tradutor atual: %1 (contate %2 no fórum FET - %3, seção sobre tradução grega, ou contate usuário do fórum %4)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="193"/>
         <source>%1 (to contact %2 visit FET forum - %3, section about Galician translation, or contact forum user %4)</source>
         <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 (contate %2 no fórum FET - %3, seçao sobre tradução galega, ou contate usuário do fórum %4)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="224"/>
         <source>%1 (to contact %2 visit FET forum - %3, section about Japanese translation, or contact forum user %4)</source>
         <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 (contate %2 no fórum FET - %3, seçao sobre tradução japonesa, ou contate usuário do fórum %4)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="262"/>
         <source>current translator: %1 (%2). (Alternatively, to contact %3 visit FET forum - %4, section about Brazilian Portuguese translation, or contact forum user %5)</source>
         <comment>%1 is the name of the translator, %2 is his email or web address, %3 is the short name of the translator, %4 is the address of the forum, %5 is forum user name of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>tradutor atual: %1 (%2). (alternativamente, contate %3 no fórum FET - %4, seção sobre tradução brasileira ( Brazilian Portuguese), ou contate usuário do fórum %5)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="286"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="285"/>
         <source>%1 (to contact %2 visit FET forum - %3, section about Slovak translation, or contact forum user %4)</source>
         <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 (contate %2 no FET forum - %3, seção sobre tradução eslovaca, ou contate usuário do fórum %4)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="326"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="325"/>
         <source>former translator: %1 (to contact %2 visit FET forum - %3, section about Vietnamese translation, or contact forum user %4)</source>
         <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>tradutor anterior: %1 (contate %2 no fórum FET - %3, seçao sobre tradução vietnamita, ou contate usuário do fórum %4)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="116"/>
@@ -36422,21 +36422,21 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/interface/helpaboutform.cpp" line="163"/>
         <location filename="../src/interface/helpaboutform.cpp" line="176"/>
         <location filename="../src/interface/helpaboutform.cpp" line="187"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="309"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="330"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="308"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="329"/>
         <source>current translator: %1 (%2)</source>
         <comment>%1 is the name of the translator, %2 is his email or web address</comment>
-        <translation type="unfinished"></translation>
+        <translation>tradutor atual: %1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="119"/>
         <source>Catalan translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Catalão (tradução)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="128"/>
         <source>Czech translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Tcheco (tradução)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="130"/>
@@ -36451,28 +36451,28 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/interface/helpaboutform.cpp" line="241"/>
         <location filename="../src/interface/helpaboutform.cpp" line="246"/>
         <location filename="../src/interface/helpaboutform.cpp" line="251"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="271"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="276"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="281"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="293"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="298"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="300"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="314"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="335"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="340"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="270"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="275"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="280"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="292"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="297"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="299"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="313"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="334"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="339"/>
         <source>%1 (%2)</source>
         <comment>%1 is the name of the translator, %2 is his email or web address</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="133"/>
         <source>Danish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Dinamarquês (tradução)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="138"/>
         <source>German translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Alemão (tradução)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="140"/>
@@ -36485,186 +36485,185 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/interface/helpaboutform.cpp" line="256"/>
         <location filename="../src/interface/helpaboutform.cpp" line="258"/>
         <location filename="../src/interface/helpaboutform.cpp" line="260"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="305"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="307"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="304"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="306"/>
         <source>former translator: %1 (%2)</source>
         <comment>%1 is the name of the translator, %2 is his email or web address</comment>
-        <translation type="unfinished"></translation>
+        <translation>tradutor anterior: %1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="145"/>
         <source>Greek translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Grego (tradução)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="156"/>
         <location filename="../src/interface/helpaboutform.cpp" line="164"/>
         <location filename="../src/interface/helpaboutform.cpp" line="188"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="266"/>
         <source>rewrote the translation from zero</source>
-        <translation type="unfinished"></translation>
+        <translation>reescreveu a tradução do início</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="159"/>
         <source>Spanish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Espanhol (tradução)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="167"/>
         <source>Basque translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Basco (tradução)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="172"/>
         <source>Persian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Persa (tradução)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="179"/>
         <source>French translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Francês (tradução)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="191"/>
         <source>Galician translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Galego (tradução)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="197"/>
         <source>This translation was based on the Spanish translation by %1 as of %2 %3 (see %4 - Spanish translation for more information)</source>
         <comment>%1 is the translator, %2 is the month, %3 is the year, %4 is the abbreviation of the name of the language</comment>
-        <translation type="unfinished"></translation>
+        <translation>Esta tradução foi baseada na tradução do espanhol por %1 em %2 %3 (veja %4 - tradução em espanhol para mais informações)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="202"/>
         <source>Hebrew translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Hebreu (tradução)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="207"/>
         <source>Hungarian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Húngaro (tradução)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="212"/>
         <source>Indonesian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Indonésio (tradução)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="217"/>
         <source>Italian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Italiano (tradução)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="222"/>
         <source>Japanese translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Japonês (tradução)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="229"/>
         <source>Lithuanian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Lituano (tradução)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="234"/>
         <source>Macedonian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Macedônio (tradução)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="239"/>
         <source>Malay translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Malaio (tradução)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="244"/>
         <source>Dutch translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Holandês (tradução)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="249"/>
         <source>Polish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Polonês (tradução)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="254"/>
         <source>Brazilian Portuguese translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Português do Brasil (tradução)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="269"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="268"/>
         <source>Romanian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Romeno (tradução)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="274"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="273"/>
         <source>Russian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Russo (tradução)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="279"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="278"/>
         <source>Sinhala translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Sinhala (tradução)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="284"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="283"/>
         <source>Slovak translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Eslovaco (tradução)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="291"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="290"/>
         <source>Albanian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Albanês (tradução)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="296"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="295"/>
         <source>Serbian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Sérvio (tradução)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="303"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="302"/>
         <source>Turkish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Turco (tradução)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="312"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="311"/>
         <source>Ukrainian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Ucraniano (tradução)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="317"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="316"/>
         <source>Uzbek translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Uzbeque (tradução)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="319"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="318"/>
         <source>%1 (%2, or visit FET forum - %3, section about Uzbek translation, or contact forum user %4)</source>
         <comment>%1 is the current translator, %2 is his email or web address, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 (%2, ou visite fórum FET - %3, seção sobre tradução Uzbeque, ou contate usuário do fórum %4)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="324"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="323"/>
         <source>Vietnamese translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Vietnamita (tradução)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="333"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="332"/>
         <source>Chinese Simplified translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Chinês Simplificado (tradução)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="338"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="337"/>
         <source>Chinese Traditional translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Chinês Tradicional (tradução)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="346"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="345"/>
         <source>You may find references for the algorithms and techniques used in this program on the FET documentation web page, %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Você pode encontrar referências para os algoritmos e técnicas usadas neste programa na página web de documentação do FET, %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="352"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="351"/>
         <source>chronologically</source>
-        <translation type="unfinished"></translation>
+        <translation>cronologicamente</translation>
     </message>
 </context>
 <context>
@@ -36827,7 +36826,7 @@ Incluir os anos e a opção &quot;Dividir turma... &quot; na janela que abre ao 
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="161"/>
         <source>Important: you must consider that each year contains groups which contain independent subgroups. Subgroups should have all the activities of the year and group plus additional optional activities. Please check menu statistics/students for subgroups, each subgroup should have a reasonable number of working hours per week, close to the average of hours per week for all subgroups.</source>
-        <translation>Importante: você deve considerar que cada ano contém grupos que, por sua vez, contêm subgrupos independentes. Subgrupos devem ter todas as atividades do ano e do grupo mais atividades extras opcionais. Por favor, verifique no menu Estatísticas/Alunos para subgrupos, cada subgrupo deve ter um número razoável de horas de trabalho por semana, perto da média de horas por semana para todos os subgrupos.</translation>
+        <translation>Importante: você deve considerar que cada turma contém grupos que, por sua vez, contêm subgrupos independentes. Subgrupos devem ter todas as atividades do ano (turma) e do grupo mais atividades extras opcionais. Por favor, verifique no menu Estatísticas/Alunos para subgrupos, cada subgrupo deve ter um número razoável de horas de trabalho por semana, perto da média de horas por semana para todos os subgrupos.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="165"/>
@@ -36837,7 +36836,7 @@ Incluir os anos e a opção &quot;Dividir turma... &quot; na janela que abre ao 
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="177"/>
         <source>Another possibility: you can see that each activity has allowed more teachers/students sets. If you need to split year Y according to Language1 (with teachers T1 and T2), you might not split Y and add an activity with Y and teachers T1 and T2 and subject &apos;Language1&apos;. This is a small trick, which might be easier to use than to divide a year.</source>
-        <translation>Outra possibilidade: você pode ver que cada atividade permite mais de um professor ou turma. Se você precisa dividir o ano Y de acordo com a Língua 1 (com professores P1 e P2), você não pode dividir Y e adicionar uma atividade com Y e professores P1 e P2 e disciplina &quot;Língua 1v. Este é um pequeno truque, o que pode ser mais fácil de usar do que dividir um ano.</translation>
+        <translation>Outra possibilidade: você pode ver que cada atividade permite mais de um professor ou turma. Se você precisa dividir a turma Y de acordo com a Língua 1 (com professores P1 e P2), você não pode dividir Y e adicionar uma atividade com Y e professores P1 e P2 e disciplina &quot;Língua 1v. Este é um pequeno truque, o que pode ser mais fácil de usar do que dividir uma turma.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="185"/>
@@ -36885,7 +36884,7 @@ Atividade 1: professor A, meninas do grupo, disciplina Futebol;
 Atividade 2: Professor B, os rapazes do grupo, disciplina Futebol;
 Actividade 3: professor de C, física grupo, disciplina Física opcional.
 
-NOVO: a coisa está automática. Basta selecionar ano-&gt; dividir no diálogo anos. Por favor, veja as entradas acima em Perguntas Frequentes.</translation>
+NOVO: a coisa está automática. Basta selecionar turma-&gt; dividir na janela de turmas. Por favor, veja as entradas acima em Perguntas Frequentes.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="213"/>
@@ -36951,7 +36950,7 @@ A: From the way the algorithm is conceived, the automatic generation is faster i
 Each constraint of type not available or preferred times which filters out impossible slots might bring an improvement in speed.</source>
         <translation>Q: Há restrições mais eficiente na resolução (mais rápidas) do que outras, mesmo que deem o mesmo resultado?
 
-R: Da forma como o algoritmo é concebido, a geração automática é mais rápida se você usar restrições de turma (ou docente) indisponível e/ou janelas de tempo preferidas para atividade(s) ou restrição de horário de início preferido para atividade para especificar janelas impossíveis, além da possibilidade de usar máx jornada (horas diárias) para turma ou docente(es), sempre que for possível. Por exemplo, se você souber que ano 5 só terá atividades das 8h às 13h, é melhor incluir a indisponibilidada da turma, além de definir máx horas diárias. Então, se possível, tente seguir este conselho. Este truque ajuda FET a seguir o melhor caminho para uma solução.
+R: Da forma como o algoritmo é concebido, a geração automática é mais rápida se você usar restrições de turma (ou docente) indisponível e/ou janelas de tempo preferidas para atividade(s) ou restrição de horário de início preferido para atividade para especificar janelas impossíveis, além da possibilidade de usar máx jornada (horas diárias) para turma ou docente(es), sempre que for possível. Por exemplo, se você souber que turma 5 só terá atividades das 8h às 13h, é melhor incluir a indisponibilidada da turma, além de definir máx horas diárias. Então, se possível, tente seguir este conselho. Este truque ajuda FET a seguir o melhor caminho para uma solução.
 Cada restrição do tipo indisponíveis ou horários preferidos que filtra janelas impossíveis pode trazer uma melhoria na rapidez.</translation>
     </message>
     <message>
@@ -37339,12 +37338,12 @@ Adicionar outra restrição: mín 1 dia entre as atividades com ids 2 e 3, (marc
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="1001"/>
         <source>Maybe a reasonable number of categories could be 2, 3 or maximum 4. The divide year dialog allows much higher values, but these are not at all recommended.</source>
-        <translation>Talvez um número razoável de categorias poderia ser 2, 3 ou (no máximo) 4. A janela para dividir ano permite valores bem mais elevados, mas estes não são de todo recomendáveis.</translation>
+        <translation>Talvez um número razoável de categorias poderia ser 2, 3 ou (no máximo) 4. A janela para dividir turma permite valores bem mais elevados, mas estes não são de todo recomendáveis.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="1004"/>
         <source>Maybe an alternative to dividing a year into many categories/subgroups would be to enter individual students as FET subgroups and add into each group the corresponding subgroups. But this is hard to do from the FET interface - maybe a solution would be to use an automatic tool to convert your institution data into a file in .fet format.</source>
-        <translation>Talvez uma alternativa para dividir um ano em muitas categorias/subgrupos seria colocar alunos individuais como subgrupos FET e incluir em cada grupo os subgrupos correspondentes. Mas isso é difícil de fazer a partir da interface FET - talvez uma solução seria a utilização de uma ferramenta automática para converter os dados de sua instituição em um arquivo no formato .fet.</translation>
+        <translation>Talvez uma alternativa para dividir um ano (turma) em muitas categorias/subgrupos seria colocar alunos individuais como subgrupos FET e incluir em cada grupo os subgrupos correspondentes. Mas isso é difícil de fazer a partir da interface FET - talvez uma solução seria a utilização de uma ferramenta automática para converter os dados de sua instituição em um arquivo no formato .fet.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="1008"/>
@@ -37721,7 +37720,7 @@ ano:
 
 contém grupos 1_a, 1_b
 
-Você terá a possibilidade de adicionar qualquer atividade, por um ano ou grupo
+Você terá a possibilidade de adicionar qualquer atividade, por turma ou grupo
 Atualmente, a interface para os alunos é difícil de usar. Estou a pensar nisso. Talvez seja mais simples para você se tentar trabalhar com o arquivo xml .fet.</translation>
     </message>
     <message>
@@ -38088,7 +38087,7 @@ Provavelmente, na prática, esse problema não aparecerá e você não precisa s
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="106"/>
         <source>3) From the way the algorithm is conceived, the automatic generation is faster if you use students set (or teacher) not available and/or constraint activity(ies) preferred time slots or preferred starting times to specify impossible slots, in addition to possible use of students (set) or teacher(s) max hours daily, whenever it is possible. For instance, if you know that year 5 will only have hours from 8:00 to 13:00, it is better to add students set not available in addition to students set max hours daily. So, if possible, try to follow this advice. This trick helps guide FET better towards a solution.</source>
-        <translation>3) A partir da forma como o algoritmo é concebido, a geração automática é mais rápida se você usar turma (ou docente) indisponíveis e/ou restrição intervalos de tempo preferenciais ou horários preferenciais de início para atividade(s) para especificar janelas impossíveis, além de possível uso de máx jornada para turma(s) ou professor(es), sempre que for possível. Por exemplo, se você sabe que ano 5 só terá aulas da 8 h às 12 h, é melhor incluir os horários indisponíveis da turma do que definir-lhe um máx horas diárias. Então, se possível, tentar seguir este conselho. Este truque ajuda FET a trilhar um melhor caminho rumo à solução.</translation>
+        <translation>3) A partir da forma como o algoritmo é concebido, a geração automática é mais rápida se você usar turma (ou docente) indisponíveis e/ou restrição intervalos de tempo preferenciais ou horários preferenciais de início para atividade(s) para especificar janelas impossíveis, além de possível uso de máx jornada para turma(s) ou professor(es), sempre que for possível. Por exemplo, se você sabe que turma 5 só terá aulas da 8 h às 12 h, é melhor incluir os horários indisponíveis da turma do que definir-lhe um máx horas diárias. Então, se possível, tentar seguir este conselho. Este truque ajuda FET a trilhar um melhor caminho rumo à solução.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="112"/>
@@ -38728,7 +38727,7 @@ Provavelmente, na prática, esse problema não aparecerá e você não precisa s
     <message>
         <location filename="../src/engine/import.cpp" line="106"/>
         <source>Year</source>
-        <translation>Ano</translation>
+        <translation>Turma</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="108"/>
@@ -38948,6 +38947,11 @@ Provavelmente, na prática, esse problema não aparecerá e você não precisa s
         <translation>Cancelado pelo usuário.</translation>
     </message>
     <message>
+        <location filename="../src/engine/import.cpp" line="1020"/>
+        <source>Warning in line %1: Field with building name doesn&apos;t relate to a room</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/engine/import.cpp" line="1141"/>
         <source>FET import %1 question</source>
         <translation>FET importou %1 pergunta</translation>
@@ -39043,22 +39047,22 @@ Provavelmente, na prática, esse problema não aparecerá e você não precisa s
     <message>
         <location filename="../src/engine/import.cpp" line="1787"/>
         <source>Year %1 is already in FET data.</source>
-        <translation>Ano %1 já se encontra nos dados FET.</translation>
+        <translation>Turma %1 já se encontra nos dados FET.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1789"/>
         <source>Can&apos;t import group %1. Name is already taken for a year.</source>
-        <translation>Não é possível importar grupo %1. Esse nome já está em uso por algum ano.</translation>
+        <translation>Não é possível importar grupo %1. Esse nome já está em uso por alguma turma.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1791"/>
         <source>Can&apos;t import subgroup %1. Name is already taken for a year.</source>
-        <translation>Não é possível importar subgrupo %1. Esse nome já está em uso por algum ano.</translation>
+        <translation>Não é possível importar subgrupo %1. Esse nome já está em uso por alguma turma.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1803"/>
         <source>Can&apos;t import year %1. Name is already taken for a group.</source>
-        <translation>Não é possível importar ano %1. Esse nome já está em uso por algum grupo.</translation>
+        <translation>Não é possível importar turma %1. Esse nome já está em uso por algum grupo.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1807"/>
@@ -39068,7 +39072,7 @@ Provavelmente, na prática, esse problema não aparecerá e você não precisa s
     <message>
         <location filename="../src/engine/import.cpp" line="1820"/>
         <source>Can&apos;t import year %1. Name is already taken for a subgroup.</source>
-        <translation>Não é possível importar ano %1. Esse nome já está em uso por algum subgrupo.</translation>
+        <translation>Não é possível importar turma %1. Esse nome já está em uso por algum subgrupo.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1822"/>
@@ -39184,11 +39188,6 @@ Provavelmente, na prática, esse problema não aparecerá e você não precisa s
         <translation>Linha %1 ignorada: Campo &quot;%2&quot; não contém um valor inteiro.</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1020"/>
-        <source>Warning in line %1: Field with building name doesn&apos;t affect to a room</source>
-        <translation>Alerta na linha %1: Campo com nome do prédio não afeta uma sala</translation>
-    </message>
-    <message>
         <location filename="../src/engine/import.cpp" line="1065"/>
         <source>Skipped line %1: Field &apos;%2&apos; contain an unknown value.</source>
         <translation>Linha %1 ignorada: Campo &quot;%2&quot; contém um valor desconhecido.</translation>
@@ -39217,7 +39216,7 @@ Provavelmente, na prática, esse problema não aparecerá e você não precisa s
     <message>
         <location filename="../src/engine/import.cpp" line="1748"/>
         <source>Problem in line %1: Year name %2 is taken for a group - please consider another name</source>
-        <translation>Problema na linha %1: Nome do ano %2 está em uso por um grupo - favor escolher outro nome</translation>
+        <translation>Problema na linha %1: Nome da turma %2 está em uso por um grupo - favor escolher outro nome</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1756"/>
@@ -39242,7 +39241,7 @@ Provavelmente, na prática, esse problema não aparecerá e você não precisa s
     <message>
         <location filename="../src/engine/import.cpp" line="1805"/>
         <source>Group name %1 is already in FET data (in the same or in another year).</source>
-        <translation>Nome do grupo %1 já se encontra nos dados do FET (nesse ano ou em outro).</translation>
+        <translation>Nome do grupo %1 já se encontra nos dados do FET (nessa turma ou em outra).</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1824"/>
@@ -39253,7 +39252,7 @@ Provavelmente, na prática, esse problema não aparecerá e você não precisa s
         <location filename="../src/engine/import.cpp" line="1951"/>
         <location filename="../src/engine/import.cpp" line="1954"/>
         <source>Group name %1 exists in another year. It means that some years share the same group.</source>
-        <translation>Nome do grupo %1 já existe em outro ano. Isso quer dizer que alguns anos partilham o mesmo grupo.</translation>
+        <translation>Nome do grupo %1 já existe em outra turma. Isso quer dizer que algumas turmas partilham o mesmo grupo.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="2007"/>
@@ -39343,7 +39342,7 @@ Provavelmente, na prática, esse problema não aparecerá e você não precisa s
     <message>
         <location filename="../src/engine/import.cpp" line="107"/>
         <source>Number of Students per Year</source>
-        <translation>Número de Alunos por Ano</translation>
+        <translation>Número de Alunos por Turma</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="109"/>
@@ -39904,7 +39903,7 @@ Por favor, primeiro encerre a simulação</translation>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="114"/>
         <source>Years</source>
-        <translation>Anos</translation>
+        <translation>Turmas</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="124"/>
@@ -47209,7 +47208,7 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
     <message>
         <location filename="../src/interface/modifystudentsgroupform.cpp" line="69"/>
         <source>Name exists. If you would like to make more years to contain a group (overlapping years), please remove current group (FET will unfortunately remove all related activities and constraints) and add a new group with desired name in current year. I know this is a not an elegant procedure, I&apos;ll try to fix that in the future.</source>
-        <translation>Nome existe. Se você gostaria de fazer mais anos para conter um grupo (sobreposição de anos), remova grupo atual (FET, infelizmente removerá todas as atividades e restrições relacionadas) e adicione um novo grupo com o nome desejado no ano em curso. Sei que este procedimento não é elegante e tentarei corrigir isso no futuro.</translation>
+        <translation>Nome existe. Se você deseja que mais turmas (anos) contenham um grupo (sobreposição de turmas), remova grupo atual (FET, infelizmente removerá todas as atividades e restrições relacionadas) e adicione um novo grupo com o nome desejado na turma atual. Sei que este procedimento não é elegante e tentarei corrigir isso no futuro.</translation>
     </message>
 </context>
 <context>
@@ -47222,7 +47221,7 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
     <message>
         <location filename="../src/interface/modifystudentsgroupform_template.ui" line="22"/>
         <source>Year</source>
-        <translation>Ano</translation>
+        <translation>Turma</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsgroupform_template.ui" line="14"/>
@@ -47270,7 +47269,7 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
     <message>
         <location filename="../src/interface/modifystudentssubgroupform_template.ui" line="22"/>
         <source>Year</source>
-        <translation>Ano</translation>
+        <translation>Turma</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentssubgroupform_template.ui" line="81"/>
@@ -47339,22 +47338,22 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
     <message>
         <location filename="../src/interface/modifystudentsyearform.cpp" line="163"/>
         <source>The following groups and subgroups of other years won&apos;t be renamed, even if they start with the same year name:</source>
-        <translation>Os seguintes grupos e subgrupos de outros anos não serão renomeados, mesmo se iniciarem com o mesmo nome do ano:</translation>
+        <translation>Os seguintes grupos e subgrupos de outras turmas não serão renomeados, mesmo se iniciarem com o mesmo nome da turma:</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsyearform.cpp" line="167"/>
         <source>The following groups and subgroups of this year won&apos;t be renamed, because they don&apos;t start with the year name:</source>
-        <translation>Os seguintes grupos e subgrupos de outros anos não serão renomeados, pois não iniciam com o mesmo nome do ano:</translation>
+        <translation>Os seguintes grupos e subgrupos dessa turma não serão renomeados, mesmo se iniciarem com o mesmo nome da turma:</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsyearform.cpp" line="171"/>
         <source>The following groups and subgroups of this year won&apos;t be renamed, because their computed new name already exists:</source>
-        <translation>Os seguintes grupos e subgrupos de outros anos não serão renomeados, pois computaram novo nome que já existe:</translation>
+        <translation>Os seguintes grupos e subgrupos dessa turma não serão renomeados, pois computaram novo nome que já existe:</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsyearform.cpp" line="175"/>
         <source>The following groups and subgroups of this year will be renamed:</source>
-        <translation>Os seguintes grupos e subgrupos do ano (turma) serão renomeados:</translation>
+        <translation>Os seguintes grupos e subgrupos dessa turma serão renomeados:</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsyearform.cpp" line="180"/>
@@ -47403,7 +47402,7 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
         <location filename="../src/interface/modifystudentsyearform_template.ui" line="14"/>
         <source>Modify students year</source>
         <extracomment>Title of dialog to modify a students year</extracomment>
-        <translation>Alterar ano dos alunos</translation>
+        <translation>Alterar turma dos alunos</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsyearform_template.ui" line="66"/>
@@ -47509,7 +47508,7 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
     <message>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="117"/>
         <source>Years</source>
-        <translation>Anos</translation>
+        <translation>Turmas</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="127"/>
@@ -47582,64 +47581,64 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="47"/>
         <source>January</source>
-        <translation type="unfinished"></translation>
+        <translation>janeiro</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="49"/>
         <source>February</source>
-        <translation type="unfinished"></translation>
+        <translation>fevereiro</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="51"/>
         <location filename="../src/interface/helpaboutform.cpp" line="79"/>
         <source>March</source>
-        <translation type="unfinished"></translation>
+        <translation>março</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="53"/>
         <location filename="../src/interface/helpaboutform.cpp" line="199"/>
         <source>April</source>
-        <translation type="unfinished"></translation>
+        <translation>abril</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="55"/>
         <source>May</source>
-        <translation type="unfinished"></translation>
+        <translation>maio</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="57"/>
         <source>June</source>
-        <translation type="unfinished"></translation>
+        <translation>junho</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="59"/>
         <source>July</source>
-        <translation type="unfinished"></translation>
+        <translation>julho</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="61"/>
         <source>August</source>
-        <translation type="unfinished"></translation>
+        <translation>agosto</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="63"/>
         <source>September</source>
-        <translation type="unfinished"></translation>
+        <translation>setembro</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="65"/>
         <source>October</source>
-        <translation type="unfinished"></translation>
+        <translation>outubro</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="67"/>
         <source>November</source>
-        <translation type="unfinished"></translation>
+        <translation>novembro</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="69"/>
         <source>December</source>
-        <translation type="unfinished"></translation>
+        <translation>dezembro</translation>
     </message>
 </context>
 <context>
@@ -48800,27 +48799,27 @@ Por favor, note que o peso percentual padrão de restrições mín dias entre as
     <message>
         <location filename="../src/engine/rules.cpp" line="5300"/>
         <source>Trying to add year %1, which is already added as another year.</source>
-        <translation>Tentando adicionar ano %1, que já foi adicionado como outro ano.</translation>
+        <translation>Tentando adicionar turma %1, que já foi adicionada como outra turma.</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="5302"/>
         <source>Trying to add year %1, which is already added as another group.</source>
-        <translation>Tentando adicionar ano %1, que já foi adicionado como outro grupo.</translation>
+        <translation>Tentando adicionar turma %1, que já foi adicionada como outro grupo.</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="5304"/>
         <source>Trying to add year %1, which is already added as another subgroup.</source>
-        <translation>Tentando adicionar ano %1, que já foi adicionado como outro subgrupo.</translation>
+        <translation>Tentando adicionar turma %1, que já foi adicionada como outro subgrupo.</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="5369"/>
         <source>Trying to add group %1, which is already added as another year.</source>
-        <translation>Tentando adicionar grupo %1, que já está adicionado como outro ano.</translation>
+        <translation>Tentando adicionar grupo %1, que já está adicionado como outra turma.</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="5374"/>
         <source>Trying to add group %1 in year %2 but it is already added.</source>
-        <translation>Tentando adicionar grupo %1 no ano %2, mas já foi adicionado.</translation>
+        <translation>Tentando adicionar grupo %1 na turma %2, mas já foi adicionado.</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="5383"/>
@@ -48830,7 +48829,7 @@ Por favor, note que o peso percentual padrão de restrições mín dias entre as
     <message>
         <location filename="../src/engine/rules.cpp" line="5480"/>
         <source>Trying to add subgroup %1, which is already added as another year.</source>
-        <translation>Tentando adicionar subgrupo %1, que já foi adicionado como outro ano.</translation>
+        <translation>Tentando adicionar subgrupo %1, que já foi adicionado como outra turma.</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="5484"/>
@@ -48840,7 +48839,7 @@ Por favor, note que o peso percentual padrão de restrições mín dias entre as
     <message>
         <location filename="../src/engine/rules.cpp" line="5489"/>
         <source>Trying to add subgroup %1 in year %2, group %3 but it is already added.</source>
-        <translation>Tentando adicionar subgrupo %1 no ano %2, grupo %3, mas já foi adicionado.</translation>
+        <translation>Tentando adicionar subgrupo %1 na turma %2, grupo %3, mas já foi adicionado.</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="5811"/>
@@ -49555,7 +49554,7 @@ não foi adicionada - deve estar duplicada</translation>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="130"/>
         <source>Splitting year: %1</source>
-        <translation>Dividindo ano: %1</translation>
+        <translation>Dividindo turma: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="202"/>
@@ -49581,7 +49580,7 @@ não foi adicionada - deve estar duplicada</translation>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="140"/>
         <source>Max subgroups per year: %1</source>
-        <translation>Máx subgrupos por ano: %1</translation>
+        <translation>Máx subgrupos por turma: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="141"/>
@@ -49635,7 +49634,7 @@ não foi adicionada - deve estar duplicada</translation>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="381"/>
         <source>The current number of subgroups for this year is too large (the maximum allowed value is %1, but computing up to category %2 gives %3 subgroups)</source>
-        <translation>O número atual de subgrupos para este ano é muito grande (o valor máximo permitido é %1, contando até a categoria %2 dá %3 subgrupos)</translation>
+        <translation>O número atual de subgrupos para esta turma (ano) é muito grande (o valor máximo permitido é %1, contando até a categoria %2 dá %3 subgrupos)</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="389"/>
@@ -49670,7 +49669,7 @@ não foi adicionada - deve estar duplicada</translation>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="593"/>
         <source>Read the divide year dialog Help for details.</source>
-        <translation>Leia o Ajuda para divisão de ano para ver detalhes.</translation>
+        <translation>Para ver detalhes, leia o Ajuda sobre divisão de turma.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="609"/>
@@ -49685,7 +49684,7 @@ não foi adicionada - deve estar duplicada</translation>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="757"/>
         <source>You might first want to consider if dividing a year is necessary and on what options. Please remember that FET can handle activities with multiple teachers/students sets. If you have say students set 9a, which is split into 2 parts: English (teacher TE) and French (teacher TF), and language activities must be simultaneous, then you might not want to divide according to this category, but add more larger activities, with students set 9a and teachers TE+TF. The only drawback is that each activity can take place only in one room in FET, so you might need to find a way to overcome that.</source>
-        <translation>Você pode querer primeiro considerar se dividir um ano é necessário e em que ocasiões. Por favor, lembre-se que FET pode lidar com atividades com vários professores/turmas. Se tiver, por exemplo, turma 9A, dividida em 2 partes: Inglês (docente PI) e Francês (docente PF), e atividades de linguagem deve ser simultâneas, então você não pode querer dividir de acordo com esta categoria, mas adicionar mais atividades maiores, com turma 9a e professores PI+PF. O único inconveniente é que cada atividade pode ocorrer somente em uma sala no FET, então você pode precisar encontrar uma maneira de superar essa limitação.</translation>
+        <translation>Você pode querer primeiro considerar se dividir um ano (turma) é necessário e em que ocasiões. Por favor, lembre-se que FET pode lidar com atividades com vários professores/turmas. Se tiver, por exemplo, turma 9A, dividida em 2 partes: Inglês (docente PI) e Francês (docente PF), e atividades de linguagem deve ser simultâneas, então você não pode querer dividir de acordo com esta categoria, mas adicionar mais atividades maiores, com turma 9a e professores PI+PF. O único inconveniente é que cada atividade pode ocorrer somente em uma sala no FET, então você pode precisar encontrar uma maneira de superar essa limitação.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="765"/>
@@ -49700,12 +49699,12 @@ não foi adicionada - deve estar duplicada</translation>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="788"/>
         <source>If you intend to divide again a year by categories and you want to keep (the majority of) the existing groups in this year, you will need to use the exact same separator character(s) for dividing this year as you used when previously dividing this year, and the same division names (any old division which is no longer entered means a group which will be removed from this year).</source>
-        <translation>Se você pretende dividir novamente um ano por categorias e pretende manter (a maioria dos) grupos existentes neste ano, você precisará usar o(s) mesmo(s) caractere(s) separador(es) para dividir este ano como você usou ao dividi-lo anteriormente, e os mesmos nomes de divisão (qualquer divisão antiga, que já não está inscrita significa um grupo que irá ser removido deste ano).</translation>
+        <translation>Se você pretende dividir novamente um ano (turma) por categorias e pretende manter (a maioria dos) grupos existentes neste ano, você precisará usar o(s) mesmo(s) caractere(s) separador(es) para dividir este ano como você usou ao dividi-lo anteriormente, e os mesmos nomes de divisão (qualquer divisão antiga, que já não está inscrita significa um grupo que irá ser removido deste ano).</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="794"/>
         <source>When dividing again a year, you might get a warning about subgroups which will be removed. If you didn&apos;t explicitly use (these) subgroups in your activities or constraints, probably you can safely ignore this warning. Generally, if you use years&apos; division by categories, it is groups that matter.</source>
-        <translation>Ao dividir novamente um ano, você pode receber aviso sobre subgrupos que serão removidos. Se você não usar explicitamente estes subgrupos em suas atividades ou restrições, provavelmente você pode ignorar este aviso. Geralmente, se você usar divisão por categorias desses anos, são os grupos que importam.</translation>
+        <translation>Ao dividir novamente um ano (turma), você pode receber aviso sobre subgrupos que serão removidos. Se você não usar explicitamente estes subgrupos em suas atividades ou restrições, provavelmente você pode ignorar este aviso. Geralmente, se você usar divisão por categorias desses anos, são os grupos que importam.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="804"/>
@@ -49781,7 +49780,7 @@ não foi adicionada - deve estar duplicada</translation>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="367"/>
         <source>You want to divide the year by %1 categories. The recommended number of categories is 2, 3 or maximum 4 (to ensure the timetable generation speed and feasibility). Are you sure?</source>
-        <translation>Você quer dividir o ano em %1 categorias. O número recomendado de categorias é 2, 3 ou (no máximo) 4 para garantir rapidez e viabilidade da resolução do horário. Você tem certeza?</translation>
+        <translation>Você quer dividir a turma em %1 categorias. O número recomendado de categorias é 2, 3 ou (no máximo) 4 para garantir rapidez e viabilidade da resolução do horário. Você tem certeza?</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="467"/>
@@ -49816,7 +49815,7 @@ não foi adicionada - deve estar duplicada</translation>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="621"/>
         <source>Year %1 will be split again. All groups and subgroups of this year which will no longer exist (listed before) and the associated activities and constraints will be removed. Are you absolutely sure?</source>
-        <translation>Ano %1 será dividido novamente. Todos os grupos e semigrupos desse ano e todas as restrições e atividades relacionadas serão eliminados. Você está absolutamente certo?</translation>
+        <translation>Turma %1 será novamente dividida. Todos os grupos e semigrupos dessa turma e todas as restrições e atividades relacionadas serão eliminadas. Você está absolutamente certo?</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="718"/>
@@ -49831,7 +49830,7 @@ não foi adicionada - deve estar duplicada</translation>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="785"/>
         <source>Please note that the dialog here will keep the last configuration of the last divided year, it will not remember the values for a specific year you need to modify.</source>
-        <translation>Por favor, note que essa janela manterá a última configuração do último ano dividido, ela não lembrará os valores para um determinado ano, é necessário modificar.</translation>
+        <translation>Por favor, note que essa janela manterá a última configuração do último ano (turma) dividido, ela não lembrará os valores para um determinado ano, é necessário modificar.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="800"/>
@@ -49846,17 +49845,17 @@ não foi adicionada - deve estar duplicada</translation>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="820"/>
         <source>Maybe a reasonable number of categories could be 2, 3 or maximum 4. The divide year dialog allows much higher values, but these are not at all recommended.</source>
-        <translation>Talvez um número razoável de categorias poderia ser 2, 3 ou (no máximo) 4. A janela para dividir ano permite valores bem mais elevados, mas estes não são de todo recomendáveis.</translation>
+        <translation>Talvez um número razoável de categorias poderia ser 2, 3 ou (no máximo) 4. A janela para dividir ano (turma) permite valores bem mais elevados, mas estes não são de todo recomendáveis.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="823"/>
         <source>Maybe an alternative to dividing a year into many categories/subgroups would be to enter individual students as FET subgroups and add into each group the corresponding subgroups. But this is hard to do from the FET interface - maybe a solution would be to use an automatic tool to convert your institution data into a file in .fet format.</source>
-        <translation>Talvez uma alternativa para dividir um ano em muitas categorias/subgrupos seria colocar alunos individuais como subgrupos FET e incluir em cada grupo os subgrupos correspondentes. Mas isso é difícil de fazer a partir da interface FET - talvez uma solução seria a utilização de uma ferramenta automática para converter os dados de sua instituição em um arquivo no formato .fet.</translation>
+        <translation>Talvez uma alternativa para dividir um ano (turma) em muitas categorias/subgrupos seria colocar alunos individuais como subgrupos FET e incluir em cada grupo os subgrupos correspondentes. Mas isso é difícil de fazer a partir da interface FET - talvez uma solução seria a utilização de uma ferramenta automática para converter os dados de sua instituição em um arquivo no formato .fet.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="835"/>
         <source>FET - help on dividing a year</source>
-        <translation>Ajuda ao dividir um ano - FET</translation>
+        <translation>FET - Ajuda sobre dividir uma turma</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="841"/>
@@ -49869,7 +49868,7 @@ não foi adicionada - deve estar duplicada</translation>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="14"/>
         <source>Split year dialog</source>
-        <translation>Janela para dividir ano</translation>
+        <translation>Janela para dividir turma</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="42"/>
@@ -50005,7 +50004,7 @@ não foi adicionada - deve estar duplicada</translation>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="269"/>
         <source>Splitting year: %1</source>
-        <translation>Dividindo ano: %1</translation>
+        <translation>Dividindo turma: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="292"/>
@@ -51113,7 +51112,7 @@ Base: %4</translation>
     <message>
         <location filename="../src/interface/studentsstatisticsform.cpp" line="469"/>
         <source>The check box &apos;%1&apos;: it has effect only if you have overlapping groups/years, and means that FET will show the complete tree structure, even if that means that some subgroups/groups will appear twice or more in the table, with the same information. For instance, if you have year Y1, groups G1 and G2, subgroups S1, S2, S3, with structure: Y1 (G1 (S1, S2), G2 (S1, S3)), S1 will appear twice in the table with the same information attached</source>
-        <translation>A caixa de marcação &quot;%1&quot;: tem efeito apenas se você tiver grupos/anos sobrepostos, e quer dizer que FET mostrará a estrutura de árvore completa, mesmo quando alguns subgrupos/grupos aparecerem duas ou mais vezes na tabela, com a mesma informação. Por exemplo, se você tiver ano T1, grupos G1 e G2, subgrupos S1, S2, S3, com a estrutura:  T1 (G1 (S1, S2), G2 (S1, S3)), S1 aparecerá duas vezes na tabela acompanhado pelas mesmas informações</translation>
+        <translation>A caixa de marcação &quot;%1&quot;: tem efeito apenas se você tiver grupos/anos sobrepostos, e quer dizer que FET mostrará a estrutura de árvore completa, mesmo quando alguns subgrupos/grupos aparecerem duas ou mais vezes na tabela, com a mesma informação. Por exemplo, se você tiver turma T1, grupos G1 e G2, subgrupos S1, S2, S3, com a estrutura:  T1 (G1 (S1, S2), G2 (S1, S3)), S1 aparecerá duas vezes na tabela acompanhado pelas mesmas informações</translation>
     </message>
     <message>
         <location filename="../src/interface/studentsstatisticsform.cpp" line="463"/>
@@ -51222,7 +51221,7 @@ Base: %4</translation>
         <location filename="../src/engine/studentsset.cpp" line="83"/>
         <source>YN:%1</source>
         <comment>Year name</comment>
-        <translation>Ano:%1</translation>
+        <translation>Turma:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="85"/>
@@ -51244,7 +51243,7 @@ Base: %4</translation>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="99"/>
         <source>Year name=%1</source>
-        <translation>Nome do ano = %1</translation>
+        <translation>Nome da turma = %1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="101"/>
@@ -51259,12 +51258,12 @@ Base: %4</translation>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="118"/>
         <source>Time constraints directly related to this students year:</source>
-        <translation>Restrições de horários diretamente relacionados a este ano:</translation>
+        <translation>Restrições de horários diretamente relacionados a esta turma:</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="129"/>
         <source>Space constraints directly related to this students year:</source>
-        <translation>Restrições de espaço diretamente relacionadas a este ano:</translation>
+        <translation>Restrições de espaço diretamente relacionadas a esta turma:</translation>
     </message>
 </context>
 <context>
@@ -51351,7 +51350,7 @@ Base: %4</translation>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="425"/>
         <source>Show related: if you select this, there will be listed subactivities for groups and subgroups contained also in the current set (if the current set is a year or a group) and also higher ranked year or group (if the current set is a group or a subgroup).</source>
-        <translation>Exibir relacionadas: ao selecionar, lista-se as subatividades de grupos e subgrupos contidas no conjunto atual (se o conjunto atual for um ano ou grupo) e também a valoração mais alta de um ano ou grupo (se o conjunto atual for um grupo ou subgrupo).</translation>
+        <translation>Exibir relacionadas: ao selecionar, lista-se as subatividades de grupos e subgrupos contidas no conjunto atual (se o conjunto atual for uma turma ou grupo) e também a valoração mais alta de uma turma ou grupo (se o conjunto atual for um grupo ou subgrupo).</translation>
     </message>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="428"/>
@@ -51461,7 +51460,7 @@ Base: %4</translation>
         <location filename="../src/interface/subgroupsform.cpp" line="514"/>
         <location filename="../src/interface/subgroupsform.cpp" line="542"/>
         <source>Invalid selected year</source>
-        <translation>Ano selecionado inválido</translation>
+        <translation>Turma selecionada inválida</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform.cpp" line="116"/>
@@ -51559,7 +51558,7 @@ Base: %4</translation>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="33"/>
         <source>Year</source>
-        <translation>Ano</translation>
+        <translation>Turma</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="50"/>
@@ -52444,7 +52443,7 @@ Base: %4</translation>
         <location filename="../src/engine/timetableexport.cpp" line="10352"/>
         <location filename="../src/engine/timetableexport.cpp" line="10365"/>
         <source>Year</source>
-        <translation>Ano</translation>
+        <translation>Turma</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2580"/>
