@@ -2042,6 +2042,7 @@ Versions 5.35.0 - 5.35.v
 	- Updated the Japanese translation, by Taro Tada.
 	- Updated the Greek translation, by Vangelis Karafillidis.
 - Version 5.35.4
-	- Fixed a compilation bug under the MSVC compiler (reported by Volker Dirr).
-	- The Help -> About section of FET is now fully translatable.
+	- Fixed two compilation bugs under the Microsoft Visual C++ compiler (reported by Volker Dirr). Now FET can be compiled with this compiler.
+	- The Help->About dialog of FET is now easily translatable into other languages (suggested by rodolforg, Innocent De Marchi, and other users).
+	- Minor string bug fixed (reported by Vangelis Karafillidis).
 	- Added a new example file from Brazil, by francescotorres.
