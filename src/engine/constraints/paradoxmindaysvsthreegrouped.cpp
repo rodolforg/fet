@@ -39,9 +39,9 @@ bool ParadoxMinDaysVsThreeGrouped::prepare(const Rules& rules)
 								 .arg(rules.internalActivitiesList[pai1].id)
 								 .arg(rules.internalActivitiesList[pai2].id);
 								s+="\n";
-								s+=GeneratePreTranslate::tr("There should be %3 min days between them but they must also be grouped activities.")
+								s+=GeneratePreTranslate::tr("There should be %1 min days between them but they must also be grouped activities.")
 								 .arg(minDaysBetweenActivitiesList.minDays[pai1][mai1]);
-								s+=QString("\n----\n%4\n----\n%5")
+								s+=QString("\n----\n%1\n----\n%2")
 								 .arg(rules.internalActivitiesList[pai1].getDescription())
 								 .arg(rules.internalActivitiesList[pai2].getDescription());
 								s+="\n\n";
