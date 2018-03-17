@@ -14,7 +14,7 @@
 
 #include "generate_pre.h"
 #include "timetable.h"
-Timetable gt; // Just to please generate_pre.cpp and lockunlock.cpp that yet require it. It must be not used in tests
+Timetable gt; // Just to please generate_pre.cpp that yet require it. It must be not used in tests
 
 class ParadoxMinDaysVsThreeGroupedTest : public QObject
 {
