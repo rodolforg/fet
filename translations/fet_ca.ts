@@ -38981,7 +38981,7 @@ Probablement, a la pràctica, aquest problema no apareixerà i no haureu de preo
     <message>
         <location filename="../src/engine/import.cpp" line="1020"/>
         <source>Warning in line %1: Field with building name doesn&apos;t relate to a room</source>
-        <translation type="unfinished"></translation>
+        <translation>Error en la línia %1: la informació de l&apos;edifici (camp del nom d&apos;edifici) no es relaciona amb una aula</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1141"/>

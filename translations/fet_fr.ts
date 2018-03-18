@@ -39121,7 +39121,7 @@ est :</translation>
     <message>
         <location filename="../src/engine/import.cpp" line="1020"/>
         <source>Warning in line %1: Field with building name doesn&apos;t relate to a room</source>
-        <translation type="unfinished"></translation>
+        <translation>Avertissement à la ligne %1 : le champ avec le nom du bâtiment ne se rapporte pas à une salle</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1029"/>

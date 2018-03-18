@@ -36368,124 +36368,124 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="73"/>
         <source>FET is free software for automatically scheduling the timetable of a school, high-school or university.</source>
-        <translation type="unfinished"></translation>
+        <translation>FET هو برمجية حرة و مجانية للجدولة الأونوماتكية لجدول الزمن للمدرسة، الثانوية أو الجامعة.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="75"/>
         <source>Copyright (C) %1-%2 %3.</source>
         <comment>%1 is the year of the first FET release, %2 is the current release year, %3 are the FET authors</comment>
-        <translation type="unfinished"></translation>
+        <translation>حقوق النشر %1-%2 %3.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="78"/>
         <source>Version: %1 (%2 %3).</source>
         <comment>%1 is the current FET version, %2 is the current release month, %3 is the current release year</comment>
-        <translation type="unfinished"></translation>
+        <translation>النسخة: %1 (%2 %3).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>Licensed under the GNU Affero General Public License version 3 or later.</source>
-        <translation type="unfinished"></translation>
+        <translation>مرخص تحترخصة GNU Affero العمومية الإصدار 3 أو أحدث.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="83"/>
         <source>FET homepage: %1</source>
         <comment>%1 is the FET homepage</comment>
-        <translation type="unfinished">الموقع: %1</translation>
+        <translation>الموقع: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="92"/>
         <source>XHTML timetable export.</source>
-        <translation type="unfinished"></translation>
+        <translation>XHTML تصدير الجدول الزمني.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="94"/>
         <source>CSV import and export.</source>
-        <translation type="unfinished"></translation>
+        <translation>CSV استيراد و تصدير.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="96"/>
         <source>Advanced statistics print/export.</source>
-        <translation type="unfinished"></translation>
+        <translation>احصاءات متقدمة طباعة/تصدير.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="98"/>
         <source>Speed improvements in the timetable generation.</source>
-        <translation type="unfinished"></translation>
+        <translation>تحسينات للسرعة في انتاج الجدول الزمني.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="100"/>
         <source>Locking the activities.</source>
-        <translation type="unfinished"></translation>
+        <translation>غلق الأنشطة.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="102"/>
         <source>Activity planning dialog.</source>
-        <translation type="unfinished"></translation>
+        <translation>مربع حوار مخطط الأنشطة.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="104"/>
         <source>Print timetable dialog.</source>
-        <translation type="unfinished"></translation>
+        <translation>نافذة طباعة الجدول.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="110"/>
         <source>Arabic translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة العربية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="112"/>
         <source>former translator: %1 (to contact %2 visit FET forum - %3, section about Arabic translation, or contact forum user %4)</source>
         <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>المترجم السابق: %1 (للتواصل مع %2 يرجى زيارة موقع امنتدى FET  - %3، قسم الترجمة العربية، أو الاتصال بمنتدى المستخدم %4)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="121"/>
         <source>former translator: %1 (to contact %2 visit FET forum - %3, section about Catalan translation, or contact forum user %4)</source>
         <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>المترجم السابق: %1 (للتواصل مع %2 يرجى زيارة موقع امنتدى FET  - %3، قسم الترجمة الكاتالونية، أو الاتصال بمنتدى المستخدم %4)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="149"/>
         <source>former translator: %1 (to contact %2 visit FET forum - %3, section about Greek translation, or contact forum user %4)</source>
         <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>المترجم السابق: %1 (للتواصل مع %2 يرجى زيارة موقع امنتدى FET  - %3، قسم الترجمة اليونانية، أو الاتصال بمنتدى المستخدم %4)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="153"/>
         <source>current translator: %1 (to contact %2 visit FET forum - %3, section about Greek translation, or contact forum user %4)</source>
         <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>المترجم السابق: %1 (للتواصل مع %2 يرجى زيارة موقع امنتدى FET  - %3، قسم الترجمة اليونانية، أو الاتصال بمنتدى المستخدم %4)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="193"/>
         <source>%1 (to contact %2 visit FET forum - %3, section about Galician translation, or contact forum user %4)</source>
         <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 (للتواصل مع %2 يرجى زيارة موقع امنتدى FET  - %3، قسم الترجمة الجاليكية، أو الاتصال بمنتدى المستخدم %4)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="224"/>
         <source>%1 (to contact %2 visit FET forum - %3, section about Japanese translation, or contact forum user %4)</source>
         <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 (للتواصل مع %2 يرجى زيارة موقع امنتدى FET  - %3، قسم الترجمة اليابانية، أو الاتصال بمنتدى المستخدم %4)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="262"/>
         <source>current translator: %1 (%2). (Alternatively, to contact %3 visit FET forum - %4, section about Brazilian Portuguese translation, or contact forum user %5)</source>
         <comment>%1 is the name of the translator, %2 is his email or web address, %3 is the short name of the translator, %4 is the address of the forum, %5 is forum user name of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>المترجم الحالي: %1 (%2). (بدلا من، للتواصل مع %3 يرجى زيارة منتدى FET - %4، قسم الترجمة البرازيلية البرتغالية، أو الاتصال بمنتدى المستخدم %5)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="285"/>
         <source>%1 (to contact %2 visit FET forum - %3, section about Slovak translation, or contact forum user %4)</source>
         <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 (للتواصل مع %2 يرجى زيارة موقع امنتدى FET  - %3، قسم الترجمة السلوفاكية، أو الاتصال بمنتدى المستخدم %4)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="325"/>
         <source>former translator: %1 (to contact %2 visit FET forum - %3, section about Vietnamese translation, or contact forum user %4)</source>
         <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>المترجم السابق: %1 (للتواصل مع %2 يرجى زيارة موقع امنتدى FET  - %3، قسم الترجمة الفيتنامية، أو الاتصال بمنتدى المستخدم %4)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="116"/>
@@ -36498,17 +36498,17 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/interface/helpaboutform.cpp" line="329"/>
         <source>current translator: %1 (%2)</source>
         <comment>%1 is the name of the translator, %2 is his email or web address</comment>
-        <translation type="unfinished"></translation>
+        <translation>المترجم الحالي: %1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="119"/>
         <source>Catalan translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة الكاتالونية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="128"/>
         <source>Czech translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة التشيكية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="130"/>
@@ -36534,17 +36534,17 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/interface/helpaboutform.cpp" line="339"/>
         <source>%1 (%2)</source>
         <comment>%1 is the name of the translator, %2 is his email or web address</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="133"/>
         <source>Danish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة الدانماركية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="138"/>
         <source>German translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة الألمانية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="140"/>
@@ -36561,181 +36561,181 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/interface/helpaboutform.cpp" line="306"/>
         <source>former translator: %1 (%2)</source>
         <comment>%1 is the name of the translator, %2 is his email or web address</comment>
-        <translation type="unfinished"></translation>
+        <translation>المترجم السابق: %1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="145"/>
         <source>Greek translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة اليونانية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="156"/>
         <location filename="../src/interface/helpaboutform.cpp" line="164"/>
         <location filename="../src/interface/helpaboutform.cpp" line="188"/>
         <source>rewrote the translation from zero</source>
-        <translation type="unfinished"></translation>
+        <translation>اعادة كتابة الترجمة من الصفر</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="159"/>
         <source>Spanish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة الاسبانية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="167"/>
         <source>Basque translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة الباسكية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="172"/>
         <source>Persian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة الفارسية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="179"/>
         <source>French translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجم ةالفرنسية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="191"/>
         <source>Galician translation</source>
-        <translation type="unfinished"></translation>
+        <translation>ترجمة الجاليكية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="197"/>
         <source>This translation was based on the Spanish translation by %1 as of %2 %3 (see %4 - Spanish translation for more information)</source>
         <comment>%1 is the translator, %2 is the month, %3 is the year, %4 is the abbreviation of the name of the language</comment>
-        <translation type="unfinished"></translation>
+        <translation>اعتمدت هذه الترجمة على الترجمة الإسبانية من طرف %1 اعتبارا من %2 %3 (انظر %4 - الترجمة الاسبانية لمزيد من المعلومات)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="202"/>
         <source>Hebrew translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة العبرية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="207"/>
         <source>Hungarian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة المجرية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="212"/>
         <source>Indonesian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة الأندونيسية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="217"/>
         <source>Italian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة الايطالية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="222"/>
         <source>Japanese translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة اليابانية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="229"/>
         <source>Lithuanian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة الليتوانية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="234"/>
         <source>Macedonian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة المقدونية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="239"/>
         <source>Malay translation</source>
-        <translation type="unfinished"></translation>
+        <translation>ترجمة الملايو</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="244"/>
         <source>Dutch translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة الهولندية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="249"/>
         <source>Polish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة البولندية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="254"/>
         <source>Brazilian Portuguese translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة البرتغالية البرازيلية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="268"/>
         <source>Romanian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة الرومانية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="273"/>
         <source>Russian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة الروسية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="278"/>
         <source>Sinhala translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة السنهالية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="283"/>
         <source>Slovak translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة السلوفاكية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="290"/>
         <source>Albanian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة الألبانية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="295"/>
         <source>Serbian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة السربية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="302"/>
         <source>Turkish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة التركية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="311"/>
         <source>Ukrainian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة الأوكرانية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="316"/>
         <source>Uzbek translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة الأوزبكية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="318"/>
         <source>%1 (%2, or visit FET forum - %3, section about Uzbek translation, or contact forum user %4)</source>
         <comment>%1 is the current translator, %2 is his email or web address, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 (للتواصل مع %2 يرجى زيارة موقع امنتدى FET  - %3، قسم الترجمة الأوزبكية، أو الاتصال بمنتدى المستخدم %4)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="323"/>
         <source>Vietnamese translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة الفيتنامية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="332"/>
         <source>Chinese Simplified translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة الصينية المبسطة</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="337"/>
         <source>Chinese Traditional translation</source>
-        <translation type="unfinished"></translation>
+        <translation>الترجمة الصينية التقليدية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="345"/>
         <source>You may find references for the algorithms and techniques used in this program on the FET documentation web page, %1</source>
-        <translation type="unfinished"></translation>
+        <translation>يمكنك العثور على مراجع للخوارزميات والتقنيات المستخدمة في هذا البرنامج على صفحة ويب الخاصة بوثائق FET، %1</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="351"/>
         <source>chronologically</source>
-        <translation type="unfinished"></translation>
+        <translation>زمنيا</translation>
     </message>
 </context>
 <context>
@@ -39033,7 +39033,7 @@ ATS = affected teacher or students set
     <message>
         <location filename="../src/engine/import.cpp" line="1020"/>
         <source>Warning in line %1: Field with building name doesn&apos;t relate to a room</source>
-        <translation type="unfinished"></translation>
+        <translation>تحذير في السطر %1:الحقل ذو اسم البناية لا يتعلق بقاعة</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1141"/>
@@ -47665,64 +47665,64 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="47"/>
         <source>January</source>
-        <translation type="unfinished"></translation>
+        <translation>جانفي</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="49"/>
         <source>February</source>
-        <translation type="unfinished"></translation>
+        <translation>فبرايؤ</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="51"/>
         <location filename="../src/interface/helpaboutform.cpp" line="79"/>
         <source>March</source>
-        <translation type="unfinished"></translation>
+        <translation>مارس</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="53"/>
         <location filename="../src/interface/helpaboutform.cpp" line="199"/>
         <source>April</source>
-        <translation type="unfinished"></translation>
+        <translation>أفريل</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="55"/>
         <source>May</source>
-        <translation type="unfinished"></translation>
+        <translation>ماي</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="57"/>
         <source>June</source>
-        <translation type="unfinished"></translation>
+        <translation>جوان</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="59"/>
         <source>July</source>
-        <translation type="unfinished"></translation>
+        <translation>جويلية</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="61"/>
         <source>August</source>
-        <translation type="unfinished"></translation>
+        <translation>أوت</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="63"/>
         <source>September</source>
-        <translation type="unfinished"></translation>
+        <translation>سبتمبر</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="65"/>
         <source>October</source>
-        <translation type="unfinished"></translation>
+        <translation>أكتوبر</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="67"/>
         <source>November</source>
-        <translation type="unfinished"></translation>
+        <translation>نوفمبر</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="69"/>
         <source>December</source>
-        <translation type="unfinished"></translation>
+        <translation>دسيمبر</translation>
     </message>
 </context>
 <context>

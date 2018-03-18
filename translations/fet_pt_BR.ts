@@ -38949,7 +38949,7 @@ Provavelmente, na prática, esse problema não aparecerá e você não precisa s
     <message>
         <location filename="../src/engine/import.cpp" line="1020"/>
         <source>Warning in line %1: Field with building name doesn&apos;t relate to a room</source>
-        <translation type="unfinished"></translation>
+        <translation>Alerta na linha %1: O campo com o nome do prédio não corresponde a uma sala.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1141"/>

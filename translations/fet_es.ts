@@ -38984,7 +38984,7 @@ Por lo tanto, es una muy mala idea hacer que todas las actividades (de un profes
     <message>
         <location filename="../src/engine/import.cpp" line="1020"/>
         <source>Warning in line %1: Field with building name doesn&apos;t relate to a room</source>
-        <translation type="unfinished"></translation>
+        <translation>Advertencia en la línea%1: El campo con el nombre del edificio no se relaciona con un aula</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1141"/>
