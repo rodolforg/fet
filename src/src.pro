@@ -34,6 +34,7 @@ SOURCES += \
 	engine/constraints/paradoxmindaysvstwogrouped.cpp \
 	engine/constraints/paradoxmindaysvsthreegrouped.cpp \
 	engine/constraints/paradoxmindaysvssameday.cpp \
+	engine/constraints/paradoxmingapsvsmindaysconsecutive.cpp \
 	\
 	interface/fet.cpp \
 	interface/helpaboutform.cpp \
@@ -533,6 +534,7 @@ HEADERS += \
 	engine/constraints/paradoxmindaysvstwogrouped.h \
 	engine/constraints/paradoxmindaysvsthreegrouped.h \
 	engine/constraints/paradoxmindaysvssameday.h \
+	engine/constraints/paradoxmingapsvsmindaysconsecutive.h \
 	\
 	interface/fet.h \
 	interface/helpaboutform.h \

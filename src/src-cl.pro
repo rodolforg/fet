@@ -31,6 +31,7 @@ SOURCES += \
 	engine/constraints/paradoxmindaysvstwogrouped.cpp \
 	engine/constraints/paradoxmindaysvsthreegrouped.cpp \
 	engine/constraints/paradoxmindaysvssameday.cpp \
+	engine/constraints/paradoxmingapsvsmindaysconsecutive.cpp \
 	\
 	interface/fet.cpp \
 	interface/longtextmessagebox.cpp \
@@ -68,6 +69,7 @@ HEADERS += \
 	engine/constraints/paradoxmindaysvsconsecutive.h \
 	engine/constraints/paradoxmindaysvstwogrouped.h \
 	engine/constraints/paradoxmindaysvsthreegrouped.h \
+	engine/constraints/paradoxmingapsvsmindaysconsecutive.h \
 	\
 	interface/fet.h \
 	interface/longtextmessagebox.h \
