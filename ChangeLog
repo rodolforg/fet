@@ -1995,7 +1995,7 @@ Versions 5.33.0 - 5.33.3
 	Reported by chernous.
 - Version 5.33.2
 	- Updated to Qt 5.9.2.
-	- Added a new complete Spanish translation, by Emiliano Llano Díaz.
+	- Added a new complete Spanish translation, by Emiliano Llano Díaz, who is the new translator.
 	- The homepage of FET was updated to use SSL (https protocol instead of http).
 	- Code cleanup.
 - Version 5.33.3
@@ -2047,3 +2047,7 @@ Versions 5.35.0 - 5.35.v
 	- Minor string bug fixed (reported by Vangelis Karafillidis).
 	- Updated the Greek translation, by Vangelis Karafillidis.
 	- Added a new example file from Brazil, by francescotorres.
+- Version 5.35.5
+	- Bug fix when using the old Qt 4: the special characters in the Help->About dialog were incorrectly displayed (bug introduced in the previous version, 5.35.4).
+	- Minor fix: the example file translations/test-all-constraints.fet which should contain all the types of constraints was missing two of them. Corrected.
+	- Updated the Greek translation, by Vangelis Karafillidis.
