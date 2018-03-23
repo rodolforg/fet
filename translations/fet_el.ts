@@ -30699,66 +30699,67 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/export.cpp" line="937"/>
         <source>was skipped, because it refers not to a whole larger container activity</source>
-        <translation type="unfinished">παραβλέφθηκε, διότι δεν σχετίζεται με ολόκληρη δραστηριότητα-κοντέινερ</translation>
+        <translation>παραβλέφθηκε, διότι δεν σχετίζεται με ολόκληρη δραστηριότητα-κοντέινερ</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="946"/>
         <location filename="../src/engine/export.cpp" line="950"/>
         <source>was skipped, because there exists another constraint of this type with larger weight percentage, referring to the same activities</source>
-        <translation type="unfinished"></translation>
+        <translation>παραβλέφθηκε, διότι υπάρχει άλλος περιορισμός αυτού του τύπου που σχετίζεται με τις ίδιες δραστηριότητες και έχει μεγαλύτερο ποσοστό βαρύτητας</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="956"/>
         <location filename="../src/engine/export.cpp" line="961"/>
         <source>was skipped, because there exists another constraint of this type with same weight percentage and higher number of min days, referring to the same activities</source>
-        <translation type="unfinished"></translation>
+        <translation>παραβλέφθηκε, διότι υπάρχει άλλος περιορισμός αυτού του τύπου που σχετίζεται με τις ίδιες δραστηριότητες και έχει το ίδιο ποσοστό βαρύτητας και μεγαλύτερο αριθμό ελάχιστων ημερών</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="967"/>
         <location filename="../src/engine/export.cpp" line="973"/>
         <source>was skipped, because there exists another constraint of this type with same weight percentage and same number of min days and consecutive if same day true, referring to the same activities</source>
-        <translation type="unfinished"></translation>
+        <translation>παραβλέφθηκε, διότι υπάρχει άλλος περιορισμός αυτού του τύπου που σχετίζεται με τις ίδιες δραστηριότητες και έχει το ίδιο ποσοστό βαρύτητας, τον ίδιο αριθμό ελάχιστων ημερών και &quot;αν την ίδια ημέρα - διαδοχικές&quot;=&quot;αληθής&quot;</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="1013"/>
         <source>different active flag</source>
-        <translation type="unfinished"></translation>
+        <translation>ένδειξη &quot;ενεργή&quot; - διαφορετική</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="1023"/>
         <source>Activity with id %1 has disabled active flag but it is exported.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η δραστηριότητα με ατ %1 έχει απενεργοποιημένη ένδειξη &quot;ενεργή&quot;, αλλά έχει εξαχθεί.</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="1025"/>
         <source>Subactivities with activity group id %1 have disabled active flag but they are exported.</source>
-        <translation type="unfinished"></translation>
+        <translation>Οι υποδραστηριότητες της ομάδας δραστηριοτήτων με ατ %1 έχουν απενεργοποιημένη ένδειξη &quot;ενεργή&quot;, αλλά έχουν εξαχθεί.</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="1123"/>
         <source>%1 activities exported.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 δραστηριότητες εξήχθησαν.</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="480"/>
         <source>Please specify the contents of the first line:</source>
-        <translation type="unfinished">Παρακαλώ καθορίστε τα περιεχόμενα της πρώτης γραμμής:</translation>
+        <translation>Παρακαλώ καθορίστε τα περιεχόμενα της πρώτης γραμμής:</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="652"/>
         <source>Warning! Only %1 of %2 building names are exported, because %3 buildings don&apos;t contain any room.</source>
-        <translation type="unfinished"></translation>
+        <translation>Προειδοποίηση! Μόνον %1 από τα %2 ονόματα κτιρίων εξήχθησαν, διότι %3 κτίρια δεν περιέχουν καμία αίθουσα.</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="449"/>
         <source>Please keep the default settings.
 Import of data will be easier with these settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ διατηρήστε τις προκαθορισμένες ρυθμίσεις.
+Η εισαγωγή δεδομένων θα είναι ευκολότερη με τις ρυθμίσεις αυτές.</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="483"/>
         <source>The first line contains data. Don&apos;t export heading.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η πρώτη γραμμή περιέχει δεδομένα. Να μην εξαχθεί κεφαλίδα.</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="196"/>
@@ -30768,17 +30769,17 @@ Import of data will be easier with these settings.</source>
     <message>
         <location filename="../src/engine/export.cpp" line="1207"/>
         <source>%1 active activities statistics exported.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1 ενεργές δραστηριότητες εξήχθησαν.</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="1320"/>
         <source>%1 scheduled activities exported.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1 προγραμματισμένες δραστηριότητες εξήχθησαν.</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="1322"/>
         <source>0 scheduled activities exported, because no timetable was generated.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">0 προγραμματισμένες δραστηριότητες εξήχθησαν, διότι δεν έχει δημιουργηθεί ωρολόγιο πρόγραμμα.</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="937"/>
@@ -30789,7 +30790,7 @@ Import of data will be easier with these settings.</source>
         <location filename="../src/engine/export.cpp" line="967"/>
         <location filename="../src/engine/export.cpp" line="973"/>
         <source>Note: Constraint</source>
-        <translation type="unfinished"></translation>
+        <translation>Σημείωση: Περιορισμός</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="121"/>
@@ -30801,13 +30802,13 @@ Import of data will be easier with these settings.</source>
     <message>
         <location filename="../src/engine/export.cpp" line="1017"/>
         <source>Subactivities with activity group id %1 are different between themselves (they were separately edited), so the export will not be very accurate. The fields which are different will be considered those of the representative subactivity. Fields which were different are: %2</source>
-        <translation type="unfinished"></translation>
+        <translation>Οι υποδραστηριότητες με ατ ομάδας δραστηριοτήτων %1 διαφέρουν μεταξύ τους (έχει γίνει επεξεργασία μεμονωμένα), και έτσι η εξαγωγή δεν θα είναι πολύ ακριβής. Τα πεδία που είναι διαφορετικά θα θεωρηθούν πως είναι αυτά της υποδραστηριότητας-&quot;εκπροσώπου&quot;. Τα πεδία τα οποία ήταν διαφορετικά είναι: %2</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="1107"/>
         <location filename="../src/engine/export.cpp" line="1117"/>
         <source>There are subactivities which were modified separately - so the components had different values for subject, activity tags, teachers, students or number of students from the representative subactivity. The export was done, but it is not very accurate.</source>
-        <translation type="unfinished"></translation>
+        <translation>Υπάρχουν υποδραστηριότητες οι οποίες τροποποιήθηκαν μεμονομένα - έτσι τα στοιχεία (υποδραστηριότητες) είχαν διαφορετικές τιμές σε σχέση με τον υποδραστηριότητα-&quot;εκπρόσωπο&quot; ως προς το αντικείμενο, τις ετικέτες δραστηριότητας, τους εκπαιδευτικούς, τους μαθητές ή των αριθμό των μαθητών. Η εξαγωγή πραγματοποιήθηκε, αλλά δεν είναι πολύ ακριβής.</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="1001"/>
@@ -30877,7 +30878,7 @@ Import of data will be easier with these settings.</source>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="54"/>
         <source>Default button: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Προκαθορισμένο κουμπί: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="55"/>
@@ -36350,374 +36351,368 @@ Please modify your data correspondingly and try again</source>
 <context>
     <name>HelpAboutForm</name>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="73"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="75"/>
         <source>FET is free software for automatically scheduling the timetable of a school, high-school or university.</source>
         <translation>Το FET είναι ελεύθερο (δωρεάν) λογισμικό για την αυτοματοποιημένη κατάρτιση ωρολογίων προγραμμάτων δημοτικών σχολείων, γυμνασίων, λυκείων και πανεπιστημίων.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="75"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="77"/>
         <source>Copyright (C) %1-%2 %3.</source>
         <comment>%1 is the year of the first FET release, %2 is the current release year, %3 are the FET authors</comment>
         <translation>Πνευματικά δικαιώματα (Copyright) %1-%2 %3.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="78"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="80"/>
         <source>Version: %1 (%2 %3).</source>
         <comment>%1 is the current FET version, %2 is the current release month, %3 is the current release year</comment>
         <translation>Έκδοση: %1 (%2 %3).</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="83"/>
         <source>Licensed under the GNU Affero General Public License version 3 or later.</source>
         <translation>Άδεια χρήσης: Δημόσια άδεια χρήσης GNU Affero έκδοση 3 ή μεταγενέστερη.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="83"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="85"/>
         <source>FET homepage: %1</source>
         <comment>%1 is the FET homepage</comment>
         <translation>FET - Ιστοσελίδα: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="92"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="94"/>
         <source>XHTML timetable export.</source>
         <translation>Εξαγωγή ωρολογίων προγραμμάτων XHTML.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="94"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="96"/>
         <source>CSV import and export.</source>
         <translation>Εισαγωγή και εξαγωγή CSV.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="96"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="98"/>
         <source>Advanced statistics print/export.</source>
         <translation>Εκτύπωση/εξαγωγή προηγμένων στατιστικών.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="98"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="100"/>
         <source>Speed improvements in the timetable generation.</source>
         <translation>Βελτιώσεις στην ταχύτητα επίλυσης ωρολογίου προγράμματος.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="100"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="102"/>
         <source>Locking the activities.</source>
         <translation>&quot;Κλείδωμα&quot; δραστηριοτήτων.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="102"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="104"/>
         <source>Activity planning dialog.</source>
         <translation>Διάλογος προγραμματισμού δραστηριοτήτων.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="104"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="106"/>
         <source>Print timetable dialog.</source>
         <translation>Διάλογος εκτύπωσης ωρολογίων προγραμμάτων.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="110"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="112"/>
         <source>Arabic translation</source>
         <translation>Μετάφραση στα Αραβικά</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="112"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="114"/>
         <source>former translator: %1 (to contact %2 visit FET forum - %3, section about Arabic translation, or contact forum user %4)</source>
         <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation>προηγούμενος μεταφραστής:%1 (για επικοινωνία %2 επισκεφθείτε το φόρουμ του FET - %3, στο πεδίο για την μετάφραση στα Αραβικά, ή επικοινωνήσετε με τον χρήστη του φόρουμ %4)</translation>
+        <translation>προηγούμενος μεταφραστής: %1 (για επικοινωνία με τον μεταφραστή %2 επισκεφθείτε το φόρουμ του FET - %3, στο πεδίο για την μετάφραση στα Αραβικά, ή επικοινωνήσετε με τον χρήστη του φόρουμ %4)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="116"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="125"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="142"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="163"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="176"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="187"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="308"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="329"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="118"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="127"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="144"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="166"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="180"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="192"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="310"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="331"/>
         <source>current translator: %1 (%2)</source>
         <comment>%1 is the name of the translator, %2 is his email or web address</comment>
-        <translation>τρέχων μεταφραστής: %1 (%2)</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="119"/>
-        <source>Catalan translation</source>
-        <translation type="unfinished"></translation>
+        <translation>νυν μεταφραστής: %1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="121"/>
-        <source>former translator: %1 (to contact %2 visit FET forum - %3, section about Catalan translation, or contact forum user %4)</source>
-        <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <source>Catalan translation</source>
+        <translation>Μετάφραση στα Καταλανικά</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="128"/>
-        <source>Czech translation</source>
-        <translation type="unfinished"></translation>
+        <location filename="../src/interface/helpaboutform.cpp" line="123"/>
+        <source>former translator: %1 (to contact %2 visit FET forum - %3, section about Catalan translation, or contact forum user %4)</source>
+        <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
+        <translation>προηγούμενος μεταφραστής: %1 (για επικοινωνία με τον μεταφραστή %2 επισκεφθείτε το φόρουμ του FET - %3, στο πεδίο για την μετάφραση στα Καταλανικά, ή επικοινωνήσετε με τον χρήστη του φόρουμ %4)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="130"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="135"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="169"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="204"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="209"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="214"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="219"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="231"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="236"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="241"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="246"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="251"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="270"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="275"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="280"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="292"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="297"/>
+        <source>Czech translation</source>
+        <translation>Μετάφραση στα Τσέχικα</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform.cpp" line="132"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="137"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="173"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="205"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="210"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="215"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="220"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="232"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="237"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="242"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="247"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="252"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="272"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="277"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="282"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="294"/>
         <location filename="../src/interface/helpaboutform.cpp" line="299"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="313"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="334"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="339"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="301"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="315"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="337"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="342"/>
         <source>%1 (%2)</source>
         <comment>%1 is the name of the translator, %2 is his email or web address</comment>
         <translation>%1 (%2)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="133"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="135"/>
         <source>Danish translation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="138"/>
-        <source>German translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετάφραση στα Δανικά</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="140"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="147"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="161"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="174"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="181"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="183"/>
+        <source>German translation</source>
+        <translation>Μετάφραση στα Γερμανικά</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform.cpp" line="142"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="149"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="163"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="178"/>
         <location filename="../src/interface/helpaboutform.cpp" line="185"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="256"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="258"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="260"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="304"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="187"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="189"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="257"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="259"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="262"/>
         <location filename="../src/interface/helpaboutform.cpp" line="306"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="308"/>
         <source>former translator: %1 (%2)</source>
         <comment>%1 is the name of the translator, %2 is his email or web address</comment>
-        <translation type="unfinished"></translation>
+        <translation>προηγούμενος μεταφραστής: %1 (%2)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="145"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="147"/>
         <source>Greek translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετάφραση στα Ελληνικά</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="149"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="151"/>
         <source>former translator: %1 (to contact %2 visit FET forum - %3, section about Greek translation, or contact forum user %4)</source>
         <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>προηγούμενος μεταφραστής: %1 (για επικοινωνία με τον μεταφραστή %2 επισκεφθείτε το φόρουμ του FET - %3, στο πεδίο για την μετάφραση στα Ελληνικά, ή επικοινωνήσετε με τον χρήστη του φόρουμ %4)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="153"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="155"/>
         <source>current translator: %1 (to contact %2 visit FET forum - %3, section about Greek translation, or contact forum user %4)</source>
         <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>νυν μεταφραστής: %1 (για επικοινωνία με τον μεταφραστή %2 επισκεφθείτε το φόρουμ του FET - %3, στο πεδίο για την μετάφραση στα Ελληνικά, ή επικοινωνήσετε με τον χρήστη του φόρουμ %4)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="156"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="164"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="188"/>
-        <source>rewrote the translation from zero</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="159"/>
-        <source>Spanish translation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="167"/>
-        <source>Basque translation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="172"/>
-        <source>Persian translation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="179"/>
-        <source>French translation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="191"/>
-        <source>Galician translation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
+        <location filename="../src/interface/helpaboutform.cpp" line="158"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="168"/>
         <location filename="../src/interface/helpaboutform.cpp" line="193"/>
+        <source>rewrote the translation from zero</source>
+        <translation>έγραψε εκ νέου την μετάφραση από το μηδέν</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform.cpp" line="161"/>
+        <source>Spanish translation</source>
+        <translation>Μετάφραση στα Ισπανικά</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform.cpp" line="171"/>
+        <source>Basque translation</source>
+        <translation>Μετάφραση στα Βασκικά</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform.cpp" line="176"/>
+        <source>Persian translation</source>
+        <translation>Μετάφραση στα Περσικά</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform.cpp" line="183"/>
+        <source>French translation</source>
+        <translation>Μετάφραση στα Γαλλικά</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform.cpp" line="196"/>
+        <source>Galician translation</source>
+        <translation>Μετάφραση στα Γαλικιανά</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform.cpp" line="198"/>
         <source>%1 (to contact %2 visit FET forum - %3, section about Galician translation, or contact forum user %4)</source>
         <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 (για επικοινωνία με τον μεταφραστή %2 επισκεφθείτε το φόρουμ του FET - %3, στο πεδίο για την μετάφραση στα Γαλικιανά, ή επικοινωνήσετε με τον χρήστη του φόρουμ %4)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="197"/>
-        <source>This translation was based on the Spanish translation by %1 as of %2 %3 (see %4 - Spanish translation for more information)</source>
-        <comment>%1 is the translator, %2 is the month, %3 is the year, %4 is the abbreviation of the name of the language</comment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="202"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="203"/>
         <source>Hebrew translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετάφραση στα Εβραϊκά</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="207"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="208"/>
         <source>Hungarian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετάφραση στα Ουγγρικά</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="212"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="213"/>
         <source>Indonesian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετάφραση στα Ινδονησιακά</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="217"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="218"/>
         <source>Italian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετάφραση στα Ιταλικά</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="222"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="223"/>
         <source>Japanese translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετάφραση στα Ιαπωνικά</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="224"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="225"/>
         <source>%1 (to contact %2 visit FET forum - %3, section about Japanese translation, or contact forum user %4)</source>
         <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 (για επικοινωνία με τον μεταφραστή %2 επισκεφθείτε το φόρουμ του FET - %3, στο πεδίο για την μετάφραση στα Ιαπωνικά, ή επικοινωνήσετε με τον χρήστη του φόρουμ %4)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="229"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="230"/>
         <source>Lithuanian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετάφραση στα Λιθουανικά</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="234"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="235"/>
         <source>Macedonian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετάφραση στα Σκοπιανά</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="239"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="240"/>
         <source>Malay translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετάφραση στα Μαλαισιανά</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="244"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="245"/>
         <source>Dutch translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετάφραση στα Ολλανδικά</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="249"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="250"/>
         <source>Polish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετάφραση στα Πολωνικά</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="254"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="255"/>
         <source>Brazilian Portuguese translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετάφραση στα Πορτογαλικά (Βραζιλίας)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="262"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="264"/>
         <source>current translator: %1 (%2). (Alternatively, to contact %3 visit FET forum - %4, section about Brazilian Portuguese translation, or contact forum user %5)</source>
         <comment>%1 is the name of the translator, %2 is his email or web address, %3 is the short name of the translator, %4 is the address of the forum, %5 is forum user name of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>νυν μεταφραστής: %1 (%2). (Εναλλακτικά, για επικοινωνία με τον μεταφραστή %3 επισκεφθείτε το φόρουμ του FET - %4, στο πεδίο για την μετάφραση στα Πορτογαλικά (Βραζιλίας), ή επικοινωνήσετε με τον χρήστη του φόρουμ %5)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="268"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="270"/>
         <source>Romanian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετάφραση στα Ρουμανικά</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="273"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="275"/>
         <source>Russian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετάφραση στα Ρωσικά</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="278"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="280"/>
         <source>Sinhala translation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="283"/>
-        <source>Slovak translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετάφραση στα Σινχαλικά</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="285"/>
+        <source>Slovak translation</source>
+        <translation>Μετάφραση στα Σλοβακικά</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform.cpp" line="287"/>
         <source>%1 (to contact %2 visit FET forum - %3, section about Slovak translation, or contact forum user %4)</source>
         <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 (για επικοινωνία με τον μεταφραστή %2 επισκεφθείτε το φόρουμ του FET - %3, στο πεδίο για την μετάφραση στα Σλοβακικά, ή επικοινωνήσετε με τον χρήστη του φόρουμ %4)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="290"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="292"/>
         <source>Albanian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετάφραση στα Αλβανικά</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="295"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="297"/>
         <source>Serbian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετάφραση στα Σερβικά</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="302"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="304"/>
         <source>Turkish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετάφραση στα Τούρκικα</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="311"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="313"/>
         <source>Ukrainian translation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="316"/>
-        <source>Uzbek translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετάφραση στα Ουκρανικά</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="318"/>
-        <source>%1 (%2, or visit FET forum - %3, section about Uzbek translation, or contact forum user %4)</source>
-        <comment>%1 is the current translator, %2 is his email or web address, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <source>Uzbek translation</source>
+        <translation>Μετάφραση στα Ουζμπεκικά</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="323"/>
-        <source>Vietnamese translation</source>
-        <translation type="unfinished"></translation>
+        <location filename="../src/interface/helpaboutform.cpp" line="320"/>
+        <source>%1 (%2, or visit FET forum - %3, section about Uzbek translation, or contact forum user %4)</source>
+        <comment>%1 is the current translator, %2 is his email or web address, %3 is the FET forum address, %4 is the username of the translator</comment>
+        <translation>%1 (%2, ή επισκεφθείτε το φόρουμ του FET - %3, στο πεδίο για την μετάφραση στα Ουζμπεκικά, ή επικοινωνήσετε με τον χρήστη του φόρουμ %4)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="325"/>
-        <source>former translator: %1 (to contact %2 visit FET forum - %3, section about Vietnamese translation, or contact forum user %4)</source>
-        <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
-        <translation type="unfinished"></translation>
+        <source>Vietnamese translation</source>
+        <translation>Μετάφραση στα Βιετναμέζικα</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="332"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="327"/>
+        <source>former translator: %1 (to contact %2 visit FET forum - %3, section about Vietnamese translation, or contact forum user %4)</source>
+        <comment>%1 is the translator, %2 is his short name, %3 is the FET forum address, %4 is the username of the translator</comment>
+        <translation>προηγούμενος μεταφραστής: %1 (για επικοινωνία με τον μεταφραστή %2 επισκεφθείτε το φόρουμ του FET - %3, στο πεδίο για την μετάφραση στα Βιετναμέζικα, ή επικοινωνήσετε με τον χρήστη του φόρουμ %4)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform.cpp" line="335"/>
         <source>Chinese Simplified translation</source>
         <translation>Μετάφραση στα Απλοποιημένα Κινέζικα</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="337"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="340"/>
         <source>Chinese Traditional translation</source>
         <translation>Μετάφραση στα Παραδοσιακά Κινέζικα</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="345"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="348"/>
         <source>You may find references for the algorithms and techniques used in this program on the FET documentation web page, %1</source>
         <translation>Μπορείτε να βρείτε αναφορές για τους αλγόριθμους και τις τεχνικές που χρησιμοποιούνται στην εφαρμογή αυτή στην ιστοσελίδα για την τεκμηρίωση (documentation) του FET, %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="351"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="354"/>
         <source>chronologically</source>
         <translation>χρονολογικά</translation>
     </message>
@@ -37256,17 +37251,17 @@ Add another constraint: min 1 day between activities with id-s 2 and 3, consecut
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="970"/>
         <source>If you have many subgroups and you don&apos;t explicitly use them, it is recommended to use the three global settings: hide subgroups in combo boxes, hide subgroups in activity planning, and do not write subgroups timetables on hard disk.</source>
-        <translation type="unfinished">Αν έχετε πολλά υποτμήματα και δεν τα χρησιμοποιείτε ρητά, προτείνεται να χρησιμοποιήσετε τις τρεις καθολικές ρυθμίσεις: απόκρυψη υποτμημάτων στα σύνθετα πλαίσια, απόκρυψη υποτμημάτων στον προγραμματισμό δραστηριοτήτων και μη εγγραφή ωρολογίων προγραμμάτων των υποτμημάτων στον σκληρό δίσκο.</translation>
+        <translation>Αν έχετε πολλά υποτμήματα και δεν τα χρησιμοποιείτε ρητά, προτείνεται να χρησιμοποιήσετε τις τρεις καθολικές ρυθμίσεις: απόκρυψη υποτμημάτων στα σύνθετα πλαίσια, απόκρυψη υποτμημάτων στον προγραμματισμό δραστηριοτήτων και μη εγγραφή ωρολογίων προγραμμάτων των υποτμημάτων στον σκληρό δίσκο.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="973"/>
         <source>Note that using the global menu setting to hide subgroups in activity planning is a different thing from the check box in the activity planning dialog, and the global setting works better and faster.</source>
-        <translation type="unfinished">Προσέξτε ότι η χρήση της καθολικής ρύθμισης στο μενού για απόκρυψη των υποτμημάτων στον προγραμματισμό δραστηριοτήτων είναι κάτι διαφορετικό από το πλαίσιο ελέγχου στον διάλογο προγραμματισμού δραστηριοτήτων. Η καθολική ρύθμιση δουλεύει καλύτερα και γρηγορότερα.</translation>
+        <translation>Προσέξτε ότι η χρήση της καθολικής ρύθμισης στο μενού για απόκρυψη των υποτμημάτων στον προγραμματισμό δραστηριοτήτων είναι κάτι διαφορετικό από το πλαίσιο ελέγχου στον διάλογο προγραμματισμού δραστηριοτήτων. Η καθολική ρύθμιση δουλεύει καλύτερα και γρηγορότερα.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="976"/>
         <source>If you hide subgroups in combo boxes, the affected dialogs (like the activities dialog or the add constraint students set not available times dialog) will load much faster if you have many subgroups.</source>
-        <translation type="unfinished">Αν αποκρύψετε τα υποτμήματα στα σύνθετα πλαίσια, οι διάλογοι που επηρεάζονται (όπως ο διάλογος δραστηριοτήτων ή ο διάλογος &quot;ομάδα μαθητών - μη διαθέσιμοι χρόνοι&quot;) θα φορτώνονται σαφώς πιο γρήγορα στην περίπτωση που έχετε πολλά υποτμήματα.</translation>
+        <translation>Αν αποκρύψετε τα υποτμήματα στα σύνθετα πλαίσια, οι διάλογοι που επηρεάζονται (όπως ο διάλογος δραστηριοτήτων ή ο διάλογος &quot;ομάδα μαθητών - μη διαθέσιμοι χρόνοι&quot;) θα φορτώνονται σαφώς πιο γρήγορα στην περίπτωση που έχετε πολλά υποτμήματα.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="981"/>
@@ -38100,7 +38095,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helptipsform.cpp" line="49"/>
         <source>Last modified on %1.</source>
-        <translation type="unfinished">Τελευταία τροποποίηση στις %1.</translation>
+        <translation>Τελευταία τροποποίηση στις %1.</translation>
     </message>
     <message>
         <location filename="../src/interface/helptipsform.cpp" line="80"/>
@@ -38724,7 +38719,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="1020"/>
         <source>Warning in line %1: Field with building name doesn&apos;t relate to a room</source>
-        <translation type="unfinished"></translation>
+        <translation>Γραμμή %1 - Προειδοποίηση: Πεδίο με όνομα κτιρίου δεν σχετίζεται με αίθουσα</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1141"/>
@@ -47125,7 +47120,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifystudentsyearform.cpp" line="163"/>
         <source>The following groups and subgroups of other years won&apos;t be renamed, even if they start with the same year name:</source>
-        <translation type="unfinished">Τα παρακάτω τμήματα και υποτμήματα άλλων ετών δεν θα μετονομαστούν, ακόμη κι αν αρχίζουν με το ίδιο όνομα έτους:</translation>
+        <translation>Τα παρακάτω τμήματα και υποτμήματα άλλων ετών δεν θα μετονομαστούν, ακόμη κι αν αρχίζουν με το ίδιο όνομα έτους:</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsyearform.cpp" line="167"/>
@@ -47366,64 +47361,63 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>MonthsNames</name>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="47"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="49"/>
         <source>January</source>
         <translation>Ιανουάριος</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="49"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="51"/>
         <source>February</source>
         <translation>Φεβρουάριος</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="51"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="79"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="53"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>March</source>
         <translation>Μάρτιος</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="53"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="199"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="55"/>
         <source>April</source>
         <translation>Απρίλιος</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="55"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="57"/>
         <source>May</source>
         <translation>Μάιος</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="57"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="59"/>
         <source>June</source>
         <translation>Ιούνιος</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="59"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="61"/>
         <source>July</source>
         <translation>Ιούλιος</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="61"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="63"/>
         <source>August</source>
         <translation>Αύγουστος</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="63"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="65"/>
         <source>September</source>
         <translation>Σεπτέμβριος</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="65"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="67"/>
         <source>October</source>
         <translation>Οκτώβριος</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="67"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="69"/>
         <source>November</source>
         <translation>Νοέμβριος</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform.cpp" line="69"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="71"/>
         <source>December</source>
         <translation>Δεκέμβριος</translation>
     </message>
@@ -49490,42 +49484,42 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="757"/>
         <source>You might first want to consider if dividing a year is necessary and on what options. Please remember that FET can handle activities with multiple teachers/students sets. If you have say students set 9a, which is split into 2 parts: English (teacher TE) and French (teacher TF), and language activities must be simultaneous, then you might not want to divide according to this category, but add more larger activities, with students set 9a and teachers TE+TF. The only drawback is that each activity can take place only in one room in FET, so you might need to find a way to overcome that.</source>
-        <translation type="unfinished"></translation>
+        <translation>Πιθανώς να θέλετε πρώτα να εξετάσετε εάν η κατάτμηση ενός έτους είναι απαραίτητη καθώς και ποιες επιλογές σας εξυπηρετεί. Παρακαλώ να θυμάστε ότι το FET μπορεί να διαχειριστεί δραστηριότητες με περισσότερους από έναν εκπαιδευτικούς καθώς και με περισσότερες από μία ομάδες μαθητών. Αν έχετε -για παράδειγμα- την ομάδα μαθητών 9a, η οποία χωρίζεται σε δύο μέρη: Αγγλικά (εκπαιδευτικός ΕΑ) και Γαλλικά (εκπαιδευτικός ΕΓ), και οι δραστηριότητες της ξένης γλώσσας πρέπει να πραγματοποιούνται ταυτόχρονα, μπορεί να μην θελήσετε να κατατμήσετε την ομάδα μαθητών σύμφωνα με την ανωτέρω κατηγοριοποίηση, και ως εκ τούτου να προσθέσετε &quot;μεγαλύτερες&quot; δραστηριότητες, με την ομάδα μαθητών 9a και εκπαιδευτικούς τους ΕΑ+ΕΓ. Το μόνο μειονέκτημα της προσέγγισης αυτής είναι ότι στο FET η κάθε δραστηριότητα μπορεί να πραγματοποιηθεί μόνον σε μία αίθουσα, οπότε πιθανώς να χρειαστεί να βρείτε κάποιον τρόπο για να ξεπεράσετε αυτό το πρόβλημα.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="765"/>
         <source>Please choose a number of categories and in each category the number of divisions. You can choose for instance 3 categories, 5 divisions for the first category: a, b, c, d and e, 2 divisions for the second category: boys and girls, and 3 divisions for the third: English, German and French.</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ επιλέξτε έναν αριθμό κατηγοριών και σε κάθε κατηγορία τον αριθμό των κατατμήσεων. Μπορείτε -για παράδειγμα- να επιλέξετε 3 κατηγορίες, 5 κατατμήσεις για την πρώτη κατηγορία: a, b, c και e, 2 κατατμήσεις για την δεύτερη κατηγορία: αγόρια και κορίτσια, και 3 κατατμήσεις για την τρίτη κατηγορία: Αγγλικά, Γερμανικά και Γαλλικά.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="779"/>
         <source>If your number of subgroups is reasonable, probably you need not worry about empty subgroups (regarding speed of generation). But more tests need to be done. You just need to know that for the moment the maximum total number of subgroups is %1 (which can be changed, but nobody needed larger values)</source>
-        <translation type="unfinished"></translation>
+        <translation>Αν ο αριθμός των υποτμημάτων είναι εύλογος, πιθανώς δεν χρειάζεται να ανησυχείτε για τα κενά υποτμήματα (αναφορικά με την ταχύτητα επίλυσης). Πρέπει όμως να γίνουν περισσότερες δοκιμές. Χρειάζεται μόνον να γνωρίζετε ότι για την ώρα ο μέγιστος αριθμός συνολικός αριθμός των υποτμημάτων είναι %1 (ο οποίος μπορεί να αλλάξει, αλλά κανένας δεν χρειάστηκε μεγαλύτερες τιμές)</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="788"/>
         <source>If you intend to divide again a year by categories and you want to keep (the majority of) the existing groups in this year, you will need to use the exact same separator character(s) for dividing this year as you used when previously dividing this year, and the same division names (any old division which is no longer entered means a group which will be removed from this year).</source>
-        <translation type="unfinished"></translation>
+        <translation>Αν προτίθεστε να κατατμήσετε ξανά κάποιο έτος σε κατηγορίες και θέλετε να διατηρήσετε (τα περισσότερα από) τα υπάρχοντα τμήματα αυτού του έτους, θα πρέπει να χρησιμοποιήσετε ακριβώς τον ίδιο χαρακτήρα (ή τους ίδιους χαρακτήρες) διαχωρισμού που χρησιμοποιήσατε προηγουμένως για την κατάτμηση αυτού του έτους, και τα ίδια ονόματα κατατμήσεων (οποιαδήποτε παλαιότερη κατάτμηση δεν εισάγεται πλέον, σημαίνει ότι το αντίστοιχο τμήμα θα διαγραφεί από το συγκεκριμένο έτος).</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="794"/>
         <source>When dividing again a year, you might get a warning about subgroups which will be removed. If you didn&apos;t explicitly use (these) subgroups in your activities or constraints, probably you can safely ignore this warning. Generally, if you use years&apos; division by categories, it is groups that matter.</source>
-        <translation type="unfinished"></translation>
+        <translation>Όταν κατατέμνετε κάποιο έτος, μπορεί να λάβετε μία προειδοποίηση για τα υποτμήματα τα οποία θα διαγραφούν. Αν δεν χρησιμοποιούσατε ρητώς τα συγκεκριμένα υποτμήματα στις δραστηριότητες ή στους περιορισμούς σας, πιθανώς μπορείτε με ασφάλεια να αγνοήσετε την συγκεκριμέμη προειδοποίηση. Γενικά, αν χρησιμοποιείτε κατατμήσεις ετών σε κατηγορίες, τα τμήματα είναι αυτά που έχουν σημασία.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="804"/>
         <source>If you have many subgroups and you don&apos;t explicitly use them, it is recommended to use the three global settings: hide subgroups in combo boxes, hide subgroups in activity planning, and do not write subgroups timetables on hard disk.</source>
-        <translation type="unfinished">Αν έχετε πολλά υποτμήματα και δεν τα χρησιμοποιείτε ρητά, προτείνεται να χρησιμοποιήσετε τις τρεις καθολικές ρυθμίσεις: απόκρυψη υποτμημάτων στα σύνθετα πλαίσια, απόκρυψη υποτμημάτων στον προγραμματισμό δραστηριοτήτων και μη εγγραφή ωρολογίων προγραμμάτων των υποτμημάτων στον σκληρό δίσκο.</translation>
+        <translation>Αν έχετε πολλά υποτμήματα και δεν τα χρησιμοποιείτε ρητά, προτείνεται να χρησιμοποιήσετε τις τρεις καθολικές ρυθμίσεις: απόκρυψη υποτμημάτων στα σύνθετα πλαίσια, απόκρυψη υποτμημάτων στον προγραμματισμό δραστηριοτήτων και μη εγγραφή ωρολογίων προγραμμάτων των υποτμημάτων στον σκληρό δίσκο.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="811"/>
         <source>(Also the conflicts timetable might take long to write, if the file is big.)</source>
-        <translation type="unfinished"></translation>
+        <translation>(Επίσης, το ωρολόγιο πρόγραμμα των συγκρούσεων μπορεί να χρειαστεί πολύ χρόνο για να γραφεί, αν το αρχείο είναι μεγάλο.)</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="813"/>
         <source>After that, you can re-enable writing the students timetables on the disk, and re-generate.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Στη συνέχεια, μπορείτε να επανεργοποιήσετε την εγγραφή των ωρολογίων προγραμμάτων των μαθητών στον δίσκο, και να καταρτίσετε (δημιουργήσετε) ένα νέο ωρολόγιο πρόγραμμα.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="816"/>
@@ -49661,7 +49655,7 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="835"/>
         <source>FET - help on dividing a year</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - Βοήθεια για την κατάτμηση έτους</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="841"/>
@@ -49939,7 +49933,7 @@ Please report error. FET will now abort current operation</source>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="302"/>
         <source>Last confirmation needed</source>
-        <translation type="unfinished">Τελευταία απαραίτητη επιβεβαίωση</translation>
+        <translation>Τελευταία απαραίτητη επιβεβαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="306"/>
@@ -50346,7 +50340,7 @@ Please report error. FET will now abort current operation</source>
         <location filename="../src/engine/statisticsexport.cpp" line="395"/>
         <source>Some programs import &quot;tfoot&quot; incorrectly. So we use &quot;tr.foot&quot; instead of &quot;tfoot&quot;.</source>
         <comment>Please keep tfoot and tr.foot untranslated, as they are in the original English phrase</comment>
-        <translation type="unfinished">Σε κάποια προγράμματα το &quot;tfoot&quot; εισάγεται εσφαλμένα. Ως εκ τούτου, χρησιμοποιούμε το &quot;tr.foot&quot; αντί του &quot;tfoot&quot;.</translation>
+        <translation>Σε κάποια προγράμματα το &quot;tfoot&quot; εισάγεται εσφαλμένα. Ως εκ τούτου, χρησιμοποιούμε το &quot;tr.foot&quot; αντί του &quot;tfoot&quot;.</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="577"/>
@@ -50358,7 +50352,7 @@ Please report error. FET will now abort current operation</source>
         <location filename="../src/engine/statisticsexport.cpp" line="2367"/>
         <source>Timetable generated with FET %1 on %2</source>
         <comment>%1 is FET version, %2 is the date and time of generation</comment>
-        <translation type="unfinished">Το ωρολόγιο πρόγραμμα δημιουργήθηκε με το FET %1 στις %2</translation>
+        <translation>Το ωρολόγιο πρόγραμμα δημιουργήθηκε με το FET %1 στις %2</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="696"/>
@@ -50375,7 +50369,7 @@ Please report error. FET will now abort current operation</source>
         <location filename="../src/engine/statisticsexport.cpp" line="2353"/>
         <source>Sum</source>
         <comment>This means the sum of more values, the total</comment>
-        <translation type="unfinished">Άθροισμα</translation>
+        <translation>Άθροισμα</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="714"/>
@@ -50385,7 +50379,7 @@ Please report error. FET will now abort current operation</source>
         <location filename="../src/engine/statisticsexport.cpp" line="1902"/>
         <location filename="../src/engine/statisticsexport.cpp" line="2198"/>
         <source>Canceled</source>
-        <translation type="unfinished">Ακυρώθηκε</translation>
+        <translation>Ακυρώθηκε</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="1297"/>
@@ -52801,13 +52795,13 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="10080"/>
         <location filename="../src/engine/timetableexport.cpp" line="10293"/>
         <source>Min</source>
-        <translation type="unfinished"></translation>
+        <translation>Ελάχιστα</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10087"/>
         <location filename="../src/engine/timetableexport.cpp" line="10300"/>
         <source>Max</source>
-        <translation type="unfinished"></translation>
+        <translation>Μέγιστα</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10105"/>
@@ -53416,37 +53410,37 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="756"/>
         <source>Please wait. It might take 5 to 20 minutes or even more for very difficult timetables</source>
-        <translation type="unfinished">Παρακαλώ περιμένετε. Πιθανώς να απαιτηθούν 5 έως 20 λεπτά ή ίσως και ακόμη περισσότερο για πολύ δύσκολα ωρολόγια προγράμματα</translation>
+        <translation>Παρακαλώ περιμένετε. Πιθανώς να απαιτηθούν 5 έως 20 λεπτά ή ίσως και ακόμη περισσότερο για πολύ δύσκολα ωρολόγια προγράμματα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="758"/>
         <source>Activities are placed in order, most difficult ones first</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Οι δραστηριότητες τοποθετούναι με τη σειρά - πρώτα τοποθετούνται οι πιο δύσκολες</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="760"/>
         <source>The process of searching is semi-randomized, which means that you will get different timetables and running times each time. You can choose the best timetable from several runs</source>
-        <translation type="unfinished"></translation>
+        <translation>Η διαδικασία αναζήτησης (κατάρτισης ωρολογίου προγράμματος) είναι ημι-τυχαία. Αυτό σημαίνει ότι θα λάβετε διαφορετικά ωρολόγια προγράμματα και διαφορετικούς χρόνους επίλυσης κάθε φορά. Φυσικά, από τα διαφορετικά ωρολόγια προγράμματα που μπορείτε να λάβετε, έχετε την δυνατότητα να επιλέξετε το καλύτερο (το καταλληλότερο για τις ανάγκες σας)</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="767"/>
         <source>It is recommended to strengthen the constraints step by step (for instance min days between activities weight or teacher(s) max gaps), as you obtain feasible timetables.</source>
-        <translation type="unfinished"></translation>
+        <translation>Συνιστάται να αυξάνετε την ισχύ των περιορισμών σταδιακά (για παράδειγμα μπορείτε να αυξήσετε σταδιακά το ποσοστό βαρύτητας των περιορισμών &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;, ή των περιορισμών &quot;εκπαιδευτικός (ή εκπαιδευτικοί) - μέγιστα κενά&quot;), ενόσω συνεχίζετε να λαμβάνετε λύσεις για ωρολόγιο πρόγραμμά σας.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="770"/>
         <source>If your timetable gets stuck on a certain activity number k (and then begins going back), please check the initial evaluation order and see activity number k+1 in this list. You may find errors this way.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αν η επίλυση (κατάρτιση) του ωρολογίου προγράμματος &quot;κολλήσει&quot; σε κάποιον συγκεκριμένο αριθμό δραστηριότητας k (και μετά αρχίσει να γυρνάει πίσω), παρακαλώ να ελέγξετε την αρχική σειρά επεξεργασίας των δραστηριοτήτων και ειδικότερα να δείτε την δραστηριότητα με αριθμό k+1 της συγκεκριμένης λίστας. Ενδεχόμενως να εντοπίσετε κάποια σφάλματα με αυτόν τον τρόπο.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="774"/>
         <source>If the generation is successful, you cannot have hard conflicts. You can have only soft conflicts, corresponding to constraints with weight lower than 100.0%, which are reported in detail.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αν η δημιουργία (κατάρτιση) ωρολογίου προγράμματος είναι επιτυχής, είναι αδύνατον αν έχουν εμφανιστεί ισχυρές συγκρούσεις. Ενδεχομένως να έχετε ήπιες συγκρούσεις, οι οποίες θα αντιστοιχούν στους περιορισμούς με ποσοστό βαρύτητας μικρότερο του 100.0%. Οι περιορισμοί αυτοί θα καταγραφούν λεπτομερώς.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="777"/>
         <source>After the generation (successful or interrupted), you can view the current (complete or incomplete) timetable in the corresponding view timetable dialogs, and the list of conflicts in the view conflicts dialog.</source>
-        <translation type="unfinished"></translation>
+        <translation>Είτε το ωρολόγιο πρόγραμμα καταρτιστεί επιτυχώς, είτε η κατάρτισή του διακοπεί, μπορείτε να δείτε το τρέχον (ολοκληρωμένο ή μη) ωρολόγιο πρόγραμμα στους αντίστοιχους διαλόγους προβολής του ωρολογίου προγράμματος, καθώς και την λίστα των συγκρούσεων στον διάλογο προβολής συγκρούσεων.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="780"/>
@@ -53486,7 +53480,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegenerateform.cpp" line="850"/>
         <source>Conflicts</source>
         <comment>Title of dialog</comment>
-        <translation type="unfinished">Συγκρούσεις</translation>
+        <translation>Συγκρούσεις</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="227"/>
@@ -53515,7 +53509,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegenerateform.cpp" line="913"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
-        <translation type="unfinished">Ατ: %1 (%2)</translation>
+        <translation>Ατ: %1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="280"/>
@@ -53530,7 +53524,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="535"/>
         <source>Please check the constraints related to the activity below, which might be impossible to schedule:</source>
-        <translation type="unfinished">Παρακαλώ ελέγξτε τους περιορισμούς που σχετίζονται με την παρακάτω δραστηριότητα, η οποία πιθανώς να είναι αδύνατον να τοποθετηθεί στο ωρολόγιο πρόγραμμα:</translation>
+        <translation>Παρακαλώ ελέγξτε τους περιορισμούς που σχετίζονται με την παρακάτω δραστηριότητα, η οποία πιθανώς να είναι αδύνατον να τοποθετηθεί στο ωρολόγιο πρόγραμμα:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="618"/>
@@ -53541,7 +53535,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="629"/>
         <source>Soft conflicts listing (in decreasing order):</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Λίστα ήπιων συγκρούσεων (σε φθίνουσα σειρά):</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="662"/>
@@ -53688,12 +53682,12 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="229"/>
         <source>You can only see generated timetables on the hard disk, in HTML and XML formats and soft conflicts in text format, or latest timetable in the Timetable/View menu. It is needed that the directory %1 to be emptied and deleted before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation>Τα ωρολόγια προγράμματα που έχουν καταρτιστεί (δημιουργηθεί) αποθηκεύονται στον σκληρό δίσκο σε φορμά HTML και XML. Οι ήπιες συγκρούσεις αποθηκεύονται σε φορμά κειμένου (txt). Από τον σκληρό δίσκο μπορείτε να δείτε τόσο τα ωρολόγια προγράμματα, όσο και τις ήπιες συγκρούσεις. Το τελευταίο ωρολόγιο πρόγραμμα μπορείτε να το δείτε και μέσα από το FET, από το μενού &quot;Ωρολόγιο/Προβολή&quot;. Είναι απαραίτητο να αδειάσει και να διαγραφεί ο κατάλογος %1 πριν προχωρήσετε.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="238"/>
         <source>There are also saved the timetables in .fet format (data + constraints to lock the timetable), so that you can open each of them later.</source>
-        <translation type="unfinished"></translation>
+        <translation>Τα ωρολόγια προγράμματα επίσης αποθηκεύονται σε φορμά .fet (δεδομένα + περιορισμοί για το &quot;κλείδωμα&quot; του ωρολογίου προγράμματος). Έτσι, μπορείτε να ανοίξετε τα ωρολόγια προγράμματα αργότερα.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="247"/>
@@ -53708,7 +53702,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="264"/>
         <source>Directory %1 exists and might not be empty, (it might contain old files). You need to manually remove all contents of this directory AND the directory itself (or rename it) and then you can generate multiple timetables</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο κατάλογος %1 υπάρχει ήδη και πιθανώς να μην είναι άδειος (μπορεί να περιέχει παλιά αρχεία). Θα πρέπει να διαγράψετε χειροκίνητα όλα τα περιεχόμενα του καταλόγου καθώς και τον ίδιο τον κατάλογο (ή να τον μετονομάσετε). Στη συνέχεια, μπορείτε να καταρτίσετε (δημιουργήσετε) πολλαπλά ωρολόγια προγράμματα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="274"/>
@@ -53762,12 +53756,12 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="240"/>
         <source>If you get impossible timetable, please enter menu Generate (single) and see the initial order of evaluation of activities, this might help.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Αν η κατάρτιση (δημιουργία) του ωρολογίου προγράμματος είναι αδύνατη, παρακαλώ να μπείτε στο μενού &quot;Δημιουργία&quot; (δημιουργία ενός μόνον ωρολογίου προγράμματος) και να δείτε την αρχική σειρά αξιολόγησης των δραστηριοτήτων. Αυτό πιθανώς να σας βοηθήσει.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="234"/>
         <source>Note that, for large data, each timetable might occupy more megabytes of hard disk space, so make sure you have enough space (you can check the dimension of a single timetable as a precaution).</source>
-        <translation type="unfinished"></translation>
+        <translation>Σημειώστε ότι για μεγάλου όγκου δεδομένα, το κάθε ωρολόγιο πρόγραμμα μπορεί να καταλαμβάνει πολλά MB (megabytes) στον σκληρό δίσκο, οπότε θα πρέπει πρώτα να ελέγξετε αν υπάρχει επαρκής χώρος στον δίσκο σας (μπορείτε να ελέγξετε προληπτικά το μέγεθος ενός ωρολογίου προγράμματος).</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="243"/>
@@ -53777,18 +53771,18 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="243"/>
         <source>You can limit the search time, by specifying the maximum number of minutes allowed to spend for each timetable (option %1).</source>
-        <translation type="unfinished"></translation>
+        <translation>Μπορείτε να περιορίσετε τον χρόνο αναζήτησης (λύσης), καθορίζοντας τον μέγιστο χρόνο (σε λεπτά) που επιτρέπεται να διατεθεί για την δημιουργία (κατάρτιση) του κάθε ωρολογίου προγράμματος (επιλογή %1).</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="295"/>
         <source>Your data cannot be processed - please modify it as instructed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η επεξεργασία των δεδομένων - παρακαλώ τροποποιήστε τα κατά τον τρόπο που έχει υποδειχθεί.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="328"/>
         <source>Timetable no: %1 =&gt; %2</source>
         <comment>%1 is the number of this timetable when generating multiple timetables, %2 is its description</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ωρολόγιο αρ. %1 =&gt; %2</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="350"/>
@@ -53799,48 +53793,48 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="353"/>
         <source>Number of broken soft constraints: %1</source>
-        <translation type="unfinished">Αριθμός μη τηρηθέντων ήπιων περιορισμών: %1</translation>
+        <translation>Αριθμός μη τηρηθέντων ήπιων περιορισμών: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="357"/>
         <source>Total soft conflicts: %1</source>
-        <translation type="unfinished">Συνολικές ήπιες συγκρούσεις: %1</translation>
+        <translation>Συνολικές ήπιες συγκρούσεις: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="360"/>
         <source>Soft conflicts listing (in decreasing order):</source>
-        <translation type="unfinished"></translation>
+        <translation>Λίστα ήπιων συγκρούσεων (σε φθίνουσα σειρά):</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="381"/>
         <source>Simulation interrupted!</source>
-        <translation type="unfinished"></translation>
+        <translation>Κατάρτιση ωρολογίου διεκόπη!</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="399"/>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="445"/>
         <source>The results were saved in the directory %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Τα αποτελέσματα αποθηκεύθηκαν στον κατάλογο %1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="401"/>
         <source>Total searching time: %1h %2m %3s</source>
-        <translation type="unfinished"></translation>
+        <translation>Συνολικός χρόνος αναζήτησης: %1ω %2λ %3δ</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="443"/>
         <source>Simulation finished!</source>
-        <translation type="unfinished"></translation>
+        <translation>Κατάρτιση ολοκληρώθηκε!</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="447"/>
         <source>Total searching time was %1h %2m %3s</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο συνολικός χρόνος αναζήτησης ήταν %1ω %2λ %3δ</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="244"/>
         <source>The maximum and also the predefined value is %1 minutes, which means %2 hours, so virtually unlimited.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Η μέγιστη και επίσης η προκαθορισμένη τιμή είναι %1 λεπτά, το οποίο σημαίνει %2 ώρες, δηλαδή πρακτικά απεριόριστη.</translation>
     </message>
 </context>
 <context>
@@ -54675,7 +54669,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="518"/>
         <source>Break with weight 100% in this slot</source>
-        <translation type="unfinished">Διάλειμμα με βαρύτητα 100% στην περίοδο αυτή</translation>
+        <translation>Διάλειμμα με βαρύτητα 100% στην περίοδο αυτή</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="546"/>
@@ -54702,7 +54696,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="610"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="683"/>
         <source>Added the following constraint:</source>
-        <translation type="unfinished">Προστέθηκε ο παρακάτω περιορισμός:</translation>
+        <translation>Προστέθηκε ο παρακάτω περιορισμός:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="625"/>
@@ -54710,13 +54704,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="698"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="710"/>
         <source>Small problem detected</source>
-        <translation type="unfinished">Εντοπίστηκε μικρό πρόβλημα</translation>
+        <translation>Εντοπίστηκε μικρό πρόβλημα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="626"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="638"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέος χρόνος έναρξης&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
+        <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέος χρόνος έναρξης&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="627"/>
@@ -54724,7 +54718,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="700"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="712"/>
         <source>A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again</source>
-        <translation type="unfinished">Ένα πιθανό πρόβλημα μπορεί να είναι ο συγχρονισμός. Οπότε, προσπαθήστε να κλείσετε τον διάλογο προβολής ωρολογίου προγράμματος και ανοίξτε τον ξανά</translation>
+        <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ο συγχρονισμός. Οπότε, προσπαθήστε να κλείσετε τον διάλογο προβολής ωρολογίου προγράμματος και ανοίξτε τον ξανά</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="628"/>
@@ -54732,43 +54726,43 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="701"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="713"/>
         <source>Please report possible bug</source>
-        <translation type="unfinished">Παρακαλώ να αναφέρετε το πιθανό σφάλμα λογισμικού (bug)</translation>
+        <translation>Παρακαλώ να αναφέρετε το πιθανό σφάλμα λογισμικού (bug)</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="632"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="705"/>
         <source>Constraint %1 will not be removed, because it is permanently locked. If you want to unlock it you must go to the constraints menu.</source>
-        <translation type="unfinished">Ο περιορισμός %1 δεν θα διαγραφεί, διότι είναι μόνιμα κλειδωμένος. Αν θέλετε να τον ξεκλειδώσετε, θα πρέπει να μεταβείτε στο μενού των περιορισμών.</translation>
+        <translation>Ο περιορισμός %1 δεν θα διαγραφεί, διότι είναι μόνιμα κλειδωμένος. Αν θέλετε να τον ξεκλειδώσετε, θα πρέπει να μεταβείτε στο μενού των περιορισμών.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="650"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="723"/>
         <source>You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints</source>
-        <translation type="unfinished">Ενδεχομένως να έχετε κάποιο πρόβλημα, διότι το FET περίμενε να διαγραφεί 1 περιορισμός, αλλά τελικά θα διαγραφούν %1 περιορισμοί</translation>
+        <translation>Ενδεχομένως να έχετε κάποιο πρόβλημα, διότι το FET περίμενε να διαγραφεί 1 περιορισμός, αλλά τελικά θα διαγραφούν %1 περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="653"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="726"/>
         <source>The following constraint will be deleted:</source>
-        <translation type="unfinished">Ο παρακάτω περιορισμός θα διαγραφεί:</translation>
+        <translation>Ο παρακάτω περιορισμός θα διαγραφεί:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="666"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="739"/>
         <source>Skip information</source>
-        <translation type="unfinished">Παράβλεψη πληροφορίας</translation>
+        <translation>Παράβλεψη πληροφορίας</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="666"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="739"/>
         <source>See next</source>
-        <translation type="unfinished">Προβολή επόμενου</translation>
+        <translation>Προβολή επόμενου</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="699"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="711"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέα αίθουσα&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
+        <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέα αίθουσα&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="900"/>
@@ -54910,7 +54904,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="736"/>
         <source>Break with weight 100% in this slot</source>
-        <translation type="unfinished">Διάλειμμα με βαρύτητα 100% στην περίοδο αυτή</translation>
+        <translation>Διάλειμμα με βαρύτητα 100% στην περίοδο αυτή</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="765"/>
@@ -54933,13 +54927,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="946"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="960"/>
         <source>Small problem detected</source>
-        <translation type="unfinished">Εντοπίστηκε μικρό πρόβλημα</translation>
+        <translation>Εντοπίστηκε μικρό πρόβλημα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="864"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="878"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέος χρόνος έναρξης&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
+        <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέος χρόνος έναρξης&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="865"/>
@@ -54947,7 +54941,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="948"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="962"/>
         <source>A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again</source>
-        <translation type="unfinished">Ένα πιθανό πρόβλημα μπορεί να είναι ο συγχρονισμός. Οπότε, προσπαθήστε να κλείσετε τον διάλογο προβολής ωρολογίου προγράμματος και ανοίξτε τον ξανά</translation>
+        <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ο συγχρονισμός. Οπότε, προσπαθήστε να κλείσετε τον διάλογο προβολής ωρολογίου προγράμματος και ανοίξτε τον ξανά</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="866"/>
@@ -54955,55 +54949,55 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="949"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="963"/>
         <source>Please report possible bug</source>
-        <translation type="unfinished">Παρακαλώ να αναφέρετε το πιθανό σφάλμα λογισμικού (bug)</translation>
+        <translation>Παρακαλώ να αναφέρετε το πιθανό σφάλμα λογισμικού (bug)</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="871"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="954"/>
         <source>Constraint %1 will not be removed, because it is permanently locked. If you want to unlock it you must go to the constraints menu.</source>
-        <translation type="unfinished">Ο περιορισμός %1 δεν θα διαγραφεί, διότι είναι μόνιμα κλειδωμένος. Αν θέλετε να τον ξεκλειδώσετε, θα πρέπει να μεταβείτε στο μενού των περιορισμών.</translation>
+        <translation>Ο περιορισμός %1 δεν θα διαγραφεί, διότι είναι μόνιμα κλειδωμένος. Αν θέλετε να τον ξεκλειδώσετε, θα πρέπει να μεταβείτε στο μενού των περιορισμών.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="898"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="983"/>
         <source>Added the following constraint:</source>
-        <translation type="unfinished">Προστέθηκε ο παρακάτω περιορισμός:</translation>
+        <translation>Προστέθηκε ο παρακάτω περιορισμός:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="903"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="988"/>
         <source>You may have a problem, because FET expected to add 1 constraint, but this is not possible. Please report possible bug</source>
-        <translation type="unfinished">Ενδεχομένως να έχετε κάποιο πρόβλημα, διότι το FET περίμενε να προστεθεί 1 περιορισμός, αλλά αυτό δεν είναι δυνατόν. Παρακαλώ να αναφέρετε το πιθανό σφάλμα λογισμικού (bug)</translation>
+        <translation>Ενδεχομένως να έχετε κάποιο πρόβλημα, διότι το FET περίμενε να προστεθεί 1 περιορισμός, αλλά αυτό δεν είναι δυνατόν. Παρακαλώ να αναφέρετε το πιθανό σφάλμα λογισμικού (bug)</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="909"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="994"/>
         <source>You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints</source>
-        <translation type="unfinished">Ενδεχομένως να έχετε κάποιο πρόβλημα, διότι το FET περίμενε να διαγραφεί 1 περιορισμός, αλλά τελικά θα διαγραφούν %1 περιορισμοί</translation>
+        <translation>Ενδεχομένως να έχετε κάποιο πρόβλημα, διότι το FET περίμενε να διαγραφεί 1 περιορισμός, αλλά τελικά θα διαγραφούν %1 περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="912"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="997"/>
         <source>The following constraint will be deleted:</source>
-        <translation type="unfinished">Ο παρακάτω περιορισμός θα διαγραφεί:</translation>
+        <translation>Ο παρακάτω περιορισμός θα διαγραφεί:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="925"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1010"/>
         <source>Skip information</source>
-        <translation type="unfinished">Παράβλεψη πληροφορίας</translation>
+        <translation>Παράβλεψη πληροφορίας</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="925"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1010"/>
         <source>See next</source>
-        <translation type="unfinished">Προβολή επόμενου</translation>
+        <translation>Προβολή επόμενου</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="947"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="961"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέα αίθουσα&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
+        <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέα αίθουσα&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1186"/>
@@ -55013,12 +55007,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1189"/>
         <source>A bold font cell means that the activity is locked in time, either permanently or not.</source>
-        <translation type="unfinished">Κελί με έντονη (bold) γραμματοσειρά: η δραστηριότητα είναι &quot;κλειδωμένη&quot; χρονικά (είτε μόνιμα &quot;κλειδωμένη&quot;, είτε όχι).</translation>
+        <translation>Κελί με έντονη (bold) γραμματοσειρά: η δραστηριότητα είναι &quot;κλειδωμένη&quot; χρονικά (είτε μόνιμα, είτε όχι).</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1191"/>
         <source>An italic font cell means that the activity is locked in space, either permanently or not.</source>
-        <translation type="unfinished">Κελί με πλάγια (italic) γραμματοσειρά: η δραστηριότητα είναι &quot;κλειδωμένη&quot; χωρικά (είτε μόνιμα &quot;κλειδωμένη&quot;, είτε όχι).</translation>
+        <translation>Κελί με πλάγια (italic) γραμματοσειρά: η δραστηριότητα είναι &quot;κλειδωμένη&quot; χωρικά (είτε μόνιμα, είτε όχι).</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1193"/>
@@ -55429,7 +55423,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="894"/>
         <source>Break with weight 100% in this slot</source>
-        <translation type="unfinished">Διάλειμμα με βαρύτητα 100% στην περίοδο αυτή</translation>
+        <translation>Διάλειμμα με βαρύτητα 100% στην περίοδο αυτή</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="922"/>
@@ -55452,13 +55446,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1140"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1154"/>
         <source>Small problem detected</source>
-        <translation type="unfinished">Εντοπίστηκε μικρό πρόβλημα</translation>
+        <translation>Εντοπίστηκε μικρό πρόβλημα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1058"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1072"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέος χρόνος έναρξης&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
+        <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέος χρόνος έναρξης&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1059"/>
@@ -55466,7 +55460,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1142"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1156"/>
         <source>A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again</source>
-        <translation type="unfinished">Ένα πιθανό πρόβλημα μπορεί να είναι ο συγχρονισμός. Οπότε, προσπαθήστε να κλείσετε τον διάλογο προβολής ωρολογίου προγράμματος και ανοίξτε τον ξανά</translation>
+        <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ο συγχρονισμός. Οπότε, προσπαθήστε να κλείσετε τον διάλογο προβολής ωρολογίου προγράμματος και ανοίξτε τον ξανά</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1060"/>
@@ -55474,55 +55468,55 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1143"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1157"/>
         <source>Please report possible bug</source>
-        <translation type="unfinished">Παρακαλώ να αναφέρετε το πιθανό σφάλμα λογισμικού (bug)</translation>
+        <translation>Παρακαλώ να αναφέρετε το πιθανό σφάλμα λογισμικού (bug)</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1065"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1148"/>
         <source>Constraint %1 will not be removed, because it is permanently locked. If you want to unlock it you must go to the constraints menu.</source>
-        <translation type="unfinished">Ο περιορισμός %1 δεν θα διαγραφεί, διότι είναι μόνιμα κλειδωμένος. Αν θέλετε να τον ξεκλειδώσετε, θα πρέπει να μεταβείτε στο μενού των περιορισμών.</translation>
+        <translation>Ο περιορισμός %1 δεν θα διαγραφεί, διότι είναι μόνιμα κλειδωμένος. Αν θέλετε να τον ξεκλειδώσετε, θα πρέπει να μεταβείτε στο μενού των περιορισμών.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1092"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1177"/>
         <source>Added the following constraint:</source>
-        <translation type="unfinished">Προστέθηκε ο παρακάτω περιορισμός:</translation>
+        <translation>Προστέθηκε ο παρακάτω περιορισμός:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1097"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1182"/>
         <source>You may have a problem, because FET expected to add 1 constraint, but this is not possible. Please report possible bug</source>
-        <translation type="unfinished">Ενδεχομένως να έχετε κάποιο πρόβλημα, διότι το FET περίμενε να προστεθεί 1 περιορισμός, αλλά αυτό δεν είναι δυνατόν. Παρακαλώ να αναφέρετε το πιθανό σφάλμα λογισμικού (bug)</translation>
+        <translation>Ενδεχομένως να έχετε κάποιο πρόβλημα, διότι το FET περίμενε να προστεθεί 1 περιορισμός, αλλά αυτό δεν είναι δυνατόν. Παρακαλώ να αναφέρετε το πιθανό σφάλμα λογισμικού (bug)</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1103"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1188"/>
         <source>You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints</source>
-        <translation type="unfinished">Ενδεχομένως να έχετε κάποιο πρόβλημα, διότι το FET περίμενε να διαγραφεί 1 περιορισμός, αλλά τελικά θα διαγραφούν %1 περιορισμοί</translation>
+        <translation>Ενδεχομένως να έχετε κάποιο πρόβλημα, διότι το FET περίμενε να διαγραφεί 1 περιορισμός, αλλά τελικά θα διαγραφούν %1 περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1106"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1191"/>
         <source>The following constraint will be deleted:</source>
-        <translation type="unfinished">Ο παρακάτω περιορισμός θα διαγραφεί:</translation>
+        <translation>Ο παρακάτω περιορισμός θα διαγραφεί:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1119"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1204"/>
         <source>Skip information</source>
-        <translation type="unfinished">Παράβλεψη πληροφορίας</translation>
+        <translation>Παράβλεψη πληροφορίας</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1119"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1204"/>
         <source>See next</source>
-        <translation type="unfinished">Προβολή επόμενου</translation>
+        <translation>Προβολή επόμενου</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1141"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1155"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέα αίθουσα&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
+        <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέα αίθουσα&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1380"/>
@@ -55532,12 +55526,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1383"/>
         <source>A bold font cell means that the activity is locked in time, either permanently or not.</source>
-        <translation type="unfinished">Κελί με έντονη (bold) γραμματοσειρά: η δραστηριότητα είναι &quot;κλειδωμένη&quot; χρονικά (είτε μόνιμα &quot;κλειδωμένη&quot;, είτε όχι).</translation>
+        <translation>Κελί με έντονη (bold) γραμματοσειρά: η δραστηριότητα είναι &quot;κλειδωμένη&quot; χρονικά (είτε μόνιμα, είτε όχι).</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1385"/>
         <source>An italic font cell means that the activity is locked in space, either permanently or not.</source>
-        <translation type="unfinished">Κελί με πλάγια (italic) γραμματοσειρά: η δραστηριότητα είναι &quot;κλειδωμένη&quot; χωρικά (είτε μόνιμα &quot;κλειδωμένη&quot;, είτε όχι).</translation>
+        <translation>Κελί με πλάγια (italic) γραμματοσειρά: η δραστηριότητα είναι &quot;κλειδωμένη&quot; χωρικά (είτε μόνιμα, είτε όχι).</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1387"/>
@@ -55691,12 +55685,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="509"/>
         <source>Teacher is not available 100% in this slot</source>
-        <translation type="unfinished">Εκπαιδευτικός 100% μη διαθέσιμος στην περίοδο αυτή</translation>
+        <translation>Εκπαιδευτικός 100% μη διαθέσιμος στην περίοδο αυτή</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="513"/>
         <source>Break with weight 100% in this slot</source>
-        <translation type="unfinished">Διάλειμμα με βαρύτητα 100% στην περίοδο αυτή</translation>
+        <translation>Διάλειμμα με βαρύτητα 100% στην περίοδο αυτή</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="542"/>
@@ -55723,7 +55717,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="603"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="675"/>
         <source>Added the following constraint:</source>
-        <translation type="unfinished">Προστέθηκε ο παρακάτω περιορισμός:</translation>
+        <translation>Προστέθηκε ο παρακάτω περιορισμός:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="617"/>
@@ -55731,13 +55725,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="691"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="703"/>
         <source>Small problem detected</source>
-        <translation type="unfinished">Εντοπίστηκε μικρό πρόβλημα</translation>
+        <translation>Εντοπίστηκε μικρό πρόβλημα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="618"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="630"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέος χρόνος έναρξης&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
+        <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέος χρόνος έναρξης&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="619"/>
@@ -55745,7 +55739,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="693"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="705"/>
         <source>A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again</source>
-        <translation type="unfinished">Ένα πιθανό πρόβλημα μπορεί να είναι ο συγχρονισμός. Οπότε, προσπαθήστε να κλείσετε τον διάλογο προβολής ωρολογίου προγράμματος και ανοίξτε τον ξανά</translation>
+        <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ο συγχρονισμός. Οπότε, προσπαθήστε να κλείσετε τον διάλογο προβολής ωρολογίου προγράμματος και ανοίξτε τον ξανά</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="620"/>
@@ -55753,43 +55747,43 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="694"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="706"/>
         <source>Please report possible bug</source>
-        <translation type="unfinished">Παρακαλώ να αναφέρετε το πιθανό σφάλμα λογισμικού (bug)</translation>
+        <translation>Παρακαλώ να αναφέρετε το πιθανό σφάλμα λογισμικού (bug)</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="624"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="698"/>
         <source>Constraint %1 will not be removed, because it is permanently locked. If you want to unlock it you must go to the constraints menu.</source>
-        <translation type="unfinished">Ο περιορισμός %1 δεν θα διαγραφεί, διότι είναι μόνιμα κλειδωμένος. Αν θέλετε να τον ξεκλειδώσετε, θα πρέπει να μεταβείτε στο μενού των περιορισμών.</translation>
+        <translation>Ο περιορισμός %1 δεν θα διαγραφεί, διότι είναι μόνιμα κλειδωμένος. Αν θέλετε να τον ξεκλειδώσετε, θα πρέπει να μεταβείτε στο μενού των περιορισμών.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="642"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="716"/>
         <source>You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints</source>
-        <translation type="unfinished">Ενδεχομένως να έχετε κάποιο πρόβλημα, διότι το FET περίμενε να διαγραφεί 1 περιορισμός, αλλά τελικά θα διαγραφούν %1 περιορισμοί</translation>
+        <translation>Ενδεχομένως να έχετε κάποιο πρόβλημα, διότι το FET περίμενε να διαγραφεί 1 περιορισμός, αλλά τελικά θα διαγραφούν %1 περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="645"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="719"/>
         <source>The following constraint will be deleted:</source>
-        <translation type="unfinished">Ο παρακάτω περιορισμός θα διαγραφεί:</translation>
+        <translation>Ο παρακάτω περιορισμός θα διαγραφεί:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="658"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="732"/>
         <source>Skip information</source>
-        <translation type="unfinished">Παράβλεψη πληροφορίας</translation>
+        <translation>Παράβλεψη πληροφορίας</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="658"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="732"/>
         <source>See next</source>
-        <translation type="unfinished">Προβολή επόμενου</translation>
+        <translation>Προβολή επόμενου</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="692"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="704"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέα αίθουσα&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
+        <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέα αίθουσα&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="893"/>
@@ -56028,12 +56022,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1155"/>
         <source>A bold font cell means that the activity is locked in time, either permanently or not.</source>
-        <translation>Κελί με έντονη (bold) γραμματοσειρά: η δραστηριότητα είναι &quot;κλειδωμένη&quot; χρονικά (είτε μόνιμα &quot;κλειδωμένη&quot;, είτε όχι).</translation>
+        <translation>Κελί με έντονη (bold) γραμματοσειρά: η δραστηριότητα είναι &quot;κλειδωμένη&quot; χρονικά (είτε μόνιμα, είτε όχι).</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1157"/>
         <source>An italic font cell means that the activity is locked in space, either permanently or not.</source>
-        <translation>Κελί με πλάγια (italic) γραμματοσειρά: η δραστηριότητα είναι &quot;κλειδωμένη&quot; χωρικά (είτε μόνιμα &quot;κλειδωμένη&quot;, είτε όχι).</translation>
+        <translation>Κελί με πλάγια (italic) γραμματοσειρά: η δραστηριότητα είναι &quot;κλειδωμένη&quot; χωρικά (είτε μόνιμα, είτε όχι).</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1159"/>
