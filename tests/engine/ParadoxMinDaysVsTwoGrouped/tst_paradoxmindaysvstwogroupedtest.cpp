@@ -27,6 +27,7 @@ private slots:
 	void init();
 	void cleanup();
 	void test_generate_error_message();
+	void test_generate_error_message_reverse_order();
 	void test_generate_multiple_error_messages();
 	void test_reset_properly();
 };
@@ -71,6 +72,43 @@ void ParadoxMinDaysVsTwoGroupedTest::test_generate_error_message()
 	ctr = new ConstraintMinDaysBetweenActivities(100, false, 2, acts, 1);
 	rules.addTimeConstraint(ctr);
 	ctr = new ConstraintTwoActivitiesGrouped(100, 12345, 23456);
+	rules.addTimeConstraint(ctr);
+	rules.computeInternalStructure();
+
+	ParadoxMinDaysVsTwoGrouped paradox;
+	processTimeSpaceConstraints(NULL);
+	bool result = paradox.prepare(rules);
+	QVERIFY2(!result, "Paradox found");
+
+	QCOMPARE(paradox.getErrors().size(), 1);
+}
+
+void ParadoxMinDaysVsTwoGroupedTest::test_generate_error_message_reverse_order()
+{
+	QStringList teachers;
+	QStringList activitytags;
+	QStringList studentsnames;
+	QString subject("subject1");
+	QList<int> acts;
+	acts << 12345 << 23456;
+
+	Rules &rules = gt.rules;
+	if (!rules.initialized)
+		rules.init();
+	Subject *psubject = new Subject();
+	psubject->name = subject;
+	rules.addSubjectFast(psubject);
+	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
+	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
+	rules.computeInternalStructure();
+
+	TimeConstraint * ctr = new ConstraintBasicCompulsoryTime();
+	rules.addTimeConstraint(ctr);
+	ConstraintBasicCompulsorySpace * sctr = new ConstraintBasicCompulsorySpace();
+	rules.addSpaceConstraint(sctr);
+	ctr = new ConstraintMinDaysBetweenActivities(100, false, 2, acts, 1);
+	rules.addTimeConstraint(ctr);
+	ctr = new ConstraintTwoActivitiesGrouped(100, 23456, 12345);
 	rules.addTimeConstraint(ctr);
 	rules.computeInternalStructure();
 
