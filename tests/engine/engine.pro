@@ -11,3 +11,4 @@ SUBDIRS += \
     ParadoxMinDaysVsSameDay \
     ParadoxMinGapsVsMinDaysConsecutive \
     ParadoxMinGapsVsConsecutive \
+    ParadoxMinGapsVs2Grouped \

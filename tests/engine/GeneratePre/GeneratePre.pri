@@ -27,6 +27,7 @@ SOURCES += \
     ../../../src/engine/constraints/paradoxmindaysvssameday.cpp \
     ../../../src/engine/constraints/paradoxmingapsvsmindaysconsecutive.cpp \
     ../../../src/engine/constraints/paradoxmingapsvsconsecutive.cpp \
+    ../../../src/engine/constraints/paradoxmingapsvs2grouped.cpp \
     ../../../src/engine/messageboxes.cpp \
     ../../../src/engine/randomknuth.cpp \
     \
