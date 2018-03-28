@@ -57,6 +57,7 @@ extern Timetable gt;
 #include "constraints/paradoxmingapsvsconsecutive.h"
 #include "constraints/paradoxmingapsvs2grouped.h"
 #include "constraints/paradoxmingapsvs3grouped.h"
+#include "constraints/paradoxorderedvsreversedconsecutive.h"
 
 //extern QApplication* pqapplication;
 
@@ -1001,11 +1002,13 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 	ParadoxMinGapsVsConsecutive paradoxMinGapsConsecutive;
 	ParadoxMinGapsVs2Grouped paradoxMinGaps2Grouped;
 	ParadoxMinGapsVs3Grouped paradoxMinGaps3Grouped;
+	ParadoxOrderedVsReversedConsecutive paradoxOrderedConsecutive;
 	QList<ConstraintPre*> paradoxes;
 	paradoxes << &paradox2consecutive << &paradox2grouped << &paradox3grouped;
 	paradoxes << &paradoxSameDay;
 	paradoxes << &paradoxMinGapsMinDaysConsecutive;
 	paradoxes << &paradoxMinGapsConsecutive << &paradoxMinGaps2Grouped << &paradoxMinGaps3Grouped;
+	paradoxes << &paradoxOrderedConsecutive;
 	foreach (ConstraintPre* paradox, paradoxes) {
 		if (!paradox->prepare(gt.rules)) {
 			reportSkippableErrors(parent, paradox->getErrors());

@@ -31,6 +31,7 @@ SOURCES += \
  	../../../../src/engine/constraints/paradoxmingapsvsconsecutive.cpp \
  	../../../../src/engine/constraints/paradoxmingapsvs2grouped.cpp \
  	../../../../src/engine/constraints/paradoxmingapsvs3grouped.cpp \
+    ../../../../src/engine/constraints/paradoxorderedvsreversedconsecutive.cpp \
  	../../../../src/engine/spaceconstraint.cpp \
 
 HEADERS += \
