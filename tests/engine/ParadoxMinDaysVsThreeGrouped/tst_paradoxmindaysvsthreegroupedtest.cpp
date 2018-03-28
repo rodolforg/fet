@@ -26,7 +26,7 @@ public:
 private Q_SLOTS:
 	void init();
 	void cleanup();
-	void test_generate_error_message_first_actvity_pair();
+	void test_generate_error_message_first_activity_pair();
 	void test_generate_multiple_error_messages();
 	void test_reset_properly();
 	void test_all_pairs();
@@ -46,7 +46,7 @@ void ParadoxMinDaysVsThreeGroupedTest::cleanup()
 	gt.rules.kill();
 }
 
-void ParadoxMinDaysVsThreeGroupedTest::test_generate_error_message_first_actvity_pair()
+void ParadoxMinDaysVsThreeGroupedTest::test_generate_error_message_first_activity_pair()
 {
 	QStringList teachers;
 	QStringList activitytags;

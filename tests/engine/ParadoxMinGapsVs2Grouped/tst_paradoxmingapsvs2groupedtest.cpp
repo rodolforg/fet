@@ -232,7 +232,7 @@ void ParadoxMinGapsVs2GroupedTest::test_added_to_generate()
 	rules.computeInternalStructure();
 
 	bool success = processTimeSpaceConstraints(NULL);
-	QVERIFY2(!success, "Does not checked in generate_pre");
+	QVERIFY2(!success, "Paradox not checked in generate_pre");
 }
 
 QTEST_APPLESS_MAIN(ParadoxMinGapsVs2GroupedTest)
