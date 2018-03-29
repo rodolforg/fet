@@ -591,6 +591,9 @@ ErrorList Rules::computeInternalStructure()
 				
 			errors << ErrorCode(ErrorCode::Warning, s, skipInactiveTimeConstraintsId);
 		}
+		else if(tctr->weightPercentage == 0){
+			toSkipTimeSet.insert(tctrindex);
+		}
 		else{
 			_c++;
 		}
@@ -661,6 +664,9 @@ ErrorList Rules::computeInternalStructure()
 				s+=sctr->getDetailedDescription(*this);
 				
 			errors << ErrorCode(ErrorCode::Warning, s, skipInactiveSpaceConstraintsId);
+		}
+		else if(sctr->weightPercentage == 0){
+			toSkipSpaceSet.insert(sctrindex);
 		}
 		else{
 			_c++;
