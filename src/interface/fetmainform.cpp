@@ -1321,7 +1321,7 @@ bool FetMainForm::fileSaveAs()
 		 QMessageBox::Yes|QMessageBox::No) == QMessageBox::No)
 		 	return false;
 			
-	ErrorCode erc = gt.rules.write(INPUT_FILENAME_XML);
+	ErrorCode erc = gt.rules.write(s);
 	if(!erc.isError()){
 		INPUT_FILENAME_XML = s;
 
