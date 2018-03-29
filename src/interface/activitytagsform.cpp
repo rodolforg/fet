@@ -316,10 +316,10 @@ void ActivityTagsForm::notPrintableActivityTag()
 
 void ActivityTagsForm::help()
 {
-	QMessageBox::information(this, tr("FET help on activity tags"), 
+	QMessageBox::information(this, tr("FET help on activity tags"),
 	 tr("Activity tag is a field which can be used or not, depending on your wish (optional field)."
-	 " It is designed to help you with some constraints. Each activity has a possible empty list of activity tags"
-	 " (if you don't use activity tags, the list will be empty)"));
+	 " It is designed to help you with some constraints. Each activity has a list of activity tags"
+	 " (which may be empty)."));
 }
 
 void ActivityTagsForm::comments()

@@ -266,7 +266,7 @@ void AddConstraintActivitiesSameStartingTimeForm::addConstraint()
 						.arg(_id)
 						.arg(tmp);
 					QMessageBox::warning(this, tr("FET information"), s);
-					return;				
+					return;
 				}
 			}
 		}

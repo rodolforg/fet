@@ -1995,7 +1995,7 @@ Versions 5.33.0 - 5.33.3
 	Reported by chernous.
 - Version 5.33.2
 	- Updated to Qt 5.9.2.
-	- Added a new complete Spanish translation, by Emiliano Llano Díaz.
+	- Added a new complete Spanish translation, by Emiliano Llano Díaz, who is the new translator.
 	- The homepage of FET was updated to use SSL (https protocol instead of http).
 	- Code cleanup.
 - Version 5.33.3
@@ -2021,7 +2021,7 @@ Versions 5.35.0 - 5.35.v
 	(instead, they were invisible). Reported by kdrosos and sigit_yuwono.
 	- Minor bugs fixed (reported by Vangelis Karafillidis).
 	- Added a partial Japanese translation, by Taro Tada.
-	- Added a new partial Greek translation, by Vangelis Karafillidis.
+	- Added a new partial Greek translation, by Vangelis Karafillidis, who is the new translator.
 	- Updated the Czech translation, by Pavel Fric.
 - Version 5.35.1
 	- The alphabetic sorting of the items now respects the user's locale (the special characters are better ordered).
@@ -2035,3 +2035,19 @@ Versions 5.35.0 - 5.35.v
 	- Updated the Turkish translation, by Yakup Kadri Demirci, who is the new translator.
 	- Updated the Greek translation, by Vangelis Karafillidis.
 	- Updated the Japanese translation, by Taro Tada.
+- Version 5.35.3
+	- Updated to Qt 5.10.1.
+	- Minor strings bugs fixed (reported by Vangelis Karafillidis).
+	- Updated the Catalan translation (which is now complete), by Innocent De Marchi, who is the new translator.
+	- Updated the Japanese translation, by Taro Tada.
+	- Updated the Greek translation, by Vangelis Karafillidis.
+- Version 5.35.4
+	- Fixed two compilation errors under the Microsoft Visual C++ compiler (reported by Volker Dirr). Now FET can be compiled with this compiler.
+	- The Help->About dialog of FET is now easily translatable into other languages (suggested by rodolforg, Innocent De Marchi, and other users).
+	- Minor string bug fixed (reported by Vangelis Karafillidis).
+	- Updated the Greek translation, by Vangelis Karafillidis.
+	- Added a new example file from Brazil, by francescotorres.
+- Version 5.35.5
+	- Bug fix when using the old Qt 4: the special characters in the Help->About dialog were incorrectly displayed (bug introduced in the previous version, 5.35.4).
+	- Minor fix: the example file translations/test-all-constraints.fet which should contain all the types of constraints was missing two of them. Corrected.
+	- Updated the Greek translation, by Vangelis Karafillidis.

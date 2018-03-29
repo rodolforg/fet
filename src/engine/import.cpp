@@ -1021,7 +1021,7 @@ int Import::readFields(QWidget* parent){
 							}
 						}
 						if(ok && !itemOfField[FIELD_BUILDING_NAME].isEmpty() && itemOfField[FIELD_ROOM_NAME].isEmpty() && i==FIELD_ROOM_NAME){
-							warnText+=Import::tr("Warning in line %1: Field with building name doesn't affect to a room").arg(lineNumber)+"\n";
+							warnText+=Import::tr("Warning in line %1: Field with building name doesn't relate to a room").arg(lineNumber)+"\n";
 						}
 						if(ok && (i==FIELD_YEAR_NUMBER_OF_STUDENTS || i==FIELD_GROUP_NUMBER_OF_STUDENTS || i==FIELD_SUBGROUP_NUMBER_OF_STUDENTS || i==FIELD_ROOM_CAPACITY || i==FIELD_TOTAL_DURATION || i==FIELD_MIN_DAYS)){
 							if(!itemOfField[i].isEmpty()){

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<fet version="5.31.0">
+<fet version="5.35.5">
 
 <Institution_Name>Default institution</Institution_Name>
 
@@ -1661,6 +1661,19 @@
 	<Active>true</Active>
 	<Comments></Comments>
 </ConstraintStudentsMinRestingHours>
+<ConstraintStudentsSetMaxDaysPerWeek>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Students>y1 a</Students>
+	<Max_Days_Per_Week>4</Max_Days_Per_Week>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintStudentsSetMaxDaysPerWeek>
+<ConstraintStudentsMaxDaysPerWeek>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Max_Days_Per_Week>3</Max_Days_Per_Week>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintStudentsMaxDaysPerWeek>
 <ConstraintTeacherMinContinuousGapInInterval>
 	<Weight_Percentage>100</Weight_Percentage>
 	<Teacher_Name>t1</Teacher_Name>
