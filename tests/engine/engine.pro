@@ -14,3 +14,4 @@ SUBDIRS += \
     ParadoxMinGapsVs2Grouped \
     ParadoxMinGapsVs3Grouped \
     ParadoxOrderedVsReversedConsecutive \
+    ParadoxConsecutiveVsConsecutive \
