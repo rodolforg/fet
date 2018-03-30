@@ -22,7 +22,6 @@ File fet.h
 #ifndef FET_H
 #define FET_H
 
-#include "timetable_defs.h"
 #include "timetable.h"
 
 class FetTranslate: public QObject{
