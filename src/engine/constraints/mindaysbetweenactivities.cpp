@@ -50,6 +50,12 @@ bool MinDaysBetweenActivities::prepare(const Rules &rules)
 								continue;
 							}
 						}
+
+						if (md->minDays == 0 && !md->consecutiveIfSameDay) {
+							// Nothing to do in this case; ignore constraint
+							continue;
+						}
+
 						int m=md->minDays;
 
 						activities[ai1].append(ai2);
