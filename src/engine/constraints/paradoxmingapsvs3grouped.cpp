@@ -43,7 +43,6 @@ bool ParadoxMinGapsVs3Grouped::prepare(const Rules& rules)
 					int pai2 = pair.second;
 					for (int mai1 = 0; mai1 < minGapsBetweenActivitiesList.activities[pai1].size(); mai1++) {
 						if (minGapsBetweenActivitiesList.activities[pai1][mai1] == pai2 && minGapsBetweenActivitiesList.weightPercentages[pai1][mai1] >= 100) {
-							if (minGapsBetweenActivitiesList.minGaps[pai1][mai1] > 0) {
 								QString s=GeneratePreTranslate::tr("There are contradictory constraints with activities %1 and %2.")
 								 .arg(rules.internalActivitiesList[pai1].id)
 								 .arg(rules.internalActivitiesList[pai2].id);
@@ -59,7 +58,6 @@ bool ParadoxMinGapsVs3Grouped::prepare(const Rules& rules)
 								errors << ErrorCode(ErrorCode::Error, s, errorGroupId);
 
 								ok = false;
-							}
 						}
 					}
 				}

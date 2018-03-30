@@ -51,6 +51,12 @@ bool MinGapsBetweenActivities::prepare(const Rules &rules)
 								continue;
 							}
 						}
+
+						if (mg->minGaps == 0) {
+							// Nothing to do in this case; ignore constraint
+							continue;
+						}
+
 						int m=mg->minGaps;
 
 						activities[ai1].append(ai2);

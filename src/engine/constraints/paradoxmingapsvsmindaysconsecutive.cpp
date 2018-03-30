@@ -23,8 +23,6 @@ bool ParadoxMinGapsVsMinDaysConsecutive::prepare(const Rules& rules)
 
 	for(int ai1=0; ai1<rules.nInternalActivities; ai1++){
 		for (int i = 0; i < minGapsBetweenActivitiesList.weightPercentages[ai1].size(); i++){
-			if (minGapsBetweenActivitiesList.minGaps[ai1][i] == 0)
-				continue;
 			if (minGapsBetweenActivitiesList.weightPercentages[ai1][i] >= 100) {
 				int ai2 = minGapsBetweenActivitiesList.activities[ai1][i];
 				// avoid double checking
