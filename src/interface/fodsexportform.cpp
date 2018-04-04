@@ -894,7 +894,7 @@ FOdsExportForm::Styles::Styles()
 	break_time_row = "row_intervalo";
 
 	default_filled_cell = "Conteúdo_20_preenchido";
-	default_filled_last_cell = "Conteúdo_20_preenchido_fim";
+	default_filled_last_cell = "Conteúdo_20_preenchido_20_fim";
 
 	day_end_row = "row_fim_dia";
 	day_end_cell = "Fim_20_Tabela";
