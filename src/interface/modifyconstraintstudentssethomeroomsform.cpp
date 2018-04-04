@@ -17,6 +17,7 @@
 
 #include <QMessageBox>
 #include "centerwidgetonscreen.h"
+#include "invisiblesubgrouphelper.h"
 
 #include "modifyconstraintstudentssethomeroomsform.h"
 
@@ -76,7 +77,7 @@ ModifyConstraintStudentsSetHomeRoomsForm::ModifyConstraintStudentsSetHomeRoomsFo
 		}
 	}
 	if(j<0)
-		showWarningForInvisibleSubgroupConstraint(this, this->_ctr->studentsName);
+		InvisibleSubgroupHelper::showWarningForConstraintCase(this, this->_ctr->studentsName);
 	else
 		assert(j>=0);
 	studentsComboBox->setCurrentIndex(j);
@@ -107,7 +108,7 @@ void ModifyConstraintStudentsSetHomeRoomsForm::updateRoomsListWidget()
 void ModifyConstraintStudentsSetHomeRoomsForm::ok()
 {
 	if(studentsComboBox->currentIndex()<0){
-		showWarningCannotModifyConstraintInvisibleSubgroupConstraint(this, this->_ctr->studentsName);
+		InvisibleSubgroupHelper::showWarningCannotModifyConstraintCase(this, this->_ctr->studentsName);
 		return;
 	}
 

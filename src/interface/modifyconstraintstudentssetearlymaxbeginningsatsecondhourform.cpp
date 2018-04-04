@@ -17,6 +17,7 @@
 
 #include <QMessageBox>
 #include "centerwidgetonscreen.h"
+#include "invisiblesubgrouphelper.h"
 
 #include "modifyconstraintstudentssetearlymaxbeginningsatsecondhourform.h"
 #include "timeconstraint.h"
@@ -66,7 +67,7 @@ ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::ModifyConstraintS
 		}
 	}
 	if(j<0)
-		showWarningForInvisibleSubgroupConstraint(this, this->_ctr->students);
+		InvisibleSubgroupHelper::showWarningForConstraintCase(this, this->_ctr->students);
 	else
 		assert(j>=0);
 	studentsComboBox->setCurrentIndex(j);
@@ -84,7 +85,7 @@ ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::~ModifyConstraint
 void ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::ok()
 {
 	if(studentsComboBox->currentIndex()<0){
-		showWarningCannotModifyConstraintInvisibleSubgroupConstraint(this, this->_ctr->students);
+		InvisibleSubgroupHelper::showWarningCannotModifyConstraintCase(this, this->_ctr->students);
 		return;
 	}
 

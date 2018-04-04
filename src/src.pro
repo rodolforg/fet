@@ -501,6 +501,7 @@ SOURCES += \
     interface/editcommentsform.cpp \
 	interface/errorrenderer.cpp \
 	interface/fetguisettings.cpp \
+	interface/invisiblesubgrouphelper.cpp \
 
 HEADERS += \
 	engine/timetableexport.h \
@@ -1008,6 +1009,7 @@ HEADERS += \
     interface/editcommentsform.h \
 	interface/errorrenderer.h \
 	interface/fetguisettings.h \
+	interface/invisiblesubgrouphelper.h \
 
 FORMS += \
 	interface/fetmainform_template.ui \

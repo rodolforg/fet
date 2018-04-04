@@ -17,6 +17,7 @@
 
 #include <QMessageBox>
 #include "centerwidgetonscreen.h"
+#include "invisiblesubgrouphelper.h"
 
 #include "modifyconstraintactivitiespreferredtimeslotsform.h"
 #include "timeconstraint.h"
@@ -121,7 +122,7 @@ void ModifyConstraintActivitiesPreferredTimeSlotsForm::updateStudentsComboBox(){
 		}
 	}
 	if (studentsComboBox->findText(this->_ctr->p_studentsName) < 0)
-		showWarningForInvisibleSubgroupConstraint(this, this->_ctr->p_studentsName);
+		InvisibleSubgroupHelper::showWarningForConstraintCase(this, this->_ctr->p_studentsName);
 	studentsComboBox->setCurrentText(this->_ctr->p_studentsName);
 }
 
@@ -154,7 +155,7 @@ void ModifyConstraintActivitiesPreferredTimeSlotsForm::ok()
 	}
 
 	if(studentsComboBox->currentIndex()<0){
-		showWarningCannotModifyConstraintInvisibleSubgroupConstraint(this, this->_ctr->p_studentsName);
+		InvisibleSubgroupHelper::showWarningCannotModifyConstraintCase(this, this->_ctr->p_studentsName);
 		return;
 	}
 	

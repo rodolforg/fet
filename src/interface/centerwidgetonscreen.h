@@ -38,8 +38,4 @@ void restoreFETDialogGeometry(QWidget* widget, const QString& alternativeName=QS
 
 void setStretchAvailabilityTableNicely(QTableWidget* notAllowedTimesTable);
 
-void showWarningForInvisibleSubgroupConstraint(QWidget* parent, const QString& initialSubgroupName);
-void showWarningCannotModifyConstraintInvisibleSubgroupConstraint(QWidget* parent, const QString& initialSubgroupName);
-void showWarningForInvisibleSubgroupActivity(QWidget* parent, const QString& initialSubgroupName);
-
 #endif

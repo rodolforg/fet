@@ -17,6 +17,7 @@
 
 #include <QMessageBox>
 #include "centerwidgetonscreen.h"
+#include "invisiblesubgrouphelper.h"
 
 #include "modifyconstraintstudentssetminrestinghoursform.h"
 #include "timeconstraint.h"
@@ -71,14 +72,14 @@ void ModifyConstraintStudentsSetMinRestingHoursForm::updateStudentsComboBox(){
 		}
 	}
 	if (studentsComboBox->findText(this->_ctr->students) < 0)
-		showWarningForInvisibleSubgroupConstraint(this, this->_ctr->students);
+		InvisibleSubgroupHelper::showWarningForConstraintCase(this, this->_ctr->students);
 	studentsComboBox->setCurrentText(this->_ctr->students);
 }
 
 void ModifyConstraintStudentsSetMinRestingHoursForm::ok()
 {
 	if(studentsComboBox->currentIndex()<0){
-		showWarningCannotModifyConstraintInvisibleSubgroupConstraint(this, this->_ctr->students);
+		InvisibleSubgroupHelper::showWarningCannotModifyConstraintCase(this, this->_ctr->students);
 		return;
 	}
 

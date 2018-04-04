@@ -17,6 +17,7 @@
 
 #include <QMessageBox>
 #include "centerwidgetonscreen.h"
+#include "invisiblesubgrouphelper.h"
 
 #include "modifyconstraintstudentssetintervalmaxdaysperweekform.h"
 #include "timeconstraint.h"
@@ -84,7 +85,7 @@ void ModifyConstraintStudentsSetIntervalMaxDaysPerWeekForm::updateStudentsComboB
 		}
 	}
 	if (studentsComboBox->findText(this->_ctr->students) < 0)
-		showWarningForInvisibleSubgroupConstraint(this, this->_ctr->students);
+		InvisibleSubgroupHelper::showWarningForConstraintCase(this, this->_ctr->students);
 	studentsComboBox->setCurrentText(this->_ctr->students);
 }
 
@@ -96,7 +97,7 @@ void ModifyConstraintStudentsSetIntervalMaxDaysPerWeekForm::updateMaxDaysSpinBox
 void ModifyConstraintStudentsSetIntervalMaxDaysPerWeekForm::ok()
 {
 	if(studentsComboBox->currentIndex()<0){
-		showWarningCannotModifyConstraintInvisibleSubgroupConstraint(this, this->_ctr->students);
+		InvisibleSubgroupHelper::showWarningCannotModifyConstraintCase(this, this->_ctr->students);
 		return;
 	}
 

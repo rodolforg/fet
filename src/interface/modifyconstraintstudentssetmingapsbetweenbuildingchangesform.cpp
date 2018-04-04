@@ -17,6 +17,7 @@
 
 #include <QMessageBox>
 #include "centerwidgetonscreen.h"
+#include "invisiblesubgrouphelper.h"
 
 #include "modifyconstraintstudentssetmingapsbetweenbuildingchangesform.h"
 #include "spaceconstraint.h"
@@ -69,14 +70,14 @@ void ModifyConstraintStudentsSetMinGapsBetweenBuildingChangesForm::updateStudent
 		}
 	}
 	if (studentsComboBox->findText(this->_ctr->studentsName) < 0)
-		showWarningForInvisibleSubgroupConstraint(this, this->_ctr->studentsName);
+		InvisibleSubgroupHelper::showWarningForConstraintCase(this, this->_ctr->studentsName);
 	studentsComboBox->setCurrentText(this->_ctr->studentsName);
 }
 
 void ModifyConstraintStudentsSetMinGapsBetweenBuildingChangesForm::ok()
 {
 	if(studentsComboBox->currentIndex()<0){
-		showWarningCannotModifyConstraintInvisibleSubgroupConstraint(this, this->_ctr->studentsName);
+		InvisibleSubgroupHelper::showWarningCannotModifyConstraintCase(this, this->_ctr->studentsName);
 		return;
 	}
 

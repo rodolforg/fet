@@ -29,6 +29,7 @@
 #include "activityplanningform.h"
 
 #include "centerwidgetonscreen.h"
+#include "invisiblesubgrouphelper.h"
 
 #include <QString>
 #include <QMessageBox>
@@ -155,7 +156,7 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 	
 	if(studentsSetName!=""){
 		if(cist==0){
-			showWarningForInvisibleSubgroupActivity(parent, studentsSetName);
+			InvisibleSubgroupHelper::showWarningForActivityCase(parent, studentsSetName);
 
 			showedStudents.clear();
 			showedStudents.insert("");
