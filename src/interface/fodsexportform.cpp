@@ -374,7 +374,7 @@ void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, con
 	text << table_column_tag.arg(styles.hour_column).arg(styles.hour_cell);
 	int required_columns = 0;
 	for(int d=0; d<rules.nDaysPerWeek; d++) {
-		const char *default_cell_style = (d < rules.nDaysPerWeek - 1) ? styles.default_empty_cell : "Conteúdo";//"Conteúdo_20_fim";
+		const char *default_cell_style = (d < rules.nDaysPerWeek - 1) ? styles.default_empty_cell : styles.default_empty_last_cell;//"Conteúdo_20_fim";
 		const int columnsToday = table.maxSimultaneousActivitiesPerDay(tblIdx,d) > 1 ? table.maxSimultaneousActivitiesPerDay(tblIdx,d) : 1;
 		const char *col_style = columnsToday <= 1 ? styles.single_activity_day_column : styles.multiple_activities_day_column;
 
@@ -442,7 +442,7 @@ void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, con
 					if (nColumnsToday > 1)
 						text << cell_empty_covered_spanned_tag.arg(styles.default_empty_cell).arg(nColumnsToday-1);
 				} else if (nActivitiesNow == 1) {
-					const char *style = d < rules.nDaysPerWeek-1 ? styles.default_filled_cell : "Conteúdo_20_preenchido";//"Conteúdo_20_preenchido_20_fim";
+					const char *style = d < rules.nDaysPerWeek-1 ? styles.default_filled_cell : styles.default_filled_last_cell;//"Conteúdo_20_preenchido_20_fim";
 					const Activity *act = table.data[tblIdx][d][h].elements[0].activity;
 					if (h > 0 && table.data[tblIdx][d][h-1].contains(act) && !wasBreakTime) {
 						// covered
@@ -465,7 +465,7 @@ void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, con
 					if (nColumnsToday != nActivitiesNow)
 						text << cell_empty_covered_spanned_tag.arg(style).arg(nColumnsToday-1);
 				} else {
-					const char *style = d < rules.nDaysPerWeek-1 ? styles.default_filled_cell : "Conteúdo_20_preenchido";//"Conteúdo_20_preenchido_20_fim";
+					const char *style = d < rules.nDaysPerWeek-1 ? styles.default_filled_cell : styles.default_filled_last_cell;//"Conteúdo_20_preenchido_20_fim";
 					QList<TimetableExportHelper::Element::SubElement> elements = table.data[tblIdx][d][h].elements;
 					struct A{
 						A(const Rules &rules, const QString &yearName) :
