@@ -150,6 +150,8 @@ void FOdsExportForm::writeRoomsTables(QTextStream& stream, int whatShowFlags) co
 	roomStyles.table = "pm2";
 	roomStyles.data_row = "row_hora_normal_professor";
 	roomStyles.hour_cell = "Hora_sem_borda";
+	roomStyles.default_empty_cell = "Conteúdo_20_vazio_professor";
+	roomStyles.default_empty_last_cell = "Conteúdo_20_vazio_professor_fim";
 
 	stream.setCodec("UTF-8");
 
@@ -213,6 +215,8 @@ void FOdsExportForm::writeTeachersTables(QTextStream& stream, int whatShowFlags)
 	teacherStyles.table = "pm2";
 	teacherStyles.data_row = "row_hora_normal_professor";
 	teacherStyles.hour_cell = "Hora_sem_borda";
+	teacherStyles.default_empty_cell = "Conteúdo_20_vazio_professor";
+	teacherStyles.default_empty_last_cell = "Conteúdo_20_vazio_professor_fim";
 
 	stream.setCodec("UTF-8");
 
@@ -661,7 +665,10 @@ const QString FOdsExportForm::template_1 = "<?xml version=\"1.0\" encoding=\"UTF
 										   "   <style:text-properties fo:color=\"#000000\" style:text-outline=\"false\" style:text-line-through-style=\"none\" style:text-line-through-type=\"none\" style:font-name=\"Times New Roman\" fo:font-family=\"&apos;Times New Roman&apos;\" style:font-family-generic=\"roman\" fo:font-size=\"10pt\" fo:font-style=\"normal\" fo:text-shadow=\"none\" style:text-underline-style=\"none\" fo:font-weight=\"bold\" style:font-size-asian=\"10pt\" style:font-style-asian=\"normal\" style:font-weight-asian=\"bold\" style:font-size-complex=\"10pt\" style:font-style-complex=\"normal\" style:font-weight-complex=\"bold\"/>\n"
 										   "  </style:style>\n"
 										   "  <style:style style:name=\"Conteúdo_20_vazio_professor\" style:display-name=\"Conteúdo vazio professor\" style:family=\"table-cell\" style:parent-style-name=\"Conteúdo\">\n"
-										   "   <style:table-cell-properties fo:border-top=\"0pt solid #000000\" fo:border-bottom=\"0pt solid #000000\" />\n"
+										   "   <style:table-cell-properties fo:border-top=\"0pt solid #000000\" fo:border-bottom=\"0pt solid #000000\" fo:border-left=\"0.74pt solid #000000\" fo:border-right=\"0.74pt solid #000000\"/>\n"
+										   "  </style:style>\n"
+										   "  <style:style style:name=\"Conteúdo_20_vazio_professor_fim\" style:display-name=\"Conteúdo vazio professor fim\" style:family=\"table-cell\" style:parent-style-name=\"Conteúdo_20_vazio_professor\">\n"
+										   "   <style:table-cell-properties />\n"
 										   "  </style:style>\n"
 										   "  <style:style style:name=\"Coluna_20_fim\" style:display-name=\"Coluna fim\" style:family=\"table-cell\" style:parent-style-name=\"Conteúdo\">\n"
 										   "   <style:table-cell-properties fo:border-left=\"2.01pt solid #000000\" />\n"
