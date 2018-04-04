@@ -149,6 +149,7 @@ void FOdsExportForm::writeRoomsTables(QTextStream& stream, int whatShowFlags) co
 	Styles roomStyles;
 	roomStyles.table = "pm2";
 	roomStyles.data_row = "row_hora_normal_professor";
+	roomStyles.hour_cell = "Hora_sem_borda";
 
 	stream.setCodec("UTF-8");
 
@@ -211,6 +212,7 @@ void FOdsExportForm::writeTeachersTables(QTextStream& stream, int whatShowFlags)
 	Styles teacherStyles;
 	teacherStyles.table = "pm2";
 	teacherStyles.data_row = "row_hora_normal_professor";
+	teacherStyles.hour_cell = "Hora_sem_borda";
 
 	stream.setCodec("UTF-8");
 
@@ -630,6 +632,11 @@ const QString FOdsExportForm::template_1 = "<?xml version=\"1.0\" encoding=\"UTF
 										   "  </style:style>\n"
 										   "  <style:style style:name=\"Hora_20_fim\" style:display-name=\"Hora fim\" style:family=\"table-cell\" style:parent-style-name=\"Hora\">\n"
 										   "   <style:table-cell-properties fo:border-bottom=\"1.76pt solid #000000\" style:diagonal-bl-tr=\"none\" style:diagonal-tl-br=\"none\" style:text-align-source=\"fix\" style:repeat-content=\"false\" fo:wrap-option=\"wrap\" fo:border-left=\"1.76pt solid #000000\" style:direction=\"ltr\" fo:border-right=\"0.74pt solid #000000\" style:rotation-angle=\"0\" style:rotation-align=\"none\" style:shrink-to-fit=\"false\" fo:border-top=\"0.74pt solid #000000\" style:vertical-align=\"middle\" loext:vertical-justify=\"auto\"/>\n"
+										   "   <style:paragraph-properties fo:text-align=\"center\" css3t:text-justify=\"auto\" fo:margin-left=\"0mm\" style:writing-mode=\"page\"/>\n"
+										   "   <style:text-properties fo:color=\"#000000\" style:text-outline=\"false\" style:text-line-through-style=\"none\" style:text-line-through-type=\"none\" style:font-name=\"Times New Roman\" fo:font-family=\"&apos;Times New Roman&apos;\" style:font-family-generic=\"roman\" fo:font-size=\"8pt\" fo:font-style=\"normal\" fo:text-shadow=\"none\" style:text-underline-style=\"none\" fo:font-weight=\"bold\" style:font-size-asian=\"8pt\" style:font-style-asian=\"normal\" style:font-weight-asian=\"bold\" style:font-size-complex=\"8pt\" style:font-style-complex=\"normal\" style:font-weight-complex=\"bold\"/>\n"
+										   "  </style:style>\n"
+										   "  <style:style style:name=\"Hora_sem_borda\" style:display-name=\"Hora sem borda\" style:family=\"table-cell\" style:parent-style-name=\"Default\">\n"
+										   "   <style:table-cell-properties style:diagonal-bl-tr=\"none\" style:diagonal-tl-br=\"none\" style:text-align-source=\"fix\" style:repeat-content=\"false\" fo:wrap-option=\"wrap\" fo:border-left=\"1.76pt solid #000000\" style:direction=\"ltr\" fo:border-right=\"0.74pt solid #000000\" style:rotation-angle=\"0\" style:rotation-align=\"none\" style:shrink-to-fit=\"false\" style:vertical-align=\"middle\" loext:vertical-justify=\"auto\"/>\n"
 										   "   <style:paragraph-properties fo:text-align=\"center\" css3t:text-justify=\"auto\" fo:margin-left=\"0mm\" style:writing-mode=\"page\"/>\n"
 										   "   <style:text-properties fo:color=\"#000000\" style:text-outline=\"false\" style:text-line-through-style=\"none\" style:text-line-through-type=\"none\" style:font-name=\"Times New Roman\" fo:font-family=\"&apos;Times New Roman&apos;\" style:font-family-generic=\"roman\" fo:font-size=\"8pt\" fo:font-style=\"normal\" fo:text-shadow=\"none\" style:text-underline-style=\"none\" fo:font-weight=\"bold\" style:font-size-asian=\"8pt\" style:font-style-asian=\"normal\" style:font-weight-asian=\"bold\" style:font-size-complex=\"8pt\" style:font-style-complex=\"normal\" style:font-weight-complex=\"bold\"/>\n"
 										   "  </style:style>\n"
