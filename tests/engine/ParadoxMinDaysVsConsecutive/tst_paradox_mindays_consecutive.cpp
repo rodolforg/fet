@@ -23,6 +23,10 @@ public:
 	ParadoxMindaysVsConsecutiveTest();
 	~ParadoxMindaysVsConsecutiveTest();
 
+private:
+	Rules &rules;
+	void populate_basic_data();
+
 private slots:
 	void init();
 	void cleanup();
@@ -33,6 +37,7 @@ private slots:
 };
 
 ParadoxMindaysVsConsecutiveTest::ParadoxMindaysVsConsecutiveTest()
+	: rules(gt.rules)
 {
 
 }
@@ -42,98 +47,12 @@ ParadoxMindaysVsConsecutiveTest::~ParadoxMindaysVsConsecutiveTest()
 
 }
 
-void ParadoxMindaysVsConsecutiveTest::init()
-{
-	gt.rules.init();
-}
-
-void ParadoxMindaysVsConsecutiveTest::cleanup()
-{
-	gt.rules.kill();
-}
-
-void ParadoxMindaysVsConsecutiveTest::test_generate_error_message()
+void ParadoxMindaysVsConsecutiveTest::populate_basic_data()
 {
 	QStringList teachers;
 	QStringList activitytags;
 	QStringList studentsnames;
 	QString subject("subject1");
-	QList<int> acts;
-	acts << 12345 << 23456;
-
-	Rules &rules = gt.rules;
-	if (!rules.initialized)
-		rules.init();
-	Subject *psubject = new Subject();
-	psubject->name = subject;
-	rules.addSubjectFast(psubject);
-	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.computeInternalStructure();
-
-	ConstraintBasicCompulsoryTime * ctr = new ConstraintBasicCompulsoryTime();
-	rules.addTimeConstraint(ctr);
-	ConstraintBasicCompulsorySpace * sctr = new ConstraintBasicCompulsorySpace();
-	rules.addSpaceConstraint(sctr);
-	ConstraintMinDaysBetweenActivities *ctr_min = new ConstraintMinDaysBetweenActivities(100, false, 2, acts, 1);
-	rules.addTimeConstraint(ctr_min);
-	ConstraintTwoActivitiesConsecutive *ctr_consecutive = new ConstraintTwoActivitiesConsecutive(100, 12345, 23456);
-	rules.addTimeConstraint(ctr_consecutive);
-	rules.computeInternalStructure();
-
-	ParadoxMinDaysVsConsecutive paradox;
-	processTimeSpaceConstraints(NULL);
-	bool result = paradox.prepare(rules);
-	QVERIFY2(!result, "Paradox found");
-
-	QCOMPARE(paradox.getErrors().size(), 1);
-}
-
-void ParadoxMindaysVsConsecutiveTest::test_generate_error_message_reverse_order()
-{
-	QStringList teachers;
-	QStringList activitytags;
-	QStringList studentsnames;
-	QString subject("subject1");
-	QList<int> acts;
-	acts << 12345 << 23456;
-
-	Rules &rules = gt.rules;
-	if (!rules.initialized)
-		rules.init();
-	Subject *psubject = new Subject();
-	psubject->name = subject;
-	rules.addSubjectFast(psubject);
-	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.computeInternalStructure();
-
-	ConstraintBasicCompulsoryTime * ctr = new ConstraintBasicCompulsoryTime();
-	rules.addTimeConstraint(ctr);
-	ConstraintBasicCompulsorySpace * sctr = new ConstraintBasicCompulsorySpace();
-	rules.addSpaceConstraint(sctr);
-	ConstraintMinDaysBetweenActivities *ctr_min = new ConstraintMinDaysBetweenActivities(100, false, 2, acts, 1);
-	rules.addTimeConstraint(ctr_min);
-	ConstraintTwoActivitiesConsecutive *ctr_consecutive = new ConstraintTwoActivitiesConsecutive(100, 23456, 12345);
-	rules.addTimeConstraint(ctr_consecutive);
-	rules.computeInternalStructure();
-
-	ParadoxMinDaysVsConsecutive paradox;
-	processTimeSpaceConstraints(NULL);
-	bool result = paradox.prepare(rules);
-	QVERIFY2(!result, "Paradox found");
-
-	QCOMPARE(paradox.getErrors().size(), 1);
-}
-
-void ParadoxMindaysVsConsecutiveTest::test_generate_multiple_error_messages()
-{
-	QStringList teachers;
-	QStringList activitytags;
-	QStringList studentsnames;
-	QString subject("subject1");
-	QList<int> acts;
-	acts << 12345 << 23456 << 34567;
 
 	Rules &rules = gt.rules;
 	if (!rules.initialized)
@@ -150,6 +69,62 @@ void ParadoxMindaysVsConsecutiveTest::test_generate_multiple_error_messages()
 	rules.addTimeConstraint(ctr);
 	ConstraintBasicCompulsorySpace * sctr = new ConstraintBasicCompulsorySpace();
 	rules.addSpaceConstraint(sctr);
+}
+
+void ParadoxMindaysVsConsecutiveTest::init()
+{
+	rules.init();
+	populate_basic_data();
+}
+
+void ParadoxMindaysVsConsecutiveTest::cleanup()
+{
+	rules.kill();
+}
+
+void ParadoxMindaysVsConsecutiveTest::test_generate_error_message()
+{
+	QList<int> acts;
+	acts << 12345 << 23456;
+
+	ConstraintMinDaysBetweenActivities *ctr_min = new ConstraintMinDaysBetweenActivities(100, false, 2, acts, 1);
+	rules.addTimeConstraint(ctr_min);
+	ConstraintTwoActivitiesConsecutive *ctr_consecutive = new ConstraintTwoActivitiesConsecutive(100, 12345, 23456);
+	rules.addTimeConstraint(ctr_consecutive);
+	rules.computeInternalStructure();
+
+	ParadoxMinDaysVsConsecutive paradox;
+	processTimeSpaceConstraints(NULL);
+	bool result = paradox.prepare(rules);
+	QVERIFY2(!result, "Paradox found");
+
+	QCOMPARE(paradox.getErrors().size(), 1);
+}
+
+void ParadoxMindaysVsConsecutiveTest::test_generate_error_message_reverse_order()
+{
+	QList<int> acts;
+	acts << 12345 << 23456;
+
+	ConstraintMinDaysBetweenActivities *ctr_min = new ConstraintMinDaysBetweenActivities(100, false, 2, acts, 1);
+	rules.addTimeConstraint(ctr_min);
+	ConstraintTwoActivitiesConsecutive *ctr_consecutive = new ConstraintTwoActivitiesConsecutive(100, 23456, 12345);
+	rules.addTimeConstraint(ctr_consecutive);
+	rules.computeInternalStructure();
+
+	ParadoxMinDaysVsConsecutive paradox;
+	processTimeSpaceConstraints(NULL);
+	bool result = paradox.prepare(rules);
+	QVERIFY2(!result, "Paradox found");
+
+	QCOMPARE(paradox.getErrors().size(), 1);
+}
+
+void ParadoxMindaysVsConsecutiveTest::test_generate_multiple_error_messages()
+{
+	QList<int> acts;
+	acts << 12345 << 23456 << 34567;
+
 	ConstraintMinDaysBetweenActivities *ctr_min = new ConstraintMinDaysBetweenActivities(100, false, 3, acts, 1);
 	rules.addTimeConstraint(ctr_min);
 	ConstraintTwoActivitiesConsecutive *ctr_consecutive = new ConstraintTwoActivitiesConsecutive(100, 12345, 23456);
@@ -168,27 +143,9 @@ void ParadoxMindaysVsConsecutiveTest::test_generate_multiple_error_messages()
 
 void ParadoxMindaysVsConsecutiveTest::test_reset_properly()
 {
-	QStringList teachers;
-	QStringList activitytags;
-	QStringList studentsnames;
-	QString subject("subject1");
 	QList<int> acts;
 	acts << 12345 << 23456;
 
-	Rules &rules = gt.rules;
-	if (!rules.initialized)
-		rules.init();
-	Subject *psubject = new Subject();
-	psubject->name = subject;
-	rules.addSubjectFast(psubject);
-	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.computeInternalStructure();
-
-	ConstraintBasicCompulsoryTime * ctr = new ConstraintBasicCompulsoryTime();
-	rules.addTimeConstraint(ctr);
-	ConstraintBasicCompulsorySpace * sctr = new ConstraintBasicCompulsorySpace();
-	rules.addSpaceConstraint(sctr);
 	ConstraintMinDaysBetweenActivities *ctr_min = new ConstraintMinDaysBetweenActivities(100, false, 2, acts, 1);
 	rules.addTimeConstraint(ctr_min);
 	ConstraintTwoActivitiesConsecutive *ctr_consecutive = new ConstraintTwoActivitiesConsecutive(100, 12345, 23456);

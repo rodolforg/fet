@@ -68,6 +68,7 @@ void ParadoxConsecutiveVsConsecutiveTest::populate_basic_data()
 void ParadoxConsecutiveVsConsecutiveTest::init()
 {
 	rules.init();
+	populate_basic_data();
 }
 
 void ParadoxConsecutiveVsConsecutiveTest::cleanup()
@@ -77,8 +78,6 @@ void ParadoxConsecutiveVsConsecutiveTest::cleanup()
 
 void ParadoxConsecutiveVsConsecutiveTest::test_generate_error_message_two_ctr_reverse_order()
 {
-	populate_basic_data();
-
 	TimeConstraint* ctr = new ConstraintTwoActivitiesConsecutive(100, 12345, 23456);
 	bool added = rules.addTimeConstraint(ctr);
 	QVERIFY2(added, "Could not insert constraint");
@@ -98,8 +97,6 @@ void ParadoxConsecutiveVsConsecutiveTest::test_generate_error_message_two_ctr_re
 
 void ParadoxConsecutiveVsConsecutiveTest::test_generate_error_message_one_before_other_two_activities()
 {
-	populate_basic_data();
-
 	TimeConstraint* ctr = new ConstraintTwoActivitiesConsecutive(100, 12345, 23456);
 	rules.addTimeConstraint(ctr);
 	ctr = new ConstraintTwoActivitiesConsecutive(100, 12345, 34567);
@@ -116,8 +113,6 @@ void ParadoxConsecutiveVsConsecutiveTest::test_generate_error_message_one_before
 
 void ParadoxConsecutiveVsConsecutiveTest::test_generate_error_message_one_after_other_two_activities()
 {
-	populate_basic_data();
-
 	TimeConstraint* ctr = new ConstraintTwoActivitiesConsecutive(100, 23456, 12345);
 	rules.addTimeConstraint(ctr);
 	ctr = new ConstraintTwoActivitiesConsecutive(100, 34567, 12345);
@@ -134,8 +129,6 @@ void ParadoxConsecutiveVsConsecutiveTest::test_generate_error_message_one_after_
 
 void ParadoxConsecutiveVsConsecutiveTest::test_generate_multiple_error_messages()
 {
-	populate_basic_data();
-
 	TimeConstraint* ctr = new ConstraintTwoActivitiesConsecutive(100, 23456, 12345);
 	rules.addTimeConstraint(ctr);
 	ctr = new ConstraintTwoActivitiesConsecutive(100, 34567, 12345);
@@ -154,8 +147,6 @@ void ParadoxConsecutiveVsConsecutiveTest::test_generate_multiple_error_messages(
 
 void ParadoxConsecutiveVsConsecutiveTest::test_reset_properly()
 {
-	populate_basic_data();
-
 	TimeConstraint* ctr = new ConstraintTwoActivitiesConsecutive(100, 12345, 23456);
 	rules.addTimeConstraint(ctr);
 	ctr = new ConstraintTwoActivitiesConsecutive(100, 23456, 12345);
@@ -177,8 +168,6 @@ void ParadoxConsecutiveVsConsecutiveTest::test_reset_properly()
 
 void ParadoxConsecutiveVsConsecutiveTest::test_added_to_generate()
 {
-	populate_basic_data();
-
 	TimeConstraint* ctr = new ConstraintTwoActivitiesConsecutive(100, 12345, 23456);
 	rules.addTimeConstraint(ctr);
 	ctr = new ConstraintTwoActivitiesConsecutive(100, 23456, 12345);

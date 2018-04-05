@@ -23,6 +23,10 @@ class ParadoxMinDaysVsThreeGroupedTest : public QObject
 public:
 	ParadoxMinDaysVsThreeGroupedTest();
 
+private:
+	Rules& rules;
+	void populate_basic_data();
+
 private Q_SLOTS:
 	void init();
 	void cleanup();
@@ -33,64 +37,16 @@ private Q_SLOTS:
 };
 
 ParadoxMinDaysVsThreeGroupedTest::ParadoxMinDaysVsThreeGroupedTest()
+	: rules(gt.rules)
 {
 }
 
-void ParadoxMinDaysVsThreeGroupedTest::init()
-{
-	gt.rules.init();
-}
-
-void ParadoxMinDaysVsThreeGroupedTest::cleanup()
-{
-	gt.rules.kill();
-}
-
-void ParadoxMinDaysVsThreeGroupedTest::test_generate_error_message_first_activity_pair()
+void ParadoxMinDaysVsThreeGroupedTest::populate_basic_data()
 {
 	QStringList teachers;
 	QStringList activitytags;
 	QStringList studentsnames;
 	QString subject("subject1");
-	QList<int> acts;
-	acts << 12345 << 23456;
-
-	Rules &rules = gt.rules;
-	if (!rules.initialized)
-		rules.init();
-	Subject *psubject = new Subject();
-	psubject->name = subject;
-	rules.addSubjectFast(psubject);
-	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(34567, 34567, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.computeInternalStructure();
-
-	TimeConstraint * ctr = new ConstraintBasicCompulsoryTime();
-	rules.addTimeConstraint(ctr);
-	ConstraintBasicCompulsorySpace * sctr = new ConstraintBasicCompulsorySpace();
-	rules.addSpaceConstraint(sctr);
-	ConstraintMinDaysBetweenActivities * minDaysCtr = new ConstraintMinDaysBetweenActivities(100, false, 2, acts, 1);
-	rules.addTimeConstraint(minDaysCtr);
-	ctr = new ConstraintThreeActivitiesGrouped(100, 12345, 23456, 34567);
-	rules.addTimeConstraint(ctr);
-	rules.computeInternalStructure();
-
-	ParadoxMinDaysVsThreeGrouped paradox;
-	processTimeSpaceConstraints(NULL);
-	bool result = paradox.prepare(rules);
-	QVERIFY2(!result, "Paradox not found for the first activity pair");
-	QCOMPARE(paradox.getErrors().size(), 1);
-}
-
-void ParadoxMinDaysVsThreeGroupedTest::test_generate_multiple_error_messages()
-{
-	QStringList teachers;
-	QStringList activitytags;
-	QStringList studentsnames;
-	QString subject("subject1");
-	QList<int> acts;
-	acts << 12345 << 23456 << 34567;
 
 	Rules &rules = gt.rules;
 	if (!rules.initialized)
@@ -108,9 +64,45 @@ void ParadoxMinDaysVsThreeGroupedTest::test_generate_multiple_error_messages()
 	rules.addTimeConstraint(ctr);
 	ConstraintBasicCompulsorySpace * sctr = new ConstraintBasicCompulsorySpace();
 	rules.addSpaceConstraint(sctr);
+}
+
+void ParadoxMinDaysVsThreeGroupedTest::init()
+{
+	rules.init();
+	populate_basic_data();
+}
+
+void ParadoxMinDaysVsThreeGroupedTest::cleanup()
+{
+	rules.kill();
+}
+
+void ParadoxMinDaysVsThreeGroupedTest::test_generate_error_message_first_activity_pair()
+{
+	QList<int> acts;
+	acts << 12345 << 23456;
+
+	ConstraintMinDaysBetweenActivities * minDaysCtr = new ConstraintMinDaysBetweenActivities(100, false, 2, acts, 1);
+	rules.addTimeConstraint(minDaysCtr);
+	TimeConstraint * ctr = new ConstraintThreeActivitiesGrouped(100, 12345, 23456, 34567);
+	rules.addTimeConstraint(ctr);
+	rules.computeInternalStructure();
+
+	ParadoxMinDaysVsThreeGrouped paradox;
+	processTimeSpaceConstraints(NULL);
+	bool result = paradox.prepare(rules);
+	QVERIFY2(!result, "Paradox not found for the first activity pair");
+	QCOMPARE(paradox.getErrors().size(), 1);
+}
+
+void ParadoxMinDaysVsThreeGroupedTest::test_generate_multiple_error_messages()
+{
+	QList<int> acts;
+	acts << 12345 << 23456 << 34567;
+
 	ConstraintMinDaysBetweenActivities * minDaysCtr = new ConstraintMinDaysBetweenActivities(100, false, 3, acts, 1);
 	rules.addTimeConstraint(minDaysCtr);
-	ctr = new ConstraintThreeActivitiesGrouped(100, 12345, 23456, 34567);
+	TimeConstraint * ctr = new ConstraintThreeActivitiesGrouped(100, 12345, 23456, 34567);
 	rules.addTimeConstraint(ctr);
 	rules.computeInternalStructure();
 
@@ -123,29 +115,11 @@ void ParadoxMinDaysVsThreeGroupedTest::test_generate_multiple_error_messages()
 
 void ParadoxMinDaysVsThreeGroupedTest::test_reset_properly()
 {
-	QStringList teachers;
-	QStringList activitytags;
-	QStringList studentsnames;
-	QString subject("subject1");
+
 	QList<int> acts;
 	acts << 12345 << 23456;
 
-	Rules &rules = gt.rules;
-	if (!rules.initialized)
-		rules.init();
-	Subject *psubject = new Subject();
-	psubject->name = subject;
-	rules.addSubjectFast(psubject);
-	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(34567, 34567, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.computeInternalStructure();
-
-	TimeConstraint * ctr = new ConstraintBasicCompulsoryTime();
-	rules.addTimeConstraint(ctr);
-	ConstraintBasicCompulsorySpace * sctr = new ConstraintBasicCompulsorySpace();
-	rules.addSpaceConstraint(sctr);
-	ctr = new ConstraintMinDaysBetweenActivities(100, false, 2, acts, 1);
+	TimeConstraint * ctr = new ConstraintMinDaysBetweenActivities(100, false, 2, acts, 1);
 	rules.addTimeConstraint(ctr);
 	ctr = new ConstraintThreeActivitiesGrouped(100, 12345, 23456, 34567);
 	rules.addTimeConstraint(ctr);
@@ -166,31 +140,12 @@ void ParadoxMinDaysVsThreeGroupedTest::test_reset_properly()
 
 void ParadoxMinDaysVsThreeGroupedTest::test_all_pairs()
 {
-	QStringList teachers;
-	QStringList activitytags;
-	QStringList studentsnames;
-	QString subject("subject1");
 	QList<int> acts;
 	acts << 12345 << 23456 << 34567;
 
-	Rules &rules = gt.rules;
-	if (!rules.initialized)
-		rules.init();
-	Subject *psubject = new Subject();
-	psubject->name = subject;
-	rules.addSubjectFast(psubject);
-	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(34567, 34567, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.computeInternalStructure();
-
-	TimeConstraint * ctr = new ConstraintBasicCompulsoryTime();
-	rules.addTimeConstraint(ctr);
-	ConstraintBasicCompulsorySpace * sctr = new ConstraintBasicCompulsorySpace();
-	rules.addSpaceConstraint(sctr);
 	ConstraintMinDaysBetweenActivities * minDaysCtr = new ConstraintMinDaysBetweenActivities(100, false, 3, acts, 1);
 	rules.addTimeConstraint(minDaysCtr);
-	ctr = new ConstraintThreeActivitiesGrouped(100, 12345, 23456, 34567);
+	TimeConstraint * ctr = new ConstraintThreeActivitiesGrouped(100, 12345, 23456, 34567);
 	rules.addTimeConstraint(ctr);
 	rules.computeInternalStructure();
 

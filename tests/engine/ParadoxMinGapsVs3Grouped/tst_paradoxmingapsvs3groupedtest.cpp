@@ -22,6 +22,10 @@ class ParadoxMinGapsVs3GroupedTest : public QObject
 public:
 	ParadoxMinGapsVs3GroupedTest();
 
+private:
+	Rules &rules;
+	void populate_basic_data();
+
 private Q_SLOTS:
 	void init();
 	void cleanup();
@@ -33,27 +37,16 @@ private Q_SLOTS:
 };
 
 ParadoxMinGapsVs3GroupedTest::ParadoxMinGapsVs3GroupedTest()
+	: rules(gt.rules)
 {
 }
 
-void ParadoxMinGapsVs3GroupedTest::init()
-{
-	gt.rules.init();
-}
-
-void ParadoxMinGapsVs3GroupedTest::cleanup()
-{
-	gt.rules.kill();
-}
-
-void ParadoxMinGapsVs3GroupedTest::test_generate_error_message_first_activity_pair()
+void ParadoxMinGapsVs3GroupedTest::populate_basic_data()
 {
 	QStringList teachers;
 	QStringList activitytags;
 	QStringList studentsnames;
 	QString subject("subject1");
-	QList<int> acts;
-	acts << 12345 << 23456;
 
 	Rules &rules = gt.rules;
 	if (!rules.initialized)
@@ -70,9 +63,27 @@ void ParadoxMinGapsVs3GroupedTest::test_generate_error_message_first_activity_pa
 	rules.addTimeConstraint(ctr);
 	ConstraintBasicCompulsorySpace * sctr = new ConstraintBasicCompulsorySpace();
 	rules.addSpaceConstraint(sctr);
+}
+
+void ParadoxMinGapsVs3GroupedTest::init()
+{
+	rules.init();
+	populate_basic_data();
+}
+
+void ParadoxMinGapsVs3GroupedTest::cleanup()
+{
+	rules.kill();
+}
+
+void ParadoxMinGapsVs3GroupedTest::test_generate_error_message_first_activity_pair()
+{
+	QList<int> acts;
+	acts << 12345 << 23456;
+
 	ConstraintMinGapsBetweenActivities * minGapsCtr = new ConstraintMinGapsBetweenActivities(100, 2, acts, 1);
 	rules.addTimeConstraint(minGapsCtr);
-	ctr = new ConstraintThreeActivitiesGrouped(100, 12345, 23456, 34567);
+	TimeConstraint * ctr = new ConstraintThreeActivitiesGrouped(100, 12345, 23456, 34567);
 	rules.addTimeConstraint(ctr);
 	rules.computeInternalStructure();
 
@@ -85,32 +96,12 @@ void ParadoxMinGapsVs3GroupedTest::test_generate_error_message_first_activity_pa
 
 void ParadoxMinGapsVs3GroupedTest::test_generate_multiple_error_messages()
 {
-	QStringList teachers;
-	QStringList activitytags;
-	QStringList studentsnames;
-	QString subject("subject1");
 	QList<int> acts;
 	acts << 12345 << 23456 << 34567;
 
-	Rules &rules = gt.rules;
-	if (!rules.initialized)
-		rules.init();
-	Subject *psubject = new Subject();
-	psubject->name = subject;
-	rules.addSubjectFast(psubject);
-	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(34567, 34567, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(45678, 45678, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.computeInternalStructure();
-
-	TimeConstraint * ctr = new ConstraintBasicCompulsoryTime();
-	rules.addTimeConstraint(ctr);
-	ConstraintBasicCompulsorySpace * sctr = new ConstraintBasicCompulsorySpace();
-	rules.addSpaceConstraint(sctr);
 	ConstraintMinGapsBetweenActivities * minGapsCtr = new ConstraintMinGapsBetweenActivities(100, 3, acts, 1);
 	rules.addTimeConstraint(minGapsCtr);
-	ctr = new ConstraintThreeActivitiesGrouped(100, 12345, 23456, 34567);
+	TimeConstraint * ctr = new ConstraintThreeActivitiesGrouped(100, 12345, 23456, 34567);
 	rules.addTimeConstraint(ctr);
 	rules.computeInternalStructure();
 
@@ -123,31 +114,12 @@ void ParadoxMinGapsVs3GroupedTest::test_generate_multiple_error_messages()
 
 void ParadoxMinGapsVs3GroupedTest::test_reset_properly()
 {
-	QStringList teachers;
-	QStringList activitytags;
-	QStringList studentsnames;
-	QString subject("subject1");
 	QList<int> acts;
 	acts << 12345 << 23456;
 
-	Rules &rules = gt.rules;
-	if (!rules.initialized)
-		rules.init();
-	Subject *psubject = new Subject();
-	psubject->name = subject;
-	rules.addSubjectFast(psubject);
-	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(34567, 34567, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.computeInternalStructure();
-
-	TimeConstraint * ctr = new ConstraintBasicCompulsoryTime();
-	rules.addTimeConstraint(ctr);
-	ConstraintBasicCompulsorySpace * sctr = new ConstraintBasicCompulsorySpace();
-	rules.addSpaceConstraint(sctr);
 	ConstraintMinGapsBetweenActivities * minGapsCtr = new ConstraintMinGapsBetweenActivities(100, 2, acts, 1);
 	rules.addTimeConstraint(minGapsCtr);
-	ctr = new ConstraintThreeActivitiesGrouped(100, 12345, 23456, 34567);
+	TimeConstraint * ctr = new ConstraintThreeActivitiesGrouped(100, 12345, 23456, 34567);
 	rules.addTimeConstraint(ctr);
 	rules.computeInternalStructure();
 
@@ -164,31 +136,12 @@ void ParadoxMinGapsVs3GroupedTest::test_reset_properly()
 
 void ParadoxMinGapsVs3GroupedTest::test_all_pairs()
 {
-	QStringList teachers;
-	QStringList activitytags;
-	QStringList studentsnames;
-	QString subject("subject1");
 	QList<int> acts;
 	acts << 12345 << 23456 << 34567;
 
-	Rules &rules = gt.rules;
-	if (!rules.initialized)
-		rules.init();
-	Subject *psubject = new Subject();
-	psubject->name = subject;
-	rules.addSubjectFast(psubject);
-	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(34567, 34567, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.computeInternalStructure();
-
-	TimeConstraint * ctr = new ConstraintBasicCompulsoryTime();
-	rules.addTimeConstraint(ctr);
-	ConstraintBasicCompulsorySpace * sctr = new ConstraintBasicCompulsorySpace();
-	rules.addSpaceConstraint(sctr);
 	ConstraintMinGapsBetweenActivities * minGapsCtr = new ConstraintMinGapsBetweenActivities(100, 3, acts, 1);
 	rules.addTimeConstraint(minGapsCtr);
-	ctr = new ConstraintThreeActivitiesGrouped(100, 12345, 23456, 34567);
+	TimeConstraint * ctr = new ConstraintThreeActivitiesGrouped(100, 12345, 23456, 34567);
 	rules.addTimeConstraint(ctr);
 	rules.computeInternalStructure();
 
@@ -282,29 +235,10 @@ void ParadoxMinGapsVs3GroupedTest::test_all_pairs()
 
 void ParadoxMinGapsVs3GroupedTest::test_added_to_generate()
 {
-	QStringList teachers;
-	QStringList activitytags;
-	QStringList studentsnames;
-	QString subject("subject1");
 	QList<int> acts;
 	acts << 12345 << 23456;
 
-	Rules &rules = gt.rules;
-	if (!rules.initialized)
-		rules.init();
-	Subject *psubject = new Subject();
-	psubject->name = subject;
-	rules.addSubjectFast(psubject);
-	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(34567, 34567, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.computeInternalStructure();
-
-	TimeConstraint * ctr = new ConstraintBasicCompulsoryTime();
-	rules.addTimeConstraint(ctr);
-	ConstraintBasicCompulsorySpace * sctr = new ConstraintBasicCompulsorySpace();
-	rules.addSpaceConstraint(sctr);
-	ctr = new ConstraintMinGapsBetweenActivities(100, 2, acts, 1);
+	TimeConstraint * ctr = new ConstraintMinGapsBetweenActivities(100, 2, acts, 1);
 	rules.addTimeConstraint(ctr);
 	ctr = new ConstraintThreeActivitiesGrouped(100, 12345, 23456, 34567);
 	rules.addTimeConstraint(ctr);

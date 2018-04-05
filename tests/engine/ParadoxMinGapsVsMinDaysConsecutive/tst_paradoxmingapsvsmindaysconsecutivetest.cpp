@@ -22,6 +22,10 @@ class ParadoxMinGapsVsMinDaysConsecutiveTest : public QObject
 public:
 	ParadoxMinGapsVsMinDaysConsecutiveTest();
 
+private:
+	Rules &rules;
+	void populate_basic_data();
+
 private Q_SLOTS:
 	void init();
 	void cleanup();
@@ -33,138 +37,16 @@ private Q_SLOTS:
 };
 
 ParadoxMinGapsVsMinDaysConsecutiveTest::ParadoxMinGapsVsMinDaysConsecutiveTest()
+	: rules(gt.rules)
 {
 }
 
-void ParadoxMinGapsVsMinDaysConsecutiveTest::init()
-{
-	gt.rules.init();
-}
-
-void ParadoxMinGapsVsMinDaysConsecutiveTest::cleanup()
-{
-	gt.rules.kill();
-}
-
-void ParadoxMinGapsVsMinDaysConsecutiveTest::test_no_error_if_not_consecutive_flag()
+void ParadoxMinGapsVsMinDaysConsecutiveTest::populate_basic_data()
 {
 	QStringList teachers;
 	QStringList activitytags;
 	QStringList studentsnames;
 	QString subject("subject1");
-	QList<int> acts;
-	acts << 12345 << 23456;
-
-	Rules &rules = gt.rules;
-	if (!rules.initialized)
-		rules.init();
-	Subject *psubject = new Subject();
-	psubject->name = subject;
-	rules.addSubjectFast(psubject);
-	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.computeInternalStructure();
-
-	TimeConstraint * ctr = new ConstraintBasicCompulsoryTime();
-	rules.addTimeConstraint(ctr);
-	ConstraintBasicCompulsorySpace * sctr = new ConstraintBasicCompulsorySpace();
-	rules.addSpaceConstraint(sctr);
-	ctr = new ConstraintMinDaysBetweenActivities(100, false, 2, acts, 1);
-	rules.addTimeConstraint(ctr);
-	ctr = new ConstraintMinGapsBetweenActivities(100, 2, acts, 1);
-	rules.addTimeConstraint(ctr);
-	rules.computeInternalStructure();
-
-	ParadoxMinGapsVsMinDaysConsecutive paradox;
-	processTimeSpaceConstraints(NULL);
-	bool result = paradox.prepare(rules);
-	QVERIFY2(result, "Paradox found");
-
-	QCOMPARE(paradox.getErrors().size(), 0);
-}
-
-void ParadoxMinGapsVsMinDaysConsecutiveTest::test_generate_error_message()
-{
-	QStringList teachers;
-	QStringList activitytags;
-	QStringList studentsnames;
-	QString subject("subject1");
-	QList<int> acts;
-	acts << 12345 << 23456;
-
-	Rules &rules = gt.rules;
-	if (!rules.initialized)
-		rules.init();
-	Subject *psubject = new Subject();
-	psubject->name = subject;
-	rules.addSubjectFast(psubject);
-	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.computeInternalStructure();
-
-	TimeConstraint * ctr = new ConstraintBasicCompulsoryTime();
-	rules.addTimeConstraint(ctr);
-	ConstraintBasicCompulsorySpace * sctr = new ConstraintBasicCompulsorySpace();
-	rules.addSpaceConstraint(sctr);
-	ctr = new ConstraintMinDaysBetweenActivities(100, true, 2, acts, 1);
-	rules.addTimeConstraint(ctr);
-	ctr = new ConstraintMinGapsBetweenActivities(100, 2, acts, 1);
-	rules.addTimeConstraint(ctr);
-	rules.computeInternalStructure();
-
-	ParadoxMinGapsVsMinDaysConsecutive paradox;
-	processTimeSpaceConstraints(NULL);
-	bool result = paradox.prepare(rules);
-	QVERIFY2(!result, "Paradox found");
-
-	QCOMPARE(paradox.getErrors().size(), 1);
-}
-
-void ParadoxMinGapsVsMinDaysConsecutiveTest::test_generate_error_message_even_when_activity_order_is_reversed()
-{
-	QStringList teachers;
-	QStringList activitytags;
-	QStringList studentsnames;
-	QString subject("subject1");
-	QList<int> acts;
-	acts << 23456 << 12345; // reversed order
-
-	Rules &rules = gt.rules;
-	if (!rules.initialized)
-		rules.init();
-	Subject *psubject = new Subject();
-	psubject->name = subject;
-	rules.addSubjectFast(psubject);
-	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.computeInternalStructure();
-
-	TimeConstraint * ctr = new ConstraintBasicCompulsoryTime();
-	rules.addTimeConstraint(ctr);
-	ConstraintBasicCompulsorySpace * sctr = new ConstraintBasicCompulsorySpace();
-	rules.addSpaceConstraint(sctr);
-	ctr = new ConstraintMinDaysBetweenActivities(100, true, 2, acts, 1);
-	rules.addTimeConstraint(ctr);
-	ctr = new ConstraintMinGapsBetweenActivities(100, 2, acts, 1);
-	rules.addTimeConstraint(ctr);
-	rules.computeInternalStructure();
-
-	ParadoxMinGapsVsMinDaysConsecutive paradox;
-	processTimeSpaceConstraints(NULL);
-	bool result = paradox.prepare(rules);
-	QVERIFY2(!result, "Paradox found");
-
-	QCOMPARE(paradox.getErrors().size(), 1);
-}
-
-void ParadoxMinGapsVsMinDaysConsecutiveTest::test_generate_multiple_error_messages()
-{
-	QStringList teachers;
-	QStringList activitytags;
-	QStringList studentsnames;
-	QString subject("subject1");
-	QList<int> acts;
-	acts << 12345 << 23456 << 34567;
 
 	Rules &rules = gt.rules;
 	if (!rules.initialized)
@@ -181,7 +63,82 @@ void ParadoxMinGapsVsMinDaysConsecutiveTest::test_generate_multiple_error_messag
 	rules.addTimeConstraint(ctr);
 	ConstraintBasicCompulsorySpace * sctr = new ConstraintBasicCompulsorySpace();
 	rules.addSpaceConstraint(sctr);
-	ctr = new ConstraintMinDaysBetweenActivities(100, true, 3, acts, 1);
+}
+
+void ParadoxMinGapsVsMinDaysConsecutiveTest::init()
+{
+	rules.init();
+	populate_basic_data();
+}
+
+void ParadoxMinGapsVsMinDaysConsecutiveTest::cleanup()
+{
+	rules.kill();
+}
+
+void ParadoxMinGapsVsMinDaysConsecutiveTest::test_no_error_if_not_consecutive_flag()
+{
+	QList<int> acts;
+	acts << 12345 << 23456;
+
+	TimeConstraint * ctr = new ConstraintMinDaysBetweenActivities(100, false, 2, acts, 1);
+	rules.addTimeConstraint(ctr);
+	ctr = new ConstraintMinGapsBetweenActivities(100, 2, acts, 1);
+	rules.addTimeConstraint(ctr);
+	rules.computeInternalStructure();
+
+	ParadoxMinGapsVsMinDaysConsecutive paradox;
+	processTimeSpaceConstraints(NULL);
+	bool result = paradox.prepare(rules);
+	QVERIFY2(result, "Paradox found");
+
+	QCOMPARE(paradox.getErrors().size(), 0);
+}
+
+void ParadoxMinGapsVsMinDaysConsecutiveTest::test_generate_error_message()
+{
+	QList<int> acts;
+	acts << 12345 << 23456;
+
+	TimeConstraint * ctr = new ConstraintMinDaysBetweenActivities(100, true, 2, acts, 1);
+	rules.addTimeConstraint(ctr);
+	ctr = new ConstraintMinGapsBetweenActivities(100, 2, acts, 1);
+	rules.addTimeConstraint(ctr);
+	rules.computeInternalStructure();
+
+	ParadoxMinGapsVsMinDaysConsecutive paradox;
+	processTimeSpaceConstraints(NULL);
+	bool result = paradox.prepare(rules);
+	QVERIFY2(!result, "Paradox found");
+
+	QCOMPARE(paradox.getErrors().size(), 1);
+}
+
+void ParadoxMinGapsVsMinDaysConsecutiveTest::test_generate_error_message_even_when_activity_order_is_reversed()
+{
+	QList<int> acts;
+	acts << 23456 << 12345; // reversed order
+
+	TimeConstraint * ctr = new ConstraintMinDaysBetweenActivities(100, true, 2, acts, 1);
+	rules.addTimeConstraint(ctr);
+	ctr = new ConstraintMinGapsBetweenActivities(100, 2, acts, 1);
+	rules.addTimeConstraint(ctr);
+	rules.computeInternalStructure();
+
+	ParadoxMinGapsVsMinDaysConsecutive paradox;
+	processTimeSpaceConstraints(NULL);
+	bool result = paradox.prepare(rules);
+	QVERIFY2(!result, "Paradox found");
+
+	QCOMPARE(paradox.getErrors().size(), 1);
+}
+
+void ParadoxMinGapsVsMinDaysConsecutiveTest::test_generate_multiple_error_messages()
+{
+	QList<int> acts;
+	acts << 12345 << 23456 << 34567;
+
+	TimeConstraint * ctr = new ConstraintMinDaysBetweenActivities(100, true, 3, acts, 1);
 	rules.addTimeConstraint(ctr);
 	ctr = new ConstraintMinGapsBetweenActivities(100, 3, acts, 1);
 	rules.addTimeConstraint(ctr);
@@ -197,28 +154,10 @@ void ParadoxMinGapsVsMinDaysConsecutiveTest::test_generate_multiple_error_messag
 
 void ParadoxMinGapsVsMinDaysConsecutiveTest::test_reset_properly()
 {
-	QStringList teachers;
-	QStringList activitytags;
-	QStringList studentsnames;
-	QString subject("subject1");
 	QList<int> acts;
 	acts << 12345 << 23456;
 
-	Rules &rules = gt.rules;
-	if (!rules.initialized)
-		rules.init();
-	Subject *psubject = new Subject();
-	psubject->name = subject;
-	rules.addSubjectFast(psubject);
-	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.computeInternalStructure();
-
-	TimeConstraint * ctr = new ConstraintBasicCompulsoryTime();
-	rules.addTimeConstraint(ctr);
-	ConstraintBasicCompulsorySpace * sctr = new ConstraintBasicCompulsorySpace();
-	rules.addSpaceConstraint(sctr);
-	ctr = new ConstraintMinDaysBetweenActivities(100, true, 2, acts, 1);
+	TimeConstraint * ctr = new ConstraintMinDaysBetweenActivities(100, true, 2, acts, 1);
 	rules.addTimeConstraint(ctr);
 	ctr = new ConstraintMinGapsBetweenActivities(100, 2, acts, 1);
 	rules.addTimeConstraint(ctr);

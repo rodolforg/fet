@@ -68,6 +68,7 @@ void ParadoxOrderedVsReversedConsecutiveTest::populate_basic_data()
 void ParadoxOrderedVsReversedConsecutiveTest::init()
 {
 	rules.init();
+	populate_basic_data();
 }
 
 void ParadoxOrderedVsReversedConsecutiveTest::cleanup()
@@ -77,8 +78,6 @@ void ParadoxOrderedVsReversedConsecutiveTest::cleanup()
 
 void ParadoxOrderedVsReversedConsecutiveTest::test_redundant_prints_no_error_message()
 {
-	populate_basic_data();
-
 	TimeConstraint* ctr = new ConstraintTwoActivitiesOrdered(100, 12345, 23456);
 	rules.addTimeConstraint(ctr);
 	ctr = new ConstraintTwoActivitiesConsecutive(100, 12345, 23456);
@@ -95,8 +94,6 @@ void ParadoxOrderedVsReversedConsecutiveTest::test_redundant_prints_no_error_mes
 
 void ParadoxOrderedVsReversedConsecutiveTest::test_generate_error_message()
 {
-	populate_basic_data();
-
 	TimeConstraint* ctr = new ConstraintTwoActivitiesOrdered(100, 12345, 23456);
 	rules.addTimeConstraint(ctr);
 	ctr = new ConstraintTwoActivitiesConsecutive(100, 23456, 12345);
@@ -113,8 +110,6 @@ void ParadoxOrderedVsReversedConsecutiveTest::test_generate_error_message()
 
 void ParadoxOrderedVsReversedConsecutiveTest::test_generate_error_message_reverse_order()
 {
-	populate_basic_data();
-
 	TimeConstraint* ctr = new ConstraintTwoActivitiesOrdered(100, 23456, 12345);
 	rules.addTimeConstraint(ctr);
 	ctr = new ConstraintTwoActivitiesConsecutive(100, 12345, 23456);
@@ -131,8 +126,6 @@ void ParadoxOrderedVsReversedConsecutiveTest::test_generate_error_message_revers
 
 void ParadoxOrderedVsReversedConsecutiveTest::test_generate_multiple_error_messages()
 {
-	populate_basic_data();
-
 	TimeConstraint* ctr = new ConstraintTwoActivitiesOrdered(100, 12345, 23456);
 	rules.addTimeConstraint(ctr);
 	ctr = new ConstraintTwoActivitiesConsecutive(100, 23456, 12345);
@@ -154,8 +147,6 @@ void ParadoxOrderedVsReversedConsecutiveTest::test_generate_multiple_error_messa
 
 void ParadoxOrderedVsReversedConsecutiveTest::test_reset_properly()
 {
-	populate_basic_data();
-
 	TimeConstraint* ctr = new ConstraintTwoActivitiesOrdered(100, 12345, 23456);
 	rules.addTimeConstraint(ctr);
 	ctr = new ConstraintTwoActivitiesConsecutive(100, 23456, 12345);
@@ -177,8 +168,6 @@ void ParadoxOrderedVsReversedConsecutiveTest::test_reset_properly()
 
 void ParadoxOrderedVsReversedConsecutiveTest::test_added_to_generate()
 {
-	populate_basic_data();
-
 	TimeConstraint* ctr = new ConstraintTwoActivitiesOrdered(100, 12345, 23456);
 	rules.addTimeConstraint(ctr);
 	ctr = new ConstraintTwoActivitiesConsecutive(100, 23456, 12345);
