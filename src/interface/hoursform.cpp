@@ -105,15 +105,17 @@ void HoursForm::ok()
 				return;
 			}
 			
-	bool userChangedHours = false;
-	for(int i=0; i < nHours; i++) {
-		if (hoursNames[i]->text() != gt.rules.hoursOfTheDay[i]) {
-			userChangedHours = true;
-			break;
+	if (nHours == gt.rules.nHoursPerDay) {
+		bool userChangedHours = false;
+		for(int i=0; i < nHours; i++) {
+			if (hoursNames[i]->text() != gt.rules.hoursOfTheDay[i]) {
+				userChangedHours = true;
+				break;
+			}
 		}
+		if (!userChangedHours)
+			return;
 	}
-	if (!userChangedHours)
-		return;
 
 	QSet<TimeConstraint*> modifiableTimeConstraints;
 	QSet<TimeConstraint*> toBeRemovedTimeConstraints;

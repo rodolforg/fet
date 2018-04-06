@@ -101,16 +101,18 @@ void DaysForm::ok()
 				return;
 			}
 
-	bool userChangedDays = false;
-	for(int i=0; i < nDays; i++) {
-		if (daysNames[i]->text() != gt.rules.daysOfTheWeek[i]) {
-			userChangedDays = true;
-			break;
+	if (nDays == gt.rules.nDaysPerWeek) {
+		bool userChangedDays = false;
+		for(int i=0; i < nDays; i++) {
+			if (daysNames[i]->text() != gt.rules.daysOfTheWeek[i]) {
+				userChangedDays = true;
+				break;
+			}
 		}
+		if (!userChangedDays)
+			return;
 	}
-	if (!userChangedDays)
-		return;
-	
+
 	QSet<TimeConstraint*> modifiableTimeConstraints;
 	QSet<TimeConstraint*> toBeRemovedTimeConstraints;
 	QSet<SpaceConstraint*> modifiableSpaceConstraints;
