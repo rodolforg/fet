@@ -36981,39 +36981,6 @@ Iniciar significa que una activitat només pot començar en aquests períodes.
 Les franges horàries són més restrictives, l&apos;activitat només pot començar, finalitzar i desenvolupar-se en aquests intervals (si l&apos;activitat té una durada de 2 i el dilluns pot començar a les 8:00, 9:00 i 10:00. llavors només pot començar a les 8:00 o les 9:00).</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="515"/>
-        <source>Q: What I need is a way to make the following constraint:
-
-If Activity1 comes first, then Activity2 can be consecutive. But, if Activity2 comes first, then Activity1 must have at least 1 period in between.
-
-For example, if the algorithm places Dance in 1st hour, then Wrestling can be placed in 2nd hour, but if Wrestling is placed in 1st hour, then Dance must be at least in 3rd hour, if not farther away.
-
-A simpler, but less useful solution could be a constraint that says:
-
-Activity1 and Activity2 will not be consecutive.
-
-A: I have a very good solution for you, but it is a bit complicated to add.
-
-Suppose you have activities A1 and A2. Add dummy A3, with duration 1, no teachers and no students. Add constraint two activities consecutive, A2 and A3 (A2 followed by A3). Add constraint activities not overlapping, A1 and A3.
-
-There is only a small problem: A2 cannot be put in the last period. To correct that: increase the number of hours with 1 and constraint all the real activities (without A3) to take place in the first periods. You can do that by adding an activity tag to A1 and A2 named Early and an activity tag to A3 named Any, and constraint activities preferred time slots for activity tag Early to be in the first n-1 slots of each day.</source>
-        <translation>P: Necessito saber com establir la següent restricció:
-
-Si l&apos;Activitat1 es fa primer, llavors l&apos;Activitat2 pot anar a continuació. Però, si l&apos;Activitat2 és la primera, llavors cal que hi hagi almenys un període abans de fer l&apos;Activitat1.
-
-Per exemple, si l&apos;algoritme col·loca Dansa a la 1a hora, llavors Lluita es pot col·locar a 2a hora, però si és Lluita la col·locada a 1a, llavors cal que Dansa sigui col·locada, com a poc, a 3a hora o després.
-
-Més simple, però menys efectiu, seria fer servir una restricció del tipus:
-
-Activitat1 i Activitat2 no consecutives.
-
-R: Hi ha una bona solució per aquesta situació, però és complicat afegir-la.
-
-Suposau que teniu les activitats A1 i A2. Afegiu una activitat fictícia A3, amb durada 1, sense professorat ni estudiants. Afegiu una restricció «dues activitats consecutives», A2 i A3 (A2 seguida de A3). Afegiu una restricció «activitats sense solapament», A1 i A3.
-
-Només hi ha un petit problema: A2 no es podrà col·locar la darrera. Per a corregir això, augmentau el nombre d&apos;hores amb 1 i restringiu ttes les activitats reals (no la A3) per a què siguin col·locades en els primer períodes. Podeu fer-ho afegint una etiqueta d&apos;activitat a A1 i A2 anomenada «Matinera» i una altra a A3 anomenada «Qualsevol» i restriccions d&apos;activitats del tipus «franges horaries preferides» per a l&apos;etiqueta «Matinera» per a que siguin col·locades en les n-1 primeres franges de cada dia.</translation>
-    </message>
-    <message>
         <location filename="../src/interface/helpfaqform.cpp" line="534"/>
         <source>Q: What is the difference between preferred starting times and preferred time slots?
 
@@ -37063,19 +37030,6 @@ Les franges horàries són més restricctives, degut a què l&apos;activitat nom
 Això és útil si necessitau, per exemple, que les matemàtiques amb 4-5 sessions setmanals, se restringeixin el primer i segon component a primeres hores. Haureu d&apos;afegir 2 restriccions amb els components 1 i 2 i la matèria matemàtiques. O, si voleu, per a les activitats dividides en 4 períodes, 2 d&apos;ells a principi de jornada i per les dividides en 5, 3 d&apos;elles a principi de jornada, afegiu restriccions a matemàtiques amb els números de divisió 3, 4 i 5 (un bon truc).
 
 Un altra qüestió: si teniu 1 o 2 sessions setmanals d&apos;una matèria, biologia, i voleu restringir un dels components si té dues sessions setmanals i un amb un sessió setmanal, afegiu una restricció per al component número 2.</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="601"/>
-        <source>Q: At our school there are a lot of teachers which work only a few hours a week. Of course it is really nasty to drive for one our to the school. So we set the constraint that every teacher should work at least 2 hours a day. Unfortunately we have this year a teacher which only works 1h a week. As a result of this FET doesn&apos;t start to create a timetable. Any suggestions how to fix the problem without defining a constraint for every singular teacher?
-
-A: I have a nice trick: add a dummy activity, 1 hour duration, with only this teacher (no students sets, any subject), additional to the real activity.
-
-This trick just passed through my mind as I was trying to write you that you have to do it the hard way (add constraints for each teacher)</source>
-        <translation>P: En el vostre centre hi ha bona part del professorat que només treballa poques hores setmanals. És desagradable conduir una hora fins el centre. Per això, establiu la constricció de, almenys 2 hores de treball diàries per a tot el professorat. Malauradament, hi ha un docent que només treballa 1 hora setmanal. I FET no pot generar un horari. Algun suggeriment per a solucionar aquesta situació?
-
-R: Hi ha un truc per això: afegiu una activitat fictícia, amb 1 hora de durada, amb només el docent implicat (sense grups i qualsevol matèria) a més de l&apos;activitat real.
-
-Aquesta opció l&apos;he pensant mentre estava escrivint una manera més complicada de fer-ho (afagir restriccions per a cada docent)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="622"/>
@@ -37633,7 +37587,7 @@ groups:
 contains subgroups:
 
     1_a_x_ENG_FRE_GER,
-    t1_a_x_!ENG_FRE_GER,
+    1_a_x_!ENG_FRE_GER,
     1_a_x_ENG_!FRE_GER,
     1_a_x_!ENG_!FRE_GER,
     1_a_x_ENG_FRE_!GER,
@@ -37717,7 +37671,7 @@ grups:
 amb els subgrups:
 
     1_a_x_ENG_FRE_GER,
-    t1_a_x_!ENG_FRE_GER,
+    1_a_x_!ENG_FRE_GER,
     1_a_x_ENG_!FRE_GER,
     1_a_x_!ENG_!FRE_GER,
     1_a_x_ENG_FRE_!GER,
@@ -37790,6 +37744,39 @@ La millor manera d&apos;afegir les activitats seria:
 2. Si no afegiu «força consecutiva el mateix dia», afegiu una activitat més gran dividida en una sèrie d&apos;activitats iguals al nombre de dies a la setmana i els components restants a una altra activitat de divisió més gran. Per exemple, suposem que cal afegir 7 activitats amb durada 1 (hora) en una setmana de 5 dies. Afegiu 2 activitats dividides, la primera es divideix en 5 activitats amb una durada 1 (hora) i una altra dividida en 2 activitats amb durada 1 (hora) (possiblement augmentant la ponderació de les restriccions «min. de dies entre les activitats» de cada una de les 2 activitats dividides fins al 100%)</translation>
     </message>
     <message>
+        <location filename="../src/interface/helpfaqform.cpp" line="515"/>
+        <source>Q: What I need is a way to make the following constraint:
+
+If Activity1 comes first, then Activity2 can be consecutive. But, if Activity2 comes first, then Activity1 must have at least 1 period in between.
+
+For example, if the algorithm places Dance in 1st hour, then Wrestling can be placed in 2nd hour, but if Wrestling is placed in 1st hour, then Dance must be at least in 3rd hour, if not farther away.
+
+A simpler, but less useful solution could be a constraint that says:
+
+Activity1 and Activity2 will not be consecutive.
+
+A: I have a very good solution for you, but it is a bit complicated to add.
+
+Suppose you have activities A1 and A2. Add dummy A3, with duration 1, no teachers and no students. Add constraint two activities consecutive, A2 and A3 (A2 followed by A3). Add constraint activities not overlapping, A1 and A3.
+
+There is only a small problem: A2 cannot be put in the last period. To correct that: increase the number of hours with 1 and constrain all the real activities (without A3) to take place in the first periods. You can do that by adding an activity tag to A1 and A2 named Early and an activity tag to A3 named Any, and constraint activities preferred time slots for activity tag Early to be in the first n-1 slots of each day.</source>
+        <translation>P: Necessito saber com establir la següent restricció:
+
+Si l&apos;Activitat1 es fa primer, llavors l&apos;Activitat2 pot anar a continuació. Però, si l&apos;Activitat2 és la primera, llavors cal que hi hagi almenys un període abans de fer l&apos;Activitat1.
+
+Per exemple, si l&apos;algoritme col·loca Dansa a la 1a hora, llavors Lluita es pot col·locar a 2a hora, però si és Lluita la col·locada a 1a, llavors cal que Dansa sigui col·locada, com a poc, a 3a hora o després.
+
+Més simple, però menys efectiu, seria fer servir una restricció del tipus:
+
+Activitat1 i Activitat2 no consecutives.
+
+R: Hi ha una bona solució per aquesta situació, però és complicat afegir-la.
+
+Suposau que teniu les activitats A1 i A2. Afegiu una activitat fictícia A3, amb durada 1, sense professorat ni estudiants. Afegiu una restricció «dues activitats consecutives», A2 i A3 (A2 seguida de A3). Afegiu una restricció «activitats sense solapament», A1 i A3.
+
+Només hi ha un petit problema: A2 no es podrà col·locar la darrera. Per a corregir això, augmentau el nombre d&apos;hores amb 1 i restringiu ttes les activitats reals (no la A3) per a què siguin col·locades en els primer períodes. Podeu fer-ho afegint una etiqueta d&apos;activitat a A1 i A2 anomenada «Matinera» i una altra a A3 anomenada «Qualsevol» i restriccions d&apos;activitats del tipus «franges horaries preferides» per a l&apos;etiqueta «Matinera» per a que siguin col·locades en les n-1 primeres franges de cada dia.</translation>
+    </message>
+    <message>
         <location filename="../src/interface/helpfaqform.cpp" line="544"/>
         <source>Q: What means constraint min gaps (hours) between a set of activities?
 
@@ -37819,6 +37806,19 @@ A: If you have activities which you want to put in the last slots of a day (like
         <translation>P: Ajuda sobre restriccions d&apos;activitats «final de jornada dels estudiants» (o «l&apos;activitat acaba la jornada dels estudiants»).
 
 R: Si teniu activitats que voleu col·locar a les últimes hores d&apos;un dia (p. ex. les reunions amb el mestre de classe), feu servir la nova restricció  «conjunt d&apos;activitats al final de la jornada dels estudiants» (o «activitat singular al final de jornada dels estudiants»). Aquesta restricció pot tenir només un 100% de ponderació, a causa del funcionament de l&apos;algorisme.</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpfaqform.cpp" line="601"/>
+        <source>Q: At our school there are a lot of teachers which work only a few hours a week. Of course it is really nasty to drive for one hour to the school. So we set the constraint that every teacher should work at least 2 hours a day. Unfortunately we have this year a teacher which only works 1h a week. As a result of this FET doesn&apos;t start to create a timetable. Any suggestions how to fix the problem without defining a constraint for every singular teacher?
+
+A: I have a nice trick: add a dummy activity, 1 hour duration, with only this teacher (no students sets, any subject), additional to the real activity.
+
+This trick just passed through my mind as I was trying to write you that you have to do it the hard way (add constraints for each teacher)</source>
+        <translation>P: En el vostre centre hi ha bona part del professorat que només treballa poques hores setmanals. És desagradable conduir una hora fins el centre. Per això, establiu la constricció de, almenys 2 hores de treball diàries per a tot el professorat. Malauradament, hi ha un docent que només treballa 1 hora setmanal. I FET no pot generar un horari. Algun suggeriment per a solucionar aquesta situació?
+
+R: Hi ha un truc per això: afegiu una activitat fictícia, amb 1 hora de durada, amb només el docent implicat (sense grups i qualsevol matèria) a més de l&apos;activitat real.
+
+Aquesta opció l&apos;he pensant mentre estava escrivint una manera més complicada de fer-ho (afagir restriccions per a cada docent)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="741"/>
@@ -47628,12 +47628,12 @@ Nota: els no disponibles i les pauses no se&apos;ls compten als professors com a
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="53"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>March</source>
         <translation>Març</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="55"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>April</source>
         <translation>Abril</translation>
     </message>

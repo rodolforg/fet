@@ -37005,37 +37005,6 @@ A: Ein Satz an Aktivitäten wird durch Auswahl von einem Lehrer (leer = alle Leh
 „Zeitfelder“ ist restriktiver, indem die Start- und Endzeit sowie die ganze Dauer einer Aktivität nur innerhalb des gegebenen Intervalls stattfinden darf. Falls z.B. eine Aktivität mit Dauer=2 am Montag in den Zeitfeldern 8.00, 9.00 und 10.00 Uhr stattfindet, kann diese nur entweder um 8.00 Uhr oder um 9.00 Uhr beginnen.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="515"/>
-        <source>Q: What I need is a way to make the following constraint:
-
-If Activity1 comes first, then Activity2 can be consecutive. But, if Activity2 comes first, then Activity1 must have at least 1 period in between.
-
-For example, if the algorithm places Dance in 1st hour, then Wrestling can be placed in 2nd hour, but if Wrestling is placed in 1st hour, then Dance must be at least in 3rd hour, if not farther away.
-
-A simpler, but less useful solution could be a constraint that says:
-
-Activity1 and Activity2 will not be consecutive.
-
-A: I have a very good solution for you, but it is a bit complicated to add.
-
-Suppose you have activities A1 and A2. Add dummy A3, with duration 1, no teachers and no students. Add constraint two activities consecutive, A2 and A3 (A2 followed by A3). Add constraint activities not overlapping, A1 and A3.
-
-There is only a small problem: A2 cannot be put in the last period. To correct that: increase the number of hours with 1 and constraint all the real activities (without A3) to take place in the first periods. You can do that by adding an activity tag to A1 and A2 named Early and an activity tag to A3 named Any, and constraint activities preferred time slots for activity tag Early to be in the first n-1 slots of each day.</source>
-        <translation>Q: Ich sollte die folgende Einschränkung erstellen:
-
-Falls Aktivität 1 zuerst stattfindet, kann Aktivität 2 unmittelbar darauf folgen. Falls aber Aktivität 2 zuerst kommt, muss mindestens 1 Freistunde zwischen ihr und Aktivität 1 stehen.
-
-Zum Beispiel: „Tanz“ wird vom Algorithmus in Stunde 1 eingeplant; „Ringen“ kann in Stunde 2 darauf folgen. Falls die Reihenfolge umgekehrt wird, darf „Tanz“ frühestens in der Stunde 3 stattfinden.
-
-Es wäre natürlich einfacher, aber nicht unbedingt brauchbar, wenn man eine Einschränkung „nicht aufeinanderfolgend“ benutzen würde.
-
-A: Es gibt eine sehr gute Lösung dafür; allerdings ist deren Einrichtung ein wenig kompliziert.
-
-Angenommen, es gibt Aktivitäten A1 und A2. Man füge eine Pseudoaktivität A3 ohne Lehrer und ohne Schüler mit Dauer=1 hinzu. Nachher setze man die Einschränkungen „A2 und A3 hintereinander“ und „A1 und A3 nicht überlappend“.
-
-Dabei verbleibt aber ein kleines Problem: A2 kann nicht in die letzte Stunde gesetzt werden. Um das zu beheben, setzt man die Anzahl Stunden um 1 hinauf und alle tatsächlichen Aktivitäten (also ohne A3) mit einer Einschränkung belegen, die diese in den ersten Stunden verlegt. Das ist durch Hinzufügen einer Aktivitätskennzeichnung „Früh“ zu den Aktivitäten A1 und A2 und eine Kennzeichnung „Beliebig“ für A3 möglich. Nachher erstellt man Einschränkungen „bevorzugte Zeitfelder“ für Aktivitätskennzeichnung „Früh“, die diese in den ersten n-1 Zeitfeldern an jedem Tag setzt.</translation>
-    </message>
-    <message>
         <location filename="../src/interface/helpfaqform.cpp" line="534"/>
         <source>Q: What is the difference between preferred starting times and preferred time slots?
 
@@ -37085,19 +37054,6 @@ Ausserdem werden ein Lehrer (leer = alle Lehrer), eine Schülergruppe (leer = al
 Falls man z.B. 4 bis 5 Stunden Mathematik in der Woche einteilen muss, kann man Einschränkungen einsetzen, sodass die 1. und 2. Teilaktivitäten früh stattfinden. Dafür werden zwei Einschränkungen erstellt, je eine für Teilaktivitäten 1 und 2 mit Fach = Mathematik. Falls 2 Lektionen bei 4 Teilaktivitäten bzw. 3 bei 5 Teilaktivitäten früh stattfinden sollen, kann man eine entsprechende Einschränkung „Mathe“ mit Teilaktivitäten 3, 4 und 5 erstellen (ein nützlicher Trick).
 
 Noch ein Beispiel: Wenn ein Fach (z.B. Biologie) an 1 oder 2 Stunden pro Woche gegeben wird, und man 1 Komponente bei 2 Stunden bzw. keine bei nur 1 Stunde in der Woche einschränken möchte, kann man eine entsprechende Einschränkung für Komponente = 2 hinzufügen.</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="601"/>
-        <source>Q: At our school there are a lot of teachers which work only a few hours a week. Of course it is really nasty to drive for one our to the school. So we set the constraint that every teacher should work at least 2 hours a day. Unfortunately we have this year a teacher which only works 1h a week. As a result of this FET doesn&apos;t start to create a timetable. Any suggestions how to fix the problem without defining a constraint for every singular teacher?
-
-A: I have a nice trick: add a dummy activity, 1 hour duration, with only this teacher (no students sets, any subject), additional to the real activity.
-
-This trick just passed through my mind as I was trying to write you that you have to do it the hard way (add constraints for each teacher)</source>
-        <translation>Q: In unserer Schule gibt es viele Lehrpersonen, die nur wenige Stunden pro Woche unterrichten. Damit man nicht wegen einer einzigen Stunde zur Schule fahren muss, haben wir eine Einschränkung gesetzt, dass jeder Lehrer mindestens 2 Stunden am Tag unterrichten muss. Leider gibt es aber einen Lehrer, der nur 1 Stunde pro Woche unterrichtet. Das hat zur Folge, dass FET gar nicht erst versucht, einen Stundenplan zu erstellen. Hätten Sie ein Vorschlag, wie man dieses Problem lösen kann, ohne für jede Lehrperson einzeln eine Einschränkung definieren zu müssen?
-
-A: Es gibt einen guten Trick: Man kann eine Pseudoaktivität mit Dauer=1 nur für diesen Lehrer (ohne Schüler, ohne Fach) zusätzlich zur tatsächlichen Aktivität hinzufügen.
-
-(Dies war mir gerade eben eingefallen, nachdem ich zuerst schreiben wollte, dass man doch für jeden Lehrer einzeln eine Einschränkung setzen müsste).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="622"/>
@@ -37655,7 +37611,7 @@ groups:
 contains subgroups:
 
     1_a_x_ENG_FRE_GER,
-    t1_a_x_!ENG_FRE_GER,
+    1_a_x_!ENG_FRE_GER,
     1_a_x_ENG_!FRE_GER,
     1_a_x_!ENG_!FRE_GER,
     1_a_x_ENG_FRE_!GER,
@@ -37737,7 +37693,7 @@ Gruppen:
 enthält diese Teilgruppen:
 
     1_a_x_ENG_FRE_GER,
-    t1_a_x_!ENG_FRE_GER,
+    1_a_x_!ENG_FRE_GER,
     1_a_x_ENG_!FRE_GER,
     1_a_x_!ENG_!FRE_GER,
     1_a_x_ENG_FRE_!GER,
@@ -37812,6 +37768,37 @@ Am Besten fügt man Aktivitäten wie folgt hinzu:
 2. Ohne die Option „erzwinge aufeinanderfolgend, falls am gleichen Tag“ zu aktivieren, könnte man eine größere Aktivität in Teile aufteilen, deren Anzahl = 5 Wochentage und die verbleibenden Aktivitäten in einer anderen großen Aktivität zusammenfassen. Bei 7 Aktivitäten in 5 Wochentagen bei Dauer=1 würde man zunächst 2 Mutter-Aktivitäten erstellen: die erste mit 5 Aktivitäten und Dauer=1, die andere mit 2 Aktivitäten mit Dauer=1 (und evtl. eine Einschränkung „min. N Tagen zwischen einem Satz an Aktivitäten“ mit Gewichtung=100% hinzufügen).</translation>
     </message>
     <message>
+        <location filename="../src/interface/helpfaqform.cpp" line="515"/>
+        <source>Q: What I need is a way to make the following constraint:
+
+If Activity1 comes first, then Activity2 can be consecutive. But, if Activity2 comes first, then Activity1 must have at least 1 period in between.
+
+For example, if the algorithm places Dance in 1st hour, then Wrestling can be placed in 2nd hour, but if Wrestling is placed in 1st hour, then Dance must be at least in 3rd hour, if not farther away.
+
+A simpler, but less useful solution could be a constraint that says:
+
+Activity1 and Activity2 will not be consecutive.
+
+A: I have a very good solution for you, but it is a bit complicated to add.
+
+Suppose you have activities A1 and A2. Add dummy A3, with duration 1, no teachers and no students. Add constraint two activities consecutive, A2 and A3 (A2 followed by A3). Add constraint activities not overlapping, A1 and A3.
+
+There is only a small problem: A2 cannot be put in the last period. To correct that: increase the number of hours with 1 and constrain all the real activities (without A3) to take place in the first periods. You can do that by adding an activity tag to A1 and A2 named Early and an activity tag to A3 named Any, and constraint activities preferred time slots for activity tag Early to be in the first n-1 slots of each day.</source>
+        <translation>Q: Ich sollte die folgende Einschränkung erstellen:
+
+Falls Aktivität 1 zuerst stattfindet, kann Aktivität 2 unmittelbar darauf folgen. Falls aber Aktivität 2 zuerst kommt, muss mindestens 1 Freistunde zwischen ihr und Aktivität 1 stehen.
+
+Zum Beispiel: „Tanz“ wird vom Algorithmus in Stunde 1 eingeplant; „Ringen“ kann in Stunde 2 darauf folgen. Falls die Reihenfolge umgekehrt wird, darf „Tanz“ frühestens in der Stunde 3 stattfinden.
+
+Es wäre natürlich einfacher, aber nicht unbedingt brauchbar, wenn man eine Einschränkung „nicht aufeinanderfolgend“ benutzen würde.
+
+A: Es gibt eine sehr gute Lösung dafür; allerdings ist deren Einrichtung ein wenig kompliziert.
+
+Angenommen, es gibt Aktivitäten A1 und A2. Man füge eine Pseudoaktivität A3 ohne Lehrer und ohne Schüler mit Dauer=1 hinzu. Nachher setze man die Einschränkungen „A2 und A3 hintereinander“ und „A1 und A3 nicht überlappend“.
+
+Dabei verbleibt aber ein kleines Problem: A2 kann nicht in die letzte Stunde gesetzt werden. Um das zu beheben, setzt man die Anzahl Stunden um 1 hinauf und alle tatsächlichen Aktivitäten (also ohne A3) mit einer Einschränkung belegen, die diese in den ersten Stunden verlegt. Das ist durch Hinzufügen einer Aktivitätskennzeichnung „Früh“ zu den Aktivitäten A1 und A2 und eine Kennzeichnung „Beliebig“ für A3 möglich. Nachher erstellt man Einschränkungen „bevorzugte Zeitfelder“ für Aktivitätskennzeichnung „Früh“, die diese in den ersten n-1 Zeitfeldern an jedem Tag setzt.</translation>
+    </message>
+    <message>
         <location filename="../src/interface/helpfaqform.cpp" line="544"/>
         <source>Q: What means constraint min gaps (hours) between a set of activities?
 
@@ -37841,6 +37828,19 @@ A: If you have activities which you want to put in the last slots of a day (like
         <translation>Q: Hilfe über die Einschränkung „Eine Aktivität beendet einen Tag des Schülers“ oder „Mehrere Aktivitäten, die einen Schülertag beenden“
 
 A: Falls Aktivitäten in den letzten Zeitfeldern eines Tags stattfinden sollen (z.B. Klassenstunden mit dem Klassenlehrer), kann man diese neue Einschränkungen einsetzen: „Eine Aktivität beendet einen Tag des Schülers“ oder „Mehrere Aktivitäten, die einen Schülertag beenden“. Die Funktionsweise des Algorithmus erlaubt nur eine Gewichtung von 100%.</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpfaqform.cpp" line="601"/>
+        <source>Q: At our school there are a lot of teachers which work only a few hours a week. Of course it is really nasty to drive for one hour to the school. So we set the constraint that every teacher should work at least 2 hours a day. Unfortunately we have this year a teacher which only works 1h a week. As a result of this FET doesn&apos;t start to create a timetable. Any suggestions how to fix the problem without defining a constraint for every singular teacher?
+
+A: I have a nice trick: add a dummy activity, 1 hour duration, with only this teacher (no students sets, any subject), additional to the real activity.
+
+This trick just passed through my mind as I was trying to write you that you have to do it the hard way (add constraints for each teacher)</source>
+        <translation>Q: In unserer Schule gibt es viele Lehrpersonen, die nur wenige Stunden pro Woche unterrichten. Damit man nicht wegen einer einzigen Stunde zur Schule fahren muss, haben wir eine Einschränkung gesetzt, dass jeder Lehrer mindestens 2 Stunden am Tag unterrichten muss. Leider gibt es aber einen Lehrer, der nur 1 Stunde pro Woche unterrichtet. Das hat zur Folge, dass FET gar nicht erst versucht, einen Stundenplan zu erstellen. Hätten Sie ein Vorschlag, wie man dieses Problem lösen kann, ohne für jede Lehrperson einzeln eine Einschränkung definieren zu müssen?
+
+A: Es gibt einen guten Trick: Man kann eine Pseudoaktivität mit Dauer=1 nur für diesen Lehrer (ohne Schüler, ohne Fach) zusätzlich zur tatsächlichen Aktivität hinzufügen.
+
+(Dies war mir gerade eben eingefallen, nachdem ich zuerst schreiben wollte, dass man doch für jeden Lehrer einzeln eine Einschränkung setzen müsste)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="741"/>
@@ -47656,12 +47656,12 @@ Note: teacher not available and break are not counted as gaps.</source>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="53"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>March</source>
         <translation>März</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="55"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>April</source>
         <translation>April</translation>
     </message>

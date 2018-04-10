@@ -1005,7 +1005,7 @@ there won&apos;t be removed an additional number of %1 activities
         <location filename="../src/engine/activitytag.cpp" line="59"/>
         <source>P:%1</source>
         <comment>Whether the activity tag is Printable - can be true or false</comment>
-        <translatorcomment>ما إذا كان الوسم المشترك قابلا للطباعة - يمكن أن يون صحيحا أو خاطئا</translatorcomment>
+        <translatorcomment>ما إذا كان الوسم المشترك قابلا للطباعة - يمكن أن يكون صحيحا أو خاطئا</translatorcomment>
         <translation>ق.ط: %1</translation>
     </message>
     <message>
@@ -23467,7 +23467,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredtimeslotsform.cpp" line="196"/>
         <source>Note: if an activity does not belong to a larger group (is a single activity), it is considered to have component number 1. As an advice, if you have activities of say Biology split into 1 or 2 per week and want to constrain only one component if there are 2 per week, add a constraint for Biology with component number=2</source>
-        <translation>إذا كانت النشاط لا ينتمي إلى مجموعة واسعة (هو نشاط واحد)، تُعتبر أن لها عنصر واحد. كنصيحة، إذا كانت لديك أنشطة، لنقل مادة البيولوجيا مقسمة إلى 1 أو 2 في الأسبوع، و ترغب في تقييد عنصر واحد فقط إذا كان هناك عنصران في الأسبوع، أضف القيد لمادة البيولوجا مع العنصر رقم=2</translation>
+        <translation>إذا كان النشاط لا ينتمي إلى مجموعة واسعة (هو نشاط واحد)، تُعتبر أن له عنص واح. كنصيحة، إذا كانت لديك أنشطة، لنقل مادة البيولوجيا مقسمة إلى 1 أو 2 في الأسبوع، و ترغب في تقييد عنصر واحد فقط إذا كان هناك 2 في الأسبوع، أضف القيد لمادة البيولوجا مع العنصر رقم=2</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredtimeslotsform.cpp" line="200"/>
@@ -25624,7 +25624,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="5323"/>
         <source>MG:%1</source>
         <comment>Max gaps (per day)</comment>
-        <translation>أقل فجوات:%1</translation>
+        <translation>أقصى فجوة:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5331"/>
@@ -25782,7 +25782,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="4911"/>
         <source>MG:%1</source>
         <comment>Max gaps (per week</comment>
-        <translation>أقل فجوات:%1</translation>
+        <translation>أقصى فجوة:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4919"/>
@@ -28213,7 +28213,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="5115"/>
         <source>MG:%1</source>
         <comment>Max gaps (per day)</comment>
-        <translation>أقل فجوات:%1</translation>
+        <translation>أقصى فجوة:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5123"/>
@@ -34984,7 +34984,7 @@ G1 ستظهر مرتين في الجدول</translation>
         <location filename="../src/engine/generate_pre.cpp" line="1938"/>
         <location filename="../src/engine/generate_pre.cpp" line="1958"/>
         <source>Cannot optimize, because you have activity id = %1 with duration = %2 and a constraint teacher(s) max %3 hours daily with weight = 100% for the teacher %4. The activity&apos;s duration is higher than the teacher&apos;s max hours daily. Please correct and try again.</source>
-        <translation>لا يمكن مقاربة الحل، لأنه يوجد لديك نشاط معرفه %1 مع مدة = %2 و قيد أقصى %3 حصص يومية لمدرس(ين) مع الوزن = 100% للمدرس %4. مدة المهمة أكبر من أقصى حصص يومية. يرجى التصحيح و المحاولة من جديد.</translation>
+        <translation>لا يمكن مقاربة الحل، لأنه يوجد لديك نشاط معرفه %1 مع مدة = %2 و قيد أقصى %3 حصص يومية لمدرس(ين) مع الوزن = 100% للمدرس %4. مدة النشاط أكبر من أقصى حصص يومية. يرجى التصحيح و المحاولة من جديد.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="1979"/>
@@ -37033,7 +37033,7 @@ Time slots means more restrictive, that activity may only start and end and take
 
 ج: يمكنك تحديد مجموعة من الأنشطة بواسطة اختيار مدرس (إذا كان فارغا - كل المرسين)، مجموعة طلاب (إذا كان فارغا - كل الطلاب)، مادة (إذاكان فارغا - كل المواد) و وسم مشترك (إذا كان فارغا - كل الوسوم) و مجموعة من الفترات الزمنية التي يُسمح بها.
 
-وقت البدء يعني أن المهمة قد لا تنطلق إلا في هذه الأوقات فقط.
+وقت البدء يعني أن النشاط قد لا ينطلق إلا في هذه الأوقات فقط.
 
 فترات زمنية تعني تقييدا أكثر، فالنشاط قد ينطلق فقط و ينتهي و يأخذ موضعا له في هذه الفواصل الزمنية (إذا كان النشاط مدته ساعتين و يوم الاثنين يسمح بالفترات: 8:00، 9:00 و 10:00، فهذا النشاط يمكنه أن ينطلق فقط على الساعة 8:00 أو 9:00).</translation>
     </message>
@@ -37061,39 +37061,6 @@ The best way to add the activities would be:
 1. إذا قمت بإضافة &quot;متصلة إذا نفس اليوم&quot;، ثم زاوج الأنشطة الفائضة في أزواج، للحصول على عدد من الأنشطة مساوية لعدد الأيام في الأسبوع. على سبيل المثال: 7 الأنشطة مع مدة زمنية = 1 على مدار 5 أيام في الأسبوع، ثم قم بتحويلها إلى 5 أنشطة مع فترات: 2،2،1،1،1 وإضافة حاوية نشاط واحدة مع هذه العناصر الخمس (5) (من الممكن رفع وزن القيود المضافة أدنى أيام بين الأنشطة ليصل إلى 100%)
 
 2. إذا لم تقم باضافة &quot;متصلة إذا نفس اليوم&quot;، قم بإضافة نشاط كبير مقسم إلى عدد من الأنشطة على قدر المساواة مع عدد الأيام في الأسبوع. و العناصر المتبقية في نشاط كبير مقسم . على سبيل المثال، لنفترض أنك تحتاج إلى إضافة 7 أنشطة بمدة 1 في غضون 5 أيام. قم باضافة حاوتي نشاط، و اجعل الأولى مقسمة إلى 5 أنشطة مع مدة 1 بينما الحاوية الثانية مقسمة النشاطين الاثنين المتبقيين مع مدة زمنية = 1 (ربما رفع وزن القيود المضافة أدنى أيام بين الأنشطة لكل من الحوتين 2 ليصل إلى 100%)</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="515"/>
-        <source>Q: What I need is a way to make the following constraint:
-
-If Activity1 comes first, then Activity2 can be consecutive. But, if Activity2 comes first, then Activity1 must have at least 1 period in between.
-
-For example, if the algorithm places Dance in 1st hour, then Wrestling can be placed in 2nd hour, but if Wrestling is placed in 1st hour, then Dance must be at least in 3rd hour, if not farther away.
-
-A simpler, but less useful solution could be a constraint that says:
-
-Activity1 and Activity2 will not be consecutive.
-
-A: I have a very good solution for you, but it is a bit complicated to add.
-
-Suppose you have activities A1 and A2. Add dummy A3, with duration 1, no teachers and no students. Add constraint two activities consecutive, A2 and A3 (A2 followed by A3). Add constraint activities not overlapping, A1 and A3.
-
-There is only a small problem: A2 cannot be put in the last period. To correct that: increase the number of hours with 1 and constraint all the real activities (without A3) to take place in the first periods. You can do that by adding an activity tag to A1 and A2 named Early and an activity tag to A3 named Any, and constraint activities preferred time slots for activity tag Early to be in the first n-1 slots of each day.</source>
-        <translation>س: ماذا أحتاج كوسيلة لتحقيق التقييد التالي:
-
-إذا كان النشاط 1 يأتي أولا، فإن النشاط 2 يمكن أن يليه مباشرة. ولكن، إذا جاء النشاط 2 أولا، يجب أن يكون النشاط 1 بعد فترة واحدة على الأقل من حدوث النشاط 2.
-
-على سبيل المثال، إذا وضعت الخوارزمية نشاط الرسم في الساعة 1،  فيمكن وضع نشاط المعلوماتية في الساعة 2، ولكن إذا تم وضع المعلوماتية في الساعة 1، فيجب أن يكون الرسم على الأقل في ساعة 3، إن لم يكن بعيدا.
-
-يمكن أن يكون الحل الأبسط، ولكن الأقل فائدة،ما يقال أدناه:
-
-النشاط 1 والنشاط 2 لا يكونا متتاليين.
-
-ج: لدي حل مناسب جدا بالنسبة لك، ولكن هو معقد نوعا ما لاضافته.
-
-لنفترض أن لديك النشاطين 1 و 2. أضف نشاطا تخيليا 3 (لا مدرسين، لا طلاب) مدته ساعة واحدة. أضف قيد نشاطان متتاليان، A2، و A3 حيث A2 يتبع A3. ثم أضف قيد أنشطة ليست متداخلة، A1 و A3.
-
-هناك مشكلة صغيرة فقط: A2 لا يمكن وضعها في الفترة الأخيرة. لتصحيح ذلك: زيادة عدد الساعات مع 1 و تقييد جميع الأنشطة الحقيقية (دون النشاط التخيلي A3) كي تجري في الفترات الأولى. يمكنك القيام بذلك عن طريق إضافة وسم مشترك إلى A1 و A2 اسمه &quot;تبكير&quot;، و وسم مشترك إلى A3 المسمى بأي اسم تشاء، و اضافة قيد أنشطة لها فترات زمنية مفضلة للوسم &quot;تبكير&quot; لتكون في أول  (n-1) فترة من فترات كل يوم.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="534"/>
@@ -37140,24 +37107,11 @@ Another thing: if you have 1 or 2 lessons per week for a subject, say biology, a
 
 أوقات بدء تعني أن النشاط قد ينطلق فقط في هذه الفواصل الزمنية.
 
-فترات زمنية تعني تقييدا أكثر، فالمهمة قد تنطلق فقط و تنتهي و تأخذ موضعا لها في هذه الفواصل الزمنية (إذا كان النشاط مدته ساعتين و يوم الاثنين يُسمح بالفترات: 8:00، 9:00 و 10:00، فهذا النشاط يمكنه أن ينطلق فقط على الساعة 8:00 أو 9:00).
+فترات زمنية تعني تقييدا أكثر، فالنشاط قد ينطلق فقط و ينتهي و يأخذ موضعا له في هذه الفواصل الزمنية (إذا كان النشاط مدته ساعتين و يوم الاثنين يُسمح بالفترات: 8:00، 9:00 و 10:00، فهذا النشاط يمكنه أن ينطلق فقط على الساعة 8:00 أو 9:00).
 
 من المفيد إذا احتجت على سبيل المثال، و إذا كانت دروس الرياضيات مقسمة إلى 4-5 عناصر في الاسبوع، لتقييد العنصر الأول و العنصر الثاني ليكونا في وقت باكر. ستحتاج لإضافة قيدين لتحقيق هذا، مع العنصر 1 و العنصر2، الاثنين مع مادة الرياضيات. أو، إذا أردت للأنشطة المقسمة إلى 4 أن يكون درسين في وقت مبكر، و للأنشطة المقسمة إلى 5 عناصر في الأسبوع أن يكون 3 دروس منها تحدث في وقت مبكر، اضف القيد للرياضيات مع رقم التقسيم 3، 4، و 5 (حيلة جميلة).
 
 شيئ آخر: إذا كان لديك درس أو درسان في الأسبوع لمادة ما، لنقل الانجليزية، و ترغب في تقييد عنصر واحد منهما، تستطيع اضافة هذا القيد للعنصر رقم 2.</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="601"/>
-        <source>Q: At our school there are a lot of teachers which work only a few hours a week. Of course it is really nasty to drive for one our to the school. So we set the constraint that every teacher should work at least 2 hours a day. Unfortunately we have this year a teacher which only works 1h a week. As a result of this FET doesn&apos;t start to create a timetable. Any suggestions how to fix the problem without defining a constraint for every singular teacher?
-
-A: I have a nice trick: add a dummy activity, 1 hour duration, with only this teacher (no students sets, any subject), additional to the real activity.
-
-This trick just passed through my mind as I was trying to write you that you have to do it the hard way (add constraints for each teacher)</source>
-        <translation>س: في مدرستنا هناك الكثير من المعلمين الذين يعملون فقط بضعة ساعات في الأسبوع. بالطبع هو حقا لأمر مزعج أن تدفع مدرسا واحدا لدينا إلى المدرسة. لذلك وضعنا القيد المسمى أدنى حصص يومية لمدرس و جعلناه مساويا إلى 2. لسوء الحظ لدينا هذا العام مدرس يعمل فقط ساعة واحدة في الأسبوع. ونتيجة لهذا فإن FET لا ينطلق في إنشاء جدول زمني. هل من اقتراحات حول كيفية حل هذه المشكلة دون تحديد القيد لكل مدرس على حدة؟
-
-ج: لدي حيلة جميلة، تتمثل في اضافة نشاط تخيلي، مدته 1 ساعة، لهذا المرس فقط (لا مجموعات طلاب، لا مادة)، بالاضافة إلى النشاط الحقيقي.
-
-هذه الحيلة مرت فقط من خلال ذهني، في نفس الحين الذي كنت أحاول فيه أن أكتب لك، أنه عليك أن تفعل ذلك بالطريقة الصعبة (إضافة قيود لكل مدرس)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="622"/>
@@ -37715,7 +37669,7 @@ groups:
 contains subgroups:
 
     1_a_x_ENG_FRE_GER,
-    t1_a_x_!ENG_FRE_GER,
+    1_a_x_!ENG_FRE_GER,
     1_a_x_ENG_!FRE_GER,
     1_a_x_!ENG_!FRE_GER,
     1_a_x_ENG_FRE_!GER,
@@ -37838,6 +37792,39 @@ Currently, the interface for students is difficult to use. I am thinking of that
 حاليا، واجهة الطلاب يصعب استخدامها. أنا أفكر في هذا الأمر. ربما هو أكثر بساطة بالنسبة إليك إذا حاولت العمل على ملف xml .fet.</translation>
     </message>
     <message>
+        <location filename="../src/interface/helpfaqform.cpp" line="515"/>
+        <source>Q: What I need is a way to make the following constraint:
+
+If Activity1 comes first, then Activity2 can be consecutive. But, if Activity2 comes first, then Activity1 must have at least 1 period in between.
+
+For example, if the algorithm places Dance in 1st hour, then Wrestling can be placed in 2nd hour, but if Wrestling is placed in 1st hour, then Dance must be at least in 3rd hour, if not farther away.
+
+A simpler, but less useful solution could be a constraint that says:
+
+Activity1 and Activity2 will not be consecutive.
+
+A: I have a very good solution for you, but it is a bit complicated to add.
+
+Suppose you have activities A1 and A2. Add dummy A3, with duration 1, no teachers and no students. Add constraint two activities consecutive, A2 and A3 (A2 followed by A3). Add constraint activities not overlapping, A1 and A3.
+
+There is only a small problem: A2 cannot be put in the last period. To correct that: increase the number of hours with 1 and constrain all the real activities (without A3) to take place in the first periods. You can do that by adding an activity tag to A1 and A2 named Early and an activity tag to A3 named Any, and constraint activities preferred time slots for activity tag Early to be in the first n-1 slots of each day.</source>
+        <translation>س: ماذا أحتاج كوسيلة لتحقيق التقييد التالي:
+
+إذا كان النشاط 1 يأتي أولا، فإن النشاط 2 يمكن أن يليه مباشرة. ولكن، إذا جاء النشاط 2 أولا، يجب أن يكون النشاط 1 بعد فترة واحدة على الأقل من حدوث النشاط 2.
+
+على سبيل المثال، إذا وضعت الخوارزمية نشاط الرسم في الساعة 1،  فيمكن وضع نشاط المعلوماتية في الساعة 2، ولكن إذا تم وضع المعلوماتية في الساعة 1، فيجب أن يكون الرسم على الأقل في ساعة 3، إن لم يكن بعيدا.
+
+يمكن أن يكون الحل الأبسط، ولكن الأقل فائدة،ما يقال أدناه:
+
+النشاط 1 والنشاط 2 لا يكونا متتاليين.
+
+ج: لدي حل مناسب جدا بالنسبة لك، ولكن هو معقد نوعا ما لاضافته.
+
+لنفترض أن لديك النشاطين 1 و 2. أضف نشاطا تخيليا 3 (لا مدرسين، لا طلاب) مدته ساعة واحدة. أضف قيد نشاطان متتاليان، A2، و A3 حيث A2 يتبع A3. ثم أضف قيد أنشطة ليست متداخلة، A1 و A3.
+
+هناك مشكلة صغيرة فقط: A2 لا يمكن وضعها في الفترة الأخيرة. لتصحيح ذلك: زيادة عدد الساعات مع 1 و تقييد جميع الأنشطة الحقيقية (دون النشاط التخيلي A3) كي تجري في الفترات الأولى. يمكنك القيام بذلك عن طريق إضافة وسم مشترك إلى A1 و A2 اسمه &quot;تبكير&quot;، و وسم مشترك إلى A3 المسمى بأي اسم تشاء، و اضافة قيد أنشطة لها فترات زمنية مفضلة للوسم &quot;تبكير&quot; لتكون في أول  (n-1) فترة من فترات كل يوم.</translation>
+    </message>
+    <message>
         <location filename="../src/interface/helpfaqform.cpp" line="544"/>
         <source>Q: What means constraint min gaps (hours) between a set of activities?
 
@@ -37867,6 +37854,19 @@ A: If you have activities which you want to put in the last slots of a day (like
         <translation>س: مساعدة حول قيد &quot;أنشطة تنهي يوم الطلاب&quot; (أو نشاط ينهي يوم الطلاب).
 
 ج: إذا كان لديك أنشطة تريد أن تضعها في الفترات الأخيرة من اليوم (لنقل مثلا أنشطة التربية البدنية أو أي أنشطة أخرى ترغب في جعلها تنهي يوم الطلاب)، يرجى استخدام هذا القيد الجديد أنشطة تنهي يوم الطلاب (أو نشاط واحد ينهي يوم الطلاب). هذا القيد يمكن أن يحصل على الوزن 100% فقط، بسبب الطريقة التي تعمل بها الخوارزمية.</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpfaqform.cpp" line="601"/>
+        <source>Q: At our school there are a lot of teachers which work only a few hours a week. Of course it is really nasty to drive for one hour to the school. So we set the constraint that every teacher should work at least 2 hours a day. Unfortunately we have this year a teacher which only works 1h a week. As a result of this FET doesn&apos;t start to create a timetable. Any suggestions how to fix the problem without defining a constraint for every singular teacher?
+
+A: I have a nice trick: add a dummy activity, 1 hour duration, with only this teacher (no students sets, any subject), additional to the real activity.
+
+This trick just passed through my mind as I was trying to write you that you have to do it the hard way (add constraints for each teacher)</source>
+        <translation>س: في مدرستنا هناك الكثير من المعلمين الذين يعملون فقط بضعة ساعات في الأسبوع. بالطبع هو حقا لأمر مزعج أن تدفع مدرسا واحدا لدينا إلى المدرسة. لذلك وضعنا القيد المسمى أدنى حصص يومية لمدرس و جعلناه مساويا إلى 2. لسوء الحظ لدينا هذا العام مدرس يعمل فقط ساعة واحدة في الأسبوع. ونتيجة لهذا فإن FET لا ينطلق في إنشاء جدول زمني. هل من اقتراحات حول كيفية حل هذه المشكلة دون تحديد القيد لكل مدرس على حدة؟
+
+ج: لدي حيلة جميلة، تتمثل في اضافة نشاط تخيلي، مدته 1 ساعة، لهذا المرس فقط (لا مجموعات طلاب، لا مادة)، بالاضافة إلى النشاط الحقيقي.
+
+هذه الحيلة مرت فقط من خلال ذهني، في نفس الحين الذي كنت أحاول فيه أن أكتب لك، أنه عليك أن تفعل ذلك بالطريقة الصعبة (إضافة قيود لكل مدرس)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="741"/>
@@ -47668,12 +47668,12 @@ Note: teacher not available and break are not counted as gaps.</source>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="53"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>March</source>
         <translation>مارس</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="55"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>April</source>
         <translation>أفريل</translation>
     </message>
