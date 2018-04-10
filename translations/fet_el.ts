@@ -128,7 +128,7 @@
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="547"/>
         <source>Example: No: 100 / 102, Dur: 114 / 117. They represent: 100 - the number of active (sub)activities, then 102 - the number of total (sub)activities, 114 - the duration of active activities (in periods or FET hours) and 117 - the duration of total activities (in periods or FET hours). In this example we have 2 inactive activities with their combined duration being 3 periods.</source>
-        <translation>Παράδειγμα: Αρ. 100 / 102, Δρκ: 114 / 117. Αναπαριστούν: 100 - ο αριθμός των ενεργών (υπο)δραστηριοτήτων, 102 - ο συνολικός αριθμός των (υπο)δραστηριοτήτων, 114 - η διάρκεια των ενεργών δραστηριοτήτων (σε περιόδους ή ώρες στο FET) και 117 - η συνολικη διάρκεια των δραστηριοτήτων (σε περιόδους ή ώρες στο FET). Στο παράδειγμα αυτό έχουμε δύο ανενεργές δραστηριότητες με διάρκεια αθροιστικά 3 περιόδων.</translation>
+        <translation>Παράδειγμα: Αρ. 100 / 102, Δρκ: 114 / 117. Αναπαριστούν: 100 - ο αριθμός των ενεργών (υπο)δραστηριοτήτων, 102 - ο συνολικός αριθμός των (υπο)δραστηριοτήτων, 114 - η διάρκεια των ενεργών δραστηριοτήτων (σε περιόδους ή ώρες στο FET) και 117 - η συνολική διάρκεια των δραστηριοτήτων (σε περιόδους ή ώρες στο FET). Στο παράδειγμα αυτό έχουμε δύο ανενεργές δραστηριότητες με διάρκεια αθροιστικά 3 περιόδων.</translation>
     </message>
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="553"/>
@@ -923,7 +923,7 @@ there won&apos;t be removed an additional number of %1 activities
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1789"/>
         <source>This cell contains activities that relate to other subjects. Should the related activities also be deleted?</source>
-        <translation>Το κελί αυτό περιλαμβάνει δραστηριότητες που σχετίζονται με άλλα αντίκείμενα. Οφείλουν να διαγραφούν και οι δραστηριότητες αυτές (που σχετίζονται με άλλα αντικείμενα);</translation>
+        <translation>Το κελί αυτό περιλαμβάνει δραστηριότητες που σχετίζονται με άλλα αντικείμενα. Οφείλουν να διαγραφούν και οι δραστηριότητες αυτές (που σχετίζονται με άλλα αντικείμενα);</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2200"/>
@@ -1324,7 +1324,7 @@ there won&apos;t be removed an additional number of %1 activities
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="704"/>
         <source>1. If you add &apos;force consecutive if same day&apos;, then couple extra activities in pairs to obtain a number of activities equal to the number of days per week. Example: 7 activities with duration 1 in a 5 days week, then transform into 5 activities with durations: 2,2,1,1,1 and add a single container activity with these 5 components (possibly raising the weight of added constraint min days between activities up to 100%)</source>
-        <translation>1. Αν προσθέσετε &quot;αν την ίδια ημέρα - διαδοχικές&quot;, τότε δημιουργήστε ζεύγη με τις επιπλέον δραστηριοτήτες (υποδραστηριότητες), προκειμένου να εξασφαλίσετε ότι ο αριθμός των δραστηριοτήτων (υποδραστηριοτήτων) θα είναι ίσος με τον αριθμό των ημερών ανά εβδομάδα. Παράδειγμα: για 7 δραστηριότητες (υποδραστηριότητες) με διάρκεια η καθεμία 1 (ώρα) σε εβδομάδα 5 ημερών, θα πρέπει να μετασχηματίσετε τις δραστηριότητες (υποδραστηριότητες) αυτές σε 5 δραστηριότητες (υποδραστηριότητες) με διάρκειες: 2,2,1,1,1 και να προσθέσετε μία επιμερισμένη δραστηριότητα με τα παραπάνω 5 στοιχεία (υποδραστηριότητες), πιθανώς αυξάνοντας την βαρύτητα του περιορισμού &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; στο 100%</translation>
+        <translation>1. Αν προσθέσετε &quot;αν την ίδια ημέρα - διαδοχικές&quot;, τότε δημιουργήστε ζεύγη με τις επιπλέον δραστηριότητες (υποδραστηριότητες), προκειμένου να εξασφαλίσετε ότι ο αριθμός των δραστηριοτήτων (υποδραστηριοτήτων) θα είναι ίσος με τον αριθμό των ημερών ανά εβδομάδα. Παράδειγμα: για 7 δραστηριότητες (υποδραστηριότητες) με διάρκεια η καθεμία 1 (ώρα) σε εβδομάδα 5 ημερών, θα πρέπει να μετασχηματίσετε τις δραστηριότητες (υποδραστηριότητες) αυτές σε 5 δραστηριότητες (υποδραστηριότητες) με διάρκειες: 2,2,1,1,1 και να προσθέσετε μία επιμερισμένη δραστηριότητα με τα παραπάνω 5 στοιχεία (υποδραστηριότητες), πιθανώς αυξάνοντας την βαρύτητα του περιορισμού &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; στο 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="708"/>
@@ -1379,7 +1379,7 @@ there won&apos;t be removed an additional number of %1 activities
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="817"/>
         <source>A first notice: If you use a 5 days week: when adding an activity split into only 2 components per week, the best practice is to add min days between activities to be 2. If you split an activity into 3 components per week - please read FAQ question Q1-5-September-2008</source>
-        <translation>Μία πρώτη επισήμανση: Αν έχετε εβδομάδα 5 ημερών: όταν προσθέτετε μία δραστηριότητα η οποία επιμερίζεται σε δύο στοιχεία (υποδραστηριότητες) ανά εβδομάδα, η καλύτερη πρακτική είναι να προσθέσετε τις &quot;ελάχιστες ημέρες ανά εβδομάδα&quot; να είναι 2. Αν επιμερίσετε μία δραστηριότητα σε 3 στοιχεία (υποδραστηριότητες) ανά εβδομάδα, παρακαλώ διαβάσε τις ΣΕ, ερώτηση Ε1-5-Σεπτέμβριος-2008</translation>
+        <translation>Μία πρώτη επισήμανση: Αν έχετε εβδομάδα 5 ημερών: όταν προσθέτετε μία δραστηριότητα η οποία επιμερίζεται σε δύο μόνον στοιχεία (υποδραστηριότητες) ανά εβδομάδα, η καλύτερη πρακτική είναι να προσθέσετε τις &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; να είναι 2. Αν επιμερίσετε μία δραστηριότητα σε 3 στοιχεία (υποδραστηριότητες) ανά εβδομάδα, παρακαλώ διαβάστε τις ΣΕ, ερώτηση Ε1-5-Σεπτεμβρίου-2008</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="824"/>
@@ -1426,12 +1426,12 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="865"/>
         <source>If you choose a value greater or equal with 1 for min days, a time constraint min days between activities will be added automatically (you can see this constraint in the time constraints list or you can see this constraint in the detailed description of the activity). You can select a weight percentage for this constraint. If you select 100%, the constraint must be respected all the time. If you select 95%, there is a small chance that the timetable will not respect this constraint. Recommended values are 95.0%-100.0% (maybe you could try with 95%, then 99.75%, or even 100.0%, but the generation time might be larger). Generally, 99.75% might be a good value. Note: if you put a value less than 100% and the constraint is too tough, FET is able to find that this constraint is impossible and will break it. 99.75% might be better than 95% but possibly slower. The percentage is subjective (if you put 95% you may get 6 soft conflicts and if you put 99.75% you may get 3 soft conflicts). Starting with FET-5.3.6, it is possible to change this value for all constraints in one click, in constraint min days between activities dialog.</source>
-        <translation>Αν επιλέξετε μία τιμή μεγαλύτερη του 1 για τις &quot;ελάχιστες ημέρες&quot;, θα προστεθεί αυτόματα ένας χρονικός περιορισμός &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; (μπορείτε να δείτε τον περιορισμό αυτό στην λίστα των χρονικών περιορισμών ή στην λεπτομερή περιγραφή της δραστηριότητας). Μπορείτε να επιλέξετε ένα ποσοστό βαρύτητας για τον περιορισμό αυτό. Αν επιλέξετε ποσοστό 100%, ο περιορισμός θα πρέπει να τηρείται πάντοτε. Αν επιλέξετε ποσοστό 95%, υπάρχει μία μικρή πιθανότητα να μην τηρηθεί ο περιορισμός αυτός στο ωρολόγιο πρόγραμμά σας. Οι προτεινόμενες τιμές είναι 95.0%-100.0% (ενδεχομένως να μπορείτε να δοκιμάσετε και τις τιμές 95%, έπειτα 99.75%, ή ακόμη και 100.0%, αλλά έτσι πιθανώς να αυξηθεί ο χρόνος που απαιτείται για την επίλυση του ωρολογίου προγράμματος. Γενικά, το ποσοστό 99.75% είναι πιθανότατα μία καλή επιλογή. Σημείωση: αν θέσετε μία τιμή μικρότερη του 100% και ο περιορισμός είναι πολύ ισχυρός, το FET θα καταφέρει να βρει ότι ο περιορισμός αυτός είναι αδύνατον να τηρηθεί και ως εκ τούτου δεν θα τον τηρήσει. Το ποσοστό 99.75% ενδεχομένως να είναι καλύτερη επιλογή από το  95%, αλλά πιθανώς να προξενήσει αύξηση του χρόνου που απαιτείται για την επίλυση του ωρολογίου προγράμματος. Το ποσοστό βαρύτητας είναι υποκειμενικό (αν θέσετε την τιμή 95% ενδεχόμενως να λάβετε 6 ήπιες συγκρούσεις, ενώ αν θέσετε την τιμή 99.75% μπορεί να λάβετε 3 ήπιες συγκρούσεις). Από την έκδοση 5.3.6 του FET και μετά, υπάρχει η δυνατότητα να αλλάξετε την τιμή για όλους τους περιρισμούς με ένα κλικ, στον διάλογο για τον περιορισμό &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;.</translation>
+        <translation>Αν επιλέξετε μία τιμή μεγαλύτερη του 1 για τις &quot;ελάχιστες ημέρες&quot;, θα προστεθεί αυτόματα ένας χρονικός περιορισμός &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; (μπορείτε να δείτε τον περιορισμό αυτό στην λίστα των χρονικών περιορισμών ή στην λεπτομερή περιγραφή της δραστηριότητας). Μπορείτε να επιλέξετε ένα ποσοστό βαρύτητας για τον περιορισμό αυτό. Αν επιλέξετε ποσοστό 100%, ο περιορισμός θα πρέπει να τηρείται πάντοτε. Αν επιλέξετε ποσοστό 95%, υπάρχει μία μικρή πιθανότητα να μην τηρηθεί ο περιορισμός αυτός στο ωρολόγιο πρόγραμμά σας. Οι προτεινόμενες τιμές είναι 95.0%-100.0% (ενδεχομένως να μπορείτε να δοκιμάσετε και τις τιμές 95%, έπειτα 99.75%, ή ακόμη και 100.0%, αλλά έτσι πιθανώς να αυξηθεί ο χρόνος που απαιτείται για την επίλυση του ωρολογίου προγράμματος. Γενικά, το ποσοστό 99.75% είναι πιθανότατα μία καλή επιλογή. Σημείωση: αν θέσετε μία τιμή μικρότερη του 100% και ο περιορισμός είναι πολύ ισχυρός, το FET θα καταφέρει να βρει ότι ο περιορισμός αυτός είναι αδύνατον να τηρηθεί και ως εκ τούτου δεν θα τον τηρήσει. Το ποσοστό 99.75% ενδεχομένως να είναι καλύτερη επιλογή από το  95%, αλλά πιθανώς να προξενήσει αύξηση του χρόνου που απαιτείται για την επίλυση του ωρολογίου προγράμματος. Το ποσοστό βαρύτητας είναι υποκειμενικό (αν θέσετε την τιμή 95% ενδεχομένως να λάβετε 6 ήπιες συγκρούσεις, ενώ αν θέσετε την τιμή 99.75% μπορεί να λάβετε 3 ήπιες συγκρούσεις). Από την έκδοση 5.3.6 του FET και μετά, υπάρχει η δυνατότητα να αλλάξετε την τιμή για όλους τους περιορισμούς με ένα κλικ, στον διάλογο για τον περιορισμό &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;.</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="879"/>
         <source>There is another option, if the activities are in the same day, force consecutive activities. You can select this option for instance if you have 5 lessons of math in 5 days, and there is no timetable which respects fully the days separation. Then, you can set the weight percent of the min days constraint to 95% and add consecutive if same day. You will have as results say 3 lessons with duration 1 and a 2 hours lesson in another day. Please be careful: if the activities are on the same day, even if the constraint has 0% weight, then the activities are forced to be consecutive.</source>
-        <translation>Υπάρχει ακόμη μία επιλογή, αν οι δραστηριότητες πραγματοποιούνται την ίδια ημέρα, να είναι οπωσδήποτε διαδοχικές. Μπορείτε να χρησιμοποιήσετε αυτήν την επιλογή για παράδειγμα αν έχετε 5 διδασκαλίες μαθηματικών, και είναι αδύνατη εξεύρεση λύσης για το ωρολόγιο πρόγραμμα στην οποία (λύση) να τηρείται πλήρως ο διαχωρισμός των επιμέρους διδασκαλιών σε διαφορετικές ημέρες. Στην περίπτωση αυτή, μπορείτε να θέσετε την τιμή 95% για το ποσοστό βαρύτητας του περιορισμού &quot;ελάχιστες ημέρες&quot; και να προσθέσετε την επιλογή &quot;αν την ίδια ημέρα - διαδοχικές&quot;. Θα λάβετε ως αποτελέσματα για παράδειγμα 3 διδασκαλίες με διάρκεια 1 (ώρα) και 1 διδασκαλία με διάρκεια 2 σε κάποια άλλη ημέρα. Παρακαλώ να είστε προσεκτικοί: αν οι δραστηριότητες πραγματοποιούνται την ίδια ημέρα, ακόμη και αν ο περιορισμός έχει βαρύτητα 0%, οι δραστηριότητες θα είναι οπωσδήποτε διδαδοχικές.</translation>
+        <translation>Υπάρχει ακόμη μία επιλογή, αν οι δραστηριότητες πραγματοποιούνται την ίδια ημέρα, να είναι οπωσδήποτε διαδοχικές. Μπορείτε να χρησιμοποιήσετε αυτήν την επιλογή για παράδειγμα αν έχετε 5 διδασκαλίες μαθηματικών, και είναι αδύνατη εξεύρεση λύσης για το ωρολόγιο πρόγραμμα στην οποία (λύση) να τηρείται πλήρως ο διαχωρισμός των επιμέρους διδασκαλιών σε διαφορετικές ημέρες. Στην περίπτωση αυτή, μπορείτε να θέσετε την τιμή 95% για το ποσοστό βαρύτητας του περιορισμού &quot;ελάχιστες ημέρες&quot; και να προσθέσετε την επιλογή &quot;αν την ίδια ημέρα - διαδοχικές&quot;. Θα λάβετε ως αποτελέσματα για παράδειγμα 3 διδασκαλίες με διάρκεια 1 (ώρα) και 1 διδασκαλία με διάρκεια 2 σε κάποια άλλη ημέρα. Παρακαλώ να είστε προσεκτικοί: αν οι δραστηριότητες πραγματοποιούνται την ίδια ημέρα, ακόμη και αν ο περιορισμός έχει βαρύτητα 0%, οι δραστηριότητες θα είναι οπωσδήποτε διαδοχικές.</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="894"/>
@@ -2542,7 +2542,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="373"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
-        <translation>Προειδοποίηση: έχουν επιλεγεί 0 περίοδοι. Είστε σίγουροι;</translation>
+        <translation>Προειδοποίηση: δεν έχει επιλεγεί καμία περίοδος. Είστε σίγουροι;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="384"/>
@@ -2694,7 +2694,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="373"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
-        <translation>Προειδοποίηση: 0 επιλεγμένες περίοδοι. Είστε σίγουροι;</translation>
+        <translation>Προειδοποίηση: δεν έχει επιλεγεί καμία περίοδος. Είστε σίγουροι;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="384"/>
@@ -3691,7 +3691,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="363"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
-        <translation>Προειδοποίηση: έχουν επιλεγεί 0 περίοδοι. Είστε σίγουροι;</translation>
+        <translation>Προειδοποίηση: δεν έχει επιλεγεί καμία περίοδος. Είστε σίγουροι;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="387"/>
@@ -3805,7 +3805,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="362"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
-        <translation>Προειδοποίηση: 0 επιλεγμένες περίοδοι. Είστε σίγουροι;</translation>
+        <translation>Προειδοποίηση: δεν έχει επιλεγεί καμία περίοδος. Είστε σίγουροι;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="386"/>
@@ -4383,7 +4383,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="210"/>
         <source>1. If you add &apos;force consecutive if same day&apos;, then couple extra activities in pairs to obtain a number of activities equal to the number of days per week. Example: 7 activities with duration 1 in a 5 days week, then transform into 5 activities with durations: 2,2,1,1,1 and add a single container activity with these 5 components (possibly raising the weight of added constraint min days between activities up to 100%)</source>
-        <translation>1. Αν προσθέσετε &quot;αν την ίδια ημέρα - διαδοχικές&quot;, τότε δημιουργήστε ζεύγη με τις επιπλέον δραστηριοτήτες (υποδραστηριότητες), προκειμένου να εξασφαλίσετε ότι ο αριθμός των δραστηριοτήτων (υποδραστηριοτήτων) θα είναι ίσος με τον αριθμό των ημερών ανά εβδομάδα. Παράδειγμα: για 7 δραστηριότητες (υποδραστηριότητες) με διάρκεια η καθεμία 1 (ώρα) σε εβδομάδα 5 ημερών, θα πρέπει να μετασχηματίσετε τις δραστηριότητες (υποδραστηριότητες) αυτές σε 5 δραστηριότητες (υποδραστηριότητες) με διάρκειες: 2,2,1,1,1 και να προσθέσετε μία επιμερισμένη δραστηριότητα με τα παραπάνω 5 στοιχεία (υποδραστηριότητες), πιθανώς αυξάνοντας την βαρύτητα του περιορισμού &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; στο 100%</translation>
+        <translation>1. Αν προσθέσετε &quot;αν την ίδια ημέρα - διαδοχικές&quot;, τότε δημιουργήστε ζεύγη με τις επιπλέον δραστηριότητες (υποδραστηριότητες), προκειμένου να εξασφαλίσετε ότι ο αριθμός των δραστηριοτήτων (υποδραστηριοτήτων) θα είναι ίσος με τον αριθμό των ημερών ανά εβδομάδα. Παράδειγμα: για 7 δραστηριότητες (υποδραστηριότητες) με διάρκεια η καθεμία 1 (ώρα) σε εβδομάδα 5 ημερών, θα πρέπει να μετασχηματίσετε τις δραστηριότητες (υποδραστηριότητες) αυτές σε 5 δραστηριότητες (υποδραστηριότητες) με διάρκειες: 2,2,1,1,1 και να προσθέσετε μία επιμερισμένη δραστηριότητα με τα παραπάνω 5 στοιχεία (υποδραστηριότητες), πιθανώς αυξάνοντας την βαρύτητα του περιορισμού &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; στο 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="216"/>
@@ -4962,7 +4962,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/addconstraintstudentsintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Add students interval max days per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Προσθήκη: &quot;Μαθητές - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
+        <translation>Προσθήκη: &quot;Μαθητές + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsintervalmaxdaysperweekform_template.ui" line="22"/>
@@ -6164,7 +6164,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Add students set interval max days per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Προσθήκη: &quot;Ομάδα μαθητών - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
+        <translation>Προσθήκη: &quot;Ομάδα μαθητών + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform_template.ui" line="28"/>
@@ -7154,7 +7154,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform.cpp" line="281"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
-        <translation>Προειδοποίηση: 0 επιλεγμένες περίοδοι. Είστε σίγουροι;</translation>
+        <translation>Προειδοποίηση: δεν έχει επιλεγεί καμία περίοδος. Είστε σίγουροι;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform.cpp" line="292"/>
@@ -7262,7 +7262,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform.cpp" line="282"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
-        <translation>Προειδοποίηση: 0 επιλεγμένες περίοδοι. Είστε σίγουροι;</translation>
+        <translation>Προειδοποίηση: δεν έχει επιλεγεί καμία περίοδος. Είστε σίγουροι;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform.cpp" line="293"/>
@@ -8047,7 +8047,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteacherintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Add teacher interval max days per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Προσθήκη: &quot;Εκπαιδευτικός - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικός + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherintervalmaxdaysperweekform_template.ui" line="28"/>
@@ -9261,7 +9261,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Add teachers interval max days per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Προσθήκη: &quot;Εκπαιδευτικοί - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικοί + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersintervalmaxdaysperweekform_template.ui" line="22"/>
@@ -10671,7 +10671,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="91"/>
         <source>This group already exists, but in another year. If you insert current group to current year, that means that some years share the same group (overlap). If you want to make a new group, independent, please abort now and give it another name.</source>
-        <translation>Το συγκεκριμένο τμήμα υπάρχει ήδη, αλλά σε κάποιο άλλο έτος. Αν προχωρήσετε σε εισαγωγή του τρέχοντος τμήματος στο τρέχον έτος, αυτό πρακτικά σημαίνει ότι το συγκεκριμένο τμήμα συμπεριλαμβάνεται σε δύο έτη ταυτόχρονα (δηλαδή υπάρχει αλληλεπικάλυψη ετών). Αν θέλετε να δημιουργήσετε ένα πραγματικά νέο τμήμα (ανεξάρτητο), παρακαλώ διακόψτε τη διαδικασία και επιλέξτε κάποιο άλλο όνομα για το τμήμα.</translation>
+        <translation>Το συγκεκριμένο τμήμα υπάρχει ήδη, αλλά σε κάποιο άλλο έτος. Αν προχωρήσετε σε εισαγωγή του τρέχοντος τμήματος στο τρέχον έτος, αυτό πρακτικά σημαίνει ότι το συγκεκριμένο τμήμα συμπεριλαμβάνεται σε δύο έτη ταυτόχρονα (δηλαδή υπάρχει αλληλοεπικάλυψη ετών). Αν θέλετε να δημιουργήσετε ένα πραγματικά νέο τμήμα (ανεξάρτητο), παρακαλώ διακόψτε τη διαδικασία και επιλέξτε κάποιο άλλο όνομα για το τμήμα.</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="95"/>
@@ -10771,7 +10771,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addstudentssubgroupform.cpp" line="92"/>
         <source>This subgroup already exists, but in another group. If you insert current subgroup to current group, that means that some groups share the same subgroup (overlap). If you want to make a new subgroup, independent, please abort now and give it another name.</source>
-        <translation>Το συγκεκριμένο υποτμήμα υπάρχει ήδη, αλλά σε κάποιο άλλο τμήμα. Αν προχωρήσετε σε εισαγωγή του τρέχοντος υποτμήματος στο τρέχον τμήμα, αυτό πρακτικά σημαίνει ότι το συγκεκριμένο υποτμήμα συμπεριλαμβάνεται σε δύο τμήματα ταυτόχρονα (δηλαδή υπάρχει αλληλεπικάλυψη τμημάτων). Αν θέλετε να δημιουργήσετε ένα πραγματικά νέο υποτμήμα (ανεξάρτητο), παρακαλώ διακόψτε τη διαδικασία και επιλέξτε κάποιο άλλο όνομα για το υποτμήμα.</translation>
+        <translation>Το συγκεκριμένο υποτμήμα υπάρχει ήδη, αλλά σε κάποιο άλλο τμήμα. Αν προχωρήσετε σε εισαγωγή του τρέχοντος υποτμήματος στο τρέχον τμήμα, αυτό πρακτικά σημαίνει ότι το συγκεκριμένο υποτμήμα συμπεριλαμβάνεται σε δύο τμήματα ταυτόχρονα (δηλαδή υπάρχει αλληλοεπικάλυψη τμημάτων). Αν θέλετε να δημιουργήσετε ένα πραγματικά νέο υποτμήμα (ανεξάρτητο), παρακαλώ διακόψτε τη διαδικασία και επιλέξτε κάποιο άλλο όνομα για το υποτμήμα.</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform.cpp" line="96"/>
@@ -11138,13 +11138,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/advancedlockunlockform.cpp" line="907"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1428"/>
         <source>There were added %1 locking time constraints and %2 locking space constraints. There were not added %3 locking time constraints and %4 locking space constraints, because these activities were already locked</source>
-        <translation>Προστέθηκαν %1 περιορισμοί χρονικού κλειδώματος και %2 περιοριμσοί χωρικού κλειδώματος. Δεν προστέθηκαν  %3 περιορισμοί χρονικού κλειδώματος και %4 περιορισμοί χωρικού κλειδώματος, διότι οι δραστηριότητες αυτές ήταν ήδη κλειδωμένες</translation>
+        <translation>Προστέθηκαν %1 περιορισμοί χρονικού κλειδώματος και %2 περιορισμοί χωρικού κλειδώματος. Δεν προστέθηκαν  %3 περιορισμοί χρονικού κλειδώματος και %4 περιορισμοί χωρικού κλειδώματος, διότι οι δραστηριότητες αυτές ήταν ήδη κλειδωμένες</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="366"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1971"/>
         <source>FET - Unlock activities of a day</source>
-        <translation>FET - Ξελείδωμα δραστηριοτήτων μίας ημέρας</translation>
+        <translation>FET - Ξεκλείδωμα δραστηριοτήτων μίας ημέρας</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="372"/>
@@ -11210,7 +11210,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1948"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2257"/>
         <source>There were removed %1 locking time constraints and %2 locking space constraints. There were not removed %3 locking time constraints and %4 locking space constraints, because these activities were permanently locked</source>
-        <translation>Διαγράφηκαν %1 περιορισμοί χρονικού κλειδώματος και %2 περιοριμσοί χωρικού κλειδώματος. Δεν διαγράφηκαν %3 περιορισμοί χρονικού κλειδώματος και %4 περιορισμοί χωρικού κλειδώματος, διότι οι δραστηριότητες αυτές ήταν μόνιμα κλειδωμένες</translation>
+        <translation>Διαγράφηκαν %1 περιορισμοί χρονικού κλειδώματος και %2 περιορισμοί χωρικού κλειδώματος. Δεν διαγράφηκαν %3 περιορισμοί χρονικού κλειδώματος και %4 περιορισμοί χωρικού κλειδώματος, διότι οι δραστηριότητες αυτές ήταν μόνιμα κλειδωμένες</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="629"/>
@@ -11235,7 +11235,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1176"/>
         <source>FET - Lock all activities in the timetable</source>
-        <translation>FET - Ξεκλείδωμα όλων των δραστηριότητων του ωρολογίου προγράμματος</translation>
+        <translation>FET - Ξεκλείδωμα όλων των δραστηριοτήτων του ωρολογίου προγράμματος</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1182"/>
@@ -12220,7 +12220,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="17883"/>
         <source>Constraint activities max simultaneous in selected time slots is wrong because it refers to removed hour. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;δραστηριότητες - μέγιστες ταυτόχρονες σε επιλεγμένες περιόδους&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με μία ώρα που έχει διαγραφεί. Παρακαλώ διορθώστε και προσπαθείστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;δραστηριότητες - μέγιστες ταυτόχρονες σε επιλεγμένες περιόδους&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με μία ώρα που έχει διαγραφεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -12768,7 +12768,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="302"/>
         <source>To use this constraint, you need to specify a set of activities and the maximum number of different rooms which can be occupied by these activities. Note that each activity can take place in a single room, and a single room can hold a single activity at a certain moment. This constraint may be used for instance to constrain all activities of type Physics of a certain students set to be in the same room throughout the week, by adding all Physics activities for this students set and making max different rooms = 1.</source>
-        <translation>Για να χρησιμοποιήσετε αυτόν τον περιορισμό, θα πρέπει να καθορίσετε (επιλέξετε) ένα σύνολο δραστηριοτήτων και τον μέγιστο αριθμό των αιθουσών που καταλαμβάνουν οι δραστηριότητες αυτές. Σημειώστε ότι η κάθε δραστηριότητα μπορεί να πραγματοποείται σε μία και μόνον αίθουσα, και αντίστροφα μία αίθουσα μπορεί να &quot;φιλοξενήσει&quot; μία και μόνον δραστηριότητα σε συγκεκριμένη χρονική στιγμή. Αυτός ο περιορισμός μπορεί να χρησιμοποιηθεί για παράδειγμα για να περιοριστούν οι δραστηριότητες του τύπου &quot;Φυσική&quot; μίας συγκεκριμένης ομάδας μαθητών, έτσι ώστε να πραγματοποιούνται όλες στην ίδια αίθουσα. Αυτό επιτυγχάνεται με την προσθήκη όλων των δραστηριοτήτων Φυσικής μίας συγκεκριμένης ομάδας μαθητών και καθορίζοντας τον μέγιστο αριθμό διαφορετικών αιθουσών = 1.</translation>
+        <translation>Για να χρησιμοποιήσετε αυτόν τον περιορισμό, θα πρέπει να καθορίσετε (επιλέξετε) ένα σύνολο δραστηριοτήτων και τον μέγιστο αριθμό των αιθουσών που καταλαμβάνουν οι δραστηριότητες αυτές. Σημειώστε ότι η κάθε δραστηριότητα μπορεί να πραγματοποιείται σε μία και μόνον αίθουσα, και αντίστροφα μία αίθουσα μπορεί να &quot;φιλοξενήσει&quot; μία και μόνον δραστηριότητα σε συγκεκριμένη χρονική στιγμή. Αυτός ο περιορισμός μπορεί να χρησιμοποιηθεί για παράδειγμα για να περιοριστούν οι δραστηριότητες του τύπου &quot;Φυσική&quot; μίας συγκεκριμένης ομάδας μαθητών, έτσι ώστε να πραγματοποιούνται όλες στην ίδια αίθουσα. Αυτό επιτυγχάνεται με την προσθήκη όλων των δραστηριοτήτων Φυσικής μίας συγκεκριμένης ομάδας μαθητών και καθορίζοντας τον μέγιστο αριθμό διαφορετικών αιθουσών = 1.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="307"/>
@@ -12871,21 +12871,21 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="17507"/>
         <source>Constraint activities occupy max time slots from selection is wrong because a preferred hour is too late (after the last acceptable slot). Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;δραστηριότητες - καταλαμβάνουν μέγιστες περιόδους από επιλογή&quot; παρουσιάζει σφάλμα, διότι μία προτιμητέα ώρα είναι πολύ αργά (μετά την τελευταία αποδεκτή περίοδο). Παρακαλώ διορθώστε και προσπαθείστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;δραστηριότητες - καταλαμβάνουν μέγιστες περιόδους από επιλογή&quot; παρουσιάζει σφάλμα, διότι μία προτιμητέα ώρα είναι πολύ αργά (μετά την τελευταία αποδεκτή περίοδο). Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17514"/>
         <source>Constraint activities occupy max time slots from selection is wrong because it refers to removed hour. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &apos;δραστηριότητες - καταλαμβάνουν μέγιστες περιόδους από επιλογή&apos; παρουσιάζει σφάλμα, διότι σχετίζεται με ώρα που έχει διαγραφεί. Παρακαλώ προσπαθείστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &apos;δραστηριότητες - καταλαμβάνουν μέγιστες περιόδους από επιλογή&apos; παρουσιάζει σφάλμα, διότι σχετίζεται με ώρα που έχει διαγραφεί. Παρακαλώ προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17521"/>
         <source>Constraint activities occupy max time slots from selection is wrong because hour or day is not specified for a slot (-1). Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;δραστηριότητες - καταλαμβάνουν μέγιστες περιόδους από επιλογή&quot; παρουσιάζει σφάλμα, διότι δεν έχει καθοριστεί ώρα ή ημέρα για κάποια περίοδο (-1). Παρακαλώ διορθώστε και προσπαθείστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;δραστηριότητες - καταλαμβάνουν μέγιστες περιόδους από επιλογή&quot; παρουσιάζει σφάλμα, διότι δεν έχει καθοριστεί ώρα ή ημέρα για κάποια περίοδο (-1). Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -13958,7 +13958,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="322"/>
         <source>IMPORTANT: after adding such constraints, it is necessary (otherwise generation might be impossible) to remove redundant constraints min days between activities. If you are sure that you don&apos;t have redundant constraints, you can skip this step, but it doesn&apos;t hurt to do it as a precaution. Also, you don&apos;t have to do that after each added constraint, but only once after adding more constraints of this type. Please read Help/Important tips - tip number 2 for details</source>
-        <translation>ΣΗΜΑΝΤΙΚΟ: μετά την προσθήκη αυτών των περιορισμών, είναι απαραίτητο (διαφορετικά η δημιουργία ωρολογίου προγράμματος μπορεί να καταστεί αδύνατη) να διαγράψετε τους περιττούς περιορισμούς &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;. Αν είστε σίγουροι ότι δεν έχετε περιττούς περιορισμούς, μπορείτε να παραλείψετε αυτό το βήμα, αλλά δεν βλάπτει να το κάνετε για προφύλαξη. Επίσης, δεν χρειάζεται να κάνετε το ίδιο μετά από κάθε περιορισμό που προσθέτετε, αλλά μόνον μία φορά, μετά την προσθήκη περισσοτέρων περιορισμών αυτού του τύπου. Παρακαλώ διαβάστε στην &quot;Βοήθεια/Σημαντικές υποδείξεις&quot;, υπόδειξη αριθμός 2 για λεπτομέρειες</translation>
+        <translation>ΣΗΜΑΝΤΙΚΟ: μετά την προσθήκη αυτών των περιορισμών, είναι απαραίτητο (διαφορετικά η δημιουργία ωρολογίου προγράμματος μπορεί να καταστεί αδύνατη) να διαγράψετε τους πλεονάζοντες περιορισμούς &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;. Αν είστε σίγουροι ότι δεν έχετε πλεονάζοντες περιορισμούς, μπορείτε να παραλείψετε αυτό το βήμα, αλλά δεν βλάπτει να το κάνετε για προφύλαξη. Επίσης, δεν χρειάζεται να κάνετε το ίδιο μετά από κάθε περιορισμό που προσθέτετε, αλλά μόνον μία φορά, μετά την προσθήκη περισσοτέρων περιορισμών αυτού του τύπου. Παρακαλώ διαβάστε στην &quot;Βοήθεια/Σημαντικές υποδείξεις&quot;, υπόδειξη αριθμός 2 για λεπτομέρειες</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="327"/>
@@ -14037,7 +14037,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="32"/>
         <source>Please try to read Help/Important tips, advice 2). It is IMPORTANT to remove redundant min days constraints after adding constraints same starting day. Please also click Help button here for information.</source>
-        <translation>Παρακαλώ προσπαθείστε να διαβάσετε στη &quot;Βοήθεια/Σημαντικές υποδείξεις&quot;, συμβουλή 2). Είναι σημαντικό να διαγράψετε τους περιττούς περιορισμούς &quot;ελάχιστες ημέρες&quot; μετά την προσθήκη των περιοριορισμών &quot;ίδια ημέρα έναρξης&quot;. Επίσης, παρακαλώ πιέστε το κουμπί &quot;Βοήθεια&quot; εδώ, για πληροφορίες.</translation>
+        <translation>Παρακαλώ προσπαθήστε να διαβάσετε στη &quot;Βοήθεια/Σημαντικές υποδείξεις&quot;, συμβουλή 2). Είναι σημαντικό να διαγράψετε τους πλεονάζοντες περιορισμούς &quot;ελάχιστες ημέρες&quot; μετά την προσθήκη των περιορισμών &quot;ίδια ημέρα έναρξης&quot;. Επίσης, παρακαλώ πιέστε το κουμπί &quot;Βοήθεια&quot; εδώ, για πληροφορίες.</translation>
     </message>
 </context>
 <context>
@@ -14360,7 +14360,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="322"/>
         <source>IMPORTANT: after adding such constraints, it is necessary (otherwise generation might be impossible) to remove redundant constraints min days between activities. If you are sure that you don&apos;t have redundant constraints, you can skip this step, but it doesn&apos;t hurt to do it as a precaution. Also, you don&apos;t have to do that after each added constraint, but only once after adding more constraints of this type. Please read Help/Important tips - tip number 2 for details</source>
-        <translation>ΣΗΜΑΝΤΙΚΟ: μετά την προσθήκη αυτών των περιορισμών, είναι απαραίτητο (διαφορετικά η δημιουργία ωρολογίου προγράμματος μπορεί να καταστεί αδύνατη) να διαγράψετε τους περιττούς περιορισμούς &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;. Αν είστε σίγουροι ότι δεν έχετε περιττούς περιορισμούς, μπορείτε να παραλείψετε αυτό το βήμα, αλλά δεν βλάπτει να το κάνετε για προφύλαξη. Επίσης, δεν χρειάζεται να κάνετε το ίδιο μετά από κάθε περιορισμό που προσθέτετε, αλλά μόνον μία φορά, μετά την προσθήκη περισσοτέρων περιορισμών αυτού του τύπου. Παρακαλώ διαβάστε στην &quot;Βοήθεια/Σημαντικές υποδείξεις&quot;, υπόδειξη αριθμός 2 για λεπτομέρειες</translation>
+        <translation>ΣΗΜΑΝΤΙΚΟ: μετά την προσθήκη αυτών των περιορισμών, είναι απαραίτητο (διαφορετικά η δημιουργία ωρολογίου προγράμματος μπορεί να καταστεί αδύνατη) να διαγράψετε τους πλεονάζοντες περιορισμούς &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;. Αν είστε σίγουροι ότι δεν έχετε πλεονάζοντες περιορισμούς, μπορείτε να παραλείψετε αυτό το βήμα, αλλά δεν βλάπτει να το κάνετε για προφύλαξη. Επίσης, δεν χρειάζεται να κάνετε το ίδιο μετά από κάθε περιορισμό που προσθέτετε, αλλά μόνον μία φορά, μετά την προσθήκη περισσοτέρων περιορισμών αυτού του τύπου. Παρακαλώ διαβάστε στην &quot;Βοήθεια/Σημαντικές υποδείξεις&quot;, υπόδειξη αριθμός 2 για λεπτομέρειες</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="327"/>
@@ -14388,7 +14388,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingtimeform_template.ui" line="32"/>
         <source>Please read Help/Important tips, advice 2). It is IMPORTANT to remove redundant min days constraints after adding constraints same starting time. Click the Help button!</source>
-        <translation>Παρακαλώ διαβάστε στη &quot;Βοήθεια/Σημαντικές υποδείξεις, συμβουλή 2). Είναι ΣΗΜΑΝΤΙΚΟ να διαγράψετε τους περιττούς περιορισμούς &quot;ελάχιστες ημέρες&quot; μετά την προσθήκη των περιορισμών &quot;ίδιος χρόνος έναρξης&quot;. Πιέστε το κουμπί &quot;Βοήθεια&quot;!</translation>
+        <translation>Παρακαλώ διαβάστε στη &quot;Βοήθεια/Σημαντικές υποδείξεις, συμβουλή 2). Είναι ΣΗΜΑΝΤΙΚΟ να διαγράψετε τους πλεονάζοντες περιορισμούς &quot;ελάχιστες ημέρες&quot; μετά την προσθήκη των περιορισμών &quot;ίδιος χρόνος έναρξης&quot;. Πιέστε το κουμπί &quot;Βοήθεια&quot;!</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingtimeform_template.ui" line="54"/>
@@ -15546,7 +15546,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="9301"/>
         <source>Time constraint activity preferred time slots broken for activity with id=%1 (%2) on %3 hours, increases conflicts total by %4</source>
         <comment>%1 is the id, %2 is the detailed description of the activity.</comment>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;δραστηριότητα - προτιμητέες περίοδοις&quot; για την δραστηριότητα με ατ=%1 (%2) στις %3 ώρες. Το σύνολο των συγκρούσεων αυξάνεται κατά %4</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;δραστηριότητα - προτιμητέες περίοδοι&quot; για την δραστηριότητα με ατ=%1 (%2) στις %3 ώρες. Το σύνολο των συγκρούσεων αυξάνεται κατά %4</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9205"/>
@@ -16960,7 +16960,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="429"/>
         <source>NOTE: If you are using constraints of type activities same starting time or activities same starting day, it is important (after current operation) to apply the operation of removing redundant constraints.</source>
-        <translation>ΣΗΜΕΙΩΣΗ: Αν χρησιμοποιείτε περιορισμούς του τύπου &quot;δραστηριότητες - ίδιος χρόνος έναρξης&quot; ή &quot;δραστηριότητες - ίδια ημέρα έναρξης&quot;, είναι σημαντικό (μετά την τρέχουσα διαδικασία) να εφαρμόσετε τη διαδικασία διαγραφής περιττών περιορισμών.</translation>
+        <translation>ΣΗΜΕΙΩΣΗ: Αν χρησιμοποιείτε περιορισμούς του τύπου &quot;δραστηριότητες - ίδιος χρόνος έναρξης&quot; ή &quot;δραστηριότητες - ίδια ημέρα έναρξης&quot;, είναι σημαντικό (μετά την τρέχουσα διαδικασία) να εφαρμόσετε τη διαδικασία διαγραφής πλεοναζόντων περιορισμών.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="431"/>
@@ -17916,21 +17916,21 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="15404"/>
         <source>Constraint students interval max days per week is wrong because start hour &gt;= end hour. Please correct it. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;μαθητές - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &gt;= ώρα λήξης. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;μαθητές + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &gt;= ώρα λήξης. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15411"/>
         <source>Constraint students interval max days per week is wrong because start hour &lt; first hour of the day. Please correct it. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;μαθητές - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &lt; πρώτη ώρα της ημέρας. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;μαθητές + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &lt; πρώτη ώρα της ημέρας. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15418"/>
         <source>Constraint students interval max days per week is wrong because end hour &gt; number of hours per day. Please correct it. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;μαθητές - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα λήξης &gt; αριθμό ωρών ανά ημέρα. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;μαθητές + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα λήξης &gt; αριθμό ωρών ανά ημέρα. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -17942,7 +17942,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15465"/>
         <source>Students interval max days per week</source>
-        <translation>Μαθητές - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα</translation>
+        <translation>Μαθητές + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15466"/>
@@ -17984,7 +17984,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15483"/>
         <source>All students respect working in an hourly interval a maximum number of days per week</source>
-        <translation>Για όλους τους μαθητές τηρείται το χρονικό διάστημα δραστηριοτήτων σε μέγιστο αριθμό ημερών ανά εβδομάδα</translation>
+        <translation>Για όλους τους μαθητές τηρείται η εργασία εντός διαστήματος ωρών σε μέγιστο αριθμό ημερών ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15484"/>
@@ -18021,7 +18021,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15541"/>
         <source>Time constraint students interval max days per week broken for subgroup: %1, allowed %2 days, required %3 days.</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μαθητές - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; για το υποτμήμα: %1, διότι ενώ επιτρεπόταν %2 ημέρες, απαιτήθηκαν %3 ημέρες.</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μαθητές + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; για το υποτμήμα: %1, διότι ενώ επιτρεπόταν %2 ημέρες, απαιτήθηκαν %3 ημέρες.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15546"/>
@@ -18070,7 +18070,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Constraints students interval max days per week</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Περιορισμοί: &quot;Μαθητές - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
+        <translation>Περιορισμοί: &quot;Μαθητές + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsintervalmaxdaysperweekform_template.ui" line="28"/>
@@ -19206,7 +19206,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="26"/>
         <source>This constraint ensures a maximum span of activities on each day. Span means the count of slots (free or occupied) starting with the first occupied slot of the day and ending with the last occupied slot of the day.</source>
-        <translation>Αυτός ο περιορισμός εξασφαλίζει την μέγιστη παραμονή (σε ώρες) ανά ημέρα, δηλαδή το μέγιστο διάστημα (σε ώρες) ανά ημέρα μέσα στο οποίο πραγματοποιούνται οι δραστηριότητες για τους μαθητές. Η παραμονή (σε ώρες) επί της ουσίας προκύπτει από την πρόσθεση των περιόδων (τόσο των ελεύθερων όσο και των κατειλημμένων με δραστηριότητες) με αφετηρία την πρώτη κατηλειμμένη (με δραστηριότητα) περίοδο της ημέρας και τέλος την τελευταία κατηλειμμένη (με δραστηριότητα) περίοδο της ημέρας.</translation>
+        <translation>Αυτός ο περιορισμός εξασφαλίζει την μέγιστη παραμονή (σε ώρες) ανά ημέρα, δηλαδή το μέγιστο διάστημα (σε ώρες) ανά ημέρα μέσα στο οποίο πραγματοποιούνται οι δραστηριότητες για τους μαθητές. Η παραμονή (σε ώρες) επί της ουσίας προκύπτει από την πρόσθεση των περιόδων (τόσο των ελεύθερων όσο και των κατειλημμένων με δραστηριότητες) με αφετηρία την πρώτη κατειλημμένη (με δραστηριότητα) περίοδο της ημέρας και τέλος την τελευταία κατειλημμένη (με δραστηριότητα) περίοδο της ημέρας.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="44"/>
@@ -20568,28 +20568,28 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="15099"/>
         <source>Constraint students set interval max days per week is wrong because start hour &gt;= end hour. Please correct it. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;ομάδα μαθητών - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &gt;= ώρα λήξης. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;ομάδα μαθητών + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &gt;= ώρα λήξης. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15106"/>
         <source>Constraint students set interval max days per week is wrong because start hour &lt; first hour of the day. Please correct it. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;ομάδα μαθητών - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &lt; πρώτη ώρα της ημέρας. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;ομάδα μαθητών + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &lt; πρώτη ώρα της ημέρας. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15113"/>
         <source>Constraint students set interval max days per week is wrong because end hour &gt; number of hours per day. Please correct it. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;ομάδα μαθητών - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα λήξης &gt; αριθμό ωρών ανά ημέρα. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;ομάδα μαθητών + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα λήξης &gt; αριθμό ωρών ανά ημέρα. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15125"/>
         <source>Constraint students set interval max days per week is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;ομάδα μαθητών - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η διαγραφή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;ομάδα μαθητών + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η διαγραφή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -20601,7 +20601,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15214"/>
         <source>Students set interval max days per week</source>
-        <translation>Ομάδα μαθητών - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα</translation>
+        <translation>Ομάδα μαθητών + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15215"/>
@@ -20650,7 +20650,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15233"/>
         <source>A students set respects working in an hourly interval a maximum number of days per week</source>
-        <translation>Για ομάδα μαθητών τηρείται το διάστημα δραστηριοτήτων σε μέγιστο αριθμό ημερών ανά εβδομάδα</translation>
+        <translation>Για ομάδα μαθητών τηρείται η εργασία εντός διαστήματος ωρών σε μέγιστο αριθμό ημερών ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15234"/>
@@ -20692,7 +20692,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15292"/>
         <source>Time constraint students set interval max days per week broken for subgroup: %1, allowed %2 days, required %3 days.</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;ομάδα μαθητών - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; για το υποτμήμα: %1, διότι ενώ επιτρεπόταν %2 ημέρες, απαιτήθηκαν %3 ημέρες.</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;ομάδα μαθητών + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; για το υποτμήμα: %1, διότι ενώ επιτρεπόταν %2 ημέρες, απαιτήθηκαν %3 ημέρες.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15297"/>
@@ -20741,7 +20741,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Constraints students set interval max days per week</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Περιορισμοί: &quot;Ομάδα μαθητών - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
+        <translation>Περιορισμοί: &quot;Ομάδα μαθητών + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetintervalmaxdaysperweekform_template.ui" line="28"/>
@@ -22140,7 +22140,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssetmaxspanperdayform_template.ui" line="110"/>
         <source>This constraint ensures a maximum span of activities on each day. Span means the count of slots (free or occupied) starting with the first occupied slot of the day and ending with the last occupied slot of the day.</source>
-        <translation>Αυτός ο περιορισμός εξασφαλίζει την μέγιστη παραμονή (σε ώρες) ανά ημέρα, δηλαδή το μέγιστο διάστημα (σε ώρες) ανά ημέρα μέσα στο οποίο πραγματοποιούνται οι δραστηριότητες της συγκεκριμένης ομάδας μαθητών. Η παραμονή (σε ώρες) επί της ουσίας προκύπτει από την πρόσθεση των περιόδων (τόσο των ελεύθερων όσο και των κατειλημμένων με δραστηριότητες) με αφετηρία την πρώτη κατηλειμμένη (με δραστηριότητα) περίοδο της ημέρας και τέλος την τελευταία κατηλειμμένη (με δραστηριότητα) περίοδο της ημέρας.</translation>
+        <translation>Αυτός ο περιορισμός εξασφαλίζει την μέγιστη παραμονή (σε ώρες) ανά ημέρα, δηλαδή το μέγιστο διάστημα (σε ώρες) ανά ημέρα μέσα στο οποίο πραγματοποιούνται οι δραστηριότητες της συγκεκριμένης ομάδας μαθητών. Η παραμονή (σε ώρες) επί της ουσίας προκύπτει από την πρόσθεση των περιόδων (τόσο των ελεύθερων όσο και των κατειλημμένων με δραστηριότητες) με αφετηρία την πρώτη κατειλημμένη (με δραστηριότητα) περίοδο της ημέρας και τέλος την τελευταία κατειλημμένη (με δραστηριότητα) περίοδο της ημέρας.</translation>
     </message>
 </context>
 <context>
@@ -24860,21 +24860,21 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="14595"/>
         <source>Constraint teacher interval max days per week is wrong because start hour &gt;= end hour. Please correct it. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;εκπαιδευτικός - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &gt;= ώρα λήξης. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;εκπαιδευτικός + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &gt;= ώρα λήξης. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14602"/>
         <source>Constraint teacher interval max days per week is wrong because start hour &lt; first hour of the day. Please correct it. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;εκπαιδευτικός - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &lt; πρώτη ώρα της ημέρας. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;εκπαιδευτικός + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &lt; πρώτη ώρα της ημέρας. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14609"/>
         <source>Constraint teacher interval max days per week is wrong because end hour &gt; number of hours per day. Please correct it. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;εκπαιδευτικός - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα λήξης &gt; αριθμό ωρών ανά ημέρα. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;εκπαιδευτικός + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα λήξης &gt; αριθμό ωρών ανά ημέρα. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -24886,7 +24886,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14656"/>
         <source>Teacher interval max days per week</source>
-        <translation>Εκπαιδευτικός - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα</translation>
+        <translation>Εκπαιδευτικός + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14657"/>
@@ -24936,7 +24936,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14674"/>
         <source>A teacher respects working in an hourly interval a maximum number of days per week</source>
-        <translation>Για εκπαιδευτικό πρέπει να τηρείται το χρονικό διάστημα δραστηριοτήτων σε μέγιστο αριθμό ημερών την εβδομάδα</translation>
+        <translation>Για εκπαιδευτικό πρέπει να τηρείται η εργασία εντός διαστήματος ωρών σε μέγιστο αριθμό ημερών την εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14675"/>
@@ -24978,7 +24978,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14733"/>
         <source>Time constraint teacher interval max days per week broken for teacher: %1, allowed %2 days, required %3 days.</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;εκπαιδευτικός - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; για τον εκπαιδευτικό: %1, διότι ενώ επιτρεπόταν %2 ημέρες, απαιτήθηκαν %3 ημέρες.</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;εκπαιδευτικός + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; για τον εκπαιδευτικό: %1, διότι ενώ επιτρεπόταν %2 ημέρες, απαιτήθηκαν %3 ημέρες.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14738"/>
@@ -25027,7 +25027,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteacherintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Constraints teacher interval max days per week</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Περιορισμοί: &quot;Εκπαιδευτικός - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
+        <translation>Περιορισμοί: &quot;Εκπαιδευτικός + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacherintervalmaxdaysperweekform_template.ui" line="28"/>
@@ -26314,7 +26314,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachermaxspanperdayform_template.ui" line="26"/>
         <source>This constraint ensures a maximum span of activities on each day. Span means the count of slots (free or occupied) starting with the first occupied slot of the day and ending with the last occupied slot of the day.</source>
-        <translation>Αυτός ο περιορισμός εξασφαλίζει την μέγιστη παραμονή (σε ώρες) ανά ημέρα, δηλαδή το μέγιστο διάστημα (σε ώρες) ανά ημέρα μέσα στο οποίο πραγματοποιούνται οι δραστηριότητες. Η παραμονή (σε ώρες) επί της ουσίας προκύπτει από την πρόσθεση των περιόδων (τόσο των ελεύθερων όσο και των κατειλημμένων με δραστηριότητες) με αφετηρία την πρώτη κατηλειμμένη (με δραστηριότητα) περίοδο της ημέρας και τέλος την τελευταία κατηλειμμένη (με δραστηριότητα) περίοδο της ημέρας.</translation>
+        <translation>Αυτός ο περιορισμός εξασφαλίζει την μέγιστη παραμονή (σε ώρες) ανά ημέρα, δηλαδή το μέγιστο διάστημα (σε ώρες) ανά ημέρα μέσα στο οποίο πραγματοποιούνται οι δραστηριότητες. Η παραμονή (σε ώρες) επί της ουσίας προκύπτει από την πρόσθεση των περιόδων (τόσο των ελεύθερων όσο και των κατειλημμένων με δραστηριότητες) με αφετηρία την πρώτη κατειλημμένη (με δραστηριότητα) περίοδο της ημέρας και τέλος την τελευταία κατειλημμένη (με δραστηριότητα) περίοδο της ημέρας.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxspanperdayform_template.ui" line="38"/>
@@ -27557,21 +27557,21 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="14848"/>
         <source>Constraint teachers interval max days per week is wrong because start hour &gt;= end hour. Please correct it. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;εκπαιδευτικοί - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &gt;= ώρα λήξης. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;εκπαιδευτικοί + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &gt;= ώρα λήξης. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14855"/>
         <source>Constraint teachers interval max days per week is wrong because start hour &lt; first hour of the day. Please correct it. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;εκπαιδευτικοί - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &lt; πρώτη ώρα της ημέρας. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;εκπαιδευτικοί + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &lt; πρώτη ώρα της ημέρας. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14862"/>
         <source>Constraint teachers interval max days per week is wrong because end hour &gt; number of hours per day. Please correct it. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;εκπαιδευτικοί - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα λήξης &gt; αριθμό ωρών ανά ημέρα. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;εκπαιδευτικοί + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα λήξης &gt; αριθμό ωρών ανά ημέρα. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -27583,7 +27583,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14908"/>
         <source>Teachers interval max days per week</source>
-        <translation>Εκπαιδευτικοί - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα</translation>
+        <translation>Εκπαιδευτικοί + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14909"/>
@@ -27624,7 +27624,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14926"/>
         <source>All teachers respect working in an hourly interval a maximum number of days per week</source>
-        <translation>Για όλους τους εκπαιδευτικούς τηρείται το διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα</translation>
+        <translation>Για όλους τους εκπαιδευτικούς τηρείται η εργασία εντός διαστήματος ωρών σε μέγιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14927"/>
@@ -27661,7 +27661,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14982"/>
         <source>Time constraint teachers interval max days per week broken for teacher: %1, allowed %2 days, required %3 days.</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;εκπαιδευτικοί - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; για τον εκπαιδευτικό: %1, διότι ενώ επιτρεπόταν %2 ημέρες, απαιτήθηκαν %3 ημέρες.</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;εκπαιδευτικοί + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; για τον εκπαιδευτικό: %1, διότι ενώ επιτρεπόταν %2 ημέρες, απαιτήθηκαν %3 ημέρες.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14987"/>
@@ -27710,7 +27710,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Constraints teachers interval max days per week</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>Περιορισμοί: &quot;Εκπαιδευτικοί - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
+        <translation>Περιορισμοί: &quot;Εκπαιδευτικοί + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersintervalmaxdaysperweekform_template.ui" line="28"/>
@@ -28835,7 +28835,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachersmaxspanperdayform_template.ui" line="26"/>
         <source>This constraint ensures a maximum span of activities on each day. Span means the count of slots (free or occupied) starting with the first occupied slot of the day and ending with the last occupied slot of the day.</source>
-        <translation>Αυτός ο περιορισμός εξασφαλίζει την μέγιστη παραμονή (σε ώρες) ανά ημέρα, δηλαδή το μέγιστο διάστημα (σε ώρες) ανά ημέρα μέσα στο οποίο πραγματοποιούνται οι δραστηριότητες. Η παραμονή (σε ώρες) επί της ουσίας προκύπτει από την πρόσθεση των περιόδων (τόσο των ελεύθερων όσο και των κατειλημμένων με δραστηριότητες) με αφετηρία την πρώτη κατηλειμμένη (με δραστηριότητα) περίοδο της ημέρας και τέλος την τελευταία κατηλειμμένη (με δραστηριότητα) περίοδο της ημέρας.</translation>
+        <translation>Αυτός ο περιορισμός εξασφαλίζει την μέγιστη παραμονή (σε ώρες) ανά ημέρα, δηλαδή το μέγιστο διάστημα (σε ώρες) ανά ημέρα μέσα στο οποίο πραγματοποιούνται οι δραστηριότητες. Η παραμονή (σε ώρες) επί της ουσίας προκύπτει από την πρόσθεση των περιόδων (τόσο των ελεύθερων όσο και των κατειλημμένων με δραστηριότητες) με αφετηρία την πρώτη κατειλημμένη (με δραστηριότητα) περίοδο της ημέρας και τέλος την τελευταία κατειλημμένη (με δραστηριότητα) περίοδο της ημέρας.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxspanperdayform_template.ui" line="44"/>
@@ -30586,7 +30586,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/export.cpp" line="427"/>
         <source>no textquote</source>
         <comment>Please use at least 2 characters for the translation of this field, so that the program works OK</comment>
-        <translation type="unfinished"></translation>
+        <translation>χωρίς εισαγωγικά</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="444"/>
@@ -30606,12 +30606,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/export.cpp" line="466"/>
         <source>Please specify the text quote of text fields:</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ καθορίστε τον χαρακτήρα εισαγωγικών των πεδίων κειμένου:</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="473"/>
         <source>Use textquote:</source>
-        <translation type="unfinished"></translation>
+        <translation>Χρήση του χαρακτήρα εισαγωγικών:</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="482"/>
@@ -30638,7 +30638,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/export.cpp" line="1158"/>
         <location filename="../src/engine/export.cpp" line="1242"/>
         <source>FET critical. Cannot open file %1 for writing. Please check your disk&apos;s free space. Saving of %1 aborted.</source>
-        <translation>FET -κρίσιμο σφάλμα. Αδύνατο το άνοιγμα του αρχείου %1 για εγγραφή. Παρακαλώ ελέγξτε τον ελεύθερο χώρο του δίσκου σας. Η εγγραφή του %1 ματαιώνεται.</translation>
+        <translation>FET - κρίσιμο σφάλμα. Αδύνατο το άνοιγμα του αρχείου %1 για εγγραφή. Παρακαλώ ελέγξτε τον ελεύθερο χώρο του δίσκου σας. Η εγγραφή του %1 ματαιώνεται.</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="591"/>
@@ -30664,7 +30664,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/export.cpp" line="1209"/>
         <location filename="../src/engine/export.cpp" line="1325"/>
         <source>FET critical. Writing %1 gave error code %2, which means saving is compromised. Please check your disk&apos;s free space.</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - κρίσιμο σφάλμα. Η αποθήκευση του αρχείου %1 &quot;επέστρεψε&quot; κωδικό σφάλματος %2, το οποίο σημαίνει ότι η αποθήκευση έχει αποτύχει. Παρακαλώ ελέγξτε τον ελεύθερο χώρο στον δίσκο σας.</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="650"/>
@@ -30769,17 +30769,17 @@ Import of data will be easier with these settings.</source>
     <message>
         <location filename="../src/engine/export.cpp" line="1207"/>
         <source>%1 active activities statistics exported.</source>
-        <translation type="unfinished">%1 ενεργές δραστηριότητες εξήχθησαν.</translation>
+        <translation>%1 ενεργές δραστηριότητες εξήχθησαν.</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="1320"/>
         <source>%1 scheduled activities exported.</source>
-        <translation type="unfinished">%1 προγραμματισμένες δραστηριότητες εξήχθησαν.</translation>
+        <translation>%1 προγραμματισμένες δραστηριότητες εξήχθησαν.</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="1322"/>
         <source>0 scheduled activities exported, because no timetable was generated.</source>
-        <translation type="unfinished">0 προγραμματισμένες δραστηριότητες εξήχθησαν, διότι δεν έχει δημιουργηθεί ωρολόγιο πρόγραμμα.</translation>
+        <translation>Καμία προγραμματισμένη δραστηριότητα δεν έχει εξαχθεί, διότι δεν έχει δημιουργηθεί ωρολόγιο πρόγραμμα.</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="937"/>
@@ -30863,17 +30863,17 @@ Import of data will be easier with these settings.</source>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="48"/>
         <source>Button 0 text: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Κείμενο για το κουμπί 0: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="50"/>
         <source>Button 1 text: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Κείμενο για το κουμπί 1: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="52"/>
         <source>Button 2 text: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Κείμενο για το κουμπί 2: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="54"/>
@@ -30883,37 +30883,37 @@ Import of data will be easier with these settings.</source>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="55"/>
         <source>Escape button: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Κουμπί διαφυγής: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="57"/>
         <source>Pressing default button %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Πάτημα του προκαθορισμένου κουμπιού %1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="252"/>
         <source>Progress title: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Τίτλος προόδου: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="258"/>
         <source>Progress label: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ένδειξη προόοδυ: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="264"/>
         <source>Progress range: %1..%2</source>
-        <translation type="unfinished"></translation>
+        <translation>Έκταση προόδου: %1..%2</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="271"/>
         <source>Progress setModal(true)</source>
-        <translation type="unfinished"></translation>
+        <translation>Πρόοδος - ΧωρίςΑλληλεπίδρασηΔιεπαφής</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="273"/>
         <source>Progress setModal(false)</source>
-        <translation type="unfinished"></translation>
+        <translation>Πρόοδος - ΜεΑλληλεπίδρασηΔιεπαφής</translation>
     </message>
 </context>
 <context>
@@ -31375,12 +31375,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="911"/>
         <source>Possible actions: check your network connection, try again later, try to visit FET homepage: %1, or try to search for the new FET page on the internet (maybe it has changed).</source>
-        <translation>Προτεινόμενες ενέργειες: ελέγξτε την σύνδεσή σας στο δίκτυο, προσπαθείτε αργότερα, προσπαθείστε να συνδεθείτε στην ιστοσελίδα του FET: %1, ή προσπαθείστε να αναζητήσετε την νέα ιστοσελίδα του FET (πιθανώς να έχει αλλάξει).</translation>
+        <translation>Προτεινόμενες ενέργειες: ελέγξτε την σύνδεσή σας στο δίκτυο, προσπαθήστε αργότερα, προσπαθήστε να συνδεθείτε στην ιστοσελίδα του FET: %1, ή προσπαθήστε να αναζητήσετε την νέα ιστοσελίδα του FET (πιθανώς να έχει αλλάξει).</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="926"/>
         <source>Maybe the FET homepage has some temporary problems, so try again later. Or maybe the current structure on FET homepage was changed. You may visit FET homepage: %1, and get latest version or, if it does not work, try to search for the new FET page on the internet (maybe it has changed).</source>
-        <translation>Πιθανώς η ιστοσελίδα του FET να έχει κάποια προσωρινά προβλήματα, οπότε προσπαθήστε εκ νέου αργότερα. Ή πιθανώς η δομή στην ιστοσελίδα του FET να έχει αλλάξει. Μπορείτε να επισκεφθείτε την ιστοσελίδα του FET: %1 και να κατεβάσετε την τελευταία έκδοση του λογισμικού, ή -εάν αυτό δεν έχει αποτέλεσμα- προσπαθείστε να αναζητήσετε την νέα ιστοσελίδα του FET στο διαδίκτυο (μπορεί να έχει αλλάξει).</translation>
+        <translation>Πιθανώς η ιστοσελίδα του FET να έχει κάποια προσωρινά προβλήματα, οπότε προσπαθήστε εκ νέου αργότερα. Ή πιθανώς η δομή στην ιστοσελίδα του FET να έχει αλλάξει. Μπορείτε να επισκεφθείτε την ιστοσελίδα του FET: %1 και να κατεβάσετε την τελευταία έκδοση του λογισμικού, ή -εάν αυτό δεν έχει αποτέλεσμα- προσπαθήστε να αναζητήσετε την νέα ιστοσελίδα του FET στο διαδίκτυο (μπορεί να έχει αλλάξει).</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="946"/>
@@ -31447,7 +31447,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/fetmainform.cpp" line="1599"/>
         <location filename="../src/interface/fetmainform.cpp" line="1604"/>
         <source>File was not saved.</source>
-        <translation>Το αρχείο δεν έχει αποθηκευθεί.</translation>
+        <translation>Το αρχείο δεν έχει αποθηκευτεί.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1367"/>
@@ -31597,7 +31597,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2072"/>
         <source>If you use constraints students min hours daily with allowed empty days, you&apos;ll get a warning before generating. Uncheck this option to get rid of that warning (it is recommended to keep the warning).</source>
-        <translation>Αν χρησιμοποείτε περιορισμούς &quot;μαθητές - ελάχιστος αριθμός ωρών ημερησίως&quot; με επιτρεπτές κενές ημέρες, θα λάβετε μία προειδοποίηση πριν την δημιουργία ωρολογίου προγράμματος. Αποεπιλέξτε αυτό το πεδίο αν θέλετε να απαλλαγείτε από αυτήν την προειδοποίηση (προτείνεται όμως να διατηρήσετε ενεργοποιημένη αυτήν την προειδοποίηση).</translation>
+        <translation>Αν χρησιμοποιείτε περιορισμούς &quot;μαθητές - ελάχιστος αριθμός ωρών ημερησίως&quot; με επιτρεπτές κενές ημέρες, θα λάβετε μία προειδοποίηση πριν την δημιουργία ωρολογίου προγράμματος. Αποεπιλέξτε αυτό το πεδίο αν θέλετε να απαλλαγείτε από αυτήν την προειδοποίηση (προτείνεται όμως να διατηρήσετε ενεργοποιημένη αυτήν την προειδοποίηση).</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2077"/>
@@ -31627,12 +31627,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2103"/>
         <source>After that, you can re-enable writing of the timetables and re-generate.</source>
-        <translation>Μετά από αυτό, μπορείτε να επανενεργοποιήσετε την εγγραφή των ωρολογίων προγραμμάτων και να δημιουργήσετε νέα ωρολόγια προγράμματα.</translation>
+        <translation>Μετά από αυτό, μπορείτε να ενεργοποιήσετε ξανά την εγγραφή των ωρολογίων προγραμμάτων και να δημιουργήσετε νέα ωρολόγια προγράμματα.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2106"/>
         <source>Show tool tips for constraints with tables: in the add/modify constraint dialogs which use tables, like the &apos;not available times&apos; ones, each table cell will have a tool tip to show the current day/hour (column/row name).</source>
-        <translation>Εμφάνιση με πίνακες των υποδείξεων εργαλείων: στους διαλόγους προσθήκη/τροποποίηση περιορισμών που χρησιμοποιούν πίνακες, όπως οι περιορισμοί &quot;μη διαθέσιμες ώρες&quot;, το κάθε κελί του πιίνακα θα έχει μία υπόδειξη εργαλείων για να εμφανίσει την τρέχουσα ημέρα/ώρα (όνομα στήλης/γραμμής).</translation>
+        <translation>Εμφάνιση με πίνακες των υποδείξεων εργαλείων: στους διαλόγους προσθήκη/τροποποίηση περιορισμών που χρησιμοποιούν πίνακες, όπως οι περιορισμοί &quot;μη διαθέσιμες ώρες&quot;, το κάθε κελί του πίνακα θα έχει μία υπόδειξη εργαλείων για να εμφανίσει την τρέχουσα ημέρα/ώρα (όνομα στήλης/γραμμής).</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2116"/>
@@ -31674,7 +31674,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="3146"/>
         <source>The feature must be used with caution, by experienced users.</source>
-        <translation>Η λειτουργία αυτή θα πρέπει να χρησιμοποιείτει με προσοχή, από έμπειρους χρήστες.</translation>
+        <translation>Η λειτουργία αυτή θα πρέπει να χρησιμοποιείται με προσοχή, από έμπειρους χρήστες.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="3673"/>
@@ -31951,7 +31951,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4226"/>
         <source>Confirm remove redundant constraints will be %1</source>
         <comment>%1 is true or false</comment>
-        <translation>Η επιβεβαίωση για την διαγραφή των περιττών περιορισμών θα είναι %1</translation>
+        <translation>Η επιβεβαίωση για την διαγραφή των πλεοναζόντων περιορισμών θα είναι %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4226"/>
@@ -32399,7 +32399,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="1507"/>
         <location filename="../src/interface/fetmainform.cpp" line="1515"/>
         <source>It seems that you have an incomplete timetable. Saving of timetable does not work for incomplete timetables. Please generate a complete timetable</source>
-        <translation>Πιθανώς έχετε ημιτελές ωρολόγιο πρόγραμμα. Δεν είναι δυνατή η αποθήκευση ημιτελών ωρολογίων προγραμμάτων. Παρακαλώ δημιουργείστε ένα πλήρες ωρολόγιο πρόγραμμα</translation>
+        <translation>Πιθανώς έχετε ημιτελές ωρολόγιο πρόγραμμα. Δεν είναι δυνατή η αποθήκευση ημιτελών ωρολογίων προγραμμάτων. Παρακαλώ δημιουργήστε ένα πλήρες ωρολόγιο πρόγραμμα</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1615"/>
@@ -32457,7 +32457,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="1409"/>
         <location filename="../src/interface/fetmainform.cpp" line="1790"/>
         <source>File saved</source>
-        <translation>Το αρχείο αποθηκεύθηκε</translation>
+        <translation>Το αρχείο αποθηκεύτηκε</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2060"/>
@@ -32468,7 +32468,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4133"/>
         <source>Show shortcut buttons in main window will be %1</source>
         <comment>%1 is true or false</comment>
-        <translation>Η προβολή πλήκτων συντόμευσης στο κύριο παράθυρο θα είναι %1</translation>
+        <translation>Η προβολή κουμπιών συντόμευσης στο κύριο παράθυρο θα είναι %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4136"/>
@@ -33158,7 +33158,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1472"/>
         <source>A set of activities has same starting time (day+hour)</source>
-        <translation>Σύνολο δραστηριοτήτων έχει τον ίδιο χρόνο έξαρξης (ημέρα+ώρα)</translation>
+        <translation>Σύνολο δραστηριοτήτων έχει τον ίδιο χρόνο έναρξης (ημέρα+ώρα)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1487"/>
@@ -33543,7 +33543,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1786"/>
         <source>A subject+an activity tag have a preferred room</source>
-        <translation>Αντικείμενο+ετικέτα δραστηριότητας έχουν προτιμητέα αίθουσα</translation>
+        <translation>Αντικείμενο + ετικέτα δραστηριότητας έχουν προτιμητέα αίθουσα</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1791"/>
@@ -33618,7 +33618,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1861"/>
         <source>Min gaps between building changes for all teachers</source>
-        <translation>Ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου για όλους τους εκπαδευτικούς</translation>
+        <translation>Ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου για όλους τους εκπαιδευτικούς</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1866"/>
@@ -33715,7 +33715,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="2351"/>
         <source>Confirm remove redundant constraints</source>
         <comment>This is a setting - a check box: if a user wants to deactivate/activate the confirmation (instructions) dialog that appears before removing redundant constraints dialog</comment>
-        <translation>Επιβεβαίωση διαγραφής περιττών περιορισμών</translation>
+        <translation>Επιβεβαίωση διαγραφής πλεοναζόντων περιορισμών</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2367"/>
@@ -34190,7 +34190,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2017"/>
         <source>Remove redundant constraints</source>
-        <translation>Διαγραφή περιττών περιορισμών</translation>
+        <translation>Διαγραφή πλεοναζόντων περιορισμών</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="931"/>
@@ -34330,7 +34330,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fet.cpp" line="292"/>
         <source>Output directory %1 does not exist and cannot be created - output directory will be made the default value %2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο κατάλογος εξαγωγής %1 είναι ανύπαρκτος και δεν μπορεί να δημιουργηθεί - θα χρησιμοποιηθεί ο προκαθορισμένος κατάλογος εξαγωγής: %2</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="805"/>
@@ -34341,49 +34341,49 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fet.cpp" line="844"/>
         <source>To start FET in interface mode, please do not give any command-line parameters to the FET executable</source>
-        <translation type="unfinished"></translation>
+        <translation>Για να εκκινήσετε το FET σε λειτουργία διεπαφής, παρακαλώ να μην δώσετε καμία παράμετρο γραμμής εντολών στο εκτελέσιμο αρχείο του FET</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="1184"/>
         <source>This is the list of max placed activities, chronologically. If FET could reach maximum n-th activity, look at the n+1-st activity in the initial order of the activities</source>
-        <translation type="unfinished"></translation>
+        <translation>Αυτή είναι η λίστα των μέγιστων τοποθετημένων δραστηριοτήτων, σε χρονική σειρά. Αν το FET κατάφερε να φτάσει κατά μέγιστο στην n δραστηριότητα, εξετάστε την (n+1) δραστηριότητα στην αρχική σειρά των δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="1475"/>
         <source>FET managed to schedule correctly the first %1 most difficult activities. You can see initial order of placing the activities in the corresponding output file. The activity which might cause problems might be the next activity in the initial order of evaluation. This activity is listed below:</source>
-        <translation type="unfinished"></translation>
+        <translation>Το FET κατάφερε να προγραμματίσει (τοποθετήσει) σωστά τις πρώτες %1 δύσκολες δραστηριότητες. Μπορείτε να δείτε την αρχική σειρά τοποθέτησης των δραστηριοτήτων στο αντίστοιχο αρχείο εξόδου. Η δραστηριότητα η οποία ενδέχεται να προξενεί προβλήματα πιθανώς να είναι η επόμενη δραστηριότητα στην αρχική σειρά επεξεργασίας των δραστηριοτήτων. Η δραστηριότητα αυτή παρατίθεται παρακάτω:</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="1482"/>
         <location filename="../src/interface/fet.cpp" line="1502"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
-        <translation type="unfinished">Ατ: %1 (%2)</translation>
+        <translation>Ατ: %1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="1487"/>
         <source>Difficult activity cannot be computed - please report possible bug</source>
-        <translation type="unfinished"></translation>
+        <translation>Υπολογισμός δύσκολης δραστηριότητας αδύνατος - παρακαλώ να αναφέρετε πιθανό σφάλμα λογισμικού (bug)</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="1491"/>
         <source>Here are the placed activities which lead to an inconsistency, in order from the first one to the last (the last one FET failed to schedule and the last ones are most likely impossible):</source>
-        <translation type="unfinished"></translation>
+        <translation>Εδώ παρατίθενται οι τοποθετημένες (προγραμματισμένες) δραστηριότητες οι οποίες οδήγησαν σε ασυνέπεια, σε σειρά από την πρώτη δραστηριότητα μέχρι την τελευταία (Το FET δεν μπόρεσε να τοποθετήσει την τελευταία δραστηριότητα. Οι τελευταίες δραστηριότητες κατά πάσα πιθανότητα είναι αδύνατον να τοποθετηθούν):</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="1498"/>
         <source>No: %1</source>
-        <translation type="unfinished">Αρ.: %1</translation>
+        <translation>Αρ.: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="805"/>
         <source>Cannot create or use %1 directory (where the results should be stored) - you can continue operation, but you might not be able to work with FET. Maybe you can try to change the output directory from the &apos;Settings&apos; menu. If this is a bug - please report it.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η δημιουργία ή χρήση του καταλόγου %1 (όπου θα έπρεπε να αποθηκευτούν τα αποτελέσματα) - μπορείτε να συνεχίσετε την λειτουργία, αλλά ενδεχομένως να μην μπορέσετε να δουλέψετε με το FET. Πιθανώς, μπορείτε να δοκιμάσετε να αλλάξετε τον κατάλογο εξαγωγής από το μενού &quot;Ρυθμίσεις&quot;. Αν αυτό είναι κάποια σφάλμα λογισμικού (bug), παρακαλώ να το αναφέρετε.</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="814"/>
         <source>You don&apos;t have write permissions in the output directory (FET cannot open or create file %1) - you might not be able to work correctly with FET. Maybe you can try to change the output directory from the &apos;Settings&apos; menu. If this is a bug - please report it.</source>
-        <translation type="unfinished"></translation>
+        <translation>Δεν έχετε δικαιώματα εγγραφής στον κατάλογο εξαγωγής (το FET δεν μπορεί να ανοίξει ή να δημιουργήσει το αρχείο %1) - ενδεχομένως να μην μπορέσετε να δουλέψετε κανονικά με το FET. Πιθανώς, μπορείτε να δοκιμάσετε να αλλάξετε τον κατάλογο εξαγωγής από το μενού &quot;Ρυθμίσεις&quot;. Αν αυτό είναι κάποια σφάλμα λογισμικού (bug), παρακαλώ να το αναφέρετε.</translation>
     </message>
 </context>
 <context>
@@ -34608,7 +34608,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="933"/>
         <source>These constraints are nonstandard. They are recommended only if the students can have free days and a solution with free days for students exists. Otherwise the solution might be impossible for FET to find.</source>
-        <translation>Οι περιορισμοί αυτοί δεν είναι σηνήθεις. Συνιστώνται μόνον εάν οι μαθητές επιτρέπεται να έχουν κενές ημέρες και υπάρχει λύση (ωρολόγιο πρόγραμμα) με κενές ημέρες για τους μαθητές. Σε διαφορετική περίπτωση μπορεί να καταστεί αδύνατη η εξεύρεση λύσης από το FET.</translation>
+        <translation>Οι περιορισμοί αυτοί δεν είναι συνήθεις. Συνιστώνται μόνον εάν οι μαθητές επιτρέπεται να έχουν κενές ημέρες και υπάρχει λύση (ωρολόγιο πρόγραμμα) με κενές ημέρες για τους μαθητές. Σε διαφορετική περίπτωση μπορεί να καταστεί αδύνατη η εξεύρεση λύσης από το FET.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="1034"/>
@@ -34967,7 +34967,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2398"/>
         <source>For subgroup %1 cannot respect the constraint(s) of type min hours daily (the constraint(s) do not allow empty days) on day %2, because of students set not available and/or break. Please modify your data accordingly and try again</source>
-        <translation>Για το υποτμήμα %1 δεν είναι εφικτή η τήρηση του περιορισμού (των περιορισμών) του τύπου &quot;ελάχιστες ώρες ημερησίως&quot; (ο περιορισμός (οι περιορισμοί) δεν επιτρέπει (δεν επιτρέπουν) κενές ημέρες) για την ημέρα %2, διότι υπάρχει περιορισμός &quot;ομάδα μαθητών - μη διαθέσιμοι χρόνοι&quot; ή/και περιορισμός &quot;διάλειμμα&quot;. Παρακαλώ τροποποιήστε τα δεδομένα σας κατά τα ανωτέρω και προσπαθείστε ξανά</translation>
+        <translation>Για το υποτμήμα %1 δεν είναι εφικτή η τήρηση του περιορισμού (των περιορισμών) του τύπου &quot;ελάχιστες ώρες ημερησίως&quot; (ο περιορισμός (οι περιορισμοί) δεν επιτρέπει (δεν επιτρέπουν) κενές ημέρες) για την ημέρα %2, διότι υπάρχει περιορισμός &quot;ομάδα μαθητών - μη διαθέσιμοι χρόνοι&quot; ή/και περιορισμός &quot;διάλειμμα&quot;. Παρακαλώ τροποποιήστε τα δεδομένα σας κατά τα ανωτέρω και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2435"/>
@@ -35029,57 +35029,57 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3477"/>
         <source>Cannot optimize, because you have constraint teachers min hours daily with weight (percentage) below 100. Starting with FET version 5.4.0 it is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
-        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικοί - ελάχιστες ώρες ημερησίως&quot; με ποσοστό βαρύτητας μικρότερο του 100%. Από την έκδοση 5.4.0 του FET και μετά, επιτρέπεται μόνον η χρήση της τιμής 100% για την βαρύτητα τέτοιων περιορισμών. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθείστε ξανά</translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικοί - ελάχιστες ώρες ημερησίως&quot; με ποσοστό βαρύτητας μικρότερο του 100%. Από την έκδοση 5.4.0 του FET και μετά, επιτρέπεται μόνον η χρήση της τιμής 100% για την βαρύτητα τέτοιων περιορισμών. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3493"/>
         <source>Cannot optimize, because you have constraint teachers min hours daily with %1 min hours daily, and the number of working hours per day is only %2. Please correct and try again</source>
-        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικοί - ελάχιστες ώρες ημερησίως&quot; με %1 ελάχιστες ώρες ημερησίως, και ο αριθμός των ωρών εργασίας ανά ημέρα είναι μόνον %2. Παρακαλώ διορθώστε και προσπαθείστε ξανά</translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικοί - ελάχιστες ώρες ημερησίως&quot; με %1 ελάχιστες ώρες ημερησίως, και ο αριθμός των ωρών εργασίας ανά ημέρα είναι μόνον %2. Παρακαλώ διορθώστε και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3574"/>
         <source>Cannot optimize, because you have constraint teacher min days per week for teacher %1 with weight (percentage) below 100. Please make weight 100% and try again</source>
-        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικός - ελάχιστες ημέρες ανά εβδομάδα&quot; για τον εκπαιδευτικό %1 με ποσοστό βαρύτητας μικρότερο του 100%. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθείστε ξανά</translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικός - ελάχιστες ημέρες ανά εβδομάδα&quot; για τον εκπαιδευτικό %1 με ποσοστό βαρύτητας μικρότερο του 100%. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3590"/>
         <source>Cannot optimize, because you have constraint teacher min days per week for teacher %1 with %2 min days per week, and the number of working days per week is only %3. Please correct and try again</source>
-        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικός - ελάχιστες ημέρες ανά εβδομάδα&quot; για τον εκπαιδευτικό %1 με ελάχιστες %2 ημέρες ανά εβδομάδα, και ο αριθμός των διαθέσιμων ημερών εργασίας (ημερών για δραστηριότητες) ανά εβδομάδα είναι μόνον %3. Παρακαλώ διορθώστε και προσπαθείστε ξανά</translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικός - ελάχιστες ημέρες ανά εβδομάδα&quot; για τον εκπαιδευτικό %1 με ελάχιστες %2 ημέρες ανά εβδομάδα, και ο αριθμός των διαθέσιμων ημερών εργασίας (ημερών για δραστηριότητες) ανά εβδομάδα είναι μόνον %3. Παρακαλώ διορθώστε και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3616"/>
         <source>Cannot optimize, because you have constraint teachers min days per week with weight (percentage) below 100. Please make weight 100% and try again</source>
-        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικοί - ελάχιστες ημέρες ανά εβδομάδα&quot; με ποσοστό βαρύτητας μικρότερο του 100%. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθείστε ξανά</translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικοί - ελάχιστες ημέρες ανά εβδομάδα&quot; με ποσοστό βαρύτητας μικρότερο του 100%. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3631"/>
         <source>Cannot optimize, because you have constraint teachers min days per week with %1 min days per week, and the number of working days per week is only %2. Please correct and try again</source>
-        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικοί - ελάχιστες ημέρες ανά εβδομάδα&quot; με %1 ελάχιστες ημέρες ανά εβδομάδα, και ο αριθμός των διαθέσιμων ημερών εργασίας (ωρών για δραστηριότητες) ανά εβδομάδα είναι μόνον %2. Παρακαλώ διορθώστε και προσπαθείστε ξανά</translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικοί - ελάχιστες ημέρες ανά εβδομάδα&quot; με %1 ελάχιστες ημέρες ανά εβδομάδα, και ο αριθμός των διαθέσιμων ημερών εργασίας (ωρών για δραστηριότητες) ανά εβδομάδα είναι μόνον %2. Παρακαλώ διορθώστε και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3658"/>
         <source>Cannot optimize because for teacher %1 you have min days per week %2 and he has only %3 activities - impossible. Please correct and try again.</source>
-        <translation>Αδύνατη η βελτιστοποίηση, διότι για τον εκπαιδευτικό %1 έχετε &quot;ελάχιστες ημέρες ανά εβδομάδα&quot; %2 και (ο εκπαιδευτικός) έχει μόνον %3 δραστηριότητες - αδύνατον. Παρακαλώ διορθώστε και προσπαθείστε ξανά.</translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι για τον εκπαιδευτικό %1 έχετε &quot;ελάχιστες ημέρες ανά εβδομάδα&quot; %2 και (ο εκπαιδευτικός) έχει μόνον %3 δραστηριότητες - αδύνατον. Παρακαλώ διορθώστε και προσπαθήστε ξανά.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3678"/>
         <source>Cannot optimize because for teacher %1 you have min days per week %2 and min hours daily %3 and he has only %4 working hours - impossible. Please correct and try again.</source>
-        <translation>Αδύνατη η βελτιστοποίηση, διότι για τον εκπαιδευτικό %1 έχετε &quot;ελάχιστες ημέρες ανά εβδομάδα&quot; %2 και &quot;ελάχιστες ώρες ημερησίως&quot; %3 και (ο εκπαιδευτικός) έχει μόνον %4 ώρες εργασίας - αδύνατον. Παρακαλώ διορθώστε και προσπαθείστε ξανά.</translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι για τον εκπαιδευτικό %1 έχετε &quot;ελάχιστες ημέρες ανά εβδομάδα&quot; %2 και &quot;ελάχιστες ώρες ημερησίως&quot; %3 και (ο εκπαιδευτικός) έχει μόνον %4 ώρες εργασίας - αδύνατον. Παρακαλώ διορθώστε και προσπαθήστε ξανά.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3703"/>
         <source>Cannot optimize because for teacher %1 you have min days per week %2 &gt; max days per week %3 - impossible (min days must be &lt;= max days). Please correct and try again.</source>
-        <translation>Αδύνατη η βελτιστοποίηση, διότι για τον εκπαιδευτικό %1 έχετε &quot;ελάχιστες ημέρες ανά εβδομάδα&quot; %2 &gt; &quot;μέγιστες ημέρες ανά εβδομάδα&quot; %3 - αδύνατον (οι ελάχιστες ημέρες πρέπει να είναι &lt;= σε σχέση με τις μέγιστες ημέρες). Παρακαλώ διορθώστε και προσπαθείστε ξανά.</translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι για τον εκπαιδευτικό %1 έχετε &quot;ελάχιστες ημέρες ανά εβδομάδα&quot; %2 &gt; &quot;μέγιστες ημέρες ανά εβδομάδα&quot; %3 - αδύνατον (οι ελάχιστες ημέρες πρέπει να είναι &lt;= σε σχέση με τις μέγιστες ημέρες). Παρακαλώ διορθώστε και προσπαθήστε ξανά.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3738"/>
         <source>Cannot optimize because for teacher %1 you have min days per week %2 and only %3 available days considering breaks and not available and min hours daily for this teacher. Please correct and try again.</source>
-        <translation>Αδύνατη η βελτιστοποίηση, διότι για τον εκπαιδευτικό %1 έχετε &quot;ελάχιστες ημέρες ανά εβδομάδα&quot; %2 και μόνον %3 διαθέσιμες ημέρες, λαμβανομένων υπόψη των διαλειμμάτων και των περιορισμών &quot;μη διαθέσιμοι χρόνοι&quot; και &quot;ελάχιστες ώρες ημερησίως&quot; για τον συγκεκριμένο εκπαιδευτικό. Παρακαλώ διορθώστε και προσπαθείστε ξανά.</translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι για τον εκπαιδευτικό %1 έχετε &quot;ελάχιστες ημέρες ανά εβδομάδα&quot; %2 και μόνον %3 διαθέσιμες ημέρες, λαμβανομένων υπόψη των διαλειμμάτων και των περιορισμών &quot;μη διαθέσιμοι χρόνοι&quot; και &quot;ελάχιστες ώρες ημερησίως&quot; για τον συγκεκριμένο εκπαιδευτικό. Παρακαλώ διορθώστε και προσπαθήστε ξανά.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3745"/>
         <source>Cannot optimize because for teacher %1 you have min days per week %2 and only %3 available days considering breaks and not available for this teacher. Please correct and try again.</source>
-        <translation>Αδύνατη η βελτιστοποίηση, διότι για τον εκπαιδευτικό %1 έχετε &quot;ελάχιστες ημέρες ανά εβδομάδα&quot; %2 και μόνον %3 διαθέσιμες ημέρες, λαμβανομένων υπόψη των διαλειμμάτων και του περιορισμού &quot;μη διαθέσιμοι χρόνοι&quot; για τον συγκεκριμένο εκπαιδευτικό. Παρακαλώ διορθώστε και προσπαθείστε ξανά.</translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι για τον εκπαιδευτικό %1 έχετε &quot;ελάχιστες ημέρες ανά εβδομάδα&quot; %2 και μόνον %3 διαθέσιμες ημέρες, λαμβανομένων υπόψη των διαλειμμάτων και του περιορισμού &quot;μη διαθέσιμοι χρόνοι&quot; για τον συγκεκριμένο εκπαιδευτικό. Παρακαλώ διορθώστε και προσπαθήστε ξανά.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4081"/>
@@ -35099,7 +35099,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4206"/>
         <source>The activities with ids %1 and %2 must be simultaneous (request determined indirectly), but they have common teachers and/or students sets or must be not overlapping</source>
-        <translation>Οι δραστηριότητες με ατ %1 και %2 πρέπει να είναι ταυτόχρονες (απαίτηση η οποία έχει καθοριστεί έμμεσα), αλλά έχουν κοινούς εκπαιδευτικούς ή/και κοινές ομάδες μαθητών ή δεν πρέπει να αλληλοεπικαλύπτονται</translation>
+        <translation>Οι δραστηριότητες με ατ %1 και %2 πρέπει να είναι ταυτόχρονες (απαίτηση η οποία έχει καθοριστεί έμμεσα), αλλά έχουν κοινούς εκπαιδευτικούς ή/και κοινές ομάδες μαθητών ή δεν πρέπει να αλληλεπικαλύπτονται</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4406"/>
@@ -35201,7 +35201,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="7052"/>
         <source>Cannot optimize, because you have constraint(s) of type &apos;activities occupy max different rooms&apos; with weight (percentage) below 100.0%. Please make the weight 100.0% and try again</source>
-        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό (περιορισμούς) του τύπου &quot;δραστηριότητες - καταλαμβάνουν μέγιστες διαφορετικές αίθουσες&quot; με ποσοστό βαρύτητας μικρότερο του 100.0%. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100.0% και προσπαθείστε ξανά</translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό (περιορισμούς) του τύπου &quot;δραστηριότητες - καταλαμβάνουν μέγιστες διαφορετικές αίθουσες&quot; με ποσοστό βαρύτητας μικρότερο του 100.0%. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100.0% και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="7134"/>
@@ -35494,7 +35494,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3786"/>
         <source>Cannot optimize, because you have constraint teacher min resting hours for teacher %1 with weight (percentage) below 100. It is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
-        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικός - ελάχιστες ώρες ανάπαυσης&quot; για τον εκπαιδευτικό %1 με ποσοστό βαρύτητας μικρότερο του 100%. Επιτρέπεται μόνον η χρήση της τιμής 100% για την βαρύτητα τέτοιων περιορισμών. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθείστε ξανά</translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικός - ελάχιστες ώρες ανάπαυσης&quot; για τον εκπαιδευτικό %1 με ποσοστό βαρύτητας μικρότερο του 100%. Επιτρέπεται μόνον η χρήση της τιμής 100% για την βαρύτητα τέτοιων περιορισμών. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3800"/>
@@ -35504,7 +35504,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3836"/>
         <source>Cannot optimize, because you have constraint teachers min resting hours with weight (percentage) below 100. It is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
-        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικοί - ελάχιστες ώρες ανάπαυσης&quot; με ποσοστό βαρύτητας μικρότερο του 100%. Επιτρέπεται μόνον η χρήση της τιμής 100% για την βαρύτητα τέτοιων περιορισμών. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθείστε ξανά</translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικοί - ελάχιστες ώρες ανάπαυσης&quot; με ποσοστό βαρύτητας μικρότερο του 100%. Επιτρέπεται μόνον η χρήση της τιμής 100% για την βαρύτητα τέτοιων περιορισμών. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3849"/>
@@ -35514,7 +35514,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3912"/>
         <source>Cannot optimize, because you have constraint students set min resting hours for students set %1 with weight (percentage) below 100. It is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
-        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;ομάδα μαθητών - ελάχιστες ώρες ανάπαυσης&quot; για την ομάδα μαθητών %1 με ποσοστό βαρύτητας μικρότερο του 100%. Επιτρέπεται μόνον η χρήση της τιμής 100% για την βαρύτητα τέτοιων περιορισμών. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθείστε ξανά</translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;ομάδα μαθητών - ελάχιστες ώρες ανάπαυσης&quot; για την ομάδα μαθητών %1 με ποσοστό βαρύτητας μικρότερο του 100%. Επιτρέπεται μόνον η χρήση της τιμής 100% για την βαρύτητα τέτοιων περιορισμών. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3926"/>
@@ -35524,7 +35524,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3964"/>
         <source>Cannot optimize, because you have constraint students min resting hours with weight (percentage) below 100. It is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
-        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;μαθητές - ελάχιστες ώρες ανάπαυσης&quot; με ποσοστό βαρύτητας μικρότερο του 100%. Επιτρέπεται μόνον η χρήση της τιμής 100% για την βαρύτητα τέτοιων περιορισμών. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθείστε ξανά</translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;μαθητές - ελάχιστες ώρες ανάπαυσης&quot; με ποσοστό βαρύτητας μικρότερο του 100%. Επιτρέπεται μόνον η χρήση της τιμής 100% για την βαρύτητα τέτοιων περιορισμών. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3977"/>
@@ -35619,7 +35619,7 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="5523"/>
         <source>Cannot optimize, because you have constraints of type activity preferred starting time with no day nor hour selected (for activity with id==%1). Please modify your data accordingly (remove or edit constraint) and try again.</source>
-        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέος χρόνος έναρξης&quot; χωρίς να έχει επιλεγεί καμία ημέρα και καμία ώρα (για την δραστηριότητα με ατ=%1). Παρακαλώ, τροποποιήστε τα δεδομένα σας κατά τα ανωτέρω (διαγράψετε ή επεξεργαστείτε τον περιορισμό) και προσπαθείστε ξανά.</translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέος χρόνος έναρξης&quot; χωρίς να έχει επιλεγεί καμία ημέρα και καμία ώρα (για την δραστηριότητα με ατ=%1). Παρακαλώ, τροποποιήστε τα δεδομένα σας κατά τα ανωτέρω (διαγράψετε ή επεξεργαστείτε τον περιορισμό) και προσπαθήστε ξανά.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="5793"/>
@@ -35691,34 +35691,34 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="6703"/>
         <source>Cannot optimize, because you have constraint teacher interval max days per week with weight (percentage) below 100 for teacher %1. Starting with FET version 5.6.2 it is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
-        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικός - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; με ποσοστό βαρύτητας μικρότερο του 100% για τον εκπαιδευτικό %1. Από την έκδοση 5.6.2 του FET και μετά, επιτρέπεται μόνον η χρήση της τιμής 100% για την βαρύτητα τέτοιων περιορισμών. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθήστε ξανά</translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικός + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; με ποσοστό βαρύτητας μικρότερο του 100% για τον εκπαιδευτικό %1. Από την έκδοση 5.6.2 του FET και μετά, επιτρέπεται μόνον η χρήση της τιμής 100% για την βαρύτητα τέτοιων περιορισμών. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="6736"/>
         <location filename="../src/engine/generate_pre.cpp" line="6787"/>
         <source>Cannot optimize for teacher %1, because it has more than three constraints interval max days per week. Please modify your data correspondingly (leave maximum three constraints of type constraint teacher(s) interval max days per week for each teacher) and try again</source>
-        <translation>Αδύνατη η βελτιστοποίηση ως προς τον εκπαιδευτικό %1, διότι έχει περισσότερους από τρεις περιορισμούς &quot;διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot;. Παρακαλώ τροποποιήστε τα δεδομένα σας κατά τα ανωτέρω (δηλαδή αφήστε κατά μέγιστο τρεις περιορισμούς του τύπου &quot;εκπαιδευτικός (ή εκπαιδευτικοί) - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; για τον κάθε εκπαιδευτικό) και προσπαθείστε ξανά</translation>
+        <translation>Αδύνατη η βελτιστοποίηση ως προς τον εκπαιδευτικό %1, διότι έχει περισσότερους από τρεις περιορισμούς &quot;διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot;. Παρακαλώ τροποποιήστε τα δεδομένα σας κατά τα ανωτέρω (δηλαδή αφήστε κατά μέγιστο τρεις περιορισμούς του τύπου &quot;εκπαιδευτικός (ή εκπαιδευτικοί) + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; για τον κάθε εκπαιδευτικό) και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="6754"/>
         <source>Cannot optimize, because you have constraint teachers interval max days per week with weight (percentage) below 100. Starting with FET version 5.6.2 it is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
-        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικοί - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; με ποσοστό βαρύτητας μικρότερο του 100%. Από την έκδοση 5.6.2 του FET και μετά, επιτρέπεται μόνον η χρήση της τιμής 100% για την βαρύτητα τέτοιων περιορισμών. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθήστε ξανά</translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;εκπαιδευτικοί + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; με ποσοστό βαρύτητας μικρότερο του 100%. Από την έκδοση 5.6.2 του FET και μετά, επιτρέπεται μόνον η χρήση της τιμής 100% για την βαρύτητα τέτοιων περιορισμών. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="6833"/>
         <source>Cannot optimize, because you have constraint students set interval max days per week with weight (percentage) below 100 for students set %1. Starting with FET version 5.6.2 it is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
-        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;ομάδα μαθητών - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; με ποσοστό βαρύτητας μικρότερο του 100% για την ομάδα μαθητών %1. Από την έκδοση 5.6.2 του FET και μετά, επιτρέπεται μόνον η χρήση της τιμής 100% για την βαρύτητα τέτοιων περιορισμών. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθήστε ξανά</translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;ομάδα μαθητών + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; με ποσοστό βαρύτητας μικρότερο του 100% για την ομάδα μαθητών %1. Από την έκδοση 5.6.2 του FET και μετά, επιτρέπεται μόνον η χρήση της τιμής 100% για την βαρύτητα τέτοιων περιορισμών. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="6867"/>
         <location filename="../src/engine/generate_pre.cpp" line="6922"/>
         <source>Cannot optimize for subgroup %1, because it has more than three constraints interval max days per week. Please modify your data correspondingly (leave maximum three constraints of type constraint students (set) interval max days per week for each subgroup) and try again</source>
-        <translation>Αδύνατη η βελτιστοποίηση ως προς το υποτμήμα %1, διότι έχει περισσότερους από τρεις περιορισμούς &quot;διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot;. Παρακαλώ τροποποιήστε τα δεδομένα σας κατά τα ανωτέρω (δηλαδή αφήστε κατά μέγιστο τρεις περιορισμούς του τύπου &quot;μαθητές (ή ομάδα μαθητών) - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; για το κάθε υποτμήμα) και προσπαθείστε ξανά</translation>
+        <translation>Αδύνατη η βελτιστοποίηση ως προς το υποτμήμα %1, διότι έχει περισσότερους από τρεις περιορισμούς &quot;διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot;. Παρακαλώ τροποποιήστε τα δεδομένα σας κατά τα ανωτέρω (δηλαδή αφήστε κατά μέγιστο τρεις περιορισμούς του τύπου &quot;μαθητές (ή ομάδα μαθητών) + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; για το κάθε υποτμήμα) και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="6886"/>
         <source>Cannot optimize, because you have constraint students interval max days per week with weight (percentage) below 100. Starting with FET version 5.6.2 it is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
-        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;μαθητές - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; με ποσοστό βαρύτητας μικρότερο του 100%. Από την έκδοση 5.6.2 του FET και μετά, επιτρέπεται μόνον η χρήση της τιμής 100% για την βαρύτητα τέτοιων περιορισμών. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθήστε ξανά</translation>
+        <translation>Αδύνατη η βελτιστοποίηση, διότι έχετε περιορισμό &quot;μαθητές + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; με ποσοστό βαρύτητας μικρότερο του 100%. Από την έκδοση 5.6.2 του FET και μετά, επιτρέπεται μόνον η χρήση της τιμής 100% για την βαρύτητα τέτοιων περιορισμών. Παρακαλώ δώστε στο ποσοστό βαρύτητας την τιμή 100% και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="6959"/>
@@ -35850,7 +35850,7 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9395"/>
         <source>This is the initial evaluation order of activities computed by FET. If the generation gets stuck after a certain number of activities, please check the activity corresponding to this number+1. You might find errors in your input.</source>
-        <translation>Αυτή είναι η αρχική σειρά αξιολόγησης των δραστηριοτήτων όπως έχει υπολογιστεί από το FET. Αν η δημιουργία του ωρολογίου προγράμματος &quot;κολλάει&quot; μετά από έναν ορισμένο αριθμό δραστηριοτήτων, ελέγξτε τη δραστηριότητα που αντιστοιχεί στον αριθμό αυτό+1. Μπορεί να βρείτε σφάλματα στα στοιχεία που έχετε εισαγάγει.</translation>
+        <translation>Αυτή είναι η αρχική σειρά επεξεργασίας των δραστηριοτήτων όπως έχει υπολογιστεί από το FET. Αν η δημιουργία του ωρολογίου προγράμματος &quot;κολλάει&quot; μετά από έναν ορισμένο αριθμό δραστηριοτήτων, ελέγξτε τη δραστηριότητα που αντιστοιχεί στον αριθμό αυτό+1. Μπορεί να βρείτε σφάλματα στα στοιχεία που έχετε εισαγάγει.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9399"/>
@@ -35892,17 +35892,17 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9422"/>
         <source>nIncompatible: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>ΑρΣυγκουόμενωνΔρ: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9425"/>
         <source>nMinDaysConstraintsBroken: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>nΠεριορισμοίΕλάχιστωνΗμερώνΠαραβιάστηκαν: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9430"/>
         <source>(grouped with id %1)</source>
-        <translation type="unfinished"></translation>
+        <translation>(ομαδοποιημένη με τον ατ %1)</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9436"/>
@@ -36025,7 +36025,7 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="315"/>
         <source>This option is an advanced one. It is intended for experienced users. It is useful in cases of peculiar uses of constraints. In most cases, FET will care automatically about a good initial order of the activities before the generation will begin, but in some very rare cases you can help FET. An example is: if you use constraints activities occupy max time slots from selection in such a way that some activities are clearly meant to be near each other when the generation starts, but FET is not clever enough to deduce that. Other usage might be that you want to leave some activities at the end and, in case the timetable cannot be found, you can use a partial one. In this case, you need to begin to generate once (you can interrupt generation after only a few activities were placed), see the initial order of the activities, and use the option to group the first activities with the ones you wish to bring forward. The group of activities will be put near the earliest one in the group.</source>
-        <translation>Αυτή η επιλογή είναι προηγμένη (εξειδικευμένη). Απευθύνεται σε έμπειρους χρήστες. Είναι χρήσιμη σε περιπτώσεις παράξενων (ιδιαζουσών) χρήσεων των περιορισμών. Στις περισσότερες περιπτώσεις, το FET θα μεριμνήσει αυτόματα πριν την έναρξη της κατάρτισης του ωρολογίου προγράμματος, έτσι ώστε η αρχική σειρά των δραστηριοτήτων να είναι κατάλληλη (αποδοτική). Όμως σε κάποιες πολύ σπάνιες περιπτώσεις, μπορείτε να βοηθήσετε το FET. Για παράδειγμα: αν χρησιμοποιείτε περιορισμούς του τύπου &quot;δραστηριότητες - καταλαμβάνουν μέγιστες περιόδους από επιλογή&quot; με τέτοιο τρόπο ώστε κάποιες δραστηριότητες πρακτικά να οφείλουν να τοποθετηθούν η μία κοντά στην άλλη κατά την έναρξη της δημιουργίας του ωρολογίου προγράμματος, και ταυτόχρονα για την ειδική περίπτωση αυτή το FET δεν είναι αρκετά &quot;έξυπνο&quot; ώστε οδηγηθεί στο παραπάνω &quot;συμπέρασμα&quot;. Μία άλλη χρήση θα μπορούσε να είναι στην περίπτωση που θέλετε να απαιτήσετε κάποιες δραστηριότητες να τοποθετηθούν στο τελευταίο στάδιο της κατάρτισης του ωρολογίου προγράμματος. Αυτή η απαίτηση είναι χρήσιμη στην περίπτωση που υπάρχει το ενδεχόμενο να μην είναι εφικτή η κατάρτιση ολοκληρωμένου ωρολογίου προγράμματος εξαιτίας κάποιων &quot;δύσκολων&quot; δραστηριοτήτων και ως εκ τούτου θέλετε να αξιοποιήσετε μία &quot;μερική&quot; (μη ολοκληρωμένη) μορφή του ωρολογίου προγράμματος (με τις &quot;δύσκολες&quot; δραστηριότητες να μην έχουν τοποθετηθεί πουθενά). Στην περίπτωση αυτή, πρέπει να ξεκινήσετε την δημιουργία του ωρολογίου προγράμματος μία φορά (μπορείτε διακόψετε την δημιουργία μετά την τοποθέτηση κάποιων λίγων δραστηριοτήτων), να δείτε την αρχική σειρά των δραστηριοτήτων, και στη συνέχεια να χρησιμοποιήσετε την επιλογή της ομαδοποιήσης των πρώτων δραστηριοτήτων με αυτές που θέλετε να μεταφέρετε &quot;μπροστά&quot;. Η ομάδα αυτή των δραστηριοτήτων θα τοποθετηθεί κοντά στην πρώτη δραστηριότητα της ομάδας.</translation>
+        <translation>Αυτή η επιλογή είναι προηγμένη (εξειδικευμένη). Απευθύνεται σε έμπειρους χρήστες. Είναι χρήσιμη σε περιπτώσεις παράξενων (ιδιαζουσών) χρήσεων των περιορισμών. Στις περισσότερες περιπτώσεις, το FET θα μεριμνήσει αυτόματα πριν την έναρξη της κατάρτισης του ωρολογίου προγράμματος, έτσι ώστε η αρχική σειρά των δραστηριοτήτων να είναι κατάλληλη (αποδοτική). Όμως σε κάποιες πολύ σπάνιες περιπτώσεις, μπορείτε να βοηθήσετε το FET. Για παράδειγμα: αν χρησιμοποιείτε περιορισμούς του τύπου &quot;δραστηριότητες - καταλαμβάνουν μέγιστες περιόδους από επιλογή&quot; με τέτοιο τρόπο ώστε κάποιες δραστηριότητες πρακτικά να οφείλουν να τοποθετηθούν η μία κοντά στην άλλη κατά την έναρξη της δημιουργίας του ωρολογίου προγράμματος, και ταυτόχρονα για την ειδική περίπτωση αυτή το FET δεν είναι αρκετά &quot;έξυπνο&quot; ώστε οδηγηθεί στο παραπάνω &quot;συμπέρασμα&quot;. Μία άλλη χρήση θα μπορούσε να είναι στην περίπτωση που θέλετε να απαιτήσετε κάποιες δραστηριότητες να τοποθετηθούν στο τελευταίο στάδιο της κατάρτισης του ωρολογίου προγράμματος. Αυτή η απαίτηση είναι χρήσιμη στην περίπτωση που υπάρχει το ενδεχόμενο να μην είναι εφικτή η κατάρτιση ολοκληρωμένου ωρολογίου προγράμματος εξαιτίας κάποιων &quot;δύσκολων&quot; δραστηριοτήτων και ως εκ τούτου θέλετε να αξιοποιήσετε μία &quot;μερική&quot; (μη ολοκληρωμένη) μορφή του ωρολογίου προγράμματος (με τις &quot;δύσκολες&quot; δραστηριότητες να μην έχουν τοποθετηθεί πουθενά). Στην περίπτωση αυτή, πρέπει να ξεκινήσετε την δημιουργία του ωρολογίου προγράμματος μία φορά (μπορείτε διακόψετε την δημιουργία μετά την τοποθέτηση κάποιων λίγων δραστηριοτήτων), να δείτε την αρχική σειρά των δραστηριοτήτων, και στη συνέχεια να χρησιμοποιήσετε την επιλογή της ομαδοποίησης των πρώτων δραστηριοτήτων με αυτές που θέλετε να μεταφέρετε &quot;μπροστά&quot;. Η ομάδα αυτή των δραστηριοτήτων θα τοποθετηθεί κοντά στην πρώτη δραστηριότητα της ομάδας.</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="327"/>
@@ -36220,12 +36220,12 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="219"/>
         <source>This group exists only in year %1. All the related activities and constraints will be removed. Do you want to continue?</source>
-        <translation type="unfinished"></translation>
+        <translation>Το τμήμα αυτό υπάρχει μόνον στο έτος %1. Όλες οι σχετικές δραστηριότητες και όλοι οι σχετικοί περιορισμοί (με το τμήμα αυτό) θα διαγραφούν. Θέλετε να συνεχίσετε;</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="222"/>
         <source>This group exists in more places, listed below. It will be removed from all these places. All the related activities and constraints will be removed. Do you want to continue?</source>
-        <translation type="unfinished"></translation>
+        <translation>Το τμήμα αυτό υπάρχει σε περισσότερα μέρη, τα οποία παρατίθεται παρακάτω. Θα διαγραφεί από όλα αυτά τα μέρη. Θα διαγραφούν όλες οι δραστηριότητες και όλοι οι περιορισμοί που σχετίζονται με το αυτό τμήμα. Θέλετε να συνεχίσετε;</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="475"/>
@@ -36844,7 +36844,7 @@ A: You can specify the maximum number of beginnings at second available hour (ar
 If you input only partial data, please use with caution. If you add a constraint with max 0 beginnings at second hour: you might for instance input only 4+4 hourly activities of math with the same teacher for 2 students sets (each group of 4 activities must be ballanced - in different days). Then it is clear that you cannot place all 8 activities in a 5 days week without breaking the students early constraint, so you will get no possible timetable.</source>
         <translation>Ε: Βοήθεια για τον περιορισμό &quot;μαθητές - νωρίς (μέγιστες ενάρξεις την δεύτερη ώρα)&quot;
 
-Α: Μπορείτε να καθορίσετε τον μέγιστο αριθμό των ενάρξεων την δεύτερη διαθέσιμη ώρα (οι αφίξεις την τρίτη ώρα δεν είναι είναι δυνατές).
+Α: Μπορείτε να καθορίσετε τον μέγιστο αριθμό των ενάρξεων την δεύτερη διαθέσιμη ώρα (οι αφίξεις την τρίτη ώρα δεν είναι δυνατές).
 
 Αν εισαγάγετε μόνον τμηματικά δεδομένα, παρακαλώ η χρήση να γίνεται με προσοχή. Αν προσθέσετε τέτοιο περιορισμό με &quot;μέγιστες ενάρξεις την δεύτερη ώρα&quot;=0: μπορεί για παράδειγμα να εισαγάγετε μόνον 4+4 ωριαίες δραστηριότητες μαθηματικών με τον ίδιο εκπαιδευτικό για 2 ομάδες μαθητών (η κάθε ομάδα των 4 δραστηριοτήτων πρέπει να είναι &quot;ισοσταθμισμένη&quot;  - σε διαφορετικές ημέρες). Τότε, είναι ξεκάθαρο ότι δεν μπορείτε να τοποθετήσετε και τις παραπάνω 8 δραστηριότητες σε εβδομάδα 5 ημερών χωρίς να παραβιαστεί ο περιορισμός &quot;μαθητές - νωρίς&quot;, και ως εκ τούτου θα καταστήσετε την επίλυση του ωρολογίου προγράμματος αδύνατη.</translation>
     </message>
@@ -36857,7 +36857,7 @@ A: One possible approach: in FET you can have each activity with more teachers a
 Another possible approach: you may choose to define students into sections (see question below).</source>
         <translation>Ε: Τι ισχύει αναφορικά με τα επιλεγόμενα αντικείμενα ή με τις ομάδες μαθητών που κατατέμνονται ανάλογα με επιλογές;
 
-Α: Μία ενδεχόμενη προσέγγιση: στο FET μπορείτε να έχετε δραστηριότητες με περισσότερους από έναν εκπαιδευτικούς ή/και περισσότερες από μία ομάδες μαθητών. Για παράδειγμα, αν έχετε την ομάδα μαθητών ΟΜ η οποία πρέπει να παρακολουθεί το αντικείμενο &quot;Γλώσσα1 - Αγγλικά&quot; (με τον εκπαιδευτικό ΕΑ) ή &quot;Γλώσσα1 - Γαλλικά&quot; (εκπαιδευτικός ΕΓ), μπορείτε να μην κατατμήσετε την ΟΜ και να προσθέσετε μία δραστηριότητα με αντικείνενο την &quot;Γλώσσα1&quot;, ομάδα μαθητών την ΟΜ και εκπαιδευτικούς τους ΕΑ και ΕΓ ταυτόχρονα. Το μειονέκτημα: κάθε δραστηριότητα μπορεί να πραγματοποιείται σε μία και μόνον αίθουσα. Έτσι, δεν μπορείτε να ζητήσετε από το FET να τοποθετήσει την παραπάνω δραστηριόηττα σε δύο (ή περισσότερες) διαφορετικές αίθουσες την ίδια ώρα. Και από αυτό το σημείο γεννώνται και άλλα προβλήματα: αν κάποια αίθουσα δεν είναι διαθέσιμη, ή αν η χωρητικότητα της αίθουσας είναι πολύ μικρή σε σχέση με τον αριθμό των μαθητών της ΟΜ, το FET δεν μπορεί να καταρτίσει ωρολόγιο πρόγραμμα, κ.ο.κ.
+Α: Μία ενδεχόμενη προσέγγιση: στο FET μπορείτε να έχετε δραστηριότητες με περισσότερους από έναν εκπαιδευτικούς ή/και περισσότερες από μία ομάδες μαθητών. Για παράδειγμα, αν έχετε την ομάδα μαθητών ΟΜ η οποία πρέπει να παρακολουθεί το αντικείμενο &quot;Γλώσσα1 - Αγγλικά&quot; (με τον εκπαιδευτικό ΕΑ) ή &quot;Γλώσσα1 - Γαλλικά&quot; (εκπαιδευτικός ΕΓ), μπορείτε να μην κατατμήσετε την ΟΜ και να προσθέσετε μία δραστηριότητα με αντικείμενο την &quot;Γλώσσα1&quot;, ομάδα μαθητών την ΟΜ και εκπαιδευτικούς τους ΕΑ και ΕΓ ταυτόχρονα. Το μειονέκτημα: κάθε δραστηριότητα μπορεί να πραγματοποιείται σε μία και μόνον αίθουσα. Έτσι, δεν μπορείτε να ζητήσετε από το FET να τοποθετήσει την παραπάνω δραστηριότητα σε δύο (ή περισσότερες) διαφορετικές αίθουσες την ίδια ώρα. Και από αυτό το σημείο γεννώνται και άλλα προβλήματα: αν κάποια αίθουσα δεν είναι διαθέσιμη, ή αν η χωρητικότητα της αίθουσας είναι πολύ μικρή σε σχέση με τον αριθμό των μαθητών της ΟΜ, το FET δεν μπορεί να καταρτίσει ωρολόγιο πρόγραμμα, κ.ο.κ.
 
 Μία άλλη ενδεχόμενη προσέγγιση: μπορείτε να ορίσετε τους μαθητές σε &quot;τομείς&quot; (βλέπε την ερώτηση παρακάτω).</translation>
     </message>
@@ -36877,17 +36877,17 @@ Add years and the option &apos;Divide ...&apos; in the years dialog is the easie
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="161"/>
         <source>Important: you must consider that each year contains groups which contain independent subgroups. Subgroups should have all the activities of the year and group plus additional optional activities. Please check menu statistics/students for subgroups, each subgroup should have a reasonable number of working hours per week, close to the average of hours per week for all subgroups.</source>
-        <translation type="unfinished"></translation>
+        <translation>Σημαντικό: θα πρέπει να λάβετε υπόψη σας ότι το κάθε έτος περιέχει τμήματα, τα οποία με τη σειρά τους περιέχουν ανεξάρτητα υποτμήματα. Τα υποτμήματα οφείλουν να έχουν όλες τις δραστηριότητες του έτους και του τμήματος (στα οποία ανήκουν) καθώς και επιπλέον επιλεγόμενες δραστηριότητες (επιλεγόμενα μαθήματα). Παρακαλώ μεταβείτε στο μενού &quot;Στατιστικά/Μαθητές&quot; και ελέγξτε τα υποτμήματα. Το κάθε υποτμήμα οφείλει να έχει έναν εύλογο αριθμό ωρών εργασίας ανά εβδομάδα, κοντά στον αντίστοιχο μέσο όρο ανά εβδομάδα όλων των υποτμημάτων.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="165"/>
         <source>An impossible timetable might be caused by incorrect years division. Please check statistics/students for all subgroups, each subgroup should have the necessary hours, not less. If you have for instance some subgroups with less than say 20 hours per week you might get an impossible timetable, probably because of incorrect division of years and incorrectly added activities. All the subgroups are independent. If you have a subgroup with only 2 hours per week and constraint early, then these 2 activities must be placed in the first hours of the day, which is probably much too hard (wrong).</source>
-        <translation type="unfinished"></translation>
+        <translation>Αν η κατάρτιση (επίλυση) του ωρολογίου προγράμματός σας είναι αδύνατη, αυτό μπορεί να οφείλεται στην εσφαλμένη κατάτμηση των ετών. Παρακαλώ μεταβείτε στο &quot;Στατιστικά/Στατιστικά μαθητών&quot; και ελέγξτε όλα τα υποτμήματα. Το κάθε υποτμήμα θα πρέπει να έχει τις απαραίτητες ώρες, όχι λιγότερες. Αν για παράδειγμα έχετε κάποια υποτμήματα με λιγότερες από 20 ώρες ανά εβδομάδα, πιθανώς η κατάρτιση του ωρολογίου προγράμματος να είναι αδύνατη, ενδεχομένως εξαιτίας της εσφαλμένης κατάτμησης των ετών και των εσφαλμένα προστεθεισών δραστηριοτήτων. Όλα τα υποτμήματα είναι ανεξάρτητα. Αν έχετε κάποιο υποτμήμα με μόνον 2 ώρες ανά εβδομάδα και περιορισμό για το υποτμήμα αυτό &quot;νωρίς&quot;, οι ανωτέρω 2 δραστηριότητες θα πρέπει να τοποθετηθούν στις πρώτες ώρες της ημέρας, κάτι το οποίο μπορεί να είναι υπερβολικά δύσκολο (λάθος).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="177"/>
         <source>Another possibility: you can see that each activity has allowed more teachers/students sets. If you need to split year Y according to Language1 (with teachers T1 and T2), you might not split Y and add an activity with Y and teachers T1 and T2 and subject &apos;Language1&apos;. This is a small trick, which might be easier to use than to divide a year.</source>
-        <translation type="unfinished"></translation>
+        <translation>Μία άλλη δυνατότητα: οι δραστηριότητες μπορούν να &quot;διατυπωθούν&quot; με διαφορετικούς τρόπους αναφορικά με τον συνδυασμό εκπαιδευτικών ή/και ομάδων μαθητών. Αν π.χ. για το έτος Ε και το αντικείμενο ΞένηΓλώσσα1 απαιτείται η πραγματοποίηση δύο ταυτόχρονων δραστηριοτήτων με τους εκπαιδευτικούς Εκπ1 και Εκπ2 (π.χ. Αγγλικά αρχαρίων και Αγγλικά προχωρημένων), στο FET μπορείτε να μην κατατμήσετε το έτος Ε σε τμήματα (π.χ. Τ1 και Τ2), αλλά να δηλώσετε αυτήν την &quot;διπλή&quot; δραστηριότητα ως μία δραστηριότητα με ομάδα μαθητών ολόκληρο το έτος Ε, εκπαιδευτικούς και τους δύο Εκπ1 και Εκπ2 και αντικείμενο την ΞένηΓλώσσα1. Αυτό είναι ένα μικρό τέχνασμα, το οποίο μπορεί να είναι πιο εύχρηστο και λειτουργικό από την κατάτμηση ενός έτους.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="185"/>
@@ -36898,7 +36898,13 @@ A: FET was designed to allow any school structure:
 - independent subgroups (non-overlapping);
 
 - overlapping groups (several subgroups) and years (several groups).</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Ποια είναι η δομή των μαθητών που μπορεί να διαχειριστεί το FET;
+
+Α: Το FET σχεδιάστηκε για να υποστηρίζει την δομή μαθητών οποιουδήποτε σχολείου:
+
+- ανεξάρτητα υποτμήματα (μη αλληλεπικαλυπτόμενα)
+
+- αλλεπικαλυπτόμενα τμήματα (πολλαπλά υποτμήματα) και έτη (πολλαπλά τμήματα).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="194"/>
@@ -36916,19 +36922,34 @@ Activity2: teacher B, group boys, subject sport;
 Activity3: teacher C, group physics, subject optional physics.
 
 NEW: the thing is automatic now. Just select year-&gt;divide in the years dialog. Please see above entries in the FAQ.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Πώς μπορεί κάποιος να δουλέψει με αλληλεπικαλυπτόμενες δομές μαθητών;
+
+Α: Αν έχετε αλληλεπικαλυπτόμενα τμήματα, πρέπει να ορίσετε το μικρότερο δυνατό ανεξάρτητο υποτμήμα, το οποίο δεν αλληλοεπικαλύπτεται με κανένα άλλο υποτμήμα. Παράδειγμα: έχετε 1 τμήμα, το αντικείμενο (μάθημα) Γυμναστική (το οποίο θα πρέπει στην περίπτωσή μας να διδαχθεί ξεχωριστά για τα αγόρια και τα κορίτσια) και αντικείμενο Φυσική, το οποίο είναι επιλεγόμενο αντικείμενο (επιλεγόμενο μάθημα) και το έχουν επιλέξει μόνον μερικοί από τους μαθητές (ναι, το FET μπορεί να διαχειριστεί επιλεγόμενα αντικείμενα/μαθήματα). Στη συνέχεια, πρέπει να ορίσετε τα υποτμήματα: αγόρια τα οποία έχουν επιλέξει την Φυσική, αγόρια τα οποία δεν έχουν επιλέξει την Φυσική, κορίτσια που έχουν επιλέξει την Φυσική και κορίτσια τα οποία δεν έχουν επιλέξει την Φυσική. Τώρα, είναι πολύ απλό. Απλά ορίστε
+
+τμήμα κοριστιών = υποτμήμα κοριτσιών που επέλεξαν Φυσική + υποτμήμα κοριτσιών που δεν επέλεξαν Φυσική,
+τμήμα αγοριών = υποτμήμα αγοριών που επέλεξαν Φυσική + υποτμήμα αγοριών που δεν επέλεξαν Φυσική,
+τμήμα Φυσικής = αγόρια που επέλεξαν Φυσική + κορίτσια που επέλεξαν Φυσική.
+
+Στη συνέχεια, μπορείτε να προσθέσετε όσες δραστηριότητες θέλετε στα αντίστοιχα τμήματα:
+Δραστηριότητα1: Εκπαιδευτικός Α, τμήμα κοριτσιών, αντικείμενο Γυμναστική,
+Δραστηριότητα2: Εκπαιδευτικός Β, τμήμα αγοριών, αντικείμενο Γυμναστική,
+Δραστηριότητα3: Εκπαιδευτικός Γ, τμήμα φυσικής, αντικείμενο επιλεγόμενο μάθημα Φυσικής.
+
+ΝΕΟ: το παραπάνω γίνεται πλέον αυτόματα. Απλά επιλέξτε στον διάλογο των ετών &quot;Έτος-&gt;Κατάτμηση&quot;. Παρακαλώ δείτε τις παραπάνω καταχωρήσεις στις ΣΕ.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="213"/>
         <source>Q: Can you add more students sets or teachers to a single activity?
 
 A: Yes, you can add several students sets (subgroups, groups or years) and several teachers per activity.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Είναι δυνατόν να προστεθούν περισσότερα από ένα τμήματα ή περισσότεροι του ενός εκπαιδευτικοί στην ίδια δραστηριότητα;
+
+Α: Ναι, είναι δυνατόν να προστεθούν πολλαπλές ομάδες μαθητών (υποτμήματα, τμήματα ή έτη) και πολλαπλοί εκπαιδευτικοί ανά δραστηριότητα.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="244"/>
         <source>If you need to balance 3 activities in a 5 days week, you can add, in the new version 5.5.8 and higher, directly from the add activity dialog, 2 constraints. You just have to input min days 2, and FET will ask if you want to add a second constraint with min days 1. This way, you can ensure that the activities are balanced better (at least one day apart, usually 2 days apart)</source>
-        <translation type="unfinished"></translation>
+        <translation>Αν χρειάζεται να κατανείμετε (να &quot;απλώσετε&quot;) κατά το δυνατόν ομοιόμορφα 3 δραστηριότητες σε εβδομάδα 5 ημερών, μπορείτε να προσθέσετε από την έκδοση 5.5.8 του FET και μετά, απευθείας από τον διάλογο προσθήκης δραστηριότητας 2 περιορισμούς. Θα πρέπει απλά να εισαγάγετε &quot;ελάχιστες ημέρες&quot; = 2, και στη συνέχεια το FET θα σας ρωτήσει αν θέλετε να προσθέσετε έναν ακόμη περιορισμό για &quot;ελάχιστες ημέρες&quot; = 1. Με τον τρόπο αυτό, μπορείτε να εξασφαλίσετε ότι οι δραστηριότητες θα κατανεμηθούν (θα &quot;απλωθούν&quot;) πιο ομοιόμορφα μέσα στην εβδομάδα (σε απόσταση τουλάχιστον μίας ημέρας, και συνήθως σε απόσταση 2 ημερών)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="253"/>
@@ -36937,31 +36958,39 @@ A: Yes, you can add several students sets (subgroups, groups or years) and sever
 A: Yes, but this is not easy. All the part regarding data representation and gradually construction of the solution is working, only the interface has to be updated.
 
 Anyway, when you add a compulsory ConstraintActivityPreferredStartingTime, it means that you fixed that activity. You can use this feature for a semi-automatic or even manual timetabling, but it is not so convenient.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Μπορώ να χρησιμοποιήσω το FET για διαδραστική κατάρτιση ωρολογίου προγράμματος;
+
+Α: Ναι, αλλά δεν είναι εύκολο. Όλο το κομμάτι που αφορά την αναπαράσταση των δεδομένων και την σταδιακή κατάρτιση της λύσης &quot;δουλεύει&quot;, μόνον η διεπαφή θα πρέπει να αναβαθμιστεί.
+
+Πάντως, όταν προσθέτετε έναν υποχρεωτικό ΠεριορισμόΔραστηριότηταΠροτιμητέοςΧρόνοςΈναρξης, αυτό σημαίνει ότι έχετε καθορίσει την θέση της δραστηριότητας αυτής. Μπορείτε να χρησιμοποιήσετε αυτό το χαρακτηριστικό για ημι-αυτόματη ή ακόμη και χειροκίνητη κατάρτιση ωρολογίου προγράμματος. Αυτό όμως δεν είναι τόσο βολικό.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="274"/>
         <source>Q: I added an activity with min days constraint. But I cannot see the min days value in modify activity dialog
 
 A: Min days is a time constraint. You can see it in the time constraints dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Έχω προσθέσει μία δραστηριότητα με περιορισμό &quot;ελάχιστες ημέρες&quot;. Όμως δεν μπορώ να δω την τιμή των &quot;ελάχιστων ημερών&quot; στον διάλογο τροποποίησης δραστηριότητας
+
+Α: Οι &quot;ελάχιστες ημέρες&quot; είναι χρονικός περιορισμός. Μπορείτε να τον δείτε στον διάλογο των χρονικών περιορισμών</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="293"/>
         <source>Q: How to choose the weight percentage of constraint min days between activities?
 
 A: You can use for the constraint min days the weight you want. It can be 95%, 99%, 99.75% or even 100%, but please make sure your timetable is not too constrained. Please take care of the impossible constraints, they should have under 100% weight (percentage) - best would be 0%. For instance, if a teacher teaches only two days per week and has 3 math lessons for a group, then it is clear that the constraint cannot be respected, so the correct way is to specify under 100% weight (percentage) for the corresponding min days constraint - best would be 0%.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Πώς να επιλέξω το ποσοστό βαρύτητας του περιορισμού &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;;
+
+Α: Για τον περιορισμό &quot;ελάχιστες ημέρες&quot; μπορείτε να χρησιμοποιήσετε ποσοστό βαρύτητας της επιλογής σας. Μπορείτε να δώσετε την τιμή, 95%, 99.75% ή ακόμη και 100%, αλλά παρακαλώ να μην καταστήσετε το ωρολόγιο πρόγραμμά σας υπερβολικά &quot;περιορισμένο&quot;. Παρακαλώ να μεριμνήσετε για το ενδεχόμενο περιορισμών που είναι αδύνατον να τηρηθούν. Οι περιορισμοί αυτοί θα πρέπει να έχουν ποσοστό βαρύτητας μικρότερο του 100% - το καλύτερο θα ήταν να έχουν βαρύτητα 0%. Για παράδειγμα, αν κάποιος εκπαιδευτικός διδάσκει μόνον δύο μέρες ανά εβδομάδα και έχει 3 μαθήματα Μαθηματικών με κάποιο τμήμα, τότε είναι ξεκάθαρο ότι ο περιορισμός &quot;ελάχιστες ημέρες&quot; δεν μπορεί να τηρηθεί. Οπότε, ο σωστός τρόπος είναι να δώσετε στο ποσοστό βαρύτητας του συγκεκριμένου περιορισμού &quot;ελάχιστες ημέρες&quot; κάποια τιμή μικρότερη του 100%  - η καλύτερη τιμή θα ήταν 0%.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="300"/>
         <source>You could try at first the 95% minimum recommended value, then highten the weight percentage up to maybe 100%. I am not sure here, I have not enough sample files (please contribute with advice). If you would like to change the 95% for another value for all constraints of this type, the easiest way is in Data/Time constraints/Min days between activities dialog, where starting with version 5.3.6 there is a simple command for that.</source>
-        <translation type="unfinished"></translation>
+        <translation>Μπορείτε να δοκιμάσετε αρχικά την συνιστώμενη ελάχιστη τιμή 95%, και στη συνέχεια να αυξήσετε το ποσοστό βαρύτητας μέχρι πιθανώς ακόμη και το 100%. Για το σημείο αυτό δεν είμαι σίγουρος, γιατί δεν έχω αρκετά ενδεικτικά αρχεία .fet (παρακαλώ να συνεισφέρετε με τις συμβουλές σας). Αν θέλετε να αλλάξετε την τιμή 95% με μία άλλη τιμή για όλους τους περιορισμούς αυτού του τύπου, ο ευκολότερος τρόπος είναι από τον διάλογο &quot;Δεδομένα/Χρονικοί περιορισμοί/Ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;, όπου από την έκδοση 5.3.6 του FET και μετά υπάρχει μία απλή εντολή για τον σκοπό αυτό.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="305"/>
         <source>You might want to choose different weights for different constraint min days (for instance, higher on subjects with less activities per week)</source>
-        <translation type="unfinished"></translation>
+        <translation>Μπορεί να θέλετε να έχετε διαφορετικά ποσοστά βαρύτητας για διαφορετικούς περιορισμούς &quot;ελάχιστες ημέρες&quot; (για παράδειγμα, μεγαλύτερες τιμές για αντικείμενα με λιγότερες δραστηριότητες ανά εβδομάδα)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="311"/>
@@ -36970,7 +36999,11 @@ A: You can use for the constraint min days the weight you want. It can be 95%, 9
 A: From the way the algorithm is conceived, the automatic generation is faster if you use students set (or teacher) not available and/or constraint activity(ies) preferred time slots or constraint activity preferred starting time to specify impossible slots, in addition to possible use of students (set) or teacher(s) max hours daily, whenever it is possible. For instance, if you know that year 5 will only have hours from 8:00 to 13:00, it is better to add students set not available in addition to students set max hours daily. So, if possible, try to follow this advice. This trick helps guide FET better towards a solution.
 
 Each constraint of type not available or preferred times which filters out impossible slots might bring an improvement in speed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Μήπως κάποιοι περιορισμοί είναι πιο αποδοτικοί ως προς την ταχύτητα επίλυσης σε σχέση με άλλους περιορισμούς, ακόμη κι αν έχουν το ίδιο αποτέλεσμα;
+
+Α: Εξαιτίας του τρόπου με τον οποίο έχει σχεδιαστεί ο αλγόριθμος, η αυτοματοποιημένη κατάρτιση ωρολογίου προγράμματος είναι γρηγορότερη αν χρησιμοποιείτε περιορισμούς του τύπου &quot;ομάδα μαθητών (ή εκπαιδευτικός) - μη διαθέσιμοι χρόνοι&quot; ή/και &quot;δραστηριότητα (ή δραστηριότητες) - προτιμητέες περίοδοι&quot; ή &quot;δραστηριότητα (ή δραστηριότητες) - προτιμητέοι χρόνοι έναρξης&quot; προκειμένου να καθορίσετε τις αδύνατες (μη διαθέσιμες) περιόδους. Οι περιορισμοί αυτοί μπορούν να χρησιμοποιηθούν -όποτε αυτό είναι δυνατόν- σε συνδυασμό με τους περιορισμούς &quot;μαθητές (ή ομάδα μαθητών) - μέγιστες ώρες ημερησίως&quot; ή &quot;εκπαιδευτικός (ή εκπαιδευτικοί) - μέγιστες ώρες ημερησίως&quot;. Για παράδειγμα, αν ξέρετε ότι το έτος 5 θα έχει διαθέσιμες περιόδους από τις 08:00 μέχρι τις 13:00, είναι προτιμότερο να προσθέσετε τον περιορισμό &quot;ομάδα μαθητών - μη διαθέσιμοι χρόνοι&quot; σε συνδυασμό με τον περιορισμό &quot;ομάδα μαθητών - μέγιστες ώρες ημερησίως&quot;. Οπότε, αν είναι δυνατόν, προσπαθήστε να ακολουθήσετε αυτές τις συμβουλές. Αυτό το τέχνασμα βοηθά στο να &quot;καθοδηγηθεί&quot; το FET με καλύτερο τρόπο προς την κατεύθυνση εξεύρεσης λύσης.
+
+Ο κάθε περιορισμός του τύπου &quot;μη διαθέσιμοι&quot; ή &quot;προτιμητέοι&quot; χρόνοι ο οποίος φιλτράρει τις μη επιτρεπτές περιόδους, ενδεχομένως να αυξήσει (βελτιώσει) την ταχύτητα επίλυσης.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="391"/>
@@ -36981,26 +37014,13 @@ A: You can specify a set of activities by selecting a teacher (if empty - all te
 Starting means that an activity may only start at these periods.
 
 Time slots means more restrictive, that activity may only start and end and take place in these intervals (if activity has duration 2 and on Monday is allowed 8:00, 9:00 and 10:00, then activity can only start at 8:00 or 9:00).</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="515"/>
-        <source>Q: What I need is a way to make the following constraint:
+        <translation>Ε: Βοήθεια σχετικά με τους περιορισμούς &quot;δραστηριότητες - προτιμητέοι χρόνοι έναρξης&quot; ή &quot;δραστηριότητες - προτιμητέες περίοδοι&quot; (σύνολο δραστηριοτήτων έχει σύνολο προτιμητέων χρόνων έναρξης, ή σύνολο δραστηριοτήτων έχει σύνολο προτιμητέων περιόδων)
 
-If Activity1 comes first, then Activity2 can be consecutive. But, if Activity2 comes first, then Activity1 must have at least 1 period in between.
+Α: Μπορείτε να καθορίσετε ένα σύνολο δραστηριοτήτων επιλέγοντας τον εκπαιδευτικό (αν το πεδίο είναι άδειο - όλοι οι εκπαιδευτικοί), την ομάδα μαθητών (αν το πεδίο είναι άδειο - όλοι οι μαθητές), το αντικείμενο (αν το πεδίο είναι άδειο - όλα τα αντικείμενα) και την ετικέτα δραστηριότητας (αν το πεδίο είναι άδειο - όλες οι ετικέτες δραστηριοτήτων) και το σύνολο των επιτρεπτών περιόδων.
 
-For example, if the algorithm places Dance in 1st hour, then Wrestling can be placed in 2nd hour, but if Wrestling is placed in 1st hour, then Dance must be at least in 3rd hour, if not farther away.
+&quot;Προτιμητέοι χρόνοι έναρξης&quot; σημαίνει ότι η δραστηριότητα επιτρέπεται να ξεκινήσει μόνον κατά τις συγκεκριμένες περιόδους.
 
-A simpler, but less useful solution could be a constraint that says:
-
-Activity1 and Activity2 will not be consecutive.
-
-A: I have a very good solution for you, but it is a bit complicated to add.
-
-Suppose you have activities A1 and A2. Add dummy A3, with duration 1, no teachers and no students. Add constraint two activities consecutive, A2 and A3 (A2 followed by A3). Add constraint activities not overlapping, A1 and A3.
-
-There is only a small problem: A2 cannot be put in the last period. To correct that: increase the number of hours with 1 and constraint all the real activities (without A3) to take place in the first periods. You can do that by adding an activity tag to A1 and A2 named Early and an activity tag to A3 named Any, and constraint activities preferred time slots for activity tag Early to be in the first n-1 slots of each day.</source>
-        <translation type="unfinished"></translation>
+&quot;Προτιμητέες περίοδοι&quot; σημαίνει -πιο περιοριστικά- ότι η δραστηριότητα επιτρέπεται να τοποθετηθεί ολόκληρη και μόνον ολόκληρη (δηλαδή από την έναρξη μέχρι και την λήξη της) και να πραγματοποιηθεί (ολόκληρη) στα συγκεκριμένα διαστήματα (για παράδειγμα, αν μία δραστηριότητα έχει διάρκεια 2 (ώρες) και την Δευτέρα οι επιτρεπτές περίοδοι είναι οι 8:00, 9:00 και 10:00, τότε η δραστηριότητα μπορεί να ξεκινήσει μόνον στις 8:00 ή στις 9:00).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="534"/>
@@ -37009,14 +37029,22 @@ There is only a small problem: A2 cannot be put in the last period. To correct t
 A: Time slots is more restrictive, means all hours of an activity must be in the allowed intervals.
 
 Example: Preferred times Monday 8,9 and 10. If activity A has duration 2, then starting means that activity A can start at 8, 9 or 10 on Monday, while time slots means that activity A can start on Monday at 8 or 9 (10 is not allowed, because the last hour of activity is not allowed there).</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Ποια είναι η διαφορά ανάμεσα στους &quot;προτιμητέους χρόνους έναρξης&quot; και τις &quot;προτιμητέες περιόδους&quot;;
+
+Α: Η διατύπωση &quot;προτιμητέες περίοδοι&quot; είναι πιο περιοριστική. Σημαίνει ότι η ολόκληρη (και μόνον ολόκληρη) δραστηριότητα (δηλαδή από την έναρξη μέχρι και την λήξη της) επιτρέπεται να τοποθετηθεί στις προτιμητέες περιόδους (διαστήματα).
+
+Παράδειγμα για δραστηριότητα Δ διάρκειας 2 ωρών:
+&quot;Προτιμητέοι χρόνοι έναρξης&quot; Δευτέρα 8, 9 και 10. σημαίνει ότι η δραστηριότητα Δ μπορεί να ξεκινήσει στις 8, 9 ή 10 την Δευτέρα.
+&quot;Προτιμητέες περίοδοι&quot; Δευτέρα, 8, 9 και 10 σημαίνει ότι η δραστηριότητα Δ μπορεί να ξεκινήσει την Δευτέρα στις 8 ή 9 (στις 10 δεν επιτρέπεται να ξεκινήσει, διότι η τελευταία (2η) ώρα της δραστηριότητας θα τοποθετηθεί στις 11, κάτι όμως που  δεν επιτρέπεται σύμφωνα με τον περιορισμό).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="557"/>
         <source>Q: What type of files uses FET?
 
 A: FET uses text files, xml or html or txt or csv (comma separated values - for import/export). The used encoding is UTF-8.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Τι είδους (τύπου) αρχεία χρησιμοποιεί το FET;
+
+Α: Το FET χρησιμοποιεί αρχεία κειμένου, xml ή html ή txt ή csv (τιμών διαχωρισμένων με κόμμα - για εισαγωγή/εξαγωγή). Η χρησιμοποιούμενη κωδικοποίηση είναι η UTF-8.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="564"/>
@@ -37033,16 +37061,21 @@ Time slots means more restrictive, that activity may only start and end and take
 This is useful if you need for instance, if Maths lessons are 4-5 per week, to constrain that the first component and the second component must be early. You will add 2 constraints for that, with component number 1 and 2, both with subject Maths. Or, if you want for activities split into 4 that 2 lessons are early and for activities split into 5 that 3 activities are early, add constraint Maths with split number 3, 4 and 5 (nice trick).
 
 Another thing: if you have 1 or 2 lessons per week for a subject, say biology, and want to constrain one of the components if there are 2 per week, and none if there is only 1, you can add such a constraint for component number=2.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="601"/>
-        <source>Q: At our school there are a lot of teachers which work only a few hours a week. Of course it is really nasty to drive for one our to the school. So we set the constraint that every teacher should work at least 2 hours a day. Unfortunately we have this year a teacher which only works 1h a week. As a result of this FET doesn&apos;t start to create a timetable. Any suggestions how to fix the problem without defining a constraint for every singular teacher?
+        <translation>Ε: Βοήθεια για τον περιορισμό &quot;υποδραστηριότητες - προτιμητέοι χρόνοι έναρξης&quot; ή &quot;υποδραστηριότητες - προτιμητέες περίοδοι&quot; (σύνολο υποδραστηριοτήτων έχει σύνολο προτιμητέων χρόνων έναρξης ή σύνολο υποδραστηριοτήτων έχει σύνολο προτιμητέων περιόδων)
 
-A: I have a nice trick: add a dummy activity, 1 hour duration, with only this teacher (no students sets, any subject), additional to the real activity.
+Α: Επιλέγετε τον αριθμό στοιχείου συγκεκριμένων δραστηριοτήτων (για παράδειγμα, αν έχετε μία δραστηριότητα επιμερισμένη σε 5 (υπο)δραστηριότητες ανά εβδομάδα, έχετε τα στοιχεία 1, 2, 3, 4 ή 5). Μόνον ο επιλεγμένος αριθμός της συγκεκριμένης επιμερισμένης δραστηριότητας (δηλαδή μόνον η αντίστοιχη υποδραστηριότητα) θα ληφθεί υπόψη από το FET (από τον περιορισμό).
 
-This trick just passed through my mind as I was trying to write you that you have to do it the hard way (add constraints for each teacher)</source>
-        <translation type="unfinished"></translation>
+Μπορείτε επίσης να καθορίσετε το σύνολο των υποδραστηριοτήτων επιλέγοντας τον εκπαιδευτικό (αν το πεδίο είναι άδειο - όλοι οι εκπαιδευτικοί), την ομάδα μαθητών (αν το πεδίο είναι άδειο - όλοι οι μαθητές), το αντικείμενο (αν το πεδίο είναι άδειο - όλα τα αντικείμενα) και την ετικέτα δραστηριότητας (αν το πεδίο είναι άδειο - όλες οι ετικέτες δραστηριοτήτων) και το σύνολο των επιτρεπτών περιόδων.
+
+&quot;Προτιμητέοι χρόνοι έναρξης&quot; σημαίνει ότι η δραστηριότητα επιτρέπεται να ξεκινήσει μόνον κατά τις συγκεκριμένες περιόδους.
+
+
+&quot;Προτιμητέες περίοδοι&quot; σημαίνει -πιο περιοριστικά- ότι η δραστηριότητα επιτρέπεται να τοποθετηθεί ολόκληρη και μόνον ολόκληρη (δηλαδή από την έναρξη μέχρι και την λήξη της) και να πραγματοποιηθεί (ολόκληρη) στα συγκεκριμένα διαστήματα (για παράδειγμα, αν μία δραστηριότητα έχει διάρκεια 2 (ώρες) και την Δευτέρα οι επιτρεπτές περίοδοι είναι οι 8:00, 9:00 και 10:00, τότε η δραστηριότητα μπορεί να ξεκινήσει μόνον στις 8:00 ή στις 9:00).
+
+Αυτό είναι χρήσιμο σε περιπτώσεις σαν την παρακάτω: Αν έχετε μία δραστηριότητα Μαθηματικών η οποία να επιμερίζεται (μέσα στην εβδομάδα) σε 4-5 υποδραστηριότητες και να θέλετε να εξασφαλίσετε ότι το πρώτο και δεύτερο στοιχείο (της δραστηριότητας-κοντέινερ) θα πραγματοποιούνται νωρίς:
+Θα εισαγάγετε 2 περιορισμούς για τον σκοπό αυτό, με αριθμό στοιχείου (υποδραστηριότητας) 1 και 2 για το αντικείμενο &quot;Μαθηματικά&quot;. Ή, αν θέλετε για δραστηριότητες οι οποίες είναι επιμερισμένες σε 4 στοιχεία (υποδραστηριότητες) τα 2 μαθήματα να πραγματοποιούνται νωρίς και ταυτόχρονα για δραστηριότητες οι οποίες είναι επιμερισμένες σε 5 στοιχεία (υποδραστηριότητες) οι 3 (υπο)δραστηριότητες να πραγματοποιούνται νωρίς, προσθέστε περιορισμό για τα Μαθηματικά, με αριθμό στοιχείου 3, 4 και 5 (ωραίο τέχνασμα).
+
+Και κάτι ακόμη: αν έχετε 1 ή 2 μαθήματα ανά εβδομάδα για κάποιο αντικείμενο, π.χ. Βιολογία, και θέλετε να περιορίσετε ένα από τα στοιχεία (υποδραστηριότητες), για την περίπτωση που έχετε 2 υποδραστηριότητες ανά εβδομάδα και ταυτόχρονα να μην περιορίσετε κανένα στοιχείο (υποδραστηριότητα) για την περίπτωση που έχετε μόνον 1 στοιχείο (υποδραστηριότητα) ανά εβδομάδα, μπορείτε να προσθέσετε έναν περιορισμό του τύπου αυτού με αριθμό στοιχείου=2.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="622"/>
@@ -37055,12 +37088,20 @@ Hour 11:00 Break
 Hour 12:00 Math (second hour of act. 100)?
 
 A: No, the activity must respect the break, so it is before or after the break with all the hours of it.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Έχω μία δραστηριότητα διπλής διάρκειας (διάρκειας 2 ωρών). Είναι δυνατόν να τοποθετηθεί η δραστηριότητα αυτή έτσι ώστε ανάμεσα στις 2 ώρες της να υπάρχει διάλειμμα, όπως για παράδειγμα στην παρακάτω περίπτωση:
+
+Δραστηριότητα Μαθηματικά, διάρκεια 2, ατ 100
+
+Ώρα 10:00 Μαθηματικά (πρώτη ώρα της δραστηριότητας με ατ 100)
+Ώρα 11:00 Διάλειμμα
+Ώρα 12:00 Μαθηματικά (δεύτερη ώρα της δραστηριότητας με ατ 100);
+
+Α: Όχι, η δραστηριότητα θα τοποθετηθεί οπωσδήποτε ολόκληρη είτε πριν, είτε μετά το διάλειμμα, με όλες τις ώρες της συνεχόμενες, χωρίς να διακόπτεται από το διάλειμμα.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="629"/>
         <source>Alternative solutions: either you can split that activity into two subactivities with duration 1 (without a min days constraint between them), and add a two activities consecutive constraint, or you can choose to not add the break constraint in your file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Εναλλακτικές λύσεις: μπορείτε είτε να επιμερίσετε την δραστηριότητα σε δύο υποδραστηριότητες με διάρκεια 1 ώρα (χωρίς περιορισμό &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;) και να προσθέσετε περιορισμό &quot;δύο δραστηριότητες - διαδοχικές&quot;, είτε επιλέξετε να μην προσθέσετε τον περιορισμό διαλείμματος στα δεδομένα σας.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="662"/>
@@ -37073,17 +37114,25 @@ Any other ideas...?
 A: I have another idea: choose 2 activities of this teacher which clearly cannot be on the same day, and add constraint min days between activities, 2 days, 100%.
 
 Or add a dummy activity for this teacher, split into 2 per week, min days = 2, with 100%. You just need to take care that this teacher has place for these dummy activities (enough slots in the day) and to consider these dummy activities as possible gaps, so if teacher has max gaps 2 then make max gaps for him 0.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: (από τον Horatiu Halmajan) Προέκυψε η εξής περίπτωση: κάποιος εκπαιδευτικός ζητά να εργάζεται κατά μέγιστο για 2 ημέρες (ανά εβδομάδα), αλλά οι μέρες αυτές δεν θα πρέπει να είναι διαδοχικές. Υπάρχει κάποιος τρόπος για να υλοποιηθεί αυτό στο FET;
+
+Ο μόνος (χειροκίνητος) τρόπος που θα μπορούσα να σκεφτώ είναι να καθοριστεί ότι ο συγκεκριμένος εκπαιδευτικός δεν θα είναι διαθέσιμος την Τρίτη και την Πέμπτη, και ως εκ τούτου να μείνει διαθέσιμος την Δευτέρα, την Τετάρτη και την Παρασκευή (από τις οποίες δεν προκύπτει κανένα ζεύγος διαδοχικών ημερών).
+
+Υπάρχουν κάποιες άλλες ιδέες...;
+
+Α: Έχω μία ακόμη ιδέα: διαλέξτε δύο δραστηριότητες του συγκεκριμένου εκπαιδευτικού, οι οποίες ξεκάθαρα δεν μπορούν να πραγματοποιηθούν την ίδια ημέρα, και προσθέστε τον περιορισμό &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; = 2, ποσοστό βαρύτητας 100%.
+
+Ή διαφορετικά προσθέστε μία ψευδο-δραστηριότητα για τον εκπαιδευτικό αυτό, επιμερισμένη σε 2 υποδραστηριότητες την εβδομάδα, &quot;ελάχιστες ημέρες&quot; = 2, με ποσοστό βαρύτητας 100%. Το μόνο που χρειάζεται να κάνετε είναι να εξασφαλίσετε ότι ο εκπαιδευτικός αυτός έχει &quot;χώρο&quot; για αυτές τις ψευδο-δραστηριότητες (αρκετές περιόδους μέσα στην ημέρα) και να θεωρήστε τις ψευδο-δραστηριότητες αυτές σαν εν δυνάμει κενά. Οπότε, αν ο εκπαιδευτικός έχει &quot;μέγιστα κενά&quot; 2 (χωρίς τις ψευδο-δραστηριότητες), δώστε την τιμή &quot;μέγιστα κενά&quot; 0 (μετά την προσθήκη των ψευδο-δραστηριοτήτων).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="743"/>
         <source>The first hint for other users is to start with minimum number of constraints and if FET would generate the plan then thinking about adding the next ones.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η πρώτη υπόδειξη για τους άλλους χρήστες είναι να ξεκινούν με έναν ελάχιστο αριθμό περιορισμών. Αν το FET μπορέσει να επιλύσει το ωρολόγιο πρόγραμμα, τότε μπορούν να συνεχίσουν προσθέτοντας και μερικούς από τους επόμενους περιορισμούς.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="746"/>
         <source>The second hint is not to change too many constraints in one simulation as it may lead to impossible timetable and then it is difficult to say which particular constraint was too much.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η δεύτερη υπόδειξη είναι να μην αλλάζετε υπερβολικά πολλούς περιορισμούς σε μία προσομοίωση (κατάρτιση ωρολογίου προγράμματος), διότι ενδεχομένως η επίλυση του ωρολογίου προγράμματος να καταστεί αδύνατη. Στην περίπτωση αυτή θα είναι δύσκολο να εξακριβώσετε ποιος περιορισμός (ή ποιοι περιορισμοί) προξένησαν το πρόβλημα.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="797"/>
@@ -37103,39 +37152,56 @@ Here is an example to explain this (it is an impractical example, but it is bett
 3) Why can FET find a timetable the third time (with locked A1, A2, A3, A4 and A5)? Because activities with more students sets are scheduled firstly (in general, locked activities are placed in descending order of the sum of the number of teachers and subgroups) and a locked activity is never rescheduled. So, FET puts A1 first, then A2, A3, A4 and A5. Since it retries more times separately for each activity, it is able to find a timetable easily.
 
 Practical solution to case 2)? Reduce weights of constraints which have weight below 100% or lock (to a corresponding slot) the activity which corresponds to A1 in your data file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Το πρόβλημα αυτό το οποίο πιθανώς να μην εμφανιστεί ποτέ στην πράξη, αλλά δεν μπορεί να αποκλεισθεί. Ας πούμε ότι ο χρήστης δημιουργεί ένα ωρολόγιο πρόγραμμα επιτυχώς, κλειδώνει μερικές δραστηριότητες και στη συνέχεια προσπαθεί να δημιουργήσει εκ νέου ωρολόγιο πρόγραμμα, αλλά το FET σταματά σε μία συγκεκριμένη δραστηριότητα και αναφέρει ότι η κατάρτιση του ωρολογίου προγράμματος είναι αδύνατη.
+
+Α: Πράγματι, αυτό είναι ένα εν δυνάμει πρόβλημα στο FET (αλλά πιθανώς να μην εμφανιστεί ποτέ στην πράξη). Μπορεί να συμβεί αν έχετε περιορισμούς με ποσοστό βαρύτητας μικρότερο του 100%, οι οποίοι μπορεί να παραβιαστούν όταν δημιουργείτε το ωρολόγιο πρόγραμμα.
+
+Να ένα παράδειγμα για να το εξηγήσω (δεν θα μπορούσε να εμφανιστεί στην πράξη, αλλά είναι καλό παράδειγμα επειδή είναι πολύ απλό): έχετε 4 ομάδες μαθητών (Ε1, Ε2, Ε3, Ε4). 5 δραστηριότητες: Δ1 (Ε1,Ε2,Ε3,Ε4), Δ2 (Ε1), Δ3 (Ε2), Δ4 (Ε3), Δ5 (Ε4). Έχετε μία μόνον ημέρα ανά εβδομάδα και 2 ώρες ανά ημέρα. Προσθέτετε τον περιορισμό &quot;μαθητές - μέγιστες ώρες ημερησίως&quot; = 1, ποσοστό βαρύτητας 95%.
+1) Ξεκινήστε την κατάρτιση (δημιουργία) του ωρολογίου προγράμματος. Μετά από λίγο (ενδεχομένως μετά από λίγα λεπτά), το FET θα έχει κατορθώσει να βρει λύση (με τις &quot;μέγιστες ώρες ημερησίως&quot; να έχουν παραβιαστεί για όλες τις ομάδες μαθητών).
+2) Στη συνέχεια, κλειδώστε τις Δ2, Δ3, Δ4 και Δ5 και προσπαθήστε να δημιουργήσετε εκ νέου ωρολόγιο πρόγραμμα. Σε κάποιες περιπτώσεις το FET θα αναφέρει ότι η τοποθέτηση της δραστηριότητες Δ1 είναι αδύνατη.
+3) Αν κλειδώσετε τις Δ1, Δ2, Δ3, Δ4 και Δ5, το FET θα μπορέσει να βρει (να καταρτίσει) ωρολόγιο πρόγραμμα πολύ γρήγορα.
+
+1) Γιατί το FET μπορεί να επιλύσει το ωρολόγιο πρόγραμμα την πρώτη φορά; Διότι, σε κάποιες περιπτώσεις το FET θα μπορέσει να παραβιάσει έναν προς έναν και τους 4 περιορισμούς &quot;μέγιστες ώρες ημερησίως&quot; για τις δραστηριότητες Δ2, Δ3, Δ4 και Δ5 (καμία δραστηριότητα δεν είναι κλειδωμένη, οπότε μπορεί να προσπαθήσει πολλές φορές να τοποθετήσει/επανατοποθετήσει τις δραστηριότητες, και έτσι θα βρει κάποιον τρόπο για να τοποθετήσει την Δ1, και στη συνέχεια να τοποθετήσει τις υπόλοιπες δραστηριότητες.
+
+2) Γιατί κάποιες φορές το FET δεν μπορεί να καταρτίσει το ωρολόγιο πρόγραμμα την δεύτερη φορά (με κλειδωμένες τις δραστηριότητες Δ2, Δ3, Δ4 και Δ5); Διότι: οι δραστηριότητες Δ2, Δ3, Δ4 και Δ5 είναι κλειδωμένες και τοποθετούνται πρώτα αυτές. Στη συνέχεια, το FET προσπαθεί να τοποθετήσει την Δ1. Αλλά για να τοποθετήσει την Δ1, θα πρέπει να παραβιάσει 4 φορές έναν περιορισμό με ποσοστό βαρύτητας 95%, γιατί υπάρχουν 4 ομάδες μαθητών στην δραστηριότητα Δ1. Το ποσοστό βαρύτητας 95% 4 φορές στη σειρά είναι ισοδύναμο με περιορισμό με ποσοστό βαρύτητας 100%-(5%^4)=99.99999375%, ο οποίος όμως είναι ένας πολύ ισχυρός περιορισμός, και ως εκ τούτου είναι πολύ δύσκολο να παραβιαστεί. Το FET θα προσπαθήσει εκ νέου περισσότερες φορές για να τοποθετήσει την δραστηριότητα  Δ1, οπότε σε κάποιες περιπτώσεις θα καταλήξει σε ωρολόγιο πρόγραμμα ακόμη και υπό αυτές τις συνθήκες.
+
+3) Γιατί το FET μπορεί να καταλήξει σε λύση για το ωρολόγιο πρόγραμμα την τρίτη φορά (με κλειδωμένες τις δραστηριότητες Δ1, Δ2, Δ3, Δ4 και Δ5); Διότι, οι δραστηριότητες με πολλαπλές ομάδες μαθητών έχουν τοποθετηθεί στην αρχή της επίλυσης (γενικά, οι κλειδωμένες δραστηριότητες τοποθετούνται σε φθίνουσα σειρά του αθροίσματος του αριθμού των εκπαιδευτικών και των υποτμημάτων) και μία κλειδωμένη δραστηριότητα δεν επαναπρογραμματίζεται ποτέ. Έτσι, το FET τοποθετεί πρώτα την Δ1, μετά τις Δ2, Δ3, Δ4 και Δ5. Αφού το FET προσπαθεί εκ νέου ξεχωριστά για την κάθε δραστηριότητα, κατορθώνει να επιλύσει το ωρολόγιο πρόγραμμα με ευκολία.
+
+Πρακτική λύση για την περίπτωση 2); Μειώστε το ποσοστό βαρύτητας των περιορισμών οι οποίοι έχουν ποσοστό βαρύτητας μικρότερο του 100% ή κλειδώσετε (σε μία αντίστοιχη περίοδο) την δραστηριότητα που αντιστοιχεί στην Δ1 στο αρχείο των δεδομένων σας.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="823"/>
         <source>Q: I tried to work on a fixed timetable, to move an activity to another time slot. Now I got stuck - FET says: impossible to generate.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Δοκίμασα να δουλέψω σε ένα ωρολόγιο πρόγραμμα που επέλυσε (κατήρτισε) το FET και συγκεκριμένα να μετακινήσω κάποια δραστηριότητα σε άλλη περίοδο. Τώρα &quot;κόλλησα&quot; - το FET λέει ότι η δημιουργία (κατάρτιση) του ωρολογίου προγράμματος είναι αδύνατη.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="825"/>
         <source>A: There is this potential problem. Suppose you have max hours daily for students = 4 hours, 99%. You generated successfully (maybe you got some days with more than 4 hours, it does not matter for our discussion). Now, if you have a day with 4 hours and try to move another activity to this day, some students will have 5 hours in this day. If in this day all activities have more students sets, FET may report an impossible timetable. Why? Because if you have an activity with say 4 subgroups, 99% is assumed for each subgroup, resulting in a very strong constraint for this activity. (100%-(1%^4)). Even if FET retries more times for each activity, it is not enough.
 
  A solution: lower the weight of this constraint from 99% to 90% or less.</source>
-        <translation type="unfinished"></translation>
+        <translation>Α: Υπάρχει ένα εν δυνάμει πρόβλημα. Υποθέστε ότι έχετε &quot;μέγιστες ώρες ημερησίως&quot; για μαθητές =  4 ώρες, με ποσοστό βαρύτητας 99%. Έχετε δημιουργήσει επιτυχώς ωρολόγιο πρόγραμμα (πιθανώς να έχετε μερικές μέρες με περισσότερες από 4 ώρες, αλλά αυτό δεν έχει σημασία στην περίπτωσή μας). Τώρα, αν έχετε μία ημέρα με 4 ώρες και προσπαθήσετε να μετακινήσετε μία άλλη δραστηριότητα στην συγκεκριμένη ημέρα, κάποιοι μαθητές θα έχουν 5 ώρες (στην συγκεκριμένη ημέρα). Αν στην ημέρα αυτή όλες οι δραστηριότητες έχουν περισσότερες από μία ομάδες μαθητών, το FET μπορεί να αναφέρει ότι η κατάρτιση του ωρολογίου προγράμματος είναι αδύνατη. Γιατί; Διότι, αν έχετε μία δραστηριότητα με π.χ. 4 υποτμήματα, το 99% λαμβάνεται υπόψη για το κάθε υποτμήμα, και αυτό έχει ως αποτέλεσμα έναν πολύ ισχυρό περιορισμό για την δραστηριότητα αυτή (100%-(1%^4)). Ακόμη και αν το FET ξαναπροσπαθήσει περισσότερες φορές για την κάθε δραστηριότητα, αυτό δεν είναι αρκετό.
+
+ Μία λύση: μειώστε το ποσοστό βαρύτητας για αυτόν τον περιορισμό από το 99% στο 90% ή και λιγότερο.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="839"/>
         <source>Q: A trick to deal with fortnightly activities (my institution has a lot of fortnightly activities):</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Τέχνασμα για να διαχειριστείτε τις δραστηριότητες 14ημέρου (το εκπαιδευτικό ίδρυμα έχει πολλές δραστηριότητες 14ημέρου):</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="841"/>
         <source>A: I divided hours in two, the first half (8.00 to 8.30, 9.00 to 9.30, ...) represents week A, the second half (8.30 to 9.00, 9.30 to 10.00, ...) represents week B, fortnightly activities have duration 1, weekly activities have duration 2.</source>
-        <translation type="unfinished"></translation>
+        <translation>Α: Χώρισα τις ώρες στα δύο. Το πρώτο μισό της κάθε ώρας (8:00 έως 8.30, 9.00 έως 9.30, ...) αντιπροσωπεύει την εβδομάδα Α, το δεύτερο μισό (8.30 έως 9.00, 9.30 έως 10.00, ...) αντιπροσωπεύει την εβδομάδα Β. Οι δραστηριότητες 14ημέρου (διπλής εβδομάδας) έχουν διάρκεια 1, ενώ οι εβδομαδιαίες δραστηριότητες 1 έχουν διάρκεια 2.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="845"/>
         <source>I created an activity tag &apos;Start hour&apos;. It should be added to each weekly activity to make sure they start at the same time (same day + same hour) on each week. Otherwise, an activity with duration 2 can start on a second half of hour in the timetable, so this activity is placed on a certain day and at a certain hour on week A, and on the same day but at the next hour on week B.</source>
-        <translation type="unfinished"></translation>
+        <translation>Δημιούργησα την ετικέτα δραστηριότητας &quot;Ώρα έναρξης&quot;. Η ετικέτα αυτή πρέπει να προστεθεί σε κάθε εβδομαδιαία δραστηριότητα, ώστε να διασφαλιστεί ότι όλες οι εβδομαδιαίες δραστηριότητες ξεκινούν στον ίδιο χρόνο (ίδια ημέρα + ίδια ώρα) κάθε εβδομάδα. Σε διαφορετική περίπτωση, μία δραστηριότητα με διάρκεια 2 (ώρες) μπορεί να ξεκινά το δεύτερο μισό κάποιας ώρας στο ωρολόγιο πρόγραμμα, κι έτσι η δραστηριότητα αυτή να τοποθετείται σε συγκεκριμένη ημέρα και σε συγκεκριμένη ώρα μέσα στην εβδομάδα Α, και την ίδια μέρα αλλά την επόμενη ώρα στην εβδομάδα Β.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="859"/>
         <source>Q: I need to add a split activity with total duration 4, which can be either 2+2 or 2+1+1 (two hours in a day and two hours in another day, or two hours in a day, one hour in another day and one hour in another day).</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Χρειάζεται να προσθέσω μία επιμερισμένη δραστηριότητα με συνολική διάρκεια 4, η οποία μπορεί να είναι είτε 2+2 (δύο ώρες σε μία ημέρα και δύο ώρες σε μία άλλη ημέρα), είτε 2+1+1 (δύο ώρες σε μία ημέρα, μία ώρα σε μία άλλη ημέρα και μία ώρα σε μία άλλη ημέρα).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="862"/>
@@ -37153,32 +37219,32 @@ Add another constraint: min 1 day between activities with id-s 2 and 3, consecut
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="867"/>
         <source>Note: It is advisable to add the 3 activities as single/independent ones (not a larger split activity with 3 components). The reason is that if you want to apply spreading of activities over the week, this operation won&apos;t add/remove constraints of type min days between activities for these 3 activities. Also, if you add a split activity, you need to take care not to add a default constraint min days between the 3 components.</source>
-        <translation type="unfinished"></translation>
+        <translation>Σημείωση: Συνιστάται να προθέσετε τις 3 δραστηριότητες ως μόνες/ανεξάρτητες (δηλαδή όχι ως μία επιμερισμένη δραστηριότητα με 3 στοιχεία (υποδραστηριότητες)). Ο λόγος είναι ότι αν θέλετε να εφαρμόσετε την ομοιόμορφη κατανομή (ομοιόμορφο &quot;άπλωμα&quot;) των δραστηριοτήτων μέσα στην εβδομάδα, η λειτουργία αυτή δεν θα προσθέσει/διαγράψει περιορισμούς του τύπου &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; για αυτές τις 3 δραστηριότητες. Επίσης, αν προσθέσετε μία επιμερισμένη δραστηριότητα, θα πρέπει να προσέξετε να μην προσθέσετε τον προκαθορισμένο περιορισμό &quot;ελάχιστες ημέρες&quot; ανάμεσα στα 3 στοιχεία (υποδραστηριότητες).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="877"/>
         <source>Q: I would like to specify that a teacher should have activities in certain time slots, no matter which activities.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Θέλω να καθορίσω ότι κάποιος εκπαιδευτικός θα πρέπει να έχει δραστηριότητες σε συγκεκριμένες περιόδους, ανεξάρτητα με το ποιες θα είναι οι δραστηριότητες αυτές.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="879"/>
         <source>A: Please use constraint activities occupy max time slots from selection (the exact menu entry is &apos;A set of activities occupies max time slots from selection&apos;. See that constraint&apos;s Help button for more details.</source>
-        <translation type="unfinished"></translation>
+        <translation>Α: Παρακαλώ χρησιμοποιείστε τον περιορισμό &quot;δραστηριότητες καταλαμβάνουν μέγιστες περιόδους από επιλογή&quot;. Πατήστε στο κουμπί &quot;Βοήθεια&quot; του συγκεκριμένου περιορισμού για περισσότερες λεπτομέρειες.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="886"/>
         <source>Q: How to easily find the activities with unspecified room in the timetable (after the timetable was generated)?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Πώς μπορώ να βρω εύκολα τις δραστηριότητες με μη καθορισμένη αίθουσα στο ωρολόγιο πρόγραμμα (μετά την κατάρτιση του ωρολογίου προγράμματος);</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="888"/>
         <source>A: A trick is this: open the file representing the activities timetable in XML form (this file can be found in the results directory, with a name like: file_activities.xml) with a text editor, and search for the text &lt;Room&gt;&lt;/Room&gt;</source>
-        <translation>Α: Ένα τέχνασμα (τρικ) είναι το εξής: ανοίξτε με κάποια εφαρμογή κειμενογράφου το αρχείο (σε φορμά XML) το οποίο αντιπροσωπεύει το ωρολόγιο πρόγραμμα των δραστηριοτήτων (το αρχείο αυτό βρίσκεται στον κατάλογο αποτελεσμάτων, με όνομα της μοφρής: file_activities.xml), και αναζητήστε για το κείμενο &lt;Room&gt;&lt;/Room&gt;</translation>
+        <translation>Α: Ένα τέχνασμα (τρικ) είναι το εξής: ανοίξτε με κάποια εφαρμογή κειμενογράφου το αρχείο (σε φορμά XML) το οποίο αντιπροσωπεύει το ωρολόγιο πρόγραμμα των δραστηριοτήτων (το αρχείο αυτό βρίσκεται στον κατάλογο αποτελεσμάτων, με όνομα της μορφής: file_activities.xml), και αναζητήστε για το κείμενο &lt;Room&gt;&lt;/Room&gt;</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="895"/>
         <source>Q: The students and/or teachers should have in each day some activities without interruption, then some continuous gaps, then again some activities without interruption. This situation can appear in these cases: schools in Morocco and Algeria, which have morning and afternoon shifts, and also in some universities in which students would prefer to have at most a single cluster of gaps, no matter how long, in each day. How to treat such situations in FET?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Οι μαθητές ή/και οι εκπαιδευτικοί θα πρέπει να έχουν κάθε μέρα κάποιες δραστηριότητες χωρίς διακοπή, μετά μερικά συνεχόμενα κενά, μετά ξανά κάποιες δραστηριότητες χωρίς διακοπή. Η περίπτωση αυτή μπορεί να εμφανιστεί στις παρακάτω περιπτώσεις: σχολεία στο Μαρόκο και την Αλγερία, τα οποία έχουν πρωινές και απογευματινές βάρδιες, καθώς επίσης και σε μερικά πανεπιστήμια στα οποία οι μαθητές (φοιτητές) προτιμούν να έχουν κατά μέγιστο έναν μόνον &quot;σχηματισμό&quot; (συνεχόμενων) κενών, χωρίς να έχει σημασία πόσο μεγάλος θα είναι (πόσα θα είναι τα συνεχόμενα κενά), κάθε ημέρα. Πώς μπορούμε να χειριστούμε τέτοιες περιπτώσεις στο FET;</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="901"/>
@@ -37188,57 +37254,57 @@ Add another constraint: min 1 day between activities with id-s 2 and 3, consecut
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="909"/>
         <source>Q: How can I add a comment to a (sub)activity or to a constraint?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Πώς μπορώ να προσθέσω ένα σχόλιο σε μία (υπο)δραστηριότητα ή σε έναν περιορισμό;</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="911"/>
         <source>A: You can add a comment to a (sub)activity by clicking the &apos;Comments&apos; button in the (sub)activities dialog. You can add a comment to a constraint by clicking the &apos;Comments&apos; button in the all time/space constraints dialogs.</source>
-        <translation type="unfinished"></translation>
+        <translation>Α: Μπορείτε να προσθέσετε σχόλιο σε κάποια (υπο)δραστηριότητα κάνοντας κλικ στο κουμπί &quot;Σχόλια&quot; στον διάλογο (υπο)δραστηριοτήτων. Μπορείτε να προσθέσετε σχόλιο σε κάποιον περιορισμό κάνοντας κλικ στο κουμπί &quot;Σχόλια&quot; που υπάρχει σε όλους τους διαλόγους χρονικών/χωρικών περιορισμών.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="918"/>
         <source>Q: How can I activate/deactivate a constraint?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Πώς μπορώ να ενεργοποιήσω/απενεργοποιήσω έναν περιορισμό;</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="920"/>
         <source>A: You can activate/deactivate a constraint by clicking the &apos;Activate&apos;/&apos;Deactivate&apos; buttons in the all time/space constraints dialogs.</source>
-        <translation type="unfinished"></translation>
+        <translation>Α: Μπορείτε να ενεργοποιήσετε/απενεργοποιήσετε κάποιον περιορισμό κάνοντας κλικ στα κουμπιά &quot;Ενεργοποίηση/Απενεργοποίηση&quot; που υπάρχουν σε όλους τους διαλόγους χρονικών/χωρικών περιορισμών.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="937"/>
         <source>Q: How can I specify that some activities must be in the same room (at different time slots, of course, because a single room can hold a single activity in a certain time slot)? This is needed for instance to constrain the Physics activities of a certain students set to take place in the same room, be it Lab-1 or Lab-2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Πώς μπορώ να καθορίσω ότι κάποιες δραστηριότητες πρέπει να πραγματοποιούνται στην ίδια αίθουσα (σε διαφορετικές περιόδους φυσικά, καθότι μία αίθουσα μπορεί να χωρέσει (&quot;φιλοξενήσει&quot;) μία δραστηριότητα σε συγκεκριμένη περίοδο); Αυτό χρειάζεται -για παράδειγμα- για να περιοριστούν οι δραστηριότητες Φυσικής συγκεκριμένης ομάδας μαθητών, έτσι ώστε να πραγματοποιούνται στην ίδια αίθουσα, η οποία μπορεί να είναι το Εργαστήριο1 ή το Εργαστήριο2</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="941"/>
         <source>A: You can use the constraint activities occupy max different rooms, with max different rooms = 1.</source>
-        <translation type="unfinished"></translation>
+        <translation>Α: Μπορείτε να χρησιμοποιήσετε τον περιορισμό &quot;δραστηριότητες καταλαμβάνουν μέγιστες διαφορετικές αίθουσες&quot;, με &quot;μέγιστες διαφορετικές αίθουσες&quot; = 1.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="947"/>
         <source>Q: How can I backup/restore the FET settings on a computer, or share them between different computers?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Πώς μπορώ να κρατήσω αντίγραφο ασφαλείας ή/και να ανακτήσω τις ρυθμίσεις του FET σε κάποιον υπολογιστή, ή να χρησιμοποιήσω (να μοιραστώ) αυτές τις ρυθμίσεις σε διαφορετικούς υπολογιστές;</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="949"/>
         <source>A: GNU/Linux: Usually, in your %1 directory you will find a directory &quot;%2&quot; containing the file &quot;%3&quot;. If you copy this file to another computer, the FET settings will be copied. You can also make a backup of this file and copy it on the same computer, later, to restore the previous settings. If you remove this file, all FET settings on this computer will be reset to defaults.</source>
-        <translation type="unfinished"></translation>
+        <translation>Α: GNU/Linux: Συνήθως, στον κατάλογο &quot;%1&quot; θα βρείτε τον κατάλογο &quot;%2&quot; στον οποίο περιέχεται το αρχείο &quot;%3&quot;. Αν αντιγράφετε το αρχείο αυτό σε έναν άλλο υπολογιστή, θα αντιγραφούν οι ρυθμίσεις του FET. Μπορείτε επίσης να κρατήσετε ένα αντίγραφο ασφαλείας του αρχείου αυτού και να το αντιγράψετε στον ίδιο υπολογιστή, αργότερα, προκειμένου να επαναφέρετε τις προηγούμενες ρυθμίσεις. Αν διαγράψετε το αρχείο αυτό, όλες οι ρυθμίσεις του FET σε αυτόν τον υπολογιστή θα επανέλθουν στις προκαθορισμένες (αρχικές).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="955"/>
         <source>Mac OS X: It seems that the configuration file might be %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Mac OS X: Φαίνεται ότι το αρχείο ρύθμισης παραμέτρων πιθανώς να είναι το %1</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="957"/>
         <source>Windows: Run regedit.exe (Registry Editor) and search for the key &quot;%1&quot;. You will find a section with this name, with the subsection &quot;%2&quot;. You can export this section to a file, and import it from this file on the same or another computer. If you remove this section, all FET settings will be reset to defaults.</source>
-        <translation type="unfinished"></translation>
+        <translation>Windows: &quot;Τρέξτε&quot; το regedit.exe (Registry Editor) και αναζητήστε το κλειδί μητρώου &quot;%1&quot;. Θα βρείτε ένα τμήμα μητρώου με το όνομα αυτό, με το υποτμήμα μητρώου &quot;%2&quot;. Μπορείτε να εξαγάγετε αυτό το τμήμα μητρώου σε αρχείο, και να το εισαγάγετε από το αρχείο αυτό στον ίδιο ή κάποιον άλλον υπολογιστή. Αν διαγράψετε αυτόν το τμήμα μητρώου, όλες οι ρυθμίσεις του FET θα επανέλθουν στις προκαθορισμένες (αρχικές).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="965"/>
         <source>Q: I have many subgroups and I don&apos;t explicitly use them. Can I hide them in the combo boxes, to add easier the constraints? Also, can I make the FET interface work faster?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Έχω πολλά υποτμήματα τα οποία δεν χρησιμοποιώ ρητώς. Μπορώ να τα αποκρύψω στα σύνθετα πλαίσια, ώστε να προσθέτω ευκολότερα τους περιορισμούς; Επίσης, μπορώ να κάνω την διεπαφή του FET να δουλεύει γρηγορότερα;</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="968"/>
@@ -37266,7 +37332,7 @@ Add another constraint: min 1 day between activities with id-s 2 and 3, consecut
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="981"/>
         <source>If you are only working on a timetable, and you do not need to publish it, you may want to disable writing some categories of timetables on the hard disk, for operativity (the generation speed is not affected, only the overhead to write the partial/complete timetables when stopping/finishing the simulation). The timetables taking the longest time are the subgroups, groups AND years ones.</source>
-        <translation type="unfinished">Εάν απλά δουλεύετε ένα ωρολόγιο πρόγραμμα, και δεν χρειάζεται να το δημοσιοποιήσετε, πιθανώς να θέλετε να απενεργοποιήσετε την εγγραφή κάποιων κατηγοριών ωρολογίων προγραμμάτων στον σκληρό δίσκο, για λόγους λειτουργικότητας. (η ταχύτητα επίλυσης δεν επηρεάζεται, μόνον υπάρχει μία επιβάρυνση για την εγγραφή των μερικώς/πλήρως ολοκληρωμένων ωρολογίων προγραμμάτων όταν διακόπτεται/τερματίζεται η επίλυση). Τα ωρολόγια προγράμματα που απαιτούν τον περισσότερο χρόνο είναι αυτά των υποτμημάτων, τμημάτων ΚΑΙ ετών.</translation>
+        <translation>Εάν απλά δουλεύετε ένα ωρολόγιο πρόγραμμα, και δεν χρειάζεται να το δημοσιοποιήσετε, πιθανώς να θέλετε να απενεργοποιήσετε την εγγραφή κάποιων κατηγοριών ωρολογίων προγραμμάτων στον σκληρό δίσκο, για λόγους λειτουργικότητας. (η ταχύτητα επίλυσης δεν επηρεάζεται, μόνον υπάρχει μία επιβάρυνση για την εγγραφή των μερικώς/πλήρως ολοκληρωμένων ωρολογίων προγραμμάτων όταν διακόπτεται/τερματίζεται η επίλυση). Τα ωρολόγια προγράμματα που απαιτούν τον περισσότερο χρόνο είναι αυτά των υποτμημάτων, τμημάτων ΚΑΙ ετών.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="985"/>
@@ -37276,57 +37342,57 @@ Add another constraint: min 1 day between activities with id-s 2 and 3, consecut
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="987"/>
         <source>After that, you can re-enable writing of the timetables and re-generate.</source>
-        <translation type="unfinished">Μετά από αυτό, μπορείτε να επανενεργοποιήσετε την εγγραφή των ωρολογίων προγραμμάτων και να δημιουργήσετε νέα ωρολόγια προγράμματα.</translation>
+        <translation>Μετά από αυτό, μπορείτε να ενεργοποιήσετε ξανά την εγγραφή των ωρολογίων προγραμμάτων και να δημιουργήσετε νέα ωρολόγια προγράμματα.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="993"/>
         <source>Q: How about dividing a students year automatically into many subgroups?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Τι ισχύει αναφορικά με την αυτόματη κατάτμηση ενός έτους (μαθητών) σε πολλά υποτμήματα;</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="997"/>
         <source>About using a large number of categories, divisions per category and subgroups: it is highly recommended to keep these to a minimum, especially the number of categories, by using any kind of tricks. Otherwise the timetable might become impossible (taking too much time to generate).</source>
-        <translation type="unfinished"></translation>
+        <translation>Σχετικά με την χρήση μεγάλου αριθμού κατηγοριών, κατατμήσεων ανά κατηγορία και υποτμημάτων: συνιστάται να διατηρήσετε τα ανωτέρω στις ελάχιστες δυνατές τιμές, ιδιαίτερα τον αριθμό των κατηγοριών, χρησιμοποιώντας οποιουδήποτε είδους τεχνάσματα. Σε διαφορετική περίπτωση η κατάρτιση του ωρολογίου προγράμματος μπορεί να καταστεί αδύνατη (ή να απαιτήσει πολύ χρόνο).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="1001"/>
         <source>Maybe a reasonable number of categories could be 2, 3 or maximum 4. The divide year dialog allows much higher values, but these are not at all recommended.</source>
-        <translation type="unfinished"></translation>
+        <translation>Πιθανώς, ένας εύλογος αριθμός κατηγοριών να είναι 2, 4 ή κατά μέγιστο 4. Ο διάλογος κατάτμησης έτους επιτρέπει σαφώς μεγαλύτερες τιμές, οι οποίες όμως δεν συνιστώνται.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="1004"/>
         <source>Maybe an alternative to dividing a year into many categories/subgroups would be to enter individual students as FET subgroups and add into each group the corresponding subgroups. But this is hard to do from the FET interface - maybe a solution would be to use an automatic tool to convert your institution data into a file in .fet format.</source>
-        <translation type="unfinished"></translation>
+        <translation>Πιθανώς ένας εναλλακτικός τρόπος για την κατάτμηση ενός έτους σε πολλές κατηγορίες/υποτμήματα θα ήταν να εισαγάγετε τους μεμονωμένους μαθητές ως υποτμήματα του FET και να προσθέσετε στο κάθε τμήμα τα αντίστοιχα υποτμήματα. Αλλά αυτό είναι δύσκολο να πραγματοποιηθεί από την διεπαφή του FET - πιθανώς μία λύση να είναι η χρήση ενός αυτοματοποιημένου &quot;εργαλείου&quot; έτσι ώστε να μετατρέψετε τα δεδομένα του εκπαιδευτικού σας ιδρύματος σε αρχείο σε φορμά.fet.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="1008"/>
         <source>Or you might use the FET feature to import students sets from comma separated values (CSV) files.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ή θα μπορούσατε να χρησιμοποιήσετε την δυνατότητα του FET και να εισαγάγετε τις ομάδες μαθητών από αρχεία CSV (τιμών διαχωρισμένων με κόμμα).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="1010"/>
         <source>In such cases (individual students as FET subgroups), remember that a smaller number of total subgroups means faster generation time, so you might want to consider a single subgroup for two or more students who have the exact same activities and constraints.</source>
-        <translation type="unfinished"></translation>
+        <translation>Σε τέτοιες περιπτώσεις (με τους μεμονωμένους μαθητές να είναι υποτμήματα του FET), να θυμάστε ότι μικρός συνολικός αριθμός υποτμημάτων σημαίνει συντομότερο χρόνο επίλυσης (κατάρτισης ωρολογίου προγράμματος). Οπότε, πιθανώς να θελήσετε να θεωρήσετε ότι δύο ή και περισσότεροι μαθητές -οι οποίοι έχουν ακριβώς τις ίδιες δραστηριότητες και ακριβώς τους ίδιους περιορισμούς- αποτελούν ένα μόνον υποτμήμα.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="1017"/>
         <source>Q: Does the order of constraints have influence on their importance while generating the timetable?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Η σειρά των περιορισμών έχει κάποια επίδραση στην σπουδαιότητά τους κατά την δημιουργία (κατάρτιση) του ωρολογίου προγράμματος;</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="1021"/>
         <source>The order of the constraints is only important to the interaction with the user. It is only the weight percentage which counts while generating the timetable. Note however that you may get different timetables for different constraints order.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η σειρά των περιορισμών είναι σημαντική μόνον για την αλληλεπίδραση με τον χρήστη. Αυτό που μετρά κατά την κατάρτιση (επίλυση) του ωρολογίου προγράμματος είναι μόνον το ποσοστό βαρύτητας. Σημειώστε όμως ότι μπορεί να λάβετε διαφορετικά ωρολόγια προγράμματα για διαφορετική σειρά περιορισμών.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="850"/>
         <source>Add time constraint: activities with all teachers, all students, all subjects, activity tag = &apos;Start hour&apos; have a set of preferred starting times: Monday 8.00, Monday 9.00, ...</source>
-        <translation type="unfinished"></translation>
+        <translation>Προσθέστε τον χρονικό περιορισμό: δραστηριότητες με όλους τους εκπαιδευτικούς, όλους τους μαθητές, όλα τα αντικείμενα, ετικέτα δραστηριότητας  = &quot;Ώρα έναρξης&quot; έχουν σύνολο προτιμητέων χρόνων έναρξης: Δευτέρα 8:00, Δευτέρα 9:00, ...</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="47"/>
         <source>Frequently asked questions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Συνήθεις ερωτήσεις.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="837"/>
@@ -37336,24 +37402,26 @@ Add another constraint: min 1 day between activities with id-s 2 and 3, consecut
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="853"/>
         <source>It works fine and I got good timetables with strong teachers time constraints.</source>
-        <translation type="unfinished"></translation>
+        <translation>Δουλεύει άψογα και έλαβα καλά ωρολόγια προγράμματα και μάλιστα με ισχυρούς περιορισμούς εκπαιδευτικών.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="871"/>
         <source>There may be other solutions possible, but this one seems perfect with respect to efficiency.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ενδεχομένως να υπάρχουν και άλλες λύσεις, αλλά η συγκεκριμένη φαίνεται τέλεια όσον αφορά την αποτελεσματικότητα.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="323"/>
         <source>Q: I have a sports room which allows more than 1 activity simultaneously in it. How to make the preferred room constraints? Can FET accept more than one activity at the same time in a single room?
 
 A: Each room can host a single activity at the same time. How to implement what you need? You can add more rooms (sport1, sport2, sport3) and instead of a single preferred room add more preferred rooms.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Έχω μία αίθουσα Γυμναστικής η οποία μπορεί να φιλοξενήσει περισσότερες από 1 δραστηριότητες ταυτόχρονα. Πώς μπορώ να διατυπώσω τους περιορισμούς &quot;προτιμητέα αίθουσα&quot;; Μπορεί το FET να δεχθεί περισσότερες από μία δραστηριότητες σε μία μόνον αίθουσα κατά τον ίδιο χρόνο;
+
+Α: Η κάθε αίθουσα μπορεί να φιλοξενήσει μόνον μία δραστηριότητα κατά τον ίδιο χρόνο. Πώς να υλοποιήσετε αυτό που χρειάζεστε; Μπορείτε να προσθέσετε περισσότερες αίθουσες (Γυμναστική1, Γυμναστική2, Γυμναστική3) και αντί της μίας προτιμητέας αίθουσας να προσθέσετε περιορισμό με περισσότερες προτιμητέες αίθουσες.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="49"/>
         <source>Last modified on %1.</source>
-        <translation type="unfinished">Τελευταία τροποποίηση στις %1.</translation>
+        <translation>Τελευταία τροποποίηση στις %1.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="49"/>
@@ -37372,22 +37440,31 @@ A: - Students - organized into sets (years (or forms, or classes), containing gr
 - Buildings.
 - Activities: a coupling of one or more teachers, a subject and one or more students set. This is usually named a course, a lecture, a laboratory and so on. An activity can have optionally an activity tag, to help you with some constraints.
 - Constraints. They can be: time constraints (referring to the allocated day and hour) or space constraints (referring to rooms allocation). They have a weight percentage, from 0.0% to 100.0%. 100% means that the constraint will always be respected and if this constraint is impossible, FET will not be able to generate a timetable.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Ποια είναι η οργάνωση της εισαγωγής δεδομένων στο FET;
+
+Α: - Μαθητές - οργανωμένοι σε ομάδες (έτη ή τάξεις), οι οποίες περιλαμβάνουν τμήματα, τα οποία περιλαμβάνουν υποτμήματα.
+- Εκπαιδευτικοί.
+- Αντικείμενα (τα ονόματα των μαθημάτων, π.χ. Μαθηματικά, Φυσική, κ.λπ.).
+- Ετικέτες δραστηριοτήτων (μπορείτε είτε να τις χρησιμοποιήσετε, είτε όχι, η επιλογή είναι δική σας: ο τύπος της δραστηριότητας: εργαστήριο, μάθημα, σεμινάριο, ή όποια άλλη πληροφορία μπορεί να σχετίζεται με την δραστηριότητα).
+- Αίθουσες.
+- Κτίρια.
+- Δραστηριότητες: ο &quot;συνδυασμός&quot; ενός ή περισσοτέρων εκπαιδευτικών, ενός αντικειμένου και μίας ή περισσοτέρων ομάδων μαθητών. Συνήθως αυτό ονομάζεται μάθημα, διάλεξη, εργαστήριο κ.ο.κ. Κάθε δραστηριότητα μπορεί να έχει -κατ&apos; επιλογήν- και κάποια ετικέτα δραστηριότητας (ή και περισσότερες), προκειμένου να βοηθηθείτε στη διαχείριση κάποιων περιορισμών.
+- Περιορισμοί. Μπορούν να είναι: χρονικοί περιορισμοί (αναφορικά με τον προσδιορισμό της ώρας και της ημέρας), χωρικοί περιορισμοί (αναφορικά με τον προσδιορισμό των αιθουσών). Έχουν ένα ποσοστό βαρύτητας, από 0.0% έως 100.0%. Ποσοστό βαρύτητας 100% σημαίνει ότι ο περιορισμός αυτός θα πρέπει να τηρείται πάντοτε (κατά την επίλυση του ωρολογίου προγράμματος). Στην περίπτωση όμως που η τήρηση ενός τέτοιου περιορισμού είναι αδύνατη, το FET δεν θα μπορέσει να επιλύσει το ωρολόγιο πρόγραμμα.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="94"/>
         <source>Virtually unlimited number of subjects</source>
-        <translation type="unfinished"></translation>
+        <translation>Πρακτικά απεριόριστος αριθμός αντικειμένων</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="106"/>
         <source>Virtually unlimited number of time constraints</source>
-        <translation type="unfinished"></translation>
+        <translation>Πρακτικά απεριόριστος αριθμός χρονικών περιορισμών</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="108"/>
         <source>Virtually unlimited number of space constraints</source>
-        <translation type="unfinished"></translation>
+        <translation>Πρακτικά απεριόριστος αριθμός χωρικών περιορισμών</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="220"/>
@@ -37404,7 +37481,19 @@ The weight is recommended to be between 95.0%-100.0%. The best might be 99.75% o
 You can specify consecutive if same day. Please be careful, even if constraint min days between activities has 0% weight, if you select this consecutive if same day, this consecutive will be forced. You will not be able to find a timetable with the two activities in the same day, separated by break, not available or other activities, even if the constraint has weight 0%, if you select consecutive if same day.
 
 Currently FET can put at most 2 activities in the same day if &apos;consecutive if same day&apos; is true. FET cannot put 3 or more activities in the same day if &apos;consecutive if same day&apos; is true.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Βοήθεια για τον περιορισμό &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;.
+
+Α: Ο περιορισμός &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; αναφέρεται σε ένα σύνολο δραστηριοτήτων και περιλαμβάνει μία σταθερά &quot;Ν&quot;. Για κάθε ζεύγος από το ανωτέρω σύνολο δραστηριοτήτων, ο περιορισμός δεν επιτρέπει να &quot;απέχουν&quot; (σε ημέρες) οι δραστηριότητες μεταξύ τους λιγότερο από Ν (ημέρες). Αν καθορίσετε Ν=1, τότε ο περιορισμός θα έχει ως αποτέλεσμα σε κανένα ζεύγος από τις ανωτέρω δραστηριότητες να μην υπάρχει &quot;απόσταση&quot; μικρότερη από μία ημέρα μεταξύ τους, δηλαδή θα έχει ως αποτέλεσμα καμία από τις ανωτέρω δραστηριότητες να μην πραγματοποιείται την ίδια ημέρα με κάποια άλλη δραστηριότητα του συγκεκριμένου συνόλου (δραστηριοτήτων). Αν καθορίσετε Ν=2, αυτό σημαίνει ότι το κάθε ζεύγος από τις ανωτέρω δραστηριότητες θα &quot;διαχωρίζεται&quot; από τουλάχιστον μία ημέρα.
+
+Παράδειγμα: 3 δραστηριότητες και Ν=2. Με τον περιορισμό αυτό (και σε εβδομάδα 5 ημερών) οι δραστηριότητες θα τοποθετηθούν την Δευτέρα, την Τετάρτη και την Παρασκευή (μόνον μία δραστηριότητα σε καθεμία από τις ημέρες αυτές).
+
+Παράδειγμα2: 2 δραστηριότητες, Ν=3. Με τον περιορισμό αυτό (και σε εβδομάδα 5 ημερών), οι δραστηριότητες μπορούν να τοποθετηθούν είτε Δευτέρα και Πέμπτη, είτε Δευτέρα και Παρασκευή, είτε Τρίτη και Παρασκευή (μόνον μία δραστηριότητα σε καθεμία από τις ημέρες αυτές).
+
+Συνιστάται το ποσοστό βαρύτητας να έχει τιμή από 95.0% έως 100.0%. Η βέλτιστη τιμή ενδεχομένως να είναι το 99.75% ή κάποια τιμή λίγο μικρότερη από το 100.0%, διότι μπορεί να υπάρχουν περιορισμοί των οποίων η &quot;αυστηρή&quot; τήρηση να είναι αδύνατη, και έτσι το FET να καταφέρει να τους &quot;αποφύγει&quot;. Η τιμή του ποσοστού βαρύτητας είναι κάτι το υποκειμενικό.
+
+Μπορείτε επίσης να καθορίσετε &quot;αν την ίδια ημέρα - διαδοχικές&quot;. Παρακαλώ να είστε προσεκτικοί με την επιλογή αυτή, ακόμη και αν ο περιορισμός &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; έχει ποσοστό βαρύτητας 0%, διότι όταν επιλέγετε &quot;αν την ίδια ημέρα - διαδοχικές&quot;, ο συγκεκριμένος περιορισμός (για τις διαδοχικές δραστηριότητες) πρέπει οπωσδήποτε να τηρηθεί. Έτσι, δεν θα μπορείτε να επιλύσετε το ωρολόγιο πρόγραμμά σας με δύο δραστηριότητες να πραγματοποιούνται την ίδια ημέρα και ταυτόχρονα να &quot;διαχωρίζονται&quot; είτε από διάλειμμα, είτε εξαιτίας περιορισμού &quot;μη διαθέσιμοι χρόνοι&quot; (δηλαδή από κάποια περίοδο που δεν είναι διαθέσιμη για τοποθέτηση δραστηριοτήτων), είτε ενδεχομένως από άλλες δραστηριότητες, ακόμη και αν ο ανωτέρω περιορισμός (&quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;) έχει ποσοστό βαρύτητας 0%, και για την περίπτωση που έχετε επιλέξει &quot;αν την ίδια ημέρα - διαδοχικές&quot;.
+
+Επί του παρόντος, το FET μπορεί να τοποθετήσει 2 δραστηριότητες κατά μέγιστο την ίδια ημέρα αν έχετε ενεργοποιήσει την επιλογή &quot;αν την ίδια ημέρα - διαδοχικές&quot;. Το FET δεν μπορεί να τοποθετήσει 3 ή περισσότερες δραστηριότητες την ίδια ημέρα, αν η επιλογή &quot;αν την ίδια ημέρα - διαδοχικές&quot; είναι ενεργοποιημένη.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="236"/>
@@ -37420,14 +37509,27 @@ Activities 1 and 2, min days 1, consecutive if same day=true, weight=100%-5%*5%=
 You may however add 2 constraints for the same activities if you want 95% with min 2 days and 100% with min 1 day. These are not duplicates.
 
 You might get an impossible timetable with duplicates, so beware.</source>
-        <translation type="unfinished"></translation>
+        <translation>Σημαντικό: παρακαλώ να μην κάνετε εισαγωγή διπλών εγγραφών οι οποίες δεν είναι απαραίτητες. Αν για παράδειγμα εισαγάγετε 2 περιορισμούς:
+
+1. Δραστηριότητες 1 και 2, &quot;ελάχιστες ημέρες&quot; = 1, &quot;αν την ίδια ημέρα - διαδοχικές&quot; = αληθής, &quot;ποσοστό βαρύτητας&quot; = 95%
+2. Δραστηριότητες 1 και 2, &quot;ελάχιστες ημέρες&quot; = 1, &quot;αν την ίδια ημέρα - διαδοχικές&quot; = ψευδής, &quot;ποσοστό βαρύτητας&quot; = 95%
+(αυτοί είναι διαφορετικοί περιορισμοί),
+το αποτέλεσμα αυτών των 2 περιορισμών θα είναι ο περιορισμός:
+
+Δραστηριότητες 1 και 2, &quot;ελάχιστες ημέρες&quot; = 1, &quot;αν την ίδια ημέρα - διαδοχικές&quot; = αληθής, &quot;ποσοστό βαρύτητας&quot; = 100%-5%*5%=99.75%, δηλαδή πολύ υψηλό. Αυτό συμβαίνει εξαιτίας του αλγορίθμου του FET.
+
+Μπορείτε όμως να προσθέσετε 2 περιορισμούς για τις ίδιες δραστηριότητες, αν θέλετε ποσοστό βαρύτητας 95% για &quot;ελάχιστες ημέρες&quot; = 2 και 100% για &quot;ελάχιστες ημέρες&quot; = 1. Οι περιορισμοί αυτοί δεν αποτελούν διπλή εγγραφή.
+
+Εξαιτίας των διπλών εγγραφών η κατάρτιση του ωρολογίου προγράμματος μπορεί να καταστεί αδύνατη, οπότε να είστε προσεκτικοί.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="263"/>
         <source>Q: Is it possible to make a timetable where the students learn in two shifts? (for instance, the lowest forms in the morning and the highest forms in the afternoon)?
 
 A: Yes, you have to add more constraint students set not available accordingly (for the lowest forms not available Mon, Tue, Wed, Th, Fr each from middle hour to last hour and for highest forms from first hour to middle hour). The constraints no gaps and early work correctly with these not available: if not available, a students set will not have gaps or early broken for the period of non-availability.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Είναι δυνατόν να καταρτισθεί ωρολόγιο πρόγραμμα στο οποίο οι μαθητές έχουν μαθήματα σε δύο βάρδιες; (για παράδειγμα, οι μικρές τάξεις το πρωί και οι μεγάλες τάξεις το απόγευμα);
+
+Α: Ναι. Πρέπει όμως να προσθέσετε περισσότερους περιορισμούς &quot;ομάδα μαθητών - μη διαθέσιμοι χρόνοι&quot; (για τις μικρές τάξεις &quot;μη διαθέσιμοι χρόνοι&quot; για όλες τις ημέρες της εβδομάδας από τη μεσαία ώρα μέχρι την τελευταία και για τις μεγάλες τάξεις από την πρώτη ώρα μέχρι την μεσαία). Οι περιορισμοί &quot;μέγιστα κενά&quot; = 0 και &quot;νωρίς&quot; λειτουργούν σωστά με τους ανωτέρω &quot;μη διαθέσιμους χρόνους&quot;: με τους &quot;μη διαθέσιμους χρόνους&quot;, οι περιορισμοί &quot;μέγιστα κενά&quot; = 0 και &quot;νωρίς&quot; δεν θα παραβιάζονται για το διάστημα των &quot;μη διαθέσιμων χρόνων&quot;.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="341"/>
@@ -37436,7 +37538,11 @@ A: Yes, you have to add more constraint students set not available accordingly (
 A: A bit difficult. You have to choose a day for this 0 hour. Then add breaks or not available to prevent other activities in other days at hour 0, then add students set not available to prevent other students sets from having hours at this hour 0. Or variants of this.
 
 Zsolt Udvari used another trick: considered the last hour to be hour 0. But this is not always applicable.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Είναι δυνατόν να δουλέψει κανείς με την &quot;ώρα 0&quot;;
+
+Α: Είναι λίγο δύσκολο. Πρέπει να διαλέξετε μία ημέρα για την &quot;ώρα 0&quot;. Στη συνέχεια να προσθέσετε περιορισμούς διαλειμμάτων ή &quot;μη διαθέσιμων χρόνων&quot; για να εξασφαλίσετε ότι δεν θα τοποθετηθούν άλλες δραστηριότητες σε άλλες ημέρες στην &quot;ώρα 0&quot;, στη συνέχεια να προσθέσετε περιορισμούς &quot;ομάδα μαθητών - μη διαθέσιμοι χρόνοι&quot; για να εξασφαλίσετε ότι δεν θα τοποθετηθούν δραστηριότητες άλλων ομάδων μαθητών στην &quot;ώρα 0&quot;. Ή παραλλαγές της ανωτέρω λύσης.
+
+Ο Zsolt Udvari χρησιμοποίησε ένα άλλο τέχνασμα: θεώρησε ότι η &quot;ώρα 0&quot; είναι η τελευταία ώρα. Αλλά αυτό δεν είναι πάντοτε εφαρμόσιμο.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="351"/>
@@ -37452,7 +37558,18 @@ weight = 99% means: In average FET retries 100 times to place an activity withou
 weight = 99.99% means: In average FET retries 10000 times to place an activity without a conflict. If it isn&apos;t able to place the activity without a conflict after average 10000 times it keeps the conflict and tries to place the next activity.
 
 Also, activities might get unallocated, and the cycle would be opened.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Πώς το FET λαμβάνει υπόψη του και αξιοποιεί τα ποσοστά βαρύτητας; Τι σημαίνουν;
+
+Α: Τα ποσοστά βαρύτητας κάτω του 100.0% είναι υποκειμενικά, διότι το FET μπορεί να τα παραβλέψει, εάν αυτό είναι απαραίτητο.
+
+Ο Volker Dirr προσπάθησε να εκφράσει πώς το FET λαμβάνει υπόψη του και αξιοποιεί τα ποσοστά βαρύτητας με τιμές μικρότερες του 100.0%:
+
+ποσοστό βαρύτητας = 50% σημαίνει: κατά μέσο όρο το FET ξαναπροσπαθεί δύο φορές να τοποθετήσει την δραστηριότητα χωρίς να υπάρξει σύγκρουση. Αν δεν καταφέρει να τοποθετήσει την δραστηριότητα χωρίς να υπάρξει σύγκρουση μετά από κατά μέσο όρο 2 φορές, κρατά (επιτρέπει) την σύγκρουση και προσπαθεί να τοποθετήσει την επόμενη δραστηριότητα.
+ποσοστό βαρύτητας = 75% σημαίνει: κατά μέσο όρο το FET ξαναπροσπαθεί τέσσερις φορές να τοποθετήσει την δραστηριότητα χωρίς να υπάρξει σύγκρουση. Αν δεν καταφέρει να τοποθετήσει την δραστηριότητα χωρίς να υπάρξει σύγκρουση μετά από κατά μέσο όρο 4 φορές, κρατά (επιτρέπει) την σύγκρουση και προσπαθεί να τοποθετήσει την επόμενη δραστηριότητα.
+ποσοστό βαρύτητας = 99% σημαίνει: κατά μέσο όρο το FET ξαναπροσπαθεί 100 φορές να τοποθετήσει την δραστηριότητα χωρίς να υπάρξει σύγκρουση. Αν δεν καταφέρει να τοποθετήσει την δραστηριότητα χωρίς να υπάρξει σύγκρουση μετά από κατά μέσο όρο 100 φορές, κρατά (επιτρέπει) την σύγκρουση και προσπαθεί να τοποθετήσει την επόμενη δραστηριότητα.
+ποσοστό βαρύτητας = 99.99% σημαίνει: κατά μέσο όρο το FET ξαναπροσπαθεί 10000 φορές να τοποθετήσει την δραστηριότητα χωρίς να υπάρξει σύγκρουση. Αν δεν καταφέρει να τοποθετήσει την δραστηριότητα χωρίς να υπάρξει σύγκρουση μετά από κατά μέσο όρο 10000 φορές, κρατά (επιτρέπει) την σύγκρουση και προσπαθεί να τοποθετήσει την επόμενη δραστηριότητα.
+
+Επίσης, το FET ενδεχομένως να μην καταφέρει να τοποθετήσει κάποιες δραστηριότητες, και έτσι να ανοίξει ένας &quot;κύκλος&quot;.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="402"/>
@@ -37461,14 +37578,20 @@ Also, activities might get unallocated, and the cycle would be opened.</source>
 A: The statistics are important to check your data before generating.
 
 When seeing the students statistics, probably the most useful are for subgroups. Each subgroup should have a reasonable amount of hours, and if you are having subgroups with too little hours, like 2 per week, probably you misunderstood FET notation. Each subgroup is independent of the others and should have a number of hours per week close to the average of all subgroups. Do not input empty subgroups with only a few activities.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Βοήθεια για το μενού &quot;Στατιστικά&quot;
+
+Α: Τα στατιστικά είναι σημαντικά για να ελέγξετε τα δεδομένα σας, πριν ξεκινήσετε την δημιουργία (κατάρτιση) του ωρολογίου προγράμματος.
+
+Στα στατιστικά των μαθητών, οι σημαντικότερες -πιθανώς- πληροφορίες σχετίζονται με τα υποτμήματα. Το κάθε υποτμήμα θα πρέπει να έχει έναν εύλογο αριθμό ωρών, και εάν έχετε υποτμήματα με πολύ λίγες ώρες, π.χ. 2 ώρες ανά εβδομάδα, ενδεχομένως αυτό να σημαίνει ότι δεν έχετε καταλάβει καλά την &quot;σημειογραφία&quot; του FET. Το κάθε υποτμήμα είναι ανεξάρτητο από τα άλλα υποτμήματα και θα πρέπει να έχει τον αριθμό ωρών του ανά εβδομάδα, κοντά στον μέσο όρο όλων των υποτμημάτων. Παρακαλώ να μην εισαγάγετε υποτμήματα τα οποία έχουν λίγες μόνον δραστηριότητες.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="413"/>
         <source>Q: What if I enter accidentally duplicate constraints?
 
 A: It is not a good practice to allow unnecessary duplicate constraints. For min days between activities and other constraints, the combined weight becomes very high. For instance, if you have 2 constraints with weight 95%, the outcome is a constraint with weight 100%-5%*5%=99.75%, very high. You might get an impossible timetable with duplicates, so beware. For constraint activity(ies) preferred (starting time(s) or time slots) the chosen weight is the largest value, so you can use more constraints of this type for same activities.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Τι θα συμβεί αν εκ παραδρομής εισαγάγω διπλές εγγραφές περιορισμών οι οποίες δεν είναι απαραίτητες;
+
+Α: Δεν είναι καλή πρακτική να εισαγάγετε διπλές εγγραφές περιορισμών οι οποίες δεν είναι απαραίτητες. Για τους περιορισμούς &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; καθώς και άλλους, το ποσοστό βαρύτητας της &quot;συνύπαρξης&quot; των περιορισμών γίνεται πολύ υψηλό. Για παράδειγμα, αν έχετε δύο περιορισμούς με ποσοστό βαρύτητας 95%, το αποτέλεσμα είναι ένας περιορισμός με ποσοστό βαρύτητας 100%-5%*5%=99.75%, το οποίο είναι πολύ υψηλό (δηλαδή ο συγκεκριμένος περιορισμός είναι πολύ ισχυρός). Ενδεχομένως έτσι (με τις διπλές εγγραφές περιορισμών) η επίλυση του ωρολογίου προγράμματος να καταστεί αδύνατη, οπότε να είστε προσεκτικοί. Για τους περιορισμούς &quot;δραστηριότητα (δραστηριότητες) - προτιμητέοι χρόνοι έναρξης&quot; και &quot;δραστηριότητα (δραστηριότητες) - προτιμητέες περίοδοι&quot; επιλέγεται ως ποσοστό βαρύτητας η μεγαλύτερη τιμή, οπότε μπορείτε να χρησιμοποιήσετε περισσότερους περιορισμούς αυτού του τύπου για τις ίδιες δραστηριότητες.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="424"/>
@@ -37508,7 +37631,7 @@ groups:
 contains subgroups:
 
     1_a_x_ENG_FRE_GER,
-    t1_a_x_!ENG_FRE_GER,
+    1_a_x_!ENG_FRE_GER,
     1_a_x_ENG_!FRE_GER,
     1_a_x_!ENG_!FRE_GER,
     1_a_x_ENG_FRE_!GER,
@@ -37556,7 +37679,87 @@ contains groups 1_a, 1_b
 You will have the possibility to add any activity, for a year or group
 
 Currently, the interface for students is difficult to use. I am thinking of that. Maybe it is more simple for you if you try to work on the xml .fet file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Περισσότερες πληροφορίες για την (δενδρική) δομή των μαθητών.
+
+Α: Η (δενδρική) δομή των μαθητών είναι πολύ ευέλικτη και κατάλληλη για την δομή οποιουδήποτε ιδρύματος (σχολείου, πανεπιστημίου, φροντιστηρίου, κ.ο.κ.).
+
+Η κύρια &quot;ιδέα&quot; είναι ότι τα υποτμήματα είναι ανεξάρτητα. Το κάθε υποτμήμα θα πρέπει να είναι η μικρότερη μονάδα διδασκαλίας ή ακόμη και ένας μαθητής μόνος του.
+
+Τα τμήματα μπορούν να περιέχουν οποιαδήποτε υποτμήματα. Τα τμήματα μπορούν να αλληλεπικαλύπτονται.
+
+Τα έτη μπορούν να περιέχουν οποιαδήποτε τμήματα.
+
+Δεν χρειάζεται να ακολουθήσετε επακριβώς την &quot;ιεραρχία&quot; (δενδρική δομή) του ιδρύματός σας. Μπορείτε να &quot;αποτυπώσετε&quot; την δομή του ιδρύματός σας με τέτοιον τρόπο ώστε η διαχείρισή της στο FET να είναι καλύτερη και αποδοτικότερη.
+
+Παράδειγμα: έχετε μία σχολή με έτη (1, 2, ..., 5), τομείς (1_α, 1_β, ...) και υποτομείς (1_α_χ, 1_α_ψ, ...). Ο κάθε υποτομέας έχει ως ξένες γλώσσες επιλογής τα Αγγλικά, Γαλλικά και Γερμανικά (ας πούμε ότι μία ομάδα μαθητών που παρακολουθεί Αγγλικά είναι η ΑΓΓΛ, ενώ μία ομάδα που δεν παρακολουθεί Αγγλικά είναι η !ΑΓΓΛ). Τότε, η ορθή (δενδρική) δομή είναι:
+
+υποτμήματα:
+
+1_α_χ_ΑΓΓΛ_ΓΑΛΛ_ΓΕΡΜ,
+1_α_χ_!ΑΓΓΛ_ΓΑΛΛ_ΓΕΡΜ,
+1_α_χ_ΑΓΓΛ_!ΓΑΛΛ_ΓΕΡΜ,
+1_α_χ_!ΑΓΓΛ_!ΓΑΛΛ_ΓΕΡΜ,
+1_α_χ_ΑΓΓΛ_ΓΑΛΛ_!ΓΕΡΜ,
+1_α_χ_!ΑΓΓΛ_ΓΑΛΛ_!ΓΕΡΜ,
+1_α_χ_ΑΓΓΛ_!ΓΑΛΛ_!ΓΕΡΜ,
+1_α_χ_!ΑΓΓΛ_!ΓΑΛΛ_!ΓΕΡΜ,
+
+1_α_ψ_ΑΓΓΛ_ΓΑΛΛ_ΓΕΡΜ,
+... το ίδιο για τα 1_α_ψ (8 υποτμήματα)
+
+(μπορεί να θεωρήσετε σκόπιμο να μην προσθέσετε κενά υποτμήματα, για παράδειγμα αν ο κάθε μαθητής έχει μία μόνον γλώσσα, τότε μπορείτε να κρατήσετε μόνον 3 υποτμήματα από τα συνολικά 8)
+
+τμήματα:
+
+1_α
+περιέχει τα υποτμήματα:
+
+    1_α_χ_ΑΓΓΛ_ΓΑΛΛ_ΓΕΡΜ,
+....1_α_χ_!ΑΓΓΛ_ΓΑΛΛ_ΓΕΡΜ,
+....1_α_χ_ΑΓΓΛ_!ΓΑΛΛ_ΓΕΡΜ,
+....1_α_χ_!ΑΓΓΛ_!ΓΑΛΛ_ΓΕΡΜ,
+....1_α_χ_ΑΓΓΛ_ΓΑΛΛ_!ΓΕΡΜ,
+....1_α_χ_!ΑΓΓΛ_ΓΑΛΛ_!ΓΕΡΜ,
+....1_α_χ_ΑΓΓΛ_!ΓΑΛΛ_!ΓΕΡΜ,
+....1_α_χ_!ΑΓΓΛ_!ΓΑΛΛ_!ΓΕΡΜ,
+....1_α_ψ_ΑΓΓΛ_ΓΑΛΛ_ΓΕΡΜ,
+... το ίδιο για τα 1_α_ψ (8 υποτμήματα)
+
+1_α_χ
+
+περιέχει τα υποτμήματα:
+
+    1_α_χ_ΑΓΓΛ_ΓΑΛΛ_ΓΕΡΜ,
+....1_α_χ_!ΑΓΓΛ_ΓΑΛΛ_ΓΕΡΜ,
+....1_α_χ_ΑΓΓΛ_!ΓΑΛΛ_ΓΕΡΜ,
+....1_α_χ_!ΑΓΓΛ_!ΓΑΛΛ_ΓΕΡΜ,
+....1_α_χ_ΑΓΓΛ_ΓΑΛΛ_!ΓΕΡΜ,
+....1_α_χ_!ΑΓΓΛ_ΓΑΛΛ_!ΓΕΡΜ,
+....1_α_χ_ΑΓΓΛ_!ΓΑΛΛ_!ΓΕΡΜ,
+....1_α_χ_!ΑΓΓΛ_!ΓΑΛΛ_!ΓΕΡΜ,
+
+1_α_ψ
+περιέχει τα υποτμήματα:
+
+....1_α_ψ_ΑΓΓΛ_ΓΑΛΛ_ΓΕΡΜ,
+... (8 υποτμήματα)
+
+1_α_χ_ΑΓΓΛ
+περιέχει τα υποτμήματα:
+
+    1_α_χ_ΑΓΓΛ_ΓΑΛΛ_ΓΕΡΜ,
+....1_α_χ_ΑΓΓΛ_!ΓΑΛΛ_ΓΕΡΜ,
+....1_α_χ_ΑΓΓΛ_ΓΑΛΛ_!ΓΕΡΜ,
+....1_α_χ_ΑΓΓΛ_!ΓΑΛΛ_!ΓΕΡΜ,
+
+έτη:
+
+1
+περιέχει τα τμήματα 1_α, 1_β
+
+Θα έχετε την δυνατότητα να προσθέστε οποιαδήποτε δραστηριότητα, για έτος ή τμήμα.
+
+Επί του παρόντος, η διεπαφή του FET σε ό,τι αφορά την (δενδρική) δομή των μαθητών είναι δύσχρηστη. Για το θέμα αυτό σκέφτομαι για κάποιες δυνατότητες βελτίωσης. Ενδεχομένως, να είναι απλούστερο και πιο ευέλικτο να δουλέψετε απευθείας (με κειμενογράφο) τροποποιώντας χειροκίνητα το αρχείο .fet (xml).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="492"/>
@@ -37571,7 +37774,50 @@ The best way to add the activities would be:
 1. If you add &apos;force consecutive if same day&apos;, then couple extra activities in pairs to obtain a number of activities equal to the number of days per week. Example: 7 activities with duration 1 in a 5 days week, then transform into 5 activities with durations: 2,2,1,1,1 and add a single container activity with these 5 components (possibly raising the weight of added constraint min days between activities up to 100%)
 
 2. If you don&apos;t add &apos;force consecutive if same day&apos;, then add a larger activity split into a number of activities equal with the number of days per week and the remaining components into other larger split activity. For example, suppose you need to add 7 activities with duration 1 in a 5 days week. Add 2 larger container activities, first one split into 5 activities with duration 1 and second one split into 2 activities with duration 1 (possibly raising the weight of added constraints min days between activities for each of the 2 containers up to 100%)</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Παράδειγμα: Έχω 7 ώρες Μαθηματικών σε εβδομάδα 5 ημερών (το 7 είναι μεγαλύτερο από το 5). Πώς μπορώ να προσθέσω αυτήν την δραστηριότητα-κοντέινερ σωστά;
+
+Πλήρης ερώτηση: Έχω μία δραστηριότητα-κοντέινερ επιμερισμένη σε περισσότερες (υπο)δραστηριότητες σε σχέση με τον αριθμό των ημερών της εβδομάδας. Πώς θα πρέπει να προσθέσω τον περιορισμό &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;;
+
+Α: Αν προσθέσετε απευθείας μία δραστηριότητα-κοντέινερ επιμερισμένη σε περισσότερες (υπο)δραστηριότητες σε σχέση με τον αριθμό των ημερών της εβδομάδας και επιπλέον προσθέσετε περιορισμό &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;, θα ήταν πολύ κακή πρακτική, εξαιτίας του τρόπου με τον οποίο καταρτίζει το ωρολόγιο πρόγραμμα ο αλγόριθμος επίλυσης του FET (και ως εκ τούτου προξενείται αύξηση του χρόνου επίλυσης και η επίλυση καθίσταται δυσκολότερη).
+
+Ο βέλτιστος τρόπος για να προσθέσετε τις δραστηριότητες θα ήταν ο εξής:
+
+1. Αν προσθέσετε &quot;αν την ίδια ημέρα - οπωσδήποτε διαδοχικές&quot;, τότε δημιουργήστε ζεύγη με τις επιπλέον δραστηριότητες ώστε να λάβετε αριθμό (υπο)δραστηριοτήτων ίσο με τον αριθμό των ημερών ανά εβδομάδα. Παράδειγμα: 7 (υπο)δραστηριότητες με διάρκεια 1 (ώρα) η καθεμία σε εβδομάδα 5 ημερών. Μετασχηματίστε τες σε 5 (υπο)δραστηριότητες με διάρκειες 2, 2 ,1, 1, 1 ωρών αντίστοιχα και προσθέστε μία δραστηριότητα-κοντέινερ με τις ανωτέρω (υπο)δραστηριότητες (πιθανώς αυξάνοντας και το ποσοστό βαρύτητας του περιορισμού &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; μέχρι και το 100%)
+
+2. Αν δεν προσθέσετε &quot;αν την ίδια ημέρα - οπωσδήποτε διαδοχικές&quot;, τότε προσθέστε μία δραστηριότητα-κοντέινερ επιμερισμένη σε αριθμό (υπο)δραστηριοτήτων ίσο με τον αριθμό των ημερών της εβδομάδας και μία ακόμη δραστηριότητα-κοντέινερ με τις υπόλοιπες (υπο)δραστηριότητες. Για παράδειγμα, υποθέστε ότι πρέπει να προσθέσετε μία δραστηριότητα-κοντέινερ με 7 (υπο)δραστηριότητες, διάρκειας 1 (ώρας) η καθεμία σε εβδομάδα 5 ημερών. Προσθέστε 2 δραστηριότητες-κοντέινερ, με την πρώτη δραστηριότητα-κοντέινερ να είναι επιμερισμένη σε 5 (υπο)δραστηριότητες διάρκειας 1 (ώρας) η καθεμία και την δεύτερη να είναι επιμερισμένη σε 2 (υπο)δραστηριότητες διάρκειας 1 (ώρας) η καθεμία (πιθανώς αυξάνοντας και το ποσοστό βαρύτητας των περιορισμών &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; για την καθεμία από τις δραστηριότητες-κοντέινερ μέχρι και το 100%)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpfaqform.cpp" line="515"/>
+        <source>Q: What I need is a way to make the following constraint:
+
+If Activity1 comes first, then Activity2 can be consecutive. But, if Activity2 comes first, then Activity1 must have at least 1 period in between.
+
+For example, if the algorithm places Dance in 1st hour, then Wrestling can be placed in 2nd hour, but if Wrestling is placed in 1st hour, then Dance must be at least in 3rd hour, if not farther away.
+
+A simpler, but less useful solution could be a constraint that says:
+
+Activity1 and Activity2 will not be consecutive.
+
+A: I have a very good solution for you, but it is a bit complicated to add.
+
+Suppose you have activities A1 and A2. Add dummy A3, with duration 1, no teachers and no students. Add constraint two activities consecutive, A2 and A3 (A2 followed by A3). Add constraint activities not overlapping, A1 and A3.
+
+There is only a small problem: A2 cannot be put in the last period. To correct that: increase the number of hours with 1 and constrain all the real activities (without A3) to take place in the first periods. You can do that by adding an activity tag to A1 and A2 named Early and an activity tag to A3 named Any, and constraint activities preferred time slots for activity tag Early to be in the first n-1 slots of each day.</source>
+        <translation>Ε: Αυτό που χρειάζομαι είναι να &quot;δημιουργήσω&quot; τον παρακάτω περιορισμό:
+
+Αν η Δραστηριότητα 1 προηγείται στο ωρολόγιο σε σχέση με την Δραστηριότητα 2, η Δραστηριότητα 2 επιτρέπεται να είναι διαδοχική σε σχέση με την Δραστηριότητα 1. Αν όμως, η Δραστηριότητα 2 προηγείται στο ωρολόγιο σε σχέση με την Δραστηριότητα 1, ανάμεσα στις δύο Δραστηριότητες θα πρέπει να υπάρχει τουλάχιστον μία περίοδος.
+
+Για παράδειγμα, αν ο αλγόριθμος τοποθετήσει το μάθημα Χορού την 1η ώρα, τότε το μάθημα της Πάλης επιτρέπεται να τοποθετηθεί την 2η ώρα. Αν όμως, η Πάλη τοποθετηθεί την 1η ώρα, ο Χορός θα πρέπει να τοποθετηθεί το νωρίτερο την 3η ώρα, αν όχι αργότερα.
+
+Μία ευκολότερη, αλλά λιγότερο χρήσιμη λύση θα μπορούσε να είναι ένας περιορισμός του τύπου:
+
+Δραστηριότητα 1 και Δραστηριότητα 2 - δεν θα είναι διαδοχικές.
+
+Α: Έχω για σας μία πολύ καλή λύση, αλλά είναι κάπως περίπλοκο να την προσθέσω.
+
+Έστω ότι έχετε τις δραστηριότητες Δ1 και Δ2. Προσθέστε μία ψευδο-δραστηριότητα Δ3, με διάρκεια 1 (ώρα), χωρίς εκπαιδευτικό, χωρίς μαθητές. Προσθέστε τον περιορισμό &quot;δύο δραστηριότητες - διαδοχικές&quot;, για τις Δ2 και Δ3 (δηλαδή η Δ3 να &quot;διαδέχεται&quot; την Δ2). Προσθέστε τον περιορισμό &quot;δραστηριότητες - δεν επικαλύπτονται&quot;, για τις δραστηριότητες Δ1 και Δ3.
+
+Υπάρχει μόνον ένα μικρό πρόβλημα: Η Δ2 δεν μπορεί να τοποθετηθεί την τελευταία περίοδο. Για να το διορθώσετε αυτό: αυξήστε τον αριθμό των ωρών (ανά ημέρα) κατά 1 και περιορίστε τις πραγματικές δραστηριότητες (χωρίς την Δ3), έτσι ώστε να πραγματοποιούνται τις πρώτες ώρες. Αυτό μπορείτε να το πετύχετε προσθέτοντας μία ετικέτα δραστηριότητας στις Δ1 και Δ2 με το όνομα &quot;Νωρίς&quot; και μία ετικέτα δραστηριότητας στην Δ3 με το όνομα &quot;Οποιαδήποτε&quot;, και προσθέστε τον περιορισμό &quot;δραστηριότητες - προτιμητέες περίοδοι&quot; για την ετικέτα δραστηριότητας &quot;Νωρίς&quot; με προτιμητέες τις πρώτες (n-1) περιόδους της κάθε ημέρας.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="544"/>
@@ -37580,21 +37826,42 @@ The best way to add the activities would be:
 A: I had many users wanting to put a gap between activities of same teachers or between activities with same teacher and subject, if they are on the same day. This constraint does that. If you want for instance to make teacher John to have at least one gap between all his activities, select filter &apos;John&apos; and add all his activities to a constraint of this type. If you want to make teacher John to have at least one gap between all his Math activities, select filter &apos;John&apos; and &apos;Math&apos; and add all these activities to a constraint of this type.
 
 Please take care that the selected activities are not forced consecutive by constraint two activities consecutive or by constraint min days between activities which have consecutive if same day selected.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Τι σημαίνει ο περιορισμός &quot;ελάχιστα κενά (ώρες) ανάμεσα σε σύνολο δραστηριοτήτων&quot;;
+
+Α: Υπήρχαν πολλοί χρήστες που ήθελαν να μεσολαβεί ένα κενό ανάμεσα σε δραστηριότητες του ίδιου εκπαιδευτικού ή ανάμεσα στις δραστηριότητες του ίδιου εκπαιδευτικού με το ίδιο αντικείμενο, όταν οι δραστηριότητες αυτές πραγματοποιούνται την ίδια ημέρα. Αυτό ακριβώς κάνει ο συγκεκριμένος περιορισμός. Αν θέλετε για παράδειγμα να πετύχετε ο εκπαιδευτικός Γιάννης να έχει τουλάχιστον ένα κενό ανάμεσα σε όλες τις δραστηριότητές του, επιλέξτε από το διαθέσιμο φίλτρο: &quot;Γιάννης&quot; και προσθέστε όλες τις δραστηριότητές του σε έναν περιορισμό αυτού του τύπου. Αν θέλετε ο εκπαιδευτικός Γιάννης να έχει τουλάχιστον ένα κενό ανάμεσα στις δραστηριότητές του &quot;Μαθηματικά&quot;, επιλέξτε στο φίλτρο: &quot;Γιάννης&quot; και &quot;Μαθηματικά&quot; και προσθέστε όλες αυτές τις δραστηριότητες σε έναν περιορισμό αυτού του τύπου.
+
+Παρακαλώ να μεριμνήσετε έτσι ώστε για τις επιλεγμένες δραστηριότητες να μην υπάρχουν περιορισμοί &quot;αν την ίδια ημέρα - οπωσδήποτε διαδοχικές&quot; ή περιορισμοί &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; με ενεργοποιημένη την επιλογή &quot;αν την ίδια ημέρα - διαδοχικές&quot;.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="583"/>
         <source>Q: Help on constraints teacher(s) or students (set) hourly interval max days per week
 
 A: This is a constraint suggested by users, to allow you to specify an hourly interval for students or teachers, and to say that in this interval they must work at most max days per week. This is useful if for instance you want teachers not to have more than 2 days per week activities in the last 2 hours of the day.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Βοήθεια για τους περιορισμούς &quot;εκπαιδευτικός (ή εκπαιδευτικοί) + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; και &quot;μαθητές (ή ομάδα μαθητών) + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot;
+
+Α: Ο συγκεκριμένος περιορισμός ζητήθηκε από μερικούς χρήστες, ώστε να μπορούν να καθορίζουν κάποιο διάστημα ωρών για τους μαθητές ή τους εκπαιδευτικούς, καθώς και τις μέγιστες ημέρες ανά εβδομάδα για τις οποίες θα εργάζονται οι μαθητές (ή οι εκπαιδευτικοί) στο ανωτέρω διάστημα ωρών. Αυτό είναι χρήσιμο αν -για παράδειγμα- θέλετε οι εκπαιδευτικοί να μην έχουν δραστηριότητες για περισσότερες από 2 ημέρες ανά εβδομάδα στις 2 τελευταίες ώρες της ημέρας.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="592"/>
         <source>Q: Help on constraint activities end students day (or activity ends students day).
 
 A: If you have activities which you want to put in the last slots of a day (like say the meetings with the class master), please use the new constraint a set of activities end students day (or singular activity ends students day). This constraint can have weight only 100%, because of the way the algorithm works.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Βοήθεια για τον περιορισμό &quot;δραστηριότητες - &apos;κλείνουν&apos; ημέρα μαθητών&quot; (ή &quot;δραστηριότητα - &apos;κλείνει&apos; ημέρα μαθητών&quot;).
+
+Α: Αν έχετε δραστηριότητες τις οποίες θέλετε να τοποθετήσετε στις τελευταίες περιόδους κάποιας ημέρας (όπως για παράδειγμα τις συναντήσεις με τον υπεύθυνο της τάξης), παρακαλώ χρησιμοποιήστε τον νέο περιορισμό &quot;σύνολο δραστηριοτήτων - &apos;κλείνει&apos; ημέρα μαθητών&quot; (ή &quot;δραστηριότητα - &apos;κλείνει&apos; ημέρα μαθητών&quot;). Το ποσοστό βαρύτητας του περιορισμού αυτού μπορεί να έχει μόνον την τιμή 100%, εξαιτίας του τρόπου με τον οποίο &quot;δουλεύει&quot; ο αλγόριθμος.</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpfaqform.cpp" line="601"/>
+        <source>Q: At our school there are a lot of teachers which work only a few hours a week. Of course it is really nasty to drive for one hour to the school. So we set the constraint that every teacher should work at least 2 hours a day. Unfortunately we have this year a teacher which only works 1h a week. As a result of this FET doesn&apos;t start to create a timetable. Any suggestions how to fix the problem without defining a constraint for every singular teacher?
+
+A: I have a nice trick: add a dummy activity, 1 hour duration, with only this teacher (no students sets, any subject), additional to the real activity.
+
+This trick just passed through my mind as I was trying to write you that you have to do it the hard way (add constraints for each teacher)</source>
+        <translation>Ε: Στο σχολείο μας πολλοί εκπαιδευτικοί εργάζονται μόνον λίγες ώρες ανά εβδομάδα. Φυσικά, είναι πραγματικά απαράδεκτο να οδηγούν για να κάνουν μία ώρα μάθημα στο σχολείο. Έτσι, εισαγάγαμε τον περιορισμό ότι ο κάθε εκπαιδευτικός θα πρέπει να εργάζεται τουλάχιστον 2 ώρες ανά ημέρα. Δυστυχώς, φέτος έχουμε κάποιον εκπαιδευτικό ο οποίος εργάζεται μόνον 1 ώρα ανά εβδομάδα. Το αποτέλεσμα είναι ότι το FET δεν ξεκινά καν την κατάρτιση (επίλυση) του ωρολογίου προγράμματος. Υπάρχει κάποιος τρόπος για να &quot;θεραπευθεί&quot; το πρόβλημα αυτό, χωρίς να χρειάζεται να καθορίζεται ένας νέος περιορισμός για τον καθέναν από τους εκπαιδευτικούς ανεξάρτητα;
+
+Α: Υπάρχει ένα ωραίο τέχνασμα: προσθέστε μία ψευδο-δραστηριότητα, διάρκειας 1 ώρας, μόνον με τον συγκεκριμένο εκπαιδευτικό (με οποιοδήποτε αντικείμενο και χωρίς ομάδα μαθητών), επιπρόσθετα με την πραγματική δραστηριότητα (του εκπαιδευτικού αυτού).
+
+Το τέχνασμα αυτό μου &quot;πέρασε&quot; από το μυαλό ενόσω ετοιμαζόμουν να σας γράψω ότι θα πρέπει να λύσετε το πρόβλημα αυτό με τον δύσκολο τρόπο (δηλαδή προσθέτοντας για τον καθέναν από τους εκπαιδευτικούς έναν ανεξάρτητο περιορισμό)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="741"/>
@@ -37604,45 +37871,51 @@ A: If you have activities which you want to put in the last slots of a day (like
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="749"/>
         <source>For instance even when two consecutive activities are placed at one day (the same group and the same teacher) sometimes they are placed at different rooms what would force them to needless changing room. I guess that FET is focused on fulfilling constraints but not on optimizing timetable. Sometimes simple changing of two activities makes plan better both for students and teachers. I think that manually improving generated plan is faster than creating many many more constraints and repeating simulations. And this is the third hint.</source>
-        <translation type="unfinished"></translation>
+        <translation>Για παράδειγμα, ακόμη και όταν δύο διαδοχικές δραστηριότητες τοποθετούνται σε μία ημέρα (με την ίδια ομάδα μαθητών και τον ίδιο εκπαιδευτικό), κάποιες φορές τοποθετούνται σε διαφορετικές αίθουσες, κάτι το οποίο θα τους ανάγκαζε να κάνουν μία άσκοπη αλλαγή αίθουσας. Υποθέτω ότι το FET εστιάζει στην εκπλήρωση (τήρηση) περιορισμών, όχι όμως στην βελτιστοποίηση του ωρολογίου προγράμματος. Κάποιες φορές μία απλή αλλαγή σε δύο δραστηριότητες έχει ως αποτέλεσμα ένα καλύτερο ωρολόγιο πρόγραμμα τόσο για τους μαθητές όσο και για τους εκπαιδευτικούς. Νομίζω ότι η χειροκίνητη βελτίωση ενός ωρολογίου προγράμματος (το οποίο έχει καταρτιστεί από το FET) είναι πιο γρήγορη από την εισαγωγή πολλών περισσοτέρων περιορισμών και τις επαναλαμβανόμενες επιλύσεις ωρολογίου προγράμματος. Και αυτή είναι η τρίτη υπόδειξη.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="795"/>
         <source>This is an advanced question which probably will never appear in practice, you may skip it at first reading.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αυτή είναι μία προηγμένη (εξειδικευμένη) ερώτηση και η περίπτωση αυτή πιθανώς να μην εμφανιστεί ποτέ στην πράξη. Μπορείτε λοιπόν, στην αρχική ανάγνωση να την παραβλέψετε.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="613"/>
         <source>Q: What about the automatic search for updates? Should I enable it?
 
 A: It is recommended to enable automatic search for updates. I didn&apos;t set it as default because people might be annoyed if I release too fast new versions. But if you can cope with that, it is recommended to always have the latest version and enable searching for updates at startup.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Τι ισχύει αναφορικά με την αυτόματη αναζήτηση ενημερώσεων για το FET; Θα πρέπει να την ενεργοποιήσω;
+
+Α: Συνιστάται να ενεργοποιήσετε την αυτόματη αναζήτηση ενημερώσεων στο FET. Δεν το έχω ως προκαθορισμένη ρύθμιση, διότι κάποιοι χρήστες μπορεί να ενοχλούνται, στην περίπτωση που &quot;βγάζω&quot; νέες εκδόσεις σε πολύ σύντομο χρονικό διάστημα. Αλλά αν δεν σας ενοχλεί αυτό, συνιστάται να χρησιμοποιείτε πάντα την τελευταία έκδοση, καθώς και να ενεργοποιήσετε την αναζήτηση ενημερώσεων κατά την εκκίνηση του FET.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="281"/>
         <source>Q: Can I work with fortnightly activities like in older FET versions?
 
 A: You have to use some tricks. It would be difficult to consider fortnightly activities into the new FET algorithm (from 5.0.0 up). But I think you can apply this: for instance, I suppose that you would like the first week to have activity A1 (teacher T1, student S1) and A2 (T2, S2), and second week A3 (T1, S2) and A4 (T2, S1) (simultaneously). You could define a weekly activity A (T1, T2, S1, S2). If you need 2 rooms for A, then you can define dummy A&apos; (no teachers, no students) and constraint activities same starting time A and A&apos; and add rooms for A and A&apos; .</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Μπορώ να δουλέψω με δραστηριότητες 14ημέρου όπως σε τις παλιότερες εκδόσεις του FET;
+
+Α: Θα πρέπει να χρησιμοποιήσετε κάποια τεχνάσματα. Θα ήταν δύσκολο να ληφθεί υπόψη η περίπτωση των δραστηριοτήτων 14ημέρου στον νέο αλγόριθμο του FET (από την έκδοση 5.0.0 και μετά). Αλλά νομίζω πως μπορείτε να εφαρμόσετε το εξής: για παράδειγμα, θεωρώ ότι θα θέλατε την πρώτη εβδομάδα να έχετε την δραστηριότητα Δ1 (εκπαιδευτικός Ε1, ομάδα μαθητών Μ1) και Δ2 (Ε2, Μ2), και την δεύτερη εβδομάδα Δ3 (Ε1, Μ2) και Δ4 (Ε2, Μ1) (ταυτόχρονα). Μπορείτε να ορίσετε μία εβδομαδιαία δραστηριότητα Δ (Ε1, Ε2, Μ1, Μ2). Αν χρειάζεστε 2 αίθουσες για την δραστηριότητα Δ, μπορείτε να ορίσετε μία ψευδο-δραστηριότητα Δ&apos; (χωρίς εκπαιδευτικούς, χωρίς μαθητές), να προσθέσετε ένα περιορισμό &quot;δραστηριότητες - ίδιος χρόνος έναρξης&quot; για τις Δ και Δ&apos; και στη συνέχεια να προσθέσετε τις αίθουσες για τις Δ και Δ&apos;.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="332"/>
         <source>Q: I got an impossible to solve timetable!
 
 A: If you get an impossible timetable, maybe the constraints students (set) early are too difficult. Maybe you can allow more arrivals at second hour. Also teachers&apos; min hours daily might be too strong. Please also check the statistics to be correct. Remove other constraints until you get a possible timetable.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Η κατάρτιση (επίλυση) του ωρολογίου προγράμματος είναι αδύνατη!
+
+Α: Αν η κατάρτιση (επίλυση) του ωρολογίου προγράμματος είναι αδύνατη, πιθανώς να είναι υπερβολικά δύσκολη η τήρηση των περιορισμών &quot;μαθητές (ή ομάδα μαθητών) = νωρίς&quot;. Ενδεχομένως μπορείτε να επιτρέψετε περισσότερες αφίξεις την δεύτερη ώρα. Επιπρόσθετα, οι περιορισμοί &quot;εκπαιδευτικοί - ελάχιστες ώρες ημερησίως&quot; μπορεί να είναι υπερβολικά ισχυροί. Επίσης, παρακαλώ ελέγξτε τα στατιστικά. Διαγράψετε κάποιους άλλους περιορισμούς μέχρι να έχετε ένα επιλύσιμο ωρολόγιο πρόγραμμα.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="490"/>
         <source>Q-1-27-March-2008</source>
         <comment>Mnemonic name for a particular question in the FAQ</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ε-1 27 Μαρτίου 2008</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="513"/>
         <source>Q-1-6-June-2008</source>
         <comment>Mnemonic name for a particular question in the FAQ</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ε-1 6 Ιουνίου 2008</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="636"/>
@@ -37651,26 +37924,34 @@ A: If you get an impossible timetable, maybe the constraints students (set) earl
 Since I started working on our school&apos;s timetable I had a problem with a specific day and teacher. No matter what I tried in FET I couldn&apos;t reduce the in-school hours for this specific teacher and day down from 7 (7 hours is the full school day, so he had 6 teaching hours and 1 gap). It was too much (other teachers have 5 teaching hours max) but he didn&apos;t mind so we kept FET solution.Just a month ago this teacher had some major operation and couldn&apos;t teach so much hours in one day anymore. So I started again to experiment with the timetable and what was wrong. After a LOT of test and failures the idea hit me just as I was waking up to go to school; I hadn&apos;t enough teachers for early and late hours! I checked and it was true! Let me explain. We have 6 classes in total and every class has 7 hours per day. This means that I need 6 teachers for the first hour and 6 teachers for the 7th hour, a total of 12 teachers. But I only had 11 teachers to cover first and last hour! I had 16 teachers in total for that day but their restrictions prevented 6 of them to teach first and last hours (and it wasn&apos;t just cases of teacher not available but usually restrictions on teaching on specific hours and max gaps, so it was very difficult to look through it). So this specific teacher (because of the restrictions on the other teachers and the loose restrictions on himself) had to teach 6 hours with 1 gap so that he could cover a first and a last hour!
 
 ...Not that I will fall again for it but based on the difficulty to diagnose on my part it will help others that might face the same problem.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε και Α από τον Anestis Vovos: Μία περίπτωση για την οποία δεν μπορούσα να βρω λύση και δυσκολεύτηκα να εντοπίσω το πρόβλημα
+
+Από τη στιγμή που ξεκίνησα να δουλεύω το ωρολόγιο πρόγραμμα του σχολείου μας, είχα ένα πρόβλημα με μία συγκεκριμένη ημέρα και έναν συγκεκριμένο εκπαιδευτικό. Ό,τι κι αν δοκίμασα στο FET, δεν μπορούσα να μειώσω τις ώρες παραμονής στο σχολείου του συγκεκριμένου εκπαιδευτικού για την συγκεκριμένη ημέρα και να τις κάνω λιγότερες από 7 (7 ώρες είναι μία πλήρης σχολική ημέρα, οπότε ο εκπαιδευτικός αυτός είχε 6 ώρες μάθημα και 1 κενό). Αυτό ήταν υπερβολικό (οι άλλοι εκπαιδευτικοί είχαν 5 ώρες διδασκαλίας κατά μέγιστο), αλλά ο συγκεκριμένος εκπαιδευτικός δεν ενοχλείτο, οπότε και κρατήσαμε αυτό το ωρολόγιο πρόγραμμα. Μόλις πριν από έναν μήνα, ο εκπαιδευτικός έκανε μία σημαντική επέμβαση και δεν μπορούσε πλέον να διδάσκει για τόσες πολλές ώρες σε μία ημέρα. Οπότε, άρχισα να πειραματίζομαι ξανά με το ωρολόγιο πρόγραμμα και να ψάχνω να βρω τι έφταιγε. Μετά από ΠΟΛΛΟΥΣ ελέγχους και αποτυχημένες προσπάθειες, μου ήρθε μία ιδέα, την ώρα που περπατούσα προς στο σχολείο: Δεν είχα αρκετούς εκπαιδευτικούς για τις πρώτες και τελευταίες ώρες! Το έλεγξα και τελικά αυτό ήταν το πρόβλημα! Επιτρέψτε μου να σας εξηγήσω: Έχουμε 6 τάξεις συνολικά, και κάθε τάξη έχει 7 ώρες μάθημα ανά ημέρα. Αυτό σημαίνει ότι χρειάζομαι 6 εκπαιδευτικούς για την 1η ώρα και 6 εκπαιδευτικούς για την 7η ώρα, δηλαδή συνολικά 12 εκπαιδευτικούς. Αλλά είχα μόνον 11 εκπαιδευτικούς για να &quot;καλύψω&quot; την 1η και τελευταία (7η) ώρα! Είχα 16 εκπαιδευτικούς συνολικά για την συγκεκριμένη ημέρα, αλλά οι περιορισμοί των εκπαιδευτικών δεν επέτρεπαν σε 6 από αυτούς να διδάσκουν την 1η και τις τελευταίες ώρες (και δεν ήταν απλά περιπτώσεις μη διαθέσιμου εκπαιδευτικού, αλλά συνήθως ήταν περιορισμοί σχετικοί με διδασκαλία σε συγκεκριμένες ώρες και περιορισμοί μέγιστων κενών, οπότε και ήταν δύσκολο να εντοπίσω το πρόβλημα). Έτσι, ο συγκεκριμένος εκπαιδευτικός (εξαιτίας των περιορισμών των άλλων εκπαιδευτικών σε συνδυασμό με τους &quot;χαλαρούς&quot; περιορισμούς για τον ίδιο) έπρεπε να διδάσκει για 6 ώρες με 1 κενό, έτσι ώστε να μπορέσει να καλύψει μία 1η και μία τελευταία ώρα.!
+
+...Δεν νομίζω πως θα υποπέσω ξανά στο ίδιο &quot;σφάλμα&quot;, αλλά δεδομένου ότι δυσκολεύτηκα να εντοπίσω το πρόβλημα, θεωρώ ότι η αναφορά (ανάλυση) αυτή ενδεχομένως να βοηθήσει κάποιους άλλους χρήστες στην περίπτωση που συναντήσουν ένα παρόμοιο πρόβλημα.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="654"/>
         <source>Q: I want to define hard subjects (Math, Physics and Chemistry) and I want students not to have more than 1 (or another variant 2) difficult subjects in a row.
 
 A: Define activity tag &apos;Difficult&apos; and add it to all MA, PH and CH lessons. Then add constraint maximum 1 (or 2) hours continuously for all students and an activity tag &apos;Difficult&apos;. Please take care if you may have double lessons.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Θέλω να ορίσω κάποια αντικείμενα ως &quot;δύσκολα&quot; (Μαθηματικά, Φυσική και Χημεία) και θέλω οι μαθητές να μην έχουν πάνω από 1 ή 2 δύσκολα αντικείμενα στη σειρά.
+
+Α: Ορίστε μία ετικέτα δραστηριότητας &quot;Δύσκολη&quot; και προσθέστε την σε όλες αυτές τις δραστηριότητες (Μαθηματικά, Φυσική και Χημεία). Μετά προσθέστε τον περιορισμό &quot;μαθητές + ετικέτα δραστηριότητας - μέγιστες ώρες συνεχόμενα&quot; = 1 ώρα (ή 2 ώρες) για όλους τους μαθητές και για ετικέτα δραστηριότητας &quot;Δύσκολη&quot;. Παρακαλώ προσέξτε εάν έχετε διπλά μαθήματα.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="678"/>
         <source>Q: (by Horatiu Halmajan) The students must have max 4 gaps per week, maximum 2 per day, continuous gaps. How to solve this?
 
 A: Add for each subgroup a dummy activity (no teachers) split into 4 per week, duration 1, min days between activities 1, weight 0%, select consecutive if same day. FET will never put more than 2 of these dummy activities in a day. Add max gaps for students = 0 per week.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: (από τον Horatiu Halmajan) Οι μαθητές πρέπει να έχουν &quot;μέγιστα κενά ανά εβδομάδα&quot; = 4, &quot;μέγιστα κενά ανά ημέρα&quot; = 2, συνεχόμενα κενά. Πώς υλοποιείται αυτό;
+
+Α: Προσθέστε για το κάθε υποτμήμα μία ψευδο-δραστηριότητα (χωρίς εκπαιδευτικούς) επιμερισμένη σε 4 υποδραστηριότητες ανά εβδομάδα, διάρκεια 1, &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; = 1, ποσοστό βαρύτητας 0%, επιλέξτε &quot;αν την ίδια ημέρα - διαδοχικές&quot;. Το FET δεν θα τοποθετήσει ποτέ περισσότερες από 2 ψευδο-δραστηριότητες την ίδια ημέρα. Προσθέστε &quot;μαθητές - μέγιστα κενά ανά εβδομάδα&quot; = 0.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="687"/>
         <source>Advice: to treat gaps for students or teachers, if FET constraints are not enough, you can use dummy activities. For instance, if a students set can have maximum 3 gaps, add an activity split into 3 per week, with no teachers.</source>
-        <translation type="unfinished"></translation>
+        <translation>Συμβουλή: για να διαχειριστείτε τα κενά για τους μαθητές ή τους εκπαιδευτικούς, αν οι περιορισμοί του FET δεν είναι αρκετοί, μπορείτε να χρησιμοποιήσετε ψευδο-δραστηριότητες. Για παράδειγμα, αν κάποια ομάδα μαθητών έχει μέγιστο αριθμό κενών 3, προσθέστε μία δραστηριότητα χωρίς εκπαιδευτικούς (δηλαδή ψευδο-δραστηριότητα) επιμερισμένη σε 3 υποδραστηριότητες ανά εβδομάδα.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="694"/>
@@ -37679,7 +37960,11 @@ A: Add for each subgroup a dummy activity (no teachers) split into 4 per week, d
 If A1 and A2 are constrained not to be in the same day with 95% weight or any other weight, it is a bad practice to add a constraint grouped or consecutive to them. If they are constrained with weight 100% not to be in the same day, the timetable is impossible; if the weight is under 100%, the timetable is more difficult to find than using the correct way.
 
 The correct way would probably be to consider A1 and A2 = a single activity A12&apos;, or to modify the related constraint min days between activities. Or maybe you can find other ways.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ερώτηση 1/16 Αυγούστου 2009: Πώς μπορώ να προσθέσω τους περιορισμούς &quot;δύο δραστηριότητες - ομαδοποιημένες&quot;, &quot;δύο δραστηριότητες - διαδοχικές&quot; και &quot;τρεις δραστηριότητες - ομαδοποιημένες&quot;, αν οι συγκεκριμένες δραστηριότητες δεν πραγματοποιούνται την ίδια ημέρα εξαιτίας της ύπαρξης ανάλογων περιορισμών (&quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;);
+
+Αν οι δραστηριότητες Δ1 και Δ2 δεν πραγματοποιούνται την ίδια ημέρα εξαιτίας της ύπαρξης ανάλογου περιορισμού (&quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;) με ποσοστό βαρύτητας 95% ή οποιαδήποτε άλλη τιμή, είναι κακή πρακτική να προσθέσετε περιορισμό &quot;δύο (ή τρεις) δραστηριότητες - ομαδοποιημένες&quot; ή περιορισμό &quot;δύο δραστηριότητες - διαδοχικές&quot; για τις δραστηριότητες αυτές. Αν δεν πραγματοποιούνται την ίδια ημέρα εξαιτίας της ύπαρξης του ανάλογου περιορισμού (&quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;) και το ποσοστό βαρύτητας του περιορισμού αυτού έχει την τιμή 100.0%, η κατάρτιση (επίλυση) του ωρολογίου προγράμματος είναι αδύνατη. Αν το ποσοστό βαρύτητας είναι μικρότερο του 100.0%, η κατάρτιση (επίλυση) του ωρολογίου προγράμματος είναι δυσκολότερη σε σχέση με το να χειριστείτε το πρόβλημα αυτό με τον σωστό τρόπο.
+
+Ο σωστός τρόπος ενδεχομένως να είναι να θεωρήσετε τις δραστηριότητες Δ1 και Δ2 σαν μία μόνον δραστηριότητα Δ12&apos;, ή να τροποποιήσετε τον σχετικό περιορισμό &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;. Ή πιθανώς να μπορείτε να βρείτε και άλλους τρόπους.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="707"/>
@@ -37700,47 +37985,63 @@ Conclusion: if, for the ATS, the ratio &apos;tag duration&apos;/&apos;total dura
 So, it is a very bad idea to make all activities (of a teacher or students set) have an activity tag and add constraint teacher(s) or students (set) activity tag max hours daily. You should use in this case constraint teacher(s) or students (set) max hours daily.
 
 Probably, in practice this problem will not appear and you need not to worry. But theoretically it exists.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ερώτηση 1/25 Σεπτεμβρίου 2009: Μία παρατήρηση για τον περιορισμό &quot;εκπαιδευτικός (εκπαιδευτικοί) ή μαθητές (ομάδα μαθητών) + ετικέτα δραστηριότητας - μέγιστες ώρες ημερησίως&quot;:
+
+Ο περιορισμός αυτός έχει υλοποιηθεί σωστά και δουλεύει καλά, αλλά δεν είναι πλήρως βελτιστοποιημένος. Αυτό σημαίνει ότι σε κάποιες ασυνήθιστες (ακραίες) περιπτώσεις ο χρόνος που απαιτείται για την κατάρτιση (επίλυση) του ωρολογίου προγράμματος ενδέχεται να είναι πολύ μεγαλύτερος από αυτόν που πραγματικά χρειάζεται. Για τις ακραίες αυτές περιπτώσεις θα πρέπει να &quot;βοηθήσετε&quot; το FET.
+
+Σημειογραφία: ΣΜΕ = Σχετιζόμενοι Μαθητές (ομάδα) ή Εκπαιδευτικός - οι μαθητές ή ο εκπαιδευτικός που σχετίζονται με (περιλαμβάνονται σε) μερικώς βελτιστοποιημένο περιορισμό &quot;ετικέτα δραστηριότητας - μέγιστες ώρες ημερησίως&quot; (το πρόβλημα αυτό δεν εμφανίζεται σε ομάδες μαθητών και εκπαιδευτικούς που δεν σχετίζονται με τέτοιο περιορισμό, δηλαδή που δεν συμπεριλαμβάνονται σε κάποιον περιορισμό του τύπου &quot;ετικέτα δραστηριότητας - μέγιστες ώρες ημερησίως&quot;.
+
+Σε ακραίες περιπτώσεις, μπορεί να απαιτηθεί περισσότερος χρόνος για την κατάρτιση (επίλυση) του ωρολογίου προγράμματος από όσο θα χρειαζόταν υπό κανονικές συνθήκες. Οι περιπτώσεις αυτές σχετίζονται με καταστάσεις στις οποίες η συνολική διάρκεια των δραστηριοτήτων που έχουν την συγκεκριμένη ετικέτα δραστηριότητας των ΣΜΕ είναι μεγάλη σε σχέση με τον συνολικό αριθμό των ωρών των δραστηριοτήτων των ΣΜΕ και σε συνδυασμό με άλλες συνθήκες οι οποίες υπάρχουν στα δεδομένα σας. Αν ο λόγος της διάρκειας των δραστηριοτήτων με την ετικέτα δραστηριότητας των ΣΜΕ προς την συνολική διάρκεια δραστηριοτήτων των ΣΜΕ έχει τιμή μεγαλύτερη από 0.50 - 0.75 ή έχει κάποια κανονική (σε λογικά επίπεδα χαμηλή) τιμή και ταυτόχρονα χρησιμοποιείτε περιορισμούς για τον έλεγχο των κενών ή περιορισμούς &quot;νωρίς&quot; για τους ΣΜΕ και ο αριθμός των διαθέσιμων ωρών ανά ημέρα είναι μεγαλύτερος από τον αριθμό των ωρών (ανά ημέρα) των ΣΜΕ, τότε η ταχύτητα επίλυσης (κατάρτισης) του ωρολογίου προγράμματος ενδέχεται να είναι πιο αργή σε σχέση με την αναμενόμενη.
+
+Σε τέτοιες περιπτώσεις, συνιστάται να χρησιμοποιείτε περιορισμούς &quot;εκπαιδευτικός (εκπαιδευτικοί) ή μαθητές (ομάδα μαθητών) - μέγιστες ώρες ημερησίως&quot; για τους ΣΜΕ (δηλαδή οι περιορισμοί να είναι οι &quot;απλοί&quot;, και όχι οι παρεμφερείς περιορισμοί που συμπεριλαμβάνουν και την ετικέτα δραστηριότητας), ή περιορισμούς &quot;μη διαθέσιμοι χρόνοι&quot; για τους ΣΜΕ και για περιόδους (ώρες) στις οποίες είναι ξεκάθαρο πως δεν θα μπορούσαν να τοποθετηθούν (σχετικές) δραστηριότητες.
+
+Για παράδειγμα, αν οι μαθητές Μ έχουν 20 ώρες δραστηριοτήτων με ετικέτα δραστηριότητας ΕΔ και άλλες 4 ώρες χωρίς ετικέτα δραστηριότητας (δηλαδή έχουν συνολικά 24 ώρες, ο λόγος είναι 20/24=0.80), και περιορίζετε τους μαθητές να έχουν 0 κενά (καθόλου κενά) ανά εβδομάδα και 0 ενάρξεις (καμία έναρξη) μαθημάτων την δεύτερη ώρα καθώς και ο αριθμός των ωρών ανά ημέρα είναι μεγάλος, π.χ. 12, τότε η προσθήκη περιορισμού &quot;μαθητές + ετικέτα δραστηριότητας ΕΔ - μέγιστες 4 ώρες ανά ημέρα&quot; - μόνον - δεν θα είναι επαρκώς καλή (ο χρόνος που θα απαιτηθεί για την κατάρτιση του ωρολογίου προγράμματος μπορεί να είναι μεγαλύτερος ή ακόμη και πολύ μεγαλύτερος από τον κανονικό). Μία καλύτερη λύση θα ήταν να προσθέσετε και έναν περιορισμό &quot;μαθητές - μέγιστες 5 ώρες ημερησίως&quot; (αν αυτό είναι δυνατόν) ή/και να κάνετε τις τελευταίες περιόδους (ώρες) μη διαθέσιμες για τους μαθητές (είναι ένας καλός τρόπος για να καθοδηγήσετε το FET έτσι ώστε να βρει λύση ευκολότερα), ή μπορείτε να βρείτε άλλους καλούς τρόπους για να αποκαταστήσετε το πρόβλημα.
+
+Συμπέρασμα: αν, για τους ΣΜΕ, ο λόγος &quot;διάρκεια ετικέτας&quot;/&quot;συνολική διάρκεια&quot; είναι μεγαλύτερος από 0.50 - 0.75 ΚΑΙ χρησιμοποιείτε, για τους ΣΜΕ, περιορισμούς κενών ή &quot;νωρίς&quot; ΚΑΙ ο αριθμός των διαθέσιμων περιόδων ανά εβδομάδα για τους ΣΜΕ είναι πολύ μεγαλύτερος από τις συνολικές ώρες εργασίας ανά εβδομάδα των ΣΜΕ, τότε ενδεχομένως να χρειαστεί να προσπαθήσετε να λύσετε αυτό το πρόβλημα με τον παραπάνω τρόπο (δηλαδή να προσθέσετε περιορισμούς &quot;μέγιστες ώρες ημερησίως&quot; ή &quot;μη διαθέσιμοι χρόνοι&quot; για τους ΣΜΕ, ή ίσως να βρείτε κάποιον άλλο τρόπο για να καθοδηγήσετε το FET).
+
+Άρα, είναι πολύ κακή προσέγγιση να αποδώστε κάποια ετικέτα δραστηριότητας σε όλες τις δραστηριότητες (εκπαιδευτικού ή ομάδας μαθητών) και να προσθέσετε περιορισμό &quot;εκπαιδευτικός (εκπαιδευτικοί) ή μαθητές (ομάδα μαθητών) + ετικέτα δραστηριότητας - μέγιστες ώρες ημερησίως&quot;. Στην περίπτωση αυτή, θα πρέπει να χρησιμοποιήσετε τον περιορισμό &quot;εκπαιδευτικός (εκπαιδευτικοί) ή μαθητές (ομάδα μαθητών) - μέγιστες ώρες ημερησίως&quot;.
+
+Πιθανώς, σε πρακτικό επίπεδο το πρόβλημα αυτό να μην παρουσιαστεί ποτέ, οπότε δεν χρειάζεται να ανησυχείτε. Θεωρητικά όμως, το πρόβλημα αυτό είναι υπαρκτό.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="759"/>
         <source>Q: Why the constraints activity tag max hours daily and students max gaps per day are disabled in the FET menu?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Γιατί οι περιορισμοί &quot;ετικέτα δραστηριότητας - μέγιστες ώρες ημερησίως&quot; και &quot;μαθητές - μέγιστα κενά ανά ημέρα&quot; είναι απενεργοποιημένοι στο μενού του FET;</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="761"/>
         <source>A: These 6 constraints (4 for activity tag and 2 for students max gaps per day) are the only ones which are not perfectly optimized in FET. For some combinations of constraints, they may slow down the generation or even make the timetable impossible. That is why they are not enabled by default. You need to activate them from the advanced settings menu. It is recommended to add such constraints at the end of your work, after you added all the other constraints and verified that your timetable is possible.</source>
-        <translation type="unfinished"></translation>
+        <translation>Α: Αυτοί οι 6 περιορισμοί (4 για την ετικέτα δραστηριότητας και 2 για τους μαθητές &quot;μέγιστα κενά ανά ημέρα&quot;) είναι οι μόνοι οι οποίοι δεν είναι πλήρως βελτιστοποιημένοι στο FET. Για κάποιους συνδυασμούς περιορισμών, ενδεχομένως να επιβραδύνουν την κατάρτιση (επίλυση) του ωρολογίου προγράμματος ή ακόμη και να την καταστήσουν αδύνατη. Για αυτόν τον λόγο στην προκαθορισμένη ρύθμιση του FET δεν είναι ενεργοποιημένοι. Θα πρέπει να τους ενεργοποιήσετε από το μενού &quot;Ρυθμίσεις/Προηγμένες&quot;. Συνιστάται να προσθέτετε τέτοιου είδους περιορισμούς στο τέλος της δουλειάς σας, αφού έχετε πρώτα προσθέσει όλους τους άλλους περιορισμούς και αφού έχετε επιβεβαιώσει ότι υπάρχει λύση για το ωρολόγιο πρόγραμμα.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="766"/>
         <source>If these constraints are disabled, they have an icon attached in the menu to signify that. If they are enabled, they have another icon attached to them, to signify that they are enabled, but must be used with caution.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αν οι περιορισμοί αυτοί είναι απενεργοποιημένοι, αυτό σηματοδοτείται από το σχετικό εικονίδιο στο μενού. Αν είναι ενεργοποιημένοι, αυτό σηματοδοτείται από ένα άλλο σχετικό εικονίδιο, έτσι ώστε να υπενθυμίζεται στον χρήστη ότι οι περιορισμοί αυτοί θα πρέπει να χρησιμοποιούνται με προσοχή.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="769"/>
         <source>Use these constraints with caution, not to obtain impossible timetables.</source>
-        <translation type="unfinished"></translation>
+        <translation>Να χρησιμοποιείτε αυτούς τους περιορισμούς με προσοχή, προκειμένου να μην καταστήσετε αδύνατη την κατάρτιση του ωρολογίου προγράμματος.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="775"/>
         <source>Q: Why don&apos;t you implement the not perfect constraints (activity tag max hours daily and students max gaps per day) in a perfect way?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Γιατί δεν υλοποιείτε τους μερικώς βελτιστοποιημένους περιορισμούς (&quot;ετικέτα δραστηριότητας - μέγιστες ώρες ημερησίως&quot; και &quot;μαθητές - μέγιστα κενά ανά ημέρα&quot;) με τρόπο πλήρως βελτιστοποιημένο;</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="777"/>
         <source>A: Activity tag max hours daily cannot be implemented perfectly, generation would take too much (because of complexity of checks). Students max gaps per day can be implemented perfectly, but it would change the algorithm for students a lot and I am afraid to change something that is working well. Very much testing would be needed, and I have not enough sample files. While changing the algorithm, it would be easy to make critical bugs and some files may not solve anymore.</source>
-        <translation>Α: Ο περιορισμός &quot;ετικέτα δραστηριότητας - μέγιστες ώρες ημερησίως&quot; δεν μπορεί να υλοποιηθεί τέλεια (να βελτιστοποιηθεί πλήρως), και για τον λόγο αυτό η δημιουργία του ωρολογίου προγράμματος απαιτεί πολύ χρόνο (εξαιτίας της περιπλοκότητας των απαιτούμενων ελέγχων). Ο περιορισμός &quot;μέγιστα κενά ανά ημέρα&quot; μπορεί να υλοιποηθεί τέλεια (να βελτιστοποιηθεί πλήρως), αλλά αυτό θα απαιτούσε μεγάλες αλλαγές στον αλγόριθμο και συγκεκριμένα στο τμήμα του αλγορίθμου που αφορά τους μαθητές. Ως εκ τούτου, δεν θα τολμούσα να αλλάξω κάτι το οποίο δουλεύει καλά. Επίσης, αυτές οι αλλαγές θα απαιτούσαν πολλές δοκιμές (πολλούς πρακτικούς ελέγχους), και δεν έχω αρκετά αρχεία δειγμάτων (αρχεία .fet) ώστε να πραγματοποιήσω τέτοια έκταση δοκιμών. Τέλος, εξαιτίας της αλλαγής του αλγορίθμου θα υπήρχε ισχυρό ενδεχόμενο να προκύψουν κρίσιμα σφάλματα λογισμικού (bugs) και κατ&apos; επέκταση πιθανώς κάποια ήδη υπάρχοντα αρχεία .fet να μην ήταν δυνατόν πλέον να επιλυθούν.</translation>
+        <translation>Α: Ο περιορισμός &quot;ετικέτα δραστηριότητας - μέγιστες ώρες ημερησίως&quot; δεν μπορεί να υλοποιηθεί τέλεια (να βελτιστοποιηθεί πλήρως), και για τον λόγο αυτό η δημιουργία του ωρολογίου προγράμματος απαιτεί πολύ χρόνο (εξαιτίας της περιπλοκότητας των απαιτούμενων ελέγχων). Ο περιορισμός &quot;μέγιστα κενά ανά ημέρα&quot; μπορεί να υλοποιηθεί τέλεια (να βελτιστοποιηθεί πλήρως), αλλά αυτό θα απαιτούσε μεγάλες αλλαγές στον αλγόριθμο και συγκεκριμένα στο τμήμα του αλγορίθμου που αφορά τους μαθητές. Ως εκ τούτου, δεν θα τολμούσα να αλλάξω κάτι το οποίο δουλεύει καλά. Επίσης, αυτές οι αλλαγές θα απαιτούσαν πολλές δοκιμές (πολλούς πρακτικούς ελέγχους), και δεν έχω αρκετά ενδεικτικά αρχεία δεδομένων (αρχεία .fet) ώστε να πραγματοποιήσω τέτοια έκταση δοκιμών. Τέλος, εξαιτίας της αλλαγής του αλγορίθμου θα υπήρχε ισχυρό ενδεχόμενο να προκύψουν κρίσιμα σφάλματα λογισμικού (bugs) και κατ&apos; επέκταση πιθανώς κάποια ήδη υπάρχοντα αρχεία .fet να μην ήταν δυνατόν πλέον να επιλυθούν.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="788"/>
         <source>A: More users asked for shortcut buttons for the most commonly used functions. It is possible to show such buttons, if you select the corresponding option from the Settings-&gt;Interface menu (shortcuts are shown, by default).</source>
-        <translation type="unfinished"></translation>
+        <translation>Α: Πολλοί χρήστες ζήτησαν την υλοποίηση κουμπιών συντόμευσης για τις πιο συχνά χρησιμοποιούμενες λειτουργίες. Είναι δυνατή η προβολή αυτών των κουμπιών, αν τσεκάρετε την αντίστοιχη επιλογή από το μενού &quot;Ρυθμίσεις-&gt;Διεπαφή&quot; (προκαθορισμένη ρύθμιση: προβολή κουμπιών συντόμευσης).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="786"/>
         <source>Q: Help on shortcut buttons in the main form.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ε: Βοήθεια για τα κουμπιά συντόμευσης του κεντρικού παραθύρου.</translation>
     </message>
 </context>
 <context>
@@ -37777,142 +38078,142 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="51"/>
         <source>These are some small instructions which you have to follow in order to input a solvable data set.</source>
-        <translation>Υπάρχουν κάποιες οδηγίες τις οποίες θα πρέπει να ακολουθήσετε προκειμένου τα δεδομένα σας να οδηγούν σε επιλύσιμο ωρολόγιο πρόγραμμα.</translation>
+        <translation>Θα πρέπει να ακολουθήσετε τις παρακάτω οδηγίες, προκειμένου τα δεδομένα σας να οδηγούν σε επιλύσιμο ωρολόγιο πρόγραμμα.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="53"/>
         <source>If you get an impossible timetable and your institution allows beginning later for students, please reconsider your students (set) early constraints to allow more beginnings at second hour. Also, removing or weakening other constraints might help. If FET cannot find a good timetable for your school, make sure to report this, as FET needs to be improved. Maybe small changes to your datafile can bring good solutions, or maybe there are aspects which have to be changed in FET.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αν η κατάρτιση του ωρολογίου προγράμματος καταστεί αδύνατη και το εκπαιδευτικό σας ίδρυμα επιτρέπει για τους μαθητές την έναρξη μαθημάτων μετά την πρώτη διδακτική ώρα, παρακαλώ να επανεξετάσετε τους περιορισμούς &quot;μαθητές (ή ομάδα μαθητών) - νωρίς&quot; προκειμένου να επιτρέψετε περισσότερες ενάρξεις την δεύτερη ώρα. Επίσης, ενδέχεται να βοηθήσουν η διαγραφή ή η &quot;αποδυνάμωση&quot; άλλων περιορισμών. Αν το FET δεν μπορέσει να καταλήξει σε καλό (κατάλληλο) ωρολόγιο πρόγραμμα για το σχολείο σας, παρακαλώ να το αναφέρετε, καθότι το FET θα πρέπει να βελτιωθεί. Πιθανώς με κάποιες μικρές αλλαγές στα δεδομένα σας να καταλήξετε σε καλύτερες λύσεις. Πιθανώς όμως, να χρειάζονται και κάποιες αλλαγές (βελτιώσεις) στο FET.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="58"/>
         <source>An impossible timetable might also be caused by incorrect years division. Please check statistics/students for all subgroups, each subgroup should have the necessary hours, not less. If you have for instance some subgroups with less than say 20 hours per week you might get an impossible timetable, probably because of incorrect division of years and incorrectly added activities. All the subgroups are independent and should have an amount of working hours per week close to the average for all subgroups. Please see FAQ for more information.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αν η κατάρτιση (επίλυση) του ωρολογίου προγράμματός σας είναι αδύνατη, αυτό μπορεί να οφείλεται στην εσφαλμένη κατάτμηση των ετών. Παρακαλώ μεταβείτε στο &quot;Στατιστικά/Στατιστικά μαθητών&quot; και ελέγξτε όλα τα υποτμήματα. Το κάθε υποτμήμα θα πρέπει να έχει τις απαραίτητες ώρες, όχι λιγότερες. Αν για παράδειγμα έχετε κάποια υποτμήματα με λιγότερες από 20 ώρες ανά εβδομάδα, πιθανώς η κατάρτιση του ωρολογίου προγράμματος να είναι αδύνατη, ενδεχομένως εξαιτίας της εσφαλμένης κατάτμησης των ετών και των εσφαλμένα προστεθεισών δραστηριοτήτων. Όλα τα υποτμήματα είναι ανεξάρτητα και θα πρέπει να έχουν αριθμό ωρών εργασίας κοντά στον μέσο όρο όλων των υποτμημάτων. Παρακαλώ δείτε στις ΣΕ (συχνές ερωτήσεις) για περισσότερες πληροφορίες.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="64"/>
         <source>0) Please select correctly the days and hours (working periods). To ensure best performance, it is best to keep the number of hours (periods) per day to your required needs, not larger. It is a good practice to choose a value for the number of days and number of hours from the beginning (you can change their names anytime you want afterwards).</source>
-        <translation type="unfinished"></translation>
+        <translation>0) Παρακαλώ επιλέξτε σωστά τις ημέρες και ώρες (περιόδους εργασίας). Για να εξασφαλίσετε την βέλτιστη απόδοση, η καλύτερη πρακτική είναι ο αριθμός των ωρών (περιόδων) ανά ημέρα να διατηρείται στο επίπεδο των πραγματικών αναγκών σας και όχι να είναι μεγαλύτερος. Επίσης, είναι καλή πρακτική να επιλέξετε από την αρχή τον αριθμό των ημερών και τον αριθμό των ωρών (τα ονόματά τους μπορείτε να τα αλλάξετε όποτε θέλετε).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="68"/>
         <source>1) To say that component activities of a larger split activity are not in the same day, FET automatically adds a constraint min days between activities with default 95% weight. If you want to ensure no two activities of same type are in the same day, you will have to modify the weight from 95% to higher values (see these constraints in the Time constraints menu-&gt;Activities-&gt;Min days between a set of activities constraints. You have there a powerful filter to change many constraints with a few clicks).</source>
-        <translation type="unfinished"></translation>
+        <translation>1) Για να δηλωθεί ότι οι δραστηριότητες-στοιχεία (υποδραστηριότητες) μίας δραστηριότητας-κοντέινερ δεν πραγματοποιούνται την ίδια ημέρα, το FET προσθέτει αυτόματα έναν περιορισμό &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; με προκαθορισμένη τιμή για το ποσοστό βαρύτητας 95%. Αν θέλετε να εξασφαλίσετε ότι σε καμία περίπτωση δύο δραστηριότητες του ίδιου τύπου δεν θα πραγματοποιούνται την ίδια ημέρα, θα πρέπει να τροποποιήσετε το ποσοστό βαρύτητας και αντί της τιμής 95% να δώσετε μεγαλύτερες τιμές (δείτε αυτούς τους περιορισμούς στο μενού των χρονικών περιορισμών και συγκεκριμένα στο &quot;Χρόνος/Δραστηριότητες/Ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;. Εκεί υπάρχει ένα ισχυρό φίλτρο με τη βοήθεια του οποίου μπορείτε να αλλάξετε πολλούς περιορισμούς με λίγα κλικ).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="82"/>
         <source>You can use for the constraint min days the weight you want. It can be 95%, 99.75% or even 100%. If you specify a value below 100% (even 99.75% or more) for an impossible constraint, FET will be able to detect that it is impossible and obtain a timetable in the end, so the weight is subjective. So, the best way would be to choose a 99.75% for all constraints, but the time of generation might be larger than with 95%. You could try at first the 95% minimum recommended value, then highten the weight percentage up to maybe 99.75% or 100%. I am not sure here, I have not enough sample files (please contribute with advice).</source>
-        <translation type="unfinished"></translation>
+        <translation>Για τον περιορισμό &quot;ελάχιστες ημέρες&quot; μπορείτε να χρησιμοποιήσετε ποσοστό βαρύτητα της επιλογής σας. Μπορείτε να δώσετε την τιμή, 95%, 99.75% ή ακόμη και 100%. Αν καθορίσετε μία τιμή μικρότερη του 100% (ακόμη και 99.75% ή και μεγαλύτερη) για έναν περιορισμό του οποίου η αυστηρή τήρηση είναι αδύνατη, το FET θα μπορέσει να το &quot;καταλάβει&quot;. Έτσι, στο τέλος θα βρείτε λύση στο ωρολόγιο πρόγραμμά σας. Κατά συνέπεια, το ποσοστό βαρύτητας είναι κάτι υποκειμενικό. Άρα, η βέλτιστη πρακτική είναι να επιλέξετε την τιμή 99.75% για το ποσοστό βαρύτητας όλων των περιορισμών, αλλά έτσι ο απαιτούμενος χρόνος επίλυσης του ωρολογίου προγράμματος θα είναι μεγαλύτερος σε σχέση με τον χρόνο που απαιτείται για την επίλυση με τιμή ποσοστού βαρύτητας 95% για τους περιορισμούς. Στην αρχή, μπορείτε να δοκιμάσετε την ελάχιστη συνιστώμενη τιμή 95%, και στη συνέχεια να την αυξήσετε ενδεχομένως μέχρι το 99.75% ή ακόμη και το 100%. Δεν είμαι σίγουρος για το συγκεκριμένο ζήτημα, διότι δεν έχω αρκετά ενδεικτικά αρχεία δεδομένων (αρχεία .fet).Παρακαλώ να συνεισφέρετε για το θέμα αυτό με τις συμβουλές σας.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="88"/>
         <source>If you would like to change the default 95% for another value for some constraints of type min days, the easiest way is in Data/Time constraints/Min days between activities dialog, where starting with version 5.6.1 there is a very powerful dialog, where you can specify a filter (old values) and new values for the selected constraints.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αν θέλετε να αλλάξετε την προκαθορισμένη τιμή 95% σε μία άλλη για κάποιους περιορισμούς του τύπου &quot;ελάχιστες ημέρες&quot;, ο ευκολότερος τρόπος είναι από τον διάλογο &quot;Δεδομένα/Χρονικοί περιορισμοί/Δραστηριότητες/Ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;, από όπου (από την έκδοση 5.6.1 και μετά) υπάρχει ένας πολύ ισχυρός διάλογος. Εκεί μπορείτε να καθορίσετε ένα φίλτρο (παλιές τιμές) και να δώσετε τις νέες τιμές στους επιλεγμένους περιορισμούς.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="92"/>
         <source>You might want to choose different weights for different constraint min days (for instance, higher on subjects with less activities per week)</source>
-        <translation type="unfinished"></translation>
+        <translation>Μπορεί να θέλετε να έχετε διαφορετικά ποσοστά βαρύτητας για διαφορετικούς περιορισμούς &quot;ελάχιστες ημέρες&quot; (για παράδειγμα, μεγαλύτερες τιμές για αντικείμενα με λιγότερες δραστηριότητες ανά εβδομάδα)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="122"/>
         <source>7) It is possible to work with institutions in which the students work in shifts (for instance, lowest forms in the morning and highest forms in the afternoon). Please see in the Help/Frequently Asked Questions the solution to how to do that (the essence is to add corresponding constraints students set not available).</source>
-        <translation type="unfinished"></translation>
+        <translation>7) Είναι δυνατόν στο εκπαιδευτικό σας ίδρυμα οι μαθητές σας να έρχονται σε βάρδιες (για παράδειγμα, οι μικρές τάξεις το πρωί και οι μεγάλες τάξεις το απόγευμα). Παρακαλώ δείτε στο &quot;Βοήθεια/Συχνές Ερωτήσεις&quot; την λύση ως προς το πώς να υλοποιήσετε ένα τέτοιου είδους ωρολόγιο πρόγραμμα (η ουσία είναι να προσθέσετε τους αντίστοιχους περιορισμούς &quot;ομάδα μαθητών - μη διαθέσιμοι χρόνοι&quot;).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="134"/>
         <source>10) If a constraint is allowed values under 100%, you can use any weight, even fractional numbers like 99.75%. It might help in constraints like min days between activities, preferred rooms or max hours daily.</source>
-        <translation type="unfinished"></translation>
+        <translation>10) Αν σε έναν περιορισμό επιτρέπονται για το ποσοστό βαρύτητας τιμές μικρότερες του 100%, μπορείτε να χρησιμοποιήσετε οποιαδήποτε τιμή, ακόμη και κλασματικούς αριθμούς όπως 99.75%. Αυτό μπορεί να βοηθήσει σε περιορισμούς όπως &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;, &quot;προτιμητέες αίθουσες&quot; ή &quot;μέγιστες ώρες ημερησίως&quot;.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="148"/>
         <source>14) It is recommended to remove redundant min days between activities constraints after adding constraints same starting day or time (read Help/Important tips).</source>
-        <translation type="unfinished"></translation>
+        <translation>14) Συνιστάται να διαγράψετε του πλεονάζοντες περιορισμούς &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; μετά την προσθήκη περιορισμών του τύπου &quot;ίδια ημέρα (ή ίδιος χρόνος) έναρξης&quot; (διαβάστε στο &quot;Βοήθεια/Σημαντικές υποδείξεις&quot;).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="151"/>
         <source>15) If you want for instance teachers (or students) not to have more than 2 times per week activities in the last hours, you have to use the constraint teacher(s) or students (set) hourly interval max days per week. Please read FAQ for more details.</source>
-        <translation type="unfinished"></translation>
+        <translation>15) Αν για παράδειγμα θέλετε οι εκπαιδευτικοί ή οι μαθητές να μην έχουν περισσότερες από 2 φορές την εβδομάδα δραστηριότητες στις τελευταίες ώρες, θα πρέπει να χρησιμοποιήσετε τον περιορισμό &quot;εκπαιδευτικός (ή εκπαιδευτικοί) + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; ή αντίστοιχα τον περιορισμό &quot;μαθητές (ή ομάδα μαθητών) + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot;. Παρακαλώ διαβάστε τις συχνές ερωτήσεις για περισσότερες λεπτομέρειες.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="155"/>
         <source>16) If you have activities which you want to put in the last slots of a day (like say the meetings with the class master), please use the constraint a set of activities end students day (or singular activity ends students day).</source>
-        <translation type="unfinished"></translation>
+        <translation>16) Αν θέλετε να τοποθετήσετε συγκεκριμένες δραστηριότητες στις τελευταίες περιόδους κάποιας ημέρας (για παράδειγμα τις συναντήσεις με τον υπεύθυνο της τάξης), παρακαλώ χρησιμοποιείστε τους περιορισμούς &quot;σύνολο δραστηριοτήτων - &apos;κλείνει&apos; ημέρα μαθητών&quot; (ή &quot;δραστηριότητα - &apos;κλείνει&apos; ημέρα μαθητών).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="74"/>
         <source>To specify that some activities must be in different days, the min days between activities must be 1. To specify that some activities must be separated even more, you can increase the min days to 2 (or even more, but probably not needed). Min days = 2 means that activities will be at least 2 days apart from each other (so there is another day between them). It is recommended that when inputting activities which are split into only 2 subactivities per week, add min days = 2. Or you can, after introducing the activities, to modify the min days value in more constraints at once by using the powerful filter in constraints min days between activities dialog (select old number of activities 2 and new min days 2, maybe also raise weight percentage to 100%).</source>
-        <translation type="unfinished"></translation>
+        <translation>Για να καθορίσετε ότι κάποιες δραστηριότητες θα πραγματοποιούνται σε διαφορετικές ημέρες, ο περιορισμός &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; πρέπει να έχει την τιμή 1. Για να καθορίσετε ότι κάποιες δραστηριότητες θα είναι ακόμη πιο &quot;απομακρυσμένες&quot;, μπορείτε να αυξήσετε την τιμή των ελάχιστων ημερών σε 2 (ή και περισσότερο, αλλά πιθανώς δεν χρειάζεται). &quot;Ελάχιστες ημέρες&quot; = 2 σημαίνει ότι οι δραστηριότητες θα έχουν απόσταση μεταξύ τους τουλάχιστον 2 ημερών (οπότε θα υπάρχει τουλάχιστον μία άλλη ημέρα ανάμεσά τους). Κατά την προσθήκη των δραστηριοτήτων και για τις δραστηριότητες που είναι επιμερισμένες σε 2 το πολύ υποδραστηριότητες ανά εβδομάδα, συνιστάται να καθορίσετε τις &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; = 2. Ή μπορείτε, αφού προσθέσετε τις δραστηριότητες, να τροποποιήσετε την τιμή των ελάχιστων ημερών από την &quot;τροποποίηση πολλαπλών περιορισμών με μία ενέργεια&quot; χρησιμοποιώντας το ισχυρό φίλτρο στον διάλογο των περιορισμών &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; (επιλέξτε στις &quot;παλιές τιμές&quot; αριθμός δραστηριοτήτων (&quot;Ν δραστηριότητες&quot;) 2, στις &quot;νέες τιμές&quot; &quot;ελάχιστες ημέρες&quot; 2 και αν το επιθυμείτε, μπορείτε να αυξήσετε το ποσοστό βαρύτητας μέχρι και το 100%).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="94"/>
         <source>In versions 5.5.8 and higher, you can add 2 constraints min days for the same split activity. In add activity dialog, select min days 2 (or 3) and you get the chance to add another constraint min 1 days (or 2). For instance, if you have 3 activities per week from the same group, you can add 2 constraints, min 2 days and min 1 day, both with 95%. This will ensure that in 99.75% of cases the min 1 day will be respected.</source>
-        <translation type="unfinished"></translation>
+        <translation>Στις εκδόσεις του FET από την 5.5.8 και μετά, μπορείτε να προσθέσετε 2 περιορισμούς &quot;ελάχιστες ημέρες&quot; για την ίδια επιμερισμένη δραστηριότητα. Στον διάλογο προσθήκης δραστηριότητας, όταν επιλέγετε &quot;ελάχιστες ημέρες&quot; = 2 (ή 3), στη συνέχεια έχετε την ευκαιρία να προσθέσετε έναν ακόμη περιορισμό &quot;ελάχιστες ημέρες&quot; = 1 (ή 2). Για παράδειγμα, αν έχετε μία δραστηριότητα-κοντέινερ η οποία είναι επιμερισμένη 3 υποδραστηριότητες, μπορείτε να προσθέσετε 2 περιορισμούς, &quot;ελάχιστες ημέρες&quot; = 2 και &quot;ελάχιστες ημέρες&quot; = 1, με ποσοστό βαρύτητας για τους δύο περιορισμούς 95%. Αυτός ο συνδυασμός θα εξασφαλίσει ότι στο 99.75% των περιπτώσεων θα τηρηθεί ο περιορισμός &quot;ελάχιστες ημέρες&quot; = 1.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="99"/>
         <source>2) If you have a course lesson with say 4-5 activities per week, difficult lessons (Maths), which you would like to schedule in the beginning of the day (say 3 out of 4-5 need to be in the first half of the day), the best approach is to use constraint subactivities preferred time slots or starting times, specifying possibly the subject and component number: 1, 2 and maybe 3, adding 3 constraints for this subject (see FAQ for more details). You can also add constraints for component numbers 3, 4 and 5 for subject Maths (this way, if activity is split into 4 it will get 2 early, if it is split into 5 it will get 3 early - a nice trick). Similarly, if you have say Bio with 1 or 2 splits per week, you can add constraint with component number = 2.</source>
-        <translation type="unfinished"></translation>
+        <translation>2) Αν έχετε μία διδασκαλία με π.χ. 4-5 δραστηριότητες (υποδραστηριότητες) ανά εβδομάδα, με δύσκολα μαθήματα (λ.χ. Μαθηματικά), τα οποία θέλετε να προγραμματίσετε στην αρχή της ημέρας (για παράδειγμα μπορεί να θέλετε 3 από τις 4 ή 5 διδασκαλίες να τοποθετηθούν στο πρώτο μισό της ημέρας), η καλύτερη προσέγγιση είναι να χρησιμοποιήσετε τον περιορισμό &quot;υποδραστηριότητες - προτιμητέες περίοδοι&quot; ή &quot;υποδραστηριότητες - προτιμητέοι χρόνοι έναρξης&quot;, καθορίζοντας πιθανώς το αντικείμενο και τον αριθμό στοιχείου: 1, 2, και πιθανώς 3, προσθέτοντας έτσι 3 περιορισμούς για το συγκεκριμένο αντικείμενο (βλέπε στις ΣΕ για περισσοτερες λεπτομέρειες). Μπορείτε επίσης να προσθέσετε περιορισμούς για τους αριθμούς στοιχείων 3, 4 και 5 για το αντικείμενο Μαθηματικά (με τον τρόπο αυτό, αν η δραστηριότητα είναι επιμερισμένη σε 4 υποδραστηριότητες, θα έχετε τις 2 νωρίς, αν είναι επιμερισμένη σε 5 θα έχετε τις 3 νωρίς - ωραίο τέχνασμα). Παρόμοια, αν έχετε π.χ. την δραστηριότητα της Βιολογίας επιμερισμένη σε 1 ή 2 υποδραστηριότητες ανά εβδομάδα, μπορείτε να εισαγάγετε τον ανωτέρω περιορισμό με αριθμό στοιχείου = 2.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="106"/>
         <source>3) From the way the algorithm is conceived, the automatic generation is faster if you use students set (or teacher) not available and/or constraint activity(ies) preferred time slots or preferred starting times to specify impossible slots, in addition to possible use of students (set) or teacher(s) max hours daily, whenever it is possible. For instance, if you know that year 5 will only have hours from 8:00 to 13:00, it is better to add students set not available in addition to students set max hours daily. So, if possible, try to follow this advice. This trick helps guide FET better towards a solution.</source>
-        <translation type="unfinished"></translation>
+        <translation>3) Εξαιτίας του τρόπου με τον οποίο έχει σχεδιαστεί ο αλγόριθμος, η αυτοματοποιημένη κατάρτιση ωρολογίου προγράμματος είναι γρηγορότερη αν χρησιμοποιείτε περιορισμούς του τύπου &quot;ομάδα μαθητών (ή εκπαιδευτικός) - μη διαθέσιμοι χρόνοι&quot; ή/και &quot;δραστηριότητα (ή δραστηριότητες) - προτιμητέες περίοδοι&quot; ή &quot;δραστηριότητα (ή δραστηριότητες) - προτιμητέοι χρόνοι έναρξης&quot; προκειμένου να καθορίσετε τις αδύνατες (μη διαθέσιμες) περιόδους. Οι περιορισμοί αυτοί μπορούν να χρησιμοποιηθούν -όποτε αυτό είναι δυνατόν- σε συνδυασμό με τους περιορισμούς &quot;μαθητές (ή ομάδα μαθητών) - μέγιστες ώρες ημερησίως&quot; ή &quot;εκπαιδευτικός (ή εκπαιδευτικοί) - μέγιστες ώρες ημερησίως&quot;. Για παράδειγμα, αν ξέρετε ότι το έτος 5 θα έχει διαθέσιμες περιόδους από τις 08:00 μέχρι τις 13:00, είναι προτιμότερο να προσθέσετε τον περιορισμό &quot;ομάδα μαθητών - μη διαθέσιμοι χρόνοι&quot; σε συνδυασμό με τον περιορισμό &quot;ομάδα μαθητών - μέγιστες ώρες ημερησίως&quot;. Οπότε, αν είναι δυνατόν, προσπαθήστε να ακολουθήσετε αυτές τις συμβουλές. Αυτό το τέχνασμα βοηθά στο να &quot;καθοδηγηθεί&quot; το FET με καλύτερο τρόπο προς την κατεύθυνση εξεύρεσης λύσης.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="112"/>
         <source>Each constraint of type not available or preferred times which filters out impossible slots might bring an improvement in speed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο κάθε περιορισμός του τύπου &quot;μη διαθέσιμοι χρόνοι&quot; ή &quot;προτιμητέοι χρόνοι&quot; &quot;φιλτράρει&quot; τις μη αξιοποιήσιμες περιόδους και ως εκ τούτου ενδέχεται να επιφέρει βελτίωση στην ταχύτητα επίλυσης (κατάρτισης) του ωρολογίου προγράμματος.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="114"/>
         <source>4) Constraint students (set) early: if you input only partial data, you might get impossible timetables (see FAQ for details).</source>
-        <translation type="unfinished"></translation>
+        <translation>4) Περιορισμός &quot;μαθητές (ή ομάδα μαθητών) - νωρίς&quot;: αν κάνετε μόνον μερική εισαγωγή δεδομένων, ενδεχομένως το ωρολόγιο πρόγραμμα να μην είναι επιλύσιμο (δείτε στις ΣΕ για λεπτομέρειες).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="116"/>
         <source>5) For teacher(s) gaps: please note that FET will take care of teacher(s) gaps only if you tell it so, by adding constraint teacher(s) max gaps per week. It is normal to add such constraint(s) after you saw that the data is solvable, using for max gaps a value which seems acceptable, lowering it as you find timetables.</source>
-        <translation type="unfinished"></translation>
+        <translation>5) Για τα κενά εκπαιδευτικού (ή εκπαιδευτικών): παρακαλώ σημειώστε ότι το FET θα λάβει υπόψη του τα κενά εκπαιδευτικού (ή εκπαιδευτικών) μόνον αν του ζητήσετε να το πράξει. Αυτό γίνεται με προσθήκη του περιορισμού &quot;εκπαιδευτικός (ή εκπαιδευτικοί) - μέγιστα κενά ανά εβδομάδα&quot;. Είναι φυσιολογικό να προσθέσετε τέτοιον περιορισμό (τέτοιους περιορισμούς) αφότου έχετε διαπιστώσει ότι με τα δεδομένα που έχετε εισαγάγει, το ωρολόγιο πρόγραμμά σας είναι επιλύσιμο. Οπότε, μπορείτε αρχικά να χρησιμοποιήσετε μία τιμή για τα &quot;μέγιστα κενά&quot; η οποία φαίνεται αποδεκτή, και στη συνέχεια να την μειώσετε σταδιακά, εφόσον συνεχίζετε να έχετε λύσεις για το ωρολόγιο πρόγραμμά σας.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="120"/>
         <source>6) Rooms: You might firstly try to generate a timetable without rooms, to see if it is possible, then add rooms and rooms related constraints.</source>
-        <translation type="unfinished"></translation>
+        <translation>6) Αίθουσες: Πιθανώς να είναι προτιμότερο να δοκιμάσετε πρώτα την κατάρτιση του ωρολογίου προγράμματος χωρίς να ληφθούν υπόψη οι περιορισμοί αιθουσών, προκειμένου να βεβαιωθείτε ότι το ωρολόγιο πρόγραμμα είναι επιλύσιμο, και στη συνέχεια να προσθέσετε τις αίθουσες καθώς και τους περιορισμούς που σχετίζονται με αίθουσες.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="126"/>
         <source>8) The new algorithm (after version 5.0.0) does not accept fortnightly activities. But you might apply a trick. Please see menu Help/Frequently Asked Questions menu (it has the description of a possible trick) (the essence is to make a weekly activity with the sum of teachers and students of both fortnightly activities)</source>
-        <translation type="unfinished"></translation>
+        <translation>8) Ο νέος αλγόριθμος (μετά την έκδοση 5.0.0) δεν δέχεται (δεν υποστηρίζει) δραστηριότητες 14ημέρου. Αλλά μπορείτε να εφαρμόσετε ένα τέχνασμα. Παρακαλώ δείτε στο μενού &quot;Βοήθεια/Συνήθεις Ερωτήσεις&quot; (όπου έχει την περιγραφή ενός τεχνάσματος) (η ουσία είναι να δημιουργήσετε μία εβδομαδιαία δραστηριότητα με το άθροισμα (σύνολο) των εκπαιδευτικών και των μαθητών και των δύο δραστηριοτήτων 14ημέρου)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="130"/>
         <source>9) Even if it takes a long time to generate your timetable with a set of constraints, strengthening the constraints might not slow the generation too much. You are advised to try with stronger constraints after you obtain timetables, because you can obtain better timetables this way.</source>
-        <translation type="unfinished"></translation>
+        <translation>9) Ακόμη και αν απαιτείται πολύς χρόνος για την κατάρτιση (επίλυση) του ωρολογίου προγράμματος με ένα σύνολο περιορισμών, η ενίσχυση των περιορισμών ενδέχεται να μην επιβραδύνει υπερβολικά την κατάρτιση (επίλυση) του ωρολογίου προγράμματος. Συνιστάται να δοκιμάσετε την χρήση ισχυρότερων περιορισμών αφότου έχετε λάβει λύσεις για το ωρολόγιο πρόγραμμά σας (δηλαδή με πιο &quot;χαλαρούς&quot; περιορισμούς στην αρχή), διότι με τον τρόπο αυτό μπορείτε να λάβετε καλύτερες λύσεις.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="137"/>
         <source>11) Each room can host a single activity at the same time. If you have a large room which can host more activities at the same time, you need to use a small trick. You can add more rooms representing this large room and add corresponding constraints preferred rooms. There is an entry in the FAQ about that.</source>
-        <translation type="unfinished"></translation>
+        <translation>11) Η κάθε αίθουσα έχει την δυνατότητα να &quot;φιλοξενήσει&quot; (υποδεχθεί) μόνον μία δραστηριότητα κάθε ώρα. Αν έχετε μία μεγάλη αίθουσα η οποία μπορεί να υποδεχθεί περισσότερες δραστηριότητες την ίδια ώρα, θα πρέπει να χρησιμοποιήσετε ένα μικρό τέχνασμα. Μπορείτε να προσθέσετε περισσότερες αίθουσες, έτσι ώστε πρακτικά οι αίθουσες αυτές να ισοδυναμούν με την κατά τα ανωτέρω μεγαλύτερη αίθουσα και στη συνέχεια να προσθέσετε τους αντίστοιχους περιορισμούς &quot;προτιμητέες αίθουσες&quot;. Υπάρχει καταχώρηση για το ζήτημα αυτό στις ΣΕ.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="141"/>
         <source>12) If teachers are getting days with only one hour of work, you might want to add constraint teacher(s) min hours daily (probably with 2 hours), but please make sure your timetable is possible. This constraint is smart, it only considers non-empty days.</source>
-        <translation type="unfinished"></translation>
+        <translation>12) Αν οι εκπαιδευτικοί έχουν ημέρες με μία μόνον ώρα εργασίας, μπορεί να θέλετε να προσθέσετε περιορισμό &quot;εκπαιδευτικός (εκπαιδευτικοί) - ελάχιστες ώρες ημερησίως&quot; (πιθανώς με &quot;ελάχιστες ώρες&quot;=2, αλλά παρακαλώ πρώτα να βεβαιωθείτε ότι το ωρολόγιο πρόγραμμα είναι επιλύσιμο. Ο περιορισμός αυτός είναι &quot;έξυπνος&quot; και εξετάζει μόνον τις ημέρες που δεν είναι κενές.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="145"/>
         <source>13) If you have for instance 7 hours of Maths on a 5 days week (more lessons than days), please respect the correct way to add these as a split activity. See question Q-1-27-March-2008 from FAQ. It is important!</source>
-        <translation type="unfinished"></translation>
+        <translation>13) Αν έχετε για παράδειγμα 7 ώρες Μαθηματικών σε εβδομάδα 5 ημερών (περισσότερες διδασκαλίες σε σχέση με τις ημέρες), παρακαλώ τηρείστε τον ορθό τρόπο αναφορικά με την προσθήκη της επιμερισμένης δραστηριότητας. Μπορείτε να δείτε την ερώτηση Ε-1-27-Μαρτίου-2008 στις ΣΕ. Είναι σημαντικό!</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="158"/>
         <source>17) If you have activities split into 3 activities per week and need them to be not in 3 consecutive days, there is an entry in the FAQ explaining how to specify this (question Q1-5-September-2008).</source>
-        <translation type="unfinished"></translation>
+        <translation>17) Αν έχετε δραστηριότητες οι οποίες είναι επιμερισμένες σε 3 υποδραστηριότητες ανά εβδομάδα και θέλετε αυτές οι 3 υποδραστηριότητες να μην είναι σε 3 διαδοχικές ημέρες, δείτε στις ΣΕ πώς μπορείτε να το πετύχετε (ερώτηση Ε1-5-Σεπτεμβρίου-2008).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="161"/>
         <source>18) If you use the not perfect constraints activity tag max hours daily or students max gaps per day (there are 4+2 types of constraints in this category), use them with caution not to obtain an impossible timetable. If the timetable is impossible, it may be because of them. You are advised to add such constraints only in the end, after you are sure that the other constraints are good and the timetable is possible.</source>
-        <translation type="unfinished"></translation>
+        <translation>18) Αν χρειάζεστε τους μερικώς βελτιστοποιημένους περιορισμούς &quot;ετικέτα δραστηριότητας - μέγιστες ώρες ημερησίως&quot; ή &quot;μαθητές - μέγιστα κενά ανά ημέρα&quot; (υπάρχουν 4+2 τύποι περιορισμών στην κατηγορία αυτή), χρησιμοποιείστε τους με προσοχή προκειμένου να μην καταλήξετε σε μη επιλύσιμο ωρολόγιο πρόγραμμα. Αν η κατάρτιση (επίλυση) του ωρολογίου προγράμματος είναι αδύνατη, αυτό μπορεί να οφείλεται στους ανωτέρω περιορισμούς. Συνιστάται να προσθέτετε περιορισμούς αυτού του είδους μόνον στο τέλος, αφότου έχετε βεβαιωθεί ότι οι υπόλοιποι περιορισμοί είναι καλοί και ότι το ωρολόγιο πρόγραμμα είναι επιλύσιμο.</translation>
     </message>
 </context>
 <context>
@@ -37934,42 +38235,42 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="26"/>
         <source>Important information about imperfect constraints:</source>
-        <translation type="unfinished"></translation>
+        <translation>Σημαντικές πληροφορίες για τους μερικώς βελτιστοποιημένους περιορισμούς:</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="30"/>
         <source>The imperfect constraints are 6: students (set) max gaps per day and teacher(s) or students (set) activity tag max hours daily.</source>
-        <translation type="unfinished"></translation>
+        <translation>Οι μερικώς βελτιστοποιημένοι περιορισμοί είναι 6: &quot;μαθητές (ή ομάδα μαθητών) - μέγιστα κενά ανά ημέρα&quot;, &quot;μαθητές (ή ομάδα μαθητών) + ετικέτα δραστηριότητας - μέγιστες ώρες ημερησίως&quot; και &quot;εκπαιδευτικός (ή εκπαιδευτικοί) + ετικέτα δραστηριότητας - μέγιστες ώρες ημερησίως&quot;.</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="34"/>
         <source>You are advised to leave the imperfect constraints as a last resort if you really need them. Generate the timetable with all other constraints and only after that you may try them. The imperfect constraints may make your timetable too hard to find or even impossible, in some conditions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Συνιστάται να χρησιμοποιήσετε τους μερικούς βελτιστοποιημένους περιορισμούς μόνον ως έσχατη λύση, δηλαδή μόνον αν πραγματικά τους χρειάζεστε. Αρχικά, καταρτίστε (δημιουργήστε) το ωρολόγιο πρόγραμμα με όλους τους άλλους περιορισμούς και όταν βεβαιωθείτε ότι υπάρχει λύση -και μόνον τότε- μπορείτε εισαγάγετε και κάποιον (ή κάποιους) από τους μερικώς βελτιστοποιημένους περιορισμούς. Οι μερικώς βελτιστοποιημένοι περιορισμοί ενδεχομένως να καταστήσουν ιδιαιτέρως δύσκολη την επίλυση του ωρολογίου προγράμματος ή (σε κάποιες περιπτώσεις) ακόμη και αδύνατη.</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="39"/>
         <source>Notation: ATS = affected students set or teacher - the teacher or students specified in an imperfect constraint.</source>
-        <translation type="unfinished"></translation>
+        <translation>Σημειογραφία: ΣΜΕ = Σχετιζόμενοι Μαθητές (ομάδα) ή Εκπαιδευτικός - οι μαθητές ή ο εκπαιδευτικός που σχετίζονται με μερικώς βελτιστοποιημένο περιορισμό.</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="43"/>
         <source>Max gaps per day: it is not fully optimized for use with other constraints for students: min/max hours daily. It is also not tested thoroughly.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο περιορισμός &quot;μέγιστα κενά ανά ημέρα&quot;: δεν είναι πλήρως βελτιστοποιημένος για χρήση με άλλους περιορισμούς για μαθητές: &quot;ελάχιστες/μέγιστες ώρες ημερησίως&quot;. Επίσης, δεν έχει δοκιμαστεί πλήρως.</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="45"/>
         <source>If your students need 0 maximum total gaps, do not use max gaps per day constraint, better use the safe and tested max gaps per week (with 0 gaps allowed).</source>
-        <translation type="unfinished"></translation>
+        <translation>Αν χρειάζεται οι μαθητές σας να έχουν συνολικά 0 κενά (να μην έχουν καθόλου κενά στο ωρολόγιο πρόγραμμά τους), καλύτερα να μην χρησιμοποιηθεί ο περιορισμός &quot;μέγιστα κενά ανά ημέρα&quot;, αλλά ο ασφαλέστερος και εκτενώς δοκιμασμένος &quot;μέγιστα κενά ανά εβδομάδα&quot; (με επιτρεπτά κενά = 0).</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="49"/>
         <source>Activity tag max hours daily: it is not fully optimized for this situation: if the ATS have max gaps constraints and the number of total available slots per week for the ATS is much larger than the working hours per week and the ATS has many activities with the specified activity tag (more than 0.5-0.75 of total hours). In such cases, a remedy may be to add constraint ATS max hours daily (without specifying an activity tag).</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;Ετικέτα δραστηριότητας - μέγιστες ώρες ημερησίως&quot;: ο περιορισμός αυτός δεν είναι πλήρως βελτιστοποιημένος για την παρακάτω περίπτωση: αν οι ΣΜΕ έχουν περιορισμούς &quot;μέγιστα κενά&quot; και ο αριθμός των συνολικών διαθέσιμων περιόδων ανά εβδομάδα για τους ΣΜΕ είναι πολύ μεγαλύτερος σε σχέση με τις ώρες εργασίας ανά εβδομάδα και οι ΣΜΕ έχουν πολλές δραστηριότητες με την συγκεκριμένη ετικέτα δραστηριότητας (περισσότερες από 0.5-0.75*σύνολο_ωρών). Σε τέτοιες περιπτώσεις, η &quot;θεραπεία&quot; ενδεχομένως να είναι η προσθήκη περιορισμού ΣΜΕ &quot;μέγιστες ώρες ημερησίως&quot; (χωρίς να καθοριστεί η ετικέτα δραστηριότητας).</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="54"/>
         <source>Read FAQ question 1/25 September 2009 for some more details about activity tag max hours daily constraint.</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαβάστε στις ΣΕ την ερώτηση 1 / 25 Σεπτεμβρίου 2009 για κάποιες επιπλέον πληροφορίες σχετικά με τον περιορισμό &quot;ετικέτα δραστηριότητας - μέγιστες ώρες ημερησίως&quot;.</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="56"/>
@@ -37982,42 +38283,42 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helponstudentsminhoursdaily.cpp" line="26"/>
         <source>Important information about constraints students (set) min hours daily:</source>
-        <translation type="unfinished"></translation>
+        <translation>Σημαντικές πληροφορίες για τους περιορισμούς &quot;μαθητές (ή ομάδα μαθητών) - ελάχιστες ώρες ημερησίως&quot;:</translation>
     </message>
     <message>
         <location filename="../src/interface/helponstudentsminhoursdaily.cpp" line="30"/>
         <source>Normally, these constraints do not allow empty days for students (and the check boxes in the dialogs are not selectable).</source>
-        <translation type="unfinished"></translation>
+        <translation>Κανονικά, οι περιορισμοί αυτοί δεν επιτρέπουν κενές ημέρες για τους μαθητές (και τα πλαίσια ελέγχου στους αντίστοιχους διαλόγους δεν είναι επιλέξιμα).</translation>
     </message>
     <message>
         <location filename="../src/interface/helponstudentsminhoursdaily.cpp" line="32"/>
         <source>If you really need this constraint to allow empty days for students, you must enable the option from Settings-&gt;Advanced menu and select the check box.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αν πραγματικά θέλετε ο περιορισμός αυτός να επιτρέπει κενές ημέρες για μαθητές, θα πρέπει να ενεργοποιήσετε την επιλογή αυτή από το μενού &quot;Ρυθμίσεις-&gt;Προηγμένες&quot; και να επιλέξετε το αντίστοιχο πλαίσιο ελέγχου.</translation>
     </message>
     <message>
         <location filename="../src/interface/helponstudentsminhoursdaily.cpp" line="34"/>
         <source>Be very careful: if your school does not allow empty days for students or if a timetable does not exist with empty days for students, you MUST keep the constraints the usual way, without allowing empty days.</source>
-        <translation type="unfinished"></translation>
+        <translation>Προσοχή: αν το σχολείο σας δεν επιτρέπει κενές ημέρες για μαθητές ή αν είναι αδύνατη η κατάρτιση ωρολογίου προγράμματος με κενές ημέρες για μαθητές, θα ΠΡΕΠΕΙ να χρησιμοποιήσετε τους περιορισμούς με τον συνήθη τρόπο, δηλαδή χωρίς να επιτρέπονται οι κενές ημέρες.</translation>
     </message>
     <message>
         <location filename="../src/interface/helponstudentsminhoursdaily.cpp" line="37"/>
         <source>The reason is performance: speed of generation and the ability of FET to find a solution.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο λόγος είναι η απόδοση: η ταχύτητα κατάρτισης (επίλυσης) ωρολογίου προγράμματος και η δυνατότητα του FET να βρει λύση.</translation>
     </message>
     <message>
         <location filename="../src/interface/helponstudentsminhoursdaily.cpp" line="39"/>
         <source>If you allow empty days to these constraints and a solution exists only with non-empty days, FET might not be able to find it.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αν επιτρέψετε την ύπαρξη κενών ημερών στους περιορισμούς αυτούς, αλλά στην πραγματικότητα λύση υπάρχει μόνον χωρίς καμία κενή ημέρα, ενδεχομένως το FET να μην μπορέσει να επιλύσει το ωρολόγιο πρόγραμμα.</translation>
     </message>
     <message>
         <location filename="../src/interface/helponstudentsminhoursdaily.cpp" line="41"/>
         <source>For normal schools or high-schools, probably you won&apos;t need to enable this option. Maybe for universities you will need to enable this option.</source>
-        <translation type="unfinished"></translation>
+        <translation>Για συνήθεις περιπτώσεις σχολείων (δημοτικών, γυμνασίων, λυκείων), πιθανότατα δεν θα χρειαστεί να ενεργοποιήσετε την επιλογή αυτή. Πιθανώς όμως να χρειαστεί να την ενεργοποιήσετε για ωρολόγια προγράμματα πανεπιστημίων.</translation>
     </message>
     <message>
         <location filename="../src/interface/helponstudentsminhoursdaily.cpp" line="43"/>
         <source>So, remember: don&apos;t allow empty days unless you need it.</source>
-        <translation type="unfinished"></translation>
+        <translation>Οπότε να θυμάστε το εξής: μην επιτρέπετε κενές ημέρες, παρά μόνον αν είναι πραγματικά απαραίτητο.</translation>
     </message>
     <message>
         <location filename="../src/interface/helponstudentsminhoursdaily.cpp" line="45"/>
@@ -38035,37 +38336,37 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helptipsform.cpp" line="56"/>
         <source>The correct way: if you want consecutive if same day, consider activities having a longer duration. Instead of adding activities 1+1+1+1+1+1+1 in a 5 days week, add them as 2+2+1+1+1. If you don&apos;t want consecutive if same day, add 1+1+1+1+1 firstly and 1+1 after that.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο σωστός τρόπος: αν θέλετε &quot;αν την ίδια ημέρα - διαδοχικές&quot;, θεωρήστε δραστηριότητες οι οποίες έχουν μεγαλύτερη διάρκεια. Αναλυτικότερα, αντί να προσθέσετε τις δραστηριότητες ως 1+1+1+1+1+1+1 σε εβδομάδα 5 ημερών, προσθέστε τες ως 2+2+1+1+1. Αν δεν θέλετε &quot;αν την ίδια ημέρα - διαδοχικές&quot;, προσθέστε πρώτα μία (επιμερισμένη) δραστηριότητα 1+1+1+1+1 και στη συνέχεια μία άλλη (επιμερισμένη) δραστηριότητα 1+1.</translation>
     </message>
     <message>
         <location filename="../src/interface/helptipsform.cpp" line="60"/>
         <source>The generation will be much faster and easier using this approach (more than 10 times faster sometimes).</source>
-        <translation type="unfinished"></translation>
+        <translation>Η επίλυση (δημιουργία) του ωρολογίου προγράμματος θα είναι πολύ γρηγορότερη και ευκολότερη με την προσέγγιση αυτή (περισσότερο από 10 φορές γρηγορότερη σε κάποιες περιπτώσεις).</translation>
     </message>
     <message>
         <location filename="../src/interface/helptipsform.cpp" line="64"/>
         <source>2) When adding constraints activities same starting time (or day), please remove redundant min days constraints. For instance, A1 (at same time with B1 and C1), A2 (same time with B2 and C2) and A3 (same time with B3 and C3). You will normally have 3 or 6 constraints min days between activities (first one or two with A1,A2,A3 and then with B1,B2,B3 and then with C1,C2,C3). These 3 or 6 constraints min days will result in a much stronger constraint, which will make the timetable much harder to find. If you have say 4 groups of activities (A, B, C, D), things will be even harder.</source>
-        <translation type="unfinished">2) Όταν προσθέτετε περιορισμούς του τύπου &quot;δραστηριότητες - ίδιος χρόνος έναρξης (ή ίδια ημέρα έναρξης)&quot;, παρακαλώ διαγράψτε τους περιττούς περιορισμούς &quot;ελάχιστες ημέρες&quot;. Για παράδειγμα, δραστηριότητα A1 (ίδιος χρόνος με τις δραστηριότητες B1 και C1), A2 (ίδιος χρόνος με τις δραστηριότητες B2 και C2) και A3 (ίδιος χρόνος με τις δραστηριότητες B3 και C3). Φυσιολογικά θα έχετε 3 ή 6 περιορισμούς &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; (ο πρώτος περιορισμός ή οι δύο πρώτοι περιορισμοί με τις A1, A2, A3 και έπειτα με τις B1, B2, B3 και έπειτα με τις C1, C2, C3). Αυτοί οι 3 ή 6 περιορισμοί &quot;ελάχιστες ημέρες&quot; θα έχουν ως αποτέλεσμα έναν σαφώς ισχυρότερο περιορισμό, ο οποίος θα καταστήσει την επίλυση του ωρολογίου προγράμματος σαφώς πιο δύσκολη. Αν έχετε 4 ομάδες δραστηριοτήτων (A, B, C, D), η κατάσταση θα είναι ακόμη πιο δύσκολη.</translation>
+        <translation>2) Όταν προσθέτετε περιορισμούς του τύπου &quot;δραστηριότητες - ίδιος χρόνος έναρξης (ή ίδια ημέρα έναρξης)&quot;, παρακαλώ διαγράψτε τους πλεονάζοντες περιορισμούς &quot;ελάχιστες ημέρες&quot;. Για παράδειγμα, δραστηριότητα A1 (ίδιος χρόνος με τις δραστηριότητες B1 και C1), A2 (ίδιος χρόνος με τις δραστηριότητες B2 και C2) και A3 (ίδιος χρόνος με τις δραστηριότητες B3 και C3). Φυσιολογικά θα έχετε 3 ή 6 περιορισμούς &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; (ο πρώτος περιορισμός ή οι δύο πρώτοι περιορισμοί με τις A1, A2, A3 και έπειτα με τις B1, B2, B3 και έπειτα με τις C1, C2, C3). Αυτοί οι 3 ή 6 περιορισμοί &quot;ελάχιστες ημέρες&quot; θα έχουν ως αποτέλεσμα έναν σαφώς ισχυρότερο περιορισμό, ο οποίος θα καταστήσει την επίλυση του ωρολογίου προγράμματος σαφώς πιο δύσκολη. Αν έχετε 4 ομάδες δραστηριοτήτων (A, B, C, D), η κατάσταση θα είναι ακόμη πιο δύσκολη.</translation>
     </message>
     <message>
         <location filename="../src/interface/helptipsform.cpp" line="70"/>
         <source>The correct way is to leave only the constraints min days referring to the first group of activities (A). You will have a much faster generation (maybe 10 times faster or more).</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο σωστός τρόπος είναι να αφήσετε μόνον τους περιορισμούς &quot;ελάχιστες ημέρες&quot; οι οποίοι σχετίζονται με την πρώτη ομάδα δραστηριοτήτων (A). Θα πετύχετε έτσι μία πολύ γρηγορότερη επίλυση (δημιουργία) του ωρολογίου προγράμματος (πιθανώς 10 φορές γρηγορότερη ή και περισσότερο).</translation>
     </message>
     <message>
         <location filename="../src/interface/helptipsform.cpp" line="77"/>
         <source>More details: the combination of 2 or more redundant constraints min days between activities gives another resultant constraint, much stronger. From 3 redundant constraints with 95%, you get one with 100%-5%*5%*5%=99.9875%, which is not what you want.</source>
-        <translation type="unfinished"></translation>
+        <translation>Περισσότερες λεπτομέρειες: ο συνδυασμός 2 ή περισσοτέρων πλεοναζόντων περιορισμών &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; έχει ως αποτέλεσμα έναν άλλο περιορισμό, ο οποίος είναι πολύ ισχυρότερος. Από 3 πλεονάζοντες περιορισμούς με ποσοστό βαρύτητας 95%, θα λάβετε έναν με ποσοστό βαρύτητας 100%-5%*5%*5%=99.9875%, το οποίο όμως δεν είναι αυτό που θέλετε.</translation>
     </message>
     <message>
         <location filename="../src/interface/helptipsform.cpp" line="87"/>
         <source>It is IMPORTANT to remove redundant min days constraints after you inputted data and before generating (for instance, apply this after adding more constraints of type same starting time/day and before generating). Any modification of the min days constraints should be followed by this removal of redundant min days constraints (well, not all modifications, but better to do it than not). If you modify more constraints at once or apply the balancing of activities, it is important to remove redundant constraints. If you have no redundant constraints, it is no need to remove the redundant constraints, but better to check again than let some redundant constraints active.</source>
-        <translation type="unfinished"></translation>
+        <translation>Είναι ΣΗΜΑΝΤΙΚΟ να διαγράψετε τους πλεονάζοντες περιορισμούς &quot;ελάχιστες ημέρες&quot; μετά την εισαγωγή των δεδομένων και πριν την κατάρτιση (δημιουργία) του ωρολογίου προγράμματος (για παράδειγμα, εφαρμόστε το παραπάνω μετά την προσθήκη περισσοτέρων περιορισμών του τύπου &quot;ίδια ημέρα έναρξης&quot; ή &quot;ίδιος χρόνος έναρξης&quot; και πριν την επίλυση του ωρολογίου προγράμματος). Οποιαδήποτε τροποποίηση των περιορισμών &quot;ελάχιστες ημέρες&quot; θα πρέπει να συνοδεύεται από την διαγραφή των πλεοναζόντων περιορισμών &quot;ελάχιστες ημέρες&quot; (βασικά, όχι όλες οι τροποποιήσεις, αλλά είναι καλύτερο να το κάνετε παρά να μην το κάνετε). Αν τροποποιήσετε περισσότερους περιορισμούς με μία ενέργεια ή εφαρμόσετε την ισοστάθμιση των δραστηριοτήτων, είναι σημαντικό να διαγράψετε τους πλεονάζοντες περιορισμούς. Αν δεν έχετε καθόλου πλεονάζοντες περιορισμούς, δεν υπάρχει λόγος να διαγράψετε τους πλεονάζοντες περιορισμούς, αλλά καλύτερα να κάνετε ξανά έλεγχο και να αφήσετε κάποιους πλεονάζοντες περιορισμούς ενεργούς.</translation>
     </message>
     <message>
         <location filename="../src/interface/helptipsform.cpp" line="95"/>
         <source>Note: redundant constraints min days with weight 100.0% do not really affect the generation. This is because the resultant of more constraints with weight 100.0% is also 100.0%. So, if your data contains only min days between activities constraints with 100.0% weight, there is no imperative need to remove redundant constraints. But, again, better to remove redundant constraints as a precaution.</source>
-        <translation type="unfinished"></translation>
+        <translation>Σημείωση: οι πλεονάζοντες περιορισμοί &quot;ελάχιστες ημέρες&quot; με ποσοστό βαρύτητας 100.0% πρακτικά δεν επηρεάζουν την επίλυση του ωρολογίου προγράμματος. Αυτό συμβαίνει επειδή το αποτέλεσμα των περισσοτέρων (του ενός) περιορισμών με βαρύτητα 100.0% είναι επίσης περιορισμοί με ποσοστό βαρύτητας 100.0%. Κατά συνέπεια, αν τα δεδομένα σας περιλαμβάνουν μόνον περιορισμούς &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; με βαρύτητα 100.0%, δεν υπάρχει επιτακτική ανάγκη να διαγράψετε τους πλεονάζοντες περιορισμούς. Αλλά, και πάλι, είναι προτιμότερο για λόγους πρόληψης να διαγράψετε τους πλεονάζοντες περιορισμούς.</translation>
     </message>
     <message>
         <location filename="../src/interface/helptipsform.cpp" line="101"/>
@@ -38075,17 +38376,17 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helptipsform.cpp" line="105"/>
         <source>If A1 and A2 are constrained not to be in the same day with 95% weight or any other weight, it is a bad practice to add a constraint grouped or consecutive to them. If they are constrained with weight 100% not to be in the same day, the timetable is impossible; if the weight is below 100%, the timetable is more difficult to find than using the correct way. The correct way would probably be to consider A1 and A2 = a single activity A12&apos;, or to modify the related constraint min days between activities. Or maybe you can find other ways.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αν οι A1 και A2 είναι περιορισμένες ώστε να μην τοποθετηθούν την ίδια ημέρα, με ποσοστό βαρύτητας 95% ή οποιοδήποτε άλλο (ποσοστό), είναι κακή πρακτική να προσθέσετε περιορισμό &quot;ομαδοποιημένες&quot; ή &quot;διαδοχικές&quot; στις δραστηριότητες αυτές. Αν είναι περιορισμένες με ποσοστό βαρύτητας 100% ώστε να μην τοποθετηθούν την ίδια ημέρα, το ωρολόγιο πρόγραμμα είναι αδύνατον να καταρτισθεί (επιλυθεί). Αν το ποσοστό βαρύτητας είναι μικρότερο του 100%, η επίλυση του ωρολογίου προγράμματος είναι μεν εφικτή, αλλά είναι σαφώς δυσκολότερη σε σχέση με το αν ακολουθούσατε τον ορθό τρόπο. Ο ορθός τρόπος ενδεχομένως να είναι να &quot;συγχωνεύσετε&quot; τις A1 και A2 σε μία και μόνον δραστηριότητα την A12&apos;, ή να τροποποιήσετε τον σχετικό περιορισμό &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;. Ή πιθανώς να μπορείτε να βρείτε και άλλους τρόπους.</translation>
     </message>
     <message>
         <location filename="../src/interface/helptipsform.cpp" line="73"/>
         <source>PS: Suppose there are 2 constraints for activities A1,2,3 and 2 constraints for activities B1,2,3 and 2 constraints for activities C1,2,3. If A and B and C are simultaneous, remove only the constraints referring to B and C (but leave both for A, if for instance you have min 2 days with 95% and min 1 day with 100%).</source>
-        <translation type="unfinished"></translation>
+        <translation>ΥΓ: Θεωρήστε ότι υπάρχουν 2 περιορισμοί για τις δραστηριότητες A1,2,3 και 2 περιορισμοί για τις δραστηριότητες B1,2,3 και 2 περιορισμοί για τις δραστηριότητες C1,2,3. Αν οι A και B και C είναι ταυτόχρονες, διαγράψετε μόνον τους περιορισμούς που σχετίζονται με τις B και C (αλλά αφήστε και τους δύο περιορισμούς για την A, αν για παράδειγμα έχετε &quot;ελάχιστες ημέρες&quot;=2 με βαρύτητα 95% και &quot;ελάχιστες ημέρες&quot;=1 με βαρύτητα 100%).</translation>
     </message>
     <message>
         <location filename="../src/interface/helptipsform.cpp" line="47"/>
         <source>Important tips.</source>
-        <translation type="unfinished"></translation>
+        <translation>Σημαντικές υποδείξεις.</translation>
     </message>
     <message>
         <location filename="../src/interface/helptipsform.cpp" line="49"/>
@@ -38100,12 +38401,12 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helptipsform.cpp" line="80"/>
         <source>Do not consider redundant constraints with the same activities but different number of days (you may want to add min 2 days 95% and min 1 day 95%, which gives in 95% cases the 2 days will be respected and in 99.75% cases the 1 day will be respected).</source>
-        <translation type="unfinished"></translation>
+        <translation>Οι περιορισμοί με τις ίδιες δραστηριότητες, αλλά με διαφορετικό αριθμό (ελάχιστων) ημερών δεν θα πρέπει να θεωρούνται ως πλεονάζοντες (μπορεί να θέλετε να προσθέσετε &quot;ελάχιστες ημέρες&quot;=2 με βαρύτητα 95% και &quot;ελάχιστες ημέρες&quot;=1 με βαρύτητα 95%, το οποίο έχει ως αποτέλεσμα την τήρηση των 2 (ελάχιστων) ημερών στο 95% των περιπτώσεων και την τήρηση της 1 (ελάχιστης) ημέρας στο 99.75% περιπτώσεων).</translation>
     </message>
     <message>
         <location filename="../src/interface/helptipsform.cpp" line="84"/>
         <source>The other constraints (like preferred time(s) constraints) do not have the problem of redundancy like min days constraints, so no need to take care about them.</source>
-        <translation type="unfinished"></translation>
+        <translation>Οι άλλοι περιορισμοί (όπως οι περιορισμοί &quot;προτιμητέος χρόνος (χρόνοι)&quot;) -και σε αντίθεση με τους περιορισμούς &quot;ελάχιστες ημέρες- δεν είναι πλεονάζοντες. Έτσι, δεν είναι απαραίτητο να ληφθεί μέριμνα για αυτούς.</translation>
     </message>
 </context>
 <context>
@@ -38562,7 +38863,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="159"/>
         <source>Don&apos;t import &quot;%1&quot;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Να μην εισαχθεί το &quot;%1&quot;.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="160"/>
@@ -38640,12 +38941,12 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="669"/>
         <source>Please specify the used text quote of text fields:</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ καθορίστε τον χρησιμοποιούμενο χαρακτήρα εισαγωγικών των πεδίων κειμένου:</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="676"/>
         <source>Used textquote:</source>
-        <translation type="unfinished"></translation>
+        <translation>Χρησιμοποιούμενος χαρακτήρας εισαγωγικών:</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="685"/>
@@ -38724,7 +39025,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="1141"/>
         <source>FET import %1 question</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - Ερώτηση για εισαγωγή του %1</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1177"/>
@@ -38749,7 +39050,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="1230"/>
         <source>&amp;Import</source>
-        <translation type="unfinished"></translation>
+        <translation>Ει&amp;σαγωγή</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1231"/>
@@ -38863,7 +39164,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="2109"/>
         <source>FET needs to know %1 or %2 if you import %3.</source>
-        <translation type="unfinished"></translation>
+        <translation>Το FET πρέπει να γνωρίζει το %1 ή %2 αν εισαγάγετε το %3.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="2414"/>
@@ -38914,12 +39215,12 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="777"/>
         <source>Missing field separator or text quote in first line. Import might be incorrect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Λείπει ο χαρακτήρας διαχωρισμού πεδίων ή ο χαρακτήρας εισαγωγικών στην πρώτη γραμμή του αρχείου εισαγωγής. Η εισαγωγή μπορεί να είναι εσφαλμένη.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="786"/>
         <source>Missing closing text quote in first line. Import might be incorrect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Λείπει κλείσιμο εισαγωγικών στην πρώτη γραμμή του αρχείου εισαγωγής. Η εισαγωγή μπορεί να είναι εσφαλμένη.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="890"/>
@@ -39195,7 +39496,7 @@ is:</source>
     <message>
         <location filename="../src/engine/import.cpp" line="512"/>
         <source>no textquote</source>
-        <translation type="unfinished"></translation>
+        <translation>χωρίς εισαγωγικά</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="693"/>
@@ -39253,7 +39554,7 @@ Please stop simulation before this</source>
         <location filename="../src/engine/import.cpp" line="440"/>
         <source>FET - import %1 comment</source>
         <comment>The comment of the importing of the category named %1</comment>
-        <translation type="unfinished"></translation>
+        <translation>FET - Σχόλιο εισαγωγής %1</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="451"/>
@@ -39267,7 +39568,7 @@ Please stop simulation before this</source>
         <location filename="../src/engine/export.cpp" line="1335"/>
         <source>FET - export comment</source>
         <comment>The comment of the exporting operation</comment>
-        <translation type="unfinished">FET - σχόλιο για την εξαγωγή</translation>
+        <translation>FET - σχόλιο για την εξαγωγή</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="1346"/>
@@ -40264,7 +40565,7 @@ Please stop simulation before this</source>
  The best practice would be to use constraint break times.
 
  If you need weight under 100%, then you can use this constraint, but be careful not to obtain an impossible timetable (if your teachers/students are constrained on gaps or early gaps and if you leave a not allowed slot between 2 allowed slots or a not allowed slot early in the day and more allowed slots after it, this possible gap might be counted in teachers&apos; and students&apos; timetable)</source>
-        <translation type="unfinished">Έχετε επιλέξει όλες τις δραστηριότητες. Αυτό μπορεί να είναι ένα μικρό πρόβλημα: αν προσδιορίσετε μία μη επιτρεπτή περίοδο ανάμεσα σε δύο επιτρεπτές περιόδους, αυτή η μη επιτρεπτή περίοδος μπορεί να αποτελέσει ένα εν δυνάμει κενό (και να προσμετρηθεί ως κενό) στο ωρολόγιο πρόγραμμα των εκπαιδευτικών και των μαθητών.
+        <translation>Έχετε επιλέξει όλες τις δραστηριότητες. Αυτό μπορεί να είναι ένα μικρό πρόβλημα: αν προσδιορίσετε μία μη επιτρεπτή περίοδο ανάμεσα σε δύο επιτρεπτές περιόδους, αυτή η μη επιτρεπτή περίοδος μπορεί να αποτελέσει ένα εν δυνάμει κενό (και να προσμετρηθεί ως κενό) στο ωρολόγιο πρόγραμμα των εκπαιδευτικών και των μαθητών.
 
 Η καλύτερη πρακτική είναι να χρησιμοποιήσετε τον περιορισμό &quot;χρόνοι διαλειμμάτων&quot;.
 
@@ -40297,7 +40598,7 @@ Please stop simulation before this</source>
  The best practice would be to use constraint students set not available times.
 
  If you need weight under 100%, then you can use this constraint, but be careful not to obtain an impossible timetable (if your students set is constrained on gaps or early gaps and if you leave a not allowed slot between 2 allowed slots (or a not allowed slot before allowed slots), this possible gap might be counted in students&apos; timetable)</source>
-        <translation type="unfinished">Έχετε προσδιορίσει μόνον την ομάδα μαθητών. Αυτό μπορεί να προξενήσει ένα μικρό πρόβλημα: αν προσδιορίσετε μία μη επιτρεπτή περίοδο ανάμεσα σε δύο επιτρεπτές (περιόδους), η μη επιτρεπτή περίοδος θα προσμετρηθεί ως κενό στο ωρολόγιο πρόγραμμα των μαθητών.
+        <translation>Έχετε προσδιορίσει μόνον την ομάδα μαθητών. Αυτό μπορεί να προξενήσει ένα μικρό πρόβλημα: αν προσδιορίσετε μία μη επιτρεπτή περίοδο ανάμεσα σε δύο επιτρεπτές (περιόδους), η μη επιτρεπτή περίοδος θα προσμετρηθεί ως κενό στο ωρολόγιο πρόγραμμα των μαθητών.
 
 Η καλύτερη πρακτική είναι να χρησιμοποιήσετε τον περιορισμό &quot;ομάδα μαθητών - μη διαθέσιμοι χρόνοι&quot;.
 
@@ -40306,7 +40607,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="418"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
-        <translation type="unfinished"></translation>
+        <translation>Προειδοποίηση: δεν έχει επιλεγεί καμία περίοδος. Είστε σίγουροι;</translation>
     </message>
 </context>
 <context>
@@ -40403,7 +40704,7 @@ Please stop simulation before this</source>
  The best practice would be to use constraint break times.
 
  If you need weight under 100%, then you can use this constraint, but be careful not to obtain an impossible timetable (if your teachers/students are constrained on gaps or early gaps and if you leave a not allowed slot between 2 allowed slots or a not allowed slot early in the day and more allowed slots after it, this possible gap might be counted in teachers&apos; and students&apos; timetable)</source>
-        <translation type="unfinished">Έχετε επιλέξει όλες τις δραστηριότητες. Αυτό μπορεί να είναι ένα μικρό πρόβλημα: αν προσδιορίσετε μία μη επιτρεπτή περίοδο ανάμεσα σε δύο επιτρεπτές περιόδους, αυτή η μη επιτρεπτή περίοδος μπορεί να αποτελέσει ένα εν δυνάμει κενό (και να προσμετρηθεί ως κενό) στο ωρολόγιο πρόγραμμα των εκπαιδευτικών και των μαθητών.
+        <translation>Έχετε επιλέξει όλες τις δραστηριότητες. Αυτό μπορεί να είναι ένα μικρό πρόβλημα: αν προσδιορίσετε μία μη επιτρεπτή περίοδο ανάμεσα σε δύο επιτρεπτές περιόδους, αυτή η μη επιτρεπτή περίοδος μπορεί να αποτελέσει ένα εν δυνάμει κενό (και να προσμετρηθεί ως κενό) στο ωρολόγιο πρόγραμμα των εκπαιδευτικών και των μαθητών.
 
 Η καλύτερη πρακτική είναι να χρησιμοποιήσετε τον περιορισμό &quot;χρόνοι διαλειμμάτων&quot;.
 
@@ -40436,7 +40737,7 @@ Please stop simulation before this</source>
  The best practice would be to use constraint students set not available times.
 
  If you need weight under 100%, then you can use this constraint, but be careful not to obtain an impossible timetable (if your students set is constrained on gaps or early gaps and if you leave a not allowed slot between 2 allowed slots (or a not allowed slot before allowed slots), this possible gap might be counted in students&apos; timetable)</source>
-        <translation type="unfinished">Έχετε προσδιορίσει μόνον την ομάδα μαθητών. Αυτό μπορεί να προξενήσει ένα μικρό πρόβλημα: αν προσδιορίσετε μία μη επιτρεπτή περίοδο ανάμεσα σε δύο επιτρεπτές (περιόδους), η μη επιτρεπτή περίοδος θα προσμετρηθεί ως κενό στο ωρολόγιο πρόγραμμα των μαθητών.
+        <translation>Έχετε προσδιορίσει μόνον την ομάδα μαθητών. Αυτό μπορεί να προξενήσει ένα μικρό πρόβλημα: αν προσδιορίσετε μία μη επιτρεπτή περίοδο ανάμεσα σε δύο επιτρεπτές (περιόδους), η μη επιτρεπτή περίοδος θα προσμετρηθεί ως κενό στο ωρολόγιο πρόγραμμα των μαθητών.
 
 Η καλύτερη πρακτική είναι να χρησιμοποιήσετε τον περιορισμό &quot;ομάδα μαθητών - μη διαθέσιμοι χρόνοι&quot;.
 
@@ -40445,7 +40746,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="417"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
-        <translation>Προειδοποίηση: 0 επιλεγμένες περίοδοι. Είστε σίγουροι;</translation>
+        <translation>Προειδοποίηση: δεν έχει επιλεγεί καμία περίοδος. Είστε σίγουροι;</translation>
     </message>
 </context>
 <context>
@@ -41250,7 +41551,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform.cpp" line="362"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
-        <translation>Προειδοποίηση: 0 επιλεγμένες περίοδοι. Είστε σίγουροι;</translation>
+        <translation>Προειδοποίηση: δεν έχει επιλεγεί καμία περίοδος. Είστε σίγουροι;</translation>
     </message>
 </context>
 <context>
@@ -41351,7 +41652,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform.cpp" line="362"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
-        <translation>Προειδοποίηση: 0 επιλεγμένες περίοδοι. Είστε σίγουροι;</translation>
+        <translation>Προειδοποίηση: δεν έχει επιλεγεί καμία περίοδος. Είστε σίγουροι;</translation>
     </message>
 </context>
 <context>
@@ -41845,7 +42146,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="221"/>
         <source>1. If you add &apos;force consecutive if same day&apos;, then couple extra activities in pairs to obtain a number of activities equal to the number of days per week. Example: 7 activities with duration 1 in a 5 days week, then transform into 5 activities with durations: 2,2,1,1,1 and add a single container activity with these 5 components (possibly raising the weight of added constraint min days between activities up to 100%)</source>
-        <translation>1. Αν προσθέσετε &quot;αν την ίδια ημέρα - διαδοχικές&quot;, τότε δημιουργήστε ζεύγη με τις επιπλέον δραστηριοτήτες (υποδραστηριότητες), προκειμένου να εξασφαλίσετε ότι ο αριθμός των δραστηριοτήτων (υποδραστηριοτήτων) θα είναι ίσος με τον αριθμό των ημερών ανά εβδομάδα. Παράδειγμα: για 7 δραστηριότητες (υποδραστηριότητες) με διάρκεια η καθεμία 1 (ώρα) σε εβδομάδα 5 ημερών, θα πρέπει να μετασχηματίσετε τις δραστηριότητες (υποδραστηριότητες) αυτές σε 5 δραστηριότητες (υποδραστηριότητες) με διάρκειες: 2,2,1,1,1 και να προσθέσετε μία επιμερισμένη δραστηριότητα με τα παραπάνω 5 στοιχεία (υποδραστηριότητες), πιθανώς αυξάνοντας την βαρύτητα του περιορισμού &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; στο 100%</translation>
+        <translation>1. Αν προσθέσετε &quot;αν την ίδια ημέρα - διαδοχικές&quot;, τότε δημιουργήστε ζεύγη με τις επιπλέον δραστηριότητες (υποδραστηριότητες), προκειμένου να εξασφαλίσετε ότι ο αριθμός των δραστηριοτήτων (υποδραστηριοτήτων) θα είναι ίσος με τον αριθμό των ημερών ανά εβδομάδα. Παράδειγμα: για 7 δραστηριότητες (υποδραστηριότητες) με διάρκεια η καθεμία 1 (ώρα) σε εβδομάδα 5 ημερών, θα πρέπει να μετασχηματίσετε τις δραστηριότητες (υποδραστηριότητες) αυτές σε 5 δραστηριότητες (υποδραστηριότητες) με διάρκειες: 2,2,1,1,1 και να προσθέσετε μία επιμερισμένη δραστηριότητα με τα παραπάνω 5 στοιχεία (υποδραστηριότητες), πιθανώς αυξάνοντας την βαρύτητα του περιορισμού &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; στο 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="227"/>
@@ -42290,7 +42591,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/modifyconstraintstudentsearlymaxbeginningsatsecondhourform_template.ui" line="32"/>
         <source>This represents the maximum allowed beginnings at the second available hour (in a week). You might want to allow your students to begin in some days later, at the second available hour, so you might put &quot;max beginnings at second hour&quot; greater than 0 (the timetable will be easier for FET). You might want to choose a greater value and lower it as you find new timetables</source>
-        <translation>Αυτό αναφέρεται στις μέγιστες επιτρεπτές ενάρξεις κατά την δεύτερη διαθέσιμη ώρα (μέσα στην εβδομάδα). Αν θέλετε να επιτρέψετε να ξεκινούν οι μαθητές κάποιες μέρες αργότερα, δηλαδή την δεύτερη διαθέσιμη ώρα, μπορείτε να θέσετε για τις &quot;μέγιστες ενάρξεις την δεύτερη ώρα&quot; μία τιμή μεγαλύτερη του 0 (έτσι το FET θα επιλύσει ευκολότερα το ωρολόγιο πρόγραμα). Επίσης, μπορείτε να επιλέξετε αρχικά μία μεταλύτερη τιμή, και στη συνέχεια να την ελαττώσετε, όταν διαπιστώσετε ότι το FET συνεχίζει να σας δίνει λύσεις (ωρολόγια προγράμματα)</translation>
+        <translation>Αυτό αναφέρεται στις μέγιστες επιτρεπτές ενάρξεις κατά την δεύτερη διαθέσιμη ώρα (μέσα στην εβδομάδα). Αν θέλετε να επιτρέψετε να ξεκινούν οι μαθητές κάποιες μέρες αργότερα, δηλαδή την δεύτερη διαθέσιμη ώρα, μπορείτε να θέσετε για τις &quot;μέγιστες ενάρξεις την δεύτερη ώρα&quot; μία τιμή μεγαλύτερη του 0 (έτσι το FET θα επιλύσει ευκολότερα το ωρολόγιο πρόγραμμα). Επίσης, μπορείτε να επιλέξετε αρχικά μία μεγαλύτερη τιμή, και στη συνέχεια να την ελαττώσετε, όταν διαπιστώσετε ότι το FET συνεχίζει να σας δίνει λύσεις (ωρολόγια προγράμματα)</translation>
     </message>
 </context>
 <context>
@@ -42341,7 +42642,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/modifyconstraintstudentsintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Modify students interval max days per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Τροποποίηση: &quot;Μαθητές - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
+        <translation>Τροποποίηση: &quot;Μαθητές + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsintervalmaxdaysperweekform_template.ui" line="22"/>
@@ -43149,7 +43450,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="32"/>
         <source>This represents the maximum allowed beginnings at the second available hour (in a week). You might want to allow your students to begin in some days later, at the second available hour, so you might put &quot;max beginnings at second hour&quot; greater than 0 (the timetable will be easier for FET). You might want to choose a greater value and lower it as you find new timetables</source>
-        <translation>Αυτό αναφέρεται στις μέγιστες επιτρεπτές ενάρξεις κατά την δεύτερη διαθέσιμη ώρα (μέσα στην εβδομάδα). Αν θέλετε να επιτρέψετε να ξεκινούν οι μαθητές κάποιες μέρες αργότερα, δηλαδή την δεύτερη διαθέσιμη ώρα, μπορείτε να θέσετε για τις &quot;μέγιστες ενάρξεις την δεύτερη ώρα&quot; μία τιμή μεγαλύτερη του 0 (έτσι το FET θα επιλύσει ευκολότερα το ωρολόγιο πρόγραμα). Επίσης, μπορείτε να επιλέξετε αρχικά μία μεταλύτερη τιμή, και στη συνέχεια να την ελαττώσετε, όταν διαπιστώσετε ότι το FET συνεχίζει να σας δίνει λύσεις (ωρολόγια προγράμματα)</translation>
+        <translation>Αυτό αναφέρεται στις μέγιστες επιτρεπτές ενάρξεις κατά την δεύτερη διαθέσιμη ώρα (μέσα στην εβδομάδα). Αν θέλετε να επιτρέψετε να ξεκινούν οι μαθητές κάποιες μέρες αργότερα, δηλαδή την δεύτερη διαθέσιμη ώρα, μπορείτε να θέσετε για τις &quot;μέγιστες ενάρξεις την δεύτερη ώρα&quot; μία τιμή μεγαλύτερη του 0 (έτσι το FET θα επιλύσει ευκολότερα το ωρολόγιο πρόγραμμα). Επίσης, μπορείτε να επιλέξετε αρχικά μία μεγαλύτερη τιμή, και στη συνέχεια να την ελαττώσετε, όταν διαπιστώσετε ότι το FET συνεχίζει να σας δίνει λύσεις (ωρολόγια προγράμματα)</translation>
     </message>
 </context>
 <context>
@@ -43323,7 +43624,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Modify students set interval max days per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Τροποποίηση: &quot;Ομάδα μαθητών - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
+        <translation>Τροποποίηση: &quot;Ομάδα μαθητών + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform_template.ui" line="22"/>
@@ -44153,7 +44454,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredstartingtimesform.cpp" line="353"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
-        <translation>Προειδοποίηση: 0 επιλεγμένες περίοδοι. Είστε σίγουροι;</translation>
+        <translation>Προειδοποίηση: δεν έχει επιλεγεί καμία περίοδος. Είστε σίγουροι;</translation>
     </message>
 </context>
 <context>
@@ -44243,7 +44544,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredtimeslotsform.cpp" line="353"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
-        <translation>Προειδοποίηση: 0 επιλεγμένες περίοδοι. Είστε σίγουροι;</translation>
+        <translation>Προειδοποίηση: δεν έχει επιλεγεί καμία περίοδος. Είστε σίγουροι;</translation>
     </message>
 </context>
 <context>
@@ -44904,7 +45205,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteacherintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Modify teacher interval max days per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Τροποποίηση: &quot;Εκπαιδευτικός - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
+        <translation>Τροποποίηση: &quot;Εκπαιδευτικός + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherintervalmaxdaysperweekform_template.ui" line="22"/>
@@ -45908,7 +46209,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachersintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Modify teachers interval max days per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Τροποποίηση: &quot;Εκπαιδευτικοί - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
+        <translation>Τροποποίηση: &quot;Εκπαιδευτικοί + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersintervalmaxdaysperweekform_template.ui" line="22"/>
@@ -46990,7 +47291,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifystudentsgroupform.cpp" line="69"/>
         <source>Name exists. If you would like to make more years to contain a group (overlapping years), please remove current group (FET will unfortunately remove all related activities and constraints) and add a new group with desired name in current year. I know this is a not an elegant procedure, I&apos;ll try to fix that in the future.</source>
-        <translation>Το όνομα αυτό ήδη υπάρχει. Αν επιθυμείτε να δημιουργήσετε το ίδιο τμήμα σε περισσότερα από ένα έτη (αλληλεπικάλυψη ετών), παρακαλώ διαγράψτε το τρέχον τμήμα (το FET δυστυχώς θα διαγράψει όλες τις σχετικές δραστηριότητες και όλους τους σχετικούς περιορισμούς) και προσθέστε ένα νέο τμήμα με το όνομα που επιθυμείτε στο τρέχον έτος. Γνωρίζω πως η διαδικασία αυτή δεν είναι &quot;κομψή&quot;. Θα προσπαθήσω να διορθώσω το πρόβλημα αυτό στο μέλλον.</translation>
+        <translation>Το όνομα αυτό ήδη υπάρχει. Αν επιθυμείτε να δημιουργήσετε το ίδιο τμήμα σε περισσότερα από ένα έτη (αλληλοεπικάλυψη ετών), παρακαλώ διαγράψτε το τρέχον τμήμα (το FET δυστυχώς θα διαγράψει όλες τις σχετικές δραστηριότητες και όλους τους σχετικούς περιορισμούς) και προσθέστε ένα νέο τμήμα με το όνομα που επιθυμείτε στο τρέχον έτος. Γνωρίζω πως η διαδικασία αυτή δεν είναι &quot;κομψή&quot;. Θα προσπαθήσω να διορθώσω το πρόβλημα αυτό στο μέλλον.</translation>
     </message>
 </context>
 <context>
@@ -47043,7 +47344,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifystudentssubgroupform.cpp" line="73"/>
         <source>Name exists. If you would like to make more groups to contain a subgroup (overlapping groups), please remove current subgroup (FET will unfortunately remove all related activities and constraints) and add a new subgroup with desired name in current group. I know this is a not an elegant procedure, I&apos;ll try to fix that in the future.</source>
-        <translation>Το όνομα αυτό ήδη υπάρχει. Αν επιθυμείτε να δημιουργήσετε το ίδιο υποτμήμα σε περισσότερα από ένα τμήματα (αλληλεπικάλυψη τμημάτων), παρακαλώ διαγράψτε το τρέχον υποτμήμα (το FET δυστυχώς θα διαγράψει όλες τις σχετικές δραστηριότητες και όλους τους σχετικούς περιορισμούς) και προσθέστε ένα νέο υποτμήμα με το όνομα που επιθυμείτε στο τρέχον τμήμα. Γνωρίζω πως η διαδικασία αυτή δεν είναι &quot;κομψή&quot;. Θα προσπαθήσω να διορθώσω το πρόβλημα αυτό στο μέλλον.</translation>
+        <translation>Το όνομα αυτό ήδη υπάρχει. Αν επιθυμείτε να δημιουργήσετε το ίδιο υποτμήμα σε περισσότερα από ένα τμήματα (αλληλοεπικάλυψη τμημάτων), παρακαλώ διαγράψτε το τρέχον υποτμήμα (το FET δυστυχώς θα διαγράψει όλες τις σχετικές δραστηριότητες και όλους τους σχετικούς περιορισμούς) και προσθέστε ένα νέο υποτμήμα με το όνομα που επιθυμείτε στο τρέχον τμήμα. Γνωρίζω πως η διαδικασία αυτή δεν είναι &quot;κομψή&quot;. Θα προσπαθήσω να διορθώσω το πρόβλημα αυτό στο μέλλον.</translation>
     </message>
 </context>
 <context>
@@ -47108,14 +47409,14 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifystudentsyearform.cpp" line="136"/>
         <source>%1 in %2</source>
         <comment>For instance group &apos;1 a&apos; in year &apos;1&apos;</comment>
-        <translation type="unfinished">%1 μέσα στο %2</translation>
+        <translation>Το %1 μέσα στο %2</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsyearform.cpp" line="107"/>
         <location filename="../src/interface/modifystudentsyearform.cpp" line="116"/>
         <source>%1 in %2 in %3</source>
         <comment>For instance subgroup &apos;1 a DE&apos; in group &apos;1 a&apos; in year &apos;1&apos;</comment>
-        <translation type="unfinished">%1 μέσα στο %2 μέσα στο %3</translation>
+        <translation>Το %1 μέσα στο %2 μέσα στο %3</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsyearform.cpp" line="163"/>
@@ -47125,27 +47426,27 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifystudentsyearform.cpp" line="167"/>
         <source>The following groups and subgroups of this year won&apos;t be renamed, because they don&apos;t start with the year name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Τα παρακάτω τμήματα και υποτμήματα αυτού του έτους δεν θα μετονομαστούν, διότι δεν ξεκινούν με το όνομα του έτους:</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsyearform.cpp" line="171"/>
         <source>The following groups and subgroups of this year won&apos;t be renamed, because their computed new name already exists:</source>
-        <translation type="unfinished"></translation>
+        <translation>Τα παρακάτω τμήματα και υποτμήματα αυτού του έτους δεν θα μετονομαστούν, διότι το υπολογισμένο νέο όνομά τους υπάρχει ήδη:</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsyearform.cpp" line="175"/>
         <source>The following groups and subgroups of this year will be renamed:</source>
-        <translation type="unfinished"></translation>
+        <translation>Τα παρακάτω τμήματα και υποτμήματα αυτού του έτους θα μετονομαστούν:</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsyearform.cpp" line="180"/>
         <source>FET can also try to rename the groups and the subgroups of this year. Should they be renamed?</source>
-        <translation type="unfinished"></translation>
+        <translation>Το FET μπορεί επίσης να προσπαθήσει να μετονομάσει τα τμήματα και τα υποτμήματα αυτού του έτους. Θα πρέπει να μετονομαστούν;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsyearform.cpp" line="182"/>
         <source>Please check the following information carefully:</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ ελέγξτε προσεκτικά τις παρακάτω πληροφορίες:</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsyearform.cpp" line="230"/>
@@ -47372,12 +47673,12 @@ Note: teacher not available and break are not counted as gaps.</source>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="53"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>March</source>
         <translation>Μάρτιος</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="55"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>April</source>
         <translation>Απρίλιος</translation>
     </message>
@@ -47456,13 +47757,13 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/fet.cpp" line="719"/>
         <source>Yes to &amp;All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ν&amp;αι σε Όλα</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="723"/>
         <source>N&amp;o to All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ό&amp;χι σε Όλα</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="726"/>
@@ -47525,7 +47826,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/fet.cpp" line="742"/>
         <source>Yes to &amp;All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ν&amp;αι σε Όλα</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="744"/>
@@ -47537,7 +47838,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/fet.cpp" line="746"/>
         <source>N&amp;o to All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ό&amp;χι σε Όλα</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="749"/>
@@ -47593,7 +47894,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="410"/>
         <source>You can control the random behaviour of FET with this function</source>
-        <translation>Μπορείτε να ελέγξετε την συμπεριφοφά της γεννήτριας τυχαίων αριθμών με αυτήν την συνάρτηση</translation>
+        <translation>Μπορείτε να ελέγξετε την συμπεριφορά της γεννήτριας τυχαίων αριθμών με αυτήν την συνάρτηση</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="411"/>
@@ -47623,7 +47924,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="417"/>
         <source>Mode of operation: to obtain the same timetable twice, give the random seed two values (say X=1234, Y=12345), then generate single, then make it again the same values (X=1234 and Y=12345), then generate single again. The timetables will be the same. If you generate multiple instead of single, the first set of timetables will be the same as the second set (if you generate the same number of timetables) but of course timetables inside each set will be different. If you enter the same random seed (X and Y) on different computers (but using the same FET version, see note below) and generate single, the timetables will be the same (if you generate multiple, the sets of timetables will correspond, the first timetable from simulation 1 with first timetable from simulation 2, etc.)</source>
-        <translation>Τρόπος λειτουργίας: για να πετύχετε την δημιουργία του ίδιου ωρολογίου προγράμματος για δεύτερη φορά, δώστε στον &quot;σπόρο&quot; της γεννήτριας τυχαίων αριθμών δύο τιμές (ας πούμε Χ=1234, Υ=12345), και στη συνέχεια δημιουργείστε ένα ωρολόγιο πρόγραμμα, έπειτα δώστε τις ίδιες τιμές στον &quot;σπόρο&quot; (Χ=1234, Υ=12345) και δημιουργείστε εκ νέου ένα ωρολόγιο πρόγραμμα. Τα ωρολόγια προγράμματα αυτά θα είναι ίδια. Αν δημιουργήσετε πολλαπλά ωρολόγια αντί για ένα, η πρώτη ομάδα ωρολογίων προγραμμάτων θα είναι η ίδια με την δεύτερη ομάδα (αν δημιουργήσετε τον ίδιο αριθμό ωρολογίων προγραμμάτων), αλλά φυσικά μεταξύ τους τα ωρολόγια προγράμματα της κάθε ομάδας θα είναι διαφορετικά. Αν δώσετε τον ίδιο &quot;σπόρο&quot; για την γεννήτρια τυχαίων αριθμών σε διαφορετικούς υπολογιστές (αλλά χρησιμοποιώντας την ίδια έκδοση του FET, βλέπε τη σημείωση παρακάτω) και δημιουργείσετε ένα ωρολόγιο πρόγραμμα, τα ωρολόγια θα είναι ίδια (αν δημιουργήσετε πολλαπλά, οι ομάδες των ωρολογίων θα αντιστοιχούν ως εξής: το πρώτο ωρολόγιο της πρώτης ομάδας με το πρώτο της δεύτερης ομάδας, κ.ο.κ.)</translation>
+        <translation>Τρόπος λειτουργίας: για να πετύχετε την δημιουργία του ίδιου ωρολογίου προγράμματος για δεύτερη φορά, δώστε στον &quot;σπόρο&quot; της γεννήτριας τυχαίων αριθμών δύο τιμές (ας πούμε Χ=1234, Υ=12345), και στη συνέχεια δημιουργήστε ένα ωρολόγιο πρόγραμμα, έπειτα δώστε τις ίδιες τιμές στον &quot;σπόρο&quot; (Χ=1234, Υ=12345) και δημιουργήστε εκ νέου ένα ωρολόγιο πρόγραμμα. Τα ωρολόγια προγράμματα αυτά θα είναι ίδια. Αν δημιουργήσετε πολλαπλά ωρολόγια αντί για ένα, η πρώτη ομάδα ωρολογίων προγραμμάτων θα είναι η ίδια με την δεύτερη ομάδα (αν δημιουργήσετε τον ίδιο αριθμό ωρολογίων προγραμμάτων), αλλά φυσικά μεταξύ τους τα ωρολόγια προγράμματα της κάθε ομάδας θα είναι διαφορετικά. Αν δώσετε τον ίδιο &quot;σπόρο&quot; για την γεννήτρια τυχαίων αριθμών σε διαφορετικούς υπολογιστές (αλλά χρησιμοποιώντας την ίδια έκδοση του FET, βλέπε τη σημείωση παρακάτω) και δημιουργήσετε ένα ωρολόγιο πρόγραμμα, τα ωρολόγια θα είναι ίδια (αν δημιουργήσετε πολλαπλά, οι ομάδες των ωρολογίων θα αντιστοιχούν ως εξής: το πρώτο ωρολόγιο της πρώτης ομάδας με το πρώτο της δεύτερης ομάδας, κ.ο.κ.)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="426"/>
@@ -47653,7 +47954,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="442"/>
         <source>This setting is useful for more things, maybe one thing is bug report: send your file along with the random seed at the start of generating (the two components, X and Y, are saved in the timetable directory at the start of generation)</source>
-        <translation>Αυτή η ρύθμιση έχει και άλλες χρήσεις. Πιθανώς μία χρήση να είναι η αναφορά σφάλματος λογισμικού (bug): στείλτε το αρχείο σας μαζί με τον &quot;σπόρο&quot; της γεννήτριας τυχαίων αριθμών που χρησιμοποιήθκε κατά την έναρξη της δημιουργίας ωρολογίου προγράμματος (τα δύο στοιχεία, Χ και Υ, αποθηκεύονται στον κατάλογο ωρολογίων προγραμμάτων κατά την έναρξη της δημιουργίας ωρολογίου προγράμματος)</translation>
+        <translation>Αυτή η ρύθμιση έχει και άλλες χρήσεις. Πιθανώς μία χρήση να είναι η αναφορά σφάλματος λογισμικού (bug): στείλτε το αρχείο σας μαζί με τον &quot;σπόρο&quot; της γεννήτριας τυχαίων αριθμών που χρησιμοποιήθηκε κατά την έναρξη της δημιουργίας ωρολογίου προγράμματος (τα δύο στοιχεία, Χ και Υ, αποθηκεύονται στον κατάλογο ωρολογίων προγραμμάτων κατά την έναρξη της δημιουργίας ωρολογίου προγράμματος)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="451"/>
@@ -47682,22 +47983,22 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/removeredundantconfirmationform.cpp" line="43"/>
         <source>This function is intended to be used after you inputted all data or after you used the advanced function of spreading the activities over the week. This function will automatically remove the redundant constraints of type min days between activities, so that your data is more correct and the timetable easier for FET to find</source>
-        <translation type="unfinished"></translation>
+        <translation>Η λειτουργία αυτή προορίζεται για χρήση αφού έχουν εισαχθεί όλα τα δεδομένα και αφού έχετε χρησιμοποιήσει την προηγμένη λειτουργία της κατανομής (&quot;απλώματος&quot;) των δραστηριοτήτων μέσα στην εβδομάδα. Η λειτουργία αυτή θα διαγράψει αυτόματα τους πλεονάζοντες περιορισμούς του τύπου &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;, έτσι ώστε να δεδομένα σας να είναι πιο &quot;σωστά&quot; και η εξεύρεση λύσης του ωρολογίου προγράμματος από το FET ευκολότερη</translation>
     </message>
     <message>
         <location filename="../src/interface/removeredundantconfirmationform.cpp" line="47"/>
         <source>Removing means making their weight percentage 0.0%. This is done so you can still activate them again, if needed, and also for you to be able to see when they are broken, in the soft conflicts list</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαγραφή (των πλεοναζόντων περιορισμών) σημαίνει απόδοση της τιμής 0% στο ποσοστό βαρύτητάς τους. Αυτό γίνεται, έτσι ώστε να μπορείτε να τους ενεργοποιήσετε ξανά, αν χρειαστεί, και επίσης για να μπορείτε να δείτε πότε παραβιάζονται, στην λίστα των ήπιων συγκρούσεων</translation>
     </message>
     <message>
         <location filename="../src/interface/removeredundantconfirmationform.cpp" line="50"/>
         <source>This function might be usable if you have constraints of type activities same starting time and/or constraints activities same starting day</source>
-        <translation type="unfinished"></translation>
+        <translation>Αυτή η λειτουργία μπορεί να χρησιμοποιηθεί αν έχετε περιορισμούς του τύπου &quot;δραστηριότητες - ίδιος χρόνος έναρξης&quot; ή/και περιορισμούς &quot;δραστηριότητες - ίδια ημέρα έναρξης&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/removeredundantconfirmationform.cpp" line="53"/>
         <source>Please SAVE/BACKUP your current file and keep it safe, in case anything goes wrong, and only continue if you did that already. Current function might modify much your data</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ ΑΠΟΘΗΚΕΥΣΤΕ / ΔΙΑΤΗΡΗΣΤΕ ΑΝΤΙΓΡΑΦΟ ΑΣΦΑΛΕΙΑΣ του τρέχοντος αρχείου και κρατήστε το ασφαλές, για την περίπτωση που κάτι δεν πάει καλά. Συνεχίστε μόνον αν έχετε υλοποιήσει την ανωτέρω υπόδειξη. Η τρέχουσα λειτουργία ενδεχομένως να τροποποιήσει πολύ τα δεδομένα σας</translation>
     </message>
 </context>
 <context>
@@ -47705,7 +48006,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/removeredundantconfirmationform_template.ui" line="14"/>
         <source>Instructions and confirmation of remove redundant constraints</source>
-        <translation>Διαγραφή περιττών περιορισμών - οδηγίες και επιβεβαίωση</translation>
+        <translation>Διαγραφή πλεοναζόντων περιορισμών - οδηγίες και επιβεβαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/removeredundantconfirmationform_template.ui" line="23"/>
@@ -47733,7 +48034,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/removeredundantform.cpp" line="217"/>
         <source>Operations that will be done:</source>
-        <translation type="unfinished"></translation>
+        <translation>Λειτουργίες που θα πραγματοποιηθούν:</translation>
     </message>
     <message>
         <location filename="../src/interface/removeredundantform.cpp" line="220"/>
@@ -47753,17 +48054,17 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/removeredundantform.cpp" line="294"/>
         <source>This box must remain checked, so that you can remove redundant constraints of type min days between activities</source>
-        <translation type="unfinished"></translation>
+        <translation>Το πλαίσιο αυτό πρέπει αν παραμείνει τσεκαρισμένο (επιλεγμένο), έτσι ώστε να μπορείτε να διαγράψετε τους πλεονάζοντες περιορισμούς του τύπου &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/removeredundantform.cpp" line="232"/>
         <source>The following time constraints will be inactivated (their weight will be made 0%):</source>
-        <translation type="unfinished"></translation>
+        <translation>Οι παρακάτω χρονικοί περιορισμοί θα απενεργοποιηθούν (η βαρύτητά τους θα γίνει 0%):</translation>
     </message>
     <message>
         <location filename="../src/interface/removeredundantform.cpp" line="238"/>
         <source>will be inactivated, by making its weight 0%</source>
-        <translation type="unfinished"></translation>
+        <translation>θα απενεργοποιηθεί, κάνοντας το ποσοστό βαρύτητάς του 0%</translation>
     </message>
 </context>
 <context>
@@ -47771,7 +48072,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/removeredundantform_template.ui" line="14"/>
         <source>Remove redundant constraints</source>
-        <translation>Διαγραφή περιττών περιορισμών</translation>
+        <translation>Διαγραφή πλεοναζόντων περιορισμών</translation>
     </message>
     <message>
         <location filename="../src/interface/removeredundantform_template.ui" line="84"/>
@@ -47786,7 +48087,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/removeredundantform_template.ui" line="104"/>
         <source>This function will try to improve your timetable data by removing redundant constraints</source>
-        <translation>Αυτή η λειτουργία θα προσπαθήσει να βελτιώσει τα δεδομένα του ωρολογίου προγράμματος αφαιρώντας τους περιττούς περιορισμούς</translation>
+        <translation>Αυτή η λειτουργία θα προσπαθήσει να βελτιώσει τα δεδομένα του ωρολογίου προγράμματος αφαιρώντας τους πλεονάζοντες περιορισμούς</translation>
     </message>
     <message>
         <location filename="../src/interface/removeredundantform_template.ui" line="20"/>
@@ -47796,12 +48097,12 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/removeredundantform_template.ui" line="26"/>
         <source>Remove redundant min days constraints</source>
-        <translation>Διαγραφή περιττών περιορισμών &quot;ελάχιστες ημέρες&quot;</translation>
+        <translation>Διαγραφή πλεοναζόντων περιορισμών &quot;ελάχιστες ημέρες&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/removeredundantform_template.ui" line="42"/>
         <source>Explanation: If you use constraints activities same starting time and/or constraints activities same starting days, maybe you will obtain redundant constraints min days between activities, which are not good (your timetable is more difficult to find, or even impossible). This menu enables you to remove these redundant min days between activities constraints</source>
-        <translation>Επεξήγηση: Αν χρησιμοποιείτε περιορισμούς του τύπου &quot;δραστηριότητες - ίδιος χρόνος έναρξης&quot; ή/και περιορισμούς &quot;δραστηριότητες - ίδια ημέρα έναρξης&quot;, πιθανώς να λάβετε περιττούς περιορισμούς &quot;δραστηριότητες - ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;, οι οποίοι δεν είναι καλοί (μπορεί η εξεύρεση λύσης για το ωρολόγιο πρόγραμμά σας να καταστεί δυσκολότερη ή ακόμη και αδύνατη). Το μενού αυτό σας δίνει την δυνατότητα να διαγράψετε τους συγκεκριμένους περιττούς περιορισμούς &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;</translation>
+        <translation>Επεξήγηση: Αν χρησιμοποιείτε περιορισμούς του τύπου &quot;δραστηριότητες - ίδιος χρόνος έναρξης&quot; ή/και περιορισμούς &quot;δραστηριότητες - ίδια ημέρα έναρξης&quot;, πιθανώς να λάβετε πλεονάζοντες περιορισμούς &quot;δραστηριότητες - ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;, οι οποίοι δεν είναι καλοί (μπορεί η εξεύρεση λύσης για το ωρολόγιο πρόγραμμά σας να καταστεί δυσκολότερη ή ακόμη και αδύνατη). Το μενού αυτό σας δίνει την δυνατότητα να διαγράψετε τους συγκεκριμένους πλεονάζοντες περιορισμούς &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/removeredundantform_template.ui" line="58"/>
@@ -48349,13 +48650,13 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/engine/rules.cpp" line="14205"/>
         <location filename="../src/engine/rules.cpp" line="14867"/>
         <source>%1 is incorrect</source>
-        <translation type="unfinished"></translation>
+        <translation>Το %1 είναι εσφαλμένο</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="4840"/>
         <location filename="../src/engine/rules.cpp" line="4921"/>
         <source>%1 is too large. Maximum allowed is %2.</source>
-        <translation type="unfinished"></translation>
+        <translation>Το %1 είναι υπερβολικά μεγάλο. Το μέγιστο επιτρεπτό είναι %2.</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="4850"/>
@@ -48370,7 +48671,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/engine/rules.cpp" line="4978"/>
         <location filename="../src/engine/rules.cpp" line="4985"/>
         <source>%1: %2 and the number of %3 read do not correspond</source>
-        <translation type="unfinished"></translation>
+        <translation>%1: Το %2 και ο αριθμός των %3 που διαβάστηκε δεν αντιστοιχούν</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="5029"/>
@@ -48866,7 +49167,7 @@ not added - must be a duplicate</source>
         <location filename="../src/engine/rules.cpp" line="16243"/>
         <location filename="../src/engine/rules.cpp" line="16297"/>
         <source>%1 does not coincide with the number of read %2</source>
-        <translation type="unfinished"></translation>
+        <translation>Το %1 δεν συμπίπτει με τον αριθμό %2 που διαβάστηκε</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="7032"/>
@@ -48984,17 +49285,17 @@ not added - must be a duplicate</source>
         <location filename="../src/engine/rules.cpp" line="8397"/>
         <location filename="../src/engine/rules.cpp" line="8512"/>
         <source>Hour %1 is inexistent (it is also not void, to specify end of the day)</source>
-        <translation type="unfinished"></translation>
+        <translation>Η ώρα %1 είναι ανύπαρκτη (επίσης το πεδίο δεν είναι κενό, για να καθορίσει το τέλος της ημέρας)</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="8039"/>
         <source>Constraint TeacherIntervalMaxDaysPerWeek max days corrupt for teacher %1, max days %2 &gt;nDaysPerWeek, constraint added, please correct constraint</source>
-        <translation>Περιορισμός &quot;εκπαιδευτικός - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; είναι κατεστραμμένος. Έχει προστεθεί περιορισμός για τον εκπαιδευτικό %1, μέγιστες %2 ημέρες &gt; nΗμέρεςΑνάΕβδομάδα. Παρακαλώ διορθώστε τον περιορισμό</translation>
+        <translation>Περιορισμός &quot;εκπαιδευτικός + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; είναι κατεστραμμένος. Έχει προστεθεί περιορισμός για τον εκπαιδευτικό %1, μέγιστες %2 ημέρες &gt; nΗμέρεςΑνάΕβδομάδα. Παρακαλώ διορθώστε τον περιορισμό</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="8155"/>
         <source>Constraint TeachersIntervalMaxDaysPerWeek max days corrupt, max days %1 &gt;nDaysPerWeek, constraint added, please correct constraint</source>
-        <translation>Περιορισμός &quot;εκπαιδευτικοί - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; είναι κατεστραμμένος. Έχει προστεθεί περιορισμός, μέγιστες %1 ημέρες &gt; nΗμέρεςΑνάΕβδομάδα. Παρακαλώ διορθώστε τον περιορισμό</translation>
+        <translation>Περιορισμός &quot;εκπαιδευτικοί + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; είναι κατεστραμμένος. Έχει προστεθεί περιορισμός, μέγιστες %1 ημέρες &gt; nΗμέρεςΑνάΕβδομάδα. Παρακαλώ διορθώστε τον περιορισμό</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="8250"/>
@@ -49009,12 +49310,12 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/engine/rules.cpp" line="8472"/>
         <source>Constraint StudentsIntervalMaxDaysPerWeek max days corrupt: max days %1 &gt;nDaysPerWeek, constraint added, please correct constraint</source>
-        <translation>Περιορισμός &quot;μαθητές - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; είναι κατεστραμμένος. Έχει προστεθεί περιορισμός, μέγιστες %1 ημέρες &gt; nΗμέρεςΑνάΕβδομάδα. Παρακαλώ διορθώστε τον περιορισμό</translation>
+        <translation>Περιορισμός &quot;μαθητές + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; είναι κατεστραμμένος. Έχει προστεθεί περιορισμός, μέγιστες %1 ημέρες &gt; nΗμέρεςΑνάΕβδομάδα. Παρακαλώ διορθώστε τον περιορισμό</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="8356"/>
         <source>Constraint StudentsSetIntervalMaxDaysPerWeek max days corrupt for students set %1, max days %2 &gt;nDaysPerWeek, constraint added, please correct constraint</source>
-        <translation>Περιορισμός &quot;ομάδα μαθητών - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; είναι κατεστραμμένος. Έχει προστεθεί περιορισμός για την ομάδα μαθητών %1, μέγιστες %2 ημέρες &gt; nΗμέρεςΑνάΕβδομάδα. Παρακαλώ διορθώστε τον περιορισμό</translation>
+        <translation>Περιορισμός &quot;ομάδα μαθητών + διάστημα ωρών - μέγιστες ημέρες ανά εβδομάδα&quot; είναι κατεστραμμένος. Έχει προστεθεί περιορισμός για την ομάδα μαθητών %1, μέγιστες %2 ημέρες &gt; nΗμέρεςΑνάΕβδομάδα. Παρακαλώ διορθώστε τον περιορισμό</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="806"/>
@@ -49061,7 +49362,7 @@ not added - must be a duplicate</source>
         <location filename="../src/engine/rules.cpp" line="12942"/>
         <location filename="../src/engine/rules.cpp" line="13068"/>
         <source>%1 not found</source>
-        <translation type="unfinished"></translation>
+        <translation>Το %1 δεν βρέθηκε</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="10553"/>
@@ -49173,7 +49474,7 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="477"/>
         <source>Add a second constraint or not?</source>
-        <translation type="unfinished"></translation>
+        <translation>Να γίνει προσθήκη ενός δεύτερου περιορισμού ή όχι;</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="487"/>
@@ -49193,27 +49494,27 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="561"/>
         <source>Invalid weight (percentage) - must be &gt;=0 and &lt;=100.0</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι &gt;=0.0 και &lt;=100.0</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="459"/>
         <source>You selected min days between activities %1 (above 1) and weight %2 (under 100.0). Would you like to add also a second constraint to ensure that almost certainly the distance between activities is at least %3 (%1-1) days? If yes, please select weight (recommended 95.0%-100.0%) and click Yes. If no, please click No (only one constraint will be added)</source>
-        <translation type="unfinished"></translation>
+        <translation>Έχετε επιλέξει &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; %1 (περισσότερο από 1) και ποσοστό βαρύτητας %2 (λιγότερο από 100.0%). Θέλετε να προσθέσετε έναν δεύτερο περιορισμό για να εξασφαλίσετε σχεδόν με βεβαιότητα ότι η απόσταση ανάμεσα στις δραστηριότητες θα είναι τουλάχιστον %3 (%1-1) ημέρες; Αν ναι, παρακαλώ επιλέξτε το ποσοστό βαρύτητας (συνιστώμενο 95.0%-100.0%) και πιέστε &quot;Ναι&quot;. Αν όχι, παρακαλώ πιέστε &quot;Όχι&quot; (οπότε θα προστεθεί μόνον ένας περιορισμός)</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="475"/>
         <source>Recommended answer is Yes, 95% (or higher).</source>
-        <translation type="unfinished"></translation>
+        <translation>Η συνιστώμενη απάντηση είναι &quot;Ναι&quot;, 95% (ή μεγαλύτερο).</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="464"/>
         <source>(Yes means to add an additional constraint min %1 days between activities, weight 0.0%-100.0%. If you say Yes, you will have 2 constraints min days added for current activities. Adding the second constraint might lead to impossible timetables if the condition is too tight, but you can remove the second constraint at any time).</source>
-        <translation type="unfinished"></translation>
+        <translation>(&quot;Ναι&quot; σημαίνει να γίνει προσθήκη ενός επιπλέον περιορισμού &quot;ελάχιστες %1 ημέρες ανάμεσα σε δραστηριότητες&quot;, με ποσοστό βαρύτητας 0.0%-100.0%. Αν πείτε &quot;Ναι&quot;, θα προστεθούν 2 περιορισμοί &quot;ελάχιστες ημέρες&quot; για τις τρέχουσες δραστηριότητες. Η προσθήκη ενός δεύτερου περιορισμού πιθανώς να καταστήσει αδύνατη την κατάρτιση (επίλυση) του ωρολογίου προγράμματος, στην περίπτωση που η συνθήκη αυτή είναι υπερβολικά &quot;αυστηρή&quot;. Όμως μπορείτε να διαγράψετε αυτόν τον δεύτερο περιορισμό ανά πάσα στιγμή).</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="469"/>
         <source>Note: 95% is usually enough for min days constraints referring to same activities. The weights are cumulated if referring to the same activities. If you have 2 constraints with say 95% (say min n days and min n-1 days), the min n days constraint is skipped with probability 5%, then min n-1 days constraint is skipped with probability 0.25%=5%*5%, so you&apos;ll get in 99.75% cases the min n-1 days constraint respected.</source>
-        <translation type="unfinished"></translation>
+        <translation>Σημείωση: συνήθως, το ποσοστό βαρύτητας 95% είναι αρκετό για τους περιορισμούς &quot;ελάχιστες ημέρες&quot; που σχετίζονται με τις ίδιες δραστηριότητες. Τα ποσοστά βαρύτητας λειτουργούν &quot;συσωρευτικά&quot; όταν σχετίζονται με τις ίδιες δραστηριότητες. Αν έχετε 2 περιορισμούς με ποσοστό βαρύτητας -για παράδειγμα- 95% (έστω για &quot;ελάχιστες ημέρες&quot; n και (n-1) αντίστοιχα), ο περιορισμός για τις n &quot;ελάχιστες ημέρες&quot; παραβλέπεται με πιθανότητα 5%, οπότε -κατ&apos; αναλογίαν- ο περιορισμός για τις (n-1) &quot;ελάχιστες ημέρες&quot; παραβλέπεται με πιθανότητα 0.25%=5%*5%. Κατά συνέπεια, ο περιορισμός για τις (n-1) ελάχιστες ημέρες θα τηρηθεί στο 99.75% των περιπτώσεων.</translation>
     </message>
 </context>
 <context>
@@ -49306,7 +49607,7 @@ not added - must be a duplicate</source>
         <translation>Επίπεδο 3 - προηγμένο css
 - όλα τα χαρακτηριστικά του επιπέδου 2 με περίπου 2 φορές μεγαλύτερο μέγεθος αρχείων σε σχέση με το επίπεδο 2
 - ρύθμιση στυλ (ή απόκρυψη) όλων των αντικειμένων, ετικετών δραστηριοτήτων, εκπαιδευτικών, ομάδων μαθητών και αιθουσών
-- ρύθμιση στυλ (ή απόκρυψη) γραμμής 1, γραμμής 2 και γραμμής 3 των κελιών που περιέρχουν τις δραστηριότητες</translation>
+- ρύθμιση στυλ (ή απόκρυψη) γραμμής 1, γραμμής 2 και γραμμής 3 των κελιών που περιέχουν τις δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/interface/settingstimetablehtmllevelform_template.ui" line="68"/>
@@ -49504,7 +49805,7 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="794"/>
         <source>When dividing again a year, you might get a warning about subgroups which will be removed. If you didn&apos;t explicitly use (these) subgroups in your activities or constraints, probably you can safely ignore this warning. Generally, if you use years&apos; division by categories, it is groups that matter.</source>
-        <translation>Όταν κατατέμνετε κάποιο έτος, μπορεί να λάβετε μία προειδοποίηση για τα υποτμήματα τα οποία θα διαγραφούν. Αν δεν χρησιμοποιούσατε ρητώς τα συγκεκριμένα υποτμήματα στις δραστηριότητες ή στους περιορισμούς σας, πιθανώς μπορείτε με ασφάλεια να αγνοήσετε την συγκεκριμέμη προειδοποίηση. Γενικά, αν χρησιμοποιείτε κατατμήσεις ετών σε κατηγορίες, τα τμήματα είναι αυτά που έχουν σημασία.</translation>
+        <translation>Όταν κατατέμνετε κάποιο έτος, μπορεί να λάβετε μία προειδοποίηση για τα υποτμήματα τα οποία θα διαγραφούν. Αν δεν χρησιμοποιούσατε ρητώς τα συγκεκριμένα υποτμήματα στις δραστηριότητες ή στους περιορισμούς σας, πιθανώς μπορείτε με ασφάλεια να αγνοήσετε την συγκεκριμένη προειδοποίηση. Γενικά, αν χρησιμοποιείτε κατατμήσεις ετών σε κατηγορίες, τα τμήματα είναι αυτά που έχουν σημασία.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="804"/>
@@ -49519,57 +49820,57 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="813"/>
         <source>After that, you can re-enable writing the students timetables on the disk, and re-generate.</source>
-        <translation type="unfinished">Στη συνέχεια, μπορείτε να επανεργοποιήσετε την εγγραφή των ωρολογίων προγραμμάτων των μαθητών στον δίσκο, και να καταρτίσετε (δημιουργήσετε) ένα νέο ωρολόγιο πρόγραμμα.</translation>
+        <translation>Στη συνέχεια, μπορείτε να επανεργοποιήσετε την εγγραφή των ωρολογίων προγραμμάτων των μαθητών στον δίσκο, και να καταρτίσετε (δημιουργήσετε) ένα νέο ωρολόγιο πρόγραμμα.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="816"/>
         <source>About using a large number of categories, divisions per category and subgroups: it is highly recommended to keep these to a minimum, especially the number of categories, by using any kind of tricks. Otherwise the timetable might become impossible (taking too much time to generate).</source>
-        <translation type="unfinished"></translation>
+        <translation>Σχετικά με την χρήση μεγάλου αριθμού κατηγοριών, κατατμήσεων ανά κατηγορία και υποτμημάτων: συνιστάται να διατηρήσετε τα ανωτέρω στις ελάχιστες δυνατές τιμές, ιδιαίτερα τον αριθμό των κατηγοριών, χρησιμοποιώντας οποιουδήποτε είδους τεχνάσματα. Σε διαφορετική περίπτωση η κατάρτιση του ωρολογίου προγράμματος μπορεί να καταστεί αδύνατη (ή να απαιτήσει πολύ χρόνο).</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="823"/>
         <source>Maybe an alternative to dividing a year into many categories/subgroups would be to enter individual students as FET subgroups and add into each group the corresponding subgroups. But this is hard to do from the FET interface - maybe a solution would be to use an automatic tool to convert your institution data into a file in .fet format.</source>
-        <translation type="unfinished"></translation>
+        <translation>Πιθανώς ένας εναλλακτικός τρόπος για την κατάτμηση ενός έτους σε πολλές κατηγορίες/υποτμήματα θα ήταν να εισαγάγετε τους μεμονωμένους μαθητές ως υποτμήματα του FET και να προσθέσετε στο κάθε τμήμα τα αντίστοιχα υποτμήματα. Αλλά αυτό είναι δύσκολο να πραγματοποιηθεί από την διεπαφή του FET - πιθανώς μία λύση να είναι η χρήση ενός αυτοματοποιημένου &quot;εργαλείου&quot; έτσι ώστε να μετατρέψετε τα δεδομένα του εκπαιδευτικού σας ιδρύματος σε αρχείο σε φορμά.fet.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="827"/>
         <source>Or you might use the FET feature to import students sets from comma separated values (CSV) files.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ή θα μπορούσατε να χρησιμοποιήσετε την δυνατότητα του FET και να εισαγάγετε τις ομάδες μαθητών από αρχεία CSV (τιμών διαχωρισμένων με κόμμα).</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="829"/>
         <source>In such cases (individual students as FET subgroups), remember that a smaller number of total subgroups means faster generation time, so you might want to consider a single subgroup for two or more students who have the exact same activities and constraints.</source>
-        <translation type="unfinished"></translation>
+        <translation>Σε τέτοιες περιπτώσεις (με τους μεμονωμένους μαθητές να είναι υποτμήματα του FET), να θυμάστε ότι μικρός συνολικός αριθμός υποτμημάτων σημαίνει συντομότερο χρόνο επίλυσης (κατάρτισης ωρολογίου προγράμματος). Οπότε, πιθανώς να θελήσετε να θεωρήσετε ότι δύο ή και περισσότεροι μαθητές -οι οποίοι έχουν ακριβώς τις ίδιες δραστηριότητες και ακριβώς τους ίδιους περιορισμούς- αποτελούν ένα μόνον υποτμήμα.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="861"/>
         <source>Do you really want to reset the form values to defaults (empty)?</source>
-        <translation type="unfinished"></translation>
+        <translation>Είστε σίγουροι πως θέλετε να επαναφέρετε τις τιμές του διαλόγου στις προκαθορισμένες (κενές);</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="121"/>
         <source>You have met a minor bug in FET, please report it. FET expected to read from settings %1 divisions in category %2, but read %3. FET will now continue operation, nothing will be lost.</source>
-        <translation type="unfinished"></translation>
+        <translation>Έχετε συναντήσει ένα μικρό σφάλμα λογισμικού (bug) του FET. Παρακαλώ να το αναφέρετε. Το FET περίμενε να διαβάσει από τις ρυθμίσεις %1 κατατμήσεις στην κατηγορία %2, αλλά διάβασε %3. Το FET θα συνεχίσει τη λειτουργία του και τίποτα δεν πρόκειται να χαθεί.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="569"/>
         <source>WARNING: There are groups and subgroups which will no longer be available and which will be removed, along with the associated activities and constraints. Are you sure? See the list below.</source>
-        <translation type="unfinished"></translation>
+        <translation>ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Υπάρχουν τμήματα και υποτμήματα τα οποία δεν θα είναι πλέον διαθέσιμα και τα οποία θα διαγραφούν, μαζί με τις σχετικές δραστηριότητες και τους σχετικούς περιορισμούς. Είστε σίγουροι; Δείτε την λίστα παρακάτω.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="572"/>
         <source>WARNING: There are groups which will no longer be available and which will be removed, along with the associated activities and constraints. Are you sure? See the list below.</source>
-        <translation type="unfinished"></translation>
+        <translation>ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Υπάρχουν τμήματα τα οποία δεν θα είναι πλέον διαθέσιμα και τα οποία θα διαγραφούν, μαζί με τις σχετικές δραστηριότητες και τους σχετικούς περιορισμούς. Είστε σίγουροι; Δείτε την λίστα παρακάτω.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="575"/>
         <source>WARNING: There are subgroups which will no longer be available and which will be removed, along with the associated activities and constraints. Are you sure? See the list below.</source>
-        <translation type="unfinished"></translation>
+        <translation>ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Υπάρχουν υποτμήματα τα οποία δεν θα είναι πλέον διαθέσιμα και τα οποία θα διαγραφούν, μαζί με τις σχετικές δραστηριότητες και τους σχετικούς περιορισμούς. Είστε σίγουροι; Δείτε την λίστα παρακάτω.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="601"/>
         <source>The following groups will no longer be available:</source>
-        <translation type="unfinished"></translation>
+        <translation>Τα παρακάτω τμήματα δεν θα είναι πλέον διαθέσιμα:</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="883"/>
@@ -49580,12 +49881,12 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="416"/>
         <source>Please note that the current configuration will lead you to %1 total number of subgroups. The file format supports any number of students sets, but for the timetable generation to be possible the maximum allowed total number of subgroups is %2.</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ σημειώστε ότι η τρέχουσα διαμόρφωση θα σας οδηγήσει σε συνολικό αριθμό %1 υποτμημάτων. Το φορμά του αρχείου υποστηρίζει οποιονδήποτε αριθμό ομάδων μαθητών, αλλά προκειμένου να είναι δυνατή η κατάρτιση (επίλυση) του ωρολογίου προγράμμματος, ο μέγιστος επιτρεπτός συνολικός αριθμός των υποτμημάτων είναι %2.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="367"/>
         <source>You want to divide the year by %1 categories. The recommended number of categories is 2, 3 or maximum 4 (to ensure the timetable generation speed and feasibility). Are you sure?</source>
-        <translation type="unfinished"></translation>
+        <translation>Θέλετε να κατατμήσετε τον έτος σε %1 κατηγορίες. Ο συνιστώμενος αριθμός των κατηγοριών είναι 2, 3 ή κατά μέγιστο 4 (ώστε να εξασφαλίσετε το εφικτό της επίλυσης καθώς και την ταχύτητα κατάρτισης του ωρολογίου προγράμματος). Είστε σίγουροι;</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="467"/>
@@ -49595,17 +49896,17 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="494"/>
         <source>Cannot add group %1, because a set with the same name exists. Please choose another name or remove the old set</source>
-        <translation type="unfinished"></translation>
+        <translation>Η προσθήκη του τμήματος %1 είναι αδύνατη, διότι υπάρχει ήδη ομάδα με το ίδιο όνομα. Παρακαλώ επιλέξτε ένα άλλο όνομα ή διαγράψτε την παλιά ομάδα</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="514"/>
         <source>Cannot add subgroup %1, because a set with the same name exists. Please choose another name or remove the old set</source>
-        <translation type="unfinished"></translation>
+        <translation>Η προσθήκη του υποτμήματος %1 είναι αδύνατη, διότι υπάρχει ήδη ομάδα με το ίδιο όνομα. Παρακαλώ επιλέξτε ένα άλλο όνομα ή διαγράψτε την παλιά ομάδα</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="590"/>
         <source>Probably you can safely ignore the warning about the removal of the subgroups.</source>
-        <translation type="unfinished"></translation>
+        <translation>Πιθανώς μπορείτε να αγνοήσετε με ασφάλεια την προειδοποίηση σχετικά με την διαγραφή των υποτμημάτων.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="616"/>
@@ -49620,37 +49921,37 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="621"/>
         <source>Year %1 will be split again. All groups and subgroups of this year which will no longer exist (listed before) and the associated activities and constraints will be removed. Are you absolutely sure?</source>
-        <translation type="unfinished"></translation>
+        <translation>Το έτος %1 θα κατατμηθεί ξανά. Όλα τα τμήματα και υποτμήματα αυτού του έτους τα οποία δεν θα υπάρχουν πλέον (έχουν παρατεθεί προηγουμένως) καθώς και οι σχετικές δραστηριότητες και σχετικοί περιορισμοί θα διαγραφούν. Είστε απολύτως βέβαιοι;</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="718"/>
         <source>There were removed %1 activities, %2 time constraints and %3 space constraints.</source>
-        <translation type="unfinished"></translation>
+        <translation>Έχουν διαγραφεί %1 δραστηριότητες, %2 χρονικοί περιορισμοί και %3 χωρικοί περιορισμοί.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="734"/>
         <source>Split of the year complete, please check the groups and subgroups of the year to make sure that everything is OK.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η κατάτμηση του έτους ολοκληρώθηκε. Παρακαλώ ελέγξτε τα τμήματα και υποτμήματα του έτους, προκειμένου να σιγουρευτείτε ότι όλα είναι εντάξει.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="785"/>
         <source>Please note that the dialog here will keep the last configuration of the last divided year, it will not remember the values for a specific year you need to modify.</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ σημειώστε ότι ο διάλογος εδώ θα διατηρήσει την τελευταία διαμόρφωση του τελευταίου κατατμηθέντος έτους. Δεν θα διατηρήσει τις τιμές για κάποιο συγκεκριμένο έτος που πρέπει να τροποποιήσετε.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="800"/>
         <source>Separator character(s) is of your choice (default is space)</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο χαρακτήρας (ή οι χαρακτήρες) διαχωρισμού είναι της επιλογής σας (ο προκαθορισμένος χαρακτήρας είναι το κενό [space])</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="807"/>
         <source>Note that if you are only working to get a feasible timetable, without the need to obtain the students timetable (XML or HTML) on the disk at all, and if you have many total subgroups, a good idea is to disable writing the subgroups, groups AND years timetables to the hard disk, as these take a long time to compute (not only subgroups, but also groups and years!).</source>
-        <translation type="unfinished"></translation>
+        <translation>Σημειώστε ότι αν δουλεύετε μόνον με σκοπό να λάβετε ένα επιλύσιμο ωρολόγιο πρόγραμμα, χωρίς να σας χρειάζεται καθόλου να εγγράψετε το ωρολόγιο πρόγραμμα των μαθητών (XML ή HMTL) στον σκληρό δίσκο, και αν έχετε πολλά συνολικά υποτμήματα, μία καλή ιδέα είναι να απενεργοποιήσετε την εγγραφή των ωρολογίων προγραμμάτων των υποτμημάτων, τμημάτων ΚΑΙ ετών στον σκληρό δίσκο, δεδομένου ότι (τα ωρολόγια προγράμματα αυτά) απαιτούν πολύ χρόνο για να υπολογιστούν (όχι μόνον των υποτμημάτων, αλλά επίσης και των τμημάτων και των ετών!).</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="820"/>
         <source>Maybe a reasonable number of categories could be 2, 3 or maximum 4. The divide year dialog allows much higher values, but these are not at all recommended.</source>
-        <translation type="unfinished"></translation>
+        <translation>Πιθανώς, ένας εύλογος αριθμός κατηγοριών να είναι 2, 4 ή κατά μέγιστο 4. Ο διάλογος κατάτμησης έτους επιτρέπει σαφώς μεγαλύτερες τιμές, οι οποίες όμως δεν συνιστώνται.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="835"/>
@@ -49832,27 +50133,27 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/spreadconfirmationform.cpp" line="43"/>
         <source>This function is intended to be used after you introduced all activities and obtained a timetable, if you want now to spread the divided activities more evenly over the week. This function is useful if you have 5 days per week, maybe also if you have 6 days per week.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η λειτουργία αυτή προορίζεται για χρήση για το στάδιο που έχετε εισαγάγει όλες τις δραστηριότητες και έχετε βρει λύση για το ωρολόγιο πρόγραμμα και στην περίπτωση που θέλετε να κατανείμετε τις επιμερισμένες δραστηριότητες πιο ομοιόμορφα μέσα στην εβδομάδα. Η λειτουργία αυτή είναι χρήσιμη αν έχετε 5 ημέρες ανά εβδομάδα και πιθανώς και για την περίπτωση που έχετε 6 ημέρες ανά εβδομάδα.</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadconfirmationform.cpp" line="47"/>
         <source>This improvement - optimization of spreading activities in a week - is a process of replacing current constraints of type min days between activities with others, which should provide you with a better timetable. Note: only min days constraints referring to components from the same split activity will be replaced. If you have constraints min days referring to activities in different components, these will be left untouched - this is a useful feature.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αυτή η βελτίωση - βελτιστοποίηση της κατανομής των δραστηριοτήτων μέσα στην εβδομάδα - είναι μία διαδικασία αντικατάστασης των τρεχόντων περιορισμών του τύπου &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; με άλλους, οι οποίοι φυσιολογικά θα πρέπει να σας δώσουν καλύτερα αποτελέσματα για το ωρολόγιο πρόγραμμά σας. Σημείωση: πρόκειται να αντικαταστασθούν μόνον οι περιορισμοί &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; που σχετίζονται με στοιχεία (υποδραστηριότητες) της ίδιας επιμερισμένης δραστηριότητας. Δεν θα επηρεασθούν (αντικατασταθούν) περιορισμοί &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; αν οι σχετιζόμενες δραστηριότητες δεν αποτελούν στοιχεία (υποδραστηριότητες) της ίδιας επιμερισμένης δραστηριότητας - αυτό είναι ένα χρήσιμο χαρακτηριστικό.</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadconfirmationform.cpp" line="52"/>
         <source>Please SAVE/BACKUP your current file and keep it safe, in case anything goes wrong, and only continue if you did that already. Current function might modify much your data</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ ΑΠΟΘΗΚΕΥΣΤΕ / ΔΙΑΤΗΡΗΣΤΕ ΑΝΤΙΓΡΑΦΟ ΑΣΦΑΛΕΙΑΣ του τρέχοντος αρχείου και κρατήστε το ασφαλές, για την περίπτωση που κάτι δεν πάει καλά. Συνεχίστε μόνον αν έχετε υλοποιήσει την ανωτέρω υπόδειξη. Η τρέχουσα λειτουργία ενδεχομένως να τροποποιήσει πολύ τα δεδομένα σας</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadconfirmationform.cpp" line="55"/>
         <source>If you use constraints activities same starting time or same starting day then you must take care of this aspect: after applying this function and before generating a timetable, it is IMPORTANT to remove constraints min days between activities which are redundant, like described in Help/Important tips, advice 2) . If you don&apos;t do that, you might get too difficult timetables or even impossible ones.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αν χρησιμοποιείτε περιορισμούς του τύπου &quot;δραστηριότητες - ίδιος χρόνος έναρξης&quot; ή &quot;δραστηριότητες - ίδια ημέρα έναρξης&quot;, πρέπει να λάβετε υπόψη σας το εξής: μετά την εφαρμογή αυτής της λειτουργίας και πριν την κατάρτιση (δημιουργία) ωρολογίου προγράμματος, είναι ΣΗΜΑΝΤΙΚΟ να διαγράψετε τους περιορισμούς &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; οι οποίοι είναι πλεονάζοντες, όπως έχει περιγραφεί στο &quot;Βοήθεια/Σημαντικές υποδείξεις&quot;, συμβουλή 2. Αν δεν προβείτε στην ανωτέρω ενέργεια, ενδεχομένως η επίλυση του ωρολογίου προγράμματος να καταστεί ιδιαίτερα δύσκολη, ίσως και αδύνατη.</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadconfirmationform.cpp" line="60"/>
         <source>It is important for you to choose good weights percentages, suitable for your institution. A good weighting might be values from 95.0% to 100.0% (ex.: 95.0%, 99.0%, 99.75%, 100.0%). You may want to select the check boxes for activities split into 2 or 3 components, so that they are not in consecutive days. If you obtain a timetable too difficult for FET, you might need to revert to your former data or lower weights of constraints. Note: you can use a progressive approach in choosing good weights</source>
-        <translation type="unfinished"></translation>
+        <translation>Είναι σημαντικό να κάνετε εύστοχη επιλογή ποσοστών βαρύτητας, έτσι ώστε να είναι κατάλληλα για το εκπαιδευτικό σας ίδρυμα. Μία καλή επιλογή για τα ποσοστά βαρύτητας είναι οι τιμές από 95.0% έως 100.0% (π.χ. 95.0%, 99.0%, 99.75%, 100.0%). Πιθανώς να θέλετε να επιλέξετε τα πλαίσια ελέγχου για δραστηριότητες που είναι επιμερισμένες σε 2 ή 3 στοιχεία (υποδραστηριότητες), έτσι ώστε να μην τοποθετηθούν (οι υποδραστηριότητες) σε διαδοχικές ημέρες. Αν η επίλυση του ωρολογίου προγράμματός σας από το FET καταστεί ιδιατίερα δύσκολη, πιθανώς να χρειαστεί να επανέλθετε στα προηγούμενα δεδομένα σας, ή να μειώσετε τα ποσοστά βαρύτητας των περιορισμών. Σημείωση: μπορείτε να χρησιμοποιήσετε προοδευτική προσέγγιση στην επιλογή των κατάλληλων ποσοστών βαρύτητας</translation>
     </message>
 </context>
 <context>
@@ -49893,29 +50194,29 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="73"/>
         <source>Invalid weight (percentage) for all split activities - must be real number &gt;=0.0 and &lt;=100.0</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό) για όλες τις επιμερισμένες δραστηριότητες - πρέπει να είναι πραγματικός αριθμός &gt;=0.0 και &lt;=100.0</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="82"/>
         <source>Invalid weight (percentage) for activities split into 2 components - must be real number &gt;=0.0 and &lt;=100.0</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό) για τις δραστηριότητες που είναι επιμερισμένες σε 2 στοιχεία (υποδραστηριότητες) - πρέπει να είναι πραγματικός αριθμός &gt;=0.0 και &lt;=100.0</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="91"/>
         <source>Invalid weight (percentage) for activities split into 3 components - must be real number &gt;=0.0 and &lt;=100.0</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό) για τις δραστηριότητες που είναι επιμερισμένες σε 3 στοιχεία (υποδραστηριότητες) - πρέπει να είναι πραγματικός αριθμός &gt;=0.0 και &lt;=100.0</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="101"/>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="172"/>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="399"/>
         <source>FET bug</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - Σφάλμα λογισμικού (bug)</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="101"/>
         <source>You found a probable bug in FET - min 1 day should be selected automatically for all split activities. Please report error. FET will now abort current operation</source>
-        <translation type="unfinished"></translation>
+        <translation>Έχετε βρει πιθανώς ένα σφάλμα λογισμικού (bug) του FET - θα πρέπει να επιλεγεί αυτόματα &quot;ελάχιστες ημέρες&quot;=1 για όλες τις επιμερισμένες δραστηριότητες. Παρακαλώ να αναφέρετε το σφάλμα. Το FET πρόκειται να ματαιώσει την τρέχουσα λειτουργία</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="172"/>
@@ -49923,12 +50224,15 @@ not added - must be a duplicate</source>
 contains invalid activity id %2
 
 Please report error. FET will now abort current operation</source>
-        <translation type="unfinished"></translation>
+        <translation>Έχετε βρει πιθανώς ένα σφάλμα λογισμικού (bug) του FET - ο περιορισμός %1
+περιέχει μη αποδεκτό ατ δραστηριότητας %2
+
+Παρακαλώ να αναφέρετε το σφάλμα. Το FET πρόκειται να ματαιώσει την τρέχουσα λειτουργία</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="241"/>
         <source>Please select the isolated component</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ επιλέξτε το &quot;μεμονωμένο&quot; στοιχείο</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="302"/>
@@ -49938,7 +50242,7 @@ Please report error. FET will now abort current operation</source>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="306"/>
         <source>Operations that will be done:</source>
-        <translation type="unfinished"></translation>
+        <translation>Λειτουργίες που θα πραγματοποιηθούν:</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="309"/>
@@ -49953,47 +50257,47 @@ Please report error. FET will now abort current operation</source>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="322"/>
         <source>The following time constraints will be removed:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο παρακάτω χρονικοί περιορισμοί θα διαγραφούν:</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="332"/>
         <source>The following time constraints will be added:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο παρακάτω χρονικοί περιορισμοί θα προστεθούν:</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="399"/>
         <source>You found a probable bug in FET - trying to add constraint %1, but it is already existing. Please report error. FET will now continue operation</source>
-        <translation type="unfinished"></translation>
+        <translation>Έχετε βρει πιθανώς ένα σφάλμα λογισμικού (bug) του FET - έγινε προσπάθεια προθήκης του περιορισμού %1, αλλά ο περιορισμός υπάρχει ήδη. Παρακαλώ ενημερώστε για το σφάλμα. Το FET θα συνεχίσει τη λειτουργία του</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="406"/>
         <source>Spreading of activities operation completed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Η λειτουργία κατανομής (&quot;απλώματος&quot;) των δραστηριοτήτων ολοκληρώθηκε επιτυχώς</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="408"/>
         <source>NOTE: If you are using constraints of type activities same starting time or activities same starting day, it is important (after current operation) to apply the operation of removing redundant constraints.</source>
-        <translation>ΣΗΜΕΙΩΣΗ: Αν χρησιμοποιείτε περιορισμούς του τύπου &quot;δραστηριότητες - ίδιος χρόνος έναρξης&quot; ή &quot;δραστηριότητες - ίδια ημέρα έναρξης&quot;, είναι σημαντικό (μετά την τρέχουσα διαδικασία) να εφαρμόσετε τη διαδικασία διαγραφής περιττών περιορισμών.</translation>
+        <translation>ΣΗΜΕΙΩΣΗ: Αν χρησιμοποιείτε περιορισμούς του τύπου &quot;δραστηριότητες - ίδιος χρόνος έναρξης&quot; ή &quot;δραστηριότητες - ίδια ημέρα έναρξης&quot;, είναι σημαντικό (μετά την τρέχουσα διαδικασία) να εφαρμόσετε τη διαδικασία διαγραφής πλεοναζόντων περιορισμών.</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="410"/>
         <source>Read Help/Important tips - tip 2) for details.</source>
-        <translation>Διαβάστε στο &quot;Βοήθεια/Σημαντικές υποδείξεις - υπόδειξη 2) για λεπτομέρειες.</translation>
+        <translation>Διαβάστε στο &quot;Βοήθεια/Σημαντικές υποδείξεις&quot; - υπόδειξη 2) για λεπτομέρειες.</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="425"/>
         <source>Help on spreading the activities over the week:</source>
-        <translation type="unfinished"></translation>
+        <translation>Βοήθεια για την (ομοιόμορφη) κατανομή των δραστηριοτήτων μέσα στην εβδομάδα:</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="429"/>
         <source>How to choose the weights in this dialog:</source>
-        <translation type="unfinished"></translation>
+        <translation>Πώς να επιλέξετε τις βαρύτητες στον διάλογο αυτό:</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="433"/>
         <source>Weights (percentages) of newly added constraints min days between activities - recommended between 95.0%-100.0% (maybe lower on those split into 3). Make weights 100.0% if the constraints need to be respected all the time. It is recommended to enable the check boxes for activities split into 2 or 3 components (not to be in consecutive days), if your data is still possible to solve. You may use a progressive approach. Example of weights: 90.0%, 95.0%, 99.0%, 99.75%, 100.0%.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ποσοστά βαρύτητας των προσφάτως εισαχθέντων περιορισμών &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; - συνιστώμενες τιμές ανάμεσα στο 95.0%-100.0% (πιθανώς και χαμηλότερες για δραστηριότητες που είναι επιμερισμένες σε 3 υποδραστηριότητες). Δώστε στα ποσοστά βαρύτητας την τιμή 100.0%, αν οι περιορισμοί πρέπει να τηρούνται σε κάθε περίπτωση. Συνιστάται να ενεργοποιήσετε τα πλαίσια ελέγχου για δραστηριότητες που είναι επιμερισμένες σε 2 ή 3 στοιχεία (υποδραστηριότητες) (προκειμένου να μην τοποθετηθούν σε διαδοχικές ημέρες), εάν τα δεδομένα σας καθιστούν εφικτή την επίλυση του ωρολογίου προγράμματος. Μπορείτε να χρησιμοποιήσετε προοδευτική προσέγγιση. Παραδείγματα τιμών για τα ποσοστά βαρύτητας: 90.0%, 95.0%, 99.0%, 99.75%, 100.0%.</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="438"/>
@@ -50003,7 +50307,7 @@ Please report error. FET will now abort current operation</source>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="459"/>
         <source>This box must remain checked, so that split activities are not in the same day (with the probability you write below)</source>
-        <translation type="unfinished"></translation>
+        <translation>Το πλαίσιο αυτό πρέπει αν παραμείνει τσεκαρισμένο (επιλεγμένο), έτσι ώστε οι επιμεριμένες δραστηριότητες να μην τοποθετηθούν την ίδια ημέρα (με την πιθανότητα που γράφετε παρακάτω)</translation>
     </message>
 </context>
 <context>
@@ -50021,69 +50325,69 @@ Please report error. FET will now abort current operation</source>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="26"/>
         <source>Force consecutive if 2 components are on the same day</source>
-        <translation>Οπωσδήποτε διαδοχικές αν 2 στοιχεία (υποδραστηριότητες) πραγματοποιούνται την ίδια ημέρα</translation>
+        <translation>Οπωσδήποτε διαδοχικές, αν 2 στοιχεία (υποδραστηριότητες) πραγματοποιούνται την ίδια ημέρα</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="42"/>
         <source>Select if when placing 2 activities from the same container in the same day, activities should be consecutive (this only happens for constraints with weight below 100.0%, which are not respected)</source>
-        <translation>Επιλέξτε εάν όταν τοποθετούνται 2 υποδραστηριότητες την ίδια ημέρα, οι υποδραστηριότητες αυτές οφείλουν να είναι διαδοχικές (αυτό συμβαίνει μόνον για περιορισμούς με ποσοστό βαρύτητας μικρότερο του 100.0%, οι οποίοι περιορισμοί δεν τηρούνται)</translation>
+        <translation>Επιλέξτε εάν όταν 2 δραστηριότητες (υποδραστηριότητες) της ίδιας δραστηριότητας-κοντέινερ τοποθετούνται την ίδια ημέρα, οι δραστηριότητες (υποδραστηριότητες) αυτές οφείλουν να είναι διαδοχικές (αυτό συμβαίνει μόνον για περιορισμούς με ποσοστό βαρύτητας μικρότερο του 100.0%, και οι οποίοι περιορισμοί δεν τηρούνται)</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="57"/>
         <source>All split activities</source>
-        <translation type="unfinished"></translation>
+        <translation>Όλες οι επιμερισμένες δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="66"/>
         <source>At least 1 day apart</source>
-        <translation type="unfinished"></translation>
+        <translation>Τουλάχιστον 1 μέρα απόσταση</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="85"/>
         <source>This has to be checked, so activies from the same container are not in the same day (they are at least 1 day apart)</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλέξτε εδώ, έτσι ώστε οι δραστηριότητες (υποδραστηριότητες) της ίδιας δραστηριότητας-κοντέινερ να μην τοποθετηθούν την ίδια ημέρα (δηλαδή, να έχουν απόσταση τουλάχιστον 1 ημέρας)</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="95"/>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="150"/>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="219"/>
         <source>Weight (%)</source>
-        <translation type="unfinished"></translation>
+        <translation>Βαρύτητα (%)</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="118"/>
         <source>Activities split into 2 components</source>
-        <translation type="unfinished"></translation>
+        <translation>Δραστηριότητες επιμερισμένες σε 2 στοιχεία</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="124"/>
         <source>At least 2 days apart</source>
-        <translation type="unfinished"></translation>
+        <translation>Τουλάχιστον 2 μέρες απόσταση</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="140"/>
         <source>Select this so the activities will not be in 2 consecutive days. There will be added 1 additional constraint to accomplish this</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλέξτε εδώ, έτσι ώστε οι δραστηριότητες (υποδραστηριότητες) να μην τοποθετηθούν σε 2 διαδοχικές ημέρες. Για να επιτευχθεί αυτό, θα προστεθεί ένας επιπλέον περιορισμός</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="181"/>
         <source>Activities which are split into 3 components per week</source>
-        <translation type="unfinished"></translation>
+        <translation>Δραστηριότητες οι οποίες είναι επιμερισμένες σε 3 στοιχεία (υποδραστηριότητες) ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="193"/>
         <source>Should not be in 3 consecutive days</source>
-        <translation type="unfinished"></translation>
+        <translation>Να μην τοποθετηθούν σε 3 διαδοχικές ημέρες</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="209"/>
         <source>Select this if you want activities split into 3 per week not to be in 3 consecutive days. There will be added 2 additional constraints to accomplish this, min 2 days between isolated component and each of the other 2 components. Note: usually, any isolated component: 1, 2 or 3 should work</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλέξτε εδώ, αν θέλετε οι δραστηριότητες οι οποίες είναι επιμερισμένες σε 3 ανά εβδομάδα, να μην τοποθετηθούν σε 3 διαδοχικές ημέρες. Για να επιτευχθεί αυτό, θα προστεθούν 2 επιπλέον περιορισμοί &quot;ελάχιστες 2 ημέρες&quot; ανάμεσα στο &quot;μεμονωμένο&quot; στοιχείο και σε καθένα από τα άλλα 2 στοιχεία (υποδραστηριότητες). Σημείωση: συνήθως, με οποιοδήποτε &quot;μεμονωμένο&quot; στοιχείο (1, 2, ή 3), η επιλογή αυτή θα &quot;δουλέψει&quot; κανονικά</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="245"/>
         <source>Isolated component</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;Μεμονωμένο&quot; στοιχείο</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="257"/>
@@ -50147,7 +50451,7 @@ Please report error. FET will now abort current operation</source>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="122"/>
         <source>Do you want to export detailed statistic files into directory %1 as html files?</source>
-        <translation type="unfinished">Θέλετε να εξαγάγετε τα αρχεία λεπτομερών στατιστικών στον κατάλογο %1 με την μορφή αρχείων html;</translation>
+        <translation>Θέλετε να εξαγάγετε τα αρχεία λεπτομερών στατιστικών στον κατάλογο %1 με την μορφή αρχείων html;</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="163"/>
@@ -50157,7 +50461,7 @@ Please report error. FET will now abort current operation</source>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="164"/>
         <source>Statistic files were exported to directory %1 as html files.</source>
-        <translation type="unfinished"></translation>
+        <translation>Τα αρχεία στατιστικών εξήχθησαν στον κατάλογο %1 ως αρχεία html.</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="360"/>
@@ -50194,24 +50498,24 @@ Please report error. FET will now abort current operation</source>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="383"/>
         <source>unnamed</source>
-        <translation type="unfinished">χωρίς όνομα</translation>
+        <translation>χωρίς όνομα</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="384"/>
         <source>CSS Stylesheet of %1</source>
         <comment>%1 is the file name</comment>
-        <translation type="unfinished"></translation>
+        <translation>Φύλλο στυλ CSS του %1</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="388"/>
         <source>To hide an element just write the following phrase into the element: %1 (without quotes).</source>
         <comment>%1 is a short phrase beginning and ending with quotes, and we want the user to be able to add it, but without quotes</comment>
-        <translation type="unfinished">Προκειμένου να αποκρύψετε ένα στοιχείο, απλά γράψτε την παρακάτω φράση μέσα στο στοιχείο: %1 (χωρίς εισαγωγικά).</translation>
+        <translation>Προκειμένου να αποκρύψετε ένα στοιχείο, απλά γράψτε την παρακάτω φράση μέσα στο στοιχείο: %1 (χωρίς εισαγωγικά).</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="468"/>
         <source>End of file.</source>
-        <translation type="unfinished">Τέλος αρχείου.</translation>
+        <translation>Τέλος αρχείου.</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="472"/>
@@ -50223,7 +50527,7 @@ Please report error. FET will now abort current operation</source>
         <location filename="../src/engine/statisticsexport.cpp" line="1850"/>
         <location filename="../src/engine/statisticsexport.cpp" line="2146"/>
         <source>Writing %1 gave error code %2, which means saving is compromised. Please check your disk&apos;s free space.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η αποθήκευση του αρχείου %1 &quot;επέστρεψε&quot; κωδικό σφάλματος %2, το οποίο σημαίνει ότι η αποθήκευση έχει αποτύχει. Παρακαλώ ελέγξτε τον ελεύθερο χώρο στον δίσκο σας.</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="545"/>
@@ -50266,12 +50570,12 @@ Please report error. FET will now abort current operation</source>
         <location filename="../src/engine/statisticsexport.cpp" line="572"/>
         <location filename="../src/engine/statisticsexport.cpp" line="573"/>
         <source>view</source>
-        <translation type="unfinished">προβολή</translation>
+        <translation>προβολή</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="679"/>
         <source>Teachers - Subjects Matrix</source>
-        <translation type="unfinished"></translation>
+        <translation>Πίνακας: &quot;Εκπαιδευτικοί - Αντικείμενα&quot;</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="702"/>
@@ -50282,32 +50586,32 @@ Please report error. FET will now abort current operation</source>
         <location filename="../src/engine/statisticsexport.cpp" line="2186"/>
         <source>Exporting statistics</source>
         <comment>Title of a progress dialog</comment>
-        <translation type="unfinished"></translation>
+        <translation>Εξαγωγή στατιστικών</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="977"/>
         <source>Subjects - Teachers Matrix</source>
-        <translation type="unfinished"></translation>
+        <translation>Πίνακας: &quot;Αντικείμενα - Εκπαιδευτικοί&quot;</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="1001"/>
         <source>Processing subjects with teachers...please wait</source>
-        <translation type="unfinished"></translation>
+        <translation>Επεξεργασία πίνακα &quot;Αντικείμενα - Εκπαιδευτικοί&quot;... παρακαλώ περιμένετε</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="1273"/>
         <source>Teachers - Students Matrix</source>
-        <translation type="unfinished"></translation>
+        <translation>Πίνακας: &quot;Εκπαιδευτικοί - Μαθητές&quot;</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="1867"/>
         <source>Subjects - Students Matrix</source>
-        <translation type="unfinished"></translation>
+        <translation>Πίνακας: &quot;Αντικείμενα - Μαθητές&quot;</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="703"/>
         <source>Processing teachers with subjects...please wait</source>
-        <translation type="unfinished"></translation>
+        <translation>Επεξεργασία πίνακα &quot;Εκπαιδευτικοί - Αντικείμενα&quot;... παρακαλώ περιμένετε</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="121"/>
@@ -50328,13 +50632,13 @@ Please report error. FET will now abort current operation</source>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="167"/>
         <source>Statistics export incomplete</source>
-        <translation type="unfinished"></translation>
+        <translation>Εξαγωγή στατιστικών μη ολοκληρωμένη</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="386"/>
         <source>Stylesheet generated with FET %1 on %2</source>
         <comment>%1 is FET version, %2 is date and time</comment>
-        <translation type="unfinished"></translation>
+        <translation>Φύλλο στυλ δημιουργήθηκε με το FET %1 στις %2</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="395"/>
@@ -50384,32 +50688,32 @@ Please report error. FET will now abort current operation</source>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="1297"/>
         <source>Processing teachers with students...please wait</source>
-        <translation type="unfinished"></translation>
+        <translation>Επεξεργασία πίνακα &quot;Εκπαιδευτικοί - Μαθητές&quot;... παρακαλώ περιμένετε</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="1570"/>
         <source>Students - Teachers Matrix</source>
-        <translation type="unfinished"></translation>
+        <translation>Πίνακας: &quot;Μαθητές - Εκπαιδευτικοί&quot;</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="1594"/>
         <source>Processing students with teachers...please wait</source>
-        <translation type="unfinished"></translation>
+        <translation>Επεξεργασία πίνακα &quot;Μαθητές - Εκπαιδευτικοί&quot;... παρακαλώ περιμένετε</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="1891"/>
         <source>Processing subjects with students...please wait</source>
-        <translation type="unfinished"></translation>
+        <translation>Επεξεργασία πίνακα &quot;Αντικείμενα - Μαθητές&quot;... παρακαλώ περιμένετε</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="2163"/>
         <source>Students - Subjects Matrix</source>
-        <translation type="unfinished"></translation>
+        <translation>Πίνακας: &quot;Μαθητές - Αντικείμενα&quot;</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="2187"/>
         <source>Processing students with subjects...please wait</source>
-        <translation type="unfinished"></translation>
+        <translation>Επεξεργασία πίνακα &quot;Μαθητές - Αντικείμενα&quot;... παρακαλώ περιμένετε</translation>
     </message>
 </context>
 <context>
@@ -50417,7 +50721,7 @@ Please report error. FET will now abort current operation</source>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="116"/>
         <source>Print statistics matrix dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Διάλογος εκτύπωσης πίνακα στατιστικών</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="126"/>
@@ -50700,7 +51004,7 @@ Please report error. FET will now abort current operation</source>
         <location filename="../src/interface/statisticsprintform.cpp" line="288"/>
         <source>Activities padding: %1 px</source>
         <comment>px means pixels, when printing the statistics</comment>
-        <translation type="unfinished"></translation>
+        <translation>Διάκενο δραστηριοτήτων: %1 px</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="311"/>
@@ -50715,7 +51019,7 @@ Please report error. FET will now abort current operation</source>
         <location filename="../src/interface/statisticsprintform.cpp" line="962"/>
         <location filename="../src/interface/statisticsprintform.cpp" line="1000"/>
         <source>FET is compiled without printer support - it is impossible to print from this dialog. Please export and open the HTML statistics from the results directory</source>
-        <translation>Το FET έχει μεταγλωτιστεί (compiled) χωρίς υποστήριξη εκτυπωτή - είναι αδύνατον να τυπώσετε από αυτόν τον διάλογο. Παρακαλώ πρώτα να κάνετε εξαγωγή και στη συνέχεια να ανοίξετε τα στατιστικά HTML από τον κατάλογο εξαγωγής (εγγραφής αποτελεσμάτων)</translation>
+        <translation>Το FET έχει μεταγλωττιστεί (compiled) χωρίς υποστήριξη εκτυπωτή - είναι αδύνατον να τυπώσετε από αυτόν τον διάλογο. Παρακαλώ πρώτα να κάνετε εξαγωγή και στη συνέχεια να ανοίξετε τα στατιστικά HTML από τον κατάλογο εξαγωγής (εγγραφής αποτελεσμάτων)</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="888"/>
@@ -50726,7 +51030,7 @@ Left: %1
 Right: %2
 Top: %3
 Bottom: %4</source>
-        <translation type="unfinished">Δεν έχουν οριστεί περιθώρια, διότι τουλάχιστον μία τιμή είναι υπερβολικά μικρή. Θα πρέπει να εισαγάγετε κατ&apos; ελάχιστον:
+        <translation>Δεν έχουν οριστεί περιθώρια, διότι τουλάχιστον μία τιμή είναι υπερβολικά μικρή. Θα πρέπει να εισαγάγετε κατ&apos; ελάχιστον:
 Αριστερό: %1
 Δεξιό: %2
 Επάνω: %3
@@ -50735,42 +51039,42 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="897"/>
         <source>Print statistics</source>
-        <translation type="unfinished"></translation>
+        <translation>Εκτύπωση στατιστικών</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="334"/>
         <source>Split after: %1 names</source>
-        <translation type="unfinished"></translation>
+        <translation>Αλλαγή σελίδας μετά από: %1 ονόματα</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="357"/>
         <source>Left margin: %1 mm</source>
         <comment>mm means millimeters</comment>
-        <translation type="unfinished">Αριστερό περιθώριο: %1 mm</translation>
+        <translation>Αριστερό περιθώριο: %1 mm</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="380"/>
         <source>Top margin: %1 mm</source>
         <comment>mm means millimeters</comment>
-        <translation type="unfinished">Επάνω περιθώριο: %1 mm</translation>
+        <translation>Επάνω περιθώριο: %1 mm</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="403"/>
         <source>Right margin: %1 mm</source>
         <comment>mm means millimeters</comment>
-        <translation type="unfinished">Δεξί περιθώριο: %1 mm</translation>
+        <translation>Δεξί περιθώριο: %1 mm</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="426"/>
         <source>Bottom margin: %1 mm</source>
         <comment>mm means millimeters</comment>
-        <translation type="unfinished">Κάτω περιθώριο: %1 mm</translation>
+        <translation>Κάτω περιθώριο: %1 mm</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="440"/>
         <source>Teaser</source>
         <comment>Small print preview. Please keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translation>Προεπισκόπηση</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="441"/>
@@ -51108,7 +51412,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="402"/>
         <source>Example: No: 100 / 102, Dur: 114 / 117. They represent: 100 - the number of active (sub)activities, then 102 - the number of total (sub)activities, 114 - the duration of active activities (in periods or FET hours) and 117 - the duration of total activities (in periods or FET hours). In this example we have 2 inactive activities with their combined duration being 3 periods.</source>
-        <translation>Παράδειγμα: Αρ. 100 / 102, Δρκ: 114 / 117. Αναπαριστούν: 100 - ο αριθμός των ενεργών (υπο)δραστηριοτήτων, 102 - ο συνολικός αριθμός των (υπο)δραστηριοτήτων, 114 - η διάρκεια των ενεργών δραστηριοτήτων (σε περιόδους ή ώρες στο FET) και 117 - η συνολικη διάρκεια των δραστηριοτήτων (σε περιόδους ή ώρες στο FET). Στο παράδειγμα αυτό έχουμε δύο ανενεργές δραστηριότητες με διάρκεια αθροιστικά 3 περιόδων.</translation>
+        <translation>Παράδειγμα: Αρ. 100 / 102, Δρκ: 114 / 117. Αναπαριστούν: 100 - ο αριθμός των ενεργών (υπο)δραστηριοτήτων, 102 - ο συνολικός αριθμός των (υπο)δραστηριοτήτων, 114 - η διάρκεια των ενεργών δραστηριοτήτων (σε περιόδους ή ώρες στο FET) και 117 - η συνολική διάρκεια των δραστηριοτήτων (σε περιόδους ή ώρες στο FET). Στο παράδειγμα αυτό έχουμε δύο ανενεργές δραστηριότητες με διάρκεια αθροιστικά 3 περιόδων.</translation>
     </message>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="408"/>
@@ -52141,7 +52445,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="1738"/>
         <source>Conflicts of %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Συγκρούσεις του %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="1740"/>
@@ -52212,7 +52516,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="4727"/>
         <location filename="../src/engine/timetableexport.cpp" line="4763"/>
         <source>Writing %1 gave error code %2, which means saving is compromised. Please check your disk&apos;s free space.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η αποθήκευση του αρχείου %1 &quot;επέστρεψε&quot; κωδικό σφάλματος %2, το οποίο σημαίνει ότι η αποθήκευση έχει αποτύχει. Παρακαλώ ελέγξτε τον ελεύθερο χώρο στον δίσκο σας.</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="5084"/>
@@ -52446,7 +52750,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="2275"/>
         <location filename="../src/engine/timetableexport.cpp" line="2276"/>
         <source>disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>απενεργοποιημένο</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2280"/>
@@ -52515,13 +52819,13 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="2334"/>
         <source>CSS Stylesheet of %1</source>
         <comment>%1 is the file name</comment>
-        <translation type="unfinished"></translation>
+        <translation>Φύλλο στυλ CSS του %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2338"/>
         <source>Stylesheet generated with FET %1 on %2</source>
         <comment>%1 is FET version, %2 is date and time</comment>
-        <translation type="unfinished"></translation>
+        <translation>Φύλλο στυλ δημιουργήθηκε με το FET %1 στις %2</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2342"/>
@@ -52538,7 +52842,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2491"/>
         <source>Be careful. You might get mutual and ambiguous styles. CSS means that the last definition will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>Προσοχή. Μπορεί να λάβετε αλληλεπικαλυπτόμενα στυλ. Το CSS θα χρησιμοποιήσει τον τελευταίο ορισμό.</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2573"/>
@@ -52581,7 +52885,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="4625"/>
         <location filename="../src/engine/timetableexport.cpp" line="4673"/>
         <source>Teacher has a single gap</source>
-        <translation type="unfinished">Εκπαιδευτικός έχει μονό κενό</translation>
+        <translation>Εκπαιδευτικός έχει μονό κενό</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="1727"/>
@@ -52611,7 +52915,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2524"/>
         <source>Style the teachers&apos; free periods</source>
-        <translation type="unfinished"></translation>
+        <translation>Ρύθμιση στυλ των ελεύθερων περιόδων των εκπαιδευτικών</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="4370"/>
@@ -52623,49 +52927,49 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="4626"/>
         <location filename="../src/engine/timetableexport.cpp" line="4674"/>
         <source>Teacher has a border gap</source>
-        <translation type="unfinished">Εκπαιδευτικός έχει κενό στο περιθώριο</translation>
+        <translation>Εκπαιδευτικός έχει ακριανό κενό</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="4627"/>
         <location filename="../src/engine/timetableexport.cpp" line="4675"/>
         <source>Teacher has a big gap</source>
-        <translation type="unfinished">Εκπαιδευτικός έχει μεγάλο κενό</translation>
+        <translation>Εκπαιδευτικός έχει μεγάλο κενό</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="4628"/>
         <location filename="../src/engine/timetableexport.cpp" line="4676"/>
         <source>Teacher must come earlier</source>
-        <translation type="unfinished">Εκπαιδευτικός πρέπει να έρθει νωρίτερα</translation>
+        <translation>Εκπαιδευτικός πρέπει να έρθει νωρίτερα</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="4629"/>
         <location filename="../src/engine/timetableexport.cpp" line="4677"/>
         <source>Teacher must come much earlier</source>
-        <translation type="unfinished"></translation>
+        <translation>Εκπαιδευτικός πρέπει να έρθει πολύ νωρίτερα</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="4630"/>
         <location filename="../src/engine/timetableexport.cpp" line="4678"/>
         <source>Teacher must stay longer</source>
-        <translation type="unfinished"></translation>
+        <translation>Εκπαιδευτικός πρέπει να παραμείνει περισσότερο</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="4631"/>
         <location filename="../src/engine/timetableexport.cpp" line="4679"/>
         <source>Teacher must stay much longer</source>
-        <translation type="unfinished"></translation>
+        <translation>Εκπαιδευτικός πρέπει να παραμείνει πολύ περισσότερο</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="4632"/>
         <location filename="../src/engine/timetableexport.cpp" line="4680"/>
         <source>Teacher has a free day</source>
-        <translation type="unfinished">Εκπαιδευτικός έχει κενή ημέρα</translation>
+        <translation>Εκπαιδευτικός έχει κενή ημέρα</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="4633"/>
         <location filename="../src/engine/timetableexport.cpp" line="4681"/>
         <source>Teacher is not available</source>
-        <translation type="unfinished">Εκπαιδευτικός δεν είναι διαθέσιμος</translation>
+        <translation>Εκπαιδευτικός δεν είναι διαθέσιμος</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9746"/>
@@ -52677,7 +52981,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="9747"/>
         <location filename="../src/engine/timetableexport.cpp" line="9866"/>
         <source>Border gap</source>
-        <translation>Κενό περιθωρίου</translation>
+        <translation>Ακριανό κενό</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9748"/>
@@ -52689,25 +52993,25 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="9749"/>
         <location filename="../src/engine/timetableexport.cpp" line="9868"/>
         <source>Must come earlier</source>
-        <translation type="unfinished">Πρέπει να έρθει νωρίτερα</translation>
+        <translation>Πρέπει να έρθει νωρίτερα</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9750"/>
         <location filename="../src/engine/timetableexport.cpp" line="9869"/>
         <source>Must stay longer</source>
-        <translation type="unfinished">Πρέπει να παραμείνει περισσότερο</translation>
+        <translation>Πρέπει να παραμείνει περισσότερο</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9751"/>
         <location filename="../src/engine/timetableexport.cpp" line="9870"/>
         <source>Must come much earlier</source>
-        <translation type="unfinished">Πρέπει να έρθει πολύ νωρίτερα</translation>
+        <translation>Πρέπει να έρθει πολύ νωρίτερα</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9752"/>
         <location filename="../src/engine/timetableexport.cpp" line="9871"/>
         <source>Must stay much longer</source>
-        <translation type="unfinished">Πρέπει να παραμείνει πολύ περισσότερο</translation>
+        <translation>Πρέπει να παραμείνει πολύ περισσότερο</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9753"/>
@@ -52724,19 +53028,19 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9873"/>
         <source>Not available</source>
-        <translation type="unfinished">Μη διαθέσιμος</translation>
+        <translation>Μη διαθέσιμος</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9939"/>
         <location filename="../src/engine/timetableexport.cpp" line="10138"/>
         <source>This is a teaser only. Values are not correct!</source>
-        <translation type="unfinished"></translation>
+        <translation>Πρόχειρη προεπισκόπηση. Μη ακριβείς τιμές!</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9943"/>
         <location filename="../src/engine/timetableexport.cpp" line="10142"/>
         <source>This file doesn&apos;t list limits that are set by constraints. It contains statistics about the min and max values of the currently calculated solution.</source>
-        <translation type="unfinished"></translation>
+        <translation>Το αρχείο αυτό δεν εμφανίζει τα όρια που έχουν τεθεί από περιορισμούς. Περιλαμβάνει μόνον στατιστικά για τις ελάχιστες και μέγιστες τιμές της τρέχουσας λύσης.</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10058"/>
@@ -53273,7 +53577,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="140"/>
         <source>Data is wrong. Please correct and try again</source>
-        <translation>Εσφαλμένα δεδομένα. Παρακαλώ διορθώστε και προσπαθείστε ξανά</translation>
+        <translation>Εσφαλμένα δεδομένα. Παρακαλώ διορθώστε και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="146"/>
@@ -53287,12 +53591,12 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="147"/>
         <source>You have entered simulation with uninitialized rules or 0 activities...aborting</source>
-        <translation type="unfinished"></translation>
+        <translation>Έχετε ξεκινήσει την κατάρτιση ωρολογίου προγράμματος με μη αρχικοποιημένους κανόνες ή χωρίς καμία δραστηριότητα - ματαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="153"/>
         <source>Entering simulation....precomputing, please be patient</source>
-        <translation type="unfinished"></translation>
+        <translation>Έναρξη κατάρτισης ωρολογίου προγράμματος... προετοιμασία, παρακαλώ να είστε υπομονετικοί</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="159"/>
@@ -53351,13 +53655,13 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="397"/>
         <source>The partial highest-stage results were saved in the directory %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Τα μερικά αποτελέσματα που αντιστοιχούν στο υψηλότερο στάδιο κατάρτισης ωρολογίου προγράμματος αποθηκεύτηκαν στον κατάλογο %1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="435"/>
         <source>Generation stopped (highest stage)</source>
         <comment>The title of a dialog, meaning that the generation of the timetable was stopped and highest stage timetable written.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Δημιουργία ωρολογίου σταμάτησε (το υψηλότερο στάδιο)</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="557"/>
@@ -53379,12 +53683,12 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="701"/>
         <source>%1 out of %2 activities placed</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 από τις %2 δραστηριότητες τοποθετήθηκαν</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="703"/>
         <source>Elapsed time:</source>
-        <translation type="unfinished"></translation>
+        <translation>Χρόνος που παρήλθε:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="707"/>
@@ -53415,7 +53719,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="758"/>
         <source>Activities are placed in order, most difficult ones first</source>
-        <translation type="unfinished">Οι δραστηριότητες τοποθετούναι με τη σειρά - πρώτα τοποθετούνται οι πιο δύσκολες</translation>
+        <translation>Οι δραστηριότητες τοποθετούναι στη σειρά - πρώτα τοποθετούνται οι πιο δύσκολες</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="760"/>
@@ -53430,7 +53734,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="770"/>
         <source>If your timetable gets stuck on a certain activity number k (and then begins going back), please check the initial evaluation order and see activity number k+1 in this list. You may find errors this way.</source>
-        <translation>Αν η επίλυση (κατάρτιση) του ωρολογίου προγράμματος &quot;κολλήσει&quot; σε κάποιον συγκεκριμένο αριθμό δραστηριότητας k (και μετά αρχίσει να γυρνάει πίσω), παρακαλώ να ελέγξετε την αρχική σειρά επεξεργασίας των δραστηριοτήτων και ειδικότερα να δείτε την δραστηριότητα με αριθμό k+1 της συγκεκριμένης λίστας. Ενδεχόμενως να εντοπίσετε κάποια σφάλματα με αυτόν τον τρόπο.</translation>
+        <translation>Αν η επίλυση (κατάρτιση) του ωρολογίου προγράμματος &quot;κολλήσει&quot; σε κάποιον συγκεκριμένο αριθμό δραστηριότητας k (και μετά αρχίσει να γυρνάει πίσω), παρακαλώ να ελέγξετε την αρχική σειρά επεξεργασίας των δραστηριοτήτων και ειδικότερα να δείτε την δραστηριότητα με αριθμό k+1 της συγκεκριμένης λίστας. Ενδεχομένως να εντοπίσετε κάποια σφάλματα με αυτόν τον τρόπο.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="774"/>
@@ -53445,7 +53749,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="780"/>
         <source>The results are saved in your selected results directory in HTML and XML mode and the soft conflicts in text mode, along with the current data and timetable, saved as a .fet data file (with activities locked by constraints), so that you can open, modify and regenerate the current timetable later</source>
-        <translation type="unfinished"></translation>
+        <translation>Τα αποτελέσματα έχουν αποθηκευτεί στον κατάλογο που έχετε επιλέξει σε μορφή HTML και XML και οι ήπιες συγκρούσεις σε μορφή κειμένου, μαζί με τα τρέχοντα δεδομένα και το τρέχον ωρολόγιο πρόγραμμα, που έχουν αποθηκευτεί ως αρχείο δεδομένων .fet (με τις δραστηριότητες κλειδωμένες με περιορισμούς), έτσι ώστε σε μεταγενέστερο χρόνο να μπορείτε να ανοίξετε, τροποποιήσετε και να δημιουργήσετε (καταρτίσετε) εκ νέου το τρέχον ωρολόγιο πρόγραμμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="784"/>
@@ -53455,22 +53759,22 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="832"/>
         <source>Simulation results should now be written in the directory %1 in html and xml mode and the conflicts in txt mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Τα αποτελέσματα της προσομοίωσης (κατάρτισης ωρολογίου προγράμματος) θα πρέπει τώρα να γραφούν στον κατάλογο %1 σε μορφή html και xml και οι συγκρούσεις σε μορφή txt</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="897"/>
         <source>Information relating difficult to schedule activities:</source>
-        <translation type="unfinished"></translation>
+        <translation>Πληροφορίες σχετικά με τις δύσκολες (ως προς την τοποθέτησή τους) δραστηριότητες:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="899"/>
         <source>Please check the constraints related to the last activities in the list below, which might be difficult to schedule:</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ ελέγξτε τους περιορισμούς που σχετίζονται με τις τελευταίες δραστηριότητες της παρακάτω λίστας, οι οποίες μπορεί να είναι δύσκολες ως προς την τοποθέτησή τους:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="902"/>
         <source>Here are the placed activities which lead to a difficulty, in order from the first one to the last (the last one FET failed to schedule and the last ones are difficult):</source>
-        <translation type="unfinished"></translation>
+        <translation>Εδώ παρατίθενται οι τοποθετημένες (προγραμματισμένες) δραστηριότητες για τις οποίες παρουσιάστηκε δυσκολία, σε σειρά από την πρώτη δραστηριότητα μέχρι την τελευταία (Το FET δεν μπόρεσε να τοποθετήσει την τελευταία δραστηριότητα. Οι τελευταίες δραστηριότητες παρουσίασαν δυσκολία ως προς την τοποθέτησή τους):</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="211"/>
@@ -53486,20 +53790,20 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegenerateform.cpp" line="227"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="380"/>
         <source>Simulation interrupted! FET could not find a timetable. Maybe you can consider lowering the constraints.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η κατάρτιση (επίλυση) του ωρολογίου προγράμματος διεκόπη! Το FET δεν μπόρεσε να επιλύσει το ωρολόγιο πρόγραμμα. Πιθανώς να απαιτείται &quot;χαλάρωση&quot; των περιορισμών.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="244"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="528"/>
         <source>The partial results were saved in the directory %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Τα μερικά (μη ολοκληρωμένα) αποτελέσματα έχουν αποθηκευτεί στον κατάλογο %1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="249"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="402"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="533"/>
         <source>Additional information relating impossible to schedule activities:</source>
-        <translation type="unfinished"></translation>
+        <translation>Πληροφορίες σχετικά με τις δραστηριότητες που είναι αδύνατον να προγραμματιστούν (να τοποθετηθούν στο ωρολόγιο πρόγραμμα):</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="268"/>
@@ -53514,12 +53818,12 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="280"/>
         <source>Please check the constraints related to the last activities in the list below, which might be impossible to schedule:</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ ελέγξτε τους περιορισμούς που σχετίζονται με τις τελευταίες δραστηριότητες της παρακάτω λίστας, οι οποίες μπορεί να είναι αδύνατον να προγραμματισθούν (να τοποθετηθούν στο ωρολόγιο πρόγραμμα):</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="283"/>
         <source>Here are the placed activities which lead to an inconsistency, in order from the first one to the last (the last one FET failed to schedule and the last ones are most likely impossible):</source>
-        <translation type="unfinished"></translation>
+        <translation>Εδώ παρατίθενται οι τοποθετημένες (προγραμματισμένες) δραστηριότητες οι οποίες οδήγησαν σε ασυνέπεια (αδυναμία επίλυσης του ωρολογίου προγράμματος), σε σειρά από την πρώτη δραστηριότητα μέχρι την τελευταία (το FET δεν μπόρεσε να τοποθετήσει την τελευταία δραστηριότητα - οι τελευταίες δραστηριότητες κατά πάσα πιθανότητα είναι αδύνατον να τοποθετηθούν):</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="535"/>
@@ -53535,70 +53839,70 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="629"/>
         <source>Soft conflicts listing (in decreasing order):</source>
-        <translation type="unfinished">Λίστα ήπιων συγκρούσεων (σε φθίνουσα σειρά):</translation>
+        <translation>Λίστα ήπιων συγκρούσεων (σε φθίνουσα σειρά):</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="662"/>
         <source>Generation successful!</source>
-        <translation type="unfinished"></translation>
+        <translation>Δημιουργία επιτυχής!</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="666"/>
         <source>Weighted soft conflicts: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Βαρύτητα ήπιων συγκρούσεων: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="668"/>
         <source>Results were saved in the directory %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Τα αποτελέσματα αποθηκεύτηκαν στον κατάλογο %1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="881"/>
         <source>Highest stage results should now be written in the directory %1 in html and xml mode and the conflicts in txt mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Τα αποτελέσματα του υψηλότερου σταδίου θα πρέπει τώρα να γραφούν στον κατάλογο %1 σε μορφή html και xml και οι συγκρούσεις σε μορφή txt</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="925"/>
         <source>FET - information about difficult activities</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - Πληροφορίες για τις δύσκολες δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="957"/>
         <source>FET - information about initial order of evaluation of activities</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - Πληροφορίες για την αρχική σειρά επεξεργασίας των δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="763"/>
         <source>Usually, there is no need to stop and restart the search. But for very difficult timetables this can help. Sometimes in such cases FET can become stuck and cycle forever, and restarting might produce a very fast solution.</source>
-        <translation type="unfinished"></translation>
+        <translation>Συνήθως, δεν είναι αναγκαίο να σταματήσετε και να ξεκινήσετε εκ νέου την αναζήτηση (κατάρτιση ωρολογίου προγράμματος). Αλλά για πολύ δύσκολα ωρολόγια προγράμματα, αυτό μπορεί να βοηθήσει. Μερικές φορές σε τέτοιες περιπτώσεις, το FET μπορεί να &quot;κολλήσει&quot; και να &quot;πέσει&quot; σε βρόχο για πάντα. Οπότε, η εκκίνηση εκ νέου της κατάρτισης ενδεχομένως να σας δώσει πολύ γρήγορα λύση για το ωρολόγιο πρόγραμμα.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="163"/>
         <source>Your data cannot be processed - please modify it as instructed</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η επεξεργασία των δεδομένων σας - παρακαλώ τροποποιήστε τα κατά τον τρόπο που έχει υποδειχθεί</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="252"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="405"/>
         <source>FET managed to schedule correctly the first %1 most difficult activities. You can see initial order of placing the activities in the generate dialog. The activity which might cause problems might be the next activity in the initial order of evaluation. This activity is listed below:</source>
-        <translation type="unfinished"></translation>
+        <translation>Το FET κατάφερε να προγραμματίσει (τοποθετήσει) σωστά τις πρώτες %1 δύσκολες δραστηριότητες. Μπορείτε να δείτε την αρχική σειρά τοποθέτησης των δραστηριοτήτων στον διάλογο δημιουργίας (κατάρτισης) του ωρολογίου προγράμματος. Η δραστηριότητα η οποία ενδέχεται να προξενεί προβλήματα πιθανώς να είναι η επόμενη δραστηριότητα στην αρχική σειρά επεξεργασίας των δραστηριοτήτων. Η δραστηριότητα αυτή παρατίθεται παρακάτω:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="273"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="426"/>
         <source>Difficult activity cannot be computed - please report possible bug</source>
-        <translation type="unfinished"></translation>
+        <translation>Υπολογισμός δύσκολης δραστηριότητας αδύνατος - παρακαλώ να αναφέρετε πιθανό σφάλμα λογισμικού (bug)</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="259"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="412"/>
         <source>Please check constraints related to following possibly problematic activity (or teacher(s), or students set(s)):</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ ελέγξτε τους περιορισμούς που σχετίζονται με την παρακάτω πιθανώς προβληματική δραστηριότητα (ή εκπαιδευτικός (εκπαιδευτικοί), ή ομάδα μαθητών (ομάδες μαθητών)):</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="512"/>
         <source>Simulation impossible! Maybe you can consider lowering the constraints.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η κατάρτιση είναι αδύνατη! Παρακαλώ εξετάστε το ενδεχόμενο &quot;χαλάρωσης&quot; των περιορισμών.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="745"/>
@@ -53712,12 +54016,12 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="274"/>
         <source>Data is wrong. Please correct and try again</source>
-        <translation>Εσφαλμένα δεδομένα. Παρακαλώ διορθώστε και προσπαθείστε ξανά</translation>
+        <translation>Εσφαλμένα δεδομένα. Παρακαλώ διορθώστε και προσπαθήστε ξανά</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="281"/>
         <source>You have entered simulation with uninitialized rules or 0 activities...aborting</source>
-        <translation type="unfinished"></translation>
+        <translation>Έχετε ξεκινήσει την κατάρτιση ωρολογίου προγράμματος με μη αρχικοποιημένους κανόνες ή χωρίς καμία δραστηριότητα - ματαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="291"/>
@@ -53756,7 +54060,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="240"/>
         <source>If you get impossible timetable, please enter menu Generate (single) and see the initial order of evaluation of activities, this might help.</source>
-        <translation type="unfinished">Αν η κατάρτιση (δημιουργία) του ωρολογίου προγράμματος είναι αδύνατη, παρακαλώ να μπείτε στο μενού &quot;Δημιουργία&quot; (δημιουργία ενός μόνον ωρολογίου προγράμματος) και να δείτε την αρχική σειρά αξιολόγησης των δραστηριοτήτων. Αυτό πιθανώς να σας βοηθήσει.</translation>
+        <translation>Αν η κατάρτιση (δημιουργία) του ωρολογίου προγράμματος είναι αδύνατη, παρακαλώ να μεταβείτε στο μενού &quot;Δημιουργία&quot; (δημιουργία ενός μόνον ωρολογίου προγράμματος) και να δείτε την αρχική σειρά επεξεργασίας των δραστηριοτήτων. Αυτό πιθανώς να σας βοηθήσει.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="234"/>
@@ -53814,7 +54118,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="399"/>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="445"/>
         <source>The results were saved in the directory %1</source>
-        <translation>Τα αποτελέσματα αποθηκεύθηκαν στον κατάλογο %1</translation>
+        <translation>Τα αποτελέσματα αποθηκεύτηκαν στον κατάλογο %1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="401"/>
@@ -53834,7 +54138,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="244"/>
         <source>The maximum and also the predefined value is %1 minutes, which means %2 hours, so virtually unlimited.</source>
-        <translation type="unfinished">Η μέγιστη και επίσης η προκαθορισμένη τιμή είναι %1 λεπτά, το οποίο σημαίνει %2 ώρες, δηλαδή πρακτικά απεριόριστη.</translation>
+        <translation>Η μέγιστη και επίσης η προκαθορισμένη τιμή είναι %1 λεπτά, το οποίο σημαίνει %2 ώρες, δηλαδή πρακτικά απεριόριστη.</translation>
     </message>
 </context>
 <context>
@@ -54254,7 +54558,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableprintform.cpp" line="360"/>
         <source>Activities padding: %1 px</source>
         <comment>px means pixels, when printing the timetable</comment>
-        <translation type="unfinished"></translation>
+        <translation>Διάκενο δραστηριοτήτων: %1 px</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="383"/>
@@ -54265,7 +54569,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="406"/>
         <source>Split after: %1 names</source>
-        <translation type="unfinished"></translation>
+        <translation>Αλλαγή σελίδας μετά από: %1 ονόματα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="429"/>
@@ -54295,7 +54599,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableprintform.cpp" line="512"/>
         <source>Teaser</source>
         <comment>Small print preview. Please keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translation>Προεπισκόπηση</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="513"/>
@@ -54344,7 +54648,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableprintform.cpp" line="1390"/>
         <location filename="../src/interface/timetableprintform.cpp" line="1429"/>
         <source>FET is compiled without printer support - it is impossible to print from this dialog. Please open the HTML timetables from the results directory</source>
-        <translation>Το FET έχει μεταγλωτιστεί (compiled) χωρίς υποστήριξη εκτυπωτή - είναι αδύνατον να τυπώσετε από αυτόν τον διάλογο. Παρακαλώ να ανοίξετε τα ωρολόγια προγράμματα HTML από τον κατάλογο εξαγωγής (εγγραφής αποτελεσμάτων)</translation>
+        <translation>Το FET έχει μεταγλωττιστεί (compiled) χωρίς υποστήριξη εκτυπωτή - είναι αδύνατον να τυπώσετε από αυτόν τον διάλογο. Παρακαλώ να ανοίξετε τα ωρολόγια προγράμματα HTML από τον κατάλογο εξαγωγής (εγγραφής αποτελεσμάτων)</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="1316"/>
@@ -54514,7 +54818,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="882"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1140"/>
         <source>Lock/unlock: you can select one or more activities in the table and toggle lock/unlock in time, space or both.</source>
-        <translation type="unfinished"></translation>
+        <translation>Κλείδωμα/Ξεκλείδωμα: μπορείτε να επιλέξετε μία ή περισσότερες δραστηριότητες στον πίνακα και εναλλάξετε το κλείδωμα/ξεκλείδωμα. Αυτό μπορεί να γίνει είτε μόνον ως προς τον χρόνο, είτε μόνον ως προς τον χώρο, είτε ως προς τον χρόνο + χώρο.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="891"/>
@@ -54524,7 +54828,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="884"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1142"/>
         <source>There will be added or removed locking constraints for the selected activities (they can be unlocked only if they are not permanently locked).</source>
-        <translation type="unfinished"></translation>
+        <translation>Θα προστεθούν ή διαγραφούν περιορισμοί &quot;κλειδώματος&quot; για τις επιλεγμένες δραστηριότητες (μπορούν να &quot;ξεκλειδωθούν&quot; μόνον αν δεν είναι μόνιμα &quot;κλειδωμένοι&quot;).</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="333"/>
@@ -54535,7 +54839,8 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="498"/>
         <source>PLT</source>
         <comment>Abbreviation for permanently locked time. There are 4 string: permanently locked time, permanently locked space, locked time, locked space. Make sure their abbreviations contain different letters and are visually different, so user can easily differentiate between them. These abbreviations may appear also in other places, please use the same abbreviations.</comment>
-        <translation type="unfinished"></translation>
+        <translatorcomment>Συντομογραφία: Μόνιμα Κλειδωμένος Χρόνος</translatorcomment>
+        <translation>ΜΚΧρ</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="339"/>
@@ -54546,7 +54851,8 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="504"/>
         <source>LT</source>
         <comment>Abbreviation for locked time. There are 4 string: permanently locked time, permanently locked space, locked time, locked space. Make sure their abbreviations contain different letters and are visually different, so user can easily differentiate between them. These abbreviations may appear also in other places, please use the same abbreviations.</comment>
-        <translation type="unfinished"></translation>
+        <translatorcomment>Συντομογραφία: Κλειδωμένος Χρόνος</translatorcomment>
+        <translation>ΚΧρ</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="345"/>
@@ -54557,7 +54863,8 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="510"/>
         <source>PLS</source>
         <comment>Abbreviation for permanently locked space. There are 4 string: permanently locked time, permanently locked space, locked time, locked space. Make sure their abbreviations contain different letters and are visually different, so user can easily differentiate between them. These abbreviations may appear also in other places, please use the same abbreviations.</comment>
-        <translation type="unfinished"></translation>
+        <translatorcomment>Συντομογραφία: Μόνιμα Κλειδωμένος Χώρος</translatorcomment>
+        <translation>ΜΚΧώ</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="350"/>
@@ -54568,7 +54875,8 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="515"/>
         <source>LS</source>
         <comment>Abbreviation for locked space. There are 4 string: permanently locked time, permanently locked space, locked time, locked space. Make sure their abbreviations contain different letters and are visually different, so user can easily differentiate between them. These abbreviations may appear also in other places, please use the same abbreviations.</comment>
-        <translation type="unfinished"></translation>
+        <translatorcomment>Συντομογραφία: Κλειδωμένος Χώρος</translatorcomment>
+        <translation>ΚΧώ</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="893"/>
@@ -54578,7 +54886,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="886"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1144"/>
         <source>Locking time constraints are constraints of type activity preferred starting time. Locking space constraints are constraints of type activity preferred room. You can see these constraints in the corresponding constraints dialogs. New locking constraints are added at the end of the list of constraints.</source>
-        <translation type="unfinished"></translation>
+        <translation>Οι περιορισμοί χρονικού κλειδώματος είναι περιορισμοί του τύπου &quot;δραστηριότητα - προτιμητέος χρόνος έναρξης&quot;. Οι περιορισμοί χωρικού κλειδώματος είναι περιορισμοί του τύπου &quot;δραστηριότητα - προτιμητέα αίθουσα&quot;. Μπορείτε να δείτε αυτούς τους περιορισμούς στους αντίστοιχους διαλόγους περιορισμών. Οι νέοι περιορισμοί κλειδώματος προστίθενται στο τέλος της λίστας των περιορισμών.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="896"/>
@@ -54589,7 +54897,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1147"/>
         <source>If a cell is (permanently) locked in time or space, it contains abbreviations to show that: PLT (permanently locked time), LT (locked time), PLS (permanently locked space) or LS (locked space).</source>
         <comment>Translate the abbreviations also. Make sure the abbreviations in your language are different between themselves and the user can differentiate easily between them. These abbreviations may appear also in other places, please use the same abbreviations.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Αν ένα κελί είναι (μόνιμα) κλειδωμένο ως προς τον χρόνο ή τον χώρο, περιέχει και τις ανάλογες συντομογραφίες: ΜΚΧρ (μόνιμα κλειδωμένος χρόνος), ΚΧρ (κλειδωμένος χρόνος), ΜΚΧώ (μόνιμα κλειδωμένος χώρος) ή ΚΧώ (κλειδωμένος χώρος).</translation>
     </message>
 </context>
 <context>
@@ -54631,30 +54939,30 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="552"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="556"/>
         <source>Timetable not available in view rooms timetable dialog - please generate a new timetable</source>
-        <translation type="unfinished"></translation>
+        <translation>Ωρολόγιο πρόγραμμα μη διαθέσιμο στον διάλογο προβολής ωρολογίου προγράμματος αιθουσών - παρακαλώ δημιουργήστε ένα νέο ωρολόγιο πρόγραμμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="252"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="578"/>
         <source>Invalid room - please close this dialog and open a new view rooms timetable dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτή αίθουσα - παρακαλώ κλείστε τον διάλογο αυτό και ανοίξτε μία νέα προβολή του ωρολογίου προγράμματος αιθουσών</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="261"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="266"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="436"/>
         <source>Timetable not available in view rooms timetable dialog - please generate a new timetable or close the timetable view rooms dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Ωρολόγιο πρόγραμμα μη διαθέσιμο στον διάλογο προβολής ωρολογίου προγράμματος αιθουσών - παρακαλώ δημιουργήστε ένα νέο ωρολόγιο πρόγραμμα ή κλείστε τον διάλογο προβολής ωρολογίου προγράμματος των αιθουσών</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="286"/>
         <source>You have an old timetable view rooms dialog opened - please close it</source>
-        <translation type="unfinished"></translation>
+        <translation>Έχετε ανοιχτό έναν παλιό διάλογο προβολής ωρολογίου προγράμματος αιθουσών - παρακαλώ κλείστε τον</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="465"/>
         <source>Invalid room - please close this dialog and open a new view rooms dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτή αίθουσα - παρακαλώ κλείστε τον διάλογο αυτό και ανοίξτε έναν νέο διάλογο προβολής των αιθουσών</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="485"/>
@@ -54664,7 +54972,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="514"/>
         <source>Room is not available with weight %1%</source>
-        <translation type="unfinished"></translation>
+        <translation>Η αίθουσα δεν είναι διαθέσιμη με ποσοστό βαρύτητας %1%</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="518"/>
@@ -54871,7 +55179,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="422"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="655"/>
         <source>Timetable not available in view rooms timetable dialog - please generate a new timetable or close the timetable view rooms dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Ωρολόγιο πρόγραμμα μη διαθέσιμο στον διάλογο προβολής ωρολογίου προγράμματος αιθουσών - παρακαλώ δημιουργήστε ένα νέο ωρολόγιο πρόγραμμα ή κλείστε τον διάλογο προβολής ωρολογίου προγράμματος των αιθουσών</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="643"/>
@@ -54879,7 +55187,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="771"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="777"/>
         <source>Timetable not available in view rooms timetable dialog - please generate a new timetable</source>
-        <translation type="unfinished"></translation>
+        <translation>Ωρολόγιο πρόγραμμα μη διαθέσιμο στον διάλογο προβολής ωρολογίου προγράμματος αιθουσών - παρακαλώ δημιουργήστε ένα νέο ωρολόγιο πρόγραμμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="671"/>
@@ -54889,7 +55197,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="680"/>
         <source>The room is invalid - please close this dialog and open a new view rooms timetable</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτή αίθουσα - παρακαλώ κλείστε τον διάλογο αυτό και ανοίξτε μία νέα προβολή του ωρολογίου προγράμματος των αιθουσών</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="697"/>
@@ -54899,7 +55207,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="732"/>
         <source>Room is not available with weight %1%</source>
-        <translation type="unfinished"></translation>
+        <translation>Η αίθουσα δεν είναι διαθέσιμη με ποσοστό βαρύτητας %1%</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="736"/>
@@ -55002,7 +55310,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1186"/>
         <source>If a whole column (day+hour) is selected, the activities with no room from that column will NOT be locked/unlocked.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αν επιλεγεί μία ολόκληρη στήλη (ημέρα+ώρα), οι δραστηριότητες χωρίς αίθουσα της στήλης αυτής ΔΕΝ θα κλειδωθούν/ξεκλειδωθούν.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1189"/>
@@ -55130,29 +55438,29 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="510"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="632"/>
         <source>Timetable not available in view students timetable dialog - please generate a new timetable</source>
-        <translation type="unfinished"></translation>
+        <translation>Ωρολόγιο πρόγραμμα μη διαθέσιμο στον διάλογο προβολής ωρολογίου προγράμματος μαθητών - παρακαλώ δημιουργήστε ένα νέο ωρολόγιο πρόγραμμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="238"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="271"/>
         <source>Invalid year - please close this dialog and open a new students view timetable dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτό έτος - παρακαλώ κλείστε τον διάλογο αυτό και ανοίξτε μία νέα προβολή του ωρολογίου προγράμματος των μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="279"/>
         <source>Invalid group in the selected year, or the groups of the current year are not updated</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτό τμήμα στο επιλεγμένο έτος, ή τα τμήματα του τρέχοντος έτους δεν έχουν ενημερωθεί</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="281"/>
         <source>Solution: please try to select a different year and after that select the current year again, to refresh the groups list, or close this dialog and open again the students view timetable dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Λύση: παρακαλώ προσπαθήστε να επιλέξετε ένα διαφορετικό έτος και μετά επιλέξτε το τρέχον έτος ξανά, προκειμένου να ανανεωθεί η λίστα των τμημάτων, ή κλείστε αυτόν τον διάλογο και ανοίξτε ξανά τον διάλογο προβολής ωρολογίου προγράμματος των μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="311"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="504"/>
         <source>Timetable not available in view students timetable dialog - please generate a new timetable or close the timetable view students dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Ωρολόγιο πρόγραμμα μη διαθέσιμο στον διάλογο προβολής ωρολογίου προγράμματος μαθητών - παρακαλώ δημιουργήστε ένα νέο ωρολόγιο πρόγραμμα ή κλείστε τον διάλογο προβολής ωρολογίου προγράμματος των μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="318"/>
@@ -55164,13 +55472,13 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="340"/>
         <source>You have an old timetable view students dialog opened - please close it</source>
-        <translation type="unfinished"></translation>
+        <translation>Έχετε ανοιχτό έναν παλιό διάλογο προβολής ωρολογίου προγράμματος μαθητών - παρακαλώ κλείστε τον</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="538"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="667"/>
         <source>Invalid students set - please close this dialog and open a new view students timetable dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτή ομάδα μαθητών - παρακαλώ κλείστε τον διάλογο αυτό και ανοίξτε μία νέα προβολή του ωρολογίου προγράμματος των μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="567"/>
@@ -55180,12 +55488,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="595"/>
         <source>Students subgroup is not available 100% in this slot</source>
-        <translation type="unfinished"></translation>
+        <translation>Υποτμήμα μαθητών 100% μη διαθέσιμο στην περίοδο αυτή</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="599"/>
         <source>Break with weight 100% in this slot</source>
-        <translation type="unfinished">Διάλειμμα με βαρύτητα 100% στην περίοδο αυτή</translation>
+        <translation>Διάλειμμα με βαρύτητα 100% στην περίοδο αυτή</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="625"/>
@@ -55208,23 +55516,23 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="647"/>
         <source>Please select a year</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ επιλέξτε ένα έτος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="651"/>
         <source>Please select a group</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ επιλέξτε ένα τμήμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="655"/>
         <source>Please select a subgroup</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ επιλέξτε ένα υποτμήμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="704"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="777"/>
         <source>Added the following constraint:</source>
-        <translation type="unfinished">Προστέθηκε ο παρακάτω περιορισμός:</translation>
+        <translation>Προστέθηκε ο παρακάτω περιορισμός:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="719"/>
@@ -55232,13 +55540,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="792"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="804"/>
         <source>Small problem detected</source>
-        <translation type="unfinished">Εντοπίστηκε μικρό πρόβλημα</translation>
+        <translation>Εντοπίστηκε μικρό πρόβλημα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="720"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="732"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέος χρόνος έναρξης&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
+        <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέος χρόνος έναρξης&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="721"/>
@@ -55246,7 +55554,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="794"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="806"/>
         <source>A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again</source>
-        <translation type="unfinished">Ένα πιθανό πρόβλημα μπορεί να είναι ο συγχρονισμός. Οπότε, προσπαθήστε να κλείσετε τον διάλογο προβολής ωρολογίου προγράμματος και ανοίξτε τον ξανά</translation>
+        <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ο συγχρονισμός. Οπότε, προσπαθήστε να κλείσετε τον διάλογο προβολής ωρολογίου προγράμματος και ανοίξτε τον ξανά</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="722"/>
@@ -55254,43 +55562,43 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="795"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="807"/>
         <source>Please report possible bug</source>
-        <translation type="unfinished">Παρακαλώ να αναφέρετε το πιθανό σφάλμα λογισμικού (bug)</translation>
+        <translation>Παρακαλώ να αναφέρετε το πιθανό σφάλμα λογισμικού (bug)</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="726"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="799"/>
         <source>Constraint %1 will not be removed, because it is permanently locked. If you want to unlock it you must go to the constraints menu.</source>
-        <translation type="unfinished">Ο περιορισμός %1 δεν θα διαγραφεί, διότι είναι μόνιμα κλειδωμένος. Αν θέλετε να τον ξεκλειδώσετε, θα πρέπει να μεταβείτε στο μενού των περιορισμών.</translation>
+        <translation>Ο περιορισμός %1 δεν θα διαγραφεί, διότι είναι μόνιμα κλειδωμένος. Αν θέλετε να τον ξεκλειδώσετε, θα πρέπει να μεταβείτε στο μενού των περιορισμών.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="744"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="817"/>
         <source>You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints</source>
-        <translation type="unfinished">Ενδεχομένως να έχετε κάποιο πρόβλημα, διότι το FET περίμενε να διαγραφεί 1 περιορισμός, αλλά τελικά θα διαγραφούν %1 περιορισμοί</translation>
+        <translation>Ενδεχομένως να έχετε κάποιο πρόβλημα, διότι το FET περίμενε να διαγραφεί 1 περιορισμός, αλλά τελικά θα διαγραφούν %1 περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="747"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="820"/>
         <source>The following constraint will be deleted:</source>
-        <translation type="unfinished">Ο παρακάτω περιορισμός θα διαγραφεί:</translation>
+        <translation>Ο παρακάτω περιορισμός θα διαγραφεί:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="760"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="833"/>
         <source>Skip information</source>
-        <translation type="unfinished">Παράβλεψη πληροφορίας</translation>
+        <translation>Παράβλεψη πληροφορίας</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="760"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="833"/>
         <source>See next</source>
-        <translation type="unfinished">Προβολή επόμενου</translation>
+        <translation>Προβολή επόμενου</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="793"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="805"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέα αίθουσα&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
+        <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέα αίθουσα&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="994"/>
@@ -55390,7 +55698,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="486"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="766"/>
         <source>Timetable not available in view students timetable dialog - please generate a new timetable or close the timetable view students dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Ωρολόγιο πρόγραμμα μη διαθέσιμο στον διάλογο προβολής ωρολογίου προγράμματος μαθητών - παρακαλώ δημιουργήστε ένα νέο ωρολόγιο πρόγραμμα ή κλείστε τον διάλογο προβολής ωρολογίου προγράμματος των μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="493"/>
@@ -55403,12 +55711,12 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="760"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="928"/>
         <source>Timetable not available in view students timetable dialog - please generate a new timetable</source>
-        <translation type="unfinished"></translation>
+        <translation>Ωρολόγιο πρόγραμμα μη διαθέσιμο στον διάλογο προβολής ωρολογίου προγράμματος μαθητών - παρακαλώ δημιουργήστε ένα νέο ωρολόγιο πρόγραμμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="792"/>
         <source>The students set is invalid - please close this dialog and open a new view students timetable</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτή ομάδα μαθητών - παρακαλώ κλείστε τον διάλογο αυτό και ανοίξτε μία νέα προβολή του ωρολογίου προγράμματος των μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="861"/>
@@ -55418,7 +55726,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="890"/>
         <source>Students set is not available 100% in this slot</source>
-        <translation type="unfinished"></translation>
+        <translation>Ομάδα μαθητών 100% μη διαθέσιμη στην περίοδο αυτή</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="894"/>
@@ -55521,7 +55829,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1380"/>
         <source>If a whole column (day+hour) is selected, there will be locked/unlocked also the dummy activities (activities with no students sets) from that column.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αν επιλεγεί μία ολόκληρη στήλη (ημέρα+ώρα), θα κλειδωθούν/ξεκλειδωθούν και οι ψευδο-δραστηριότητες (δραστηριότητες χωρίς ομάδες μαθητών) της στήλης αυτής.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1383"/>
@@ -55646,19 +55954,19 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="437"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="548"/>
         <source>Timetable not available in view teachers timetable dialog - please generate a new timetable</source>
-        <translation type="unfinished">Ωρολόγιο πρόγραμμα μη διαθέσιμο στον διάλογο προβολής ωρολογίου προγράμματος εκπαιδευτικών - παρακαλώ δημιουργήστε ένα νέο ωρολόγιο πρόγραμμα</translation>
+        <translation>Ωρολόγιο πρόγραμμα μη διαθέσιμο στον διάλογο προβολής ωρολογίου προγράμματος εκπαιδευτικών - παρακαλώ δημιουργήστε ένα νέο ωρολόγιο πρόγραμμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="233"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="570"/>
         <source>Invalid teacher - please close this dialog and open a new view teachers dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτός εκπαιδευτικός - παρακαλώ κλείστε τον διάλογο αυτό και ανοίξτε μία νέα προβολή του ωρολογίου προγράμματος των εκπαιδευτικών</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="242"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="431"/>
         <source>Timetable not available in view teachers timetable dialog - please generate a new timetable or close the timetable view teachers dialog</source>
-        <translation type="unfinished">Ωρολόγιο πρόγραμμα μη διαθέσιμο στον διάλογο προβολής ωρολογίου προγράμματος εκπαιδευτικών - παρακαλώ δημιουργήστε ένα νέο ωρολόγιο πρόγραμμα ή κλείστε τον διάλογο προβολής ωρολογίου προγράμματος εκπαιδευτικών</translation>
+        <translation>Ωρολόγιο πρόγραμμα μη διαθέσιμο στον διάλογο προβολής ωρολογίου προγράμματος εκπαιδευτικών - παρακαλώ δημιουργήστε ένα νέο ωρολόγιο πρόγραμμα ή κλείστε τον διάλογο προβολής ωρολογίου προγράμματος των εκπαιδευτικών</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="249"/>
@@ -55670,7 +55978,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="263"/>
         <source>You have an old timetable view teachers dialog opened - please close it</source>
-        <translation type="unfinished"></translation>
+        <translation>Έχετε ανοιχτό έναν παλιό διάλογο προβολής ωρολογίου προγράμματος εκπαιδευτικών - παρακαλώ κλείστε τον</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="461"/>
@@ -55711,7 +56019,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="562"/>
         <source>Please select a teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ επιλέξτε έναν εκπαιδευτικό</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="603"/>
@@ -55886,7 +56194,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="407"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="633"/>
         <source>Timetable not available in view teachers timetable dialog - please generate a new timetable or close the timetable view teachers dialog</source>
-        <translation>Ωρολόγιο πρόγραμμα μη διαθέσιμο στον διάλογο προβολής ωρολογίου προγράμματος εκπαιδευτικών - παρακαλώ δημιουργήστε ένα νέο ωρολόγιο πρόγραμμα ή κλείστε τον διάλογο προβολής ωρολογίου προγράμματος εκπαιδευτικών</translation>
+        <translation>Ωρολόγιο πρόγραμμα μη διαθέσιμο στον διάλογο προβολής ωρολογίου προγράμματος εκπαιδευτικών - παρακαλώ δημιουργήστε ένα νέο ωρολόγιο πρόγραμμα ή κλείστε τον διάλογο προβολής ωρολογίου προγράμματος των εκπαιδευτικών</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="414"/>
@@ -56217,24 +56525,24 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/centerwidgetonscreen.cpp" line="223"/>
         <source>Subgroups are invisible in combo boxes, by a global setting which you activated. The current constraint is referring to subgroup %1, so the constraint is displayed incorrectly with a void subgroup here.</source>
-        <translation>Τα υποτμήματα δεν εμφανίζονται στα σύνθετα πλαίσια, επειδή ενεργοποιήσατε μία καθολική ρύθμιση. Ο τρέχων περιορισμός αφορά το υποτμήμα %1, έτσι ο περιορισμός εμφανίζεται εσφαλμένα εδώ με ένα μη έγκυρο τμήμα.</translation>
+        <translation>Τα υποτμήματα δεν εμφανίζονται στα σύνθετα πλαίσια, επειδή ενεργοποιήσατε μία καθολική ρύθμιση. Ο τρέχων περιορισμός αφορά το υποτμήμα %1, έτσι ο περιορισμός εμφανίζεται εσφαλμένα εδώ με το πεδίο του υποτμήματος κενό.</translation>
     </message>
     <message>
         <location filename="../src/interface/centerwidgetonscreen.cpp" line="227"/>
         <location filename="../src/interface/centerwidgetonscreen.cpp" line="240"/>
         <location filename="../src/interface/centerwidgetonscreen.cpp" line="253"/>
         <source>If you want, you can revert to the initial setting to show subgroups in combo boxes.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αν επιθυμείτε, μπορείτε να επαναφέρετε την προκαθορισμένη ρύθμιση, ώστε να εμφανίζονται τα υποτμήματα στα σύνθετα πλαίσια.</translation>
     </message>
     <message>
         <location filename="../src/interface/centerwidgetonscreen.cpp" line="236"/>
         <source>Subgroups are invisible in combo boxes, by a global setting which you activated. You are trying to modify a constraint, leaving it to refer to the original subgroup %1, which is invisible in the combo box - but this is impossible.</source>
-        <translation type="unfinished"></translation>
+        <translation>Τα υποτμήματα δεν εμφανίζονται στα σύνθετα πλαίσια, επειδή ενεργοποιήσατε μία καθολική ρύθμιση. Προσπαθείτε να τροποποιήσετε έναν περιορισμό, ενώ τον αφήνετε να σχετίζεται με το αρχικό υποτμήμα %1, το οποίο δεν εμφανίζεται στο σύνθετο πλαίσιο - αυτό όμως είναι αδύνατον.</translation>
     </message>
     <message>
         <location filename="../src/interface/centerwidgetonscreen.cpp" line="249"/>
         <source>Subgroups are invisible in combo boxes, by a global setting which you activated. The current activity is referring to subgroup %1, so the activity is displayed incorrectly with a void subgroup here.</source>
-        <translation type="unfinished"></translation>
+        <translation>Τα υποτμήματα δεν εμφανίζονται στα σύνθετα πλαίσια, επειδή ενεργοποιήσατε μία καθολική ρύθμιση. Η τρέχουσα δραστηριότητα σχετίζεται με το υποτμήμα %1, κι έτσι η δραστηριότητα απεικονίζεται εσφαλμένα εδώ με το πεδίο του υποτμήματος κενό.</translation>
     </message>
 </context>
 <context>
