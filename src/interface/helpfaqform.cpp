@@ -448,7 +448,7 @@ void HelpFaqForm::setText()
 		"1_a\n"
 		"contains subgroups:\n\n"
 		"    1_a_x_ENG_FRE_GER,\n"
-		"    t1_a_x_!ENG_FRE_GER,\n"
+		"    1_a_x_!ENG_FRE_GER,\n"
 		"    1_a_x_ENG_!FRE_GER,\n"
 		"    1_a_x_!ENG_!FRE_GER,\n"
 		"    1_a_x_ENG_FRE_!GER,\n"
@@ -523,7 +523,7 @@ void HelpFaqForm::setText()
 		"Suppose you have activities A1 and A2. Add dummy A3, with duration 1, no teachers and no students. Add constraint "
 		"two activities consecutive, A2 and A3 (A2 followed by A3). Add constraint activities not overlapping, A1 and A3.\n\n"
 		"There is only a small problem: A2 cannot be put in the last period. To correct that: increase the number of "
-		"hours with 1 and constraint all the real activities (without A3) to take place in the first periods. "
+		"hours with 1 and constrain all the real activities (without A3) to take place in the first periods. "
 		"You can do that by adding an activity tag to A1 and A2 named Early and an activity tag to A3 named Any, and constraint "
 		"activities preferred time slots for activity tag Early to be in the first n-1 slots of each day.");
 
@@ -599,7 +599,7 @@ void HelpFaqForm::setText()
 	s+="\n\n";
 	
 	s+=tr("Q: At our school there are a lot of teachers which work only a few hours a week. Of course it "
-		"is really nasty to drive for one our to the school. So we set the constraint that every teacher "
+		"is really nasty to drive for one hour to the school. So we set the constraint that every teacher "
 		"should work at least 2 hours a day. Unfortunately we have this year a teacher which only works 1h a "
 		"week. As a result of this FET doesn't start to create a timetable. Any suggestions how "
 		"to fix the problem without defining a constraint for every singular teacher?\n\n"
