@@ -111,6 +111,11 @@ public:
 	void setTime(int ai, int time);
 	void unsetTime(int ai);
 	void setRoom(int ai, int room);
+	void unspecifyRoom(int ai);
+	void unallocateRoom(int ai);
+
+	QList<int> getUnallocatedActivities(const Rules& rules) const;
+	QList<int> getHomelessActivities(const Rules& rules) const;
 
 private:
 	/**
