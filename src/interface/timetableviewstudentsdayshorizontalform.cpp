@@ -174,6 +174,9 @@ TimetableViewStudentsDaysHorizontalForm::TimetableViewStudentsDaysHorizontalForm
 
 	//added by Volker Dirr
 	connect(&communicationSpinBox, SIGNAL(valueChanged()), this, SLOT(updateStudentsTimetableTable()));
+
+	studentsTimetableTable->setSolution(&gt.rules, CachedSchedule::getCachedSolution());
+	connect(studentsTimetableTable, SIGNAL(solution_changed()), &communicationSpinBox, SLOT(increaseValue()));
 }
 
 TimetableViewStudentsDaysHorizontalForm::~TimetableViewStudentsDaysHorizontalForm()
@@ -412,6 +415,7 @@ void TimetableViewStudentsDaysHorizontalForm::updateStudentsTimetableTable(){
 				}
 			}
 			studentsTimetableTable->item(j, k)->setText(s);
+			studentsTimetableTable->item(j,k)->setData(Qt::UserRole, ai);
 
 			int rowspan = nextJ - j;
 			if (rowspan != studentsTimetableTable->rowSpan(j,k))
@@ -426,6 +430,9 @@ void TimetableViewStudentsDaysHorizontalForm::updateStudentsTimetableTable(){
 	tableWidgetUpdateBug(studentsTimetableTable);
 	
 	detailActivity(studentsTimetableTable->currentItem());
+
+	updateNotPlacedActivities();
+	updateBrokenConstraints();
 }
 
 //begin by Marco Vassura
@@ -446,7 +453,27 @@ QColor TimetableViewStudentsDaysHorizontalForm::stringToColor(QString s)
 	}
 	return QColor::fromRgb((int)(crc>>16), (int)((crc>>8) & 0xFF), (int)(crc & 0xFF));
 }
+
 //end by Marco Vassura
+
+void TimetableViewStudentsDaysHorizontalForm::updateNotPlacedActivities()
+{
+	notPlacedActivitiesListWidget->clear();
+	foreach (int ai, CachedSchedule::getCachedSolution().getUnallocatedActivities(gt.rules)) {
+		const Activity& activity = gt.rules.internalActivitiesList[ai];
+		if ((yearsListWidget->currentItem() && activity.studentsNames.contains(yearsListWidget->currentItem()->text()))
+			|| (groupsListWidget->currentItem() && activity.studentsNames.contains(groupsListWidget->currentItem()->text()))
+			|| (subgroupsListWidget->currentItem() && activity.studentsNames.contains(subgroupsListWidget->currentItem()->text())))
+		notPlacedActivitiesListWidget->addItem(activity.getDescription());
+	}
+}
+
+void TimetableViewStudentsDaysHorizontalForm::updateBrokenConstraints()
+{
+	brokenConstraintsListWidget->clear();
+	foreach(QString item, CachedSchedule::getCachedSolution().conflictsDescriptionList)
+		brokenConstraintsListWidget->addItem(item);
+}
 
 void TimetableViewStudentsDaysHorizontalForm::resizeEvent(QResizeEvent* event)
 {

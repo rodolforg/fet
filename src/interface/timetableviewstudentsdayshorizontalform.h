@@ -55,6 +55,9 @@ public slots:
 protected:
 	void resizeEvent(QResizeEvent* event);
 	QColor stringToColor(QString s); //by Marco Vassura
+
+	void updateNotPlacedActivities();
+	void updateBrokenConstraints();
 };
 
 #endif
