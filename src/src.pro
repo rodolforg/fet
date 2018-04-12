@@ -510,6 +510,7 @@ SOURCES += \
 	interface/invisiblesubgrouphelper.cpp \
 	interface/studentscomboboxhelper.cpp \
 	interface/timetabletimehorizontalitemdelegate.cpp \
+	interface/editabletimetablewidget.cpp \
 	\
 	interface/studentscomboboxesstyleform.cpp
 
@@ -1028,6 +1029,7 @@ HEADERS += \
 	interface/invisiblesubgrouphelper.h \
 	interface/studentscomboboxhelper.h \
 	interface/timetabletimehorizontalitemdelegate.h \
+	interface/editabletimetablewidget.h \
 	\
 	interface/studentscomboboxesstyleform.h
 

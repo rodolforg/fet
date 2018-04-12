@@ -125,7 +125,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QTableWidget" name="studentsTimetableTable">
+         <widget class="EditableTimetableWidget" name="studentsTimetableTable">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
             <horstretch>0</horstretch>
@@ -157,6 +157,26 @@
         <item>
          <widget class="QPlainTextEdit" name="detailsTextEdit"/>
         </item>
+        <item>
+         <widget class="QLabel" name="notPlacedActivitiesLabel">
+          <property name="text">
+           <string>Not placed activities</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QListWidget" name="notPlacedActivitiesListWidget"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="brokenConstraintsLabel">
+          <property name="text">
+           <string>Broken constraints</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QListWidget" name="brokenConstraintsListWidget"/>
+        </item>
        </layout>
       </widget>
      </widget>
@@ -165,6 +185,13 @@
   </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>EditableTimetableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>editabletimetablewidget.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
