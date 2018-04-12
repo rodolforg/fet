@@ -545,3 +545,43 @@ void Solution::setRoom(int ai, int room)
 	resetFitness();
 	rooms[ai] = room;
 }
+
+void Solution::unspecifyRoom(int ai)
+{
+	assert(ai >= 0 && ai < MAX_ACTIVITIES);
+
+	if (rooms[ai] == UNSPECIFIED_ROOM)
+		return;
+
+	resetFitness();
+	rooms[ai] = UNSPECIFIED_ROOM;
+}
+
+void Solution::unallocateRoom(int ai)
+{
+	assert(ai >= 0 && ai < MAX_ACTIVITIES);
+
+	if (rooms[ai] == UNALLOCATED_SPACE)
+		return;
+
+	resetFitness();
+	rooms[ai] = UNALLOCATED_SPACE;
+}
+
+QList<int> Solution::getUnallocatedActivities(const Rules& rules) const
+{
+	QList<int> answer;
+	for(int ai=0; ai < rules.nInternalActivities; ai++)
+		if (times[ai] == UNALLOCATED_TIME)
+			answer.append(ai);
+	return answer;
+}
+
+QList<int> Solution::getHomelessActivities(const Rules& rules) const
+{
+	QList<int> answer;
+	for(int ai=0; ai < rules.nInternalActivities; ai++)
+		if (rooms[ai] == UNALLOCATED_SPACE)
+			answer.append(ai);
+	return answer;
+}
