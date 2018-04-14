@@ -471,8 +471,12 @@ void TimetableViewStudentsDaysHorizontalForm::updateNotPlacedActivities()
 void TimetableViewStudentsDaysHorizontalForm::updateBrokenConstraints()
 {
 	brokenConstraintsListWidget->clear();
-	foreach(QString item, CachedSchedule::getCachedSolution().conflictsDescriptionList)
-		brokenConstraintsListWidget->addItem(item);
+	const Solution& solution = CachedSchedule::getCachedSolution();
+	foreach(QString item, solution.conflictsDescriptionList)
+		if (solution.severeConflictList.contains(item))
+			brokenConstraintsListWidget->addItem(new QListWidgetItem(QIcon(":/images/error.png"),item));
+		else
+			brokenConstraintsListWidget->addItem(item);
 }
 
 void TimetableViewStudentsDaysHorizontalForm::resizeEvent(QResizeEvent* event)
