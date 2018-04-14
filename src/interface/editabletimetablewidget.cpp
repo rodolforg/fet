@@ -94,16 +94,25 @@ void EditableTimetableWidget::contextMenuEvent(QContextMenuEvent* event)
 		if (src_ai != UNALLOCATED_ACTIVITY)
 			placed_activity_ids_but_clicked.remove(src_ai);
 	}
+
 	QMenu* placeMenu = contextMenu.addMenu(tr("Place Activity…"));
-	QSet<int> all_activity_ids_but_clicked = placed_activity_ids_but_clicked + tempRemovedActivities;
-	foreach (int ai, all_activity_ids_but_clicked) {
+	foreach (int ai, tempRemovedActivities) {
 		if (h0 + rules->internalActivitiesList[ai].duration > rules->nHoursPerDay)
 			continue;
 		QAction* action = new QAction(rules->internalActivitiesList[ai].getDescription(), this);
 		placeMenu->addAction(action);
 		connect(action, &QAction::triggered, [this,item, ai](){ placeActivity(item, ai); });
 	}
-	if (placed_activity_ids_but_clicked.count() < 1)
+	placeMenu->addSeparator();
+	foreach (int ai, placed_activity_ids_but_clicked) {
+		if (h0 + rules->internalActivitiesList[ai].duration > rules->nHoursPerDay)
+			continue;
+		QAction* action = new QAction(rules->internalActivitiesList[ai].getDescription(), this);
+		placeMenu->addAction(action);
+		connect(action, &QAction::triggered, [this,item, ai](){ placeActivity(item, ai); });
+	}
+	int num_all_activity_ids_but_clicked = tempRemovedActivities.count() + placed_activity_ids_but_clicked.count();
+	if (num_all_activity_ids_but_clicked < 1)
 		placeMenu->setEnabled(false);
 
 	QAction actionRemove(tr("Remove Activity"), this);
