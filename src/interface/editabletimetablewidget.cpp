@@ -27,8 +27,6 @@ extern bool simulation_running;
 EditableTimetableWidget::EditableTimetableWidget(QWidget *parent)
 	: QTableWidget(parent), rules(NULL), solution(NULL), timetableDirection(DAYS_HORIZONTAL)
 {
-	connect(this, SIGNAL(itemPressed(QTableWidgetItem*)), this, SLOT(itemPressed(QTableWidgetItem*)));
-
 	setContextMenuPolicy(Qt::DefaultContextMenu);
 }
 
