@@ -321,6 +321,8 @@ void EditableTimetableWidget::placeActivity(const QTableWidgetItem* item, int ai
 		tempRemovedActivities.insert(removableActIdx);
 	}
 
+	tempRemovedActivities.remove(ai);
+
 	solution->setTime(ai, getTime(item->row(), item->column()));
 
 	QString useless;
