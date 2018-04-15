@@ -26,8 +26,8 @@ public:
 private Q_SLOTS:
 	void OneTeacher_CheckInvalidValues();
 	void AllTeachers_CheckInvalidValues();
-	void OneTeacher_FitnessAcceptsNullString();
-	void AllTeachers_FitnessAcceptsNullString();
+	void OneTeacher_FitnessAcceptsNullPointer();
+	void AllTeachers_FitnessAcceptsNullPointer();
 	void OneTeacher_CheckFitness();
 	void AllTeachers_CheckFitness();
 	void OneTeacher_CheckFitness_EnoughGapButNotContinuous();
@@ -152,7 +152,7 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::AllTeachers_CheckInvalidV
 	QVERIFY2(!result, "Does not accept end-of-day as end hour");
 }
 
-void ConstraintTeachersMinContinuousGapInIntervalTest::OneTeacher_FitnessAcceptsNullString()
+void ConstraintTeachersMinContinuousGapInIntervalTest::OneTeacher_FitnessAcceptsNullPointer()
 {
 	Rules rules;
 	rules.init();
@@ -170,12 +170,10 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::OneTeacher_FitnessAccepts
 	Solution c;
 	c.setTime(0, 1);
 
-	QList<double> cl;
-	QStringList dl;
-	ctr->fitness(c, rules, cl, dl, NULL);
+	ctr->fitness(c, rules);
 }
 
-void ConstraintTeachersMinContinuousGapInIntervalTest::AllTeachers_FitnessAcceptsNullString()
+void ConstraintTeachersMinContinuousGapInIntervalTest::AllTeachers_FitnessAcceptsNullPointer()
 {
 	Rules rules;
 	rules.init();
@@ -189,9 +187,7 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::AllTeachers_FitnessAccept
 	Solution c;
 	c.setTime(0, 1);
 
-	QList<double> cl;
-	QStringList dl;
-	ctr->fitness(c, rules, cl, dl, NULL);
+	ctr->fitness(c, rules);
 }
 
 void ConstraintTeachersMinContinuousGapInIntervalTest::OneTeacher_CheckFitness()
@@ -220,59 +216,57 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::OneTeacher_CheckFitness()
 
 	Solution c;
 
-	QList<double> cl;
-	QStringList dl;
-	double fitness = ctr->fitness(c, rules, cl, dl);
+	double fitness = ctr->fitness(c, rules);
 	QCOMPARE(fitness, 0.0);
 
 	c.setTime(0, rules.nDaysPerWeek*0+0);
 	c.teachersMatrixReady = false;
-	fitness = ctr->fitness(c, rules, cl, dl);
+	fitness = ctr->fitness(c, rules);
 	QCOMPARE(fitness, 0.0);
 
 	c.setTime(0, rules.nDaysPerWeek*1+0);
 	c.teachersMatrixReady = false;
-	fitness = ctr->fitness(c, rules, cl, dl);
+	fitness = ctr->fitness(c, rules);
 	QCOMPARE(fitness, 1.0);
 
 	c.setTime(0, rules.nDaysPerWeek*2+0);
 	c.teachersMatrixReady = false;
-	fitness = ctr->fitness(c, rules, cl, dl);
+	fitness = ctr->fitness(c, rules);
 	QCOMPARE(fitness, 2.0);
 
 	c.setTime(0, rules.nDaysPerWeek*3+0);
 	c.teachersMatrixReady = false;
-	fitness = ctr->fitness(c, rules, cl, dl);
+	fitness = ctr->fitness(c, rules);
 	QCOMPARE(fitness, 1.0);
 
 	c.setTime(0, rules.nDaysPerWeek*4+0);
 	c.teachersMatrixReady = false;
-	fitness = ctr->fitness(c, rules, cl, dl);
+	fitness = ctr->fitness(c, rules);
 	QCOMPARE(fitness, 0.0);
 
 
 	c.setTime(0, rules.nDaysPerWeek*0+2);
-	fitness = ctr->fitness(c, rules, cl, dl);
+	fitness = ctr->fitness(c, rules);
 	QCOMPARE(fitness, 0.0);
 
 	c.setTime(0, rules.nDaysPerWeek*1+2);
 	c.teachersMatrixReady = false;
-	fitness = ctr->fitness(c, rules, cl, dl);
+	fitness = ctr->fitness(c, rules);
 	QCOMPARE(fitness, 1.0);
 
 	c.setTime(0, rules.nDaysPerWeek*2+2);
 	c.teachersMatrixReady = false;
-	fitness = ctr->fitness(c, rules, cl, dl);
+	fitness = ctr->fitness(c, rules);
 	QCOMPARE(fitness, 2.0);
 
 	c.setTime(0, rules.nDaysPerWeek*3+2);
 	c.teachersMatrixReady = false;
-	fitness = ctr->fitness(c, rules, cl, dl);
+	fitness = ctr->fitness(c, rules);
 	QCOMPARE(fitness, 1.0);
 
 	c.setTime(0, rules.nDaysPerWeek*4+2);
 	c.teachersMatrixReady = false;
-	fitness = ctr->fitness(c, rules, cl, dl);
+	fitness = ctr->fitness(c, rules);
 	QCOMPARE(fitness, 0.0);
 }
 
@@ -305,63 +299,60 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::AllTeachers_CheckFitness(
 
 	Solution c;
 
-	QList<double> cl;
-	QStringList dl;
-	double fitness = ctr->fitness(c, rules, cl, dl);
+	double fitness = ctr->fitness(c, rules);
 	QCOMPARE(fitness, 0.0);
 
 	c.setTime(0, rules.nDaysPerWeek*0+0);
 	c.teachersMatrixReady = false;
-	fitness = ctr->fitness(c, rules, cl, dl);
+	fitness = ctr->fitness(c, rules);
 	QCOMPARE(fitness, 0.0);
 
 	c.setTime(0, rules.nDaysPerWeek*1+0);
 	c.teachersMatrixReady = false;
-	fitness = ctr->fitness(c, rules, cl, dl);
+	fitness = ctr->fitness(c, rules);
 	QCOMPARE(fitness, 2.0);
 
 	c.setTime(0, rules.nDaysPerWeek*2+0);
 	c.teachersMatrixReady = false;
-	fitness = ctr->fitness(c, rules, cl, dl);
+	fitness = ctr->fitness(c, rules);
 	QCOMPARE(fitness, 4.0);
 
 	c.setTime(0, rules.nDaysPerWeek*3+0);
 	c.teachersMatrixReady = false;
-	fitness = ctr->fitness(c, rules, cl, dl);
+	fitness = ctr->fitness(c, rules);
 	QCOMPARE(fitness, 2.0);
 
 	c.setTime(0, rules.nDaysPerWeek*4+0);
 	c.teachersMatrixReady = false;
-	fitness = ctr->fitness(c, rules, cl, dl);
+	fitness = ctr->fitness(c, rules);
 	QCOMPARE(fitness, 0.0);
 
 
 	c.setTime(0, rules.nDaysPerWeek*0+2);
-	fitness = ctr->fitness(c, rules, cl, dl);
+	fitness = ctr->fitness(c, rules);
 	QCOMPARE(fitness, 0.0);
 
 	c.setTime(0, rules.nDaysPerWeek*1+2);
 	c.teachersMatrixReady = false;
-	fitness = ctr->fitness(c, rules, cl, dl);
+	fitness = ctr->fitness(c, rules);
 	QCOMPARE(fitness, 2.0);
 
-	cl.clear();
-	dl.clear();
+	ConflictInfo conflicts;
 	c.setTime(0, rules.nDaysPerWeek*2+2);
 	c.teachersMatrixReady = false;
-	fitness = ctr->fitness(c, rules, cl, dl);
+	fitness = ctr->fitness(c, rules, &conflicts);
 	QCOMPARE(fitness, 4.0);
-	QCOMPARE(cl.count(), 2);
-	QCOMPARE(cl[0], 2.0);
+	QCOMPARE(conflicts.weights.count(), 2);
+	QCOMPARE(conflicts.weights[0], 2.0);
 
 	c.setTime(0, rules.nDaysPerWeek*3+2);
 	c.teachersMatrixReady = false;
-	fitness = ctr->fitness(c, rules, cl, dl);
+	fitness = ctr->fitness(c, rules);
 	QCOMPARE(fitness, 2.0);
 
 	c.setTime(0, rules.nDaysPerWeek*4+2);
 	c.teachersMatrixReady = false;
-	fitness = ctr->fitness(c, rules, cl, dl);
+	fitness = ctr->fitness(c, rules);
 	QCOMPARE(fitness, 0.0);
 }
 
@@ -391,14 +382,12 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::OneTeacher_CheckFitness_E
 
 	Solution c;
 
-	QList<double> cl;
-	QStringList dl;
-	double fitness = ctr->fitness(c, rules, cl, dl);
+	double fitness = ctr->fitness(c, rules);
 	QCOMPARE(fitness, 0.0);
 
 	c.setTime(0, rules.nDaysPerWeek*3+0);
 	c.teachersMatrixReady = false;
-	fitness = ctr->fitness(c, rules, cl, dl);
+	fitness = ctr->fitness(c, rules);
 	QCOMPARE(fitness, 1.0);
 }
 
@@ -431,19 +420,18 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::AllTeachers_CheckFitness_
 
 	Solution c;
 
-	QList<double> cl;
-	QStringList dl;
-	double fitness = ctr->fitness(c, rules, cl, dl);
+	ConflictInfo info;
+	double fitness = ctr->fitness(c, rules, &info);
 	QCOMPARE(fitness, 0.0);
-	QCOMPARE(cl.count(), 0);
+	QCOMPARE(info.weights.count(), 0);
 
 	c.setTime(0, rules.nDaysPerWeek*3+0);
 	c.teachersMatrixReady = false;
-	fitness = ctr->fitness(c, rules, cl, dl);
+	fitness = ctr->fitness(c, rules, &info);
 	QCOMPARE(fitness, 2.0);
-	QCOMPARE(cl.count(), 2);
-	QCOMPARE(cl[0], 1.0);
-	QCOMPARE(dl.count(), 2);
+	QCOMPARE(info.weights.count(), 2);
+	QCOMPARE(info.weights[0], 1.0);
+	QCOMPARE(info.descriptions.count(), 2);
 }
 
 QTEST_APPLESS_MAIN(ConstraintTeachersMinContinuousGapInIntervalTest)

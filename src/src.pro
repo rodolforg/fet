@@ -532,6 +532,7 @@ HEADERS += \
 	engine/randomknuth.h \
 	engine/messageboxes.h \
 	engine/xmllog.h \
+	engine/conflictinfo.h \
 	engine/constraints/constraintpre.h \
 	engine/constraints/mindaysbetweenactivities.h \
 	engine/constraints/maxdaysbetweenactivities.h \

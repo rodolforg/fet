@@ -65,6 +65,7 @@ HEADERS += \
 	engine/messageboxes.h \
 	engine/export.h \
 	engine/xmllog.h \
+	engine/conflictinfo.h \
 	engine/constraints/constraintpre.h \
 	engine/constraints/mindaysbetweenactivities.h \
 	engine/constraints/maxdaysbetweenactivities.h \

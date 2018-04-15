@@ -118,30 +118,30 @@ double Solution::fitness(const Rules &r, QString* conflictsString){
 			this->nPlacedActivities++;
 		
 	for(int i=0; i<r.nInternalTimeConstraints; i++){
-		QList<QString> sl;
-		QList<double> cl;
-		double cur_fitness = r.internalTimeConstraintsList[i]->fitness(*this, r, cl, sl, conflictsString);
+		ConflictInfo info;
+		ConflictInfo* pInfo = conflictsString != NULL? &info : NULL;
+		double cur_fitness = r.internalTimeConstraintsList[i]->fitness(*this, r, pInfo);
 		if ((cur_fitness != 0 && r.internalTimeConstraintsList[i]->weightPercentage >= 100.0)
 			|| cur_fitness >= 10000) {
-			severeConflictList += sl;
+			severeConflictList += info.descriptions;
 		}
 		this->_fitness += cur_fitness;
 		
-		conflictsWeightList+=cl;
-		conflictsDescriptionList+=sl;
+		conflictsWeightList += info.weights;
+		conflictsDescriptionList += info.descriptions;
 	}	
 	for(int i=0; i<r.nInternalSpaceConstraints; i++){
-		QList<QString> sl;
-		QList<double> cl;
-		double cur_fitness = r.internalSpaceConstraintsList[i]->fitness(*this, r, cl, sl, conflictsString);
+		ConflictInfo info;
+		ConflictInfo* pInfo = conflictsString != NULL? &info : NULL;
+		double cur_fitness = r.internalSpaceConstraintsList[i]->fitness(*this, r, pInfo);
 		if ((cur_fitness != 0 && r.internalSpaceConstraintsList[i]->weightPercentage >= 100.0)
 			|| cur_fitness >= 10000) {
-			severeConflictList += sl;
+			severeConflictList += info.descriptions;
 		}
 		this->_fitness += cur_fitness;
 
-		conflictsWeightList+=cl;
-		conflictsDescriptionList+=sl;
+		conflictsWeightList += info.weights;
+		conflictsDescriptionList += info.descriptions;
 	}
 		
 	this->conflictsTotal=0;
@@ -183,6 +183,9 @@ double Solution::fitness(const Rules &r, QString* conflictsString){
 	assert(conflictsWeightList.count()==conflictsDescriptionList.count());
 	assert(conflictsWeightList.count()==ttt);
 	
+	if (conflictsString != NULL)
+		*conflictsString += conflictsDescriptionList.join("\n");
+
 	return this->_fitness;
 }
 
