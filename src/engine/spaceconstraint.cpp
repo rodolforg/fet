@@ -219,6 +219,15 @@ double ConstraintBasicCompulsorySpace::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
+	return fitness(c, r, false, conflictInfo);
+}
+
+double ConstraintBasicCompulsorySpace::fitness(
+	Solution& c,
+	const Rules& r,
+	bool ignoreUnallocated,
+	ConflictInfo* conflictInfo)
+{
 
 	assert(r.internalStructureComputed);
 
@@ -231,6 +240,7 @@ double ConstraintBasicCompulsorySpace::fitness(
 	int nor = 0; //number of overwhelmed rooms
 
 	for(int i=0; i<r.nInternalActivities; i++)
+		if (!ignoreUnallocated) {
 		if(c.room(i)==UNALLOCATED_SPACE){
 			//Firstly, we consider a big clash each unallocated activity.
 			//Needs to be very a large constant, bigger than any other broken constraint.
@@ -243,6 +253,7 @@ double ConstraintBasicCompulsorySpace::fitness(
 				s+=tr("this increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100*10000));
 
 				conflictInfo->append(weightPercentage/100 * 10000, s);
+			}
 			}
 		}
 		else if(c.room(i)!=UNSPECIFIED_ROOM){

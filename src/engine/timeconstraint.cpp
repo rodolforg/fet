@@ -304,6 +304,10 @@ QString ConstraintBasicCompulsoryTime::getDetailedDescription(const Rules& r) co
 }
 
 double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo){
+	return fitness(c, r, false, conflictInfo);
+}
+
+double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, bool ignoreUnallocated, ConflictInfo* conflictInfo){
 	assert(r.internalStructureComputed);
 
 	assert(weightPercentage==100.0);
@@ -322,6 +326,7 @@ double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, Confl
 
 	for(int i=0; i<r.nInternalActivities; i++){
 		if(c.time(i)==UNALLOCATED_TIME){
+			if (!ignoreUnallocated) {
 			//Firstly, we consider a big clash each unallocated activity.
 			//Needs to be very a large constant, bigger than any other broken constraint.
 			//Take care: MAX_ACTIVITIES*this_constant <= INT_MAX
@@ -337,6 +342,7 @@ double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, Confl
 						.arg(CustomFETString::number(weightPercentage/100 * 10000));
 
 				conflictInfo->append(weightPercentage/100 * 10000, s);
+			}
 			}
 		}
 		else{
