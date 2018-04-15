@@ -82,6 +82,9 @@ void Solution::makeUnallocated(const Rules &r){
 void Solution::resetFitness()
 {
 	_fitness = -1;
+	teachersMatrixReady = false;
+	subgroupsMatrixReady = false;
+	roomsMatrixReady = false;
 }
 
 double Solution::fitness(const Rules &r, QString* conflictsString){
