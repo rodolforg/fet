@@ -225,10 +225,8 @@ QString ConstraintBasicCompulsorySpace::getDetailedDescription(const Rules& r) c
 double ConstraintBasicCompulsorySpace::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
-	{
+	ConflictInfo* conflictInfo)
+{
 
 	assert(r.internalStructureComputed);
 
@@ -255,16 +253,14 @@ double ConstraintBasicCompulsorySpace::fitness(
 			//Needs to be very a large constant, bigger than any other broken constraint.
 			unallocated += /*r.internalActivitiesList[i].duration * r.internalActivitiesList[i].nSubgroups * */ 10000;
 			//(an unallocated activity for a year is more important than an unallocated activity for a subgroup)
-			if(conflictsString != NULL){
+			if(conflictInfo != NULL){
 				QString s=tr("Space constraint basic compulsory broken: unallocated activity with id=%1 (%2)",
 							 "%2 is the detailed description of the activity").arg(r.internalActivitiesList[i].id).arg(getActivityDetailedDescription(r, r.internalActivitiesList[i].id));
 				s+=QString(" - ");
 				s+=tr("this increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100*10000));
 
-				dl.append(s);
-				cl.append(weightPercentage/100 * 10000);
-
-				*conflictsString+=s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(weightPercentage/100 * 10000);
 			}
 		}
 		else if(c.rooms[i]!=UNSPECIFIED_ROOM){
@@ -280,7 +276,7 @@ double ConstraintBasicCompulsorySpace::fitness(
 
 				nor+=tmp;
 
-				if(conflictsString != NULL){
+				if(conflictInfo != NULL){
 					QString s;
 					s=tr("Space constraint basic compulsory: room %1 has allocated activity with id %2 (%3) and the capacity of the room is overloaded",
 						 "%2 is act id, %3 is detailed description of activity")
@@ -290,15 +286,13 @@ double ConstraintBasicCompulsorySpace::fitness(
 					s+=". ";
 					s+=tr("This increases conflicts total by %1").arg(CustomFETString::number(weightPercentage/100));
 
-					dl.append(s);
-					cl.append(weightPercentage/100);
-
-					*conflictsString += s+"\n";
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append(weightPercentage/100);
 				}
 			}
 		}
 
-	if (conflictsString == NULL) {
+	if (conflictInfo == NULL) {
 		nre = roomsConflicts;
 	} else {
 		//Calculates the number of rooms exhaustion (when a room is occupied
@@ -317,10 +311,8 @@ double ConstraintBasicCompulsorySpace::fitness(
 						s+=" ";
 						s+=tr("This increases the conflicts total by %1").arg(CustomFETString::number(tmp*weightPercentage/100));
 
-						dl.append(s);
-						cl.append(tmp*weightPercentage/100);
-
-						*conflictsString += s+"\n";
+						conflictInfo->descriptions.append(s);
+						conflictInfo->weights.append(tmp*weightPercentage/100);
 					}
 				}
 			}
@@ -522,9 +514,7 @@ ErrorCode ConstraintRoomNotAvailableTimes::computeInternalStructure(const Rules&
 double ConstraintRoomNotAvailableTimes::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrices roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -552,7 +542,7 @@ double ConstraintRoomNotAvailableTimes::fitness(
 		if(roomsMatrix[rm][d][h]>0){
 			nbroken+=roomsMatrix[rm][d][h];
 	
-			if(conflictsString!=NULL){
+			if(conflictInfo!=NULL){
 				QString s= tr("Space constraint room not available times broken for room: %1, on day %2, hour %3")
 				 .arg(r.internalRoomsList[rm]->name)
 				 .arg(r.daysOfTheWeek[d])
@@ -561,10 +551,8 @@ double ConstraintRoomNotAvailableTimes::fitness(
 				s += tr("This increases the conflicts total by %1")
 				 .arg(CustomFETString::number(roomsMatrix[rm][d][h]*weightPercentage/100));
 				 
-				dl.append(s);
-				cl.append(roomsMatrix[rm][d][h]*weightPercentage/100);
-			
-				*conflictsString += s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(roomsMatrix[rm][d][h]*weightPercentage/100);
 			}
 		}
 	}
@@ -809,9 +797,7 @@ QString ConstraintActivityPreferredRoom::getDetailedDescription(const Rules& r) 
 double ConstraintActivityPreferredRoom::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -828,9 +814,7 @@ double ConstraintActivityPreferredRoom::fitness(
 	int rm=c.rooms[this->_activity];
 	if(/*rm!=UNALLOCATED_SPACE &&*/ rm!=this->_room){
 		if(rm!=UNALLOCATED_SPACE){
-			ok=false;
-
-			if(conflictsString!=NULL){
+			if(conflictInfo!=NULL){
 				QString s=tr("Space constraint activity preferred room broken for activity with id=%1 (%2), room=%3",
 					"%1 is activity id, %2 is detailed description of activity")
 					.arg(this->activityId)
@@ -839,10 +823,8 @@ double ConstraintActivityPreferredRoom::fitness(
 					s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* 1));
 		
-				dl.append(s);
-				cl.append(1*weightPercentage/100);
-			
-				*conflictsString += s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(1*weightPercentage/100);
 			}
 			nbroken++;
 		}
@@ -1045,9 +1027,7 @@ QString ConstraintActivityPreferredRooms::getDetailedDescription(const Rules& r)
 double ConstraintActivityPreferredRooms::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -1069,9 +1049,7 @@ double ConstraintActivityPreferredRooms::fitness(
 				break;
 		if(i==this->_rooms.count()){
 			if(rm!=UNALLOCATED_SPACE){
-				ok=false;
-		
-				if(conflictsString!=NULL){
+				if(conflictInfo!=NULL){
 					QString s=tr("Space constraint activity preferred rooms broken for activity with id=%1 (%2)"
 						, "%1 is activity id, %2 is detailed description of activity")
 						.arg(this->activityId)
@@ -1079,10 +1057,8 @@ double ConstraintActivityPreferredRooms::fitness(
 					s += ". ";
 					s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100 * 1));
 				
-					dl.append(s);
-					cl.append(weightPercentage/100 * 1);
-				
-					*conflictsString += s+"\n";
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append(weightPercentage/100 * 1);
 				}
 
 				nbroken++;
@@ -1291,9 +1267,7 @@ QString ConstraintStudentsSetHomeRoom::getDetailedDescription(const Rules& r) co
 double ConstraintStudentsSetHomeRoom::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -1335,7 +1309,7 @@ double ConstraintStudentsSetHomeRoom::fitness(
 			if(rm!=UNALLOCATED_SPACE)
 				ok2=false;
 		
-			if(conflictsString!=NULL){
+			if(conflictInfo!=NULL){
 				QString s=tr("Space constraint students set home room broken for activity with id %1 (%2)",
 					"%1 is activity id, %2 is detailed description of activity")
 					.arg(r.internalActivitiesList[ac].id)
@@ -1343,10 +1317,8 @@ double ConstraintStudentsSetHomeRoom::fitness(
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* 1));
 				
-				dl.append(s);
-				cl.append(weightPercentage/100* 1);
-				
-				*conflictsString+=s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(weightPercentage/100* 1);
 			}
 
 			nbroken++;
@@ -1566,9 +1538,7 @@ QString ConstraintStudentsSetHomeRooms::getDetailedDescription(const Rules& r) c
 double ConstraintStudentsSetHomeRooms::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -1613,7 +1583,7 @@ double ConstraintStudentsSetHomeRooms::fitness(
 			if(rm!=UNALLOCATED_SPACE)
 				ok2=false;
 			
-			if(conflictsString!=NULL){
+			if(conflictInfo!=NULL){
 				QString s=tr("Space constraint students set home rooms broken for activity with id %1 (%2)"
 					, "%1 is activity id, %2 is detailed description of activity")
 					.arg(r.internalActivitiesList[ac].id)
@@ -1621,10 +1591,8 @@ double ConstraintStudentsSetHomeRooms::fitness(
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* 1));
 				
-				dl.append(s);
-				cl.append(weightPercentage/100* 1);
-			
-				*conflictsString+=s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(weightPercentage/100* 1);
 			}
 			nbroken++;
 		}
@@ -1830,9 +1798,7 @@ QString ConstraintTeacherHomeRoom::getDetailedDescription(const Rules& r) const
 double ConstraintTeacherHomeRoom::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -1873,7 +1839,7 @@ double ConstraintTeacherHomeRoom::fitness(
 			if(rm!=UNALLOCATED_SPACE)
 				ok2=false;
 		
-			if(conflictsString!=NULL){
+			if(conflictInfo!=NULL){
 				QString s=tr("Space constraint teacher home room broken for activity with id %1 (%2)",
 					"%1 is activity id, %2 is detailed description of activity")
 					.arg(r.internalActivitiesList[ac].id)
@@ -1881,10 +1847,8 @@ double ConstraintTeacherHomeRoom::fitness(
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* 1));
 				
-				dl.append(s);
-				cl.append(weightPercentage/100* 1);
-				
-				*conflictsString+=s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(weightPercentage/100* 1);
 			}
 
 			nbroken++;
@@ -2103,9 +2067,7 @@ QString ConstraintTeacherHomeRooms::getDetailedDescription(const Rules& r) const
 double ConstraintTeacherHomeRooms::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -2150,7 +2112,7 @@ double ConstraintTeacherHomeRooms::fitness(
 			if(rm!=UNALLOCATED_SPACE)
 				ok2=false;
 			
-			if(conflictsString!=NULL){
+			if(conflictInfo!=NULL){
 				QString s=tr("Space constraint teacher home rooms broken for activity with id %1 (%2)",
 					"%1 is activity id, %2 is detailed description of activity")
 					.arg(r.internalActivitiesList[ac].id)
@@ -2158,10 +2120,8 @@ double ConstraintTeacherHomeRooms::fitness(
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* 1));
 				
-				dl.append(s);
-				cl.append(weightPercentage/100* 1);
-			
-				*conflictsString+=s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(weightPercentage/100* 1);
 			}
 			nbroken++;
 		}
@@ -2343,9 +2303,7 @@ QString ConstraintSubjectPreferredRoom::getDetailedDescription(const Rules& r) c
 double ConstraintSubjectPreferredRoom::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -2376,7 +2334,7 @@ double ConstraintSubjectPreferredRoom::fitness(
 			if(rm!=UNALLOCATED_SPACE)
 				ok2=false;
 		
-			if(conflictsString!=NULL){
+			if(conflictInfo!=NULL){
 				QString s=tr("Space constraint subject preferred room broken for activity with id %1 (%2)"
 					, "%1 is activity id, %2 is detailed description of activity")
 					.arg(r.internalActivitiesList[ac].id)
@@ -2384,10 +2342,8 @@ double ConstraintSubjectPreferredRoom::fitness(
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* 1));
 				
-				dl.append(s);
-				cl.append(weightPercentage/100* 1);
-				
-				*conflictsString+=s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(weightPercentage/100* 1);
 			}
 
 			nbroken++;
@@ -2583,9 +2539,7 @@ QString ConstraintSubjectPreferredRooms::getDetailedDescription(const Rules& r) 
 double ConstraintSubjectPreferredRooms::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -2620,7 +2574,7 @@ double ConstraintSubjectPreferredRooms::fitness(
 			if(rm!=UNALLOCATED_SPACE)
 				ok2=false;
 			
-			if(conflictsString!=NULL){
+			if(conflictInfo!=NULL){
 				QString s=tr("Space constraint subject preferred rooms broken for activity with id %1 (%2)",
 					"%1 is activity id, %2 is detailed description of activity")
 					.arg(r.internalActivitiesList[ac].id)
@@ -2628,10 +2582,8 @@ double ConstraintSubjectPreferredRooms::fitness(
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* 1));
 				
-				dl.append(s);
-				cl.append(weightPercentage/100* 1);
-			
-				*conflictsString+=s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(weightPercentage/100* 1);
 			}
 			nbroken++;
 		}
@@ -2822,9 +2774,7 @@ QString ConstraintSubjectActivityTagPreferredRoom::getDetailedDescription(const 
 double ConstraintSubjectActivityTagPreferredRoom::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -2855,7 +2805,7 @@ double ConstraintSubjectActivityTagPreferredRoom::fitness(
 			if(rm!=UNALLOCATED_SPACE)
 				ok2=false;
 		
-			if(conflictsString!=NULL){
+			if(conflictInfo!=NULL){
 				QString s=tr("Space constraint subject activity tag preferred room broken for activity with id %1 (%2) (activity tag of constraint=%3)",
 					"%1 is activity id, %2 is detailed description of activity")
 					.arg(r.internalActivitiesList[ac].id)
@@ -2864,10 +2814,8 @@ double ConstraintSubjectActivityTagPreferredRoom::fitness(
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* 1));
 				
-				dl.append(s);
-				cl.append(weightPercentage/100* 1);
-				
-				*conflictsString+=s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(weightPercentage/100* 1);
 			}
 
 			nbroken++;
@@ -3071,9 +3019,7 @@ QString ConstraintSubjectActivityTagPreferredRooms::getDetailedDescription(const
 double ConstraintSubjectActivityTagPreferredRooms::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -3108,7 +3054,7 @@ double ConstraintSubjectActivityTagPreferredRooms::fitness(
 			if(rm!=UNALLOCATED_SPACE)
 				ok2=false;
 			
-			if(conflictsString!=NULL){
+			if(conflictInfo!=NULL){
 				QString s=tr("Space constraint subject activity tag preferred rooms broken for activity with id %1 (%2) (activity tag of constraint=%3)",
 					"%1 is activity id, %2 is detailed description of activity")
 					.arg(r.internalActivitiesList[ac].id)
@@ -3117,10 +3063,8 @@ double ConstraintSubjectActivityTagPreferredRooms::fitness(
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* 1));
 				
-				dl.append(s);
-				cl.append(weightPercentage/100* 1);
-			
-				*conflictsString+=s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(weightPercentage/100* 1);
 			}
 			nbroken++;
 		}
@@ -3303,9 +3247,7 @@ QString ConstraintActivityTagPreferredRoom::getDetailedDescription(const Rules& 
 double ConstraintActivityTagPreferredRoom::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -3336,7 +3278,7 @@ double ConstraintActivityTagPreferredRoom::fitness(
 			if(rm!=UNALLOCATED_SPACE)
 				ok2=false;
 		
-			if(conflictsString!=NULL){
+			if(conflictInfo!=NULL){
 				QString s=tr("Space constraint activity tag preferred room broken for activity with id %1 (%2) (activity tag of constraint=%3)",
 					"%1 is activity id, %2 is detailed description of activity")
 					.arg(r.internalActivitiesList[ac].id)
@@ -3345,10 +3287,8 @@ double ConstraintActivityTagPreferredRoom::fitness(
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* 1));
 				
-				dl.append(s);
-				cl.append(weightPercentage/100* 1);
-				
-				*conflictsString+=s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(weightPercentage/100* 1);
 			}
 
 			nbroken++;
@@ -3544,9 +3484,7 @@ QString ConstraintActivityTagPreferredRooms::getDetailedDescription(const Rules&
 double ConstraintActivityTagPreferredRooms::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -3581,7 +3519,7 @@ double ConstraintActivityTagPreferredRooms::fitness(
 			if(rm!=UNALLOCATED_SPACE)
 				ok2=false;
 			
-			if(conflictsString!=NULL){
+			if(conflictInfo!=NULL){
 				QString s=tr("Space constraint activity tag preferred rooms broken for activity with id %1 (%2) (activity tag of constraint=%3)"
 					, "%1 is activity id, %2 is detailed description of activity")
 					.arg(r.internalActivitiesList[ac].id)
@@ -3590,10 +3528,8 @@ double ConstraintActivityTagPreferredRooms::fitness(
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* 1));
 				
-				dl.append(s);
-				cl.append(weightPercentage/100* 1);
-			
-				*conflictsString+=s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(weightPercentage/100* 1);
 			}
 			nbroken++;
 		}
@@ -3806,9 +3742,7 @@ QString ConstraintStudentsSetMaxBuildingChangesPerDay::getDetailedDescription(co
 double ConstraintStudentsSetMaxBuildingChangesPerDay::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -3858,17 +3792,15 @@ double ConstraintStudentsSetMaxBuildingChangesPerDay::fitness(
 			if(n_changes>this->maxBuildingChangesPerDay){
 				nbroken+=-this->maxBuildingChangesPerDay+n_changes;
 		
-				if(conflictsString!=NULL){
+				if(conflictInfo!=NULL){
 					QString s=tr("Space constraint students set max building changes per day broken for students=%1 on day %2")
 						.arg(this->studentsName)
 						.arg(r.daysOfTheWeek[d2]);
 					s += ". ";
 					s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* (-maxBuildingChangesPerDay+n_changes)));
 					
-					dl.append(s);
-					cl.append(weightPercentage/100* (-maxBuildingChangesPerDay+n_changes));
-				
-					*conflictsString+=s+"\n";
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append(weightPercentage/100* (-maxBuildingChangesPerDay+n_changes));
 				}
 			}
 		}
@@ -4035,9 +3967,7 @@ QString ConstraintStudentsMaxBuildingChangesPerDay::getDetailedDescription(const
 double ConstraintStudentsMaxBuildingChangesPerDay::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -4087,17 +4017,15 @@ double ConstraintStudentsMaxBuildingChangesPerDay::fitness(
 			if(n_changes>this->maxBuildingChangesPerDay){
 				nbroken+=-this->maxBuildingChangesPerDay+n_changes;
 		
-				if(conflictsString!=NULL){
+				if(conflictInfo!=NULL){
 					QString s=tr("Space constraint students max building changes per day broken for students=%1 on day %2")
 						.arg(r.internalSubgroupsList[sbg]->name)
 						.arg(r.daysOfTheWeek[d2]);
 					s += ". ";
 					s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* (-maxBuildingChangesPerDay+n_changes)));
 					
-					dl.append(s);
-					cl.append(weightPercentage/100* (-maxBuildingChangesPerDay+n_changes));
-				
-					*conflictsString+=s+"\n";
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append(weightPercentage/100* (-maxBuildingChangesPerDay+n_changes));
 				}
 			}
 		}
@@ -4317,9 +4245,7 @@ QString ConstraintStudentsSetMaxBuildingChangesPerWeek::getDetailedDescription(c
 double ConstraintStudentsSetMaxBuildingChangesPerWeek::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -4370,16 +4296,14 @@ double ConstraintStudentsSetMaxBuildingChangesPerWeek::fitness(
 		if(n_changes>this->maxBuildingChangesPerWeek){
 			nbroken+=-this->maxBuildingChangesPerWeek+n_changes;
 		
-			if(conflictsString!=NULL){
+			if(conflictInfo!=NULL){
 				QString s=tr("Space constraint students set max building changes per week broken for students=%1")
 					.arg(this->studentsName);
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* (-maxBuildingChangesPerWeek+n_changes)));
 				
-				dl.append(s);
-				cl.append(weightPercentage/100* (-maxBuildingChangesPerWeek+n_changes));
-			
-				*conflictsString+=s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(weightPercentage/100* (-maxBuildingChangesPerWeek+n_changes));
 			}
 		}
 	}
@@ -4545,9 +4469,7 @@ QString ConstraintStudentsMaxBuildingChangesPerWeek::getDetailedDescription(cons
 double ConstraintStudentsMaxBuildingChangesPerWeek::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -4598,16 +4520,14 @@ double ConstraintStudentsMaxBuildingChangesPerWeek::fitness(
 		if(n_changes>this->maxBuildingChangesPerWeek){
 			nbroken+=-this->maxBuildingChangesPerWeek+n_changes;
 		
-			if(conflictsString!=NULL){
+			if(conflictInfo!=NULL){
 				QString s=tr("Space constraint students max building changes per week broken for students=%1")
 					.arg(r.internalSubgroupsList[sbg]->name);
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* (-maxBuildingChangesPerWeek+n_changes)));
 				
-				dl.append(s);
-				cl.append(weightPercentage/100* (-maxBuildingChangesPerWeek+n_changes));
-			
-				*conflictsString+=s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(weightPercentage/100* (-maxBuildingChangesPerWeek+n_changes));
 			}
 		}
 	}
@@ -4826,9 +4746,7 @@ QString ConstraintStudentsSetMinGapsBetweenBuildingChanges::getDetailedDescripti
 double ConstraintStudentsSetMinGapsBetweenBuildingChanges::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -4882,17 +4800,15 @@ double ConstraintStudentsSetMinGapsBetweenBuildingChanges::fitness(
 						if(cnt_gaps<this->minGapsBetweenBuildingChanges){
 							nbroken++;
 						
-							if(conflictsString!=NULL){
+							if(conflictInfo!=NULL){
 								QString s=tr("Space constraint students set min gaps between building changes broken for students=%1 on day %2")
 									.arg(this->studentsName)
 									.arg(r.daysOfTheWeek[d2]);
 								s += ". ";
 								s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100*1));
 					
-								dl.append(s);
-								cl.append(weightPercentage/100*1);
-						
-								*conflictsString+=s+"\n";
+								conflictInfo->descriptions.append(s);
+								conflictInfo->weights.append(weightPercentage/100*1);
 							}
 						}
 						
@@ -5067,9 +4983,7 @@ QString ConstraintStudentsMinGapsBetweenBuildingChanges::getDetailedDescription(
 double ConstraintStudentsMinGapsBetweenBuildingChanges::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -5123,17 +5037,15 @@ double ConstraintStudentsMinGapsBetweenBuildingChanges::fitness(
 						if(cnt_gaps<this->minGapsBetweenBuildingChanges){
 							nbroken++;
 						
-							if(conflictsString!=NULL){
+							if(conflictInfo!=NULL){
 								QString s=tr("Space constraint students min gaps between building changes broken for students=%1 on day %2")
 									.arg(r.internalSubgroupsList[sbg]->name)
 									.arg(r.daysOfTheWeek[d2]);
 								s += ". ";
 								s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100*1));
 					
-								dl.append(s);
-								cl.append(weightPercentage/100*1);
-						
-								*conflictsString+=s+"\n";
+								conflictInfo->descriptions.append(s);
+								conflictInfo->weights.append(weightPercentage/100*1);
 							}
 						}
 						
@@ -5324,9 +5236,7 @@ QString ConstraintTeacherMaxBuildingChangesPerDay::getDetailedDescription(const 
 double ConstraintTeacherMaxBuildingChangesPerDay::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -5377,17 +5287,15 @@ double ConstraintTeacherMaxBuildingChangesPerDay::fitness(
 		if(n_changes>this->maxBuildingChangesPerDay){
 			nbroken+=-this->maxBuildingChangesPerDay+n_changes;
 	
-			if(conflictsString!=NULL){
+			if(conflictInfo!=NULL){
 				QString s=tr("Space constraint teacher max building changes per day broken for teacher=%1 on day %2")
 					.arg(this->teacherName)
 					.arg(r.daysOfTheWeek[d2]);
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* (-maxBuildingChangesPerDay+n_changes)));
 				
-				dl.append(s);
-				cl.append(weightPercentage/100* (-maxBuildingChangesPerDay+n_changes));
-			
-				*conflictsString+=s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(weightPercentage/100* (-maxBuildingChangesPerDay+n_changes));
 			}
 		}
 	}
@@ -5554,9 +5462,7 @@ QString ConstraintTeachersMaxBuildingChangesPerDay::getDetailedDescription(const
 double ConstraintTeachersMaxBuildingChangesPerDay::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -5606,17 +5512,15 @@ double ConstraintTeachersMaxBuildingChangesPerDay::fitness(
 			if(n_changes>this->maxBuildingChangesPerDay){
 				nbroken+=-this->maxBuildingChangesPerDay+n_changes;
 		
-				if(conflictsString!=NULL){
+				if(conflictInfo!=NULL){
 					QString s=tr("Space constraint teachers max building changes per day broken for teacher=%1 on day %2")
 						.arg(r.internalTeachersList[tch]->name)
 						.arg(r.daysOfTheWeek[d2]);
 					s += ". ";
 					s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* (-maxBuildingChangesPerDay+n_changes)));
 					
-					dl.append(s);
-					cl.append(weightPercentage/100* (-maxBuildingChangesPerDay+n_changes));
-				
-					*conflictsString+=s+"\n";
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append(weightPercentage/100* (-maxBuildingChangesPerDay+n_changes));
 				}
 			}
 		}
@@ -5799,9 +5703,7 @@ QString ConstraintTeacherMaxBuildingChangesPerWeek::getDetailedDescription(const
 double ConstraintTeacherMaxBuildingChangesPerWeek::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -5854,16 +5756,14 @@ double ConstraintTeacherMaxBuildingChangesPerWeek::fitness(
 	if(n_changes>this->maxBuildingChangesPerWeek){
 		nbroken+=n_changes-this->maxBuildingChangesPerWeek;
 	
-		if(conflictsString!=NULL){
+		if(conflictInfo!=NULL){
 			QString s=tr("Space constraint teacher max building changes per week broken for teacher=%1")
 				.arg(this->teacherName);
 			s += ". ";
 			s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* (n_changes-maxBuildingChangesPerWeek)));
 			
-			dl.append(s);
-			cl.append(weightPercentage/100* (n_changes-maxBuildingChangesPerWeek));
-		
-			*conflictsString+=s+"\n";
+			conflictInfo->descriptions.append(s);
+			conflictInfo->weights.append(weightPercentage/100* (n_changes-maxBuildingChangesPerWeek));
 		}
 	}
 	
@@ -6029,9 +5929,7 @@ QString ConstraintTeachersMaxBuildingChangesPerWeek::getDetailedDescription(cons
 double ConstraintTeachersMaxBuildingChangesPerWeek::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -6083,16 +5981,14 @@ double ConstraintTeachersMaxBuildingChangesPerWeek::fitness(
 		if(n_changes>this->maxBuildingChangesPerWeek){
 			nbroken+=n_changes-this->maxBuildingChangesPerWeek;
 		
-			if(conflictsString!=NULL){
+			if(conflictInfo!=NULL){
 				QString s=tr("Space constraint teachers max building changes per week broken for teacher=%1")
 					.arg(r.internalTeachersList[tch]->name);
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* (n_changes-maxBuildingChangesPerWeek)));
 				
-				dl.append(s);
-				cl.append(weightPercentage/100* (n_changes-maxBuildingChangesPerWeek));
-			
-				*conflictsString+=s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(weightPercentage/100* (n_changes-maxBuildingChangesPerWeek));
 			}
 		}
 	}
@@ -6274,9 +6170,7 @@ QString ConstraintTeacherMinGapsBetweenBuildingChanges::getDetailedDescription(c
 double ConstraintTeacherMinGapsBetweenBuildingChanges::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -6331,17 +6225,15 @@ double ConstraintTeacherMinGapsBetweenBuildingChanges::fitness(
 					if(cnt_gaps<this->minGapsBetweenBuildingChanges){
 						nbroken++;
 					
-						if(conflictsString!=NULL){
+						if(conflictInfo!=NULL){
 							QString s=tr("Space constraint teacher min gaps between building changes broken for teacher=%1 on day %2")
 								.arg(this->teacherName)
 								.arg(r.daysOfTheWeek[d2]);
 							s += ". ";
 							s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100*1));
 				
-							dl.append(s);
-							cl.append(weightPercentage/100*1);
-					
-							*conflictsString+=s+"\n";
+							conflictInfo->descriptions.append(s);
+							conflictInfo->weights.append(weightPercentage/100*1);
 						}
 					}
 					
@@ -6516,9 +6408,7 @@ QString ConstraintTeachersMinGapsBetweenBuildingChanges::getDetailedDescription(
 double ConstraintTeachersMinGapsBetweenBuildingChanges::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -6572,17 +6462,15 @@ double ConstraintTeachersMinGapsBetweenBuildingChanges::fitness(
 						if(cnt_gaps<this->minGapsBetweenBuildingChanges){
 							nbroken++;
 					
-							if(conflictsString!=NULL){
+							if(conflictInfo!=NULL){
 								QString s=tr("Space constraint teachers min gaps between building changes broken for teacher=%1 on day %2")
 									.arg(r.internalTeachersList[tch]->name)
 									.arg(r.daysOfTheWeek[d2]);
 								s += ". ";
 								s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100*1));
 					
-								dl.append(s);
-								cl.append(weightPercentage/100*1);
-						
-								*conflictsString+=s+"\n";
+								conflictInfo->descriptions.append(s);
+								conflictInfo->weights.append(weightPercentage/100*1);
 							}
 						}
 					
@@ -6813,9 +6701,7 @@ QString ConstraintActivitiesOccupyMaxDifferentRooms::getDetailedDescription(cons
 double ConstraintActivitiesOccupyMaxDifferentRooms::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -6838,15 +6724,13 @@ double ConstraintActivitiesOccupyMaxDifferentRooms::fitness(
 	if(usedRooms.count() > this->maxDifferentRooms){
 		nbroken=1;
 
-		if(conflictsString!=NULL){
+		if(conflictInfo!=NULL){
 			QString s=tr("Space constraint activities occupy max different rooms broken");
 			s += QString(". ");
 			s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(nbroken*weightPercentage/100));
 	
-			dl.append(s);
-			cl.append(nbroken*weightPercentage/100);
-		
-			*conflictsString += s+"\n";
+			conflictInfo->descriptions.append(s);
+			conflictInfo->weights.append(nbroken*weightPercentage/100);
 		}
 	}
 	
@@ -7076,9 +6960,7 @@ QString ConstraintActivitiesSameRoomIfConsecutive::getDetailedDescription(const 
 double ConstraintActivitiesSameRoomIfConsecutive::fitness(
 	Solution& c,
 	const Rules& r,
-	QList<double>& cl,
-	QList<QString>& dl,
-	QString* conflictsString)
+	ConflictInfo* conflictInfo)
 {
 	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
@@ -7111,15 +6993,13 @@ double ConstraintActivitiesSameRoomIfConsecutive::fitness(
 	}
 	
 	if(nbroken>0){
-		if(conflictsString!=NULL){
+		if(conflictInfo!=NULL){
 			QString s=tr("Space constraint activities same room if consecutive broken");
 			s += QString(". ");
 			s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(nbroken*weightPercentage/100));
 	
-			dl.append(s);
-			cl.append(nbroken*weightPercentage/100);
-		
-			*conflictsString += s+"\n";
+			conflictInfo->descriptions.append(s);
+			conflictInfo->weights.append(nbroken*weightPercentage/100);
 		}
 	}
 	

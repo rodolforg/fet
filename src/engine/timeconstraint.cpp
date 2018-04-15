@@ -314,7 +314,7 @@ QString ConstraintBasicCompulsoryTime::getDetailedDescription(const Rules& r) co
 	return s;
 }
 
-double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString){
+double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo){
 	assert(r.internalStructureComputed);
 
 	int teachersConflicts, subgroupsConflicts;
@@ -350,7 +350,7 @@ double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, QList
 			unallocated += /*r.internalActivitiesList[i].duration * r.internalActivitiesList[i].nSubgroups * */ 10000;
 			//(an unallocated activity for a year is more important than an unallocated activity for a subgroup)
 
-			if(conflictsString!=NULL){
+			if(conflictInfo!=NULL){
 				QString s= tr("Time constraint basic compulsory broken: unallocated activity with id=%1 (%2)",
 							  "%2 is the detailed description of activity - teachers, subject, students")
 						.arg(r.internalActivitiesList[i].id).arg(getActivityDetailedDescription(r, r.internalActivitiesList[i].id));
@@ -358,10 +358,8 @@ double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, QList
 				s += tr("this increases the conflicts total by %1")
 						.arg(CustomFETString::number(weightPercentage/100 * 10000));
 
-				dl.append(s);
-				cl.append(weightPercentage/100 * 10000);
-
-				(*conflictsString) += s + "\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(weightPercentage/100 * 10000);
 			}
 		}
 		else{
@@ -376,7 +374,7 @@ double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, QList
 				//multiplied with the number of subgroups implied,
 				//for seeing the importance of the activity
 
-				if(conflictsString!=NULL){
+				if(conflictInfo!=NULL){
 					QString s=tr("Time constraint basic compulsory");
 					s+=": ";
 					s+=tr("activity with id=%1 is late.")
@@ -386,10 +384,8 @@ double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, QList
 							.arg(CustomFETString::number(lateIncrease*weightPercentage/100));
 					s+="\n";
 
-					dl.append(s);
-					cl.append(lateIncrease*weightPercentage/100);
-
-					(*conflictsString) += s+"\n";
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append(lateIncrease*weightPercentage/100);
 				}
 			}
 		}
@@ -403,7 +399,7 @@ double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, QList
 
 	//Calculates the number of teachers exhaustion (when he has to teach more than
 	//one activity at the same time)
-	if (conflictsString == NULL) {
+	if (conflictInfo == NULL) {
 		nte = teachersConflicts; // faster
 	} else {
 		nte=0;
@@ -422,10 +418,8 @@ double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, QList
 						s+=tr("This increases the conflicts total by %1")
 						 .arg(CustomFETString::number(tmp*weightPercentage/100));
 
-						(*conflictsString)+= s+"\n";
-
-						dl.append(s);
-						cl.append(tmp*weightPercentage/100);
+						conflictInfo->descriptions.append(s);
+						conflictInfo->weights.append(tmp*weightPercentage/100);
 						nte+=tmp;
 					}
 				}
@@ -436,7 +430,7 @@ double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, QList
 
 	//Calculates the number of subgroups exhaustion (a subgroup cannot attend two
 	//activities at the same time)
-	if (conflictsString == NULL) {
+	if (conflictInfo == NULL) {
 		nse = subgroupsConflicts; //faster
 	} else {
 		nse=0;
@@ -455,10 +449,9 @@ double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, QList
 						s+=tr("This increases the conflicts total by %1")
 						 .arg(CustomFETString::number((subgroupsMatrix[i][j][k]-1)*weightPercentage/100));
 
-						dl.append(s);
-						cl.append((subgroupsMatrix[i][j][k]-1)*weightPercentage/100);
+						conflictInfo->descriptions.append(s);
+						conflictInfo->weights.append((subgroupsMatrix[i][j][k]-1)*weightPercentage/100);
 
-						*conflictsString += s+"\n";
 						nse += tmp;
 					}
 				}
@@ -647,7 +640,7 @@ bool ConstraintTeacherNotAvailableTimes::hasInactiveActivities(const Rules& r) c
 	return false;
 }
 
-double ConstraintTeacherNotAvailableTimes::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString *conflictsString)
+double ConstraintTeacherNotAvailableTimes::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -677,7 +670,7 @@ double ConstraintTeacherNotAvailableTimes::fitness(Solution& c, const Rules& r, 
 		if(teachersMatrix[tch][d][h]>0){
 			nbroken+=teachersMatrix[tch][d][h];
 	
-			if(conflictsString!=NULL){
+			if(conflictInfo!=NULL){
 				QString s= tr("Time constraint teacher not available");
 				s += " ";
 				s += tr("broken for teacher: %1 on day %2, hour %3")
@@ -688,10 +681,8 @@ double ConstraintTeacherNotAvailableTimes::fitness(Solution& c, const Rules& r, 
 				s += tr("This increases the conflicts total by %1")
 				 .arg(CustomFETString::number(teachersMatrix[tch][d][h]*weightPercentage/100));
 				 
-				dl.append(s);
-				cl.append(teachersMatrix[tch][d][h]*weightPercentage/100);
-			
-				*conflictsString += s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(teachersMatrix[tch][d][h]*weightPercentage/100);
 			}
 		}
 	}
@@ -936,7 +927,7 @@ QString ConstraintStudentsSetNotAvailableTimes::getDetailedDescription(const Rul
 	return s;
 }
 
-double ConstraintStudentsSetNotAvailableTimes::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString *conflictsString)
+double ConstraintStudentsSetNotAvailableTimes::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -959,7 +950,7 @@ double ConstraintStudentsSetNotAvailableTimes::fitness(Solution& c, const Rules&
 			if(subgroupsMatrix[sbg][d][h]>0){
 				nbroken+=subgroupsMatrix[sbg][d][h];
 
-				if(conflictsString!=NULL){
+				if(conflictInfo!=NULL){
 					QString s= tr("Time constraint students set not available");
 					s += " ";
 					s += tr("broken for subgroup: %1 on day %2, hour %3")
@@ -970,10 +961,8 @@ double ConstraintStudentsSetNotAvailableTimes::fitness(Solution& c, const Rules&
 					s += tr("This increases the conflicts total by %1")
 					 .arg(CustomFETString::number(subgroupsMatrix[sbg][d][h]*weightPercentage/100));
 					 
-					dl.append(s);
-					cl.append(subgroupsMatrix[sbg][d][h]*weightPercentage/100);
-				
-					*conflictsString += s+"\n";
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append(subgroupsMatrix[sbg][d][h]*weightPercentage/100);
 				}
 			}
 		}
@@ -1216,7 +1205,7 @@ QString ConstraintActivitiesSameStartingTime::getDetailedDescription(const Rules
 	return s;
 }
 
-double ConstraintActivitiesSameStartingTime::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintActivitiesSameStartingTime::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	assert(r.internalStructureComputed);
 
@@ -1244,7 +1233,7 @@ double ConstraintActivitiesSameStartingTime::fitness(Solution& c, const Rules& r
 
 					nbroken+=tmp;
 
-					if(tmp>0 && conflictsString!=NULL){
+					if(tmp>0 && conflictInfo!=NULL){
 						QString s=tr("Time constraint activities same starting time broken, because activity with id=%1 (%2) is not at the same starting time with activity with id=%3 (%4)",
 						"%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.")
 						 .arg(this->activitiesId[i])
@@ -1254,10 +1243,8 @@ double ConstraintActivitiesSameStartingTime::fitness(Solution& c, const Rules& r
 						s+=". ";
 						s+=tr("Conflicts factor increase=%1").arg(CustomFETString::number(tmp*weightPercentage/100));
 
-						dl.append(s);
-						cl.append(tmp*weightPercentage/100);
-
-						*conflictsString+= s+"\n";
+						conflictInfo->descriptions.append(s);
+						conflictInfo->weights.append(tmp*weightPercentage/100);
 					}
 				}
 			}
@@ -1483,7 +1470,7 @@ QString ConstraintActivitiesNotOverlapping::getDetailedDescription(const Rules& 
 	return s;
 }
 
-double ConstraintActivitiesNotOverlapping::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintActivitiesNotOverlapping::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	assert(r.internalStructureComputed);
 
@@ -1519,7 +1506,7 @@ double ConstraintActivitiesNotOverlapping::fitness(Solution& c, const Rules& r, 
 					//The overlapping hours, considering weekly activities more important than fortnightly ones
 					nbroken+=tt;
 
-					if(tt>0 && conflictsString!=NULL){
+					if(tt>0 && conflictInfo!=NULL){
 
 						QString s=tr("Time constraint activities not overlapping broken: activity with id=%1 (%2) overlaps with activity with id=%3 (%4) on a number of %5 periods",
 						 "%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.")
@@ -1531,10 +1518,8 @@ double ConstraintActivitiesNotOverlapping::fitness(Solution& c, const Rules& r, 
 						s+=", ";
 						s+=tr("conflicts factor increase=%1").arg(CustomFETString::number(tt*weightPercentage/100));
 
-						dl.append(s);
-						cl.append(tt*weightPercentage/100);
-
-						*conflictsString+= s+"\n";
+						conflictInfo->descriptions.append(s);
+						conflictInfo->weights.append(tt*weightPercentage/100);
 					}
 				}
 			}
@@ -1786,7 +1771,7 @@ QString ConstraintMinDaysBetweenActivities::getDetailedDescription(const Rules& 
 	return s;
 }
 
-double ConstraintMinDaysBetweenActivities::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintMinDaysBetweenActivities::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	assert(r.internalStructureComputed);
 
@@ -1823,7 +1808,7 @@ double ConstraintMinDaysBetweenActivities::fitness(Solution& c, const Rules& r, 
 
 					nbroken+=tt;
 
-					if(tt>0 && conflictsString != NULL){
+					if(tt>0 && conflictInfo != NULL){
 						QString s=tr("Time constraint min days between activities broken: activity with id=%1 (%2) conflicts with activity with id=%3 (%4), being %5 days too close, on days %6 and %7",
 									 "%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr. Close here means near")
 								.arg(this->activitiesId[i])
@@ -1845,10 +1830,8 @@ double ConstraintMinDaysBetweenActivities::fitness(Solution& c, const Rules& r, 
 								  " in case the activities are in the same day");
 						}
 
-						dl.append(s);
-						cl.append(tt*weightPercentage/100);
-
-						*conflictsString+= s+"\n";
+						conflictInfo->descriptions.append(s);
+						conflictInfo->weights.append(tt*weightPercentage/100);
 					}
 				}
 			}
@@ -2081,7 +2064,7 @@ QString ConstraintMaxDaysBetweenActivities::getDetailedDescription(const Rules& 
 	return s;
 }
 
-double ConstraintMaxDaysBetweenActivities::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintMaxDaysBetweenActivities::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	assert(r.internalStructureComputed);
 
@@ -2118,7 +2101,7 @@ double ConstraintMaxDaysBetweenActivities::fitness(Solution& c, const Rules& r, 
 
 					nbroken+=tt;
 
-					if(tt>0 && conflictsString != NULL){
+					if(tt>0 && conflictInfo != NULL){
 						QString s=tr("Time constraint max days between activities broken: activity with id=%1 (%2) conflicts with activity with id=%3 (%4), being %5 days too far away"
 						 ", on days %6 and %7", "%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.")
 						 .arg(this->activitiesId[i])
@@ -2133,10 +2116,8 @@ double ConstraintMaxDaysBetweenActivities::fitness(Solution& c, const Rules& r, 
 						s+=tr("conflicts factor increase=%1").arg(CustomFETString::number(tt*weightPercentage/100));
 						s+=".";
 
-						dl.append(s);
-						cl.append(tt*weightPercentage/100);
-
-						*conflictsString+= s+"\n";
+						conflictInfo->descriptions.append(s);
+						conflictInfo->weights.append(tt*weightPercentage/100);
 					}
 				}
 			}
@@ -2368,7 +2349,7 @@ QString ConstraintMinGapsBetweenActivities::getDetailedDescription(const Rules& 
 	return s;
 }
 
-double ConstraintMinGapsBetweenActivities::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintMinGapsBetweenActivities::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	assert(r.internalStructureComputed);
 
@@ -2412,7 +2393,7 @@ double ConstraintMinGapsBetweenActivities::fitness(Solution& c, const Rules& r, 
 	
 					nbroken+=tmp;
 
-					if(tt>0 && conflictsString!=NULL){
+					if(tt>0 && conflictInfo!=NULL){
 						QString s=tr("Time constraint min gaps between activities broken: activity with id=%1 (%2) conflicts with activity with id=%3 (%4), they are on the same day %5 and there are %6 extra hours between them",
 							"%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.")
 						 .arg(this->activitiesId[i])
@@ -2426,10 +2407,8 @@ double ConstraintMinGapsBetweenActivities::fitness(Solution& c, const Rules& r, 
 						s+=tr("conflicts factor increase=%1").arg(CustomFETString::number(tmp*weightPercentage/100));
 						s+=".";
 							
-						dl.append(s);
-						cl.append(tmp*weightPercentage/100);
-							
-						*conflictsString+= s+"\n";
+						conflictInfo->descriptions.append(s);
+						conflictInfo->weights.append(tmp*weightPercentage/100);
 					}
 				}
 			}
@@ -2582,7 +2561,7 @@ QString ConstraintTeachersMaxHoursDaily::getDetailedDescription(const Rules& r) 
 	return s;
 }
 
-double ConstraintTeachersMaxHoursDaily::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintTeachersMaxHoursDaily::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -2604,7 +2583,7 @@ double ConstraintTeachersMaxHoursDaily::fitness(Solution& c, const Rules& r, QLi
 			if(n_hours_daily>this->maxHoursDaily){
 				nbroken++;
 
-				if(conflictsString != NULL){
+				if(conflictInfo != NULL){
 					QString s=(tr(
 								   "Time constraint teachers max %1 hours daily broken for teacher %2, on day %3, length=%4.")
 							   .arg(CustomFETString::number(this->maxHoursDaily))
@@ -2617,10 +2596,8 @@ double ConstraintTeachersMaxHoursDaily::fitness(Solution& c, const Rules& r, QLi
 							+
 							(tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 
-					dl.append(s);
-					cl.append(weightPercentage/100);
-					
-					*conflictsString+= s+"\n";
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append(weightPercentage/100);
 				}
 			}
 		}
@@ -2775,7 +2752,7 @@ QString ConstraintTeacherMaxHoursDaily::getDetailedDescription(const Rules& r) c
 	return s;
 }
 
-double ConstraintTeacherMaxHoursDaily::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintTeacherMaxHoursDaily::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -2797,7 +2774,7 @@ double ConstraintTeacherMaxHoursDaily::fitness(Solution& c, const Rules& r, QLis
 		if(n_hours_daily>this->maxHoursDaily){
 			nbroken++;
 
-			if(conflictsString != NULL){
+			if(conflictInfo != NULL){
 				QString s=(tr(
 				 "Time constraint teacher max %1 hours daily broken for teacher %2, on day %3, length=%4.")
 				 .arg(CustomFETString::number(this->maxHoursDaily))
@@ -2809,10 +2786,8 @@ double ConstraintTeacherMaxHoursDaily::fitness(Solution& c, const Rules& r, QLis
 				 +
 				 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 
-				dl.append(s);
-				cl.append(weightPercentage/100);
-
-				*conflictsString+= s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(weightPercentage/100);
 			}
 		}
 	}
@@ -2961,7 +2936,7 @@ QString ConstraintTeachersMaxHoursContinuously::getDetailedDescription(const Rul
 	return s;
 }
 
-double ConstraintTeachersMaxHoursContinuously::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintTeachersMaxHoursContinuously::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -2983,7 +2958,7 @@ double ConstraintTeachersMaxHoursContinuously::fitness(Solution& c, const Rules&
 					if(nc>this->maxHoursContinuously){
 						nbroken++;
 
-						if(conflictsString!=NULL){
+						if(conflictInfo!=NULL){
 							QString s=(tr(
 							 "Time constraint teachers max %1 hours continuously broken for teacher %2, on day %3, length=%4.")
 							 .arg(CustomFETString::number(this->maxHoursContinuously))
@@ -2996,10 +2971,8 @@ double ConstraintTeachersMaxHoursContinuously::fitness(Solution& c, const Rules&
 							 +
 							 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-							dl.append(s);
-							cl.append(weightPercentage/100);
-				
-							*conflictsString+= s+"\n";
+							conflictInfo->descriptions.append(s);
+							conflictInfo->weights.append(weightPercentage/100);
 						}
 					}
 				
@@ -3010,7 +2983,7 @@ double ConstraintTeachersMaxHoursContinuously::fitness(Solution& c, const Rules&
 			if(nc>this->maxHoursContinuously){
 				nbroken++;
 
-				if(conflictsString!=NULL){
+				if(conflictInfo!=NULL){
 					QString s=(tr(
 					 "Time constraint teachers max %1 hours continuously broken for teacher %2, on day %3, length=%4.")
 					 .arg(CustomFETString::number(this->maxHoursContinuously))
@@ -3023,10 +2996,8 @@ double ConstraintTeachersMaxHoursContinuously::fitness(Solution& c, const Rules&
 					 +
 					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-					dl.append(s);
-					cl.append(weightPercentage/100);
-				
-					*conflictsString+= s+"\n";
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append(weightPercentage/100);
 				}
 			}
 		}
@@ -3181,7 +3152,7 @@ QString ConstraintTeacherMaxHoursContinuously::getDetailedDescription(const Rule
 	return s;
 }
 
-double ConstraintTeacherMaxHoursContinuously::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintTeacherMaxHoursContinuously::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -3203,7 +3174,7 @@ double ConstraintTeacherMaxHoursContinuously::fitness(Solution& c, const Rules& 
 				if(nc>this->maxHoursContinuously){
 					nbroken++;
 
-					if(conflictsString!=NULL){
+					if(conflictInfo!=NULL){
 						QString s=(tr(
 						 "Time constraint teacher max %1 hours continuously broken for teacher %2, on day %3, length=%4.")
 						 .arg(CustomFETString::number(this->maxHoursContinuously))
@@ -3216,10 +3187,8 @@ double ConstraintTeacherMaxHoursContinuously::fitness(Solution& c, const Rules& 
 						 +
 						 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 						
-						dl.append(s);
-						cl.append(weightPercentage/100);
-			
-						*conflictsString+= s+"\n";
+						conflictInfo->descriptions.append(s);
+						conflictInfo->weights.append(weightPercentage/100);
 					}
 				}
 			
@@ -3230,7 +3199,7 @@ double ConstraintTeacherMaxHoursContinuously::fitness(Solution& c, const Rules& 
 		if(nc>this->maxHoursContinuously){
 			nbroken++;
 
-			if(conflictsString!=NULL){
+			if(conflictInfo!=NULL){
 				QString s=(tr(
 				 "Time constraint teacher max %1 hours continuously broken for teacher %2, on day %3, length=%4.")
 				 .arg(CustomFETString::number(this->maxHoursContinuously))
@@ -3243,10 +3212,8 @@ double ConstraintTeacherMaxHoursContinuously::fitness(Solution& c, const Rules& 
 				 +
 				 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 						
-				dl.append(s);
-				cl.append(weightPercentage/100);
-			
-				*conflictsString+= s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(weightPercentage/100);
 			}
 		}
 	}
@@ -3415,7 +3382,7 @@ QString ConstraintTeachersActivityTagMaxHoursContinuously::getDetailedDescriptio
 	return s;
 }
 
-double ConstraintTeachersActivityTagMaxHoursContinuously::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintTeachersActivityTagMaxHoursContinuously::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -3458,7 +3425,7 @@ double ConstraintTeachersActivityTagMaxHoursContinuously::fitness(Solution& c, c
 					if(nc>this->maxHoursContinuously){
 						nbroken++;
 
-						if(conflictsString!=NULL){
+						if(conflictInfo!=NULL){
 							QString s=(tr(
 							 "Time constraint teachers activity tag %1 max %2 hours continuously broken for teacher %3, on day %4, length=%5.")
 							 .arg(this->activityTagName)
@@ -3472,10 +3439,8 @@ double ConstraintTeachersActivityTagMaxHoursContinuously::fitness(Solution& c, c
 							 +
 							 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-							dl.append(s);
-							cl.append(weightPercentage/100);
-				
-							*conflictsString+= s+"\n";
+							conflictInfo->descriptions.append(s);
+							conflictInfo->weights.append(weightPercentage/100);
 						}
 					}
 				
@@ -3486,7 +3451,7 @@ double ConstraintTeachersActivityTagMaxHoursContinuously::fitness(Solution& c, c
 			if(nc>this->maxHoursContinuously){
 				nbroken++;
 
-				if(conflictsString!=NULL){
+				if(conflictInfo!=NULL){
 					QString s=(tr(
 					 "Time constraint teachers activity tag %1 max %2 hours continuously broken for teacher %3, on day %4, length=%5.")
 					 .arg(this->activityTagName)
@@ -3500,10 +3465,8 @@ double ConstraintTeachersActivityTagMaxHoursContinuously::fitness(Solution& c, c
 					 +
 					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-					dl.append(s);
-					cl.append(weightPercentage/100);
-				
-					*conflictsString+= s+"\n";
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append(weightPercentage/100);
 				}
 			}
 		}
@@ -3676,7 +3639,7 @@ QString ConstraintTeacherActivityTagMaxHoursContinuously::getDetailedDescription
 	return s;
 }
 
-double ConstraintTeacherActivityTagMaxHoursContinuously::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintTeacherActivityTagMaxHoursContinuously::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -3719,7 +3682,7 @@ double ConstraintTeacherActivityTagMaxHoursContinuously::fitness(Solution& c, co
 					if(nc>this->maxHoursContinuously){
 						nbroken++;
 
-						if(conflictsString!=NULL){
+						if(conflictInfo!=NULL){
 							QString s=(tr(
 							 "Time constraint teacher activity tag max %1 hours continuously broken for teacher %2, activity tag %3, on day %4, length=%5.")
 							 .arg(CustomFETString::number(this->maxHoursContinuously))
@@ -3733,10 +3696,8 @@ double ConstraintTeacherActivityTagMaxHoursContinuously::fitness(Solution& c, co
 							 +
 							 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-							dl.append(s);
-							cl.append(weightPercentage/100);
-				
-							*conflictsString+= s+"\n";
+							conflictInfo->descriptions.append(s);
+							conflictInfo->weights.append(weightPercentage/100);
 						}
 					}
 				
@@ -3747,7 +3708,7 @@ double ConstraintTeacherActivityTagMaxHoursContinuously::fitness(Solution& c, co
 			if(nc>this->maxHoursContinuously){
 				nbroken++;
 
-				if(conflictsString!=NULL){
+				if(conflictInfo!=NULL){
 					QString s=(tr(
 					 "Time constraint teacher activity tag max %1 hours continuously broken for teacher %2, activity tag %3, on day %4, length=%5.")
 					 .arg(CustomFETString::number(this->maxHoursContinuously))
@@ -3761,10 +3722,8 @@ double ConstraintTeacherActivityTagMaxHoursContinuously::fitness(Solution& c, co
 					 +
 					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-					dl.append(s);
-					cl.append(weightPercentage/100);
-				
-					*conflictsString+= s+"\n";
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append(weightPercentage/100);
 				}
 			}
 		}
@@ -3917,7 +3876,7 @@ QString ConstraintTeacherMaxDaysPerWeek::getDetailedDescription(const Rules& r) 
 	return s;
 }
 
-double ConstraintTeacherMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString *conflictsString)
+double ConstraintTeacherMaxDaysPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -3957,16 +3916,14 @@ double ConstraintTeacherMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QLi
 
 	double conflictIncrease = nbroken*weightPercentage/100;
 
-	if(conflictsString != NULL && nbroken > 0){
+	if(conflictInfo != NULL && nbroken > 0){
 		QString s= tr("Time constraint teacher max days per week broken for teacher: %1.")
 			.arg(r.internalTeachersList[t]->name);
 		s += tr("This increases the conflicts total by %1")
 			.arg(CustomFETString::number(conflictIncrease));
 
-		dl.append(s);
-		cl.append(conflictIncrease);
-
-		*conflictsString += s+"\n";
+		conflictInfo->descriptions.append(s);
+		conflictInfo->weights.append(conflictIncrease);
 	}
 
 	if(weightPercentage==100)
@@ -4117,7 +4074,7 @@ QString ConstraintTeachersMaxDaysPerWeek::getDetailedDescription(const Rules& r)
 	return s;
 }
 
-double ConstraintTeachersMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString *conflictsString)
+double ConstraintTeachersMaxDaysPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -4161,16 +4118,14 @@ double ConstraintTeachersMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QL
 			}
 		}
 
-		if(nbr>0 && conflictsString != NULL){
+		if(nbr>0 && conflictInfo != NULL){
 			QString s= tr("Time constraint teachers max days per week broken for teacher: %1.")
 			.arg(r.internalTeachersList[t]->name);
 			s += tr("This increases the conflicts total by %1")
 			.arg(CustomFETString::number(nbr*weightPercentage/100));
 
-			dl.append(s);
-			cl.append(nbr*weightPercentage/100);
-
-			*conflictsString += s+"\n";
+			conflictInfo->descriptions.append(s);
+			conflictInfo->weights.append(nbr*weightPercentage/100);
 		}
 
 	}
@@ -4319,7 +4274,7 @@ QString ConstraintTeachersMaxGapsPerWeek::getDetailedDescription(const Rules& r)
 	return s;
 }
 
-double ConstraintTeachersMaxGapsPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintTeachersMaxGapsPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 { 
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -4356,15 +4311,13 @@ double ConstraintTeachersMaxGapsPerWeek::fitness(Solution& c, const Rules& r, QL
 		if(tg>this->maxGaps){
 			totalGaps+=tg-maxGaps;
 			//assert(this->weightPercentage<100); partial solutions might break this rule
-			if(conflictsString!=NULL){
+			if(conflictInfo!=NULL){
 				QString s=tr("Time constraint teachers max gaps per week broken for teacher: %1, conflicts factor increase=%2")
 					.arg(r.internalTeachersList[i]->name)
 					.arg(CustomFETString::number((tg-maxGaps)*weightPercentage/100));
-					
-				*conflictsString+= s+"\n";
 						
-				dl.append(s);
-				cl.append((tg-maxGaps)*weightPercentage/100);
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append((tg-maxGaps)*weightPercentage/100);
 			}
 		}
 	}
@@ -4521,7 +4474,7 @@ QString ConstraintTeacherMaxGapsPerWeek::getDetailedDescription(const Rules& r) 
 	return s;
 }
 
-double ConstraintTeacherMaxGapsPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintTeacherMaxGapsPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 { 
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -4560,15 +4513,13 @@ double ConstraintTeacherMaxGapsPerWeek::fitness(Solution& c, const Rules& r, QLi
 	if(tg>this->maxGaps){
 		totalGaps+=tg-maxGaps;
 		//assert(this->weightPercentage<100); partial solutions might break this rule
-		if(conflictsString!=NULL){
+		if(conflictInfo!=NULL){
 			QString s=tr("Time constraint teacher max gaps per week broken for teacher: %1, conflicts factor increase=%2")
 				.arg(r.internalTeachersList[i]->name)
 				.arg(CustomFETString::number((tg-maxGaps)*weightPercentage/100));
-					
-			*conflictsString+= s+"\n";
 						
-			dl.append(s);
-			cl.append((tg-maxGaps)*weightPercentage/100);
+			conflictInfo->descriptions.append(s);
+			conflictInfo->weights.append((tg-maxGaps)*weightPercentage/100);
 		}
 	}
 
@@ -4717,7 +4668,7 @@ QString ConstraintTeachersMaxGapsPerDay::getDetailedDescription(const Rules& r) 
 	return s;
 }
 
-double ConstraintTeachersMaxGapsPerDay::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintTeachersMaxGapsPerDay::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 { 
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -4753,16 +4704,14 @@ double ConstraintTeachersMaxGapsPerDay::fitness(Solution& c, const Rules& r, QLi
 			if(tg>this->maxGaps){
 				totalGaps+=tg-maxGaps;
 				//assert(this->weightPercentage<100); partial solutions might break this rule
-				if(conflictsString!=NULL){
+				if(conflictInfo!=NULL){
 					QString s=tr("Time constraint teachers max gaps per day broken for teacher: %1, day: %2, conflicts factor increase=%3")
 						.arg(r.internalTeachersList[i]->name)
 						.arg(r.daysOfTheWeek[j])
 						.arg(CustomFETString::number((tg-maxGaps)*weightPercentage/100));
-					
-					*conflictsString+= s+"\n";
 								
-					dl.append(s);
-					cl.append((tg-maxGaps)*weightPercentage/100);
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append((tg-maxGaps)*weightPercentage/100);
 				}
 			}
 		}
@@ -4918,7 +4867,7 @@ QString ConstraintTeacherMaxGapsPerDay::getDetailedDescription(const Rules& r) c
 	return s;
 }
 
-double ConstraintTeacherMaxGapsPerDay::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintTeacherMaxGapsPerDay::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 { 
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -4956,16 +4905,14 @@ double ConstraintTeacherMaxGapsPerDay::fitness(Solution& c, const Rules& r, QLis
 		if(tg>this->maxGaps){
 			totalGaps+=tg-maxGaps;
 			//assert(this->weightPercentage<100); partial solutions might break this rule
-			if(conflictsString!=NULL){
+			if(conflictInfo!=NULL){
 				QString s=tr("Time constraint teacher max gaps per day broken for teacher: %1, day: %2, conflicts factor increase=%3")
 					.arg(r.internalTeachersList[i]->name)
 					.arg(r.daysOfTheWeek[j])
 					.arg(CustomFETString::number((tg-maxGaps)*weightPercentage/100));
-						
-				*conflictsString+= s+"\n";
 							
-				dl.append(s);
-				cl.append((tg-maxGaps)*weightPercentage/100);
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append((tg-maxGaps)*weightPercentage/100);
 			}
 		}
 	}
@@ -5162,7 +5109,7 @@ ErrorCode ConstraintBreakTimes::computeInternalStructure(const Rules& r)
 	return ErrorCode();
 }
 
-double ConstraintBreakTimes::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintBreakTimes::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -5198,7 +5145,7 @@ double ConstraintBreakTimes::fitness(Solution& c, const Rules& r, QList<double>&
 			{			
 				nbroken++;
 
-				if(conflictsString!=NULL){
+				if(conflictInfo!=NULL){
 					QString s=tr("Time constraint break not respected for activity with id %1, on day %2, hour %3")
 						.arg(r.internalActivitiesList[i].id)
 						.arg(r.daysOfTheWeek[dayact])
@@ -5206,10 +5153,8 @@ double ConstraintBreakTimes::fitness(Solution& c, const Rules& r, QList<double>&
 					s+=". ";
 					s+=tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100));
 					
-					dl.append(s);
-					cl.append(weightPercentage/100);
-				
-					*conflictsString+= s+"\n";
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append(weightPercentage/100);
 				}
 			}
 		}
@@ -5381,7 +5326,7 @@ QString ConstraintStudentsMaxGapsPerWeek::getDetailedDescription(const Rules& r)
 	return s;
 }
 
-double ConstraintStudentsMaxGapsPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintStudentsMaxGapsPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//returns a number equal to the number of gaps of the subgroups (in hours)
 
@@ -5423,16 +5368,14 @@ double ConstraintStudentsMaxGapsPerWeek::fitness(Solution& c, const Rules& r, QL
 		if(illegalGaps<0)
 			illegalGaps=0;
 
-		if(illegalGaps>0 && conflictsString!=NULL){
+		if(illegalGaps>0 && conflictInfo!=NULL){
 			QString s=tr("Time constraint students max gaps per week broken for subgroup: %1, it has %2 extra gaps, conflicts increase=%3")
 			 .arg(r.internalSubgroupsList[i]->name)
 			 .arg(illegalGaps)
 			 .arg(CustomFETString::number(illegalGaps*weightPercentage/100));
 						 
-			dl.append(s);
-			cl.append(illegalGaps*weightPercentage/100);
-					
-			*conflictsString+= s+"\n";
+			conflictInfo->descriptions.append(s);
+			conflictInfo->weights.append(illegalGaps*weightPercentage/100);
 		}
 		
 		tIllegalGaps+=illegalGaps;
@@ -5634,7 +5577,7 @@ QString ConstraintStudentsSetMaxGapsPerWeek::getDetailedDescription(const Rules&
 	return s;
 }
 
-double ConstraintStudentsSetMaxGapsPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintStudentsSetMaxGapsPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//OLD COMMENT
 	//returns a number equal to the number of gaps of the subgroups (in hours)
@@ -5677,16 +5620,14 @@ double ConstraintStudentsSetMaxGapsPerWeek::fitness(Solution& c, const Rules& r,
 		if(illegalGaps<0)
 			illegalGaps=0;
 
-		if(illegalGaps>0 && conflictsString!=NULL){
+		if(illegalGaps>0 && conflictInfo!=NULL){
 			QString s=tr("Time constraint students set max gaps per week broken for subgroup: %1, extra gaps=%2, conflicts increase=%3")
 			 .arg(r.internalSubgroupsList[i]->name)
 			 .arg(illegalGaps)
 			 .arg(CustomFETString::number(weightPercentage/100*illegalGaps));
 						 
-			dl.append(s);
-			cl.append(weightPercentage/100*illegalGaps);
-				
-			*conflictsString+= s+"\n";
+			conflictInfo->descriptions.append(s);
+			conflictInfo->weights.append(weightPercentage/100*illegalGaps);
 		}
 		
 		tIllegalGaps+=illegalGaps;
@@ -5838,7 +5779,7 @@ QString ConstraintStudentsEarlyMaxBeginningsAtSecondHour::getDetailedDescription
 	return s;
 }
 
-double ConstraintStudentsEarlyMaxBeginningsAtSecondHour::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintStudentsEarlyMaxBeginningsAtSecondHour::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//considers the condition that the hours of subgroups begin as early as possible
 
@@ -5877,7 +5818,7 @@ double ConstraintStudentsEarlyMaxBeginningsAtSecondHour::fitness(Solution& c, co
 				}
 				
 			if(dayOccupied && illegalGap){
-				if(conflictsString!=NULL){
+				if(conflictInfo!=NULL){
 					QString s=tr("Constraint students early max %1 beginnings at second hour broken for subgroup %2, on day %3,"
 					 " because students have an illegal gap, increases conflicts total by %4")
 					 .arg(this->maxBeginningsAtSecondHour)
@@ -5885,10 +5826,8 @@ double ConstraintStudentsEarlyMaxBeginningsAtSecondHour::fitness(Solution& c, co
 					 .arg(r.daysOfTheWeek[j])
 					 .arg(CustomFETString::number(1*weightPercentage/100));
 					 
-					dl.append(s);
-					cl.append(1*weightPercentage/100);
-						
-					*conflictsString+= s+"\n";
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append(1*weightPercentage/100);
 					
 					conflTotal+=1;
 				}
@@ -5903,17 +5842,15 @@ double ConstraintStudentsEarlyMaxBeginningsAtSecondHour::fitness(Solution& c, co
 		}
 		
 		if(nGapsFirstHour>this->maxBeginningsAtSecondHour){
-			if(conflictsString!=NULL){
+			if(conflictInfo!=NULL){
 				QString s=tr("Constraint students early max %1 beginnings at second hour broken for subgroup %2,"
 				 " because students have too many arrivals at second hour, increases conflicts total by %3")
 				 .arg(this->maxBeginningsAtSecondHour)
 				 .arg(r.internalSubgroupsList[i]->name)
 				 .arg(CustomFETString::number((nGapsFirstHour-this->maxBeginningsAtSecondHour)*weightPercentage/100));
 				 
-				dl.append(s);
-				cl.append((nGapsFirstHour-this->maxBeginningsAtSecondHour)*weightPercentage/100);
-					
-				*conflictsString+= s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append((nGapsFirstHour-this->maxBeginningsAtSecondHour)*weightPercentage/100);
 				
 				conflTotal+=(nGapsFirstHour-this->maxBeginningsAtSecondHour);
 			}
@@ -6124,7 +6061,7 @@ QString ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::getDetailedDescript
 	return s;
 }
 
-double ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//considers the condition that the hours of subgroups begin as early as possible
 
@@ -6163,7 +6100,7 @@ double ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::fitness(Solution& c,
 				}
 				
 			if(dayOccupied && illegalGap){
-				if(conflictsString!=NULL){
+				if(conflictInfo!=NULL){
 					QString s=tr("Constraint students set early max %1 beginnings at second hour broken for subgroup %2, on day %3,"
 					 " because students have an illegal gap, increases conflicts total by %4")
 					 .arg(this->maxBeginningsAtSecondHour)
@@ -6171,10 +6108,8 @@ double ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::fitness(Solution& c,
 					 .arg(r.daysOfTheWeek[j])
 					 .arg(CustomFETString::number(1*weightPercentage/100));
 					 
-					dl.append(s);
-					cl.append(1*weightPercentage/100);
-						
-					*conflictsString+= s+"\n";
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append(1*weightPercentage/100);
 					
 					conflTotal+=1;
 				}
@@ -6188,17 +6123,15 @@ double ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::fitness(Solution& c,
 		}
 		
 		if(nGapsFirstHour>this->maxBeginningsAtSecondHour){
-			if(conflictsString!=NULL){
+			if(conflictInfo!=NULL){
 				QString s=tr("Constraint students set early max %1 beginnings at second hour broken for subgroup %2,"
 				 " because students have too many arrivals at second hour, increases conflicts total by %3")
 				 .arg(this->maxBeginningsAtSecondHour)
 				 .arg(r.internalSubgroupsList[i]->name)
 				 .arg(CustomFETString::number((nGapsFirstHour-this->maxBeginningsAtSecondHour)*weightPercentage/100));
 				 
-				dl.append(s);
-				cl.append((nGapsFirstHour-this->maxBeginningsAtSecondHour)*weightPercentage/100);
-					
-				*conflictsString+= s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append((nGapsFirstHour-this->maxBeginningsAtSecondHour)*weightPercentage/100);
 				
 				conflTotal+=(nGapsFirstHour-this->maxBeginningsAtSecondHour);
 			}
@@ -6356,7 +6289,7 @@ QString ConstraintStudentsMaxHoursDaily::getDetailedDescription(const Rules& r) 
 	return s;
 }
 
-double ConstraintStudentsMaxHoursDaily::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintStudentsMaxHoursDaily::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -6386,17 +6319,15 @@ double ConstraintStudentsMaxHoursDaily::fitness(Solution& c, const Rules& r, QLi
 				if(this->maxHoursDaily>=0 && tmp > this->maxHoursDaily){ //we would like no more than maxHoursDaily hours per day.
 					too_much += 1; //tmp - this->maxHoursDaily;
 
-					if(conflictsString!=NULL){
+					if(conflictInfo!=NULL){
 						QString s=tr("Time constraint students max hours daily broken for subgroup: %1, day: %2, lenght=%3, conflict increase=%4")
 						 .arg(r.internalSubgroupsList[i]->name)
 						 .arg(r.daysOfTheWeek[j])
 						 .arg(CustomFETString::number(tmp))
 						 .arg(CustomFETString::number(weightPercentage/100*1));
 						 
-						dl.append(s);
-						cl.append(weightPercentage/100*1);
-					
-						*conflictsString+= s+"\n";
+						conflictInfo->descriptions.append(s);
+						conflictInfo->weights.append(weightPercentage/100*1);
 					}
 				}
 			}
@@ -6602,7 +6533,7 @@ ErrorCode ConstraintStudentsSetMaxHoursDaily::computeInternalStructure(const Rul
 	return ErrorCode();
 }
 
-double ConstraintStudentsSetMaxHoursDaily::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintStudentsSetMaxHoursDaily::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -6632,17 +6563,15 @@ double ConstraintStudentsSetMaxHoursDaily::fitness(Solution& c, const Rules& r, 
 				if(this->maxHoursDaily>=0 && tmp > this->maxHoursDaily){ //we would like no more than max_hours_daily hours per day.
 					too_much += 1; //tmp - this->maxHoursDaily;
 
-					if(conflictsString!=NULL){
+					if(conflictInfo!=NULL){
 						QString s=tr("Time constraint students set max hours daily broken for subgroup: %1, day: %2, lenght=%3, conflicts increase=%4")
 						 .arg(r.internalSubgroupsList[i]->name)
 						 .arg(r.daysOfTheWeek[j])
 						 .arg(CustomFETString::number(tmp))
 						 .arg(CustomFETString::number( 1 *weightPercentage/100));
 						 
-						dl.append(s);
-						cl.append( 1 *weightPercentage/100);
-					
-						*conflictsString+= s+"\n";
+						conflictInfo->descriptions.append(s);
+						conflictInfo->weights.append( 1 *weightPercentage/100);
 					}
 				}
 			}
@@ -6797,7 +6726,7 @@ QString ConstraintStudentsMaxHoursContinuously::getDetailedDescription(const Rul
 	return s;
 }
 
-double ConstraintStudentsMaxHoursContinuously::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintStudentsMaxHoursContinuously::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -6819,7 +6748,7 @@ double ConstraintStudentsMaxHoursContinuously::fitness(Solution& c, const Rules&
 					if(nc>this->maxHoursContinuously){
 						nbroken++;
 
-						if(conflictsString!=NULL){
+						if(conflictInfo!=NULL){
 							QString s=(tr(
 							 "Time constraint students max %1 hours continuously broken for subgroup %2, on day %3, length=%4.")
 							 .arg(CustomFETString::number(this->maxHoursContinuously))
@@ -6832,10 +6761,8 @@ double ConstraintStudentsMaxHoursContinuously::fitness(Solution& c, const Rules&
 							 +
 							 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-							dl.append(s);
-							cl.append(weightPercentage/100);
-				
-							*conflictsString+= s+"\n";
+							conflictInfo->descriptions.append(s);
+							conflictInfo->weights.append(weightPercentage/100);
 						}
 					}
 				
@@ -6846,7 +6773,7 @@ double ConstraintStudentsMaxHoursContinuously::fitness(Solution& c, const Rules&
 			if(nc>this->maxHoursContinuously){
 				nbroken++;
 
-				if(conflictsString!=NULL){
+				if(conflictInfo!=NULL){
 					QString s=(tr(
 					 "Time constraint students max %1 hours continuously broken for subgroup %2, on day %3, length=%4.")
 					 .arg(CustomFETString::number(this->maxHoursContinuously))
@@ -6859,10 +6786,8 @@ double ConstraintStudentsMaxHoursContinuously::fitness(Solution& c, const Rules&
 					 +
 					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-					dl.append(s);
-					cl.append(weightPercentage/100);
-				
-					*conflictsString+= s+"\n";
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append(weightPercentage/100);
 				}
 			}
 		}
@@ -7067,7 +6992,7 @@ ErrorCode ConstraintStudentsSetMaxHoursContinuously::computeInternalStructure(co
 	return ErrorCode();
 }
 
-double ConstraintStudentsSetMaxHoursContinuously::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintStudentsSetMaxHoursContinuously::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -7089,7 +7014,7 @@ double ConstraintStudentsSetMaxHoursContinuously::fitness(Solution& c, const Rul
 					if(nc>this->maxHoursContinuously){
 						nbroken++;
 
-						if(conflictsString!=NULL){
+						if(conflictInfo!=NULL){
 							QString s=(tr(
 							 "Time constraint students set max %1 hours continuously broken for subgroup %2, on day %3, length=%4.")
 							 .arg(CustomFETString::number(this->maxHoursContinuously))
@@ -7102,10 +7027,8 @@ double ConstraintStudentsSetMaxHoursContinuously::fitness(Solution& c, const Rul
 							 +
 							 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-							dl.append(s);
-							cl.append(weightPercentage/100);
-				
-							*conflictsString+= s+"\n";
+							conflictInfo->descriptions.append(s);
+							conflictInfo->weights.append(weightPercentage/100);
 						}
 					}
 				
@@ -7116,7 +7039,7 @@ double ConstraintStudentsSetMaxHoursContinuously::fitness(Solution& c, const Rul
 			if(nc>this->maxHoursContinuously){
 				nbroken++;
 
-				if(conflictsString!=NULL){
+				if(conflictInfo!=NULL){
 					QString s=(tr(
 					 "Time constraint students set max %1 hours continuously broken for subgroup %2, on day %3, length=%4.")
 					 .arg(CustomFETString::number(this->maxHoursContinuously))
@@ -7129,10 +7052,8 @@ double ConstraintStudentsSetMaxHoursContinuously::fitness(Solution& c, const Rul
 					 +
 					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-					dl.append(s);
-					cl.append(weightPercentage/100);
-				
-					*conflictsString+= s+"\n";
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append(weightPercentage/100);
 				}
 			}
 		}
@@ -7308,7 +7229,7 @@ QString ConstraintStudentsActivityTagMaxHoursContinuously::getDetailedDescriptio
 	return s;
 }
 
-double ConstraintStudentsActivityTagMaxHoursContinuously::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintStudentsActivityTagMaxHoursContinuously::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -7351,7 +7272,7 @@ double ConstraintStudentsActivityTagMaxHoursContinuously::fitness(Solution& c, c
 					if(nc>this->maxHoursContinuously){
 						nbroken++;
 
-						if(conflictsString!=NULL){
+						if(conflictInfo!=NULL){
 							QString s=(tr(
 							 "Time constraint students, activity tag %1, max %2 hours continuously, broken for subgroup %3, on day %4, length=%5.")
 							 .arg(this->activityTagName)
@@ -7365,10 +7286,8 @@ double ConstraintStudentsActivityTagMaxHoursContinuously::fitness(Solution& c, c
 							 +
 							 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-							dl.append(s);
-							cl.append(weightPercentage/100);
-				
-							*conflictsString+= s+"\n";
+							conflictInfo->descriptions.append(s);
+							conflictInfo->weights.append(weightPercentage/100);
 						}
 					}
 				
@@ -7379,7 +7298,7 @@ double ConstraintStudentsActivityTagMaxHoursContinuously::fitness(Solution& c, c
 			if(nc>this->maxHoursContinuously){
 				nbroken++;
 
-				if(conflictsString!=NULL){
+				if(conflictInfo!=NULL){
 					QString s=(tr(
 					 "Time constraint students, activity tag %1, max %2 hours continuously, broken for subgroup %3, on day %4, length=%5.")
 					 .arg(this->activityTagName)
@@ -7393,10 +7312,8 @@ double ConstraintStudentsActivityTagMaxHoursContinuously::fitness(Solution& c, c
 					 +
 					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-					dl.append(s);
-					cl.append(weightPercentage/100);
-				
-					*conflictsString+= s+"\n";
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append(weightPercentage/100);
 				}
 			}
 		}
@@ -7623,7 +7540,7 @@ ErrorCode ConstraintStudentsSetActivityTagMaxHoursContinuously::computeInternalS
 	return ErrorCode();
 }
 
-double ConstraintStudentsSetActivityTagMaxHoursContinuously::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintStudentsSetActivityTagMaxHoursContinuously::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -7666,7 +7583,7 @@ double ConstraintStudentsSetActivityTagMaxHoursContinuously::fitness(Solution& c
 					if(nc>this->maxHoursContinuously){
 						nbroken++;
 
-						if(conflictsString!=NULL){
+						if(conflictInfo!=NULL){
 							QString s=(tr(
 							 "Time constraint students set max %1 hours continuously broken for subgroup %2, on day %3, length=%4.")
 							 .arg(CustomFETString::number(this->maxHoursContinuously))
@@ -7679,10 +7596,8 @@ double ConstraintStudentsSetActivityTagMaxHoursContinuously::fitness(Solution& c
 							 +
 							 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-							dl.append(s);
-							cl.append(weightPercentage/100);
-				
-							*conflictsString+= s+"\n";
+							conflictInfo->descriptions.append(s);
+							conflictInfo->weights.append(weightPercentage/100);
 						}
 					}
 				
@@ -7693,7 +7608,7 @@ double ConstraintStudentsSetActivityTagMaxHoursContinuously::fitness(Solution& c
 			if(nc>this->maxHoursContinuously){
 				nbroken++;
 
-				if(conflictsString!=NULL){
+				if(conflictInfo!=NULL){
 					QString s=(tr(
 					 "Time constraint students set max %1 hours continuously broken for subgroup %2, on day %3, length=%4.")
 					 .arg(CustomFETString::number(this->maxHoursContinuously))
@@ -7706,10 +7621,8 @@ double ConstraintStudentsSetActivityTagMaxHoursContinuously::fitness(Solution& c
 					 +
 					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-					dl.append(s);
-					cl.append(weightPercentage/100);
-				
-					*conflictsString+= s+"\n";
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append(weightPercentage/100);
 				}
 			}
 		}
@@ -7877,7 +7790,7 @@ QString ConstraintStudentsMinHoursDaily::getDetailedDescription(const Rules& r) 
 	return s;
 }
 
-double ConstraintStudentsMinHoursDaily::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintStudentsMinHoursDaily::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -7910,17 +7823,15 @@ double ConstraintStudentsMinHoursDaily::fitness(Solution& c, const Rules& r, QLi
 			if(/*tmp>0*/ searchDay && this->minHoursDaily>=0 && tmp < this->minHoursDaily){ //we would like no less than minHoursDaily hours per day.
 				too_little += - tmp + this->minHoursDaily;
 
-				if(conflictsString!=NULL){
+				if(conflictInfo!=NULL){
 					QString s=tr("Time constraint students min hours daily broken for subgroup: %1, day: %2, lenght=%3, conflict increase=%4")
 					 .arg(r.internalSubgroupsList[i]->name)
 					 .arg(r.daysOfTheWeek[j])
 					 .arg(CustomFETString::number(tmp))
 					 .arg(CustomFETString::number(weightPercentage/100*(-tmp+this->minHoursDaily)));
 						 
-					dl.append(s);
-					cl.append(weightPercentage/100*(-tmp+this->minHoursDaily));
-					
-					*conflictsString+= s+"\n";
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append(weightPercentage/100*(-tmp+this->minHoursDaily));
 				}
 			}
 		}
@@ -8145,7 +8056,7 @@ ErrorCode ConstraintStudentsSetMinHoursDaily::computeInternalStructure(const Rul
 	return ErrorCode();
 }
 
-double ConstraintStudentsSetMinHoursDaily::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintStudentsSetMinHoursDaily::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -8179,17 +8090,15 @@ double ConstraintStudentsSetMinHoursDaily::fitness(Solution& c, const Rules& r, 
 			if(/*tmp>0*/ searchDay && this->minHoursDaily>=0 && tmp < this->minHoursDaily){
 				too_little += - tmp + this->minHoursDaily;
 
-				if(conflictsString!=NULL){
+				if(conflictInfo!=NULL){
 					QString s=tr("Time constraint students set min hours daily broken for subgroup: %1, day: %2, lenght=%3, conflicts increase=%4")
 					 .arg(r.internalSubgroupsList[i]->name)
 					 .arg(r.daysOfTheWeek[j])
 					 .arg(CustomFETString::number(tmp))
 					 .arg(CustomFETString::number((-tmp+this->minHoursDaily)*weightPercentage/100));
 						 
-					dl.append(s);
-					cl.append((-tmp+this->minHoursDaily)*weightPercentage/100);
-					
-					*conflictsString+= s+"\n";
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append((-tmp+this->minHoursDaily)*weightPercentage/100);
 				}
 			}
 		}
@@ -8420,7 +8329,7 @@ QString ConstraintActivityPreferredStartingTime::getDetailedDescription(const Ru
 	return s;
 }
 
-double ConstraintActivityPreferredStartingTime::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintActivityPreferredStartingTime::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -8445,17 +8354,15 @@ double ConstraintActivityPreferredStartingTime::fitness(Solution& c, const Rules
 	if(nbroken>0)
 		nbroken=1;
 
-	if(conflictsString!=NULL && nbroken>0){
+	if(conflictInfo!=NULL && nbroken>0){
 		QString s=tr("Time constraint activity preferred starting time broken for activity with id=%1 (%2), increases conflicts total by %3",
 			"%1 is the id, %2 is the detailed description of the activity")
 			.arg(this->activityId)
 			.arg(getActivityDetailedDescription(r, this->activityId))
 			.arg(CustomFETString::number(weightPercentage/100*nbroken));
 
-		dl.append(s);
-		cl.append(weightPercentage/100*nbroken);
-	
-		*conflictsString+= s+"\n";
+		conflictInfo->descriptions.append(s);
+		conflictInfo->weights.append(weightPercentage/100*nbroken);
 	}
 
 	if(weightPercentage==100)
@@ -8685,7 +8592,7 @@ QString ConstraintActivityPreferredTimeSlots::getDetailedDescription(const Rules
 	return s;
 }
 
-double ConstraintActivityPreferredTimeSlots::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintActivityPreferredTimeSlots::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -8720,7 +8627,7 @@ double ConstraintActivityPreferredTimeSlots::fitness(Solution& c, const Rules& r
 				nbroken++;
 	}
 
-	if(conflictsString!=NULL && nbroken>0){
+	if(conflictInfo!=NULL && nbroken>0){
 		QString s=tr("Time constraint activity preferred time slots broken for activity with id=%1 (%2) on %3 hours, increases conflicts total by %4",
 		 "%1 is the id, %2 is the detailed description of the activity.")
 		 .arg(this->p_activityId)
@@ -8728,10 +8635,8 @@ double ConstraintActivityPreferredTimeSlots::fitness(Solution& c, const Rules& r
 		 .arg(nbroken)
 		 .arg(CustomFETString::number(weightPercentage/100*nbroken));
 		 
-		dl.append(s);
-		cl.append(weightPercentage/100*nbroken);
-	
-		*conflictsString+= s+"\n";
+		conflictInfo->descriptions.append(s);
+		conflictInfo->weights.append(weightPercentage/100*nbroken);
 	}
 
 	if(weightPercentage==100)
@@ -9134,7 +9039,7 @@ QString ConstraintActivitiesPreferredTimeSlots::getDetailedDescription(const Rul
 	return s;
 }
 
-double ConstraintActivitiesPreferredTimeSlots::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintActivitiesPreferredTimeSlots::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -9176,7 +9081,7 @@ double ConstraintActivitiesPreferredTimeSlots::fitness(Solution& c, const Rules&
 					tmp++;
 		}
 		nbroken+=tmp;
-		if(conflictsString!=NULL && tmp>0){
+		if(conflictInfo!=NULL && tmp>0){
 			QString s=tr("Time constraint activities preferred time slots broken"
 			 " for activity with id=%1 (%2) on %3 hours,"
 			 " increases conflicts total by %4", "%1 is the id, %2 is the detailed description of the activity.")
@@ -9185,10 +9090,8 @@ double ConstraintActivitiesPreferredTimeSlots::fitness(Solution& c, const Rules&
 			 .arg(tmp)
 			 .arg(CustomFETString::number(weightPercentage/100*tmp));
 				 
-			dl.append(s);
-			cl.append(weightPercentage/100*tmp);
-		
-			*conflictsString+= s+"\n";
+			conflictInfo->descriptions.append(s);
+			conflictInfo->weights.append(weightPercentage/100*tmp);
 		}
 	}
 
@@ -9609,7 +9512,7 @@ QString ConstraintSubactivitiesPreferredTimeSlots::getDetailedDescription(const 
 	return s;
 }
 
-double ConstraintSubactivitiesPreferredTimeSlots::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintSubactivitiesPreferredTimeSlots::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -9651,7 +9554,7 @@ double ConstraintSubactivitiesPreferredTimeSlots::fitness(Solution& c, const Rul
 					tmp++;
 		}
 		nbroken+=tmp;
-		if(conflictsString!=NULL && tmp>0){
+		if(conflictInfo!=NULL && tmp>0){
 			QString s=tr("Time constraint subactivities preferred time slots broken"
 			 " for activity with id=%1 (%2), component number %3, on %4 hours,"
 			 " increases conflicts total by %5", "%1 is the id, %2 is the detailed description of the activity.")
@@ -9661,10 +9564,8 @@ double ConstraintSubactivitiesPreferredTimeSlots::fitness(Solution& c, const Rul
 			 .arg(tmp)
 			 .arg(CustomFETString::number(weightPercentage/100*tmp));
 
-			dl.append(s);
-			cl.append(weightPercentage/100*tmp);
-		
-			*conflictsString+= s+"\n";
+			conflictInfo->descriptions.append(s);
+			conflictInfo->weights.append(weightPercentage/100*tmp);
 		}
 	}
 
@@ -9943,7 +9844,7 @@ QString ConstraintActivityPreferredStartingTimes::getDetailedDescription(const R
 	return s;
 }
 
-double ConstraintActivityPreferredStartingTimes::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintActivityPreferredStartingTimes::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -9973,17 +9874,15 @@ double ConstraintActivityPreferredStartingTimes::fitness(Solution& c, const Rule
 		}
 	}
 
-	if(conflictsString!=NULL && nbroken>0){
+	if(conflictInfo!=NULL && nbroken>0){
 		QString s=tr("Time constraint activity preferred starting times broken for activity with id=%1 (%2), increases conflicts total by %3",
 		 "%1 is the id, %2 is the detailed description of the activity")
 		 .arg(this->activityId)
 		 .arg(getActivityDetailedDescription(r, this->activityId))
 		 .arg(CustomFETString::number(weightPercentage/100*nbroken));
 
-		dl.append(s);
-		cl.append(weightPercentage/100*nbroken);
-	
-		*conflictsString+= s+"\n";
+		conflictInfo->descriptions.append(s);
+		conflictInfo->weights.append(weightPercentage/100*nbroken);
 	}
 
 	if(weightPercentage==100)
@@ -10384,7 +10283,7 @@ QString ConstraintActivitiesPreferredStartingTimes::getDetailedDescription(const
 	return s;
 }
 
-double ConstraintActivitiesPreferredStartingTimes::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintActivitiesPreferredStartingTimes::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -10419,7 +10318,7 @@ double ConstraintActivitiesPreferredStartingTimes::fitness(Solution& c, const Ru
 			}
 		}
 		nbroken+=tmp;
-		if(conflictsString!=NULL && tmp>0){
+		if(conflictInfo!=NULL && tmp>0){
 			QString s=tr("Time constraint activities preferred starting times broken"
 			 " for activity with id=%1 (%2),"
 			 " increases conflicts total by %3", "%1 is the id, %2 is the detailed description of the activity")
@@ -10427,10 +10326,8 @@ double ConstraintActivitiesPreferredStartingTimes::fitness(Solution& c, const Ru
 			 .arg(getActivityDetailedDescription(r, r.internalActivitiesList[ai].id))
 			 .arg(CustomFETString::number(weightPercentage/100*tmp));
 			 
-			dl.append(s);
-			cl.append(weightPercentage/100*tmp);
-		
-			*conflictsString+= s+"\n";
+			conflictInfo->descriptions.append(s);
+			conflictInfo->weights.append(weightPercentage/100*tmp);
 		}
 	}
 
@@ -10845,7 +10742,7 @@ QString ConstraintSubactivitiesPreferredStartingTimes::getDetailedDescription(co
 	return s;
 }
 
-double ConstraintSubactivitiesPreferredStartingTimes::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintSubactivitiesPreferredStartingTimes::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -10880,7 +10777,7 @@ double ConstraintSubactivitiesPreferredStartingTimes::fitness(Solution& c, const
 			}
 		}
 		nbroken+=tmp;
-		if(conflictsString!=NULL && tmp>0){
+		if(conflictInfo!=NULL && tmp>0){
 			QString s=tr("Time constraint subactivities preferred starting times broken"
 			 " for activity with id=%1 (%2), component number %3,"
 			 " increases conflicts total by %4", "%1 is the id, %2 is the detailed description of the activity")
@@ -10889,10 +10786,8 @@ double ConstraintSubactivitiesPreferredStartingTimes::fitness(Solution& c, const
 			 .arg(this->componentNumber)
 			 .arg(CustomFETString::number(weightPercentage/100*tmp));
 
-			dl.append(s);
-			cl.append(weightPercentage/100*tmp);
-		
-			*conflictsString+= s+"\n";
+			conflictInfo->descriptions.append(s);
+			conflictInfo->weights.append(weightPercentage/100*tmp);
 		}
 	}
 
@@ -11168,7 +11063,7 @@ QString ConstraintActivitiesSameStartingHour::getDetailedDescription(const Rules
 	return s;
 }
 
-double ConstraintActivitiesSameStartingHour::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintActivitiesSameStartingHour::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	assert(r.internalStructureComputed);
 
@@ -11193,7 +11088,7 @@ double ConstraintActivitiesSameStartingHour::fitness(Solution& c, const Rules& r
 					if(hour1!=hour2) {
 						nbroken++;
 
-						if(conflictsString != NULL){
+						if(conflictInfo != NULL){
 							QString s=tr("Time constraint activities same starting hour broken, because activity with id=%1 (%2) is not at the same hour with activity with id=%3 (%4)"
 										 , "%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.")
 									.arg(this->activitiesId[i])
@@ -11203,10 +11098,8 @@ double ConstraintActivitiesSameStartingHour::fitness(Solution& c, const Rules& r
 							s+=". ";
 							s+=tr("Conflicts factor increase=%1").arg(CustomFETString::number(weightPercentage/100));
 
-							dl.append(s);
-							cl.append(weightPercentage/100);
-
-							*conflictsString+= s+"\n";
+							conflictInfo->descriptions.append(s);
+							conflictInfo->weights.append(weightPercentage/100);
 						}
 					}
 				}
@@ -11435,7 +11328,7 @@ QString ConstraintActivitiesSameStartingDay::getDetailedDescription(const Rules&
 	return s;
 }
 
-double ConstraintActivitiesSameStartingDay::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintActivitiesSameStartingDay::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	assert(r.internalStructureComputed);
 
@@ -11458,7 +11351,7 @@ double ConstraintActivitiesSameStartingDay::fitness(Solution& c, const Rules& r,
 
 					if(day1!=day2) {
 						nbroken++;
-						if(conflictsString != NULL){
+						if(conflictInfo != NULL){
 							QString s=tr("Time constraint activities same starting day broken, because activity with id=%1 (%2) is not in the same day with activity with id=%3 (%4)"
 										 , "%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.")
 									.arg(this->activitiesId[i])
@@ -11468,10 +11361,8 @@ double ConstraintActivitiesSameStartingDay::fitness(Solution& c, const Rules& r,
 							s+=". ";
 							s+=tr("Conflicts factor increase=%1").arg(CustomFETString::number(weightPercentage/100));
 
-							dl.append(s);
-							cl.append(weightPercentage/100);
-
-							*conflictsString+= s+"\n";
+							conflictInfo->descriptions.append(s);
+							conflictInfo->weights.append(weightPercentage/100);
 						}
 					}
 				}
@@ -11681,7 +11572,7 @@ QString ConstraintTwoActivitiesConsecutive::getDetailedDescription(const Rules& 
 	return s;
 }
 
-double ConstraintTwoActivitiesConsecutive::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintTwoActivitiesConsecutive::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -11723,7 +11614,7 @@ double ConstraintTwoActivitiesConsecutive::fitness(Solution& c, const Rules& r, 
 	
 	assert(nbroken==0 || nbroken==1);
 
-	if(conflictsString!=NULL && nbroken>0){
+	if(conflictInfo!=NULL && nbroken>0){
 		QString s=tr("Time constraint two activities consecutive broken for first activity with id=%1 (%2) and "
 		 "second activity with id=%3 (%4), increases conflicts total by %5", "%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.")
 		 .arg(this->firstActivityId)
@@ -11732,10 +11623,8 @@ double ConstraintTwoActivitiesConsecutive::fitness(Solution& c, const Rules& r, 
 		 .arg(getActivityDetailedDescription(r, this->secondActivityId))
 		 .arg(CustomFETString::number(weightPercentage/100*nbroken));
 
-		dl.append(s);
-		cl.append(weightPercentage/100*nbroken);
-	
-		*conflictsString+= s+"\n";
+		conflictInfo->descriptions.append(s);
+		conflictInfo->weights.append(weightPercentage/100*nbroken);
 	}
 	
 	if(weightPercentage==100)
@@ -11941,7 +11830,7 @@ QString ConstraintTwoActivitiesGrouped::getDetailedDescription(const Rules& r) c
 	return s;
 }
 
-double ConstraintTwoActivitiesGrouped::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintTwoActivitiesGrouped::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -11995,7 +11884,7 @@ double ConstraintTwoActivitiesGrouped::fitness(Solution& c, const Rules& r, QLis
 	
 	assert(nbroken==0 || nbroken==1);
 
-	if(conflictsString!=NULL && nbroken>0){
+	if(conflictInfo!=NULL && nbroken>0){
 		QString s=tr("Time constraint two activities grouped broken for first activity with id=%1 (%2) and "
 		 "second activity with id=%3 (%4), increases conflicts total by %5", "%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.")
 		 .arg(this->firstActivityId)
@@ -12004,10 +11893,8 @@ double ConstraintTwoActivitiesGrouped::fitness(Solution& c, const Rules& r, QLis
 		 .arg(getActivityDetailedDescription(r, this->secondActivityId))
 		 .arg(CustomFETString::number(weightPercentage/100*nbroken));
 
-		dl.append(s);
-		cl.append(weightPercentage/100*nbroken);
-	
-		*conflictsString+= s+"\n";
+		conflictInfo->descriptions.append(s);
+		conflictInfo->weights.append(weightPercentage/100*nbroken);
 	}
 	
 	if(weightPercentage==100)
@@ -12241,7 +12128,7 @@ QString ConstraintThreeActivitiesGrouped::getDetailedDescription(const Rules& r)
 	return s;
 }
 
-double ConstraintThreeActivitiesGrouped::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintThreeActivitiesGrouped::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -12343,7 +12230,7 @@ double ConstraintThreeActivitiesGrouped::fitness(Solution& c, const Rules& r, QL
 	
 	assert(nbroken==0 || nbroken==1);
 
-	if(conflictsString!=NULL && nbroken>0){
+	if(conflictInfo!=NULL && nbroken>0){
 		QString s=tr("Time constraint three activities grouped broken for first activity with id=%1 (%2), "
 		 "second activity with id=%3 (%4) and third activity with id=%5 (%6), increases conflicts total by %7",
 		 "%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr., %5 id, %6 det. descr.")
@@ -12355,10 +12242,8 @@ double ConstraintThreeActivitiesGrouped::fitness(Solution& c, const Rules& r, QL
 		 .arg(getActivityDetailedDescription(r, this->thirdActivityId))
 		 .arg(CustomFETString::number(weightPercentage/100*nbroken));
 
-		dl.append(s);
-		cl.append(weightPercentage/100*nbroken);
-	
-		*conflictsString+= s+"\n";
+		conflictInfo->descriptions.append(s);
+		conflictInfo->weights.append(weightPercentage/100*nbroken);
 	}
 	
 	if(weightPercentage==100)
@@ -12566,7 +12451,7 @@ QString ConstraintTwoActivitiesOrdered::getDetailedDescription(const Rules& r) c
 	return s;
 }
 
-double ConstraintTwoActivitiesOrdered::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintTwoActivitiesOrdered::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -12593,7 +12478,7 @@ double ConstraintTwoActivitiesOrdered::fitness(Solution& c, const Rules& r, QLis
 	
 	assert(nbroken==0 || nbroken==1);
 
-	if(conflictsString!=NULL && nbroken>0){
+	if(conflictInfo!=NULL && nbroken>0){
 		QString s=tr("Time constraint two activities ordered broken for first activity with id=%1 (%2) and "
 		 "second activity with id=%3 (%4), increases conflicts total by %5", "%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.")
 		 .arg(this->firstActivityId)
@@ -12602,10 +12487,8 @@ double ConstraintTwoActivitiesOrdered::fitness(Solution& c, const Rules& r, QLis
 		 .arg(getActivityDetailedDescription(r, this->secondActivityId))
 		 .arg(CustomFETString::number(weightPercentage/100*nbroken));
 
-		dl.append(s);
-		cl.append(weightPercentage/100*nbroken);
-	
-		*conflictsString+= s+"\n";
+		conflictInfo->descriptions.append(s);
+		conflictInfo->weights.append(weightPercentage/100*nbroken);
 	}
 	
 	if(weightPercentage==100)
@@ -12771,7 +12654,7 @@ QString ConstraintActivityEndsStudentsDay::getDetailedDescription(const Rules& r
 	return s;
 }
 
-double ConstraintActivityEndsStudentsDay::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintActivityEndsStudentsDay::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -12802,17 +12685,15 @@ double ConstraintActivityEndsStudentsDay::fitness(Solution& c, const Rules& r, Q
 		}
 	}
 
-	if(conflictsString!=NULL && nbroken>0){
+	if(conflictInfo!=NULL && nbroken>0){
 		QString s=tr("Time constraint activity ends students' day broken for activity with id=%1 (%2), increases conflicts total by %3",
 		 "%1 is the id, %2 is the detailed description of the activity")
 		 .arg(this->activityId)
 		 .arg(getActivityDetailedDescription(r, this->activityId))
 		 .arg(CustomFETString::number(weightPercentage/100*nbroken));
 
-		dl.append(s);
-		cl.append(weightPercentage/100*nbroken);
-	
-		*conflictsString+= s+"\n";
+		conflictInfo->descriptions.append(s);
+		conflictInfo->weights.append(weightPercentage/100*nbroken);
 	}
 
 	if(weightPercentage==100)
@@ -12974,7 +12855,7 @@ QString ConstraintTeachersMinHoursDaily::getDetailedDescription(const Rules& r) 
 	return s;
 }
 
-double ConstraintTeachersMinHoursDaily::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintTeachersMinHoursDaily::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -12998,7 +12879,7 @@ double ConstraintTeachersMinHoursDaily::fitness(Solution& c, const Rules& r, QLi
 			if(n_hours_daily>0 && n_hours_daily<this->minHoursDaily){
 				nbroken++;
 
-				if(conflictsString != NULL){
+				if(conflictInfo != NULL){
 					QString s=(tr("Time constraint teachers min %1 hours daily broken for teacher %2, on day %3, length=%4.")
 					 .arg(CustomFETString::number(this->minHoursDaily))
 					 .arg(r.internalTeachersList[i]->name)
@@ -13010,10 +12891,8 @@ double ConstraintTeachersMinHoursDaily::fitness(Solution& c, const Rules& r, QLi
 					 +
 					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 
-					dl.append(s);
-					cl.append(weightPercentage/100);
-
-					*conflictsString+= s+"\n";
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append(weightPercentage/100);
 				}
 			}
 		}
@@ -13187,7 +13066,7 @@ QString ConstraintTeacherMinHoursDaily::getDetailedDescription(const Rules& r) c
 	return s;
 }
 
-double ConstraintTeacherMinHoursDaily::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintTeacherMinHoursDaily::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -13211,7 +13090,7 @@ double ConstraintTeacherMinHoursDaily::fitness(Solution& c, const Rules& r, QLis
 		if(n_hours_daily>0 && n_hours_daily<this->minHoursDaily){
 			nbroken++;
 
-			if(conflictsString != NULL){
+			if(conflictInfo != NULL){
 				QString s=(tr(
 				 "Time constraint teacher min %1 hours daily broken for teacher %2, on day %3, length=%4.")
 				 .arg(CustomFETString::number(this->minHoursDaily))
@@ -13223,10 +13102,8 @@ double ConstraintTeacherMinHoursDaily::fitness(Solution& c, const Rules& r, QLis
 				 +
 				 tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100));
 
-				dl.append(s);
-				cl.append(weightPercentage/100);
-
-				*conflictsString+= s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(weightPercentage/100);
 			}
 		}
 	}
@@ -13382,7 +13259,7 @@ QString ConstraintTeacherMinDaysPerWeek::getDetailedDescription(const Rules& r) 
 	return s;
 }
 
-double ConstraintTeacherMinDaysPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintTeacherMinDaysPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -13407,7 +13284,7 @@ double ConstraintTeacherMinDaysPerWeek::fitness(Solution& c, const Rules& r, QLi
 	if(nd<this->minDaysPerWeek){
 		nbroken+=this->minDaysPerWeek-nd;
 
-		if(conflictsString!=NULL){
+		if(conflictInfo!=NULL){
 			QString s=(tr(
 			 "Time constraint teacher min %1 days per week broken for teacher %2.")
 			 .arg(CustomFETString::number(this->minDaysPerWeek))
@@ -13417,10 +13294,8 @@ double ConstraintTeacherMinDaysPerWeek::fitness(Solution& c, const Rules& r, QLi
 			 +
 			 tr("This increases the conflicts total by %1").arg(CustomFETString::number(double(nbroken)*weightPercentage/100));
 				
-			dl.append(s);
-			cl.append(double(nbroken)*weightPercentage/100);
-		
-			*conflictsString+= s+"\n";
+			conflictInfo->descriptions.append(s);
+			conflictInfo->weights.append(double(nbroken)*weightPercentage/100);
 		}
 	}
 
@@ -13570,7 +13445,7 @@ QString ConstraintTeachersMinDaysPerWeek::getDetailedDescription(const Rules& r)
 	return s;
 }
 
-double ConstraintTeachersMinDaysPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintTeachersMinDaysPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -13598,7 +13473,7 @@ double ConstraintTeachersMinDaysPerWeek::fitness(Solution& c, const Rules& r, QL
 			nbroken+=this->minDaysPerWeek-nd;
 			nbrokentotal+=nbroken;
 
-			if(conflictsString!=NULL){
+			if(conflictInfo!=NULL){
 				QString s=(tr(
 				 "Time constraint teachers min %1 days per week broken for teacher %2.")
 				 .arg(CustomFETString::number(this->minDaysPerWeek))
@@ -13608,10 +13483,8 @@ double ConstraintTeachersMinDaysPerWeek::fitness(Solution& c, const Rules& r, QL
 				 +
 				 tr("This increases the conflicts total by %1").arg(CustomFETString::number(double(nbroken)*weightPercentage/100));
 					
-				dl.append(s);
-				cl.append(double(nbroken)*weightPercentage/100);
-			
-				*conflictsString+= s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(double(nbroken)*weightPercentage/100);
 			}
 		}
 	}
@@ -13807,7 +13680,7 @@ QString ConstraintTeacherIntervalMaxDaysPerWeek::getDetailedDescription(const Ru
 	return s;
 }
 
-double ConstraintTeacherIntervalMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString *conflictsString)
+double ConstraintTeacherIntervalMaxDaysPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -13846,10 +13719,8 @@ double ConstraintTeacherIntervalMaxDaysPerWeek::fitness(Solution& c, const Rules
 			s += tr("This increases the conflicts total by %1")
 			 .arg(CustomFETString::number(nbroken*weightPercentage/100));
 			 
-			dl.append(s);
-			cl.append(nbroken*weightPercentage/100);
-		
-			*conflictsString += s+"\n";
+			conflictInfo->descriptions.append(s);
+			conflictInfo->weights.append(nbroken*weightPercentage/100);
 		}
 	}
 
@@ -14046,7 +13917,7 @@ QString ConstraintTeachersIntervalMaxDaysPerWeek::getDetailedDescription(const R
 	return s;
 }
 
-double ConstraintTeachersIntervalMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString *conflictsString)
+double ConstraintTeachersIntervalMaxDaysPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -14084,10 +13955,8 @@ double ConstraintTeachersIntervalMaxDaysPerWeek::fitness(Solution& c, const Rule
 				s += tr("This increases the conflicts total by %1")
 				 .arg(CustomFETString::number((nOcDays-this->maxDaysPerWeek)*weightPercentage/100));
 				 
-				dl.append(s);
-				cl.append((nOcDays-this->maxDaysPerWeek)*weightPercentage/100);
-			
-				*conflictsString += s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append((nOcDays-this->maxDaysPerWeek)*weightPercentage/100);
 			}
 		}
 	}
@@ -14341,7 +14210,7 @@ QString ConstraintStudentsSetIntervalMaxDaysPerWeek::getDetailedDescription(cons
 	return s;
 }
 
-double ConstraintStudentsSetIntervalMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString *conflictsString)
+double ConstraintStudentsSetIntervalMaxDaysPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -14379,10 +14248,8 @@ double ConstraintStudentsSetIntervalMaxDaysPerWeek::fitness(Solution& c, const R
 				s += tr("This increases the conflicts total by %1")
 				 .arg(CustomFETString::number((nOcDays-this->maxDaysPerWeek)*weightPercentage/100));
 			 
-				dl.append(s);
-				cl.append((nOcDays-this->maxDaysPerWeek)*weightPercentage/100);
-		
-				*conflictsString += s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append((nOcDays-this->maxDaysPerWeek)*weightPercentage/100);
 			}
 		}
 	}
@@ -14577,7 +14444,7 @@ QString ConstraintStudentsIntervalMaxDaysPerWeek::getDetailedDescription(const R
 	return s;
 }
 
-double ConstraintStudentsIntervalMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString *conflictsString)
+double ConstraintStudentsIntervalMaxDaysPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -14615,10 +14482,8 @@ double ConstraintStudentsIntervalMaxDaysPerWeek::fitness(Solution& c, const Rule
 				s += tr("This increases the conflicts total by %1")
 				 .arg(CustomFETString::number((nOcDays-this->maxDaysPerWeek)*weightPercentage/100));
 			 
-				dl.append(s);
-				cl.append((nOcDays-this->maxDaysPerWeek)*weightPercentage/100);
-		
-				*conflictsString += s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append((nOcDays-this->maxDaysPerWeek)*weightPercentage/100);
 			}
 		}
 	}
@@ -14880,7 +14745,7 @@ QString ConstraintActivitiesEndStudentsDay::getDetailedDescription(const Rules& 
 	return s;
 }
 
-double ConstraintActivitiesEndStudentsDay::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintActivitiesEndStudentsDay::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -14914,17 +14779,15 @@ double ConstraintActivitiesEndStudentsDay::fitness(Solution& c, const Rules& r, 
 					break;
 			}
 
-			if(conflictsString!=NULL && tmp>0){
+			if(conflictInfo!=NULL && tmp>0){
 				QString s=tr("Time constraint activities end students' day broken for activity with id=%1 (%2), increases conflicts total by %3",
 				 "%1 is the id, %2 is the detailed description of the activity")
 				 .arg(r.internalActivitiesList[ai].id)
 				 .arg(getActivityDetailedDescription(r, r.internalActivitiesList[ai].id))
 				 .arg(CustomFETString::number(weightPercentage/100*tmp));
 
-				dl.append(s);
-				cl.append(weightPercentage/100*tmp);
-	
-				*conflictsString+= s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(weightPercentage/100*tmp);
 			}
 		}
 	}
@@ -15116,7 +14979,7 @@ QString ConstraintTeachersActivityTagMaxHoursDaily::getDetailedDescription(const
 	return s;
 }
 
-double ConstraintTeachersActivityTagMaxHoursDaily::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintTeachersActivityTagMaxHoursDaily::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -15155,7 +15018,7 @@ double ConstraintTeachersActivityTagMaxHoursDaily::fitness(Solution& c, const Ru
 			if(nd>this->maxHoursDaily){
 				nbroken++;
 
-				if(conflictsString!=NULL){
+				if(conflictInfo!=NULL){
 					QString s=(tr("Time constraint teachers activity tag %1 max %2 hours daily broken for teacher %3, on day %4, length=%5.")
 					 .arg(this->activityTagName)
 					 .arg(CustomFETString::number(this->maxHoursDaily))
@@ -15168,10 +15031,8 @@ double ConstraintTeachersActivityTagMaxHoursDaily::fitness(Solution& c, const Ru
 					 +
 					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100.0)));
 					
-					dl.append(s);
-					cl.append(weightPercentage/100.0);
-				
-					*conflictsString+= s+"\n";
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append(weightPercentage/100.0);
 				}
 			}
 		}
@@ -15347,7 +15208,7 @@ QString ConstraintTeacherActivityTagMaxHoursDaily::getDetailedDescription(const 
 	return s;
 }
 
-double ConstraintTeacherActivityTagMaxHoursDaily::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintTeacherActivityTagMaxHoursDaily::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -15386,7 +15247,7 @@ double ConstraintTeacherActivityTagMaxHoursDaily::fitness(Solution& c, const Rul
 			if(nd>this->maxHoursDaily){
 				nbroken++;
 
-				if(conflictsString!=NULL){
+				if(conflictInfo!=NULL){
 					QString s=(tr("Time constraint teacher activity tag %1 max %2 hours daily broken for teacher %3, on day %4, length=%5.")
 					 .arg(this->activityTagName)
 					 .arg(CustomFETString::number(this->maxHoursDaily))
@@ -15399,10 +15260,8 @@ double ConstraintTeacherActivityTagMaxHoursDaily::fitness(Solution& c, const Rul
 					 +
 					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100.0)));
 					
-					dl.append(s);
-					cl.append(weightPercentage/100.0);
-				
-					*conflictsString+= s+"\n";
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append(weightPercentage/100.0);
 				}
 			}
 		}
@@ -15581,7 +15440,7 @@ QString ConstraintStudentsActivityTagMaxHoursDaily::getDetailedDescription(const
 	return s;
 }
 
-double ConstraintStudentsActivityTagMaxHoursDaily::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintStudentsActivityTagMaxHoursDaily::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -15619,7 +15478,7 @@ double ConstraintStudentsActivityTagMaxHoursDaily::fitness(Solution& c, const Ru
 			if(nd>this->maxHoursDaily){
 				nbroken++;
 
-				if(conflictsString!=NULL){
+				if(conflictInfo!=NULL){
 					QString s=(tr(
 					 "Time constraint students, activity tag %1, max %2 hours daily, broken for subgroup %3, on day %4, length=%5.")
 					 .arg(this->activityTagName)
@@ -15633,10 +15492,8 @@ double ConstraintStudentsActivityTagMaxHoursDaily::fitness(Solution& c, const Ru
 					 +
 					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100.0)));
 					
-					dl.append(s);
-					cl.append(weightPercentage/100);
-				
-					*conflictsString+= s+"\n";
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append(weightPercentage/100);
 				}
 			}
 		}
@@ -15865,7 +15722,7 @@ ErrorCode ConstraintStudentsSetActivityTagMaxHoursDaily::computeInternalStructur
 	return ErrorCode();
 }
 
-double ConstraintStudentsSetActivityTagMaxHoursDaily::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintStudentsSetActivityTagMaxHoursDaily::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -15903,7 +15760,7 @@ double ConstraintStudentsSetActivityTagMaxHoursDaily::fitness(Solution& c, const
 			if(nd>this->maxHoursDaily){
 				nbroken++;
 
-				if(conflictsString!=NULL){
+				if(conflictInfo!=NULL){
 					QString s=(tr(
 					 "Time constraint students set, activity tag %1, max %2 hours daily, broken for subgroup %3, on day %4, length=%5.")
 					 .arg(this->activityTagName)
@@ -15917,10 +15774,8 @@ double ConstraintStudentsSetActivityTagMaxHoursDaily::fitness(Solution& c, const
 					 +
 					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100.0)));
 					
-					dl.append(s);
-					cl.append(weightPercentage/100);
-				
-					*conflictsString+= s+"\n";
+					conflictInfo->descriptions.append(s);
+					conflictInfo->weights.append(weightPercentage/100);
 				}
 			}
 		}
@@ -16072,7 +15927,7 @@ QString ConstraintStudentsMaxGapsPerDay::getDetailedDescription(const Rules& r) 
 	return s;
 }
 
-double ConstraintStudentsMaxGapsPerDay::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintStudentsMaxGapsPerDay::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//returns a number equal to the number of gaps of the subgroups (in hours)
 
@@ -16114,17 +15969,15 @@ double ConstraintStudentsMaxGapsPerDay::fitness(Solution& c, const Rules& r, QLi
 			if(illegalGaps<0)
 				illegalGaps=0;
 
-			if(illegalGaps>0 && conflictsString!=NULL){
+			if(illegalGaps>0 && conflictInfo!=NULL){
 				QString s=tr("Time constraint students max gaps per day broken for subgroup: %1, it has %2 extra gaps, on day %3, conflicts increase=%4")
 				 .arg(r.internalSubgroupsList[i]->name)
 				 .arg(illegalGaps)
 				 .arg(r.daysOfTheWeek[j])
 				 .arg(CustomFETString::number(illegalGaps*weightPercentage/100));
 							 
-				dl.append(s);
-				cl.append(illegalGaps*weightPercentage/100);
-					
-				*conflictsString+= s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(illegalGaps*weightPercentage/100);
 			}
 		
 			tIllegalGaps+=illegalGaps;
@@ -16329,7 +16182,7 @@ QString ConstraintStudentsSetMaxGapsPerDay::getDetailedDescription(const Rules& 
 	return s;
 }
 
-double ConstraintStudentsSetMaxGapsPerDay::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintStudentsSetMaxGapsPerDay::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//OLD COMMENT
 	//returns a number equal to the number of gaps of the subgroups (in hours)
@@ -16372,17 +16225,15 @@ double ConstraintStudentsSetMaxGapsPerDay::fitness(Solution& c, const Rules& r, 
 			if(illegalGaps<0)
 				illegalGaps=0;
 
-			if(illegalGaps>0 && conflictsString!=NULL){
+			if(illegalGaps>0 && conflictInfo!=NULL){
 				QString s=tr("Time constraint students set max gaps per day broken for subgroup: %1, extra gaps=%2, on day %3, conflicts increase=%4")
 				 .arg(r.internalSubgroupsList[i]->name)
 				 .arg(illegalGaps)
 				 .arg(r.daysOfTheWeek[j])
 				 .arg(CustomFETString::number(weightPercentage/100*illegalGaps));
 							 
-				dl.append(s);
-				cl.append(weightPercentage/100*illegalGaps);
-					
-				*conflictsString+= s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(weightPercentage/100*illegalGaps);
 			}
 		
 			tIllegalGaps+=illegalGaps;
@@ -16639,7 +16490,7 @@ QString ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::getDetailedDescript
 	return s;
 }
 
-double ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -16685,14 +16536,12 @@ double ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::fitness(Solution& c,
 	if(cnt > this->maxOccupiedTimeSlots){
 		nbroken=1;
 	
-		if(conflictsString!=NULL){
+		if(conflictInfo!=NULL){
 			QString s=tr("Time constraint %1 broken - this should not happen, as this kind of constraint should "
 			 "have only 100.0% weight. Please report error!").arg(this->getDescription(r));
 			
-			dl.append(s);
-			cl.append(weightPercentage/100.0);
-		
-			*conflictsString+= s+"\n";
+			conflictInfo->descriptions.append(s);
+			conflictInfo->weights.append(weightPercentage/100.0);
 		}
 	}
 
@@ -16991,7 +16840,7 @@ QString ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::getDetailedDescr
 	return s;
 }
 
-double ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -17035,14 +16884,12 @@ double ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::fitness(Solution&
 	}
 
 	if(nbroken>0){
-		if(conflictsString!=NULL){
+		if(conflictInfo!=NULL){
 			QString s=tr("Time constraint %1 broken - this should not happen, as this kind of constraint should "
 			 "have only 100.0% weight. Please report error!").arg(this->getDescription(r));
 			
-			dl.append(s);
-			cl.append(weightPercentage/100.0);
-		
-			*conflictsString+= s+"\n";
+			conflictInfo->descriptions.append(s);
+			conflictInfo->weights.append(weightPercentage/100.0);
 		}
 	}
 
@@ -17284,7 +17131,7 @@ QString ConstraintStudentsSetMaxDaysPerWeek::getDetailedDescription(const Rules&
 	return s;
 }
 
-double ConstraintStudentsSetMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString *conflictsString)
+double ConstraintStudentsSetMaxDaysPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -17322,10 +17169,8 @@ double ConstraintStudentsSetMaxDaysPerWeek::fitness(Solution& c, const Rules& r,
 				s += tr("This increases the conflicts total by %1")
 				 .arg(CustomFETString::number((nOcDays-this->maxDaysPerWeek)*weightPercentage/100));
 			 
-				dl.append(s);
-				cl.append((nOcDays-this->maxDaysPerWeek)*weightPercentage/100);
-		
-				*conflictsString += s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append((nOcDays-this->maxDaysPerWeek)*weightPercentage/100);
 			}
 		}
 	}
@@ -17470,7 +17315,7 @@ QString ConstraintStudentsMaxDaysPerWeek::getDetailedDescription(const Rules& r)
 	return s;
 }
 
-double ConstraintStudentsMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString *conflictsString)
+double ConstraintStudentsMaxDaysPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -17508,10 +17353,8 @@ double ConstraintStudentsMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QL
 				s += tr("This increases the conflicts total by %1")
 				 .arg(CustomFETString::number((nOcDays-this->maxDaysPerWeek)*weightPercentage/100));
 			 
-				dl.append(s);
-				cl.append((nOcDays-this->maxDaysPerWeek)*weightPercentage/100);
-		
-				*conflictsString += s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append((nOcDays-this->maxDaysPerWeek)*weightPercentage/100);
 			}
 		}
 	}
@@ -17666,7 +17509,7 @@ QString ConstraintTeacherMaxSpanPerDay::getDetailedDescription(const Rules& r) c
 	return s;
 }
 
-double ConstraintTeacherMaxSpanPerDay::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintTeacherMaxSpanPerDay::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -17676,10 +17519,6 @@ double ConstraintTeacherMaxSpanPerDay::fitness(Solution& c, const Rules& r, QLis
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
 	}
 	
-	Q_UNUSED(cl);
-	Q_UNUSED(dl);
-	Q_UNUSED(conflictsString);
-
 	assert(this->weightPercentage==100.0);
 	
 	int nbroken=0;
@@ -17851,7 +17690,7 @@ QString ConstraintTeachersMaxSpanPerDay::getDetailedDescription(const Rules& r) 
 	return s;
 }
 
-double ConstraintTeachersMaxSpanPerDay::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintTeachersMaxSpanPerDay::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -17861,10 +17700,6 @@ double ConstraintTeachersMaxSpanPerDay::fitness(Solution& c, const Rules& r, QLi
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
 	}
 	
-	Q_UNUSED(cl);
-	Q_UNUSED(dl);
-	Q_UNUSED(conflictsString);
-
 	assert(this->weightPercentage==100.0);
 	
 	int nbroken=0;
@@ -18092,7 +17927,7 @@ ErrorCode ConstraintStudentsSetMaxSpanPerDay::computeInternalStructure(const Rul
 	return ErrorCode();
 }
 
-double ConstraintStudentsSetMaxSpanPerDay::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintStudentsSetMaxSpanPerDay::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -18101,10 +17936,6 @@ double ConstraintStudentsSetMaxSpanPerDay::fitness(Solution& c, const Rules& r, 
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
 	}
-
-	Q_UNUSED(cl);
-	Q_UNUSED(dl);
-	Q_UNUSED(conflictsString);
 
 	assert(this->weightPercentage==100.0);
 	
@@ -18278,7 +18109,7 @@ ErrorCode ConstraintStudentsMaxSpanPerDay::computeInternalStructure(const Rules&
 	return ErrorCode();
 }
 
-double ConstraintStudentsMaxSpanPerDay::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintStudentsMaxSpanPerDay::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -18287,10 +18118,6 @@ double ConstraintStudentsMaxSpanPerDay::fitness(Solution& c, const Rules& r, QLi
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
 	}
-
-	Q_UNUSED(cl);
-	Q_UNUSED(dl);
-	Q_UNUSED(conflictsString);
 
 	assert(this->weightPercentage==100.0);
 	
@@ -18475,7 +18302,7 @@ QString ConstraintTeacherMinRestingHours::getDetailedDescription(const Rules& r)
 	return s;
 }
 
-double ConstraintTeacherMinRestingHours::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintTeacherMinRestingHours::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -18485,10 +18312,6 @@ double ConstraintTeacherMinRestingHours::fitness(Solution& c, const Rules& r, QL
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
 	}
 	
-	Q_UNUSED(cl);
-	Q_UNUSED(dl);
-	Q_UNUSED(conflictsString);
-
 	assert(this->weightPercentage==100.0);
 	
 	int nbroken=0;
@@ -18663,7 +18486,7 @@ QString ConstraintTeachersMinRestingHours::getDetailedDescription(const Rules& r
 	return s;
 }
 
-double ConstraintTeachersMinRestingHours::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintTeachersMinRestingHours::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -18673,10 +18496,6 @@ double ConstraintTeachersMinRestingHours::fitness(Solution& c, const Rules& r, Q
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
 	}
 	
-	Q_UNUSED(cl);
-	Q_UNUSED(dl);
-	Q_UNUSED(conflictsString);
-
 	assert(this->weightPercentage==100.0);
 	
 	int nbroken=0;
@@ -18907,7 +18726,7 @@ ErrorCode ConstraintStudentsSetMinRestingHours::computeInternalStructure(const R
 	return ErrorCode();
 }
 
-double ConstraintStudentsSetMinRestingHours::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintStudentsSetMinRestingHours::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -18916,10 +18735,6 @@ double ConstraintStudentsSetMinRestingHours::fitness(Solution& c, const Rules& r
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
 	}
-
-	Q_UNUSED(cl);
-	Q_UNUSED(dl);
-	Q_UNUSED(conflictsString);
 
 	assert(this->weightPercentage==100.0);
 	
@@ -19096,7 +18911,7 @@ ErrorCode ConstraintStudentsMinRestingHours::computeInternalStructure(const Rule
 	return ErrorCode();
 }
 
-double ConstraintStudentsMinRestingHours::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+double ConstraintStudentsMinRestingHours::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -19105,10 +18920,6 @@ double ConstraintStudentsMinRestingHours::fitness(Solution& c, const Rules& r, Q
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
 	}
-
-	Q_UNUSED(cl);
-	Q_UNUSED(dl);
-	Q_UNUSED(conflictsString);
 
 	assert(this->weightPercentage==100.0);
 	
@@ -19334,7 +19145,7 @@ QString ConstraintTeacherMinContinuousGapInInterval::getDetailedDescription(cons
 	return s;
 }
 
-double ConstraintTeacherMinContinuousGapInInterval::fitness(Solution &c, const Rules &r, QList<double> &cl, QList<QString> &dl, QString *conflictsString)
+double ConstraintTeacherMinContinuousGapInInterval::fitness(Solution &c, const Rules &r, ConflictInfo* conflictInfo)
 {
 	//if the matrix teachersMatrix is already calculated, do not calculate it again!
 	if(!c.teachersMatrixReady){
@@ -19368,20 +19179,19 @@ double ConstraintTeacherMinContinuousGapInInterval::fitness(Solution &c, const R
 		int increase = minGapDuration - maxFoundGap;
 		nbroken += increase;
 
-		QString s= tr("Time constraint teacher min continuous gap in interval broken for teacher: %1, on day %2, requires %3 hours, has only %4 hours.")
-				.arg(r.internalTeachersList[t]->name)
-				.arg(r.daysOfTheWeek[d])
-				.arg(this->minGapDuration)
-				.arg(maxFoundGap);
-		s+=" ";
-		s += tr("This increases the conflicts total by %1")
-		 .arg(CustomFETString::number(increase*weightPercentage/100));
+		if (conflictInfo != NULL) {
+			QString s= tr("Time constraint teacher min continuous gap in interval broken for teacher: %1, on day %2, requires %3 hours, has only %4 hours.")
+					.arg(r.internalTeachersList[t]->name)
+					.arg(r.daysOfTheWeek[d])
+					.arg(this->minGapDuration)
+					.arg(maxFoundGap);
+			s+=" ";
+			s += tr("This increases the conflicts total by %1")
+					.arg(CustomFETString::number(increase*weightPercentage/100));
 
-		dl.append(s);
-		cl.append(increase*weightPercentage/100);
-
-		if (conflictsString != NULL)
-			*conflictsString += s+"\n";
+			conflictInfo->descriptions.append(s);
+			conflictInfo->weights.append(increase*weightPercentage/100);
+		}
 	}
 
 	return weightPercentage/100 * nbroken;
@@ -19584,7 +19394,7 @@ QString ConstraintTeachersMinContinuousGapInInterval::getDetailedDescription(con
 	return s;
 }
 
-double ConstraintTeachersMinContinuousGapInInterval::fitness(Solution &c, const Rules &r, QList<double> &cl, QList<QString> &dl, QString *conflictsString)
+double ConstraintTeachersMinContinuousGapInInterval::fitness(Solution &c, const Rules &r, ConflictInfo* conflictInfo)
 {
 	//if the matrix teachersMatrix is already calculated, do not calculate it again!
 	if(!c.teachersMatrixReady){
@@ -19617,20 +19427,19 @@ double ConstraintTeachersMinContinuousGapInInterval::fitness(Solution &c, const 
 			int increase = minGapDuration - maxFoundGap;
 			nbroken += increase;
 
-			QString s= tr("Time constraint teachers min continuous gap in interval broken for teacher: %1, on day %2, requires %3 hours, has only %4 hours.")
-					.arg(r.internalTeachersList[t]->name)
-					.arg(r.daysOfTheWeek[d])
-					.arg(this->minGapDuration)
-					.arg(maxFoundGap);
-			s+=" ";
-			s += tr("This increases the conflicts total by %1")
-			 .arg(CustomFETString::number(increase*weightPercentage/100));
+			if (conflictInfo != NULL) {
+				QString s= tr("Time constraint teachers min continuous gap in interval broken for teacher: %1, on day %2, requires %3 hours, has only %4 hours.")
+						.arg(r.internalTeachersList[t]->name)
+						.arg(r.daysOfTheWeek[d])
+						.arg(this->minGapDuration)
+						.arg(maxFoundGap);
+				s+=" ";
+				s += tr("This increases the conflicts total by %1")
+						.arg(CustomFETString::number(increase*weightPercentage/100));
 
-			dl.append(s);
-			cl.append(increase*weightPercentage/100);
-
-			if (conflictsString != NULL)
-				*conflictsString += s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(increase*weightPercentage/100);
+			}
 		}
 	}
 
@@ -19885,7 +19694,7 @@ QString ConstraintStudentsSetMinContinuousGapInInterval::getDetailedDescription(
 	return s;
 }
 
-double ConstraintStudentsSetMinContinuousGapInInterval::fitness(Solution &c, const Rules &r, QList<double> &cl, QList<QString> &dl, QString *conflictsString)
+double ConstraintStudentsSetMinContinuousGapInInterval::fitness(Solution &c, const Rules &r, ConflictInfo* conflictInfo)
 {
 	//if the matrix subgroupsMatrix is already calculated, do not calculate it again!
 	if(!c.subgroupsMatrixReady){
@@ -19917,22 +19726,21 @@ double ConstraintStudentsSetMinContinuousGapInInterval::fitness(Solution &c, con
 				maxFoundGap = gap;
 			int increase = minGapDuration - maxFoundGap;
 			double weightIncrease = increase*weightPercentage/100;
-
-			QString s= tr("Time constraint students set min continuous gap in interval broken for students set: %1, on day %2, requires %3 hours, has only %4 hours.")
-					.arg(r.internalSubgroupsList[sbg]->name)
-					.arg(r.daysOfTheWeek[d])
-					.arg(this->minGapDuration)
-					.arg(maxFoundGap);
-			s+=" ";
-			s += tr("This increases the conflicts total by %1")
-					.arg(CustomFETString::number(increase*weightPercentage/100));
-
-			dl.append(s);
-			cl.append(weightIncrease);
 			fitness += weightIncrease;
 
-			if (conflictsString != NULL)
-				*conflictsString += s+"\n";
+			if (conflictInfo != NULL) {
+				QString s= tr("Time constraint students set min continuous gap in interval broken for students set: %1, on day %2, requires %3 hours, has only %4 hours.")
+						.arg(r.internalSubgroupsList[sbg]->name)
+						.arg(r.daysOfTheWeek[d])
+						.arg(this->minGapDuration)
+						.arg(maxFoundGap);
+				s+=" ";
+				s += tr("This increases the conflicts total by %1")
+						.arg(CustomFETString::number(increase*weightPercentage/100));
+
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(weightIncrease);
+			}
 		}
 	}
 	return fitness;
@@ -20134,7 +19942,7 @@ QString ConstraintStudentsMinContinuousGapInInterval::getDetailedDescription(con
 	return s;
 }
 
-double ConstraintStudentsMinContinuousGapInInterval::fitness(Solution &c, const Rules &r, QList<double> &cl, QList<QString> &dl, QString *conflictsString)
+double ConstraintStudentsMinContinuousGapInInterval::fitness(Solution &c, const Rules &r, ConflictInfo* conflictInfo)
 {
 	//if the matrix subgroupsMatrix is already calculated, do not calculate it again!
 	if(!c.subgroupsMatrixReady){
@@ -20167,20 +19975,19 @@ double ConstraintStudentsMinContinuousGapInInterval::fitness(Solution &c, const 
 			int increase = minGapDuration - maxFoundGap;
 			nbroken += increase;
 
-			QString s= tr("Time constraint students min continuous gap in interval broken for students set: %1, on day %2, requires %3 hours, has only %4 hours.")
-					.arg(r.internalSubgroupsList[sbg]->name)
-					.arg(r.daysOfTheWeek[d])
-					.arg(this->minGapDuration)
-					.arg(maxFoundGap);
-			s+=" ";
-			s += tr("This increases the conflicts total by %1")
-			 .arg(CustomFETString::number(increase*weightPercentage/100));
+			if (conflictInfo != NULL) {
+				QString s= tr("Time constraint students min continuous gap in interval broken for students set: %1, on day %2, requires %3 hours, has only %4 hours.")
+						.arg(r.internalSubgroupsList[sbg]->name)
+						.arg(r.daysOfTheWeek[d])
+						.arg(this->minGapDuration)
+						.arg(maxFoundGap);
+				s+=" ";
+				s += tr("This increases the conflicts total by %1")
+						.arg(CustomFETString::number(increase*weightPercentage/100));
 
-			dl.append(s);
-			cl.append(increase*weightPercentage/100);
-
-			if (conflictsString != NULL)
-				*conflictsString += s+"\n";
+				conflictInfo->descriptions.append(s);
+				conflictInfo->weights.append(increase*weightPercentage/100);
+			}
 		}
 	}
 
