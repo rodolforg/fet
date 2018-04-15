@@ -282,6 +282,7 @@ public:
 	QString getDetailedDescription(const Rules& r) const;
 
 	double fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo = NULL);
+	double fitness(Solution& c, const Rules& r, bool ignoreUnallocated, ConflictInfo* conflictInfo = NULL);
 
 	bool isRelatedToActivity(const Rules& r, const Activity* a) const;
 	

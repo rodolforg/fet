@@ -81,9 +81,10 @@ void EditableTimetableWidget::contextMenuEvent(QContextMenuEvent* event)
 	if (item == NULL)
 		return;
 
-	int src_ai = item->data(Qt::UserRole).toInt();
+	const int src_ai = item->data(Qt::UserRole).toInt();
 
-	int h0 = getHour(item->row(), item->column());
+	const int h0 = getHour(item->row(), item->column());
+	const int time = getTime(item->row(), item->column());
 
 	QMenu contextMenu(tr("Context menu"), this);
 
@@ -100,6 +101,12 @@ void EditableTimetableWidget::contextMenuEvent(QContextMenuEvent* event)
 		QAction* action = new QAction(rules->internalActivitiesList[ai].getDescription(), this);
 		placeMenu->addAction(action);
 		connect(action, &QAction::triggered, [this,item, ai](){ placeActivity(item, ai); });
+		ConstraintBasicCompulsoryTime ctr(100);
+		Solution tmpSolution;
+		tmpSolution.copy(*rules, *solution);
+		tmpSolution.setTime(ai, time);
+		if (ctr.fitness(tmpSolution, *rules, true) > 0)
+			action->setEnabled(false);
 	}
 	placeMenu->addSeparator();
 	foreach (int ai, placed_activity_ids_but_clicked) {
@@ -108,6 +115,12 @@ void EditableTimetableWidget::contextMenuEvent(QContextMenuEvent* event)
 		QAction* action = new QAction(rules->internalActivitiesList[ai].getDescription(), this);
 		placeMenu->addAction(action);
 		connect(action, &QAction::triggered, [this,item, ai](){ placeActivity(item, ai); });
+		ConstraintBasicCompulsorySpace ctr(100);
+		Solution tmpSolution;
+		tmpSolution.copy(*rules, *solution);
+		tmpSolution.setTime(ai, time);
+		if (ctr.fitness(tmpSolution, *rules, true) > 0)
+			action->setEnabled(false);
 	}
 	int num_all_activity_ids_but_clicked = tempRemovedActivities.count() + placed_activity_ids_but_clicked.count();
 	if (num_all_activity_ids_but_clicked < 1)
