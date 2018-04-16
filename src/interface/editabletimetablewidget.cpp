@@ -95,32 +95,29 @@ void EditableTimetableWidget::contextMenuEvent(QContextMenuEvent* event)
 	}
 
 	QMenu* placeMenu = contextMenu.addMenu(tr("Place Activity…"));
-	foreach (int ai, tempRemovedActivities) {
+	QSet<int> all_placeable = tempRemovedActivities + placed_activity_ids_but_clicked;
+	bool changed_to_not_removed = false;
+	foreach (int ai, all_placeable) {
 		if (h0 + rules->internalActivitiesList[ai].duration > rules->nHoursPerDay)
 			continue;
+		if (!changed_to_not_removed && !tempRemovedActivities.contains(ai)) {
+			placeMenu->addSeparator();
+			changed_to_not_removed = true;
+		}
 		QAction* action = new QAction(rules->internalActivitiesList[ai].getDescription(), this);
 		placeMenu->addAction(action);
 		connect(action, &QAction::triggered, [this,item, ai](){ placeActivity(item, ai); });
-		ConstraintBasicCompulsoryTime ctr(100);
+		ConstraintBasicCompulsoryTime tctr(100);
 		Solution tmpSolution;
 		tmpSolution.copy(*rules, *solution);
+		if (src_ai != UNALLOCATED_ACTIVITY)
+			tmpSolution.unsetTime(src_ai);
 		tmpSolution.setTime(ai, time);
-		if (ctr.fitness(tmpSolution, *rules, true) > 0)
+		ConflictInfo conflictInfo;
+		if (tctr.fitness(tmpSolution, *rules, true, &conflictInfo) > 0) {
 			action->setEnabled(false);
-	}
-	placeMenu->addSeparator();
-	foreach (int ai, placed_activity_ids_but_clicked) {
-		if (h0 + rules->internalActivitiesList[ai].duration > rules->nHoursPerDay)
-			continue;
-		QAction* action = new QAction(rules->internalActivitiesList[ai].getDescription(), this);
-		placeMenu->addAction(action);
-		connect(action, &QAction::triggered, [this,item, ai](){ placeActivity(item, ai); });
-		ConstraintBasicCompulsorySpace ctr(100);
-		Solution tmpSolution;
-		tmpSolution.copy(*rules, *solution);
-		tmpSolution.setTime(ai, time);
-		if (ctr.fitness(tmpSolution, *rules, true) > 0)
-			action->setEnabled(false);
+			action->setText(action->text() + " (" + conflictInfo.descriptions.join("; ")+ ")");
+		}
 	}
 	int num_all_activity_ids_but_clicked = tempRemovedActivities.count() + placed_activity_ids_but_clicked.count();
 	if (num_all_activity_ids_but_clicked < 1)
