@@ -314,6 +314,7 @@ QList<int> EditableTimetableWidget::getPossibleSwaps(const QList<int> &activity_
 
 void EditableTimetableWidget::placeActivity(const QTableWidgetItem* item, int ai)
 {
+	QSet<int> removedNow;
 	int duration = rules->internalActivitiesList[ai].duration;
 	int day = getDay(item->row(), item->column());
 	int h0 = getHour(item->row(), item->column());
@@ -329,6 +330,7 @@ void EditableTimetableWidget::placeActivity(const QTableWidgetItem* item, int ai
 
 		solution->unsetTime(removableActIdx);
 		tempRemovedActivities.insert(removableActIdx);
+		removedNow.insert(removableActIdx);
 	}
 
 	tempRemovedActivities.remove(ai);
@@ -343,7 +345,7 @@ void EditableTimetableWidget::placeActivity(const QTableWidgetItem* item, int ai
 	clearSelection();
 
 	emit activityPlaced(ai);
-	for (int remAi : qAsConst(tempRemovedActivities)) {
+	for (int remAi : qAsConst(removedNow)) {
 		emit activityRemoved(remAi);
 	}
 }
