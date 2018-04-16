@@ -522,6 +522,8 @@ void TimetableViewStudentsDaysHorizontalForm::updateStudentsTimetableTable(){
 			}
 			studentsTimetableTable->item(j, k)->setText(s);
 			studentsTimetableTable->item(j,k)->setData(Qt::UserRole, ai);
+			for (int fakeJ = j+1; fakeJ < nextJ; fakeJ++)
+				studentsTimetableTable->item(j,k)->setData(Qt::UserRole, ai);
 
 			int rowspan = nextJ - j;
 			if (rowspan != studentsTimetableTable->rowSpan(j,k))
