@@ -33,7 +33,6 @@ EditableTimetableWidget::EditableTimetableWidget(QWidget *parent)
 EditableTimetableWidget::EditableTimetableWidget(int rows, int cols, QWidget* parent)
 	: QTableWidget(rows, cols, parent), rules(NULL), solution(NULL), timetableDirection(DAYS_HORIZONTAL)
 {
-	connect(this, SIGNAL(itemPressed(QTableWidgetItem*)), this, SLOT(itemPressed(QTableWidgetItem*)));
 }
 
 EditableTimetableWidget::~EditableTimetableWidget()
