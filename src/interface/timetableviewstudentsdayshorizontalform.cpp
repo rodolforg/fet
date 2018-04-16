@@ -334,6 +334,7 @@ void TimetableViewStudentsDaysHorizontalForm::updateStudentsTimetableTable(){
 		for(int j=0; j<studentsTimetableTable->rowCount(); j++){
 			if (studentsTimetableTable->rowSpan(j,k) != 1 || studentsTimetableTable->columnSpan(j,k) != 1)
 				studentsTimetableTable->setSpan(j, k, 1, 1);
+			studentsTimetableTable->item(j,k)->setData(Qt::UserRole, UNALLOCATED_ACTIVITY);
 		}
 	}
 
@@ -416,6 +417,8 @@ void TimetableViewStudentsDaysHorizontalForm::updateStudentsTimetableTable(){
 			}
 			studentsTimetableTable->item(j, k)->setText(s);
 			studentsTimetableTable->item(j,k)->setData(Qt::UserRole, ai);
+			for (int fakeJ = j+1; fakeJ < nextJ; fakeJ++)
+				studentsTimetableTable->item(j,k)->setData(Qt::UserRole, ai);
 
 			int rowspan = nextJ - j;
 			if (rowspan != studentsTimetableTable->rowSpan(j,k))
