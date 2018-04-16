@@ -267,7 +267,7 @@ void TimetableGenerateMultipleForm::start(){
 		QMutex mutex;
 		connect(&gt.rules, SIGNAL(internalStructureComputationStarted(int)), &progress, SLOT(setMaximum(int)));
 		connect(&gt.rules, SIGNAL(internalStructureComputationChanged(int)), &progress, SLOT(setValue(int)));
-		connect(&gt.rules, &Rules::internalStructureComputationStepChanged, [&progress, &mutex](RulesComputationStep step){
+		QMetaObject::Connection onStepConnection = connect(&gt.rules, &Rules::internalStructureComputationStepChanged, [&progress, &mutex](RulesComputationStep step){
 			QString text;
 			switch(step) {
 			case RulesComputationStep::ACTIVITIES:
@@ -289,6 +289,7 @@ void TimetableGenerateMultipleForm::start(){
 		progress.setModal(true);
 
 		ErrorList errors = gt.rules.computeInternalStructure();
+		disconnect(onStepConnection);
 		ErrorRenderer::renderErrorList(this, errors);
 		if (errors.hasError()){
 			QMessageBox::warning(this, TimetableGenerateMultipleForm::tr("FET warning"), TimetableGenerateMultipleForm::tr("Data is wrong. Please correct and try again"));
