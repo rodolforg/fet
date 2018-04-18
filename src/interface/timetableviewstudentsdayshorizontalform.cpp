@@ -427,12 +427,8 @@ void TimetableViewStudentsDaysHorizontalForm::updateStudentsTimetableTable(){
 
 	assert(gt.rules.initialized);
 
-	assert(sts);
-	int i;
-	for(i=0; i<gt.rules.nInternalSubgroups; i++)
-		if(gt.rules.internalSubgroupsList[i]==sts)
-			break;
-	assert(i<gt.rules.nInternalSubgroups);
+	int i = sts->indexInInternalSubgroupsList;
+	assert(sts == gt.rules.internalSubgroupsList[i]);
 	const Solution& best_solution=CachedSchedule::getCachedSolution();
 
 	for(int k=0; k<studentsTimetableTable->columnCount(); k++){
