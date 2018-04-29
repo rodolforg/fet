@@ -73,8 +73,6 @@ extern bool simulation_running;
 extern Matrix2D<double> notAllowedRoomTimePercentages;
 extern Matrix2D<bool> breakDayHour;
 
-extern CommunicationSpinBox communicationSpinBox;	//small hint to sync the forms
-
 TimetableViewRoomsDaysHorizontalForm::TimetableViewRoomsDaysHorizontalForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);
@@ -182,7 +180,7 @@ TimetableViewRoomsDaysHorizontalForm::TimetableViewRoomsDaysHorizontalForm(QWidg
 		roomsListWidget->setCurrentRow(0);
 
 	//added by Volker Dirr
-	connect(&communicationSpinBox, SIGNAL(valueChanged()), this, SLOT(updateRoomsTimetableTable()));
+	connect(&LockUnlock::communicationSpinBox, SIGNAL(valueChanged()), this, SLOT(updateRoomsTimetableTable()));
 }
 
 TimetableViewRoomsDaysHorizontalForm::~TimetableViewRoomsDaysHorizontalForm()

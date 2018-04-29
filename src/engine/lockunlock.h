@@ -47,6 +47,8 @@ public slots:
 
 class LockUnlock{
 public:
+	static CommunicationSpinBox communicationSpinBox; // small hint to sync the forms
+
 	static void computeLockedUnlockedActivitiesTimeSpace();
 	static void computeLockedUnlockedActivitiesOnlyTime();
 	static void computeLockedUnlockedActivitiesOnlySpace();
@@ -89,6 +91,12 @@ public:
 	static QString getActivityLockDetailsString(int activityId);
 
 	static void assertIsUpdated();
+
+private:
+	static QSet<int> idsOfLockedTime;
+	static QSet<int> idsOfLockedSpace;
+	static QSet<int> idsOfPermanentlyLockedTime;
+	static QSet<int> idsOfPermanentlyLockedSpace;
 };
 
 #endif
