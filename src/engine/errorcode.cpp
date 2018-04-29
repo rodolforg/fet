@@ -82,3 +82,14 @@ bool ErrorList::hasFatal() const
 	}
 	return false;
 }
+
+void ErrorList::setGroupIdForMessages(int groupId, ErrorCode::Severity filter, bool override)
+{
+	int nElements = this->count();
+	for (int i=0; i < nElements; i++) {
+		ErrorCode& erc = (*this)[i];
+		if (erc.severity == filter)
+			if (override || erc.groupId == 0)
+				erc.groupId = groupId;
+	}
+}

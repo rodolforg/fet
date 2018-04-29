@@ -83,10 +83,13 @@ bool ErrorRenderer::renderSkippableErrorCode(QWidget* parent, const ErrorCode& e
 	return skip == 0;
 }
 
-void ErrorRenderer::renderErrorList(QWidget* parent, const ErrorList& errors)
+void ErrorRenderer::renderErrorList(QWidget* parent, const ErrorList& errors, ErrorCode::Severity severity)
 {
 	QSet<int> ignoredGroupIds;
+	ignoredGroupIds << -1;
 	foreach (const ErrorCode& erc, errors) {
+		if (erc.severity > severity)
+			continue;
 		if (!erc.groupId) {
 			renderErrorCode(parent, erc);
 		}
