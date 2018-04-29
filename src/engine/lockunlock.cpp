@@ -87,6 +87,198 @@ void LockUnlock::computeLockedUnlockedActivitiesOnlySpace()
 	}
 }
 
+bool LockUnlock::isActivityTimeLocked(int activityId)
+{
+	return idsOfLockedTime.contains(activityId) || idsOfPermanentlyLockedTime.contains(activityId);
+}
+
+bool LockUnlock::isActivityTimePermLocked(int activityId)
+{
+	return idsOfPermanentlyLockedTime.contains(activityId);
+}
+
+bool LockUnlock::isActivitySpaceLocked(int activityId)
+{
+	return idsOfLockedSpace.contains(activityId) || idsOfPermanentlyLockedSpace.contains(activityId);
+}
+
+bool LockUnlock::isActivitySpacePermLocked(int activityId)
+{
+	return idsOfPermanentlyLockedSpace.contains(activityId);
+}
+
+ConstraintActivityPreferredStartingTime* LockUnlock::lockTime(Rules* rules, int activityId, int day, int hour)
+{
+	bool ruleWasAlreadyComputed = rules->internalStructureComputed;
+
+	ConstraintActivityPreferredStartingTime* ctr=new ConstraintActivityPreferredStartingTime(100.0, activityId, day, hour, false);
+	bool added = rules->addTimeConstraint(ctr);
+	if (!added) {
+		delete ctr;
+		return NULL;
+	}
+	idsOfLockedTime.insert(activityId);
+
+	if (ruleWasAlreadyComputed && !rules->internalStructureComputed) {
+		int nComputedItems = 0;
+		bool canceled = false;
+		rules->computeInternalTimeConstraintList(nComputedItems, canceled);
+		rules->internalStructureComputed = true;
+	}
+	return ctr;
+}
+
+ErrorList LockUnlock::unlockTime(Rules* rules, int activityId, int& nUnlocked)
+{
+	ErrorList errors;
+
+	QList<TimeConstraint*> tmptc;
+	tmptc.clear();
+	int count=0;
+
+	foreach(ConstraintActivityPreferredStartingTime* c, rules->apstHash.value(activityId, QSet<ConstraintActivityPreferredStartingTime*>())){
+		assert(c->activityId == activityId);
+		if(c->activityId==activityId && c->weightPercentage==100.0 && c->active && c->day>=0 && c->hour>=0){
+			count++;
+			if(c->permanentlyLocked){
+				if(idsOfLockedTime.contains(c->activityId) || !idsOfPermanentlyLockedTime.contains(c->activityId)){
+					errors << ErrorCode(ErrorCode::Warning,
+										QCoreApplication::translate("TimetableViewForm", "Small problem detected")
+					  +"\n\n"+QCoreApplication::translate("TimetableViewForm", "A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them").arg(activityId)
+					  +"\n\n"+QCoreApplication::translate("TimetableViewForm", "A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again")
+					  +"\n\n"+QCoreApplication::translate("TimetableViewForm", "Please report possible bug")
+					);
+				}
+				else{
+					errors << ErrorCode(ErrorCode::Warning,
+										QCoreApplication::translate("TimetableViewForm",
+																	"Constraint %1 will not be removed, because it is permanently locked. If you want to unlock it you must go to the constraints menu.").arg("\n"+c->getDetailedDescription(*rules)+"\n"));
+				}
+			}
+			else{
+				if(!idsOfLockedTime.contains(c->activityId) || idsOfPermanentlyLockedTime.contains(c->activityId)){
+					errors << ErrorCode(ErrorCode::Warning,
+										 QCoreApplication::translate("TimetableViewForm", "Small problem detected")
+					  +"\n\n"+QCoreApplication::translate("TimetableViewForm", "A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them").arg(activityId)
+					  +"\n\n"+QCoreApplication::translate("TimetableViewForm", "A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again")
+					  +"\n\n"+QCoreApplication::translate("TimetableViewForm", "Please report possible bug")
+					);
+				}
+				else{
+					tmptc.append((TimeConstraint*)c);
+				}
+			}
+		}
+	}
+	if(count!=1)
+		errors << ErrorCode(ErrorCode::Warning,
+							QCoreApplication::translate("TimetableViewForm", "You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints").arg(tmptc.size()));
+
+	nUnlocked = 0;
+	foreach(TimeConstraint* deltc, tmptc){
+		errors << ErrorCode(ErrorCode::Info,
+							QCoreApplication::translate("TimetableViewForm", "The following constraint will be deleted:")+"\n"+deltc->getDetailedDescription(*rules)+"\n");
+		bool ruleWasAlreadyComputed = rules->internalStructureComputed;
+		rules->removeTimeConstraint(deltc);
+		idsOfLockedTime.remove(activityId);
+		nUnlocked++;
+		if (ruleWasAlreadyComputed && !rules->internalStructureComputed) {
+			int nComputedItems = 0;
+			bool canceled = false;
+			rules->computeInternalTimeConstraintList(nComputedItems, canceled);
+			rules->internalStructureComputed = true;
+		}
+	}
+
+	return errors;
+}
+
+ConstraintActivityPreferredRoom* LockUnlock::lockSpace(Rules* rules, int activityId, const QString& roomName)
+{
+	bool ruleWasAlreadyComputed = rules->internalStructureComputed;
+
+	ConstraintActivityPreferredRoom* ctr=new ConstraintActivityPreferredRoom(100, activityId, roomName, false);
+	bool added = rules->addSpaceConstraint(ctr);
+	if(!added){
+		delete ctr;
+		return NULL;
+	}
+	idsOfLockedSpace.insert(activityId);
+
+	if (ruleWasAlreadyComputed && !rules->internalStructureComputed) {
+		int nComputedItems = 0;
+		bool canceled = false;
+		rules->computeInternalSpaceConstraintList(nComputedItems, canceled);
+		rules->internalStructureComputed = true;
+	}
+	return ctr;
+}
+
+ErrorList LockUnlock::unlockSpace(Rules* rules, int activityId, int& nUnlocked)
+{
+	ErrorList errors;
+
+	QList<SpaceConstraint*> tmpsc;
+	tmpsc.clear();
+	int count=0;
+
+	foreach(ConstraintActivityPreferredRoom* c, rules->aprHash.value(activityId, QSet<ConstraintActivityPreferredRoom*>())){
+		assert(c->activityId==activityId);
+		if(c->activityId==activityId && c->weightPercentage==100.0 && c->active){
+			count++;
+			if(c->permanentlyLocked){
+				if(idsOfLockedSpace.contains(c->activityId) || !idsOfPermanentlyLockedSpace.contains(c->activityId)){
+					errors << ErrorCode(ErrorCode::Warning,
+										QCoreApplication::translate("TimetableViewForm", "Small problem detected")
+					  +"\n\n"+QCoreApplication::translate("TimetableViewForm", "A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them").arg(activityId)
+					  +"\n\n"+QCoreApplication::translate("TimetableViewForm", "A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again")
+					  +"\n\n"+QCoreApplication::translate("TimetableViewForm", "Please report possible bug")
+					);
+				}
+				else{
+					errors << ErrorCode(ErrorCode::Warning,
+										QCoreApplication::translate("TimetableViewForm",
+																	"Constraint %1 will not be removed, because it is permanently locked. If you want to unlock it you must go to the constraints menu.").arg("\n"+c->getDetailedDescription(*rules)+"\n"));
+				}
+			}
+			else{
+				if(!idsOfLockedSpace.contains(c->activityId) || idsOfPermanentlyLockedSpace.contains(c->activityId)){
+					errors << ErrorCode(ErrorCode::Warning,
+										QCoreApplication::translate("TimetableViewForm", "Small problem detected")
+					  +"\n\n"+QCoreApplication::translate("TimetableViewForm", "A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them").arg(activityId)
+					  +"\n\n"+QCoreApplication::translate("TimetableViewForm", "A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again")
+					  +"\n\n"+QCoreApplication::translate("TimetableViewForm", "Please report possible bug")
+					);
+				}
+				else{
+					tmpsc.append((SpaceConstraint*)c);
+				}
+			}
+		}
+	}
+	if(count!=1)
+		errors << ErrorCode(ErrorCode::Warning,
+							QCoreApplication::translate("TimetableViewForm", "You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints").arg(tmpsc.size()));
+
+	nUnlocked = 0;
+	foreach(SpaceConstraint* delsc, tmpsc){
+		errors << ErrorCode(ErrorCode::Info,
+							QCoreApplication::translate("TimetableViewForm", "The following constraint will be deleted:")+"\n"+delsc->getDetailedDescription(*rules)+"\n");
+		bool ruleWasAlreadyComputed = rules->internalStructureComputed;
+		rules->removeSpaceConstraint(delsc);
+		idsOfLockedSpace.remove(activityId);
+		nUnlocked++;
+		if (ruleWasAlreadyComputed && !rules->internalStructureComputed) {
+			int nComputedItems = 0;
+			bool canceled = false;
+			rules->computeInternalSpaceConstraintList(nComputedItems, canceled);
+			rules->internalStructureComputed = true;
+		}
+	}
+
+	return errors;
+}
+
 void LockUnlock::increaseCommunicationSpinBox()
 {
 	communicationSpinBox.increaseValue();
