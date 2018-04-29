@@ -483,7 +483,7 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 
 					
 
-					if(idsOfPermanentlyLockedTime.contains(act->id) || idsOfLockedTime.contains(act->id)){
+					if(LockUnlock::isActivityTimeLocked(act->id)){
 						QFont font(item->font());
 						font.setBold(true);
 						item->setFont(font);
@@ -494,7 +494,7 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 						item->setFont(font);
 					}
 					
-					if(idsOfPermanentlyLockedSpace.contains(act->id) || idsOfLockedSpace.contains(act->id)){
+					if(LockUnlock::isActivitySpaceLocked(act->id)){
 						QFont font(item->font());
 						font.setItalic(true);
 						item->setFont(font);
