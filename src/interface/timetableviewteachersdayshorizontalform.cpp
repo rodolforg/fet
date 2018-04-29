@@ -38,6 +38,8 @@
 
 #include "lockunlock.h"
 
+#include "errorrenderer.h"
+
 #include <QMessageBox>
 
 #include <QTableWidget>
@@ -69,11 +71,6 @@ extern bool simulation_running;
 
 extern Matrix3D<bool> teacherNotAvailableDayHour;
 extern Matrix2D<bool> breakDayHour;
-
-extern QSet<int> idsOfLockedTime;		//care about locked activities in view forms
-extern QSet<int> idsOfLockedSpace;		//care about locked activities in view forms
-extern QSet<int> idsOfPermanentlyLockedTime;	//care about locked activities in view forms
-extern QSet<int> idsOfPermanentlyLockedSpace;	//care about locked activities in view forms
 
 extern CommunicationSpinBox communicationSpinBox;	//small hint to sync the forms
 
@@ -517,9 +514,10 @@ void TimetableViewTeachersDaysHorizontalForm::lock(bool lockTime, bool lockSpace
 		return;
 	}
 
-	const Solution* tc=&CachedSchedule::getCachedSolution();
+	const Solution* c=&CachedSchedule::getCachedSolution();
 	
 	bool report=false; //the messages are annoying
+	ErrorList errors;
 	
 	int addedT=0, unlockedT=0;
 	int addedS=0, unlockedS=0;
@@ -530,156 +528,45 @@ void TimetableViewTeachersDaysHorizontalForm::lock(bool lockTime, bool lockSpace
 		int k = item->column();
 				int ai=CachedSchedule::teachers_timetable_weekly[i][k][j];
 				if(ai!=UNALLOCATED_ACTIVITY){
-					int a_tim=tc->times[ai];
+					int a_tim=c->times[ai];
 					int hour=a_tim/gt.rules.nDaysPerWeek;
 					int day=a_tim%gt.rules.nDaysPerWeek;
 
 					const Activity* act=&gt.rules.internalActivitiesList[ai];
 
 					if(lockTime){
-						ConstraintActivityPreferredStartingTime* ctr=new ConstraintActivityPreferredStartingTime(100.0, act->id, day, hour, false);
-						bool t=gt.rules.addTimeConstraint(ctr);
-						QString s;
-						if(t){ //modified by Volker Dirr, so you can also unlock (start)
+						TimeConstraint* ctr = LockUnlock::lockTime(&gt.rules, act->id, day, hour);
+						if (ctr != NULL) {
+							errors << ErrorCode(ErrorCode::Info, tr("Added the following constraint:")+"\n"+ctr->getDetailedDescription(gt.rules));
 							addedT++;
-							idsOfLockedTime.insert(act->id);
-							s+=tr("Added the following constraint:")+"\n"+ctr->getDetailedDescription(gt.rules);
 						}
 						else{
-							delete ctr;
-						
-							QList<TimeConstraint*> tmptc;
-							tmptc.clear();
-							int count=0;
-							foreach(ConstraintActivityPreferredStartingTime* c, gt.rules.apstHash.value(act->id, QSet<ConstraintActivityPreferredStartingTime*>())){
-								assert(c->activityId==act->id);
-								if(c->activityId==act->id && c->weightPercentage==100.0 && c->active && c->day>=0 && c->hour>=0){
-									count++;
-									if(c->permanentlyLocked){
-										if(idsOfLockedTime.contains(c->activityId) || !idsOfPermanentlyLockedTime.contains(c->activityId)){
-											QMessageBox::warning(this, tr("FET warning"), tr("Small problem detected")
-											 +"\n\n"+tr("A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them").arg(act->id)
-											 +"\n\n"+tr("A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again")
-											 +"\n\n"+tr("Please report possible bug")
-											 );
-										}
-										else{
-											s+=tr("Constraint %1 will not be removed, because it is permanently locked. If you want to unlock it you must go to the constraints menu.").arg("\n"+c->getDetailedDescription(gt.rules)+"\n");
-										}
-									}
-									else{
-										if(!idsOfLockedTime.contains(c->activityId) || idsOfPermanentlyLockedTime.contains(c->activityId)){
-											QMessageBox::warning(this, tr("FET warning"), tr("Small problem detected")
-											 +"\n\n"+tr("A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them").arg(act->id)
-											 +"\n\n"+tr("A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again")
-											 +"\n\n"+tr("Please report possible bug")
-											 );
-										}
-										else{
-											tmptc.append((TimeConstraint*)c);
-										}
-									}
-								}
-							}
-							if(count!=1)
-								QMessageBox::warning(this, tr("FET warning"), tr("You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints").arg(tmptc.size()));
-
-							foreach(TimeConstraint* deltc, tmptc){
-								s+=tr("The following constraint will be deleted:")+"\n"+deltc->getDetailedDescription(gt.rules)+"\n";
-								gt.rules.removeTimeConstraint(deltc);
-								idsOfLockedTime.remove(act->id);
-								unlockedT++;
-								//delete deltc; - done by rules.removeTim...
-							}
-							tmptc.clear();
-							//gt.rules.internalStructureComputed=false;
-						}  //modified by Volker Dirr, so you can also unlock (end)
-						
-						if(report){
-							int k;
-							k=QMessageBox::information(this, tr("FET information"), s,
-							 tr("Skip information"), tr("See next"), QString(), 1, 0 );
-
-		 					if(k==0)
-								report=false;
+							int nUnlocked = 0;
+							errors << LockUnlock::unlockTime(&gt.rules, act->id, nUnlocked);
+							unlockedT += nUnlocked;
 						}
+						if (errors.hasFatal())
+							break;
 					}
-					
-					int ri=tc->rooms[ai];
-					if(ri!=UNALLOCATED_SPACE && ri!=UNSPECIFIED_ROOM && lockSpace){
-						ConstraintActivityPreferredRoom* ctr=new ConstraintActivityPreferredRoom(100, act->id, (gt.rules.internalRoomsList[ri])->name, false);
-						bool t=gt.rules.addSpaceConstraint(ctr);
 
-						QString s;
-						
-						if(t){ //modified by Volker Dirr, so you can also unlock (start)
+					int ri=c->rooms[ai];
+					if(ri!=UNALLOCATED_SPACE && ri!=UNSPECIFIED_ROOM && lockSpace){
+						SpaceConstraint* ctr = LockUnlock::lockSpace(&gt.rules, act->id, gt.rules.internalRoomsList[ri]->name);
+						if (ctr != NULL) {
+							errors << ErrorCode(ErrorCode::Info, tr("Added the following constraint:")+"\n"+ctr->getDetailedDescription(gt.rules));
 							addedS++;
-							idsOfLockedSpace.insert(act->id);
-							s+=tr("Added the following constraint:")+"\n"+ctr->getDetailedDescription(gt.rules);
 						}
 						else{
-							delete ctr;
-						
-							QList<SpaceConstraint*> tmpsc;
-							tmpsc.clear();
-							int count=0;
-
-							foreach(ConstraintActivityPreferredRoom* c, gt.rules.aprHash.value(act->id, QSet<ConstraintActivityPreferredRoom*>())){
-								assert(c->activityId==act->id);
-
-								if(c->activityId==act->id && c->weightPercentage==100.0 && c->active){
-									count++;
-									if(c->permanentlyLocked){
-										if(idsOfLockedSpace.contains(c->activityId) || !idsOfPermanentlyLockedSpace.contains(c->activityId)){
-											QMessageBox::warning(this, tr("FET warning"), tr("Small problem detected")
-											 +"\n\n"+tr("A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them").arg(act->id)
-											 +"\n\n"+tr("A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again")
-											 +"\n\n"+tr("Please report possible bug")
-											 );
-										}
-										else{
-											s+=tr("Constraint %1 will not be removed, because it is permanently locked. If you want to unlock it you must go to the constraints menu.").arg("\n"+c->getDetailedDescription(gt.rules)+"\n");
-										}
-									}
-									else{
-										if(!idsOfLockedSpace.contains(c->activityId) || idsOfPermanentlyLockedSpace.contains(c->activityId)){
-											QMessageBox::warning(this, tr("FET warning"), tr("Small problem detected")
-											 +"\n\n"+tr("A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them").arg(act->id)
-											 +"\n\n"+tr("A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again")
-											 +"\n\n"+tr("Please report possible bug")
-											 );
-										}
-										else{
-											tmpsc.append((SpaceConstraint*)c);
-										}
-									}
-								}
-							}
-							if(count!=1)
-								QMessageBox::warning(this, tr("FET warning"), tr("You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints").arg(tmpsc.size()));
-
-							foreach(SpaceConstraint* delsc, tmpsc){
-								s+=tr("The following constraint will be deleted:")+"\n"+delsc->getDetailedDescription(gt.rules)+"\n";
-								gt.rules.removeSpaceConstraint(delsc);
-								idsOfLockedSpace.remove(act->id);
-								unlockedS++;
-								//delete delsc; done by rules.removeSpa...
-							}
-							tmpsc.clear();
-							//gt.rules.internalStructureComputed=false;
-						}  //modified by Volker Dirr, so you can also unlock (end)
-						
-						if(report){
-							int k;
-							k=QMessageBox::information(this, tr("FET information"), s,
-							 tr("Skip information"), tr("See next"), QString(), 1, 0 );
-								
-							if(k==0)
-								report=false;
+							int nUnlocked = 0;
+							errors << LockUnlock::unlockSpace(&gt.rules, act->id, nUnlocked);
+							unlockedS += nUnlocked;
 						}
+						if (errors.hasFatal())
+							break;
 					}
 				}
 	}
+	ErrorRenderer::renderErrorList(this, errors, report ? ErrorCode::Verbose : ErrorCode::Warning);
 
 	QStringList added;
 	QStringList removed;
