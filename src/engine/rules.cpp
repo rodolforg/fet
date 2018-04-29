@@ -567,153 +567,31 @@ ErrorList Rules::computeInternalStructure()
 	bool ok=true;
 
 	//time constraints
-	
-	int skipInactiveTimeConstraintsId = ErrorCode::nextGroupId();
-	
-	TimeConstraint* tctr;
-	
-	QSet<int> toSkipTimeSet;
-	
-	int _c=0;
-	
-	for(int tctrindex=0; tctrindex<this->timeConstraintsList.size(); tctrindex++){
-		tctr=this->timeConstraintsList[tctrindex];
+	bool canceled = false;
+	ErrorList timeCtrErrors = computeInternalTimeConstraintList(numComputedItems, canceled);
+	errors << timeCtrErrors;
 
-		if(!tctr->active){
-			toSkipTimeSet.insert(tctrindex);
-		}
-		else if(tctr->hasInactiveActivities(*this)){
-			toSkipTimeSet.insert(tctrindex);
-		
-				QString s=tr("The following time constraint is ignored, because it refers to inactive activities:");
-				s+="\n";
-				s+=tctr->getDetailedDescription(*this);
-				
-			errors << ErrorCode(ErrorCode::Warning, s, skipInactiveTimeConstraintsId);
-		}
-		else if(tctr->weightPercentage == 0){
-			toSkipTimeSet.insert(tctrindex);
-		}
-		else{
-			_c++;
-		}
+	if (canceled) {
+		errors << ErrorCode(ErrorCode::Warning, tr("Canceled"));
+		emit internalStructureComputationFinished(false);
+		return errors;
 	}
-	
-	internalTimeConstraintsList.resize(_c);
-	
-	emit internalStructureComputationStepChanged(RulesComputationStep::TIME_CONSTRAINTS);
-		
-	//assert(this->timeConstraintsList.size()<=MAX_TIME_CONSTRAINTS);
-	int tctri=0;
-	
-	for(int tctrindex=0; tctrindex<this->timeConstraintsList.size(); tctrindex++){
-		if(shouldAbortInternalStructureComputation){
-			errors << ErrorCode(ErrorCode::Warning, tr("Canceled"));
-			emit internalStructureComputationFinished(false);
-			return errors;
-		}
+	if (timeCtrErrors.hasError())
+		ok = false;
 
-		tctr=this->timeConstraintsList[tctrindex];
-		
-		if(toSkipTimeSet.contains(tctrindex)) {
-			emit internalStructureComputationChanged(++numComputedItems);
-			continue;
-		}
-		
-		ErrorCode erc = tctr->computeInternalStructure(*this);
-		emit internalStructureComputationChanged(++numComputedItems);
-		if (erc)
-			errors << erc;
-		if (erc.isError()) {
-			//assert(0);
-			ok=false;
-			continue;
-		}
-		this->internalTimeConstraintsList[tctri++]=tctr;
-	}
-
-	this->nInternalTimeConstraints=tctri;
-	if(VERBOSE){
-		cout<<_c<<" time constraints after first pass (after removing inactive ones)"<<endl;
-		cout<<"  "<<this->nInternalTimeConstraints<<" time constraints after second pass (after removing wrong ones)"<<endl;
-	}
-	assert(_c>=this->nInternalTimeConstraints); //because some constraints may have toSkipTime false, but computeInternalStructure also false
-	//assert(this->nInternalTimeConstraints<=MAX_TIME_CONSTRAINTS);
-	
 	//space constraints
-	
-	int skipInactiveSpaceConstraintsId = ErrorCode::nextGroupId();
-	
-	SpaceConstraint* sctr;
-	
-	QSet<int> toSkipSpaceSet;
-	
-	_c=0;
+	canceled = false; // unnecessary
+	ErrorList spaceCtrErrors = computeInternalSpaceConstraintList(numComputedItems, canceled);
+	errors << spaceCtrErrors;
 
-	for(int sctrindex=0; sctrindex<this->spaceConstraintsList.size(); sctrindex++){
-		sctr=this->spaceConstraintsList[sctrindex];
-
-		if(!sctr->active){
-			toSkipSpaceSet.insert(sctrindex);
-		}
-		else if(sctr->hasInactiveActivities(*this)){
-			toSkipSpaceSet.insert(sctrindex);
-		
-				QString s=tr("The following space constraint is ignored, because it refers to inactive activities:");
-				s+="\n";
-				s+=sctr->getDetailedDescription(*this);
-				
-			errors << ErrorCode(ErrorCode::Warning, s, skipInactiveSpaceConstraintsId);
-		}
-		else if(sctr->weightPercentage == 0){
-			toSkipSpaceSet.insert(sctrindex);
-		}
-		else{
-			_c++;
-		}
+	if (canceled) {
+		errors << ErrorCode(ErrorCode::Warning, tr("Canceled"));
+		emit internalStructureComputationFinished(false);
+		return errors;
 	}
-	
-	internalSpaceConstraintsList.resize(_c);
-	
-	emit internalStructureComputationStepChanged(RulesComputationStep::SPACE_CONSTRAINTS);
-	//assert(this->spaceConstraintsList.size()<=MAX_SPACE_CONSTRAINTS);
+	if (spaceCtrErrors.hasError())
+		ok = false;
 
-	int sctri=0;
-
-	for(int sctrindex=0; sctrindex<this->spaceConstraintsList.size(); sctrindex++){
-		if(shouldAbortInternalStructureComputation){
-			errors << ErrorCode(ErrorCode::Warning, tr("Canceled"));
-			emit internalStructureComputationFinished(false);
-			return errors;
-		}
-
-		sctr=this->spaceConstraintsList[sctrindex];
-	
-		if(toSkipSpaceSet.contains(sctrindex)) {
-			emit internalStructureComputationChanged(++numComputedItems);
-			continue;
-		}
-		
-		ErrorCode erc = sctr->computeInternalStructure(*this);
-		emit internalStructureComputationChanged(++numComputedItems);
-		if (erc)
-			errors << erc;
-		if (erc.isError()) {
-			//assert(0);
-			ok=false;
-			continue;
-		}
-		this->internalSpaceConstraintsList[sctri++]=sctr;
-	}
-
-	this->nInternalSpaceConstraints=sctri;
-	if(VERBOSE){
-		cout<<_c<<" space constraints after first pass (after removing inactive ones)"<<endl;
-		cout<<"  "<<this->nInternalSpaceConstraints<<" space constraints after second pass (after removing wrong ones)"<<endl;
-	}
-	assert(_c>=this->nInternalSpaceConstraints); //because some constraints may have toSkipSpace false, but computeInternalStructure also false
-	//assert(this->nInternalSpaceConstraints<=MAX_SPACE_CONSTRAINTS);
-	
 	//group activities in initial order
 	if(groupActivitiesInInitialOrderList.count()>0){
 		QStringList fetBugs;
@@ -756,6 +634,156 @@ ErrorList Rules::computeInternalStructure()
 	//done.
 	this->internalStructureComputed=ok;
 	emit internalStructureComputationFinished(true);
+
+	return errors;
+}
+
+ErrorList Rules::computeInternalTimeConstraintList(int& numComputedItems, bool& canceled)
+{
+	ErrorList errors;
+
+	int skipInactiveTimeConstraintsId = ErrorCode::nextGroupId();
+	
+	TimeConstraint* tctr;
+	
+	QSet<int> toSkipTimeSet;
+	
+	int _c=0;
+	
+	for(int tctrindex=0; tctrindex<this->timeConstraintsList.size(); tctrindex++){
+		tctr=this->timeConstraintsList[tctrindex];
+
+		if(!tctr->active){
+			toSkipTimeSet.insert(tctrindex);
+		}
+		else if(tctr->hasInactiveActivities(*this)){
+			toSkipTimeSet.insert(tctrindex);
+		
+				QString s=tr("The following time constraint is ignored, because it refers to inactive activities:");
+				s+="\n";
+				s+=tctr->getDetailedDescription(*this);
+				
+			errors << ErrorCode(ErrorCode::Warning, s, skipInactiveTimeConstraintsId);
+		}
+		else if(tctr->weightPercentage == 0){
+			toSkipTimeSet.insert(tctrindex);
+		}
+		else{
+			_c++;
+		}
+	}
+	
+	internalTimeConstraintsList.resize(_c);
+	
+	emit internalStructureComputationStepChanged(RulesComputationStep::TIME_CONSTRAINTS);
+		
+	//assert(this->timeConstraintsList.size()<=MAX_TIME_CONSTRAINTS);
+	int tctri=0;
+	
+	for(int tctrindex=0; tctrindex<this->timeConstraintsList.size(); tctrindex++){
+		if(shouldAbortInternalStructureComputation){
+			canceled = true;
+			return errors;
+		}
+
+		tctr=this->timeConstraintsList[tctrindex];
+		
+		if(toSkipTimeSet.contains(tctrindex)) {
+			emit internalStructureComputationChanged(++numComputedItems);
+			continue;
+		}
+		
+		ErrorCode erc = tctr->computeInternalStructure(*this);
+		emit internalStructureComputationChanged(++numComputedItems);
+		if (erc)
+			errors << erc;
+		if (erc.isError())
+			continue;
+		this->internalTimeConstraintsList[tctri++]=tctr;
+	}
+
+	this->nInternalTimeConstraints=tctri;
+	if(VERBOSE){
+		cout<<_c<<" time constraints after first pass (after removing inactive ones)"<<endl;
+		cout<<"  "<<this->nInternalTimeConstraints<<" time constraints after second pass (after removing wrong ones)"<<endl;
+	}
+	assert(_c>=this->nInternalTimeConstraints); //because some constraints may have toSkipTime false, but computeInternalStructure also false
+	//assert(this->nInternalTimeConstraints<=MAX_TIME_CONSTRAINTS);
+
+	return errors;
+}
+
+ErrorList Rules::computeInternalSpaceConstraintList(int& numComputedItems, bool& canceled)
+{
+	ErrorList errors;
+
+	int skipInactiveSpaceConstraintsId = ErrorCode::nextGroupId();
+	
+	SpaceConstraint* sctr;
+	
+	QSet<int> toSkipSpaceSet;
+	
+	int _c=0;
+
+	for(int sctrindex=0; sctrindex<this->spaceConstraintsList.size(); sctrindex++){
+		sctr=this->spaceConstraintsList[sctrindex];
+
+		if(!sctr->active){
+			toSkipSpaceSet.insert(sctrindex);
+		}
+		else if(sctr->hasInactiveActivities(*this)){
+			toSkipSpaceSet.insert(sctrindex);
+		
+				QString s=tr("The following space constraint is ignored, because it refers to inactive activities:");
+				s+="\n";
+				s+=sctr->getDetailedDescription(*this);
+				
+			errors << ErrorCode(ErrorCode::Warning, s, skipInactiveSpaceConstraintsId);
+		}
+		else if(sctr->weightPercentage == 0){
+			toSkipSpaceSet.insert(sctrindex);
+		}
+		else{
+			_c++;
+		}
+	}
+	
+	internalSpaceConstraintsList.resize(_c);
+	
+	emit internalStructureComputationStepChanged(RulesComputationStep::SPACE_CONSTRAINTS);
+	//assert(this->spaceConstraintsList.size()<=MAX_SPACE_CONSTRAINTS);
+
+	int sctri=0;
+
+	for(int sctrindex=0; sctrindex<this->spaceConstraintsList.size(); sctrindex++){
+		if(shouldAbortInternalStructureComputation){
+			canceled = true;
+			return errors;
+		}
+
+		sctr=this->spaceConstraintsList[sctrindex];
+	
+		if(toSkipSpaceSet.contains(sctrindex)) {
+			emit internalStructureComputationChanged(++numComputedItems);
+			continue;
+		}
+		
+		ErrorCode erc = sctr->computeInternalStructure(*this);
+		emit internalStructureComputationChanged(++numComputedItems);
+		if (erc)
+			errors << erc;
+		if (erc.isError())
+			continue;
+		this->internalSpaceConstraintsList[sctri++]=sctr;
+	}
+
+	this->nInternalSpaceConstraints=sctri;
+	if(VERBOSE){
+		cout<<_c<<" space constraints after first pass (after removing inactive ones)"<<endl;
+		cout<<"  "<<this->nInternalSpaceConstraints<<" space constraints after second pass (after removing wrong ones)"<<endl;
+	}
+	assert(_c>=this->nInternalSpaceConstraints); //because some constraints may have toSkipSpace false, but computeInternalStructure also false
+	//assert(this->nInternalSpaceConstraints<=MAX_SPACE_CONSTRAINTS);
 
 	return errors;
 }

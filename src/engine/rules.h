@@ -254,6 +254,9 @@ public:
 	*/
 	ErrorList computeInternalStructure();
 
+	ErrorList computeInternalTimeConstraintList(int& numComputedItems, bool& canceled);
+	ErrorList computeInternalSpaceConstraintList(int& numComputedItems, bool& canceled);
+
 	/**
 	Terminator - basically clears the memory for the constraints.
 	*/
