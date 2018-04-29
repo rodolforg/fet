@@ -37100,25 +37100,6 @@ Time slots means more restrictive, that activity may only start and end and take
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="515"/>
-        <source>Q: What I need is a way to make the following constraint:
-
-If Activity1 comes first, then Activity2 can be consecutive. But, if Activity2 comes first, then Activity1 must have at least 1 period in between.
-
-For example, if the algorithm places Dance in 1st hour, then Wrestling can be placed in 2nd hour, but if Wrestling is placed in 1st hour, then Dance must be at least in 3rd hour, if not farther away.
-
-A simpler, but less useful solution could be a constraint that says:
-
-Activity1 and Activity2 will not be consecutive.
-
-A: I have a very good solution for you, but it is a bit complicated to add.
-
-Suppose you have activities A1 and A2. Add dummy A3, with duration 1, no teachers and no students. Add constraint two activities consecutive, A2 and A3 (A2 followed by A3). Add constraint activities not overlapping, A1 and A3.
-
-There is only a small problem: A2 cannot be put in the last period. To correct that: increase the number of hours with 1 and constraint all the real activities (without A3) to take place in the first periods. You can do that by adding an activity tag to A1 and A2 named Early and an activity tag to A3 named Any, and constraint activities preferred time slots for activity tag Early to be in the first n-1 slots of each day.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../src/interface/helpfaqform.cpp" line="534"/>
         <source>Q: What is the difference between preferred starting times and preferred time slots?
 
@@ -37142,6 +37123,15 @@ Time slots means more restrictive, that activity may only start and end and take
 This is useful if you need for instance, if Maths lessons are 4-5 per week, to constrain that the first component and the second component must be early. You will add 2 constraints for that, with component number 1 and 2, both with subject Maths. Or, if you want for activities split into 4 that 2 lessons are early and for activities split into 5 that 3 activities are early, add constraint Maths with split number 3, 4 and 5 (nice trick).
 
 Another thing: if you have 1 or 2 lessons per week for a subject, say biology, and want to constrain one of the components if there are 2 per week, and none if there is only 1, you can add such a constraint for component number=2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpfaqform.cpp" line="601"/>
+        <source>Q: At our school there are a lot of teachers which work only a few hours a week. Of course it is really nasty to drive for one hour to the school. So we set the constraint that every teacher should work at least 2 hours a day. Unfortunately we have this year a teacher which only works 1h a week. As a result of this FET doesn&apos;t start to create a timetable. Any suggestions how to fix the problem without defining a constraint for every singular teacher?
+
+A: I have a nice trick: add a dummy activity, 1 hour duration, with only this teacher (no students sets, any subject), additional to the real activity.
+
+This trick just passed through my mind as I was trying to write you that you have to do it the hard way (add constraints for each teacher)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -37537,7 +37527,7 @@ groups:
 contains subgroups:
 
     1_a_x_ENG_FRE_GER,
-    t1_a_x_!ENG_FRE_GER,
+    1_a_x_!ENG_FRE_GER,
     1_a_x_ENG_!FRE_GER,
     1_a_x_!ENG_!FRE_GER,
     1_a_x_ENG_FRE_!GER,
@@ -37585,90 +37575,7 @@ contains groups 1_a, 1_b
 You will have the possibility to add any activity, for a year or group
 
 Currently, the interface for students is difficult to use. I am thinking of that. Maybe it is more simple for you if you try to work on the xml .fet file.</source>
-        <translation>Q: More information about students&apos; structure
-
-A: The students&apos; structure is very flexible and permits any institution structure.
-
-The main idea is that subgroups are independent. Each subgroup must be the smallest teaching unit or even a single student.
-
-The groups can contain any subgroups. The groups can be overlapping.
-
-The years can contain any groups.
-
-You do not need to follow exactly your institution&apos;s hierarchy, you can model your structure to be able to use FET better.
-
-Example: you have a faculty with years (1, 2, ..., 5), sections (1_a, 1_b, ...) and subsections (1_a_x, 1_a_y, ...). Each subsection has optional English or French or German languages (say, a students set who takes English is ENG, and who does not take English is !ENG). Then the correct structure is:
-
-subgroups
-
-1_a_x_ENG_FRE_GER,
-1_a_x_!ENG_FRE_GER,
-1_a_x_ENG_!FRE_GER,
-1_a_x_!ENG_!FRE_GER,
-1_a_x_ENG_FRE_!GER,
-1_a_x_!ENG_FRE_!GER,
-1_a_x_ENG_!FRE_!GER,
-1_a_x_!ENG_!FRE_!GER,
-
-1_a_y_ENG_FRE_GER,
-...same for 1_a_y (8 subgroups)
-
-(you can consider not adding empty subgroups, for instance if every student has one single language, then you can retain only 3 subgroups out of 8)
-
-groups:
-
-1_a
-contains subgroups:
-
-    1_a_x_ENG_FRE_GER,
-    t1_a_x_!ENG_FRE_GER,
-    1_a_x_ENG_!FRE_GER,
-    1_a_x_!ENG_!FRE_GER,
-    1_a_x_ENG_FRE_!GER,
-    1_a_x_!ENG_FRE_!GER,
-    1_a_x_ENG_!FRE_!GER,
-    1_a_x_!ENG_!FRE_!GER,
-    1_a_y_ENG_FRE_GER,
-...same for 1_a_y (8 subgroups)
-
-1_a_x
-
-contains subgroups:
-
-    1_a_x_ENG_FRE_GER,
-    1_a_x_!ENG_FRE_GER,
-    1_a_x_ENG_!FRE_GER,
-    1_a_x_!ENG_!FRE_GER,
-    1_a_x_ENG_FRE_!GER,
-    1_a_x_!ENG_FRE_!GER,
-    1_a_x_ENG_!FRE_!GER,
-    1_a_x_!ENG_!FRE_!GER,
-
-1_a_y
-
-contains subgroups:
-
-    1_a_y_ENG_FRE_GER,
-... (8 subgroups)
-
-1_a_x_ENG
-
-contains subgroups:
-
-    1_a_x_ENG_FRE_GER,
-    1_a_x_ENG_!FRE_GER,
-    1_a_x_ENG_FRE_!GER,
-    1_a_x_ENG_!FRE_!GER
-
-years:
-
-1
-
-contains groups 1_a, 1_b
-
-You will have the possibility to add any activity, for a year or group
-
-Currently, the interface for students is difficult to use. I am thinking of that. Maybe it is more simple for you if you try to work on the xml .fet file.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="492"/>
@@ -37734,19 +37641,6 @@ A: If you have activities which you want to put in the last slots of a day (like
 J: Ini adalah kendala diusulkan oleh pengguna, untuk memungkinkan Anda untuk menentukan interval jam untuk siswa atau guru, dan mengatakan bahwa dalam selang waktu ini mereka harus bekerja pada sebagian besar hari maksimum seminggu. Hal ini berguna jika misalnya Anda ingin guru tidak memiliki lebih dari 2 hari per minggu kegiatan dalam 2 jam terakhir hari itu.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="601"/>
-        <source>Q: At our school there are a lot of teachers which work only a few hours a week. Of course it is really nasty to drive for one our to the school. So we set the constraint that every teacher should work at least 2 hours a day. Unfortunately we have this year a teacher which only works 1h a week. As a result of this FET doesn&apos;t start to create a timetable. Any suggestions how to fix the problem without defining a constraint for every singular teacher?
-
-A: I have a nice trick: add a dummy activity, 1 hour duration, with only this teacher (no students sets, any subject), additional to the real activity.
-
-This trick just passed through my mind as I was trying to write you that you have to do it the hard way (add constraints for each teacher)</source>
-        <translation type="unfinished">T: Di sekolah kami ada banyak guru yang bekerja hanya beberapa jam seminggu. Tentu saja itu benar-benar buruk untuk drive untuk satu kita ke sekolah. Jadi kita tetapkan kendala itu bahwa setiap guru harus bekerja minimal 2 jam sehari. Sayangnya kita tahun ini guru yang hanya bekerja 1h seminggu. Sebagai hasil dari FET ini tidak mulai untuk membuat jadwal. Ada saran bagaimana untuk memperbaiki masalah tanpa mendefinisikan kendala bagi setiap guru tunggal?
-
-J: Saya memiliki trik yang bagus: menambahkan aktivitas dummy, 1 durasi jam, dengan hanya ini guru (tidak ada set siswa, subjek ada), tambahan untuk aktivitas yang nyata.
-
-Trik ini hanya melewati pikiran saya ketika saya mencoba menulis Anda bahwa Anda harus melakukannya dengan cara yang keras (menambahkan kendala untuk guru masing-masing)</translation>
-    </message>
-    <message>
         <location filename="../src/interface/helpfaqform.cpp" line="795"/>
         <source>This is an advanced question which probably will never appear in practice, you may skip it at first reading.</source>
         <translation>Ini merupakan pertanyaan lanjutan yang mungkin tidak pernah akan muncul dalam praktek, Anda dapat melewatkan membaca pertama.</translation>
@@ -37779,6 +37673,25 @@ Zsolt Udvari used another trick: considered the last hour to be hour 0. But this
         <location filename="../src/interface/helpfaqform.cpp" line="513"/>
         <source>Q-1-6-June-2008</source>
         <comment>Mnemonic name for a particular question in the FAQ</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpfaqform.cpp" line="515"/>
+        <source>Q: What I need is a way to make the following constraint:
+
+If Activity1 comes first, then Activity2 can be consecutive. But, if Activity2 comes first, then Activity1 must have at least 1 period in between.
+
+For example, if the algorithm places Dance in 1st hour, then Wrestling can be placed in 2nd hour, but if Wrestling is placed in 1st hour, then Dance must be at least in 3rd hour, if not farther away.
+
+A simpler, but less useful solution could be a constraint that says:
+
+Activity1 and Activity2 will not be consecutive.
+
+A: I have a very good solution for you, but it is a bit complicated to add.
+
+Suppose you have activities A1 and A2. Add dummy A3, with duration 1, no teachers and no students. Add constraint two activities consecutive, A2 and A3 (A2 followed by A3). Add constraint activities not overlapping, A1 and A3.
+
+There is only a small problem: A2 cannot be put in the last period. To correct that: increase the number of hours with 1 and constrain all the real activities (without A3) to take place in the first periods. You can do that by adding an activity tag to A1 and A2 named Early and an activity tag to A3 named Any, and constraint activities preferred time slots for activity tag Early to be in the first n-1 slots of each day.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -47636,12 +47549,12 @@ Catata: Guru tidak ada dan pecah tidakdihitung jam kosong.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="53"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>March</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="55"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>April</source>
         <translation type="unfinished"></translation>
     </message>

@@ -37051,6 +37051,39 @@ importanța = 99.99% înseamnă: În medie FET încearcă de 10000 de ori să pl
 De asemenea, activitățile pot fi de-alocate, și ciclul va fi deschis.</translation>
     </message>
     <message>
+        <location filename="../src/interface/helpfaqform.cpp" line="515"/>
+        <source>Q: What I need is a way to make the following constraint:
+
+If Activity1 comes first, then Activity2 can be consecutive. But, if Activity2 comes first, then Activity1 must have at least 1 period in between.
+
+For example, if the algorithm places Dance in 1st hour, then Wrestling can be placed in 2nd hour, but if Wrestling is placed in 1st hour, then Dance must be at least in 3rd hour, if not farther away.
+
+A simpler, but less useful solution could be a constraint that says:
+
+Activity1 and Activity2 will not be consecutive.
+
+A: I have a very good solution for you, but it is a bit complicated to add.
+
+Suppose you have activities A1 and A2. Add dummy A3, with duration 1, no teachers and no students. Add constraint two activities consecutive, A2 and A3 (A2 followed by A3). Add constraint activities not overlapping, A1 and A3.
+
+There is only a small problem: A2 cannot be put in the last period. To correct that: increase the number of hours with 1 and constrain all the real activities (without A3) to take place in the first periods. You can do that by adding an activity tag to A1 and A2 named Early and an activity tag to A3 named Any, and constraint activities preferred time slots for activity tag Early to be in the first n-1 slots of each day.</source>
+        <translation>Î: Aș avea nevoie de un mod de a face următoarea constrângere:
+
+Dacă Activitatea1 începe prima, atunci Activitatea2 poate fi consecutivă. Dar, dacă Activitatea2 vine prima, atunci Activitatea1 trebuie să aibă cel puțin o perioadă între.
+
+De exemplu, dacă algoritmul plasează Dans la prima oră, atunci Lupte poate fi plasată a doua oră, dar dacă Lupte este plasată în prima oră, atunci Dans trebuie să fie cel puțin în a treia oră, dacă nu mai departe.
+
+O soluție mai simplă, dar mai puțin folositoare ar putea fi o constrângere care spune:
+
+Activitatea1 și Activitatea2 nu vor fi consecutive.
+
+R: Am o foarte bună soluție pentru dvs., dar este un pic complicată de adăugat.
+
+Să zicem că aveți activitățile A1 și A2. Adăugați fictivă A3, cu durata 1, fără profesori și fără studenți. Adăugați constrângerea două activități consecutive, A2 și A3 (A2 urmată de A3). Adăugați constrângerea activități nu se suprapun, A1 și A3.
+
+Există o singură mică problemă: A2 nu poate fi pusă în ultima perioadă. Pentru a corecta aceasta: măriți numărul de ore cu 1 și constrângeți toate activitățile reale (fără A3) să aibă loc în primele perioade. Puteți face aceasta adăugând o etichetă activitate la A1 și A2 numită Devreme și o etichetă activitate la A3 numită Oricare, și constrângerea activități sloturi de timp preferate pentru eticheta activitate Devreme să fie în primele n-1 sloturi ale fiecărei zile.</translation>
+    </message>
+    <message>
         <location filename="../src/interface/helpfaqform.cpp" line="557"/>
         <source>Q: What type of files uses FET?
 
@@ -37058,6 +37091,19 @@ A: FET uses text files, xml or html or txt or csv (comma separated values - for 
         <translation>Î: Ce tip de fișiere folosește FET?
 
 R: FET folosește fișiere text, xml sau html sau txt sau csv (valori separate de virgulă - pentru import/export). Codarea folosită este UTF-8.</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpfaqform.cpp" line="601"/>
+        <source>Q: At our school there are a lot of teachers which work only a few hours a week. Of course it is really nasty to drive for one hour to the school. So we set the constraint that every teacher should work at least 2 hours a day. Unfortunately we have this year a teacher which only works 1h a week. As a result of this FET doesn&apos;t start to create a timetable. Any suggestions how to fix the problem without defining a constraint for every singular teacher?
+
+A: I have a nice trick: add a dummy activity, 1 hour duration, with only this teacher (no students sets, any subject), additional to the real activity.
+
+This trick just passed through my mind as I was trying to write you that you have to do it the hard way (add constraints for each teacher)</source>
+        <translation>Î: La școala noastră sunt o mulțime de profesori care lucrează doar câteva ore pe săptămână. Desigur, este neplăcut să conduci pentru o oră la școală. Așa că am setat constrângerea că fiecare profesor ar trebui să predea cel puțin 2 ore pe zi. Din nefericire avem în acest an un profesor care lucrează doar 1h pe săptămână. Ca rezultat, FET nu începe să creeze un orar. Aveți o sugestie pentru cum să reparăm problema fără a defini o constrângere pentru fiecare profesor singular?
+
+R: Am un truc drăguț: adăugați o activitate fictivă, durata 1 oră, cu doar acest profesor (fără seturi de studenți, orice disciplină), adițional la activitatea reală.
+
+Acest truc tocmai mi-a trecut prin minte pe când încercam să vă scriu că trebuie să o faceți în modul dificil (adăugați constrângeri pentru fiecare profesor)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="629"/>
@@ -37497,7 +37543,7 @@ groups:
 contains subgroups:
 
     1_a_x_ENG_FRE_GER,
-    t1_a_x_!ENG_FRE_GER,
+    1_a_x_!ENG_FRE_GER,
     1_a_x_ENG_!FRE_GER,
     1_a_x_!ENG_!FRE_GER,
     1_a_x_ENG_FRE_!GER,
@@ -37581,7 +37627,7 @@ grupuri:
 conține subgrupuri:
 
     1_a_x_ENG_FRE_GER,
-    t1_a_x_!ENG_FRE_GER,
+    1_a_x_!ENG_FRE_GER,
     1_a_x_ENG_!FRE_GER,
     1_a_x_!ENG_!FRE_GER,
     1_a_x_ENG_FRE_!GER,
@@ -37656,39 +37702,6 @@ Cel mai bun mod de adăuga activitățile ar fi:
 2. Dacă nu adăugați &apos;forțează consecutive dacă în aceeași zi&apos;, atunci adăugați o activitate mai mare împărțită într-un număr de activități egal cu numărul de zile pe săptămână și activitățile care rămân într-o altă activitate mai mare împărțită. De exemplu, presupunem că trebuie să adăugați 7 activități cu durata 1 într-o săptămână cu 5 zile. Adăugați 2 activități mai mari container, prima împărțită în 5 activități cu durata 1 și a doua împărțită în 2 activități cu durata 1 (posibil mărind importanța constrângerilor adăugate min zile între activități pentru fiecare dintre cele 2 containere până la 100%)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="515"/>
-        <source>Q: What I need is a way to make the following constraint:
-
-If Activity1 comes first, then Activity2 can be consecutive. But, if Activity2 comes first, then Activity1 must have at least 1 period in between.
-
-For example, if the algorithm places Dance in 1st hour, then Wrestling can be placed in 2nd hour, but if Wrestling is placed in 1st hour, then Dance must be at least in 3rd hour, if not farther away.
-
-A simpler, but less useful solution could be a constraint that says:
-
-Activity1 and Activity2 will not be consecutive.
-
-A: I have a very good solution for you, but it is a bit complicated to add.
-
-Suppose you have activities A1 and A2. Add dummy A3, with duration 1, no teachers and no students. Add constraint two activities consecutive, A2 and A3 (A2 followed by A3). Add constraint activities not overlapping, A1 and A3.
-
-There is only a small problem: A2 cannot be put in the last period. To correct that: increase the number of hours with 1 and constraint all the real activities (without A3) to take place in the first periods. You can do that by adding an activity tag to A1 and A2 named Early and an activity tag to A3 named Any, and constraint activities preferred time slots for activity tag Early to be in the first n-1 slots of each day.</source>
-        <translation>Î: Aș avea nevoie de un mod de a face următoarea constrângere:
-
-Dacă Activitatea1 începe prima, atunci Activitatea2 poate fi consecutivă. Dar, dacă Activitatea2 vine prima, atunci Activitatea1 trebuie să aibă cel puțin o perioadă între.
-
-De exemplu, dacă algoritmul plasează Dans la prima oră, atunci Lupte poate fi plasată a doua oră, dar dacă Lupte este plasată în prima oră, atunci Dans trebuie să fie cel puțin în a treia oră, dacă nu mai departe.
-
-O soluție mai simplă, dar mai puțin folositoare ar putea fi o constrângere care spune:
-
-Activitatea1 și Activitatea2 nu vor fi consecutive.
-
-R: Am o foarte bună soluție pentru dvs., dar este un pic complicată de adăugat.
-
-Să zicem că aveți activitățile A1 și A2. Adăugați fictivă A3, cu durata 1, fără profesori și fără studenți. Adăugați constrângerea două activități consecutive, A2 și A3 (A2 urmată de A3). Adăugați constrângerea activități nu se suprapun, A1 și A3.
-
-Există o singură mică problemă: A2 nu poate fi pusă în ultima perioadă. Pentru a corecta aceasta: măriți numărul de ore cu 1 și constrângeți toate activitățile reale (fără A3) să aibă loc în primele perioade. Puteți face aceasta adăugând o etichetă activitate la A1 și A2 numită Devreme și o etichetă activitate la A3 numită Oricare, și constrângerea activități sloturi de timp preferate pentru eticheta activitate Devreme să fie în primele n-1 sloturi ale fiecărei zile.</translation>
-    </message>
-    <message>
         <location filename="../src/interface/helpfaqform.cpp" line="534"/>
         <source>Q: What is the difference between preferred starting times and preferred time slots?
 
@@ -37760,19 +37773,6 @@ A: If you have activities which you want to put in the last slots of a day (like
         <translation>Î: Ajutor la constrângerea activități încheie ziua studenților (sau activitate încheie ziua studenților).
 
 R: Dacă aveți activități pe care doriți să le puneți în ultimele sloturi ale unei zile (ca, să zicem, întâlnirile cu dirigintele), vă rog folosiți noua constrângere un set de activități încheie ziua studenților (sau la singular, activitate încheie ziua studenților). Această constrângere poate avea importanța doar 100%, din cauza modului de operare a algoritmului.</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="601"/>
-        <source>Q: At our school there are a lot of teachers which work only a few hours a week. Of course it is really nasty to drive for one our to the school. So we set the constraint that every teacher should work at least 2 hours a day. Unfortunately we have this year a teacher which only works 1h a week. As a result of this FET doesn&apos;t start to create a timetable. Any suggestions how to fix the problem without defining a constraint for every singular teacher?
-
-A: I have a nice trick: add a dummy activity, 1 hour duration, with only this teacher (no students sets, any subject), additional to the real activity.
-
-This trick just passed through my mind as I was trying to write you that you have to do it the hard way (add constraints for each teacher)</source>
-        <translation>Î: La școala noastră sunt o mulțime de profesori care lucrează doar câteva ore pe săptămână. Desigur, este neplăcut să conduci pentru o oră la școală. Așa că am setat constrângerea că fiecare profesor ar trebui să predea cel puțin 2 ore pe zi. Din nefericire avem în acest an un profesor care lucrează doar 1h pe săptămână. Ca rezultat, FET nu începe să creeze un orar. Aveți o sugestie pentru cum să reparăm problema fără a defini o constrângere pentru fiecare profesor singular?
-
-R: Am un truc drăguț: adăugați o activitate fictivă, durata 1 oră, cu doar acest profesor (fără seturi de studenți, orice disciplină), adițional la activitatea reală.
-
-Acest truc tocmai mi-a trecut prin minte pe când încercam să vă scriu că trebuie să o faceți în modul dificil (adăugați constrângeri pentru fiecare profesor)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="741"/>
@@ -47631,12 +47631,12 @@ Notă: profesor indisponibil și pauză nu sunt socotite ca ferestre.</translati
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="53"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>March</source>
         <translation>Martie</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="55"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>April</source>
         <translation>Aprilie</translation>
     </message>

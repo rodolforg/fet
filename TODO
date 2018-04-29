@@ -5836,3 +5836,41 @@ times I included the constraint with the first name on the list, having so to st
 
 I think this mistake happens because our brain thinks: "I have already chosen the name", but it does NOT take into account that it was on the previous screen.
 So, how about we give a hand to the brain and inherit the values from filters to the next "Add" screen.
+
+349---------------------------------------------------------
+From Benahmed Abdelkrim (on forum):
+
+He complains that if a constraint min days between activities has consecutive if same day unselected, there can be 3 activities on the same day
+(or real day, for the custom Morocco and Algeria versions).
+
+Volker Dirr suggests to add a Boolean setting for the min days between activities constraints, so that only 2 activities are allowed on the same day
+if this value is true.
+
+350---------------------------------------------------------
+From aisse (on forum):
+
+I think the program can be improved better if the restrictions are in the form of buttons .. For example, the Algerian version of the middle schools we
+need some restrictions only .. I think the format of the program in its Algerian version will be better and easier by buttons pre-programmed .. Where all
+buttons are in one interface as long Their number will be small in the Algerian version
+
+For example, we say the Algerian version.. but in reality there are many types of schools and every type what needs. There are middle schools, secondary
+schools, primary schools, private schools ..and institutes of very different types. The constraints in the Algerian version are general to all. But when we
+come to the privacy of each school, each one needs constraints and it does not need another .. I work in a middle school, I only need some constraints which
+can all be put in one interface ..
+
+Liviu Lalescu: So you need a customisable interface (where you can add/remove buttons from the interface)?
+
+aisse: Not exactly .. I suggested reducing the version .. to become " FET for Algerian middle schools...The buttons are fixed.
+
+351---------------------------------------------------------
+From Benahmed Abdelkrim (on forum):
+
+in the list of conflicts why not specify the names of hours with the days
+ex: ... activity (A1) is in conflict with activity (A2) in Tuesday (2) and Tuesday (4) ...
+
+the numbers (2) and (4) are the names given by the user at the hours.
+
+one of the advantages of this suggestion is to know if the activities are consecutive or not.
+
+Volker Dirr: You also need to see the duration, because you can only know then if they are
+consecutive or not.

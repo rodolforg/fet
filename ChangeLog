@@ -2051,3 +2051,6 @@ Versions 5.35.0 - 5.35.v
 	- Bug fix when using the old Qt 4: the special characters in the Help->About dialog were incorrectly displayed (bug introduced in the previous version, 5.35.4).
 	- Minor fix: the example file translations/test-all-constraints.fet which should contain all the types of constraints was missing two of them. Corrected.
 	- Updated the Greek translation, by Vangelis Karafillidis.
+- Version 5.35.6
+	- Minor strings bugs fixed (reported by Vangelis Karafillidis).
+	- Updated the Greek translation, by Vangelis Karafillidis. It is now complete.
