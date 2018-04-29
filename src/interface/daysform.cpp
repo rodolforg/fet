@@ -195,11 +195,11 @@ void DaysForm::ok()
 		gt.rules.nDaysPerWeek=_oldDays;
 
 		if(recomputeTime){
-			LockUnlock::computeLockedUnlockedActivitiesOnlyTime();
+			LockUnlock::computeLockedUnlockedActivitiesOnlyTime(&gt.rules);
 		}
 		if(recomputeSpace){
 			assert(0);
-			LockUnlock::computeLockedUnlockedActivitiesOnlySpace();
+			LockUnlock::computeLockedUnlockedActivitiesOnlySpace(&gt.rules);
 		}
 		if(recomputeTime || recomputeSpace){
 			LockUnlock::increaseCommunicationSpinBox();

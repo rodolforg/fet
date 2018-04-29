@@ -177,7 +177,7 @@ TimetableViewStudentsTimeHorizontalForm::TimetableViewStudentsTimeHorizontalForm
 	if(settings.contains(this->metaObject()->className()+QString("/toggle-radio-button")))
 		toggleRadioButton->setChecked(settings.value(this->metaObject()->className()+QString("/toggle-radio-button")).toBool());
 
-	LockUnlock::assertIsUpdated();
+	LockUnlock::assertIsUpdated(&gt.rules);
 
 	/*if(gt.rules.nInternalTeachers!=gt.rules.teachersList.count()){
 		QMessageBox::warning(this, tr("FET warning"), tr("Cannot display the timetable, because you added or removed some teachers. Please regenerate the timetable and then view it"));
@@ -1027,7 +1027,7 @@ void TimetableViewStudentsTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 		s=QCoreApplication::translate("TimetableViewForm", "No locking constraints added or removed.");
 	QMessageBox::information(this, tr("FET information"), s);
 
-	LockUnlock::assertIsUpdated();
+	LockUnlock::assertIsUpdated(&gt.rules);
 
 	LockUnlock::increaseCommunicationSpinBox();
 }

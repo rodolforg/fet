@@ -653,7 +653,7 @@ void AllSpaceConstraintsForm::removeConstraint()
 			constraintsTextLabel->setText(tr("%1 Space Constraints", "%1 represents the number of constraints").arg(visibleSpaceConstraintsList.count()));
 	
 			if(recompute){
-				LockUnlock::computeLockedUnlockedActivitiesOnlySpace();
+				LockUnlock::computeLockedUnlockedActivitiesOnlySpace(&gt.rules);
 				LockUnlock::increaseCommunicationSpinBox();
 			}
 		}
@@ -754,7 +754,7 @@ void AllSpaceConstraintsForm::activateConstraint()
 		constraintChanged();
 		
 		if(ctr->type==CONSTRAINT_ACTIVITY_PREFERRED_ROOM){
-			LockUnlock::computeLockedUnlockedActivitiesOnlySpace();
+			LockUnlock::computeLockedUnlockedActivitiesOnlySpace(&gt.rules);
 			LockUnlock::increaseCommunicationSpinBox();
 		}
 	
@@ -804,7 +804,7 @@ void AllSpaceConstraintsForm::deactivateConstraint()
 		constraintChanged();
 		
 		if(ctr->type==CONSTRAINT_ACTIVITY_PREFERRED_ROOM){
-			LockUnlock::computeLockedUnlockedActivitiesOnlySpace();
+			LockUnlock::computeLockedUnlockedActivitiesOnlySpace(&gt.rules);
 			LockUnlock::increaseCommunicationSpinBox();
 		}
 	

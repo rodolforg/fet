@@ -170,7 +170,7 @@ TimetableViewTeachersTimeHorizontalForm::TimetableViewTeachersTimeHorizontalForm
 	if(settings.contains(this->metaObject()->className()+QString("/toggle-radio-button")))
 		toggleRadioButton->setChecked(settings.value(this->metaObject()->className()+QString("/toggle-radio-button")).toBool());
 
-	LockUnlock::assertIsUpdated();
+	LockUnlock::assertIsUpdated(&gt.rules);
 
 	if(gt.rules.nInternalTeachers!=gt.rules.teachersList.count()){
 		assert(0); //should be taken care of by Rules - teachers_schedule_ready is false in the Rules if adding or removing teachers.
@@ -875,7 +875,7 @@ void TimetableViewTeachersTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 		s=QCoreApplication::translate("TimetableViewForm", "No locking constraints added or removed.");
 	QMessageBox::information(this, tr("FET information"), s);
 
-	LockUnlock::assertIsUpdated();
+	LockUnlock::assertIsUpdated(&gt.rules);
 
 	LockUnlock::increaseCommunicationSpinBox();
 }

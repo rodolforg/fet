@@ -79,7 +79,7 @@ QDialog * ConstraintActivityPreferredStartingTimeForm::createModifyDialog(TimeCo
 
 void ConstraintActivityPreferredStartingTimeForm::afterRemoveConstraint()
 {
-	LockUnlock::computeLockedUnlockedActivitiesOnlyTime();
+	LockUnlock::computeLockedUnlockedActivitiesOnlyTime(&gt.rules);
 	LockUnlock::increaseCommunicationSpinBox();
 }
 
@@ -87,6 +87,6 @@ void ConstraintActivityPreferredStartingTimeForm::toggleActiveConstraint(void* c
 {
 	TimeConstraintBaseDialog::toggleActiveConstraint(ctr, checked);
 
-	LockUnlock::computeLockedUnlockedActivitiesOnlyTime();
+	LockUnlock::computeLockedUnlockedActivitiesOnlyTime(&gt.rules);
 	LockUnlock::increaseCommunicationSpinBox();
 }

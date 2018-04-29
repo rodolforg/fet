@@ -4508,10 +4508,10 @@ void Rules::updateConstraintsAfterRemoval()
 
 #ifndef FET_COMMAND_LINE
 	if(recomputeTime){
-		LockUnlock::computeLockedUnlockedActivitiesOnlyTime();
+		LockUnlock::computeLockedUnlockedActivitiesOnlyTime(this);
 	}
 	if(recomputeSpace){
-		LockUnlock::computeLockedUnlockedActivitiesOnlySpace();
+		LockUnlock::computeLockedUnlockedActivitiesOnlySpace(this);
 	}
 	if(recomputeTime || recomputeSpace){
 		LockUnlock::increaseCommunicationSpinBox();

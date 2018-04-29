@@ -140,7 +140,7 @@ void ModifyConstraintActivityPreferredRoomForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	LockUnlock::computeLockedUnlockedActivitiesOnlySpace();
+	LockUnlock::computeLockedUnlockedActivitiesOnlySpace(&gt.rules);
 	LockUnlock::increaseCommunicationSpinBox();
 	
 	this->close();

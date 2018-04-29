@@ -970,7 +970,7 @@ void AllTimeConstraintsForm::removeConstraint()
 			constraintsTextLabel->setText(tr("%1 Time Constraints", "%1 represents the number of constraints").arg(visibleTimeConstraintsList.count()));
 		
 			if(recompute){
-				LockUnlock::computeLockedUnlockedActivitiesOnlyTime();
+				LockUnlock::computeLockedUnlockedActivitiesOnlyTime(&gt.rules);
 				LockUnlock::increaseCommunicationSpinBox();
 			}
 		}
@@ -1071,7 +1071,7 @@ void AllTimeConstraintsForm::activateConstraint()
 		constraintChanged();
 		
 		if(ctr->type==CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIME){
-			LockUnlock::computeLockedUnlockedActivitiesOnlyTime();
+			LockUnlock::computeLockedUnlockedActivitiesOnlyTime(&gt.rules);
 			LockUnlock::increaseCommunicationSpinBox();
 		}
 		
@@ -1121,7 +1121,7 @@ void AllTimeConstraintsForm::deactivateConstraint()
 		constraintChanged();
 		
 		if(ctr->type==CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIME){
-			LockUnlock::computeLockedUnlockedActivitiesOnlyTime();
+			LockUnlock::computeLockedUnlockedActivitiesOnlyTime(&gt.rules);
 			LockUnlock::increaseCommunicationSpinBox();
 		}
 

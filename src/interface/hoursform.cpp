@@ -199,11 +199,11 @@ void HoursForm::ok()
 		gt.rules.nHoursPerDay=_oldHours;
 
 		if(recomputeTime){
-			LockUnlock::computeLockedUnlockedActivitiesOnlyTime();
+			LockUnlock::computeLockedUnlockedActivitiesOnlyTime(&gt.rules);
 		}
 		if(recomputeSpace){
 			assert(0);
-			LockUnlock::computeLockedUnlockedActivitiesOnlySpace();
+			LockUnlock::computeLockedUnlockedActivitiesOnlySpace(&gt.rules);
 		}
 		if(recomputeTime || recomputeSpace){
 			LockUnlock::increaseCommunicationSpinBox();
