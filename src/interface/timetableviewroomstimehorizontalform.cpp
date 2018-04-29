@@ -130,7 +130,7 @@ TimetableViewRoomsTimeHorizontalForm::TimetableViewRoomsTimeHorizontalForm(QWidg
 	if(settings.contains(this->metaObject()->className()+QString("/toggle-radio-button")))
 		toggleRadioButton->setChecked(settings.value(this->metaObject()->className()+QString("/toggle-radio-button")).toBool());
 
-	LockUnlock::assertIsUpdated();
+	LockUnlock::assertIsUpdated(&gt.rules);
 
 	if(gt.rules.nInternalRooms!=gt.rules.roomsList.count()){
 		assert(0); //should be taken care of by Rules - rooms_schedule_ready is false in the Rules if adding or removing rooms.
@@ -849,7 +849,7 @@ void TimetableViewRoomsTimeHorizontalForm::lock(bool lockTime, bool lockSpace)
 		s=QCoreApplication::translate("TimetableViewForm", "No locking constraints added or removed.");
 	QMessageBox::information(this, tr("FET information"), s);
 
-	LockUnlock::assertIsUpdated();
+	LockUnlock::assertIsUpdated(&gt.rules);
 
 	LockUnlock::increaseCommunicationSpinBox();
 }

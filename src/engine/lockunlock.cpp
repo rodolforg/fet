@@ -24,8 +24,6 @@ File lockunlock.cpp
 #include "lockunlock.h"
 #include "timetable.h"
 
-extern Timetable gt;
-
 QSet<int> LockUnlock::idsOfLockedTime;
 QSet<int> LockUnlock::idsOfLockedSpace;
 QSet<int> LockUnlock::idsOfPermanentlyLockedTime;
@@ -44,19 +42,19 @@ void CommunicationSpinBox::increaseValue()
 }
 
 
-void LockUnlock::computeLockedUnlockedActivitiesTimeSpace()
+void LockUnlock::computeLockedUnlockedActivitiesTimeSpace(const Rules* rules)
 {
-	computeLockedUnlockedActivitiesOnlyTime();
-	computeLockedUnlockedActivitiesOnlySpace();
+	computeLockedUnlockedActivitiesOnlyTime(rules);
+	computeLockedUnlockedActivitiesOnlySpace(rules);
 }
 
-void LockUnlock::computeLockedUnlockedActivitiesOnlyTime()
+void LockUnlock::computeLockedUnlockedActivitiesOnlyTime(const Rules* rules)
 {
 	//by Volker Dirr
 	idsOfLockedTime.clear();
 	idsOfPermanentlyLockedTime.clear();
 
-	foreach(const TimeConstraint* tc, gt.rules.timeConstraintsList){
+	foreach(const TimeConstraint* tc, rules->timeConstraintsList){
 		if(tc->type==CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIME && tc->weightPercentage==100.0 && tc->active){
 			const ConstraintActivityPreferredStartingTime* c=(const ConstraintActivityPreferredStartingTime*) tc;
 			if(c->day >= 0  &&  c->hour >= 0) {
@@ -69,13 +67,13 @@ void LockUnlock::computeLockedUnlockedActivitiesOnlyTime()
 	}
 }
 
-void LockUnlock::computeLockedUnlockedActivitiesOnlySpace()
+void LockUnlock::computeLockedUnlockedActivitiesOnlySpace(const Rules* rules)
 {
 	//by Volker Dirr
 	idsOfLockedSpace.clear();
 	idsOfPermanentlyLockedSpace.clear();
 
-	foreach(const SpaceConstraint* sc, gt.rules.spaceConstraintsList){
+	foreach(const SpaceConstraint* sc, rules->spaceConstraintsList){
 		if(sc->type==CONSTRAINT_ACTIVITY_PREFERRED_ROOM && sc->weightPercentage==100.0 && sc->active){
 			const ConstraintActivityPreferredRoom* c=(const ConstraintActivityPreferredRoom*) sc;
 
@@ -346,7 +344,7 @@ QString LockUnlock::getActivityLockDetailsString(int activityId)
 	//added by Volker Dirr (end)
 }
 
-void LockUnlock::assertIsUpdated()
+void LockUnlock::assertIsUpdated(const Rules* rules)
 {
 	////////// just for testing
 	QSet<int> backupLockedTime;
@@ -359,7 +357,7 @@ void LockUnlock::assertIsUpdated()
 	backupLockedSpace=idsOfLockedSpace;
 	backupPermanentlyLockedSpace=idsOfPermanentlyLockedSpace;
 
-	LockUnlock::computeLockedUnlockedActivitiesTimeSpace(); //not needed, just for testing
+	LockUnlock::computeLockedUnlockedActivitiesTimeSpace(rules); //not needed, just for testing
 
 	assert(backupLockedTime==idsOfLockedTime);
 	assert(backupPermanentlyLockedTime==idsOfPermanentlyLockedTime);

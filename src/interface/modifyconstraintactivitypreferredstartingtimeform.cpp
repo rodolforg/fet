@@ -283,7 +283,7 @@ void ModifyConstraintActivityPreferredStartingTimeForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	LockUnlock::computeLockedUnlockedActivitiesOnlyTime();
+	LockUnlock::computeLockedUnlockedActivitiesOnlyTime(&gt.rules);
 	LockUnlock::increaseCommunicationSpinBox();
 
 	this->close();

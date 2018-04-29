@@ -85,7 +85,7 @@ QDialog * ConstraintActivityPreferredRoomForm::createModifyDialog(SpaceConstrain
 
 void ConstraintActivityPreferredRoomForm::afterRemoveConstraint()
 {
-	LockUnlock::computeLockedUnlockedActivitiesOnlySpace();
+	LockUnlock::computeLockedUnlockedActivitiesOnlySpace(&gt.rules);
 	LockUnlock::increaseCommunicationSpinBox();
 }
 
@@ -93,6 +93,6 @@ void ConstraintActivityPreferredRoomForm::toggleActiveConstraint(void* ctr, bool
 {
 	SpaceConstraintBaseDialog::toggleActiveConstraint(ctr, checked);
 
-	LockUnlock::computeLockedUnlockedActivitiesOnlyTime();
+	LockUnlock::computeLockedUnlockedActivitiesOnlyTime(&gt.rules);
 	LockUnlock::increaseCommunicationSpinBox();
 }

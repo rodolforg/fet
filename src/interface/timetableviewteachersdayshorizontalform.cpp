@@ -112,7 +112,7 @@ TimetableViewTeachersDaysHorizontalForm::TimetableViewTeachersDaysHorizontalForm
 	if(settings.contains(this->metaObject()->className()+QString("/horizontal-splitter-state")))
 		horizontalSplitter->restoreState(settings.value(this->metaObject()->className()+QString("/horizontal-splitter-state")).toByteArray());
 
-	LockUnlock::assertIsUpdated();
+	LockUnlock::assertIsUpdated(&gt.rules);
 
 	LockUnlock::increaseCommunicationSpinBox();
 	
@@ -647,7 +647,7 @@ void TimetableViewTeachersDaysHorizontalForm::lock(bool lockTime, bool lockSpace
 		s=QCoreApplication::translate("TimetableViewForm", "No locking constraints added or removed.");
 	QMessageBox::information(this, tr("FET information"), s);
 
-	LockUnlock::assertIsUpdated();
+	LockUnlock::assertIsUpdated(&gt.rules);
 
 	LockUnlock::increaseCommunicationSpinBox();
 }

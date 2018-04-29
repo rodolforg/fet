@@ -344,7 +344,7 @@ void AdvancedLockUnlockForm::lockDay(QWidget* parent)
 		" %2 locking space constraints. There were not added %3 locking time constraints and %4 locking space constraints, because"
 		" these activities were already locked").arg(addedTime).arg(addedSpace).arg(notAddedTime).arg(notAddedSpace));
 	
-	LockUnlock::computeLockedUnlockedActivitiesTimeSpace();
+	LockUnlock::computeLockedUnlockedActivitiesTimeSpace(&gt.rules);
 	LockUnlock::increaseCommunicationSpinBox();
 }
 
@@ -613,7 +613,7 @@ void AdvancedLockUnlockForm::unlockDay(QWidget* parent)
 		" %2 locking space constraints. There were not removed %3 locking time constraints and %4 locking space constraints, because"
 		" these activities were permanently locked").arg(removedTime).arg(removedSpace).arg(notRemovedTime).arg(notRemovedSpace));
 	
-	LockUnlock::computeLockedUnlockedActivitiesTimeSpace();
+	LockUnlock::computeLockedUnlockedActivitiesTimeSpace(&gt.rules);
 	LockUnlock::increaseCommunicationSpinBox();
 }
 
@@ -909,7 +909,7 @@ void AdvancedLockUnlockForm::lockEndStudentsDay(QWidget* parent)
 		" %2 locking space constraints. There were not added %3 locking time constraints and %4 locking space constraints, because"
 		" these activities were already locked").arg(addedTime).arg(addedSpace).arg(notAddedTime).arg(notAddedSpace));
 	
-	LockUnlock::computeLockedUnlockedActivitiesTimeSpace();
+	LockUnlock::computeLockedUnlockedActivitiesTimeSpace(&gt.rules);
 	LockUnlock::increaseCommunicationSpinBox();
 }
 
@@ -1162,7 +1162,7 @@ void AdvancedLockUnlockForm::unlockEndStudentsDay(QWidget* parent)
 		" %2 locking space constraints. There were not removed %3 locking time constraints and %4 locking space constraints, because"
 		" these activities were permanently locked").arg(removedTime).arg(removedSpace).arg(notRemovedTime).arg(notRemovedSpace));
 	
-	LockUnlock::computeLockedUnlockedActivitiesTimeSpace();
+	LockUnlock::computeLockedUnlockedActivitiesTimeSpace(&gt.rules);
 	LockUnlock::increaseCommunicationSpinBox();
 }
 
@@ -1432,7 +1432,7 @@ void AdvancedLockUnlockForm::lockAll(QWidget* parent)
 		" %2 locking space constraints. There were not added %3 locking time constraints and %4 locking space constraints, because"
 		" these activities were already locked").arg(addedTime).arg(addedSpace).arg(notAddedTime).arg(notAddedSpace));
 	
-	LockUnlock::computeLockedUnlockedActivitiesTimeSpace();
+	LockUnlock::computeLockedUnlockedActivitiesTimeSpace(&gt.rules);
 	LockUnlock::increaseCommunicationSpinBox();
 
 	//cout<<"isc=="<<gt.rules.internalStructureComputed<<endl;
@@ -1675,7 +1675,7 @@ void AdvancedLockUnlockForm::unlockAll(QWidget* parent)
 		" %2 locking space constraints. There were not removed %3 locking time constraints and %4 locking space constraints, because"
 		" these activities were permanently locked").arg(removedTime).arg(removedSpace).arg(notRemovedTime).arg(notRemovedSpace));
 	
-	LockUnlock::computeLockedUnlockedActivitiesTimeSpace();
+	LockUnlock::computeLockedUnlockedActivitiesTimeSpace(&gt.rules);
 	LockUnlock::increaseCommunicationSpinBox();
 	
 	//cout<<"isc=="<<gt.rules.internalStructureComputed<<endl;
@@ -1953,7 +1953,7 @@ void AdvancedLockUnlockForm::unlockAllWithoutTimetable(QWidget* parent)
 		" %2 locking space constraints. There were not removed %3 locking time constraints and %4 locking space constraints, because"
 		" these activities were permanently locked").arg(removedTime).arg(removedSpace).arg(notRemovedTime).arg(notRemovedSpace));
 	
-	LockUnlock::computeLockedUnlockedActivitiesTimeSpace();
+	LockUnlock::computeLockedUnlockedActivitiesTimeSpace(&gt.rules);
 	LockUnlock::increaseCommunicationSpinBox();
 	
 	//cout<<"isc=="<<gt.rules.internalStructureComputed<<endl;
@@ -2262,6 +2262,6 @@ void AdvancedLockUnlockForm::unlockDayWithoutTimetable(QWidget* parent)
 		" %2 locking space constraints. There were not removed %3 locking time constraints and %4 locking space constraints, because"
 		" these activities were permanently locked").arg(removedTime).arg(removedSpace).arg(notRemovedTime).arg(notRemovedSpace));
 	
-	LockUnlock::computeLockedUnlockedActivitiesTimeSpace();
+	LockUnlock::computeLockedUnlockedActivitiesTimeSpace(&gt.rules);
 	LockUnlock::increaseCommunicationSpinBox();
 }

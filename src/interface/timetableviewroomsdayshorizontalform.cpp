@@ -119,7 +119,7 @@ TimetableViewRoomsDaysHorizontalForm::TimetableViewRoomsDaysHorizontalForm(QWidg
 */
 //////////
 
-	LockUnlock::assertIsUpdated();
+	LockUnlock::assertIsUpdated(&gt.rules);
 
 	LockUnlock::increaseCommunicationSpinBox();
 
@@ -628,7 +628,7 @@ void TimetableViewRoomsDaysHorizontalForm::lock(bool lockTime, bool lockSpace)
 		s=QCoreApplication::translate("TimetableViewForm", "No locking constraints added or removed.");
 	QMessageBox::information(this, tr("FET information"), s);
 
-	LockUnlock::assertIsUpdated();
+	LockUnlock::assertIsUpdated(&gt.rules);
 
 	LockUnlock::increaseCommunicationSpinBox(); //this is needed
 }

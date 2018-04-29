@@ -233,7 +233,7 @@ void AddConstraintActivityPreferredRoomForm::addConstraint()
 			idsOfPermanentlyLockedSpace.insert(id);
 		else
 			idsOfLockedSpace.insert(id);*/
-		LockUnlock::computeLockedUnlockedActivitiesOnlySpace(); //safer
+		LockUnlock::computeLockedUnlockedActivitiesOnlySpace(&gt.rules); //safer
 		LockUnlock::increaseCommunicationSpinBox();
 	}
 	else{

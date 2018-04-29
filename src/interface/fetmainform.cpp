@@ -603,7 +603,7 @@ FetMainForm::FetMainForm()
 	settingsPrintActivitiesWithSameStartingTimeAction->setChecked(PRINT_ACTIVITIES_WITH_SAME_STARTING_TIME);
 
 	//needed to sync the view table forms
-	LockUnlock::computeLockedUnlockedActivitiesTimeSpace();
+	LockUnlock::computeLockedUnlockedActivitiesTimeSpace(&gt.rules);
 	LockUnlock::increaseCommunicationSpinBox();
 	
 	showWarningForSubgroupsWithTheSameActivitiesAction->setCheckable(true);
@@ -1138,7 +1138,7 @@ void FetMainForm::on_fileNewAction_triggered()
 
 		CachedSchedule::invalidate();
 
-		LockUnlock::computeLockedUnlockedActivitiesTimeSpace();
+		LockUnlock::computeLockedUnlockedActivitiesTimeSpace(&gt.rules);
 		LockUnlock::increaseCommunicationSpinBox();
 
 		statusBar()->showMessage(tr("New file generated"), STATUS_BAR_MILLISECONDS);
@@ -1263,7 +1263,7 @@ void FetMainForm::openFile(const QString& fileName)
 
 				INPUT_FILENAME_XML = s;
 				
-				LockUnlock::computeLockedUnlockedActivitiesTimeSpace();
+				LockUnlock::computeLockedUnlockedActivitiesTimeSpace(&gt.rules);
 				LockUnlock::increaseCommunicationSpinBox();
 
 				statusBar()->showMessage(tr("File opened"), STATUS_BAR_MILLISECONDS);
@@ -1414,7 +1414,7 @@ void FetMainForm::on_fileImportCSVActivitiesAction_triggered(){
 
 	//TODO: if the import takes care of locked activities, then we need
 	//to do:
-	//LockUnlock::computeLockedUnlockedActivitiesTimeSpace();
+	//LockUnlock::computeLockedUnlockedActivitiesTimeSpace(&gt.rules);
 	//LockUnlock::increaseCommunicationSpinBox();
 	//after the importing
 }

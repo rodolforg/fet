@@ -49,9 +49,9 @@ class LockUnlock{
 public:
 	static CommunicationSpinBox communicationSpinBox; // small hint to sync the forms
 
-	static void computeLockedUnlockedActivitiesTimeSpace();
-	static void computeLockedUnlockedActivitiesOnlyTime();
-	static void computeLockedUnlockedActivitiesOnlySpace();
+	static void computeLockedUnlockedActivitiesTimeSpace(const Rules* rules);
+	static void computeLockedUnlockedActivitiesOnlyTime(const Rules* rules);
+	static void computeLockedUnlockedActivitiesOnlySpace(const Rules* rules);
 
 	/// Reports whether an activity has any kind of time lock
 	static bool isActivityTimeLocked(int activityId);
@@ -90,7 +90,7 @@ public:
 	static QString getActivityLockTipString(int activityId);
 	static QString getActivityLockDetailsString(int activityId);
 
-	static void assertIsUpdated();
+	static void assertIsUpdated(const Rules* rules);
 
 private:
 	static QSet<int> idsOfLockedTime;
