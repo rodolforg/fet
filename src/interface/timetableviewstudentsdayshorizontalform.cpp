@@ -789,9 +789,6 @@ void TimetableViewStudentsDaysHorizontalForm::lock(bool lockTime, bool lockSpace
 	LockUnlock::assertIsUpdated();
 
 	LockUnlock::increaseCommunicationSpinBox(); //this is needed
-	
-	//cout<<"students end, isc="<<gt.rules.internalStructureComputed<<endl;
-	//cout<<endl;
 }
 
 void TimetableViewStudentsDaysHorizontalForm::help()

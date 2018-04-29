@@ -648,8 +648,6 @@ void TimetableViewRoomsTimeHorizontalForm::lockTimeSpace()
 			
 void TimetableViewRoomsTimeHorizontalForm::lock(bool lockTime, bool lockSpace)
 {
-	//cout<<"teachers begin, isc="<<gt.rules.internalStructureComputed<<endl;
-
 	if(simulation_running){
 		QMessageBox::information(this, tr("FET information"),
 			tr("Allocation in course.\nPlease stop simulation before this."));
@@ -856,9 +854,6 @@ void TimetableViewRoomsTimeHorizontalForm::lock(bool lockTime, bool lockSpace)
 	LockUnlock::assertIsUpdated();
 
 	LockUnlock::increaseCommunicationSpinBox();
-	
-	//cout<<"teachers end, isc="<<gt.rules.internalStructureComputed<<endl;
-	//cout<<endl;
 }
 
 void TimetableViewRoomsTimeHorizontalForm::widthSpinBoxValueChanged()
