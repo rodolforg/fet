@@ -52,6 +52,11 @@ private:
 struct ErrorList : public QList<ErrorCode> {
 	bool hasError() const;
 	bool hasFatal() const;
+	/**
+	 * Set the groupId of all messages with severity selected by filter
+	 * except those with groupId already set, unless override is true.
+	 */
+	void setGroupIdForMessages(int groupId, ErrorCode::Severity filter, bool override = false);
 };
 
 #endif // ERRORCODE_H

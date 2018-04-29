@@ -40,11 +40,13 @@ struct ErrorRenderer
 	/**
 	 * @brief Shows a message dialog for each error one at a time
 	 * Messages with same Group Id can be skipped
+	 * Messages with Group Id equals to -1 are always ignored
 	 * @param parent Parent for the message dialog
 	 * @param erc error
+	 * @param severity minimum acceptable severity. The rest is unrendered/ignored.
 	 * @return true if user wants to ignore next error from same group Id
 	 */
-	static void renderErrorList(QWidget* parent, const ErrorList& errors);
+	static void renderErrorList(QWidget* parent, const ErrorList& errors, ErrorCode::Severity severity = ErrorCode::Verbose);
 };
 
 #endif // ERRORRENDERER_H
