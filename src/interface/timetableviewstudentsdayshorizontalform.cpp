@@ -70,8 +70,6 @@ extern bool simulation_running;
 extern Matrix3D<bool> subgroupNotAvailableDayHour;
 extern Matrix2D<bool> breakDayHour;
 
-extern CommunicationSpinBox communicationSpinBox;	//small hint to sync the forms
-
 TimetableViewStudentsDaysHorizontalForm::TimetableViewStudentsDaysHorizontalForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);
@@ -170,7 +168,7 @@ TimetableViewStudentsDaysHorizontalForm::TimetableViewStudentsDaysHorizontalForm
 		yearsListWidget->setCurrentRow(0);
 
 	//added by Volker Dirr
-	connect(&communicationSpinBox, SIGNAL(valueChanged()), this, SLOT(updateStudentsTimetableTable()));
+	connect(&LockUnlock::communicationSpinBox, SIGNAL(valueChanged()), this, SLOT(updateStudentsTimetableTable()));
 }
 
 TimetableViewStudentsDaysHorizontalForm::~TimetableViewStudentsDaysHorizontalForm()
@@ -328,6 +326,7 @@ void TimetableViewStudentsDaysHorizontalForm::updateStudentsTimetableTable(){
 		for(int j=0; j<studentsTimetableTable->rowCount(); j++){
 			if (studentsTimetableTable->rowSpan(j,k) != 1 || studentsTimetableTable->columnSpan(j,k) != 1)
 				studentsTimetableTable->setSpan(j, k, 1, 1);
+			studentsTimetableTable->item(j,k)->setData(Qt::UserRole, UNALLOCATED_ACTIVITY);
 		}
 	}
 

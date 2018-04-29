@@ -26,12 +26,12 @@ File lockunlock.cpp
 
 extern Timetable gt;
 
-QSet<int> idsOfLockedTime;
-QSet<int> idsOfLockedSpace;
-QSet<int> idsOfPermanentlyLockedTime;
-QSet<int> idsOfPermanentlyLockedSpace;
+QSet<int> LockUnlock::idsOfLockedTime;
+QSet<int> LockUnlock::idsOfLockedSpace;
+QSet<int> LockUnlock::idsOfPermanentlyLockedTime;
+QSet<int> LockUnlock::idsOfPermanentlyLockedSpace;
 
-CommunicationSpinBox communicationSpinBox;
+CommunicationSpinBox LockUnlock::communicationSpinBox;
 
 
 CommunicationSpinBox::CommunicationSpinBox()

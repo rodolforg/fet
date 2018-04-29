@@ -85,8 +85,6 @@ extern QSet<int> idsOfLockedSpace;		//care about locked activities in view forms
 extern QSet<int> idsOfPermanentlyLockedTime;	//care about locked activities in view forms
 extern QSet<int> idsOfPermanentlyLockedSpace;	//care about locked activities in view forms
 
-extern CommunicationSpinBox communicationSpinBox;	//small hint to sync the forms
-
 extern const int MINIMUM_WIDTH_SPIN_BOX_VALUE; //trick found on the internet, so that these two constants are visible in timetableviewteacherstimehorizontalform.cpp
 extern const int MINIMUM_HEIGHT_SPIN_BOX_VALUE;
 const int MINIMUM_WIDTH_SPIN_BOX_VALUE=9;
@@ -414,7 +412,7 @@ TimetableViewStudentsTimeHorizontalForm::TimetableViewStudentsTimeHorizontalForm
 	connect(teachersCheckBox, SIGNAL(toggled(bool)), this, SLOT(updateStudentsTimetableTable()));
 	
 	//added by Volker Dirr
-	connect(&communicationSpinBox, SIGNAL(valueChanged()), this, SLOT(updateStudentsTimetableTable()));
+	connect(&LockUnlock::communicationSpinBox, SIGNAL(valueChanged()), this, SLOT(updateStudentsTimetableTable()));
 	
 	updateStudentsTimetableTable();
 }
