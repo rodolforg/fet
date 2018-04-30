@@ -7,20 +7,23 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef CONFLICTINFO_H
-#define CONFLICTINFO_H
+#include "conflictinfo.h"
+#include <cassert>
 
-#include <QList>
-#include <QString>
+void ConflictInfo::clear()
+{
+	weights.clear();
+	descriptions.clear();
+}
 
-struct ConflictInfo {
-	QList<double> weights;
-	QList<QString> descriptions;
+void ConflictInfo::append(double weight, const QString& description)
+{
+	weights.append(weight);
+	descriptions.append(description);
+}
 
-	void clear();
-	void append(double weight, const QString& description);
-
-	int count() const;
-};
-
-#endif // CONFLICTINFO_H
+int ConflictInfo::count() const
+{
+	assert(weights.count() == descriptions.count());
+	return weights.count();
+}

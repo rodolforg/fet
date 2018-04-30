@@ -22,6 +22,7 @@ SOURCES += \
 	engine/randomknuth.cpp \
 	engine/messageboxes.cpp \
 	engine/xmllog.cpp \
+	engine/conflictinfo.cpp \
 	engine/statisticsexport.cpp \
 	engine/lockunlock.cpp \
 	engine/constraints/constraintpre.cpp \

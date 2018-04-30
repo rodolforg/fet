@@ -15,6 +15,7 @@ SOURCES += \
 	../../../src/engine/spaceconstraint.cpp \
 	../../../src/engine/timetable_defs.cpp \
 	../../../src/engine/xmllog.cpp \
+	../../../src/engine/conflictinfo.cpp \
 	../../../src/engine/constraints/constraintpre.cpp \
 	../../../src/engine/constraints/mindaysbetweenactivities.cpp \
 	../../../src/engine/constraints/maxdaysbetweenactivities.cpp \

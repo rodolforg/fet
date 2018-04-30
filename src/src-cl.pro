@@ -21,6 +21,7 @@ SOURCES += \
 	engine/randomknuth.cpp \
 	engine/messageboxes.cpp \
 	engine/xmllog.cpp \
+	engine/conflictinfo.cpp \
 	engine/constraints/constraintpre.cpp \
 	engine/constraints/mindaysbetweenactivities.cpp \
 	engine/constraints/maxdaysbetweenactivities.cpp \

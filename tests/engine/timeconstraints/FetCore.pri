@@ -16,6 +16,7 @@ SOURCES += \
  	../../../../src/engine/randomknuth.cpp \
  	../../../../src/engine/timetable_defs.cpp \
  	../../../../src/engine/generate_pre.cpp \
+	../../../../src/engine/conflictinfo.cpp \
  	../../../../src/interface/longtextmessagebox.cpp \
  	../../../../src/engine/constraints/constraintpre.cpp \
  	../../../../src/engine/constraints/mindaysbetweenactivities.cpp \
