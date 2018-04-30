@@ -13447,7 +13447,7 @@ double ConstraintTeacherIntervalMaxDaysPerWeek::fitness(Solution& c, const Rules
 	if(nOcDays > this->maxDaysPerWeek){
 		nbroken+=nOcDays-this->maxDaysPerWeek;
 
-		if(nbroken>0){
+		if(conflictInfo != NULL){
 			QString s= tr("Time constraint teacher interval max days per week broken for teacher: %1, allowed %2 days, required %3 days.")
 			 .arg(r.internalTeachersList[t]->name)
 			 .arg(this->maxDaysPerWeek)
@@ -13679,7 +13679,7 @@ double ConstraintTeachersIntervalMaxDaysPerWeek::fitness(Solution& c, const Rule
 		if(nOcDays > this->maxDaysPerWeek){
 			nbroken+=nOcDays-this->maxDaysPerWeek;
 
-			if(nOcDays-this->maxDaysPerWeek>0){
+			if(conflictInfo != NULL){
 				QString s= tr("Time constraint teachers interval max days per week broken for teacher: %1, allowed %2 days, required %3 days.")
 				 .arg(r.internalTeachersList[t]->name)
 				 .arg(this->maxDaysPerWeek)
@@ -13968,7 +13968,7 @@ double ConstraintStudentsSetIntervalMaxDaysPerWeek::fitness(Solution& c, const R
 		if(nOcDays > this->maxDaysPerWeek){
 			nbroken+=nOcDays-this->maxDaysPerWeek;
 
-			if((nOcDays-this->maxDaysPerWeek)>0){
+			if(conflictInfo != NULL){
 				QString s= tr("Time constraint students set interval max days per week broken for subgroup: %1, allowed %2 days, required %3 days.")
 				 .arg(r.internalSubgroupsList[sbg]->name)
 				 .arg(this->maxDaysPerWeek)
@@ -14198,7 +14198,7 @@ double ConstraintStudentsIntervalMaxDaysPerWeek::fitness(Solution& c, const Rule
 		if(nOcDays > this->maxDaysPerWeek){
 			nbroken+=nOcDays-this->maxDaysPerWeek;
 
-			if((nOcDays-this->maxDaysPerWeek)>0){
+			if(conflictInfo != NULL){
 				QString s= tr("Time constraint students interval max days per week broken for subgroup: %1, allowed %2 days, required %3 days.")
 				 .arg(r.internalSubgroupsList[sbg]->name)
 				 .arg(this->maxDaysPerWeek)
@@ -16821,7 +16821,7 @@ double ConstraintStudentsSetMaxDaysPerWeek::fitness(Solution& c, const Rules& r,
 		if(nOcDays > this->maxDaysPerWeek){
 			nbroken+=nOcDays-this->maxDaysPerWeek;
 
-			if((nOcDays-this->maxDaysPerWeek)>0){
+			if(conflictInfo != NULL){
 				QString s= tr("Time constraint students set max days per week broken for subgroup: %1, allowed %2 days, required %3 days.")
 				 .arg(r.internalSubgroupsList[sbg]->name)
 				 .arg(this->maxDaysPerWeek)
@@ -17001,7 +17001,7 @@ double ConstraintStudentsMaxDaysPerWeek::fitness(Solution& c, const Rules& r, Co
 		if(nOcDays > this->maxDaysPerWeek){
 			nbroken+=nOcDays-this->maxDaysPerWeek;
 
-			if((nOcDays-this->maxDaysPerWeek)>0){
+			if(conflictInfo != NULL){
 				QString s= tr("Time constraint students max days per week broken for subgroup: %1, allowed %2 days, required %3 days.")
 				 .arg(r.internalSubgroupsList[sbg]->name)
 				 .arg(this->maxDaysPerWeek)
