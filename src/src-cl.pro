@@ -1,11 +1,12 @@
 SOURCES += \
 	engine/timetableexport.cpp \
 	engine/activity.cpp \
-    engine/groupactivitiesininitialorderitem.cpp \
+	engine/groupactivitiesininitialorderitem.cpp \
 	engine/solution.cpp \
 	engine/timetable.cpp \
 	engine/rules.cpp \
 	engine/errorcode.cpp \
+	engine/export.cpp \
 	engine/generate_pre.cpp \
 	engine/timeconstraint.cpp \
 	engine/spaceconstraint.cpp \
@@ -19,7 +20,6 @@ SOURCES += \
 	engine/generate.cpp \
 	engine/randomknuth.cpp \
 	engine/messageboxes.cpp \
-	engine/export.cpp \
 	engine/xmllog.cpp \
 	engine/constraints/constraintpre.cpp \
 	engine/constraints/mindaysbetweenactivities.cpp \
@@ -44,7 +44,7 @@ SOURCES += \
 HEADERS += \
 	engine/timetableexport.h \
 	engine/activity.h \
-    engine/groupactivitiesininitialorderitem.h \
+	engine/groupactivitiesininitialorderitem.h \
 	engine/solution.h \
 	engine/timetable.h \
 	engine/rules.h \

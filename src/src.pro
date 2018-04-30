@@ -1,7 +1,7 @@
 SOURCES += \
 	engine/timetableexport.cpp \
 	engine/activity.cpp \
-    engine/groupactivitiesininitialorderitem.cpp \
+	engine/groupactivitiesininitialorderitem.cpp \
 	engine/solution.cpp \
 	engine/timetable.cpp \
 	engine/rules.cpp \
@@ -19,11 +19,11 @@ SOURCES += \
 	engine/building.cpp \
 	engine/timetable_defs.cpp \
 	engine/generate.cpp \
-	engine/statisticsexport.cpp \
-	engine/lockunlock.cpp \
 	engine/randomknuth.cpp \
 	engine/messageboxes.cpp \
 	engine/xmllog.cpp \
+	engine/statisticsexport.cpp \
+	engine/lockunlock.cpp \
 	engine/constraints/constraintpre.cpp \
 	engine/constraints/mindaysbetweenactivities.cpp \
 	engine/constraints/maxdaysbetweenactivities.cpp \
@@ -492,13 +492,13 @@ SOURCES += \
 	interface/teacherstudentsetsubjectactivitytag_filterwidget.cpp \
 	interface/timeconstraint_basedialog.cpp \
 	interface/spaceconstraint_basedialog.cpp \
-    interface/addconstraintteachersmincontinuousgapinintervalform.cpp \
-    interface/constraintteachersmincontinuousgapinintervalform.cpp \
-    interface/constraintteachermincontinuousgapinintervalform.cpp \
-    interface/addconstraintstudentsmincontinuousgapinintervalform.cpp \
-    interface/constraintstudentssetmincontinuousgapinintervalform.cpp \
-    interface/constraintstudentsmincontinuousgapinintervalform.cpp \
-    interface/editcommentsform.cpp \
+	interface/addconstraintteachersmincontinuousgapinintervalform.cpp \
+	interface/constraintteachersmincontinuousgapinintervalform.cpp \
+	interface/constraintteachermincontinuousgapinintervalform.cpp \
+	interface/addconstraintstudentsmincontinuousgapinintervalform.cpp \
+	interface/constraintstudentssetmincontinuousgapinintervalform.cpp \
+	interface/constraintstudentsmincontinuousgapinintervalform.cpp \
+	interface/editcommentsform.cpp \
 	interface/errorrenderer.cpp \
 	interface/fetguisettings.cpp \
 	interface/invisiblesubgrouphelper.cpp \
@@ -506,7 +506,7 @@ SOURCES += \
 HEADERS += \
 	engine/timetableexport.h \
 	engine/activity.h \
-    engine/groupactivitiesininitialorderitem.h \
+	engine/groupactivitiesininitialorderitem.h \
 	engine/solution.h \
 	engine/timetable.h \
 	engine/rules.h \
@@ -1001,13 +1001,13 @@ HEADERS += \
 	interface/teacherstudentsetsubjectactivitytag_filterwidget.h \
 	interface/timeconstraint_basedialog.h \
 	interface/spaceconstraint_basedialog.h \
-    interface/addconstraintteachersmincontinuousgapinintervalform.h \
-    interface/constraintteachersmincontinuousgapinintervalform.h \
-    interface/constraintteachermincontinuousgapinintervalform.h \
-    interface/addconstraintstudentsmincontinuousgapinintervalform.h \
-    interface/constraintstudentssetmincontinuousgapinintervalform.h \
-    interface/constraintstudentsmincontinuousgapinintervalform.h \
-    interface/editcommentsform.h \
+	interface/addconstraintteachersmincontinuousgapinintervalform.h \
+	interface/constraintteachersmincontinuousgapinintervalform.h \
+	interface/constraintteachermincontinuousgapinintervalform.h \
+	interface/addconstraintstudentsmincontinuousgapinintervalform.h \
+	interface/constraintstudentssetmincontinuousgapinintervalform.h \
+	interface/constraintstudentsmincontinuousgapinintervalform.h \
+	interface/editcommentsform.h \
 	interface/errorrenderer.h \
 	interface/fetguisettings.h \
 	interface/invisiblesubgrouphelper.h \
@@ -1345,9 +1345,9 @@ FORMS += \
 	\
 	interface/constraint_basedialog_template.ui \
 	interface/teacherstudentsetsubjectactivitytag_filterwidget.ui \
-    interface/addconstraintteachersmincontinuousgapinintervalform_template.ui \
-    interface/addconstraintstudentsmincontinuousgapinintervalform_template.ui \
-    interface/editcommentsform_template.ui
+	interface/addconstraintteachersmincontinuousgapinintervalform_template.ui \
+	interface/addconstraintstudentsmincontinuousgapinintervalform_template.ui \
+	interface/editcommentsform_template.ui
 
 TRANSLATIONS += \
 	../translations/fet_ar.ts \
