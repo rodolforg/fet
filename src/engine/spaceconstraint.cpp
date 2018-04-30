@@ -228,7 +228,6 @@ double ConstraintBasicCompulsorySpace::fitness(
 	bool ignoreUnallocated,
 	ConflictInfo* conflictInfo)
 {
-
 	assert(r.internalStructureComputed);
 
 	const Matrix3D<int>* p_roomsMatrix;

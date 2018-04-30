@@ -610,6 +610,7 @@ QList<int> Solution::getUnallocatedActivities(const Rules& rules) const
 	for(int ai=0; ai < rules.nInternalActivities; ai++)
 		if (times[ai] == UNALLOCATED_TIME)
 			answer.append(ai);
+	assert (rules.nInternalActivities - answer.count() == nPlacedActivities);
 	return answer;
 }
 
