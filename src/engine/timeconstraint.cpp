@@ -56,17 +56,6 @@ static QString yesNoTranslated(bool x){
 		return QCoreApplication::translate("TimeConstraint", "yes", "yes - meaning affirmative");
 }
 
-//The following 2 matrices are kept to make the computation faster
-//They are calculated only at the beginning of the computation of the fitness
-//of the solution.
-/*static qint8 subgroupsMatrix[MAX_TOTAL_SUBGROUPS][MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
-static qint8 teachersMatrix[MAX_TEACHERS][MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];*/
-static Matrix3D<int> subgroupsMatrix;
-static Matrix3D<int> teachersMatrix;
-
-static int teachers_conflicts=-1;
-static int subgroups_conflicts=-1;
-
 //extern bool breakDayHour[MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
 extern Matrix2D<bool> breakDayHour;
 
@@ -317,25 +306,14 @@ QString ConstraintBasicCompulsoryTime::getDetailedDescription(const Rules& r) co
 double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo){
 	assert(r.internalStructureComputed);
 
-	int teachersConflicts, subgroupsConflicts;
-	
 	assert(weightPercentage==100.0);
 
-	//This constraint fitness calculation routine is called firstly,
-	//so we can compute the teacher and subgroups conflicts faster this way.
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-	
-		subgroups_conflicts = subgroupsConflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = teachersConflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-	else{
-		assert(subgroups_conflicts>=0);
-		assert(teachers_conflicts>=0);
-		subgroupsConflicts = subgroups_conflicts;
-		teachersConflicts = teachers_conflicts;
-	}
+	const Matrix3D<int>* p_teachersMatrix;
+	int teachersConflicts = c.getTeachersMatrix(r, &p_teachersMatrix);
+	const Matrix3D<int>& teachersMatrix = *p_teachersMatrix;
+	const Matrix3D<int>* p_subgroupsMatrix;
+	int subgroupsConflicts = c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
 
 	qint64 unallocated = 0; //unallocated activities
 	int late = 0; //late activities
@@ -642,14 +620,9 @@ bool ConstraintTeacherNotAvailableTimes::hasInactiveActivities(const Rules& r) c
 
 double ConstraintTeacherNotAvailableTimes::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_teachersMatrix;
+	c.getTeachersMatrix(r, &p_teachersMatrix);
+	const Matrix3D<int>& teachersMatrix = *p_teachersMatrix;
 
 	//Calculates the number of hours when the teacher is supposed to be teaching, but he is not available
 	//This function consideres all the hours, I mean if there are for example 5 weekly courses
@@ -929,13 +902,9 @@ QString ConstraintStudentsSetNotAvailableTimes::getDetailedDescription(const Rul
 
 double ConstraintStudentsSetNotAvailableTimes::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_subgroupsMatrix;
+	c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
 
 	int nbroken = 0;
 
@@ -2563,13 +2532,9 @@ QString ConstraintTeachersMaxHoursDaily::getDetailedDescription(const Rules& r) 
 
 double ConstraintTeachersMaxHoursDaily::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_teachersMatrix;
+	c.getTeachersMatrix(r, &p_teachersMatrix);
+	const Matrix3D<int>& teachersMatrix = *p_teachersMatrix;
 
 	int nbroken = 0;
 
@@ -2754,13 +2719,9 @@ QString ConstraintTeacherMaxHoursDaily::getDetailedDescription(const Rules& r) c
 
 double ConstraintTeacherMaxHoursDaily::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_teachersMatrix;
+	c.getTeachersMatrix(r, &p_teachersMatrix);
+	const Matrix3D<int>& teachersMatrix = *p_teachersMatrix;
 
 	int nbroken = 0;
 
@@ -2938,13 +2899,9 @@ QString ConstraintTeachersMaxHoursContinuously::getDetailedDescription(const Rul
 
 double ConstraintTeachersMaxHoursContinuously::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_teachersMatrix;
+	c.getTeachersMatrix(r, &p_teachersMatrix);
+	const Matrix3D<int>& teachersMatrix = *p_teachersMatrix;
 
 	int nbroken = 0;
 
@@ -3154,13 +3111,9 @@ QString ConstraintTeacherMaxHoursContinuously::getDetailedDescription(const Rule
 
 double ConstraintTeacherMaxHoursContinuously::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_teachersMatrix;
+	c.getTeachersMatrix(r, &p_teachersMatrix);
+	const Matrix3D<int>& teachersMatrix = *p_teachersMatrix;
 
 	int nbroken = 0;
 
@@ -3384,14 +3337,6 @@ QString ConstraintTeachersActivityTagMaxHoursContinuously::getDetailedDescriptio
 
 double ConstraintTeachersActivityTagMaxHoursContinuously::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-
 	int nbroken = 0;
 
 	foreach(int i, this->canonicalTeachersList){
@@ -3641,14 +3586,6 @@ QString ConstraintTeacherActivityTagMaxHoursContinuously::getDetailedDescription
 
 double ConstraintTeacherActivityTagMaxHoursContinuously::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-
 	int nbroken = 0;
 
 	foreach(int i, this->canonicalTeachersList){
@@ -3878,13 +3815,9 @@ QString ConstraintTeacherMaxDaysPerWeek::getDetailedDescription(const Rules& r) 
 
 double ConstraintTeacherMaxDaysPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_teachersMatrix;
+	c.getTeachersMatrix(r, &p_teachersMatrix);
+	const Matrix3D<int>& teachersMatrix = *p_teachersMatrix;
 
 	int nbroken = 0;
 
@@ -4076,13 +4009,9 @@ QString ConstraintTeachersMaxDaysPerWeek::getDetailedDescription(const Rules& r)
 
 double ConstraintTeachersMaxDaysPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_teachersMatrix;
+	c.getTeachersMatrix(r, &p_teachersMatrix);
+	const Matrix3D<int>& teachersMatrix = *p_teachersMatrix;
 
 	int nbroken = 0;
 
@@ -4276,14 +4205,10 @@ QString ConstraintTeachersMaxGapsPerWeek::getDetailedDescription(const Rules& r)
 
 double ConstraintTeachersMaxGapsPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 { 
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-	
+	const Matrix3D<int>* p_teachersMatrix;
+	c.getTeachersMatrix(r, &p_teachersMatrix);
+	const Matrix3D<int>& teachersMatrix = *p_teachersMatrix;
+
 	int tg;
 	int i, j, k;
 	int totalGaps;
@@ -4476,14 +4401,10 @@ QString ConstraintTeacherMaxGapsPerWeek::getDetailedDescription(const Rules& r) 
 
 double ConstraintTeacherMaxGapsPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 { 
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-	
+	const Matrix3D<int>* p_teachersMatrix;
+	c.getTeachersMatrix(r, &p_teachersMatrix);
+	const Matrix3D<int>& teachersMatrix = *p_teachersMatrix;
+
 	int tg;
 	int i, j, k;
 	int totalGaps;
@@ -4670,14 +4591,10 @@ QString ConstraintTeachersMaxGapsPerDay::getDetailedDescription(const Rules& r) 
 
 double ConstraintTeachersMaxGapsPerDay::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 { 
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-	
+	const Matrix3D<int>* p_teachersMatrix;
+	c.getTeachersMatrix(r, &p_teachersMatrix);
+	const Matrix3D<int>& teachersMatrix = *p_teachersMatrix;
+
 	int tg;
 	int i, j, k;
 	int totalGaps;
@@ -4869,14 +4786,10 @@ QString ConstraintTeacherMaxGapsPerDay::getDetailedDescription(const Rules& r) c
 
 double ConstraintTeacherMaxGapsPerDay::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 { 
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-	
+	const Matrix3D<int>* p_teachersMatrix;
+	c.getTeachersMatrix(r, &p_teachersMatrix);
+	const Matrix3D<int>& teachersMatrix = *p_teachersMatrix;
+
 	int tg;
 	int i, j, k;
 	int totalGaps;
@@ -5111,14 +5024,6 @@ ErrorCode ConstraintBreakTimes::computeInternalStructure(const Rules& r)
 
 double ConstraintBreakTimes::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-
 	//DEPRECATED COMMENT
 	//For the moment, this function sums the number of hours each teacher
 	//is teaching in this break period.
@@ -5330,13 +5235,9 @@ double ConstraintStudentsMaxGapsPerWeek::fitness(Solution& c, const Rules& r, Co
 {
 	//returns a number equal to the number of gaps of the subgroups (in hours)
 
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_subgroupsMatrix;
+	c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
 
 	int nGaps;
 	int tmp;
@@ -5582,14 +5483,10 @@ double ConstraintStudentsSetMaxGapsPerWeek::fitness(Solution& c, const Rules& r,
 	//OLD COMMENT
 	//returns a number equal to the number of gaps of the subgroups (in hours)
 
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-	
+	const Matrix3D<int>* p_subgroupsMatrix;
+	c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
+
 	int nGaps;
 	int tmp;
 	
@@ -5783,14 +5680,10 @@ double ConstraintStudentsEarlyMaxBeginningsAtSecondHour::fitness(Solution& c, co
 {
 	//considers the condition that the hours of subgroups begin as early as possible
 
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-	
+	const Matrix3D<int>* p_subgroupsMatrix;
+	c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
+
 	int conflTotal=0;
 	
 	for(int i=0; i<r.nInternalSubgroups; i++){
@@ -6065,14 +5958,10 @@ double ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::fitness(Solution& c,
 {
 	//considers the condition that the hours of subgroups begin as early as possible
 
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-	
+	const Matrix3D<int>* p_subgroupsMatrix;
+	c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
+
 	int conflTotal=0;
 
 	foreach(int i, this->iSubgroupsList){
@@ -6291,13 +6180,9 @@ QString ConstraintStudentsMaxHoursDaily::getDetailedDescription(const Rules& r) 
 
 double ConstraintStudentsMaxHoursDaily::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_subgroupsMatrix;
+	c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
 
 	int tmp;
 	int too_much;
@@ -6535,13 +6420,9 @@ ErrorCode ConstraintStudentsSetMaxHoursDaily::computeInternalStructure(const Rul
 
 double ConstraintStudentsSetMaxHoursDaily::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_subgroupsMatrix;
+	c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
 
 	int tmp;
 	int too_much;
@@ -6728,14 +6609,10 @@ QString ConstraintStudentsMaxHoursContinuously::getDetailedDescription(const Rul
 
 double ConstraintStudentsMaxHoursContinuously::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-	
+	const Matrix3D<int>* p_subgroupsMatrix;
+	c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
+
 	int nbroken = 0;
 
 	for(int i=0; i<r.nInternalSubgroups; i++){
@@ -6994,13 +6871,9 @@ ErrorCode ConstraintStudentsSetMaxHoursContinuously::computeInternalStructure(co
 
 double ConstraintStudentsSetMaxHoursContinuously::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_subgroupsMatrix;
+	c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
 
 	int nbroken = 0;
 
@@ -7231,14 +7104,6 @@ QString ConstraintStudentsActivityTagMaxHoursContinuously::getDetailedDescriptio
 
 double ConstraintStudentsActivityTagMaxHoursContinuously::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-	
 	int nbroken = 0;
 
 	foreach(int i, this->canonicalSubgroupsList){
@@ -7542,14 +7407,6 @@ ErrorCode ConstraintStudentsSetActivityTagMaxHoursContinuously::computeInternalS
 
 double ConstraintStudentsSetActivityTagMaxHoursContinuously::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-
 	int nbroken = 0;
 
 	foreach(int i, this->canonicalSubgroupsList){
@@ -7792,13 +7649,9 @@ QString ConstraintStudentsMinHoursDaily::getDetailedDescription(const Rules& r) 
 
 double ConstraintStudentsMinHoursDaily::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_subgroupsMatrix;
+	c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
 
 	int tmp;
 	int too_little;
@@ -8058,13 +7911,9 @@ ErrorCode ConstraintStudentsSetMinHoursDaily::computeInternalStructure(const Rul
 
 double ConstraintStudentsSetMinHoursDaily::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_subgroupsMatrix;
+	c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
 
 	int tmp;
 	int too_little;
@@ -8331,14 +8180,6 @@ QString ConstraintActivityPreferredStartingTime::getDetailedDescription(const Ru
 
 double ConstraintActivityPreferredStartingTime::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-
 	int nbroken = 0;
 
 	assert(r.internalStructureComputed);
@@ -8594,14 +8435,6 @@ QString ConstraintActivityPreferredTimeSlots::getDetailedDescription(const Rules
 
 double ConstraintActivityPreferredTimeSlots::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-
 	assert(r.internalStructureComputed);
 	
 	Matrix2D<bool> allowed;
@@ -9041,14 +8874,6 @@ QString ConstraintActivitiesPreferredTimeSlots::getDetailedDescription(const Rul
 
 double ConstraintActivitiesPreferredTimeSlots::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-
 	assert(r.internalStructureComputed);
 
 ///////////////////
@@ -9514,14 +9339,6 @@ QString ConstraintSubactivitiesPreferredTimeSlots::getDetailedDescription(const 
 
 double ConstraintSubactivitiesPreferredTimeSlots::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-
 	assert(r.internalStructureComputed);
 
 ///////////////////
@@ -9846,14 +9663,6 @@ QString ConstraintActivityPreferredStartingTimes::getDetailedDescription(const R
 
 double ConstraintActivityPreferredStartingTimes::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-
 	int nbroken = 0;
 
 	assert(r.internalStructureComputed);
@@ -10285,14 +10094,6 @@ QString ConstraintActivitiesPreferredStartingTimes::getDetailedDescription(const
 
 double ConstraintActivitiesPreferredStartingTimes::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-
 	int nbroken = 0;
 
 	assert(r.internalStructureComputed);
@@ -10744,14 +10545,6 @@ QString ConstraintSubactivitiesPreferredStartingTimes::getDetailedDescription(co
 
 double ConstraintSubactivitiesPreferredStartingTimes::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-
 	int nbroken = 0;
 
 	assert(r.internalStructureComputed);
@@ -11574,14 +11367,6 @@ QString ConstraintTwoActivitiesConsecutive::getDetailedDescription(const Rules& 
 
 double ConstraintTwoActivitiesConsecutive::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-
 	int nbroken = 0;
 
 	assert(r.internalStructureComputed);
@@ -11832,14 +11617,6 @@ QString ConstraintTwoActivitiesGrouped::getDetailedDescription(const Rules& r) c
 
 double ConstraintTwoActivitiesGrouped::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-
 	int nbroken = 0;
 
 	assert(r.internalStructureComputed);
@@ -12130,14 +11907,6 @@ QString ConstraintThreeActivitiesGrouped::getDetailedDescription(const Rules& r)
 
 double ConstraintThreeActivitiesGrouped::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-
 	int nbroken = 0;
 
 	assert(r.internalStructureComputed);
@@ -12453,14 +12222,6 @@ QString ConstraintTwoActivitiesOrdered::getDetailedDescription(const Rules& r) c
 
 double ConstraintTwoActivitiesOrdered::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-
 	int nbroken = 0;
 
 	assert(r.internalStructureComputed);
@@ -12656,13 +12417,9 @@ QString ConstraintActivityEndsStudentsDay::getDetailedDescription(const Rules& r
 
 double ConstraintActivityEndsStudentsDay::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_subgroupsMatrix;
+	c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
 
 	int nbroken = 0;
 
@@ -12857,14 +12614,10 @@ QString ConstraintTeachersMinHoursDaily::getDetailedDescription(const Rules& r) 
 
 double ConstraintTeachersMinHoursDaily::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-	
+	const Matrix3D<int>* p_teachersMatrix;
+	c.getTeachersMatrix(r, &p_teachersMatrix);
+	const Matrix3D<int>& teachersMatrix = *p_teachersMatrix;
+
 	assert(this->allowEmptyDays==true);
 
 	int nbroken = 0;
@@ -13068,14 +12821,10 @@ QString ConstraintTeacherMinHoursDaily::getDetailedDescription(const Rules& r) c
 
 double ConstraintTeacherMinHoursDaily::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-	
+	const Matrix3D<int>* p_teachersMatrix;
+	c.getTeachersMatrix(r, &p_teachersMatrix);
+	const Matrix3D<int>& teachersMatrix = *p_teachersMatrix;
+
 	assert(this->allowEmptyDays==true);
 
 	int nbroken = 0;
@@ -13261,13 +13010,9 @@ QString ConstraintTeacherMinDaysPerWeek::getDetailedDescription(const Rules& r) 
 
 double ConstraintTeacherMinDaysPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_teachersMatrix;
+	c.getTeachersMatrix(r, &p_teachersMatrix);
+	const Matrix3D<int>& teachersMatrix = *p_teachersMatrix;
 
 	int nbroken = 0;
 	int i=this->teacher_ID;
@@ -13447,13 +13192,9 @@ QString ConstraintTeachersMinDaysPerWeek::getDetailedDescription(const Rules& r)
 
 double ConstraintTeachersMinDaysPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_teachersMatrix;
+	c.getTeachersMatrix(r, &p_teachersMatrix);
+	const Matrix3D<int>& teachersMatrix = *p_teachersMatrix;
 
 	int nbrokentotal=0;
 	for(int i=0; i<r.nInternalTeachers; i++){
@@ -13682,13 +13423,9 @@ QString ConstraintTeacherIntervalMaxDaysPerWeek::getDetailedDescription(const Ru
 
 double ConstraintTeacherIntervalMaxDaysPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_teachersMatrix;
+	c.getTeachersMatrix(r, &p_teachersMatrix);
+	const Matrix3D<int>& teachersMatrix = *p_teachersMatrix;
 
 	int nbroken = 0;
 	
@@ -13919,13 +13656,9 @@ QString ConstraintTeachersIntervalMaxDaysPerWeek::getDetailedDescription(const R
 
 double ConstraintTeachersIntervalMaxDaysPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_teachersMatrix;
+	c.getTeachersMatrix(r, &p_teachersMatrix);
+	const Matrix3D<int>& teachersMatrix = *p_teachersMatrix;
 
 	int nbroken=0;
 	
@@ -14212,13 +13945,9 @@ QString ConstraintStudentsSetIntervalMaxDaysPerWeek::getDetailedDescription(cons
 
 double ConstraintStudentsSetIntervalMaxDaysPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_subgroupsMatrix;
+	c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
 
 	int nbroken = 0;
 
@@ -14446,13 +14175,9 @@ QString ConstraintStudentsIntervalMaxDaysPerWeek::getDetailedDescription(const R
 
 double ConstraintStudentsIntervalMaxDaysPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_subgroupsMatrix;
+	c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
 
 	int nbroken = 0;
 
@@ -14747,13 +14472,9 @@ QString ConstraintActivitiesEndStudentsDay::getDetailedDescription(const Rules& 
 
 double ConstraintActivitiesEndStudentsDay::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_subgroupsMatrix;
+	c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
 
 	int nbroken=0;
 
@@ -14981,14 +14702,6 @@ QString ConstraintTeachersActivityTagMaxHoursDaily::getDetailedDescription(const
 
 double ConstraintTeachersActivityTagMaxHoursDaily::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-
 	int nbroken = 0;
 
 	foreach(int i, this->canonicalTeachersList){
@@ -15210,14 +14923,6 @@ QString ConstraintTeacherActivityTagMaxHoursDaily::getDetailedDescription(const 
 
 double ConstraintTeacherActivityTagMaxHoursDaily::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-
 	int nbroken = 0;
 
 	foreach(int i, this->canonicalTeachersList){
@@ -15442,14 +15147,6 @@ QString ConstraintStudentsActivityTagMaxHoursDaily::getDetailedDescription(const
 
 double ConstraintStudentsActivityTagMaxHoursDaily::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-	
 	int nbroken = 0;
 
 	foreach(int i, this->canonicalSubgroupsList){
@@ -15724,14 +15421,6 @@ ErrorCode ConstraintStudentsSetActivityTagMaxHoursDaily::computeInternalStructur
 
 double ConstraintStudentsSetActivityTagMaxHoursDaily::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-
 	int nbroken = 0;
 
 	foreach(int i, this->canonicalSubgroupsList){
@@ -15931,14 +15620,10 @@ double ConstraintStudentsMaxGapsPerDay::fitness(Solution& c, const Rules& r, Con
 {
 	//returns a number equal to the number of gaps of the subgroups (in hours)
 
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-	
+	const Matrix3D<int>* p_subgroupsMatrix;
+	c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
+
 	int nGaps;
 	int tmp;
 	int i;
@@ -16187,14 +15872,10 @@ double ConstraintStudentsSetMaxGapsPerDay::fitness(Solution& c, const Rules& r, 
 	//OLD COMMENT
 	//returns a number equal to the number of gaps of the subgroups (in hours)
 
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-	
+	const Matrix3D<int>* p_subgroupsMatrix;
+	c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
+
 	int nGaps;
 	int tmp;
 	
@@ -16492,14 +16173,6 @@ QString ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::getDetailedDescript
 
 double ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-
 	assert(r.internalStructureComputed);
 
 	///////////////////
@@ -16842,14 +16515,6 @@ QString ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::getDetailedDescr
 
 double ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-
 	assert(r.internalStructureComputed);
 
 ///////////////////
@@ -17133,13 +16798,9 @@ QString ConstraintStudentsSetMaxDaysPerWeek::getDetailedDescription(const Rules&
 
 double ConstraintStudentsSetMaxDaysPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_subgroupsMatrix;
+	c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
 
 	int nbroken = 0;
 
@@ -17317,13 +16978,9 @@ QString ConstraintStudentsMaxDaysPerWeek::getDetailedDescription(const Rules& r)
 
 double ConstraintStudentsMaxDaysPerWeek::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_subgroupsMatrix;
+	c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
 
 	int nbroken = 0;
 
@@ -17511,14 +17168,10 @@ QString ConstraintTeacherMaxSpanPerDay::getDetailedDescription(const Rules& r) c
 
 double ConstraintTeacherMaxSpanPerDay::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-	
+	const Matrix3D<int>* p_teachersMatrix;
+	c.getTeachersMatrix(r, &p_teachersMatrix);
+	const Matrix3D<int>& teachersMatrix = *p_teachersMatrix;
+
 	assert(this->weightPercentage==100.0);
 	
 	int nbroken=0;
@@ -17692,14 +17345,10 @@ QString ConstraintTeachersMaxSpanPerDay::getDetailedDescription(const Rules& r) 
 
 double ConstraintTeachersMaxSpanPerDay::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-	
+	const Matrix3D<int>* p_teachersMatrix;
+	c.getTeachersMatrix(r, &p_teachersMatrix);
+	const Matrix3D<int>& teachersMatrix = *p_teachersMatrix;
+
 	assert(this->weightPercentage==100.0);
 	
 	int nbroken=0;
@@ -17929,13 +17578,9 @@ ErrorCode ConstraintStudentsSetMaxSpanPerDay::computeInternalStructure(const Rul
 
 double ConstraintStudentsSetMaxSpanPerDay::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_subgroupsMatrix;
+	c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
 
 	assert(this->weightPercentage==100.0);
 	
@@ -18111,13 +17756,9 @@ ErrorCode ConstraintStudentsMaxSpanPerDay::computeInternalStructure(const Rules&
 
 double ConstraintStudentsMaxSpanPerDay::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_subgroupsMatrix;
+	c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
 
 	assert(this->weightPercentage==100.0);
 	
@@ -18304,14 +17945,10 @@ QString ConstraintTeacherMinRestingHours::getDetailedDescription(const Rules& r)
 
 double ConstraintTeacherMinRestingHours::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-	
+	const Matrix3D<int>* p_teachersMatrix;
+	c.getTeachersMatrix(r, &p_teachersMatrix);
+	const Matrix3D<int>& teachersMatrix = *p_teachersMatrix;
+
 	assert(this->weightPercentage==100.0);
 	
 	int nbroken=0;
@@ -18488,14 +18125,10 @@ QString ConstraintTeachersMinRestingHours::getDetailedDescription(const Rules& r
 
 double ConstraintTeachersMinRestingHours::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
-	
+	const Matrix3D<int>* p_teachersMatrix;
+	c.getTeachersMatrix(r, &p_teachersMatrix);
+	const Matrix3D<int>& teachersMatrix = *p_teachersMatrix;
+
 	assert(this->weightPercentage==100.0);
 	
 	int nbroken=0;
@@ -18728,13 +18361,9 @@ ErrorCode ConstraintStudentsSetMinRestingHours::computeInternalStructure(const R
 
 double ConstraintStudentsSetMinRestingHours::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_subgroupsMatrix;
+	c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
 
 	assert(this->weightPercentage==100.0);
 	
@@ -18913,13 +18542,9 @@ ErrorCode ConstraintStudentsMinRestingHours::computeInternalStructure(const Rule
 
 double ConstraintStudentsMinRestingHours::fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo)
 {
-	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
-	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
-		c.teachersMatrixReady=true;
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_subgroupsMatrix;
+	c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
 
 	assert(this->weightPercentage==100.0);
 	
@@ -19147,11 +18772,9 @@ QString ConstraintTeacherMinContinuousGapInInterval::getDetailedDescription(cons
 
 double ConstraintTeacherMinContinuousGapInInterval::fitness(Solution &c, const Rules &r, ConflictInfo* conflictInfo)
 {
-	//if the matrix teachersMatrix is already calculated, do not calculate it again!
-	if(!c.teachersMatrixReady){
-		c.teachersMatrixReady=true;
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_teachersMatrix;
+	c.getTeachersMatrix(r, &p_teachersMatrix);
+	const Matrix3D<int>& teachersMatrix = *p_teachersMatrix;
 
 	int nbroken = 0;
 
@@ -19396,11 +19019,9 @@ QString ConstraintTeachersMinContinuousGapInInterval::getDetailedDescription(con
 
 double ConstraintTeachersMinContinuousGapInInterval::fitness(Solution &c, const Rules &r, ConflictInfo* conflictInfo)
 {
-	//if the matrix teachersMatrix is already calculated, do not calculate it again!
-	if(!c.teachersMatrixReady){
-		c.teachersMatrixReady=true;
-		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-	}
+	const Matrix3D<int>* p_teachersMatrix;
+	c.getTeachersMatrix(r, &p_teachersMatrix);
+	const Matrix3D<int>& teachersMatrix = *p_teachersMatrix;
 
 	int nbroken = 0;
 
@@ -19696,11 +19317,9 @@ QString ConstraintStudentsSetMinContinuousGapInInterval::getDetailedDescription(
 
 double ConstraintStudentsSetMinContinuousGapInInterval::fitness(Solution &c, const Rules &r, ConflictInfo* conflictInfo)
 {
-	//if the matrix subgroupsMatrix is already calculated, do not calculate it again!
-	if(!c.subgroupsMatrixReady){
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-	}
+	const Matrix3D<int>* p_subgroupsMatrix;
+	c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
 
 	double fitness = 0;
 
@@ -19944,11 +19563,9 @@ QString ConstraintStudentsMinContinuousGapInInterval::getDetailedDescription(con
 
 double ConstraintStudentsMinContinuousGapInInterval::fitness(Solution &c, const Rules &r, ConflictInfo* conflictInfo)
 {
-	//if the matrix subgroupsMatrix is already calculated, do not calculate it again!
-	if(!c.subgroupsMatrixReady){
-		c.subgroupsMatrixReady=true;
-		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
-	}
+	const Matrix3D<int>* p_subgroupsMatrix;
+	c.getSubgroupsMatrix(r, &p_subgroupsMatrix);
+	const Matrix3D<int>& subgroupsMatrix = *p_subgroupsMatrix;
 
 	int nbroken = 0;
 

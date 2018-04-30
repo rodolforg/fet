@@ -41,11 +41,7 @@ public:
 	QList<double> conflictsWeightList;
 	QList<QString> conflictsDescriptionList;
 	double conflictsTotal;
-	
-	bool teachersMatrixReady;
-	bool subgroupsMatrixReady;
-	bool roomsMatrixReady;
-	
+
 	int nPlacedActivities;
 
 	/**
@@ -96,11 +92,11 @@ public:
 	void getRoomsTimetable(const Rules& r, Matrix3D<int>& a) const;
 	//return value is the number of conflicts, which must be 0
 
-	int getSubgroupsMatrix(const Rules &r, Matrix3D<int>& a) const;
+	int getSubgroupsMatrix(const Rules &r, const Matrix3D<int>** p_a) const;
 
-	int getTeachersMatrix(const Rules &r, Matrix3D<int>& a) const;
+	int getTeachersMatrix(const Rules &r, const Matrix3D<int>** p_a) const;
 
-	int getRoomsMatrix(const Rules &r, Matrix3D<int>& a) const;
+	int getRoomsMatrix(const Rules &r, const Matrix3D<int>** p_a) const;
 
 private:
 	/**
@@ -110,6 +106,18 @@ private:
 	otherwise the user has to reset this value to -1
 	*/
 	double _fitness;
+
+	mutable bool teachersMatrixReady;
+	mutable Matrix3D<int> cached_teachersMatrix;
+	mutable int cached_teachersConflicts;
+
+	mutable bool subgroupsMatrixReady;
+	mutable Matrix3D<int> cached_subgroupsMatrix;
+	mutable int cached_subgroupsConflicts;
+
+	mutable bool roomsMatrixReady;
+	mutable Matrix3D<int> cached_roomsMatrix;
+	mutable int cached_roomsConflicts;
 };
 
 #endif

@@ -1172,8 +1172,7 @@ bool Export::exportCSVTimetable(const Solution &solution){
 				<<textquote<<"Room"<<textquote<<fieldSeparator
 				<<textquote<<"Comments"<<textquote<<endl;
 
-	if(gt.rules.initialized && gt.rules.internalStructureComputed
-	 && solution.subgroupsMatrixReady && solution.teachersMatrixReady && solution.roomsMatrixReady){
+	if(gt.rules.initialized && gt.rules.internalStructureComputed){
 		const Activity *act;
 		int exportedActivities=0;
 		for(int i=0; i<gt.rules.nInternalActivities; i++){

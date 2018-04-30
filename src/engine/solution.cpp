@@ -35,8 +35,8 @@ extern Matrix3D<bool> teacherNotAvailableDayHour;
 //critical function here - must be optimized for speed
 Solution::Solution()
 	: conflictsTotal(0),
-	  teachersMatrixReady(false), subgroupsMatrixReady(false), roomsMatrixReady(false),
-	  nPlacedActivities(0), _fitness(-1)
+	  nPlacedActivities(0), _fitness(-1),
+	  teachersMatrixReady(false), subgroupsMatrixReady(false), roomsMatrixReady(false)
 {
 	for(int i=0; i<MAX_ACTIVITIES; i++){
 		this->times[i]=UNALLOCATED_TIME;
@@ -179,12 +179,19 @@ double Solution::fitness(const Rules &r, QString* conflictsString){
 	return this->_fitness;
 }
 
-int Solution::getTeachersMatrix(const Rules& r, Matrix3D<int>& a) const {
+int Solution::getTeachersMatrix(const Rules& r, const Matrix3D<int>** p_a) const {
 	assert(r.initialized);
 	assert(r.internalStructureComputed);
 	
+	if (teachersMatrixReady) {
+		*p_a = &cached_teachersMatrix;
+		return cached_teachersConflicts;
+	}
+
 	int conflicts=0;
 	
+	*p_a = &cached_teachersMatrix;
+	Matrix3D<int>& a = cached_teachersMatrix;
 	a.resize(r.nInternalTeachers, r.nDaysPerWeek, r.nHoursPerDay);
 
 	int i;
@@ -207,15 +214,25 @@ int Solution::getTeachersMatrix(const Rules& r, Matrix3D<int>& a) const {
 				}
 		}
 
+	cached_teachersConflicts = conflicts;
+	teachersMatrixReady = true;
+
 	return conflicts;
 }
 
-int Solution::getSubgroupsMatrix(const Rules& r, Matrix3D<int>& a) const {
+int Solution::getSubgroupsMatrix(const Rules& r, const Matrix3D<int>** p_a) const {
 	assert(r.initialized);
 	assert(r.internalStructureComputed);
 	
+	if (subgroupsMatrixReady) {
+		*p_a = &cached_subgroupsMatrix;
+		return cached_subgroupsConflicts;
+	}
+
 	int conflicts=0;
 	
+	*p_a = &cached_subgroupsMatrix;
+	Matrix3D<int>& a = cached_subgroupsMatrix;
 	a.resize(r.nInternalSubgroups, r.nDaysPerWeek, r.nHoursPerDay);
 
 	int i;
@@ -237,7 +254,10 @@ int Solution::getSubgroupsMatrix(const Rules& r, Matrix3D<int>& a) const {
 					a[sg][day][hour+dd]++;
 				}
 		}
-		
+
+	cached_subgroupsConflicts = conflicts;
+	subgroupsMatrixReady = true;
+
 	return conflicts;
 }
 
@@ -402,13 +422,20 @@ void Solution::getSubgroupsTimetable(const Rules &r, Matrix3D<int>& a) const {
 
 int Solution::getRoomsMatrix(
 	const Rules& r,
-	Matrix3D<int>& a) const
+	const Matrix3D<int>** p_a) const
 {
 	assert(r.initialized);
 	assert(r.internalStructureComputed);
 
+	if (roomsMatrixReady) {
+		*p_a = &cached_roomsMatrix;
+		return cached_roomsConflicts;
+	}
+
 	int conflicts=0;
 	
+	*p_a = &cached_roomsMatrix;
+	Matrix3D<int>& a = cached_roomsMatrix;
 	a.resize(r.nInternalRooms, r.nDaysPerWeek, r.nHoursPerDay);
 
 	int i;
@@ -433,6 +460,9 @@ int Solution::getRoomsMatrix(
 		}
 	}
 	
+	cached_roomsConflicts = conflicts;
+	roomsMatrixReady = true;
+
 	return conflicts;
 }
 

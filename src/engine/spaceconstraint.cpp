@@ -54,15 +54,7 @@ static QString yesNoTranslated(bool x)
 		return QCoreApplication::translate("SpaceConstraint", "yes", "yes - meaning affirmative");
 }
 
-//static qint8 roomsMatrix[MAX_ROOMS][MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
-static Matrix3D<int> roomsMatrix;
-
-static int rooms_conflicts=-1;
-
 //extern QList<int> activitiesPreferredRoomsPreferredRooms[MAX_ACTIVITIES];
-
-//static qint8 subgroupsBuildingsTimetable[MAX_TOTAL_SUBGROUPS][MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
-//static qint8 teachersBuildingsTimetable[MAX_TEACHERS][MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
 
 QString getActivityDetailedDescription(const Rules& r, int id);
 QString getTimelistDescription(const Rules& r, QList<int> days, QList<int> hours);
@@ -230,18 +222,9 @@ double ConstraintBasicCompulsorySpace::fitness(
 
 	assert(r.internalStructureComputed);
 
-	int roomsConflicts;
-
-	//This constraint fitness calculation routine is called firstly,
-	//so we can compute the rooms conflicts faster this way.
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = roomsConflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-	else{
-		assert(rooms_conflicts>=0);
-		roomsConflicts=rooms_conflicts;
-	}
+	const Matrix3D<int>* p_roomsMatrix;
+	int roomsConflicts = c.getRoomsMatrix(r, &p_roomsMatrix);
+	const Matrix3D<int>& roomsMatrix = *p_roomsMatrix;
 
 	qint64 unallocated = 0; //unallocated activities
 	int nre = 0; //number of room exhaustions
@@ -516,11 +499,9 @@ double ConstraintRoomNotAvailableTimes::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrices roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
+	const Matrix3D<int>* p_roomsMatrix;
+	c.getRoomsMatrix(r, &p_roomsMatrix);
+	const Matrix3D<int>& roomsMatrix = *p_roomsMatrix;
 
 	//Calculates the number of hours when the roomr is supposed to be occupied,
 	//but it is not available
@@ -799,12 +780,6 @@ double ConstraintActivityPreferredRoom::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
 	//Calculates the number of conflicts
 
 	int nbroken = 0;
@@ -1029,12 +1004,6 @@ double ConstraintActivityPreferredRooms::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
 	//Calculates the number of conflicts
 
 	int nbroken = 0;
@@ -1269,12 +1238,6 @@ double ConstraintStudentsSetHomeRoom::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
 	//Calculates the number of conflicts.
 	//The fastest way seems to iterate over all activities
 	//involved in this constraint (share the subject and activity tag of this constraint),
@@ -1540,12 +1503,6 @@ double ConstraintStudentsSetHomeRooms::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
 	//Calculates the number of conflicts.
 	//The fastest way seems to iterate over all activities
 	//involved in this constraint (share the subject and activity tag of this constraint),
@@ -1800,12 +1757,6 @@ double ConstraintTeacherHomeRoom::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
 	//Calculates the number of conflicts.
 	//The fastest way seems to iterate over all activities
 	//involved in this constraint (share the subject and activity tag of this constraint),
@@ -2069,12 +2020,6 @@ double ConstraintTeacherHomeRooms::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
 	//Calculates the number of conflicts.
 	//The fastest way seems to iterate over all activities
 	//involved in this constraint (share the subject and activity tag of this constraint),
@@ -2305,12 +2250,6 @@ double ConstraintSubjectPreferredRoom::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
 	//Calculates the number of conflicts.
 	//The fastest way seems to iterate over all activities
 	//involved in this constraint (share the subject and activity tag of this constraint),
@@ -2541,12 +2480,6 @@ double ConstraintSubjectPreferredRooms::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
 	//Calculates the number of conflicts.
 	//The fastest way seems to iterate over all activities
 	//involved in this constraint (share the subject and activity tag of this constraint),
@@ -2776,12 +2709,6 @@ double ConstraintSubjectActivityTagPreferredRoom::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
 	//Calculates the number of conflicts.
 	//The fastest way seems to iterate over all activities
 	//involved in this constraint (share the subject and activity tag of this constraint),
@@ -3021,12 +2948,6 @@ double ConstraintSubjectActivityTagPreferredRooms::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
 	//Calculates the number of conflicts.
 	//The fastest way seems to iterate over all activities
 	//involved in this constraint (share the subject and activity tag of this constraint),
@@ -3249,12 +3170,6 @@ double ConstraintActivityTagPreferredRoom::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
 	//Calculates the number of conflicts.
 	//The fastest way seems to iterate over all activities
 	//involved in this constraint (share the subject and activity tag of this constraint),
@@ -3486,12 +3401,6 @@ double ConstraintActivityTagPreferredRooms::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
 	//Calculates the number of conflicts.
 	//The fastest way seems to iterate over all activities
 	//involved in this constraint (share the subject and activity tag of this constraint),
@@ -3744,12 +3653,6 @@ double ConstraintStudentsSetMaxBuildingChangesPerDay::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
 	int nbroken=0;
 	
 	foreach(int sbg, this->iSubgroupsList){
@@ -3969,12 +3872,6 @@ double ConstraintStudentsMaxBuildingChangesPerDay::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
 	int nbroken=0;
 	
 	for(int sbg=0; sbg<r.nInternalSubgroups; sbg++){
@@ -4247,12 +4144,6 @@ double ConstraintStudentsSetMaxBuildingChangesPerWeek::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
 	int nbroken=0;
 	
 	foreach(int sbg, this->iSubgroupsList){
@@ -4471,12 +4362,6 @@ double ConstraintStudentsMaxBuildingChangesPerWeek::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
 	int nbroken=0;
 	
 	for(int sbg=0; sbg<r.nInternalSubgroups; sbg++){
@@ -4748,12 +4633,6 @@ double ConstraintStudentsSetMinGapsBetweenBuildingChanges::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
 	int nbroken=0;
 	
 	foreach(int sbg, this->iSubgroupsList){
@@ -4985,12 +4864,6 @@ double ConstraintStudentsMinGapsBetweenBuildingChanges::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
 	int nbroken=0;
 	
 	for(int sbg=0; sbg<r.nInternalSubgroups; sbg++){
@@ -5238,12 +5111,6 @@ double ConstraintTeacherMaxBuildingChangesPerDay::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
 	int nbroken=0;
 	
 	int tch=this->teacher_ID;
@@ -5464,12 +5331,6 @@ double ConstraintTeachersMaxBuildingChangesPerDay::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
 	int nbroken=0;
 	
 	for(int tch=0; tch<r.nInternalTeachers; tch++){
@@ -5705,12 +5566,6 @@ double ConstraintTeacherMaxBuildingChangesPerWeek::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
 	int nbroken=0;
 	
 	int tch=this->teacher_ID;
@@ -5931,12 +5786,6 @@ double ConstraintTeachersMaxBuildingChangesPerWeek::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
 	int nbroken=0;
 	
 	for(int tch=0; tch<r.nInternalTeachers; tch++){
@@ -6172,12 +6021,6 @@ double ConstraintTeacherMinGapsBetweenBuildingChanges::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
 	int nbroken=0;
 	
 	int tch=this->teacher_ID;
@@ -6410,12 +6253,6 @@ double ConstraintTeachersMinGapsBetweenBuildingChanges::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
 	int nbroken=0;
 	
 	for(int tch=0; tch<r.nInternalTeachers; tch++){
@@ -6703,12 +6540,7 @@ double ConstraintActivitiesOccupyMaxDifferentRooms::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
+	Q_UNUSED(r);
 	//Calculates the number of conflicts
 
 	int nbroken=0;
@@ -6962,12 +6794,6 @@ double ConstraintActivitiesSameRoomIfConsecutive::fitness(
 	const Rules& r,
 	ConflictInfo* conflictInfo)
 {
-	//if the matrix roomsMatrix is already calculated, do not calculate it again!
-	if(!c.roomsMatrixReady){
-		c.roomsMatrixReady=true;
-		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-	}
-
 	//Calculates the number of conflicts
 
 	int nbroken=0;
