@@ -509,8 +509,7 @@ void ConstraintStudentsMinContinuousGapInIntervalTest::AllStudents_CheckFitness_
 	QCOMPARE(fitness, 0.0);
 	QCOMPARE(conflicts.weights.count(), 0);
 
-	conflicts.weights.clear();
-	conflicts.descriptions.clear();
+	conflicts.clear();
 	c.setTime(0, rules.nDaysPerWeek*3+0);
 	c.resetFitness();
 	fitness = ctr->fitness(c, rules, &conflicts);
