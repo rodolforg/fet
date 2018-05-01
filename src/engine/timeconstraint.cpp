@@ -336,8 +336,7 @@ double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, Confl
 				s += tr("this increases the conflicts total by %1")
 						.arg(CustomFETString::number(weightPercentage/100 * 10000));
 
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(weightPercentage/100 * 10000);
+				conflictInfo->append(weightPercentage/100 * 10000, s);
 			}
 		}
 		else{
@@ -362,8 +361,7 @@ double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, Confl
 							.arg(CustomFETString::number(lateIncrease*weightPercentage/100));
 					s+="\n";
 
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append(lateIncrease*weightPercentage/100);
+					conflictInfo->append(lateIncrease*weightPercentage/100, s);
 				}
 			}
 		}
@@ -396,8 +394,7 @@ double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, Confl
 						s+=tr("This increases the conflicts total by %1")
 						 .arg(CustomFETString::number(tmp*weightPercentage/100));
 
-						conflictInfo->descriptions.append(s);
-						conflictInfo->weights.append(tmp*weightPercentage/100);
+						conflictInfo->append(tmp*weightPercentage/100, s);
 						nte+=tmp;
 					}
 				}
@@ -427,8 +424,7 @@ double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, Confl
 						s+=tr("This increases the conflicts total by %1")
 						 .arg(CustomFETString::number((subgroupsMatrix[i][j][k]-1)*weightPercentage/100));
 
-						conflictInfo->descriptions.append(s);
-						conflictInfo->weights.append((subgroupsMatrix[i][j][k]-1)*weightPercentage/100);
+						conflictInfo->append((subgroupsMatrix[i][j][k]-1)*weightPercentage/100, s);
 
 						nse += tmp;
 					}
@@ -654,8 +650,7 @@ double ConstraintTeacherNotAvailableTimes::fitness(Solution& c, const Rules& r, 
 				s += tr("This increases the conflicts total by %1")
 				 .arg(CustomFETString::number(teachersMatrix[tch][d][h]*weightPercentage/100));
 				 
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(teachersMatrix[tch][d][h]*weightPercentage/100);
+				conflictInfo->append(teachersMatrix[tch][d][h]*weightPercentage/100, s);
 			}
 		}
 	}
@@ -930,8 +925,7 @@ double ConstraintStudentsSetNotAvailableTimes::fitness(Solution& c, const Rules&
 					s += tr("This increases the conflicts total by %1")
 					 .arg(CustomFETString::number(subgroupsMatrix[sbg][d][h]*weightPercentage/100));
 					 
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append(subgroupsMatrix[sbg][d][h]*weightPercentage/100);
+					conflictInfo->append(subgroupsMatrix[sbg][d][h]*weightPercentage/100, s);
 				}
 			}
 		}
@@ -1212,8 +1206,7 @@ double ConstraintActivitiesSameStartingTime::fitness(Solution& c, const Rules& r
 						s+=". ";
 						s+=tr("Conflicts factor increase=%1").arg(CustomFETString::number(tmp*weightPercentage/100));
 
-						conflictInfo->descriptions.append(s);
-						conflictInfo->weights.append(tmp*weightPercentage/100);
+						conflictInfo->append(tmp*weightPercentage/100, s);
 					}
 				}
 			}
@@ -1487,8 +1480,7 @@ double ConstraintActivitiesNotOverlapping::fitness(Solution& c, const Rules& r, 
 						s+=", ";
 						s+=tr("conflicts factor increase=%1").arg(CustomFETString::number(tt*weightPercentage/100));
 
-						conflictInfo->descriptions.append(s);
-						conflictInfo->weights.append(tt*weightPercentage/100);
+						conflictInfo->append(tt*weightPercentage/100, s);
 					}
 				}
 			}
@@ -1799,8 +1791,7 @@ double ConstraintMinDaysBetweenActivities::fitness(Solution& c, const Rules& r, 
 								  " in case the activities are in the same day");
 						}
 
-						conflictInfo->descriptions.append(s);
-						conflictInfo->weights.append(tt*weightPercentage/100);
+						conflictInfo->append(tt*weightPercentage/100, s);
 					}
 				}
 			}
@@ -2085,8 +2076,7 @@ double ConstraintMaxDaysBetweenActivities::fitness(Solution& c, const Rules& r, 
 						s+=tr("conflicts factor increase=%1").arg(CustomFETString::number(tt*weightPercentage/100));
 						s+=".";
 
-						conflictInfo->descriptions.append(s);
-						conflictInfo->weights.append(tt*weightPercentage/100);
+						conflictInfo->append(tt*weightPercentage/100, s);
 					}
 				}
 			}
@@ -2376,8 +2366,7 @@ double ConstraintMinGapsBetweenActivities::fitness(Solution& c, const Rules& r, 
 						s+=tr("conflicts factor increase=%1").arg(CustomFETString::number(tmp*weightPercentage/100));
 						s+=".";
 							
-						conflictInfo->descriptions.append(s);
-						conflictInfo->weights.append(tmp*weightPercentage/100);
+						conflictInfo->append(tmp*weightPercentage/100, s);
 					}
 				}
 			}
@@ -2561,8 +2550,7 @@ double ConstraintTeachersMaxHoursDaily::fitness(Solution& c, const Rules& r, Con
 							+
 							(tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append(weightPercentage/100);
+					conflictInfo->append(weightPercentage/100, s);
 				}
 			}
 		}
@@ -2747,8 +2735,7 @@ double ConstraintTeacherMaxHoursDaily::fitness(Solution& c, const Rules& r, Conf
 				 +
 				 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(weightPercentage/100);
+				conflictInfo->append(weightPercentage/100, s);
 			}
 		}
 	}
@@ -2928,8 +2915,7 @@ double ConstraintTeachersMaxHoursContinuously::fitness(Solution& c, const Rules&
 							 +
 							 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-							conflictInfo->descriptions.append(s);
-							conflictInfo->weights.append(weightPercentage/100);
+							conflictInfo->append(weightPercentage/100, s);
 						}
 					}
 				
@@ -2953,8 +2939,7 @@ double ConstraintTeachersMaxHoursContinuously::fitness(Solution& c, const Rules&
 					 +
 					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append(weightPercentage/100);
+					conflictInfo->append(weightPercentage/100, s);
 				}
 			}
 		}
@@ -3140,8 +3125,7 @@ double ConstraintTeacherMaxHoursContinuously::fitness(Solution& c, const Rules& 
 						 +
 						 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 						
-						conflictInfo->descriptions.append(s);
-						conflictInfo->weights.append(weightPercentage/100);
+						conflictInfo->append(weightPercentage/100, s);
 					}
 				}
 			
@@ -3165,8 +3149,7 @@ double ConstraintTeacherMaxHoursContinuously::fitness(Solution& c, const Rules& 
 				 +
 				 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 						
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(weightPercentage/100);
+				conflictInfo->append(weightPercentage/100, s);
 			}
 		}
 	}
@@ -3384,8 +3367,7 @@ double ConstraintTeachersActivityTagMaxHoursContinuously::fitness(Solution& c, c
 							 +
 							 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-							conflictInfo->descriptions.append(s);
-							conflictInfo->weights.append(weightPercentage/100);
+							conflictInfo->append(weightPercentage/100, s);
 						}
 					}
 				
@@ -3410,8 +3392,7 @@ double ConstraintTeachersActivityTagMaxHoursContinuously::fitness(Solution& c, c
 					 +
 					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append(weightPercentage/100);
+					conflictInfo->append(weightPercentage/100, s);
 				}
 			}
 		}
@@ -3633,8 +3614,7 @@ double ConstraintTeacherActivityTagMaxHoursContinuously::fitness(Solution& c, co
 							 +
 							 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-							conflictInfo->descriptions.append(s);
-							conflictInfo->weights.append(weightPercentage/100);
+							conflictInfo->append(weightPercentage/100, s);
 						}
 					}
 				
@@ -3659,8 +3639,7 @@ double ConstraintTeacherActivityTagMaxHoursContinuously::fitness(Solution& c, co
 					 +
 					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append(weightPercentage/100);
+					conflictInfo->append(weightPercentage/100, s);
 				}
 			}
 		}
@@ -3855,8 +3834,7 @@ double ConstraintTeacherMaxDaysPerWeek::fitness(Solution& c, const Rules& r, Con
 		s += tr("This increases the conflicts total by %1")
 			.arg(CustomFETString::number(conflictIncrease));
 
-		conflictInfo->descriptions.append(s);
-		conflictInfo->weights.append(conflictIncrease);
+		conflictInfo->append(conflictIncrease, s);
 	}
 
 	if(weightPercentage==100)
@@ -4053,8 +4031,7 @@ double ConstraintTeachersMaxDaysPerWeek::fitness(Solution& c, const Rules& r, Co
 			s += tr("This increases the conflicts total by %1")
 			.arg(CustomFETString::number(nbr*weightPercentage/100));
 
-			conflictInfo->descriptions.append(s);
-			conflictInfo->weights.append(nbr*weightPercentage/100);
+			conflictInfo->append(nbr*weightPercentage/100, s);
 		}
 
 	}
@@ -4241,8 +4218,7 @@ double ConstraintTeachersMaxGapsPerWeek::fitness(Solution& c, const Rules& r, Co
 					.arg(r.internalTeachersList[i]->name)
 					.arg(CustomFETString::number((tg-maxGaps)*weightPercentage/100));
 						
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append((tg-maxGaps)*weightPercentage/100);
+				conflictInfo->append((tg-maxGaps)*weightPercentage/100, s);
 			}
 		}
 	}
@@ -4439,8 +4415,7 @@ double ConstraintTeacherMaxGapsPerWeek::fitness(Solution& c, const Rules& r, Con
 				.arg(r.internalTeachersList[i]->name)
 				.arg(CustomFETString::number((tg-maxGaps)*weightPercentage/100));
 						
-			conflictInfo->descriptions.append(s);
-			conflictInfo->weights.append((tg-maxGaps)*weightPercentage/100);
+			conflictInfo->append((tg-maxGaps)*weightPercentage/100, s);
 		}
 	}
 
@@ -4627,8 +4602,7 @@ double ConstraintTeachersMaxGapsPerDay::fitness(Solution& c, const Rules& r, Con
 						.arg(r.daysOfTheWeek[j])
 						.arg(CustomFETString::number((tg-maxGaps)*weightPercentage/100));
 								
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append((tg-maxGaps)*weightPercentage/100);
+					conflictInfo->append((tg-maxGaps)*weightPercentage/100, s);
 				}
 			}
 		}
@@ -4824,8 +4798,7 @@ double ConstraintTeacherMaxGapsPerDay::fitness(Solution& c, const Rules& r, Conf
 					.arg(r.daysOfTheWeek[j])
 					.arg(CustomFETString::number((tg-maxGaps)*weightPercentage/100));
 							
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append((tg-maxGaps)*weightPercentage/100);
+				conflictInfo->append((tg-maxGaps)*weightPercentage/100, s);
 			}
 		}
 	}
@@ -5058,8 +5031,7 @@ double ConstraintBreakTimes::fitness(Solution& c, const Rules& r, ConflictInfo* 
 					s+=". ";
 					s+=tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100));
 					
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append(weightPercentage/100);
+					conflictInfo->append(weightPercentage/100, s);
 				}
 			}
 		}
@@ -5275,8 +5247,7 @@ double ConstraintStudentsMaxGapsPerWeek::fitness(Solution& c, const Rules& r, Co
 			 .arg(illegalGaps)
 			 .arg(CustomFETString::number(illegalGaps*weightPercentage/100));
 						 
-			conflictInfo->descriptions.append(s);
-			conflictInfo->weights.append(illegalGaps*weightPercentage/100);
+			conflictInfo->append(illegalGaps*weightPercentage/100, s);
 		}
 		
 		tIllegalGaps+=illegalGaps;
@@ -5523,8 +5494,7 @@ double ConstraintStudentsSetMaxGapsPerWeek::fitness(Solution& c, const Rules& r,
 			 .arg(illegalGaps)
 			 .arg(CustomFETString::number(weightPercentage/100*illegalGaps));
 						 
-			conflictInfo->descriptions.append(s);
-			conflictInfo->weights.append(weightPercentage/100*illegalGaps);
+			conflictInfo->append(weightPercentage/100*illegalGaps, s);
 		}
 		
 		tIllegalGaps+=illegalGaps;
@@ -5719,8 +5689,7 @@ double ConstraintStudentsEarlyMaxBeginningsAtSecondHour::fitness(Solution& c, co
 					 .arg(r.daysOfTheWeek[j])
 					 .arg(CustomFETString::number(1*weightPercentage/100));
 					 
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append(1*weightPercentage/100);
+					conflictInfo->append(1*weightPercentage/100, s);
 					
 					conflTotal+=1;
 				}
@@ -5742,8 +5711,7 @@ double ConstraintStudentsEarlyMaxBeginningsAtSecondHour::fitness(Solution& c, co
 				 .arg(r.internalSubgroupsList[i]->name)
 				 .arg(CustomFETString::number((nGapsFirstHour-this->maxBeginningsAtSecondHour)*weightPercentage/100));
 				 
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append((nGapsFirstHour-this->maxBeginningsAtSecondHour)*weightPercentage/100);
+				conflictInfo->append((nGapsFirstHour-this->maxBeginningsAtSecondHour)*weightPercentage/100, s);
 				
 				conflTotal+=(nGapsFirstHour-this->maxBeginningsAtSecondHour);
 			}
@@ -5997,8 +5965,7 @@ double ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::fitness(Solution& c,
 					 .arg(r.daysOfTheWeek[j])
 					 .arg(CustomFETString::number(1*weightPercentage/100));
 					 
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append(1*weightPercentage/100);
+					conflictInfo->append(1*weightPercentage/100, s);
 					
 					conflTotal+=1;
 				}
@@ -6019,8 +5986,7 @@ double ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::fitness(Solution& c,
 				 .arg(r.internalSubgroupsList[i]->name)
 				 .arg(CustomFETString::number((nGapsFirstHour-this->maxBeginningsAtSecondHour)*weightPercentage/100));
 				 
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append((nGapsFirstHour-this->maxBeginningsAtSecondHour)*weightPercentage/100);
+				conflictInfo->append((nGapsFirstHour-this->maxBeginningsAtSecondHour)*weightPercentage/100, s);
 				
 				conflTotal+=(nGapsFirstHour-this->maxBeginningsAtSecondHour);
 			}
@@ -6211,8 +6177,7 @@ double ConstraintStudentsMaxHoursDaily::fitness(Solution& c, const Rules& r, Con
 						 .arg(CustomFETString::number(tmp))
 						 .arg(CustomFETString::number(weightPercentage/100*1));
 						 
-						conflictInfo->descriptions.append(s);
-						conflictInfo->weights.append(weightPercentage/100*1);
+						conflictInfo->append(weightPercentage/100*1, s);
 					}
 				}
 			}
@@ -6451,8 +6416,7 @@ double ConstraintStudentsSetMaxHoursDaily::fitness(Solution& c, const Rules& r, 
 						 .arg(CustomFETString::number(tmp))
 						 .arg(CustomFETString::number( 1 *weightPercentage/100));
 						 
-						conflictInfo->descriptions.append(s);
-						conflictInfo->weights.append( 1 *weightPercentage/100);
+						conflictInfo->append( 1 *weightPercentage/100, s);
 					}
 				}
 			}
@@ -6638,8 +6602,7 @@ double ConstraintStudentsMaxHoursContinuously::fitness(Solution& c, const Rules&
 							 +
 							 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-							conflictInfo->descriptions.append(s);
-							conflictInfo->weights.append(weightPercentage/100);
+							conflictInfo->append(weightPercentage/100, s);
 						}
 					}
 				
@@ -6663,8 +6626,7 @@ double ConstraintStudentsMaxHoursContinuously::fitness(Solution& c, const Rules&
 					 +
 					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append(weightPercentage/100);
+					conflictInfo->append(weightPercentage/100, s);
 				}
 			}
 		}
@@ -6900,8 +6862,7 @@ double ConstraintStudentsSetMaxHoursContinuously::fitness(Solution& c, const Rul
 							 +
 							 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-							conflictInfo->descriptions.append(s);
-							conflictInfo->weights.append(weightPercentage/100);
+							conflictInfo->append(weightPercentage/100, s);
 						}
 					}
 				
@@ -6925,8 +6886,7 @@ double ConstraintStudentsSetMaxHoursContinuously::fitness(Solution& c, const Rul
 					 +
 					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append(weightPercentage/100);
+					conflictInfo->append(weightPercentage/100, s);
 				}
 			}
 		}
@@ -7151,8 +7111,7 @@ double ConstraintStudentsActivityTagMaxHoursContinuously::fitness(Solution& c, c
 							 +
 							 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-							conflictInfo->descriptions.append(s);
-							conflictInfo->weights.append(weightPercentage/100);
+							conflictInfo->append(weightPercentage/100, s);
 						}
 					}
 				
@@ -7177,8 +7136,7 @@ double ConstraintStudentsActivityTagMaxHoursContinuously::fitness(Solution& c, c
 					 +
 					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append(weightPercentage/100);
+					conflictInfo->append(weightPercentage/100, s);
 				}
 			}
 		}
@@ -7453,8 +7411,7 @@ double ConstraintStudentsSetActivityTagMaxHoursContinuously::fitness(Solution& c
 							 +
 							 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-							conflictInfo->descriptions.append(s);
-							conflictInfo->weights.append(weightPercentage/100);
+							conflictInfo->append(weightPercentage/100, s);
 						}
 					}
 				
@@ -7478,8 +7435,7 @@ double ConstraintStudentsSetActivityTagMaxHoursContinuously::fitness(Solution& c
 					 +
 					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 							
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append(weightPercentage/100);
+					conflictInfo->append(weightPercentage/100, s);
 				}
 			}
 		}
@@ -7683,8 +7639,7 @@ double ConstraintStudentsMinHoursDaily::fitness(Solution& c, const Rules& r, Con
 					 .arg(CustomFETString::number(tmp))
 					 .arg(CustomFETString::number(weightPercentage/100*(-tmp+this->minHoursDaily)));
 						 
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append(weightPercentage/100*(-tmp+this->minHoursDaily));
+					conflictInfo->append(weightPercentage/100*(-tmp+this->minHoursDaily), s);
 				}
 			}
 		}
@@ -7946,8 +7901,7 @@ double ConstraintStudentsSetMinHoursDaily::fitness(Solution& c, const Rules& r, 
 					 .arg(CustomFETString::number(tmp))
 					 .arg(CustomFETString::number((-tmp+this->minHoursDaily)*weightPercentage/100));
 						 
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append((-tmp+this->minHoursDaily)*weightPercentage/100);
+					conflictInfo->append((-tmp+this->minHoursDaily)*weightPercentage/100, s);
 				}
 			}
 		}
@@ -8202,8 +8156,7 @@ double ConstraintActivityPreferredStartingTime::fitness(Solution& c, const Rules
 			.arg(getActivityDetailedDescription(r, this->activityId))
 			.arg(CustomFETString::number(weightPercentage/100*nbroken));
 
-		conflictInfo->descriptions.append(s);
-		conflictInfo->weights.append(weightPercentage/100*nbroken);
+		conflictInfo->append(weightPercentage/100*nbroken, s);
 	}
 
 	if(weightPercentage==100)
@@ -8468,8 +8421,7 @@ double ConstraintActivityPreferredTimeSlots::fitness(Solution& c, const Rules& r
 		 .arg(nbroken)
 		 .arg(CustomFETString::number(weightPercentage/100*nbroken));
 		 
-		conflictInfo->descriptions.append(s);
-		conflictInfo->weights.append(weightPercentage/100*nbroken);
+		conflictInfo->append(weightPercentage/100*nbroken, s);
 	}
 
 	if(weightPercentage==100)
@@ -8915,8 +8867,7 @@ double ConstraintActivitiesPreferredTimeSlots::fitness(Solution& c, const Rules&
 			 .arg(tmp)
 			 .arg(CustomFETString::number(weightPercentage/100*tmp));
 				 
-			conflictInfo->descriptions.append(s);
-			conflictInfo->weights.append(weightPercentage/100*tmp);
+			conflictInfo->append(weightPercentage/100*tmp, s);
 		}
 	}
 
@@ -9381,8 +9332,7 @@ double ConstraintSubactivitiesPreferredTimeSlots::fitness(Solution& c, const Rul
 			 .arg(tmp)
 			 .arg(CustomFETString::number(weightPercentage/100*tmp));
 
-			conflictInfo->descriptions.append(s);
-			conflictInfo->weights.append(weightPercentage/100*tmp);
+			conflictInfo->append(weightPercentage/100*tmp, s);
 		}
 	}
 
@@ -9690,8 +9640,7 @@ double ConstraintActivityPreferredStartingTimes::fitness(Solution& c, const Rule
 		 .arg(getActivityDetailedDescription(r, this->activityId))
 		 .arg(CustomFETString::number(weightPercentage/100*nbroken));
 
-		conflictInfo->descriptions.append(s);
-		conflictInfo->weights.append(weightPercentage/100*nbroken);
+		conflictInfo->append(weightPercentage/100*nbroken, s);
 	}
 
 	if(weightPercentage==100)
@@ -10127,8 +10076,7 @@ double ConstraintActivitiesPreferredStartingTimes::fitness(Solution& c, const Ru
 			 .arg(getActivityDetailedDescription(r, r.internalActivitiesList[ai].id))
 			 .arg(CustomFETString::number(weightPercentage/100*tmp));
 			 
-			conflictInfo->descriptions.append(s);
-			conflictInfo->weights.append(weightPercentage/100*tmp);
+			conflictInfo->append(weightPercentage/100*tmp, s);
 		}
 	}
 
@@ -10579,8 +10527,7 @@ double ConstraintSubactivitiesPreferredStartingTimes::fitness(Solution& c, const
 			 .arg(this->componentNumber)
 			 .arg(CustomFETString::number(weightPercentage/100*tmp));
 
-			conflictInfo->descriptions.append(s);
-			conflictInfo->weights.append(weightPercentage/100*tmp);
+			conflictInfo->append(weightPercentage/100*tmp, s);
 		}
 	}
 
@@ -10891,8 +10838,7 @@ double ConstraintActivitiesSameStartingHour::fitness(Solution& c, const Rules& r
 							s+=". ";
 							s+=tr("Conflicts factor increase=%1").arg(CustomFETString::number(weightPercentage/100));
 
-							conflictInfo->descriptions.append(s);
-							conflictInfo->weights.append(weightPercentage/100);
+							conflictInfo->append(weightPercentage/100, s);
 						}
 					}
 				}
@@ -11154,8 +11100,7 @@ double ConstraintActivitiesSameStartingDay::fitness(Solution& c, const Rules& r,
 							s+=". ";
 							s+=tr("Conflicts factor increase=%1").arg(CustomFETString::number(weightPercentage/100));
 
-							conflictInfo->descriptions.append(s);
-							conflictInfo->weights.append(weightPercentage/100);
+							conflictInfo->append(weightPercentage/100, s);
 						}
 					}
 				}
@@ -11408,8 +11353,7 @@ double ConstraintTwoActivitiesConsecutive::fitness(Solution& c, const Rules& r, 
 		 .arg(getActivityDetailedDescription(r, this->secondActivityId))
 		 .arg(CustomFETString::number(weightPercentage/100*nbroken));
 
-		conflictInfo->descriptions.append(s);
-		conflictInfo->weights.append(weightPercentage/100*nbroken);
+		conflictInfo->append(weightPercentage/100*nbroken, s);
 	}
 	
 	if(weightPercentage==100)
@@ -11670,8 +11614,7 @@ double ConstraintTwoActivitiesGrouped::fitness(Solution& c, const Rules& r, Conf
 		 .arg(getActivityDetailedDescription(r, this->secondActivityId))
 		 .arg(CustomFETString::number(weightPercentage/100*nbroken));
 
-		conflictInfo->descriptions.append(s);
-		conflictInfo->weights.append(weightPercentage/100*nbroken);
+		conflictInfo->append(weightPercentage/100*nbroken, s);
 	}
 	
 	if(weightPercentage==100)
@@ -12011,8 +11954,7 @@ double ConstraintThreeActivitiesGrouped::fitness(Solution& c, const Rules& r, Co
 		 .arg(getActivityDetailedDescription(r, this->thirdActivityId))
 		 .arg(CustomFETString::number(weightPercentage/100*nbroken));
 
-		conflictInfo->descriptions.append(s);
-		conflictInfo->weights.append(weightPercentage/100*nbroken);
+		conflictInfo->append(weightPercentage/100*nbroken, s);
 	}
 	
 	if(weightPercentage==100)
@@ -12248,8 +12190,7 @@ double ConstraintTwoActivitiesOrdered::fitness(Solution& c, const Rules& r, Conf
 		 .arg(getActivityDetailedDescription(r, this->secondActivityId))
 		 .arg(CustomFETString::number(weightPercentage/100*nbroken));
 
-		conflictInfo->descriptions.append(s);
-		conflictInfo->weights.append(weightPercentage/100*nbroken);
+		conflictInfo->append(weightPercentage/100*nbroken, s);
 	}
 	
 	if(weightPercentage==100)
@@ -12449,8 +12390,7 @@ double ConstraintActivityEndsStudentsDay::fitness(Solution& c, const Rules& r, C
 		 .arg(getActivityDetailedDescription(r, this->activityId))
 		 .arg(CustomFETString::number(weightPercentage/100*nbroken));
 
-		conflictInfo->descriptions.append(s);
-		conflictInfo->weights.append(weightPercentage/100*nbroken);
+		conflictInfo->append(weightPercentage/100*nbroken, s);
 	}
 
 	if(weightPercentage==100)
@@ -12644,8 +12584,7 @@ double ConstraintTeachersMinHoursDaily::fitness(Solution& c, const Rules& r, Con
 					 +
 					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append(weightPercentage/100);
+					conflictInfo->append(weightPercentage/100, s);
 				}
 			}
 		}
@@ -12851,8 +12790,7 @@ double ConstraintTeacherMinHoursDaily::fitness(Solution& c, const Rules& r, Conf
 				 +
 				 tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100));
 
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(weightPercentage/100);
+				conflictInfo->append(weightPercentage/100, s);
 			}
 		}
 	}
@@ -13039,8 +12977,7 @@ double ConstraintTeacherMinDaysPerWeek::fitness(Solution& c, const Rules& r, Con
 			 +
 			 tr("This increases the conflicts total by %1").arg(CustomFETString::number(double(nbroken)*weightPercentage/100));
 				
-			conflictInfo->descriptions.append(s);
-			conflictInfo->weights.append(double(nbroken)*weightPercentage/100);
+			conflictInfo->append(double(nbroken)*weightPercentage/100, s);
 		}
 	}
 
@@ -13224,8 +13161,7 @@ double ConstraintTeachersMinDaysPerWeek::fitness(Solution& c, const Rules& r, Co
 				 +
 				 tr("This increases the conflicts total by %1").arg(CustomFETString::number(double(nbroken)*weightPercentage/100));
 					
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(double(nbroken)*weightPercentage/100);
+				conflictInfo->append(double(nbroken)*weightPercentage/100, s);
 			}
 		}
 	}
@@ -13456,8 +13392,7 @@ double ConstraintTeacherIntervalMaxDaysPerWeek::fitness(Solution& c, const Rules
 			s += tr("This increases the conflicts total by %1")
 			 .arg(CustomFETString::number(nbroken*weightPercentage/100));
 			 
-			conflictInfo->descriptions.append(s);
-			conflictInfo->weights.append(nbroken*weightPercentage/100);
+			conflictInfo->append(nbroken*weightPercentage/100, s);
 		}
 	}
 
@@ -13688,8 +13623,7 @@ double ConstraintTeachersIntervalMaxDaysPerWeek::fitness(Solution& c, const Rule
 				s += tr("This increases the conflicts total by %1")
 				 .arg(CustomFETString::number((nOcDays-this->maxDaysPerWeek)*weightPercentage/100));
 				 
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append((nOcDays-this->maxDaysPerWeek)*weightPercentage/100);
+				conflictInfo->append((nOcDays-this->maxDaysPerWeek)*weightPercentage/100, s);
 			}
 		}
 	}
@@ -13977,8 +13911,7 @@ double ConstraintStudentsSetIntervalMaxDaysPerWeek::fitness(Solution& c, const R
 				s += tr("This increases the conflicts total by %1")
 				 .arg(CustomFETString::number((nOcDays-this->maxDaysPerWeek)*weightPercentage/100));
 			 
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append((nOcDays-this->maxDaysPerWeek)*weightPercentage/100);
+				conflictInfo->append((nOcDays-this->maxDaysPerWeek)*weightPercentage/100, s);
 			}
 		}
 	}
@@ -14207,8 +14140,7 @@ double ConstraintStudentsIntervalMaxDaysPerWeek::fitness(Solution& c, const Rule
 				s += tr("This increases the conflicts total by %1")
 				 .arg(CustomFETString::number((nOcDays-this->maxDaysPerWeek)*weightPercentage/100));
 			 
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append((nOcDays-this->maxDaysPerWeek)*weightPercentage/100);
+				conflictInfo->append((nOcDays-this->maxDaysPerWeek)*weightPercentage/100, s);
 			}
 		}
 	}
@@ -14507,8 +14439,7 @@ double ConstraintActivitiesEndStudentsDay::fitness(Solution& c, const Rules& r, 
 				 .arg(getActivityDetailedDescription(r, r.internalActivitiesList[ai].id))
 				 .arg(CustomFETString::number(weightPercentage/100*tmp));
 
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(weightPercentage/100*tmp);
+				conflictInfo->append(weightPercentage/100*tmp, s);
 			}
 		}
 	}
@@ -14744,8 +14675,7 @@ double ConstraintTeachersActivityTagMaxHoursDaily::fitness(Solution& c, const Ru
 					 +
 					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100.0)));
 					
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append(weightPercentage/100.0);
+					conflictInfo->append(weightPercentage/100.0, s);
 				}
 			}
 		}
@@ -14965,8 +14895,7 @@ double ConstraintTeacherActivityTagMaxHoursDaily::fitness(Solution& c, const Rul
 					 +
 					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100.0)));
 					
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append(weightPercentage/100.0);
+					conflictInfo->append(weightPercentage/100.0, s);
 				}
 			}
 		}
@@ -15189,8 +15118,7 @@ double ConstraintStudentsActivityTagMaxHoursDaily::fitness(Solution& c, const Ru
 					 +
 					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100.0)));
 					
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append(weightPercentage/100);
+					conflictInfo->append(weightPercentage/100, s);
 				}
 			}
 		}
@@ -15463,8 +15391,7 @@ double ConstraintStudentsSetActivityTagMaxHoursDaily::fitness(Solution& c, const
 					 +
 					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100.0)));
 					
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append(weightPercentage/100);
+					conflictInfo->append(weightPercentage/100, s);
 				}
 			}
 		}
@@ -15661,8 +15588,7 @@ double ConstraintStudentsMaxGapsPerDay::fitness(Solution& c, const Rules& r, Con
 				 .arg(r.daysOfTheWeek[j])
 				 .arg(CustomFETString::number(illegalGaps*weightPercentage/100));
 							 
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(illegalGaps*weightPercentage/100);
+				conflictInfo->append(illegalGaps*weightPercentage/100, s);
 			}
 		
 			tIllegalGaps+=illegalGaps;
@@ -15913,8 +15839,7 @@ double ConstraintStudentsSetMaxGapsPerDay::fitness(Solution& c, const Rules& r, 
 				 .arg(r.daysOfTheWeek[j])
 				 .arg(CustomFETString::number(weightPercentage/100*illegalGaps));
 							 
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(weightPercentage/100*illegalGaps);
+				conflictInfo->append(weightPercentage/100*illegalGaps, s);
 			}
 		
 			tIllegalGaps+=illegalGaps;
@@ -16213,8 +16138,7 @@ double ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::fitness(Solution& c,
 			QString s=tr("Time constraint %1 broken - this should not happen, as this kind of constraint should "
 			 "have only 100.0% weight. Please report error!").arg(this->getDescription(r));
 			
-			conflictInfo->descriptions.append(s);
-			conflictInfo->weights.append(weightPercentage/100.0);
+			conflictInfo->append(weightPercentage/100.0, s);
 		}
 	}
 
@@ -16553,8 +16477,7 @@ double ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::fitness(Solution&
 			QString s=tr("Time constraint %1 broken - this should not happen, as this kind of constraint should "
 			 "have only 100.0% weight. Please report error!").arg(this->getDescription(r));
 			
-			conflictInfo->descriptions.append(s);
-			conflictInfo->weights.append(weightPercentage/100.0);
+			conflictInfo->append(weightPercentage/100.0, s);
 		}
 	}
 
@@ -16830,8 +16753,7 @@ double ConstraintStudentsSetMaxDaysPerWeek::fitness(Solution& c, const Rules& r,
 				s += tr("This increases the conflicts total by %1")
 				 .arg(CustomFETString::number((nOcDays-this->maxDaysPerWeek)*weightPercentage/100));
 			 
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append((nOcDays-this->maxDaysPerWeek)*weightPercentage/100);
+				conflictInfo->append((nOcDays-this->maxDaysPerWeek)*weightPercentage/100, s);
 			}
 		}
 	}
@@ -17010,8 +16932,7 @@ double ConstraintStudentsMaxDaysPerWeek::fitness(Solution& c, const Rules& r, Co
 				s += tr("This increases the conflicts total by %1")
 				 .arg(CustomFETString::number((nOcDays-this->maxDaysPerWeek)*weightPercentage/100));
 			 
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append((nOcDays-this->maxDaysPerWeek)*weightPercentage/100);
+				conflictInfo->append((nOcDays-this->maxDaysPerWeek)*weightPercentage/100, s);
 			}
 		}
 	}
@@ -18812,8 +18733,7 @@ double ConstraintTeacherMinContinuousGapInInterval::fitness(Solution &c, const R
 			s += tr("This increases the conflicts total by %1")
 					.arg(CustomFETString::number(increase*weightPercentage/100));
 
-			conflictInfo->descriptions.append(s);
-			conflictInfo->weights.append(increase*weightPercentage/100);
+			conflictInfo->append(increase*weightPercentage/100, s);
 		}
 	}
 
@@ -19058,8 +18978,7 @@ double ConstraintTeachersMinContinuousGapInInterval::fitness(Solution &c, const 
 				s += tr("This increases the conflicts total by %1")
 						.arg(CustomFETString::number(increase*weightPercentage/100));
 
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(increase*weightPercentage/100);
+				conflictInfo->append(increase*weightPercentage/100, s);
 			}
 		}
 	}
@@ -19357,8 +19276,7 @@ double ConstraintStudentsSetMinContinuousGapInInterval::fitness(Solution &c, con
 				s += tr("This increases the conflicts total by %1")
 						.arg(CustomFETString::number(increase*weightPercentage/100));
 
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(weightIncrease);
+				conflictInfo->append(weightIncrease, s);
 			}
 		}
 	}
@@ -19602,8 +19520,7 @@ double ConstraintStudentsMinContinuousGapInInterval::fitness(Solution &c, const 
 				s += tr("This increases the conflicts total by %1")
 						.arg(CustomFETString::number(increase*weightPercentage/100));
 
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(increase*weightPercentage/100);
+				conflictInfo->append(increase*weightPercentage/100, s);
 			}
 		}
 	}

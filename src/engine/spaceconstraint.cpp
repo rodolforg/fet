@@ -242,8 +242,7 @@ double ConstraintBasicCompulsorySpace::fitness(
 				s+=QString(" - ");
 				s+=tr("this increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100*10000));
 
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(weightPercentage/100 * 10000);
+				conflictInfo->append(weightPercentage/100 * 10000, s);
 			}
 		}
 		else if(c.rooms[i]!=UNSPECIFIED_ROOM){
@@ -269,8 +268,7 @@ double ConstraintBasicCompulsorySpace::fitness(
 					s+=". ";
 					s+=tr("This increases conflicts total by %1").arg(CustomFETString::number(weightPercentage/100));
 
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append(weightPercentage/100);
+					conflictInfo->append(weightPercentage/100, s);
 				}
 			}
 		}
@@ -294,8 +292,7 @@ double ConstraintBasicCompulsorySpace::fitness(
 						s+=" ";
 						s+=tr("This increases the conflicts total by %1").arg(CustomFETString::number(tmp*weightPercentage/100));
 
-						conflictInfo->descriptions.append(s);
-						conflictInfo->weights.append(tmp*weightPercentage/100);
+						conflictInfo->append(tmp*weightPercentage/100, s);
 					}
 				}
 			}
@@ -532,8 +529,7 @@ double ConstraintRoomNotAvailableTimes::fitness(
 				s += tr("This increases the conflicts total by %1")
 				 .arg(CustomFETString::number(roomsMatrix[rm][d][h]*weightPercentage/100));
 				 
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(roomsMatrix[rm][d][h]*weightPercentage/100);
+				conflictInfo->append(roomsMatrix[rm][d][h]*weightPercentage/100, s);
 			}
 		}
 	}
@@ -798,8 +794,7 @@ double ConstraintActivityPreferredRoom::fitness(
 					s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* 1));
 		
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(1*weightPercentage/100);
+				conflictInfo->append(1*weightPercentage/100, s);
 			}
 			nbroken++;
 		}
@@ -1026,8 +1021,7 @@ double ConstraintActivityPreferredRooms::fitness(
 					s += ". ";
 					s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100 * 1));
 				
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append(weightPercentage/100 * 1);
+					conflictInfo->append(weightPercentage/100 * 1, s);
 				}
 
 				nbroken++;
@@ -1280,8 +1274,7 @@ double ConstraintStudentsSetHomeRoom::fitness(
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* 1));
 				
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(weightPercentage/100* 1);
+				conflictInfo->append(weightPercentage/100* 1, s);
 			}
 
 			nbroken++;
@@ -1548,8 +1541,7 @@ double ConstraintStudentsSetHomeRooms::fitness(
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* 1));
 				
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(weightPercentage/100* 1);
+				conflictInfo->append(weightPercentage/100* 1, s);
 			}
 			nbroken++;
 		}
@@ -1798,8 +1790,7 @@ double ConstraintTeacherHomeRoom::fitness(
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* 1));
 				
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(weightPercentage/100* 1);
+				conflictInfo->append(weightPercentage/100* 1, s);
 			}
 
 			nbroken++;
@@ -2065,8 +2056,7 @@ double ConstraintTeacherHomeRooms::fitness(
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* 1));
 				
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(weightPercentage/100* 1);
+				conflictInfo->append(weightPercentage/100* 1, s);
 			}
 			nbroken++;
 		}
@@ -2281,8 +2271,7 @@ double ConstraintSubjectPreferredRoom::fitness(
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* 1));
 				
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(weightPercentage/100* 1);
+				conflictInfo->append(weightPercentage/100* 1, s);
 			}
 
 			nbroken++;
@@ -2515,8 +2504,7 @@ double ConstraintSubjectPreferredRooms::fitness(
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* 1));
 				
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(weightPercentage/100* 1);
+				conflictInfo->append(weightPercentage/100* 1, s);
 			}
 			nbroken++;
 		}
@@ -2741,8 +2729,7 @@ double ConstraintSubjectActivityTagPreferredRoom::fitness(
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* 1));
 				
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(weightPercentage/100* 1);
+				conflictInfo->append(weightPercentage/100* 1, s);
 			}
 
 			nbroken++;
@@ -2984,8 +2971,7 @@ double ConstraintSubjectActivityTagPreferredRooms::fitness(
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* 1));
 				
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(weightPercentage/100* 1);
+				conflictInfo->append(weightPercentage/100* 1, s);
 			}
 			nbroken++;
 		}
@@ -3202,8 +3188,7 @@ double ConstraintActivityTagPreferredRoom::fitness(
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* 1));
 				
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(weightPercentage/100* 1);
+				conflictInfo->append(weightPercentage/100* 1, s);
 			}
 
 			nbroken++;
@@ -3437,8 +3422,7 @@ double ConstraintActivityTagPreferredRooms::fitness(
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* 1));
 				
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(weightPercentage/100* 1);
+				conflictInfo->append(weightPercentage/100* 1, s);
 			}
 			nbroken++;
 		}
@@ -3702,8 +3686,7 @@ double ConstraintStudentsSetMaxBuildingChangesPerDay::fitness(
 					s += ". ";
 					s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* (-maxBuildingChangesPerDay+n_changes)));
 					
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append(weightPercentage/100* (-maxBuildingChangesPerDay+n_changes));
+					conflictInfo->append(weightPercentage/100* (-maxBuildingChangesPerDay+n_changes), s);
 				}
 			}
 		}
@@ -3921,8 +3904,7 @@ double ConstraintStudentsMaxBuildingChangesPerDay::fitness(
 					s += ". ";
 					s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* (-maxBuildingChangesPerDay+n_changes)));
 					
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append(weightPercentage/100* (-maxBuildingChangesPerDay+n_changes));
+					conflictInfo->append(weightPercentage/100* (-maxBuildingChangesPerDay+n_changes), s);
 				}
 			}
 		}
@@ -4193,8 +4175,7 @@ double ConstraintStudentsSetMaxBuildingChangesPerWeek::fitness(
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* (-maxBuildingChangesPerWeek+n_changes)));
 				
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(weightPercentage/100* (-maxBuildingChangesPerWeek+n_changes));
+				conflictInfo->append(weightPercentage/100* (-maxBuildingChangesPerWeek+n_changes), s);
 			}
 		}
 	}
@@ -4411,8 +4392,7 @@ double ConstraintStudentsMaxBuildingChangesPerWeek::fitness(
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* (-maxBuildingChangesPerWeek+n_changes)));
 				
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(weightPercentage/100* (-maxBuildingChangesPerWeek+n_changes));
+				conflictInfo->append(weightPercentage/100* (-maxBuildingChangesPerWeek+n_changes), s);
 			}
 		}
 	}
@@ -4686,8 +4666,7 @@ double ConstraintStudentsSetMinGapsBetweenBuildingChanges::fitness(
 								s += ". ";
 								s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100*1));
 					
-								conflictInfo->descriptions.append(s);
-								conflictInfo->weights.append(weightPercentage/100*1);
+								conflictInfo->append(weightPercentage/100*1, s);
 							}
 						}
 						
@@ -4917,8 +4896,7 @@ double ConstraintStudentsMinGapsBetweenBuildingChanges::fitness(
 								s += ". ";
 								s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100*1));
 					
-								conflictInfo->descriptions.append(s);
-								conflictInfo->weights.append(weightPercentage/100*1);
+								conflictInfo->append(weightPercentage/100*1, s);
 							}
 						}
 						
@@ -5161,8 +5139,7 @@ double ConstraintTeacherMaxBuildingChangesPerDay::fitness(
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* (-maxBuildingChangesPerDay+n_changes)));
 				
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(weightPercentage/100* (-maxBuildingChangesPerDay+n_changes));
+				conflictInfo->append(weightPercentage/100* (-maxBuildingChangesPerDay+n_changes), s);
 			}
 		}
 	}
@@ -5380,8 +5357,7 @@ double ConstraintTeachersMaxBuildingChangesPerDay::fitness(
 					s += ". ";
 					s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* (-maxBuildingChangesPerDay+n_changes)));
 					
-					conflictInfo->descriptions.append(s);
-					conflictInfo->weights.append(weightPercentage/100* (-maxBuildingChangesPerDay+n_changes));
+					conflictInfo->append(weightPercentage/100* (-maxBuildingChangesPerDay+n_changes), s);
 				}
 			}
 		}
@@ -5617,8 +5593,7 @@ double ConstraintTeacherMaxBuildingChangesPerWeek::fitness(
 			s += ". ";
 			s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* (n_changes-maxBuildingChangesPerWeek)));
 			
-			conflictInfo->descriptions.append(s);
-			conflictInfo->weights.append(weightPercentage/100* (n_changes-maxBuildingChangesPerWeek));
+			conflictInfo->append(weightPercentage/100* (n_changes-maxBuildingChangesPerWeek), s);
 		}
 	}
 	
@@ -5836,8 +5811,7 @@ double ConstraintTeachersMaxBuildingChangesPerWeek::fitness(
 				s += ". ";
 				s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100* (n_changes-maxBuildingChangesPerWeek)));
 				
-				conflictInfo->descriptions.append(s);
-				conflictInfo->weights.append(weightPercentage/100* (n_changes-maxBuildingChangesPerWeek));
+				conflictInfo->append(weightPercentage/100* (n_changes-maxBuildingChangesPerWeek), s);
 			}
 		}
 	}
@@ -6075,8 +6049,7 @@ double ConstraintTeacherMinGapsBetweenBuildingChanges::fitness(
 							s += ". ";
 							s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100*1));
 				
-							conflictInfo->descriptions.append(s);
-							conflictInfo->weights.append(weightPercentage/100*1);
+							conflictInfo->append(weightPercentage/100*1, s);
 						}
 					}
 					
@@ -6306,8 +6279,7 @@ double ConstraintTeachersMinGapsBetweenBuildingChanges::fitness(
 								s += ". ";
 								s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100*1));
 					
-								conflictInfo->descriptions.append(s);
-								conflictInfo->weights.append(weightPercentage/100*1);
+								conflictInfo->append(weightPercentage/100*1, s);
 							}
 						}
 					
@@ -6561,8 +6533,7 @@ double ConstraintActivitiesOccupyMaxDifferentRooms::fitness(
 			s += QString(". ");
 			s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(nbroken*weightPercentage/100));
 	
-			conflictInfo->descriptions.append(s);
-			conflictInfo->weights.append(nbroken*weightPercentage/100);
+			conflictInfo->append(nbroken*weightPercentage/100, s);
 		}
 	}
 	
@@ -6824,8 +6795,7 @@ double ConstraintActivitiesSameRoomIfConsecutive::fitness(
 			s += QString(". ");
 			s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(nbroken*weightPercentage/100));
 	
-			conflictInfo->descriptions.append(s);
-			conflictInfo->weights.append(nbroken*weightPercentage/100);
+			conflictInfo->append(nbroken*weightPercentage/100, s);
 		}
 	}
 	
