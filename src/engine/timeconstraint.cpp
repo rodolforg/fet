@@ -17353,8 +17353,20 @@ double ConstraintTeacherMaxSpanPerDay::fitness(Solution& c, const Rules& r, Conf
 			}
 		if(end>=0 && begin>=0 && end>=begin){
 			int span=end-begin+1;
-			if(span>this->maxSpanPerDay)
-				nbroken++;
+			if(span>this->maxSpanPerDay) {
+				double increase = (span - this->maxSpanPerDay) * weightPercentage/100;
+				nbroken += increase;
+				QString s= tr("Time constraint teacher max span per day broken: %1, allowed %2 hours, required %3 hours on day %4.")
+				 .arg(r.internalTeachersList[this->teacher_ID]->name)
+				 .arg(this->maxSpanPerDay)
+				 .arg(span)
+				 .arg(r.daysOfTheWeek[d]);
+				s+=" ";
+				s += tr("This increases the conflicts total by %1")
+				 .arg(CustomFETString::number(increase));
+
+				conflictInfo->append(increase, s);
+			}
 		}
 	}
 	
@@ -17531,8 +17543,20 @@ double ConstraintTeachersMaxSpanPerDay::fitness(Solution& c, const Rules& r, Con
 				}
 			if(end>=0 && begin>=0 && end>=begin){
 				int span=end-begin+1;
-				if(span>this->maxSpanPerDay)
-					nbroken++;
+				if(span>this->maxSpanPerDay) {
+					double increase = (span - this->maxSpanPerDay) * weightPercentage/100;
+					nbroken += increase;
+					QString s= tr("Time constraint teachers max span per day broken: %1, allowed %2 hours, required %3 hours on day %4.")
+					 .arg(r.internalTeachersList[tch]->name)
+					 .arg(this->maxSpanPerDay)
+					 .arg(span)
+					 .arg(r.daysOfTheWeek[d]);
+					s+=" ";
+					s += tr("This increases the conflicts total by %1")
+					 .arg(CustomFETString::number(increase));
+
+					conflictInfo->append(increase, s);
+				}
 			}
 		}
 	}
@@ -17764,8 +17788,20 @@ double ConstraintStudentsSetMaxSpanPerDay::fitness(Solution& c, const Rules& r, 
 				}
 			if(end>=0 && begin>=0 && end>=begin){
 				int span=end-begin+1;
-				if(span>this->maxSpanPerDay)
-					nbroken++;
+				if(span>this->maxSpanPerDay) {
+					double increase = (span - this->maxSpanPerDay) * weightPercentage/100;
+					nbroken += increase;
+					QString s= tr("Time constraint students set max span per day broken: %1, allowed %2 hours, required %3 hours on day %4.")
+					 .arg(r.internalSubgroupsList[sbg]->name)
+					 .arg(this->maxSpanPerDay)
+					 .arg(span)
+					 .arg(r.daysOfTheWeek[d]);
+					s+=" ";
+					s += tr("This increases the conflicts total by %1")
+					 .arg(CustomFETString::number(increase));
+
+					conflictInfo->append(increase, s);
+				}
 			}
 		}
 	}
@@ -17942,8 +17978,20 @@ double ConstraintStudentsMaxSpanPerDay::fitness(Solution& c, const Rules& r, Con
 				}
 			if(end>=0 && begin>=0 && end>=begin){
 				int span=end-begin+1;
-				if(span>this->maxSpanPerDay)
-					nbroken++;
+				if(span>this->maxSpanPerDay) {
+					double increase = (span - this->maxSpanPerDay) * weightPercentage/100;
+					nbroken += increase;
+					QString s= tr("Time constraint students max span per day broken: %1, allowed %2 hours, required %3 hours on day %4.")
+					 .arg(r.internalSubgroupsList[sbg]->name)
+					 .arg(this->maxSpanPerDay)
+					 .arg(span)
+					 .arg(r.daysOfTheWeek[d]);
+					s+=" ";
+					s += tr("This increases the conflicts total by %1")
+					 .arg(CustomFETString::number(increase));
+
+					conflictInfo->append(increase, s);
+				}
 			}
 		}
 	}
@@ -18129,8 +18177,20 @@ double ConstraintTeacherMinRestingHours::fitness(Solution& c, const Rules& r, Co
 			else
 				cnt++;
 		}
-		if(cnt < this->minRestingHours)
-			nbroken++;
+		if(cnt < this->minRestingHours) {
+			double increase = (-cnt + this->minRestingHours) * weightPercentage/100;
+			nbroken += increase;
+			QString s= tr("Time constraint teacher min resting hours broken: %1, required min %2 hours, but rests for %3 hours from day %4 to next day.")
+			 .arg(r.internalTeachersList[this->teacher_ID]->name)
+			 .arg(this->minRestingHours)
+			 .arg(cnt)
+			 .arg(r.daysOfTheWeek[d]);
+			s+=" ";
+			s += tr("This increases the conflicts total by %1")
+			 .arg(CustomFETString::number(increase));
+
+			conflictInfo->append(increase, s);
+		}
 	}
 	
 	assert(nbroken==0);
@@ -18310,8 +18370,20 @@ double ConstraintTeachersMinRestingHours::fitness(Solution& c, const Rules& r, C
 				else
 					cnt++;
 			}
-			if(cnt < this->minRestingHours)
-				nbroken++;
+			if(cnt < this->minRestingHours) {
+				double increase = (-cnt + this->minRestingHours) * weightPercentage/100;
+				nbroken += increase;
+				QString s= tr("Time constraint teachers min resting hours broken: %1, required min %2 hours, but rests for %3 hours from day %4 to next day.")
+				 .arg(r.internalTeachersList[tch]->name)
+				 .arg(this->minRestingHours)
+				 .arg(cnt)
+				 .arg(r.daysOfTheWeek[d]);
+				s+=" ";
+				s += tr("This increases the conflicts total by %1")
+				 .arg(CustomFETString::number(increase));
+
+				conflictInfo->append(increase, s);
+			}
 		}
 	}
 	
@@ -18546,8 +18618,20 @@ double ConstraintStudentsSetMinRestingHours::fitness(Solution& c, const Rules& r
 				else
 					cnt++;
 			}
-			if(cnt < this->minRestingHours)
-				nbroken++;
+			if(cnt < this->minRestingHours) {
+				double increase = (-cnt + this->minRestingHours) * weightPercentage/100;
+				nbroken += increase;
+				QString s= tr("Time constraint students set min resting hours broken: %1, required min %2 hours, but rests for %3 hours from day %4 to next day.")
+				 .arg(r.internalSubgroupsList[sbg]->name)
+				 .arg(this->minRestingHours)
+				 .arg(cnt)
+				 .arg(r.daysOfTheWeek[d]);
+				s+=" ";
+				s += tr("This increases the conflicts total by %1")
+				 .arg(CustomFETString::number(increase));
+
+				conflictInfo->append(increase, s);
+			}
 		}
 	}
 	
@@ -18727,8 +18811,20 @@ double ConstraintStudentsMinRestingHours::fitness(Solution& c, const Rules& r, C
 				else
 					cnt++;
 			}
-			if(cnt < this->minRestingHours)
-				nbroken++;
+			if(cnt < this->minRestingHours) {
+				double increase = (-cnt + this->minRestingHours) * weightPercentage/100;
+				nbroken += increase;
+				QString s= tr("Time constraint students min resting hours broken: %1, required min %2 hours, but rests for %3 hours from day %4 to next day.")
+				 .arg(r.internalSubgroupsList[sbg]->name)
+				 .arg(this->minRestingHours)
+				 .arg(cnt)
+				 .arg(r.daysOfTheWeek[d]);
+				s+=" ";
+				s += tr("This increases the conflicts total by %1")
+				 .arg(CustomFETString::number(increase));
+
+				conflictInfo->append(increase, s);
+			}
 		}
 	}
 	
