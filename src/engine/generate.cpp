@@ -79,7 +79,6 @@ const int LEVEL_STOP_CONFLICTS_CALCULATION=MAX_LEVEL;
 static int level_limit;
 
 static int ncallsrandomswap;
-static int maxncallsrandomswap;
 
 Solution highestStageSolution;
 
@@ -2689,8 +2688,6 @@ if(threaded){
 
 	impossible=false;
 	timeExceeded=false;
-
-	maxncallsrandomswap=-1;
 
 	impossibleActivity=false;
 	
