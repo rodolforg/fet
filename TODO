@@ -1312,6 +1312,9 @@ Suggested also by Davide Cottignoli, on the forum, on 2017-08-18.
 
 Suggested also by mercurialuser, on the forum, on 2017-09-05.
 
+Suggested also by auriolar and rodolforg, on the forum, on 2018-04-15 (they suggest to add exceptions to the general constraint).
+rodolforg: I don't think it needs to change the constraint names. Just add the 'exception' field.
+
 See also TODO item #84.
 
 83---------------------------------------------------------
@@ -5228,6 +5231,8 @@ Min simultaneous activities from a set.
 
 A set of activities occupies MIN time slots from a selection.
 
+Also suggested by auriolar, on forum: Teacher(s) max span per week.
+
 313---------------------------------------------------------
 From Silver (on forum):
 
@@ -5874,3 +5879,31 @@ one of the advantages of this suggestion is to know if the activities are consec
 
 Volker Dirr: You also need to see the duration, because you can only know then if they are
 consecutive or not.
+
+352---------------------------------------------------------
+From Volker Dirr (on forum):
+
+There are constraints like max hours daily or interval max days per week which allow their data to be redundant (they allow n_hours_per_day or
+n_days_per_week), and other constraints, like min days between activities, which don't allow their data to be redundant (they allow only
+n_days_per_week-1).
+
+Volker suggests to allow only non-redundant data (like min days between activities constraints).
+
+353---------------------------------------------------------
+From Volker Dirr:
+
+add a warning before generating (generate_pre.cpp):
+check min days between activities constraints:
+if ((number_of_activities.count() > 2*days_per_week) && 
+forceConsecutive.isEnabled()) => IMPOSSIBLE
+
+354---------------------IMPORTANT!!!------------------------
+From Volker Dirr:
+
+If there are activities in a constraint activities same starting time and an activity is forbidden a time slot, then all the others are also
+forbidden this time slot.
+
+Liviu: It might not be critical, as activities with same starting time constraints are placed one near the other in the initial order
+(problems might arise only if the user uses the advanced option "Group activities in the initial order").
+
+Volker: Also, if an activity A has preferred room R and R is not available on some time slots, make A not available on these time slots.
