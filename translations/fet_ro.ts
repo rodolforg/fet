@@ -33066,7 +33066,7 @@ Vă rog opriți simularea înainte de aceasta.</translation>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1696"/>
         <source>Restore default settings</source>
-        <translation>Reface setări implicite</translation>
+        <translation>Restabilește setările implicite</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1512"/>
@@ -47641,12 +47641,12 @@ Notă: profesor indisponibil și pauză nu sunt socotite ca ferestre.</translati
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="57"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>May</source>
         <translation>Mai</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="59"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>June</source>
         <translation>Iunie</translation>
     </message>
