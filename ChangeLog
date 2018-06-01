@@ -2056,7 +2056,7 @@ Versions 5.35.0 - 5.35.v
 	- Updated the Greek translation, by Vangelis Karafillidis. It is now complete.
 - Version 5.36.7
 	- Updated to Qt 5.11.0.
-	- Improved the FET-CL user commands on Windows (since this platform misses/ignores SIGTERM, we use instead SIGBREAK to write the current and
-	highest-stage timetables, then stop the program). Suggested by svenvanhal.
-	- Code cleanup (by Volker Dirr).
 	- Corrected a few compilation warnings that appeared in FET when using the new Qt 5.11.0.
+	- Code cleanup (by Volker Dirr).
+	- Improved the command-line operation on Windows (since this platform misses/ignores SIGTERM, we use instead SIGBREAK to write the current and
+	highest-stage timetables, then stop the program). Suggested by svenvanhal.
