@@ -21,10 +21,9 @@ File centerwidgetonscreen.cpp
 
 #include <QtGlobal>
 
-#include "centerwidgetonscreen.h"
-
 #include "rules.h"
 #include "timetable.h"
+#include "studentsset.h"
 
 #ifndef FET_COMMAND_LINE
 #include "fetmainform.h"
@@ -59,6 +58,10 @@ File centerwidgetonscreen.cpp
 #include <QTableWidget>
 #include <QTableWidgetItem>
 #include <QAbstractItemView>
+
+#include <QComboBox>
+
+#include <QSet>
 
 extern const QString COMPANY;
 extern const QString PROGRAM;
@@ -265,6 +268,123 @@ void showWarningForInvisibleSubgroupActivity(QWidget* parent, const QString& ini
 	message+=QCoreApplication::translate("VariousGlobalWarningMessages", "If you want, you can revert to the initial setting to show subgroups in combo boxes.");
 
 	QMessageBox::warning(parent, title, message);
+}
+
+int populateStudentsComboBox(QComboBox* studentsComboBox, const QString& selectedStudentsSet, bool addEmptyAtBeginning)
+{
+	studentsComboBox->clear();
+	
+	int currentIndex=0;
+	int selectedIndex=0;
+	
+	if(addEmptyAtBeginning){
+		studentsComboBox->addItem(QString(""));
+		if(selectedStudentsSet==QString(""))
+			selectedIndex=currentIndex;
+		currentIndex++;
+		if(STUDENTS_COMBO_BOXES_STYLE==STUDENTS_COMBO_BOXES_STYLE_CATEGORIZED){
+			studentsComboBox->insertSeparator(studentsComboBox->count());
+			currentIndex++;
+		}
+	}
+
+	if(STUDENTS_COMBO_BOXES_STYLE==STUDENTS_COMBO_BOXES_STYLE_SIMPLE){
+		foreach(StudentsYear* sty, gt.rules.yearsList){
+			studentsComboBox->addItem(sty->name);
+			if(sty->name==selectedStudentsSet)
+				selectedIndex=currentIndex;
+			currentIndex++;
+			foreach(StudentsGroup* stg, sty->groupsList){
+				studentsComboBox->addItem(stg->name);
+				if(stg->name==selectedStudentsSet)
+					selectedIndex=currentIndex;
+				currentIndex++;
+				if(SHOW_SUBGROUPS_IN_COMBO_BOXES){
+					foreach(StudentsSubgroup* sts, stg->subgroupsList){
+						studentsComboBox->addItem(sts->name);
+						if(sts->name==selectedStudentsSet)
+							selectedIndex=currentIndex;
+						currentIndex++;
+					}
+				}
+			}
+		}
+	}
+	else if(STUDENTS_COMBO_BOXES_STYLE==STUDENTS_COMBO_BOXES_STYLE_ICONS){
+		foreach(StudentsYear* sty, gt.rules.yearsList){
+			studentsComboBox->addItem(sty->name);
+			if(sty->name==selectedStudentsSet)
+				selectedIndex=currentIndex;
+			currentIndex++;
+			foreach(StudentsGroup* stg, sty->groupsList){
+				studentsComboBox->addItem(QIcon(":/images/group.png"), stg->name);
+				if(stg->name==selectedStudentsSet)
+					selectedIndex=currentIndex;
+				currentIndex++;
+				if(SHOW_SUBGROUPS_IN_COMBO_BOXES){
+					foreach(StudentsSubgroup* sts, stg->subgroupsList){
+						studentsComboBox->addItem(QIcon(":/images/subgroup.png"), sts->name);
+						if(sts->name==selectedStudentsSet)
+							selectedIndex=currentIndex;
+						currentIndex++;
+					}
+				}
+			}
+		}
+	}
+	else if(STUDENTS_COMBO_BOXES_STYLE==STUDENTS_COMBO_BOXES_STYLE_CATEGORIZED){
+		QSet<QString> years;
+		QSet<QString> groups;
+		QSet<QString> subgroups;
+	
+		foreach(StudentsYear* sty, gt.rules.yearsList){
+			assert(!years.contains(sty->name));
+			years.insert(sty->name);
+			studentsComboBox->addItem(sty->name);
+			if(sty->name==selectedStudentsSet)
+				selectedIndex=currentIndex;
+			currentIndex++;
+		}
+		
+		studentsComboBox->insertSeparator(studentsComboBox->count());
+		currentIndex++;
+
+		foreach(StudentsYear* sty, gt.rules.yearsList){
+			foreach(StudentsGroup* stg, sty->groupsList){
+				if(!groups.contains(stg->name)){
+					groups.insert(stg->name);
+					studentsComboBox->addItem(stg->name);
+					if(stg->name==selectedStudentsSet)
+						selectedIndex=currentIndex;
+					currentIndex++;
+				}
+			}
+		}
+
+		studentsComboBox->insertSeparator(studentsComboBox->count());
+		currentIndex++;
+
+		if(SHOW_SUBGROUPS_IN_COMBO_BOXES){
+			foreach(StudentsYear* sty, gt.rules.yearsList){
+				foreach(StudentsGroup* stg, sty->groupsList){
+					foreach(StudentsSubgroup* sts, stg->subgroupsList){
+						if(!subgroups.contains(sts->name)){
+							subgroups.insert(sts->name);
+							studentsComboBox->addItem(sts->name);
+							if(sts->name==selectedStudentsSet)
+								selectedIndex=currentIndex;
+							currentIndex++;
+						}
+					}
+				}
+			}
+		}
+	}
+	else{
+		assert(0);
+	}
+	
+	return selectedIndex;
 }
 
 #else

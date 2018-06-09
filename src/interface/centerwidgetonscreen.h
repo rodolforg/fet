@@ -24,6 +24,8 @@ File centerwidgetonscreen.h
 
 #include <QString>
 
+class QComboBox;
+
 class QWidget;
 class QTableWidget;
 
@@ -50,5 +52,7 @@ void setRulesUnmodifiedAndOtherThings(Rules* rules);
 void showWarningForInvisibleSubgroupConstraint(QWidget* parent, const QString& initialSubgroupName);
 void showWarningCannotModifyConstraintInvisibleSubgroupConstraint(QWidget* parent, const QString& initialSubgroupName);
 void showWarningForInvisibleSubgroupActivity(QWidget* parent, const QString& initialSubgroupName);
+
+int populateStudentsComboBox(QComboBox* studentsComboBox, const QString& selectedStudentsSet=QString(""), bool addEmptyAtBeginning=false);
 
 #endif

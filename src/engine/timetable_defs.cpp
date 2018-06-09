@@ -31,6 +31,8 @@ bool checkForUpdates;
 
 QString internetVersion;
 
+int STUDENTS_COMBO_BOXES_STYLE=STUDENTS_COMBO_BOXES_STYLE_SIMPLE;
+
 /**
 FET version
 */

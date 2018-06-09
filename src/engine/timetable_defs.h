@@ -304,6 +304,11 @@ extern bool checkForUpdates;
 
 extern QString internetVersion;
 
+const int STUDENTS_COMBO_BOXES_STYLE_SIMPLE=0;
+const int STUDENTS_COMBO_BOXES_STYLE_ICONS=1;
+const int STUDENTS_COMBO_BOXES_STYLE_CATEGORIZED=2;
+extern int STUDENTS_COMBO_BOXES_STYLE;
+
 ///////tricks to save work to reconvert old code
 const int CUSTOM_DOUBLE_PRECISION=6; //number of digits after the decimal dot for the weights
 

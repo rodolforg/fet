@@ -377,6 +377,11 @@ void readSimulationParameters()
 	WRITE_TIMETABLES_SUBJECTS=newSettings.value("write-timetables-subjects", "true").toBool();
 	WRITE_TIMETABLES_ACTIVITY_TAGS=newSettings.value("write-timetables-activity-tags", "true").toBool();
 	WRITE_TIMETABLES_ACTIVITIES=newSettings.value("write-timetables-activities", "true").toBool();
+	
+	if(newSettings.contains("students-combo-boxes-style"))
+		STUDENTS_COMBO_BOXES_STYLE=newSettings.value("students-combo-boxes-style").toInt();
+	else
+		STUDENTS_COMBO_BOXES_STYLE=STUDENTS_COMBO_BOXES_STYLE_SIMPLE;
 
 /////////confirmations
 	CONFIRM_ACTIVITY_PLANNING=newSettings.value("confirm-activity-planning", "true").toBool();
@@ -452,6 +457,8 @@ void writeSimulationParameters()
 	settings.setValue("write-timetables-subjects", WRITE_TIMETABLES_SUBJECTS);
 	settings.setValue("write-timetables-activity-tags", WRITE_TIMETABLES_ACTIVITY_TAGS);
 	settings.setValue("write-timetables-activities", WRITE_TIMETABLES_ACTIVITIES);
+	
+	settings.setValue("students-combo-boxes-style", STUDENTS_COMBO_BOXES_STYLE);
 
 ///////////confirmations
 	settings.setValue("confirm-activity-planning", CONFIRM_ACTIVITY_PLANNING);

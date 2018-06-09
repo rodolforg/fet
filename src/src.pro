@@ -464,7 +464,9 @@ SOURCES += \
 	interface/modifyconstraintstudentssetminrestinghoursform.cpp \
 	interface/constraintstudentsminrestinghoursform.cpp \
 	interface/addconstraintstudentsminrestinghoursform.cpp \
-	interface/modifyconstraintstudentsminrestinghoursform.cpp
+	interface/modifyconstraintstudentsminrestinghoursform.cpp \
+	\
+	interface/studentscomboboxesstyleform.cpp
 
 HEADERS += \
 	engine/timetableexport.h \
@@ -935,7 +937,9 @@ HEADERS += \
 	interface/modifyconstraintstudentssetminrestinghoursform.h \
 	interface/constraintstudentsminrestinghoursform.h \
 	interface/addconstraintstudentsminrestinghoursform.h \
-	interface/modifyconstraintstudentsminrestinghoursform.h
+	interface/modifyconstraintstudentsminrestinghoursform.h \
+	\
+	interface/studentscomboboxesstyleform.h
 
 FORMS += \
 	interface/fetmainform_template.ui \
@@ -1367,7 +1371,9 @@ FORMS += \
 	interface/modifyconstraintstudentssetminrestinghoursform_template.ui \
 	interface/constraintstudentsminrestinghoursform_template.ui \
 	interface/addconstraintstudentsminrestinghoursform_template.ui \
-	interface/modifyconstraintstudentsminrestinghoursform_template.ui
+	interface/modifyconstraintstudentsminrestinghoursform_template.ui \
+	\
+	interface/studentscomboboxesstyleform_template.ui
 
 TRANSLATIONS += \
 	../translations/fet_ar.ts \

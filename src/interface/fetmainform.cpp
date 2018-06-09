@@ -213,6 +213,8 @@ using namespace std;
 
 #include "timetablestowriteondiskform.h"
 
+#include "studentscomboboxesstyleform.h"
+
 #include "lockunlock.h"
 #include "advancedlockunlockform.h"
 
@@ -906,6 +908,19 @@ void FetMainForm::on_timetablesToWriteOnDiskAction_triggered()
 	}
 
 	TimetablesToWriteOnDiskForm form(this);
+	setParentAndOtherThings(&form, this);
+	form.exec();
+}
+
+void FetMainForm::on_studentsComboBoxesStyleAction_triggered()
+{
+	if(simulation_running){
+		QMessageBox::information(this, tr("FET information"),
+			tr("Allocation in course.\nPlease stop simulation before this."));
+		return;
+	}
+
+	StudentsComboBoxesStyleForm form(this);
 	setParentAndOtherThings(&form, this);
 	form.exec();
 }
@@ -4309,6 +4324,8 @@ void FetMainForm::on_settingsRestoreDefaultsAction_triggered()
 	s+="\n";
 	s+=tr("50")+QString(". ")+tr("Print detailed teachers' free periods timetables will be %1", "%1 is true or false").arg(tr("true"));
 	s+="\n";
+	s+=tr("51")+QString(". ")+tr("Students' combo boxes style will be %1").arg(tr("simple", "It is a style for students' combo boxes"));
+	s+="\n";
 	
 	switch( LongTextMessageBox::largeConfirmation( this, tr("FET confirmation"), s,
 	 tr("&Yes"), tr("&No"), QString(), 0 , 1 ) ) {
@@ -4374,6 +4391,8 @@ void FetMainForm::on_settingsRestoreDefaultsAction_triggered()
 	WRITE_TIMETABLES_SUBJECTS=true;
 	WRITE_TIMETABLES_ACTIVITY_TAGS=true;
 	WRITE_TIMETABLES_ACTIVITIES=true;
+	
+	STUDENTS_COMBO_BOXES_STYLE=STUDENTS_COMBO_BOXES_STYLE_SIMPLE;
 	//
 	
 	////////confirmations
