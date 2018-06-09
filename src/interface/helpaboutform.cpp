@@ -353,7 +353,7 @@ HelpAboutForm::HelpAboutForm(QWidget* parent): QDialog(parent)
 	QString thanksTo=QString("");
 	thanksTo+=QString("(")+tr("chronologically")+QString("):");
 	thanksTo+=QString("<br /><br />");
-	thanksTo+=QString(QString::fromUtf8("Costin Bădică"));
+	thanksTo+=QString::fromUtf8("Costin Bădică");
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("Carsten Niehaus");
 	thanksTo+=QString("<br />");
@@ -403,7 +403,7 @@ HelpAboutForm::HelpAboutForm(QWidget* parent): QDialog(parent)
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("Scott Sweeting");
 	thanksTo+=QString("<br />");
-	thanksTo+=QString(QString::fromUtf8("Dragoș Petrașcu"));
+	thanksTo+=QString::fromUtf8("Dragoș Petrașcu");
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("Daniel S.");
 	thanksTo+=QString("<br />");
@@ -449,7 +449,7 @@ HelpAboutForm::HelpAboutForm(QWidget* parent): QDialog(parent)
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("Maciej Deorowicz");
 	thanksTo+=QString("<br />");
-	thanksTo+=QString(QString::fromUtf8("José César Fernández López"));
+	thanksTo+=QString::fromUtf8("José César Fernández López");
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("Daniel Chiriac");
 	thanksTo+=QString("<br />");
@@ -465,7 +465,7 @@ HelpAboutForm::HelpAboutForm(QWidget* parent): QDialog(parent)
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("Silver");
 	thanksTo+=QString("<br />");
-	thanksTo+=QString(QString::fromUtf8("Horațiu Hălmăjan"));
+	thanksTo+=QString::fromUtf8("Horațiu Hălmăjan");
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("kdsayang");
 	thanksTo+=QString("<br />");
@@ -483,7 +483,7 @@ HelpAboutForm::HelpAboutForm(QWidget* parent): QDialog(parent)
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("George Miliotis [Ionio]");
 	thanksTo+=QString("<br />");
-	thanksTo+=QString(QString::fromUtf8("Sílvia"));
+	thanksTo+=QString::fromUtf8("Sílvia");
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("Chafik Graiguer");
 	thanksTo+=QString("<br />");
@@ -509,7 +509,7 @@ HelpAboutForm::HelpAboutForm(QWidget* parent): QDialog(parent)
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("Regina V. Kryvakovska");
 	thanksTo+=QString("<br />");
-	thanksTo+=QString(QString::fromUtf8("ßingen"));
+	thanksTo+=QString::fromUtf8("ßingen");
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("Angela");
 	thanksTo+=QString("<br />");
@@ -545,7 +545,7 @@ HelpAboutForm::HelpAboutForm(QWidget* parent): QDialog(parent)
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("Christoph Schilling");
 	thanksTo+=QString("<br />");
-	thanksTo+=QString(QString::fromUtf8("Frank Mártin"));
+	thanksTo+=QString::fromUtf8("Frank Mártin");
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("Werner Bruns");
 	thanksTo+=QString("<br />");
@@ -559,7 +559,7 @@ HelpAboutForm::HelpAboutForm(QWidget* parent): QDialog(parent)
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("Ondrej Gregor");
 	thanksTo+=QString("<br />");
-	thanksTo+=QString(QString::fromUtf8("Karel Rodríguez Varona"));
+	thanksTo+=QString::fromUtf8("Karel Rodríguez Varona");
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("Remus Turea");
 	thanksTo+=QString("<br />");
@@ -583,7 +583,7 @@ HelpAboutForm::HelpAboutForm(QWidget* parent): QDialog(parent)
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("M K Lohumi");
 	thanksTo+=QString("<br />");
-	thanksTo+=QString(QString::fromUtf8("Régis Bouguin"));
+	thanksTo+=QString::fromUtf8("Régis Bouguin");
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("Ivan Starchevicy");
 	thanksTo+=QString("<br />");
@@ -669,7 +669,7 @@ HelpAboutForm::HelpAboutForm(QWidget* parent): QDialog(parent)
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("agemagician");
 	thanksTo+=QString("<br />");
-	thanksTo+=QString(QString::fromUtf8("Vlăduț Frățiman"));
+	thanksTo+=QString::fromUtf8("Vlăduț Frățiman");
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("vlad2005");
 	thanksTo+=QString("<br />");
@@ -699,7 +699,7 @@ HelpAboutForm::HelpAboutForm(QWidget* parent): QDialog(parent)
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("Thomas Klausner");
 	thanksTo+=QString("<br />");
-	thanksTo+=QString(QString::fromUtf8("Jörg Sonnenberger"));
+	thanksTo+=QString::fromUtf8("Jörg Sonnenberger");
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("Boubker");
 	thanksTo+=QString("<br />");
@@ -795,7 +795,7 @@ HelpAboutForm::HelpAboutForm(QWidget* parent): QDialog(parent)
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("hudrea");
 	thanksTo+=QString("<br />");
-	thanksTo+=QString(QString::fromUtf8("Udo Schütz"));
+	thanksTo+=QString::fromUtf8("Udo Schütz");
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("Jijo Jose");
 	thanksTo+=QString("<br />");
@@ -811,9 +811,9 @@ HelpAboutForm::HelpAboutForm(QWidget* parent): QDialog(parent)
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("daltinkurt");
 	thanksTo+=QString("<br />");
-	thanksTo+=QString(QString::fromUtf8("Léo-Paul Roch"));
+	thanksTo+=QString::fromUtf8("Léo-Paul Roch");
 	thanksTo+=QString("<br />");
-	thanksTo+=QString(QString::fromUtf8("Matthias Söllner"));
+	thanksTo+=QString::fromUtf8("Matthias Söllner");
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("auriolar");
 	thanksTo+=QString("<br />");
@@ -843,7 +843,7 @@ HelpAboutForm::HelpAboutForm(QWidget* parent): QDialog(parent)
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("dasa");
 	thanksTo+=QString("<br />");
-	thanksTo+=QString(QString::fromUtf8("Julio González Gil"));
+	thanksTo+=QString::fromUtf8("Julio González Gil");
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("Abou");
 	thanksTo+=QString("<br />");
@@ -873,7 +873,7 @@ HelpAboutForm::HelpAboutForm(QWidget* parent): QDialog(parent)
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("sln_rj");
 	thanksTo+=QString("<br />");
-	thanksTo+=QString(QString::fromUtf8("Emiliano Llano Díaz"));
+	thanksTo+=QString::fromUtf8("Emiliano Llano Díaz");
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("mohammed");
 	thanksTo+=QString("<br />");
@@ -892,6 +892,8 @@ HelpAboutForm::HelpAboutForm(QWidget* parent): QDialog(parent)
 	thanksTo+=QString("aisse");
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("svenvanhal");
+	thanksTo+=QString("<br />");
+	thanksTo+=QString("Coralie");
 	thanksTo+=QString("<br />");
 	thanksToTextBrowser->setHtml(thanksTo);
 }

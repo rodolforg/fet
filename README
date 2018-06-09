@@ -1,4 +1,4 @@
-This is FET version 5.35.7
+This is FET version 5.36.0-snapshot-10-jun-2018-00_42
 
 
 Program description:
@@ -14,16 +14,16 @@ Program description:
 
 Requirements:
 
-	FET is created in the following environment: openSUSE Leap 42.3 GNU/Linux distribution, Linux 4.4.132, Xfce 4.12,
-	Midnight Commander 4.8.19, KDiff3 0.9.98, Qt 5.11.0, gcc 7.3.1, g++ 7.3.1, make 4.0, sed 4.2.2,
+	FET is created in the following environment: openSUSE Leap 15.0 GNU/Linux distribution, Linux 4.12.14, Xfce 4.12,
+	Midnight Commander 4.8.20, KDiff3 0.9.98, Qt 5.11.0, gcc 8.1.1, g++ 8.1.1, make 4.2.1, sed 4.4,
 	Valgrind 3.13.0, Coverity Scan 2017.07, Cppcheck 1.83, other great free tools.
 	FET can be run on any platform supported by the free software Qt (GNU/Linux, Windows, Mac OS X).
 
 	GNU/Linux, Mac OS X:
 	Software:
 		make 4.0 or similar (GNU Make)
-		gcc 7.3.1 or similar
-		g++ 7.3.1 or similar (or gcc-g++, or gcc-c++, the name may vary. This program may be included in the gcc package)
+		gcc 8.1.1 or similar
+		g++ 8.1.1 or similar (or gcc-g++, or gcc-c++, the name may vary. This program may be included in the gcc package)
 		Qt 5.11.0 or compatible (The authors also tried to maintain backwards source compatibility with Qt 4.v.v).
 		
 		Note: You might be able to use the Clang C++ compiler or other C++ compiler instead of gcc and g++.
@@ -147,7 +147,7 @@ Compiling FET:
 	 #  include <GL/gl.h>
 					^
 	compilation terminated.
-	you may need to install additional packages before compiling FET. For instance, under my openSUSE GNU/Linux I need to install Mesa-devel.
+	you may need to install additional packages before compiling FET. For instance, under openSUSE GNU/Linux you may need to install Mesa-devel.
 	As reported by a user, on Mint GNU/Linux he needed to install mesa-common-dev and libgl1-mesa-dev.
 
 	Note 5: If you only want to compile the command-line version, open the file fet.pro with a text editor and from the second line remove the
