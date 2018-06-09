@@ -33,6 +33,7 @@
 #include "lockunlock.h"
 
 #include <QList>
+#include <QSet>
 
 #include <QMessageBox>
 
@@ -102,7 +103,8 @@ TimetableViewStudentsDaysHorizontalForm::TimetableViewStudentsDaysHorizontalForm
 	groupsListWidget->clear();
 	subgroupsListWidget->clear();
 	
-	connect(yearsListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(yearChanged(const QString&)));
+	//This connect should be lower in the code
+	//connect(yearsListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(yearChanged(const QString&)));
 	connect(groupsListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(groupChanged(const QString&)));
 	connect(subgroupsListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(subgroupChanged(const QString&)));
 	connect(closePushButton, SIGNAL(clicked()), this, SLOT(close()));
@@ -195,9 +197,25 @@ TimetableViewStudentsDaysHorizontalForm::TimetableViewStudentsDaysHorizontalForm
 	}
 	if(yearsListWidget->count()>0)
 		yearsListWidget->setCurrentRow(0);
+	connect(yearsListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(yearChanged(const QString&)));
+		
+	shownComboBox->addItem(tr("Years"));
+	shownComboBox->addItem(tr("Groups"));
+	shownComboBox->addItem(tr("Subgroups"));
+
+	shownComboBox->setCurrentIndex(-1);
+
+	if(settings.contains(this->metaObject()->className()+QString("/shown-categories")))
+		shownComboBox->setCurrentIndex(settings.value(this->metaObject()->className()+QString("/shown-categories")).toInt());
+	else
+		shownComboBox->setCurrentIndex(0);
+
+	connect(shownComboBox, SIGNAL(activated(QString)), this, SLOT(shownComboBoxChanged(QString)));
 
 	//added by Volker Dirr
 	connect(&communicationSpinBox, SIGNAL(valueChanged(int)), this, SLOT(updateStudentsTimetableTable()));
+
+	shownComboBoxChanged(shownComboBox->currentText());
 }
 
 TimetableViewStudentsDaysHorizontalForm::~TimetableViewStudentsDaysHorizontalForm()
@@ -215,12 +233,88 @@ TimetableViewStudentsDaysHorizontalForm::~TimetableViewStudentsDaysHorizontalFor
 	//save horizontal splitter state
 	//QSettings settings(COMPANY, PROGRAM);
 	settings.setValue(this->metaObject()->className()+QString("/horizontal-splitter-state"), horizontalSplitter->saveState());
+	
+	settings.setValue(this->metaObject()->className()+QString("/shown-categories"), shownComboBox->currentIndex());
 }
 
 void TimetableViewStudentsDaysHorizontalForm::resizeRowsAfterShow()
 {
 	studentsTimetableTable->resizeRowsToContents();
 //	tableWidgetUpdateBug(studentsTimetableTable);
+}
+
+void TimetableViewStudentsDaysHorizontalForm::shownComboBoxChanged(QString shownCategory)
+{
+	Q_UNUSED(shownCategory);
+
+	if(shownComboBox->currentIndex()==0){
+		//years, groups, and subgroups shown
+		yearsListWidget->show();
+		groupsListWidget->show();
+		subgroupsListWidget->show();
+		
+		disconnect(yearsListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(yearChanged(const QString&)));
+		yearsListWidget->clear();
+		for(int i=0; i<gt.rules.augmentedYearsList.size(); i++){
+			StudentsYear* sty=gt.rules.augmentedYearsList[i];
+			yearsListWidget->addItem(sty->name);
+		}
+		if(yearsListWidget->count()>0)
+			yearsListWidget->setCurrentRow(0);
+		connect(yearsListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(yearChanged(const QString&)));
+		if(yearsListWidget->count()>0)
+			yearChanged(yearsListWidget->item(0)->text());
+	}
+	else if(shownComboBox->currentIndex()==1){
+		//only groups and subgroups shown
+		yearsListWidget->hide();
+		groupsListWidget->show();
+		subgroupsListWidget->show();
+
+		disconnect(groupsListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(groupChanged(const QString&)));
+		groupsListWidget->clear();
+		QSet<QString> groupsSet;
+		for(int i=0; i<gt.rules.augmentedYearsList.size(); i++){
+			StudentsYear* sty=gt.rules.augmentedYearsList[i];
+			foreach(StudentsGroup* stg, sty->groupsList)
+				if(!groupsSet.contains(stg->name)){
+					groupsListWidget->addItem(stg->name);
+					groupsSet.insert(stg->name);
+				}
+		}
+		if(groupsListWidget->count()>0)
+			groupsListWidget->setCurrentRow(0);
+		connect(groupsListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(groupChanged(const QString&)));
+		if(groupsListWidget->count()>0)
+			groupChanged(groupsListWidget->item(0)->text());
+	}
+	else if(shownComboBox->currentIndex()==2){
+		//only subgroups shown
+		yearsListWidget->hide();
+		groupsListWidget->hide();
+		subgroupsListWidget->show();
+
+		disconnect(subgroupsListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(subgroupChanged(const QString&)));
+		subgroupsListWidget->clear();
+		QSet<QString> subgroupsSet;
+		for(int i=0; i<gt.rules.augmentedYearsList.size(); i++){
+			StudentsYear* sty=gt.rules.augmentedYearsList[i];
+			foreach(StudentsGroup* stg, sty->groupsList)
+				foreach(StudentsSubgroup* sts, stg->subgroupsList)
+					if(!subgroupsSet.contains(sts->name)){
+						subgroupsListWidget->addItem(sts->name);
+						subgroupsSet.insert(sts->name);
+					}
+		}
+		if(subgroupsListWidget->count()>0)
+			subgroupsListWidget->setCurrentRow(0);
+		connect(subgroupsListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(subgroupChanged(const QString&)));
+		if(subgroupsListWidget->count()>0)
+			subgroupChanged(subgroupsListWidget->item(0)->text());
+	}
+	else{
+		assert(0);
+	}
 }
 
 void TimetableViewStudentsDaysHorizontalForm::yearChanged(const QString &yearName)
@@ -264,8 +358,20 @@ void TimetableViewStudentsDaysHorizontalForm::groupChanged(const QString &groupN
 
 	if(groupName==QString())
 		return;
-
-	QString yearName=yearsListWidget->currentItem()->text();
+	
+	StudentsSet* ss=gt.rules.searchAugmentedStudentsSet(groupName);
+	if(ss==NULL){
+		QMessageBox::warning(this, tr("FET warning"), tr("Inexistent group - please reload this dialog"));
+		return;
+	}
+	if(ss->type!=STUDENTS_GROUP){
+		QMessageBox::warning(this, tr("FET warning"), tr("Incorrect group settings - please reload this dialog"));
+		return;
+	}
+	
+	StudentsGroup* stg=(StudentsGroup*)ss;
+	
+	/*QString yearName=yearsListWidget->currentItem()->text();
 	int yearIndex=gt.rules.searchAugmentedYear(yearName);
 	if(yearIndex<0){
 		QMessageBox::warning(this, tr("FET warning"), tr("Invalid year - please close this dialog and open a new students view timetable dialog"));
@@ -281,13 +387,13 @@ void TimetableViewStudentsDaysHorizontalForm::groupChanged(const QString &groupN
 		 tr("Solution: please try to select a different year and after that select the current year again, "
 		 "to refresh the groups list, or close this dialog and open again the students view timetable dialog"));
 		return;
-	}
+	}*/
 	
 	disconnect(subgroupsListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(subgroupChanged(const QString&)));
 
 	subgroupsListWidget->clear();
 	
-	StudentsGroup* stg=sty->groupsList.at(groupIndex);
+	//StudentsGroup* stg=sty->groupsList.at(groupIndex);
 	for(int i=0; i<stg->subgroupsList.size(); i++){
 		StudentsSubgroup* sts=stg->subgroupsList[i];
 		subgroupsListWidget->addItem(sts->name);
@@ -320,26 +426,31 @@ void TimetableViewStudentsDaysHorizontalForm::updateStudentsTimetableTable(){
 	}
 
 	QString s;
-	QString yearname;
-	QString groupname;
+	//QString yearname;
+	//QString groupname;
 	QString subgroupname;
 
-	if(yearsListWidget->currentRow()<0 || yearsListWidget->currentRow()>=yearsListWidget->count())
+	/*if(yearsListWidget->currentRow()<0 || yearsListWidget->currentRow()>=yearsListWidget->count())
 		return;
 	if(groupsListWidget->currentRow()<0 || groupsListWidget->currentRow()>=groupsListWidget->count())
 		return;
 	if(subgroupsListWidget->currentRow()<0 || subgroupsListWidget->currentRow()>=subgroupsListWidget->count())
-		return;
+		return;*/
 
-	yearname = yearsListWidget->currentItem()->text();
-	groupname = groupsListWidget->currentItem()->text();
+	//yearname = yearsListWidget->currentItem()->text();
+	//groupname = groupsListWidget->currentItem()->text();
 	subgroupname = subgroupsListWidget->currentItem()->text();
 
-	StudentsSubgroup* sts=(StudentsSubgroup*)gt.rules.searchAugmentedStudentsSet(subgroupname);
-	if(sts==NULL){
-		QMessageBox::information(this, tr("FET warning"), tr("You have an old timetable view students dialog opened - please close it"));
+	StudentsSet* ss=gt.rules.searchAugmentedStudentsSet(subgroupname);
+	if(ss==NULL){
+		QMessageBox::information(this, tr("FET warning"), tr("Inexistent subgroup - please reload this dialog"));
 		return;
 	}
+	if(ss->type!=STUDENTS_SUBGROUP){
+		QMessageBox::warning(this, tr("FET warning"), tr("Incorrect subgroup settings - please reload this dialog"));
+		return;
+	}
+	StudentsSubgroup* sts=(StudentsSubgroup*)ss;
 
 	s="";
 	s += subgroupname;
@@ -990,6 +1101,11 @@ void TimetableViewStudentsDaysHorizontalForm::help()
 	s+=QCoreApplication::translate("TimetableViewForm", "If a cell is (permanently) locked in time or space, it contains abbreviations to show that: PLT (permanently locked time), LT (locked time), "
 		"PLS (permanently locked space) or LS (locked space).", "Translate the abbreviations also. Make sure the abbreviations in your language are different between themselves "
 		"and the user can differentiate easily between them. These abbreviations may appear also in other places, please use the same abbreviations.");
+	s+="\n\n";
+	s+=QCoreApplication::translate("TimetableViewForm", "There is a combo box in this dialog. You can see the timetable for each year/each group/each subgroup if"
+		" you select the option 'Years', for all years/each group/each subgroup if you select the option 'Groups', or for all years/all groups/each subgroup if you"
+		" select the option 'Subgroups'.");
+	s+="\n\n";
 
 	LongTextMessageBox::largeInformation(this, tr("FET help"), s);
 }

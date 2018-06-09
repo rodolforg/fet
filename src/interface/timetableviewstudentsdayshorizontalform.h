@@ -51,6 +51,8 @@ public slots:
 	void currentItemChanged(QTableWidgetItem* current, QTableWidgetItem* previous);
 
 	void help();
+	
+	void shownComboBoxChanged(QString shownCategory);
 
 protected:
 	void resizeEvent(QResizeEvent* event);
