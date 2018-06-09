@@ -749,42 +749,46 @@ void FetMainForm::setEnabledIcon(QAction* action, bool enabled)
 void FetMainForm::populateLanguagesMap(QMap<QString, QString>& languagesMap)
 {
 	languagesMap.clear();
-	languagesMap.insert("ar", tr("Arabic"));
-	languagesMap.insert("ca", tr("Catalan"));
-	languagesMap.insert("de", tr("German"));
-	languagesMap.insert("el", tr("Greek"));
-	languagesMap.insert("en_GB", tr("British English"));
-	languagesMap.insert("en_US", tr("US English"));
-	languagesMap.insert("es", tr("Spanish"));
-	languagesMap.insert("fr", tr("French"));
-	languagesMap.insert("hu", tr("Hungarian"));
-	languagesMap.insert("id", tr("Indonesian"));
-	languagesMap.insert("it", tr("Italian"));
-	languagesMap.insert("lt", tr("Lithuanian"));
-	languagesMap.insert("mk", tr("Macedonian"));
-	languagesMap.insert("ms", tr("Malay"));
-	languagesMap.insert("nl", tr("Dutch"));
-	languagesMap.insert("pl", tr("Polish"));
-	languagesMap.insert("ro", tr("Romanian"));
-	languagesMap.insert("tr", tr("Turkish"));
-	languagesMap.insert("ru", tr("Russian"));
-	languagesMap.insert("fa", tr("Persian"));
-	languagesMap.insert("uk", tr("Ukrainian"));
-	languagesMap.insert("pt_BR", tr("Brazilian Portuguese"));
-	languagesMap.insert("da", tr("Danish"));
-	languagesMap.insert("si", tr("Sinhala"));
-	languagesMap.insert("sk", tr("Slovak"));
-	languagesMap.insert("he", tr("Hebrew"));
-	languagesMap.insert("sr", tr("Serbian"));
-	languagesMap.insert("gl", tr("Galician"));
-	languagesMap.insert("vi", tr("Vietnamese"));
-	languagesMap.insert("uz", tr("Uzbek"));
-	languagesMap.insert("sq", tr("Albanian"));
-	languagesMap.insert("zh_CN", tr("Chinese Simplified"));
-	languagesMap.insert("zh_TW", tr("Chinese Traditional"));
-	languagesMap.insert("eu", tr("Basque"));
-	languagesMap.insert("cs", tr("Czech"));
-	languagesMap.insert("ja", tr("Japanese"));
+
+	languagesMap.insert("en_GB", QString("British English"));
+	languagesMap.insert("en_US", QString("US English"));
+
+	languagesMap.insert("ar", QString::fromUtf8("عربي"));
+	languagesMap.insert("ca", QString::fromUtf8("Català"));
+	languagesMap.insert("de", QString::fromUtf8("Deutsch"));
+	languagesMap.insert("el", QString::fromUtf8("Ελληνικά"));
+	languagesMap.insert("es", QString::fromUtf8("Español"));
+	languagesMap.insert("fr", QString::fromUtf8("Français"));
+	languagesMap.insert("id", QString::fromUtf8("Indonesia"));
+	languagesMap.insert("it", QString::fromUtf8("Italiano"));
+	languagesMap.insert("ro", QString::fromUtf8("Română"));
+	languagesMap.insert("uk", QString::fromUtf8("Українська"));
+	languagesMap.insert("pt_BR", QString::fromUtf8("Português Brasil"));
+	languagesMap.insert("da", QString::fromUtf8("Dansk"));
+	languagesMap.insert("sr", QString::fromUtf8("Српски"));
+	languagesMap.insert("gl", QString::fromUtf8("Galego"));
+	languagesMap.insert("vi", QString::fromUtf8("Tiếng Việt"));
+	languagesMap.insert("sq", QString::fromUtf8("Shqip"));
+	languagesMap.insert("zh_TW", QString::fromUtf8("正體字型"));
+	languagesMap.insert("cs", QString::fromUtf8("Český"));
+	languagesMap.insert("ja", QString::fromUtf8("日本語"));
+
+	//Need to finish these.
+	languagesMap.insert("hu", QString("Hungarian"));
+	languagesMap.insert("lt", QString("Lithuanian"));
+	languagesMap.insert("mk", QString("Macedonian"));
+	languagesMap.insert("ms", QString("Malay"));
+	languagesMap.insert("nl", QString("Dutch"));
+	languagesMap.insert("pl", QString("Polish"));
+	languagesMap.insert("tr", QString("Turkish"));
+	languagesMap.insert("ru", QString("Russian"));
+	languagesMap.insert("fa", QString("Persian"));
+	languagesMap.insert("si", QString("Sinhala"));
+	languagesMap.insert("sk", QString("Slovak"));
+	languagesMap.insert("he", QString("Hebrew"));
+	languagesMap.insert("uz", QString("Uzbek"));
+	languagesMap.insert("zh_CN", QString("Chinese Simplified"));
+	languagesMap.insert("eu", QString("Basque"));
 }
 
 void FetMainForm::enableNotPerfectMessage()
