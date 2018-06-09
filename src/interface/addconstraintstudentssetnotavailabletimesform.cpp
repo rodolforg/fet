@@ -31,6 +31,8 @@
 #include <QBrush>
 #include <QColor>
 
+#include <QIcon>
+
 #define YES		(QString("X"))
 #define NO		(QString(" "))
 

@@ -388,6 +388,54 @@ int populateStudentsComboBox(QComboBox* studentsComboBox, const QString& selecte
 }
 
 #else
+
+void centerWidgetOnScreen(QWidget* widget)
+{
+	Q_UNUSED(widget);
+}
+
+void forceCenterWidgetOnScreen(QWidget* widget)
+{
+	Q_UNUSED(widget);
+}
+
+int maxScreenWidth(QWidget* widget)
+{
+	Q_UNUSED(widget);
+	
+	return 0;
+}
+
+int maxRecommendedWidth(QWidget* widget)
+{
+	Q_UNUSED(widget);
+
+	return 0;
+}
+
+void saveFETDialogGeometry(QWidget* widget, const QString& alternativeName)
+{
+	Q_UNUSED(widget);
+	Q_UNUSED(alternativeName);
+}
+
+void restoreFETDialogGeometry(QWidget* widget, const QString& alternativeName)
+{
+	Q_UNUSED(widget);
+	Q_UNUSED(alternativeName);
+}
+
+void setParentAndOtherThings(QWidget* widget, QWidget* parent)
+{
+	Q_UNUSED(widget);
+	Q_UNUSED(parent);
+}
+
+void setStretchAvailabilityTableNicely(QTableWidget* notAllowedTimesTable)
+{
+	Q_UNUSED(notAllowedTimesTable);
+}
+
 void setRulesModifiedAndOtherThings(Rules* rules)
 {
 	Q_UNUSED(rules);
@@ -397,4 +445,28 @@ void setRulesUnmodifiedAndOtherThings(Rules* rules)
 {
 	Q_UNUSED(rules);
 }
+
+void showWarningForInvisibleSubgroupConstraint(QWidget* parent, const QString& initialSubgroupName)
+{
+	Q_UNUSED(parent);
+	Q_UNUSED(initialSubgroupName);
+}
+
+void showWarningCannotModifyConstraintInvisibleSubgroupConstraint(QWidget* parent, const QString& initialSubgroupName)
+{
+	Q_UNUSED(parent);
+	Q_UNUSED(initialSubgroupName);
+}
+
+void showWarningForInvisibleSubgroupActivity(QWidget* parent, const QString& initialSubgroupName)
+{
+	Q_UNUSED(parent);
+	Q_UNUSED(initialSubgroupName);
+}
+
+void populateStudentsComboBox(QComboBox* studentsComboBox)
+{
+	Q_UNUSED(studentsComboBox);
+}
+
 #endif
