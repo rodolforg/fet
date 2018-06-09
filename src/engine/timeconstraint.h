@@ -3101,7 +3101,6 @@ public:
 
 	int endHour; //might be = to gt.rules.nHoursPerDay
 
-
 	ConstraintTeachersIntervalMaxDaysPerWeek();
 
 	ConstraintTeachersIntervalMaxDaysPerWeek(double wp, int maxnd, int sh, int eh);
@@ -3206,7 +3205,6 @@ public:
 	int startHour;
 
 	int endHour; //might be = to gt.rules.nHoursPerDay
-
 
 	ConstraintStudentsIntervalMaxDaysPerWeek();
 

@@ -45,8 +45,6 @@ File import.cpp
 #include <QList>
 #include <QPair>
 
-#include "centerwidgetonscreen.h"
-
 extern Timetable gt;
 
 // maybe I can add some of them again as parameter into function name?

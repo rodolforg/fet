@@ -37,8 +37,6 @@
 #include <QSet>
 #include <QHash>
 
-#include "centerwidgetonscreen.h"
-
 #include "longtextmessagebox.h"
 
 extern const QString COMPANY;

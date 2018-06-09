@@ -43,8 +43,6 @@ File longtextmessagebox.cpp
 
 #endif
 
-#include "centerwidgetonscreen.h"
-
 const int MIN_WIDTH=420;  //golden ratio 1.618 for min dimensions :-)
 const int MAX_WIDTH=1000;
 const int MIN_HEIGHT=260;

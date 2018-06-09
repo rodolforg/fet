@@ -26,8 +26,6 @@ using namespace std;
 
 #include "fetmainform.h"
 
-#include "centerwidgetonscreen.h"
-
 #include "timetablegenerateform.h"
 #include "timetablegeneratemultipleform.h"
 

@@ -24,8 +24,6 @@
 #include "subactivitiesform.h"
 #include "modifysubactivityform.h"
 
-#include "centerwidgetonscreen.h"
-
 #include <QString>
 #include <QMessageBox>
 

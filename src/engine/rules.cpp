@@ -59,8 +59,6 @@ using namespace std;
 
 #include "lockunlock.h"
 
-#include "centerwidgetonscreen.h"
-
 //static bool toSkipTime[MAX_TIME_CONSTRAINTS];
 //static bool toSkipSpace[MAX_SPACE_CONSTRAINTS];
 

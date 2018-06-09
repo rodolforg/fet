@@ -27,8 +27,6 @@
 
 #include "activityplanningform.h"
 
-#include "centerwidgetonscreen.h"
-
 #include <QString>
 #include <QMessageBox>
 

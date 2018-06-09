@@ -19,8 +19,6 @@
 
 #include "timetable_defs.h"
 
-#include "centerwidgetonscreen.h"
-
 AdvancedFilterForm::AdvancedFilterForm(QWidget* parent, bool all, QList<int> descrDetDescr, QList<int> contNCont, QStringList text, bool caseSensitive, const QString& textToSettings): QDialog(parent)
 {
 	atts=textToSettings;
