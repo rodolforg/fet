@@ -233,7 +233,8 @@ void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::updateTeachersComboBox
 }
 
 void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::updateStudentsComboBox(QWidget* parent){
-	int i=0, j=-1;
+	int j=populateStudentsComboBox(studentsComboBox, this->_ctr->p_studentsName, true);
+	/*int i=0, j=-1;
 	studentsComboBox->clear();
 	studentsComboBox->addItem("");
 	if(this->_ctr->p_studentsName=="")
@@ -259,7 +260,7 @@ void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::updateStudentsComboBox
 				i++;
 			}
 		}
-	}
+	}*/
 	if(j<0)
 		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->p_studentsName);
 	else

@@ -82,7 +82,8 @@ AddConstraintActivitiesSameStartingTimeForm::AddConstraintActivitiesSameStarting
 	}
 	activityTagsComboBox->setCurrentIndex(0);
 
-	studentsComboBox->addItem("");
+	populateStudentsComboBox(studentsComboBox, QString(""), true);
+	/*studentsComboBox->addItem("");
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];
 		studentsComboBox->addItem(sty->name);
@@ -94,7 +95,7 @@ AddConstraintActivitiesSameStartingTimeForm::AddConstraintActivitiesSameStarting
 				studentsComboBox->addItem(sts->name);
 			}
 		}
-	}
+	}*/
 	studentsComboBox->setCurrentIndex(0);
 	
 	simultaneousActivitiesListWidget->clear();

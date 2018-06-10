@@ -56,7 +56,8 @@ ModifyConstraintStudentsSetMinRestingHoursForm::~ModifyConstraintStudentsSetMinR
 }
 
 void ModifyConstraintStudentsSetMinRestingHoursForm::updateStudentsComboBox(QWidget* parent){
-	studentsComboBox->clear();
+	int j=populateStudentsComboBox(studentsComboBox, this->_ctr->students);
+	/*studentsComboBox->clear();
 	int i=0, j=-1;
 	for(int m=0; m<gt.rules.yearsList.size(); m++){
 		StudentsYear* sty=gt.rules.yearsList[m];
@@ -78,7 +79,7 @@ void ModifyConstraintStudentsSetMinRestingHoursForm::updateStudentsComboBox(QWid
 				i++;
 			}
 		}
-	}
+	}*/
 	if(j<0)
 		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->students);
 	else

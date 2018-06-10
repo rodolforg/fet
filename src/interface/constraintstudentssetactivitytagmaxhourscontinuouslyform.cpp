@@ -54,7 +54,8 @@ ConstraintStudentsSetActivityTagMaxHoursContinuouslyForm::ConstraintStudentsSetA
 	QSize tmp4=activityTagsComboBox->minimumSizeHint();
 	Q_UNUSED(tmp4);
 	
-	studentsComboBox->addItem("");
+	populateStudentsComboBox(studentsComboBox, QString(""), true);
+	/*studentsComboBox->addItem("");
 
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];
@@ -67,7 +68,7 @@ ConstraintStudentsSetActivityTagMaxHoursContinuouslyForm::ConstraintStudentsSetA
 				studentsComboBox->addItem(sts->name);
 			}
 		}
-	}
+	}*/
 	
 	activityTagsComboBox->clear();
 	activityTagsComboBox->addItem("");

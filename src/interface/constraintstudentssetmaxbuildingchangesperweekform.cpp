@@ -51,7 +51,8 @@ ConstraintStudentsSetMaxBuildingChangesPerWeekForm::ConstraintStudentsSetMaxBuil
 	QSize tmp2=studentsComboBox->minimumSizeHint();
 	Q_UNUSED(tmp2);
 
-	studentsComboBox->addItem("");
+	populateStudentsComboBox(studentsComboBox, QString(""), true);
+	/*studentsComboBox->addItem("");
 
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];
@@ -64,7 +65,7 @@ ConstraintStudentsSetMaxBuildingChangesPerWeekForm::ConstraintStudentsSetMaxBuil
 				studentsComboBox->addItem(sts->name);
 			}
 		}
-	}
+	}*/
 
 	this->filterChanged();
 }

@@ -55,7 +55,8 @@ ModifyConstraintStudentsSetMaxBuildingChangesPerDayForm::~ModifyConstraintStuden
 
 void ModifyConstraintStudentsSetMaxBuildingChangesPerDayForm::updateStudentsComboBox(QWidget* parent)
 {
-	studentsComboBox->clear();
+	int j=populateStudentsComboBox(studentsComboBox, this->_ctr->studentsName);
+	/*studentsComboBox->clear();
 	int i=0, j=-1;
 	for(int m=0; m<gt.rules.yearsList.size(); m++){
 		StudentsYear* sty=gt.rules.yearsList[m];
@@ -77,7 +78,7 @@ void ModifyConstraintStudentsSetMaxBuildingChangesPerDayForm::updateStudentsComb
 				i++;
 			}
 		}
-	}
+	}*/
 	if(j<0)
 		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->studentsName);
 	else

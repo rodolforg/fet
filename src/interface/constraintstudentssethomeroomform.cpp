@@ -55,7 +55,8 @@ ConstraintStudentsSetHomeRoomForm::ConstraintStudentsSetHomeRoomForm(QWidget* pa
 	QSize tmp5=roomsComboBox->minimumSizeHint();
 	Q_UNUSED(tmp5);
 	
-	studentsComboBox->addItem("");
+	populateStudentsComboBox(studentsComboBox, QString(""), true);
+	/*studentsComboBox->addItem("");
 
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];
@@ -68,7 +69,7 @@ ConstraintStudentsSetHomeRoomForm::ConstraintStudentsSetHomeRoomForm(QWidget* pa
 				studentsComboBox->addItem(sts->name);
 			}
 		}
-	}
+	}*/
 	
 	roomsComboBox->addItem("");
 	foreach(Room* rm, gt.rules.roomsList)

@@ -52,7 +52,8 @@ AddConstraintStudentsSetMaxHoursContinuouslyForm::~AddConstraintStudentsSetMaxHo
 
 void AddConstraintStudentsSetMaxHoursContinuouslyForm::updateStudentsSetComboBox()
 {
-	studentsComboBox->clear();	
+	populateStudentsComboBox(studentsComboBox);
+	/*studentsComboBox->clear();
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];
 		studentsComboBox->addItem(sty->name);
@@ -64,7 +65,7 @@ void AddConstraintStudentsSetMaxHoursContinuouslyForm::updateStudentsSetComboBox
 				studentsComboBox->addItem(sts->name);
 			}
 		}
-	}
+	}*/
 
 	constraintChanged();
 }

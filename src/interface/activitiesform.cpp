@@ -142,7 +142,36 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 			}
 		}
 	}*/
-	studentsComboBox->setCurrentIndex(cist);
+	if(studentsSetName==""){
+		assert(cist==0);
+		studentsComboBox->setCurrentIndex(0);
+
+		showedStudents.clear();
+		showedStudents.insert("");
+	
+		filterChanged();
+	}
+	else{
+		assert(cist!=0);
+
+		if(cist==-1){
+			studentsComboBox->setCurrentIndex(0);
+
+			showWarningForInvisibleSubgroupActivity(parent, studentsSetName);
+
+			showedStudents.clear();
+			showedStudents.insert("");
+	
+			filterChanged();
+		}
+		else{
+			studentsComboBox->setCurrentIndex(cist);
+
+			this->studentsFilterChanged();
+		}
+	}
+
+	/*studentsComboBox->setCurrentIndex(cist);
 	
 	if(studentsSetName!=""){
 		if(cist==0){
@@ -162,7 +191,7 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 		showedStudents.insert("");
 	
 		filterChanged();
-	}
+	}*/
 }
 
 ActivitiesForm::~ActivitiesForm()

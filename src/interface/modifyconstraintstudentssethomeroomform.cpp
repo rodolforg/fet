@@ -52,7 +52,8 @@ ModifyConstraintStudentsSetHomeRoomForm::~ModifyConstraintStudentsSetHomeRoomFor
 }
 
 void ModifyConstraintStudentsSetHomeRoomForm::updateStudentsComboBox(QWidget* parent){
-	int i=0, j=-1;
+	int j=populateStudentsComboBox(studentsComboBox, this->_ctr->studentsName);
+	/*int i=0, j=-1;
 	studentsComboBox->clear();
 	for(int m=0; m<gt.rules.yearsList.size(); m++){
 		StudentsYear* sty=gt.rules.yearsList[m];
@@ -74,7 +75,7 @@ void ModifyConstraintStudentsSetHomeRoomForm::updateStudentsComboBox(QWidget* pa
 				i++;
 			}
 		}
-	}
+	}*/
 	if(j<0)
 		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->studentsName);
 	else

@@ -275,7 +275,7 @@ int populateStudentsComboBox(QComboBox* studentsComboBox, const QString& selecte
 	studentsComboBox->clear();
 	
 	int currentIndex=0;
-	int selectedIndex=0;
+	int selectedIndex=-1;
 	
 	if(addEmptyAtBeginning){
 		studentsComboBox->addItem(QString(""));
@@ -283,8 +283,10 @@ int populateStudentsComboBox(QComboBox* studentsComboBox, const QString& selecte
 			selectedIndex=currentIndex;
 		currentIndex++;
 		if(STUDENTS_COMBO_BOXES_STYLE==STUDENTS_COMBO_BOXES_STYLE_CATEGORIZED){
+#if QT_VERSION >= 0x040400
 			studentsComboBox->insertSeparator(studentsComboBox->count());
 			currentIndex++;
+#endif
 		}
 	}
 
@@ -346,8 +348,10 @@ int populateStudentsComboBox(QComboBox* studentsComboBox, const QString& selecte
 			currentIndex++;
 		}
 		
+#if QT_VERSION >= 0x040400
 		studentsComboBox->insertSeparator(studentsComboBox->count());
 		currentIndex++;
+#endif
 
 		foreach(StudentsYear* sty, gt.rules.yearsList){
 			foreach(StudentsGroup* stg, sty->groupsList){
@@ -361,8 +365,10 @@ int populateStudentsComboBox(QComboBox* studentsComboBox, const QString& selecte
 			}
 		}
 
+#if QT_VERSION >= 0x040400
 		studentsComboBox->insertSeparator(studentsComboBox->count());
 		currentIndex++;
+#endif
 
 		if(SHOW_SUBGROUPS_IN_COMBO_BOXES){
 			foreach(StudentsYear* sty, gt.rules.yearsList){
