@@ -1102,9 +1102,8 @@ void TimetableViewStudentsDaysHorizontalForm::help()
 		"PLS (permanently locked space) or LS (locked space).", "Translate the abbreviations also. Make sure the abbreviations in your language are different between themselves "
 		"and the user can differentiate easily between them. These abbreviations may appear also in other places, please use the same abbreviations.");
 	s+="\n\n";
-	s+=QCoreApplication::translate("TimetableViewForm", "There is a combo box in this dialog. You can see the timetable for each year/each group/each subgroup if"
-		" you select the option 'Years', for all years/each group/each subgroup if you select the option 'Groups', or for all years/all groups/each subgroup if you"
-		" select the option 'Subgroups'.");
+	s+=QCoreApplication::translate("TimetableViewForm", "There is a combo box in this dialog. You can choose each year, group, and subgroup if you select 'Years',"
+		" each group and subgroup if you select 'Groups', or each subgroup if you select 'Subgroups'.");
 	s+="\n\n";
 
 	LongTextMessageBox::largeInformation(this, tr("FET help"), s);
