@@ -4,188 +4,188 @@
 <context>
     <name>ActivitiesForm</name>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="319"/>
+        <location filename="../src/interface/activitiesform.cpp" line="348"/>
         <source>No: %1 / %2</source>
         <comment>No means number, %1 is the number of active activities, %2 is the number of total activities. Please leave spaces between fields, so that they are better visible</comment>
         <translation>Nb : %1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="321"/>
+        <location filename="../src/interface/activitiesform.cpp" line="350"/>
         <source>Dur: %1 / %2</source>
         <comment>Dur means duration, %1 is the duration of active activities, %2 is the duration of total activities. Please leave spaces between fields, so that they are better visible</comment>
         <translation>Dur : %1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="359"/>
-        <location filename="../src/interface/activitiesform.cpp" line="410"/>
-        <location filename="../src/interface/activitiesform.cpp" line="471"/>
-        <location filename="../src/interface/activitiesform.cpp" line="576"/>
+        <location filename="../src/interface/activitiesform.cpp" line="388"/>
+        <location filename="../src/interface/activitiesform.cpp" line="439"/>
+        <location filename="../src/interface/activitiesform.cpp" line="500"/>
+        <location filename="../src/interface/activitiesform.cpp" line="605"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="359"/>
-        <location filename="../src/interface/activitiesform.cpp" line="471"/>
-        <location filename="../src/interface/activitiesform.cpp" line="576"/>
+        <location filename="../src/interface/activitiesform.cpp" line="388"/>
+        <location filename="../src/interface/activitiesform.cpp" line="500"/>
+        <location filename="../src/interface/activitiesform.cpp" line="605"/>
         <source>Invalid selected activity</source>
         <translation>Activité sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="411"/>
+        <location filename="../src/interface/activitiesform.cpp" line="440"/>
         <source>Cannot modify this large activity, because it contains more than %1 activities.</source>
         <translation>Impossible de modifier cette grande activité car elle contient plus de %1 activités.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="420"/>
+        <location filename="../src/interface/activitiesform.cpp" line="449"/>
         <source>different teachers</source>
         <translation>enseignants différents</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="422"/>
+        <location filename="../src/interface/activitiesform.cpp" line="451"/>
         <source>different subject</source>
         <translation>matière différente</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="424"/>
+        <location filename="../src/interface/activitiesform.cpp" line="453"/>
         <source>different activity tags</source>
         <translation>codes activité différents</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="426"/>
+        <location filename="../src/interface/activitiesform.cpp" line="455"/>
         <source>different students</source>
         <translation>apprenants différents</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="428"/>
+        <location filename="../src/interface/activitiesform.cpp" line="457"/>
         <source>different boolean variable &apos;must compute n total students&apos;</source>
         <translation>variable booléenne &quot;doit calculer nb total d&apos;apprenants&quot; différente</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="430"/>
+        <location filename="../src/interface/activitiesform.cpp" line="459"/>
         <source>different number of students</source>
         <translation>nombre d&apos;apprenants différent</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="433"/>
+        <location filename="../src/interface/activitiesform.cpp" line="462"/>
         <source>The current split activity has subactivities which were individually modified. It is recommended to abort now and modify individual subactivities from the corresponding menu. Otherwise you will modify the fields for all the subactivities from this larger split activity.</source>
         <translation>Cette activité fractionnée a des sous-activités qui ont été modifiées individuellement.
 Il est recommandé d&apos;abandonner maintenant et de modifier individuellement ces sous-activités depuis le menu correspondant. Sinon vous modifierez les champs pour toutes les sous-activités de cette grande activité fractionnée.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="437"/>
+        <location filename="../src/interface/activitiesform.cpp" line="466"/>
         <source>The fields which are different are: %1</source>
         <translation>Les champs différents sont : %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="439"/>
+        <location filename="../src/interface/activitiesform.cpp" line="468"/>
         <source>FET warning</source>
         <translation>FET avertissement</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="439"/>
+        <location filename="../src/interface/activitiesform.cpp" line="468"/>
         <source>Abort</source>
         <translation>Abandonner</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="439"/>
+        <location filename="../src/interface/activitiesform.cpp" line="468"/>
         <source>Continue</source>
         <translation>Continuer</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="484"/>
+        <location filename="../src/interface/activitiesform.cpp" line="513"/>
         <source>Remove activity?</source>
         <translation>Retirer l&apos;activité ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="487"/>
+        <location filename="../src/interface/activitiesform.cpp" line="516"/>
         <source>There will also be removed the related activities from the same larger split activity</source>
         <translation>Seront aussi retirées les activités relatives à cette même grande activité fractionnée</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="492"/>
+        <location filename="../src/interface/activitiesform.cpp" line="521"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="493"/>
+        <location filename="../src/interface/activitiesform.cpp" line="522"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="493"/>
+        <location filename="../src/interface/activitiesform.cpp" line="522"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="521"/>
+        <location filename="../src/interface/activitiesform.cpp" line="550"/>
         <source>Invalid activity</source>
         <translation>Activité invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="537"/>
+        <location filename="../src/interface/activitiesform.cpp" line="566"/>
         <source>Useful instructions/tips:</source>
         <translation>Instructions / astuces utiles :</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="540"/>
+        <location filename="../src/interface/activitiesform.cpp" line="569"/>
         <source>Above the (sub)activities list, we have 2 labels, containing 4 numbers. The first label contains text: No: a / b. The first number a is the number of active (sub)activities (we number each individual subactivity as 1), while the second number b is the number of total (sub)activities. The second label contains text: Dur: c / d. The third number c is the duration of active (sub)activities, in periods (or FET hours), while the fourth number d is the duration of total (sub)activities, in periods (or FET hours). So, No means number and Dur means duration.</source>
         <translation>Au-dessus de la liste des (sous-) activités, nous avons 2 étiquettes contenant 4 nombres. La première étiquette contient le texte : &quot;Nb : a / b&quot;. Le premier nombre &quot;a&quot; est le nombre d&apos; (sous-) activités actives (nous comptons chaque sous-activité individuelle comme 1), tandis que le second nombre &quot;b&quot; est le nombre total d&apos; (sous-) activités. La seconde étiquette contient le texte : &quot;Dur : c / d&quot;. Le troisième nombre &quot;c&quot; est la durée des (sous-) activités actives, dans les périodes (ou heures FET), tandis que le quatrième nombre &quot;d&quot; est la durée totale des (sous-) activités, dans les périodes (ou heures FET). Ainsi, &quot;Nb&quot; signifie nombre et &quot;Dur&quot; durée.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="546"/>
+        <location filename="../src/interface/activitiesform.cpp" line="575"/>
         <source>Example: No: 100 / 102, Dur: 114 / 117. They represent: 100 - the number of active (sub)activities, then 102 - the number of total (sub)activities, 114 - the duration of active activities (in periods or FET hours) and 117 - the duration of total activities (in periods or FET hours). In this example we have 2 inactive activities with their combined duration being 3 periods.</source>
         <translation>Exemple : &quot;Nb : 100 / 102&quot;, &quot;Dur : 114 / 117&quot;. Ils représentent : 100 - le nombre d&apos; (sous-) activités actives, puis 102 - le nombre total d&apos; (sous-) activités, 114 - la durée des activités actives (dans les périodes ou heures FET) et 117 - la durée totale des activités (dans les périodes ou heures FET). Dans cet exemple nous avons 2 activités inactives d&apos;une durée combinée de 3 périodes.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="552"/>
+        <location filename="../src/interface/activitiesform.cpp" line="581"/>
         <source>Explanation of the short description of an activity: first comes the id. If the activity is inactive, an X follows. Then the duration. Then, if the activity is split, a slash and the total duration. Then teachers, subject, activity tag (if it is not void) and students. Then the number of students (if specified).</source>
         <translation>Explication de la courte description d&apos;une activité : l&apos;ID vient en premier. Si l&apos;activité est inactive, un &quot;X&quot; la suit. Puis la durée. Ensuite, si l&apos;activité est fractionnée, une barre oblique et la durée totale. Puis les enseignants, matière, code activité (si non vide) et apprenants. Enfin le nombre d&apos;apprenants (si spécifié).</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="556"/>
+        <location filename="../src/interface/activitiesform.cpp" line="585"/>
         <source>The activities which are inactive:</source>
         <comment>This is the help for activities which are inactive, after this field there come explanations for how inactive activities are displayed.</comment>
         <translation>Les activités qui sont inactives :</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="559"/>
+        <location filename="../src/interface/activitiesform.cpp" line="588"/>
         <source>have an X mark after the id.</source>
         <comment>It refers to inactive activities, which have this mark after the id.</comment>
         <translation>ont la marque &quot;X&quot; après leur ID.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="562"/>
+        <location filename="../src/interface/activitiesform.cpp" line="591"/>
         <source>if you use colors in interface (see Settings/Interface menu), they will appear with different background color.</source>
         <comment>It refers to inactive activities</comment>
         <translation>si vous utilisez les couleurs dans l&apos;interface (voir menu Réglages / Interface), elles apparaîtront avec une couleur de fond différente.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="564"/>
+        <location filename="../src/interface/activitiesform.cpp" line="593"/>
         <source>To modify an activity, you can also double click it.</source>
         <translation>Pour modifier une activité, vous pouvez aussi la double-cliquer.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="566"/>
+        <location filename="../src/interface/activitiesform.cpp" line="595"/>
         <source>Show related: if you select this, there will be listed activities for groups and subgroups contained also in the current set (if the current set is a year or a group) and also higher ranked year or group (if the current set is a group or a subgroup).</source>
         <translation>Afficher dépendants : si vous sélectionnez cette option, seront aussi listées les activités pour les groupes et sous-groupes contenus dans le jeu actuel (si le jeu actuel est une année ou un groupe) ainsi que l&apos;année ou le groupe de rang supérieur (si le jeu actuel est un groupe ou un sous-groupe).</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="569"/>
+        <location filename="../src/interface/activitiesform.cpp" line="598"/>
         <source>FET Help</source>
         <translation>FET aide</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="587"/>
+        <location filename="../src/interface/activitiesform.cpp" line="616"/>
         <source>Activity comments</source>
         <translation>Commentaire activité</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="589"/>
+        <location filename="../src/interface/activitiesform.cpp" line="618"/>
         <source>OK</source>
         <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="591"/>
+        <location filename="../src/interface/activitiesform.cpp" line="620"/>
         <source>Cancel</source>
         <translation>Annuler</translation>
     </message>
@@ -1913,30 +1913,30 @@ Vous pouvez choisir l&apos;écart minimal en jours entre chaque paire d&apos;act
 <context>
     <name>AddConstraintActivitiesEndStudentsDayForm</name>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesendstudentsdayform.cpp" line="110"/>
-        <location filename="../src/interface/addconstraintactivitiesendstudentsdayform.cpp" line="115"/>
-        <location filename="../src/interface/addconstraintactivitiesendstudentsdayform.cpp" line="143"/>
-        <location filename="../src/interface/addconstraintactivitiesendstudentsdayform.cpp" line="146"/>
+        <location filename="../src/interface/addconstraintactivitiesendstudentsdayform.cpp" line="111"/>
+        <location filename="../src/interface/addconstraintactivitiesendstudentsdayform.cpp" line="116"/>
+        <location filename="../src/interface/addconstraintactivitiesendstudentsdayform.cpp" line="144"/>
+        <location filename="../src/interface/addconstraintactivitiesendstudentsdayform.cpp" line="147"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesendstudentsdayform.cpp" line="111"/>
+        <location filename="../src/interface/addconstraintactivitiesendstudentsdayform.cpp" line="112"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesendstudentsdayform.cpp" line="116"/>
+        <location filename="../src/interface/addconstraintactivitiesendstudentsdayform.cpp" line="117"/>
         <source>Invalid weight (percentage) - must be 100%</source>
         <translation>Poids invalide (pourcentage) - doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesendstudentsdayform.cpp" line="140"/>
+        <location filename="../src/interface/addconstraintactivitiesendstudentsdayform.cpp" line="141"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesendstudentsdayform.cpp" line="147"/>
+        <location filename="../src/interface/addconstraintactivitiesendstudentsdayform.cpp" line="148"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
@@ -1993,36 +1993,36 @@ Vous pouvez choisir l&apos;écart minimal en jours entre chaque paire d&apos;act
 <context>
     <name>AddConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm</name>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="257"/>
-        <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="274"/>
-        <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="281"/>
-        <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="296"/>
-        <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="299"/>
+        <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="258"/>
+        <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="275"/>
+        <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="282"/>
+        <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="297"/>
+        <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="300"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="258"/>
+        <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="259"/>
         <source>Invalid weight (percentage). It has to be 100</source>
         <translation>Poids invalide (pourcentage). Il doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="274"/>
+        <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="275"/>
         <source>You specified max simultaneous activities to be 0. This is not perfect from efficiency point of view, because you can use instead constraint activity(ies) preferred time slots, and help FET to find a timetable easier and faster, with an equivalent result. Please correct.</source>
         <translation>Vous avez spécifié limite activités simultanées à 0. Ce n&apos;est pas parfait du point de vue de l&apos;efficacité car vous pouvez utiliser à la place une contrainte &quot;activité(s) créneaux horaires préférés&quot; et aider FET à trouver un planning plus facilement et rapidement pour un résultat équivalent. Merci de corriger.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="282"/>
+        <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="283"/>
         <source>Empty list of activities</source>
         <translation>Liste d&apos;activités vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="297"/>
+        <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="298"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="300"/>
+        <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="301"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
@@ -2124,36 +2124,36 @@ Vous pouvez choisir l&apos;écart minimal en jours entre chaque paire d&apos;act
 <context>
     <name>AddConstraintActivitiesNotOverlappingForm</name>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="180"/>
-        <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="186"/>
-        <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="191"/>
-        <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="211"/>
-        <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="214"/>
+        <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="181"/>
+        <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="187"/>
+        <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="192"/>
+        <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="212"/>
+        <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="215"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="181"/>
+        <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="182"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="187"/>
+        <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="188"/>
         <source>Empty list of not overlapping activities</source>
         <translation>Liste d&apos;activités sans chevauchement vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="192"/>
+        <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="193"/>
         <source>Only one selected activity</source>
         <translation>Une seule activité sélectionnée</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="208"/>
+        <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="209"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="215"/>
+        <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="216"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
@@ -2237,36 +2237,36 @@ Vous pouvez choisir l&apos;écart minimal en jours entre chaque paire d&apos;act
 <context>
     <name>AddConstraintActivitiesOccupyMaxDifferentRoomsForm</name>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="121"/>
-        <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="129"/>
-        <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="134"/>
-        <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="143"/>
-        <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="146"/>
+        <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="122"/>
+        <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="130"/>
+        <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="135"/>
+        <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="144"/>
+        <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="147"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="122"/>
+        <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="123"/>
         <source>Invalid weight (percentage). It has to be 100</source>
         <translation>Poids invalide (pourcentage). Il doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="130"/>
+        <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="131"/>
         <source>Empty list of activities</source>
         <translation>Liste d&apos;activités vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="135"/>
+        <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="136"/>
         <source>Only one selected activity</source>
         <translation>Une seule activité sélectionnée</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="144"/>
+        <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="145"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="147"/>
+        <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="148"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
@@ -2339,36 +2339,36 @@ Vous pouvez choisir l&apos;écart minimal en jours entre chaque paire d&apos;act
 <context>
     <name>AddConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm</name>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="257"/>
-        <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="274"/>
-        <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="281"/>
-        <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="296"/>
-        <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="299"/>
+        <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="258"/>
+        <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="275"/>
+        <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="282"/>
+        <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="297"/>
+        <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="300"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="258"/>
+        <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="259"/>
         <source>Invalid weight (percentage). It has to be 100</source>
         <translation>Poids invalide (pourcentage). Il doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="274"/>
+        <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="275"/>
         <source>You specified max occupied time slots to be 0. This is not perfect from efficiency point of view, because you can use instead constraint activity(ies) preferred time slots, and help FET to find a timetable easier and faster, with an equivalent result. Please correct.</source>
         <translation>Vous avez spécifié la limite des créneaux horaires occupés à 0. Ce n&apos;est pas parfait du point de vue de l&apos;efficacité car vous pouvez utiliser à la place une contrainte &quot;activité(s) créneaux horaires préférés&quot; et aider FET à trouver un planning plus facilement et rapidement pour un résultat équivalent. Merci de corriger.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="282"/>
+        <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="283"/>
         <source>Empty list of activities</source>
         <translation>Liste d&apos;activités vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="297"/>
+        <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="298"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="300"/>
+        <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="301"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
@@ -2470,27 +2470,27 @@ Vous pouvez choisir l&apos;écart minimal en jours entre chaque paire d&apos;act
 <context>
     <name>AddConstraintActivitiesPreferredStartingTimesForm</name>
     <message>
-        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="270"/>
-        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="387"/>
-        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="390"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="271"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="388"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="391"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="271"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="272"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="296"/>
-        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="314"/>
-        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="330"/>
-        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="372"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="297"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="315"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="331"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="373"/>
         <source>FET question</source>
         <translation>FET question</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="297"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="298"/>
         <source>You specified all the activities. This might be a small problem: if you specify a not allowed slot between two allowed slots, this not allowed slot will be counted as a gap in the teachers&apos; and students&apos; timetable.
 
  The best practice would be to use constraint break times.
@@ -2503,14 +2503,14 @@ La meilleure pratique serait d&apos;utiliser une contrainte temps de pause.
 Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez utiliser cette contrainte, mais attention à ne pas obtenir un planning impossible (si vos enseignants / apprenants sont contraints sur des vides ou vides matinaux et si vous laissez un créneau non autorisé entre 2 créneaux autorisés ou un créneau non autorisé tôt dans la journée et davantage de créneaux autorisés après celui-la, ce vide éventuel pourrait être compté dans le planning des enseignants et apprenants)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="306"/>
-        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="323"/>
-        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="340"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="307"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="324"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="341"/>
         <source>Do you want to add current constraint?</source>
         <translation>Voulez-vous ajouter la contrainte en cours ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="315"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="316"/>
         <source>You specified only the teacher. This might be a small problem: if you specify a not allowed slot between two allowed slots, this not allowed slot will be counted as a gap in the teacher&apos;s timetable.
 
  The best practice would be to use constraint teacher not available times.
@@ -2523,7 +2523,7 @@ La meilleure pratique serait d&apos;utiliser une contrainte enseignant temps non
 Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez utiliser cette contrainte, mais attention à ne pas obtenir un planning impossible (si votre enseignant est contraint sur des vides et si vous laissez un créneau non autorisé entre 2 créneaux autorisés, ce vide éventuel pourrait être compté dans le planning de l&apos;enseignant)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="331"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="332"/>
         <source>You specified only the students set. This might be a small problem: if you specify a not allowed slot between two allowed slots (or a not allowed slot before allowed slots), this not allowed slot will be counted as a gap (or early gap) in the students&apos; timetable.
 
  The best practice would be to use constraint students set not available times.
@@ -2536,17 +2536,17 @@ La meilleure pratique serait d&apos;utiliser une contrainte groupe temps non dis
 Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez utiliser cette contrainte, mais attention à ne pas obtenir un planning impossible (si vos apprenants sont contraints sur des vides ou des vides matinaux et si vous laissez un créneau non autorisé entre 2 créneaux autorisés (ou un créneau non autorisé avant des créneaux autorisés), ce vide éventuel pourrait être compté dans le planning des apprenants)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="373"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="374"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
         <translation>Avertissement : 0 créneau sélectionné. Êtes-vous sûr ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="384"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="385"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="391"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="392"/>
         <source>Constraint NOT added - duplicate?</source>
         <comment>&apos;Duplicate&apos; means that the constraint is identical to an existing constraint and cannot be added.</comment>
         <translation>Contrainte NON ajoutée - doublon ?</translation>
@@ -2622,27 +2622,27 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
 <context>
     <name>AddConstraintActivitiesPreferredTimeSlotsForm</name>
     <message>
-        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="270"/>
-        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="387"/>
-        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="390"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="271"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="388"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="391"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="271"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="272"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="296"/>
-        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="314"/>
-        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="330"/>
-        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="372"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="297"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="315"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="331"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="373"/>
         <source>FET question</source>
         <translation>FET question</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="297"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="298"/>
         <source>You specified all the activities. This might be a small problem: if you specify a not allowed slot between two allowed slots, this not allowed slot will be counted as a gap in the teachers&apos; and students&apos; timetable.
 
  The best practice would be to use constraint break times.
@@ -2655,14 +2655,14 @@ La meilleure pratique serait d&apos;utiliser une contrainte temps de pause.
 Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez utiliser cette contrainte, mais attention à ne pas obtenir un planning impossible (si vos enseignants / apprenants sont contraints sur des vides ou vides matinaux et si vous laissez un créneau non autorisé entre 2 créneaux autorisés ou un créneau non autorisé tôt dans la journée et davantage de créneaux autorisés après celui-la, ce vide éventuel pourrait être compté dans le planning des enseignants et apprenants)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="306"/>
-        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="323"/>
-        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="340"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="307"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="324"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="341"/>
         <source>Do you want to add current constraint?</source>
         <translation>Voulez-vous ajouter la contrainte en cours ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="315"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="316"/>
         <source>You specified only the teacher. This might be a small problem: if you specify a not allowed slot between two allowed slots, this not allowed slot will be counted as a gap in the teacher&apos;s timetable.
 
  The best practice would be to use constraint teacher not available times.
@@ -2675,7 +2675,7 @@ La meilleure pratique serait d&apos;utiliser une contrainte enseignant temps non
 Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez utiliser cette contrainte, mais attention à ne pas obtenir un planning impossible (si votre enseignant est contraint sur des vides et si vous laissez un créneau non autorisé entre 2 créneaux autorisés, ce vide éventuel pourrait être compté dans le planning de l&apos;enseignant)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="331"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="332"/>
         <source>You specified only the students set. This might be a small problem: if you specify a not allowed slot between two allowed slots (or a not allowed slot before allowed slots), this not allowed slot will be counted as a gap (or early gap) in the students&apos; timetable.
 
  The best practice would be to use constraint students set not available times.
@@ -2688,17 +2688,17 @@ La meilleure pratique serait d&apos;utiliser une contrainte groupe temps non dis
 Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez utiliser cette contrainte, mais attention à ne pas obtenir un planning impossible (si vos apprenants sont contraints sur des vides ou des vides matinaux et si vous laissez un créneau non autorisé entre 2 créneaux autorisés (ou un créneau non autorisé avant des créneaux autorisés), ce vide éventuel pourrait être compté dans le planning des apprenants)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="373"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="374"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
         <translation>Avertissement : 0 créneau sélectionné. Êtes-vous sûr ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="384"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="385"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="391"/>
+        <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="392"/>
         <source>Constraint NOT added - duplicate?</source>
         <comment>&apos;Duplicate&apos; means that the constraint is identical to an existing constraint and cannot be added.</comment>
         <translation>Contrainte NON ajoutée - doublon ?</translation>
@@ -2774,36 +2774,36 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
 <context>
     <name>AddConstraintActivitiesSameRoomIfConsecutiveForm</name>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform.cpp" line="117"/>
-        <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform.cpp" line="123"/>
-        <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform.cpp" line="128"/>
-        <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform.cpp" line="137"/>
-        <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform.cpp" line="140"/>
+        <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform.cpp" line="118"/>
+        <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform.cpp" line="124"/>
+        <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform.cpp" line="129"/>
+        <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform.cpp" line="138"/>
+        <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform.cpp" line="141"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform.cpp" line="118"/>
+        <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform.cpp" line="119"/>
         <source>Invalid weight (percentage). It has to be 100</source>
         <translation>Poids invalide (pourcentage). Il doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform.cpp" line="124"/>
+        <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform.cpp" line="125"/>
         <source>Empty list of activities</source>
         <translation>Liste d&apos;activités vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform.cpp" line="129"/>
+        <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform.cpp" line="130"/>
         <source>Only one selected activity</source>
         <translation>Une seule activité sélectionnée</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform.cpp" line="138"/>
+        <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform.cpp" line="139"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform.cpp" line="141"/>
+        <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform.cpp" line="142"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
@@ -2871,36 +2871,36 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
 <context>
     <name>AddConstraintActivitiesSameStartingDayForm</name>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessamestartingdayform.cpp" line="181"/>
-        <location filename="../src/interface/addconstraintactivitiessamestartingdayform.cpp" line="187"/>
-        <location filename="../src/interface/addconstraintactivitiessamestartingdayform.cpp" line="192"/>
-        <location filename="../src/interface/addconstraintactivitiessamestartingdayform.cpp" line="214"/>
-        <location filename="../src/interface/addconstraintactivitiessamestartingdayform.cpp" line="217"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingdayform.cpp" line="182"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingdayform.cpp" line="188"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingdayform.cpp" line="193"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingdayform.cpp" line="215"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingdayform.cpp" line="218"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessamestartingdayform.cpp" line="182"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingdayform.cpp" line="183"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessamestartingdayform.cpp" line="188"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingdayform.cpp" line="189"/>
         <source>Empty list of simultaneous activities</source>
         <translation>Liste d&apos;activités simultanées vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessamestartingdayform.cpp" line="193"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingdayform.cpp" line="194"/>
         <source>Only one selected activity - impossible</source>
         <translation>Une seule activité sélectionnée - impossible</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessamestartingdayform.cpp" line="211"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingdayform.cpp" line="212"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessamestartingdayform.cpp" line="218"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingdayform.cpp" line="219"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
@@ -2979,36 +2979,36 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
 <context>
     <name>AddConstraintActivitiesSameStartingHourForm</name>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessamestartinghourform.cpp" line="182"/>
-        <location filename="../src/interface/addconstraintactivitiessamestartinghourform.cpp" line="188"/>
-        <location filename="../src/interface/addconstraintactivitiessamestartinghourform.cpp" line="193"/>
-        <location filename="../src/interface/addconstraintactivitiessamestartinghourform.cpp" line="213"/>
-        <location filename="../src/interface/addconstraintactivitiessamestartinghourform.cpp" line="216"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartinghourform.cpp" line="183"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartinghourform.cpp" line="189"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartinghourform.cpp" line="194"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartinghourform.cpp" line="214"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartinghourform.cpp" line="217"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessamestartinghourform.cpp" line="183"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartinghourform.cpp" line="184"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessamestartinghourform.cpp" line="189"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartinghourform.cpp" line="190"/>
         <source>Empty list of selected activities</source>
         <translation>Liste d&apos;activités sélectionnées vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessamestartinghourform.cpp" line="194"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartinghourform.cpp" line="195"/>
         <source>Only one selected activity</source>
         <translation>Une seule activité sélectionnée</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessamestartinghourform.cpp" line="210"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartinghourform.cpp" line="211"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessamestartinghourform.cpp" line="217"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartinghourform.cpp" line="218"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
@@ -3087,66 +3087,66 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
 <context>
     <name>AddConstraintActivitiesSameStartingTimeForm</name>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="208"/>
-        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="214"/>
-        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="219"/>
-        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="265"/>
-        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="320"/>
-        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="323"/>
-        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="347"/>
-        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="350"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="209"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="215"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="220"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="266"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="321"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="324"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="348"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="351"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="209"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="210"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="215"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="216"/>
         <source>Empty list of simultaneous activities</source>
         <translation>Liste d&apos;activités simultanées vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="220"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="221"/>
         <source>Only one selected activity - impossible</source>
         <translation>Une seule activité sélectionnée - impossible</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="256"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="257"/>
         <source>Sub-activities do not correspond. Mistake:</source>
         <translation>Les sous-activités ne correspondent pas. Erreur :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="258"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="259"/>
         <source>1. First (sub)activity has id=%1 and represents %2 sub-activities</source>
         <translation>1. La première (sous-) activité a l&apos;ID = %1 et représente %2 sous-activités</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="262"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="263"/>
         <source>2. Current (sub)activity has id=%1 and represents %2 sub-activities</source>
         <translation>2. La (sous-) activité en cours a l&apos;ID = %1 et représente %2 sous-activités</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="317"/>
-        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="344"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="318"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="345"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="324"/>
-        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="351"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="325"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="352"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="429"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="430"/>
         <source>Add multiple constraints: this is a check box. Select this if you want to input only the representatives of sub-activities and FET to add multiple constraints, for all sub-activities from the same components, in turn, respectively. There will be added more constraints activities same starting time, one for each corresponding tuple. The number of sub-activities must match for the representants and be careful to the order, to be what you need</source>
         <translation>Ajouter contraintes multiples : c&apos;est une case à cocher. Sélectionnez la si vous souhaitez ne saisir que les représentants des sous-activités et que FET ajoute les contraintes multiples, pour toutes les sous-activités du même composant, à leur tour, respectivement.Il sera ajouté plus de contraintes même temps de démarrage, une pour chaque tuple correspondant. Le nombre de sous-activités doit correspondre aux représentants et faites attention à l&apos;ordre qui doit être celui dont vous avez besoin</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="434"/>
+        <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="435"/>
         <source>FET help</source>
         <translation>FET aide</translation>
     </message>
@@ -3235,36 +3235,36 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
 <context>
     <name>AddConstraintActivityEndsStudentsDayForm</name>
     <message>
-        <location filename="../src/interface/addconstraintactivityendsstudentsdayform.cpp" line="172"/>
-        <location filename="../src/interface/addconstraintactivityendsstudentsdayform.cpp" line="177"/>
-        <location filename="../src/interface/addconstraintactivityendsstudentsdayform.cpp" line="187"/>
-        <location filename="../src/interface/addconstraintactivityendsstudentsdayform.cpp" line="198"/>
-        <location filename="../src/interface/addconstraintactivityendsstudentsdayform.cpp" line="201"/>
+        <location filename="../src/interface/addconstraintactivityendsstudentsdayform.cpp" line="173"/>
+        <location filename="../src/interface/addconstraintactivityendsstudentsdayform.cpp" line="178"/>
+        <location filename="../src/interface/addconstraintactivityendsstudentsdayform.cpp" line="188"/>
+        <location filename="../src/interface/addconstraintactivityendsstudentsdayform.cpp" line="199"/>
+        <location filename="../src/interface/addconstraintactivityendsstudentsdayform.cpp" line="202"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivityendsstudentsdayform.cpp" line="173"/>
+        <location filename="../src/interface/addconstraintactivityendsstudentsdayform.cpp" line="174"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivityendsstudentsdayform.cpp" line="178"/>
+        <location filename="../src/interface/addconstraintactivityendsstudentsdayform.cpp" line="179"/>
         <source>Invalid weight (percentage) - must be 100%</source>
         <translation>Poids invalide (pourcentage) - doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivityendsstudentsdayform.cpp" line="188"/>
+        <location filename="../src/interface/addconstraintactivityendsstudentsdayform.cpp" line="189"/>
         <source>Invalid activity</source>
         <translation>Activité invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivityendsstudentsdayform.cpp" line="199"/>
+        <location filename="../src/interface/addconstraintactivityendsstudentsdayform.cpp" line="200"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivityendsstudentsdayform.cpp" line="202"/>
+        <location filename="../src/interface/addconstraintactivityendsstudentsdayform.cpp" line="203"/>
         <source>Constraint NOT added - please report bug</source>
         <translation>Contrainte NON ajoutée - merci de signaler le bug</translation>
     </message>
@@ -3326,36 +3326,36 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
 <context>
     <name>AddConstraintActivityPreferredRoomForm</name>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredroomform.cpp" line="187"/>
-        <location filename="../src/interface/addconstraintactivitypreferredroomform.cpp" line="197"/>
-        <location filename="../src/interface/addconstraintactivitypreferredroomform.cpp" line="214"/>
-        <location filename="../src/interface/addconstraintactivitypreferredroomform.cpp" line="227"/>
-        <location filename="../src/interface/addconstraintactivitypreferredroomform.cpp" line="237"/>
+        <location filename="../src/interface/addconstraintactivitypreferredroomform.cpp" line="188"/>
+        <location filename="../src/interface/addconstraintactivitypreferredroomform.cpp" line="198"/>
+        <location filename="../src/interface/addconstraintactivitypreferredroomform.cpp" line="215"/>
+        <location filename="../src/interface/addconstraintactivitypreferredroomform.cpp" line="228"/>
+        <location filename="../src/interface/addconstraintactivitypreferredroomform.cpp" line="238"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredroomform.cpp" line="188"/>
+        <location filename="../src/interface/addconstraintactivitypreferredroomform.cpp" line="189"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredroomform.cpp" line="198"/>
+        <location filename="../src/interface/addconstraintactivitypreferredroomform.cpp" line="199"/>
         <source>Invalid activity</source>
         <translation>Activité invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredroomform.cpp" line="215"/>
+        <location filename="../src/interface/addconstraintactivitypreferredroomform.cpp" line="216"/>
         <source>Invalid room</source>
         <translation>Salle invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredroomform.cpp" line="224"/>
+        <location filename="../src/interface/addconstraintactivitypreferredroomform.cpp" line="225"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredroomform.cpp" line="238"/>
+        <location filename="../src/interface/addconstraintactivitypreferredroomform.cpp" line="239"/>
         <source>Constraint NOT added - must be a duplicate</source>
         <translation>Contrainte NON ajoutée - doit être un doublon</translation>
     </message>
@@ -3432,36 +3432,36 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
 <context>
     <name>AddConstraintActivityPreferredRoomsForm</name>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredroomsform.cpp" line="191"/>
-        <location filename="../src/interface/addconstraintactivitypreferredroomsform.cpp" line="197"/>
-        <location filename="../src/interface/addconstraintactivitypreferredroomsform.cpp" line="210"/>
-        <location filename="../src/interface/addconstraintactivitypreferredroomsform.cpp" line="228"/>
-        <location filename="../src/interface/addconstraintactivitypreferredroomsform.cpp" line="231"/>
+        <location filename="../src/interface/addconstraintactivitypreferredroomsform.cpp" line="192"/>
+        <location filename="../src/interface/addconstraintactivitypreferredroomsform.cpp" line="198"/>
+        <location filename="../src/interface/addconstraintactivitypreferredroomsform.cpp" line="211"/>
+        <location filename="../src/interface/addconstraintactivitypreferredroomsform.cpp" line="229"/>
+        <location filename="../src/interface/addconstraintactivitypreferredroomsform.cpp" line="232"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredroomsform.cpp" line="192"/>
+        <location filename="../src/interface/addconstraintactivitypreferredroomsform.cpp" line="193"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredroomsform.cpp" line="198"/>
+        <location filename="../src/interface/addconstraintactivitypreferredroomsform.cpp" line="199"/>
         <source>Empty list of selected rooms</source>
         <translation>Liste de salles sélectionnées vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredroomsform.cpp" line="211"/>
+        <location filename="../src/interface/addconstraintactivitypreferredroomsform.cpp" line="212"/>
         <source>Invalid activity</source>
         <translation>Activité invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredroomsform.cpp" line="225"/>
+        <location filename="../src/interface/addconstraintactivitypreferredroomsform.cpp" line="226"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredroomsform.cpp" line="232"/>
+        <location filename="../src/interface/addconstraintactivitypreferredroomsform.cpp" line="233"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
@@ -3539,42 +3539,42 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
 <context>
     <name>AddConstraintActivityPreferredStartingTimeForm</name>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="187"/>
-        <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="194"/>
-        <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="200"/>
-        <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="210"/>
-        <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="221"/>
-        <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="228"/>
+        <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="188"/>
+        <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="195"/>
+        <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="201"/>
+        <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="211"/>
+        <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="222"/>
+        <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="229"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="188"/>
+        <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="189"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="195"/>
+        <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="196"/>
         <source>Invalid day</source>
         <translation>Jour invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="201"/>
+        <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="202"/>
         <source>Invalid start hour</source>
         <translation>Heure de démarrage invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="211"/>
+        <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="212"/>
         <source>Invalid activity</source>
         <translation>Activité invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="222"/>
+        <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="223"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="229"/>
+        <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="230"/>
         <source>Constraint NOT added - duplicate</source>
         <comment>&apos;Duplicate&apos; means that the constraint is identical to an existing constraint and cannot be added.</comment>
         <translation>Contrainte NON ajoutée - doublon</translation>
@@ -3662,40 +3662,40 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
 <context>
     <name>AddConstraintActivityPreferredStartingTimesForm</name>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="318"/>
-        <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="330"/>
-        <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="390"/>
-        <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="393"/>
+        <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="319"/>
+        <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="331"/>
+        <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="391"/>
+        <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="394"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="319"/>
+        <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="320"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="331"/>
+        <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="332"/>
         <source>Invalid activity</source>
         <translation>Activité invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="362"/>
+        <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="363"/>
         <source>FET question</source>
         <translation>FET question</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="363"/>
+        <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="364"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
         <translation>Avertissement : 0 créneau sélectionné. Êtes-vous sûr ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="387"/>
+        <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="388"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="394"/>
+        <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="395"/>
         <source>Constraint NOT added - duplicate?</source>
         <comment>&apos;Duplicate&apos; means that the constraint is identical to an existing constraint and cannot be added.</comment>
         <translation>Contrainte NON ajoutée - doublon ?</translation>
@@ -3776,40 +3776,40 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
 <context>
     <name>AddConstraintActivityPreferredTimeSlotsForm</name>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="317"/>
-        <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="329"/>
-        <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="389"/>
-        <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="392"/>
+        <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="318"/>
+        <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="330"/>
+        <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="390"/>
+        <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="393"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="318"/>
+        <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="319"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="330"/>
+        <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="331"/>
         <source>Invalid activity</source>
         <translation>Activité invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="361"/>
+        <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="362"/>
         <source>FET question</source>
         <translation>FET question</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="362"/>
+        <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="363"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
         <translation>Avertissement : 0 créneau sélectionné. Êtes-vous sûr ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="386"/>
+        <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="387"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="393"/>
+        <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="394"/>
         <source>Constraint NOT added - duplicate?</source>
         <comment>&apos;Duplicate&apos; means that the constraint is identical to an existing constraint and cannot be added.</comment>
         <translation>Contrainte NON ajoutée - doublon ?</translation>
@@ -4229,36 +4229,36 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
 <context>
     <name>AddConstraintMaxDaysBetweenActivitiesForm</name>
     <message>
-        <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform.cpp" line="192"/>
-        <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform.cpp" line="198"/>
-        <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform.cpp" line="203"/>
-        <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform.cpp" line="222"/>
-        <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform.cpp" line="225"/>
+        <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform.cpp" line="193"/>
+        <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform.cpp" line="199"/>
+        <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform.cpp" line="204"/>
+        <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform.cpp" line="223"/>
+        <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform.cpp" line="226"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform.cpp" line="193"/>
+        <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform.cpp" line="194"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform.cpp" line="199"/>
+        <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform.cpp" line="200"/>
         <source>Empty list of selected activities</source>
         <translation>Liste d&apos;activités sélectionnées vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform.cpp" line="204"/>
+        <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform.cpp" line="205"/>
         <source>Only one selected activity</source>
         <translation>Une seule activité sélectionnée</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform.cpp" line="219"/>
+        <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform.cpp" line="220"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform.cpp" line="226"/>
+        <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform.cpp" line="227"/>
         <source>Constraint NOT added - it must be a duplicate</source>
         <translation>Contrainte NON ajoutée - doit être un doublon</translation>
     </message>
@@ -4343,66 +4343,66 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
 <context>
     <name>AddConstraintMinDaysBetweenActivitiesForm</name>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="186"/>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="192"/>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="197"/>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="249"/>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="252"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="187"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="193"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="198"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="250"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="253"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="187"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="188"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="193"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="194"/>
         <source>Empty list of selected activities</source>
         <translation>Liste d&apos;activités sélectionnées vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="198"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="199"/>
         <source>Only one selected activity</source>
         <translation>Une seule activité sélectionnée</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="204"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="205"/>
         <source>You want to add a constraint min days between activities for more activities than the number of days per week. This is a very bad practice from the way the algorithm of generation works (it slows down the generation and makes it harder to find a solution).</source>
         <translation>Vous souhaitez ajouter une contrainte jours minimum entre activités pour davantage d&apos;activités que le nombre de jours dans la semaine. C&apos;est une très mauvaise pratique compte tenu du mode de fonctionnement de l&apos;algorithme de génération (cela ralentit la génération et rend plus difficile la découverte d&apos;une solution).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="207"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="208"/>
         <source>The best way to add the activities would be:</source>
         <translation>La meilleure méthode pour ajouter les activités serait :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="210"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="211"/>
         <source>1. If you add &apos;force consecutive if same day&apos;, then couple extra activities in pairs to obtain a number of activities equal to the number of days per week. Example: 7 activities with duration 1 in a 5 days week, then transform into 5 activities with durations: 2,2,1,1,1 and add a single container activity with these 5 components (possibly raising the weight of added constraint min days between activities up to 100%)</source>
         <translation>1. Si vous ajoutez &quot;forcer consécutives si même jour&quot; alors coller les activités excédentaires par paires pour obtenir un nombre d&apos;activités égal au nombre de jours de la semaine. Exemple : 7 activités d&apos;une durée de 1 dans une semaine de 5 jours sont transformées en 5 activités avec les durées : 2, 2, 1, 1, 1 et ajoutez une seule activité conteneur avec ces 5 composants (augmentation possible du poids de la contrainte ajoutée &quot;jours minimum entre activités&quot; jusqu&apos;à 100.0 %)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="216"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="217"/>
         <source>2. If you don&apos;t add &apos;force consecutive if same day&apos;, then add a larger activity split into a number of activities equal with the number of days per week and the remaining components into other larger split activity. For example, suppose you need to add 7 activities with duration 1 in a 5 days week. Add 2 larger container activities, first one split into 5 activities with duration 1 and second one split into 2 activities with duration 1 (possibly raising the weight of added constraints min days between activities for each of the 2 containers up to 100%)</source>
         <translation>2. Si vous n&apos;ajoutez pas &quot;forcer consécutives si même jour&quot; alors ajoutez une grande activité fractionnée en un nombre d&apos;activités égal au nombre de jours de la semaine et les composants restants dans une autre grande activité fractionnée. Par exemple, supposons que vous ayez besoin d&apos;ajouter 7 activités d&apos;une durée de 1 dans une semaine de 5 jours. Ajoutez 2 grandes activités conteneur, la première fractionnée en 5 activités d&apos;une durée de 1 et la seconde fractionnée en 2 activités d&apos;une durée de 1 (augmentation possible du poids des contraintes ajoutées &quot;jours minimum entre activités&quot; pour chacun des 2 conteneurs jusqu&apos;à 100.0 %)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="224"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="225"/>
         <source>Do you want to add current constraint as it is now (not recommended) or cancel and edit as instructed?</source>
         <translation>Voulez-vous ajouter la contrainte en cours telle quelle (non recommandé) ou annuler et éditer selon les instructions ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="226"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="227"/>
         <source>FET warning</source>
         <translation>FET avertissement</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="246"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="247"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="253"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="254"/>
         <source>Constraint NOT added - it must be a duplicate</source>
         <translation>Contrainte NON ajoutée - doit être un doublon</translation>
     </message>
@@ -4495,36 +4495,36 @@ les forcer consécutives</translation>
 <context>
     <name>AddConstraintMinGapsBetweenActivitiesForm</name>
     <message>
-        <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform.cpp" line="188"/>
-        <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform.cpp" line="194"/>
-        <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform.cpp" line="199"/>
-        <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform.cpp" line="220"/>
-        <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform.cpp" line="223"/>
+        <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform.cpp" line="189"/>
+        <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform.cpp" line="195"/>
+        <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform.cpp" line="200"/>
+        <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform.cpp" line="221"/>
+        <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform.cpp" line="224"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform.cpp" line="189"/>
+        <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform.cpp" line="190"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform.cpp" line="195"/>
+        <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform.cpp" line="196"/>
         <source>Empty list of selected activities</source>
         <translation>Liste d&apos;activités sélectionnées vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform.cpp" line="200"/>
+        <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform.cpp" line="201"/>
         <source>Only one selected activity</source>
         <translation>Une seule activité sélectionnée</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform.cpp" line="217"/>
+        <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform.cpp" line="218"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform.cpp" line="224"/>
+        <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform.cpp" line="225"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
@@ -5711,40 +5711,40 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides.</transla
 <context>
     <name>AddConstraintStudentsSetActivityTagMaxHoursContinuouslyForm</name>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="95"/>
-        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="121"/>
-        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="124"/>
+        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="96"/>
+        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="122"/>
+        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="125"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="96"/>
+        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="97"/>
         <source>Invalid weight</source>
         <translation>Poids invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="105"/>
-        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="113"/>
+        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="106"/>
+        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="114"/>
         <source>FET warning</source>
         <translation>FET avertissement</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="106"/>
+        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="107"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="113"/>
+        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="114"/>
         <source>Invalid activity tag</source>
         <translation>Code activité invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="122"/>
+        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="123"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="125"/>
+        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="126"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
@@ -5793,40 +5793,40 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides.</transla
 <context>
     <name>AddConstraintStudentsSetActivityTagMaxHoursDailyForm</name>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="96"/>
-        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="122"/>
-        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="125"/>
+        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="97"/>
+        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="123"/>
+        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="126"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="97"/>
+        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="98"/>
         <source>Invalid weight</source>
         <translation>Poids invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="106"/>
-        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="114"/>
+        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="107"/>
+        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="115"/>
         <source>FET warning</source>
         <translation>FET avertissement</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="107"/>
+        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="108"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="114"/>
+        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="115"/>
         <source>Invalid activity tag</source>
         <translation>Code activité invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="123"/>
+        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="124"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="126"/>
+        <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="127"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
@@ -5875,36 +5875,36 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides.</transla
 <context>
     <name>AddConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm</name>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="78"/>
-        <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="83"/>
-        <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="91"/>
-        <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="100"/>
-        <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="103"/>
+        <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="79"/>
+        <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="84"/>
+        <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="92"/>
+        <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="101"/>
+        <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="104"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="79"/>
+        <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="80"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="84"/>
+        <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="85"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
         <translation>Poids invalide (pourcentage) - doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="92"/>
+        <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="93"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="101"/>
+        <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="102"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="104"/>
+        <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="105"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
@@ -5958,30 +5958,30 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides (vides ma
 <context>
     <name>AddConstraintStudentsSetHomeRoomForm</name>
     <message>
-        <location filename="../src/interface/addconstraintstudentssethomeroomform.cpp" line="85"/>
-        <location filename="../src/interface/addconstraintstudentssethomeroomform.cpp" line="95"/>
-        <location filename="../src/interface/addconstraintstudentssethomeroomform.cpp" line="108"/>
-        <location filename="../src/interface/addconstraintstudentssethomeroomform.cpp" line="111"/>
+        <location filename="../src/interface/addconstraintstudentssethomeroomform.cpp" line="86"/>
+        <location filename="../src/interface/addconstraintstudentssethomeroomform.cpp" line="96"/>
+        <location filename="../src/interface/addconstraintstudentssethomeroomform.cpp" line="109"/>
+        <location filename="../src/interface/addconstraintstudentssethomeroomform.cpp" line="112"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssethomeroomform.cpp" line="86"/>
+        <location filename="../src/interface/addconstraintstudentssethomeroomform.cpp" line="87"/>
         <source>Invalid weight</source>
         <translation>Poids invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssethomeroomform.cpp" line="96"/>
+        <location filename="../src/interface/addconstraintstudentssethomeroomform.cpp" line="97"/>
         <source>Invalid room</source>
         <translation>Salle invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssethomeroomform.cpp" line="105"/>
+        <location filename="../src/interface/addconstraintstudentssethomeroomform.cpp" line="106"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssethomeroomform.cpp" line="112"/>
+        <location filename="../src/interface/addconstraintstudentssethomeroomform.cpp" line="113"/>
         <source>Constraint NOT added - error ?</source>
         <translation>Contrainte NON ajoutée - erreur ?</translation>
     </message>
@@ -6023,30 +6023,30 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides (vides ma
 <context>
     <name>AddConstraintStudentsSetHomeRoomsForm</name>
     <message>
-        <location filename="../src/interface/addconstraintstudentssethomeroomsform.cpp" line="91"/>
-        <location filename="../src/interface/addconstraintstudentssethomeroomsform.cpp" line="97"/>
-        <location filename="../src/interface/addconstraintstudentssethomeroomsform.cpp" line="121"/>
-        <location filename="../src/interface/addconstraintstudentssethomeroomsform.cpp" line="124"/>
+        <location filename="../src/interface/addconstraintstudentssethomeroomsform.cpp" line="92"/>
+        <location filename="../src/interface/addconstraintstudentssethomeroomsform.cpp" line="98"/>
+        <location filename="../src/interface/addconstraintstudentssethomeroomsform.cpp" line="122"/>
+        <location filename="../src/interface/addconstraintstudentssethomeroomsform.cpp" line="125"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssethomeroomsform.cpp" line="92"/>
+        <location filename="../src/interface/addconstraintstudentssethomeroomsform.cpp" line="93"/>
         <source>Invalid weight</source>
         <translation>Poids invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssethomeroomsform.cpp" line="98"/>
+        <location filename="../src/interface/addconstraintstudentssethomeroomsform.cpp" line="99"/>
         <source>Empty list of selected rooms</source>
         <translation>Liste de salles sélectionnées vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssethomeroomsform.cpp" line="118"/>
+        <location filename="../src/interface/addconstraintstudentssethomeroomsform.cpp" line="119"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssethomeroomsform.cpp" line="125"/>
+        <location filename="../src/interface/addconstraintstudentssethomeroomsform.cpp" line="126"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
@@ -6099,59 +6099,59 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides (vides ma
 <context>
     <name>AddConstraintStudentsSetIntervalMaxDaysPerWeekForm</name>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="96"/>
+        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="97"/>
         <source>End of day</source>
         <translation>Fin de journée</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="114"/>
-        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="119"/>
-        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="129"/>
-        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="137"/>
-        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="142"/>
-        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="147"/>
-        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="156"/>
-        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="159"/>
+        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="115"/>
+        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="120"/>
+        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="130"/>
+        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="138"/>
+        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="143"/>
+        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="148"/>
+        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="157"/>
+        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="160"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="115"/>
+        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="116"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="120"/>
+        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="121"/>
         <source>Invalid weight (percentage) - it has to be 100%</source>
         <translation>Poids invalide (pourcentage) - il doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="130"/>
+        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="131"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="138"/>
+        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="139"/>
         <source>Start hour invalid</source>
         <translation>Heure démarrage invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="143"/>
+        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="144"/>
         <source>End hour invalid</source>
         <translation>Heure fin invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="148"/>
+        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="149"/>
         <source>Start hour cannot be greater or equal than end hour</source>
         <translation>L&apos;heure de démarrage ne peut pas être supérieure ou égale à l&apos;heure de fin</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="157"/>
+        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="158"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="160"/>
+        <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="161"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
@@ -6203,30 +6203,30 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides (vides ma
 <context>
     <name>AddConstraintStudentsSetMaxBuildingChangesPerDayForm</name>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="83"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="91"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="100"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="103"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="84"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="92"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="101"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="104"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="84"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="85"/>
         <source>Invalid weight (percentage). It has to be 100</source>
         <translation>Poids invalide (pourcentage). Il doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="92"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="93"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="101"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="102"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="104"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="105"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
@@ -6268,30 +6268,30 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides (vides ma
 <context>
     <name>AddConstraintStudentsSetMaxBuildingChangesPerWeekForm</name>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="83"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="91"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="100"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="103"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="84"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="92"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="101"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="104"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="84"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="85"/>
         <source>Invalid weight (percentage). It has to be 100</source>
         <translation>Poids invalide (pourcentage). Il doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="92"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="93"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="101"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="102"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="104"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="105"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
@@ -6333,36 +6333,36 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides (vides ma
 <context>
     <name>AddConstraintStudentsSetMaxDaysPerWeekForm</name>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform.cpp" line="86"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform.cpp" line="91"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform.cpp" line="101"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform.cpp" line="110"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform.cpp" line="113"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform.cpp" line="87"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform.cpp" line="92"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform.cpp" line="102"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform.cpp" line="111"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform.cpp" line="114"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform.cpp" line="87"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform.cpp" line="88"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform.cpp" line="92"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform.cpp" line="93"/>
         <source>Invalid weight (percentage) - it has to be 100%</source>
         <translation>Poids invalide (pourcentage) - il doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform.cpp" line="102"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform.cpp" line="103"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform.cpp" line="111"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform.cpp" line="112"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform.cpp" line="114"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform.cpp" line="115"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
@@ -6404,36 +6404,36 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides (vides ma
 <context>
     <name>AddConstraintStudentsSetMaxGapsPerDayForm</name>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform.cpp" line="85"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform.cpp" line="90"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform.cpp" line="98"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform.cpp" line="107"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform.cpp" line="110"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform.cpp" line="86"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform.cpp" line="91"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform.cpp" line="99"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform.cpp" line="108"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform.cpp" line="111"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform.cpp" line="86"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform.cpp" line="87"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform.cpp" line="91"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform.cpp" line="92"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
         <translation>Poids invalide (pourcentage) - doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform.cpp" line="99"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform.cpp" line="100"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform.cpp" line="108"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform.cpp" line="109"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform.cpp" line="111"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform.cpp" line="112"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
@@ -6486,36 +6486,36 @@ IMPORTANT : si vous voulez un total de 0 vide, il est fortement recommandé de n
 <context>
     <name>AddConstraintStudentsSetMaxGapsPerWeekForm</name>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform.cpp" line="86"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform.cpp" line="91"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform.cpp" line="99"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform.cpp" line="108"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform.cpp" line="111"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform.cpp" line="87"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform.cpp" line="92"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform.cpp" line="100"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform.cpp" line="109"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform.cpp" line="112"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform.cpp" line="87"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform.cpp" line="88"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform.cpp" line="92"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform.cpp" line="93"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
         <translation>Poids invalide (pourcentage) - doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform.cpp" line="100"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform.cpp" line="101"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform.cpp" line="109"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform.cpp" line="110"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform.cpp" line="112"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform.cpp" line="113"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
@@ -6564,30 +6564,30 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides.</transla
 <context>
     <name>AddConstraintStudentsSetMaxHoursContinuouslyForm</name>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform.cpp" line="84"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform.cpp" line="94"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform.cpp" line="103"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform.cpp" line="106"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform.cpp" line="85"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform.cpp" line="95"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform.cpp" line="104"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform.cpp" line="107"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform.cpp" line="85"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform.cpp" line="86"/>
         <source>Invalid weight</source>
         <translation>Poids invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform.cpp" line="95"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform.cpp" line="96"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform.cpp" line="104"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform.cpp" line="105"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform.cpp" line="107"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform.cpp" line="108"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
@@ -6631,30 +6631,30 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides.</transla
 <context>
     <name>AddConstraintStudentsSetMaxHoursDailyForm</name>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform.cpp" line="83"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform.cpp" line="93"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform.cpp" line="102"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform.cpp" line="105"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform.cpp" line="84"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform.cpp" line="94"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform.cpp" line="103"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform.cpp" line="106"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform.cpp" line="84"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform.cpp" line="85"/>
         <source>Invalid weight</source>
         <translation>Poids invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform.cpp" line="94"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform.cpp" line="95"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform.cpp" line="103"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform.cpp" line="104"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform.cpp" line="106"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform.cpp" line="107"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
@@ -6698,36 +6698,36 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides.</transla
 <context>
     <name>AddConstraintStudentsSetMaxSpanPerDayForm</name>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="85"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="90"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="98"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="107"/>
-        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="110"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="86"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="91"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="99"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="108"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="111"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="86"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="87"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="91"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="92"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
         <translation>Poids invalide (pourcentage) - doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="99"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="100"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="108"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="109"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="111"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="112"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
@@ -6769,30 +6769,30 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides.</transla
 <context>
     <name>AddConstraintStudentsSetMinGapsBetweenBuildingChangesForm</name>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="83"/>
-        <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="91"/>
-        <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="100"/>
-        <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="103"/>
+        <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="84"/>
+        <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="92"/>
+        <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="101"/>
+        <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="104"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="84"/>
+        <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="85"/>
         <source>Invalid weight (percentage). It has to be 100</source>
         <translation>Poids invalide (pourcentage). Il doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="92"/>
+        <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="93"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="101"/>
+        <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="102"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="104"/>
+        <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="105"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
@@ -6844,69 +6844,69 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides.</transla
         <translation>Utilisation avancée : désactivée</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="88"/>
-        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="93"/>
-        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="113"/>
-        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="122"/>
-        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="125"/>
-        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="144"/>
+        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="89"/>
+        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="94"/>
+        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="114"/>
+        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="123"/>
+        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="126"/>
+        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="145"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="89"/>
+        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="90"/>
         <source>Invalid weight</source>
         <translation>Poids invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="94"/>
+        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="95"/>
         <source>Invalid weight - it has to be 100%</source>
         <translation>Poids invalide - il doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="99"/>
-        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="104"/>
+        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="100"/>
+        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="105"/>
         <source>FET warning</source>
         <translation>FET avertissement</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="99"/>
+        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="100"/>
         <source>Empty days for students min hours daily constraints are not enabled. You must enable them from the Settings-&gt;Advanced menu.</source>
         <translation>Les contraintes jours vides pour les apprenants heures minimum quotidiennes ne sont pas activées. Vous devez les activer depuis le menu Réglages =&gt; Avancé.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="104"/>
+        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="105"/>
         <source>If you allow empty days, the min hours must be at least 2 (to make it a non-trivial constraint)</source>
         <translation>Si vous autorisez les jours vides, les heures minimum doivent être au moins au nombre de 2 (pour ne pas produire un contrainte triviale)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="114"/>
+        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="115"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="123"/>
+        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="124"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="126"/>
+        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="127"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="137"/>
+        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="138"/>
         <source>Advanced usage is not enabled. To be able to select &apos;Allow empty days&apos; for the constraints of type min hours daily for students, you must enable the option from the Settings-&gt;Advanced menu.</source>
         <comment>&apos;Allow empty days&apos; is an option which the user can enable and then he can select it.</comment>
         <translation>L&apos;utilisation avancée n&apos;est pas activée. Pour pouvoir sélectionner &quot;Autoriser les jours vides&quot; pour les contraintes de type heures minimum quotidiennes pour les apprenants, vous devez activer l&apos;option depuis le menu Réglages -&gt; Avancé.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="140"/>
+        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="141"/>
         <source>Explanation: only select this option if your institution allows empty days for students and a timetable is possible with empty days for students. Otherwise, it is IMPERATIVE (for performance reasons) to not select this option (or FET may not be able to find a timetable).</source>
         <translation>Explication : ne sélectionnez cette option que si votre établissement autorise les jours vides pour les apprenants et qu&apos;un planning est possible avec des jours vides pour les apprenants. Dans le cas contraire, il est IMPÉRATIF (pour des raisons de performance) de ne pas sélectionner cette option (ou FET pourrait ne pas trouver de planning).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="143"/>
+        <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="144"/>
         <source>Use with caution.</source>
         <translation>Utiliser avec précaution.</translation>
     </message>
@@ -6953,36 +6953,36 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides.</transla
 <context>
     <name>AddConstraintStudentsSetMinRestingHoursForm</name>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="87"/>
-        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="92"/>
-        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="100"/>
-        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="109"/>
-        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="112"/>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="88"/>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="93"/>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="101"/>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="110"/>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="113"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="88"/>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="89"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="93"/>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="94"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
         <translation>Poids invalide (pourcentage) - doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="101"/>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="102"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="110"/>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="111"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="113"/>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="114"/>
         <source>Constraint NOT added - please report error</source>
         <translation>Contrainte NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
@@ -7029,45 +7029,45 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides.</transla
 <context>
     <name>AddConstraintStudentsSetNotAvailableTimesForm</name>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="196"/>
-        <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="204"/>
-        <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="222"/>
-        <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="225"/>
+        <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="210"/>
+        <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="218"/>
+        <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="236"/>
+        <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="239"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="197"/>
+        <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="211"/>
         <source>Invalid weight (percentage). It has to be 100</source>
         <translation>Poids invalide (pourcentage). Il doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="205"/>
+        <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="219"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="223"/>
+        <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="237"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="226"/>
+        <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="240"/>
         <source>Constraint NOT added - there must be another constraint of this type referring to the same students set. Please edit that one</source>
         <translation>Contrainte PAS ajoutée - il doit y avoir une autre contrainte de ce type faisant référence au même groupe. Merci d&apos;éditer cette dernière</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="236"/>
+        <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="250"/>
         <source>This constraint does not induce gaps (or early gaps) for students. If a student set has lessons before and after a not available period, gaps will not be counted.</source>
         <translation>Cette contrainte n&apos;induit pas de vide (ou de vide matinal) pour les apprenants. Si un apprenant a des leçons avant ou après cette période non disponible, aucun vide ne sera compté.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="241"/>
+        <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="255"/>
         <source>If you really need to use weight under 100%, you can use activities preferred times with only the students set specified, but this might generate problems, as possible gaps will be counted and you may obtain an impossible timetable</source>
         <translation>Si vous avez réellement besoin d&apos;utiliser un poids inférieur à 100.0 %, vous pouvez utiliser activités temps préférés avec uniquement le groupe spécifié, mais cela pourrait poser des problèmes comme des vides éventuellement comptés et vous pourriez obtenir un planning impossible</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="245"/>
+        <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="259"/>
         <source>FET help</source>
         <translation>FET aide</translation>
     </message>
@@ -7133,34 +7133,34 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides.</transla
 <context>
     <name>AddConstraintSubactivitiesPreferredStartingTimesForm</name>
     <message>
-        <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform.cpp" line="245"/>
-        <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform.cpp" line="295"/>
-        <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform.cpp" line="298"/>
+        <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform.cpp" line="246"/>
+        <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform.cpp" line="296"/>
+        <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform.cpp" line="299"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform.cpp" line="246"/>
+        <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform.cpp" line="247"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform.cpp" line="280"/>
+        <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform.cpp" line="281"/>
         <source>FET question</source>
         <translation>FET question</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform.cpp" line="281"/>
+        <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform.cpp" line="282"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
         <translation>Avertissement : 0 créneau sélectionné. Êtes-vous sûr ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform.cpp" line="292"/>
+        <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform.cpp" line="293"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform.cpp" line="299"/>
+        <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform.cpp" line="300"/>
         <source>Constraint NOT added - duplicate?</source>
         <comment>&apos;Duplicate&apos; means that the constraint is identical to an existing constraint and cannot be added.</comment>
         <translation>Contrainte NON ajoutée - doublon ?</translation>
@@ -7241,34 +7241,34 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides.</transla
 <context>
     <name>AddConstraintSubactivitiesPreferredTimeSlotsForm</name>
     <message>
-        <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform.cpp" line="246"/>
-        <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform.cpp" line="296"/>
-        <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform.cpp" line="299"/>
+        <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform.cpp" line="247"/>
+        <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform.cpp" line="297"/>
+        <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform.cpp" line="300"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform.cpp" line="247"/>
+        <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform.cpp" line="248"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform.cpp" line="281"/>
+        <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform.cpp" line="282"/>
         <source>FET question</source>
         <translation>FET question</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform.cpp" line="282"/>
+        <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform.cpp" line="283"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
         <translation>Avertissement : 0 créneau sélectionné. Êtes-vous sûr ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform.cpp" line="293"/>
+        <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform.cpp" line="294"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform.cpp" line="300"/>
+        <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform.cpp" line="301"/>
         <source>Constraint NOT added - duplicate?</source>
         <comment>&apos;Duplicate&apos; means that the constraint is identical to an existing constraint and cannot be added.</comment>
         <translation>Contrainte NON ajoutée - doublon ?</translation>
@@ -10030,40 +10030,40 @@ Note : enseignant non disponible et pause ne sont pas comptés comme des vides.<
 <context>
     <name>AddConstraintThreeActivitiesGroupedForm</name>
     <message>
-        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="187"/>
-        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="197"/>
-        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="209"/>
-        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="221"/>
-        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="229"/>
-        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="238"/>
-        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="241"/>
+        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="188"/>
+        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="198"/>
+        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="210"/>
+        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="222"/>
+        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="230"/>
+        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="239"/>
+        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="242"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="188"/>
+        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="189"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="198"/>
-        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="210"/>
-        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="222"/>
+        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="199"/>
+        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="211"/>
+        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="223"/>
         <source>Invalid activity</source>
         <translation>Activité invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="230"/>
+        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="231"/>
         <source>Same activities - impossible</source>
         <translation>Mêmes activités - impossible</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="239"/>
+        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="240"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="242"/>
+        <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="243"/>
         <source>Constraint NOT added - error?</source>
         <translation>Contrainte NON ajoutée - erreur ?</translation>
     </message>
@@ -10137,38 +10137,38 @@ Note : enseignant non disponible et pause ne sont pas comptés comme des vides.<
 <context>
     <name>AddConstraintTwoActivitiesConsecutiveForm</name>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="186"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="196"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="208"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="216"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="225"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="228"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="187"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="197"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="209"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="217"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="226"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="229"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="187"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="188"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="197"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="209"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="198"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="210"/>
         <source>Invalid activity</source>
         <translation>Activité invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="217"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="218"/>
         <source>Same activities - impossible</source>
         <translation>Mêmes activités - impossible</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="226"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="227"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="229"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="230"/>
         <source>Constraint NOT added - error?</source>
         <translation>Contrainte NON ajoutée - erreur ?</translation>
     </message>
@@ -10243,38 +10243,38 @@ Note : enseignant non disponible et pause ne sont pas comptés comme des vides.<
 <context>
     <name>AddConstraintTwoActivitiesGroupedForm</name>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="184"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="194"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="206"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="214"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="223"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="226"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="185"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="195"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="207"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="215"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="224"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="227"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="185"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="186"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="195"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="207"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="196"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="208"/>
         <source>Invalid activity</source>
         <translation>Activité invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="215"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="216"/>
         <source>Same activities - impossible</source>
         <translation>Mêmes activités - impossible</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="224"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="225"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="227"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="228"/>
         <source>Constraint NOT added - error?</source>
         <translation>Contrainte NON ajoutée - erreur ?</translation>
     </message>
@@ -10343,38 +10343,38 @@ Note : enseignant non disponible et pause ne sont pas comptés comme des vides.<
 <context>
     <name>AddConstraintTwoActivitiesOrderedForm</name>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="186"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="196"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="208"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="216"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="225"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="228"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="187"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="197"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="209"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="217"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="226"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="229"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="187"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="188"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="197"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="209"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="198"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="210"/>
         <source>Invalid activity</source>
         <translation>Activité invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="217"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="218"/>
         <source>Same activities - impossible</source>
         <translation>Mêmes activités - impossible</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="226"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="227"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="229"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="230"/>
         <source>Constraint NOT added - error?</source>
         <translation>Contrainte NON ajoutée - erreur ?</translation>
     </message>
@@ -10449,24 +10449,24 @@ Note : enseignant non disponible et pause ne sont pas comptés comme des vides.<
 <context>
     <name>AddGroupActivitiesInInitialOrderItemForm</name>
     <message>
-        <location filename="../src/interface/addgroupactivitiesininitialorderitemform.cpp" line="177"/>
-        <location filename="../src/interface/addgroupactivitiesininitialorderitemform.cpp" line="182"/>
-        <location filename="../src/interface/addgroupactivitiesininitialorderitemform.cpp" line="223"/>
+        <location filename="../src/interface/addgroupactivitiesininitialorderitemform.cpp" line="178"/>
+        <location filename="../src/interface/addgroupactivitiesininitialorderitemform.cpp" line="183"/>
+        <location filename="../src/interface/addgroupactivitiesininitialorderitemform.cpp" line="224"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addgroupactivitiesininitialorderitemform.cpp" line="178"/>
+        <location filename="../src/interface/addgroupactivitiesininitialorderitemform.cpp" line="179"/>
         <source>Empty list of selected activities</source>
         <translation>Liste d&apos;activités sélectionnées vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addgroupactivitiesininitialorderitemform.cpp" line="183"/>
+        <location filename="../src/interface/addgroupactivitiesininitialorderitemform.cpp" line="184"/>
         <source>Only one selected activity</source>
         <translation>Une seule activité sélectionnée</translation>
     </message>
     <message>
-        <location filename="../src/interface/addgroupactivitiesininitialorderitemform.cpp" line="220"/>
+        <location filename="../src/interface/addgroupactivitiesininitialorderitemform.cpp" line="221"/>
         <source>Added group activities in initial order item</source>
         <translation>Ajouter regroupement d&apos;activités dans l&apos;ordre initial</translation>
     </message>
@@ -12308,69 +12308,69 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm</name>
     <message>
-        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="233"/>
-        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="260"/>
+        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="234"/>
+        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="261"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="233"/>
-        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="260"/>
+        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="234"/>
+        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="261"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="265"/>
+        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="266"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="271"/>
+        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="272"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="272"/>
+        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="273"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="272"/>
+        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="273"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="298"/>
+        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="299"/>
         <source>IMPORTANT NOTE: Please use this constraint ONLY when strictly necessary, when it is really useful, when it has effect, when it is not implied by the other constraints, and in a non-redundant way. Otherwise it may slow down very much the generation.</source>
         <translation>NOTE IMPORTANTE : Merci de n&apos;utiliser cette contrainte QUE si strictement nécessaire, lorsqu&apos;elle est réellement utile, efficace et qu&apos;elle n&apos;est pas déjà induite par d&apos;autres contraintes ou redondante. Sinon cela pourrait ralentir fortement la génération.</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="301"/>
+        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="302"/>
         <source>Important note: if you want the maximum number of simultaneous activities to be 1, then it is more efficient to use constraint activities not overlapping and the result is the same. (The underlying data structures make FET compute better the initial order of placing the activities and also the generation speed is faster, if using constraints of type activities not overlapping.)</source>
         <translation>Note importante : si vous souhaitez que le nombre maximum d&apos;activités simultanées soit 1, alors il est plus efficace d&apos;utiliser une contrainte sans chevauchement et le résultat sera le même. (La structure sous-jacente des données fait que FET calcule mieux l&apos;ordre initital de placement des activités et aussi que la vitesse de génération est plus élevée en utilisant des contraintes de type activités sans chevauchement.)</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="305"/>
+        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="306"/>
         <source>This constraint type was added on 30 September 2011.</source>
         <translation>Ce type de contrainte a été ajouté le 30 septembre 2011.</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="307"/>
+        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="308"/>
         <source>To use this constraint, you need to specify a set of activities, a set of time slots, and a maximum number of activities from those selected which can be simultaneous in each of the selected time slots.</source>
         <translation>Pour utiliser cette contrainte, vous devez spécifier un jeu d&apos;activités, un jeu de créneaux horaires et un nombre maximum d&apos;activités parmi celles sélectionnées qui peuvent être simultanées dans chaque créneau horaire sélectionné.</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="310"/>
+        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="311"/>
         <source>Uses of this constraint are probably wide. The main reason it was added was to enable users to specify that each time slot needs to have a specified number of free teachers, for supervision of students.</source>
         <translation>Les utilisations de cette contrainte sont probablement variées. La raison principale pour laquelle elle a été ajoutée était de permettre aux utilisateurs de spécifier que chaque créneau horaire a besoin d&apos;avoir un nombre spécifié d&apos;enseignants libres pour l&apos;encadrement des apprenants.</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="313"/>
+        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="314"/>
         <source>Note that if you have activities with two or more teachers, you might need to use a trick for that: add one (or more) dummy activities, no teachers/no students, same starting time with the initial activity.</source>
         <translation>Notez que si vous avez des activités avec deux ou davantage d&apos;enseignants, vous pourriez avoir besoin d&apos;utiliser cette astuce : ajouter une (ou davantage) activité fictive, sans enseignant ni apprenant, avec le même temps de démarrage que l&apos;activité initiale.</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="316"/>
+        <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="317"/>
         <source>FET help</source>
         <translation>FET aide</translation>
     </message>
@@ -12544,34 +12544,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintActivitiesNotOverlappingForm</name>
     <message>
-        <location filename="../src/interface/constraintactivitiesnotoverlappingform.cpp" line="233"/>
-        <location filename="../src/interface/constraintactivitiesnotoverlappingform.cpp" line="260"/>
+        <location filename="../src/interface/constraintactivitiesnotoverlappingform.cpp" line="234"/>
+        <location filename="../src/interface/constraintactivitiesnotoverlappingform.cpp" line="261"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesnotoverlappingform.cpp" line="233"/>
-        <location filename="../src/interface/constraintactivitiesnotoverlappingform.cpp" line="260"/>
+        <location filename="../src/interface/constraintactivitiesnotoverlappingform.cpp" line="234"/>
+        <location filename="../src/interface/constraintactivitiesnotoverlappingform.cpp" line="261"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesnotoverlappingform.cpp" line="265"/>
+        <location filename="../src/interface/constraintactivitiesnotoverlappingform.cpp" line="266"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesnotoverlappingform.cpp" line="271"/>
+        <location filename="../src/interface/constraintactivitiesnotoverlappingform.cpp" line="272"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesnotoverlappingform.cpp" line="272"/>
+        <location filename="../src/interface/constraintactivitiesnotoverlappingform.cpp" line="273"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesnotoverlappingform.cpp" line="272"/>
+        <location filename="../src/interface/constraintactivitiesnotoverlappingform.cpp" line="273"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -12722,54 +12722,54 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintActivitiesOccupyMaxDifferentRoomsForm</name>
     <message>
-        <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="233"/>
-        <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="260"/>
+        <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="234"/>
+        <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="261"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="233"/>
-        <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="260"/>
+        <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="234"/>
+        <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="261"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="265"/>
+        <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="266"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="271"/>
+        <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="272"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="272"/>
+        <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="273"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="272"/>
+        <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="273"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="298"/>
+        <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="299"/>
         <source>IMPORTANT NOTE: Please be careful with this constraint, as its overuse may lead to a slowdown of generation or even to an impossible timetable.</source>
         <translation>NOTE IMPORTANTE : Merci de faire attention avec cette contrainte car une utilisation abusive pourrait conduire à un ralentissement de la génération ou même à un planning impossible.</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="300"/>
+        <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="301"/>
         <source>This constraint type was added on 29 April 2012.</source>
         <translation>Ce type de contrainte a été ajouté le 29 avril 2012.</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="302"/>
+        <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="303"/>
         <source>To use this constraint, you need to specify a set of activities and the maximum number of different rooms which can be occupied by these activities. Note that each activity can take place in a single room, and a single room can hold a single activity at a certain moment. This constraint may be used for instance to constrain all activities of type Physics of a certain students set to be in the same room throughout the week, by adding all Physics activities for this students set and making max different rooms = 1.</source>
         <translation>Pour utiliser cette contrainte, vous devez spécifié un jeu d&apos;activités et le nombre maximum de salles différentes qui peuvent être occupées par ces activités. Notez que chaque activité ne peut prendre place que dans une seule salle et que chaque salle ne peut accueillir qu&apos;une seule activité au même moment. Cette contrainte peut être utilisée par exemple pour contraindre toutes les activités de type sciences physiques d&apos;un certain groupe à se trouver dans la même salle tout au long de la semaine en ajoutant toutes les activités de sciences physiques de ce groupe et en réglant la limite salles différentes à 1.</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="307"/>
+        <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="308"/>
         <source>FET help</source>
         <translation>FET aide</translation>
     </message>
@@ -12966,59 +12966,59 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm</name>
     <message>
-        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="233"/>
-        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="260"/>
+        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="234"/>
+        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="261"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="233"/>
-        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="260"/>
+        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="234"/>
+        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="261"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="265"/>
+        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="266"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="271"/>
+        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="272"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="272"/>
+        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="273"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="272"/>
+        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="273"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="298"/>
+        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="299"/>
         <source>IMPORTANT NOTE: Please use this constraint ONLY when strictly necessary, when it is really useful, when it has effect, when it is not implied by the other constraints, and in a non-redundant way. Otherwise it may slow down very much the generation.</source>
         <translation>NOTE IMPORTANTE : Merci de n&apos;utiliser cette contrainte QUE si strictement nécessaire, lorsqu&apos;elle est réellement utile, efficace et qu&apos;elle n&apos;est pas déjà induite par d&apos;autres contraintes ou redondante. Sinon cela pourrait ralentir fortement la génération.</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="301"/>
+        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="302"/>
         <source>This constraint type was added on 25 September 2011.</source>
         <translation>Ce type de contrainte a été ajouté le 25 septembre 2011.</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="303"/>
+        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="304"/>
         <source>To use this constraint, you need to specify a set of activities, a set of time slots, and a maximum number of time slots from those selected which can be occupied by the specified activities.</source>
         <translation>Pour utiliser cette contrainte, vous devez spécifier un jeu d&apos;activités, un jeu de créneaux horaires et un nombre maximum de créneaux horaires parmi ceux sélectionnés qui peuvent être occupés par les activités spécifiées.</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="306"/>
+        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="307"/>
         <source>Uses of this constraint are probably very wide. The main reason it was added was to enable users to specify that a teacher should have activities in certain time slots. Example: we have a week with 30 hours. Teacher T has 20 hours of activities, and we would like him to have activities Monday and Tuesday on the first two hours. Add a constraint of this type, with the set of activities being all the activities of teacher T, selected time slots being the remaining 30-2*2=26 slots of the week, and the maximum number of selected time slots which can be occupied by these activities being 20-2*2=16.</source>
         <translation>Les utilisations de cette contrainte sont probablement très variées. La raison principale pour laquelle elle a été ajoutée était de permettre aux utilisateurs de spécifier qu&apos;un enseignant devait avoir ses activités à certains créneaux horaires. Exemple : nous avons une semaine avec 30 heures. L&apos;enseignant E a 20 heures d&apos;activités et nous aimerions qu&apos;il ait des activités le lundi et le mardi sur les deux premières heures. Ajouter une contrainte de ce type, avec le jeu d&apos;activités représentant toutes les activités de l&apos;enseignant E, les créneaux horaires sélectionnés étant le reste 30 - 2 x 2 = 26 créneaux de la semaine et le nombre maximum de créneaux horaires sélectionnés qui peuvent être occupés par ces activités étant 20 - 2 x 2 =16.</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="312"/>
+        <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="313"/>
         <source>FET help</source>
         <translation>FET aide</translation>
     </message>
@@ -13731,34 +13731,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintActivitiesSameRoomIfConsecutiveForm</name>
     <message>
-        <location filename="../src/interface/constraintactivitiessameroomifconsecutiveform.cpp" line="233"/>
-        <location filename="../src/interface/constraintactivitiessameroomifconsecutiveform.cpp" line="260"/>
+        <location filename="../src/interface/constraintactivitiessameroomifconsecutiveform.cpp" line="234"/>
+        <location filename="../src/interface/constraintactivitiessameroomifconsecutiveform.cpp" line="261"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessameroomifconsecutiveform.cpp" line="233"/>
-        <location filename="../src/interface/constraintactivitiessameroomifconsecutiveform.cpp" line="260"/>
+        <location filename="../src/interface/constraintactivitiessameroomifconsecutiveform.cpp" line="234"/>
+        <location filename="../src/interface/constraintactivitiessameroomifconsecutiveform.cpp" line="261"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessameroomifconsecutiveform.cpp" line="265"/>
+        <location filename="../src/interface/constraintactivitiessameroomifconsecutiveform.cpp" line="266"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessameroomifconsecutiveform.cpp" line="271"/>
+        <location filename="../src/interface/constraintactivitiessameroomifconsecutiveform.cpp" line="272"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessameroomifconsecutiveform.cpp" line="272"/>
+        <location filename="../src/interface/constraintactivitiessameroomifconsecutiveform.cpp" line="273"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessameroomifconsecutiveform.cpp" line="272"/>
+        <location filename="../src/interface/constraintactivitiessameroomifconsecutiveform.cpp" line="273"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -13922,44 +13922,44 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintActivitiesSameStartingDayForm</name>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="257"/>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="284"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="258"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="285"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="257"/>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="284"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="258"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="285"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="289"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="290"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="295"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="296"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="296"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="297"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="296"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="297"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="322"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="323"/>
         <source>IMPORTANT: after adding such constraints, it is necessary (otherwise generation might be impossible) to remove redundant constraints min days between activities. If you are sure that you don&apos;t have redundant constraints, you can skip this step, but it doesn&apos;t hurt to do it as a precaution. Also, you don&apos;t have to do that after each added constraint, but only once after adding more constraints of this type. Please read Help/Important tips - tip number 2 for details</source>
         <translation>IMPORTANT : après l&apos;ajout de telles contraintes, il est nécessaire (sans quoi la génération pourrait être impossible) de retirer les contraintes redondantes jours minimum entre activités. Si vous êtes certain de ne pas avoir de contraintes redondantes, vous pouvez sauter cette étape, mais il ne nuit pas de le faire par précaution. Vous n&apos;avez pas à le faire après chaque contrainte ajoutée mais une seule fois, après l&apos;ajout de plusieurs contraintes de ce type. Merci de lire l&apos;Aide -&gt; Astuces importantes - Astuce numéro 2 pour plus de détails</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="327"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="328"/>
         <source>FET help</source>
         <translation>FET aide</translation>
     </message>
@@ -14133,34 +14133,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintActivitiesSameStartingHourForm</name>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="256"/>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="283"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="257"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="284"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="256"/>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="283"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="257"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="284"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="288"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="289"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="294"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="295"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="295"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="296"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="295"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="296"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -14324,49 +14324,49 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintActivitiesSameStartingTimeForm</name>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="257"/>
-        <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="284"/>
+        <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="258"/>
+        <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="285"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="257"/>
-        <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="284"/>
+        <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="258"/>
+        <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="285"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="289"/>
+        <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="290"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="295"/>
+        <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="296"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="296"/>
+        <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="297"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="296"/>
+        <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="297"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="322"/>
+        <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="323"/>
         <source>IMPORTANT: after adding such constraints, it is necessary (otherwise generation might be impossible) to remove redundant constraints min days between activities. If you are sure that you don&apos;t have redundant constraints, you can skip this step, but it doesn&apos;t hurt to do it as a precaution. Also, you don&apos;t have to do that after each added constraint, but only once after adding more constraints of this type. Please read Help/Important tips - tip number 2 for details</source>
         <translation>IMPORTANT : après l&apos;ajout de telles contraintes, il est nécessaire (sans quoi la génération pourrait être impossible) de retirer les contraintes redondantes jours minimum entre activités. Si vous êtes certain de ne pas avoir de contraintes redondantes, vous pouvez sauter cette étape, mais il ne nuit pas de le faire par précaution. Vous n&apos;avez pas à le faire après chaque contrainte ajoutée mais une seule fois, après l&apos;ajout de plusieurs contraintes de ce type. Merci de lire l&apos;Aide -&gt; Astuces importantes - Astuce numéro 2 pour plus de détails</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="327"/>
+        <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="328"/>
         <source>If you divide the years by categories (the students have optional courses), you may not need this kind of constraint. If the year is for instance divided by language, English/French/German, sometimes people think that it is needed that these optional activities to have the same starting time. But solutions exist without adding same starting time constraints. Some people try to avoid students gaps by using this constraint, because they need to do it this way in other timetabling software. But it is not the best practice to do it with such a constraint. The correct way is to add a max 0 gaps per week constraint for students and maybe also an early max 0 beginnings at second hour constraint for students.</source>
         <translation>Si vous divisez les années en catégories (les apprenants ont des cours optionnels), vous pourriez ne pas avoir besoin de ce genre de contraintes. Si l&apos;année est par exemple divisée par langue, Allemand / Anglais / Français, on pense parfois qu&apos;il est nécessaire que ces activités optionnelles aient un même temps de démarrage. Mais des solutions existent sans ajout de contraintes même temps de démarrage. Certaines personnes tentent d&apos;éviter les vides pour les apprenants en utilisant cette contrainte car elles doivent faire ainsi dans d&apos;autres logiciels de planification. Mais ce n&apos;est pas la meilleure méthode pour le faire avec une telle contrainte. La bonne méthode est d&apos;ajouter une contrainte limite vides par semaine à 0 pour les apprenants et peut-être aussi une contrainte tôt limite débuts en seconde heure à 0 pour les apprenants.</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="334"/>
+        <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="335"/>
         <source>FET help</source>
         <translation>FET aide</translation>
     </message>
@@ -14524,34 +14524,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintActivityEndsStudentsDayForm</name>
     <message>
-        <location filename="../src/interface/constraintactivityendsstudentsdayform.cpp" line="219"/>
-        <location filename="../src/interface/constraintactivityendsstudentsdayform.cpp" line="246"/>
+        <location filename="../src/interface/constraintactivityendsstudentsdayform.cpp" line="220"/>
+        <location filename="../src/interface/constraintactivityendsstudentsdayform.cpp" line="247"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivityendsstudentsdayform.cpp" line="219"/>
-        <location filename="../src/interface/constraintactivityendsstudentsdayform.cpp" line="246"/>
+        <location filename="../src/interface/constraintactivityendsstudentsdayform.cpp" line="220"/>
+        <location filename="../src/interface/constraintactivityendsstudentsdayform.cpp" line="247"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivityendsstudentsdayform.cpp" line="251"/>
+        <location filename="../src/interface/constraintactivityendsstudentsdayform.cpp" line="252"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivityendsstudentsdayform.cpp" line="257"/>
+        <location filename="../src/interface/constraintactivityendsstudentsdayform.cpp" line="258"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivityendsstudentsdayform.cpp" line="258"/>
+        <location filename="../src/interface/constraintactivityendsstudentsdayform.cpp" line="259"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivityendsstudentsdayform.cpp" line="258"/>
+        <location filename="../src/interface/constraintactivityendsstudentsdayform.cpp" line="259"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -14727,34 +14727,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintActivityPreferredRoomForm</name>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredroomform.cpp" line="231"/>
-        <location filename="../src/interface/constraintactivitypreferredroomform.cpp" line="258"/>
+        <location filename="../src/interface/constraintactivitypreferredroomform.cpp" line="232"/>
+        <location filename="../src/interface/constraintactivitypreferredroomform.cpp" line="259"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredroomform.cpp" line="231"/>
-        <location filename="../src/interface/constraintactivitypreferredroomform.cpp" line="258"/>
+        <location filename="../src/interface/constraintactivitypreferredroomform.cpp" line="232"/>
+        <location filename="../src/interface/constraintactivitypreferredroomform.cpp" line="259"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredroomform.cpp" line="263"/>
+        <location filename="../src/interface/constraintactivitypreferredroomform.cpp" line="264"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredroomform.cpp" line="269"/>
+        <location filename="../src/interface/constraintactivitypreferredroomform.cpp" line="270"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredroomform.cpp" line="270"/>
+        <location filename="../src/interface/constraintactivitypreferredroomform.cpp" line="271"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredroomform.cpp" line="270"/>
+        <location filename="../src/interface/constraintactivitypreferredroomform.cpp" line="271"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -14921,34 +14921,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintActivityPreferredRoomsForm</name>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredroomsform.cpp" line="221"/>
-        <location filename="../src/interface/constraintactivitypreferredroomsform.cpp" line="248"/>
+        <location filename="../src/interface/constraintactivitypreferredroomsform.cpp" line="222"/>
+        <location filename="../src/interface/constraintactivitypreferredroomsform.cpp" line="249"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredroomsform.cpp" line="221"/>
-        <location filename="../src/interface/constraintactivitypreferredroomsform.cpp" line="248"/>
+        <location filename="../src/interface/constraintactivitypreferredroomsform.cpp" line="222"/>
+        <location filename="../src/interface/constraintactivitypreferredroomsform.cpp" line="249"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredroomsform.cpp" line="253"/>
+        <location filename="../src/interface/constraintactivitypreferredroomsform.cpp" line="254"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredroomsform.cpp" line="259"/>
+        <location filename="../src/interface/constraintactivitypreferredroomsform.cpp" line="260"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredroomsform.cpp" line="260"/>
+        <location filename="../src/interface/constraintactivitypreferredroomsform.cpp" line="261"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredroomsform.cpp" line="260"/>
+        <location filename="../src/interface/constraintactivitypreferredroomsform.cpp" line="261"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -15145,34 +15145,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintActivityPreferredStartingTimeForm</name>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredstartingtimeform.cpp" line="221"/>
-        <location filename="../src/interface/constraintactivitypreferredstartingtimeform.cpp" line="248"/>
+        <location filename="../src/interface/constraintactivitypreferredstartingtimeform.cpp" line="222"/>
+        <location filename="../src/interface/constraintactivitypreferredstartingtimeform.cpp" line="249"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredstartingtimeform.cpp" line="221"/>
-        <location filename="../src/interface/constraintactivitypreferredstartingtimeform.cpp" line="248"/>
+        <location filename="../src/interface/constraintactivitypreferredstartingtimeform.cpp" line="222"/>
+        <location filename="../src/interface/constraintactivitypreferredstartingtimeform.cpp" line="249"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredstartingtimeform.cpp" line="253"/>
+        <location filename="../src/interface/constraintactivitypreferredstartingtimeform.cpp" line="254"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredstartingtimeform.cpp" line="259"/>
+        <location filename="../src/interface/constraintactivitypreferredstartingtimeform.cpp" line="260"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredstartingtimeform.cpp" line="260"/>
+        <location filename="../src/interface/constraintactivitypreferredstartingtimeform.cpp" line="261"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredstartingtimeform.cpp" line="260"/>
+        <location filename="../src/interface/constraintactivitypreferredstartingtimeform.cpp" line="261"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -15344,34 +15344,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintActivityPreferredStartingTimesForm</name>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredstartingtimesform.cpp" line="219"/>
-        <location filename="../src/interface/constraintactivitypreferredstartingtimesform.cpp" line="246"/>
+        <location filename="../src/interface/constraintactivitypreferredstartingtimesform.cpp" line="220"/>
+        <location filename="../src/interface/constraintactivitypreferredstartingtimesform.cpp" line="247"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredstartingtimesform.cpp" line="219"/>
-        <location filename="../src/interface/constraintactivitypreferredstartingtimesform.cpp" line="246"/>
+        <location filename="../src/interface/constraintactivitypreferredstartingtimesform.cpp" line="220"/>
+        <location filename="../src/interface/constraintactivitypreferredstartingtimesform.cpp" line="247"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredstartingtimesform.cpp" line="251"/>
+        <location filename="../src/interface/constraintactivitypreferredstartingtimesform.cpp" line="252"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredstartingtimesform.cpp" line="257"/>
+        <location filename="../src/interface/constraintactivitypreferredstartingtimesform.cpp" line="258"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredstartingtimesform.cpp" line="258"/>
+        <location filename="../src/interface/constraintactivitypreferredstartingtimesform.cpp" line="259"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredstartingtimesform.cpp" line="258"/>
+        <location filename="../src/interface/constraintactivitypreferredstartingtimesform.cpp" line="259"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -15555,34 +15555,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintActivityPreferredTimeSlotsForm</name>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredtimeslotsform.cpp" line="219"/>
-        <location filename="../src/interface/constraintactivitypreferredtimeslotsform.cpp" line="246"/>
+        <location filename="../src/interface/constraintactivitypreferredtimeslotsform.cpp" line="220"/>
+        <location filename="../src/interface/constraintactivitypreferredtimeslotsform.cpp" line="247"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredtimeslotsform.cpp" line="219"/>
-        <location filename="../src/interface/constraintactivitypreferredtimeslotsform.cpp" line="246"/>
+        <location filename="../src/interface/constraintactivitypreferredtimeslotsform.cpp" line="220"/>
+        <location filename="../src/interface/constraintactivitypreferredtimeslotsform.cpp" line="247"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredtimeslotsform.cpp" line="251"/>
+        <location filename="../src/interface/constraintactivitypreferredtimeslotsform.cpp" line="252"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredtimeslotsform.cpp" line="257"/>
+        <location filename="../src/interface/constraintactivitypreferredtimeslotsform.cpp" line="258"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredtimeslotsform.cpp" line="258"/>
+        <location filename="../src/interface/constraintactivitypreferredtimeslotsform.cpp" line="259"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitypreferredtimeslotsform.cpp" line="258"/>
+        <location filename="../src/interface/constraintactivitypreferredtimeslotsform.cpp" line="259"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -16628,59 +16628,59 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintMaxDaysBetweenActivitiesForm</name>
     <message>
-        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="232"/>
-        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="259"/>
+        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="233"/>
+        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="260"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="232"/>
-        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="259"/>
+        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="233"/>
+        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="260"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="264"/>
+        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="265"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="270"/>
+        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="271"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="271"/>
+        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="272"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="271"/>
+        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="272"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="297"/>
+        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="298"/>
         <source>Help about the constraint max days between activities:</source>
         <translation>Aide au sujet de la contrainte limite jours entre activités :</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="299"/>
+        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="300"/>
         <source>This constraint was suggested for the following situation: a user needed that activities A1, A2 and A3 to be in consecutive days (like: A1 on Tuesday, A2 on Wednesday and A3 on Thursday. So, they must be in 3 consecutive days). This is simple: add a constraint max days between activities for A1, A2 and A3, with max 2 days between them. It is supposed that these activities are constrained not to be in the same day by a constraint min days between activities.</source>
         <translation>Cette contrainte a été suggérée pour la situation suivante : un utilisateur a besoin que les activités A1, A2 et A3 soient sur des jours consécutifs (comme : A1 le mardi, A2 le mercredi et A3 le jeudi. Donc, elles doivent être sur 3 jours consécutifs). C&apos;est simple : ajouter une contrainte limite jours entre activités pour A1, A2 et A3 avec limite 2 jours entre elles. On suppose que ces activités sont contraintes à ne pas être le même jour par une contrainte jours min entre activités.</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="304"/>
+        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="305"/>
         <source>So, the general situation: this constraint ensures that between each pair from the selected activities, the distance in days is at most the selected value. Distance = 1 day between a pair A1 and A2 means that A1 and A2 are in consecutive days (like Thursday and Friday). Distance = 3 days means that A1 and A2 are 3 days apart, for instance Monday and Thursday.</source>
         <translation>Ainsi, dans la plupart des cas : cette contrainte assure qu&apos;entre chaque paire parmi les activités sélectionnées, la distance en jours est au plus la valeur sélectionnées. Distance = 1 jour entre une paire A1 et A2 signifie que A1 et A2 sont sur des jours consécutifs (comme jeudi et vendredi). Distance = 3 jours signifie que A1 et A2 sont séparés par 3 jours, par exemple lundi et jeudi.</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="308"/>
+        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="309"/>
         <source>Another example: teacher T wants to ensure that his activities take place in at most 4 consecutive days (so, from Monday to Thursday or from Tuesday to Friday). Then, add all his activities and max days between them = 3.</source>
         <translation>Autre exemple : l&apos;enseignant E souhaite s&apos;assurer que ses activités prennent place sur au plus 4 jours consécutifs (soit, du lundi au jeudi ou du mardi au vendredi). Alors, ajoutez toutes ses activités et limite jours entre elles = 3.</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="311"/>
+        <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="312"/>
         <source>FET help</source>
         <translation>FET aide</translation>
     </message>
@@ -16876,92 +16876,92 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintMinDaysBetweenActivitiesForm</name>
     <message>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="234"/>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="261"/>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="315"/>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="325"/>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="334"/>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="340"/>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="350"/>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="360"/>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="370"/>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="427"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="235"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="262"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="316"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="326"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="335"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="341"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="351"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="361"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="371"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="428"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="234"/>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="261"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="235"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="262"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="266"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="267"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="272"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="273"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="273"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="274"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="273"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="274"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="316"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="317"/>
         <source>FET has meet a critical error - aborting current operation, please report bug (old weight is not -1 and not (&gt;=0.0 and &lt;=100.0))</source>
         <translation>FET a rencontré une erreur critique - interrompant l&apos;opération en cours, merci de signaler le bug (l&apos;ancien poids n&apos;est pas -1 et n&apos;est pas compris entre 0.0 et 100.0)</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="326"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="327"/>
         <source>FET has met a critical error - aborting current operation, please report bug (new weight is not -1 and not (&gt;=0.0 and &lt;=100.0))</source>
         <translation>FET a rencontré une erreur critique - interrompant l&apos;opération en cours, merci de signaler le bug (le nouveau poids n&apos;est pas -1 et n&apos;est pas compris entre 0.0 et 100.0)</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="335"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="336"/>
         <source>FET has met a critical error - aborting current operation, please report bug (old consecutive is not any, yes or no)</source>
         <translation>FET a rencontré une erreur critique - interrompant l&apos;opération en cours, merci de signaler le bug (l&apos;ancien consécutives n&apos;est pas tout, oui ou non)</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="341"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="342"/>
         <source>FET has met a critical error - aborting current operation, please report bug (new consecutive is not no_change, yes or no)</source>
         <translation>FET a rencontré une erreur critique - interrompant l&apos;opération en cours, merci de signaler le bug (le nouveau consécutives n&apos;est pas &quot;pas de changement&quot;, oui ou non)</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="351"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="352"/>
         <source>FET has met a critical error - aborting current operation, please report bug (old min days is not -1 or 1..ndaysperweek)</source>
         <translation>FET a rencontré une erreur critique - interrompant l&apos;opération en cours, merci de signaler le bug (l&apos;ancien jours min n&apos;est pas -1 ni compris entre 1 et nJoursParSemaine)</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="361"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="362"/>
         <source>FET has met a critical error - aborting current operation, please report bug (new min days is not -1 or 1..ndaysperweek)</source>
         <translation>FET a rencontré une erreur critique - interrompant l&apos;opération en cours, merci de signaler le bug (le nouveau jours min n&apos;est pas -1 ni compris entre 1 et nJoursParSemaine)</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="371"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="372"/>
         <source>FET has met a critical error - aborting current operation, please report bug (old nActivities is not -1 or &gt;=1)</source>
         <translation>FET a rencontré une erreur critique - interrompant l&apos;opération en cours, merci de signaler le bug (l&apos;ancien nActivités n&apos;est pas -1 ni supérieur à 1)</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="427"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="428"/>
         <source>There were inspected (and possibly modified) %1 constraints min days between activities matching your criteria</source>
         <translation>Ont été inspectées (et éventuellement modifiées) %1 contraintes jours minimum entre activités correspondant à vos critères</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="429"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="430"/>
         <source>NOTE: If you are using constraints of type activities same starting time or activities same starting day, it is important (after current operation) to apply the operation of removing redundant constraints.</source>
         <translation>NOTE : Si vous utilisez des contraintes de type activités même temps de démarrage ou activités même jour de démarrage, il est important (après l&apos;opération en cours) d&apos;appliquer l&apos;opération de retrait des contraintes redondantes.</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="431"/>
+        <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="432"/>
         <source>Read Help/Important tips - tip 2) for details.</source>
         <translation>Lire l&apos;Aide -&gt; Astuces importantes - astuce 2) pour plus de détails.</translation>
     </message>
@@ -17141,44 +17141,44 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintMinGapsBetweenActivitiesForm</name>
     <message>
-        <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="233"/>
-        <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="260"/>
+        <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="234"/>
+        <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="261"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="233"/>
-        <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="260"/>
+        <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="234"/>
+        <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="261"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="265"/>
+        <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="266"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="271"/>
+        <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="272"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="272"/>
+        <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="273"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="272"/>
+        <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="273"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="296"/>
+        <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="297"/>
         <source>Please make sure that the selected activities are not forced to be consecutive by some other constraint &apos;min days between activities&apos; (with &apos;consecutive if same day&apos; true), by a constraint &apos;two activities consecutive&apos;, or by a constraint &apos;two activities grouped&apos; (also, if you have a constraint &apos;three activities grouped&apos; related to the selected activities, make sure that the constraints do not contradict).</source>
         <translation>Merci de vous assurer que les activités sélectionnées ne sont pas forcées à être consécutives par d&apos;autres contraintes jours minimum entre activités (avec consécutives si même jour à vrai), par une contrainte deux activités consécutives, ou par une contrainte deux activités groupées (ainsi que si vous avez une contrainte trois activités groupées relatives aux activités sélectionnées, assurez-vous que les contraintes ne sont pas contradictoires).</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="303"/>
+        <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="304"/>
         <source>FET help</source>
         <translation>FET aide</translation>
     </message>
@@ -19774,34 +19774,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintStudentsSetActivityTagMaxHoursContinuouslyForm</name>
     <message>
-        <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="145"/>
-        <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="172"/>
+        <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="146"/>
+        <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="173"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="145"/>
-        <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="172"/>
+        <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="146"/>
+        <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="173"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="177"/>
+        <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="178"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="183"/>
+        <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="184"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="184"/>
+        <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="185"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="184"/>
+        <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="185"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -19947,34 +19947,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintStudentsSetActivityTagMaxHoursDailyForm</name>
     <message>
-        <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="148"/>
-        <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="175"/>
+        <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="149"/>
+        <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="176"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="148"/>
-        <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="175"/>
+        <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="149"/>
+        <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="176"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="180"/>
+        <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="181"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="186"/>
+        <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="187"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="187"/>
+        <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="188"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="187"/>
+        <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="188"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -20130,34 +20130,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm</name>
     <message>
-        <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="135"/>
-        <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="162"/>
+        <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="136"/>
+        <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="163"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="135"/>
-        <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="162"/>
+        <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="136"/>
+        <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="163"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="167"/>
+        <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="168"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="173"/>
+        <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="174"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="174"/>
+        <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="175"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="174"/>
+        <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="175"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -20296,34 +20296,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintStudentsSetHomeRoomForm</name>
     <message>
-        <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="144"/>
-        <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="171"/>
+        <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="145"/>
+        <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="172"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="144"/>
-        <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="171"/>
+        <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="145"/>
+        <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="172"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="176"/>
+        <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="177"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="182"/>
+        <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="183"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="183"/>
+        <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="184"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="183"/>
+        <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="184"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -20467,34 +20467,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintStudentsSetHomeRoomsForm</name>
     <message>
-        <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="153"/>
-        <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="180"/>
+        <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="154"/>
+        <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="181"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="153"/>
-        <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="180"/>
+        <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="154"/>
+        <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="181"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="185"/>
+        <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="186"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="191"/>
+        <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="192"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="192"/>
+        <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="193"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="192"/>
+        <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="193"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -20695,34 +20695,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintStudentsSetIntervalMaxDaysPerWeekForm</name>
     <message>
-        <location filename="../src/interface/constraintstudentssetintervalmaxdaysperweekform.cpp" line="135"/>
-        <location filename="../src/interface/constraintstudentssetintervalmaxdaysperweekform.cpp" line="162"/>
+        <location filename="../src/interface/constraintstudentssetintervalmaxdaysperweekform.cpp" line="136"/>
+        <location filename="../src/interface/constraintstudentssetintervalmaxdaysperweekform.cpp" line="163"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetintervalmaxdaysperweekform.cpp" line="135"/>
-        <location filename="../src/interface/constraintstudentssetintervalmaxdaysperweekform.cpp" line="162"/>
+        <location filename="../src/interface/constraintstudentssetintervalmaxdaysperweekform.cpp" line="136"/>
+        <location filename="../src/interface/constraintstudentssetintervalmaxdaysperweekform.cpp" line="163"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetintervalmaxdaysperweekform.cpp" line="167"/>
+        <location filename="../src/interface/constraintstudentssetintervalmaxdaysperweekform.cpp" line="168"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetintervalmaxdaysperweekform.cpp" line="173"/>
+        <location filename="../src/interface/constraintstudentssetintervalmaxdaysperweekform.cpp" line="174"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetintervalmaxdaysperweekform.cpp" line="174"/>
+        <location filename="../src/interface/constraintstudentssetintervalmaxdaysperweekform.cpp" line="175"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetintervalmaxdaysperweekform.cpp" line="174"/>
+        <location filename="../src/interface/constraintstudentssetintervalmaxdaysperweekform.cpp" line="175"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -20864,34 +20864,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintStudentsSetMaxBuildingChangesPerDayForm</name>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperdayform.cpp" line="135"/>
-        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperdayform.cpp" line="162"/>
+        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperdayform.cpp" line="136"/>
+        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperdayform.cpp" line="163"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperdayform.cpp" line="135"/>
-        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperdayform.cpp" line="162"/>
+        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperdayform.cpp" line="136"/>
+        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperdayform.cpp" line="163"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperdayform.cpp" line="167"/>
+        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperdayform.cpp" line="168"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperdayform.cpp" line="173"/>
+        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperdayform.cpp" line="174"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperdayform.cpp" line="174"/>
+        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperdayform.cpp" line="175"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperdayform.cpp" line="174"/>
+        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperdayform.cpp" line="175"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -21033,34 +21033,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintStudentsSetMaxBuildingChangesPerWeekForm</name>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperweekform.cpp" line="135"/>
-        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperweekform.cpp" line="162"/>
+        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperweekform.cpp" line="136"/>
+        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperweekform.cpp" line="163"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperweekform.cpp" line="135"/>
-        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperweekform.cpp" line="162"/>
+        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperweekform.cpp" line="136"/>
+        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperweekform.cpp" line="163"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperweekform.cpp" line="167"/>
+        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperweekform.cpp" line="168"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperweekform.cpp" line="173"/>
+        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperweekform.cpp" line="174"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperweekform.cpp" line="174"/>
+        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperweekform.cpp" line="175"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperweekform.cpp" line="174"/>
+        <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperweekform.cpp" line="175"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -21202,34 +21202,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintStudentsSetMaxDaysPerWeekForm</name>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxdaysperweekform.cpp" line="135"/>
-        <location filename="../src/interface/constraintstudentssetmaxdaysperweekform.cpp" line="162"/>
+        <location filename="../src/interface/constraintstudentssetmaxdaysperweekform.cpp" line="136"/>
+        <location filename="../src/interface/constraintstudentssetmaxdaysperweekform.cpp" line="163"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxdaysperweekform.cpp" line="135"/>
-        <location filename="../src/interface/constraintstudentssetmaxdaysperweekform.cpp" line="162"/>
+        <location filename="../src/interface/constraintstudentssetmaxdaysperweekform.cpp" line="136"/>
+        <location filename="../src/interface/constraintstudentssetmaxdaysperweekform.cpp" line="163"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxdaysperweekform.cpp" line="167"/>
+        <location filename="../src/interface/constraintstudentssetmaxdaysperweekform.cpp" line="168"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxdaysperweekform.cpp" line="173"/>
+        <location filename="../src/interface/constraintstudentssetmaxdaysperweekform.cpp" line="174"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxdaysperweekform.cpp" line="174"/>
+        <location filename="../src/interface/constraintstudentssetmaxdaysperweekform.cpp" line="175"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxdaysperweekform.cpp" line="174"/>
+        <location filename="../src/interface/constraintstudentssetmaxdaysperweekform.cpp" line="175"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -21377,34 +21377,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintStudentsSetMaxGapsPerDayForm</name>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxgapsperdayform.cpp" line="138"/>
-        <location filename="../src/interface/constraintstudentssetmaxgapsperdayform.cpp" line="165"/>
+        <location filename="../src/interface/constraintstudentssetmaxgapsperdayform.cpp" line="139"/>
+        <location filename="../src/interface/constraintstudentssetmaxgapsperdayform.cpp" line="166"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxgapsperdayform.cpp" line="138"/>
-        <location filename="../src/interface/constraintstudentssetmaxgapsperdayform.cpp" line="165"/>
+        <location filename="../src/interface/constraintstudentssetmaxgapsperdayform.cpp" line="139"/>
+        <location filename="../src/interface/constraintstudentssetmaxgapsperdayform.cpp" line="166"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxgapsperdayform.cpp" line="170"/>
+        <location filename="../src/interface/constraintstudentssetmaxgapsperdayform.cpp" line="171"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxgapsperdayform.cpp" line="176"/>
+        <location filename="../src/interface/constraintstudentssetmaxgapsperdayform.cpp" line="177"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxgapsperdayform.cpp" line="177"/>
+        <location filename="../src/interface/constraintstudentssetmaxgapsperdayform.cpp" line="178"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxgapsperdayform.cpp" line="177"/>
+        <location filename="../src/interface/constraintstudentssetmaxgapsperdayform.cpp" line="178"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -21556,34 +21556,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintStudentsSetMaxGapsPerWeekForm</name>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxgapsperweekform.cpp" line="135"/>
-        <location filename="../src/interface/constraintstudentssetmaxgapsperweekform.cpp" line="162"/>
+        <location filename="../src/interface/constraintstudentssetmaxgapsperweekform.cpp" line="136"/>
+        <location filename="../src/interface/constraintstudentssetmaxgapsperweekform.cpp" line="163"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxgapsperweekform.cpp" line="135"/>
-        <location filename="../src/interface/constraintstudentssetmaxgapsperweekform.cpp" line="162"/>
+        <location filename="../src/interface/constraintstudentssetmaxgapsperweekform.cpp" line="136"/>
+        <location filename="../src/interface/constraintstudentssetmaxgapsperweekform.cpp" line="163"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxgapsperweekform.cpp" line="167"/>
+        <location filename="../src/interface/constraintstudentssetmaxgapsperweekform.cpp" line="168"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxgapsperweekform.cpp" line="173"/>
+        <location filename="../src/interface/constraintstudentssetmaxgapsperweekform.cpp" line="174"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxgapsperweekform.cpp" line="174"/>
+        <location filename="../src/interface/constraintstudentssetmaxgapsperweekform.cpp" line="175"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxgapsperweekform.cpp" line="174"/>
+        <location filename="../src/interface/constraintstudentssetmaxgapsperweekform.cpp" line="175"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -21727,34 +21727,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintStudentsSetMaxHoursContinuouslyForm</name>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxhourscontinuouslyform.cpp" line="135"/>
-        <location filename="../src/interface/constraintstudentssetmaxhourscontinuouslyform.cpp" line="162"/>
+        <location filename="../src/interface/constraintstudentssetmaxhourscontinuouslyform.cpp" line="136"/>
+        <location filename="../src/interface/constraintstudentssetmaxhourscontinuouslyform.cpp" line="163"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxhourscontinuouslyform.cpp" line="135"/>
-        <location filename="../src/interface/constraintstudentssetmaxhourscontinuouslyform.cpp" line="162"/>
+        <location filename="../src/interface/constraintstudentssetmaxhourscontinuouslyform.cpp" line="136"/>
+        <location filename="../src/interface/constraintstudentssetmaxhourscontinuouslyform.cpp" line="163"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxhourscontinuouslyform.cpp" line="167"/>
+        <location filename="../src/interface/constraintstudentssetmaxhourscontinuouslyform.cpp" line="168"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxhourscontinuouslyform.cpp" line="173"/>
+        <location filename="../src/interface/constraintstudentssetmaxhourscontinuouslyform.cpp" line="174"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxhourscontinuouslyform.cpp" line="174"/>
+        <location filename="../src/interface/constraintstudentssetmaxhourscontinuouslyform.cpp" line="175"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxhourscontinuouslyform.cpp" line="174"/>
+        <location filename="../src/interface/constraintstudentssetmaxhourscontinuouslyform.cpp" line="175"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -21891,34 +21891,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintStudentsSetMaxHoursDailyForm</name>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxhoursdailyform.cpp" line="135"/>
-        <location filename="../src/interface/constraintstudentssetmaxhoursdailyform.cpp" line="162"/>
+        <location filename="../src/interface/constraintstudentssetmaxhoursdailyform.cpp" line="136"/>
+        <location filename="../src/interface/constraintstudentssetmaxhoursdailyform.cpp" line="163"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxhoursdailyform.cpp" line="135"/>
-        <location filename="../src/interface/constraintstudentssetmaxhoursdailyform.cpp" line="162"/>
+        <location filename="../src/interface/constraintstudentssetmaxhoursdailyform.cpp" line="136"/>
+        <location filename="../src/interface/constraintstudentssetmaxhoursdailyform.cpp" line="163"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxhoursdailyform.cpp" line="167"/>
+        <location filename="../src/interface/constraintstudentssetmaxhoursdailyform.cpp" line="168"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxhoursdailyform.cpp" line="173"/>
+        <location filename="../src/interface/constraintstudentssetmaxhoursdailyform.cpp" line="174"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxhoursdailyform.cpp" line="174"/>
+        <location filename="../src/interface/constraintstudentssetmaxhoursdailyform.cpp" line="175"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxhoursdailyform.cpp" line="174"/>
+        <location filename="../src/interface/constraintstudentssetmaxhoursdailyform.cpp" line="175"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -22050,34 +22050,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintStudentsSetMaxSpanPerDayForm</name>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="135"/>
-        <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="162"/>
+        <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="136"/>
+        <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="163"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="135"/>
-        <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="162"/>
+        <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="136"/>
+        <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="163"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="167"/>
+        <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="168"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="173"/>
+        <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="174"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="174"/>
+        <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="175"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="174"/>
+        <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="175"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -22224,34 +22224,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintStudentsSetMinGapsBetweenBuildingChangesForm</name>
     <message>
-        <location filename="../src/interface/constraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="135"/>
-        <location filename="../src/interface/constraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="162"/>
+        <location filename="../src/interface/constraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="136"/>
+        <location filename="../src/interface/constraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="163"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="135"/>
-        <location filename="../src/interface/constraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="162"/>
+        <location filename="../src/interface/constraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="136"/>
+        <location filename="../src/interface/constraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="163"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="167"/>
+        <location filename="../src/interface/constraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="168"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="173"/>
+        <location filename="../src/interface/constraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="174"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="174"/>
+        <location filename="../src/interface/constraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="175"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="174"/>
+        <location filename="../src/interface/constraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="175"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -22404,34 +22404,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintStudentsSetMinHoursDailyForm</name>
     <message>
-        <location filename="../src/interface/constraintstudentssetminhoursdailyform.cpp" line="138"/>
-        <location filename="../src/interface/constraintstudentssetminhoursdailyform.cpp" line="165"/>
+        <location filename="../src/interface/constraintstudentssetminhoursdailyform.cpp" line="139"/>
+        <location filename="../src/interface/constraintstudentssetminhoursdailyform.cpp" line="166"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetminhoursdailyform.cpp" line="138"/>
-        <location filename="../src/interface/constraintstudentssetminhoursdailyform.cpp" line="165"/>
+        <location filename="../src/interface/constraintstudentssetminhoursdailyform.cpp" line="139"/>
+        <location filename="../src/interface/constraintstudentssetminhoursdailyform.cpp" line="166"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetminhoursdailyform.cpp" line="170"/>
+        <location filename="../src/interface/constraintstudentssetminhoursdailyform.cpp" line="171"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetminhoursdailyform.cpp" line="176"/>
+        <location filename="../src/interface/constraintstudentssetminhoursdailyform.cpp" line="177"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetminhoursdailyform.cpp" line="177"/>
+        <location filename="../src/interface/constraintstudentssetminhoursdailyform.cpp" line="178"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetminhoursdailyform.cpp" line="177"/>
+        <location filename="../src/interface/constraintstudentssetminhoursdailyform.cpp" line="178"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -22584,34 +22584,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintStudentsSetMinRestingHoursForm</name>
     <message>
-        <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="135"/>
-        <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="162"/>
+        <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="136"/>
+        <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="163"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="135"/>
-        <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="162"/>
+        <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="136"/>
+        <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="163"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="167"/>
+        <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="168"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="173"/>
+        <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="174"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="174"/>
+        <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="175"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="174"/>
+        <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="175"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -22784,34 +22784,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintStudentsSetNotAvailableTimesForm</name>
     <message>
-        <location filename="../src/interface/constraintstudentssetnotavailabletimesform.cpp" line="135"/>
-        <location filename="../src/interface/constraintstudentssetnotavailabletimesform.cpp" line="162"/>
+        <location filename="../src/interface/constraintstudentssetnotavailabletimesform.cpp" line="136"/>
+        <location filename="../src/interface/constraintstudentssetnotavailabletimesform.cpp" line="163"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetnotavailabletimesform.cpp" line="135"/>
-        <location filename="../src/interface/constraintstudentssetnotavailabletimesform.cpp" line="162"/>
+        <location filename="../src/interface/constraintstudentssetnotavailabletimesform.cpp" line="136"/>
+        <location filename="../src/interface/constraintstudentssetnotavailabletimesform.cpp" line="163"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetnotavailabletimesform.cpp" line="167"/>
+        <location filename="../src/interface/constraintstudentssetnotavailabletimesform.cpp" line="168"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetnotavailabletimesform.cpp" line="173"/>
+        <location filename="../src/interface/constraintstudentssetnotavailabletimesform.cpp" line="174"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetnotavailabletimesform.cpp" line="174"/>
+        <location filename="../src/interface/constraintstudentssetnotavailabletimesform.cpp" line="175"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintstudentssetnotavailabletimesform.cpp" line="174"/>
+        <location filename="../src/interface/constraintstudentssetnotavailabletimesform.cpp" line="175"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -29539,34 +29539,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintThreeActivitiesGroupedForm</name>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="244"/>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="269"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="245"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="270"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="244"/>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="269"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="245"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="270"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="274"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="275"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="280"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="281"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="281"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="282"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="281"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="282"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -29746,34 +29746,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintTwoActivitiesConsecutiveForm</name>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="241"/>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="266"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="242"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="267"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="241"/>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="266"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="242"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="267"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="271"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="272"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="277"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="278"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="278"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="279"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="278"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="279"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -29953,34 +29953,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintTwoActivitiesGroupedForm</name>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="241"/>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="266"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="242"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="267"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="241"/>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="266"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="242"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="267"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="271"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="272"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="277"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="278"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="278"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="279"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="278"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="279"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -30160,34 +30160,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintTwoActivitiesOrderedForm</name>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="241"/>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="266"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="242"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="267"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="241"/>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="266"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="242"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="267"/>
         <source>Invalid selected constraint</source>
         <translation>Contrainte sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="271"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="272"/>
         <source>Remove constraint?</source>
         <translation>Retirer la contrainte ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="277"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="278"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="278"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="279"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="278"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="279"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
@@ -35795,93 +35795,93 @@ Merci de modifier vos données en conséquence et de réessayer</translation>
 <context>
     <name>GroupActivitiesInInitialOrderItemsForm</name>
     <message>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="210"/>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="361"/>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="396"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="211"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="362"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="397"/>
         <source>%1 / %2 items</source>
         <comment>%1 represents the number of visible active &apos;group activities in initial order&apos; items, %2 represents the total number of visible items</comment>
         <translation>%1 / %2 regroupements</translation>
     </message>
     <message>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="246"/>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="273"/>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="336"/>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="371"/>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="432"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="247"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="274"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="337"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="372"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="433"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="246"/>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="273"/>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="336"/>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="371"/>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="432"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="247"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="274"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="337"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="372"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="433"/>
         <source>Invalid selected item</source>
         <translation>Regroupement sélectionné invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="278"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="279"/>
         <source>Remove item?</source>
         <translation>Retirer le regroupement ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="282"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="283"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="283"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="284"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="283"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="284"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
     <message>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="315"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="316"/>
         <source>This option is an advanced one. It is intended for experienced users. It is useful in cases of peculiar uses of constraints. In most cases, FET will care automatically about a good initial order of the activities before the generation will begin, but in some very rare cases you can help FET. An example is: if you use constraints activities occupy max time slots from selection in such a way that some activities are clearly meant to be near each other when the generation starts, but FET is not clever enough to deduce that. Other usage might be that you want to leave some activities at the end and, in case the timetable cannot be found, you can use a partial one. In this case, you need to begin to generate once (you can interrupt generation after only a few activities were placed), see the initial order of the activities, and use the option to group the first activities with the ones you wish to bring forward. The group of activities will be put near the earliest one in the group.</source>
         <translation>Cette option est une option avancée. Elle est destinée aux utilisateurs expérimentés. Elle est utile en cas d&apos;utilisations particulières de contraintes. Dans la plupart des cas, FET prend soin d&apos;obtenir automatiquement un bon ordre initial des activités avant le début de la génération, mais dans certains cas très rares, vous pouvez aider FET. Exemple : si vous utilisez des contraintes activités occupent limite créneaux horaires dans la sélection de telle sorte que certaines activités sont clairement destinées à être à côté de certaines autres lors du démarrage de la génération, FET n&apos;est pas assez performant pour le déduire. Une autre utilisation serait que vous vouliez laisser certaines activités à la fin et, dans le cas où le planning ne pourrait être trouvé, vous puissiez en utiliser une version partielle. Dans ce cas, vous devez débuter en générant une fois (vous pouvez interrompre la génération après le positionnement de seulement quelques activités), en regardant l&apos;ordre initial des activités et en utilisant l&apos;option pour regrouper les premières activités avec celles que vous souhaitez rapprocher. Le regroupement d&apos;activités sera placé à proximité des premières dans le groupe.</translation>
     </message>
     <message>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="327"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="328"/>
         <source>Note: Each activity id must appear at most once in all the active &apos;group activities in initial order&apos; items.</source>
         <translation>Note : chaque activité ID doit apparaître au plus une fois dans tous les regroupement activités dans l&apos;ordre initial actifs.</translation>
     </message>
     <message>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="329"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="330"/>
         <source>FET help</source>
         <translation>FET aide</translation>
     </message>
     <message>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="409"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="410"/>
         <source>Sort items?</source>
         <translation>Trier les regroupements ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="410"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="411"/>
         <source>This will sort the &apos;group activities in initial order&apos; items list ascending according to their comments. You can obtain a custom ordering by adding comments to some or all items, for example &apos;rank #1 ... other comments&apos;, &apos;rank #2 ... other different comments&apos;.</source>
         <translation>Ceci triera la liste des regroupement activités dans l&apos;ordre initial dans l&apos;ordre ascendant en fonction de leur commentaire. Vous pouvez obtenir un ordre personnalisé en ajoutant des commentaires pour certains ou tous les regroupements, par exemple &quot;rang #1... autre commentaire&quot;, &quot;rang #2... autre commentaire différent&quot;.</translation>
     </message>
     <message>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="413"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="414"/>
         <source>Are you sure you want to continue?</source>
         <translation>Êtes-vous sûr de vouloir continuer ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="441"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="442"/>
         <source>Group activities in initial order item comments</source>
         <translation>Regroupements activités dans l&apos;ordre initial des commentaires</translation>
     </message>
     <message>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="443"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="444"/>
         <source>OK</source>
         <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="445"/>
+        <location filename="../src/interface/groupactivitiesininitialorderitemsform.cpp" line="446"/>
         <source>Cancel</source>
         <translation>Annuler</translation>
     </message>
@@ -39864,18 +39864,18 @@ Merci d&apos;arrêter la simulation avant de mettre à jour</translation>
 <context>
     <name>ModifyConstraintActivitiesEndStudentsDayForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiesendstudentsdayform.cpp" line="159"/>
-        <location filename="../src/interface/modifyconstraintactivitiesendstudentsdayform.cpp" line="164"/>
+        <location filename="../src/interface/modifyconstraintactivitiesendstudentsdayform.cpp" line="160"/>
+        <location filename="../src/interface/modifyconstraintactivitiesendstudentsdayform.cpp" line="165"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiesendstudentsdayform.cpp" line="160"/>
+        <location filename="../src/interface/modifyconstraintactivitiesendstudentsdayform.cpp" line="161"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiesendstudentsdayform.cpp" line="165"/>
+        <location filename="../src/interface/modifyconstraintactivitiesendstudentsdayform.cpp" line="166"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
         <translation>Poids invalide (pourcentage) - doit être 100.0 %</translation>
     </message>
@@ -39927,24 +39927,24 @@ Merci d&apos;arrêter la simulation avant de mettre à jour</translation>
 <context>
     <name>ModifyConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="293"/>
-        <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="314"/>
-        <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="323"/>
+        <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="294"/>
+        <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="315"/>
+        <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="324"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="294"/>
+        <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="295"/>
         <source>Invalid weight (percentage). It has to be 100</source>
         <translation>Poids invalide (pourcentage). Il doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="314"/>
+        <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="315"/>
         <source>You specified max simultaneous activities to be 0. This is not perfect from efficiency point of view, because you can use instead constraint activity(ies) preferred time slots, and help FET to find a timetable easier and faster, with an equivalent result. Please correct.</source>
         <translation>Vous avez spécifié limite activités simultanées à 0. Ce n&apos;est pas parfait du point de vue de l&apos;efficacité car vous pouvez utiliser à la place une contrainte &quot;activité(s) créneaux horaires préférés&quot; et aider FET à trouver un planning plus facilement et rapidement pour un résultat équivalent. Merci de corriger.</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="324"/>
+        <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="325"/>
         <source>Empty list of activities</source>
         <translation>Liste d&apos;activités vide</translation>
     </message>
@@ -40046,24 +40046,24 @@ Merci d&apos;arrêter la simulation avant de mettre à jour</translation>
 <context>
     <name>ModifyConstraintActivitiesNotOverlappingForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform.cpp" line="189"/>
-        <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform.cpp" line="195"/>
-        <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform.cpp" line="200"/>
+        <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform.cpp" line="190"/>
+        <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform.cpp" line="196"/>
+        <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform.cpp" line="201"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform.cpp" line="190"/>
+        <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform.cpp" line="191"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform.cpp" line="196"/>
+        <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform.cpp" line="197"/>
         <source>Empty list of not overlapping activities</source>
         <translation>Liste d&apos;activités sans chevauchement vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform.cpp" line="201"/>
+        <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform.cpp" line="202"/>
         <source>Only one selected activity</source>
         <translation>Une seule activité sélectionnée</translation>
     </message>
@@ -40147,24 +40147,24 @@ Merci d&apos;arrêter la simulation avant de mettre à jour</translation>
 <context>
     <name>ModifyConstraintActivitiesOccupyMaxDifferentRoomsForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="135"/>
-        <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="147"/>
-        <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="152"/>
+        <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="136"/>
+        <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="148"/>
+        <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="153"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="136"/>
+        <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="137"/>
         <source>Invalid weight (percentage). It has to be 100</source>
         <translation>Poids invalide (pourcentage). Il doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="148"/>
+        <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="149"/>
         <source>Empty list of activities</source>
         <translation>Liste d&apos;activités vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="153"/>
+        <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="154"/>
         <source>Only one selected activity</source>
         <translation>Une seule activité sélectionnée</translation>
     </message>
@@ -40237,24 +40237,24 @@ Merci d&apos;arrêter la simulation avant de mettre à jour</translation>
 <context>
     <name>ModifyConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="293"/>
-        <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="314"/>
-        <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="323"/>
+        <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="294"/>
+        <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="315"/>
+        <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="324"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="294"/>
+        <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="295"/>
         <source>Invalid weight (percentage). It has to be 100</source>
         <translation>Poids invalide (pourcentage). Il doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="314"/>
+        <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="315"/>
         <source>You specified max occupied time slots to be 0. This is not perfect from efficiency point of view, because you can use instead constraint activity(ies) preferred time slots, and help FET to find a timetable easier and faster, with an equivalent result. Please correct.</source>
         <translation>Vous avez spécifié la limite des créneaux horaires occupés à 0. Ce n&apos;est pas parfait du point de vue de l&apos;efficacité car vous pouvez utiliser à la place une contrainte &quot;activité(s) créneaux horaires préférés&quot; et aider FET à trouver un planning plus facilement et rapidement pour un résultat équivalent. Merci de corriger.</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="324"/>
+        <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="325"/>
         <source>Empty list of activities</source>
         <translation>Liste d&apos;activités vide</translation>
     </message>
@@ -40356,25 +40356,25 @@ Merci d&apos;arrêter la simulation avant de mettre à jour</translation>
 <context>
     <name>ModifyConstraintActivitiesPreferredStartingTimesForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="330"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="331"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="331"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="332"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="352"/>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="370"/>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="386"/>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="417"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="353"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="371"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="387"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="418"/>
         <source>FET question</source>
         <translation>FET question</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="353"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="354"/>
         <source>You specified all the activities. This might be a small problem: if you specify a not allowed slot between two allowed slots, this not allowed slot will be counted as a gap in the teachers&apos; and students&apos; timetable.
 
  The best practice would be to use constraint break times.
@@ -40387,14 +40387,14 @@ La meilleure pratique serait d&apos;utiliser une contrainte temps de pause.
 Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez utiliser cette contrainte, mais attention à ne pas obtenir un planning impossible (si vos enseignants / apprenants sont contraints sur des vides ou vides matinaux et si vous laissez un créneau non autorisé entre 2 créneaux autorisés ou un créneau non autorisé tôt dans la journée et davantage de créneaux autorisés après celui-la, ce vide éventuel pourrait être compté dans le planning des enseignants et apprenants)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="362"/>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="379"/>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="396"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="363"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="380"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="397"/>
         <source>Do you want to add current constraint?</source>
         <translation>Voulez-vous ajouter la contrainte en cours ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="371"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="372"/>
         <source>You specified only the teacher. This might be a small problem: if you specify a not allowed slot between two allowed slots, this not allowed slot will be counted as a gap in the teacher&apos;s timetable.
 
  The best practice would be to use constraint teacher not available times.
@@ -40407,7 +40407,7 @@ La meilleure pratique serait d&apos;utiliser une contrainte enseignant temps non
 Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez utiliser cette contrainte, mais attention à ne pas obtenir un planning impossible (si votre enseignant est contraint sur des vides et si vous laissez un créneau non autorisé entre 2 créneaux autorisés, ce vide éventuel pourrait être compté dans le planning de l&apos;enseignant)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="387"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="388"/>
         <source>You specified only the students set. This might be a small problem: if you specify a not allowed slot between two allowed slots (or a not allowed slot before allowed slots), this not allowed slot will be counted as a gap (or early gap) in the students&apos; timetable.
 
  The best practice would be to use constraint students set not available times.
@@ -40420,7 +40420,7 @@ La meilleure pratique serait d&apos;utiliser une contrainte groupe temps non dis
 Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez utiliser cette contrainte, mais attention à ne pas obtenir un planning impossible (si vos apprenants sont contraints sur des vides ou des vides matinaux et si vous laissez un créneau non autorisé entre 2 créneaux autorisés (ou un créneau non autorisé avant des créneaux autorisés), ce vide éventuel pourrait être compté dans le planning des apprenants)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="418"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="419"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
         <translation>Avertissement : 0 créneau sélectionné. Êtes-vous sûr ?</translation>
     </message>
@@ -40495,25 +40495,25 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
 <context>
     <name>ModifyConstraintActivitiesPreferredTimeSlotsForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="329"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="330"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="330"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="331"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="351"/>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="369"/>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="385"/>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="416"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="352"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="370"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="386"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="417"/>
         <source>FET question</source>
         <translation>FET question</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="352"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="353"/>
         <source>You specified all the activities. This might be a small problem: if you specify a not allowed slot between two allowed slots, this not allowed slot will be counted as a gap in the teachers&apos; and students&apos; timetable.
 
  The best practice would be to use constraint break times.
@@ -40526,14 +40526,14 @@ La meilleure pratique serait d&apos;utiliser une contrainte temps de pause.
 Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez utiliser cette contrainte, mais attention à ne pas obtenir un planning impossible (si vos enseignants / apprenants sont contraints sur des vides ou vides matinaux et si vous laissez un créneau non autorisé entre 2 créneaux autorisés ou un créneau non autorisé tôt dans la journée et davantage de créneaux autorisés après celui-la, ce vide éventuel pourrait être compté dans le planning des enseignants et apprenants)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="361"/>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="378"/>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="395"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="362"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="379"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="396"/>
         <source>Do you want to add current constraint?</source>
         <translation>Voulez-vous ajouter la contrainte en cours ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="370"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="371"/>
         <source>You specified only the teacher. This might be a small problem: if you specify a not allowed slot between two allowed slots, this not allowed slot will be counted as a gap in the teacher&apos;s timetable.
 
  The best practice would be to use constraint teacher not available times.
@@ -40546,7 +40546,7 @@ La meilleure pratique serait d&apos;utiliser une contrainte enseignant temps non
 Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez utiliser cette contrainte, mais attention à ne pas obtenir un planning impossible (si votre enseignant est contraint sur des vides et si vous laissez un créneau non autorisé entre 2 créneaux autorisés, ce vide éventuel pourrait être compté dans le planning de l&apos;enseignant)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="386"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="387"/>
         <source>You specified only the students set. This might be a small problem: if you specify a not allowed slot between two allowed slots (or a not allowed slot before allowed slots), this not allowed slot will be counted as a gap (or early gap) in the students&apos; timetable.
 
  The best practice would be to use constraint students set not available times.
@@ -40559,7 +40559,7 @@ La meilleure pratique serait d&apos;utiliser une contrainte groupe temps non dis
 Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez utiliser cette contrainte, mais attention à ne pas obtenir un planning impossible (si vos apprenants sont contraints sur des vides ou des vides matinaux et si vous laissez un créneau non autorisé entre 2 créneaux autorisés (ou un créneau non autorisé avant des créneaux autorisés), ce vide éventuel pourrait être compté dans le planning des apprenants)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="417"/>
+        <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="418"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
         <translation>Avertissement : 0 créneau sélectionné. Êtes-vous sûr ?</translation>
     </message>
@@ -40634,24 +40634,24 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
 <context>
     <name>ModifyConstraintActivitiesSameRoomIfConsecutiveForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform.cpp" line="131"/>
-        <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform.cpp" line="139"/>
-        <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform.cpp" line="144"/>
+        <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform.cpp" line="132"/>
+        <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform.cpp" line="140"/>
+        <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform.cpp" line="145"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform.cpp" line="132"/>
+        <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform.cpp" line="133"/>
         <source>Invalid weight (percentage). It has to be 100</source>
         <translation>Poids invalide (pourcentage). Il doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform.cpp" line="140"/>
+        <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform.cpp" line="141"/>
         <source>Empty list of activities</source>
         <translation>Liste d&apos;activités vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform.cpp" line="145"/>
+        <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform.cpp" line="146"/>
         <source>Only one selected activity</source>
         <translation>Une seule activité sélectionnée</translation>
     </message>
@@ -40719,24 +40719,24 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
 <context>
     <name>ModifyConstraintActivitiesSameStartingDayForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform.cpp" line="197"/>
-        <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform.cpp" line="203"/>
-        <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform.cpp" line="208"/>
+        <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform.cpp" line="198"/>
+        <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform.cpp" line="204"/>
+        <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform.cpp" line="209"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform.cpp" line="198"/>
+        <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform.cpp" line="199"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform.cpp" line="204"/>
+        <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform.cpp" line="205"/>
         <source>Empty list of selected activities</source>
         <translation>Liste d&apos;activités sélectionnées vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform.cpp" line="209"/>
+        <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform.cpp" line="210"/>
         <source>Only one selected activity</source>
         <translation>Une seule activité sélectionnée</translation>
     </message>
@@ -40815,24 +40815,24 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
 <context>
     <name>ModifyConstraintActivitiesSameStartingHourForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform.cpp" line="196"/>
-        <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform.cpp" line="202"/>
-        <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform.cpp" line="207"/>
+        <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform.cpp" line="197"/>
+        <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform.cpp" line="203"/>
+        <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform.cpp" line="208"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform.cpp" line="197"/>
+        <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform.cpp" line="198"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform.cpp" line="203"/>
+        <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform.cpp" line="204"/>
         <source>Empty list of selected activities</source>
         <translation>Liste d&apos;activités sélectionnées vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform.cpp" line="208"/>
+        <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform.cpp" line="209"/>
         <source>Only one selected activity</source>
         <translation>Une seule activité sélectionnée</translation>
     </message>
@@ -40911,24 +40911,24 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
 <context>
     <name>ModifyConstraintActivitiesSameStartingTimeForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform.cpp" line="192"/>
-        <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform.cpp" line="198"/>
-        <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform.cpp" line="203"/>
+        <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform.cpp" line="193"/>
+        <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform.cpp" line="199"/>
+        <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform.cpp" line="204"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform.cpp" line="193"/>
+        <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform.cpp" line="194"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform.cpp" line="199"/>
+        <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform.cpp" line="200"/>
         <source>Empty list of selected activities</source>
         <translation>Liste d&apos;activités sélectionnées vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform.cpp" line="204"/>
+        <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform.cpp" line="205"/>
         <source>Only one selected activity</source>
         <translation>Une seule activité sélectionnée</translation>
     </message>
@@ -41007,24 +41007,24 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
 <context>
     <name>ModifyConstraintActivityEndsStudentsDayForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform.cpp" line="184"/>
-        <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform.cpp" line="189"/>
-        <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform.cpp" line="198"/>
+        <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform.cpp" line="183"/>
+        <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform.cpp" line="188"/>
+        <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform.cpp" line="197"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform.cpp" line="185"/>
+        <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform.cpp" line="184"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform.cpp" line="190"/>
+        <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform.cpp" line="189"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
         <translation>Poids invalide (pourcentage) - doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform.cpp" line="199"/>
+        <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform.cpp" line="198"/>
         <source>Invalid activity</source>
         <translation>Activité invalide</translation>
     </message>
@@ -41227,36 +41227,36 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
 <context>
     <name>ModifyConstraintActivityPreferredStartingTimeForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="211"/>
-        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="218"/>
-        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="224"/>
-        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="233"/>
-        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="260"/>
+        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="212"/>
+        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="219"/>
+        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="225"/>
+        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="234"/>
+        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="261"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="212"/>
+        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="213"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="219"/>
+        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="220"/>
         <source>Invalid day</source>
         <translation>Jour invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="225"/>
+        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="226"/>
         <source>Invalid start hour</source>
         <translation>Heure de démarrage invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="234"/>
+        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="235"/>
         <source>Invalid activity</source>
         <translation>Activité invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="260"/>
+        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="261"/>
         <source>Cannot proceed, current constraint is equal to another one (it is duplicated)</source>
         <translation>Impossible de procéder, la contrainte en cours est égale à une autre (c&apos;est un doublon)</translation>
     </message>
@@ -41343,28 +41343,28 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
 <context>
     <name>ModifyConstraintActivityPreferredStartingTimesForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform.cpp" line="333"/>
-        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform.cpp" line="341"/>
+        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform.cpp" line="334"/>
+        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform.cpp" line="342"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform.cpp" line="334"/>
+        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform.cpp" line="335"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform.cpp" line="342"/>
+        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform.cpp" line="343"/>
         <source>Invalid activity</source>
         <translation>Activité invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform.cpp" line="361"/>
+        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform.cpp" line="362"/>
         <source>FET question</source>
         <translation>FET question</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform.cpp" line="362"/>
+        <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform.cpp" line="363"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
         <translation>Avertissement : 0 créneau sélectionné. Êtes-vous sûr ?</translation>
     </message>
@@ -41444,28 +41444,28 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
 <context>
     <name>ModifyConstraintActivityPreferredTimeSlotsForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform.cpp" line="333"/>
-        <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform.cpp" line="341"/>
+        <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform.cpp" line="334"/>
+        <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform.cpp" line="342"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform.cpp" line="334"/>
+        <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform.cpp" line="335"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform.cpp" line="342"/>
+        <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform.cpp" line="343"/>
         <source>Invalid activity</source>
         <translation>Activité invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform.cpp" line="361"/>
+        <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform.cpp" line="362"/>
         <source>FET question</source>
         <translation>FET question</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform.cpp" line="362"/>
+        <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform.cpp" line="363"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
         <translation>Avertissement : 0 créneau sélectionné. Êtes-vous sûr ?</translation>
     </message>
@@ -41824,24 +41824,24 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
 <context>
     <name>ModifyConstraintMaxDaysBetweenActivitiesForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform.cpp" line="197"/>
-        <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform.cpp" line="203"/>
-        <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform.cpp" line="208"/>
+        <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform.cpp" line="198"/>
+        <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform.cpp" line="204"/>
+        <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform.cpp" line="209"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform.cpp" line="198"/>
+        <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform.cpp" line="199"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform.cpp" line="204"/>
+        <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform.cpp" line="205"/>
         <source>Empty list of selected activities</source>
         <translation>Liste d&apos;activités sélectionnées vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform.cpp" line="209"/>
+        <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform.cpp" line="210"/>
         <source>Only one selected activity</source>
         <translation>Une seule activité sélectionnée</translation>
     </message>
@@ -41926,60 +41926,60 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
 <context>
     <name>ModifyConstraintMinDaysBetweenActivitiesForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="197"/>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="203"/>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="208"/>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="268"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="198"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="204"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="209"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="269"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="198"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="199"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="204"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="205"/>
         <source>Empty list of selected activities</source>
         <translation>Liste d&apos;activités sélectionnées vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="209"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="210"/>
         <source>Only one selected activity</source>
         <translation>Une seule activité sélectionnée</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="215"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="216"/>
         <source>You want to add a constraint min days between activities for more activities than the number of days per week. This is a very bad practice from the way the algorithm of generation works (it slows down the generation and makes it harder to find a solution).</source>
         <translation>Vous souhaitez ajouter une contrainte jours minimum entre activités pour davantage d&apos;activités que le nombre de jours dans la semaine. C&apos;est une très mauvaise pratique compte tenu du mode de fonctionnement de l&apos;algorithme de génération (cela ralentit la génération et rend plus difficile la découverte d&apos;une solution).</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="218"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="219"/>
         <source>The best way to add the activities would be:</source>
         <translation>La meilleure méthode pour ajouter les activités serait :</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="221"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="222"/>
         <source>1. If you add &apos;force consecutive if same day&apos;, then couple extra activities in pairs to obtain a number of activities equal to the number of days per week. Example: 7 activities with duration 1 in a 5 days week, then transform into 5 activities with durations: 2,2,1,1,1 and add a single container activity with these 5 components (possibly raising the weight of added constraint min days between activities up to 100%)</source>
         <translation>1. Si vous ajoutez &quot;forcer consécutives si même jour&quot; alors coller les activités excédentaires par paires pour obtenir un nombre d&apos;activités égal au nombre de jours de la semaine. Exemple : 7 activités d&apos;une durée de 1 dans une semaine de 5 jours sont transformées en 5 activités avec les durées : 2, 2, 1, 1, 1 et ajoutez une seule activité conteneur avec ces 5 composants (augmentation possible du poids de la contrainte ajoutée &quot;jours minimum entre activités&quot; jusqu&apos;à 100.0 %)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="227"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="228"/>
         <source>2. If you don&apos;t add &apos;force consecutive if same day&apos;, then add a larger activity split into a number of activities equal with the number of days per week and the remaining components into other larger split activity. For example, suppose you need to add 7 activities with duration 1 in a 5 days week. Add 2 larger container activities, first one split into 5 activities with duration 1 and second one split into 2 activities with duration 1 (possibly raising the weight of added constraints min days between activities for each of the 2 containers up to 100%)</source>
         <translation>2. Si vous n&apos;ajoutez pas &quot;forcer consécutives si même jour&quot; alors ajoutez une grande activité fractionnée en un nombre d&apos;activités égal au nombre de jours de la semaine et les composants restants dans une autre grande activité fractionnée. Par exemple, supposons que vous ayez besoin d&apos;ajouter 7 activités d&apos;une durée de 1 dans une semaine de 5 jours. Ajoutez 2 grandes activités conteneur, la première fractionnée en 5 activités d&apos;une durée de 1 et la seconde fractionnée en 2 activités d&apos;une durée de 1 (augmentation possible du poids des contraintes ajoutées &quot;jours minimum entre activités&quot; pour chacun des 2 conteneurs jusqu&apos;à 100.0 %)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="234"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="235"/>
         <source>Do you want to add current constraint as it is now (not recommended) or cancel and edit as instructed?</source>
         <translation>Voulez-vous ajouter la contrainte en cours telle quelle (non recommandé) ou annuler et éditer selon les instructions ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="236"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="237"/>
         <source>FET warning</source>
         <translation>FET avertissement</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="268"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="269"/>
         <source>Cannot proceed, current constraint is equal to another one (it is duplicated)</source>
         <translation>Impossible de procéder, la contrainte en cours est égale à une autre (c&apos;est un doublon)</translation>
     </message>
@@ -42072,24 +42072,24 @@ les forcer consécutives</translation>
 <context>
     <name>ModifyConstraintMinGapsBetweenActivitiesForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform.cpp" line="194"/>
-        <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform.cpp" line="200"/>
-        <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform.cpp" line="205"/>
+        <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform.cpp" line="195"/>
+        <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform.cpp" line="201"/>
+        <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform.cpp" line="206"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform.cpp" line="195"/>
+        <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform.cpp" line="196"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform.cpp" line="201"/>
+        <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform.cpp" line="202"/>
         <source>Empty list of selected activities</source>
         <translation>Liste d&apos;activités sélectionnées vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform.cpp" line="206"/>
+        <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform.cpp" line="207"/>
         <source>Only one selected activity</source>
         <translation>Une seule activité sélectionnée</translation>
     </message>
@@ -43068,24 +43068,24 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides.</transla
 <context>
     <name>ModifyConstraintStudentsSetActivityTagMaxHoursContinuouslyForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="123"/>
-        <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="131"/>
-        <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="139"/>
+        <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="124"/>
+        <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="132"/>
+        <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="140"/>
         <source>FET warning</source>
         <translation>FET avertissement</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="124"/>
+        <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="125"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="132"/>
+        <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="133"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="139"/>
+        <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="140"/>
         <source>Invalid activity tag</source>
         <translation>Code activité invalide</translation>
     </message>
@@ -43134,24 +43134,24 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides.</transla
 <context>
     <name>ModifyConstraintStudentsSetActivityTagMaxHoursDailyForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="124"/>
-        <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="132"/>
-        <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="140"/>
+        <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="125"/>
+        <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="133"/>
+        <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="141"/>
         <source>FET warning</source>
         <translation>FET avertissement</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="125"/>
+        <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="126"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="133"/>
+        <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="134"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="140"/>
+        <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="141"/>
         <source>Invalid activity tag</source>
         <translation>Code activité invalide</translation>
     </message>
@@ -43200,24 +43200,24 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides.</transla
 <context>
     <name>ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="97"/>
-        <location filename="../src/interface/modifyconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="102"/>
-        <location filename="../src/interface/modifyconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="110"/>
+        <location filename="../src/interface/modifyconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="98"/>
+        <location filename="../src/interface/modifyconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="103"/>
+        <location filename="../src/interface/modifyconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="111"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="98"/>
+        <location filename="../src/interface/modifyconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="99"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="103"/>
+        <location filename="../src/interface/modifyconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="104"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
         <translation>Poids invalide (pourcentage) - doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="111"/>
+        <location filename="../src/interface/modifyconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="112"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
@@ -43271,18 +43271,18 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides (vides ma
 <context>
     <name>ModifyConstraintStudentsSetHomeRoomForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssethomeroomform.cpp" line="116"/>
-        <location filename="../src/interface/modifyconstraintstudentssethomeroomform.cpp" line="126"/>
+        <location filename="../src/interface/modifyconstraintstudentssethomeroomform.cpp" line="117"/>
+        <location filename="../src/interface/modifyconstraintstudentssethomeroomform.cpp" line="127"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssethomeroomform.cpp" line="117"/>
+        <location filename="../src/interface/modifyconstraintstudentssethomeroomform.cpp" line="118"/>
         <source>Invalid weight</source>
         <translation>Poids invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssethomeroomform.cpp" line="127"/>
+        <location filename="../src/interface/modifyconstraintstudentssethomeroomform.cpp" line="128"/>
         <source>Invalid room</source>
         <translation>Salle invalide</translation>
     </message>
@@ -43324,18 +43324,18 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides (vides ma
 <context>
     <name>ModifyConstraintStudentsSetHomeRoomsForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssethomeroomsform.cpp" line="115"/>
-        <location filename="../src/interface/modifyconstraintstudentssethomeroomsform.cpp" line="121"/>
+        <location filename="../src/interface/modifyconstraintstudentssethomeroomsform.cpp" line="116"/>
+        <location filename="../src/interface/modifyconstraintstudentssethomeroomsform.cpp" line="122"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssethomeroomsform.cpp" line="116"/>
+        <location filename="../src/interface/modifyconstraintstudentssethomeroomsform.cpp" line="117"/>
         <source>Invalid weight</source>
         <translation>Poids invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssethomeroomsform.cpp" line="122"/>
+        <location filename="../src/interface/modifyconstraintstudentssethomeroomsform.cpp" line="123"/>
         <source>Empty list of selected rooms</source>
         <translation>Liste de salles sélectionnées vide</translation>
     </message>
@@ -43393,42 +43393,42 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides (vides ma
         <translation>Fin de journée</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="124"/>
-        <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="129"/>
-        <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="139"/>
-        <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="147"/>
-        <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="152"/>
-        <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="157"/>
+        <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="125"/>
+        <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="130"/>
+        <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="140"/>
+        <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="148"/>
+        <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="153"/>
+        <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="158"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="125"/>
+        <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="126"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="130"/>
+        <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="131"/>
         <source>Invalid weight (percentage) - it has to be 100%</source>
         <translation>Poids invalide (pourcentage) - il doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="140"/>
+        <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="141"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="148"/>
+        <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="149"/>
         <source>Start hour invalid</source>
         <translation>Heure démarrage invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="153"/>
+        <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="154"/>
         <source>End hour invalid</source>
         <translation>Heure fin invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="158"/>
+        <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="159"/>
         <source>Start hour cannot be greater or equal than end hour</source>
         <translation>L&apos;heure de démarrage ne peut pas être supérieure ou égale à l&apos;heure de fin</translation>
     </message>
@@ -43480,18 +43480,18 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides (vides ma
 <context>
     <name>ModifyConstraintStudentsSetMaxBuildingChangesPerDayForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="105"/>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="113"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="106"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="114"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="106"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="107"/>
         <source>Invalid weight (percentage). It has to be 100</source>
         <translation>Poids invalide (pourcentage). Il doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="114"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="115"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
@@ -43533,18 +43533,18 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides (vides ma
 <context>
     <name>ModifyConstraintStudentsSetMaxBuildingChangesPerWeekForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="104"/>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="112"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="105"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="113"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="105"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="106"/>
         <source>Invalid weight (percentage). It has to be 100</source>
         <translation>Poids invalide (pourcentage). Il doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="113"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="114"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
@@ -43586,24 +43586,24 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides (vides ma
 <context>
     <name>ModifyConstraintStudentsSetMaxDaysPerWeekForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxdaysperweekform.cpp" line="108"/>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxdaysperweekform.cpp" line="113"/>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxdaysperweekform.cpp" line="123"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxdaysperweekform.cpp" line="109"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxdaysperweekform.cpp" line="114"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxdaysperweekform.cpp" line="124"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxdaysperweekform.cpp" line="109"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxdaysperweekform.cpp" line="110"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxdaysperweekform.cpp" line="114"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxdaysperweekform.cpp" line="115"/>
         <source>Invalid weight (percentage) - it has to be 100%</source>
         <translation>Poids invalide (pourcentage) - il doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxdaysperweekform.cpp" line="124"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxdaysperweekform.cpp" line="125"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
@@ -43715,24 +43715,24 @@ IMPORTANT : si vous voulez un total de 0 vide, il est fortement recommandé de n
 <context>
     <name>ModifyConstraintStudentsSetMaxGapsPerWeekForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform.cpp" line="104"/>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform.cpp" line="109"/>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform.cpp" line="117"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform.cpp" line="105"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform.cpp" line="110"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform.cpp" line="118"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform.cpp" line="105"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform.cpp" line="106"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform.cpp" line="110"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform.cpp" line="111"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
         <translation>Poids invalide (pourcentage) - doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform.cpp" line="118"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform.cpp" line="119"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
@@ -43781,18 +43781,18 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides.</transla
 <context>
     <name>ModifyConstraintStudentsSetMaxHoursContinuouslyForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxhourscontinuouslyform.cpp" line="104"/>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxhourscontinuouslyform.cpp" line="112"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxhourscontinuouslyform.cpp" line="105"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxhourscontinuouslyform.cpp" line="113"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxhourscontinuouslyform.cpp" line="105"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxhourscontinuouslyform.cpp" line="106"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxhourscontinuouslyform.cpp" line="113"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxhourscontinuouslyform.cpp" line="114"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
@@ -43836,18 +43836,18 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides.</transla
 <context>
     <name>ModifyConstraintStudentsSetMaxHoursDailyForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxhoursdailyform.cpp" line="104"/>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxhoursdailyform.cpp" line="112"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxhoursdailyform.cpp" line="105"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxhoursdailyform.cpp" line="113"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxhoursdailyform.cpp" line="105"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxhoursdailyform.cpp" line="106"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetmaxhoursdailyform.cpp" line="113"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxhoursdailyform.cpp" line="114"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
@@ -43950,18 +43950,18 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides.</transla
 <context>
     <name>ModifyConstraintStudentsSetMinGapsBetweenBuildingChangesForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="104"/>
-        <location filename="../src/interface/modifyconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="112"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="105"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="113"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="105"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="106"/>
         <source>Invalid weight (percentage). It has to be 100</source>
         <translation>Poids invalide (pourcentage). Il doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="113"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="114"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
@@ -44013,57 +44013,57 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides.</transla
         <translation>Utilisation avancée : désactivée</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="113"/>
-        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="118"/>
-        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="136"/>
-        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="171"/>
+        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="114"/>
+        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="119"/>
+        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="137"/>
+        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="172"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="114"/>
+        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="115"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="119"/>
+        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="120"/>
         <source>Invalid weight (percentage) - it has to be 100%</source>
         <translation>Poids invalide (pourcentage) - il doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="124"/>
-        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="129"/>
+        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="125"/>
+        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="130"/>
         <source>FET warning</source>
         <translation>FET avertissement</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="124"/>
+        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="125"/>
         <source>Empty days for students min hours daily constraints are not enabled. You must enable them from the Settings-&gt;Advanced menu.</source>
         <translation>Les contraintes jours vides pour les apprenants heures minimum quotidiennes ne sont pas activées. Vous devez les activer depuis le menu Réglages =&gt; Avancé.</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="129"/>
+        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="130"/>
         <source>If you allow empty days, the min hours must be at least 2 (to make it a non-trivial constraint)</source>
         <translation>Si vous autorisez les jours vides, les heures minimum doivent être au moins au nombre de 2 (pour ne pas produire un contrainte triviale)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="137"/>
+        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="138"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="164"/>
+        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="165"/>
         <source>Advanced usage is not enabled. To be able to select &apos;Allow empty days&apos; for the constraints of type min hours daily for students, you must enable the option from the Settings-&gt;Advanced menu.</source>
         <comment>&apos;Allow empty days&apos; is an option which the user can enable and then he can select it.</comment>
         <translation>L&apos;utilisation avancée n&apos;est pas activée. Pour pouvoir sélectionner &quot;Autoriser les jours vides&quot; pour les contraintes de type heures minimum quotidiennes pour les apprenants, vous devez activer l&apos;option depuis le menu Réglages -&gt; Avancé.</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="167"/>
+        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="168"/>
         <source>Explanation: only select this option if your institution allows empty days for students and a timetable is possible with empty days for students. Otherwise, it is IMPERATIVE (for performance reasons) to not select this option (or FET may not be able to find a timetable).</source>
         <translation>Explication : ne sélectionnez cette option que si votre établissement autorise les jours vides pour les apprenants et qu&apos;un planning est possible avec des jours vides pour les apprenants. Dans le cas contraire, il est IMPÉRATIF (pour des raisons de performance) de ne pas sélectionner cette option (ou FET pourrait ne pas trouver de planning).</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="170"/>
+        <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="171"/>
         <source>Use with caution.</source>
         <translation>Utiliser avec précaution.</translation>
     </message>
@@ -44110,24 +44110,24 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides.</transla
 <context>
     <name>ModifyConstraintStudentsSetMinRestingHoursForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform.cpp" line="106"/>
-        <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform.cpp" line="111"/>
-        <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform.cpp" line="119"/>
+        <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform.cpp" line="107"/>
+        <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform.cpp" line="112"/>
+        <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform.cpp" line="120"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform.cpp" line="107"/>
+        <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform.cpp" line="108"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform.cpp" line="112"/>
+        <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform.cpp" line="113"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
         <translation>Poids invalide (pourcentage) - doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform.cpp" line="120"/>
+        <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform.cpp" line="121"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
@@ -44174,24 +44174,24 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides.</transla
 <context>
     <name>ModifyConstraintStudentsSetNotAvailableTimesForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform.cpp" line="248"/>
-        <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform.cpp" line="256"/>
-        <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform.cpp" line="265"/>
+        <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform.cpp" line="250"/>
+        <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform.cpp" line="258"/>
+        <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform.cpp" line="267"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform.cpp" line="249"/>
+        <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform.cpp" line="251"/>
         <source>Invalid weight (percentage). It has to be 100</source>
         <translation>Poids invalide (pourcentage). Il doit être 100.0 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform.cpp" line="257"/>
+        <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform.cpp" line="259"/>
         <source>Invalid students set</source>
         <translation>Groupe invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform.cpp" line="266"/>
+        <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform.cpp" line="268"/>
         <source>A constraint of this type exists for the same students set - cannot proceed</source>
         <translation>Une contrainte de ce type existe pour le même groupe - impossible de procéder</translation>
     </message>
@@ -44252,22 +44252,22 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides.</transla
 <context>
     <name>ModifyConstraintSubactivitiesPreferredStartingTimesForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintsubactivitiespreferredstartingtimesform.cpp" line="317"/>
+        <location filename="../src/interface/modifyconstraintsubactivitiespreferredstartingtimesform.cpp" line="318"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintsubactivitiespreferredstartingtimesform.cpp" line="318"/>
+        <location filename="../src/interface/modifyconstraintsubactivitiespreferredstartingtimesform.cpp" line="319"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintsubactivitiespreferredstartingtimesform.cpp" line="352"/>
+        <location filename="../src/interface/modifyconstraintsubactivitiespreferredstartingtimesform.cpp" line="353"/>
         <source>FET question</source>
         <translation>FET question</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintsubactivitiespreferredstartingtimesform.cpp" line="353"/>
+        <location filename="../src/interface/modifyconstraintsubactivitiespreferredstartingtimesform.cpp" line="354"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
         <translation>Avertissement : 0 créneau sélectionné. Êtes-vous sûr ?</translation>
     </message>
@@ -44342,22 +44342,22 @@ Note : groupe non disponible et pause ne sont pas comptés comme vides.</transla
 <context>
     <name>ModifyConstraintSubactivitiesPreferredTimeSlotsForm</name>
     <message>
-        <location filename="../src/interface/modifyconstraintsubactivitiespreferredtimeslotsform.cpp" line="317"/>
+        <location filename="../src/interface/modifyconstraintsubactivitiespreferredtimeslotsform.cpp" line="318"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintsubactivitiespreferredtimeslotsform.cpp" line="318"/>
+        <location filename="../src/interface/modifyconstraintsubactivitiespreferredtimeslotsform.cpp" line="319"/>
         <source>Invalid weight (percentage)</source>
         <translation>Poids invalide (pourcentage)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintsubactivitiespreferredtimeslotsform.cpp" line="352"/>
+        <location filename="../src/interface/modifyconstraintsubactivitiespreferredtimeslotsform.cpp" line="353"/>
         <source>FET question</source>
         <translation>FET question</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintsubactivitiespreferredtimeslotsform.cpp" line="353"/>
+        <location filename="../src/interface/modifyconstraintsubactivitiespreferredtimeslotsform.cpp" line="354"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
         <translation>Avertissement : 0 créneau sélectionné. Êtes-vous sûr ?</translation>
     </message>
@@ -46949,18 +46949,18 @@ Note : enseignant non disponible et pause ne sont pas comptés comme vides.</tra
 <context>
     <name>ModifyGroupActivitiesInInitialOrderItemForm</name>
     <message>
-        <location filename="../src/interface/modifygroupactivitiesininitialorderitemform.cpp" line="187"/>
-        <location filename="../src/interface/modifygroupactivitiesininitialorderitemform.cpp" line="192"/>
+        <location filename="../src/interface/modifygroupactivitiesininitialorderitemform.cpp" line="188"/>
+        <location filename="../src/interface/modifygroupactivitiesininitialorderitemform.cpp" line="193"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifygroupactivitiesininitialorderitemform.cpp" line="188"/>
+        <location filename="../src/interface/modifygroupactivitiesininitialorderitemform.cpp" line="189"/>
         <source>Empty list of selected activities</source>
         <translation>Liste d&apos;activités sélectionnées vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifygroupactivitiesininitialorderitemform.cpp" line="193"/>
+        <location filename="../src/interface/modifygroupactivitiesininitialorderitemform.cpp" line="194"/>
         <source>Only one selected activity</source>
         <translation>Une seule activité sélectionnée</translation>
     </message>
@@ -51224,91 +51224,91 @@ En pied : %4</translation>
 <context>
     <name>SubactivitiesForm</name>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="316"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="346"/>
         <source>No: %1 / %2</source>
         <comment>No means number, %1 is the number of active activities, %2 is the number of total activities.Please leave space between fields, so that they are better visible</comment>
         <translation>Nb : %1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="318"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="348"/>
         <source>Dur: %1 / %2</source>
         <comment>Dur means duration, %1 is the duration of active activities, %2 is the duration of total activities.Please leave space between fields, so that they are better visible</comment>
         <translation>Dur : %1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="331"/>
-        <location filename="../src/interface/subactivitiesform.cpp" line="433"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="361"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="463"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="331"/>
-        <location filename="../src/interface/subactivitiesform.cpp" line="433"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="361"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="463"/>
         <source>Invalid selected subactivity</source>
         <translation>Sous-activité sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="391"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="421"/>
         <source>Useful instructions/tips:</source>
         <translation>Instructions / astuces utiles :</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="394"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="424"/>
         <source>Above the (sub)activities list, we have 2 labels, containing 4 numbers. The first label contains text: No: a / b. The first number a is the number of active (sub)activities (we number each individual subactivity as 1), while the second number b is the number of total (sub)activities. The second label contains text: Dur: c / d. The third number c is the duration of active (sub)activities, in periods (or FET hours), while the fourth number d is the duration of total (sub)activities, in periods (or FET hours). So, No means number and Dur means duration.</source>
         <translation>Au-dessus de la liste des (sous-) activités, nous avons 2 étiquettes contenant 4 nombres. La première étiquette contient le texte : &quot;Nb : a / b&quot;. Le premier nombre &quot;a&quot; est le nombre d&apos; (sous-) activités actives (nous comptons chaque sous-activité individuelle comme 1), tandis que le second nombre &quot;b&quot; est le nombre total d&apos; (sous-) activités. La seconde étiquette contient le texte : &quot;Dur : c / d&quot;. Le troisième nombre &quot;c&quot; est la durée des (sous-) activités actives, dans les périodes (ou heures FET), tandis que le quatrième nombre &quot;d&quot; est la durée totale des (sous-) activités, dans les périodes (ou heures FET). Ainsi, &quot;Nb&quot; signifie nombre et &quot;Dur&quot; durée.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="400"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="430"/>
         <source>Example: No: 100 / 102, Dur: 114 / 117. They represent: 100 - the number of active (sub)activities, then 102 - the number of total (sub)activities, 114 - the duration of active activities (in periods or FET hours) and 117 - the duration of total activities (in periods or FET hours). In this example we have 2 inactive activities with their combined duration being 3 periods.</source>
         <translation>Exemple : &quot;Nb : 100 / 102&quot;, &quot;Dur : 114 / 117&quot;. Ils représentent : 100 - le nombre d&apos; (sous-) activités actives, puis 102 - le nombre total d&apos; (sous-) activités, 114 - la durée des activités actives (dans les périodes ou heures FET) et 117 - la durée totale des activités (dans les périodes ou heures FET). Dans cet exemple nous avons 2 activités inactives d&apos;une durée combinée de 3 périodes.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="406"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="436"/>
         <source>Explanation of the short description of an activity: first comes the id. If the activity is inactive, an X follows. Then the duration. Then, if the activity is split, a slash and the total duration. Then teachers, subject, activity tag (if it is not void) and students. Then the number of students (if specified).</source>
         <translation>Explication de la courte description d&apos;une activité : l&apos;ID vient en premier. Si l&apos;activité est inactive, un &quot;X&quot; la suit. Puis la durée. Ensuite, si l&apos;activité est fractionnée, une barre oblique et la durée totale. Puis les enseignants, matière, code activité (si non vide) et apprenants. Enfin le nombre d&apos;apprenants (si spécifié).</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="410"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="440"/>
         <source>The activities which are inactive:</source>
         <translation>Les activités qui sont inactives :</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="413"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="443"/>
         <source>have an X mark after the id.</source>
         <translation>ont la marque &quot;X&quot; après leur ID.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="419"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="449"/>
         <source>if you use colors in interface (see Settings/Interface menu), they will appear with different background color.</source>
         <translation>si vous utilisez les couleurs dans l&apos;interface (voir menu Réglages / Interface), elles apparaîtront avec une couleur de fond différente.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="421"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="451"/>
         <source>To modify a subactivity, you can also double click it.</source>
         <translation>Pour modifier une sous-activité, vous pouvez aussi la double-cliquer.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="423"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="453"/>
         <source>Show related: if you select this, there will be listed subactivities for groups and subgroups contained also in the current set (if the current set is a year or a group) and also higher ranked year or group (if the current set is a group or a subgroup).</source>
         <translation>Afficher dépendants : si vous sélectionnez cette option, seront aussi listées les sous-activités pour les groupes et sous-groupes contenus dans le jeu en cours (si le jeu en cours est une année ou un groupe) ainsi que l&apos;année ou le groupe de rang supérieur (si le jeu en cours est un groupe ou un sous-groupe).</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="426"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="456"/>
         <source>FET Help</source>
         <translation>FET aide</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="444"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="474"/>
         <source>Subactivity comments</source>
         <translation>Commentaire sous-activité</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="446"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="476"/>
         <source>OK</source>
         <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="448"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="478"/>
         <source>Cancel</source>
         <translation>Annuler</translation>
     </message>
