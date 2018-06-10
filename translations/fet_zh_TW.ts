@@ -30992,15 +30992,15 @@ Import of data will be easier with these settings.</source>
         <location filename="../src/interface/fetmainform.cpp" line="3956"/>
         <location filename="../src/interface/fetmainform.cpp" line="4076"/>
         <location filename="../src/interface/fetmainform.cpp" line="4133"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4689"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4739"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4769"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4794"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4816"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4843"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4865"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4886"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4910"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4698"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4748"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4778"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4803"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4825"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4852"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4874"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4895"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4919"/>
         <source>FET warning</source>
         <translation>FET 警告</translation>
     </message>
@@ -31179,11 +31179,11 @@ Import of data will be easier with these settings.</source>
         <location filename="../src/interface/fetmainform.cpp" line="4006"/>
         <location filename="../src/interface/fetmainform.cpp" line="4019"/>
         <location filename="../src/interface/fetmainform.cpp" line="4029"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4494"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4537"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4564"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4637"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4648"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4503"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4546"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4573"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4646"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4657"/>
         <source>FET information</source>
         <translation>FET信息</translation>
     </message>
@@ -31214,29 +31214,30 @@ Import of data will be easier with these settings.</source>
         <translation>FET-已經存在。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4331"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4340"/>
         <source>Students&apos; combo boxes style will be %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4331"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4333"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4340"/>
         <source>simple</source>
         <comment>It is a style for students&apos; combo boxes</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4335"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4344"/>
         <source>&amp;Yes</source>
         <translation>&amp;是</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4335"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4344"/>
         <source>&amp;No</source>
         <translation>&amp;否</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4576"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4597"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4585"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4606"/>
         <source>&amp;Cancel</source>
         <translation>&amp;取消</translation>
     </message>
@@ -31375,11 +31376,11 @@ Import of data will be easier with these settings.</source>
         <location filename="../src/interface/fetmainform.cpp" line="3642"/>
         <location filename="../src/interface/fetmainform.cpp" line="3743"/>
         <location filename="../src/interface/fetmainform.cpp" line="3768"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4495"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4538"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4565"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4638"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4649"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4504"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4547"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4574"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4647"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4658"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
         <translation>分配過程。
@@ -31738,12 +31739,12 @@ Having a subgroup with too little working hours per week means that you inputted
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4833"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4842"/>
         <source>This kind of constraint is good, but only in the right case. Adding such constraints in the wrong circumstance may make your timetable solve too slow or even impossible.</source>
         <translation>這種約束是好的，但只有在正確的情況下。添加這樣的限制在錯誤的情況下，可以讓你的時間表解決過於緩慢，甚至是不可能的。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4836"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4845"/>
         <source>Please use such constraints only if you are sure that there exists a timetable with empty days for students. If your instution requires each day for the students to be not empty, or if there does not exist a solution with empty days for students, it is IMPERATIVE (for performance reasons) that you use the standard constraint which does not allow empty days. Otherwise, the timetable may be impossible to find.</source>
         <translation>只有當你確信存在與學生班級整天不排課空天排課時間表時，再使用這樣的約束限制。如果您instution需要每天為學生們是不是空的，或者如果不存在與學生空天解決，當務之急是（出於性能原因），您使用標準的約束不允許空天。否則，該時間表可以是不可能找到。
 </translation>
@@ -31877,57 +31878,69 @@ Having a subgroup with too little working hours per week means that you inputted
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4331"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4335"/>
+        <source>icons</source>
+        <comment>It is a style for students&apos; combo boxes</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="4337"/>
+        <source>categorized</source>
+        <comment>It is a style for students&apos; combo boxes</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="4340"/>
         <source>51</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4730"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4760"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4739"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4769"/>
         <source>These kinds of constraints are good, but not perfectly optimized. Adding such constraints may make your timetable solve too slow or even impossible.</source>
         <translation>這些類型的約束是好的，但不完全優化。這樣的限制可能使你的時間表解決速度太慢，甚至是不可能的。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4733"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4763"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4742"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4772"/>
         <source>It is recommended to use such constraints only at the end, after you generated successfully with all the other constraints.</source>
         <translation>建議只在您與所有其他約束成功生成排課表後，最後才用這樣的限制條件。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4735"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4765"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4744"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4774"/>
         <source>If your timetable is too difficult, it may be from these kinds of constraints, so you may need to remove them and retry.</source>
         <translation>如果您的排課時間表太難排了，也可能是從這些種類的限制限制造成，所以您可能需要將其刪除，然後重試。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4737"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4767"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4841"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4884"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4746"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4776"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4850"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4893"/>
         <source>Continue only if you know what you are doing.</source>
         <translation>建議您只有在確認知道您目前正在做的是什麼時，再選擇繼續執行。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4788"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4810"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4859"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4904"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4797"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4819"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4868"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4913"/>
         <source>It is recommended to keep this warning active, but if you really want, you can disable it.</source>
         <translation>建議保持此警告顯示，但如果你真的想要取消警示，您可以設其停止出現。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4790"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4812"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4861"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4906"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4799"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4821"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4870"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4915"/>
         <source>Disable it only if you know what you are doing.</source>
         <translation>禁用它只有當您知道你在做什麼時。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4792"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4814"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4863"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4908"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4801"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4823"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4872"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4917"/>
         <source>Are you sure you want to disable it?</source>
         <translation>您確定要禁用它？</translation>
     </message>
@@ -32616,29 +32629,29 @@ Having a subgroup with too little working hours per week means that you inputted
         <translation>教學活動</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4571"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4580"/>
         <source>You have more than 6 days per week, so probably you won&apos;t need this feature. Do you still want to continue?</source>
         <translation>你必須每週工作6天以上，所以可能你會需要這個功能。你仍然要繼續嗎？</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4574"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4595"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4583"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4604"/>
         <source>FET question</source>
         <translation>FET 問題</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4576"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4597"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4585"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4606"/>
         <source>&amp;Continue</source>
         <translation>&amp;繼續</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4592"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4601"/>
         <source>You have less than 5 days per week, so probably you won&apos;t need this feature. Do you still want to continue?</source>
         <translation>你必須每週不少於5天，所以也許你會需要這個功能。你仍然要繼續嗎？</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4881"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4890"/>
         <source>This kind of option is good, but only in the right case. Adding such an option in the wrong circumstance may make your timetable solve too slow or even impossible.</source>
         <translation>這種選擇是好的，但只有在正確的情況下去增加，若在錯誤的情況下增加這樣的選擇，會讓您的排課時間表，產製時過於緩慢，甚至是不可能產產製成功。</translation>
     </message>
@@ -32715,12 +32728,12 @@ Having a subgroup with too little working hours per week means that you inputted
         <translation>取消</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4680"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4689"/>
         <source>Choose results (output) directory</source>
         <translation>選擇的結果（產出）目錄</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4689"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4698"/>
         <source>You don&apos;t have write permissions in this directory</source>
         <translation>您沒有在此目錄的寫許可權，</translation>
     </message>
@@ -32749,7 +32762,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <translation>錯誤的</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4334"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4343"/>
         <source>FET confirmation</source>
         <translation>FET 確認</translation>
     </message>
@@ -54398,7 +54411,7 @@ Bottom: %4</source>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1105"/>
-        <source>There is a combo box in this dialog. You can see the timetable for each year/each group/each subgroup if you select the option &apos;Years&apos;, for all years/each group/each subgroup if you select the option &apos;Groups&apos;, or for all years/all groups/each subgroup if you select the option &apos;Subgroups&apos;.</source>
+        <source>There is a combo box in this dialog. You can choose each year, group, and subgroup if you select &apos;Years&apos;, each group and subgroup if you select &apos;Groups&apos;, or each subgroup if you select &apos;Subgroups&apos;.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -55125,7 +55138,7 @@ Please stop simulation before this.</source>
         <translation type="unfinished">一個可能的問題可能是你有2個或多個約束類型的教學活動偏好的教室空間設成權重100％的相關教學活動ID%1，請您只保留其中一個</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1110"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1109"/>
         <source>FET help</source>
         <translation type="unfinished">FET 幫助</translation>
     </message>

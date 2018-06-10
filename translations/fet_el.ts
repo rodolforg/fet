@@ -30941,15 +30941,15 @@ Import of data will be easier with these settings.</source>
         <location filename="../src/interface/fetmainform.cpp" line="3956"/>
         <location filename="../src/interface/fetmainform.cpp" line="4076"/>
         <location filename="../src/interface/fetmainform.cpp" line="4133"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4689"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4739"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4769"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4794"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4816"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4843"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4865"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4886"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4910"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4698"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4748"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4778"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4803"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4825"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4852"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4874"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4895"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4919"/>
         <source>FET warning</source>
         <translation>FET - Προειδοποίηση</translation>
     </message>
@@ -31128,11 +31128,11 @@ Import of data will be easier with these settings.</source>
         <location filename="../src/interface/fetmainform.cpp" line="4006"/>
         <location filename="../src/interface/fetmainform.cpp" line="4019"/>
         <location filename="../src/interface/fetmainform.cpp" line="4029"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4494"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4537"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4564"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4637"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4648"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4503"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4546"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4573"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4646"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4657"/>
         <source>FET information</source>
         <translation>FET - Πληροφορίες</translation>
     </message>
@@ -31164,18 +31164,18 @@ Import of data will be easier with these settings.</source>
         <translation>FET - Έξοδος</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4335"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4344"/>
         <source>&amp;Yes</source>
         <translation>&amp;Ναι</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4335"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4344"/>
         <source>&amp;No</source>
         <translation>&amp;Όχι</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4576"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4597"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4585"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4606"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Άκυρο</translation>
     </message>
@@ -31314,11 +31314,11 @@ Import of data will be easier with these settings.</source>
         <location filename="../src/interface/fetmainform.cpp" line="3642"/>
         <location filename="../src/interface/fetmainform.cpp" line="3743"/>
         <location filename="../src/interface/fetmainform.cpp" line="3768"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4495"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4538"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4565"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4638"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4649"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4504"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4547"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4574"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4647"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4658"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
         <translation>Κατάρτιση ωρολογίου προγράμματος σε εξέλιξη.
@@ -32101,17 +32101,17 @@ Having a subgroup with too little working hours per week means that you inputted
         <translation>δραστηριότητες</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4833"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4842"/>
         <source>This kind of constraint is good, but only in the right case. Adding such constraints in the wrong circumstance may make your timetable solve too slow or even impossible.</source>
         <translation>Αυτός ο τύπος περιορισμού είναι καλός, αλλά μόνον στην κατάλληλη περίπτωση. Η προσθήκη τέτοιων περιορισμών σε λάθος περιπτώσεις μπορεί να προξενήσει μεγάλη επιβράδυνση στην επίλυση (κατάρτιση) του ωρολογίου προγράμματος ή ακόμη και να την καταστήσει αδύνατη.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4836"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4845"/>
         <source>Please use such constraints only if you are sure that there exists a timetable with empty days for students. If your instution requires each day for the students to be not empty, or if there does not exist a solution with empty days for students, it is IMPERATIVE (for performance reasons) that you use the standard constraint which does not allow empty days. Otherwise, the timetable may be impossible to find.</source>
         <translation>Παρακαλώ να χρησιμοποιείτε τέτοιους περιορισμούς μόνον αν είστε σίγουροι ότι υπάρχει (δύναται να υπάρξει) ωρολόγιο πρόγραμμα με κενές ημέρες για μαθητές. Αν το εκπαιδευτικό σας ίδρυμα απαιτεί να μην υπάρχουν κενές ημέρες για τους μαθητές, είναι ΕΠΙΤΑΚΤΙΚΟ (για λόγους καλής επίδοσης του αλγόριθμου επίλυσης) να χρησιμοποιείτε τον κανονικό (συνήθη) περιορισμό ο οποίος δεν επιτρέπει ύπαρξη κενών ημερών. Σε διαφορετική περίπτωση, υπάρχει το ενδεχόμενο η επίλυση (κατάρτιση) ωρολογίου προγράμματος να καταστεί αδύνατη.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4881"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4890"/>
         <source>This kind of option is good, but only in the right case. Adding such an option in the wrong circumstance may make your timetable solve too slow or even impossible.</source>
         <translation>Αυτός ο τύπος επιλογής είναι καλός, αλλά μόνον στην κατάλληλη περίπτωση. Η προσθήκη τέτοιας επιλογής σε λάθος περιπτώσεις μπορεί να προξενήσει μεγάλη επιβράδυνση στην επίλυση (κατάρτιση) του ωρολογίου προγράμματος ή ακόμη και να την καταστήσει αδύνατη.</translation>
     </message>
@@ -32250,52 +32250,52 @@ Having a subgroup with too little working hours per week means that you inputted
         <translation>50</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4730"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4760"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4739"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4769"/>
         <source>These kinds of constraints are good, but not perfectly optimized. Adding such constraints may make your timetable solve too slow or even impossible.</source>
         <translation>Αυτοί οι τύποι περιορισμών είναι καλοί, αλλά όχι πλήρως βελτιστοποιημένοι. Η χρήση τέτοιων περιορισμών μπορεί να προκαλέσει αύξηση του χρόνου που απαιτείται για την κατάρτιση (επίλυση) του ωρολογίου προγράμματος ή ακόμη και να την καταστήσει αδύνατη.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4733"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4763"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4742"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4772"/>
         <source>It is recommended to use such constraints only at the end, after you generated successfully with all the other constraints.</source>
         <translation>Η χρήση αυτού του είδους περιορισμών συνιστάται μόνον στο τέλος, δηλαδή αφού πρώτα έχετε δημιουργήσει επιτυχώς ωρολόγιο πρόγραμμα με όλους τους άλλους περιορισμούς.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4735"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4765"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4744"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4774"/>
         <source>If your timetable is too difficult, it may be from these kinds of constraints, so you may need to remove them and retry.</source>
         <translation>Αν το ωρολόγιο πρόγραμμά σας είναι υπερβολικά δύσκολο, αυτό μπορεί να οφείλεται στους συγκεκριμένους τύπους περιορισμών. Κατά συνέπεια, μπορεί να χρειαστεί να διαγράψετε τους συγκεκριμένους περιορισμούς και να προσπαθήσετε ξανά.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4737"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4767"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4841"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4884"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4746"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4776"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4850"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4893"/>
         <source>Continue only if you know what you are doing.</source>
         <translation>Συνεχίστε μόνον εάν γνωρίζετε πολύ καλά τι κάνετε.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4788"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4810"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4859"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4904"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4797"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4819"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4868"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4913"/>
         <source>It is recommended to keep this warning active, but if you really want, you can disable it.</source>
         <translation>Συνιστάται να κρατήσετε ενεργή την συγκεκριμένη προειδοποίηση. Αν όμως το θέλετε πραγματικά, μπορείτε να την απενεργοποιήσετε.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4790"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4812"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4861"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4906"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4799"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4821"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4870"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4915"/>
         <source>Disable it only if you know what you are doing.</source>
         <translation>Απενεργοποιήστε μόνον αν γνωρίζετε πολύ καλά τι κάνετε.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4792"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4814"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4863"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4908"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4801"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4823"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4872"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4917"/>
         <source>Are you sure you want to disable it?</source>
         <translation>Είστε σίγουροι ότι θέλετε να την απενεργοποιήσετε;</translation>
     </message>
@@ -32534,35 +32534,36 @@ Having a subgroup with too little working hours per week means that you inputted
         <translation>Η εκτύπωση λεπτομερών ωρολογίων προγραμμάτων με τις ελεύθερες περιόδους των εκπαιδευτικών θα είναι %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4331"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4340"/>
         <source>Students&apos; combo boxes style will be %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4331"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4333"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4340"/>
         <source>simple</source>
         <comment>It is a style for students&apos; combo boxes</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4571"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4580"/>
         <source>You have more than 6 days per week, so probably you won&apos;t need this feature. Do you still want to continue?</source>
         <translation>Έχετε περισσότερες από 6 ημέρες ανά εβδομάδα. Έτσι, πιθανώς να μην χρειάζεστε αυτήν την λειτουργία. Είστε σίγουροι πως θέλετε να συνεχίσετε;</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4574"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4595"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4583"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4604"/>
         <source>FET question</source>
         <translation>FET - Ερώτηση</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4576"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4597"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4585"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4606"/>
         <source>&amp;Continue</source>
         <translation>&amp;Συνέχεια</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4592"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4601"/>
         <source>You have less than 5 days per week, so probably you won&apos;t need this feature. Do you still want to continue?</source>
         <translation>Έχετε λιγότερες από 5 ημέρες ανά εβδομάδα. Έτσι, πιθανώς να μην χρειάζεστε αυτήν την λειτουργία. Είστε σίγουροι πως θέλετε να συνεχίσετε;</translation>
     </message>
@@ -32654,17 +32655,29 @@ Having a subgroup with too little working hours per week means that you inputted
         <translation>Άκυρο</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4331"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4335"/>
+        <source>icons</source>
+        <comment>It is a style for students&apos; combo boxes</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="4337"/>
+        <source>categorized</source>
+        <comment>It is a style for students&apos; combo boxes</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="4340"/>
         <source>51</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4680"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4689"/>
         <source>Choose results (output) directory</source>
         <translation>Επιλέξτε τον κατάλογο εγγραφής (εξαγωγής) των αποτελεσμάτων</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4689"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4698"/>
         <source>You don&apos;t have write permissions in this directory</source>
         <translation>Δεν έχετε δικαιώματα εγγραφής στον συγκεκριμένο κατάλογο</translation>
     </message>
@@ -32693,7 +32706,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <translation>ψευδής</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4334"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4343"/>
         <source>FET confirmation</source>
         <translation>FET - Επιβεβαίωση</translation>
     </message>
@@ -54792,7 +54805,7 @@ Bottom: %4</source>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1105"/>
-        <source>There is a combo box in this dialog. You can see the timetable for each year/each group/each subgroup if you select the option &apos;Years&apos;, for all years/each group/each subgroup if you select the option &apos;Groups&apos;, or for all years/all groups/each subgroup if you select the option &apos;Subgroups&apos;.</source>
+        <source>There is a combo box in this dialog. You can choose each year, group, and subgroup if you select &apos;Years&apos;, each group and subgroup if you select &apos;Groups&apos;, or each subgroup if you select &apos;Subgroups&apos;.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -55517,7 +55530,7 @@ Please stop simulation before this.</source>
         <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέα αίθουσα&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1110"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1109"/>
         <source>FET help</source>
         <translation>FET - Βοήθεια</translation>
     </message>
