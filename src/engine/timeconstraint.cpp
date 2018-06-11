@@ -6333,7 +6333,8 @@ double ConstraintStudentsEarlyMaxBeginningsAtSecondHour::fitness(Solution& c, Ru
 			
 			bool illegalGap=false;
 				
-			for(k++; k<r.nHoursPerDay && !dayOccupied; k++)
+			k++;
+			for(; k<r.nHoursPerDay && !dayOccupied; k++)
 				if(!breakDayHour[j][k] && !subgroupNotAvailableDayHour[i][j][k]){
 					if(subgroupsMatrix[i][j][k]>0)
 						dayOccupied=true;
@@ -6628,7 +6629,8 @@ double ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::fitness(Solution& c,
 			
 			bool illegalGap=false;
 				
-			for(k++; k<r.nHoursPerDay && !dayOccupied; k++)
+			k++;
+			for(; k<r.nHoursPerDay && !dayOccupied; k++)
 				if(!breakDayHour[j][k] && !subgroupNotAvailableDayHour[i][j][k]){
 					if(subgroupsMatrix[i][j][k]>0)
 						dayOccupied=true;
