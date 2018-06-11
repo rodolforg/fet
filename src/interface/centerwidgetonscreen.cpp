@@ -365,12 +365,12 @@ int populateStudentsComboBox(QComboBox* studentsComboBox, const QString& selecte
 			}
 		}
 
+		if(SHOW_SUBGROUPS_IN_COMBO_BOXES){
 #if QT_VERSION >= 0x040400
-		studentsComboBox->insertSeparator(studentsComboBox->count());
-		currentIndex++;
+			studentsComboBox->insertSeparator(studentsComboBox->count());
+			currentIndex++;
 #endif
 
-		if(SHOW_SUBGROUPS_IN_COMBO_BOXES){
 			foreach(StudentsYear* sty, gt.rules.yearsList){
 				foreach(StudentsGroup* stg, sty->groupsList){
 					foreach(StudentsSubgroup* sts, stg->subgroupsList){
