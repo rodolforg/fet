@@ -139,6 +139,9 @@ const int CONSTRAINT_STUDENTS_MAX_SPAN_PER_DAY							=72;
 const int CONSTRAINT_STUDENTS_SET_MIN_RESTING_HOURS						=73;
 const int CONSTRAINT_STUDENTS_MIN_RESTING_HOURS							=74;
 
+//2018-06-13
+const int CONSTRAINT_TWO_ACTIVITIES_ORDERED_IF_SAME_DAY					=75;
+
 QString getActivityDetailedDescription(Rules& r, int id);
 
 /**
@@ -2872,6 +2875,62 @@ public:
 	ConstraintTwoActivitiesOrdered();
 
 	ConstraintTwoActivitiesOrdered(double wp, int firstActId, int secondActId);
+
+	bool computeInternalStructure(QWidget* parent, Rules& r);
+
+	bool hasInactiveActivities(Rules& r);
+
+	QString getXmlDescription(Rules& r);
+
+	QString getDescription(Rules& r);
+
+	QString getDetailedDescription(Rules& r);
+
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
+
+	bool isRelatedToActivity(Rules& r, Activity* a);
+	
+	bool isRelatedToTeacher(Teacher* t);
+
+	bool isRelatedToSubject(Subject* s);
+
+	bool isRelatedToActivityTag(ActivityTag* s);
+	
+	bool isRelatedToStudentsSet(Rules& r, StudentsSet* s);
+
+	bool hasWrongDayOrHour(Rules& r);
+	bool canRepairWrongDayOrHour(Rules& r);
+	bool repairWrongDayOrHour(Rules& r);
+};
+
+class ConstraintTwoActivitiesOrderedIfSameDay: public TimeConstraint{
+	Q_DECLARE_TR_FUNCTIONS(ConstraintTwoActivitiesOrderedIfSameDay)
+
+public:
+	/**
+	First activity id
+	*/
+	int firstActivityId;
+
+	/**
+	Second activity id
+	*/
+	int secondActivityId;
+
+	//internal variables
+	/**
+	The index of the first activity in the rules (from 0 to rules.nActivities-1) - it is not the id of the activity
+	*/
+	int firstActivityIndex;
+
+	/**
+	The index of the second activity in the rules (from 0 to rules.nActivities-1) - it is not the id of the activity
+	*/
+	int secondActivityIndex;
+
+	ConstraintTwoActivitiesOrderedIfSameDay();
+
+	ConstraintTwoActivitiesOrderedIfSameDay(double wp, int firstActId, int secondActId);
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 

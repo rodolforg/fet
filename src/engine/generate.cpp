@@ -3621,6 +3621,7 @@ again_if_impossible_activity:
 		bool oktwoactivitiesgrouped;
 		bool okthreeactivitiesgrouped;
 		bool oktwoactivitiesordered;
+		bool oktwoactivitiesorderedifsameday;
 		bool okactivityendsstudentsday;
 
 		bool okstudentsmaxdaysperweek;
@@ -4816,6 +4817,98 @@ impossiblethreeactivitiesgrouped:
 		
 impossibletwoactivitiesordered:
 		if(!oktwoactivitiesordered){
+			//if(updateSubgroups || updateTeachers)
+			//	removeAiFromNewTimetable(ai, act, d, h);
+			//removeConflActivities(conflActivities[newtime], nConflActivities[newtime], act, newtime);
+
+			nConflActivities[newtime]=MAX_ACTIVITIES;
+			continue;
+		}
+		
+		/*foreach(int ai2, conflActivities[newtime])
+			assert(!swappedActivities[ai2]);*/
+		
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+		//allowed from two activities ordered if same day
+		oktwoactivitiesorderedifsameday=true;
+		
+		for(int i=0; i<constrTwoActivitiesOrderedIfSameDayActivities[ai].count(); i++){
+			//direct
+			int ai2=constrTwoActivitiesOrderedIfSameDayActivities[ai].at(i);
+			double perc=constrTwoActivitiesOrderedIfSameDayPercentages[ai].at(i);
+			if(c.times[ai2]!=UNALLOCATED_TIME){
+				int d2=c.times[ai2]%gt.rules.nDaysPerWeek;
+				int h2=c.times[ai2]/gt.rules.nDaysPerWeek;
+				bool ok=true;
+				
+				if(!(d!=d2 || (d==d2 && h+act->duration-1<h2)))
+					ok=false;
+					
+				bool sR=skipRandom(perc);
+				//if(fixedTimeActivity[ai] && perc<100.0)
+				//	sR=true;
+
+				if(!ok && !sR){
+					assert(ai2!=ai);
+					
+					if(fixedTimeActivity[ai2] || swappedActivities[ai2]){
+						oktwoactivitiesorderedifsameday=false;
+						goto impossibletwoactivitiesorderedifsameday;
+					}
+					
+					if(!conflActivities[newtime].contains(ai2)){
+					//if(conflActivities[newtime].indexOf(ai2)==-1){
+
+						conflActivities[newtime].append(ai2);
+						//conflActivities[newtime].append(ai2);
+						nConflActivities[newtime]++;
+						assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+						//addConflActivity(conflActivities[newtime], nConflActivities[newtime], ai2, &gt.rules.internalActivitiesList[ai2]);
+					}
+				}
+			}
+		}
+
+		for(int i=0; i<inverseConstrTwoActivitiesOrderedIfSameDayActivities[ai].count(); i++){
+			//inverse
+			int ai2=inverseConstrTwoActivitiesOrderedIfSameDayActivities[ai].at(i);
+			double perc=inverseConstrTwoActivitiesOrderedIfSameDayPercentages[ai].at(i);
+			if(c.times[ai2]!=UNALLOCATED_TIME){
+				int d2=c.times[ai2]%gt.rules.nDaysPerWeek;
+				int h2=c.times[ai2]/gt.rules.nDaysPerWeek;
+				int dur2=gt.rules.internalActivitiesList[ai2].duration;
+				bool ok=true;
+				
+				if(!(d2!=d || (d2==d && h2+dur2-1<h)))
+					ok=false;
+					
+				bool sR=skipRandom(perc);
+				//if(fixedTimeActivity[ai] && perc<100.0)
+				//	sR=true;
+				
+				if(!ok && !sR){
+					assert(ai2!=ai);
+					
+					if(fixedTimeActivity[ai2] || swappedActivities[ai2]){
+						oktwoactivitiesorderedifsameday=false;
+						goto impossibletwoactivitiesorderedifsameday;
+					}
+					
+					if(!conflActivities[newtime].contains(ai2)){
+					//if(conflActivities[newtime].indexOf(ai2)==-1){
+						conflActivities[newtime].append(ai2);
+						//conflActivities[newtime].append(ai2);
+						nConflActivities[newtime]++;
+						assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+						//addConflActivity(conflActivities[newtime], nConflActivities[newtime], ai2, &gt.rules.internalActivitiesList[ai2]);
+					}
+				}
+			}
+		}
+		
+impossibletwoactivitiesorderedifsameday:
+		if(!oktwoactivitiesorderedifsameday){
 			//if(updateSubgroups || updateTeachers)
 			//	removeAiFromNewTimetable(ai, act, d, h);
 			//removeConflActivities(conflActivities[newtime], nConflActivities[newtime], act, newtime);

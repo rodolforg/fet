@@ -77,6 +77,7 @@ using namespace std;
 #include "constrainttwoactivitiesgroupedform.h"
 #include "constraintthreeactivitiesgroupedform.h"
 #include "constrainttwoactivitiesorderedform.h"
+#include "constrainttwoactivitiesorderedifsamedayform.h"
 #include "constraintactivitiespreferredtimeslotsform.h"
 #include "constraintactivitiespreferredstartingtimesform.h"
 
@@ -2311,6 +2312,19 @@ void FetMainForm::on_dataTimeConstraintsTwoActivitiesOrderedAction_triggered()
 	}
 
 	ConstraintTwoActivitiesOrderedForm form(this);
+	setParentAndOtherThings(&form, this);
+	form.exec();
+}
+
+void FetMainForm::on_dataTimeConstraintsTwoActivitiesOrderedIfSameDayAction_triggered()
+{
+	if(simulation_running){
+		QMessageBox::information(this, tr("FET information"),
+			tr("Allocation in course.\nPlease stop simulation before this."));
+		return;
+	}
+
+	ConstraintTwoActivitiesOrderedIfSameDayForm form(this);
 	setParentAndOtherThings(&form, this);
 	form.exec();
 }

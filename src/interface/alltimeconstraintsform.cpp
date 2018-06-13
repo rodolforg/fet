@@ -28,6 +28,7 @@
 #include "modifyconstrainttwoactivitiesgroupedform.h"
 #include "modifyconstraintthreeactivitiesgroupedform.h"
 #include "modifyconstrainttwoactivitiesorderedform.h"
+#include "modifyconstrainttwoactivitiesorderedifsamedayform.h"
 
 #include "modifyconstraintactivitiespreferredtimeslotsform.h"
 #include "modifyconstraintactivitiespreferredstartingtimesform.h"
@@ -937,6 +938,13 @@ void AllTimeConstraintsForm::modifyConstraint()
 	//74
 	else if(ctr->type==CONSTRAINT_STUDENTS_MIN_RESTING_HOURS){
 		ModifyConstraintStudentsMinRestingHoursForm form(this, (ConstraintStudentsMinRestingHours*)ctr);
+		setParentAndOtherThings(&form, this);
+		form.exec();
+	}
+	//2018-06-13
+	//75
+	else if(ctr->type==CONSTRAINT_TWO_ACTIVITIES_ORDERED_IF_SAME_DAY){
+		ModifyConstraintTwoActivitiesOrderedIfSameDayForm form(this, (ConstraintTwoActivitiesOrderedIfSameDay*)ctr);
 		setParentAndOtherThings(&form, this);
 		form.exec();
 	}

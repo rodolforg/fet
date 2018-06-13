@@ -13471,6 +13471,267 @@ bool ConstraintTwoActivitiesOrdered::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
+ConstraintTwoActivitiesOrderedIfSameDay::ConstraintTwoActivitiesOrderedIfSameDay()
+	: TimeConstraint()
+{
+	this->type = CONSTRAINT_TWO_ACTIVITIES_ORDERED_IF_SAME_DAY;
+}
+
+ConstraintTwoActivitiesOrderedIfSameDay::ConstraintTwoActivitiesOrderedIfSameDay(double wp, int firstActId, int secondActId)
+	: TimeConstraint(wp)
+{
+	this->firstActivityId = firstActId;
+	this->secondActivityId=secondActId;
+	this->type = CONSTRAINT_TWO_ACTIVITIES_ORDERED_IF_SAME_DAY;
+}
+
+bool ConstraintTwoActivitiesOrderedIfSameDay::computeInternalStructure(QWidget* parent, Rules& r)
+{
+	/*Activity* act;
+	int i;
+	for(i=0; i<r.nInternalActivities; i++){
+		act=&r.internalActivitiesList[i];
+		if(act->id==this->firstActivityId)
+			break;
+	}*/
+	
+	int i=r.activitiesHash.value(firstActivityId, r.nInternalActivities);
+	
+	if(i==r.nInternalActivities){
+		//assert(0);
+		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET error in data"), 
+			tr("Following constraint is wrong (refers to inexistent activity ids):\n%1").arg(this->getDetailedDescription(r)));
+		return false;
+	}
+
+	this->firstActivityIndex=i;
+
+	////////
+	
+	/*for(i=0; i<r.nInternalActivities; i++){
+		act=&r.internalActivitiesList[i];
+		if(act->id==this->secondActivityId)
+			break;
+	}*/
+
+	i=r.activitiesHash.value(secondActivityId, r.nInternalActivities);
+	
+	if(i==r.nInternalActivities){
+		//assert(0);
+		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET error in data"),
+			tr("Following constraint is wrong (refers to inexistent activity ids):\n%1").arg(this->getDetailedDescription(r)));
+		return false;
+	}
+
+	this->secondActivityIndex=i;
+	
+	if(firstActivityIndex==secondActivityIndex){
+		//assert(0);
+		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET error in data"),
+			tr("Following constraint is wrong (refers to same activities):\n%1").arg(this->getDetailedDescription(r)));
+		return false;
+	}
+	assert(firstActivityIndex!=secondActivityIndex);
+	
+	return true;
+}
+
+bool ConstraintTwoActivitiesOrderedIfSameDay::hasInactiveActivities(Rules& r)
+{
+	if(r.inactiveActivities.contains(this->firstActivityId))
+		return true;
+	if(r.inactiveActivities.contains(this->secondActivityId))
+		return true;
+	return false;
+}
+
+QString ConstraintTwoActivitiesOrderedIfSameDay::getXmlDescription(Rules& r)
+{
+	Q_UNUSED(r);
+
+	QString s="<ConstraintTwoActivitiesOrderedIfSameDay>\n";
+	s+="	<Weight_Percentage>"+CustomFETString::number(this->weightPercentage)+"</Weight_Percentage>\n";
+	s+="	<First_Activity_Id>"+CustomFETString::number(this->firstActivityId)+"</First_Activity_Id>\n";
+	s+="	<Second_Activity_Id>"+CustomFETString::number(this->secondActivityId)+"</Second_Activity_Id>\n";
+	s+="	<Active>"+trueFalse(active)+"</Active>\n";
+	s+="	<Comments>"+protect(comments)+"</Comments>\n";
+	s+="</ConstraintTwoActivitiesOrderedIfSameDay>\n";
+	return s;
+}
+
+QString ConstraintTwoActivitiesOrderedIfSameDay::getDescription(Rules& r)
+{
+	Q_UNUSED(r);
+
+	QString begin=QString("");
+	if(!active)
+		begin="X - ";
+		
+	QString end=QString("");
+	if(!comments.isEmpty())
+		end=", "+tr("C: %1", "Comments").arg(comments);
+		
+	QString s;
+	
+	s=tr("Two activities ordered if same day:");
+	s+=" ";
+	
+	s+=tr("first act. id: %1", "act.=activity").arg(this->firstActivityId);
+	s+=", ";
+	s+=tr("second act. id: %1", "act.=activity").arg(this->secondActivityId);
+	s+=", ";
+	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));
+
+	return begin+s+end;
+}
+
+QString ConstraintTwoActivitiesOrderedIfSameDay::getDetailedDescription(Rules& r)
+{
+	QString s=tr("Time constraint");s+="\n";
+	s+=tr("Two activities are ordered if they are on the same day (the second activity must begin later than the first"
+	 " activity has finished if they are on the same day)");
+	s+="\n";
+
+	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage));
+	s+="\n";
+
+	s+=tr("First activity id=%1 (%2)", "%1 is the id, %2 is the detailed description of the activity.")
+		.arg(this->firstActivityId)
+		.arg(getActivityDetailedDescription(r, this->firstActivityId));
+	s+="\n";
+
+	s+=tr("Second activity id=%1 (%2)", "%1 is the id, %2 is the detailed description of the activity.")
+		.arg(this->secondActivityId)
+		.arg(getActivityDetailedDescription(r, this->secondActivityId));
+	s+="\n";
+
+	if(!active){
+		s+=tr("Active=%1", "Refers to a constraint").arg(yesNoTranslated(active));
+		s+="\n";
+	}
+	if(!comments.isEmpty()){
+		s+=tr("Comments=%1").arg(comments);
+		s+="\n";
+	}
+
+	return s;
+}
+
+double ConstraintTwoActivitiesOrderedIfSameDay::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString)
+{
+	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
+	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
+		c.teachersMatrixReady=true;
+		c.subgroupsMatrixReady=true;
+		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
+		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
+
+		c.changedForMatrixCalculation=false;
+	}
+
+	int nbroken;
+
+	assert(r.internalStructureComputed);
+
+	nbroken=0;
+	if(c.times[this->firstActivityIndex]!=UNALLOCATED_TIME && c.times[this->secondActivityIndex]!=UNALLOCATED_TIME){
+		int fd=c.times[this->firstActivityIndex]%r.nDaysPerWeek; //the day when first activity was scheduled
+		int fh=c.times[this->firstActivityIndex]/r.nDaysPerWeek
+		  + r.internalActivitiesList[this->firstActivityIndex].duration-1; //the end hour of first activity
+		int sd=c.times[this->secondActivityIndex]%r.nDaysPerWeek; //the day when second activity was scheduled
+		int sh=c.times[this->secondActivityIndex]/r.nDaysPerWeek; //the start hour of second activity
+		
+		if(!(fd!=sd || (fd==sd && fh<sh)))
+			nbroken=1;
+	}
+	
+	assert(nbroken==0 || nbroken==1);
+
+	if(conflictsString!=NULL && nbroken>0){
+		QString s=tr("Time constraint two activities ordered if on the same day broken for first activity with id=%1 (%2) and "
+		 "second activity with id=%3 (%4), increases conflicts total by %5", "%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.")
+		 .arg(this->firstActivityId)
+		 .arg(getActivityDetailedDescription(r, this->firstActivityId))
+		 .arg(this->secondActivityId)
+		 .arg(getActivityDetailedDescription(r, this->secondActivityId))
+		 .arg(CustomFETString::number(weightPercentage/100*nbroken));
+
+		dl.append(s);
+		cl.append(weightPercentage/100*nbroken);
+	
+		*conflictsString+= s+"\n";
+	}
+	
+	if(weightPercentage==100)
+		assert(nbroken==0);
+	return nbroken * weightPercentage/100;
+}
+
+bool ConstraintTwoActivitiesOrderedIfSameDay::isRelatedToActivity(Rules& r, Activity* a)
+{
+	Q_UNUSED(r);
+
+	if(this->firstActivityId==a->id)
+		return true;
+	if(this->secondActivityId==a->id)
+		return true;
+	return false;
+}
+
+bool ConstraintTwoActivitiesOrderedIfSameDay::isRelatedToTeacher(Teacher* t)
+{
+	Q_UNUSED(t);
+
+	return false;
+}
+
+bool ConstraintTwoActivitiesOrderedIfSameDay::isRelatedToSubject(Subject* s)
+{
+	Q_UNUSED(s);
+
+	return false;
+}
+
+bool ConstraintTwoActivitiesOrderedIfSameDay::isRelatedToActivityTag(ActivityTag* s)
+{
+	Q_UNUSED(s);
+
+	return false;
+}
+
+bool ConstraintTwoActivitiesOrderedIfSameDay::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+{
+	Q_UNUSED(r);
+	Q_UNUSED(s);
+		
+	return false;
+}
+
+bool ConstraintTwoActivitiesOrderedIfSameDay::hasWrongDayOrHour(Rules& r)
+{
+	Q_UNUSED(r);
+	return false;
+}
+
+bool ConstraintTwoActivitiesOrderedIfSameDay::canRepairWrongDayOrHour(Rules& r)
+{
+	Q_UNUSED(r);
+	assert(0);
+	
+	return true;
+}
+
+bool ConstraintTwoActivitiesOrderedIfSameDay::repairWrongDayOrHour(Rules& r)
+{
+	Q_UNUSED(r);
+	assert(0); //should check hasWrongDayOrHour, firstly
+
+	return true;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+
 ConstraintActivityEndsStudentsDay::ConstraintActivityEndsStudentsDay()
 	: TimeConstraint()
 {

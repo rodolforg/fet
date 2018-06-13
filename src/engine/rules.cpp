@@ -4281,6 +4281,12 @@ void Rules::updateConstraintsAfterRemoval()
 			 !existingActivitiesIds.contains(c->secondActivityId) )
 				toBeRemovedTime.append(tc);
 		}
+		else if(tc->type==CONSTRAINT_TWO_ACTIVITIES_ORDERED_IF_SAME_DAY){
+			ConstraintTwoActivitiesOrderedIfSameDay* c=(ConstraintTwoActivitiesOrderedIfSameDay*)tc;
+			if( !existingActivitiesIds.contains(c->firstActivityId) ||
+			 !existingActivitiesIds.contains(c->secondActivityId) )
+				toBeRemovedTime.append(tc);
+		}
 		else if(tc->type==CONSTRAINT_ACTIVITY_ENDS_STUDENTS_DAY){
 			ConstraintActivityEndsStudentsDay* c=(ConstraintActivityEndsStudentsDay*)tc;
 			if(!existingActivitiesIds.contains(c->activityId))
@@ -6384,6 +6390,9 @@ bool Rules::read(QWidget* parent, const QString& fileName, bool commandLine, QSt
 				}
 				else if(xmlReader.name()=="ConstraintTwoActivitiesOrdered"){
 					crt_constraint=readTwoActivitiesOrdered(xmlReader, xmlReadingLog);
+				}
+				else if(xmlReader.name()=="ConstraintTwoActivitiesOrderedIfSameDay"){
+					crt_constraint=readTwoActivitiesOrderedIfSameDay(xmlReader, xmlReadingLog);
 				}
 				else if(xmlReader.name()=="ConstraintActivityEndsDay" && !skipDeprecatedConstraints ){
 					int t=RulesReconcilableMessage::warning(parent, tr("FET warning"),
@@ -11487,6 +11496,63 @@ TimeConstraint* Rules::readThreeActivitiesGrouped(QXmlStreamReader& xmlReader, F
 TimeConstraint* Rules::readTwoActivitiesOrdered(QXmlStreamReader& xmlReader, FakeString& xmlReadingLog){
 	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintTwoActivitiesOrdered");
 	ConstraintTwoActivitiesOrdered* cn=new ConstraintTwoActivitiesOrdered();
+	while(xmlReader.readNextStartElement()){
+		xmlReadingLog+="    Found "+xmlReader.name().toString()+" tag\n";
+		if(xmlReader.name()=="Weight"){
+			//cn->weight=customFETStrToDouble(text);
+			xmlReader.skipCurrentElement();
+			xmlReadingLog+="    Ignoring old tag - weight - making weight percentage=100\n";
+			cn->weightPercentage=100;
+		}
+		else if(xmlReader.name()=="Weight_Percentage"){
+			QString text=xmlReader.readElementText();
+			cn->weightPercentage=customFETStrToDouble(text);
+			xmlReadingLog+="    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n";
+		}
+		else if(xmlReader.name()=="Active"){
+			QString text=xmlReader.readElementText();
+			if(text=="false"){
+				cn->active=false;
+			}
+		}
+		else if(xmlReader.name()=="Comments"){
+			QString text=xmlReader.readElementText();
+			cn->comments=text;
+		}
+		else if(xmlReader.name()=="Compulsory"){
+			QString text=xmlReader.readElementText();
+			if(text=="yes"){
+				//cn->compulsory=true;
+				xmlReadingLog+="    Ignoring old tag - Current constraint is compulsory\n";
+				cn->weightPercentage=100;
+			}
+			else{
+				//cn->compulsory=false;
+				xmlReadingLog+="    Old tag - current constraint is not compulsory - making weightPercentage=0%\n";
+				cn->weightPercentage=0;
+			}
+		}
+		else if(xmlReader.name()=="First_Activity_Id"){
+			QString text=xmlReader.readElementText();
+			cn->firstActivityId=text.toInt();
+			xmlReadingLog+="    Read first activity id="+CustomFETString::number(cn->firstActivityId)+"\n";
+		}
+		else if(xmlReader.name()=="Second_Activity_Id"){
+			QString text=xmlReader.readElementText();
+			cn->secondActivityId=text.toInt();
+			xmlReadingLog+="    Read second activity id="+CustomFETString::number(cn->secondActivityId)+"\n";
+		}
+		else{
+			xmlReader.skipCurrentElement();
+			xmlReaderNumberOfUnrecognizedFields++;
+		}
+	}
+	return cn;
+}
+
+TimeConstraint* Rules::readTwoActivitiesOrderedIfSameDay(QXmlStreamReader& xmlReader, FakeString& xmlReadingLog){
+	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintTwoActivitiesOrderedIfSameDay");
+	ConstraintTwoActivitiesOrderedIfSameDay* cn=new ConstraintTwoActivitiesOrderedIfSameDay();
 	while(xmlReader.readNextStartElement()){
 		xmlReadingLog+="    Found "+xmlReader.name().toString()+" tag\n";
 		if(xmlReader.name()=="Weight"){

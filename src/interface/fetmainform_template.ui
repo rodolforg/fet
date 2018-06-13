@@ -1098,6 +1098,7 @@
       <addaction name="dataTimeConstraintsActivitiesOccupyMaxTimeSlotsFromSelectionAction"/>
       <addaction name="separator"/>
       <addaction name="dataTimeConstraintsTwoActivitiesOrderedAction"/>
+      <addaction name="dataTimeConstraintsTwoActivitiesOrderedIfSameDayAction"/>
       <addaction name="separator"/>
       <addaction name="dataTimeConstraintsTwoActivitiesConsecutiveAction"/>
       <addaction name="dataTimeConstraintsTwoActivitiesGroupedAction"/>
@@ -1876,6 +1877,11 @@
   <action name="dataTimeConstraintsTwoActivitiesOrderedAction">
    <property name="text">
     <string>Two activities are ordered</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTwoActivitiesOrderedIfSameDayAction">
+   <property name="text">
+    <string>Two activities are ordered if they are on the same day</string>
    </property>
   </action>
   <action name="dataTimeConstraintsTeachersMaxHoursContinuouslyAction">

@@ -254,6 +254,16 @@ Matrix1D<QList<double> > inverseConstrTwoActivitiesOrderedPercentages;
 Matrix1D<QList<int> > inverseConstrTwoActivitiesOrderedActivities;
 // 2 activities ordered
 
+// 2 activities ordered if same day
+//index represents the first activity, value in array represents the second activity
+Matrix1D<QList<double> > constrTwoActivitiesOrderedIfSameDayPercentages;
+Matrix1D<QList<int> > constrTwoActivitiesOrderedIfSameDayActivities;
+
+//index represents the second activity, value in array represents the first activity
+Matrix1D<QList<double> > inverseConstrTwoActivitiesOrderedIfSameDayPercentages;
+Matrix1D<QList<int> > inverseConstrTwoActivitiesOrderedIfSameDayActivities;
+// 2 activities ordered if same day
+
 double activityEndsStudentsDayPercentages[MAX_ACTIVITIES];
 bool haveActivityEndsStudentsDay;
 
@@ -606,6 +616,16 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 	inverseConstrTwoActivitiesOrderedActivities.resize(gt.rules.nInternalActivities);
 	// 2 activities ordered
 
+	// 2 activities ordered if same day
+	//index represents the first activity, value in array represents the second activity
+	constrTwoActivitiesOrderedIfSameDayPercentages.resize(gt.rules.nInternalActivities);
+	constrTwoActivitiesOrderedIfSameDayActivities.resize(gt.rules.nInternalActivities);
+
+	//index represents the second activity, value in array represents the first activity
+	inverseConstrTwoActivitiesOrderedIfSameDayPercentages.resize(gt.rules.nInternalActivities);
+	inverseConstrTwoActivitiesOrderedIfSameDayActivities.resize(gt.rules.nInternalActivities);
+	// 2 activities ordered if same day
+
 	//rooms
 	activitiesPreferredRoomsList.resize(gt.rules.nInternalActivities);
 
@@ -788,6 +808,8 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 	computeConstrThreeActivitiesGrouped();
 	
 	computeConstrTwoActivitiesOrdered();
+	
+	computeConstrTwoActivitiesOrderedIfSameDay();
 	
 	t=computeActivityEndsStudentsDayPercentages(parent);
 	if(!t)
@@ -6317,6 +6339,45 @@ void computeConstrTwoActivitiesOrdered()
 			}
 			else if(j>=0 && inverseConstrTwoActivitiesOrderedPercentages[sai].at(j)<c2->weightPercentage){
 				inverseConstrTwoActivitiesOrderedPercentages[sai][j]=c2->weightPercentage;
+			}
+		}
+}
+
+void computeConstrTwoActivitiesOrderedIfSameDay()
+{
+	for(int i=0; i<gt.rules.nInternalActivities; i++){
+		constrTwoActivitiesOrderedIfSameDayPercentages[i].clear();
+		constrTwoActivitiesOrderedIfSameDayActivities[i].clear();
+
+		inverseConstrTwoActivitiesOrderedIfSameDayPercentages[i].clear();
+		inverseConstrTwoActivitiesOrderedIfSameDayActivities[i].clear();
+	}
+
+	for(int i=0; i<gt.rules.nInternalTimeConstraints; i++)
+		if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_TWO_ACTIVITIES_ORDERED_IF_SAME_DAY){
+			ConstraintTwoActivitiesOrderedIfSameDay* c2=(ConstraintTwoActivitiesOrderedIfSameDay*)gt.rules.internalTimeConstraintsList[i];
+			
+			int fai=c2->firstActivityIndex;
+			int sai=c2->secondActivityIndex;
+			
+			//direct
+			int j=constrTwoActivitiesOrderedIfSameDayActivities[fai].indexOf(sai);
+			if(j==-1){
+				constrTwoActivitiesOrderedIfSameDayActivities[fai].append(sai);
+				constrTwoActivitiesOrderedIfSameDayPercentages[fai].append(c2->weightPercentage);
+			}
+			else if(j>=0 && constrTwoActivitiesOrderedIfSameDayPercentages[fai].at(j)<c2->weightPercentage){
+				constrTwoActivitiesOrderedIfSameDayPercentages[fai][j]=c2->weightPercentage;
+			}
+
+			//inverse
+			j=inverseConstrTwoActivitiesOrderedIfSameDayActivities[sai].indexOf(fai);
+			if(j==-1){
+				inverseConstrTwoActivitiesOrderedIfSameDayActivities[sai].append(fai);
+				inverseConstrTwoActivitiesOrderedIfSameDayPercentages[sai].append(c2->weightPercentage);
+			}
+			else if(j>=0 && inverseConstrTwoActivitiesOrderedIfSameDayPercentages[sai].at(j)<c2->weightPercentage){
+				inverseConstrTwoActivitiesOrderedIfSameDayPercentages[sai][j]=c2->weightPercentage;
 			}
 		}
 }
