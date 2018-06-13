@@ -4746,7 +4746,7 @@ impossiblethreeactivitiesgrouped:
 			double perc=constrTwoActivitiesOrderedPercentages[ai].at(i);
 			if(c.times[ai2]!=UNALLOCATED_TIME){
 				int d2=c.times[ai2]%gt.rules.nDaysPerWeek;
-				int h2=c.times[ai2]/gt.rules.nDaysPerWeek;				
+				int h2=c.times[ai2]/gt.rules.nDaysPerWeek;
 				bool ok=true;
 				
 				if(!(d<d2 || (d==d2 && h+act->duration-1<h2)))
@@ -4783,7 +4783,7 @@ impossiblethreeactivitiesgrouped:
 			double perc=inverseConstrTwoActivitiesOrderedPercentages[ai].at(i);
 			if(c.times[ai2]!=UNALLOCATED_TIME){
 				int d2=c.times[ai2]%gt.rules.nDaysPerWeek;
-				int h2=c.times[ai2]/gt.rules.nDaysPerWeek;				
+				int h2=c.times[ai2]/gt.rules.nDaysPerWeek;
 				int dur2=gt.rules.internalActivitiesList[ai2].duration;
 				bool ok=true;
 				

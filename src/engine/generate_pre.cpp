@@ -252,7 +252,7 @@ Matrix1D<QList<int> > constrTwoActivitiesOrderedActivities;
 //index represents the second activity, value in array represents the first activity
 Matrix1D<QList<double> > inverseConstrTwoActivitiesOrderedPercentages;
 Matrix1D<QList<int> > inverseConstrTwoActivitiesOrderedActivities;
-// 2 activities consecutive
+// 2 activities ordered
 
 double activityEndsStudentsDayPercentages[MAX_ACTIVITIES];
 bool haveActivityEndsStudentsDay;
@@ -604,7 +604,7 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 	//index represents the second activity, value in array represents the first activity
 	inverseConstrTwoActivitiesOrderedPercentages.resize(gt.rules.nInternalActivities);
 	inverseConstrTwoActivitiesOrderedActivities.resize(gt.rules.nInternalActivities);
-	// 2 activities consecutive
+	// 2 activities ordered
 
 	//rooms
 	activitiesPreferredRoomsList.resize(gt.rules.nInternalActivities);
@@ -6300,7 +6300,7 @@ void computeConstrTwoActivitiesOrdered()
 			int sai=c2->secondActivityIndex;
 			
 			//direct
-			int j=constrTwoActivitiesOrderedActivities[fai].indexOf(sai); 
+			int j=constrTwoActivitiesOrderedActivities[fai].indexOf(sai);
 			if(j==-1){
 				constrTwoActivitiesOrderedActivities[fai].append(sai);
 				constrTwoActivitiesOrderedPercentages[fai].append(c2->weightPercentage);
@@ -6310,7 +6310,7 @@ void computeConstrTwoActivitiesOrdered()
 			}
 
 			//inverse
-			j=inverseConstrTwoActivitiesOrderedActivities[sai].indexOf(fai); 
+			j=inverseConstrTwoActivitiesOrderedActivities[sai].indexOf(fai);
 			if(j==-1){
 				inverseConstrTwoActivitiesOrderedActivities[sai].append(fai);
 				inverseConstrTwoActivitiesOrderedPercentages[sai].append(c2->weightPercentage);

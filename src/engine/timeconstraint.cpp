@@ -13266,7 +13266,7 @@ bool ConstraintTwoActivitiesOrdered::computeInternalStructure(QWidget* parent, R
 
 	this->secondActivityIndex=i;
 	
-	if(firstActivityIndex==secondActivityIndex){	
+	if(firstActivityIndex==secondActivityIndex){
 		//assert(0);
 		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET error in data"), 
 			tr("Following constraint is wrong (refers to same activities):\n%1").arg(this->getDetailedDescription(r)));
