@@ -13329,8 +13329,8 @@ QString ConstraintTwoActivitiesOrdered::getDescription(Rules& r)
 QString ConstraintTwoActivitiesOrdered::getDetailedDescription(Rules& r)
 {
 	QString s=tr("Time constraint");s+="\n";
-	s+=tr("Two activities ordered (second activity must be placed at any time in the week after the first"
-	 " activity)"); s+="\n";
+	s+=tr("Two activities ordered (the second activity must begin at any time in the week later than the first"
+	 " activity has finished)"); s+="\n";
 
 	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage));s+="\n";
 
