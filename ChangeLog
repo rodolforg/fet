@@ -2071,3 +2071,4 @@ Versions 5.36.0 - 5.36.v
 	- Corrected a command-line bug: argument '--warnifusinggroupactivitiesininitialorder=true|false' was ignored. Reported by svenvanhal.
 	- Corrected two compilation warnings (reported by Innocent De Marchi).
 	- Corrected two bugs in the German translation (reported by math).
+	- Corrected some bugs in different translations.
