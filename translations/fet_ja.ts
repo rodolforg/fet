@@ -378,7 +378,7 @@
     <message>
         <location filename="../src/engine/activity.cpp" line="610"/>
         <source>Id=%1</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/engine/activity.cpp" line="613"/>
@@ -660,7 +660,7 @@
         <location filename="../src/interface/activityplanningform.cpp" line="496"/>
         <source>B</source>
         <comment>Abbreviation for &apos;Buttons&apos;. Please keep translation very short (probably only one letter). There is an option to hide the buttons in the planning activity dialog, so that the tables can have larger visible parts. This button (B) will remain there after the user hides the other buttons. The user then can press this button to show again all the buttons. We need this &apos;B&apos; button to be very small, so keep translation abbreviated to the initial only</comment>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="892"/>
@@ -7115,7 +7115,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform_template.ui" line="26"/>
         <source>Note: this constraint does not induce gaps (or early not respected) for students. If a students set has lessons before and after a not available period, there will be no gaps counted</source>
         <extracomment>&apos;Early not respected&apos; means early gaps (first hour is free), in case you use a constraint students (set) early max beginnings at second hour</extracomment>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -10743,7 +10743,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="90"/>
         <source>FET</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="91"/>
@@ -10843,7 +10843,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addstudentssubgroupform.cpp" line="91"/>
         <source>FET</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform.cpp" line="92"/>
@@ -11454,7 +11454,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="900"/>
         <source>OK</source>
-        <translation></translation>
+        <translation type="unfinished">OK</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="902"/>
@@ -11782,7 +11782,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/buildingsform.cpp" line="132"/>
         <source>FET</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform.cpp" line="133"/>
@@ -12005,7 +12005,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/import.cpp" line="279"/>
         <source>OK</source>
-        <translation></translation>
+        <translation type="unfinished">OK</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="280"/>
@@ -12042,7 +12042,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/commentsform_template.ui" line="23"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation type="unfinished">OK</translation>
     </message>
 </context>
 <context>
@@ -12568,7 +12568,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="1547"/>
         <source>Id:%1</source>
         <comment>Id of activity</comment>
-        <translation></translation>
+        <translation type="unfinished">アId:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="1556"/>
@@ -15135,7 +15135,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="8939"/>
         <source>PL:%1</source>
         <comment>Abbreviation for permanently locked</comment>
-        <translation></translation>
+        <translation type="unfinished">恒久ロ：%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8946"/>
@@ -31600,7 +31600,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/fetmainform.cpp" line="1105"/>
         <source>%1[*] - FET</source>
         <comment>The title of the main window, %1 is the name of the current file. Please keep the string [*] unmodified (three characters) - it is used to make the difference between modified files and unmodified files.</comment>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1158"/>
@@ -31677,7 +31677,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1425"/>
         <source>FET</source>
-        <translation></translation>
+        <translation> type=&quot;unfinished&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1426"/>
@@ -31897,7 +31897,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4058"/>
         <source>OK</source>
-        <translation></translation>
+        <translation type="unfinished">OK</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="641"/>
@@ -31955,27 +31955,27 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4173"/>
         <source>1</source>
-        <translation></translation>
+        <translation type="unfinished">１</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4176"/>
         <source>2</source>
-        <translation></translation>
+        <translation type="unfinished">２</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4179"/>
         <source>3</source>
-        <translation></translation>
+        <translation type="unfinished">３</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4183"/>
         <source>4</source>
-        <translation></translation>
+        <translation type="unfinished">４</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4186"/>
         <source>5</source>
-        <translation></translation>
+        <translation type="unfinished">５</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4190"/>
@@ -31988,7 +31988,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4190"/>
         <location filename="../src/interface/fetmainform.cpp" line="4211"/>
         <source>6</source>
-        <translation></translation>
+        <translation type="unfinished">６</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4215"/>
@@ -31998,52 +31998,52 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4215"/>
         <source>7</source>
-        <translation></translation>
+        <translation type="unfinished">７</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4218"/>
         <source>8</source>
-        <translation></translation>
+        <translation type="unfinished">８</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4221"/>
         <source>9</source>
-        <translation></translation>
+        <translation type="unfinished">９</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4224"/>
         <source>10</source>
-        <translation></translation>
+        <translation type="unfinished">１０</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4227"/>
         <source>11</source>
-        <translation></translation>
+        <translation type="unfinished">１１</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4230"/>
         <source>12</source>
-        <translation></translation>
+        <translation type="unfinished">１２</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4233"/>
         <source>13</source>
-        <translation></translation>
+        <translation type="unfinished">１３</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4236"/>
         <source>14</source>
-        <translation></translation>
+        <translation type="unfinished">１４</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4239"/>
         <source>15</source>
-        <translation></translation>
+        <translation type="unfinished">１５</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4242"/>
         <source>16</source>
-        <translation></translation>
+        <translation type="unfinished">１６</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4245"/>
@@ -32054,27 +32054,27 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4245"/>
         <source>17</source>
-        <translation></translation>
+        <translation type="unfinished">１７</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4248"/>
         <source>18</source>
-        <translation></translation>
+        <translation type="unfinished">１８</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4251"/>
         <source>19</source>
-        <translation></translation>
+        <translation type="unfinished">１９</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4254"/>
         <source>20</source>
-        <translation></translation>
+        <translation type="unfinished">２０</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4257"/>
         <source>21</source>
-        <translation></translation>
+        <translation type="unfinished">２１</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4260"/>
@@ -32085,7 +32085,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4260"/>
         <source>22</source>
-        <translation></translation>
+        <translation type="unfinished">２２</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4265"/>
@@ -32096,7 +32096,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4265"/>
         <source>23</source>
-        <translation></translation>
+        <translation type="unfinished">２３</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4267"/>
@@ -32107,7 +32107,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4267"/>
         <source>24</source>
-        <translation></translation>
+        <translation type="unfinished">２４</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4269"/>
@@ -32118,12 +32118,12 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4269"/>
         <source>25</source>
-        <translation></translation>
+        <translation type="unfinished">２５</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4271"/>
         <source>26</source>
-        <translation></translation>
+        <translation type="unfinished">２６</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4275"/>
@@ -32134,7 +32134,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4275"/>
         <source>27</source>
-        <translation></translation>
+        <translation type="unfinished">２７</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4277"/>
@@ -32145,12 +32145,12 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4277"/>
         <source>28</source>
-        <translation></translation>
+        <translation type="unfinished">２８</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4281"/>
         <source>29</source>
-        <translation></translation>
+        <translation type="unfinished">２９</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4281"/>
@@ -32161,7 +32161,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4283"/>
         <source>30</source>
-        <translation></translation>
+        <translation type="unfinished">３０</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4283"/>
@@ -32172,7 +32172,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4287"/>
         <source>31</source>
-        <translation></translation>
+        <translation type="unfinished">３１</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4287"/>
@@ -32213,12 +32213,12 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4295"/>
         <source>XML</source>
-        <translation></translation>
+        <translation type="unfinished">XML</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4291"/>
         <source>32</source>
-        <translation></translation>
+        <translation type="unfinished">３２</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4298"/>
@@ -32228,7 +32228,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4294"/>
         <source>33</source>
-        <translation></translation>
+        <translation type="unfinished">３３</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4301"/>
@@ -32238,7 +32238,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4297"/>
         <source>34</source>
-        <translation></translation>
+        <translation type="unfinished">３４</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4304"/>
@@ -32248,7 +32248,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4300"/>
         <source>35</source>
-        <translation></translation>
+        <translation type="unfinished">３５</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4307"/>
@@ -32258,7 +32258,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4303"/>
         <source>36</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4311"/>
@@ -32268,7 +32268,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4306"/>
         <source>37</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4314"/>
@@ -32278,7 +32278,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4310"/>
         <source>38</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4317"/>
@@ -32288,7 +32288,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4313"/>
         <source>39</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4320"/>
@@ -32298,7 +32298,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4316"/>
         <source>40</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4323"/>
@@ -32308,7 +32308,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4319"/>
         <source>41</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4326"/>
@@ -32318,7 +32318,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4322"/>
         <source>42</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4329"/>
@@ -32328,7 +32328,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4325"/>
         <source>43</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4335"/>
@@ -32482,7 +32482,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4343"/>
         <source>50</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4753"/>
@@ -32712,12 +32712,12 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4328"/>
         <source>44</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4331"/>
         <source>45</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4332"/>
@@ -32733,7 +32733,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4334"/>
         <source>46</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4339"/>
@@ -32744,12 +32744,12 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4337"/>
         <source>47</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4339"/>
         <source>48</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4341"/>
@@ -32760,7 +32760,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4341"/>
         <source>49</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4343"/>
@@ -33034,7 +33034,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="1356"/>
         <source>Ctrl+N</source>
         <extracomment>This is the shortcut for menu item File-&gt;New. It is recommended to translate with Ctrl+N, the same as original, or with Ctrl+other letter you prefer (do not make duplicates with other shortcuts). All shortcuts are: Ctrl+N (New), Ctrl+O (Open), Ctrl+S (Save), Ctrl+Q (Quit), Ctrl+G (Generate), Ctrl+P (Print). Please use the English keyboard modifiers name, for instance Ctrl, because otherwise the shortcuts do not work (so, even if your keyboard has another name for the Ctrl key, write &apos;Ctrl&apos;. It will work OK on all platforms. Even if you are on German keyboard, write &apos;Ctrl&apos; as in English). Maybe it would be good to translate with &apos;Ctrl+N&apos;, the same as the English original, to keep things standard.</extracomment>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1361"/>
@@ -33046,7 +33046,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="1364"/>
         <source>Ctrl+O</source>
         <extracomment>This is the shortcut for menu item File-&gt;Open. It is recommended to translate with Ctrl+O, the same as original, or with Ctrl+other letter you prefer (do not make duplicates with other shortcuts). All shortcuts are: Ctrl+N (New), Ctrl+O (Open), Ctrl+S (Save), Ctrl+Q (Quit), Ctrl+G (Generate), Ctrl+P (Print). Please use the English keyboard modifiers name, for instance Ctrl, because otherwise the shortcuts do not work (so, even if your keyboard has another name for the Ctrl key, write &apos;Ctrl&apos;. It will work OK on all platforms. Even if you are on German keyboard, write &apos;Ctrl&apos; as in English). Maybe it would be good to translate with &apos;Ctrl+O&apos;, the same as the English original, to keep things standard.</extracomment>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1369"/>
@@ -33058,7 +33058,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="1372"/>
         <source>Ctrl+S</source>
         <extracomment>This is the shortcut for menu item File-&gt;Save. It is recommended to translate with Ctrl+S, the same as original, or with Ctrl+other letter you prefer (do not make duplicates with other shortcuts). All shortcuts are: Ctrl+N (New), Ctrl+O (Open), Ctrl+S (Save), Ctrl+Q (Quit), Ctrl+G (Generate), Ctrl+P (Print). Please use the English keyboard modifiers name, for instance Ctrl, because otherwise the shortcuts do not work (so, even if your keyboard has another name for the Ctrl key, write &apos;Ctrl&apos;. It will work OK on all platforms. Even if you are on German keyboard, write &apos;Ctrl&apos; as in English). Maybe it would be good to translate with &apos;Ctrl+S&apos;, the same as the English original, to keep things standard.</extracomment>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1393"/>
@@ -33133,7 +33133,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="1442"/>
         <source>Ctrl+G</source>
         <extracomment>This is the shortcut for menu item Timetable-&gt;Generate. It is recommended to translate with Ctrl+G, the same as original, or with Ctrl+other letter you prefer (do not make duplicates with other shortcuts). All shortcuts are: Ctrl+N (New), Ctrl+O (Open), Ctrl+S (Save), Ctrl+Q (Quit), Ctrl+G (Generate), Ctrl+P (Print). Please use the English keyboard modifiers name, for instance Ctrl, because otherwise the shortcuts do not work (so, even if your keyboard has another name for the Ctrl key, write &apos;Ctrl&apos;. It will work OK on all platforms. Even if you are on German keyboard, write &apos;Ctrl&apos; as in English). Maybe it would be good to translate with &apos;Ctrl+G&apos;, the same as the English original, to keep things standard.</extracomment>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="951"/>
@@ -33833,7 +33833,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="2388"/>
         <source>Ctrl+P</source>
         <extracomment>This is the shortcut for menu item Timetable-&gt;Print. It is recommended to translate with Ctrl+P, the same as original, or with Ctrl+other letter you prefer (do not make duplicates with other shortcuts). All shortcuts are: Ctrl+N (New), Ctrl+O (Open), Ctrl+S (Save), Ctrl+Q (Quit), Ctrl+G (Generate), Ctrl+P (Print). Please use the English keyboard modifiers name, for instance Ctrl, because otherwise the shortcuts do not work (so, even if your keyboard has another name for the Ctrl key, write &apos;Ctrl&apos;. It will work OK on all platforms. Even if you are on German keyboard, write &apos;Ctrl&apos; as in English). Maybe it would be good to translate with &apos;Ctrl+P&apos;, the same as the English original, to keep things standard.</extracomment>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2393"/>
@@ -34142,7 +34142,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="1388"/>
         <source>Ctrl+Q</source>
         <extracomment>This is the shortcut for menu item File-&gt;Quit. It is recommended to translate with Ctrl+Q, the same as original, or with Ctrl+other letter you prefer (do not make duplicates with other shortcuts). All shortcuts are: Ctrl+N (New), Ctrl+O (Open), Ctrl+S (Save), Ctrl+Q (Quit), Ctrl+G (Generate), Ctrl+P (Print). Please use the English keyboard modifiers name, for instance Ctrl, because otherwise the shortcuts do not work (so, even if your keyboard has another name for the Ctrl key, write &apos;Ctrl&apos;. It will work OK on all platforms. Even if you are on German keyboard, write &apos;Ctrl&apos; as in English). Maybe it would be good to translate with &apos;Ctrl+Q&apos;, the same as the English original, to keep things standard.</extracomment>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1401"/>
@@ -48484,84 +48484,84 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/engine/rules.cpp" line="4791"/>
         <source>08:00</source>
         <comment>Hour name</comment>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="112"/>
         <location filename="../src/engine/rules.cpp" line="4792"/>
         <source>09:00</source>
         <comment>Hour name</comment>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="113"/>
         <location filename="../src/engine/rules.cpp" line="4793"/>
         <source>10:00</source>
         <comment>Hour name</comment>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="114"/>
         <location filename="../src/engine/rules.cpp" line="4794"/>
         <source>11:00</source>
         <comment>Hour name</comment>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="115"/>
         <location filename="../src/engine/rules.cpp" line="4795"/>
         <source>12:00</source>
         <comment>Hour name</comment>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="116"/>
         <location filename="../src/engine/rules.cpp" line="4796"/>
         <source>13:00</source>
         <comment>Hour name</comment>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="117"/>
         <location filename="../src/engine/rules.cpp" line="4797"/>
         <source>14:00</source>
         <comment>Hour name</comment>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="118"/>
         <location filename="../src/engine/rules.cpp" line="4798"/>
         <source>15:00</source>
         <comment>Hour name</comment>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="119"/>
         <location filename="../src/engine/rules.cpp" line="4799"/>
         <source>16:00</source>
         <comment>Hour name</comment>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="120"/>
         <location filename="../src/engine/rules.cpp" line="4800"/>
         <source>17:00</source>
         <comment>Hour name</comment>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="121"/>
         <location filename="../src/engine/rules.cpp" line="4801"/>
         <source>18:00</source>
         <comment>Hour name</comment>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="122"/>
         <location filename="../src/engine/rules.cpp" line="4802"/>
         <source>19:00</source>
         <comment>Hour name</comment>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="160"/>

@@ -840,15 +840,13 @@ there won&apos;t be removed an additional number of %1 activities
         <location filename="../src/interface/activityplanningform.cpp" line="888"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1274"/>
         <source>Delete %1 activities of students set %2?</source>
-        <translatorcomment>Cancella %1 attività degli studenti %2?</translatorcomment>
-        <translation></translation>
+        <translation>Cancella %1 attività degli studenti %2?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="922"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1240"/>
         <source>Delete %1 activities of subject %2?</source>
-        <translatorcomment>Cancella %1 attività della materia %2?</translatorcomment>
-        <translation></translation>
+        <translation>Cancella %1 attività della materia %2?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1778"/>
@@ -864,8 +862,7 @@ there won&apos;t be removed an additional number of %1 activities
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2911"/>
         <source>Are you absolutely sure you want to remove ALL activities and related constraints from your data?</source>
-        <translatorcomment>Sei assolutamente certo divoler cancellare TUTTE le attività e i relativi vincoli dai tuoi dati?</translatorcomment>
-        <translation></translation>
+        <translation>Sei assolutamente certo divoler cancellare TUTTE le attività e i relativi vincoli dai tuoi dati?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="901"/>
@@ -10778,8 +10775,7 @@ Notare che indisponibilità di insegnanti e interruzioni non sono considerate or
     <message>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="95"/>
         <source>Note: the number of students for the added group will be the number of students of the already existing group (you can modify the number of students in the modify group dialog).</source>
-        <translatorcomment>Nota: il numero di studenti per il gruppo aggiunto sarà il numero di studenti del gruppo già esistente (puoi modificare il numero di studenti nella finestra di dialogo per la modifica dei gruppi).</translatorcomment>
-        <translation></translation>
+        <translation>Nota: il numero di studenti per il gruppo aggiunto sarà il numero di studenti del gruppo già esistente (puoi modificare il numero di studenti nella finestra di dialogo per la modifica dei gruppi).</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="97"/>
@@ -10823,7 +10819,7 @@ Notare che indisponibilità di insegnanti e interruzioni non sono considerate or
     <message>
         <location filename="../src/interface/addstudentsgroupform_template.ui" line="60"/>
         <source>Number of students</source>
-        <translation></translation>
+        <translation type="unfinished">Numero di studenti</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform_template.ui" line="22"/>
@@ -13351,7 +13347,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10984"/>
         <source>All subjects</source>
-        <translation></translation>
+        <translation type="unfinished">Tutte le materie</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10988"/>
@@ -14022,7 +14018,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12204"/>
         <source>Conflicts factor increase=%1</source>
-        <translation></translation>
+        <translation type="unfinished">Incremento dei conflitti= %1</translation>
     </message>
 </context>
 <context>
@@ -15245,7 +15241,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8956"/>
         <source>Hour=%1</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -26769,8 +26765,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14216"/>
         <source>Constraint is:</source>
-        <translatorcomment>Il vincolo è:</translatorcomment>
-        <translation></translation>
+        <translation>Il vincolo è:</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14217"/>
@@ -35067,8 +35062,7 @@ Modifica i tuoi dati secondo le istruzioni e riprova.</translation>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2401"/>
         <source>For subgroup %1 you have too little activities to respect the constraint(s) of type min hours daily (the constraint(s) do not allow empty days). Please modify your data accordingly and try again.</source>
-        <translatorcomment>Per il sottogruppo %1 si hanno troppo poche attività per poter rispettare i vincoli del tipo Numero minimo di ore al giorno (i vincoli non permettono di avere giorni vuoti). Correggi i dati e riprova.</translatorcomment>
-        <translation></translation>
+        <translation>Per il sottogruppo %1 si hanno troppo poche attività per poter rispettare i vincoli del tipo Numero minimo di ore al giorno (i vincoli non permettono di avere giorni vuoti). Correggi i dati e riprova.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2420"/>
@@ -35226,8 +35220,7 @@ Modifica i tuoi dati secondo le istruzioni e riprova.</translation>
         <location filename="../src/engine/generate_pre.cpp" line="5994"/>
         <location filename="../src/engine/generate_pre.cpp" line="7203"/>
         <source>Each time you create a new file, it contains an automatically added constraint of this type.</source>
-        <translatorcomment>Ogni volta che crei un nuovo file, esso conterrà un vincolo di questo tipo aggiunto automaticamente.</translatorcomment>
-        <translation></translation>
+        <translation>Ogni volta che crei un nuovo file, esso conterrà un vincolo di questo tipo aggiunto automaticamente.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="6797"/>
@@ -35352,8 +35345,7 @@ Modifica i tuoi dati secondo le istruzioni e riprova.</translation>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="931"/>
         <source>Your data contains constraints students max gaps per day and/or activity tag max hours daily.</source>
-        <translatorcomment>I tuoi dati contengono vincoli N massimo di ore buche al giorno per studenti e / o di ore al giorno di attività con chiave.</translatorcomment>
-        <translation></translation>
+        <translation>I tuoi dati contengono vincoli N massimo di ore buche al giorno per studenti e / o di ore al giorno di attività con chiave.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="935"/>
@@ -35374,7 +35366,7 @@ Modifica i tuoi dati secondo le istruzioni e riprova.</translation>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="537"/>
         <source>There are %1 subgroups (from the total of %2 subgroups) which have the same activities as other subgroups. They are listed below. If the constraints relating to these subgroups are also the same, you can make the generation (directly proportional) faster by completely removing the subgroups which are equivalent to other subgroups (leaving only one representant for each equivalence set). (The generation algorithm will not completely remove the equivalent subgroups automatically.)</source>
-        <translation>Ci sono%1 sottogruppi (dal totale di %2 sottogruppi) che hanno le stesse attività di altri sottogruppi. Essi sono elencati di seguito. Se i vincoli relativi a tali sottogruppi sono anche gli stessi, è possibile effettuare la generazione (direttamente proporzionale) più veloce , eliminando completamente i sottogruppi equivalenti ad altri sottogruppi (lasciando solo un representant per ogni set equivalente) . ( L&apos;algoritmo di generazione non rimuoverà completamente i sottogruppi equivalenti automaticamente)</translation>
+        <translation>Ci sono %1 sottogruppi (dal totale di %2 sottogruppi) che hanno le stesse attività di altri sottogruppi. Essi sono elencati di seguito. Se i vincoli relativi a tali sottogruppi sono anche gli stessi, è possibile effettuare la generazione (direttamente proporzionale) più veloce , eliminando completamente i sottogruppi equivalenti ad altri sottogruppi (lasciando solo un representant per ogni set equivalente) . ( L&apos;algoritmo di generazione non rimuoverà completamente i sottogruppi equivalenti automaticamente)</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="545"/>
@@ -35600,8 +35592,7 @@ Modifica i dati e prova di nuovo</translation>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9497"/>
         <source>End - the order of activities (id-s)</source>
-        <translatorcomment>Fine - ordine delle attività (id)</translatorcomment>
-        <translation></translation>
+        <translation>Fine - ordine delle attività (id)</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="8047"/>
@@ -49996,7 +49987,7 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="298"/>
         <source>0</source>
-        <translation></translation>
+        <translation>0</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="431"/>
@@ -54077,7 +54068,7 @@ Sotto %4</translation>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform_template.ui" line="108"/>
         <source>Stop</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform_template.ui" line="122"/>
@@ -54922,13 +54913,13 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="698"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="710"/>
         <source>Small problem detected</source>
-        <translation type="unfinished">Individuata una piccola anomalia </translation>
+        <translation type="unfinished">Individuata una piccola anomalia</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="626"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="638"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere Orario di inizio preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
+        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere Orario di inizio preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="627"/>
@@ -54980,7 +54971,7 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="699"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="711"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
+        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="900"/>
@@ -55145,13 +55136,13 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="946"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="960"/>
         <source>Small problem detected</source>
-        <translation type="unfinished">Individuata una piccola anomalia </translation>
+        <translation type="unfinished">Individuata una piccola anomalia</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="864"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="878"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere Orario di inizio preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
+        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere Orario di inizio preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="865"/>
@@ -55215,7 +55206,7 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="947"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="961"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
+        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1186"/>
@@ -55470,13 +55461,13 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="903"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="915"/>
         <source>Small problem detected</source>
-        <translation type="unfinished">Individuata una piccola anomalia </translation>
+        <translation type="unfinished">Individuata una piccola anomalia</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="831"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="843"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere Orario di inizio preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
+        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere Orario di inizio preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="832"/>
@@ -55528,7 +55519,7 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="904"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="916"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
+        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1109"/>
@@ -55684,13 +55675,13 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1140"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1154"/>
         <source>Small problem detected</source>
-        <translation type="unfinished">Individuata una piccola anomalia </translation>
+        <translation type="unfinished">Individuata una piccola anomalia</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1058"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1072"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere Orario di inizio preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
+        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere Orario di inizio preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1059"/>
@@ -55754,7 +55745,7 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1141"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1155"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
+        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1380"/>
@@ -55963,13 +55954,13 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="691"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="703"/>
         <source>Small problem detected</source>
-        <translation type="unfinished">Individuata una piccola anomalia </translation>
+        <translation type="unfinished">Individuata una piccola anomalia</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="618"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="630"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere Orario di inizio preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
+        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere Orario di inizio preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="619"/>
@@ -56021,7 +56012,7 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="692"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="704"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
+        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="893"/>
@@ -56180,13 +56171,13 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="912"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="926"/>
         <source>Small problem detected</source>
-        <translation type="unfinished">Individuata una piccola anomalia </translation>
+        <translation type="unfinished">Individuata una piccola anomalia</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="830"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="844"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere Orario di inizio preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
+        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere Orario di inizio preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="831"/>
@@ -56250,7 +56241,7 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="913"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="927"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
+        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1152"/>

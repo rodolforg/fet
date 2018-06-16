@@ -32105,7 +32105,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4295"/>
         <source>XML</source>
-        <translation></translation>
+        <translation>XML</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4291"/>

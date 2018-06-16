@@ -10455,33 +10455,33 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als professors com
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="226"/>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="229"/>
         <source>FET information</source>
-        <translation type="unfinished">Informació de FET</translation>
+        <translation>Informació de FET</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="188"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Ponderació no vàlida (percentatge)</translation>
+        <translation>Ponderació no vàlida (percentatge)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="198"/>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="210"/>
         <source>Invalid activity</source>
-        <translation type="unfinished">Activitat no vàlida</translation>
+        <translation>Activitat no vàlida</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="218"/>
         <source>Same activities - impossible</source>
-        <translation type="unfinished">Mateixes activitats - impossible</translation>
+        <translation>Mateixes activitats - impossible</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="227"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Restricció afegida:</translation>
+        <translation>Restricció afegida:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="230"/>
         <source>Constraint NOT added - error?</source>
-        <translation type="unfinished">Restricció NO afegida - error?</translation>
+        <translation>Restricció NO afegida - error?</translation>
     </message>
 </context>
 <context>
@@ -10490,65 +10490,65 @@ Nota: els no disponibles i els esbarjos no se&apos;ls compten als professors com
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="14"/>
         <source>Add two activities ordered if same day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Afegeix dues activitats ordenades si és al mateix dia</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="20"/>
         <source>Filter</source>
-        <translation type="unfinished">Filtra</translation>
+        <translation>Filtra</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="26"/>
         <source>Teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>Professorat</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation type="unfinished"></translation>
+        <translation>Grup d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="52"/>
         <source>Subject</source>
-        <translation type="unfinished">Matèria</translation>
+        <translation>Matèria</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="62"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Etiqueta d&apos;activitat</translation>
+        <translation>Etiqueta d&apos;activitat</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="89"/>
         <source>First activity</source>
-        <translation type="unfinished">Primera activitat</translation>
+        <translation>Primera activitat</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="125"/>
         <source>Second activity</source>
-        <translation type="unfinished">Segona activitat</translation>
+        <translation>Segona activitat</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="177"/>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
-        <translation type="unfinished">Ponderació
+        <translation>Ponderació
 (recomanada: 0,0%-100,0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="199"/>
         <source>Swap</source>
         <comment>Interchange (swap) the two selected activities in the dialog</comment>
-        <translation type="unfinished"></translation>
+        <translation>Intercanviar activitats</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="206"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Afegeix restricció</translation>
+        <translation>Afegeix restricció</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="213"/>
         <source>Close</source>
-        <translation type="unfinished">Tanca</translation>
+        <translation>Tanca</translation>
     </message>
 </context>
 <context>
@@ -12408,8 +12408,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18329"/>
         <source>Time constraint %1 broken - this should not happen, as this kind of constraint should have only 100.0% weight. Please report error!</source>
-        <translatorcomment>Restricció de temps %1 incorrecte- això no hauria d&apos;haver passat degut a què un tipus de restricció només hauria de tennir 100% de pes. Informau de l&apos;error!</translatorcomment>
-        <translation></translation>
+        <translation>Restricció de temps %1 incorrecte- això no hauria d&apos;haver passat degut a què un tipus de restricció només hauria de tennir 100% de pes. Informau de l&apos;error!</translation>
     </message>
 </context>
 <context>
@@ -13030,8 +13029,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17887"/>
         <source>Activities occupy max time slots from selection</source>
-        <translatorcomment>Les activitats ocupen el màxim de franges horàries per a la selecció</translatorcomment>
-        <translation></translation>
+        <translation>Les activitats ocupen el màxim de franges horàries per a la selecció</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17889"/>
@@ -21348,8 +21346,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetmaxdaysperweekform_template.ui" line="14"/>
         <source>Constraints students set max days per week</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translatorcomment>Restriccions del nombre màxim de dies setmanals per grup</translatorcomment>
-        <translation></translation>
+        <translation>Restriccions del nombre màxim de dies setmanals per grup</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxdaysperweekform_template.ui" line="28"/>
@@ -30224,7 +30221,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13332"/>
         <source>Two activities ordered (the second activity must begin at any time in the week later than the first activity has finished)</source>
-        <translation type="unfinished"></translation>
+        <translation>Dues activitats ordenades (la segona activitat ha de començar en qualsevol moment de la setmana després de la primera activitat)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13317"/>
@@ -30347,7 +30344,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="26"/>
         <source>This constraint forces two activities A1 and A2: A2 to begin later than A1 has finished, separated by any time interval in the week</source>
-        <translation type="unfinished"></translation>
+        <translation>Aquesta restricció obliga a dues activitats A1 i A2: A2 a començar després que l&apos;A1 ha acabat, separades per a qualsevol interval de temps de la setmana</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="153"/>
@@ -30377,95 +30374,95 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="13521"/>
         <location filename="../src/engine/timeconstraint.cpp" line="13530"/>
         <source>FET error in data</source>
-        <translation type="unfinished">Error FET en dades</translation>
+        <translation>Error FET en les dades</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13503"/>
         <location filename="../src/engine/timeconstraint.cpp" line="13522"/>
         <source>Following constraint is wrong (refers to inexistent activity ids):
 %1</source>
-        <translation type="unfinished">La següent restricció és errònia (fa referència a ids d&apos;activitat inexistents):
+        <translation>La següent restricció és errònia (fa referència a ids d&apos;activitat inexistents):
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13531"/>
         <source>Following constraint is wrong (refers to same activities):
 %1</source>
-        <translation type="unfinished">La següent restricció és errònia (fa referència a les mateixes activitats):
+        <translation>La següent restricció és errònia (fa referència a les mateixes activitats):
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13572"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished"></translation>
+        <translation>C: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13576"/>
         <source>Two activities ordered if same day:</source>
-        <translation type="unfinished"></translation>
+        <translation>Dues activitats ordenades si estan el mateix dia:</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13579"/>
         <source>first act. id: %1</source>
         <comment>act.=activity</comment>
-        <translation type="unfinished">id 1a act:%1</translation>
+        <translation>id 1a act:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13581"/>
         <source>second act. id: %1</source>
         <comment>act.=activity</comment>
-        <translation type="unfinished">id 2a act:%1</translation>
+        <translation>id 2a act:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13583"/>
         <source>WP:%1%</source>
         <comment>Weight percentage</comment>
-        <translation type="unfinished">PP:%1%</translation>
+        <translation>PP:%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13590"/>
         <source>Time constraint</source>
-        <translation type="unfinished">Restricció de temps</translation>
+        <translation>Restricció de temps</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13591"/>
         <source>Two activities are ordered if they are on the same day (the second activity must begin later than the first activity has finished if they are on the same day)</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;han ordenat dues activitats si són el mateix dia (la segona activitat ha de començar més tard quan la primera activitat ha finalitzat si és el mateix dia)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13595"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">Ponderació (percentatge)=%1%</translation>
+        <translation>Ponderació (percentatge)=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13598"/>
         <source>First activity id=%1 (%2)</source>
         <comment>%1 is the id, %2 is the detailed description of the activity.</comment>
-        <translation type="unfinished">Id 1a activitat=%1 (%2)</translation>
+        <translation>Id 1a activitat=%1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13603"/>
         <source>Second activity id=%1 (%2)</source>
         <comment>%1 is the id, %2 is the detailed description of the activity.</comment>
-        <translation type="unfinished">Id 2a activitat=%1 (%2)</translation>
+        <translation>Id 2a activitat=%1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13609"/>
         <source>Active=%1</source>
         <comment>Refers to a constraint</comment>
-        <translation type="unfinished">Activa=%1</translation>
+        <translation>Activa=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13613"/>
         <source>Comments=%1</source>
-        <translation type="unfinished">Comentaris=%1</translation>
+        <translation>Comentaris=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13651"/>
         <source>Time constraint two activities ordered if on the same day broken for first activity with id=%1 (%2) and second activity with id=%3 (%4), increases conflicts total by %5</source>
         <comment>%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Restricció de temps per a dues activitats ordenades si el mateix dia s&apos;ha trencat per la primera activitat amb id =%1 (%2) i la segona activitat amb id =%3 (%4), augmenta els conflictes totals a %5</translation>
     </message>
 </context>
 <context>
@@ -30474,33 +30471,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="242"/>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="267"/>
         <source>FET information</source>
-        <translation type="unfinished">Informació de FET</translation>
+        <translation>Informació de FET</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="242"/>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="267"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Restricció seleccionada no vàlida</translation>
+        <translation>Restricció seleccionada no vàlida</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="272"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Treure restricció?</translation>
+        <translation>Treure restricció?</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="278"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">Confirmació de FET</translation>
+        <translation>Confirmació de FET</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="279"/>
         <source>Yes</source>
-        <translation type="unfinished">Sí</translation>
+        <translation>Sí</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="279"/>
         <source>No</source>
-        <translation type="unfinished">No</translation>
+        <translation>No</translation>
     </message>
 </context>
 <context>
@@ -30509,67 +30506,67 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="14"/>
         <source>Constraints two activies ordered if same day</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Restricció de dues activitats ordenades si estan al mateix dia</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="26"/>
         <source>This constraint forces two activities A1 and A2: if they are on the same day, A2 needs to begin later than A1 has finished.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aquesta restricció obliga a dues activitats A1 i A2: si estan en el mateix dia, A2 ha de començar després d&apos;haver acabat A1.</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="44"/>
         <source>Constraints</source>
-        <translation type="unfinished">Restriccions</translation>
+        <translation>Restriccions</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="61"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Restricció actual</translation>
+        <translation>Restricció actual</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="74"/>
         <source>Filter</source>
-        <translation type="unfinished">Filtra</translation>
+        <translation>Filtra</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="80"/>
         <source>Teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>Professorat</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="93"/>
         <source>Students set</source>
-        <translation type="unfinished"></translation>
+        <translation>Grup d&apos;estudiants</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="106"/>
         <source>Subject</source>
-        <translation type="unfinished">Matèria</translation>
+        <translation>Matèria</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="119"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Etiqueta d&apos;activitat</translation>
+        <translation>Etiqueta d&apos;activitat</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="139"/>
         <source>Add</source>
-        <translation type="unfinished">Afegeix</translation>
+        <translation>Afegeix</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="146"/>
         <source>Modify</source>
-        <translation type="unfinished">Modifica</translation>
+        <translation>Modifica</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="153"/>
         <source>Remove</source>
-        <translation type="unfinished">Treu</translation>
+        <translation>Treu</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="160"/>
         <source>Close</source>
-        <translation type="unfinished">Tanca</translation>
+        <translation>Tanca</translation>
     </message>
 </context>
 <context>
@@ -34053,7 +34050,7 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1884"/>
         <source>Two activities are ordered if they are on the same day</source>
-        <translation type="unfinished"></translation>
+        <translation>Dues activitats seran ordenades si estan el mateix dia</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1934"/>
@@ -36336,8 +36333,7 @@ Siusplau modifica les teves dades de manera que correspongui i torna-ho a intent
     <message>
         <location filename="../src/interface/groupsform.cpp" line="148"/>
         <source>This group exists only in year %1. This means that all the related activities and constraints will be removed. Do you want to continue?</source>
-        <translatorcomment>Aquest grup només existeix en l&apos;any %1. Això siginifica que s&apos;eliminaran totes les activitats i restriccions relacionades. Voleu continuar?</translatorcomment>
-        <translation></translation>
+        <translation>Aquest grup només existeix en l&apos;any %1. Això siginifica que s&apos;eliminaran totes les activitats i restriccions relacionades. Voleu continuar?</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="151"/>
@@ -37353,8 +37349,7 @@ Afegiu una altra restricció: «min. 1 dia entre les activitats» amb id. 2 i 3,
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="877"/>
         <source>Q: I would like to specify that a teacher should have activities in certain time slots, no matter which activities.</source>
-        <translatorcomment>P: M&apos;agradaria especificar que un professor hauria de tenir activitats en certes franges horàries, independentment de les activitats.</translatorcomment>
-        <translation></translation>
+        <translation>P: M&apos;agradaria especificar que un professor hauria de tenir activitats en certes franges horàries, independentment de les activitats.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="879"/>
@@ -47269,27 +47264,27 @@ Nota: els no disponibles i les pauses no se&apos;ls compten als professors com a
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform.cpp" line="144"/>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform.cpp" line="151"/>
         <source>FET information</source>
-        <translation type="unfinished">Informació de FET</translation>
+        <translation>Informació de FET</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform.cpp" line="126"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Ponderació no vàlida (percentatge)</translation>
+        <translation>Ponderació no vàlida (percentatge)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform.cpp" line="135"/>
         <source>Invalid first activity</source>
-        <translation type="unfinished">Primera activitat no vàlida</translation>
+        <translation>Primera activitat no vàlida</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform.cpp" line="145"/>
         <source>Invalid second activity</source>
-        <translation type="unfinished">Segona activitat no vàlida</translation>
+        <translation>Segona activitat no vàlida</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform.cpp" line="152"/>
         <source>Same activities - impossible</source>
-        <translation type="unfinished">Mateixes activitats - impossible</translation>
+        <translation>Mateixes activitats - impossible</translation>
     </message>
 </context>
 <context>
@@ -47298,40 +47293,40 @@ Nota: els no disponibles i les pauses no se&apos;ls compten als professors com a
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="14"/>
         <source>Modify two activities ordered if same day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Modificar dues activitats ordenades si estan el mateix dia</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="22"/>
         <source>Swap</source>
         <comment>Interchange (swap) the two selected activities in the dialog</comment>
-        <translation type="unfinished"></translation>
+        <translation>Intercanviar activitats</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="29"/>
         <source>Ok</source>
-        <translation type="unfinished">Ok</translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="36"/>
         <source>Cancel</source>
-        <translation type="unfinished">Cancel·la</translation>
+        <translation>Cancel·la</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="53"/>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
-        <translation type="unfinished">Ponderació
+        <translation>Ponderació
 (recomanada: 0,0%-100,0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="97"/>
         <source>First activity</source>
-        <translation type="unfinished">Primera activitat</translation>
+        <translation>Primera activitat</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="133"/>
         <source>Second activity</source>
-        <translation type="unfinished">Segona activitat</translation>
+        <translation>Segona activitat</translation>
     </message>
 </context>
 <context>

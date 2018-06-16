@@ -11664,7 +11664,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="953"/>
         <source>You have found a bug in FET. Please report it. This kind of constraint is not correctly recognized in all time constraints dialog. FET will skip this error, so that you can continue work. Probably the constraint can be modified from the specific constraint dialog.</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="996"/>
@@ -38305,7 +38305,7 @@ ATS = affected teacher or students set
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="130"/>
         <source>9) Even if it takes a long time to generate your timetable with a set of constraints, strengthening the constraints might not slow the generation too much. You are advised to try with stronger constraints after you obtain timetables, because you can obtain better timetables this way.</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="134"/>
@@ -45843,7 +45843,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxspanperdayform.cpp" line="93"/>
         <source>Invalid teacher</source>
-        <translation></translation>
+        <translation type="unfinished">لم يتم اختيار مدرس</translation>
     </message>
 </context>
 <context>
@@ -54763,37 +54763,37 @@ N1 ( C1(G1,G2), C2(G1, G3) )
         <location filename="../src/interface/timetableprintform.cpp" line="284"/>
         <source>Executive</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>Executive</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="285"/>
         <source>Folio</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>Folio</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="286"/>
         <source>Ledger</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>Ledger</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="287"/>
         <source>Legal</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>Legal</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="288"/>
         <source>Letter</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>Letter</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="289"/>
         <source>Tabloid</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>Tabloid</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="314"/>

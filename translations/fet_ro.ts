@@ -2008,8 +2008,7 @@ Puteți alege distanța minimă în zile între fiecare pereche de activități.
     <message>
         <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="275"/>
         <source>You specified max simultaneous activities to be 0. This is not perfect from efficiency point of view, because you can use instead constraint activity(ies) preferred time slots, and help FET to find a timetable easier and faster, with an equivalent result. Please correct.</source>
-        <translatorcomment>Ați specificat max activități simultane să fie 0. Acest lucru nu este perfect din punct de vedere al eficienței, deoarece puteți folosi în loc constrângerea activitate(activități) sloturi de timp preferate, și astfel să ajutați FET să găsească mai ușor și mai rapid un orar, cu un rezultat echivalent. Vă rugăm corectați.</translatorcomment>
-        <translation></translation>
+        <translation>Ați specificat max activități simultane să fie 0. Acest lucru nu este perfect din punct de vedere al eficienței, deoarece puteți folosi în loc constrângerea activitate(activități) sloturi de timp preferate, și astfel să ajutați FET să găsească mai ușor și mai rapid un orar, cu un rezultat echivalent. Vă rugăm corectați.</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="283"/>
@@ -13050,8 +13049,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17897"/>
         <source>Maximum number of occupied slots from selection=%1</source>
-        <translatorcomment>Numărul maxim de sloturi ocupate din selecție=%1</translatorcomment>
-        <translation></translation>
+        <translation>Numărul maxim de sloturi ocupate din selecție=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17900"/>

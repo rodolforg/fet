@@ -10493,7 +10493,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="14"/>
         <source>Add two activities ordered if same day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Hinzufügen von zwei Aktivitäten, die geordnet sind, wenn sie am gleichen Tag sind</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="20"/>
@@ -30238,7 +30238,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13332"/>
         <source>Two activities ordered (the second activity must begin at any time in the week later than the first activity has finished)</source>
-        <translation type="unfinished"></translation>
+        <translation>Zwei Aktivitäten geordnet (the zweite Aktivität muss irgendwann in der Woche anfangen, nachdem die erste Aktivität beendet wurde)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13317"/>
@@ -30361,7 +30361,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="26"/>
         <source>This constraint forces two activities A1 and A2: A2 to begin later than A1 has finished, separated by any time interval in the week</source>
-        <translation type="unfinished"></translation>
+        <translation>Diese Einschränkung betrifft zwei Aktivitäten A1 und A2. Aktivität A2 muss irgendwann nach dem Ende von A1 stattfinden (mit beliebigen Zeitraum dazwischen).</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="153"/>
@@ -30440,12 +30440,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13591"/>
         <source>Two activities are ordered if they are on the same day (the second activity must begin later than the first activity has finished if they are on the same day)</source>
-        <translation type="unfinished"></translation>
+        <translation>Zwei Aktivitäten geordnet, wenn sie am gleichen Tag stattfinden (the zweite Aktivität muss irgendwann nach dem Ende der ersten Aktivität anfangen, wenn die am gleichen Tag stattfinden)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13576"/>
         <source>Two activities ordered if same day:</source>
-        <translation type="unfinished"></translation>
+        <translation>Zwei Aktivitäten sind geordnet, wenn sie am gleichen Tag sind:</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13595"/>
@@ -30523,12 +30523,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="14"/>
         <source>Constraints two activies ordered if same day</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Einschränkungen für zwei geordnete Aktivitäten, sobald sie am gleichen Tag stattfinden</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="26"/>
         <source>This constraint forces two activities A1 and A2: if they are on the same day, A2 needs to begin later than A1 has finished.</source>
-        <translation type="unfinished"></translation>
+        <translation>Diese Einschränkung betrifft zwei Aktivitäten A1 und A2. Aktivität A2 muss irgendwann nach dem Ende von A1 stattfinden, wenn sie am gleichen Tag stattfinden.</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="44"/>
@@ -31978,7 +31978,7 @@ Bitte stoppe vorher die Berechnung.</translation>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1645"/>
         <source>File exists</source>
-        <translation></translation>
+        <translation>Datei existiert schon</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1647"/>
@@ -32332,7 +32332,7 @@ Bitte stoppe vorher die Berechnung.</translation>
         <location filename="../src/interface/fetmainform.cpp" line="1582"/>
         <source>FET XML files</source>
         <comment>Instructions for translators: FET XML is a type of file format (using text mode). So this field means files in the FET XML format</comment>
-        <translation></translation>
+        <translation>FET XML Dateien</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1311"/>
@@ -32868,7 +32868,7 @@ Dieses Menü zeigt Aktivitäten an, die Raumeinschränkungen mit einer Gewichtun
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4303"/>
         <source>36</source>
-        <translation></translation>
+        <translation>36</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4311"/>
@@ -32878,7 +32878,7 @@ Dieses Menü zeigt Aktivitäten an, die Raumeinschränkungen mit einer Gewichtun
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4306"/>
         <source>37</source>
-        <translation></translation>
+        <translation>37</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4314"/>
@@ -47326,7 +47326,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="14"/>
         <source>Modify two activities ordered if same day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Ändern von zwei Aktivitäten, die geordnet sind, wenn sie am gleichen Tag sind</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="22"/>
