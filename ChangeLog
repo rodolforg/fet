@@ -2054,7 +2054,7 @@ Versions 5.35.0 - 5.35.7
 - Version 5.35.6
 	- Minor strings bugs fixed (reported by Vangelis Karafillidis).
 	- Updated the Greek translation, by Vangelis Karafillidis. It is now complete.
-- Version 5.36.7
+- Version 5.35.7
 	- Updated to Qt 5.11.0.
 	- Corrected a few compilation warnings that appeared in FET when using the new Qt 5.11.0.
 	- Code cleanup (by Volker Dirr).
@@ -2071,4 +2071,4 @@ Versions 5.36.0 - 5.36.v
 	- Corrected a command-line bug: argument '--warnifusinggroupactivitiesininitialorder=true|false' was ignored. Reported by svenvanhal.
 	- Corrected two compilation warnings (reported by Innocent De Marchi).
 	- Corrected two bugs in the German translation (reported by math).
-	- Corrected some bugs in different translations.
+	- Corrected a few bugs in the translations.
