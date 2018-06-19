@@ -52,11 +52,12 @@ public:
 	~ModifySubactivityForm();
 
 	void updateStudentsListWidget();
-	void updateTeachersListWidget();
 	void updateSubjectsComboBox();
 	void updateActivityTagsListWidget();
 	
 public slots:
+	void updateAllTeachersListWidget();
+
 	void ok();
 	void cancel();
 	

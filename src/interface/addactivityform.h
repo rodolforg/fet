@@ -50,13 +50,14 @@ public:
 	~AddActivityForm();
 
 	void updateStudentsListWidget();
-	void updateTeachersListWidget();
 	void updateSubjectsComboBox();
 	void updateActivityTagsListWidget();
 	void updatePreferredDaysComboBox();
 	void updatePreferredHoursComboBox();
 
 public slots:
+	void updateAllTeachersListWidget();
+
 	void addTeacher();
 	void removeTeacher();
 	void addStudents();
