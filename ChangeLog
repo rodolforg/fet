@@ -2072,3 +2072,9 @@ Versions 5.36.0 - 5.36.v
 	- Corrected two compilation warnings (reported by Innocent De Marchi).
 	- Corrected two bugs in the German translation (reported by math).
 	- Corrected a few bugs in the translations.
+- Version 5.36.1
+	- Updated to Qt 5.11.1.
+	- The add/modify activity and modify subactivity dialogs now have an option to show only the qualified teachers for the chosen subject
+	(suggested by Volker Dirr).
+	- Added information about potential privacy issues if enabling the 'Search for updates on startup' option.
+	- Updated the Arabic translation, by Benahmed Abdelkrim.
