@@ -619,7 +619,7 @@ void HelpFaqForm::setText()
 		"this file will be visible on the server, along with your IP address and access time.")
 		.arg("https://lalescu.ro/liviu/fet/crtversion/crtversion.txt");
 	s+=" ";
-	s+=tr("Thus, it can be deduced if and when you use FET.");
+	s+=tr("Thus, it could be deduced if and when you use FET.");
 
 	s+="\n\n";
 	s+="--------------------";
