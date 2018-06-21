@@ -32,6 +32,13 @@
 #include <QAbstractItemView>
 #include <QScrollBar>
 
+#include <QSettings>
+#include <QObject>
+#include <QMetaObject>
+
+extern const QString COMPANY;
+extern const QString PROGRAM;
+
 QSpinBox* ModifyActivityForm::dur(int i)
 {
 	assert(i>=0 && i<durList.count());
@@ -150,6 +157,14 @@ ModifyActivityForm::ModifyActivityForm(QWidget* parent, int id, int activityGrou
 	allActivityTagsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
 	selectedActivityTagsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
 
+	QSettings settings(COMPANY, PROGRAM);
+
+	showSubgroupsCheckBox->setChecked(settings.value(this->metaObject()->className()+QString("/show-subgroups-check-box-state"), "false").toBool());
+	showGroupsCheckBox->setChecked(settings.value(this->metaObject()->className()+QString("/show-groups-check-box-state"), "true").toBool());
+	showYearsCheckBox->setChecked(settings.value(this->metaObject()->className()+QString("/show-years-check-box-state"), "true").toBool());
+
+	qualifiedCheckBox->setChecked(settings.value(this->metaObject()->className()+QString("/qualified-teachers-check-box-state"), "false").toBool());
+
 	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
 	connect(clearTeacherPushButton, SIGNAL(clicked()), this, SLOT(clearTeachers()));
@@ -253,6 +268,14 @@ ModifyActivityForm::ModifyActivityForm(QWidget* parent, int id, int activityGrou
 ModifyActivityForm::~ModifyActivityForm()
 {
 	saveFETDialogGeometry(this);
+
+	QSettings settings(COMPANY, PROGRAM);
+
+	settings.setValue(this->metaObject()->className()+QString("/show-subgroups-check-box-state"), showSubgroupsCheckBox->isChecked());
+	settings.setValue(this->metaObject()->className()+QString("/show-groups-check-box-state"), showGroupsCheckBox->isChecked());
+	settings.setValue(this->metaObject()->className()+QString("/show-years-check-box-state"), showYearsCheckBox->isChecked());
+
+	settings.setValue(this->metaObject()->className()+QString("/qualified-teachers-check-box-state"), qualifiedCheckBox->isChecked());
 }
 
 void ModifyActivityForm::updateAllTeachersListWidget()

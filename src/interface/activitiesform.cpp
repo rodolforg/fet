@@ -57,6 +57,14 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 
 	activitiesListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
 
+	QSettings settings(COMPANY, PROGRAM);
+	centerWidgetOnScreen(this);
+	restoreFETDialogGeometry(this);
+	//restore splitter state
+	if(settings.contains(this->metaObject()->className()+QString("/splitter-state")))
+		splitter->restoreState(settings.value(this->metaObject()->className()+QString("/splitter-state")).toByteArray());
+	recursiveCheckBox->setChecked(settings.value(this->metaObject()->className()+QString("/show-related-check-box-state"), "false").toBool());
+	
 	connect(activitiesListWidget, SIGNAL(currentRowChanged(int)), this, SLOT(activityChanged()));
 	connect(addActivityPushButton, SIGNAL(clicked()), this, SLOT(addActivity()));
 	connect(removeActivityPushButton, SIGNAL(clicked()), this, SLOT(removeActivity()));
@@ -71,13 +79,6 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 	connect(helpPushButton, SIGNAL(clicked()), this, SLOT(help()));
 	connect(commentsPushButton, SIGNAL(clicked()), this, SLOT(activityComments()));
 
-	centerWidgetOnScreen(this);
-	restoreFETDialogGeometry(this);
-	//restore splitter state
-	QSettings settings(COMPANY, PROGRAM);
-	if(settings.contains(this->metaObject()->className()+QString("/splitter-state")))
-		splitter->restoreState(settings.value(this->metaObject()->className()+QString("/splitter-state")).toByteArray());
-	
 	QSize tmp1=teachersComboBox->minimumSizeHint();
 	Q_UNUSED(tmp1);
 	QSize tmp2=studentsComboBox->minimumSizeHint();
@@ -200,6 +201,8 @@ ActivitiesForm::~ActivitiesForm()
 	//save splitter state
 	QSettings settings(COMPANY, PROGRAM);
 	settings.setValue(this->metaObject()->className()+QString("/splitter-state"), splitter->saveState());
+
+	settings.setValue(this->metaObject()->className()+QString("/show-related-check-box-state"), recursiveCheckBox->isChecked());
 }
 
 bool ActivitiesForm::filterOk(Activity* act)

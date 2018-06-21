@@ -43,6 +43,13 @@
 #include <QModelIndex>
 #include <QScrollBar>
 
+#include <QSettings>
+#include <QObject>
+#include <QMetaObject>
+
+extern const QString COMPANY;
+extern const QString PROGRAM;
+
 QSpinBox* AddActivityForm::dur(int i)
 {
 	assert(i>=0 && i<durList.count());
@@ -163,6 +170,14 @@ AddActivityForm::AddActivityForm(QWidget* parent, const QString& teacherName, co
 	activList.append(active34CheckBox);
 	activList.append(active35CheckBox);
 
+	QSettings settings(COMPANY, PROGRAM);
+
+	subgroupsCheckBox->setChecked(settings.value(this->metaObject()->className()+QString("/show-subgroups-check-box-state"), "false").toBool());
+	groupsCheckBox->setChecked(settings.value(this->metaObject()->className()+QString("/show-groups-check-box-state"), "true").toBool());
+	yearsCheckBox->setChecked(settings.value(this->metaObject()->className()+QString("/show-years-check-box-state"), "true").toBool());
+
+	qualifiedCheckBox->setChecked(settings.value(this->metaObject()->className()+QString("/qualified-teachers-check-box-state"), "false").toBool());
+
 	connect(subgroupsCheckBox, SIGNAL(toggled(bool)), this, SLOT(showSubgroupsChanged()));
 	connect(groupsCheckBox, SIGNAL(toggled(bool)), this, SLOT(showGroupsChanged()));
 	connect(yearsCheckBox, SIGNAL(toggled(bool)), this, SLOT(showYearsChanged()));
@@ -194,7 +209,29 @@ AddActivityForm::AddActivityForm(QWidget* parent, const QString& teacherName, co
 	
 	selectedStudentsListWidget->clear();
 	updateStudentsListWidget();
+
 	updateSubjectsComboBox();
+	if(subjectName!=""){
+		int pos=-1;
+		for(int i=0; i<subjectsComboBox->count(); i++){
+			if(subjectsComboBox->itemText(i)==subjectName){
+				pos=i;
+				break;
+			}
+		}
+		assert(pos>=0);
+		subjectsComboBox->setCurrentIndex(pos);
+	}
+	else{
+		//begin trick to pass a Qt 4.6.0 bug: the first entry is not highlighted with mouse until you move to second entry and then back up
+		//also, this trick makes the combo box behave nicer under Windows: the first subject is shown with an ugly edge if not using this trick.
+		if(subjectsComboBox->view()){
+			subjectsComboBox->view()->setCurrentIndex(QModelIndex());
+		}
+		//end trick
+		subjectsComboBox->setCurrentIndex(-1);
+	}
+
 	updateActivityTagsListWidget();
 
 	//after updateSubjectsComboBox
@@ -234,33 +271,21 @@ AddActivityForm::AddActivityForm(QWidget* parent, const QString& teacherName, co
 		selectedTeachersListWidget->addItem(teacherName);
 	if(studentsSetName!="")
 		selectedStudentsListWidget->addItem(studentsSetName);
-	if(subjectName!=""){
-		int pos=-1;
-		for(int i=0; i<subjectsComboBox->count(); i++){
-			if(subjectsComboBox->itemText(i)==subjectName){
-				pos=i;
-				break;
-			}
-		}
-		assert(pos>=0);
-		subjectsComboBox->setCurrentIndex(pos);
-	}
-	else{
-		//begin trick to pass a Qt 4.6.0 bug: the first entry is not highlighted with mouse until you move to second entry and then back up
-		if(subjectsComboBox->view()){
-			subjectsComboBox->view()->setCurrentIndex(QModelIndex());
-		}
-		//end trick
-		subjectsComboBox->setCurrentIndex(-1);
-	}
 	if(activityTagName!="")
 		selectedActivityTagsListWidget->addItem(activityTagName);
-		
 }
 
 AddActivityForm::~AddActivityForm()
 {
 	saveFETDialogGeometry(this);
+	
+	QSettings settings(COMPANY, PROGRAM);
+
+	settings.setValue(this->metaObject()->className()+QString("/show-subgroups-check-box-state"), subgroupsCheckBox->isChecked());
+	settings.setValue(this->metaObject()->className()+QString("/show-groups-check-box-state"), groupsCheckBox->isChecked());
+	settings.setValue(this->metaObject()->className()+QString("/show-years-check-box-state"), yearsCheckBox->isChecked());
+
+	settings.setValue(this->metaObject()->className()+QString("/qualified-teachers-check-box-state"), qualifiedCheckBox->isChecked());
 }
 
 void AddActivityForm::updateAllTeachersListWidget()

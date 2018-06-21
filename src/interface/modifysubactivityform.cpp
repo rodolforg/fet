@@ -30,6 +30,13 @@
 
 #include <QPlainTextEdit>
 
+#include <QSettings>
+#include <QObject>
+#include <QMetaObject>
+
+extern const QString COMPANY;
+extern const QString PROGRAM;
+
 ModifySubactivityForm::ModifySubactivityForm(QWidget* parent, int id, int activityGroupId): QDialog(parent)
 {
 	setupUi(this);
@@ -56,6 +63,14 @@ ModifySubactivityForm::ModifySubactivityForm(QWidget* parent, int id, int activi
 	selectedStudentsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
 	allActivityTagsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
 	selectedActivityTagsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
+
+	QSettings settings(COMPANY, PROGRAM);
+
+	showSubgroupsCheckBox->setChecked(settings.value(this->metaObject()->className()+QString("/show-subgroups-check-box-state"), "false").toBool());
+	showGroupsCheckBox->setChecked(settings.value(this->metaObject()->className()+QString("/show-groups-check-box-state"), "true").toBool());
+	showYearsCheckBox->setChecked(settings.value(this->metaObject()->className()+QString("/show-years-check-box-state"), "true").toBool());
+
+	qualifiedCheckBox->setChecked(settings.value(this->metaObject()->className()+QString("/qualified-teachers-check-box-state"), "false").toBool());
 
 	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
@@ -143,6 +158,14 @@ ModifySubactivityForm::ModifySubactivityForm(QWidget* parent, int id, int activi
 ModifySubactivityForm::~ModifySubactivityForm()
 {
 	saveFETDialogGeometry(this);
+
+	QSettings settings(COMPANY, PROGRAM);
+
+	settings.setValue(this->metaObject()->className()+QString("/show-subgroups-check-box-state"), showSubgroupsCheckBox->isChecked());
+	settings.setValue(this->metaObject()->className()+QString("/show-groups-check-box-state"), showGroupsCheckBox->isChecked());
+	settings.setValue(this->metaObject()->className()+QString("/show-years-check-box-state"), showYearsCheckBox->isChecked());
+
+	settings.setValue(this->metaObject()->className()+QString("/qualified-teachers-check-box-state"), qualifiedCheckBox->isChecked());
 }
 
 void ModifySubactivityForm::updateAllTeachersListWidget()
