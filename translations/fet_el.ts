@@ -4,187 +4,187 @@
 <context>
     <name>ActivitiesForm</name>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="388"/>
-        <location filename="../src/interface/activitiesform.cpp" line="439"/>
-        <location filename="../src/interface/activitiesform.cpp" line="500"/>
-        <location filename="../src/interface/activitiesform.cpp" line="605"/>
+        <location filename="../src/interface/activitiesform.cpp" line="391"/>
+        <location filename="../src/interface/activitiesform.cpp" line="442"/>
+        <location filename="../src/interface/activitiesform.cpp" line="503"/>
+        <location filename="../src/interface/activitiesform.cpp" line="608"/>
         <source>FET information</source>
         <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="388"/>
-        <location filename="../src/interface/activitiesform.cpp" line="500"/>
-        <location filename="../src/interface/activitiesform.cpp" line="605"/>
+        <location filename="../src/interface/activitiesform.cpp" line="391"/>
+        <location filename="../src/interface/activitiesform.cpp" line="503"/>
+        <location filename="../src/interface/activitiesform.cpp" line="608"/>
         <source>Invalid selected activity</source>
         <translation>Μη αποδεκτή επιλογή δραστηριότητας</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="440"/>
+        <location filename="../src/interface/activitiesform.cpp" line="443"/>
         <source>Cannot modify this large activity, because it contains more than %1 activities.</source>
         <translation>Αδύνατη η τροποποίηση της συγκεκριμένης επιμερισμένης δραστηριότητας, διότι περιλαμβάνει περισσότερες από %1 υποδραστηριότητες.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="513"/>
+        <location filename="../src/interface/activitiesform.cpp" line="516"/>
         <source>Remove activity?</source>
         <translation>Διαγραφή δραστηριότητας;</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="516"/>
+        <location filename="../src/interface/activitiesform.cpp" line="519"/>
         <source>There will also be removed the related activities from the same larger split activity</source>
         <translation>Πρόκειται να διαγραφούν επίσης και οι επιμέρους υποδραστηριότητες της συγκεκριμένης επιμερισμένης δραστηριότητας</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="521"/>
+        <location filename="../src/interface/activitiesform.cpp" line="524"/>
         <source>FET confirmation</source>
         <translation>FET - Επιβεβαίωση</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="522"/>
+        <location filename="../src/interface/activitiesform.cpp" line="525"/>
         <source>Yes</source>
         <translation>Ναι</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="522"/>
+        <location filename="../src/interface/activitiesform.cpp" line="525"/>
         <source>No</source>
         <translation>Όχι</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="348"/>
+        <location filename="../src/interface/activitiesform.cpp" line="351"/>
         <source>No: %1 / %2</source>
         <comment>No means number, %1 is the number of active activities, %2 is the number of total activities. Please leave spaces between fields, so that they are better visible</comment>
         <translation>Αρ: %1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="350"/>
+        <location filename="../src/interface/activitiesform.cpp" line="353"/>
         <source>Dur: %1 / %2</source>
         <comment>Dur means duration, %1 is the duration of active activities, %2 is the duration of total activities. Please leave spaces between fields, so that they are better visible</comment>
         <translation>Δρκ: %1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="449"/>
+        <location filename="../src/interface/activitiesform.cpp" line="452"/>
         <source>different teachers</source>
         <translation>διαφορετικοί εκπαιδευτικοί</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="451"/>
+        <location filename="../src/interface/activitiesform.cpp" line="454"/>
         <source>different subject</source>
         <translation>διαφορετικό αντικείμενο</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="453"/>
+        <location filename="../src/interface/activitiesform.cpp" line="456"/>
         <source>different activity tags</source>
         <translation>διαφορετικές ετικέτες δραστηριοτήτων</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="455"/>
+        <location filename="../src/interface/activitiesform.cpp" line="458"/>
         <source>different students</source>
         <translation>διαφορετικοί μαθητές</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="457"/>
+        <location filename="../src/interface/activitiesform.cpp" line="460"/>
         <source>different boolean variable &apos;must compute n total students&apos;</source>
         <translation>διαφορετική boolean μεταβλητή &apos;must compute n total students&apos; (&apos;πρέπει να γίνει υπολογισμός για n συνολικά μαθητές&apos;)</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="459"/>
+        <location filename="../src/interface/activitiesform.cpp" line="462"/>
         <source>different number of students</source>
         <translation>διαφορετικός αριθμός μαθητών</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="462"/>
+        <location filename="../src/interface/activitiesform.cpp" line="465"/>
         <source>The current split activity has subactivities which were individually modified. It is recommended to abort now and modify individual subactivities from the corresponding menu. Otherwise you will modify the fields for all the subactivities from this larger split activity.</source>
         <translation>Η συγκεκριμένη επιμερισμένη δραστηριότητα περιλαμβάνει υποδραστηριότητες οι οποίες έχουν τροποποιηθεί μεμονωμένα. Προτείνεται να διακόψετε τη διαδικασία τώρα και να τροποποιήσετε τις επιμέρους υποδραστηριότητες από το αντίστοιχο μενού. Διαφορετικά, θα τροποποιήσετε τα πεδία για όλες τις υποδραστηριότητες της συγκεκριμένης επιμερισμένης δραστηριότητας.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="466"/>
+        <location filename="../src/interface/activitiesform.cpp" line="469"/>
         <source>The fields which are different are: %1</source>
         <translation>Τα πεδία τα οποία είναι διαφορετικά είναι: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="468"/>
+        <location filename="../src/interface/activitiesform.cpp" line="471"/>
         <source>FET warning</source>
         <translation>FET - Προειδοποίηση</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="468"/>
+        <location filename="../src/interface/activitiesform.cpp" line="471"/>
         <source>Abort</source>
         <translation>Διακοπή</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="468"/>
+        <location filename="../src/interface/activitiesform.cpp" line="471"/>
         <source>Continue</source>
         <translation>Συνέχεια</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="566"/>
+        <location filename="../src/interface/activitiesform.cpp" line="569"/>
         <source>Useful instructions/tips:</source>
         <translation>Χρήσιμες οδηγίες/υποδείξεις:</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="569"/>
+        <location filename="../src/interface/activitiesform.cpp" line="572"/>
         <source>Above the (sub)activities list, we have 2 labels, containing 4 numbers. The first label contains text: No: a / b. The first number a is the number of active (sub)activities (we number each individual subactivity as 1), while the second number b is the number of total (sub)activities. The second label contains text: Dur: c / d. The third number c is the duration of active (sub)activities, in periods (or FET hours), while the fourth number d is the duration of total (sub)activities, in periods (or FET hours). So, No means number and Dur means duration.</source>
         <translation>Πάνω από την λίστα των (υπο)δραστηριοτήτων, έχουμε δύο ενδείξεις, οι οποίες περιλαμβάνουν 4 αριθμούς. Η πρώτη ένδειξη περιλαμβάνει το κείμενο: Αρ. a / b. Ο πρώτος αριθμός a είναι ο αριθμός των ενεργών (υπο)δραστηριοτήτων (αριθμούμε την καθεμία υποδραστηριότητα ως 1), ενώ ο δεύτερος αριθμός b είναι ο συνολικός αριθμός των (υπο)δραστηριοτήτων. Η δεύτερη ένδειξη περιλαμβάνει το κείμενο: Δρκ: c / d. Ο τρίτος αριθμός c είναι η διάρκεια των ενεργών (υποδραστηριοτήτων), σε περιόδους (ή ώρες στο FET), ενώ ο τέταρτος αριθμός d είναι η συνολική διάρκεια των (υπο)δραστηριοτήτων, σε περιόδους (ή ώρες στο FET). Έτσι, Αρ. σημαίνει αριθμός και Δρκ σημαίνει διάρκεια.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="575"/>
+        <location filename="../src/interface/activitiesform.cpp" line="578"/>
         <source>Example: No: 100 / 102, Dur: 114 / 117. They represent: 100 - the number of active (sub)activities, then 102 - the number of total (sub)activities, 114 - the duration of active activities (in periods or FET hours) and 117 - the duration of total activities (in periods or FET hours). In this example we have 2 inactive activities with their combined duration being 3 periods.</source>
         <translation>Παράδειγμα: Αρ. 100 / 102, Δρκ: 114 / 117. Αναπαριστούν: 100 - ο αριθμός των ενεργών (υπο)δραστηριοτήτων, 102 - ο συνολικός αριθμός των (υπο)δραστηριοτήτων, 114 - η διάρκεια των ενεργών δραστηριοτήτων (σε περιόδους ή ώρες στο FET) και 117 - η συνολική διάρκεια των δραστηριοτήτων (σε περιόδους ή ώρες στο FET). Στο παράδειγμα αυτό έχουμε δύο ανενεργές δραστηριότητες με διάρκεια αθροιστικά 3 περιόδων.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="581"/>
+        <location filename="../src/interface/activitiesform.cpp" line="584"/>
         <source>Explanation of the short description of an activity: first comes the id. If the activity is inactive, an X follows. Then the duration. Then, if the activity is split, a slash and the total duration. Then teachers, subject, activity tag (if it is not void) and students. Then the number of students (if specified).</source>
         <translation>Επεξήγηση της σύντομης περιγραφής μίας δραστηριότητας: πρώτα αναγράφεται ο ατ (αριθμός ταυτοποίησης). Αν η δραστηριότητα είναι ανενεργή ακολουθεί ένα &quot;X&quot;. Έπειτα αναγράφεται η διάρκεια. Έπειτα, εάν η δραστηριότητα είναι επιμερισμένη, μία κάθετος (/) και η συνολική διάρκεια. Έπειτα οι εκπαιδευτικοί, το αντικείμενο, η ετικέτα δραστηριότητας (εφόσον το πεδίο αυτό δεν είναι κενό) και οι μαθητές. Έπειτα ο αριθμός των μαθητών (εάν έχει καθοριστεί).</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="585"/>
+        <location filename="../src/interface/activitiesform.cpp" line="588"/>
         <source>The activities which are inactive:</source>
         <comment>This is the help for activities which are inactive, after this field there come explanations for how inactive activities are displayed.</comment>
         <translation>Οι δραστηριότητες οι οποίες είναι ανενεργές:</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="588"/>
+        <location filename="../src/interface/activitiesform.cpp" line="591"/>
         <source>have an X mark after the id.</source>
         <comment>It refers to inactive activities, which have this mark after the id.</comment>
         <translation>φέρουν την ένδειξη &quot;Χ&quot; μετά τον ατ (αριθμό ταυτοποίησης).</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="591"/>
+        <location filename="../src/interface/activitiesform.cpp" line="594"/>
         <source>if you use colors in interface (see Settings/Interface menu), they will appear with different background color.</source>
         <comment>It refers to inactive activities</comment>
         <translation>εάν χρησιμοποιείτε χρώματα στην διεπαφή (βλέπε στο μενού Ρυθμίσεις/Διεπαφή), αυτά θα εμφανίζονται με διαφορετικό χρώμα στο φόντο.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="593"/>
+        <location filename="../src/interface/activitiesform.cpp" line="596"/>
         <source>To modify an activity, you can also double click it.</source>
         <translation>Για να τροποποιήσετε μία δραστηριότητα, μπορείτε επίσης να κάνετε διπλό κλικ πάνω της.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="595"/>
+        <location filename="../src/interface/activitiesform.cpp" line="598"/>
         <source>Show related: if you select this, there will be listed activities for groups and subgroups contained also in the current set (if the current set is a year or a group) and also higher ranked year or group (if the current set is a group or a subgroup).</source>
         <translation>Εμφάνιση σχετικών: εάν το επιλέξετε, θα εμφανίζονται οι δραστηριότητες των τμημάτων και υποτμημάτων τα οποία περιλαμβάνονται στην τρέχουσα ομάδα μαθητών (εάν η τρέχουσα ομάδα μαθητών μαθητών είναι έτος ή τμήμα), καθώς επίσης και οι δραστηριότητες του έτους ή του τμήματος στο οποίο περιλαμβάνεται η τρέχουσα ομάδα μαθητών (εάν η τρέχουσα ομάδα μαθητών είναι τμήμα ή υποτμήμα).</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="598"/>
+        <location filename="../src/interface/activitiesform.cpp" line="601"/>
         <source>FET Help</source>
         <translation>FET - Βοήθεια</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="616"/>
+        <location filename="../src/interface/activitiesform.cpp" line="619"/>
         <source>Activity comments</source>
         <translation>Σχόλια για δραστηριότητες</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="618"/>
+        <location filename="../src/interface/activitiesform.cpp" line="621"/>
         <source>OK</source>
         <translation>ΟΚ</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="620"/>
+        <location filename="../src/interface/activitiesform.cpp" line="623"/>
         <source>Cancel</source>
         <translation>Άκυρο</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="550"/>
+        <location filename="../src/interface/activitiesform.cpp" line="553"/>
         <source>Invalid activity</source>
         <translation>Μη αποδεκτή δραστηριότητα</translation>
     </message>
@@ -1257,239 +1257,239 @@ there won&apos;t be removed an additional number of %1 activities
 <context>
     <name>AddActivityForm</name>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="588"/>
-        <location filename="../src/interface/addactivityform.cpp" line="663"/>
-        <location filename="../src/interface/addactivityform.cpp" line="705"/>
-        <location filename="../src/interface/addactivityform.cpp" line="707"/>
-        <location filename="../src/interface/addactivityform.cpp" line="785"/>
-        <location filename="../src/interface/addactivityform.cpp" line="790"/>
+        <location filename="../src/interface/addactivityform.cpp" line="613"/>
+        <location filename="../src/interface/addactivityform.cpp" line="688"/>
+        <location filename="../src/interface/addactivityform.cpp" line="730"/>
+        <location filename="../src/interface/addactivityform.cpp" line="732"/>
+        <location filename="../src/interface/addactivityform.cpp" line="810"/>
+        <location filename="../src/interface/addactivityform.cpp" line="815"/>
         <source>FET information</source>
         <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="589"/>
+        <location filename="../src/interface/addactivityform.cpp" line="614"/>
         <source>Invalid weight (percentage) for added constraint min days between activities</source>
         <translation>Μη αποδεκτή βαρύτητα (ποσοστό) για τον προστεθέντα περιορισμό &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="614"/>
-        <location filename="../src/interface/addactivityform.cpp" line="633"/>
-        <location filename="../src/interface/addactivityform.cpp" line="690"/>
+        <location filename="../src/interface/addactivityform.cpp" line="639"/>
+        <location filename="../src/interface/addactivityform.cpp" line="658"/>
+        <location filename="../src/interface/addactivityform.cpp" line="715"/>
         <source>FET question</source>
         <translation>FET - Ερώτηση</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="599"/>
+        <location filename="../src/interface/addactivityform.cpp" line="624"/>
         <source>FET warning</source>
         <translation>FET - Προειδοποίηση</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="600"/>
+        <location filename="../src/interface/addactivityform.cpp" line="625"/>
         <source>Invalid subject</source>
         <translation>Μη αποδεκτό αντικείμενο</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="664"/>
+        <location filename="../src/interface/addactivityform.cpp" line="689"/>
         <source>Invalid duration</source>
         <translation>Μη αποδεκτή διάρκεια</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="693"/>
-        <location filename="../src/interface/addactivityform.cpp" line="730"/>
+        <location filename="../src/interface/addactivityform.cpp" line="718"/>
+        <location filename="../src/interface/addactivityform.cpp" line="755"/>
         <source>Yes</source>
         <translation>Ναι</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="693"/>
-        <location filename="../src/interface/addactivityform.cpp" line="730"/>
+        <location filename="../src/interface/addactivityform.cpp" line="718"/>
+        <location filename="../src/interface/addactivityform.cpp" line="755"/>
         <source>No</source>
         <translation>Όχι</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="705"/>
+        <location filename="../src/interface/addactivityform.cpp" line="730"/>
         <source>Activity added</source>
         <translation>Δραστηριότητα προστέθηκε</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="707"/>
+        <location filename="../src/interface/addactivityform.cpp" line="732"/>
         <source>Activity NOT added - please report error</source>
         <translation>Δραστηριότητα ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="713"/>
+        <location filename="../src/interface/addactivityform.cpp" line="738"/>
         <source>You want to add a container activity split into more than the number of days per week and also add a constraint min days between activities. This is a very bad practice from the way the algorithm of generation works (it slows down the generation and makes it harder to find a solution).</source>
         <translation>Θέλετε να προσθέσετε μία δραστηριότητα-κοντέινερ επιμερισμένη σε περισσότερες (υποδραστηριότητες) σε σχέση με τον αριθμό των ημερών ανά εβδομάδα καθώς και να προσθέσετε έναν περιορισμό &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;. Αυτή είναι πολύ κακή πρακτική από πλευράς του τρόπου λειτουργίας του αλγορίθμου επίλυσης (προξενεί καθυστέρηση στην δημιουργία ωρολογίου προγράμματος και καθιστά δυσκολότερη την εξεύρεση λύσης).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="718"/>
+        <location filename="../src/interface/addactivityform.cpp" line="743"/>
         <source>1. If you add &apos;force consecutive if same day&apos;, then couple extra activities in pairs to obtain a number of activities equal to the number of days per week. Example: 7 activities with duration 1 in a 5 days week, then transform into 5 activities with durations: 2,2,1,1,1 and add a single container activity with these 5 components (possibly raising the weight of added constraint min days between activities up to 100%)</source>
         <translation>1. Αν προσθέσετε &quot;αν την ίδια ημέρα - διαδοχικές&quot;, τότε δημιουργήστε ζεύγη με τις επιπλέον δραστηριότητες (υποδραστηριότητες), προκειμένου να εξασφαλίσετε ότι ο αριθμός των δραστηριοτήτων (υποδραστηριοτήτων) θα είναι ίσος με τον αριθμό των ημερών ανά εβδομάδα. Παράδειγμα: για 7 δραστηριότητες (υποδραστηριότητες) με διάρκεια η καθεμία 1 (ώρα) σε εβδομάδα 5 ημερών, θα πρέπει να μετασχηματίσετε τις δραστηριότητες (υποδραστηριότητες) αυτές σε 5 δραστηριότητες (υποδραστηριότητες) με διάρκειες: 2,2,1,1,1 και να προσθέσετε μία επιμερισμένη δραστηριότητα με τα παραπάνω 5 στοιχεία (υποδραστηριότητες), πιθανώς αυξάνοντας την βαρύτητα του περιορισμού &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; στο 100%</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="722"/>
+        <location filename="../src/interface/addactivityform.cpp" line="747"/>
         <source>2. If you don&apos;t add &apos;force consecutive if same day&apos;, then add a larger activity split into a number of activities equal with the number of days per week and the remaining components into other larger split activity. For example, suppose you need to add 7 activities with duration 1 in a 5 days week. Add 2 larger container activities, first one split into 5 activities with duration 1 and second one split into 2 activities with duration 1 (possibly raising the weight of added constraints min days between activities for each of the 2 containers up to 100%)</source>
         <translation>2. Αν δεν προσθέσετε &quot;αν την ίδια ημέρα - διαδοχικές&quot;, τότε προσθέστε μία δραστηριότητα επιμερισμένη σε αριθμό δραστηριοτήτων (υποδραστηριοτήτων) ίσο με τον αριθμό των ημερών ανά εβδομάδα και τα στοιχεία (υποδραστηριότητες) που υπολείπονται προσθέσετε τα σε μία άλλη επιμερισμένη δραστηριότητα. Για παράδειγμα, υποθέστε ότι χρειάζεται να προσθέσετε 7 δραστηριότητες (υποδραστηριότητες) με διάρκεια 1 (ώρα) η καθεμία σε εβδομάδα 5 ημερών. Προσθέσετε δύο επιμερισμένες δραστηριότητες, με την πρώτη να επιμερίζεται σε 5 δραστηριότητες (υποδραστηριότητες) με διάρκεια 1 (ώρα) η καθεμία και την δεύτερη να επιμερίζεται σε 2 δραστηριότητες (υποδραστηριότητες) με διάρκεια 1 (ώρα) η καθεμία, πιθανώς αυξάνοντας την βαρύτητα των περιορισμών &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; στο 100% για την καθεμία από τις επιμερισμένες δραστηριότητες</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="785"/>
+        <location filename="../src/interface/addactivityform.cpp" line="810"/>
         <source>Split activity added. Please note that FET currently cannot check for duplicates when adding split activities. It is advisable to check the statistics after adding all the activities</source>
         <translation>Επιμερισμένη δραστηριότητα προστέθηκε. Παρακαλώ σημειώστε ότι το FET επί του παρόντος δεν ελέγχει για διπλές εγγραφές κατά την πρόσθεση επιμερισμένων δραστηριοτήτων. Συνιστάται να ελέγχετε τα στατιστικά μετά την προσθήκη όλων των δραστηριοτήτων</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="790"/>
+        <location filename="../src/interface/addactivityform.cpp" line="815"/>
         <source>Split activity NOT added - error???</source>
         <translation>Επιμερισμένη δραστηριότητα ΔΕΝ προστέθηκε - σφάλμα;;;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="815"/>
+        <location filename="../src/interface/addactivityform.cpp" line="840"/>
         <source>Abbreviations in this dialog:</source>
         <translation>Συντομογραφίες στον διάλογο αυτό:</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="817"/>
+        <location filename="../src/interface/addactivityform.cpp" line="842"/>
         <source>&apos;Students&apos; (the text near the spin box), means &apos;Number of students (-1 for automatic)&apos;</source>
         <translation>&quot;Μαθητές&quot; (το κείμενο δίπλα στο πλαίσιο τιμών) σημαίνει &quot;αριθμός μαθητών&quot; (-1 για αυτόματο)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="819"/>
+        <location filename="../src/interface/addactivityform.cpp" line="844"/>
         <source>&apos;Split&apos; means &apos;Split into ... activities per week&apos;</source>
         <translation>&quot;Επιμερισμός&quot; σημαίνει: &quot;Επιμερισμός σε ... δραστηριότητες (υποδραστηριότητες) ανά εβδομάδα&quot;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="821"/>
+        <location filename="../src/interface/addactivityform.cpp" line="846"/>
         <source>&apos;Min days&apos; means &apos;The minimum required distance in days between each pair of activities&apos;</source>
         <translation>&quot;Ελάχιστες ημέρες&quot; σημαίνει: &quot;Η ελάχιστη απαιτούμενη απόσταση σε ημέρες ανάμεσα σε κάθε ζεύγος δραστηριοτήτων&quot;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="823"/>
+        <location filename="../src/interface/addactivityform.cpp" line="848"/>
         <source>&apos;Weight %&apos; means &apos;Percentage of added constraint (min days between activities constraint). Recommended: 95.0%-100.0%&apos;</source>
         <translation>&quot;Βαρύτητα %&quot; σημαίνει &quot;ποσοστό για τον προστεθέντα περιορισμό (περιορισμός &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;). Προτεινόμενο: 95.0%-100.0%&quot;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="825"/>
+        <location filename="../src/interface/addactivityform.cpp" line="850"/>
         <source>&apos;Consecutive&apos; means &apos;If activities on same day, force consecutive?&apos;</source>
         <translation>&quot;Διαδοχικές&quot; σημαίνει: &quot;Αν οι δραστηριότητες πραγματοποιούνται την ίδια ημέρα, επιβάλλεται να είναι διαδοχικές&quot;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="827"/>
+        <location filename="../src/interface/addactivityform.cpp" line="852"/>
         <source>The &apos;Duration&apos; spin box and the &apos;Active&apos; check box refer to each component of current activity, you can change them for each component, separately, by selecting the corresponding tab in the tab widget.</source>
         <translation>Το πλαίσιο τιμών &quot;Διάρκεια&quot; και το πλαίσιο ελέγχου &quot;Ενεργή&quot; αναφέρονται ξεχωριστά σε καθένα στοιχείο (υποδραστηριότητα) της τρέχουσας δραστηριότητας. Μπορείτε να τροποποιήσετε τα συγκεκριμένα πλαίσια για καθένα από τα στοιχεία (για καθεμία από τις υποδραστηριότητες) ξεχωριστά, επιλέγοντας την αντίστοιχη καρτέλα του widget.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="830"/>
+        <location filename="../src/interface/addactivityform.cpp" line="855"/>
         <source>&apos;Qualified&apos; means that only the teachers who are qualified to teach the selected subject will be shown in the &apos;Teachers&apos; list.</source>
         <comment>Qualified refers to teachers</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="834"/>
+        <location filename="../src/interface/addactivityform.cpp" line="859"/>
         <source>A first notice: If you use a 5 days week: when adding an activity split into only 2 components per week, the best practice is to add min days between activities to be 2. If you split an activity into 3 components per week - please read FAQ question Q1-5-September-2008</source>
         <translation>Μία πρώτη επισήμανση: Αν έχετε εβδομάδα 5 ημερών: όταν προσθέτετε μία δραστηριότητα η οποία επιμερίζεται σε δύο μόνον στοιχεία (υποδραστηριότητες) ανά εβδομάδα, η καλύτερη πρακτική είναι να προσθέσετε τις &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; να είναι 2. Αν επιμερίσετε μία δραστηριότητα σε 3 στοιχεία (υποδραστηριότητες) ανά εβδομάδα, παρακαλώ διαβάστε τις ΣΕ, ερώτηση Ε1-5-Σεπτεμβρίου-2008</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="841"/>
+        <location filename="../src/interface/addactivityform.cpp" line="866"/>
         <source>You can select a teacher from all the teachers with the mouse or with the keyboard tab/up/down, then double click it to add it to the selected teachers for current activity. You can then choose to remove a teacher from the selected teachers. You can highlight it with the mouse or with the keyboard, then double click it to remove this teacher from the selected teachers.</source>
         <translation>Μπορείτε να επιλέξετε έναν εκπαιδευτικό από όλους (τους εκπαιδευτικούς) με το ποντίκι, ή με το πλήκτρο (του πληκτρολογίου) tab/πάνω/κάτω και στη συνέχεια να κάνετε διπλό κλικ για να τον προσθέσετε στους επιλεγμένους εκπαιδευτικούς της τρέχουσας δραστηριότητας. Μπορείτε στη συνέχεια να επιλέξετε την διαγραφή ενός εκπαιδευτικού από τους επιλεγμένους εκπαιδευτικούς. Μπορείτε να επιλέξετε τον εκπαιδευτικό με τον ποντίκι ή με το πληκτρολόγιο, και στη συνέχεια να κάνετε διπλό κλικ προκειμένου να διαγράψετε τον συγκεκριμένο εκπαιδευτικό από τους επιλεγμένους εκπαιδευτικούς.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="848"/>
+        <location filename="../src/interface/addactivityform.cpp" line="873"/>
         <source>The same procedure (double click) applies to students sets and activity tags.</source>
         <translation>Η ίδια διαδικασία (με το διπλό κλικ) εφαρμόζεται και στις ομάδες μαθητών καθώς και στις ετικέτες δραστηριοτήτων.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="905"/>
+        <location filename="../src/interface/addactivityform.cpp" line="930"/>
         <source>Current algorithm cannot schedule 3 activities in the same day if consecutive is checked, so you will get no solution in such extreme cases (for instance, if you have 3 lessons and a teacher which works only 1 day per week, and select &apos;force consecutive if same day&apos;, you will get an imposssible timetable. But these are extremely unlikely cases).</source>
         <translation>Ο τρέχων αλγόριθμος δεν μπορεί να τοποθετήσει 3 δραστηριότητες την ίδια ημέρα αν είναι τσεκαρισμένη η επιλογή &quot;διαδοχικές&quot;, οπότε δεν θα λάβετε λύση σε τέτοιες ακραίες καταστάσεις (για παράδειγμα, αν έχετε 3 διδασκαλίες και ο εκπαιδευτικός εργάζεται μόνον 1 ημέρα ανά εβδομάδα, και επιλέξετε &quot;αν την ίδια ημέρα - υποχρεωτικά διαδοχικές&quot;, η επίλυση του ωρολογίου προγράμματος θα καταστεί αδύνατη. Αλλά αυτές είναι εξαιρετικά απίθανες περιπτώσεις).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="920"/>
+        <location filename="../src/interface/addactivityform.cpp" line="945"/>
         <source>If you select a number of min days above 1 (say this number is n), you will get the possibility to add a second constraint min days between activities, with min days = n-1 and a percentage of your choice. Just click Add activities</source>
         <translation>Αν επιλέξετε τον αριθμό των ελάχιστων ημερών να είναι πάνω από 1 (ας πούμε τον αριθμό αυτό n), έχετε την δυνατότητα να προσθέσετε έναν δεύτερο περιορισμό &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;, με ελάχιστες ημέρες = n-1 και ποσοστό βαρύτητας της επιλογής σας. Απλά κάντε κλικ στην Προσθήκη δραστηριοτήτων</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="852"/>
+        <location filename="../src/interface/addactivityform.cpp" line="877"/>
         <source>You can check/uncheck show years, show groups or show subgroups.</source>
         <translation>Μπορείτε να επιλέξετε/αποεπιλέξετε την προβολή ετών, την προβολή τμημάτων ή την προβολή υποτμημάτων.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="855"/>
+        <location filename="../src/interface/addactivityform.cpp" line="880"/>
         <source>If you split a larger activity into more activities per week, you have a multitude of choices:
 You can choose the minimum distance in days between each pair of activities. Please note that a minimum distance of 1 means that the activities must not be in the same day, a minimum distance of 2 means that the activities must be separated by one day (distance from Monday to Wednesday for instance is 2 days), etc.</source>
         <translation>Αν επιμερίσετε μία δραστηριότητα-κοντέινερ σε πολλές δραστηριότητες (υποδραστηριότητες), έχετε μία πολλαπλότητα επιλογών:
 Μπορείτε να επιλέξετε την ελάχιστη απόσταση σε ημέρες ανάμεσα σε κάθε ζεύγος δραστηριοτήτων (υποδραστηριοτήτων). Παρακαλώ σημειώστε ότι η ελάχιστη απόσταση 1 (ημέρα) σημαίνει ότι οι δραστηριότητες δεν πρέπει να πραγματοποιούνται την ίδια ημέρα, ενώ η ελάχιστη απόσταση 2 (ημέρες) σημαίνει ότι οι δραστηριότητες (υποδραστηριότητες) θα πρέπει να διαχωρίζονται από (τουλάχιστον) μία ημέρα (για παράδειγμα η απόσταση από Δευτέρα ως Τετάρτη είναι 2 ημέρες), κ.λπ.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="863"/>
+        <location filename="../src/interface/addactivityform.cpp" line="888"/>
         <source>If you have for instance an activity with 2 lessons per week and you want to spread them to at least 2 days distance, you can add a constraint min days with min days = 2 and weight 95% (or higher). If you want also to ensure that activities will be separated by at least one day, you can use this feature: add a constraint min days with minimum days 2 and weight 95% or lower, and after that you&apos;ll get the possibility to add another constraint with min 1 days and weight 95% or higher. It works if you first select in the dialog the min days &gt;= 2 and click Add activities. Or you can add manually the constraints (difficult this way). Important: it is best practice to consider both constraints to have 95% weight. The combination assures that the resultant is 99.75% weight</source>
         <translation>Αν έχετε για παράδειγμα μία δραστηριότητα με 2 διδασκαλίες ανά εβδομάδα και θέλετε να τις κατανείμετε (μέσα στην εβδομάδα) με απόσταση μεταξύ τους τουλάχιστον 2 ημέρες, μπορείτε να προσθέσετε έναν περιορισμό &quot;ελάχιστες ημέρες&quot; με ελάχιστες ημέρες = 2 και βαρύτητα 95% (ή μεγαλύτερη). Αν επίσης θέλετε να εξασφαλίσετε ότι οι δραστηριότητες θα διαχωρίζονται από μία ημέρα τουλάχιστον, μπορείτε να χρησιμοποιήσετε αυτήν την δυνατότητα: προσθέστε έναν περιορισμό &quot;ελάχιστες ημέρες&quot; με ελάχιστες ημέρες 2 και βαρύτητα 95% ή μικρότερη, και μετά θα έχετε την δυνατότητα να προσθέσετε ακόμη έναν περιορισμό ελάχιστες ημέρες 1 και βαρύτητα 95% ή μεγαλύτερη. Αυτό μπορεί να γίνει αν πρώτα επιλέξετε στον διάλογο ελάχιστες ημέρες &gt;= 2 και κάνετε κλικ στην &quot;Προσθήκη&quot; δραστηριοτήτων. Ή διαφορετικά, μπορείτε να προσθέσετε χειροκίνητα τους περιορισμούς (αυτός είναι δυσκολότερος τρόπος). Σημαντικό: η βέλτιστη πρακτική είναι να δώσετε και στους δύο περιορισμούς βαρύτητα 95%. Ο συνδυασμός εξασφαλίζει ότι η &quot;συνισταμένη&quot; θα έχει βαρύτητα 99.75%</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="876"/>
+        <location filename="../src/interface/addactivityform.cpp" line="901"/>
         <source>Please note that the min days distance is a time constraint and you can only see/modify it in the time constraints dialogs, not in the modify activity dialog. Additionally, you can see the constraints for each activity in the details text box of each activity</source>
         <translation>Παρακαλώ σημειώστε ότι η απόσταση &quot;ελάχιστες ημέρες&quot; είναι χρονικός περιορισμός και μπορείτε να τον δείτε/τροποποιήσετε μόνον στους διαλόγους των χρονικών περιορισμών, και όχι στον διάλογο τροποποίησης δραστηριότητας. Επιπρόσθετα, μπορείτε να δείτε τους περιορισμούς που αφορούν την καθεμία δραστηριότητα στο πλαίσιο κειμένου με τις λεπτομέρειες της κάθε δραστηριότητας</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="882"/>
+        <location filename="../src/interface/addactivityform.cpp" line="907"/>
         <source>If you choose a value greater or equal with 1 for min days, a time constraint min days between activities will be added automatically (you can see this constraint in the time constraints list or you can see this constraint in the detailed description of the activity). You can select a weight percentage for this constraint. If you select 100%, the constraint must be respected all the time. If you select 95%, there is a small chance that the timetable will not respect this constraint. Recommended values are 95.0%-100.0% (maybe you could try with 95%, then 99.75%, or even 100.0%, but the generation time might be larger). Generally, 99.75% might be a good value. Note: if you put a value less than 100% and the constraint is too tough, FET is able to find that this constraint is impossible and will break it. 99.75% might be better than 95% but possibly slower. The percentage is subjective (if you put 95% you may get 6 soft conflicts and if you put 99.75% you may get 3 soft conflicts). Starting with FET-5.3.6, it is possible to change this value for all constraints in one click, in constraint min days between activities dialog.</source>
         <translation>Αν επιλέξετε μία τιμή μεγαλύτερη του 1 για τις &quot;ελάχιστες ημέρες&quot;, θα προστεθεί αυτόματα ένας χρονικός περιορισμός &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; (μπορείτε να δείτε τον περιορισμό αυτό στην λίστα των χρονικών περιορισμών ή στην λεπτομερή περιγραφή της δραστηριότητας). Μπορείτε να επιλέξετε ένα ποσοστό βαρύτητας για τον περιορισμό αυτό. Αν επιλέξετε ποσοστό 100%, ο περιορισμός θα πρέπει να τηρείται πάντοτε. Αν επιλέξετε ποσοστό 95%, υπάρχει μία μικρή πιθανότητα να μην τηρηθεί ο περιορισμός αυτός στο ωρολόγιο πρόγραμμά σας. Οι προτεινόμενες τιμές είναι 95.0%-100.0% (ενδεχομένως να μπορείτε να δοκιμάσετε και τις τιμές 95%, έπειτα 99.75%, ή ακόμη και 100.0%, αλλά έτσι πιθανώς να αυξηθεί ο χρόνος που απαιτείται για την επίλυση του ωρολογίου προγράμματος. Γενικά, το ποσοστό 99.75% είναι πιθανότατα μία καλή επιλογή. Σημείωση: αν θέσετε μία τιμή μικρότερη του 100% και ο περιορισμός είναι πολύ ισχυρός, το FET θα καταφέρει να βρει ότι ο περιορισμός αυτός είναι αδύνατον να τηρηθεί και ως εκ τούτου δεν θα τον τηρήσει. Το ποσοστό 99.75% ενδεχομένως να είναι καλύτερη επιλογή από το  95%, αλλά πιθανώς να προξενήσει αύξηση του χρόνου που απαιτείται για την επίλυση του ωρολογίου προγράμματος. Το ποσοστό βαρύτητας είναι υποκειμενικό (αν θέσετε την τιμή 95% ενδεχομένως να λάβετε 6 ήπιες συγκρούσεις, ενώ αν θέσετε την τιμή 99.75% μπορεί να λάβετε 3 ήπιες συγκρούσεις). Από την έκδοση 5.3.6 του FET και μετά, υπάρχει η δυνατότητα να αλλάξετε την τιμή για όλους τους περιορισμούς με ένα κλικ, στον διάλογο για τον περιορισμό &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="896"/>
+        <location filename="../src/interface/addactivityform.cpp" line="921"/>
         <source>There is another option, if the activities are in the same day, force consecutive activities. You can select this option for instance if you have 5 lessons of math in 5 days, and there is no timetable which respects fully the days separation. Then, you can set the weight percent of the min days constraint to 95% and add consecutive if same day. You will have as results say 3 lessons with duration 1 and a 2 hours lesson in another day. Please be careful: if the activities are on the same day, even if the constraint has 0% weight, then the activities are forced to be consecutive.</source>
         <translation>Υπάρχει ακόμη μία επιλογή, αν οι δραστηριότητες πραγματοποιούνται την ίδια ημέρα, να είναι οπωσδήποτε διαδοχικές. Μπορείτε να χρησιμοποιήσετε αυτήν την επιλογή για παράδειγμα αν έχετε 5 διδασκαλίες μαθηματικών, και είναι αδύνατη εξεύρεση λύσης για το ωρολόγιο πρόγραμμα στην οποία (λύση) να τηρείται πλήρως ο διαχωρισμός των επιμέρους διδασκαλιών σε διαφορετικές ημέρες. Στην περίπτωση αυτή, μπορείτε να θέσετε την τιμή 95% για το ποσοστό βαρύτητας του περιορισμού &quot;ελάχιστες ημέρες&quot; και να προσθέσετε την επιλογή &quot;αν την ίδια ημέρα - διαδοχικές&quot;. Θα λάβετε ως αποτελέσματα για παράδειγμα 3 διδασκαλίες με διάρκεια 1 (ώρα) και 1 διδασκαλία με διάρκεια 2 σε κάποια άλλη ημέρα. Παρακαλώ να είστε προσεκτικοί: αν οι δραστηριότητες πραγματοποιούνται την ίδια ημέρα, ακόμη και αν ο περιορισμός έχει βαρύτητα 0%, οι δραστηριότητες θα είναι οπωσδήποτε διαδοχικές.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="911"/>
+        <location filename="../src/interface/addactivityform.cpp" line="936"/>
         <source>Note: You cannot add &apos;consecutive if same day&apos; with min days=0. If you want this, you have to add min days at least 1 (and any weight percentage).</source>
         <translation>Σημείωση: δεν μπορείτε να προσθέσετε &quot;αν την ίδια ημέρα - διαδοχικές&quot; με ελάχιστες ημέρες=0. Αν θέλετε να πετύχετε πρακτικά αυτόν τον συνδυασμό, θα πρέπει αν προσθέσετε &quot;ελάχιστες ημέρες&quot; τουλάχιστον 1 (και οποιοδήποτε ποσοστό βαρύτητας).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="916"/>
+        <location filename="../src/interface/addactivityform.cpp" line="941"/>
         <source>Starting with version 5.0.0, it is possible to add activities with no students or no teachers</source>
         <translation>Από την έκδοση 5.0.0 του FET και μετά, είναι δυνατόν να προσθέσετε δραστηριότητες χωρίς εκπαιδευτικούς ή/και χωρίς μαθητές</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="927"/>
+        <location filename="../src/interface/addactivityform.cpp" line="952"/>
         <source>FET - help on adding activity(ies)</source>
         <translation>FET - Βοήθεια σχετικά με την προσθήκη δραστηριότητας (δραστηριοτήτων)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="933"/>
+        <location filename="../src/interface/addactivityform.cpp" line="958"/>
         <source>OK</source>
         <translation>ΟΚ</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="728"/>
+        <location filename="../src/interface/addactivityform.cpp" line="753"/>
         <source>Do you want to add current activities as they are now (not recommended) or cancel and edit them as instructed?</source>
         <translation>Επιθυμείτε να προσθέσετε τις τρέχουσες δραστηριότητες ως έχουν τώρα (δεν ενδείκνυται) ή να ακυρώσετε την διαδικασία και να τις επεξεργαστείτε όπως έχει υποδειχθεί?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="716"/>
+        <location filename="../src/interface/addactivityform.cpp" line="741"/>
         <source>The best way to add the activities would be:</source>
         <translation>Ο καλύτερος τρόπος προσθήκης των δραστηριοτήτων θα ήταν:</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="692"/>
+        <location filename="../src/interface/addactivityform.cpp" line="717"/>
         <source>A similar activity already exists. Do you want to insert current activity?</source>
         <translation>Υπάρχει ήδη παρόμοια δραστηριότητα. Θέλετε να εισαχθεί η τρέχουσα δραστηριότητα;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="615"/>
+        <location filename="../src/interface/addactivityform.cpp" line="640"/>
         <source>Do you really want to add an activity without teacher(s)?</source>
         <translation>Θέλετε σίγουρα να προσθέσετε δραστηριότητα χωρίς εκπαιδευτικό (εκπαιδευτικούς);</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="634"/>
+        <location filename="../src/interface/addactivityform.cpp" line="659"/>
         <source>Do you really want to add an activity without student set(s)?</source>
         <translation>Θέλετε σίγουρα να προσθέσετε δραστηριότητα χωρίς ομάδα (ομάδες) μαθητών;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="711"/>
+        <location filename="../src/interface/addactivityform.cpp" line="736"/>
         <source>FET confirmation</source>
         <translation>FET - Επιβεβαίωση</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="712"/>
+        <location filename="../src/interface/addactivityform.cpp" line="737"/>
         <source>Possible incorrect setting. Are you sure you want to add current activity? See details below:</source>
         <translation>Πιθανώς εσφαλμένη εισαγωγή στοιχείων. Είστε σίγουροι πως θέλετε να προσθέσετε την τρέχουσα δραστηριότητα. Δείτε τις λεπτομέρειες παρακάτω:</translation>
     </message>
@@ -31652,6 +31652,11 @@ Please stop simulation before this.</source>
         <translation>Το πρωτόκολλο SSL δεν είναι διαθέσιμο (αυτό μπορεί να οφείλεται στην έλλειψη των βιβλιοθηκών SSL). Εξαιτίας του προβλήματος αυτού, το FET δεν μπορεί να ελέγξει για ενημερώσεις κατά την εκκίνηση του λογισμικού (δεν μπορεί να λάβει το αρχείο %1).</translation>
     </message>
     <message>
+        <location filename="../src/interface/fetmainform.cpp" line="819"/>
+        <source>Thus, it could be deduced if and when you use FET.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/interface/fetmainform.cpp" line="821"/>
         <source>Do you agree?</source>
         <translation type="unfinished"></translation>
@@ -32004,11 +32009,6 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="815"/>
         <source>Please note that, by enabling this option, each time you start FET it will get the file %1 from the FET homepage, so the request for this file will be visible on the server, along with your IP address and access time.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/fetmainform.cpp" line="819"/>
-        <source>Thus, it can be deduced if and when you use FET.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -37281,6 +37281,11 @@ Another thing: if you have 1 or 2 lessons per week for a subject, say biology, a
 Και κάτι ακόμη: αν έχετε 1 ή 2 μαθήματα ανά εβδομάδα για κάποιο αντικείμενο, π.χ. Βιολογία, και θέλετε να περιορίσετε ένα από τα στοιχεία (υποδραστηριότητες), για την περίπτωση που έχετε 2 υποδραστηριότητες ανά εβδομάδα και ταυτόχρονα να μην περιορίσετε κανένα στοιχείο (υποδραστηριότητα) για την περίπτωση που έχετε μόνον 1 στοιχείο (υποδραστηριότητα) ανά εβδομάδα, μπορείτε να προσθέσετε έναν περιορισμό του τύπου αυτού με αριθμό στοιχείου=2.</translation>
     </message>
     <message>
+        <location filename="../src/interface/helpfaqform.cpp" line="622"/>
+        <source>Thus, it could be deduced if and when you use FET.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/interface/helpfaqform.cpp" line="628"/>
         <source>Q: I have a double duration activity. Is it possible that it is spread over the break period, like:
 
@@ -38069,11 +38074,6 @@ This trick just passed through my mind as I was trying to write you that you hav
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="618"/>
         <source>Please note that, by enabling this option, each time you start FET it will get the file %1 from the FET homepage, so the request for this file will be visible on the server, along with your IP address and access time.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="622"/>
-        <source>Thus, it can be deduced if and when you use FET.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -39810,64 +39810,64 @@ Please stop simulation before this</source>
 <context>
     <name>ModifyActivityForm</name>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="479"/>
-        <location filename="../src/interface/modifyactivityform.cpp" line="498"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="502"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="521"/>
         <source>FET question</source>
         <translation>FET - Ερώτηση</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="480"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="503"/>
         <source>Do you really want to have the activity without teacher(s)?</source>
         <translation>Είστε σίγουροι πως θέλετε δραστηριότητα χωρίς εκπαιδευτικό (ή εκπαιδευτικούς);</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="463"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="486"/>
         <source>FET information</source>
         <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="464"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="487"/>
         <source>Invalid subject</source>
         <translation>Μη αποδεκτό αντικείμενο</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="499"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="522"/>
         <source>Do you really want to have the activity without student set(s)?</source>
         <translation>Είστε σίγουροι πως θέλετε δραστηριότητα χωρίς ομάδα (ή ομάδες) μαθητών;</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="572"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="595"/>
         <source>Abbreviations in this dialog:</source>
         <translation>Συντομογραφίες στον διάλογο αυτό:</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="574"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="597"/>
         <source>&apos;Students&apos; (the text near the spin box), means &apos;Number of students (-1 for automatic)&apos;</source>
         <translation>&quot;Μαθητές&quot; (το κείμενο δίπλα στο πλαίσιο τιμών) σημαίνει &quot;αριθμός μαθητών&quot; (-1 για αυτόματο)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="576"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="599"/>
         <source>&apos;Split&apos; means &apos;Is split into ... activities per week&apos;. This value cannot be changed. If you need to modify it, please remove the corresponding activities and add a new split activity.</source>
         <translation>&quot;Επιμερισμός&quot; σημαίνει &quot;επιμερισμένη σε ... (υπο)δραστηριότητες ανά εβδομάδα&quot;. Η τιμή αυτή δεν μπορεί να αλλάξει μετά την προσθήκη της δραστηριότητας. Αν θέλετε να τροποποιήσετε την τιμή αυτή, παρακαλώ διαγράψετε τις αντίστοιχες δραστηριότητες και προσθέστε μία νέα επιμερισμένη δραστηριότητα.</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="579"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="602"/>
         <source>The &apos;Duration&apos; spin box and the &apos;Active&apos; check box refer to each component of current activity, you can change them for each component, separately, by selecting the corresponding tab in the tab widget.</source>
         <translation>Το πλαίσιο τιμών &quot;Διάρκεια&quot; και το πλαίσιο ελέγχου &quot;Ενεργή&quot; αναφέρονται ξεχωριστά σε καθένα στοιχείο (υποδραστηριότητα) της τρέχουσας δραστηριότητας. Μπορείτε να τροποποιήσετε τα συγκεκριμένα πλαίσια για καθένα από τα στοιχεία (για καθεμία από τις υποδραστηριότητες) ξεχωριστά, επιλέγοντας την αντίστοιχη καρτέλα του widget.</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="582"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="605"/>
         <source>&apos;Qualified&apos; means that only the teachers who are qualified to teach the selected subject will be shown in the &apos;Teachers&apos; list.</source>
         <comment>Qualified refers to teachers</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="588"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="611"/>
         <source>FET - help on modifying activity(ies)</source>
         <translation>FET - Βοήθεια σχετικά με την τροποποίηση δραστηριότητας (δραστηριοτήτων)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="594"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="617"/>
         <source>OK</source>
         <translation>ΟΚ</translation>
     </message>
@@ -47799,64 +47799,64 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>ModifySubactivityForm</name>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="369"/>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="388"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="392"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="411"/>
         <source>FET question</source>
         <translation>FET - Ερώτηση</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="370"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="393"/>
         <source>Do you really want to have the subactivity without teacher(s)?</source>
         <translation>Θέλετε πράγματι να έχετε υποδραστηριότητα χωρίς εκπαιδευτικό (ή εκπαιδευτικούς);</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="353"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="376"/>
         <source>FET information</source>
         <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="354"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="377"/>
         <source>Invalid subject</source>
         <translation>Μη αποδεκτό αντικείμενο</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="389"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="412"/>
         <source>Do you really want to have the subactivity without student set(s)?</source>
         <translation>Θέλετε πράγματι να έχετε υποδραστηριότητα χωρίς ομάδα (ή ομάδες) μαθητών;</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="449"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="472"/>
         <source>Abbreviations in this dialog:</source>
         <translation>Συντομογραφίες στον διάλογο αυτό:</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="451"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="474"/>
         <source>&apos;Students&apos; (the text near the spin box), means &apos;Number of students (-1 for automatic)&apos;</source>
         <translation>&quot;Μαθητές&quot; (το κείμενο δίπλα στο πλαίσιο τιμών) σημαίνει &quot;αριθμός μαθητών&quot; (-1 για αυτόματο)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="453"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="476"/>
         <source>&apos;Qualified&apos; means that only the teachers who are qualified to teach the selected subject will be shown in the &apos;Teachers&apos; list.</source>
         <comment>Qualified refers to teachers</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="459"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="482"/>
         <source>FET - help on modifying subactivity(ies)</source>
         <translation>FET - Βοήθεια σχετικά με την τροποποίηση υποδραστηριότητας (υποδραστηριοτήτων)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="465"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="488"/>
         <source>OK</source>
         <translation>ΟΚ</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="103"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="118"/>
         <source>Current subactivity has split index %1 out of %2</source>
         <translation>Η τρέχουσα υποδραστηριότητα έχει αριθμό στοιχείου (επιμερισμένης δραστηριότητας) %1 από %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="104"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="119"/>
         <source>The current data applies only to this subactivity</source>
         <translation>Τα τρέχοντα δεδομένα εφαρμόζονται μόνον στην συγκεκριμένη υποδραστηριότητα</translation>
     </message>
@@ -49782,47 +49782,47 @@ not added - must be a duplicate</source>
 <context>
     <name>SecondMinDaysDialog</name>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="491"/>
+        <location filename="../src/interface/addactivityform.cpp" line="516"/>
         <source>Add a second constraint or not?</source>
         <translation>Να γίνει προσθήκη ενός δεύτερου περιορισμού ή όχι;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="501"/>
+        <location filename="../src/interface/addactivityform.cpp" line="526"/>
         <source>Yes</source>
         <translation>Ναι</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="504"/>
+        <location filename="../src/interface/addactivityform.cpp" line="529"/>
         <source>No</source>
         <translation>Όχι</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="574"/>
+        <location filename="../src/interface/addactivityform.cpp" line="599"/>
         <source>FET information</source>
         <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="575"/>
+        <location filename="../src/interface/addactivityform.cpp" line="600"/>
         <source>Invalid weight (percentage) - must be &gt;=0 and &lt;=100.0</source>
         <translation>Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι &gt;=0.0 και &lt;=100.0</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="473"/>
+        <location filename="../src/interface/addactivityform.cpp" line="498"/>
         <source>You selected min days between activities %1 (above 1) and weight %2 (under 100.0). Would you like to add also a second constraint to ensure that almost certainly the distance between activities is at least %3 (%1-1) days? If yes, please select weight (recommended 95.0%-100.0%) and click Yes. If no, please click No (only one constraint will be added)</source>
         <translation>Έχετε επιλέξει &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; %1 (περισσότερο από 1) και ποσοστό βαρύτητας %2 (λιγότερο από 100.0%). Θέλετε να προσθέσετε έναν δεύτερο περιορισμό για να εξασφαλίσετε σχεδόν με βεβαιότητα ότι η απόσταση ανάμεσα στις δραστηριότητες θα είναι τουλάχιστον %3 (%1-1) ημέρες; Αν ναι, παρακαλώ επιλέξτε το ποσοστό βαρύτητας (συνιστώμενο 95.0%-100.0%) και πιέστε &quot;Ναι&quot;. Αν όχι, παρακαλώ πιέστε &quot;Όχι&quot; (οπότε θα προστεθεί μόνον ένας περιορισμός)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="489"/>
+        <location filename="../src/interface/addactivityform.cpp" line="514"/>
         <source>Recommended answer is Yes, 95% (or higher).</source>
         <translation>Η συνιστώμενη απάντηση είναι &quot;Ναι&quot;, 95% (ή μεγαλύτερο).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="478"/>
+        <location filename="../src/interface/addactivityform.cpp" line="503"/>
         <source>(Yes means to add an additional constraint min %1 days between activities, weight 0.0%-100.0%. If you say Yes, you will have 2 constraints min days added for current activities. Adding the second constraint might lead to impossible timetables if the condition is too tight, but you can remove the second constraint at any time).</source>
         <translation>(&quot;Ναι&quot; σημαίνει να γίνει προσθήκη ενός επιπλέον περιορισμού &quot;ελάχιστες %1 ημέρες ανάμεσα σε δραστηριότητες&quot;, με ποσοστό βαρύτητας 0.0%-100.0%. Αν πείτε &quot;Ναι&quot;, θα προστεθούν 2 περιορισμοί &quot;ελάχιστες ημέρες&quot; για τις τρέχουσες δραστηριότητες. Η προσθήκη ενός δεύτερου περιορισμού πιθανώς να καταστήσει αδύνατη την κατάρτιση (επίλυση) του ωρολογίου προγράμματος, στην περίπτωση που η συνθήκη αυτή είναι υπερβολικά &quot;αυστηρή&quot;. Όμως μπορείτε να διαγράψετε αυτόν τον δεύτερο περιορισμό ανά πάσα στιγμή).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="483"/>
+        <location filename="../src/interface/addactivityform.cpp" line="508"/>
         <source>Note: 95% is usually enough for min days constraints referring to same activities. The weights are cumulated if referring to the same activities. If you have 2 constraints with say 95% (say min n days and min n-1 days), the min n days constraint is skipped with probability 5%, then min n-1 days constraint is skipped with probability 0.25%=5%*5%, so you&apos;ll get in 99.75% cases the min n-1 days constraint respected.</source>
         <translation>Σημείωση: συνήθως, το ποσοστό βαρύτητας 95% είναι αρκετό για τους περιορισμούς &quot;ελάχιστες ημέρες&quot; που σχετίζονται με τις ίδιες δραστηριότητες. Τα ποσοστά βαρύτητας λειτουργούν &quot;συσωρευτικά&quot; όταν σχετίζονται με τις ίδιες δραστηριότητες. Αν έχετε 2 περιορισμούς με ποσοστό βαρύτητας -για παράδειγμα- 95% (έστω για &quot;ελάχιστες ημέρες&quot; n και (n-1) αντίστοιχα), ο περιορισμός για τις n &quot;ελάχιστες ημέρες&quot; παραβλέπεται με πιθανότητα 5%, οπότε -κατ&apos; αναλογίαν- ο περιορισμός για τις (n-1) &quot;ελάχιστες ημέρες&quot; παραβλέπεται με πιθανότητα 0.25%=5%*5%. Κατά συνέπεια, ο περιορισμός για τις (n-1) ελάχιστες ημέρες θα τηρηθεί στο 99.75% των περιπτώσεων.</translation>
     </message>
@@ -51730,91 +51730,91 @@ Bottom: %4</source>
 <context>
     <name>SubactivitiesForm</name>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="346"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="349"/>
         <source>No: %1 / %2</source>
         <comment>No means number, %1 is the number of active activities, %2 is the number of total activities.Please leave space between fields, so that they are better visible</comment>
         <translation>Αρ: %1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="348"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="351"/>
         <source>Dur: %1 / %2</source>
         <comment>Dur means duration, %1 is the duration of active activities, %2 is the duration of total activities.Please leave space between fields, so that they are better visible</comment>
         <translation>Δρκ: %1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="361"/>
-        <location filename="../src/interface/subactivitiesform.cpp" line="463"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="364"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="466"/>
         <source>FET information</source>
         <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="361"/>
-        <location filename="../src/interface/subactivitiesform.cpp" line="463"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="364"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="466"/>
         <source>Invalid selected subactivity</source>
         <translation>Μη αποδεκτή επιλογή υποδραστηριότητας</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="421"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="424"/>
         <source>Useful instructions/tips:</source>
         <translation>Χρήσιμες οδηγίες/υποδείξεις:</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="424"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="427"/>
         <source>Above the (sub)activities list, we have 2 labels, containing 4 numbers. The first label contains text: No: a / b. The first number a is the number of active (sub)activities (we number each individual subactivity as 1), while the second number b is the number of total (sub)activities. The second label contains text: Dur: c / d. The third number c is the duration of active (sub)activities, in periods (or FET hours), while the fourth number d is the duration of total (sub)activities, in periods (or FET hours). So, No means number and Dur means duration.</source>
         <translation>Πάνω από την λίστα των (υπο)δραστηριοτήτων, έχουμε δύο ενδείξεις, οι οποίες περιλαμβάνουν 4 αριθμούς. Η πρώτη ένδειξη περιλαμβάνει το κείμενο: Αρ. a / b. Ο πρώτος αριθμός a είναι ο αριθμός των ενεργών (υπο)δραστηριοτήτων (αριθμούμε την καθεμία υποδραστηριότητα ως 1), ενώ ο δεύτερος αριθμός b είναι ο συνολικός αριθμός των (υπο)δραστηριοτήτων. Η δεύτερη ένδειξη περιλαμβάνει το κείμενο: Δρκ: c / d. Ο τρίτος αριθμός c είναι η διάρκεια των ενεργών (υποδραστηριοτήτων), σε περιόδους (ή ώρες στο FET), ενώ ο τέταρτος αριθμός d είναι η συνολική διάρκεια των (υπο)δραστηριοτήτων, σε περιόδους (ή ώρες στο FET). Έτσι, Αρ. σημαίνει αριθμός και Δρκ σημαίνει διάρκεια.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="430"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="433"/>
         <source>Example: No: 100 / 102, Dur: 114 / 117. They represent: 100 - the number of active (sub)activities, then 102 - the number of total (sub)activities, 114 - the duration of active activities (in periods or FET hours) and 117 - the duration of total activities (in periods or FET hours). In this example we have 2 inactive activities with their combined duration being 3 periods.</source>
         <translation>Παράδειγμα: Αρ. 100 / 102, Δρκ: 114 / 117. Αναπαριστούν: 100 - ο αριθμός των ενεργών (υπο)δραστηριοτήτων, 102 - ο συνολικός αριθμός των (υπο)δραστηριοτήτων, 114 - η διάρκεια των ενεργών δραστηριοτήτων (σε περιόδους ή ώρες στο FET) και 117 - η συνολική διάρκεια των δραστηριοτήτων (σε περιόδους ή ώρες στο FET). Στο παράδειγμα αυτό έχουμε δύο ανενεργές δραστηριότητες με διάρκεια αθροιστικά 3 περιόδων.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="436"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="439"/>
         <source>Explanation of the short description of an activity: first comes the id. If the activity is inactive, an X follows. Then the duration. Then, if the activity is split, a slash and the total duration. Then teachers, subject, activity tag (if it is not void) and students. Then the number of students (if specified).</source>
         <translation>Επεξήγηση της σύντομης περιγραφής μίας δραστηριότητας: πρώτα αναγράφεται ο ατ (αριθμός ταυτοποίησης). Αν η δραστηριότητα είναι ανενεργή ακολουθεί ένα X. Έπειτα αναγράφεται η διάρκεια. Έπειτα, εάν η δραστηριότητα είναι επιμερισμένη, μία κάθετος (/) και η συνολική διάρκεια. Έπειτα οι εκπαιδευτικοί, το αντικείμενο, η ετικέτα δραστηριότητας (εφόσον το πεδίο αυτό δεν είναι κενό) και οι μαθητές. Έπειτα ο αριθμός των μαθητών (εάν έχει καθοριστεί).</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="443"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="446"/>
         <source>have an X mark after the id.</source>
         <translation>φέρουν την ένδειξη &quot;Χ&quot; μετά τον ατ (αριθμό ταυτοποίησης).</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="474"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="477"/>
         <source>Subactivity comments</source>
         <translation>Σχόλια για υποδραστηριότητες</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="476"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="479"/>
         <source>OK</source>
         <translation>ΟΚ</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="478"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="481"/>
         <source>Cancel</source>
         <translation>Άκυρο</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="440"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="443"/>
         <source>The activities which are inactive:</source>
         <translation>Οι δραστηριότητες οι οποίες είναι ανενεργές:</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="449"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="452"/>
         <source>if you use colors in interface (see Settings/Interface menu), they will appear with different background color.</source>
         <translation>εάν χρησιμοποιείτε χρώματα στην διεπαφή (βλέπε στο μενού Ρυθμίσεις/Διεπαφή), αυτά θα εμφανίζονται με διαφορετικό χρώμα στο φόντο.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="451"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="454"/>
         <source>To modify a subactivity, you can also double click it.</source>
         <translation>Για να τροποποιήσετε μία υποδραστηριότητα, μπορείτε επίσης να κάνετε διπλό κλικ πάνω της.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="453"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="456"/>
         <source>Show related: if you select this, there will be listed subactivities for groups and subgroups contained also in the current set (if the current set is a year or a group) and also higher ranked year or group (if the current set is a group or a subgroup).</source>
         <translation>Εμφάνιση σχετικών: εάν το επιλέξετε, θα εμφανίζονται οι υποδραστηριότητες των τμημάτων και υποτμημάτων τα οποία περιλαμβάνονται στην τρέχουσα ομάδα μαθητών (εάν η τρέχουσα ομάδα μαθητών είναι έτος ή τμήμα), καθώς επίσης και οι υποδραστηριότητες του έτους ή του τμήματος στο οποίο περιλαμβάνεται η τρέχουσα ομάδα μαθητών (εάν η τρέχουσα ομάδα μαθητών είναι τμήμα ή υποτμήμα).</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="456"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="459"/>
         <source>FET Help</source>
         <translation>FET - Βοήθεια</translation>
     </message>

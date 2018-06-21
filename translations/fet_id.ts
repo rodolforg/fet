@@ -4,187 +4,187 @@
 <context>
     <name>ActivitiesForm</name>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="388"/>
-        <location filename="../src/interface/activitiesform.cpp" line="439"/>
-        <location filename="../src/interface/activitiesform.cpp" line="500"/>
-        <location filename="../src/interface/activitiesform.cpp" line="605"/>
+        <location filename="../src/interface/activitiesform.cpp" line="391"/>
+        <location filename="../src/interface/activitiesform.cpp" line="442"/>
+        <location filename="../src/interface/activitiesform.cpp" line="503"/>
+        <location filename="../src/interface/activitiesform.cpp" line="608"/>
         <source>FET information</source>
         <translation>Informasi FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="388"/>
-        <location filename="../src/interface/activitiesform.cpp" line="500"/>
-        <location filename="../src/interface/activitiesform.cpp" line="605"/>
+        <location filename="../src/interface/activitiesform.cpp" line="391"/>
+        <location filename="../src/interface/activitiesform.cpp" line="503"/>
+        <location filename="../src/interface/activitiesform.cpp" line="608"/>
         <source>Invalid selected activity</source>
         <translation>Kegiatan dipilih salah</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="440"/>
+        <location filename="../src/interface/activitiesform.cpp" line="443"/>
         <source>Cannot modify this large activity, because it contains more than %1 activities.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="513"/>
+        <location filename="../src/interface/activitiesform.cpp" line="516"/>
         <source>Remove activity?</source>
         <translation>Hapus kegiatan?</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="516"/>
+        <location filename="../src/interface/activitiesform.cpp" line="519"/>
         <source>There will also be removed the related activities from the same larger split activity</source>
         <translation>Akan dihapus juga kegiatan yang berhubungan dari pemecahan kegiatan lebih besar yang sama</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="521"/>
+        <location filename="../src/interface/activitiesform.cpp" line="524"/>
         <source>FET confirmation</source>
         <translation>Konfirmasi FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="522"/>
+        <location filename="../src/interface/activitiesform.cpp" line="525"/>
         <source>Yes</source>
         <translation>Ya</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="522"/>
+        <location filename="../src/interface/activitiesform.cpp" line="525"/>
         <source>No</source>
         <translation>Tidak</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="348"/>
+        <location filename="../src/interface/activitiesform.cpp" line="351"/>
         <source>No: %1 / %2</source>
         <comment>No means number, %1 is the number of active activities, %2 is the number of total activities. Please leave spaces between fields, so that they are better visible</comment>
         <translation>No: %1/ %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="350"/>
+        <location filename="../src/interface/activitiesform.cpp" line="353"/>
         <source>Dur: %1 / %2</source>
         <comment>Dur means duration, %1 is the duration of active activities, %2 is the duration of total activities. Please leave spaces between fields, so that they are better visible</comment>
         <translation>Lama: %1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="449"/>
+        <location filename="../src/interface/activitiesform.cpp" line="452"/>
         <source>different teachers</source>
         <translation>guru yang berbeda</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="451"/>
+        <location filename="../src/interface/activitiesform.cpp" line="454"/>
         <source>different subject</source>
         <translation>mata pelajaran yang berbeda</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="453"/>
+        <location filename="../src/interface/activitiesform.cpp" line="456"/>
         <source>different activity tags</source>
         <translation>tag kegiatan yang berbeda</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="455"/>
+        <location filename="../src/interface/activitiesform.cpp" line="458"/>
         <source>different students</source>
         <translation>siswa yang berbeda</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="457"/>
+        <location filename="../src/interface/activitiesform.cpp" line="460"/>
         <source>different boolean variable &apos;must compute n total students&apos;</source>
         <translation>variabel boolean yag berbed &apos;harus dihitung dan total siswa&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="459"/>
+        <location filename="../src/interface/activitiesform.cpp" line="462"/>
         <source>different number of students</source>
         <translation>jumlah siswa yang berbeda</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="462"/>
+        <location filename="../src/interface/activitiesform.cpp" line="465"/>
         <source>The current split activity has subactivities which were individually modified. It is recommended to abort now and modify individual subactivities from the corresponding menu. Otherwise you will modify the fields for all the subactivities from this larger split activity.</source>
         <translation>Pemecahan kegiatan yang ada memiliki sub kegiatan yang diubah sendiri. Direkomendasikan dihapus sekarang dan pengubahan sendiri sub kegiatan dari menu yang bersangkutan. Atau anda dapat mengubah fielda untuk semua sub kegiatan dari pemecahan kegiatan yang lebih besar.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="466"/>
+        <location filename="../src/interface/activitiesform.cpp" line="469"/>
         <source>The fields which are different are: %1</source>
         <translation>Field yang berbeda: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="468"/>
+        <location filename="../src/interface/activitiesform.cpp" line="471"/>
         <source>FET warning</source>
         <translation>Peringatan FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="468"/>
+        <location filename="../src/interface/activitiesform.cpp" line="471"/>
         <source>Abort</source>
         <translation>Batal</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="468"/>
+        <location filename="../src/interface/activitiesform.cpp" line="471"/>
         <source>Continue</source>
         <translation>Lanjut</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="566"/>
+        <location filename="../src/interface/activitiesform.cpp" line="569"/>
         <source>Useful instructions/tips:</source>
         <translation>Petunjuk/Tips berguna:</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="569"/>
+        <location filename="../src/interface/activitiesform.cpp" line="572"/>
         <source>Above the (sub)activities list, we have 2 labels, containing 4 numbers. The first label contains text: No: a / b. The first number a is the number of active (sub)activities (we number each individual subactivity as 1), while the second number b is the number of total (sub)activities. The second label contains text: Dur: c / d. The third number c is the duration of active (sub)activities, in periods (or FET hours), while the fourth number d is the duration of total (sub)activities, in periods (or FET hours). So, No means number and Dur means duration.</source>
         <translation>Di atas (sub) daftar kegiatan, kami memiliki 2 label, yang berisi 4 nomor. Label pertama berisi teks: No: a / b. Angka pertama adalah jumlah aktif (sub) kegiatan (nomor subactivity kita masing-masing individu sebagai 1), sedangkan b angka kedua adalah jumlah total (sub) kegiatan. Label kedua berisi teks: Dur: c / d. C nomor ketiga adalah masa aktif (sub) kegiatan, dalam periode (atau jam FET), sementara jumlah keempat d adalah total durasi (sub) kegiatan, dalam periode (atau jam FET). Jadi, Tidak ada nomor sarana dan Dur berarti durasi.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="575"/>
+        <location filename="../src/interface/activitiesform.cpp" line="578"/>
         <source>Example: No: 100 / 102, Dur: 114 / 117. They represent: 100 - the number of active (sub)activities, then 102 - the number of total (sub)activities, 114 - the duration of active activities (in periods or FET hours) and 117 - the duration of total activities (in periods or FET hours). In this example we have 2 inactive activities with their combined duration being 3 periods.</source>
         <translation>Contoh: Nomor: 100 / 102, Dur: 114 / 117. Mereka mewakili: 100 - jumlah aktif (sub) kegiatan, maka 102 - jumlah total (sub) aktifitas, 114 - durasi kegiatan aktif (dalam periode atau jam FET) dan 117 - durasi kegiatan total (dalam periode atau jam FET). Dalam contoh ini kami memiliki 2 kegiatan yang tidak aktif dengan durasi gabungan mereka menjadi 3 periode.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="581"/>
+        <location filename="../src/interface/activitiesform.cpp" line="584"/>
         <source>Explanation of the short description of an activity: first comes the id. If the activity is inactive, an X follows. Then the duration. Then, if the activity is split, a slash and the total duration. Then teachers, subject, activity tag (if it is not void) and students. Then the number of students (if specified).</source>
         <translation>Penjelasan deskripsi singkat dari suatu kegiatan: pertama datang id. Jika kegiatan ini tidak aktif, X berikut. Lalu durasi. Lalu, jika kegiatan tersebut dibagi, sebuah garis miring dan total durasi. Kemudian guru, subjek, tag aktivitas (jika tidak void), dan siswa. Kemudian jumlah siswa (bila ditentukan).</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="585"/>
+        <location filename="../src/interface/activitiesform.cpp" line="588"/>
         <source>The activities which are inactive:</source>
         <comment>This is the help for activities which are inactive, after this field there come explanations for how inactive activities are displayed.</comment>
         <translation>Kegiatan tidak aktif:</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="588"/>
+        <location filename="../src/interface/activitiesform.cpp" line="591"/>
         <source>have an X mark after the id.</source>
         <comment>It refers to inactive activities, which have this mark after the id.</comment>
         <translation>memiliki tanda x setelah id.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="591"/>
+        <location filename="../src/interface/activitiesform.cpp" line="594"/>
         <source>if you use colors in interface (see Settings/Interface menu), they will appear with different background color.</source>
         <comment>It refers to inactive activities</comment>
         <translation>jika Anda menggunakan warna dalam interface (lihat Pengaturan / menu Interface), mereka akan muncul dengan warna latar belakang yang berbeda.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="593"/>
+        <location filename="../src/interface/activitiesform.cpp" line="596"/>
         <source>To modify an activity, you can also double click it.</source>
         <translation>Untuk mengubah aktivitas, Anda juga bisa klik-ganda.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="595"/>
+        <location filename="../src/interface/activitiesform.cpp" line="598"/>
         <source>Show related: if you select this, there will be listed activities for groups and subgroups contained also in the current set (if the current set is a year or a group) and also higher ranked year or group (if the current set is a group or a subgroup).</source>
         <translation>terkait Tampilkan: jika Anda memilih ini, ada akan terdaftar kegiatan untuk kelompok dan subkelompok yang terdapat juga di set saat ini (jika set saat ini adalah satu tahun atau grup) dan juga lebih tinggi peringkat tahun atau kelompok (jika set saat ini grup atau subkelompok a).</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="598"/>
+        <location filename="../src/interface/activitiesform.cpp" line="601"/>
         <source>FET Help</source>
         <translation>Bantuan FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="616"/>
+        <location filename="../src/interface/activitiesform.cpp" line="619"/>
         <source>Activity comments</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="618"/>
+        <location filename="../src/interface/activitiesform.cpp" line="621"/>
         <source>OK</source>
         <translation type="unfinished">Ok</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="620"/>
+        <location filename="../src/interface/activitiesform.cpp" line="623"/>
         <source>Cancel</source>
         <translation type="unfinished">Batal</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="550"/>
+        <location filename="../src/interface/activitiesform.cpp" line="553"/>
         <source>Invalid activity</source>
         <translation>Kegiatan salah</translation>
     </message>
@@ -1249,239 +1249,239 @@ there won&apos;t be removed an additional number of %1 activities
 <context>
     <name>AddActivityForm</name>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="588"/>
-        <location filename="../src/interface/addactivityform.cpp" line="663"/>
-        <location filename="../src/interface/addactivityform.cpp" line="705"/>
-        <location filename="../src/interface/addactivityform.cpp" line="707"/>
-        <location filename="../src/interface/addactivityform.cpp" line="785"/>
-        <location filename="../src/interface/addactivityform.cpp" line="790"/>
+        <location filename="../src/interface/addactivityform.cpp" line="613"/>
+        <location filename="../src/interface/addactivityform.cpp" line="688"/>
+        <location filename="../src/interface/addactivityform.cpp" line="730"/>
+        <location filename="../src/interface/addactivityform.cpp" line="732"/>
+        <location filename="../src/interface/addactivityform.cpp" line="810"/>
+        <location filename="../src/interface/addactivityform.cpp" line="815"/>
         <source>FET information</source>
         <translation>Informasi FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="589"/>
+        <location filename="../src/interface/addactivityform.cpp" line="614"/>
         <source>Invalid weight (percentage) for added constraint min days between activities</source>
         <translation>Bobot  (persentase) untuk batasan ditambahkan jumlah hari antara kegiatan tidak valid</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="614"/>
-        <location filename="../src/interface/addactivityform.cpp" line="633"/>
-        <location filename="../src/interface/addactivityform.cpp" line="690"/>
+        <location filename="../src/interface/addactivityform.cpp" line="639"/>
+        <location filename="../src/interface/addactivityform.cpp" line="658"/>
+        <location filename="../src/interface/addactivityform.cpp" line="715"/>
         <source>FET question</source>
         <translation>Pertanyaan FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="599"/>
+        <location filename="../src/interface/addactivityform.cpp" line="624"/>
         <source>FET warning</source>
         <translation>Peringatan FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="600"/>
+        <location filename="../src/interface/addactivityform.cpp" line="625"/>
         <source>Invalid subject</source>
         <translation>Mata Pelajaran salah</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="664"/>
+        <location filename="../src/interface/addactivityform.cpp" line="689"/>
         <source>Invalid duration</source>
         <translation>Durasi salah</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="693"/>
-        <location filename="../src/interface/addactivityform.cpp" line="730"/>
+        <location filename="../src/interface/addactivityform.cpp" line="718"/>
+        <location filename="../src/interface/addactivityform.cpp" line="755"/>
         <source>Yes</source>
         <translation>Ya</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="693"/>
-        <location filename="../src/interface/addactivityform.cpp" line="730"/>
+        <location filename="../src/interface/addactivityform.cpp" line="718"/>
+        <location filename="../src/interface/addactivityform.cpp" line="755"/>
         <source>No</source>
         <translation>Tidak</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="705"/>
+        <location filename="../src/interface/addactivityform.cpp" line="730"/>
         <source>Activity added</source>
         <translation>Kegiatan ditambah</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="707"/>
+        <location filename="../src/interface/addactivityform.cpp" line="732"/>
         <source>Activity NOT added - please report error</source>
         <translation>Kegiatan TIDAK ditambah - silahkan laporkan error</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="713"/>
+        <location filename="../src/interface/addactivityform.cpp" line="738"/>
         <source>You want to add a container activity split into more than the number of days per week and also add a constraint min days between activities. This is a very bad practice from the way the algorithm of generation works (it slows down the generation and makes it harder to find a solution).</source>
         <translation>Anda ingin menambahkan kontainer  membagi aktivitas ke lebih dari jumlah hari per minggu dan juga menambahkan hari min kendala antara kegiatan. Ini adalah praktik yang sangat buruk dari cara algoritma dari karya generasi (generasi itu melambat dan membuat lebih sulit untuk menemukan solusi).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="718"/>
+        <location filename="../src/interface/addactivityform.cpp" line="743"/>
         <source>1. If you add &apos;force consecutive if same day&apos;, then couple extra activities in pairs to obtain a number of activities equal to the number of days per week. Example: 7 activities with duration 1 in a 5 days week, then transform into 5 activities with durations: 2,2,1,1,1 and add a single container activity with these 5 components (possibly raising the weight of added constraint min days between activities up to 100%)</source>
         <translation>1. Jika Anda menambahkan &quot;paksa berturut-turut jika kegiatan ekstra beberapa hari yang sama &apos;, kemudian di pasang untuk mendapatkan sejumlah kegiatan yang sama dengan jumlah hari per minggu. Contoh: 7 kegiatan dengan durasi 1 dalam seminggu 5 hari, kemudian berubah menjadi 5 kegiatan dengan jangka waktu: 2,2,1,1,1 dan menambahkan aktivitas wadah tunggal dengan 5 komponen (mungkin menaikkan berat hari min kendala ditambahkan antara kegiatan sampai dengan 100%)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="722"/>
+        <location filename="../src/interface/addactivityform.cpp" line="747"/>
         <source>2. If you don&apos;t add &apos;force consecutive if same day&apos;, then add a larger activity split into a number of activities equal with the number of days per week and the remaining components into other larger split activity. For example, suppose you need to add 7 activities with duration 1 in a 5 days week. Add 2 larger container activities, first one split into 5 activities with duration 1 and second one split into 2 activities with duration 1 (possibly raising the weight of added constraints min days between activities for each of the 2 containers up to 100%)</source>
         <translation>2. Jika Anda tidak menambahkan &quot;kekuatan berturut-turut jika hari yang sama &apos;, kemudian tambahkan sebuah aktivitas yang lebih besar split menjadi beberapa kegiatan yang sama dengan jumlah hari per minggu dan komponen yang tersisa dalam aktivitas pemecahan yang lebih besar. Misalnya, Anda harus menambahkan 7 aktivitas dengan durasi 1 hari dalam seminggu 5. Tambahkan 2 kegiatan wadah yang lebih besar, yang pertama split menjadi 5 kegiatan dengan durasi 1 dan kedua satu split menjadi 2 kegiatan dengan durasi 1 (mungkin menaikkan berat min batasan hari antara kegiatan ditambahkan untuk setiap 2 kontainer hingga 100%)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="785"/>
+        <location filename="../src/interface/addactivityform.cpp" line="810"/>
         <source>Split activity added. Please note that FET currently cannot check for duplicates when adding split activities. It is advisable to check the statistics after adding all the activities</source>
         <translation>Kegiatan terpecah ditambahkan. Catatan: FET saat ini tidak dapat mengecek duplikasi ketika menambahkan kegiatan pecah. Disarankan untuk mengecek statistik setelah menambah semua kegiata</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="790"/>
+        <location filename="../src/interface/addactivityform.cpp" line="815"/>
         <source>Split activity NOT added - error???</source>
         <translation>Kegiatan pecah TIDAK ditambahkan - error???</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="815"/>
+        <location filename="../src/interface/addactivityform.cpp" line="840"/>
         <source>Abbreviations in this dialog:</source>
         <translation>Singkatan dalam dialog ini:</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="817"/>
+        <location filename="../src/interface/addactivityform.cpp" line="842"/>
         <source>&apos;Students&apos; (the text near the spin box), means &apos;Number of students (-1 for automatic)&apos;</source>
         <translation>&apos;Siswa&apos; (teks dekat kotak spin), artinya &apos;Jumlah siswa (-1 untuk otomatis)&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="819"/>
+        <location filename="../src/interface/addactivityform.cpp" line="844"/>
         <source>&apos;Split&apos; means &apos;Split into ... activities per week&apos;</source>
         <translation>&apos;Bagi&apos; artinya &apos;Bagi menjadi ... kegiatan per minggu&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="821"/>
+        <location filename="../src/interface/addactivityform.cpp" line="846"/>
         <source>&apos;Min days&apos; means &apos;The minimum required distance in days between each pair of activities&apos;</source>
         <translation>&apos;Min hari&apos; artinya &quot; Minimum diperlukan jarak antar hari diantara setiap pasangan kegiatan&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="823"/>
+        <location filename="../src/interface/addactivityform.cpp" line="848"/>
         <source>&apos;Weight %&apos; means &apos;Percentage of added constraint (min days between activities constraint). Recommended: 95.0%-100.0%&apos;</source>
         <translation>&apos;Bobot %&apos; artinya &apos;Persentase dari batasan tambahan ( min hari antar batasan kegiatan) &apos;Rekomendasi 95.0%-100.0%&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="825"/>
+        <location filename="../src/interface/addactivityform.cpp" line="850"/>
         <source>&apos;Consecutive&apos; means &apos;If activities on same day, force consecutive?&apos;</source>
         <translation>&apos;Berurutan&apos; artinya &apos;Jika kegiatan pada hari yang sama, &apos;paksa berurutan?&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="827"/>
+        <location filename="../src/interface/addactivityform.cpp" line="852"/>
         <source>The &apos;Duration&apos; spin box and the &apos;Active&apos; check box refer to each component of current activity, you can change them for each component, separately, by selecting the corresponding tab in the tab widget.</source>
         <translation>Para &apos;durasi&apos;&apos; spin kotak dan &apos;Aktif&apos; kotak cek mengacu pada masing-masing komponen kegiatan saat ini, Anda dapat mengubahnya untuk masing-masing komponen, secara terpisah, dengan memilih tab yang sesuai di tab widget.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="830"/>
+        <location filename="../src/interface/addactivityform.cpp" line="855"/>
         <source>&apos;Qualified&apos; means that only the teachers who are qualified to teach the selected subject will be shown in the &apos;Teachers&apos; list.</source>
         <comment>Qualified refers to teachers</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="841"/>
+        <location filename="../src/interface/addactivityform.cpp" line="866"/>
         <source>You can select a teacher from all the teachers with the mouse or with the keyboard tab/up/down, then double click it to add it to the selected teachers for current activity. You can then choose to remove a teacher from the selected teachers. You can highlight it with the mouse or with the keyboard, then double click it to remove this teacher from the selected teachers.</source>
         <translation>Anda dapat memilih guru dari semua guru dengan mouse atau dengan tab keyboard / atas / bawah, kemudian dobel klik untuk menambahkannya ke guru-guru yang dipilih untuk aktivitas saat ini. Anda kemudian dapat memilih untuk menghapus guru dari guru-guru yang dipilih. Anda dapat menyorot dengan mouse atau dengan keyboard, kemudian klik dua kali untuk menghapus guru ini dari guru-guru yang dipilih.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="848"/>
+        <location filename="../src/interface/addactivityform.cpp" line="873"/>
         <source>The same procedure (double click) applies to students sets and activity tags.</source>
         <translation>Prosedur yang sama (klik ganda) berlaku pada grup siswa dan tag kegiatan.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="905"/>
+        <location filename="../src/interface/addactivityform.cpp" line="930"/>
         <source>Current algorithm cannot schedule 3 activities in the same day if consecutive is checked, so you will get no solution in such extreme cases (for instance, if you have 3 lessons and a teacher which works only 1 day per week, and select &apos;force consecutive if same day&apos;, you will get an imposssible timetable. But these are extremely unlikely cases).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="920"/>
+        <location filename="../src/interface/addactivityform.cpp" line="945"/>
         <source>If you select a number of min days above 1 (say this number is n), you will get the possibility to add a second constraint min days between activities, with min days = n-1 and a percentage of your choice. Just click Add activities</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="834"/>
+        <location filename="../src/interface/addactivityform.cpp" line="859"/>
         <source>A first notice: If you use a 5 days week: when adding an activity split into only 2 components per week, the best practice is to add min days between activities to be 2. If you split an activity into 3 components per week - please read FAQ question Q1-5-September-2008</source>
         <translation>Sebuah pernyataan pertama: Jika Anda menggunakan 5 hari seminggu: saat menambahkan aktivitas split menjadi hanya 2 komponen per minggu, praktek terbaik adalah untuk menambahkan hari min antara kegiatan yang 2. Jika Anda memisahkan aktivitas menjadi 3 komponen per minggu - silakan baca FAQ pertanyaan P1-5-September-2008</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="852"/>
+        <location filename="../src/interface/addactivityform.cpp" line="877"/>
         <source>You can check/uncheck show years, show groups or show subgroups.</source>
         <translation>Anda dapat mencentang/tidak perlihatkan kelas, perlihatkan kelas paralel atau perlihatkan grup.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="855"/>
+        <location filename="../src/interface/addactivityform.cpp" line="880"/>
         <source>If you split a larger activity into more activities per week, you have a multitude of choices:
 You can choose the minimum distance in days between each pair of activities. Please note that a minimum distance of 1 means that the activities must not be in the same day, a minimum distance of 2 means that the activities must be separated by one day (distance from Monday to Wednesday for instance is 2 days), etc.</source>
         <translation>Jika Anda membagi suatu kegiatan besar menjadi kegiatan yang lebih banyak per minggu, Anda memiliki banyak pilihan:
 Anda dapat memilih jarak minimum di hari antara setiap pasangan kegiatan. Perlu diketahui bahwa jarak minimal 1 berarti bahwa kegiatan tidak boleh di hari yang sama, jarak minimum 2 berarti kegiatan harus dipisahkan oleh satu hari (jarak dari Senin hingga Rabu misalnya adalah 2 hari), dll.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="863"/>
+        <location filename="../src/interface/addactivityform.cpp" line="888"/>
         <source>If you have for instance an activity with 2 lessons per week and you want to spread them to at least 2 days distance, you can add a constraint min days with min days = 2 and weight 95% (or higher). If you want also to ensure that activities will be separated by at least one day, you can use this feature: add a constraint min days with minimum days 2 and weight 95% or lower, and after that you&apos;ll get the possibility to add another constraint with min 1 days and weight 95% or higher. It works if you first select in the dialog the min days &gt;= 2 and click Add activities. Or you can add manually the constraints (difficult this way). Important: it is best practice to consider both constraints to have 95% weight. The combination assures that the resultant is 99.75% weight</source>
         <translation>Jika Anda memiliki misalnya kegiatan dengan 2 pelajaran seminggu dan Anda ingin menyebarkannya untuk minimal 2 hari jarak, Anda dapat menambahkan beberapa hari kendala menit dengan hari min 2 = dan berat 95% (atau lebih tinggi). Jika Anda ingin juga untuk memastikan bahwa kegiatan akan dipisahkan oleh paling sedikit satu hari, Anda dapat menggunakan fitur ini: menambahkan hari min kendala dengan hari minimal 2 dan berat 95% atau lebih rendah, dan setelah itu Anda akan mendapatkan kemungkinan untuk menambahkan kendala lain dengan min 1 hari dan berat 95% atau lebih tinggi. Ia bekerja jika Anda pertama-tama pilih dalam dialog&gt; min hari = 2 dan klik Tambah kegiatan. Atau Anda dapat menambahkan secara manual kendala (sulit cara ini). Penting: itu praktek terbaik untuk mempertimbangkan kedua kendala untuk memiliki 95% berat. Kombinasi ini menjamin bahwa resultan adalah berat 99,75%</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="876"/>
+        <location filename="../src/interface/addactivityform.cpp" line="901"/>
         <source>Please note that the min days distance is a time constraint and you can only see/modify it in the time constraints dialogs, not in the modify activity dialog. Additionally, you can see the constraints for each activity in the details text box of each activity</source>
         <translation>Perlu diketahui bahwa hari min jarak adalah kendala waktu dan Anda hanya dapat melihat / memodifikasi dalam dialog kendala waktu, bukan dalam dialog memodifikasi aktivitas. Selain itu, Anda dapat melihat kendala untuk setiap aktivitas dalam kotak teks rincian masing-masing kegiatan</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="882"/>
+        <location filename="../src/interface/addactivityform.cpp" line="907"/>
         <source>If you choose a value greater or equal with 1 for min days, a time constraint min days between activities will be added automatically (you can see this constraint in the time constraints list or you can see this constraint in the detailed description of the activity). You can select a weight percentage for this constraint. If you select 100%, the constraint must be respected all the time. If you select 95%, there is a small chance that the timetable will not respect this constraint. Recommended values are 95.0%-100.0% (maybe you could try with 95%, then 99.75%, or even 100.0%, but the generation time might be larger). Generally, 99.75% might be a good value. Note: if you put a value less than 100% and the constraint is too tough, FET is able to find that this constraint is impossible and will break it. 99.75% might be better than 95% but possibly slower. The percentage is subjective (if you put 95% you may get 6 soft conflicts and if you put 99.75% you may get 3 soft conflicts). Starting with FET-5.3.6, it is possible to change this value for all constraints in one click, in constraint min days between activities dialog.</source>
         <translation>Jika Anda memilih nilai yang lebih besar atau sama dengan 1 untuk hari menit, waktu hari min kendala antara kegiatan akan ditambahkan secara otomatis (Anda dapat melihat ini kendala dalam daftar kendala waktu atau Anda dapat melihat ini kendala dalam deskripsi rinci aktivitas) . Anda dapat memilih persentase berat untuk kendala ini. Jika Anda memilih 100%, kendala harus dihormati sepanjang waktu. Jika Anda memilih 95%, ada kemungkinan kecil bahwa jadwal tidak akan menghormati kendala ini. nilai yang direkomendasikan adalah 95,0% -100,0% (mungkin Anda bisa mencoba dengan 95%, kemudian 99,75%, atau bahkan 100,0%, tetapi waktu generasi mungkin lebih besar). Umumnya, mungkin 99,75% nilai yang baik. Catatan: jika Anda memasukkan nilai waktu kurang dari 100% dan kendala yang terlalu sulit, FET dapat menemukan bahwa kendala ini tidak mungkin dan akan rusak. 99,75% mungkin lebih baik dari 95% namun mungkin lebih lambat. Persentase tersebut bersifat subjektif (jika Anda memasukkan 95% Anda bisa mendapatkan 6 konflik lembut dan jika Anda menempatkan 99,75% Anda akan mendapatkan 3 konflik lunak). Dimulai dengan FET-5.3.6, dimungkinkan untuk mengubah nilai ini untuk semua kendala dalam satu klik, di hari min kendala antara kegiatan dialog.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="896"/>
+        <location filename="../src/interface/addactivityform.cpp" line="921"/>
         <source>There is another option, if the activities are in the same day, force consecutive activities. You can select this option for instance if you have 5 lessons of math in 5 days, and there is no timetable which respects fully the days separation. Then, you can set the weight percent of the min days constraint to 95% and add consecutive if same day. You will have as results say 3 lessons with duration 1 and a 2 hours lesson in another day. Please be careful: if the activities are on the same day, even if the constraint has 0% weight, then the activities are forced to be consecutive.</source>
         <translation>Ada pilihan lain, jika kegiatan tersebut pada hari yang sama, gaya kegiatan berturut-turut. Anda dapat memilih pilihan ini misalnya jika Anda memiliki 5 pelajaran matematika dalam 5 hari, dan tidak ada jadwal yang menghormati sepenuhnya pemisahan hari. Kemudian, Anda dapat mengatur persen berat kendala min hari sampai 95% dan menambahkan berurutan hari yang sama jika. Anda akan memiliki hasil katakan 3 pelajaran dengan durasi 1 dan 2 jam pelajaran di hari lain. Harap berhati-hati: jika kegiatan tersebut pada hari yang sama, bahkan jika kendala memiliki 0% berat, maka kegiatan tersebut terpaksa harus berturut-turut.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="911"/>
+        <location filename="../src/interface/addactivityform.cpp" line="936"/>
         <source>Note: You cannot add &apos;consecutive if same day&apos; with min days=0. If you want this, you have to add min days at least 1 (and any weight percentage).</source>
         <translation>Catatan: Anda tidak dapat menambahkan &apos;hari berturut jika sama&apos; dengan hari min = 0. Jika Anda menginginkan ini, Anda harus menambah min hari minimal 1 (dan persentase berat).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="916"/>
+        <location filename="../src/interface/addactivityform.cpp" line="941"/>
         <source>Starting with version 5.0.0, it is possible to add activities with no students or no teachers</source>
         <translation>Dimulai dengan versi 5.0.0, dimungkinkan untuk menambah kegiatan dengan tidak ada siswa atau tanpa guru</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="927"/>
+        <location filename="../src/interface/addactivityform.cpp" line="952"/>
         <source>FET - help on adding activity(ies)</source>
         <translation>FET - bantuan pada menambah kegiatan</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="933"/>
+        <location filename="../src/interface/addactivityform.cpp" line="958"/>
         <source>OK</source>
         <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="716"/>
+        <location filename="../src/interface/addactivityform.cpp" line="741"/>
         <source>The best way to add the activities would be:</source>
         <translation>Cara terbaik untuk menambah kegiatan adalah:</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="728"/>
+        <location filename="../src/interface/addactivityform.cpp" line="753"/>
         <source>Do you want to add current activities as they are now (not recommended) or cancel and edit them as instructed?</source>
         <translation>Apakah anda ingin menambah kegiatan sekarang seadanya (tidakdirekomendasikan) atau batal dan sunting seperti diperintahkan?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="692"/>
+        <location filename="../src/interface/addactivityform.cpp" line="717"/>
         <source>A similar activity already exists. Do you want to insert current activity?</source>
         <translation>Suatu kegiatan serupa sudah ada. Apakah Anda ingin memasukkan kegiatan saat ini?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="615"/>
+        <location filename="../src/interface/addactivityform.cpp" line="640"/>
         <source>Do you really want to add an activity without teacher(s)?</source>
         <translation>Apakah Anda benar-benar ingin menambahkan aktivitas tanpa guru?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="634"/>
+        <location filename="../src/interface/addactivityform.cpp" line="659"/>
         <source>Do you really want to add an activity without student set(s)?</source>
         <translation>Apakah Anda benar-benar ingin menambahkan suatu kegiatan tanpa kelas paralel?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="711"/>
+        <location filename="../src/interface/addactivityform.cpp" line="736"/>
         <source>FET confirmation</source>
         <translation>Konfirmasi FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="712"/>
+        <location filename="../src/interface/addactivityform.cpp" line="737"/>
         <source>Possible incorrect setting. Are you sure you want to add current activity? See details below:</source>
         <translation>Kemungkinan salah pengaturan. Anda yakin ingin menambahkan kegiatan saat ini? Lihat rincian di bawah ini:</translation>
     </message>
@@ -31687,11 +31687,6 @@ Silahkan hentikan simulasi sebeum ini.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="819"/>
-        <source>Thus, it can be deduced if and when you use FET.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../src/interface/fetmainform.cpp" line="846"/>
         <source>Note: if you disable this option, you will not be able to add/modify constraints for subgroups, and you will not be able to make filters using a particular subgroup, when selecting activities.</source>
         <translation type="unfinished"></translation>
@@ -32520,6 +32515,11 @@ Silahkan hentikan simulasi sebeum ini.</translation>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="641"/>
         <source>SSL is not available (this might be caused by missing SSL libraries). Because of this, FET cannot check for updates on startup (it cannot get the file %1).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="819"/>
+        <source>Thus, it could be deduced if and when you use FET.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -37338,6 +37338,11 @@ This trick just passed through my mind as I was trying to write you that you hav
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../src/interface/helpfaqform.cpp" line="622"/>
+        <source>Thus, it could be deduced if and when you use FET.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/interface/helpfaqform.cpp" line="635"/>
         <source>Alternative solutions: either you can split that activity into two subactivities with duration 1 (without a min days constraint between them), and add a two activities consecutive constraint, or you can choose to not add the break constraint in your file.</source>
         <translation type="unfinished"></translation>
@@ -37900,11 +37905,6 @@ There is only a small problem: A2 cannot be put in the last period. To correct t
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="618"/>
         <source>Please note that, by enabling this option, each time you start FET it will get the file %1 from the FET homepage, so the request for this file will be visible on the server, along with your IP address and access time.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="622"/>
-        <source>Thus, it can be deduced if and when you use FET.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -39650,64 +39650,64 @@ Silahkan hentikan simulasi sebelumnya</translation>
 <context>
     <name>ModifyActivityForm</name>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="479"/>
-        <location filename="../src/interface/modifyactivityform.cpp" line="498"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="502"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="521"/>
         <source>FET question</source>
         <translation>Pertanyaan FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="480"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="503"/>
         <source>Do you really want to have the activity without teacher(s)?</source>
         <translation>Apakah anda ingin menambah kegiatan dengan tanpa guru?</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="463"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="486"/>
         <source>FET information</source>
         <translation>Informasi FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="464"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="487"/>
         <source>Invalid subject</source>
         <translation>Mata Pelajaran salah</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="499"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="522"/>
         <source>Do you really want to have the activity without student set(s)?</source>
         <translation>Apakah anda ingin menambah kegiatan dengan kelas paralel?</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="572"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="595"/>
         <source>Abbreviations in this dialog:</source>
         <translation>Singkatan pada dialog ini:</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="574"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="597"/>
         <source>&apos;Students&apos; (the text near the spin box), means &apos;Number of students (-1 for automatic)&apos;</source>
         <translation>&apos;Siswa&apos; (teks dekat kotak spin), artinya &apos;Jumlah siswa (-1 untuk otomatis)&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="576"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="599"/>
         <source>&apos;Split&apos; means &apos;Is split into ... activities per week&apos;. This value cannot be changed. If you need to modify it, please remove the corresponding activities and add a new split activity.</source>
         <translation>&apos;Split&apos; berarti &apos;dibagi menjadi ... kegiatan per minggu&apos;. Nilai ini tidak dapat diubah. Jika Anda perlu memodifikasi, silakan hapus kegiatan yang sesuai dan menambahkan aktivitas perpecahan baru.</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="579"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="602"/>
         <source>The &apos;Duration&apos; spin box and the &apos;Active&apos; check box refer to each component of current activity, you can change them for each component, separately, by selecting the corresponding tab in the tab widget.</source>
         <translation>Para &apos;durasi&apos;&apos; spin kotak dan &apos;Aktif&apos; kotak cek mengacu pada masing-masing komponen kegiatan saat ini, Anda dapat mengubahnya untuk masing-masing komponen, secara terpisah, dengan memilih tab yang sesuai di tab widget.</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="582"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="605"/>
         <source>&apos;Qualified&apos; means that only the teachers who are qualified to teach the selected subject will be shown in the &apos;Teachers&apos; list.</source>
         <comment>Qualified refers to teachers</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="588"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="611"/>
         <source>FET - help on modifying activity(ies)</source>
         <translation>FET - bantuan pada memodifikasi kegiatan</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="594"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="617"/>
         <source>OK</source>
         <translation>Ok</translation>
     </message>
@@ -47675,64 +47675,64 @@ Catata: Guru tidak ada dan pecah tidakdihitung jam kosong.</translation>
 <context>
     <name>ModifySubactivityForm</name>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="369"/>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="388"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="392"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="411"/>
         <source>FET question</source>
         <translation>Pertanyaan FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="370"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="393"/>
         <source>Do you really want to have the subactivity without teacher(s)?</source>
         <translation>Apakah anda ingin menambah sub kegiatan dengan tanpa guru?</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="353"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="376"/>
         <source>FET information</source>
         <translation>Informasi FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="354"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="377"/>
         <source>Invalid subject</source>
         <translation>Mata Pelajaran salah</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="389"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="412"/>
         <source>Do you really want to have the subactivity without student set(s)?</source>
         <translation>Apakah anda ingin mempunyai sub  kegiatan dengan kelas?</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="449"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="472"/>
         <source>Abbreviations in this dialog:</source>
         <translation>Singkatan dalam dialog ini:</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="451"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="474"/>
         <source>&apos;Students&apos; (the text near the spin box), means &apos;Number of students (-1 for automatic)&apos;</source>
         <translation>&apos;Siswa&apos; (teks dekat kotak spin), artinya &apos;Jumlah siswa (-1 untuk otomatis)&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="453"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="476"/>
         <source>&apos;Qualified&apos; means that only the teachers who are qualified to teach the selected subject will be shown in the &apos;Teachers&apos; list.</source>
         <comment>Qualified refers to teachers</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="459"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="482"/>
         <source>FET - help on modifying subactivity(ies)</source>
         <translation>FET - bantuan pada memodifikasi kegiatan</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="465"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="488"/>
         <source>OK</source>
         <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="103"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="118"/>
         <source>Current subactivity has split index %1 out of %2</source>
         <translation>Sub kegiatan saat ini memiliki indeks pecah %1 dari %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="104"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="119"/>
         <source>The current data applies only to this subactivity</source>
         <translation>Data saat ini berlaku pada sub kegiatan ini</translation>
     </message>
@@ -49658,47 +49658,47 @@ tidak ditambah - duplikasi</translation>
 <context>
     <name>SecondMinDaysDialog</name>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="491"/>
+        <location filename="../src/interface/addactivityform.cpp" line="516"/>
         <source>Add a second constraint or not?</source>
         <translation>Tambha batasan kedua atau tidak?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="501"/>
+        <location filename="../src/interface/addactivityform.cpp" line="526"/>
         <source>Yes</source>
         <translation>Ya</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="504"/>
+        <location filename="../src/interface/addactivityform.cpp" line="529"/>
         <source>No</source>
         <translation>Tidak</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="574"/>
+        <location filename="../src/interface/addactivityform.cpp" line="599"/>
         <source>FET information</source>
         <translation>Informasi FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="575"/>
+        <location filename="../src/interface/addactivityform.cpp" line="600"/>
         <source>Invalid weight (percentage) - must be &gt;=0 and &lt;=100.0</source>
         <translation>Bobot (persentase) salah. harus &gt;=0 dan &lt;=100.0</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="473"/>
+        <location filename="../src/interface/addactivityform.cpp" line="498"/>
         <source>You selected min days between activities %1 (above 1) and weight %2 (under 100.0). Would you like to add also a second constraint to ensure that almost certainly the distance between activities is at least %3 (%1-1) days? If yes, please select weight (recommended 95.0%-100.0%) and click Yes. If no, please click No (only one constraint will be added)</source>
         <translation>Anda memilih min hari antar kegiatan %1 (diatas 1) dan bobot %2 (dibawah 100.0). Apakah anda ingin menambah batasan kedua untuk memastikan jarak yang pasti antar kegiatan adalah %3(%1-1) hari? Jika ya, silahkan pilih bobot (rekomendasi 95.0%-100.0%) dan klik Ya. Jika tidak, silahkan klik Tidak (hanya satu batasan yang ditambah)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="489"/>
+        <location filename="../src/interface/addactivityform.cpp" line="514"/>
         <source>Recommended answer is Yes, 95% (or higher).</source>
         <translation>Jawaban yang direkomendasikan adalah Ya, 95%(atau lebih tinggi).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="478"/>
+        <location filename="../src/interface/addactivityform.cpp" line="503"/>
         <source>(Yes means to add an additional constraint min %1 days between activities, weight 0.0%-100.0%. If you say Yes, you will have 2 constraints min days added for current activities. Adding the second constraint might lead to impossible timetables if the condition is too tight, but you can remove the second constraint at any time).</source>
         <translation>Ya berarti menambah batasan tambahan min %1 hari antar kegiatan, bobot 0.0%-100.0%. Jika anda mengisi Ya, anda akan memiliki 2 batasan min hari ditambah ke kegiatan. Menambah batasan kedua akan menimbulkan jadwal yang tidak mungkin jika kondisi terlalu ketat, tetapi anda dapat menghapus batasan kedua kapan saja).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="483"/>
+        <location filename="../src/interface/addactivityform.cpp" line="508"/>
         <source>Note: 95% is usually enough for min days constraints referring to same activities. The weights are cumulated if referring to the same activities. If you have 2 constraints with say 95% (say min n days and min n-1 days), the min n days constraint is skipped with probability 5%, then min n-1 days constraint is skipped with probability 0.25%=5%*5%, so you&apos;ll get in 99.75% cases the min n-1 days constraint respected.</source>
         <translation>Catatan: 95% biasanya cukup untuk batasan hari min berhubungan pada kegiatan yang sama. Bobot diakumulasi jika berhubungan dengan kegiatan yang sama. Jika anda mempunyai 2 batasan dengan 95% (katakan min n hari dan min n-2 hari), batasan min n hari diabaikan dengan probabilitas 5%, lalu min n-1 hari diabaikan dengan probabilitas 0.25%=5%, jadi anda mendapatkan 99.75% kasus dengan batasan min n-1 hari dihormati.</translation>
     </message>
@@ -51597,91 +51597,91 @@ Bottom: %4</source>
 <context>
     <name>SubactivitiesForm</name>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="346"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="349"/>
         <source>No: %1 / %2</source>
         <comment>No means number, %1 is the number of active activities, %2 is the number of total activities.Please leave space between fields, so that they are better visible</comment>
         <translation>No: %1/%2</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="348"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="351"/>
         <source>Dur: %1 / %2</source>
         <comment>Dur means duration, %1 is the duration of active activities, %2 is the duration of total activities.Please leave space between fields, so that they are better visible</comment>
         <translation>Lm:%1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="361"/>
-        <location filename="../src/interface/subactivitiesform.cpp" line="463"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="364"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="466"/>
         <source>FET information</source>
         <translation>Informasi FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="361"/>
-        <location filename="../src/interface/subactivitiesform.cpp" line="463"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="364"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="466"/>
         <source>Invalid selected subactivity</source>
         <translation>Subkegiatan terpilih salah</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="421"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="424"/>
         <source>Useful instructions/tips:</source>
         <translation>Petunjuk/Tips berguna:</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="424"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="427"/>
         <source>Above the (sub)activities list, we have 2 labels, containing 4 numbers. The first label contains text: No: a / b. The first number a is the number of active (sub)activities (we number each individual subactivity as 1), while the second number b is the number of total (sub)activities. The second label contains text: Dur: c / d. The third number c is the duration of active (sub)activities, in periods (or FET hours), while the fourth number d is the duration of total (sub)activities, in periods (or FET hours). So, No means number and Dur means duration.</source>
         <translation>Di atas (sub) daftar kegiatan, kami memiliki 2 label, yang berisi 4 nomor. Label pertama berisi teks: No: a / b. Angka pertama adalah jumlah aktif (sub) kegiatan (nomor subactivity kita masing-masing individu sebagai 1), sedangkan b angka kedua adalah jumlah total (sub) kegiatan. Label kedua berisi teks: Dur: c / d. C nomor ketiga adalah masa aktif (sub) kegiatan, dalam periode (atau jam FET), sementara jumlah keempat d adalah total durasi (sub) kegiatan, dalam periode (atau jam FET). Jadi, Tidak ada nomor sarana dan Dur berarti durasi.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="430"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="433"/>
         <source>Example: No: 100 / 102, Dur: 114 / 117. They represent: 100 - the number of active (sub)activities, then 102 - the number of total (sub)activities, 114 - the duration of active activities (in periods or FET hours) and 117 - the duration of total activities (in periods or FET hours). In this example we have 2 inactive activities with their combined duration being 3 periods.</source>
         <translation>Contoh: Nomor: 100 / 102, Dur: 114 / 117. Mereka mewakili: 100 - jumlah aktif (sub) kegiatan, maka 102 - jumlah total (sub) aktifitas, 114 - durasi kegiatan aktif (dalam periode atau jam FET) dan 117 - durasi kegiatan total (dalam periode atau jam FET). Dalam contoh ini kami memiliki 2 kegiatan yang tidak aktif dengan durasi gabungan mereka menjadi 3 periode.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="436"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="439"/>
         <source>Explanation of the short description of an activity: first comes the id. If the activity is inactive, an X follows. Then the duration. Then, if the activity is split, a slash and the total duration. Then teachers, subject, activity tag (if it is not void) and students. Then the number of students (if specified).</source>
         <translation>Penjelasan deskripsi singkat dari suatu kegiatan: pertama datang id. Jika kegiatan ini tidak aktif, X berikut. Lalu durasi. Lalu, jika kegiatan tersebut dibagi, sebuah garis miring dan total durasi. Kemudian guru, subjek, tag aktivitas (jika tidak void), dan siswa. Kemudian jumlah siswa (bila ditentukan).</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="443"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="446"/>
         <source>have an X mark after the id.</source>
         <translation>memiliki tanda x setelah id.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="474"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="477"/>
         <source>Subactivity comments</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="476"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="479"/>
         <source>OK</source>
         <translation type="unfinished">Ok</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="478"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="481"/>
         <source>Cancel</source>
         <translation type="unfinished">Batal</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="440"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="443"/>
         <source>The activities which are inactive:</source>
         <translation>Kegiatan yang tidak aktif:</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="449"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="452"/>
         <source>if you use colors in interface (see Settings/Interface menu), they will appear with different background color.</source>
         <translation>jika Anda menggunakan warna dalam interface (lihat Pengaturan / menu Interface), mereka akan muncul dengan warna latar belakang yang berbeda.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="451"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="454"/>
         <source>To modify a subactivity, you can also double click it.</source>
         <translation>Untuk mengubah aktivitas, Anda juga bisa klik-ganda.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="453"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="456"/>
         <source>Show related: if you select this, there will be listed subactivities for groups and subgroups contained also in the current set (if the current set is a year or a group) and also higher ranked year or group (if the current set is a group or a subgroup).</source>
         <translation>terkait Tampilkan: jika Anda memilih ini, ada akan terdaftar kegiatan untuk kelompok dan subkelompok yang terdapat juga di set saat ini (jika set saat ini adalah satu tahun atau grup) dan juga lebih tinggi peringkat tahun atau kelompok (jika set saat ini grup atau subkelompok a).</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="456"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="459"/>
         <source>FET Help</source>
         <translation>Bantuan FET</translation>
     </message>

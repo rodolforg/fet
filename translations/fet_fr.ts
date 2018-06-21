@@ -4,188 +4,188 @@
 <context>
     <name>ActivitiesForm</name>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="348"/>
+        <location filename="../src/interface/activitiesform.cpp" line="351"/>
         <source>No: %1 / %2</source>
         <comment>No means number, %1 is the number of active activities, %2 is the number of total activities. Please leave spaces between fields, so that they are better visible</comment>
         <translation>Nb : %1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="350"/>
+        <location filename="../src/interface/activitiesform.cpp" line="353"/>
         <source>Dur: %1 / %2</source>
         <comment>Dur means duration, %1 is the duration of active activities, %2 is the duration of total activities. Please leave spaces between fields, so that they are better visible</comment>
         <translation>Dur : %1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="388"/>
-        <location filename="../src/interface/activitiesform.cpp" line="439"/>
-        <location filename="../src/interface/activitiesform.cpp" line="500"/>
-        <location filename="../src/interface/activitiesform.cpp" line="605"/>
+        <location filename="../src/interface/activitiesform.cpp" line="391"/>
+        <location filename="../src/interface/activitiesform.cpp" line="442"/>
+        <location filename="../src/interface/activitiesform.cpp" line="503"/>
+        <location filename="../src/interface/activitiesform.cpp" line="608"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="388"/>
-        <location filename="../src/interface/activitiesform.cpp" line="500"/>
-        <location filename="../src/interface/activitiesform.cpp" line="605"/>
+        <location filename="../src/interface/activitiesform.cpp" line="391"/>
+        <location filename="../src/interface/activitiesform.cpp" line="503"/>
+        <location filename="../src/interface/activitiesform.cpp" line="608"/>
         <source>Invalid selected activity</source>
         <translation>Activité sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="440"/>
+        <location filename="../src/interface/activitiesform.cpp" line="443"/>
         <source>Cannot modify this large activity, because it contains more than %1 activities.</source>
         <translation>Impossible de modifier cette grande activité car elle contient plus de %1 activités.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="449"/>
+        <location filename="../src/interface/activitiesform.cpp" line="452"/>
         <source>different teachers</source>
         <translation>enseignants différents</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="451"/>
+        <location filename="../src/interface/activitiesform.cpp" line="454"/>
         <source>different subject</source>
         <translation>matière différente</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="453"/>
+        <location filename="../src/interface/activitiesform.cpp" line="456"/>
         <source>different activity tags</source>
         <translation>codes activité différents</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="455"/>
+        <location filename="../src/interface/activitiesform.cpp" line="458"/>
         <source>different students</source>
         <translation>apprenants différents</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="457"/>
+        <location filename="../src/interface/activitiesform.cpp" line="460"/>
         <source>different boolean variable &apos;must compute n total students&apos;</source>
         <translation>variable booléenne &quot;doit calculer nb total d&apos;apprenants&quot; différente</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="459"/>
+        <location filename="../src/interface/activitiesform.cpp" line="462"/>
         <source>different number of students</source>
         <translation>nombre d&apos;apprenants différent</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="462"/>
+        <location filename="../src/interface/activitiesform.cpp" line="465"/>
         <source>The current split activity has subactivities which were individually modified. It is recommended to abort now and modify individual subactivities from the corresponding menu. Otherwise you will modify the fields for all the subactivities from this larger split activity.</source>
         <translation>Cette activité fractionnée a des sous-activités qui ont été modifiées individuellement.
 Il est recommandé d&apos;abandonner maintenant et de modifier individuellement ces sous-activités depuis le menu correspondant. Sinon vous modifierez les champs pour toutes les sous-activités de cette grande activité fractionnée.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="466"/>
+        <location filename="../src/interface/activitiesform.cpp" line="469"/>
         <source>The fields which are different are: %1</source>
         <translation>Les champs différents sont : %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="468"/>
+        <location filename="../src/interface/activitiesform.cpp" line="471"/>
         <source>FET warning</source>
         <translation>FET avertissement</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="468"/>
+        <location filename="../src/interface/activitiesform.cpp" line="471"/>
         <source>Abort</source>
         <translation>Abandonner</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="468"/>
+        <location filename="../src/interface/activitiesform.cpp" line="471"/>
         <source>Continue</source>
         <translation>Continuer</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="513"/>
+        <location filename="../src/interface/activitiesform.cpp" line="516"/>
         <source>Remove activity?</source>
         <translation>Retirer l&apos;activité ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="516"/>
+        <location filename="../src/interface/activitiesform.cpp" line="519"/>
         <source>There will also be removed the related activities from the same larger split activity</source>
         <translation>Seront aussi retirées les activités relatives à cette même grande activité fractionnée</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="521"/>
+        <location filename="../src/interface/activitiesform.cpp" line="524"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="522"/>
+        <location filename="../src/interface/activitiesform.cpp" line="525"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="522"/>
+        <location filename="../src/interface/activitiesform.cpp" line="525"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="550"/>
+        <location filename="../src/interface/activitiesform.cpp" line="553"/>
         <source>Invalid activity</source>
         <translation>Activité invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="566"/>
+        <location filename="../src/interface/activitiesform.cpp" line="569"/>
         <source>Useful instructions/tips:</source>
         <translation>Instructions / astuces utiles :</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="569"/>
+        <location filename="../src/interface/activitiesform.cpp" line="572"/>
         <source>Above the (sub)activities list, we have 2 labels, containing 4 numbers. The first label contains text: No: a / b. The first number a is the number of active (sub)activities (we number each individual subactivity as 1), while the second number b is the number of total (sub)activities. The second label contains text: Dur: c / d. The third number c is the duration of active (sub)activities, in periods (or FET hours), while the fourth number d is the duration of total (sub)activities, in periods (or FET hours). So, No means number and Dur means duration.</source>
         <translation>Au-dessus de la liste des (sous-) activités, nous avons 2 étiquettes contenant 4 nombres. La première étiquette contient le texte : &quot;Nb : a / b&quot;. Le premier nombre &quot;a&quot; est le nombre d&apos; (sous-) activités actives (nous comptons chaque sous-activité individuelle comme 1), tandis que le second nombre &quot;b&quot; est le nombre total d&apos; (sous-) activités. La seconde étiquette contient le texte : &quot;Dur : c / d&quot;. Le troisième nombre &quot;c&quot; est la durée des (sous-) activités actives, dans les périodes (ou heures FET), tandis que le quatrième nombre &quot;d&quot; est la durée totale des (sous-) activités, dans les périodes (ou heures FET). Ainsi, &quot;Nb&quot; signifie nombre et &quot;Dur&quot; durée.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="575"/>
+        <location filename="../src/interface/activitiesform.cpp" line="578"/>
         <source>Example: No: 100 / 102, Dur: 114 / 117. They represent: 100 - the number of active (sub)activities, then 102 - the number of total (sub)activities, 114 - the duration of active activities (in periods or FET hours) and 117 - the duration of total activities (in periods or FET hours). In this example we have 2 inactive activities with their combined duration being 3 periods.</source>
         <translation>Exemple : &quot;Nb : 100 / 102&quot;, &quot;Dur : 114 / 117&quot;. Ils représentent : 100 - le nombre d&apos; (sous-) activités actives, puis 102 - le nombre total d&apos; (sous-) activités, 114 - la durée des activités actives (dans les périodes ou heures FET) et 117 - la durée totale des activités (dans les périodes ou heures FET). Dans cet exemple nous avons 2 activités inactives d&apos;une durée combinée de 3 périodes.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="581"/>
+        <location filename="../src/interface/activitiesform.cpp" line="584"/>
         <source>Explanation of the short description of an activity: first comes the id. If the activity is inactive, an X follows. Then the duration. Then, if the activity is split, a slash and the total duration. Then teachers, subject, activity tag (if it is not void) and students. Then the number of students (if specified).</source>
         <translation>Explication de la courte description d&apos;une activité : l&apos;ID vient en premier. Si l&apos;activité est inactive, un &quot;X&quot; la suit. Puis la durée. Ensuite, si l&apos;activité est fractionnée, une barre oblique et la durée totale. Puis les enseignants, matière, code activité (si non vide) et apprenants. Enfin le nombre d&apos;apprenants (si spécifié).</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="585"/>
+        <location filename="../src/interface/activitiesform.cpp" line="588"/>
         <source>The activities which are inactive:</source>
         <comment>This is the help for activities which are inactive, after this field there come explanations for how inactive activities are displayed.</comment>
         <translation>Les activités qui sont inactives :</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="588"/>
+        <location filename="../src/interface/activitiesform.cpp" line="591"/>
         <source>have an X mark after the id.</source>
         <comment>It refers to inactive activities, which have this mark after the id.</comment>
         <translation>ont la marque &quot;X&quot; après leur ID.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="591"/>
+        <location filename="../src/interface/activitiesform.cpp" line="594"/>
         <source>if you use colors in interface (see Settings/Interface menu), they will appear with different background color.</source>
         <comment>It refers to inactive activities</comment>
         <translation>si vous utilisez les couleurs dans l&apos;interface (voir menu Réglages / Interface), elles apparaîtront avec une couleur de fond différente.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="593"/>
+        <location filename="../src/interface/activitiesform.cpp" line="596"/>
         <source>To modify an activity, you can also double click it.</source>
         <translation>Pour modifier une activité, vous pouvez aussi la double-cliquer.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="595"/>
+        <location filename="../src/interface/activitiesform.cpp" line="598"/>
         <source>Show related: if you select this, there will be listed activities for groups and subgroups contained also in the current set (if the current set is a year or a group) and also higher ranked year or group (if the current set is a group or a subgroup).</source>
         <translation>Afficher dépendants : si vous sélectionnez cette option, seront aussi listées les activités pour les groupes et sous-groupes contenus dans le jeu actuel (si le jeu actuel est une année ou un groupe) ainsi que l&apos;année ou le groupe de rang supérieur (si le jeu actuel est un groupe ou un sous-groupe).</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="598"/>
+        <location filename="../src/interface/activitiesform.cpp" line="601"/>
         <source>FET Help</source>
         <translation>FET aide</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="616"/>
+        <location filename="../src/interface/activitiesform.cpp" line="619"/>
         <source>Activity comments</source>
         <translation>Commentaire activité</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="618"/>
+        <location filename="../src/interface/activitiesform.cpp" line="621"/>
         <source>OK</source>
         <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="620"/>
+        <location filename="../src/interface/activitiesform.cpp" line="623"/>
         <source>Cancel</source>
         <translation>Annuler</translation>
     </message>
@@ -1254,239 +1254,239 @@ un nombre supplémentaire de %1 activités ne seront pas retirées
 <context>
     <name>AddActivityForm</name>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="588"/>
-        <location filename="../src/interface/addactivityform.cpp" line="663"/>
-        <location filename="../src/interface/addactivityform.cpp" line="705"/>
-        <location filename="../src/interface/addactivityform.cpp" line="707"/>
-        <location filename="../src/interface/addactivityform.cpp" line="785"/>
-        <location filename="../src/interface/addactivityform.cpp" line="790"/>
+        <location filename="../src/interface/addactivityform.cpp" line="613"/>
+        <location filename="../src/interface/addactivityform.cpp" line="688"/>
+        <location filename="../src/interface/addactivityform.cpp" line="730"/>
+        <location filename="../src/interface/addactivityform.cpp" line="732"/>
+        <location filename="../src/interface/addactivityform.cpp" line="810"/>
+        <location filename="../src/interface/addactivityform.cpp" line="815"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="589"/>
+        <location filename="../src/interface/addactivityform.cpp" line="614"/>
         <source>Invalid weight (percentage) for added constraint min days between activities</source>
         <translation>Poids invalide (pourcentage) pour la contrainte &quot;jours minimum entre activités&quot; ajoutée</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="614"/>
-        <location filename="../src/interface/addactivityform.cpp" line="633"/>
-        <location filename="../src/interface/addactivityform.cpp" line="690"/>
+        <location filename="../src/interface/addactivityform.cpp" line="639"/>
+        <location filename="../src/interface/addactivityform.cpp" line="658"/>
+        <location filename="../src/interface/addactivityform.cpp" line="715"/>
         <source>FET question</source>
         <translation>FET question</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="615"/>
+        <location filename="../src/interface/addactivityform.cpp" line="640"/>
         <source>Do you really want to add an activity without teacher(s)?</source>
         <translation>Voulez-vous réellement ajouter une activité sans enseignant ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="599"/>
+        <location filename="../src/interface/addactivityform.cpp" line="624"/>
         <source>FET warning</source>
         <translation>FET avertissement</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="600"/>
+        <location filename="../src/interface/addactivityform.cpp" line="625"/>
         <source>Invalid subject</source>
         <translation>Matière invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="634"/>
+        <location filename="../src/interface/addactivityform.cpp" line="659"/>
         <source>Do you really want to add an activity without student set(s)?</source>
         <translation>Voulez-vous réellement ajouter une activité sans apprenant ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="664"/>
+        <location filename="../src/interface/addactivityform.cpp" line="689"/>
         <source>Invalid duration</source>
         <translation>Durée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="692"/>
+        <location filename="../src/interface/addactivityform.cpp" line="717"/>
         <source>A similar activity already exists. Do you want to insert current activity?</source>
         <translation>Une activité identique existe déjà. Voulez-vous ajouter l&apos;activité en cours ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="693"/>
-        <location filename="../src/interface/addactivityform.cpp" line="730"/>
+        <location filename="../src/interface/addactivityform.cpp" line="718"/>
+        <location filename="../src/interface/addactivityform.cpp" line="755"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="693"/>
-        <location filename="../src/interface/addactivityform.cpp" line="730"/>
+        <location filename="../src/interface/addactivityform.cpp" line="718"/>
+        <location filename="../src/interface/addactivityform.cpp" line="755"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="705"/>
+        <location filename="../src/interface/addactivityform.cpp" line="730"/>
         <source>Activity added</source>
         <translation>Activité ajoutée</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="707"/>
+        <location filename="../src/interface/addactivityform.cpp" line="732"/>
         <source>Activity NOT added - please report error</source>
         <translation>Activité NON ajoutée - merci de signaler l&apos;erreur</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="711"/>
+        <location filename="../src/interface/addactivityform.cpp" line="736"/>
         <source>FET confirmation</source>
         <translation>FET confirmation</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="712"/>
+        <location filename="../src/interface/addactivityform.cpp" line="737"/>
         <source>Possible incorrect setting. Are you sure you want to add current activity? See details below:</source>
         <translation>Réglage potentiellement incorrect. Êtes-vous sûr de vouloir ajouter l&apos;activité en cours ? Voir détails ci-dessous :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="713"/>
+        <location filename="../src/interface/addactivityform.cpp" line="738"/>
         <source>You want to add a container activity split into more than the number of days per week and also add a constraint min days between activities. This is a very bad practice from the way the algorithm of generation works (it slows down the generation and makes it harder to find a solution).</source>
         <translation>Vous souhaitez ajouter une activité conteneur fractionnée en plus d&apos;éléments que le nombre de jours de la semaine avec une contrainte &quot;jours minimum entre activités&quot;. C&apos;est une très mauvaise pratique compte tenu de la méthode de travail de l&apos;algorithme de génération (cela ralentit la génération et rend plus difficile la découverte d&apos;une solution).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="716"/>
+        <location filename="../src/interface/addactivityform.cpp" line="741"/>
         <source>The best way to add the activities would be:</source>
         <translation>La meilleure méthode pour ajouter les activités serait :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="718"/>
+        <location filename="../src/interface/addactivityform.cpp" line="743"/>
         <source>1. If you add &apos;force consecutive if same day&apos;, then couple extra activities in pairs to obtain a number of activities equal to the number of days per week. Example: 7 activities with duration 1 in a 5 days week, then transform into 5 activities with durations: 2,2,1,1,1 and add a single container activity with these 5 components (possibly raising the weight of added constraint min days between activities up to 100%)</source>
         <translation>1. Si vous ajoutez &quot;forcer consécutives si même jour&quot; alors coller les activités excédentaires par paires pour obtenir un nombre d&apos;activités égal au nombre de jours de la semaine. Exemple : 7 activités d&apos;une durée de 1 dans une semaine de 5 jours sont transformées en 5 activités avec les durées : 2, 2, 1, 1, 1 et ajoutez une seule activité conteneur avec ces 5 composants (augmentation possible du poids de la contrainte ajoutée &quot;jours minimum entre activités&quot; jusqu&apos;à 100.0 %)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="722"/>
+        <location filename="../src/interface/addactivityform.cpp" line="747"/>
         <source>2. If you don&apos;t add &apos;force consecutive if same day&apos;, then add a larger activity split into a number of activities equal with the number of days per week and the remaining components into other larger split activity. For example, suppose you need to add 7 activities with duration 1 in a 5 days week. Add 2 larger container activities, first one split into 5 activities with duration 1 and second one split into 2 activities with duration 1 (possibly raising the weight of added constraints min days between activities for each of the 2 containers up to 100%)</source>
         <translation>2. Si vous n&apos;ajoutez pas &quot;forcer consécutives si même jour&quot; alors ajoutez une grande activité fractionnée en un nombre d&apos;activités égal au nombre de jours de la semaine et les composants restants dans une autre grande activité fractionnée. Par exemple, supposons que vous ayez besoin d&apos;ajouter 7 activités d&apos;une durée de 1 dans une semaine de 5 jours. Ajoutez 2 grandes activités conteneur, la première fractionnée en 5 activités d&apos;une durée de 1 et la seconde fractionnée en 2 activités d&apos;une durée de 1 (augmentation possible du poids des contraintes ajoutées &quot;jours minimum entre activités&quot; pour chacun des 2 conteneurs jusqu&apos;à 100.0 %)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="728"/>
+        <location filename="../src/interface/addactivityform.cpp" line="753"/>
         <source>Do you want to add current activities as they are now (not recommended) or cancel and edit them as instructed?</source>
         <translation>Voulez-vous ajouter les activités en cours telles quelles (non recommandé) ou abandonner et les éditer en suivant les instructions ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="785"/>
+        <location filename="../src/interface/addactivityform.cpp" line="810"/>
         <source>Split activity added. Please note that FET currently cannot check for duplicates when adding split activities. It is advisable to check the statistics after adding all the activities</source>
         <translation>Activité fractionnée ajoutée. Merci de noter que FET ne peut actuellement pas vérifier les doublons lors de l&apos;ajout d&apos;activités fractionnées. Il est conseillé de vérifier les statistiques après l&apos;ajout de toutes les activités</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="790"/>
+        <location filename="../src/interface/addactivityform.cpp" line="815"/>
         <source>Split activity NOT added - error???</source>
         <translation>Activité fractionnée NON ajoutée - erreur ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="815"/>
+        <location filename="../src/interface/addactivityform.cpp" line="840"/>
         <source>Abbreviations in this dialog:</source>
         <translation>Abréviations dans cette fenêtre :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="817"/>
+        <location filename="../src/interface/addactivityform.cpp" line="842"/>
         <source>&apos;Students&apos; (the text near the spin box), means &apos;Number of students (-1 for automatic)&apos;</source>
         <translation>&quot;Apprenants&quot; (le texte à côté de la toupie) signifie &quot;Nombre d&apos;apprenants (-1 pour automatique)&quot;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="819"/>
+        <location filename="../src/interface/addactivityform.cpp" line="844"/>
         <source>&apos;Split&apos; means &apos;Split into ... activities per week&apos;</source>
         <translation>&quot;Fractionnement&quot; signifie &quot;Fractionnée en... activités par semaine&quot;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="821"/>
+        <location filename="../src/interface/addactivityform.cpp" line="846"/>
         <source>&apos;Min days&apos; means &apos;The minimum required distance in days between each pair of activities&apos;</source>
         <translation>&quot;Jours min&quot; signifie &quot;L&apos;écart minimal requis en jours entre chaque paire d&apos;activités&quot;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="823"/>
+        <location filename="../src/interface/addactivityform.cpp" line="848"/>
         <source>&apos;Weight %&apos; means &apos;Percentage of added constraint (min days between activities constraint). Recommended: 95.0%-100.0%&apos;</source>
         <translation>&quot;Poids %&quot; signifie &quot;Pourcentage de contrainte ajoutée (contrainte &quot;jours minimum entre activités&quot;). Recommandé : 95.0 % - 100.0 %&quot;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="825"/>
+        <location filename="../src/interface/addactivityform.cpp" line="850"/>
         <source>&apos;Consecutive&apos; means &apos;If activities on same day, force consecutive?&apos;</source>
         <translation>&quot;Consécutives&quot; signifie &quot;Si activités le même jour, les forcer à être consécutives ?&quot;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="827"/>
+        <location filename="../src/interface/addactivityform.cpp" line="852"/>
         <source>The &apos;Duration&apos; spin box and the &apos;Active&apos; check box refer to each component of current activity, you can change them for each component, separately, by selecting the corresponding tab in the tab widget.</source>
         <translation>La toupie &quot;Durée&quot; et la caseà cocher &quot;Active&quot; font référence à chaque composant de l&apos;activité en cours. Vous pouvez les modifier pour chaque composant, séparément, en sélectionnant l&apos;index correspondant dans le ruban défilant.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="830"/>
+        <location filename="../src/interface/addactivityform.cpp" line="855"/>
         <source>&apos;Qualified&apos; means that only the teachers who are qualified to teach the selected subject will be shown in the &apos;Teachers&apos; list.</source>
         <comment>Qualified refers to teachers</comment>
-        <translation type="unfinished"></translation>
+        <translation>&quot;Qualifiés&quot; signifie que seuls les enseignants qui sont habilités à enseigner la matière sélectionnée seront affichés dans la liste &quot;Enseignants&quot;.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="834"/>
+        <location filename="../src/interface/addactivityform.cpp" line="859"/>
         <source>A first notice: If you use a 5 days week: when adding an activity split into only 2 components per week, the best practice is to add min days between activities to be 2. If you split an activity into 3 components per week - please read FAQ question Q1-5-September-2008</source>
         <translation>Une première remarque : si vous utilisez une semaine de 5 jours, lors de l&apos;ajout d&apos;une activité fractionnée en seulement 2 composants par semaine, la meilleure méthode est d&apos;ajouter une contrainte &quot;jours minimum entre activités&quot; de valeur 2. Si vous fractionnez une activité en 3 composants par semaine - merci de lire la FAQ : question Q1 du 5 septembre 2008</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="841"/>
+        <location filename="../src/interface/addactivityform.cpp" line="866"/>
         <source>You can select a teacher from all the teachers with the mouse or with the keyboard tab/up/down, then double click it to add it to the selected teachers for current activity. You can then choose to remove a teacher from the selected teachers. You can highlight it with the mouse or with the keyboard, then double click it to remove this teacher from the selected teachers.</source>
         <translation>Vous pouvez sélectionner un enseignant parmi tous les enseignants avec la souris ou le clavier (tabulation / haut / bas), puis double-cliquez le pour l&apos;ajouter aux enseignants sélectionnés pour l&apos;activité en cours. Vous pouvez ensuite choisir de retirer un enseignant de ceux sélectionnés. Vous pouvez le mettre en surbrillance avec la souris ou le clavier, puis double-cliquez le pour le retirer des enseignants sélectionnés.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="848"/>
+        <location filename="../src/interface/addactivityform.cpp" line="873"/>
         <source>The same procedure (double click) applies to students sets and activity tags.</source>
         <translation>La même procédure (double-clic) s&apos;applique aux jeux d&apos;apprenants et codes activité.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="852"/>
+        <location filename="../src/interface/addactivityform.cpp" line="877"/>
         <source>You can check/uncheck show years, show groups or show subgroups.</source>
         <translation>Vous pouvez cocher / décocher afficher années, afficher groupes ou afficher sous-groupes.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="855"/>
+        <location filename="../src/interface/addactivityform.cpp" line="880"/>
         <source>If you split a larger activity into more activities per week, you have a multitude of choices:
 You can choose the minimum distance in days between each pair of activities. Please note that a minimum distance of 1 means that the activities must not be in the same day, a minimum distance of 2 means that the activities must be separated by one day (distance from Monday to Wednesday for instance is 2 days), etc.</source>
         <translation>Si vous fractionnez une activité plus grande en davantage d&apos;activités par semaine, vous disposez d&apos;une multitude de choix :
 Vous pouvez choisir l&apos;écart minimal en jours entre chaque paire d&apos;activités. Merci de noter qu&apos;un écart minimal de 1 signifie que les activités ne doivent pas être le même jour, un écart minimal de 2 signifie que les activités doivent être séparées par un jour (l&apos;écart du lundi au mercredi par exemple est 2 jours), etc.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="863"/>
+        <location filename="../src/interface/addactivityform.cpp" line="888"/>
         <source>If you have for instance an activity with 2 lessons per week and you want to spread them to at least 2 days distance, you can add a constraint min days with min days = 2 and weight 95% (or higher). If you want also to ensure that activities will be separated by at least one day, you can use this feature: add a constraint min days with minimum days 2 and weight 95% or lower, and after that you&apos;ll get the possibility to add another constraint with min 1 days and weight 95% or higher. It works if you first select in the dialog the min days &gt;= 2 and click Add activities. Or you can add manually the constraints (difficult this way). Important: it is best practice to consider both constraints to have 95% weight. The combination assures that the resultant is 99.75% weight</source>
         <translation>Si vous avez par exemple une activité avec 2 leçons par semaine et voulez les espacer d&apos;au moins 2 jours, vous pouvez ajouter une contrainte &quot;jours min&quot; avec jours min = 2 et un poids de 95.0 % (ou supérieur). Si vous voulez aussi vous assurer que les activités seront séparées par au moins un jour, vous pouvez utiliser cette fonctionnalité : ajouter une contrainte &quot;jours min&quot; avec jours min 2 et un poids de 95.0 % ou moins, puis vous aurez la possibilité d&apos;ajouter une autre contrainte avec jours min 1 et un poids 95.0 % ou supérieur. Cela fonctionne si vous sélectionnez d&apos;abord dans la fenêtre le jours min supérieur ou égal à 2 et cliquez &quot;Ajouter activités&quot;. Ou vous pouvez ajouter manuellement les contraintes (méthode difficile). Important : c&apos;est une meilleure pratique de considérer les deux contraintes avec un poids de 95.0 %. La combinaison assure que la résultante a un poids de 99.75 %</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="876"/>
+        <location filename="../src/interface/addactivityform.cpp" line="901"/>
         <source>Please note that the min days distance is a time constraint and you can only see/modify it in the time constraints dialogs, not in the modify activity dialog. Additionally, you can see the constraints for each activity in the details text box of each activity</source>
         <translation>Merci de noter que l&apos;écart jours min est une contrainte temporelle et que vous ne pouvez que la voir / modifier dans les fenêtres de contraintes temporelles et pas dans la fenêtre de modification d&apos;activité. De plus, vous pouvez voir les contraintes pour chaque activité dans la zone textuelle des détails de chaque activité</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="882"/>
+        <location filename="../src/interface/addactivityform.cpp" line="907"/>
         <source>If you choose a value greater or equal with 1 for min days, a time constraint min days between activities will be added automatically (you can see this constraint in the time constraints list or you can see this constraint in the detailed description of the activity). You can select a weight percentage for this constraint. If you select 100%, the constraint must be respected all the time. If you select 95%, there is a small chance that the timetable will not respect this constraint. Recommended values are 95.0%-100.0% (maybe you could try with 95%, then 99.75%, or even 100.0%, but the generation time might be larger). Generally, 99.75% might be a good value. Note: if you put a value less than 100% and the constraint is too tough, FET is able to find that this constraint is impossible and will break it. 99.75% might be better than 95% but possibly slower. The percentage is subjective (if you put 95% you may get 6 soft conflicts and if you put 99.75% you may get 3 soft conflicts). Starting with FET-5.3.6, it is possible to change this value for all constraints in one click, in constraint min days between activities dialog.</source>
         <translation>Si vous choisissez une valeur supérieure ou égale à 1 pour jours min, une contrainte temporelle &quot;jours minimum entre activités&quot; sera ajoutée automatiquement (vous pouvez voir cette contrainte dans la liste des contraintes temporelles ou dans la description détaillée de l&apos;activité). Vous pouvez sélectionner un poids en pourcentage pour cette contrainte. Si vous sélectionnez 100.0 %, la contrainte doit être respectée tout le temps. Si vous sélectionnez 95.0 %, il y a une petite chance que le planning ne respecte pas cette contrainte. Les valeurs recommandées sont 95.0 % - 100.0 % (vous pouvez peut-être essayer 95.0 %, puis 99.75 % ou même 100.0 %, mais le temps de génération pourrait devenir important). Généralement, 99.75 % pourrait être une bonne valeur. Note : si vous saisissez une valeur inférieure à 100.0 % et que la contrainte est trop forte, FET est capable de déterminer que cette contrainte est impossible et la rompra. 99.75 % peut être meilleur que 95.0 % mais potentiellement plus lente. Le pourcentage est subjectif (si vous saisissez 95.0 %, vous pourriez obtenir 6 conflits logiciels et seulement 3 avec 99.75 %). Depuis la version FET 5.3.6, il est possible de modifier cette valeur pour toutes les contraintes en un clic, dans la fenêtre contrainte &quot;jours minimum entre activités&quot;.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="896"/>
+        <location filename="../src/interface/addactivityform.cpp" line="921"/>
         <source>There is another option, if the activities are in the same day, force consecutive activities. You can select this option for instance if you have 5 lessons of math in 5 days, and there is no timetable which respects fully the days separation. Then, you can set the weight percent of the min days constraint to 95% and add consecutive if same day. You will have as results say 3 lessons with duration 1 and a 2 hours lesson in another day. Please be careful: if the activities are on the same day, even if the constraint has 0% weight, then the activities are forced to be consecutive.</source>
         <translation>Il existe une autre option, si les activités sont le même jour, pour les forcer à être consécutives. Vous pouvez choisir cette option par exemple si vous avez 5 leçons de mathématiques en 5 jours et qu&apos;aucun planning ne respecte pleinement les jours de séparation. Vous pouvez alors régler le pourcentage de poids de la contrainte jours min à 95.0 % et ajouter consécutives si même jour. Vous obtiendrez comme résultat 3 leçons d&apos;une durée de 1 et 1 leçon d&apos;une durée de 2 un autre jour. Merci d&apos;être attentif : si les activités sont le même jour, même si la contrainte a un poids de 0.0 %, les activités seront forcées à être consécutives.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="905"/>
+        <location filename="../src/interface/addactivityform.cpp" line="930"/>
         <source>Current algorithm cannot schedule 3 activities in the same day if consecutive is checked, so you will get no solution in such extreme cases (for instance, if you have 3 lessons and a teacher which works only 1 day per week, and select &apos;force consecutive if same day&apos;, you will get an imposssible timetable. But these are extremely unlikely cases).</source>
         <translation>L&apos;algorithme actuel ne peut pas planifier 3 activités le même jour si consécutives est cochée, vous ne trouverez donc pas de solution dans de tels cas extrêmes (par exemple, si vous avez 3 leçons et 1 enseignant qui ne travaille qu&apos;un jour par semaine et que vous cochez &quot;Forcer consécutives si même jour&quot;, vous obtiendrez un planning impossible. Mais ce sont des cas extrêmement improbables).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="911"/>
+        <location filename="../src/interface/addactivityform.cpp" line="936"/>
         <source>Note: You cannot add &apos;consecutive if same day&apos; with min days=0. If you want this, you have to add min days at least 1 (and any weight percentage).</source>
         <translation>Note : vous ne pouvez pas ajouter &quot;consécutives si même jour&quot; avec jours min = 0. Si vous souhaitez le faire, vous devez ajouter jours min avec au moins 1 (et n&apos;importe quel poids en pourcentage).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="916"/>
+        <location filename="../src/interface/addactivityform.cpp" line="941"/>
         <source>Starting with version 5.0.0, it is possible to add activities with no students or no teachers</source>
         <translation>Depuis la version 5.0.0, il est possible d&apos;ajouter des activités sans apprenant ni enseignant</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="920"/>
+        <location filename="../src/interface/addactivityform.cpp" line="945"/>
         <source>If you select a number of min days above 1 (say this number is n), you will get the possibility to add a second constraint min days between activities, with min days = n-1 and a percentage of your choice. Just click Add activities</source>
         <translation>Si vous sélectionnez un nombre de jours min supérieur à 1 (disons que ce nombre est n), vous aurez la possibilité d&apos;ajouter une seconde contrainte &quot;jours minimum entre activités&quot;, avec jours min = n - 1 et un pourcentage de votre choix. Cliquez simplement sur Ajouter activités</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="927"/>
+        <location filename="../src/interface/addactivityform.cpp" line="952"/>
         <source>FET - help on adding activity(ies)</source>
         <translation>FET aide sur l&apos;ajout d&apos;activité(s)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="933"/>
+        <location filename="../src/interface/addactivityform.cpp" line="958"/>
         <source>OK</source>
         <translation>Ok</translation>
     </message>
@@ -1508,7 +1508,7 @@ Vous pouvez choisir l&apos;écart minimal en jours entre chaque paire d&apos;act
         <location filename="../src/interface/addactivityform_template.ui" line="39"/>
         <source>Qualified</source>
         <comment>It refers to teachers. It will show only the teachers qualified for the selected subject.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Qualifiés</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="50"/>
@@ -31675,8 +31675,8 @@ Merci d&apos;arrêter la simulation avant.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="819"/>
-        <source>Thus, it can be deduced if and when you use FET.</source>
-        <translation>Dès lors, il peut être su si et quand vous utilisez FET.</translation>
+        <source>Thus, it could be deduced if and when you use FET.</source>
+        <translation>Dès lors, il pourrait être su si et quand vous utilisez FET.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1126"/>
@@ -37736,12 +37736,12 @@ R : Il est recommandé d&apos;activer la recherche automatique des mises à jour
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="618"/>
         <source>Please note that, by enabling this option, each time you start FET it will get the file %1 from the FET homepage, so the request for this file will be visible on the server, along with your IP address and access time.</source>
-        <translation>Merci de noter qu&apos;en activant cette option, chaque fois que vous lancez FET, il cherchera le fichier %1à la page d&apos;accueil de FET, donc la requête pour ce fichier sera visible sur le serveur avec votre adresse IP et l&apos;heure d&apos;accès.</translation>
+        <translation>Merci de noter que si vous activez cette option, chaque fois que vous lancez FET, il cherchera le fichier %1à la page d&apos;accueil de FET, donc la requête pour ce fichier sera visible sur le serveur avec votre adresse IP et l&apos;heure d&apos;accès.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="622"/>
-        <source>Thus, it can be deduced if and when you use FET.</source>
-        <translation>Dès lors, il peut être su si et quand vous utilisez FET.</translation>
+        <source>Thus, it could be deduced if and when you use FET.</source>
+        <translation>Dès lors, il pourrait être su si et quand vous utilisez FET.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="628"/>
@@ -39765,64 +39765,64 @@ Merci d&apos;arrêter la simulation avant de mettre à jour</translation>
 <context>
     <name>ModifyActivityForm</name>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="479"/>
-        <location filename="../src/interface/modifyactivityform.cpp" line="498"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="502"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="521"/>
         <source>FET question</source>
         <translation>FET question</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="480"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="503"/>
         <source>Do you really want to have the activity without teacher(s)?</source>
         <translation>Voulez-vous réellement avoir une activité sans enseignant ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="463"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="486"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="464"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="487"/>
         <source>Invalid subject</source>
         <translation>Matière invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="499"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="522"/>
         <source>Do you really want to have the activity without student set(s)?</source>
         <translation>Voulez-vous réellement avoir une activité sans apprenants ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="572"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="595"/>
         <source>Abbreviations in this dialog:</source>
         <translation>Abréviations dans cette fenêtre :</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="574"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="597"/>
         <source>&apos;Students&apos; (the text near the spin box), means &apos;Number of students (-1 for automatic)&apos;</source>
         <translation>&quot;Apprenants&quot; (le texte à côté de la toupie) signifie &quot;Nombre d&apos;apprenants (-1 pour automatique)&quot;</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="576"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="599"/>
         <source>&apos;Split&apos; means &apos;Is split into ... activities per week&apos;. This value cannot be changed. If you need to modify it, please remove the corresponding activities and add a new split activity.</source>
         <translation>&quot;Fractionnée&quot; signifie &quot;Est fractionnée en ... activités par semaine&quot;. Cette valeur ne peut être modifiée. Si vous avez besoin de la modifier, merci de retirer les activités correspondantes et d&apos;ajouter une nouvelle activité fractionnée.</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="579"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="602"/>
         <source>The &apos;Duration&apos; spin box and the &apos;Active&apos; check box refer to each component of current activity, you can change them for each component, separately, by selecting the corresponding tab in the tab widget.</source>
         <translation>La toupie &quot;Durée&quot; et la caseà cocher &quot;Active&quot; font référence à chaque composant de l&apos;activité en cours. Vous pouvez les modifier pour chaque composant, séparément, en sélectionnant l&apos;index correspondant dans le ruban défilant.</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="582"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="605"/>
         <source>&apos;Qualified&apos; means that only the teachers who are qualified to teach the selected subject will be shown in the &apos;Teachers&apos; list.</source>
         <comment>Qualified refers to teachers</comment>
-        <translation type="unfinished"></translation>
+        <translation>&quot;Qualifiés&quot; signifie que seuls les enseignants qui sont habilités à enseigner la matière sélectionnée seront affichés dans la liste &quot;Enseignants&quot;.</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="588"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="611"/>
         <source>FET - help on modifying activity(ies)</source>
         <translation>FET aide sur la modification d&apos;activité(s)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="594"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="617"/>
         <source>OK</source>
         <translation>Ok</translation>
     </message>
@@ -39844,7 +39844,7 @@ Merci d&apos;arrêter la simulation avant de mettre à jour</translation>
         <location filename="../src/interface/modifyactivityform_template.ui" line="39"/>
         <source>Qualified</source>
         <comment>It refers to teachers. It will show only the teachers qualified for the selected subject.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Qualifiés</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="50"/>
@@ -47754,64 +47754,64 @@ Note : enseignant non disponible et pause ne sont pas comptés comme vides.</tra
 <context>
     <name>ModifySubactivityForm</name>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="103"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="118"/>
         <source>Current subactivity has split index %1 out of %2</source>
         <translation>La sous-activité en cours a un index de fractionnement de %1 sur %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="104"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="119"/>
         <source>The current data applies only to this subactivity</source>
         <translation>Les données en cours s&apos;appliquent uniquement à cette sous-activité</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="369"/>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="388"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="392"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="411"/>
         <source>FET question</source>
         <translation>FET question</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="370"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="393"/>
         <source>Do you really want to have the subactivity without teacher(s)?</source>
         <translation>Voulez-vous réellement avoir une sous-activité sans enseignant ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="353"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="376"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="354"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="377"/>
         <source>Invalid subject</source>
         <translation>Matière invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="389"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="412"/>
         <source>Do you really want to have the subactivity without student set(s)?</source>
         <translation>Voulez-vous réellement avoir une sous-activité sans groupe ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="449"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="472"/>
         <source>Abbreviations in this dialog:</source>
         <translation>Abréviations dans cette fenêtre :</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="451"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="474"/>
         <source>&apos;Students&apos; (the text near the spin box), means &apos;Number of students (-1 for automatic)&apos;</source>
         <translation>&quot;Apprenants&quot; (le texte à côté de la toupie) signifie &quot;Nombre d&apos;apprenants (-1 pour automatique)&quot;</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="453"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="476"/>
         <source>&apos;Qualified&apos; means that only the teachers who are qualified to teach the selected subject will be shown in the &apos;Teachers&apos; list.</source>
         <comment>Qualified refers to teachers</comment>
-        <translation type="unfinished"></translation>
+        <translation>&quot;Qualifiés&quot; signifie que seuls les enseignants qui sont habilités à enseigner la matière sélectionnée seront affichés dans la liste &quot;Enseignants&quot;.</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="459"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="482"/>
         <source>FET - help on modifying subactivity(ies)</source>
         <translation>FET aide sur la modification de sous-activités</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="465"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="488"/>
         <source>OK</source>
         <translation>Ok</translation>
     </message>
@@ -47833,7 +47833,7 @@ Note : enseignant non disponible et pause ne sont pas comptés comme vides.</tra
         <location filename="../src/interface/modifysubactivityform_template.ui" line="42"/>
         <source>Qualified</source>
         <comment>It refers to teachers. It will show only the teachers qualified for the selected subject.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Qualifiés</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="53"/>
@@ -49737,47 +49737,47 @@ pas ajoutée - doit être un doublon</translation>
 <context>
     <name>SecondMinDaysDialog</name>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="473"/>
+        <location filename="../src/interface/addactivityform.cpp" line="498"/>
         <source>You selected min days between activities %1 (above 1) and weight %2 (under 100.0). Would you like to add also a second constraint to ensure that almost certainly the distance between activities is at least %3 (%1-1) days? If yes, please select weight (recommended 95.0%-100.0%) and click Yes. If no, please click No (only one constraint will be added)</source>
         <translation>Vous avez sélectionné %1 jours minimum entre activités (au-dessus de 1) et un poids de %2 (inférieur à 100.0 %). Voulez-vous ajouter aussi une seconde contrainte pour assurer que presque certainement la distance entre activités soit d&apos;au moins %3 (%1 - 1) jours ? Si oui, merci de sélectionner le poids (recommandé 95.0 % - 100.0 %) et cliquez &quot;Oui&quot;. Si non, merci de cliquer &quot;Non&quot; (seule une contrainte sera ajoutée)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="478"/>
+        <location filename="../src/interface/addactivityform.cpp" line="503"/>
         <source>(Yes means to add an additional constraint min %1 days between activities, weight 0.0%-100.0%. If you say Yes, you will have 2 constraints min days added for current activities. Adding the second constraint might lead to impossible timetables if the condition is too tight, but you can remove the second constraint at any time).</source>
         <translation>(&quot;Oui&quot; signifie ajouter une contrainte additionnelle %1 jours minimum entre activités, poids de 0.0 % - 100.0 %. Si vous dites &quot;Oui&quot;, vous aurez 2 contraintes jours minimum ajoutées pour les activités en cours. L&apos;ajout de la seconde contrainte pourrait conduire à des plannings impossibles si la condition est trop stricte, mais vous pouvez retirer la seconde contrainte à tout moment).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="483"/>
+        <location filename="../src/interface/addactivityform.cpp" line="508"/>
         <source>Note: 95% is usually enough for min days constraints referring to same activities. The weights are cumulated if referring to the same activities. If you have 2 constraints with say 95% (say min n days and min n-1 days), the min n days constraint is skipped with probability 5%, then min n-1 days constraint is skipped with probability 0.25%=5%*5%, so you&apos;ll get in 99.75% cases the min n-1 days constraint respected.</source>
         <translation>Note : 95.0 % est habituellement suffisant pour les contraintes jours minimum se référant aux mêmes activités. Les poids se cumulent s&apos;ils se réfèrent aux mêmes activités. Si vous avez 2 contraintes avec, disons, 95.0 % (n jours minimum et n - 1 jours minimum), la contrainte n jours minimum est passée avec une probabilité de 5.0 %, ensuite la contrainte n - 1 jours minimum est passée avec une probabilité de 0.25 % = 5.0 % * 5.0 %, aussi aurez-vous dans 99.75 % des cas la contrainte n - 1 jours minimum respectée.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="489"/>
+        <location filename="../src/interface/addactivityform.cpp" line="514"/>
         <source>Recommended answer is Yes, 95% (or higher).</source>
         <translation>La réponse recommandée est &quot;Oui&quot;, 95.0 % (ou supérieur).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="491"/>
+        <location filename="../src/interface/addactivityform.cpp" line="516"/>
         <source>Add a second constraint or not?</source>
         <translation>Ajouter une seconde contrainte ou pas ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="501"/>
+        <location filename="../src/interface/addactivityform.cpp" line="526"/>
         <source>Yes</source>
         <translation>Oui</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="504"/>
+        <location filename="../src/interface/addactivityform.cpp" line="529"/>
         <source>No</source>
         <translation>Non</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="574"/>
+        <location filename="../src/interface/addactivityform.cpp" line="599"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="575"/>
+        <location filename="../src/interface/addactivityform.cpp" line="600"/>
         <source>Invalid weight (percentage) - must be &gt;=0 and &lt;=100.0</source>
         <translation>Poids invalide (pourcentage) - doit être compris entre 0.0 % et 100.0 %</translation>
     </message>
@@ -51674,91 +51674,91 @@ En pied : %4</translation>
 <context>
     <name>SubactivitiesForm</name>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="346"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="349"/>
         <source>No: %1 / %2</source>
         <comment>No means number, %1 is the number of active activities, %2 is the number of total activities.Please leave space between fields, so that they are better visible</comment>
         <translation>Nb : %1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="348"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="351"/>
         <source>Dur: %1 / %2</source>
         <comment>Dur means duration, %1 is the duration of active activities, %2 is the duration of total activities.Please leave space between fields, so that they are better visible</comment>
         <translation>Dur : %1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="361"/>
-        <location filename="../src/interface/subactivitiesform.cpp" line="463"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="364"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="466"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="361"/>
-        <location filename="../src/interface/subactivitiesform.cpp" line="463"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="364"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="466"/>
         <source>Invalid selected subactivity</source>
         <translation>Sous-activité sélectionnée invalide</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="421"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="424"/>
         <source>Useful instructions/tips:</source>
         <translation>Instructions / astuces utiles :</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="424"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="427"/>
         <source>Above the (sub)activities list, we have 2 labels, containing 4 numbers. The first label contains text: No: a / b. The first number a is the number of active (sub)activities (we number each individual subactivity as 1), while the second number b is the number of total (sub)activities. The second label contains text: Dur: c / d. The third number c is the duration of active (sub)activities, in periods (or FET hours), while the fourth number d is the duration of total (sub)activities, in periods (or FET hours). So, No means number and Dur means duration.</source>
         <translation>Au-dessus de la liste des (sous-) activités, nous avons 2 étiquettes contenant 4 nombres. La première étiquette contient le texte : &quot;Nb : a / b&quot;. Le premier nombre &quot;a&quot; est le nombre d&apos; (sous-) activités actives (nous comptons chaque sous-activité individuelle comme 1), tandis que le second nombre &quot;b&quot; est le nombre total d&apos; (sous-) activités. La seconde étiquette contient le texte : &quot;Dur : c / d&quot;. Le troisième nombre &quot;c&quot; est la durée des (sous-) activités actives, dans les périodes (ou heures FET), tandis que le quatrième nombre &quot;d&quot; est la durée totale des (sous-) activités, dans les périodes (ou heures FET). Ainsi, &quot;Nb&quot; signifie nombre et &quot;Dur&quot; durée.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="430"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="433"/>
         <source>Example: No: 100 / 102, Dur: 114 / 117. They represent: 100 - the number of active (sub)activities, then 102 - the number of total (sub)activities, 114 - the duration of active activities (in periods or FET hours) and 117 - the duration of total activities (in periods or FET hours). In this example we have 2 inactive activities with their combined duration being 3 periods.</source>
         <translation>Exemple : &quot;Nb : 100 / 102&quot;, &quot;Dur : 114 / 117&quot;. Ils représentent : 100 - le nombre d&apos; (sous-) activités actives, puis 102 - le nombre total d&apos; (sous-) activités, 114 - la durée des activités actives (dans les périodes ou heures FET) et 117 - la durée totale des activités (dans les périodes ou heures FET). Dans cet exemple nous avons 2 activités inactives d&apos;une durée combinée de 3 périodes.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="436"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="439"/>
         <source>Explanation of the short description of an activity: first comes the id. If the activity is inactive, an X follows. Then the duration. Then, if the activity is split, a slash and the total duration. Then teachers, subject, activity tag (if it is not void) and students. Then the number of students (if specified).</source>
         <translation>Explication de la courte description d&apos;une activité : l&apos;ID vient en premier. Si l&apos;activité est inactive, un &quot;X&quot; la suit. Puis la durée. Ensuite, si l&apos;activité est fractionnée, une barre oblique et la durée totale. Puis les enseignants, matière, code activité (si non vide) et apprenants. Enfin le nombre d&apos;apprenants (si spécifié).</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="440"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="443"/>
         <source>The activities which are inactive:</source>
         <translation>Les activités qui sont inactives :</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="443"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="446"/>
         <source>have an X mark after the id.</source>
         <translation>ont la marque &quot;X&quot; après leur ID.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="449"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="452"/>
         <source>if you use colors in interface (see Settings/Interface menu), they will appear with different background color.</source>
         <translation>si vous utilisez les couleurs dans l&apos;interface (voir menu Réglages / Interface), elles apparaîtront avec une couleur de fond différente.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="451"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="454"/>
         <source>To modify a subactivity, you can also double click it.</source>
         <translation>Pour modifier une sous-activité, vous pouvez aussi la double-cliquer.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="453"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="456"/>
         <source>Show related: if you select this, there will be listed subactivities for groups and subgroups contained also in the current set (if the current set is a year or a group) and also higher ranked year or group (if the current set is a group or a subgroup).</source>
         <translation>Afficher dépendants : si vous sélectionnez cette option, seront aussi listées les sous-activités pour les groupes et sous-groupes contenus dans le jeu en cours (si le jeu en cours est une année ou un groupe) ainsi que l&apos;année ou le groupe de rang supérieur (si le jeu en cours est un groupe ou un sous-groupe).</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="456"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="459"/>
         <source>FET Help</source>
         <translation>FET aide</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="474"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="477"/>
         <source>Subactivity comments</source>
         <translation>Commentaire sous-activité</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="476"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="479"/>
         <source>OK</source>
         <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="478"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="481"/>
         <source>Cancel</source>
         <translation>Annuler</translation>
     </message>
