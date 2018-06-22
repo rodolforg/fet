@@ -33,13 +33,6 @@
          <item>
           <widget class="QListWidget" name="allTeachersListWidget"/>
          </item>
-         <item>
-          <widget class="QCheckBox" name="qualifiedCheckBox">
-           <property name="text">
-            <string comment="It refers to teachers. It will show only the teachers qualified for the selected subject.">Qualified</string>
-           </property>
-          </widget>
-         </item>
         </layout>
        </item>
        <item>
@@ -65,6 +58,24 @@
           </widget>
          </item>
         </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_79">
+       <item>
+        <widget class="QRadioButton" name="allTeachersRadioButton">
+         <property name="text">
+          <string comment="It refers to teachers. It will show all the teachers.">All</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="qualifiedTeachersRadioButton">
+         <property name="text">
+          <string comment="It refers to teachers. It will show only the teachers qualified for the selected subject.">Qualified</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </item>

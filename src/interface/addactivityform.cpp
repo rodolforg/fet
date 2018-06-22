@@ -176,7 +176,8 @@ AddActivityForm::AddActivityForm(QWidget* parent, const QString& teacherName, co
 	groupsCheckBox->setChecked(settings.value(this->metaObject()->className()+QString("/show-groups-check-box-state"), "true").toBool());
 	yearsCheckBox->setChecked(settings.value(this->metaObject()->className()+QString("/show-years-check-box-state"), "true").toBool());
 
-	qualifiedCheckBox->setChecked(settings.value(this->metaObject()->className()+QString("/qualified-teachers-check-box-state"), "false").toBool());
+	allTeachersRadioButton->setChecked(settings.value(this->metaObject()->className()+QString("/all-teachers-radio-button-state"), "true").toBool());
+	qualifiedTeachersRadioButton->setChecked(settings.value(this->metaObject()->className()+QString("/qualified-teachers-radio-button-state"), "false").toBool());
 
 	connect(subgroupsCheckBox, SIGNAL(toggled(bool)), this, SLOT(showSubgroupsChanged()));
 	connect(groupsCheckBox, SIGNAL(toggled(bool)), this, SLOT(showGroupsChanged()));
@@ -236,7 +237,8 @@ AddActivityForm::AddActivityForm(QWidget* parent, const QString& teacherName, co
 
 	//after updateSubjectsComboBox
 	connect(subjectsComboBox, SIGNAL(activated(QString)), this, SLOT(updateAllTeachersListWidget()));
-	connect(qualifiedCheckBox, SIGNAL(toggled(bool)), this, SLOT(updateAllTeachersListWidget()));
+	connect(allTeachersRadioButton, SIGNAL(toggled(bool)), this, SLOT(allTeachersRadioButtonToggled(bool)));
+	connect(qualifiedTeachersRadioButton, SIGNAL(toggled(bool)), this, SLOT(qualifiedTeachersRadioButtonToggled(bool)));
 	updateAllTeachersListWidget();
 	selectedTeachersListWidget->clear();
 
@@ -285,7 +287,20 @@ AddActivityForm::~AddActivityForm()
 	settings.setValue(this->metaObject()->className()+QString("/show-groups-check-box-state"), groupsCheckBox->isChecked());
 	settings.setValue(this->metaObject()->className()+QString("/show-years-check-box-state"), yearsCheckBox->isChecked());
 
-	settings.setValue(this->metaObject()->className()+QString("/qualified-teachers-check-box-state"), qualifiedCheckBox->isChecked());
+	settings.setValue(this->metaObject()->className()+QString("/qualified-teachers-radio-button-state"), qualifiedTeachersRadioButton->isChecked());
+	settings.setValue(this->metaObject()->className()+QString("/all-teachers-radio-button-state"), allTeachersRadioButton->isChecked());
+}
+
+void AddActivityForm::allTeachersRadioButtonToggled(bool toggled)
+{
+	if(toggled)
+		updateAllTeachersListWidget();
+}
+
+void AddActivityForm::qualifiedTeachersRadioButtonToggled(bool toggled)
+{
+	if(toggled)
+		updateAllTeachersListWidget();
 }
 
 void AddActivityForm::updateAllTeachersListWidget()
@@ -294,10 +309,11 @@ void AddActivityForm::updateAllTeachersListWidget()
 	
 	for(int i=0; i<gt.rules.teachersList.size(); i++){
 		Teacher* tch=gt.rules.teachersList[i];
-		if(!qualifiedCheckBox->isChecked() || subjectsComboBox->currentIndex()==-1){
+		if(allTeachersRadioButton->isChecked() || subjectsComboBox->currentIndex()==-1){
 			allTeachersListWidget->addItem(tch->name);
 		}
 		else{
+			assert(qualifiedTeachersRadioButton->isChecked());
 			assert(subjectsComboBox->currentText()!="");
 			assert(subjectNamesSet.contains(subjectsComboBox->currentText()));
 			if(tch->qualifiedSubjectsHash.contains(subjectsComboBox->currentText())){

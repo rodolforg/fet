@@ -56,6 +56,8 @@ public:
 	void updatePreferredHoursComboBox();
 
 public slots:
+	void allTeachersRadioButtonToggled(bool checked);
+	void qualifiedTeachersRadioButtonToggled(bool checked);
 	void updateAllTeachersListWidget();
 
 	void addTeacher();
