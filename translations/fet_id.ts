@@ -1249,239 +1249,239 @@ there won&apos;t be removed an additional number of %1 activities
 <context>
     <name>AddActivityForm</name>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="613"/>
-        <location filename="../src/interface/addactivityform.cpp" line="688"/>
-        <location filename="../src/interface/addactivityform.cpp" line="730"/>
-        <location filename="../src/interface/addactivityform.cpp" line="732"/>
-        <location filename="../src/interface/addactivityform.cpp" line="810"/>
-        <location filename="../src/interface/addactivityform.cpp" line="815"/>
+        <location filename="../src/interface/addactivityform.cpp" line="629"/>
+        <location filename="../src/interface/addactivityform.cpp" line="704"/>
+        <location filename="../src/interface/addactivityform.cpp" line="746"/>
+        <location filename="../src/interface/addactivityform.cpp" line="748"/>
+        <location filename="../src/interface/addactivityform.cpp" line="826"/>
+        <location filename="../src/interface/addactivityform.cpp" line="831"/>
         <source>FET information</source>
         <translation>Informasi FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="614"/>
+        <location filename="../src/interface/addactivityform.cpp" line="630"/>
         <source>Invalid weight (percentage) for added constraint min days between activities</source>
         <translation>Bobot  (persentase) untuk batasan ditambahkan jumlah hari antara kegiatan tidak valid</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="639"/>
-        <location filename="../src/interface/addactivityform.cpp" line="658"/>
-        <location filename="../src/interface/addactivityform.cpp" line="715"/>
+        <location filename="../src/interface/addactivityform.cpp" line="655"/>
+        <location filename="../src/interface/addactivityform.cpp" line="674"/>
+        <location filename="../src/interface/addactivityform.cpp" line="731"/>
         <source>FET question</source>
         <translation>Pertanyaan FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="624"/>
+        <location filename="../src/interface/addactivityform.cpp" line="640"/>
         <source>FET warning</source>
         <translation>Peringatan FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="625"/>
+        <location filename="../src/interface/addactivityform.cpp" line="641"/>
         <source>Invalid subject</source>
         <translation>Mata Pelajaran salah</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="689"/>
+        <location filename="../src/interface/addactivityform.cpp" line="705"/>
         <source>Invalid duration</source>
         <translation>Durasi salah</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="718"/>
-        <location filename="../src/interface/addactivityform.cpp" line="755"/>
+        <location filename="../src/interface/addactivityform.cpp" line="734"/>
+        <location filename="../src/interface/addactivityform.cpp" line="771"/>
         <source>Yes</source>
         <translation>Ya</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="718"/>
-        <location filename="../src/interface/addactivityform.cpp" line="755"/>
+        <location filename="../src/interface/addactivityform.cpp" line="734"/>
+        <location filename="../src/interface/addactivityform.cpp" line="771"/>
         <source>No</source>
         <translation>Tidak</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="730"/>
+        <location filename="../src/interface/addactivityform.cpp" line="746"/>
         <source>Activity added</source>
         <translation>Kegiatan ditambah</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="732"/>
+        <location filename="../src/interface/addactivityform.cpp" line="748"/>
         <source>Activity NOT added - please report error</source>
         <translation>Kegiatan TIDAK ditambah - silahkan laporkan error</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="738"/>
+        <location filename="../src/interface/addactivityform.cpp" line="754"/>
         <source>You want to add a container activity split into more than the number of days per week and also add a constraint min days between activities. This is a very bad practice from the way the algorithm of generation works (it slows down the generation and makes it harder to find a solution).</source>
         <translation>Anda ingin menambahkan kontainer  membagi aktivitas ke lebih dari jumlah hari per minggu dan juga menambahkan hari min kendala antara kegiatan. Ini adalah praktik yang sangat buruk dari cara algoritma dari karya generasi (generasi itu melambat dan membuat lebih sulit untuk menemukan solusi).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="743"/>
+        <location filename="../src/interface/addactivityform.cpp" line="759"/>
         <source>1. If you add &apos;force consecutive if same day&apos;, then couple extra activities in pairs to obtain a number of activities equal to the number of days per week. Example: 7 activities with duration 1 in a 5 days week, then transform into 5 activities with durations: 2,2,1,1,1 and add a single container activity with these 5 components (possibly raising the weight of added constraint min days between activities up to 100%)</source>
         <translation>1. Jika Anda menambahkan &quot;paksa berturut-turut jika kegiatan ekstra beberapa hari yang sama &apos;, kemudian di pasang untuk mendapatkan sejumlah kegiatan yang sama dengan jumlah hari per minggu. Contoh: 7 kegiatan dengan durasi 1 dalam seminggu 5 hari, kemudian berubah menjadi 5 kegiatan dengan jangka waktu: 2,2,1,1,1 dan menambahkan aktivitas wadah tunggal dengan 5 komponen (mungkin menaikkan berat hari min kendala ditambahkan antara kegiatan sampai dengan 100%)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="747"/>
+        <location filename="../src/interface/addactivityform.cpp" line="763"/>
         <source>2. If you don&apos;t add &apos;force consecutive if same day&apos;, then add a larger activity split into a number of activities equal with the number of days per week and the remaining components into other larger split activity. For example, suppose you need to add 7 activities with duration 1 in a 5 days week. Add 2 larger container activities, first one split into 5 activities with duration 1 and second one split into 2 activities with duration 1 (possibly raising the weight of added constraints min days between activities for each of the 2 containers up to 100%)</source>
         <translation>2. Jika Anda tidak menambahkan &quot;kekuatan berturut-turut jika hari yang sama &apos;, kemudian tambahkan sebuah aktivitas yang lebih besar split menjadi beberapa kegiatan yang sama dengan jumlah hari per minggu dan komponen yang tersisa dalam aktivitas pemecahan yang lebih besar. Misalnya, Anda harus menambahkan 7 aktivitas dengan durasi 1 hari dalam seminggu 5. Tambahkan 2 kegiatan wadah yang lebih besar, yang pertama split menjadi 5 kegiatan dengan durasi 1 dan kedua satu split menjadi 2 kegiatan dengan durasi 1 (mungkin menaikkan berat min batasan hari antara kegiatan ditambahkan untuk setiap 2 kontainer hingga 100%)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="810"/>
+        <location filename="../src/interface/addactivityform.cpp" line="826"/>
         <source>Split activity added. Please note that FET currently cannot check for duplicates when adding split activities. It is advisable to check the statistics after adding all the activities</source>
         <translation>Kegiatan terpecah ditambahkan. Catatan: FET saat ini tidak dapat mengecek duplikasi ketika menambahkan kegiatan pecah. Disarankan untuk mengecek statistik setelah menambah semua kegiata</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="815"/>
+        <location filename="../src/interface/addactivityform.cpp" line="831"/>
         <source>Split activity NOT added - error???</source>
         <translation>Kegiatan pecah TIDAK ditambahkan - error???</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="840"/>
+        <location filename="../src/interface/addactivityform.cpp" line="856"/>
         <source>Abbreviations in this dialog:</source>
         <translation>Singkatan dalam dialog ini:</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="842"/>
+        <location filename="../src/interface/addactivityform.cpp" line="858"/>
         <source>&apos;Students&apos; (the text near the spin box), means &apos;Number of students (-1 for automatic)&apos;</source>
         <translation>&apos;Siswa&apos; (teks dekat kotak spin), artinya &apos;Jumlah siswa (-1 untuk otomatis)&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="844"/>
+        <location filename="../src/interface/addactivityform.cpp" line="860"/>
         <source>&apos;Split&apos; means &apos;Split into ... activities per week&apos;</source>
         <translation>&apos;Bagi&apos; artinya &apos;Bagi menjadi ... kegiatan per minggu&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="846"/>
+        <location filename="../src/interface/addactivityform.cpp" line="862"/>
         <source>&apos;Min days&apos; means &apos;The minimum required distance in days between each pair of activities&apos;</source>
         <translation>&apos;Min hari&apos; artinya &quot; Minimum diperlukan jarak antar hari diantara setiap pasangan kegiatan&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="848"/>
+        <location filename="../src/interface/addactivityform.cpp" line="864"/>
         <source>&apos;Weight %&apos; means &apos;Percentage of added constraint (min days between activities constraint). Recommended: 95.0%-100.0%&apos;</source>
         <translation>&apos;Bobot %&apos; artinya &apos;Persentase dari batasan tambahan ( min hari antar batasan kegiatan) &apos;Rekomendasi 95.0%-100.0%&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="850"/>
+        <location filename="../src/interface/addactivityform.cpp" line="866"/>
         <source>&apos;Consecutive&apos; means &apos;If activities on same day, force consecutive?&apos;</source>
         <translation>&apos;Berurutan&apos; artinya &apos;Jika kegiatan pada hari yang sama, &apos;paksa berurutan?&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="852"/>
+        <location filename="../src/interface/addactivityform.cpp" line="868"/>
         <source>The &apos;Duration&apos; spin box and the &apos;Active&apos; check box refer to each component of current activity, you can change them for each component, separately, by selecting the corresponding tab in the tab widget.</source>
         <translation>Para &apos;durasi&apos;&apos; spin kotak dan &apos;Aktif&apos; kotak cek mengacu pada masing-masing komponen kegiatan saat ini, Anda dapat mengubahnya untuk masing-masing komponen, secara terpisah, dengan memilih tab yang sesuai di tab widget.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="855"/>
+        <location filename="../src/interface/addactivityform.cpp" line="871"/>
         <source>&apos;Qualified&apos; means that only the teachers who are qualified to teach the selected subject will be shown in the &apos;Teachers&apos; list.</source>
         <comment>Qualified refers to teachers</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="866"/>
+        <location filename="../src/interface/addactivityform.cpp" line="882"/>
         <source>You can select a teacher from all the teachers with the mouse or with the keyboard tab/up/down, then double click it to add it to the selected teachers for current activity. You can then choose to remove a teacher from the selected teachers. You can highlight it with the mouse or with the keyboard, then double click it to remove this teacher from the selected teachers.</source>
         <translation>Anda dapat memilih guru dari semua guru dengan mouse atau dengan tab keyboard / atas / bawah, kemudian dobel klik untuk menambahkannya ke guru-guru yang dipilih untuk aktivitas saat ini. Anda kemudian dapat memilih untuk menghapus guru dari guru-guru yang dipilih. Anda dapat menyorot dengan mouse atau dengan keyboard, kemudian klik dua kali untuk menghapus guru ini dari guru-guru yang dipilih.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="873"/>
+        <location filename="../src/interface/addactivityform.cpp" line="889"/>
         <source>The same procedure (double click) applies to students sets and activity tags.</source>
         <translation>Prosedur yang sama (klik ganda) berlaku pada grup siswa dan tag kegiatan.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="930"/>
+        <location filename="../src/interface/addactivityform.cpp" line="946"/>
         <source>Current algorithm cannot schedule 3 activities in the same day if consecutive is checked, so you will get no solution in such extreme cases (for instance, if you have 3 lessons and a teacher which works only 1 day per week, and select &apos;force consecutive if same day&apos;, you will get an imposssible timetable. But these are extremely unlikely cases).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="945"/>
+        <location filename="../src/interface/addactivityform.cpp" line="961"/>
         <source>If you select a number of min days above 1 (say this number is n), you will get the possibility to add a second constraint min days between activities, with min days = n-1 and a percentage of your choice. Just click Add activities</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="859"/>
+        <location filename="../src/interface/addactivityform.cpp" line="875"/>
         <source>A first notice: If you use a 5 days week: when adding an activity split into only 2 components per week, the best practice is to add min days between activities to be 2. If you split an activity into 3 components per week - please read FAQ question Q1-5-September-2008</source>
         <translation>Sebuah pernyataan pertama: Jika Anda menggunakan 5 hari seminggu: saat menambahkan aktivitas split menjadi hanya 2 komponen per minggu, praktek terbaik adalah untuk menambahkan hari min antara kegiatan yang 2. Jika Anda memisahkan aktivitas menjadi 3 komponen per minggu - silakan baca FAQ pertanyaan P1-5-September-2008</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="877"/>
+        <location filename="../src/interface/addactivityform.cpp" line="893"/>
         <source>You can check/uncheck show years, show groups or show subgroups.</source>
         <translation>Anda dapat mencentang/tidak perlihatkan kelas, perlihatkan kelas paralel atau perlihatkan grup.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="880"/>
+        <location filename="../src/interface/addactivityform.cpp" line="896"/>
         <source>If you split a larger activity into more activities per week, you have a multitude of choices:
 You can choose the minimum distance in days between each pair of activities. Please note that a minimum distance of 1 means that the activities must not be in the same day, a minimum distance of 2 means that the activities must be separated by one day (distance from Monday to Wednesday for instance is 2 days), etc.</source>
         <translation>Jika Anda membagi suatu kegiatan besar menjadi kegiatan yang lebih banyak per minggu, Anda memiliki banyak pilihan:
 Anda dapat memilih jarak minimum di hari antara setiap pasangan kegiatan. Perlu diketahui bahwa jarak minimal 1 berarti bahwa kegiatan tidak boleh di hari yang sama, jarak minimum 2 berarti kegiatan harus dipisahkan oleh satu hari (jarak dari Senin hingga Rabu misalnya adalah 2 hari), dll.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="888"/>
+        <location filename="../src/interface/addactivityform.cpp" line="904"/>
         <source>If you have for instance an activity with 2 lessons per week and you want to spread them to at least 2 days distance, you can add a constraint min days with min days = 2 and weight 95% (or higher). If you want also to ensure that activities will be separated by at least one day, you can use this feature: add a constraint min days with minimum days 2 and weight 95% or lower, and after that you&apos;ll get the possibility to add another constraint with min 1 days and weight 95% or higher. It works if you first select in the dialog the min days &gt;= 2 and click Add activities. Or you can add manually the constraints (difficult this way). Important: it is best practice to consider both constraints to have 95% weight. The combination assures that the resultant is 99.75% weight</source>
         <translation>Jika Anda memiliki misalnya kegiatan dengan 2 pelajaran seminggu dan Anda ingin menyebarkannya untuk minimal 2 hari jarak, Anda dapat menambahkan beberapa hari kendala menit dengan hari min 2 = dan berat 95% (atau lebih tinggi). Jika Anda ingin juga untuk memastikan bahwa kegiatan akan dipisahkan oleh paling sedikit satu hari, Anda dapat menggunakan fitur ini: menambahkan hari min kendala dengan hari minimal 2 dan berat 95% atau lebih rendah, dan setelah itu Anda akan mendapatkan kemungkinan untuk menambahkan kendala lain dengan min 1 hari dan berat 95% atau lebih tinggi. Ia bekerja jika Anda pertama-tama pilih dalam dialog&gt; min hari = 2 dan klik Tambah kegiatan. Atau Anda dapat menambahkan secara manual kendala (sulit cara ini). Penting: itu praktek terbaik untuk mempertimbangkan kedua kendala untuk memiliki 95% berat. Kombinasi ini menjamin bahwa resultan adalah berat 99,75%</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="901"/>
+        <location filename="../src/interface/addactivityform.cpp" line="917"/>
         <source>Please note that the min days distance is a time constraint and you can only see/modify it in the time constraints dialogs, not in the modify activity dialog. Additionally, you can see the constraints for each activity in the details text box of each activity</source>
         <translation>Perlu diketahui bahwa hari min jarak adalah kendala waktu dan Anda hanya dapat melihat / memodifikasi dalam dialog kendala waktu, bukan dalam dialog memodifikasi aktivitas. Selain itu, Anda dapat melihat kendala untuk setiap aktivitas dalam kotak teks rincian masing-masing kegiatan</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="907"/>
+        <location filename="../src/interface/addactivityform.cpp" line="923"/>
         <source>If you choose a value greater or equal with 1 for min days, a time constraint min days between activities will be added automatically (you can see this constraint in the time constraints list or you can see this constraint in the detailed description of the activity). You can select a weight percentage for this constraint. If you select 100%, the constraint must be respected all the time. If you select 95%, there is a small chance that the timetable will not respect this constraint. Recommended values are 95.0%-100.0% (maybe you could try with 95%, then 99.75%, or even 100.0%, but the generation time might be larger). Generally, 99.75% might be a good value. Note: if you put a value less than 100% and the constraint is too tough, FET is able to find that this constraint is impossible and will break it. 99.75% might be better than 95% but possibly slower. The percentage is subjective (if you put 95% you may get 6 soft conflicts and if you put 99.75% you may get 3 soft conflicts). Starting with FET-5.3.6, it is possible to change this value for all constraints in one click, in constraint min days between activities dialog.</source>
         <translation>Jika Anda memilih nilai yang lebih besar atau sama dengan 1 untuk hari menit, waktu hari min kendala antara kegiatan akan ditambahkan secara otomatis (Anda dapat melihat ini kendala dalam daftar kendala waktu atau Anda dapat melihat ini kendala dalam deskripsi rinci aktivitas) . Anda dapat memilih persentase berat untuk kendala ini. Jika Anda memilih 100%, kendala harus dihormati sepanjang waktu. Jika Anda memilih 95%, ada kemungkinan kecil bahwa jadwal tidak akan menghormati kendala ini. nilai yang direkomendasikan adalah 95,0% -100,0% (mungkin Anda bisa mencoba dengan 95%, kemudian 99,75%, atau bahkan 100,0%, tetapi waktu generasi mungkin lebih besar). Umumnya, mungkin 99,75% nilai yang baik. Catatan: jika Anda memasukkan nilai waktu kurang dari 100% dan kendala yang terlalu sulit, FET dapat menemukan bahwa kendala ini tidak mungkin dan akan rusak. 99,75% mungkin lebih baik dari 95% namun mungkin lebih lambat. Persentase tersebut bersifat subjektif (jika Anda memasukkan 95% Anda bisa mendapatkan 6 konflik lembut dan jika Anda menempatkan 99,75% Anda akan mendapatkan 3 konflik lunak). Dimulai dengan FET-5.3.6, dimungkinkan untuk mengubah nilai ini untuk semua kendala dalam satu klik, di hari min kendala antara kegiatan dialog.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="921"/>
+        <location filename="../src/interface/addactivityform.cpp" line="937"/>
         <source>There is another option, if the activities are in the same day, force consecutive activities. You can select this option for instance if you have 5 lessons of math in 5 days, and there is no timetable which respects fully the days separation. Then, you can set the weight percent of the min days constraint to 95% and add consecutive if same day. You will have as results say 3 lessons with duration 1 and a 2 hours lesson in another day. Please be careful: if the activities are on the same day, even if the constraint has 0% weight, then the activities are forced to be consecutive.</source>
         <translation>Ada pilihan lain, jika kegiatan tersebut pada hari yang sama, gaya kegiatan berturut-turut. Anda dapat memilih pilihan ini misalnya jika Anda memiliki 5 pelajaran matematika dalam 5 hari, dan tidak ada jadwal yang menghormati sepenuhnya pemisahan hari. Kemudian, Anda dapat mengatur persen berat kendala min hari sampai 95% dan menambahkan berurutan hari yang sama jika. Anda akan memiliki hasil katakan 3 pelajaran dengan durasi 1 dan 2 jam pelajaran di hari lain. Harap berhati-hati: jika kegiatan tersebut pada hari yang sama, bahkan jika kendala memiliki 0% berat, maka kegiatan tersebut terpaksa harus berturut-turut.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="936"/>
+        <location filename="../src/interface/addactivityform.cpp" line="952"/>
         <source>Note: You cannot add &apos;consecutive if same day&apos; with min days=0. If you want this, you have to add min days at least 1 (and any weight percentage).</source>
         <translation>Catatan: Anda tidak dapat menambahkan &apos;hari berturut jika sama&apos; dengan hari min = 0. Jika Anda menginginkan ini, Anda harus menambah min hari minimal 1 (dan persentase berat).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="941"/>
+        <location filename="../src/interface/addactivityform.cpp" line="957"/>
         <source>Starting with version 5.0.0, it is possible to add activities with no students or no teachers</source>
         <translation>Dimulai dengan versi 5.0.0, dimungkinkan untuk menambah kegiatan dengan tidak ada siswa atau tanpa guru</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="952"/>
+        <location filename="../src/interface/addactivityform.cpp" line="968"/>
         <source>FET - help on adding activity(ies)</source>
         <translation>FET - bantuan pada menambah kegiatan</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="958"/>
+        <location filename="../src/interface/addactivityform.cpp" line="974"/>
         <source>OK</source>
         <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="741"/>
+        <location filename="../src/interface/addactivityform.cpp" line="757"/>
         <source>The best way to add the activities would be:</source>
         <translation>Cara terbaik untuk menambah kegiatan adalah:</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="753"/>
+        <location filename="../src/interface/addactivityform.cpp" line="769"/>
         <source>Do you want to add current activities as they are now (not recommended) or cancel and edit them as instructed?</source>
         <translation>Apakah anda ingin menambah kegiatan sekarang seadanya (tidakdirekomendasikan) atau batal dan sunting seperti diperintahkan?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="717"/>
+        <location filename="../src/interface/addactivityform.cpp" line="733"/>
         <source>A similar activity already exists. Do you want to insert current activity?</source>
         <translation>Suatu kegiatan serupa sudah ada. Apakah Anda ingin memasukkan kegiatan saat ini?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="640"/>
+        <location filename="../src/interface/addactivityform.cpp" line="656"/>
         <source>Do you really want to add an activity without teacher(s)?</source>
         <translation>Apakah Anda benar-benar ingin menambahkan aktivitas tanpa guru?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="659"/>
+        <location filename="../src/interface/addactivityform.cpp" line="675"/>
         <source>Do you really want to add an activity without student set(s)?</source>
         <translation>Apakah Anda benar-benar ingin menambahkan suatu kegiatan tanpa kelas paralel?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="736"/>
+        <location filename="../src/interface/addactivityform.cpp" line="752"/>
         <source>FET confirmation</source>
         <translation>Konfirmasi FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="737"/>
+        <location filename="../src/interface/addactivityform.cpp" line="753"/>
         <source>Possible incorrect setting. Are you sure you want to add current activity? See details below:</source>
         <translation>Kemungkinan salah pengaturan. Anda yakin ingin menambahkan kegiatan saat ini? Lihat rincian di bawah ini:</translation>
     </message>
@@ -1494,19 +1494,19 @@ Anda dapat memilih jarak minimum di hari antara setiap pasangan kegiatan. Perlu 
         <translation>Guru</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="63"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="108"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="191"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="56"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="119"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="202"/>
         <source>Clear</source>
         <translation>Hapus</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="211"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="222"/>
         <source>Subject</source>
         <translation>Mata Pelajaran</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="95"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="106"/>
         <source>Selected</source>
         <comment>It refers to a list of selected students (in fact, students sets, but translate selected as in &apos;selected students&apos;)</comment>
         <translation>Terpilih</translation>
@@ -1518,345 +1518,351 @@ Anda dapat memilih jarak minimum di hari antara setiap pasangan kegiatan. Perlu 
         <translation>Tambah kegiatan</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="39"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="69"/>
+        <source>All</source>
+        <comment>It refers to teachers. It will show all the teachers.</comment>
+        <translation type="unfinished">Semua</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addactivityform_template.ui" line="76"/>
         <source>Qualified</source>
         <comment>It refers to teachers. It will show only the teachers qualified for the selected subject.</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="78"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="89"/>
         <source>Students</source>
         <comment>It refers to sets of students, but I want to keep text short</comment>
         <translation>Siswa</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="121"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="132"/>
         <source>Years</source>
         <translation>Kelas</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="131"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="142"/>
         <source>Groups</source>
         <translation>Kelas Paralel</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="141"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="152"/>
         <source>Subgroups</source>
         <translation>Grup</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="242"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="253"/>
         <source>Students</source>
         <comment>It refers to the number of students, but I want to keep text small</comment>
         <translation>Siswa</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="264"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="275"/>
         <source>Split</source>
         <comment>Refers to the number of components in an activity split into more components</comment>
         <translation>Bagi</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="294"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="305"/>
         <source>1</source>
         <translation>1</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="305"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="369"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="433"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="497"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="561"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="625"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="689"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="753"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="817"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="881"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="945"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1009"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1073"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1137"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1201"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1265"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1329"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1393"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1457"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1521"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1585"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1649"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1713"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1777"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1841"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1905"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1969"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2033"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2097"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2161"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2225"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2289"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2353"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2417"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2481"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="316"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="380"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="444"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="508"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="572"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="636"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="700"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="764"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="828"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="892"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="956"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1020"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1084"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1148"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1212"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1276"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1340"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1404"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1468"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1532"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1596"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1660"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1724"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1788"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1852"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1916"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1980"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2044"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2108"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2172"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2236"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2300"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2364"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2428"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2492"/>
         <source>Duration</source>
         <translation>Durasi</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="358"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="369"/>
         <source>2</source>
         <translation>2</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="422"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="433"/>
         <source>3</source>
         <translation>3</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="486"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="497"/>
         <source>4</source>
         <translation>4</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="550"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="561"/>
         <source>5</source>
         <translation>5</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="614"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="625"/>
         <source>6</source>
         <translation>6</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="678"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="689"/>
         <source>7</source>
         <translation>7</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="742"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="753"/>
         <source>8</source>
         <translation>8</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="806"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="817"/>
         <source>9</source>
         <translation>9</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="870"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="881"/>
         <source>10</source>
         <translation>10</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="934"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="945"/>
         <source>11</source>
         <translation>11</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="998"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1009"/>
         <source>12</source>
         <translation>12</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1062"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1073"/>
         <source>13</source>
         <translation>13</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1126"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1137"/>
         <source>14</source>
         <translation>14</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1190"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1201"/>
         <source>15</source>
         <translation>15</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1254"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1265"/>
         <source>16</source>
         <translation>16</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1318"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1329"/>
         <source>17</source>
         <translation>17</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1382"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1393"/>
         <source>18</source>
         <translation>18</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1446"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1457"/>
         <source>19</source>
         <translation>19</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1510"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1521"/>
         <source>20</source>
         <translation>20</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1574"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1585"/>
         <source>21</source>
         <translation>21</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1638"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1649"/>
         <source>22</source>
         <translation>22</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1702"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1713"/>
         <source>23</source>
         <translation>23</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1766"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1777"/>
         <source>24</source>
         <translation>24</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1830"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1841"/>
         <source>25</source>
         <translation>25</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1894"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1905"/>
         <source>26</source>
         <translation>26</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1958"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1969"/>
         <source>27</source>
         <translation>27</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2022"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2033"/>
         <source>28</source>
         <translation>28</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2086"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2097"/>
         <source>29</source>
         <translation>29</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2150"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2161"/>
         <source>30</source>
         <translation>30</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2214"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2225"/>
         <source>31</source>
         <translation>31</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2278"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2289"/>
         <source>32</source>
         <translation>32</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2342"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2353"/>
         <source>33</source>
         <translation>33</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2406"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2417"/>
         <source>34</source>
         <translation>34</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2470"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2481"/>
         <source>35</source>
         <translation>35</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2542"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2553"/>
         <source>Min days</source>
         <comment>Refers to min days between the components of a larger split activity. Please keep translation short</comment>
         <translation>Min hari</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2562"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2573"/>
         <source>Weight %</source>
         <comment>Please keep translation short</comment>
         <translation>Bobot %</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2591"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2602"/>
         <source>Consecutive</source>
         <comment>Refers to forcing component activities consecutive if they are in the same day. Please keep translation short</comment>
         <translation>Berurutan</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2623"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2634"/>
         <source>Help</source>
         <translation>Bantuan</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2630"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2641"/>
         <source>Close</source>
         <translation>Tutup</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="50"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="43"/>
         <source>Selected</source>
         <comment>It refers to a list of selected teachers</comment>
         <translation>Terpilih</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="178"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="189"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activity tags</comment>
         <translation>Terpilih</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="161"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="172"/>
         <source>Activity tags</source>
         <translation>Tag kegiatan</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="345"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="409"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="473"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="537"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="601"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="665"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="729"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="793"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="857"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="921"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="985"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1049"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1113"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1177"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1241"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1305"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1369"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1433"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1497"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1561"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1625"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1689"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1753"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1817"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1881"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1945"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2009"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2073"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2137"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2201"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2265"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2329"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2393"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2457"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2521"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="356"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="420"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="484"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="548"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="612"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="676"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="740"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="804"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="868"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="932"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="996"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1060"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1124"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1188"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1252"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1316"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1380"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1444"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1508"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1572"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1636"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1700"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1764"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1828"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1892"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1956"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2020"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2084"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2148"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2212"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2276"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2340"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2404"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2468"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2532"/>
         <source>Active</source>
         <comment>It refers to a subactivity</comment>
         <translation type="unfinished">Aktif</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2616"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2627"/>
         <source>Add</source>
         <translation>Tambah</translation>
     </message>
@@ -39650,64 +39656,64 @@ Silahkan hentikan simulasi sebelumnya</translation>
 <context>
     <name>ModifyActivityForm</name>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="502"/>
-        <location filename="../src/interface/modifyactivityform.cpp" line="521"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="518"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="537"/>
         <source>FET question</source>
         <translation>Pertanyaan FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="503"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="519"/>
         <source>Do you really want to have the activity without teacher(s)?</source>
         <translation>Apakah anda ingin menambah kegiatan dengan tanpa guru?</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="486"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="502"/>
         <source>FET information</source>
         <translation>Informasi FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="487"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="503"/>
         <source>Invalid subject</source>
         <translation>Mata Pelajaran salah</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="522"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="538"/>
         <source>Do you really want to have the activity without student set(s)?</source>
         <translation>Apakah anda ingin menambah kegiatan dengan kelas paralel?</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="595"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="611"/>
         <source>Abbreviations in this dialog:</source>
         <translation>Singkatan pada dialog ini:</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="597"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="613"/>
         <source>&apos;Students&apos; (the text near the spin box), means &apos;Number of students (-1 for automatic)&apos;</source>
         <translation>&apos;Siswa&apos; (teks dekat kotak spin), artinya &apos;Jumlah siswa (-1 untuk otomatis)&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="599"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="615"/>
         <source>&apos;Split&apos; means &apos;Is split into ... activities per week&apos;. This value cannot be changed. If you need to modify it, please remove the corresponding activities and add a new split activity.</source>
         <translation>&apos;Split&apos; berarti &apos;dibagi menjadi ... kegiatan per minggu&apos;. Nilai ini tidak dapat diubah. Jika Anda perlu memodifikasi, silakan hapus kegiatan yang sesuai dan menambahkan aktivitas perpecahan baru.</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="602"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="618"/>
         <source>The &apos;Duration&apos; spin box and the &apos;Active&apos; check box refer to each component of current activity, you can change them for each component, separately, by selecting the corresponding tab in the tab widget.</source>
         <translation>Para &apos;durasi&apos;&apos; spin kotak dan &apos;Aktif&apos; kotak cek mengacu pada masing-masing komponen kegiatan saat ini, Anda dapat mengubahnya untuk masing-masing komponen, secara terpisah, dengan memilih tab yang sesuai di tab widget.</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="605"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="621"/>
         <source>&apos;Qualified&apos; means that only the teachers who are qualified to teach the selected subject will be shown in the &apos;Teachers&apos; list.</source>
         <comment>Qualified refers to teachers</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="611"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="627"/>
         <source>FET - help on modifying activity(ies)</source>
         <translation>FET - bantuan pada memodifikasi kegiatan</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="617"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="633"/>
         <source>OK</source>
         <translation>Ok</translation>
     </message>
@@ -39715,289 +39721,295 @@ Silahkan hentikan simulasi sebelumnya</translation>
 <context>
     <name>ModifyActivityForm_template</name>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="239"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="250"/>
         <source>Students</source>
         <comment>This refers to the number of students, but I want to keep the text short</comment>
         <translation>Siswa</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="264"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="275"/>
         <source>Split</source>
         <comment>Refers to the number of components in an activity split into more components</comment>
         <translation>Bagi</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="295"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="306"/>
         <source>1</source>
         <translation>1</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="306"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="370"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="434"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="498"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="562"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="626"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="690"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="754"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="818"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="882"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="946"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1010"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1074"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1138"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1202"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1266"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1330"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1394"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1458"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1522"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1586"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1650"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1714"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1778"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1842"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1906"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1970"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2034"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2098"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2162"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2226"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2290"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2354"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2418"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2482"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="317"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="381"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="445"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="509"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="573"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="637"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="701"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="765"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="829"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="893"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="957"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1021"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1085"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1149"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1213"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1277"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1341"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1405"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1469"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1533"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1597"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1661"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1725"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1789"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1853"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1917"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1981"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2045"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2109"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2173"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2237"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2301"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2365"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2429"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2493"/>
         <source>Duration</source>
         <translation>Durasi</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="359"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="370"/>
         <source>2</source>
         <translation>2</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="346"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="410"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="474"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="538"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="602"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="666"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="730"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="794"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="858"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="922"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="986"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1050"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1114"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1178"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1242"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1306"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1370"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1434"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1498"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1562"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1626"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1690"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1754"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1818"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1882"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1946"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2010"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2074"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2138"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2202"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2266"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2330"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2394"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2458"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2522"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="357"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="421"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="485"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="549"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="613"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="677"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="741"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="805"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="869"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="933"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="997"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1061"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1125"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1189"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1253"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1317"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1381"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1445"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1509"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1573"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1637"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1701"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1765"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1829"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1893"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1957"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2021"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2085"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2149"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2213"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2277"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2341"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2405"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2469"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2533"/>
         <source>Active</source>
         <comment>It refers to a subactivity</comment>
         <translation type="unfinished">Aktif</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="39"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="69"/>
+        <source>All</source>
+        <comment>It refers to teachers. It will show all the teachers.</comment>
+        <translation type="unfinished">Semua</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="76"/>
         <source>Qualified</source>
         <comment>It refers to teachers. It will show only the teachers qualified for the selected subject.</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="423"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="434"/>
         <source>3</source>
         <translation>3</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="487"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="498"/>
         <source>4</source>
         <translation>4</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="551"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="562"/>
         <source>5</source>
         <translation>5</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="615"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="626"/>
         <source>6</source>
         <translation>6</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="679"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="690"/>
         <source>7</source>
         <translation>7</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="743"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="754"/>
         <source>8</source>
         <translation>8</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="807"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="818"/>
         <source>9</source>
         <translation>9</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="871"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="882"/>
         <source>10</source>
         <translation>10</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="935"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="946"/>
         <source>11</source>
         <translation>11</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="999"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1010"/>
         <source>12</source>
         <translation>12</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1063"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1074"/>
         <source>13</source>
         <translation>13</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1127"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1138"/>
         <source>14</source>
         <translation>14</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1191"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1202"/>
         <source>15</source>
         <translation>15</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1255"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1266"/>
         <source>16</source>
         <translation>16</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1319"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1330"/>
         <source>17</source>
         <translation>17</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1383"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1394"/>
         <source>18</source>
         <translation>18</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1447"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1458"/>
         <source>19</source>
         <translation>19</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1511"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1522"/>
         <source>20</source>
         <translation>20</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1575"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1586"/>
         <source>21</source>
         <translation>21</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1639"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1650"/>
         <source>22</source>
         <translation>22</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1703"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1714"/>
         <source>23</source>
         <translation>23</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1767"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1778"/>
         <source>24</source>
         <translation>24</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1831"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1842"/>
         <source>25</source>
         <translation>25</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1895"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1906"/>
         <source>26</source>
         <translation>26</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1959"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1970"/>
         <source>27</source>
         <translation>27</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2023"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2034"/>
         <source>28</source>
         <translation>28</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2087"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2098"/>
         <source>29</source>
         <translation>29</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2151"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2162"/>
         <source>30</source>
         <translation>30</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2215"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2226"/>
         <source>31</source>
         <translation>31</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2279"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2290"/>
         <source>32</source>
         <translation>32</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2343"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2354"/>
         <source>33</source>
         <translation>33</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2407"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2418"/>
         <source>34</source>
         <translation>34</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2471"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2482"/>
         <source>35</source>
         <translation>35</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2547"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2558"/>
         <source>Ok</source>
         <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2554"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2565"/>
         <source>Help</source>
         <translation>Bantuan</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2561"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2572"/>
         <source>Cancel</source>
         <translation>Batal</translation>
     </message>
@@ -40013,57 +40025,57 @@ Silahkan hentikan simulasi sebelumnya</translation>
         <translation>Ubah kegiatan</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="63"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="108"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="188"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="56"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="119"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="199"/>
         <source>Clear</source>
         <translation>Bersih</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="78"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="89"/>
         <source>Students</source>
         <comment>Refers to sets of students, but I want to keep text short</comment>
         <translation>Siswa</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="208"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="219"/>
         <source>Subject</source>
         <translation>Mata Pelajaran</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="95"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="106"/>
         <source>Selected</source>
         <comment>It refers to a list of selected students (in fact, students sets, but translate selected as in &apos;selected students&apos;)</comment>
         <translation>Terpilih</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="121"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="132"/>
         <source>Years</source>
         <translation>Kelas</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="131"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="142"/>
         <source>Groups</source>
         <translation>Kelas Paralel</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="141"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="152"/>
         <source>Subgroups</source>
         <translation>Grup</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="175"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="186"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activity tags</comment>
         <translation>Terpilih</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="158"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="169"/>
         <source>Activity tags</source>
         <translation>Tag kegiatan</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="50"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="43"/>
         <source>Selected</source>
         <comment>It refers to a list of selected teachers</comment>
         <translation>Terpilih</translation>
@@ -47675,64 +47687,64 @@ Catata: Guru tidak ada dan pecah tidakdihitung jam kosong.</translation>
 <context>
     <name>ModifySubactivityForm</name>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="392"/>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="411"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="408"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="427"/>
         <source>FET question</source>
         <translation>Pertanyaan FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="393"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="409"/>
         <source>Do you really want to have the subactivity without teacher(s)?</source>
         <translation>Apakah anda ingin menambah sub kegiatan dengan tanpa guru?</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="376"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="392"/>
         <source>FET information</source>
         <translation>Informasi FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="377"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="393"/>
         <source>Invalid subject</source>
         <translation>Mata Pelajaran salah</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="412"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="428"/>
         <source>Do you really want to have the subactivity without student set(s)?</source>
         <translation>Apakah anda ingin mempunyai sub  kegiatan dengan kelas?</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="472"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="488"/>
         <source>Abbreviations in this dialog:</source>
         <translation>Singkatan dalam dialog ini:</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="474"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="490"/>
         <source>&apos;Students&apos; (the text near the spin box), means &apos;Number of students (-1 for automatic)&apos;</source>
         <translation>&apos;Siswa&apos; (teks dekat kotak spin), artinya &apos;Jumlah siswa (-1 untuk otomatis)&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="476"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="492"/>
         <source>&apos;Qualified&apos; means that only the teachers who are qualified to teach the selected subject will be shown in the &apos;Teachers&apos; list.</source>
         <comment>Qualified refers to teachers</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="482"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="498"/>
         <source>FET - help on modifying subactivity(ies)</source>
         <translation>FET - bantuan pada memodifikasi kegiatan</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="488"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="504"/>
         <source>OK</source>
         <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="118"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="119"/>
         <source>Current subactivity has split index %1 out of %2</source>
         <translation>Sub kegiatan saat ini memiliki indeks pecah %1 dari %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="119"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="120"/>
         <source>The current data applies only to this subactivity</source>
         <translation>Data saat ini berlaku pada sub kegiatan ini</translation>
     </message>
@@ -47740,90 +47752,96 @@ Catata: Guru tidak ada dan pecah tidakdihitung jam kosong.</translation>
 <context>
     <name>ModifySubactivityForm_template</name>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="29"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="26"/>
         <source>Teachers</source>
         <translation>Guru</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="66"/>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="111"/>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="194"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="56"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="119"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="202"/>
         <source>Clear</source>
         <translation>Hapus</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="81"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="89"/>
         <source>Students</source>
         <comment>This refers to sets of students, but I want to keep the string short</comment>
         <translation>Siswa</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="214"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="222"/>
         <source>Subject</source>
         <translation>Mata Pelajaran</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="98"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="106"/>
         <source>Selected</source>
         <comment>It refers to a list of selected students (in fact, students sets, but translate selected as in &apos;selected students&apos;)</comment>
         <translation>Terpilih</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="42"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="69"/>
+        <source>All</source>
+        <comment>It refers to teachers. It will show all the teachers.</comment>
+        <translation type="unfinished">Semua</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="76"/>
         <source>Qualified</source>
         <comment>It refers to teachers. It will show only the teachers qualified for the selected subject.</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="124"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="132"/>
         <source>Years</source>
         <translation>Kelas</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="134"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="142"/>
         <source>Groups</source>
         <translation>Kelas Paralel</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="144"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="152"/>
         <source>Subgroups</source>
         <translation>Grup</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="181"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="189"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activity tags</comment>
         <translation>Terpilih</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="243"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="251"/>
         <source>Students</source>
         <comment>This refers to the number of students, but I want to keep string short</comment>
         <translation>Siswa</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="319"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="327"/>
         <source>Active</source>
         <comment>It refers to a subactivity</comment>
         <translation type="unfinished">Aktif</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="379"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="387"/>
         <source>Ok</source>
         <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="386"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="394"/>
         <source>Help</source>
         <translation>Bantuan</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="393"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="401"/>
         <source>Cancel</source>
         <translation>Batal</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="164"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="172"/>
         <source>Activity tags</source>
         <translation>Tag kegiatan</translation>
     </message>
@@ -47834,13 +47852,13 @@ Catata: Guru tidak ada dan pecah tidakdihitung jam kosong.</translation>
         <translation>Ubah sub kegiatan</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="53"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="43"/>
         <source>Selected</source>
         <comment>It refers to a list of selected teachers</comment>
         <translation>Terpilih</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="279"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="287"/>
         <source>Duration</source>
         <translation>Durasi</translation>
     </message>
@@ -49658,47 +49676,47 @@ tidak ditambah - duplikasi</translation>
 <context>
     <name>SecondMinDaysDialog</name>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="516"/>
+        <location filename="../src/interface/addactivityform.cpp" line="532"/>
         <source>Add a second constraint or not?</source>
         <translation>Tambha batasan kedua atau tidak?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="526"/>
+        <location filename="../src/interface/addactivityform.cpp" line="542"/>
         <source>Yes</source>
         <translation>Ya</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="529"/>
+        <location filename="../src/interface/addactivityform.cpp" line="545"/>
         <source>No</source>
         <translation>Tidak</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="599"/>
+        <location filename="../src/interface/addactivityform.cpp" line="615"/>
         <source>FET information</source>
         <translation>Informasi FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="600"/>
+        <location filename="../src/interface/addactivityform.cpp" line="616"/>
         <source>Invalid weight (percentage) - must be &gt;=0 and &lt;=100.0</source>
         <translation>Bobot (persentase) salah. harus &gt;=0 dan &lt;=100.0</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="498"/>
+        <location filename="../src/interface/addactivityform.cpp" line="514"/>
         <source>You selected min days between activities %1 (above 1) and weight %2 (under 100.0). Would you like to add also a second constraint to ensure that almost certainly the distance between activities is at least %3 (%1-1) days? If yes, please select weight (recommended 95.0%-100.0%) and click Yes. If no, please click No (only one constraint will be added)</source>
         <translation>Anda memilih min hari antar kegiatan %1 (diatas 1) dan bobot %2 (dibawah 100.0). Apakah anda ingin menambah batasan kedua untuk memastikan jarak yang pasti antar kegiatan adalah %3(%1-1) hari? Jika ya, silahkan pilih bobot (rekomendasi 95.0%-100.0%) dan klik Ya. Jika tidak, silahkan klik Tidak (hanya satu batasan yang ditambah)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="514"/>
+        <location filename="../src/interface/addactivityform.cpp" line="530"/>
         <source>Recommended answer is Yes, 95% (or higher).</source>
         <translation>Jawaban yang direkomendasikan adalah Ya, 95%(atau lebih tinggi).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="503"/>
+        <location filename="../src/interface/addactivityform.cpp" line="519"/>
         <source>(Yes means to add an additional constraint min %1 days between activities, weight 0.0%-100.0%. If you say Yes, you will have 2 constraints min days added for current activities. Adding the second constraint might lead to impossible timetables if the condition is too tight, but you can remove the second constraint at any time).</source>
         <translation>Ya berarti menambah batasan tambahan min %1 hari antar kegiatan, bobot 0.0%-100.0%. Jika anda mengisi Ya, anda akan memiliki 2 batasan min hari ditambah ke kegiatan. Menambah batasan kedua akan menimbulkan jadwal yang tidak mungkin jika kondisi terlalu ketat, tetapi anda dapat menghapus batasan kedua kapan saja).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="508"/>
+        <location filename="../src/interface/addactivityform.cpp" line="524"/>
         <source>Note: 95% is usually enough for min days constraints referring to same activities. The weights are cumulated if referring to the same activities. If you have 2 constraints with say 95% (say min n days and min n-1 days), the min n days constraint is skipped with probability 5%, then min n-1 days constraint is skipped with probability 0.25%=5%*5%, so you&apos;ll get in 99.75% cases the min n-1 days constraint respected.</source>
         <translation>Catatan: 95% biasanya cukup untuk batasan hari min berhubungan pada kegiatan yang sama. Bobot diakumulasi jika berhubungan dengan kegiatan yang sama. Jika anda mempunyai 2 batasan dengan 95% (katakan min n hari dan min n-2 hari), batasan min n hari diabaikan dengan probabilitas 5%, lalu min n-1 hari diabaikan dengan probabilitas 0.25%=5%, jadi anda mendapatkan 99.75% kasus dengan batasan min n-1 hari dihormati.</translation>
     </message>
