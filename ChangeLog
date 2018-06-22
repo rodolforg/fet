@@ -2074,9 +2074,9 @@ Versions 5.36.0 - 5.36.v
 	- Corrected a few bugs in the translations.
 - Version 5.36.1
 	- Updated to Qt 5.11.1.
-	- The add/modify activity and modify subactivity dialogs now have an option to show only the qualified teachers for the chosen subject
+	- The add/modify activity and modify subactivity dialogs now have an option to show all the teachers or only the qualified teachers for the chosen subject
 	(suggested by Volker Dirr).
-	- The main check boxes in the activities, subactivities, add activity, modify activity, and modify subactivity, now save their settings
+	- The main check boxes / radio buttons in the activities, subactivities, add activity, modify activity, and modify subactivity, now retain their settings
 	(suggested by Volker Dirr).
 	- Added information about potential privacy issues if enabling the 'Search for updates on startup' option.
 	- Updated the Arabic translation, by Benahmed Abdelkrim.
