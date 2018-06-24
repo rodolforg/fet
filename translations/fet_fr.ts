@@ -1527,7 +1527,7 @@ Vous pouvez choisir l&apos;écart minimal en jours entre chaque paire d&apos;act
         <location filename="../src/interface/addactivityform_template.ui" line="69"/>
         <source>All</source>
         <comment>It refers to teachers. It will show all the teachers.</comment>
-        <translation type="unfinished">Tout</translation>
+        <translation>Tous</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="89"/>
@@ -39869,7 +39869,7 @@ Merci d&apos;arrêter la simulation avant de mettre à jour</translation>
         <location filename="../src/interface/modifyactivityform_template.ui" line="69"/>
         <source>All</source>
         <comment>It refers to teachers. It will show all the teachers.</comment>
-        <translation type="unfinished">Tout</translation>
+        <translation>Tous</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="89"/>
@@ -47864,7 +47864,7 @@ Note : enseignant non disponible et pause ne sont pas comptés comme vides.</tra
         <location filename="../src/interface/modifysubactivityform_template.ui" line="69"/>
         <source>All</source>
         <comment>It refers to teachers. It will show all the teachers.</comment>
-        <translation type="unfinished">Tout</translation>
+        <translation>Tous</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="89"/>

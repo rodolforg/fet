@@ -1379,7 +1379,7 @@ there won&apos;t be removed an additional number of %1 activities
         <location filename="../src/interface/addactivityform.cpp" line="871"/>
         <source>&apos;Qualified&apos; means that only the teachers who are qualified to teach the selected subject will be shown in the &apos;Teachers&apos; list.</source>
         <comment>Qualified refers to teachers</comment>
-        <translation type="unfinished"></translation>
+        <translation>&quot;Προσοντούχοι&quot; σημαίνει ότι στην λίστα &quot;Εκπαιδευτικοί&quot; θα εμφανίζονται μόνον οι εκπαιδευτικοί που έχουν τα προσόντα να διδάξουν το επιλεγμένο αντικείμενο.</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="875"/>
@@ -1529,13 +1529,13 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addactivityform_template.ui" line="69"/>
         <source>All</source>
         <comment>It refers to teachers. It will show all the teachers.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Όλοι</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="76"/>
         <source>Qualified</source>
         <comment>It refers to teachers. It will show only the teachers qualified for the selected subject.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Προσοντούχοι</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="89"/>
@@ -31660,12 +31660,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="819"/>
         <source>Thus, it could be deduced if and when you use FET.</source>
-        <translation type="unfinished"></translation>
+        <translation>Έτσι, θα μπορεί να συναχθεί το εάν και πότε χρησιμοποιείτε το FET.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="821"/>
         <source>Do you agree?</source>
-        <translation type="unfinished"></translation>
+        <translation>Συμφωνείτε;</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="846"/>
@@ -32015,7 +32015,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="815"/>
         <source>Please note that, by enabling this option, each time you start FET it will get the file %1 from the FET homepage, so the request for this file will be visible on the server, along with your IP address and access time.</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ σημειώστε ότι με την ενεργοποίηση της επιλογής αυτής, σε κάθε εκκίνησή του το FET θα λαμβάνει το αρχείο %1 από την ιστοσελίδα του FET. Οπότε, το αίτημα για το εν λόγω αρχείο θα είναι ορατό (φανερό) στον σέρβερ, όπως και η διεύθυνσή σας (IP) καθώς και η χρόνος προσπέλασης.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2052"/>
@@ -37289,7 +37289,7 @@ Another thing: if you have 1 or 2 lessons per week for a subject, say biology, a
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="622"/>
         <source>Thus, it could be deduced if and when you use FET.</source>
-        <translation type="unfinished"></translation>
+        <translation>Έτσι, θα μπορεί να συναχθεί το εάν και πότε χρησιμοποιείτε το FET.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="628"/>
@@ -38080,7 +38080,7 @@ This trick just passed through my mind as I was trying to write you that you hav
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="618"/>
         <source>Please note that, by enabling this option, each time you start FET it will get the file %1 from the FET homepage, so the request for this file will be visible on the server, along with your IP address and access time.</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ σημειώστε ότι με την ενεργοποίηση της επιλογής αυτής, σε κάθε εκκίνησή του το FET θα λαμβάνει το αρχείο %1 από την ιστοσελίδα του FET. Οπότε, το αίτημα για το εν λόγω αρχείο θα είναι ορατό (φανερό) στον σέρβερ, όπως και η διεύθυνσή σας (IP) καθώς και η χρόνος προσπέλασης.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="747"/>
@@ -39865,7 +39865,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyactivityform.cpp" line="621"/>
         <source>&apos;Qualified&apos; means that only the teachers who are qualified to teach the selected subject will be shown in the &apos;Teachers&apos; list.</source>
         <comment>Qualified refers to teachers</comment>
-        <translation type="unfinished"></translation>
+        <translation>&quot;Προσοντούχοι&quot; σημαίνει ότι στην λίστα &quot;Εκπαιδευτικοί&quot; θα εμφανίζονται μόνον οι εκπαιδευτικοί που έχουν τα προσόντα να διδάξουν το επιλεγμένο αντικείμενο.</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform.cpp" line="627"/>
@@ -39985,13 +39985,13 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyactivityform_template.ui" line="69"/>
         <source>All</source>
         <comment>It refers to teachers. It will show all the teachers.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Όλοι</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="76"/>
         <source>Qualified</source>
         <comment>It refers to teachers. It will show only the teachers qualified for the selected subject.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Προσοντούχοι</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="434"/>
@@ -47850,7 +47850,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifysubactivityform.cpp" line="492"/>
         <source>&apos;Qualified&apos; means that only the teachers who are qualified to teach the selected subject will be shown in the &apos;Teachers&apos; list.</source>
         <comment>Qualified refers to teachers</comment>
-        <translation type="unfinished"></translation>
+        <translation>&quot;Προσοντούχοι&quot; σημαίνει ότι στην λίστα &quot;Εκπαιδευτικοί&quot; θα εμφανίζονται μόνον οι εκπαιδευτικοί που έχουν τα προσόντα να διδάξουν το επιλεγμένο αντικείμενο.</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform.cpp" line="498"/>
@@ -47908,13 +47908,13 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="69"/>
         <source>All</source>
         <comment>It refers to teachers. It will show all the teachers.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Όλοι</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="76"/>
         <source>Qualified</source>
         <comment>It refers to teachers. It will show only the teachers qualified for the selected subject.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Προσοντούχοι</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="132"/>

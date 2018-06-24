@@ -1528,7 +1528,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addactivityform_template.ui" line="69"/>
         <source>All</source>
         <comment>It refers to teachers. It will show all the teachers.</comment>
-        <translation type="unfinished"></translation>
+        <translation>الكل</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="76"/>
@@ -39914,7 +39914,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyactivityform_template.ui" line="69"/>
         <source>All</source>
         <comment>It refers to teachers. It will show all the teachers.</comment>
-        <translation type="unfinished"></translation>
+        <translation>الكل</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="76"/>
@@ -47878,7 +47878,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="69"/>
         <source>All</source>
         <comment>It refers to teachers. It will show all the teachers.</comment>
-        <translation type="unfinished"></translation>
+        <translation>الكل</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="76"/>

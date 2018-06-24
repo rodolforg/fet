@@ -388,12 +388,12 @@
     <message>
         <location filename="../src/engine/activity.cpp" line="618"/>
         <source>Duration=%1</source>
-        <translation>Período(s)=%1</translation>
+        <translation>Duração=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/activity.cpp" line="621"/>
         <source>Total duration=%1</source>
-        <translation>Total de aulas=%1</translation>
+        <translation>Duração total=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/activity.cpp" line="660"/>
@@ -1367,13 +1367,13 @@ there won&apos;t be removed an additional number of %1 activities
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="868"/>
         <source>The &apos;Duration&apos; spin box and the &apos;Active&apos; check box refer to each component of current activity, you can change them for each component, separately, by selecting the corresponding tab in the tab widget.</source>
-        <translation>As caixas &quot;Período(s)&quot; e &quot;Ativa&quot; referem-se a cada item da atividade atual. Você pode mudá-las para cada item, separadamente, ao selecionar a respectiva guia.</translation>
+        <translation>As caixas &quot;Duração&quot; e &quot;Ativa&quot; referem-se a cada item da atividade atual. Você pode mudá-las para cada item, separadamente, ao selecionar a respectiva guia.</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="871"/>
         <source>&apos;Qualified&apos; means that only the teachers who are qualified to teach the selected subject will be shown in the &apos;Teachers&apos; list.</source>
         <comment>Qualified refers to teachers</comment>
-        <translation type="unfinished"></translation>
+        <translation>&apos;Habilitado&apos; ou &apos;Apto&apos; indica que apenas docentes habilitados para a disciplina escolhida serão exibidos na lista  de &apos;Professores&apos;.</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="875"/>
@@ -1523,13 +1523,13 @@ Você pode escolher a distância mínima em dias entre cada par de atividades. P
         <location filename="../src/interface/addactivityform_template.ui" line="69"/>
         <source>All</source>
         <comment>It refers to teachers. It will show all the teachers.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Todos</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="76"/>
         <source>Qualified</source>
         <comment>It refers to teachers. It will show only the teachers qualified for the selected subject.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Apto</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="89"/>
@@ -1606,7 +1606,7 @@ Você pode escolher a distância mínima em dias entre cada par de atividades. P
         <location filename="../src/interface/addactivityform_template.ui" line="2428"/>
         <location filename="../src/interface/addactivityform_template.ui" line="2492"/>
         <source>Duration</source>
-        <translation>Período(s)</translation>
+        <translation>Duração</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="369"/>
@@ -2592,7 +2592,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform_template.ui" line="78"/>
         <source>Duration</source>
-        <translation>Período(s)</translation>
+        <translation>Duração</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform_template.ui" line="101"/>
@@ -2766,7 +2766,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform_template.ui" line="78"/>
         <source>Duration</source>
-        <translation>Período(s)</translation>
+        <translation>Duração</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform_template.ui" line="122"/>
@@ -5554,12 +5554,12 @@ Nota: turmas não disponíveis e intervalos não são contados como lacunas.</tr
     <message>
         <location filename="../src/interface/addconstraintstudentsminhoursdailyform.cpp" line="38"/>
         <source>Advanced usage: enabled</source>
-        <translation>Uso avançado: habilitado</translation>
+        <translation>Uso avançado: ativado</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsminhoursdailyform.cpp" line="40"/>
         <source>Advanced usage: not enabled</source>
-        <translation>Uso avançado: desabilitado</translation>
+        <translation>Uso avançado: desativado</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsminhoursdailyform.cpp" line="64"/>
@@ -6850,12 +6850,12 @@ Nota: turmas não disponíveis e pausas não são contados como lacunas.</transl
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="38"/>
         <source>Advanced usage: enabled</source>
-        <translation>Uso avançado: habilitado</translation>
+        <translation>Uso avançado: ativado</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="40"/>
         <source>Advanced usage: not enabled</source>
-        <translation>Uso avançado: desabilitado</translation>
+        <translation>Uso avançado: desativado</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="89"/>
@@ -13370,7 +13370,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10994"/>
         <source>Duration=%1</source>
-        <translation>Período(s)=%1</translation>
+        <translation>Duração=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10996"/>
@@ -13650,7 +13650,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9696"/>
         <source>Duration=%1</source>
-        <translation>Período(s)=%1</translation>
+        <translation>Duração=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9698"/>
@@ -31612,7 +31612,7 @@ Por favor, pare a simulação antes.</translation>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="815"/>
         <source>Please note that, by enabling this option, each time you start FET it will get the file %1 from the FET homepage, so the request for this file will be visible on the server, along with your IP address and access time.</source>
-        <translation type="unfinished"></translation>
+        <translation>Favor observar que ao ativar essa opção, o arquivo %1 será obtido do portal do FET cada vez que você iniciar o programa, de modo que essa requisição do arquivo ficará visível no servidor, bem como seu endereço IP e horário de acesso.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="846"/>
@@ -31916,12 +31916,12 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="819"/>
         <source>Thus, it could be deduced if and when you use FET.</source>
-        <translation type="unfinished"></translation>
+        <translation>Assim, pode ser deduzido se e quando você usar o FET.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="821"/>
         <source>Do you agree?</source>
-        <translation type="unfinished"></translation>
+        <translation>Você concorda?</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="867"/>
@@ -37226,7 +37226,7 @@ Outra coisa: se você tiver 1 ou 2 aulas por semana para uma matéria, digamos, 
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="622"/>
         <source>Thus, it could be deduced if and when you use FET.</source>
-        <translation type="unfinished"></translation>
+        <translation>Assim, pode ser deduzido se e quando você usar o FET.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="628"/>
@@ -37991,7 +37991,7 @@ Esse truque passou pela minha cabeça enquanto eu tentava te escrever que você 
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="618"/>
         <source>Please note that, by enabling this option, each time you start FET it will get the file %1 from the FET homepage, so the request for this file will be visible on the server, along with your IP address and access time.</source>
-        <translation type="unfinished"></translation>
+        <translation>Favor observar que ao ativar essa opção, o arquivo %1 será obtido do portal do FET cada vez que você iniciar o programa, de modo que essa requisição do arquivo ficará visível no servidor, bem como seu endereço IP e horário de acesso.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="747"/>
@@ -39784,13 +39784,13 @@ Por favor, primeiro encerre a simulação</translation>
     <message>
         <location filename="../src/interface/modifyactivityform.cpp" line="618"/>
         <source>The &apos;Duration&apos; spin box and the &apos;Active&apos; check box refer to each component of current activity, you can change them for each component, separately, by selecting the corresponding tab in the tab widget.</source>
-        <translation>As caixas &quot;Período(s)&quot; e &quot;Ativa&quot; referem-se a cada item da atividade atual. Você pode mudá-las para cada item, separadamente, ao selecionar a respectiva guia.</translation>
+        <translation>As caixas &quot;Duração&quot; e &quot;Ativa&quot; referem-se a cada item da atividade atual. Você pode mudá-las para cada item, separadamente, ao selecionar a respectiva guia.</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform.cpp" line="621"/>
         <source>&apos;Qualified&apos; means that only the teachers who are qualified to teach the selected subject will be shown in the &apos;Teachers&apos; list.</source>
         <comment>Qualified refers to teachers</comment>
-        <translation type="unfinished"></translation>
+        <translation>&apos;Habilitado&apos; ou &apos;Apto&apos; indica que apenas docentes habilitados para a disciplina escolhida serão exibidos na lista  de &apos;Professores&apos;.</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform.cpp" line="627"/>
@@ -39859,7 +39859,7 @@ Por favor, primeiro encerre a simulação</translation>
         <location filename="../src/interface/modifyactivityform_template.ui" line="2429"/>
         <location filename="../src/interface/modifyactivityform_template.ui" line="2493"/>
         <source>Duration</source>
-        <translation>Período(s)</translation>
+        <translation>Duração</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="370"/>
@@ -39910,13 +39910,13 @@ Por favor, primeiro encerre a simulação</translation>
         <location filename="../src/interface/modifyactivityform_template.ui" line="69"/>
         <source>All</source>
         <comment>It refers to teachers. It will show all the teachers.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Todos</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="76"/>
         <source>Qualified</source>
         <comment>It refers to teachers. It will show only the teachers qualified for the selected subject.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Habilitado</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="434"/>
@@ -40797,7 +40797,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform_template.ui" line="78"/>
         <source>Duration</source>
-        <translation>Período(s)</translation>
+        <translation>Duração</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform_template.ui" line="101"/>
@@ -40936,7 +40936,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform_template.ui" line="78"/>
         <source>Duration</source>
-        <translation>Período(s)</translation>
+        <translation>Duração</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform_template.ui" line="101"/>
@@ -43265,12 +43265,12 @@ Nota: turmas não disponíveis e intervalos não são contados como lacunas.</tr
     <message>
         <location filename="../src/interface/modifyconstraintstudentsminhoursdailyform.cpp" line="44"/>
         <source>Advanced usage: enabled</source>
-        <translation>Uso avançado: habilitado</translation>
+        <translation>Uso avançado: ativado</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsminhoursdailyform.cpp" line="46"/>
         <source>Advanced usage: not enabled</source>
-        <translation>Uso avançado: desabilitado</translation>
+        <translation>Uso avançado: desativado</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsminhoursdailyform.cpp" line="68"/>
@@ -44348,12 +44348,12 @@ Nota: turmas não disponíveis e intervalos não são contados como lacunas.</tr
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="47"/>
         <source>Advanced usage: enabled</source>
-        <translation>Uso avançado: habilitado</translation>
+        <translation>Uso avançado: ativado</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="49"/>
         <source>Advanced usage: not enabled</source>
-        <translation>Uso avançado: desabilitado</translation>
+        <translation>Uso avançado: desativado</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="114"/>
@@ -47763,7 +47763,7 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
         <location filename="../src/interface/modifysubactivityform.cpp" line="492"/>
         <source>&apos;Qualified&apos; means that only the teachers who are qualified to teach the selected subject will be shown in the &apos;Teachers&apos; list.</source>
         <comment>Qualified refers to teachers</comment>
-        <translation type="unfinished"></translation>
+        <translation>&apos;Habilitado&apos; ou &apos;Apto&apos; indica que apenas docentes habilitados para a disciplina escolhida serão exibidos na lista  de &apos;Professores&apos;.</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform.cpp" line="498"/>
@@ -47821,13 +47821,13 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
         <location filename="../src/interface/modifysubactivityform_template.ui" line="69"/>
         <source>All</source>
         <comment>It refers to teachers. It will show all the teachers.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Todos</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="76"/>
         <source>Qualified</source>
         <comment>It refers to teachers. It will show only the teachers qualified for the selected subject.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Habilitado</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="132"/>
@@ -47897,7 +47897,7 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
     <message>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="287"/>
         <source>Duration</source>
-        <translation>Período(s)</translation>
+        <translation>Duração</translation>
     </message>
 </context>
 <context>
@@ -48918,7 +48918,7 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
         <location filename="../src/engine/rules.cpp" line="5033"/>
         <source>The teacher %1 has attached an inexistent qualified subject %2. Please note that starting with FET version %3 the list of subjects (tag &lt;Subjects_List&gt; in the .fet XML file) must appear before the list of teachers (tag &lt;Teachers_List&gt; in the .fet XML file)</source>
         <comment>Please keep &lt;Subjects_List&gt; and &lt;Teachers_List&gt; untranslated, as in the original English string</comment>
-        <translation>Docente %1 anexou uma disciplina sem qualificação %2. Por favor, note que, desde a versão %3, a lista de disciplinas (marcador &lt;Subjects_List&gt; no arquivo XML .fet) deve aparecer antes da lista de professores (marcador &lt;Teachers_List&gt; no arquivo XML .fet)</translation>
+        <translation>Docente %1 anexou uma disciplina sem habilitação (qualificação) %2. Por favor, note que, desde a versão %3, a lista de disciplinas (marcador &lt;Subjects_List&gt; no arquivo XML .fet) deve aparecer antes da lista de professores (marcador &lt;Teachers_List&gt; no arquivo XML .fet)</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="5063"/>
@@ -51439,7 +51439,7 @@ Base: %4</translation>
     <message>
         <location filename="../src/interface/studentsstatisticsform.cpp" line="374"/>
         <source>Duration</source>
-        <translation>Período(s)</translation>
+        <translation>Duração</translation>
     </message>
     <message>
         <location filename="../src/interface/studentsstatisticsform.cpp" line="472"/>
@@ -52233,7 +52233,7 @@ Base: %4</translation>
     <message>
         <location filename="../src/interface/subjectsstatisticsform.cpp" line="55"/>
         <source>Duration</source>
-        <translation>Período(s)</translation>
+        <translation>Duração</translation>
     </message>
 </context>
 <context>
@@ -52580,7 +52580,7 @@ Base: %4</translation>
     <message>
         <location filename="../src/interface/teachersstatisticsform.cpp" line="112"/>
         <source>Duration</source>
-        <translation>Período(s)</translation>
+        <translation>Duração</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersstatisticsform.cpp" line="113"/>

@@ -1704,7 +1704,7 @@ Zwischen zwei Aktivitäten kann eine minimale Anzahl Tage gesetzt werden. Beacht
         <location filename="../src/interface/addactivityform_template.ui" line="69"/>
         <source>All</source>
         <comment>It refers to teachers. It will show all the teachers.</comment>
-        <translation type="unfinished">Alle</translation>
+        <translation>Alle</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="76"/>
@@ -39886,7 +39886,7 @@ Bitte stoppen Sie die Plangenerierung</translation>
         <location filename="../src/interface/modifyactivityform_template.ui" line="69"/>
         <source>All</source>
         <comment>It refers to teachers. It will show all the teachers.</comment>
-        <translation type="unfinished">Alle</translation>
+        <translation>Alle</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="76"/>
@@ -47890,7 +47890,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="69"/>
         <source>All</source>
         <comment>It refers to teachers. It will show all the teachers.</comment>
-        <translation type="unfinished">Alle</translation>
+        <translation>Alle</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="76"/>

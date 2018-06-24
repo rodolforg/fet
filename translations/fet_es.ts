@@ -1390,7 +1390,7 @@ no se eliminarán %1 actividades adicionales
         <location filename="../src/interface/addactivityform.cpp" line="871"/>
         <source>&apos;Qualified&apos; means that only the teachers who are qualified to teach the selected subject will be shown in the &apos;Teachers&apos; list.</source>
         <comment>Qualified refers to teachers</comment>
-        <translation type="unfinished"></translation>
+        <translation>&apos;Calificado&apos; significa que sólo aquellos profesores capacitados para enseñar la materia seleccionada se mostrarán en la lista de &apos;Profesores&apos;.</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="875"/>
@@ -1519,13 +1519,13 @@ Puede elegir la distancia mínima entre días entre cada par de actividades. Ten
         <location filename="../src/interface/addactivityform_template.ui" line="69"/>
         <source>All</source>
         <comment>It refers to teachers. It will show all the teachers.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Todos</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="76"/>
         <source>Qualified</source>
         <comment>It refers to teachers. It will show only the teachers qualified for the selected subject.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Calificado</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="89"/>
@@ -31662,7 +31662,7 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="815"/>
         <source>Please note that, by enabling this option, each time you start FET it will get the file %1 from the FET homepage, so the request for this file will be visible on the server, along with your IP address and access time.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tenga en cuenta que, al habilitar esta opción, cada vez que inicialice FET éste obtendrá el fichero %1 de su página de inicio. La petición de este archivo será visible para el servidor, así como su dirección IP y la hora de acceso.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="846"/>
@@ -31957,12 +31957,12 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="819"/>
         <source>Thus, it could be deduced if and when you use FET.</source>
-        <translation type="unfinished"></translation>
+        <translation>Por lo tanto, esto puede deducirse si y cuándo usa FET.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="821"/>
         <source>Do you agree?</source>
-        <translation type="unfinished"></translation>
+        <translation>¿Está de acuerdo?</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="867"/>
@@ -37242,7 +37242,7 @@ Otra cosa: si tiene 1 ó 2 lecciones por semana para una materia, digamos biolog
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="622"/>
         <source>Thus, it could be deduced if and when you use FET.</source>
-        <translation type="unfinished"></translation>
+        <translation>Por lo tanto, esto puede deducirse si y cuándo usa FET.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="628"/>
@@ -38026,7 +38026,7 @@ Este truco se me acaba de ocurrir justo cuando le escribía que tenía que hacer
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="618"/>
         <source>Please note that, by enabling this option, each time you start FET it will get the file %1 from the FET homepage, so the request for this file will be visible on the server, along with your IP address and access time.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tenga en cuenta que, al habilitar esta opción, cada vez que inicialice FET éste obtendrá el fichero %1 de su página de inicio. La petición de este archivo será visible para el servidor, así como su dirección IP y la hora de acceso.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="747"/>
@@ -39808,7 +39808,7 @@ la simulación. Deténgala antes</translation>
         <location filename="../src/interface/modifyactivityform.cpp" line="621"/>
         <source>&apos;Qualified&apos; means that only the teachers who are qualified to teach the selected subject will be shown in the &apos;Teachers&apos; list.</source>
         <comment>Qualified refers to teachers</comment>
-        <translation type="unfinished"></translation>
+        <translation>&apos;Calificado&apos; significa que sólo aquellos profesores capacitados para enseñar la materia seleccionada se mostrarán en la lista de &apos;Profesores&apos;.</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform.cpp" line="627"/>
@@ -39928,13 +39928,13 @@ la simulación. Deténgala antes</translation>
         <location filename="../src/interface/modifyactivityform_template.ui" line="69"/>
         <source>All</source>
         <comment>It refers to teachers. It will show all the teachers.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Todos</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="76"/>
         <source>Qualified</source>
         <comment>It refers to teachers. It will show only the teachers qualified for the selected subject.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Calificado</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="434"/>
@@ -47792,7 +47792,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <location filename="../src/interface/modifysubactivityform.cpp" line="492"/>
         <source>&apos;Qualified&apos; means that only the teachers who are qualified to teach the selected subject will be shown in the &apos;Teachers&apos; list.</source>
         <comment>Qualified refers to teachers</comment>
-        <translation type="unfinished"></translation>
+        <translation>&apos;Calificado&apos; significa que sólo aquellos profesores capacitados para enseñar la materia seleccionada se mostrarán en la lista de &apos;Profesores&apos;.</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform.cpp" line="498"/>
@@ -47849,13 +47849,13 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <location filename="../src/interface/modifysubactivityform_template.ui" line="69"/>
         <source>All</source>
         <comment>It refers to teachers. It will show all the teachers.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Todos</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="76"/>
         <source>Qualified</source>
         <comment>It refers to teachers. It will show only the teachers qualified for the selected subject.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Calificado</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="142"/>

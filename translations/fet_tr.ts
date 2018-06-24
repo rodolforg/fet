@@ -123,7 +123,7 @@
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="572"/>
         <source>Above the (sub)activities list, we have 2 labels, containing 4 numbers. The first label contains text: No: a / b. The first number a is the number of active (sub)activities (we number each individual subactivity as 1), while the second number b is the number of total (sub)activities. The second label contains text: Dur: c / d. The third number c is the duration of active (sub)activities, in periods (or FET hours), while the fourth number d is the duration of total (sub)activities, in periods (or FET hours). So, No means number and Dur means duration.</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="578"/>

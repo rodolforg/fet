@@ -1525,7 +1525,7 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
         <location filename="../src/interface/addactivityform_template.ui" line="69"/>
         <source>All</source>
         <comment>It refers to teachers. It will show all the teachers.</comment>
-        <translation type="unfinished">Totes</translation>
+        <translation>Tot el professorat</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="76"/>
@@ -39956,7 +39956,7 @@ Siusplau atura la simulació abans</translation>
         <location filename="../src/interface/modifyactivityform_template.ui" line="69"/>
         <source>All</source>
         <comment>It refers to teachers. It will show all the teachers.</comment>
-        <translation type="unfinished">Totes</translation>
+        <translation>Tot el professorat</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="76"/>
@@ -47857,7 +47857,7 @@ Nota: els no disponibles i les pauses no se&apos;ls compten als professors com a
         <location filename="../src/interface/modifysubactivityform_template.ui" line="69"/>
         <source>All</source>
         <comment>It refers to teachers. It will show all the teachers.</comment>
-        <translation type="unfinished">Totes</translation>
+        <translation>Tot el professorat</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="76"/>
