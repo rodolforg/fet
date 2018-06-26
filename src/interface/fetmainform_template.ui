@@ -938,6 +938,9 @@
      <addaction name="separator"/>
      <addaction name="timetableLockActivitiesEndStudentsDayAction"/>
      <addaction name="timetableUnlockActivitiesEndStudentsDayAction"/>
+     <addaction name="separator"/>
+     <addaction name="timetableLockActivitiesWithASpecifiedActivityTagAction"/>
+     <addaction name="timetableUnlockActivitiesWithASpecifiedActivityTagAction"/>
     </widget>
     <widget class="QMenu" name="menuView_teachers">
      <property name="title">
@@ -2571,6 +2574,16 @@
   <action name="studentsComboBoxesStyleAction">
    <property name="text">
     <string>Students' combo boxes style</string>
+   </property>
+  </action>
+  <action name="timetableLockActivitiesWithASpecifiedActivityTagAction">
+   <property name="text">
+    <string comment="It means lock all the activities which have attached a specified activity tag">Lock all activities with a specified activity tag</string>
+   </property>
+  </action>
+  <action name="timetableUnlockActivitiesWithASpecifiedActivityTagAction">
+   <property name="text">
+    <string comment="It means unlock all the activities which have attached a specified activity tag">Unlock all activities with a specified activity tag</string>
    </property>
   </action>
  </widget>

@@ -357,6 +357,8 @@ public slots:
 	void on_timetableUnlockActivitiesDayAction_triggered();
 	void on_timetableLockActivitiesEndStudentsDayAction_triggered();
 	void on_timetableUnlockActivitiesEndStudentsDayAction_triggered();
+	void on_timetableLockActivitiesWithASpecifiedActivityTagAction_triggered();
+	void on_timetableUnlockActivitiesWithASpecifiedActivityTagAction_triggered();
 
 	void on_timetableSaveTimetableAsAction_triggered();
 
