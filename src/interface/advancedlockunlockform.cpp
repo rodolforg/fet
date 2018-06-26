@@ -473,10 +473,10 @@ void AdvancedLockUnlockForm::unlockDay(QWidget* parent)
 			foreach(ConstraintActivityPreferredStartingTime* c, gt.rules.apstHash.value(aid, QSet<ConstraintActivityPreferredStartingTime*>())){
 				assert(aid==c->activityId);
 				if(c->weightPercentage==100.0 && c->day>=0 && c->hour>=0){
-					if(c->day!=selectedDayInt){
+//					if(c->day!=selectedDayInt){
 						//QMessageBox::warning(&taDialog, tr("FET warning"), tr("Incorrect data - time constraint is incorrect - please regenerate the timetable. Please report possible bug."));
-						//above test is no good???
-					}
+						//above test is not good???
+//					}
 					//assert(c->day==selectedDayInt);
 					
 					if(!c->permanentlyLocked){
@@ -2099,10 +2099,10 @@ void AdvancedLockUnlockForm::unlockDayWithoutTimetable(QWidget* parent)
 			foreach(ConstraintActivityPreferredStartingTime* c, gt.rules.apstHash.value(aid, QSet<ConstraintActivityPreferredStartingTime*>())){
 				assert(aid==c->activityId);
 				if(c->weightPercentage==100.0 && c->day>=0 && c->hour>=0){
-					if(c->day!=selectedDayInt){
+//					if(c->day!=selectedDayInt){
 						//QMessageBox::warning(&taDialog, tr("FET warning"), tr("Incorrect data - time constraint is incorrect - please regenerate the timetable. Please report possible bug."));
-						//above test is no good???
-					}
+						//above test is not good???
+//					}
 					//assert(c->day==selectedDayInt);
 					
 					if(!c->permanentlyLocked){
