@@ -2075,21 +2075,23 @@ void AdvancedLockUnlockForm::unlockDayWithoutTimetable(QWidget* parent)
 	
 	QSet<int> actsSet;
 	
-	if(unlockTime)
+	if(unlockTime || unlockSpace) // ||unlockSpace is added on 2018-06-26, correcting a bug if the user only selected Space and the timetable was not generated.
 		foreach(TimeConstraint* tc, gt.rules.timeConstraintsList)
 			if(tc->type==CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIME){
 				ConstraintActivityPreferredStartingTime* c=(ConstraintActivityPreferredStartingTime*)tc;
 				if(c->weightPercentage==100.0 && c->day>=0 && c->hour>=0 && c->day==selectedDayInt){
 					actsSet.insert(c->activityId);
-					if(!c->permanentlyLocked){
-						removedTimeConstraints.append((TimeConstraint*)c);
-						removedTimeConstraintsString+=c->getDetailedDescription(gt.rules)+"\n";
-						removedTime++;
-					}
-					else{
-						notRemovedTimeConstraints.append((TimeConstraint*)c);
-						notRemovedTimeConstraintsString+=c->getDetailedDescription(gt.rules)+"\n";
-						notRemovedTime++;
+					if(unlockTime){
+						if(!c->permanentlyLocked){
+							removedTimeConstraints.append((TimeConstraint*)c);
+							removedTimeConstraintsString+=c->getDetailedDescription(gt.rules)+"\n";
+							removedTime++;
+						}
+						else{
+							notRemovedTimeConstraints.append((TimeConstraint*)c);
+							notRemovedTimeConstraintsString+=c->getDetailedDescription(gt.rules)+"\n";
+							notRemovedTime++;
+						}
 					}
 				}
 			}
