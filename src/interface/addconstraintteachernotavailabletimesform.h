@@ -33,7 +33,7 @@ public:
 
 	void colorItem(QTableWidgetItem* item);
 
-public slots:	
+public slots:
 	void addCurrentConstraint();
 
 	void itemClicked(QTableWidgetItem* item);
