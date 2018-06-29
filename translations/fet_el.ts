@@ -55162,62 +55162,62 @@ Bottom: %4</source>
 <context>
     <name>TimetableViewForm</name>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="492"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="710"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="684"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="867"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="487"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="682"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="498"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="716"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="690"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="873"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="493"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="688"/>
         <source>permanently locked time</source>
         <comment>refers to activity</comment>
         <translation>μόνιμα &quot;κλειδωμένη&quot; χρονικά</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="496"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="714"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="688"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="871"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="491"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="686"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="502"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="720"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="694"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="877"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="497"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="692"/>
         <source>locked time</source>
         <comment>refers to activity</comment>
         <translation>&quot;κλειδωμένη&quot; χρονικά</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="500"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="718"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="692"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="875"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="495"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="690"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="506"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="724"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="698"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="881"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="501"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="696"/>
         <source>permanently locked space</source>
         <comment>refers to activity</comment>
         <translation>μόνιμα &quot;κλειδωμένη&quot; χωρικά</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="503"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="721"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="695"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="878"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="498"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="693"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="509"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="727"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="701"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="884"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="504"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="699"/>
         <source>locked space</source>
         <comment>refers to activity</comment>
         <translation>&quot;κλειδωμένη&quot; χωρικά</translation>
     </message>
     <message numerus="yes">
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="781"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="814"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1050"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1083"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="986"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1019"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1244"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1277"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="774"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="807"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1016"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1049"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="787"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="820"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1056"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1089"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="992"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1025"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1250"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1283"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="780"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="813"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1022"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1055"/>
         <source>Added %n locking time constraint(s).</source>
         <comment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field.Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &apos;Handling Plurals&apos;.You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts(open these files with Qt Linguist and see the translation of this field).</comment>
         <translation>
@@ -55226,18 +55226,18 @@ Bottom: %4</source>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="789"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="822"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1058"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1091"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="994"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1027"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1252"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1285"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="782"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="815"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1024"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1057"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="795"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="828"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1064"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1097"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1000"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1033"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1258"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1291"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="788"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="821"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1030"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1063"/>
         <source>Added %n locking space constraint(s).</source>
         <comment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field.Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &apos;Handling Plurals&apos;.You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts(open these files with Qt Linguist and see the translation of this field).</comment>
         <translation>
@@ -55246,18 +55246,18 @@ Bottom: %4</source>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="797"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="830"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1066"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1099"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1002"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1035"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1260"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1293"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="790"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="823"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1032"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1065"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="803"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="836"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1072"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1105"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1008"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1041"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1266"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1299"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="796"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="829"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1038"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1071"/>
         <source>Removed %n locking time constraint(s).</source>
         <comment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field.Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &apos;Handling Plurals&apos;.You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts(open these files with Qt Linguist and see the translation of this field).</comment>
         <translation>
@@ -55266,18 +55266,18 @@ Bottom: %4</source>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="805"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="838"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1074"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1107"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1010"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1043"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1268"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1301"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="798"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="831"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1040"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1073"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="811"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="844"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1080"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1113"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1016"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1049"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1274"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1307"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="804"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="837"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1046"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1079"/>
         <source>Removed %n locking space constraint(s).</source>
         <comment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field.Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &apos;Handling Plurals&apos;.You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts(open these files with Qt Linguist and see the translation of this field).</comment>
         <translation>
@@ -55286,32 +55286,32 @@ Bottom: %4</source>
         </translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="856"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1125"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1061"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1319"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="849"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1091"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="862"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1131"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1067"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1325"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="855"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1097"/>
         <source>No locking constraints added or removed.</source>
         <translation>Δεν έχει προστεθεί ούτε και αφαιρεθεί κανένας περιορισμός &quot;κλειδώματος&quot;.</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="889"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1174"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1094"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1368"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="882"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1140"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="895"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1180"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1100"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1374"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="888"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1146"/>
         <source>Lock/unlock: you can select one or more activities in the table and toggle lock/unlock in time, space or both.</source>
         <translation>Κλείδωμα/Ξεκλείδωμα: μπορείτε να επιλέξετε μία ή περισσότερες δραστηριότητες στον πίνακα και εναλλάξετε το κλείδωμα/ξεκλείδωμα. Αυτό μπορεί να γίνει είτε μόνον ως προς τον χρόνο, είτε μόνον ως προς τον χώρο, είτε ως προς τον χρόνο + χώρο.</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="891"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1176"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1096"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1370"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="884"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1142"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="897"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1182"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1102"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1376"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="890"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1148"/>
         <source>There will be added or removed locking constraints for the selected activities (they can be unlocked only if they are not permanently locked).</source>
         <translation>Θα προστεθούν ή διαγραφούν περιορισμοί &quot;κλειδώματος&quot; για τις επιλεγμένες δραστηριότητες (μπορούν να &quot;ξεκλειδωθούν&quot; μόνον αν δεν είναι μόνιμα &quot;κλειδωμένοι&quot;).</translation>
     </message>
@@ -55364,28 +55364,28 @@ Bottom: %4</source>
         <translation>ΚΧώ</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="893"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1178"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1098"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1372"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="886"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1144"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="899"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1184"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1104"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1378"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="892"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1150"/>
         <source>Locking time constraints are constraints of type activity preferred starting time. Locking space constraints are constraints of type activity preferred room. You can see these constraints in the corresponding constraints dialogs. New locking constraints are added at the end of the list of constraints.</source>
         <translation>Οι περιορισμοί χρονικού κλειδώματος είναι περιορισμοί του τύπου &quot;δραστηριότητα - προτιμητέος χρόνος έναρξης&quot;. Οι περιορισμοί χωρικού κλειδώματος είναι περιορισμοί του τύπου &quot;δραστηριότητα - προτιμητέα αίθουσα&quot;. Μπορείτε να δείτε αυτούς τους περιορισμούς στους αντίστοιχους διαλόγους περιορισμών. Οι νέοι περιορισμοί κλειδώματος προστίθενται στο τέλος της λίστας των περιορισμών.</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="896"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1181"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1101"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1375"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="889"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1147"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="902"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1187"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1107"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1381"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="895"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1153"/>
         <source>If a cell is (permanently) locked in time or space, it contains abbreviations to show that: PLT (permanently locked time), LT (locked time), PLS (permanently locked space) or LS (locked space).</source>
         <comment>Translate the abbreviations also. Make sure the abbreviations in your language are different between themselves and the user can differentiate easily between them. These abbreviations may appear also in other places, please use the same abbreviations.</comment>
         <translation>Αν ένα κελί είναι (μόνιμα) κλειδωμένο ως προς τον χρόνο ή τον χώρο, περιέχει και τις ανάλογες συντομογραφίες: ΜΚΧρ (μόνιμα κλειδωμένος χρόνος), ΚΧρ (κλειδωμένος χρόνος), ΜΚΧώ (μόνιμα κλειδωμένος χώρος) ή ΚΧώ (κλειδωμένος χώρος).</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1105"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1111"/>
         <source>There is a combo box in this dialog. You can choose each year, group, and subgroup if you select &apos;Years&apos;, each group and subgroup if you select &apos;Groups&apos;, or each subgroup if you select &apos;Subgroups&apos;.</source>
         <translation>Υπάρχει ένα σύνθετο πλαίσιο στον συγκεκριμένο διάλογο. Μπορείτε να επιλέξετε το κάθε έτος, τμήμα και υποτμήμα αν επιλέξετε &quot;Έτη&quot;, το κάθε τμήμα και υποτμήμα αν επιλέξετε &quot;Τμήματα&quot;, ή το κάθε υποτμήμα αν επιλέξετε &quot;Υποτμήματα&quot;.</translation>
     </message>
@@ -55404,15 +55404,15 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="442"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="446"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="465"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="552"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="556"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="578"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="625"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="637"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="650"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="698"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="710"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="723"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="558"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="562"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="584"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="631"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="643"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="656"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="704"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="716"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="729"/>
         <source>FET warning</source>
         <translation>FET - Προειδοποίηση</translation>
     </message>
@@ -55426,14 +55426,14 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="241"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="442"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="446"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="552"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="556"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="558"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="562"/>
         <source>Timetable not available in view rooms timetable dialog - please generate a new timetable</source>
         <translation>Ωρολόγιο πρόγραμμα μη διαθέσιμο στον διάλογο προβολής ωρολογίου προγράμματος αιθουσών - παρακαλώ δημιουργήστε ένα νέο ωρολόγιο πρόγραμμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="252"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="578"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="584"/>
         <source>Invalid room - please close this dialog and open a new view rooms timetable dialog</source>
         <translation>Μη αποδεκτή αίθουσα - παρακαλώ κλείστε τον διάλογο αυτό και ανοίξτε μία νέα προβολή του ωρολογίου προγράμματος αιθουσών</translation>
     </message>
@@ -55460,110 +55460,120 @@ Bottom: %4</source>
         <translation>Αίθουσα: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="514"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="488"/>
+        <source>Building=%1</source>
+        <translation>Κτίριο=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="491"/>
+        <source>Capacity=%1</source>
+        <translation>Χωρητικότητα=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="520"/>
         <source>Room is not available with weight %1%</source>
         <translation>Η αίθουσα δεν είναι διαθέσιμη με ποσοστό βαρύτητας %1%</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="518"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="524"/>
         <source>Break with weight 100% in this slot</source>
         <translation>Διάλειμμα με βαρύτητα 100% στην περίοδο αυτή</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="546"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="565"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="665"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="738"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="857"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="552"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="571"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="671"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="744"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="863"/>
         <source>FET information</source>
         <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="547"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="553"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
         <translation>Κατάρτιση ωρολογίου προγράμματος σε εξέλιξη.
 Παρακαλώ σταματήστε την κατάρτιση πριν συνεχίσετε.</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="565"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="571"/>
         <source>Please select a room</source>
         <translation>Παρακαλώ επιλέξτε μία αίθουσα</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="610"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="683"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="616"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="689"/>
         <source>Added the following constraint:</source>
         <translation>Προστέθηκε ο παρακάτω περιορισμός:</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="625"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="637"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="698"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="710"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="631"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="643"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="704"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="716"/>
         <source>Small problem detected</source>
         <translation>Εντοπίστηκε μικρό πρόβλημα</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="626"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="638"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="632"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="644"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
         <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέος χρόνος έναρξης&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="627"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="639"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="700"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="712"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="633"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="645"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="706"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="718"/>
         <source>A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again</source>
         <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ο συγχρονισμός. Οπότε, προσπαθήστε να κλείσετε τον διάλογο προβολής ωρολογίου προγράμματος και ανοίξτε τον ξανά</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="628"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="640"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="701"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="713"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="634"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="646"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="707"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="719"/>
         <source>Please report possible bug</source>
         <translation>Παρακαλώ να αναφέρετε το πιθανό σφάλμα λογισμικού (bug)</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="632"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="705"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="638"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="711"/>
         <source>Constraint %1 will not be removed, because it is permanently locked. If you want to unlock it you must go to the constraints menu.</source>
         <translation>Ο περιορισμός %1 δεν θα διαγραφεί, διότι είναι μόνιμα κλειδωμένος. Αν θέλετε να τον ξεκλειδώσετε, θα πρέπει να μεταβείτε στο μενού των περιορισμών.</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="650"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="723"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="656"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="729"/>
         <source>You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints</source>
         <translation>Ενδεχομένως να έχετε κάποιο πρόβλημα, διότι το FET περίμενε να διαγραφεί 1 περιορισμός, αλλά τελικά θα διαγραφούν %1 περιορισμοί</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="653"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="726"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="659"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="732"/>
         <source>The following constraint will be deleted:</source>
         <translation>Ο παρακάτω περιορισμός θα διαγραφεί:</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="666"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="739"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="672"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="745"/>
         <source>Skip information</source>
         <translation>Παράβλεψη πληροφορίας</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="666"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="739"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="672"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="745"/>
         <source>See next</source>
         <translation>Προβολή επόμενου</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="699"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="711"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="705"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="717"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
         <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέα αίθουσα&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="900"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="906"/>
         <source>FET help</source>
         <translation>FET - Βοήθεια</translation>
     </message>
@@ -55629,17 +55639,17 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="661"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="671"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="680"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="771"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="777"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="783"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="863"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="877"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="903"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="789"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="869"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="883"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="909"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="946"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="960"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="988"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="915"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="952"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="966"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="994"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1000"/>
         <source>FET warning</source>
         <translation>FET - Προειδοποίηση</translation>
     </message>
@@ -55647,7 +55657,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="205"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="429"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="661"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="783"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="789"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
         <translation>Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει ή διαγράψει κάποιες αίθουσες. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
     </message>
@@ -55674,8 +55684,8 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="643"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="649"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="771"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="777"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="783"/>
         <source>Timetable not available in view rooms timetable dialog - please generate a new timetable</source>
         <translation>Ωρολόγιο πρόγραμμα μη διαθέσιμο στον διάλογο προβολής ωρολογίου προγράμματος αιθουσών - παρακαλώ δημιουργήστε ένα νέο ωρολόγιο πρόγραμμα</translation>
     </message>
@@ -55695,125 +55705,135 @@ Please stop simulation before this.</source>
         <translation>Αίθουσα: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="732"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="700"/>
+        <source>Building=%1</source>
+        <translation>Κτίριο=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="703"/>
+        <source>Capacity=%1</source>
+        <translation>Χωρητικότητα=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="738"/>
         <source>Room is not available with weight %1%</source>
         <translation>Η αίθουσα δεν είναι διαθέσιμη με ποσοστό βαρύτητας %1%</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="736"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="742"/>
         <source>Break with weight 100% in this slot</source>
         <translation>Διάλειμμα με βαρύτητα 100% στην περίοδο αυτή</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="765"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="924"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1009"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1126"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="771"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="930"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1015"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1132"/>
         <source>FET information</source>
         <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="766"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="772"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
         <translation>Κατάρτιση ωρολογίου προγράμματος σε εξέλιξη.
 Παρακαλώ σταματήστε την κατάρτιση πριν συνεχίσετε.</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="863"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="877"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="946"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="960"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="869"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="883"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="952"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="966"/>
         <source>Small problem detected</source>
         <translation>Εντοπίστηκε μικρό πρόβλημα</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="864"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="878"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="870"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="884"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
         <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέος χρόνος έναρξης&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="865"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="879"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="948"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="962"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="871"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="885"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="954"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="968"/>
         <source>A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again</source>
         <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ο συγχρονισμός. Οπότε, προσπαθήστε να κλείσετε τον διάλογο προβολής ωρολογίου προγράμματος και ανοίξτε τον ξανά</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="866"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="880"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="949"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="963"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="872"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="886"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="955"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="969"/>
         <source>Please report possible bug</source>
         <translation>Παρακαλώ να αναφέρετε το πιθανό σφάλμα λογισμικού (bug)</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="871"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="954"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="877"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="960"/>
         <source>Constraint %1 will not be removed, because it is permanently locked. If you want to unlock it you must go to the constraints menu.</source>
         <translation>Ο περιορισμός %1 δεν θα διαγραφεί, διότι είναι μόνιμα κλειδωμένος. Αν θέλετε να τον ξεκλειδώσετε, θα πρέπει να μεταβείτε στο μενού των περιορισμών.</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="898"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="983"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="904"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="989"/>
         <source>Added the following constraint:</source>
         <translation>Προστέθηκε ο παρακάτω περιορισμός:</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="903"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="988"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="909"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="994"/>
         <source>You may have a problem, because FET expected to add 1 constraint, but this is not possible. Please report possible bug</source>
         <translation>Ενδεχομένως να έχετε κάποιο πρόβλημα, διότι το FET περίμενε να προστεθεί 1 περιορισμός, αλλά αυτό δεν είναι δυνατόν. Παρακαλώ να αναφέρετε το πιθανό σφάλμα λογισμικού (bug)</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="909"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="994"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="915"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1000"/>
         <source>You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints</source>
         <translation>Ενδεχομένως να έχετε κάποιο πρόβλημα, διότι το FET περίμενε να διαγραφεί 1 περιορισμός, αλλά τελικά θα διαγραφούν %1 περιορισμοί</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="912"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="997"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="918"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1003"/>
         <source>The following constraint will be deleted:</source>
         <translation>Ο παρακάτω περιορισμός θα διαγραφεί:</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="925"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1010"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="931"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1016"/>
         <source>Skip information</source>
         <translation>Παράβλεψη πληροφορίας</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="925"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1010"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="931"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1016"/>
         <source>See next</source>
         <translation>Προβολή επόμενου</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="947"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="961"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="953"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="967"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
         <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέα αίθουσα&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1186"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1192"/>
         <source>If a whole column (day+hour) is selected, the activities with no room from that column will NOT be locked/unlocked.</source>
         <translation>Αν επιλεγεί μία ολόκληρη στήλη (ημέρα+ώρα), οι δραστηριότητες χωρίς αίθουσα της στήλης αυτής ΔΕΝ θα κλειδωθούν/ξεκλειδωθούν.</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1189"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1195"/>
         <source>A bold font cell means that the activity is locked in time, either permanently or not.</source>
         <translation>Κελί με έντονη (bold) γραμματοσειρά: η δραστηριότητα είναι &quot;κλειδωμένη&quot; χρονικά (είτε μόνιμα, είτε όχι).</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1191"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1197"/>
         <source>An italic font cell means that the activity is locked in space, either permanently or not.</source>
         <translation>Κελί με πλάγια (italic) γραμματοσειρά: η δραστηριότητα είναι &quot;κλειδωμένη&quot; χωρικά (είτε μόνιμα, είτε όχι).</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1193"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1199"/>
         <source>FET help</source>
         <translation>FET - Βοήθεια</translation>
     </message>
@@ -55911,15 +55931,15 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="621"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="627"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="649"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="743"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="749"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="778"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="830"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="842"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="855"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="903"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="915"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="928"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="755"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="784"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="836"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="848"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="861"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="909"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="921"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="934"/>
         <source>FET warning</source>
         <translation>FET - Προειδοποίηση</translation>
     </message>
@@ -55927,7 +55947,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="323"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="354"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="621"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="743"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="749"/>
         <source>Timetable not available in view students timetable dialog - please generate a new timetable</source>
         <translation>Ωρολόγιο πρόγραμμα μη διαθέσιμο στον διάλογο προβολής ωρολογίου προγράμματος μαθητών - παρακαλώ δημιουργήστε ένα νέο ωρολόγιο πρόγραμμα</translation>
     </message>
@@ -55945,7 +55965,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="424"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="627"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="749"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="755"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
         <translation>Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει ή διαγράψει κάποιες αίθουσες. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
     </message>
@@ -55986,7 +56006,7 @@ Please stop simulation before this.</source>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="649"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="778"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="784"/>
         <source>Invalid students set - please close this dialog and open a new view students timetable dialog</source>
         <translation>Μη αποδεκτή ομάδα μαθητών - παρακαλώ κλείστε τον διάλογο αυτό και ανοίξτε μία νέα προβολή του ωρολογίου προγράμματος των μαθητών</translation>
     </message>
@@ -55996,122 +56016,132 @@ Please stop simulation before this.</source>
         <translation>Αίθουσα: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="706"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="681"/>
+        <source>Building=%1</source>
+        <translation>Κτίριο=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="684"/>
+        <source>Capacity=%1</source>
+        <translation>Χωρητικότητα=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="712"/>
         <source>Students subgroup is not available 100% in this slot</source>
         <translation>Υποτμήμα μαθητών 100% μη διαθέσιμο στην περίοδο αυτή</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="710"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="716"/>
         <source>Break with weight 100% in this slot</source>
         <translation>Διάλειμμα με βαρύτητα 100% στην περίοδο αυτή</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="736"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="758"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="762"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="766"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="870"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="943"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1062"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="742"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="764"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="768"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="772"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="876"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="949"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1068"/>
         <source>FET information</source>
         <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="737"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="743"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
         <translation>Κατάρτιση ωρολογίου προγράμματος σε εξέλιξη.
 Παρακαλώ σταματήστε την κατάρτιση πριν συνεχίσετε.</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="758"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="764"/>
         <source>Please select a year</source>
         <translation>Παρακαλώ επιλέξτε ένα έτος</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="762"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="768"/>
         <source>Please select a group</source>
         <translation>Παρακαλώ επιλέξτε ένα τμήμα</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="766"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="772"/>
         <source>Please select a subgroup</source>
         <translation>Παρακαλώ επιλέξτε ένα υποτμήμα</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="815"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="888"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="821"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="894"/>
         <source>Added the following constraint:</source>
         <translation>Προστέθηκε ο παρακάτω περιορισμός:</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="830"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="842"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="903"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="915"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="836"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="848"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="909"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="921"/>
         <source>Small problem detected</source>
         <translation>Εντοπίστηκε μικρό πρόβλημα</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="831"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="843"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="837"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="849"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
         <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέος χρόνος έναρξης&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="832"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="844"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="905"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="917"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="838"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="850"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="911"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="923"/>
         <source>A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again</source>
         <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ο συγχρονισμός. Οπότε, προσπαθήστε να κλείσετε τον διάλογο προβολής ωρολογίου προγράμματος και ανοίξτε τον ξανά</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="833"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="845"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="906"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="918"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="839"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="851"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="912"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="924"/>
         <source>Please report possible bug</source>
         <translation>Παρακαλώ να αναφέρετε το πιθανό σφάλμα λογισμικού (bug)</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="837"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="910"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="843"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="916"/>
         <source>Constraint %1 will not be removed, because it is permanently locked. If you want to unlock it you must go to the constraints menu.</source>
         <translation>Ο περιορισμός %1 δεν θα διαγραφεί, διότι είναι μόνιμα κλειδωμένος. Αν θέλετε να τον ξεκλειδώσετε, θα πρέπει να μεταβείτε στο μενού των περιορισμών.</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="855"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="928"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="861"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="934"/>
         <source>You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints</source>
         <translation>Ενδεχομένως να έχετε κάποιο πρόβλημα, διότι το FET περίμενε να διαγραφεί 1 περιορισμός, αλλά τελικά θα διαγραφούν %1 περιορισμοί</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="858"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="931"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="864"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="937"/>
         <source>The following constraint will be deleted:</source>
         <translation>Ο παρακάτω περιορισμός θα διαγραφεί:</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="871"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="944"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="877"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="950"/>
         <source>Skip information</source>
         <translation>Παράβλεψη πληροφορίας</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="871"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="944"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="877"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="950"/>
         <source>See next</source>
         <translation>Προβολή επόμενου</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="904"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="916"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="910"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="922"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
         <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέα αίθουσα&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1109"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1115"/>
         <source>FET help</source>
         <translation>FET - Βοήθεια</translation>
     </message>
@@ -56191,16 +56221,16 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="766"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="772"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="792"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="928"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="934"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1057"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1071"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1097"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="940"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1063"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1077"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1103"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1140"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1154"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1182"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1109"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1146"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1160"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1188"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1194"/>
         <source>FET warning</source>
         <translation>FET - Προειδοποίηση</translation>
     </message>
@@ -56213,13 +56243,13 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="493"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="772"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="934"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="940"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
         <translation>Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει ή διαγράψει κάποιες αίθουσες. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="760"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="928"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="934"/>
         <source>Timetable not available in view students timetable dialog - please generate a new timetable</source>
         <translation>Ωρολόγιο πρόγραμμα μη διαθέσιμο στον διάλογο προβολής ωρολογίου προγράμματος μαθητών - παρακαλώ δημιουργήστε ένα νέο ωρολόγιο πρόγραμμα</translation>
     </message>
@@ -56234,125 +56264,135 @@ Please stop simulation before this.</source>
         <translation>Αίθουσα: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="890"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="864"/>
+        <source>Building=%1</source>
+        <translation>Κτίριο=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="867"/>
+        <source>Capacity=%1</source>
+        <translation>Χωρητικότητα=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="896"/>
         <source>Students set is not available 100% in this slot</source>
         <translation>Ομάδα μαθητών 100% μη διαθέσιμη στην περίοδο αυτή</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="894"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="900"/>
         <source>Break with weight 100% in this slot</source>
         <translation>Διάλειμμα με βαρύτητα 100% στην περίοδο αυτή</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="922"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1118"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1203"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1320"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="928"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1124"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1209"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1326"/>
         <source>FET information</source>
         <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="923"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="929"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
         <translation>Κατάρτιση ωρολογίου προγράμματος σε εξέλιξη.
 Παρακαλώ σταματήστε την κατάρτιση πριν συνεχίσετε.</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1057"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1071"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1140"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1154"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1063"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1077"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1146"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1160"/>
         <source>Small problem detected</source>
         <translation>Εντοπίστηκε μικρό πρόβλημα</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1058"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1072"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1064"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1078"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
         <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέος χρόνος έναρξης&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1059"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1073"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1142"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1156"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1065"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1079"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1148"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1162"/>
         <source>A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again</source>
         <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ο συγχρονισμός. Οπότε, προσπαθήστε να κλείσετε τον διάλογο προβολής ωρολογίου προγράμματος και ανοίξτε τον ξανά</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1060"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1074"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1143"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1157"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1066"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1080"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1149"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1163"/>
         <source>Please report possible bug</source>
         <translation>Παρακαλώ να αναφέρετε το πιθανό σφάλμα λογισμικού (bug)</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1065"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1148"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1071"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1154"/>
         <source>Constraint %1 will not be removed, because it is permanently locked. If you want to unlock it you must go to the constraints menu.</source>
         <translation>Ο περιορισμός %1 δεν θα διαγραφεί, διότι είναι μόνιμα κλειδωμένος. Αν θέλετε να τον ξεκλειδώσετε, θα πρέπει να μεταβείτε στο μενού των περιορισμών.</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1092"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1177"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1098"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1183"/>
         <source>Added the following constraint:</source>
         <translation>Προστέθηκε ο παρακάτω περιορισμός:</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1097"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1182"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1103"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1188"/>
         <source>You may have a problem, because FET expected to add 1 constraint, but this is not possible. Please report possible bug</source>
         <translation>Ενδεχομένως να έχετε κάποιο πρόβλημα, διότι το FET περίμενε να προστεθεί 1 περιορισμός, αλλά αυτό δεν είναι δυνατόν. Παρακαλώ να αναφέρετε το πιθανό σφάλμα λογισμικού (bug)</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1103"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1188"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1109"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1194"/>
         <source>You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints</source>
         <translation>Ενδεχομένως να έχετε κάποιο πρόβλημα, διότι το FET περίμενε να διαγραφεί 1 περιορισμός, αλλά τελικά θα διαγραφούν %1 περιορισμοί</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1106"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1191"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1112"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1197"/>
         <source>The following constraint will be deleted:</source>
         <translation>Ο παρακάτω περιορισμός θα διαγραφεί:</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1119"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1204"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1125"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1210"/>
         <source>Skip information</source>
         <translation>Παράβλεψη πληροφορίας</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1119"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1204"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1125"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1210"/>
         <source>See next</source>
         <translation>Προβολή επόμενου</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1141"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1155"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1147"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1161"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
         <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέα αίθουσα&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1380"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1386"/>
         <source>If a whole column (day+hour) is selected, there will be locked/unlocked also the dummy activities (activities with no students sets) from that column.</source>
         <translation>Αν επιλεγεί μία ολόκληρη στήλη (ημέρα+ώρα), θα κλειδωθούν/ξεκλειδωθούν και οι ψευδο-δραστηριότητες (δραστηριότητες χωρίς ομάδες μαθητών) της στήλης αυτής.</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1383"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1389"/>
         <source>A bold font cell means that the activity is locked in time, either permanently or not.</source>
         <translation>Κελί με έντονη (bold) γραμματοσειρά: η δραστηριότητα είναι &quot;κλειδωμένη&quot; χρονικά (είτε μόνιμα, είτε όχι).</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1385"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1391"/>
         <source>An italic font cell means that the activity is locked in space, either permanently or not.</source>
         <translation>Κελί με πλάγια (italic) γραμματοσειρά: η δραστηριότητα είναι &quot;κλειδωμένη&quot; χωρικά (είτε μόνιμα, είτε όχι).</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1387"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1393"/>
         <source>FET help</source>
         <translation>FET - Βοήθεια</translation>
     </message>
@@ -56442,15 +56482,15 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="437"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="443"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="461"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="548"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="554"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="570"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="617"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="629"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="642"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="691"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="703"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="716"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="560"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="576"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="623"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="635"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="648"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="697"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="709"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="722"/>
         <source>FET warning</source>
         <translation>FET - Προειδοποίηση</translation>
     </message>
@@ -56462,13 +56502,13 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="223"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="437"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="548"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="554"/>
         <source>Timetable not available in view teachers timetable dialog - please generate a new timetable</source>
         <translation>Ωρολόγιο πρόγραμμα μη διαθέσιμο στον διάλογο προβολής ωρολογίου προγράμματος εκπαιδευτικών - παρακαλώ δημιουργήστε ένα νέο ωρολόγιο πρόγραμμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="233"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="570"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="576"/>
         <source>Invalid teacher - please close this dialog and open a new view teachers dialog</source>
         <translation>Μη αποδεκτός εκπαιδευτικός - παρακαλώ κλείστε τον διάλογο αυτό και ανοίξτε μία νέα προβολή του ωρολογίου προγράμματος των εκπαιδευτικών</translation>
     </message>
@@ -56481,7 +56521,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="249"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="443"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="554"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="560"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
         <translation>Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει ή διαγράψει κάποιες αίθουσες. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
     </message>
@@ -56501,110 +56541,120 @@ Please stop simulation before this.</source>
         <translation>Αίθουσα: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="509"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="484"/>
+        <source>Building=%1</source>
+        <translation>Κτίριο=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="487"/>
+        <source>Capacity=%1</source>
+        <translation>Χωρητικότητα=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="515"/>
         <source>Teacher is not available 100% in this slot</source>
         <translation>Εκπαιδευτικός 100% μη διαθέσιμος στην περίοδο αυτή</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="513"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="519"/>
         <source>Break with weight 100% in this slot</source>
         <translation>Διάλειμμα με βαρύτητα 100% στην περίοδο αυτή</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="542"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="562"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="657"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="731"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="850"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="548"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="568"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="663"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="737"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="856"/>
         <source>FET information</source>
         <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="543"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="549"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
         <translation>Κατάρτιση ωρολογίου προγράμματος σε εξέλιξη.
 Παρακαλώ σταματήστε την κατάρτιση πριν συνεχίσετε.</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="562"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="568"/>
         <source>Please select a teacher</source>
         <translation>Παρακαλώ επιλέξτε έναν εκπαιδευτικό</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="603"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="675"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="609"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="681"/>
         <source>Added the following constraint:</source>
         <translation>Προστέθηκε ο παρακάτω περιορισμός:</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="617"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="629"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="691"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="703"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="623"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="635"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="697"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="709"/>
         <source>Small problem detected</source>
         <translation>Εντοπίστηκε μικρό πρόβλημα</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="618"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="630"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="624"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="636"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
         <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέος χρόνος έναρξης&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="619"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="631"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="693"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="705"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="625"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="637"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="699"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="711"/>
         <source>A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again</source>
         <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ο συγχρονισμός. Οπότε, προσπαθήστε να κλείσετε τον διάλογο προβολής ωρολογίου προγράμματος και ανοίξτε τον ξανά</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="620"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="632"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="694"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="706"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="626"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="638"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="700"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="712"/>
         <source>Please report possible bug</source>
         <translation>Παρακαλώ να αναφέρετε το πιθανό σφάλμα λογισμικού (bug)</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="624"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="698"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="630"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="704"/>
         <source>Constraint %1 will not be removed, because it is permanently locked. If you want to unlock it you must go to the constraints menu.</source>
         <translation>Ο περιορισμός %1 δεν θα διαγραφεί, διότι είναι μόνιμα κλειδωμένος. Αν θέλετε να τον ξεκλειδώσετε, θα πρέπει να μεταβείτε στο μενού των περιορισμών.</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="642"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="716"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="648"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="722"/>
         <source>You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints</source>
         <translation>Ενδεχομένως να έχετε κάποιο πρόβλημα, διότι το FET περίμενε να διαγραφεί 1 περιορισμός, αλλά τελικά θα διαγραφούν %1 περιορισμοί</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="645"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="719"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="651"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="725"/>
         <source>The following constraint will be deleted:</source>
         <translation>Ο παρακάτω περιορισμός θα διαγραφεί:</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="658"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="732"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="664"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="738"/>
         <source>Skip information</source>
         <translation>Παράβλεψη πληροφορίας</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="658"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="732"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="664"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="738"/>
         <source>See next</source>
         <translation>Προβολή επόμενου</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="692"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="704"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="698"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="710"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
         <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέα αίθουσα&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="893"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="899"/>
         <source>FET help</source>
         <translation>FET - Βοήθεια</translation>
     </message>
@@ -56668,16 +56718,16 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="639"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="649"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="658"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="743"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="749"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="829"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="843"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="869"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="755"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="835"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="849"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="875"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="912"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="926"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="954"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="881"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="918"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="932"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="960"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="966"/>
         <source>FET warning</source>
         <translation>FET - Προειδοποίηση</translation>
     </message>
@@ -56709,13 +56759,13 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="414"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="639"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="749"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="755"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
         <translation>Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει ή διαγράψει κάποιες αίθουσες. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="627"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="743"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="749"/>
         <source>Timetable not available in view teachers timetable dialog - please generate a new timetable</source>
         <translation>Ωρολόγιο πρόγραμμα μη διαθέσιμο στον διάλογο προβολής ωρολογίου προγράμματος εκπαιδευτικών - παρακαλώ δημιουργήστε ένα νέο ωρολόγιο πρόγραμμα</translation>
     </message>
@@ -56730,125 +56780,135 @@ Please stop simulation before this.</source>
         <translation>Αίθουσα: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="704"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="679"/>
+        <source>Building=%1</source>
+        <translation>Κτίριο=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="682"/>
+        <source>Capacity=%1</source>
+        <translation>Χωρητικότητα=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="710"/>
         <source>Teacher is not available 100% in this slot</source>
         <translation>Εκπαιδευτικός 100% μη διαθέσιμος στην περίοδο αυτή</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="708"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="714"/>
         <source>Break with weight 100% in this slot</source>
         <translation>Διάλειμμα με βαρύτητα 100% στην περίοδο αυτή</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="737"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="890"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="975"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1092"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="743"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="896"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="981"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1098"/>
         <source>FET information</source>
         <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="738"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="744"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
         <translation>Κατάρτιση ωρολογίου προγράμματος σε εξέλιξη.
 Παρακαλώ σταματήστε την κατάρτιση πριν συνεχίσετε.</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="829"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="843"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="912"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="926"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="835"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="849"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="918"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="932"/>
         <source>Small problem detected</source>
         <translation>Εντοπίστηκε μικρό πρόβλημα</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="830"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="844"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="836"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="850"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
         <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέος χρόνος έναρξης&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="831"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="845"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="914"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="928"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="837"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="851"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="920"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="934"/>
         <source>A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again</source>
         <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ο συγχρονισμός. Οπότε, προσπαθήστε να κλείσετε τον διάλογο προβολής ωρολογίου προγράμματος και ανοίξτε τον ξανά</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="832"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="846"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="915"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="929"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="838"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="852"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="921"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="935"/>
         <source>Please report possible bug</source>
         <translation>Παρακαλώ να αναφέρετε το πιθανό σφάλμα λογισμικού (bug)</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="837"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="920"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="843"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="926"/>
         <source>Constraint %1 will not be removed, because it is permanently locked. If you want to unlock it you must go to the constraints menu.</source>
         <translation>Ο περιορισμός %1 δεν θα διαγραφεί, διότι είναι μόνιμα κλειδωμένος. Αν θέλετε να τον ξεκλειδώσετε, θα πρέπει να μεταβείτε στο μενού των περιορισμών.</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="864"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="949"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="870"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="955"/>
         <source>Added the following constraint:</source>
         <translation>Προστέθηκε ο παρακάτω περιορισμός:</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="869"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="954"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="875"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="960"/>
         <source>You may have a problem, because FET expected to add 1 constraint, but this is not possible. Please report possible bug</source>
         <translation>Ενδεχομένως να έχετε κάποιο πρόβλημα, διότι το FET περίμενε να προστεθεί 1 περιορισμός, αλλά αυτό δεν είναι δυνατόν. Παρακαλώ να αναφέρετε το πιθανό σφάλμα λογισμικού (bug)</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="875"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="960"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="881"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="966"/>
         <source>You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints</source>
         <translation>Ενδεχομένως να έχετε κάποιο πρόβλημα, διότι το FET περίμενε να διαγραφεί 1 περιορισμός, αλλά τελικά θα διαγραφούν %1 περιορισμοί</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="878"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="963"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="884"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="969"/>
         <source>The following constraint will be deleted:</source>
         <translation>Ο παρακάτω περιορισμός θα διαγραφεί:</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="891"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="976"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="897"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="982"/>
         <source>Skip information</source>
         <translation>Παράβλεψη πληροφορίας</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="891"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="976"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="897"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="982"/>
         <source>See next</source>
         <translation>Προβολή επόμενου</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="913"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="927"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="919"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="933"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
         <translation>Ένα πιθανό πρόβλημα μπορεί να είναι ότι έχετε 2 ή περισσότερους περιορισμούς του τύπου &quot;δραστηριότητα - προτιμητέα αίθουσα&quot; με βαρύτητα 100% ο οποίος σχετίζεται με την δραστηριότητα με ατ %1. Παρακαλώ αφήστε μόνον έναν από τους περιορισμούς αυτούς</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1152"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1158"/>
         <source>If a whole column (day+hour) is selected, there will be locked/unlocked also the dummy activities (activities with no teacher) from that column.</source>
         <translation>Αν επιλεγεί μία ολόκληρη στήλη (ημέρα+ώρα), θα κλειδωθούν/ξεκλειδωθούν και οι ψευδο-δραστηριότητες (δραστηριότητες χωρίς εκπαιδευτικό) της στήλης αυτής.</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1155"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1161"/>
         <source>A bold font cell means that the activity is locked in time, either permanently or not.</source>
         <translation>Κελί με έντονη (bold) γραμματοσειρά: η δραστηριότητα είναι &quot;κλειδωμένη&quot; χρονικά (είτε μόνιμα, είτε όχι).</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1157"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1163"/>
         <source>An italic font cell means that the activity is locked in space, either permanently or not.</source>
         <translation>Κελί με πλάγια (italic) γραμματοσειρά: η δραστηριότητα είναι &quot;κλειδωμένη&quot; χωρικά (είτε μόνιμα, είτε όχι).</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1159"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1165"/>
         <source>FET help</source>
         <translation>FET - Βοήθεια</translation>
     </message>
