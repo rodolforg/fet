@@ -48085,12 +48085,12 @@ Notă: profesor indisponibil și pauză nu sunt socotite ca ferestre.</translati
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="59"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>June</source>
         <translation>Iunie</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="61"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>July</source>
         <translation>Iulie</translation>
     </message>

@@ -48079,12 +48079,12 @@ Nota: els no disponibles i les pauses no se&apos;ls compten als professors com a
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="59"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>June</source>
         <translation>Juny</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="61"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>July</source>
         <translation>Juliol</translation>
     </message>

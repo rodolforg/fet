@@ -48112,12 +48112,12 @@ Note: teacher not available and break are not counted as gaps.</source>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="59"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>June</source>
         <translation>Juni</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="61"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>July</source>
         <translation>Juli</translation>
     </message>

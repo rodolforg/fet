@@ -11428,47 +11428,47 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2573"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2839"/>
         <source>FET warning</source>
-        <translation type="unfinished">FET تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2282"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2573"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2839"/>
         <source>You entered this dialog, but you have no activity tags. This should not happen. Please report possible bug. Now FET will abandon the current operation and return to the main dialog, so that you don&apos;t lose data.</source>
-        <translation type="unfinished"></translation>
+        <translation>لقد دقلت إلى مربع الحوار هذا، لكن ليس لديك وسم مشترك. هذا لا ينبغي أن يحدث. فضلا ارفع تقريرا عن خطأمحتمل. الآن سيتخلى FET  عن العملية الحالية و يعود إلى مربع الحوار الأساسي، حتى لا تفقد بيانات.</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2290"/>
         <source>FET - Lock activities which have attached a certain activity tag</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - قفل الأنشطة التي لها صلة بوسم مشترك معين</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2296"/>
         <source>All activities which have attached the selected activity tag will be locked</source>
-        <translation type="unfinished"></translation>
+        <translation>كل الأنشطة التي لها صلة بالوسم المشترك المحدد ستكون مقفلة</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2296"/>
         <source>Please select the activity tag to lock:</source>
-        <translation type="unfinished"></translation>
+        <translation>فضلاً اختر الوسم المشترك المراد قفله:</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2581"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2847"/>
         <source>FET - Unlock activities which have attached a certain activity tag</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - فتح الأنشطة التي لها صلة بوسم مشترك معين</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2587"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2853"/>
         <source>All activities which have attached the selected activity tag will be unlocked (those which are not permanently locked)</source>
-        <translation type="unfinished"></translation>
+        <translation>كل الأنشطة التي لها صلة بالوسم المشترك المحدد ستكون مفتوحة (التي ليست مقفلة بشكل دائم)</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2588"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2854"/>
         <source>Please select the activity tag to unlock:</source>
-        <translation type="unfinished"></translation>
+        <translation>فضلاً اختر الوسم المشترك المراد فتحه:</translation>
     </message>
 </context>
 <context>
@@ -32174,7 +32174,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/fetmainform.cpp" line="4078"/>
         <location filename="../src/interface/fetmainform.cpp" line="4093"/>
         <source>You have no activity tags defined in your data.</source>
-        <translation type="unfinished"></translation>
+        <translation>لا يوجد لديك وسم مشترك معرف في قاعدة بياناتك.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4229"/>
@@ -34470,13 +34470,13 @@ G1 ستظهر مرتين في الجدول</translation>
         <location filename="../src/interface/fetmainform_template.ui" line="2581"/>
         <source>Lock all activities with a specified activity tag</source>
         <comment>It means lock all the activities which have attached a specified activity tag</comment>
-        <translation type="unfinished"></translation>
+        <translation>قفل كل الأنشطة مع وسم مشترك معين</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2586"/>
         <source>Unlock all activities with a specified activity tag</source>
         <comment>It means unlock all the activities which have attached a specified activity tag</comment>
-        <translation type="unfinished"></translation>
+        <translation>فتح كل الأنشطة مع وسم مشترك معين</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2291"/>
@@ -48099,12 +48099,12 @@ Note: teacher not available and break are not counted as gaps.</source>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="59"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>June</source>
         <translation>جوان</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="61"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>July</source>
         <translation>جويلية</translation>
     </message>
@@ -55442,12 +55442,12 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="488"/>
         <source>Building=%1</source>
-        <translation type="unfinished">البناية=%1</translation>
+        <translation>البناية=%1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="491"/>
         <source>Capacity=%1</source>
-        <translation type="unfinished">الاستيعاب=%1</translation>
+        <translation>الاستيعاب=%1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="520"/>
@@ -55687,12 +55687,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="700"/>
         <source>Building=%1</source>
-        <translation type="unfinished">البناية=%1</translation>
+        <translation>البناية=%1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="703"/>
         <source>Capacity=%1</source>
-        <translation type="unfinished">الاستيعاب=%1</translation>
+        <translation>الاستيعاب=%1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="738"/>
@@ -55998,12 +55998,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="681"/>
         <source>Building=%1</source>
-        <translation type="unfinished">البناية=%1</translation>
+        <translation>البناية=%1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="684"/>
         <source>Capacity=%1</source>
-        <translation type="unfinished">الاستيعاب=%1</translation>
+        <translation>الاستيعاب=%1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="712"/>
@@ -56246,12 +56246,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="864"/>
         <source>Building=%1</source>
-        <translation type="unfinished">البناية=%1</translation>
+        <translation>البناية=%1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="867"/>
         <source>Capacity=%1</source>
-        <translation type="unfinished">الاستيعاب=%1</translation>
+        <translation>الاستيعاب=%1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="896"/>
@@ -56523,12 +56523,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="484"/>
         <source>Building=%1</source>
-        <translation type="unfinished">البناية=%1</translation>
+        <translation>البناية=%1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="487"/>
         <source>Capacity=%1</source>
-        <translation type="unfinished">الاستيعاب=%1</translation>
+        <translation>الاستيعاب=%1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="515"/>
@@ -56762,12 +56762,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="679"/>
         <source>Building=%1</source>
-        <translation type="unfinished">البناية=%1</translation>
+        <translation>البناية=%1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="682"/>
         <source>Capacity=%1</source>
-        <translation type="unfinished">الاستيعاب=%1</translation>
+        <translation>الاستيعاب=%1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="710"/>

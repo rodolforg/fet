@@ -11430,47 +11430,47 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2573"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2839"/>
         <source>FET warning</source>
-        <translation type="unfinished">FET advertencia</translation>
+        <translation>FET advertencia</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2282"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2573"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2839"/>
         <source>You entered this dialog, but you have no activity tags. This should not happen. Please report possible bug. Now FET will abandon the current operation and return to the main dialog, so that you don&apos;t lose data.</source>
-        <translation type="unfinished"></translation>
+        <translation>Activó este diálogo, pero no tiene códigos de actividad. Esto no debería suceder. Por favor reporte un posible error. FET abandonará la operación actual y volverá al diálogo principal para que no pierda sus datos.</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2290"/>
         <source>FET - Lock activities which have attached a certain activity tag</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - Bloquear las actividades ligadas a ciertos códigos de actividad</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2296"/>
         <source>All activities which have attached the selected activity tag will be locked</source>
-        <translation type="unfinished"></translation>
+        <translation>Todas las actividades ligadas al código de actividad seleccionado quedarán bloqueadas</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2296"/>
         <source>Please select the activity tag to lock:</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleccione el código de actividad a bloquear:</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2581"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2847"/>
         <source>FET - Unlock activities which have attached a certain activity tag</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - Desbloquear las actividades ligadas a ciertos códigos de actividad</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2587"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2853"/>
         <source>All activities which have attached the selected activity tag will be unlocked (those which are not permanently locked)</source>
-        <translation type="unfinished"></translation>
+        <translation>Todas las actividades ligadas al código de actividad seleccionado serán desbloqueadas (aquellas que no lo están de forma permanente)</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2588"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2854"/>
         <source>Please select the activity tag to unlock:</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleccione el código de actividad a desbloquear</translation>
     </message>
 </context>
 <context>
@@ -32158,7 +32158,7 @@ Detenga la simulación antes de esto.</translation>
         <location filename="../src/interface/fetmainform.cpp" line="4078"/>
         <location filename="../src/interface/fetmainform.cpp" line="4093"/>
         <source>You have no activity tags defined in your data.</source>
-        <translation type="unfinished"></translation>
+        <translation>No hay códigos de actividad definidos para sus datos.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4229"/>
@@ -33892,13 +33892,13 @@ Detenga la simulación antes de esto.</translation>
         <location filename="../src/interface/fetmainform_template.ui" line="2581"/>
         <source>Lock all activities with a specified activity tag</source>
         <comment>It means lock all the activities which have attached a specified activity tag</comment>
-        <translation type="unfinished"></translation>
+        <translation>Bloquear todas las actividades con un código de actividad específico</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2586"/>
         <source>Unlock all activities with a specified activity tag</source>
         <comment>It means unlock all the activities which have attached a specified activity tag</comment>
-        <translation type="unfinished"></translation>
+        <translation>Desbloquear todas las actividades con un código de actividad específico</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2498"/>
@@ -48071,12 +48071,12 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="59"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>June</source>
         <translation>Junio</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="61"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>July</source>
         <translation>Julio</translation>
     </message>
