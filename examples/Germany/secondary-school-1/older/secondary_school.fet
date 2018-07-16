@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<fet version="5.30.3">
+<fet version="5.37.0">
 
 <Institution_Name>German Secondary School</Institution_Name>
 
@@ -132,6 +132,7 @@ The teachers&apos; names are replaced by other random names.
 <Activity_Tags_List>
 <Activity_Tag>
 	<Name>1,3,5</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 </Activity_Tags_List>
@@ -139,232 +140,326 @@ The teachers&apos; names are replaced by other random names.
 <Teachers_List>
 <Teacher>
 	<Name>Agnes</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>15</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>AG</Qualified_Subject>
+		<Qualified_Subject>DE</Qualified_Subject>
+		<Qualified_Subject>MU</Qualified_Subject>
+		<Qualified_Subject>PK</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Alex</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>26</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>MA</Qualified_Subject>
+		<Qualified_Subject>SP</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Alina</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>19</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>FR</Qualified_Subject>
+		<Qualified_Subject>RE</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Anita</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>20</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>AG</Qualified_Subject>
+		<Qualified_Subject>BI</Qualified_Subject>
+		<Qualified_Subject>CH</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Anna</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>25</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>DE</Qualified_Subject>
+		<Qualified_Subject>EN</Qualified_Subject>
+		<Qualified_Subject>GE</Qualified_Subject>
+		<Qualified_Subject>PK</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>David</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>25</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>EN</Qualified_Subject>
+		<Qualified_Subject>SP</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Diana</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>27</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>EN</Qualified_Subject>
+		<Qualified_Subject>RE</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Greta</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>25</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>EN</Qualified_Subject>
+		<Qualified_Subject>EK</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Jan</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>9</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>PH</Qualified_Subject>
+		<Qualified_Subject>TC</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Jana</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>22</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>CH</Qualified_Subject>
+		<Qualified_Subject>MA</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Jenny</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>28</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>BI</Qualified_Subject>
+		<Qualified_Subject>MA</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Julia</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>6</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>EK</Qualified_Subject>
+		<Qualified_Subject>EN</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Knut</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>27</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>FU</Qualified_Subject>
+		<Qualified_Subject>MA</Qualified_Subject>
+		<Qualified_Subject>PH</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Kyra</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>17</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>MA</Qualified_Subject>
+		<Qualified_Subject>SP</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Laura</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>16</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>BI</Qualified_Subject>
+		<Qualified_Subject>DE</Qualified_Subject>
+		<Qualified_Subject>PK</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Lina</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>25</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>AG</Qualified_Subject>
+		<Qualified_Subject>BI</Qualified_Subject>
+		<Qualified_Subject>TX</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Linda</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>18</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>DE</Qualified_Subject>
+		<Qualified_Subject>FU</Qualified_Subject>
+		<Qualified_Subject>PK</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Lisa</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>22</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>DE</Qualified_Subject>
+		<Qualified_Subject>FU</Qualified_Subject>
+		<Qualified_Subject>RE</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Luisa</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>27</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>EN</Qualified_Subject>
+		<Qualified_Subject>MU</Qualified_Subject>
+		<Qualified_Subject>FR</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Maren</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>16</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>AG</Qualified_Subject>
+		<Qualified_Subject>DE</Qualified_Subject>
+		<Qualified_Subject>KU</Qualified_Subject>
+		<Qualified_Subject>PK</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Marie</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>20</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>DE</Qualified_Subject>
+		<Qualified_Subject>FR</Qualified_Subject>
+		<Qualified_Subject>PK</Qualified_Subject>
+		<Qualified_Subject>RE</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Mario</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>26</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>DE</Qualified_Subject>
+		<Qualified_Subject>MU</Qualified_Subject>
+		<Qualified_Subject>RE</Qualified_Subject>
+		<Qualified_Subject>PK</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Max</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>24</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>AG</Qualified_Subject>
+		<Qualified_Subject>MA</Qualified_Subject>
+		<Qualified_Subject>PH</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Mona</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>13</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>KU</Qualified_Subject>
+		<Qualified_Subject>MA</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Nils</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>26</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>DE</Qualified_Subject>
+		<Qualified_Subject>FU</Qualified_Subject>
+		<Qualified_Subject>GE</Qualified_Subject>
+		<Qualified_Subject>MA</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Otto</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>16</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>DE</Qualified_Subject>
+		<Qualified_Subject>GE</Qualified_Subject>
+		<Qualified_Subject>RE</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Pia</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>27</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>DE</Qualified_Subject>
+		<Qualified_Subject>KU</Qualified_Subject>
+		<Qualified_Subject>RE</Qualified_Subject>
+		<Qualified_Subject>PK</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Rene</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>12</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>AG</Qualified_Subject>
+		<Qualified_Subject>PH</Qualified_Subject>
+		<Qualified_Subject>TC</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Sepp</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>8</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>DE</Qualified_Subject>
+		<Qualified_Subject>EN</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Simon</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>22</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>EN</Qualified_Subject>
+		<Qualified_Subject>GE</Qualified_Subject>
+		<Qualified_Subject>SW</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Stacy</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>27</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>PK</Qualified_Subject>
+		<Qualified_Subject>SP</Qualified_Subject>
+		<Qualified_Subject>SW</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Tanja</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>19</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>MA</Qualified_Subject>
+		<Qualified_Subject>TC</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Ute</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>25</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>AG</Qualified_Subject>
+		<Qualified_Subject>EK</Qualified_Subject>
+		<Qualified_Subject>EN</Qualified_Subject>
+		<Qualified_Subject>FU</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
