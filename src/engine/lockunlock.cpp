@@ -79,7 +79,7 @@ void LockUnlock::computeLockedUnlockedActivitiesTimeSpace()
 	idsOfPermanentlyLockedTime.clear();
 	idsOfPermanentlyLockedSpace.clear();
 
-	foreach(TimeConstraint* tc, gt.rules.timeConstraintsList){
+	for(TimeConstraint* tc : qAsConst(gt.rules.timeConstraintsList)){
 		if(tc->type==CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIME && tc->weightPercentage==100.0 && tc->active){
 			ConstraintActivityPreferredStartingTime* c=(ConstraintActivityPreferredStartingTime*) tc;
 			if(c->day >= 0  &&  c->hour >= 0) {
@@ -91,7 +91,7 @@ void LockUnlock::computeLockedUnlockedActivitiesTimeSpace()
 		}
 	}
 	
-	foreach(SpaceConstraint* sc, gt.rules.spaceConstraintsList){
+	for(SpaceConstraint* sc : qAsConst(gt.rules.spaceConstraintsList)){
 		if(sc->type==CONSTRAINT_ACTIVITY_PREFERRED_ROOM && sc->weightPercentage==100.0 && sc->active){
 			ConstraintActivityPreferredRoom* c=(ConstraintActivityPreferredRoom*) sc;
 
@@ -109,7 +109,7 @@ void LockUnlock::computeLockedUnlockedActivitiesOnlyTime()
 	idsOfLockedTime.clear();
 	idsOfPermanentlyLockedTime.clear();
 
-	foreach(TimeConstraint* tc, gt.rules.timeConstraintsList){
+	for(TimeConstraint* tc : qAsConst(gt.rules.timeConstraintsList)){
 		if(tc->type==CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIME && tc->weightPercentage==100.0 && tc->active){
 			ConstraintActivityPreferredStartingTime* c=(ConstraintActivityPreferredStartingTime*) tc;
 			if(c->day >= 0  &&  c->hour >= 0) {
@@ -128,7 +128,7 @@ void LockUnlock::computeLockedUnlockedActivitiesOnlySpace()
 	idsOfLockedSpace.clear();
 	idsOfPermanentlyLockedSpace.clear();
 
-	foreach(SpaceConstraint* sc, gt.rules.spaceConstraintsList){
+	for(SpaceConstraint* sc : qAsConst(gt.rules.spaceConstraintsList)){
 		if(sc->type==CONSTRAINT_ACTIVITY_PREFERRED_ROOM && sc->weightPercentage==100.0 && sc->active){
 			ConstraintActivityPreferredRoom* c=(ConstraintActivityPreferredRoom*) sc;
 

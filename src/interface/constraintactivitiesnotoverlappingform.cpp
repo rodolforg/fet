@@ -130,7 +130,7 @@ bool ConstraintActivitiesNotOverlappingForm::filterOk(TimeConstraint* ctr)
 	
 		int id=c->activitiesId[i];
 		Activity* act=NULL;
-		foreach(Activity* a, gt.rules.activitiesList)
+		for(Activity* a : qAsConst(gt.rules.activitiesList))
 			if(a->id==id)
 				act=a;
 		

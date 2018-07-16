@@ -131,7 +131,7 @@ bool GroupActivitiesInInitialOrderItemsForm::filterOk(const GroupActivitiesInIni
 	for(int i=0; i<item.ids.count(); i++){
 		int id=item.ids.at(i);
 		Activity* act=NULL;
-		foreach(Activity* a, gt.rules.activitiesList)
+		for(Activity* a : qAsConst(gt.rules.activitiesList))
 			if(a->id==id)
 				act=a;
 		
@@ -353,7 +353,7 @@ void GroupActivitiesInInitialOrderItemsForm::activateItem()
 		itemChanged(itemsListWidget->currentRow());
 	
 		int n_active=0;
-		foreach(GroupActivitiesInInitialOrderItem* item2, gt.rules.groupActivitiesInInitialOrderList)
+		for(GroupActivitiesInInitialOrderItem* item2 : qAsConst(gt.rules.groupActivitiesInInitialOrderList))
 			if(filterOk(*item2)){
 				if(item2->active)
 					n_active++;
@@ -388,7 +388,7 @@ void GroupActivitiesInInitialOrderItemsForm::deactivateItem()
 		itemChanged(itemsListWidget->currentRow());
 
 		int n_active=0;
-		foreach(GroupActivitiesInInitialOrderItem* item2, gt.rules.groupActivitiesInInitialOrderList)
+		for(GroupActivitiesInInitialOrderItem* item2 : qAsConst(gt.rules.groupActivitiesInInitialOrderList))
 			if(filterOk(*item2)){
 				if(item2->active)
 					n_active++;

@@ -138,7 +138,7 @@ bool ConstraintTwoActivitiesOrderedForm::filterOk(TimeConstraint* ctr)
 		assert(id>=0);
 
 		Activity* act=NULL;
-		foreach(Activity* a, gt.rules.activitiesList)
+		for(Activity* a : qAsConst(gt.rules.activitiesList))
 			if(a->id==id)
 				act=a;
 		

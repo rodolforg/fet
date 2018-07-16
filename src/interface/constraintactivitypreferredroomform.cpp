@@ -135,7 +135,7 @@ bool ConstraintActivityPreferredRoomForm::filterOk(SpaceConstraint* ctr)
 	
 	int id=c->activityId;
 	Activity* act=NULL;
-	foreach(Activity* a, gt.rules.activitiesList)
+	for(Activity* a : qAsConst(gt.rules.activitiesList))
 		if(a->id==id)
 			act=a;
 

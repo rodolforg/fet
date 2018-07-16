@@ -3655,7 +3655,7 @@ bool ConstraintTeachersActivityTagMaxHoursContinuously::computeInternalStructure
 		bool found=false;
 	
 		Teacher* tch=r.internalTeachersList[i];
-		foreach(int actIndex, tch->activitiesForTeacher){
+		for(int actIndex : qAsConst(tch->activitiesForTeacher)){
 			if(r.internalActivitiesList[actIndex].iActivityTagsSet.contains(this->activityTagIndex)){
 				found=true;
 				break;
@@ -3742,13 +3742,13 @@ double ConstraintTeachersActivityTagMaxHoursContinuously::fitness(Solution& c, R
 	int nbroken;
 
 	nbroken=0;
-	foreach(int i, this->canonicalTeachersList){
+	for(int i : qAsConst(this->canonicalTeachersList)){
 		Teacher* tch=r.internalTeachersList[i];
 		int crtTeacherTimetableActivityTag[MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
 		for(int d=0; d<r.nDaysPerWeek; d++)
 			for(int h=0; h<r.nHoursPerDay; h++)
 				crtTeacherTimetableActivityTag[d][h]=-1;
-		foreach(int ai, tch->activitiesForTeacher)if(c.times[ai]!=UNALLOCATED_TIME){
+		for(int ai : qAsConst(tch->activitiesForTeacher)) if(c.times[ai]!=UNALLOCATED_TIME){
 			int d=c.times[ai]%r.nDaysPerWeek;
 			int h=c.times[ai]/r.nDaysPerWeek;
 			for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
@@ -3925,7 +3925,7 @@ bool ConstraintTeacherActivityTagMaxHoursContinuously::computeInternalStructure(
 	bool found=false;
 	
 	Teacher* tch=r.internalTeachersList[i];
-	foreach(int actIndex, tch->activitiesForTeacher){
+	for(int actIndex : qAsConst(tch->activitiesForTeacher)){
 		if(r.internalActivitiesList[actIndex].iActivityTagsSet.contains(this->activityTagIndex)){
 			found=true;
 			break;
@@ -4013,13 +4013,13 @@ double ConstraintTeacherActivityTagMaxHoursContinuously::fitness(Solution& c, Ru
 	int nbroken;
 
 	nbroken=0;
-	foreach(int i, this->canonicalTeachersList){
+	for(int i : qAsConst(this->canonicalTeachersList)){
 		Teacher* tch=r.internalTeachersList[i];
 		int crtTeacherTimetableActivityTag[MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
 		for(int d=0; d<r.nDaysPerWeek; d++)
 			for(int h=0; h<r.nHoursPerDay; h++)
 				crtTeacherTimetableActivityTag[d][h]=-1;
-		foreach(int ai, tch->activitiesForTeacher)if(c.times[ai]!=UNALLOCATED_TIME){
+		for(int ai : qAsConst(tch->activitiesForTeacher)) if(c.times[ai]!=UNALLOCATED_TIME){
 			int d=c.times[ai]%r.nDaysPerWeek;
 			int h=c.times[ai]/r.nDaysPerWeek;
 			for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
@@ -6613,7 +6613,7 @@ double ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::fitness(Solution& c,
 	
 	int conflTotal=0;
 
-	foreach(int i, this->iSubgroupsList){
+	for(int i : qAsConst(this->iSubgroupsList)){
 		int nGapsFirstHour=0;
 		for(int j=0; j<r.nDaysPerWeek; j++){
 			int k;
@@ -7587,7 +7587,7 @@ double ConstraintStudentsSetMaxHoursContinuously::fitness(Solution& c, Rules& r,
 	int nbroken;
 
 	nbroken=0;
-	foreach(int i, this->iSubgroupsList){
+	for(int i : qAsConst(this->iSubgroupsList)){
 		for(int d=0; d<r.nDaysPerWeek; d++){
 			int nc=0;
 			for(int h=0; h<r.nHoursPerDay; h++){
@@ -7741,7 +7741,7 @@ bool ConstraintStudentsActivityTagMaxHoursContinuously::computeInternalStructure
 		bool found=false;
 	
 		StudentsSubgroup* sbg=r.internalSubgroupsList[i];
-		foreach(int actIndex, sbg->activitiesForSubgroup){
+		for(int actIndex : qAsConst(sbg->activitiesForSubgroup)){
 			if(r.internalActivitiesList[actIndex].iActivityTagsSet.contains(this->activityTagIndex)){
 				found=true;
 				break;
@@ -7838,13 +7838,13 @@ double ConstraintStudentsActivityTagMaxHoursContinuously::fitness(Solution& c, R
 
 	nbroken=0;
 	
-	foreach(int i, this->canonicalSubgroupsList){
+	for(int i : qAsConst(this->canonicalSubgroupsList)){
 		StudentsSubgroup* sbg=r.internalSubgroupsList[i];
 		int crtSubgroupTimetableActivityTag[MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
 		for(int d=0; d<r.nDaysPerWeek; d++)
 			for(int h=0; h<r.nHoursPerDay; h++)
 				crtSubgroupTimetableActivityTag[d][h]=-1;
-		foreach(int ai, sbg->activitiesForSubgroup)if(c.times[ai]!=UNALLOCATED_TIME){
+		for(int ai : qAsConst(sbg->activitiesForSubgroup)) if(c.times[ai]!=UNALLOCATED_TIME){
 			int d=c.times[ai]%r.nDaysPerWeek;
 			int h=c.times[ai]/r.nDaysPerWeek;
 			for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
@@ -8128,11 +8128,11 @@ bool ConstraintStudentsSetActivityTagMaxHoursContinuously::computeInternalStruct
 		
 	/////////////
 	this->canonicalSubgroupsList.clear();
-	foreach(int i, this->iSubgroupsList){
+	for(int i : qAsConst(this->iSubgroupsList)){
 		bool found=false;
 	
 		StudentsSubgroup* sbg=r.internalSubgroupsList[i];
-		foreach(int actIndex, sbg->activitiesForSubgroup){
+		for(int actIndex : qAsConst(sbg->activitiesForSubgroup)){
 			if(r.internalActivitiesList[actIndex].iActivityTagsSet.contains(this->activityTagIndex)){
 				found=true;
 				break;
@@ -8163,13 +8163,13 @@ double ConstraintStudentsSetActivityTagMaxHoursContinuously::fitness(Solution& c
 
 	nbroken=0;
 
-	foreach(int i, this->canonicalSubgroupsList){
+	for(int i : qAsConst(this->canonicalSubgroupsList)){
 		StudentsSubgroup* sbg=r.internalSubgroupsList[i];
 		int crtSubgroupTimetableActivityTag[MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
 		for(int d=0; d<r.nDaysPerWeek; d++)
 			for(int h=0; h<r.nHoursPerDay; h++)
 				crtSubgroupTimetableActivityTag[d][h]=-1;
-		foreach(int ai, sbg->activitiesForSubgroup)if(c.times[ai]!=UNALLOCATED_TIME){
+		for(int ai : qAsConst(sbg->activitiesForSubgroup)) if(c.times[ai]!=UNALLOCATED_TIME){
 			int d=c.times[ai]%r.nDaysPerWeek;
 			int h=c.times[ai]/r.nDaysPerWeek;
 			for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
@@ -9454,7 +9454,7 @@ bool ConstraintActivitiesPreferredTimeSlots::computeInternalStructure(QWidget* p
 		//check if this activity has the corresponding students
 		if(this->p_studentsName!=""){
 			bool commonStudents=false;
-			foreach(QString st, act->studentsNames)
+			for(const QString& st : qAsConst(act->studentsNames))
 				if(r.augmentedSetsShareStudentsFaster(st, p_studentsName)){
 					commonStudents=true;
 					break;
@@ -9545,7 +9545,7 @@ bool ConstraintActivitiesPreferredTimeSlots::hasInactiveActivities(Rules& r)
 		//check if this activity has the corresponding students
 		if(this->p_studentsName!=""){
 			bool commonStudents=false;
-			foreach(QString st, act->studentsNames)
+			for(const QString& st : qAsConst(act->studentsNames))
 				if(r.setsShareStudents(st, p_studentsName)){
 					commonStudents=true;
 					break;
@@ -9807,7 +9807,7 @@ bool ConstraintActivitiesPreferredTimeSlots::isRelatedToActivity(Rules& r, Activ
 	//check if this activity has the corresponding students
 	if(this->p_studentsName!=""){
 		bool commonStudents=false;
-		foreach(QString st, a->studentsNames){
+		for(const QString& st : qAsConst(a->studentsNames)){
 			if(r.setsShareStudents(st, this->p_studentsName)){
 				commonStudents=true;
 				break;
@@ -9957,7 +9957,7 @@ bool ConstraintSubactivitiesPreferredTimeSlots::computeInternalStructure(QWidget
 		//check if this activity has the corresponding students
 		if(this->p_studentsName!=""){
 			bool commonStudents=false;
-			foreach(QString st, act->studentsNames)
+			for(const QString& st : qAsConst(act->studentsNames))
 				if(r.augmentedSetsShareStudentsFaster(st, p_studentsName)){
 					commonStudents=true;
 					break;
@@ -10048,7 +10048,7 @@ bool ConstraintSubactivitiesPreferredTimeSlots::hasInactiveActivities(Rules& r)
 		//check if this activity has the corresponding students
 		if(this->p_studentsName!=""){
 			bool commonStudents=false;
-			foreach(QString st, act->studentsNames)
+			for(const QString& st : qAsConst(act->studentsNames))
 				if(r.setsShareStudents(st, p_studentsName)){
 					commonStudents=true;
 					break;
@@ -10304,7 +10304,7 @@ bool ConstraintSubactivitiesPreferredTimeSlots::isRelatedToActivity(Rules& r, Ac
 	//check if this activity has the corresponding students
 	if(this->p_studentsName!=""){
 		bool commonStudents=false;
-		foreach(QString st, a->studentsNames){
+		for(const QString& st : qAsConst(a->studentsNames)){
 			if(r.setsShareStudents(st, this->p_studentsName)){
 				commonStudents=true;
 				break;
@@ -10756,7 +10756,7 @@ bool ConstraintActivitiesPreferredStartingTimes::computeInternalStructure(QWidge
 		//check if this activity has the corresponding students
 		if(this->studentsName!=""){
 			bool commonStudents=false;
-			foreach(QString st, act->studentsNames)
+			for(const QString& st : qAsConst(act->studentsNames))
 				if(r.augmentedSetsShareStudentsFaster(st, studentsName)){
 					commonStudents=true;
 					break;
@@ -10841,7 +10841,7 @@ bool ConstraintActivitiesPreferredStartingTimes::hasInactiveActivities(Rules& r)
 		//check if this activity has the corresponding students
 		if(this->studentsName!=""){
 			bool commonStudents=false;
-			foreach(QString st, act->studentsNames)
+			for(const QString& st : qAsConst(act->studentsNames))
 				if(r.setsShareStudents(st, studentsName)){
 					commonStudents=true;
 					break;
@@ -11096,7 +11096,7 @@ bool ConstraintActivitiesPreferredStartingTimes::isRelatedToActivity(Rules& r, A
 	//check if this activity has the corresponding students
 	if(this->studentsName!=""){
 		bool commonStudents=false;
-		foreach(QString st, a->studentsNames){
+		for(const QString& st : qAsConst(a->studentsNames)){
 			if(r.setsShareStudents(st, this->studentsName)){
 				commonStudents=true;
 				break;
@@ -11246,7 +11246,7 @@ bool ConstraintSubactivitiesPreferredStartingTimes::computeInternalStructure(QWi
 		//check if this activity has the corresponding students
 		if(this->studentsName!=""){
 			bool commonStudents=false;
-			foreach(QString st, act->studentsNames)
+			for(const QString& st : qAsConst(act->studentsNames))
 				if(r.augmentedSetsShareStudentsFaster(st, studentsName)){
 					commonStudents=true;
 					break;
@@ -11331,7 +11331,7 @@ bool ConstraintSubactivitiesPreferredStartingTimes::hasInactiveActivities(Rules&
 		//check if this activity has the corresponding students
 		if(this->studentsName!=""){
 			bool commonStudents=false;
-			foreach(QString st, act->studentsNames)
+			for(const QString& st : qAsConst(act->studentsNames))
 				if(r.setsShareStudents(st, studentsName)){
 					commonStudents=true;
 					break;
@@ -11576,7 +11576,7 @@ bool ConstraintSubactivitiesPreferredStartingTimes::isRelatedToActivity(Rules& r
 	//check if this activity has the corresponding students
 	if(this->studentsName!=""){
 		bool commonStudents=false;
-		foreach(QString st, a->studentsNames){
+		for(const QString& st : qAsConst(a->studentsNames)){
 			if(r.setsShareStudents(st, this->studentsName)){
 				commonStudents=true;
 				break;
@@ -15534,7 +15534,7 @@ double ConstraintStudentsSetIntervalMaxDaysPerWeek::fitness(Solution& c, Rules& 
 	
 	nbroken=0;
 	
-	foreach(int sbg, this->iSubgroupsList){
+	for(int sbg : qAsConst(this->iSubgroupsList)){
 		bool ocDay[MAX_DAYS_PER_WEEK];
 		for(int d=0; d<r.nDaysPerWeek; d++){
 			ocDay[d]=false;
@@ -15931,7 +15931,7 @@ bool ConstraintActivitiesEndStudentsDay::computeInternalStructure(QWidget* paren
 		//check if this activity has the corresponding students
 		if(this->studentsName!=""){
 			bool commonStudents=false;
-			foreach(QString st, act->studentsNames)
+			for(const QString& st : qAsConst(act->studentsNames))
 				if(r.augmentedSetsShareStudentsFaster(st, studentsName)){
 					commonStudents=true;
 					break;
@@ -16148,7 +16148,7 @@ bool ConstraintActivitiesEndStudentsDay::isRelatedToActivity(Rules& r, Activity*
 	//check if this activity has the corresponding students
 	if(this->studentsName!=""){
 		bool commonStudents=false;
-		foreach(QString st, a->studentsNames){
+		for(const QString& st : qAsConst(a->studentsNames)){
 			if(r.setsShareStudents(st, this->studentsName)){
 				commonStudents=true;
 				break;
@@ -16250,7 +16250,7 @@ bool ConstraintTeachersActivityTagMaxHoursDaily::computeInternalStructure(QWidge
 		bool found=false;
 	
 		Teacher* tch=r.internalTeachersList[i];
-		foreach(int actIndex, tch->activitiesForTeacher){
+		for(int actIndex : qAsConst(tch->activitiesForTeacher)){
 			if(r.internalActivitiesList[actIndex].iActivityTagsSet.contains(this->activityTagIndex)){
 				found=true;
 				break;
@@ -16339,14 +16339,14 @@ double ConstraintTeachersActivityTagMaxHoursDaily::fitness(Solution& c, Rules& r
 	int nbroken;
 
 	nbroken=0;
-	foreach(int i, this->canonicalTeachersList){
+	for(int i : qAsConst(this->canonicalTeachersList)){
 		Teacher* tch=r.internalTeachersList[i];
 		int crtTeacherTimetableActivityTag[MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
 		for(int d=0; d<r.nDaysPerWeek; d++)
 			for(int h=0; h<r.nHoursPerDay; h++)
 				crtTeacherTimetableActivityTag[d][h]=-1;
 				
-		foreach(int ai, tch->activitiesForTeacher)if(c.times[ai]!=UNALLOCATED_TIME){
+		for(int ai : qAsConst(tch->activitiesForTeacher)) if(c.times[ai]!=UNALLOCATED_TIME){
 			int d=c.times[ai]%r.nDaysPerWeek;
 			int h=c.times[ai]/r.nDaysPerWeek;
 			for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
@@ -16490,7 +16490,7 @@ bool ConstraintTeacherActivityTagMaxHoursDaily::computeInternalStructure(QWidget
 	bool found=false;
 	
 	Teacher* tch=r.internalTeachersList[i];
-	foreach(int actIndex, tch->activitiesForTeacher){
+	for(int actIndex : qAsConst(tch->activitiesForTeacher)){
 		if(r.internalActivitiesList[actIndex].iActivityTagsSet.contains(this->activityTagIndex)){
 			found=true;
 			break;
@@ -16580,14 +16580,14 @@ double ConstraintTeacherActivityTagMaxHoursDaily::fitness(Solution& c, Rules& r,
 	int nbroken;
 
 	nbroken=0;
-	foreach(int i, this->canonicalTeachersList){
+	for(int i : qAsConst(this->canonicalTeachersList)){
 		Teacher* tch=r.internalTeachersList[i];
 		int crtTeacherTimetableActivityTag[MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
 		for(int d=0; d<r.nDaysPerWeek; d++)
 			for(int h=0; h<r.nHoursPerDay; h++)
 				crtTeacherTimetableActivityTag[d][h]=-1;
 				
-		foreach(int ai, tch->activitiesForTeacher)if(c.times[ai]!=UNALLOCATED_TIME){
+		for(int ai : qAsConst(tch->activitiesForTeacher)) if(c.times[ai]!=UNALLOCATED_TIME){
 			int d=c.times[ai]%r.nDaysPerWeek;
 			int h=c.times[ai]/r.nDaysPerWeek;
 			for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
@@ -16725,7 +16725,7 @@ bool ConstraintStudentsActivityTagMaxHoursDaily::computeInternalStructure(QWidge
 		bool found=false;
 	
 		StudentsSubgroup* sbg=r.internalSubgroupsList[i];
-		foreach(int actIndex, sbg->activitiesForSubgroup){
+		for(int actIndex : qAsConst(sbg->activitiesForSubgroup)){
 			if(r.internalActivitiesList[actIndex].iActivityTagsSet.contains(this->activityTagIndex)){
 				found=true;
 				break;
@@ -16824,13 +16824,13 @@ double ConstraintStudentsActivityTagMaxHoursDaily::fitness(Solution& c, Rules& r
 
 	nbroken=0;
 	
-	foreach(int i, this->canonicalSubgroupsList){
+	for(int i : qAsConst(this->canonicalSubgroupsList)){
 		StudentsSubgroup* sbg=r.internalSubgroupsList[i];
 		int crtSubgroupTimetableActivityTag[MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
 		for(int d=0; d<r.nDaysPerWeek; d++)
 			for(int h=0; h<r.nHoursPerDay; h++)
 				crtSubgroupTimetableActivityTag[d][h]=-1;
-		foreach(int ai, sbg->activitiesForSubgroup)if(c.times[ai]!=UNALLOCATED_TIME){
+		for(int ai : qAsConst(sbg->activitiesForSubgroup)) if(c.times[ai]!=UNALLOCATED_TIME){
 			int d=c.times[ai]%r.nDaysPerWeek;
 			int h=c.times[ai]/r.nDaysPerWeek;
 			for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
@@ -17083,11 +17083,11 @@ bool ConstraintStudentsSetActivityTagMaxHoursDaily::computeInternalStructure(QWi
 		
 	/////////////
 	this->canonicalSubgroupsList.clear();
-	foreach(int i, this->iSubgroupsList){
+	for(int i : qAsConst(this->iSubgroupsList)){
 		bool found=false;
 	
 		StudentsSubgroup* sbg=r.internalSubgroupsList[i];
-		foreach(int actIndex, sbg->activitiesForSubgroup){
+		for(int actIndex : qAsConst(sbg->activitiesForSubgroup)){
 			if(r.internalActivitiesList[actIndex].iActivityTagsSet.contains(this->activityTagIndex)){
 				found=true;
 				break;
@@ -17118,13 +17118,13 @@ double ConstraintStudentsSetActivityTagMaxHoursDaily::fitness(Solution& c, Rules
 
 	nbroken=0;
 	
-	foreach(int i, this->canonicalSubgroupsList){
+	for(int i : qAsConst(this->canonicalSubgroupsList)){
 		StudentsSubgroup* sbg=r.internalSubgroupsList[i];
 		int crtSubgroupTimetableActivityTag[MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
 		for(int d=0; d<r.nDaysPerWeek; d++)
 			for(int h=0; h<r.nHoursPerDay; h++)
 				crtSubgroupTimetableActivityTag[d][h]=-1;
-		foreach(int ai, sbg->activitiesForSubgroup)if(c.times[ai]!=UNALLOCATED_TIME){
+		for(int ai : qAsConst(sbg->activitiesForSubgroup)) if(c.times[ai]!=UNALLOCATED_TIME){
 			int d=c.times[ai]%r.nDaysPerWeek;
 			int h=c.times[ai]/r.nDaysPerWeek;
 			for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
@@ -17737,7 +17737,7 @@ bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::computeInternalStructu
 {
 	//this cares about inactive activities, also, so do not assert this->_actIndices.count()==this->actIds.count()
 	_activitiesIndices.clear();
-	foreach(int id, activitiesIds){
+	for(int id : qAsConst(activitiesIds)){
 		int i=r.activitiesHash.value(id, -1);
 		if(i>=0)
 			_activitiesIndices.append(i);
@@ -17802,7 +17802,7 @@ bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::hasInactiveActivities(
 {
 	//returns true if all activities are inactive
 	
-	foreach(int aid, this->activitiesIds)
+	for(int aid : qAsConst(this->activitiesIds))
 		if(!r.inactiveActivities.contains(aid))
 			return false;
 
@@ -17818,7 +17818,7 @@ QString ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::getXmlDescription(R
 	s+="	<Weight_Percentage>"+CustomFETString::number(this->weightPercentage)+"</Weight_Percentage>\n";
 	
 	s+="	<Number_of_Activities>"+CustomFETString::number(this->activitiesIds.count())+"</Number_of_Activities>\n";
-	foreach(int aid, this->activitiesIds)
+	for(int aid : qAsConst(this->activitiesIds))
 		s+="	<Activity_Id>"+CustomFETString::number(aid)+"</Activity_Id>\n";
 	
 	s+="	<Number_of_Selected_Time_Slots>"+CustomFETString::number(this->selectedDays.count())+"</Number_of_Selected_Time_Slots>\n";
@@ -17849,7 +17849,7 @@ QString ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::getDescription(Rule
 	assert(this->selectedDays.count()==this->selectedHours.count());
 
 	QString actids=QString("");
-	foreach(int aid, this->activitiesIds)
+	for(int aid : qAsConst(this->activitiesIds))
 		actids+=CustomFETString::number(aid)+QString(", ");
 	actids.chop(2);
 		
@@ -17874,7 +17874,7 @@ QString ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::getDetailedDescript
 	assert(this->selectedDays.count()==this->selectedHours.count());
 
 	QString actids=QString("");
-	foreach(int aid, this->activitiesIds)
+	for(int aid : qAsConst(this->activitiesIds))
 		actids+=CustomFETString::number(aid)+QString(", ");
 	actids.chop(2);
 		
@@ -17887,7 +17887,7 @@ QString ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::getDetailedDescript
 	s+=tr("Activities occupy max time slots from selection"); s+="\n";
 	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage)); s+="\n";
 	s+=tr("Number of activities=%1").arg(CustomFETString::number(this->activitiesIds.count())); s+="\n";
-	foreach(int id, this->activitiesIds){
+	for(int id : qAsConst(this->activitiesIds)){
 		s+=tr("Activity with id=%1 (%2)", "%1 is the id, %2 is the detailed description of the activity")
 		 .arg(id)
 		 .arg(getActivityDetailedDescription(r, id));
@@ -17931,7 +17931,7 @@ double ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::fitness(Solution& c,
 		for(int h=0; h<r.nHoursPerDay; h++)
 			used[d][h]=false;
 	
-	foreach(int ai, this->_activitiesIndices){
+	for(int ai : qAsConst(this->_activitiesIndices)){
 		if(c.times[ai]!=UNALLOCATED_TIME){
 			Activity* act=&r.internalActivitiesList[ai];
 			int d=c.times[ai]%r.nDaysPerWeek;
@@ -17978,7 +17978,7 @@ void ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::removeUseless(Rules& r
 {
 	QList<int> newActs;
 	
-	foreach(int aid, activitiesIds){
+	for(int aid : qAsConst(activitiesIds)){
 		Activity* act=r.activitiesPointerHash.value(aid, NULL);
 		if(act!=NULL)
 			newActs.append(aid);
@@ -18100,7 +18100,7 @@ bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::computeInternalStru
 {
 	//this cares about inactive activities, also, so do not assert this->_actIndices.count()==this->actIds.count()
 	_activitiesIndices.clear();
-	foreach(int id, activitiesIds){
+	for(int id : qAsConst(activitiesIds)){
 		int i=r.activitiesHash.value(id, -1);
 		if(i>=0)
 			_activitiesIndices.append(i);
@@ -18165,7 +18165,7 @@ bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::hasInactiveActiviti
 {
 	//returns true if all activities are inactive
 	
-	foreach(int aid, this->activitiesIds)
+	for(int aid : qAsConst(this->activitiesIds))
 		if(!r.inactiveActivities.contains(aid))
 			return false;
 
@@ -18181,7 +18181,7 @@ QString ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::getXmlDescriptio
 	s+="	<Weight_Percentage>"+CustomFETString::number(this->weightPercentage)+"</Weight_Percentage>\n";
 	
 	s+="	<Number_of_Activities>"+CustomFETString::number(this->activitiesIds.count())+"</Number_of_Activities>\n";
-	foreach(int aid, this->activitiesIds)
+	for(int aid : qAsConst(this->activitiesIds))
 		s+="	<Activity_Id>"+CustomFETString::number(aid)+"</Activity_Id>\n";
 	
 	s+="	<Number_of_Selected_Time_Slots>"+CustomFETString::number(this->selectedDays.count())+"</Number_of_Selected_Time_Slots>\n";
@@ -18212,7 +18212,7 @@ QString ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::getDescription(R
 	assert(this->selectedDays.count()==this->selectedHours.count());
 
 	QString actids=QString("");
-	foreach(int aid, this->activitiesIds)
+	for(int aid : qAsConst(this->activitiesIds))
 		actids+=CustomFETString::number(aid)+QString(", ");
 	actids.chop(2);
 		
@@ -18237,7 +18237,7 @@ QString ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::getDetailedDescr
 	assert(this->selectedDays.count()==this->selectedHours.count());
 
 	QString actids=QString("");
-	foreach(int aid, this->activitiesIds)
+	for(int aid : qAsConst(this->activitiesIds))
 		actids+=CustomFETString::number(aid)+QString(", ");
 	actids.chop(2);
 		
@@ -18250,7 +18250,7 @@ QString ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::getDetailedDescr
 	s+=tr("Activities max simultaneous in selected time slots"); s+="\n";
 	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage)); s+="\n";
 	s+=tr("Number of activities=%1").arg(CustomFETString::number(this->activitiesIds.count())); s+="\n";
-	foreach(int id, this->activitiesIds){
+	for(int id : qAsConst(this->activitiesIds)){
 		s+=tr("Activity with id=%1 (%2)", "%1 is the id, %2 is the detailed description of the activity")
 		 .arg(id)
 		 .arg(getActivityDetailedDescription(r, id));
@@ -18295,7 +18295,7 @@ double ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::fitness(Solution&
 		for(int h=0; h<r.nHoursPerDay; h++)
 			count[d][h]=0;
 	
-	foreach(int ai, this->_activitiesIndices){
+	for(int ai : qAsConst(this->_activitiesIndices)){
 		if(c.times[ai]!=UNALLOCATED_TIME){
 			Activity* act=&r.internalActivitiesList[ai];
 			int d=c.times[ai]%r.nDaysPerWeek;
@@ -18339,7 +18339,7 @@ void ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::removeUseless(Rules
 {
 	QList<int> newActs;
 	
-	foreach(int aid, activitiesIds){
+	for(int aid : qAsConst(activitiesIds)){
 		Activity* act=r.activitiesPointerHash.value(aid, NULL);
 		if(act!=NULL)
 			newActs.append(aid);
@@ -18583,7 +18583,7 @@ double ConstraintStudentsSetMaxDaysPerWeek::fitness(Solution& c, Rules& r, QList
 	
 	nbroken=0;
 	
-	foreach(int sbg, this->iSubgroupsList){
+	for(int sbg : qAsConst(this->iSubgroupsList)){
 		bool ocDay[MAX_DAYS_PER_WEEK];
 		for(int d=0; d<r.nDaysPerWeek; d++){
 			ocDay[d]=false;
@@ -19424,7 +19424,7 @@ double ConstraintStudentsSetMaxSpanPerDay::fitness(Solution& c, Rules& r, QList<
 	
 	int nbroken=0;
 	
-	foreach(int sbg, this->iSubgroupsList){
+	for(int sbg : qAsConst(this->iSubgroupsList)){
 		for(int d=0; d<r.nDaysPerWeek; d++){
 			int begin=-1;
 			int end=-1;
@@ -20263,7 +20263,7 @@ double ConstraintStudentsSetMinRestingHours::fitness(Solution& c, Rules& r, QLis
 	
 	int nbroken=0;
 
-	foreach(int sbg, this->iSubgroupsList){
+	for(int sbg : qAsConst(this->iSubgroupsList)){
 		for(int d=0; d<=r.nDaysPerWeek-2+(circular?1:0); d++){
 			int cnt=0;
 			for(int h=r.nHoursPerDay-1; h>=0; h--){

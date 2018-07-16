@@ -209,7 +209,7 @@ TimetableViewStudentsTimeHorizontalForm::TimetableViewStudentsTimeHorizontalForm
 	usedStudentsSet.clear();
 	for(int i=0; i<gt.rules.nInternalActivities; i++){
 		Activity* act=&gt.rules.internalActivitiesList[i];
-		foreach(QString students, act->studentsNames){
+		for(const QString& students : qAsConst(act->studentsNames)){
 			if(!usedStudentsSet.contains(students))
 				usedStudentsSet.insert(students);
 		}
@@ -225,17 +225,17 @@ TimetableViewStudentsTimeHorizontalForm::TimetableViewStudentsTimeHorizontalForm
 	
 	QSet<QString> studentsSet2;
 	usedStudentsList.clear();
-	foreach(StudentsYear* year, gt.rules.augmentedYearsList){
+	for(StudentsYear* year : qAsConst(gt.rules.augmentedYearsList)){
 		if(usedStudentsSet.contains(year->name) && !studentsSet2.contains(year->name)){
 			usedStudentsList.append(year->name);
 			studentsSet2.insert(year->name);
 		}
-		foreach(StudentsGroup* group, year->groupsList){
+		for(StudentsGroup* group : qAsConst(year->groupsList)){
 			if(usedStudentsSet.contains(group->name) && !studentsSet2.contains(group->name)){
 				usedStudentsList.append(group->name);
 				studentsSet2.insert(group->name);
 			}
-			foreach(StudentsSubgroup* subgroup, group->subgroupsList){
+			for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList)){
 				if(usedStudentsSet.contains(subgroup->name) && !studentsSet2.contains(subgroup->name)){
 					usedStudentsList.append(subgroup->name);
 					studentsSet2.insert(subgroup->name);
@@ -1017,7 +1017,7 @@ void TimetableViewStudentsTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 				QList<TimeConstraint*> tmptc;
 				int count=0;
 
-				foreach(ConstraintActivityPreferredStartingTime* c, gt.rules.apstHash.value(act->id, QSet<ConstraintActivityPreferredStartingTime*>())){
+				for(ConstraintActivityPreferredStartingTime* c : gt.rules.apstHash.value(act->id, QSet<ConstraintActivityPreferredStartingTime*>())){
 					assert(c->activityId==act->id);
 					if(c->activityId==act->id && c->weightPercentage==100.0 && c->active && c->day>=0 && c->hour>=0){
 						count++;
@@ -1071,7 +1071,7 @@ void TimetableViewStudentsTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 					if(count>=2)
 						QMessageBox::warning(this, tr("FET warning"), tr("You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints").arg(tmptc.size()));
 
-					foreach(TimeConstraint* deltc, tmptc){
+					for(TimeConstraint* deltc : qAsConst(tmptc)){
 						s+=tr("The following constraint will be deleted:")+"\n"+deltc->getDetailedDescription(gt.rules)+"\n";
 						gt.rules.removeTimeConstraint(deltc);
 						idsOfLockedTime.remove(act->id);
@@ -1099,7 +1099,7 @@ void TimetableViewStudentsTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 				QList<SpaceConstraint*> tmpsc;
 				int count=0;
 
-				foreach(ConstraintActivityPreferredRoom* c, gt.rules.aprHash.value(act->id, QSet<ConstraintActivityPreferredRoom*>())){
+				for(ConstraintActivityPreferredRoom* c : gt.rules.aprHash.value(act->id, QSet<ConstraintActivityPreferredRoom*>())){
 					assert(c->activityId==act->id);
 
 					if(c->activityId==act->id && c->weightPercentage==100.0 && c->active){
@@ -1156,7 +1156,7 @@ void TimetableViewStudentsTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 					if(count>=2)
 						QMessageBox::warning(this, tr("FET warning"), tr("You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints").arg(tmpsc.size()));
 
-					foreach(SpaceConstraint* delsc, tmpsc){
+					for(SpaceConstraint* delsc : qAsConst(tmpsc)){
 						s+=tr("The following constraint will be deleted:")+"\n"+delsc->getDetailedDescription(gt.rules)+"\n";
 						gt.rules.removeSpaceConstraint(delsc);
 						idsOfLockedSpace.remove(act->id);

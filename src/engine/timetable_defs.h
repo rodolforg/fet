@@ -33,6 +33,15 @@ File timetable_defs.h
 
 #include "centerwidgetonscreen.h"
 
+#if QT_VERSION < 0x050700
+#include <type_traits>
+template <class T> constexpr std::add_const_t<T>& qAsConst(T& t) noexcept
+{
+	return t;
+}
+template <class T> void qAsConst(const T&&) = delete;
+#endif
+
 class QWidget;
 
 /**

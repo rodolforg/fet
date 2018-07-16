@@ -52,7 +52,7 @@ ConstraintTeacherMaxBuildingChangesPerDayForm::ConstraintTeacherMaxBuildingChang
 	Q_UNUSED(tmp1);
 		
 	teachersComboBox->addItem("");
-	foreach(Teacher* tch, gt.rules.teachersList)
+	for(Teacher* tch : qAsConst(gt.rules.teachersList))
 		teachersComboBox->addItem(tch->name);
 
 	this->filterChanged();

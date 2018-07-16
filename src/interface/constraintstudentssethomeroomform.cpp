@@ -72,7 +72,7 @@ ConstraintStudentsSetHomeRoomForm::ConstraintStudentsSetHomeRoomForm(QWidget* pa
 	}*/
 	
 	roomsComboBox->addItem("");
-	foreach(Room* rm, gt.rules.roomsList)
+	for(Room* rm : qAsConst(gt.rules.roomsList))
 		roomsComboBox->addItem(rm->name);
 
 	this->filterChanged();

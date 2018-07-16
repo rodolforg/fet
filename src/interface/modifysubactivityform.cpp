@@ -41,11 +41,11 @@ ModifySubactivityForm::ModifySubactivityForm(QWidget* parent, int id, int activi
 {
 	setupUi(this);
 
-	foreach(Teacher* tch, gt.rules.teachersList)
+	for(Teacher* tch : qAsConst(gt.rules.teachersList))
 		teacherNamesSet.insert(tch->name);
-	foreach(Subject* sbj, gt.rules.subjectsList)
+	for(Subject* sbj : qAsConst(gt.rules.subjectsList))
 		subjectNamesSet.insert(sbj->name);
-	foreach(ActivityTag* at, gt.rules.activityTagsList)
+	for(ActivityTag* at : qAsConst(gt.rules.activityTagsList))
 		activityTagNamesSet.insert(at->name);
 
 	allTeachersListWidget->setSelectionMode(QAbstractItemView::SingleSelection);

@@ -293,7 +293,7 @@ TimetablePrintForm::TimetablePrintForm(QWidget *parent): QDialog(parent){
 
 	//CBpaperSize->addItems(paperSizesMap.keys());
 	QList<LocaleString> items=paperSizesMap.keys();
-	foreach(LocaleString s, items)
+	for(const LocaleString& s : qAsConst(items))
 		CBpaperSize->addItem(s);
 
 	if(CBpaperSize->count()>=5)
@@ -979,7 +979,7 @@ QString TimetablePrintForm::updateHtmlPrintString(bool printAll){
 		TimetableExport::computeHashActivityColorBySubjectAndStudents();
 		
 		int cnt=0;
-		foreach(int i, activeHashActivityColorBySubject){
+		for(int i : qAsConst(activeHashActivityColorBySubject)){
 			Activity* act=&gt.rules.internalActivitiesList[i];
 			
 			QString tmpString=act->subjectName;
@@ -998,7 +998,7 @@ QString TimetablePrintForm::updateHtmlPrintString(bool printAll){
 			//similar to the coloring by Marco Vassura (end)
 			cnt++;
 		}
-		foreach(int i, activeHashActivityColorBySubjectAndStudents){
+		for(int i : qAsConst(activeHashActivityColorBySubjectAndStudents)){
 			Activity* act=&gt.rules.internalActivitiesList[i];
 			
 			QString tmpString=act->subjectName+" "+act->studentsNames.join(" ,");

@@ -58,7 +58,7 @@ SubjectsStatisticsForm::SubjectsStatisticsForm(QWidget* parent): QDialog(parent)
 	
 	QHash<QString, QSet<Activity*> > activitiesForSubject;
 	
-	foreach(Activity* act, gt.rules.activitiesList)
+	for(Activity* act : qAsConst(gt.rules.activitiesList))
 		if(act->active){
 			QSet<Activity*> acts=activitiesForSubject.value(act->subjectName, QSet<Activity*>());
 			acts.insert(act);
@@ -77,7 +77,7 @@ SubjectsStatisticsForm::SubjectsStatisticsForm(QWidget* parent): QDialog(parent)
 		
 		QSet<Activity*> acts=activitiesForSubject.value(s->name, QSet<Activity*>());
 		
-		foreach(Activity* act, acts){
+		for(Activity* act : qAsConst(acts)){
 			if(act->active){
 				nSubActivities++;
 				nHours+=act->duration;

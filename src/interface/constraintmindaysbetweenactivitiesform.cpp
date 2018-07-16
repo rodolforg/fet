@@ -130,7 +130,7 @@ bool ConstraintMinDaysBetweenActivitiesForm::filterOk(TimeConstraint* ctr)
 	for(int i=0; i<c->n_activities; i++){
 		int id=c->activitiesId[i];
 		Activity* act=NULL;
-		foreach(Activity* a, gt.rules.activitiesList)
+		for(Activity* a : qAsConst(gt.rules.activitiesList))
 			if(a->id==id)
 				act=a;
 		
@@ -375,7 +375,7 @@ void ConstraintMinDaysBetweenActivitiesForm::changeSelectively()
 		
 		int count=0;
 
-		foreach(TimeConstraint* tc, gt.rules.timeConstraintsList)
+		for(TimeConstraint* tc : qAsConst(gt.rules.timeConstraintsList))
 			if(tc->type==CONSTRAINT_MIN_DAYS_BETWEEN_ACTIVITIES){
 				ConstraintMinDaysBetweenActivities* mc=(ConstraintMinDaysBetweenActivities*)tc;
 				bool okw, okd, okc, okn;

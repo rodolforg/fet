@@ -130,7 +130,7 @@ bool ConstraintActivitiesSameRoomIfConsecutiveForm::filterOk(SpaceConstraint* ct
 	for(int i=0; i<c->activitiesIds.count(); i++){
 		int id=c->activitiesIds.at(i);
 		Activity* act=NULL;
-		foreach(Activity* a, gt.rules.activitiesList)
+		for(Activity* a : qAsConst(gt.rules.activitiesList))
 			if(a->id==id)
 				act=a;
 		

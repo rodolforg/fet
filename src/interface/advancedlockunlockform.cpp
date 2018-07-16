@@ -199,7 +199,7 @@ void AdvancedLockUnlockForm::lockDay(QWidget* parent)
 			if(newTimeCtr!=NULL){
 				bool add=true;
 				
-				foreach(ConstraintActivityPreferredStartingTime* tc, gt.rules.apstHash.value(aid, QSet<ConstraintActivityPreferredStartingTime*>())){
+				for(ConstraintActivityPreferredStartingTime* tc : gt.rules.apstHash.value(aid, QSet<ConstraintActivityPreferredStartingTime*>())){
 					if((*tc) == (*newTimeCtr)){
 						add=false;
 						break;
@@ -223,7 +223,7 @@ void AdvancedLockUnlockForm::lockDay(QWidget* parent)
 			if(newSpaceCtr!=NULL){
 				bool add=true;
 				
-				foreach(ConstraintActivityPreferredRoom* tc, gt.rules.aprHash.value(aid, QSet<ConstraintActivityPreferredRoom*>())){
+				for(ConstraintActivityPreferredRoom* tc : gt.rules.aprHash.value(aid, QSet<ConstraintActivityPreferredRoom*>())){
 					if((*tc) == (*newSpaceCtr)){
 						add=false;
 						break;
@@ -326,22 +326,22 @@ void AdvancedLockUnlockForm::lockDay(QWidget* parent)
 		return;
 	////////////
 	
-	foreach(TimeConstraint* tc, addedTimeConstraints){
+	for(TimeConstraint* tc : qAsConst(addedTimeConstraints)){
 		bool t=gt.rules.addTimeConstraint(tc);
 		assert(t);
 	}
 	addedTimeConstraints.clear();
-	foreach(TimeConstraint* tc, notAddedTimeConstraints){
+	for(TimeConstraint* tc : qAsConst(notAddedTimeConstraints)){
 		delete tc;
 	}
 	notAddedTimeConstraints.clear();
 	
-	foreach(SpaceConstraint* sc, addedSpaceConstraints){
+	for(SpaceConstraint* sc : qAsConst(addedSpaceConstraints)){
 		bool t=gt.rules.addSpaceConstraint(sc);
 		assert(t);
 	}
 	addedSpaceConstraints.clear();
-	foreach(SpaceConstraint* sc, notAddedSpaceConstraints){
+	for(SpaceConstraint* sc : qAsConst(notAddedSpaceConstraints)){
 		delete sc;
 	}
 	notAddedSpaceConstraints.clear();
@@ -473,8 +473,8 @@ void AdvancedLockUnlockForm::unlockDay(QWidget* parent)
 	QList<SpaceConstraint*> notRemovedSpaceConstraints;
 	
 	if(unlockTime){
-		foreach(int aid, lockedActivitiesIds){
-			foreach(ConstraintActivityPreferredStartingTime* c, gt.rules.apstHash.value(aid, QSet<ConstraintActivityPreferredStartingTime*>())){
+		for(int aid : qAsConst(lockedActivitiesIds)){
+			for(ConstraintActivityPreferredStartingTime* c : gt.rules.apstHash.value(aid, QSet<ConstraintActivityPreferredStartingTime*>())){
 				assert(aid==c->activityId);
 				if(c->weightPercentage==100.0 && c->day>=0 && c->hour>=0){
 //					if(c->day!=selectedDayInt){
@@ -499,8 +499,8 @@ void AdvancedLockUnlockForm::unlockDay(QWidget* parent)
 	}
 
 	if(unlockSpace){
-		foreach(int aid, lockedActivitiesIds){
-			foreach(ConstraintActivityPreferredRoom* c, gt.rules.aprHash.value(aid, QSet<ConstraintActivityPreferredRoom*>())){
+		for(int aid : qAsConst(lockedActivitiesIds)){
+			for(ConstraintActivityPreferredRoom* c : gt.rules.aprHash.value(aid, QSet<ConstraintActivityPreferredRoom*>())){
 				assert(aid==c->activityId);
 				if(c->weightPercentage==100.0){
 					if(!c->permanentlyLocked){
@@ -757,7 +757,7 @@ void AdvancedLockUnlockForm::lockEndStudentsDay(QWidget* parent)
 			if(newTimeCtr!=NULL){
 				bool add=true;
 
-				foreach(ConstraintActivityPreferredStartingTime* tc, gt.rules.apstHash.value(id, QSet<ConstraintActivityPreferredStartingTime*>())){
+				for(ConstraintActivityPreferredStartingTime* tc : gt.rules.apstHash.value(id, QSet<ConstraintActivityPreferredStartingTime*>())){
 					if((*tc) == (*newTimeCtr)){
 						add=false;
 						break;
@@ -781,7 +781,7 @@ void AdvancedLockUnlockForm::lockEndStudentsDay(QWidget* parent)
 			if(newSpaceCtr!=NULL){
 				bool add=true;
 
-				foreach(ConstraintActivityPreferredRoom* tc, gt.rules.aprHash.value(id, QSet<ConstraintActivityPreferredRoom*>())){
+				for(ConstraintActivityPreferredRoom* tc : gt.rules.aprHash.value(id, QSet<ConstraintActivityPreferredRoom*>())){
 					if((*tc) == (*newSpaceCtr)){
 						add=false;
 						break;
@@ -884,22 +884,22 @@ void AdvancedLockUnlockForm::lockEndStudentsDay(QWidget* parent)
 		return;
 	////////////
 	
-	foreach(TimeConstraint* tc, addedTimeConstraints){
+	for(TimeConstraint* tc : qAsConst(addedTimeConstraints)){
 		bool t=gt.rules.addTimeConstraint(tc);
 		assert(t);
 	}
 	addedTimeConstraints.clear();
-	foreach(TimeConstraint* tc, notAddedTimeConstraints){
+	for(TimeConstraint* tc : qAsConst(notAddedTimeConstraints)){
 		delete tc;
 	}
 	notAddedTimeConstraints.clear();
 	
-	foreach(SpaceConstraint* sc, addedSpaceConstraints){
+	for(SpaceConstraint* sc : qAsConst(addedSpaceConstraints)){
 		bool t=gt.rules.addSpaceConstraint(sc);
 		assert(t);
 	}
 	addedSpaceConstraints.clear();
-	foreach(SpaceConstraint* sc, notAddedSpaceConstraints){
+	for(SpaceConstraint* sc : qAsConst(notAddedSpaceConstraints)){
 		delete sc;
 	}
 	notAddedSpaceConstraints.clear();
@@ -1022,8 +1022,8 @@ void AdvancedLockUnlockForm::unlockEndStudentsDay(QWidget* parent)
 	QList<SpaceConstraint*> notRemovedSpaceConstraints;
 	
 	if(unlockTime){
-		foreach(int id, activitiesIdsList){
-			foreach(ConstraintActivityPreferredStartingTime* c, gt.rules.apstHash.value(id, QSet<ConstraintActivityPreferredStartingTime*>())){
+		for(int id : qAsConst(activitiesIdsList)){
+			for(ConstraintActivityPreferredStartingTime* c : gt.rules.apstHash.value(id, QSet<ConstraintActivityPreferredStartingTime*>())){
 				assert(id==c->activityId);
 				if(c->weightPercentage==100.0 && c->day>=0 && c->hour>=0){
 					if(!c->permanentlyLocked){
@@ -1042,8 +1042,8 @@ void AdvancedLockUnlockForm::unlockEndStudentsDay(QWidget* parent)
 	}
 
 	if(unlockSpace){
-		foreach(int id, activitiesIdsList){
-			foreach(ConstraintActivityPreferredRoom* c, gt.rules.aprHash.value(id, QSet<ConstraintActivityPreferredRoom*>())){
+		for(int id : qAsConst(activitiesIdsList)){
+			for(ConstraintActivityPreferredRoom* c : gt.rules.aprHash.value(id, QSet<ConstraintActivityPreferredRoom*>())){
 				assert(id==c->activityId);
 				if(c->weightPercentage==100.0){
 					if(!c->permanentlyLocked){
@@ -1274,7 +1274,7 @@ void AdvancedLockUnlockForm::lockAll(QWidget* parent)
 			if(newTimeCtr!=NULL){
 				bool add=true;
 				
-				foreach(ConstraintActivityPreferredStartingTime* tc, gt.rules.apstHash.value(id, QSet<ConstraintActivityPreferredStartingTime*>())){
+				for(ConstraintActivityPreferredStartingTime* tc : gt.rules.apstHash.value(id, QSet<ConstraintActivityPreferredStartingTime*>())){
 					if((*tc) == (*newTimeCtr)){
 						add=false;
 						break;
@@ -1298,7 +1298,7 @@ void AdvancedLockUnlockForm::lockAll(QWidget* parent)
 			if(newSpaceCtr!=NULL){
 				bool add=true;
 
-				foreach(ConstraintActivityPreferredRoom* tc, gt.rules.aprHash.value(id, QSet<ConstraintActivityPreferredRoom*>())){
+				for(ConstraintActivityPreferredRoom* tc : gt.rules.aprHash.value(id, QSet<ConstraintActivityPreferredRoom*>())){
 					if((*tc) == (*newSpaceCtr)){
 						add=false;
 						break;
@@ -1401,22 +1401,22 @@ void AdvancedLockUnlockForm::lockAll(QWidget* parent)
 		return;
 	////////////
 	
-	foreach(TimeConstraint* tc, addedTimeConstraints){
+	for(TimeConstraint* tc : qAsConst(addedTimeConstraints)){
 		bool t=gt.rules.addTimeConstraint(tc);
 		assert(t);
 	}
 	addedTimeConstraints.clear();
-	foreach(TimeConstraint* tc, notAddedTimeConstraints){
+	for(TimeConstraint* tc : qAsConst(notAddedTimeConstraints)){
 		delete tc;
 	}
 	notAddedTimeConstraints.clear();
 	
-	foreach(SpaceConstraint* sc, addedSpaceConstraints){
+	for(SpaceConstraint* sc : qAsConst(addedSpaceConstraints)){
 		bool t=gt.rules.addSpaceConstraint(sc);
 		assert(t);
 	}
 	addedSpaceConstraints.clear();
-	foreach(SpaceConstraint* sc, notAddedSpaceConstraints){
+	for(SpaceConstraint* sc : qAsConst(notAddedSpaceConstraints)){
 		delete sc;
 	}
 	notAddedSpaceConstraints.clear();
@@ -1528,8 +1528,8 @@ void AdvancedLockUnlockForm::unlockAll(QWidget* parent)
 	QList<SpaceConstraint*> notRemovedSpaceConstraints;
 	
 	if(unlockTime){
-		foreach(int id, lockedActivitiesIds){
-			foreach(ConstraintActivityPreferredStartingTime* c, gt.rules.apstHash.value(id, QSet<ConstraintActivityPreferredStartingTime*>())){
+		for(int id : qAsConst(lockedActivitiesIds)){
+			for(ConstraintActivityPreferredStartingTime* c : gt.rules.apstHash.value(id, QSet<ConstraintActivityPreferredStartingTime*>())){
 				assert(id==c->activityId);
 				if(c->weightPercentage==100.0 && c->day>=0 && c->hour>=0){
 					if(!c->permanentlyLocked){
@@ -1548,8 +1548,8 @@ void AdvancedLockUnlockForm::unlockAll(QWidget* parent)
 	}
 
 	if(unlockSpace){
-		foreach(int id, lockedActivitiesIds){
-			foreach(ConstraintActivityPreferredRoom* c, gt.rules.aprHash.value(id, QSet<ConstraintActivityPreferredRoom*>())){
+		for(int id : qAsConst(lockedActivitiesIds)){
+			for(ConstraintActivityPreferredRoom* c : gt.rules.aprHash.value(id, QSet<ConstraintActivityPreferredRoom*>())){
 				assert(id==c->activityId);
 				if(c->weightPercentage==100.0){
 					if(!c->permanentlyLocked){
@@ -1766,7 +1766,7 @@ void AdvancedLockUnlockForm::unlockAllWithoutTimetable(QWidget* parent)
 	QList<SpaceConstraint*> notRemovedSpaceConstraints;
 	
 	if(unlockTime)
-		foreach(TimeConstraint* tc, gt.rules.timeConstraintsList)
+		for(TimeConstraint* tc : qAsConst(gt.rules.timeConstraintsList))
 			if(tc->type==CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIME){
 				ConstraintActivityPreferredStartingTime* c=(ConstraintActivityPreferredStartingTime*)tc;
 				if(tc->weightPercentage==100.0 && c->day>=0 && c->hour>=0){
@@ -1784,7 +1784,7 @@ void AdvancedLockUnlockForm::unlockAllWithoutTimetable(QWidget* parent)
 			}
 	
 	if(unlockSpace)
-		foreach(SpaceConstraint* sc, gt.rules.spaceConstraintsList)
+		for(SpaceConstraint* sc : qAsConst(gt.rules.spaceConstraintsList))
 			if(sc->type==CONSTRAINT_ACTIVITY_PREFERRED_ROOM){
 				ConstraintActivityPreferredRoom* c=(ConstraintActivityPreferredRoom*)sc;
 				if(c->weightPercentage==100.0){
@@ -2024,7 +2024,7 @@ void AdvancedLockUnlockForm::unlockDayWithoutTimetable(QWidget* parent)
 	QSet<int> actsSet;
 	
 	if(unlockTime || unlockSpace) // ||unlockSpace is added on 2018-06-26, correcting a bug if the user only selected Space and the timetable was not generated.
-		foreach(TimeConstraint* tc, gt.rules.timeConstraintsList)
+		for(TimeConstraint* tc : qAsConst(gt.rules.timeConstraintsList))
 			if(tc->type==CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIME){
 				ConstraintActivityPreferredStartingTime* c=(ConstraintActivityPreferredStartingTime*)tc;
 				if(c->weightPercentage==100.0 && c->day>=0 && c->hour>=0 && c->day==selectedDayInt){
@@ -2045,7 +2045,7 @@ void AdvancedLockUnlockForm::unlockDayWithoutTimetable(QWidget* parent)
 			}
 			
 	if(unlockSpace)
-		foreach(SpaceConstraint* sc, gt.rules.spaceConstraintsList)
+		for(SpaceConstraint* sc : qAsConst(gt.rules.spaceConstraintsList))
 			if(sc->type==CONSTRAINT_ACTIVITY_PREFERRED_ROOM){
 				ConstraintActivityPreferredRoom* c=(ConstraintActivityPreferredRoom*) sc;
 				if(c->weightPercentage==100.0 && actsSet.contains(c->activityId)){
@@ -2170,7 +2170,7 @@ void AdvancedLockUnlockForm::lockActivityTag(QWidget* parent)
 	
 	QStringList activityTags;
 	assert(gt.rules.activityTagsList.count()==gt.rules.nInternalActivityTags);
-	foreach(ActivityTag* at, gt.rules.activityTagsList)
+	for(ActivityTag* at : qAsConst(gt.rules.activityTagsList))
 		activityTags.append(at->name);
 	if(activityTags.size()==0){
 		QMessageBox::warning(parent, tr("FET warning"), tr("You entered this dialog, but you have no activity tags. This should not happen."
@@ -2298,7 +2298,7 @@ void AdvancedLockUnlockForm::lockActivityTag(QWidget* parent)
 			if(newTimeCtr!=NULL){
 				bool add=true;
 				
-				foreach(ConstraintActivityPreferredStartingTime* tc, gt.rules.apstHash.value(aid, QSet<ConstraintActivityPreferredStartingTime*>())){
+				for(ConstraintActivityPreferredStartingTime* tc : gt.rules.apstHash.value(aid, QSet<ConstraintActivityPreferredStartingTime*>())){
 					if((*tc) == (*newTimeCtr)){
 						add=false;
 						break;
@@ -2322,7 +2322,7 @@ void AdvancedLockUnlockForm::lockActivityTag(QWidget* parent)
 			if(newSpaceCtr!=NULL){
 				bool add=true;
 				
-				foreach(ConstraintActivityPreferredRoom* tc, gt.rules.aprHash.value(aid, QSet<ConstraintActivityPreferredRoom*>())){
+				for(ConstraintActivityPreferredRoom* tc : gt.rules.aprHash.value(aid, QSet<ConstraintActivityPreferredRoom*>())){
 					if((*tc) == (*newSpaceCtr)){
 						add=false;
 						break;
@@ -2425,22 +2425,22 @@ void AdvancedLockUnlockForm::lockActivityTag(QWidget* parent)
 		return;
 	////////////
 	
-	foreach(TimeConstraint* tc, addedTimeConstraints){
+	for(TimeConstraint* tc : qAsConst(addedTimeConstraints)){
 		bool t=gt.rules.addTimeConstraint(tc);
 		assert(t);
 	}
 	addedTimeConstraints.clear();
-	foreach(TimeConstraint* tc, notAddedTimeConstraints){
+	for(TimeConstraint* tc : qAsConst(notAddedTimeConstraints)){
 		delete tc;
 	}
 	notAddedTimeConstraints.clear();
 	
-	foreach(SpaceConstraint* sc, addedSpaceConstraints){
+	for(SpaceConstraint* sc : qAsConst(addedSpaceConstraints)){
 		bool t=gt.rules.addSpaceConstraint(sc);
 		assert(t);
 	}
 	addedSpaceConstraints.clear();
-	foreach(SpaceConstraint* sc, notAddedSpaceConstraints){
+	for(SpaceConstraint* sc : qAsConst(notAddedSpaceConstraints)){
 		delete sc;
 	}
 	notAddedSpaceConstraints.clear();
@@ -2461,7 +2461,7 @@ void AdvancedLockUnlockForm::unlockActivityTag(QWidget* parent)
 	
 	QStringList activityTags;
 	assert(gt.rules.activityTagsList.count()==gt.rules.nInternalActivityTags);
-	foreach(ActivityTag* at, gt.rules.activityTagsList)
+	for(ActivityTag* at : qAsConst(gt.rules.activityTagsList))
 		activityTags.append(at->name);
 	if(activityTags.size()==0){
 		QMessageBox::warning(parent, tr("FET warning"), tr("You entered this dialog, but you have no activity tags. This should not happen."
@@ -2579,8 +2579,8 @@ void AdvancedLockUnlockForm::unlockActivityTag(QWidget* parent)
 	QList<SpaceConstraint*> notRemovedSpaceConstraints;
 	
 	if(unlockTime){
-		foreach(int aid, lockedActivitiesIds){
-			foreach(ConstraintActivityPreferredStartingTime* c, gt.rules.apstHash.value(aid, QSet<ConstraintActivityPreferredStartingTime*>())){
+		for(int aid : qAsConst(lockedActivitiesIds)){
+			for(ConstraintActivityPreferredStartingTime* c : gt.rules.apstHash.value(aid, QSet<ConstraintActivityPreferredStartingTime*>())){
 				assert(aid==c->activityId);
 				if(c->weightPercentage==100.0 && c->day>=0 && c->hour>=0){
 					if(!c->permanentlyLocked){
@@ -2599,8 +2599,8 @@ void AdvancedLockUnlockForm::unlockActivityTag(QWidget* parent)
 	}
 
 	if(unlockSpace){
-		foreach(int aid, lockedActivitiesIds){
-			foreach(ConstraintActivityPreferredRoom* c, gt.rules.aprHash.value(aid, QSet<ConstraintActivityPreferredRoom*>())){
+		for(int aid : qAsConst(lockedActivitiesIds)){
+			for(ConstraintActivityPreferredRoom* c : gt.rules.aprHash.value(aid, QSet<ConstraintActivityPreferredRoom*>())){
 				assert(aid==c->activityId);
 				if(c->weightPercentage==100.0){
 					if(!c->permanentlyLocked){
@@ -2727,7 +2727,7 @@ void AdvancedLockUnlockForm::unlockActivityTagWithoutTimetable(QWidget* parent)
 	QStringList activityTags;
 	//Wrong test below, because the timetable is not generated
 	//assert(gt.rules.activityTagsList.count()==gt.rules.nInternalActivityTags);
-	foreach(ActivityTag* at, gt.rules.activityTagsList)
+	for(ActivityTag* at : qAsConst(gt.rules.activityTagsList))
 		activityTags.append(at->name);
 	if(activityTags.size()==0){
 		QMessageBox::warning(parent, tr("FET warning"), tr("You entered this dialog, but you have no activity tags. This should not happen."
@@ -2835,7 +2835,7 @@ void AdvancedLockUnlockForm::unlockActivityTagWithoutTimetable(QWidget* parent)
 	QSet<int> actsSet;
 	
 	if(unlockTime || unlockSpace) // ||unlockSpace is added on 2018-06-26, correcting a bug if the user only selected Space and the timetable was not generated.
-		foreach(TimeConstraint* tc, gt.rules.timeConstraintsList)
+		for(TimeConstraint* tc : qAsConst(gt.rules.timeConstraintsList))
 			if(tc->type==CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIME){
 				ConstraintActivityPreferredStartingTime* c=(ConstraintActivityPreferredStartingTime*)tc;
 				if(c->weightPercentage==100.0 && c->day>=0 && c->hour>=0){
@@ -2860,7 +2860,7 @@ void AdvancedLockUnlockForm::unlockActivityTagWithoutTimetable(QWidget* parent)
 			}
 			
 	if(unlockSpace)
-		foreach(SpaceConstraint* sc, gt.rules.spaceConstraintsList)
+		for(SpaceConstraint* sc : qAsConst(gt.rules.spaceConstraintsList))
 			if(sc->type==CONSTRAINT_ACTIVITY_PREFERRED_ROOM){
 				ConstraintActivityPreferredRoom* c=(ConstraintActivityPreferredRoom*) sc;
 				if(c->weightPercentage==100.0 && actsSet.contains(c->activityId)){

@@ -160,9 +160,9 @@ void SubgroupsForm::removeSubgroup()
 	
 	QList<QPair<QString, QString> > yearsGroupsContainingSubgroup_List;
 	//QSet<QPair<QString, QString> > yearsGroupsContainingSubgroup_Set;
-	foreach(StudentsYear* year, gt.rules.yearsList)
-		foreach(StudentsGroup* group, year->groupsList)
-			foreach(StudentsSubgroup* subgroup, group->subgroupsList)
+	for(StudentsYear* year : qAsConst(gt.rules.yearsList))
+		for(StudentsGroup* group : qAsConst(year->groupsList))
+			for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList))
 				if(subgroup->name==subgroupName)
 					yearsGroupsContainingSubgroup_List.append(QPair<QString, QString>(year->name, group->name));
 			
@@ -175,8 +175,7 @@ void SubgroupsForm::removeSubgroup()
 		s=tr("This subgroup exists in more places, listed below. It will only be removed from the current year/group,"
 		 " and the related activities and constraints will not be removed. Do you want to continue?");
 		s+="\n";
-		QPair<QString, QString> pair;
-		foreach(pair, yearsGroupsContainingSubgroup_List)
+		for(const QPair<QString, QString>& pair : qAsConst(yearsGroupsContainingSubgroup_List))
 			s+=QString("\n")+pair.first+QString(", ")+pair.second;
 	}
 	
@@ -242,9 +241,9 @@ void SubgroupsForm::purgeSubgroup()
 	
 	QList<QPair<QString, QString> > yearsGroupsContainingSubgroup_List;
 	//QSet<QPair<QString, QString> > yearsGroupsContainingSubgroup_Set;
-	foreach(StudentsYear* year, gt.rules.yearsList)
-		foreach(StudentsGroup* group, year->groupsList)
-			foreach(StudentsSubgroup* subgroup, group->subgroupsList)
+	for(StudentsYear* year : qAsConst(gt.rules.yearsList))
+		for(StudentsGroup* group : qAsConst(year->groupsList))
+			for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList))
 				if(subgroup->name==subgroupName)
 					yearsGroupsContainingSubgroup_List.append(QPair<QString, QString>(year->name, group->name));
 			
@@ -257,8 +256,7 @@ void SubgroupsForm::purgeSubgroup()
 		s=tr("This subgroup exists in more places, listed below. It will be removed from all these places."
 		 " All the related activities and constraints will be removed. Do you want to continue?");
 		s+="\n";
-		QPair<QString, QString> pair;
-		foreach(pair, yearsGroupsContainingSubgroup_List)
+		for(const QPair<QString, QString>& pair : qAsConst(yearsGroupsContainingSubgroup_List))
 			s+=QString("\n")+pair.first+QString(", ")+pair.second;
 	}
 	

@@ -137,8 +137,8 @@ void GroupsForm::removeGroup()
 
 	QList<QString> yearsContainingGroup_List;
 	//QSet<QString> yearsContainingGroup_Set;
-	foreach(StudentsYear* year, gt.rules.yearsList)
-		foreach(StudentsGroup* group, year->groupsList)
+	for(StudentsYear* year : qAsConst(gt.rules.yearsList))
+		for(StudentsGroup* group : qAsConst(year->groupsList))
 			if(group->name==groupName)
 				yearsContainingGroup_List.append(year->name);
 			
@@ -151,7 +151,7 @@ void GroupsForm::removeGroup()
 		s=tr("This group exists in more places, listed below. It will only be removed from the current year,"
 		 " and the related activities and constraints will not be removed. Do you want to continue?");
 		s+="\n";
-		foreach(QString str, yearsContainingGroup_List)
+		for(const QString& str : qAsConst(yearsContainingGroup_List))
 			s+=QString("\n")+str;
 	}
 	
@@ -208,8 +208,8 @@ void GroupsForm::purgeGroup()
 
 	QList<QString> yearsContainingGroup_List;
 	//QSet<QString> yearsContainingGroup_Set;
-	foreach(StudentsYear* year, gt.rules.yearsList)
-		foreach(StudentsGroup* group, year->groupsList)
+	for(StudentsYear* year : qAsConst(gt.rules.yearsList))
+		for(StudentsGroup* group : qAsConst(year->groupsList))
 			if(group->name==groupName)
 				yearsContainingGroup_List.append(year->name);
 			
@@ -222,7 +222,7 @@ void GroupsForm::purgeGroup()
 		s=tr("This group exists in more places, listed below. It will be removed from all these places."
 		 " All the related activities and constraints will be removed. Do you want to continue?");
 		s+="\n";
-		foreach(QString str, yearsContainingGroup_List)
+		for(const QString& str : qAsConst(yearsContainingGroup_List))
 			s+=QString("\n")+str;
 	}
 	

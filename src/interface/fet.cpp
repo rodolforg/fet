@@ -313,7 +313,7 @@ void readSimulationParameters()
 		FET_LANGUAGE=QLocale::system().name();
 
 		bool ok=false;
-		foreach(QString s, languagesSet){
+		for(const QString& s : qAsConst(languagesSet)){
 			if(FET_LANGUAGE.left(s.length())==s){
 				FET_LANGUAGE=s;
 				ok=true;
@@ -621,7 +621,7 @@ void setLanguage(QCoreApplication& qapplication, QWidget* parent)
 	//retranslate
 	QList<QWidget*> tlwl=qapplication.topLevelWidgets();
 
-	foreach(QWidget* wi, tlwl)
+	for(QWidget* wi : qAsConst(tlwl))
 		if(wi->isVisible()){
 			FetMainForm* mainform=qobject_cast<FetMainForm*>(wi);
 			if(mainform!=NULL){
@@ -1180,7 +1180,7 @@ int main(int argc, char **argv)
 			if(unrecognizedOptions.count()>0){
 				out<<endl;
 				cout<<endl;
-				foreach(QString s, unrecognizedOptions){
+				for(const QString& s : qAsConst(unrecognizedOptions)){
 					cout<<"Unrecognized option: "<<qPrintable(s)<<endl;
 					out<<"Unrecognized option: "<<qPrintable(s)<<endl;
 				}
@@ -1213,7 +1213,7 @@ int main(int argc, char **argv)
 		out<<"FET command line simulation started on "<<qPrintable(sTime)<<endl<<endl;
 		
 		if(unrecognizedOptions.count()>0){
-			foreach(QString s, unrecognizedOptions){
+			for(const QString& s : qAsConst(unrecognizedOptions)){
 				cout<<"Unrecognized option: "<<qPrintable(s)<<endl;
 				out<<"Unrecognized option: "<<qPrintable(s)<<endl;
 			}

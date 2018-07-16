@@ -227,7 +227,7 @@ StatisticsPrintForm::StatisticsPrintForm(QWidget *parent): QDialog(parent){
 	
 	//CBpaperSize->addItems(paperSizesMap.keys());
 	QList<LocaleString> items=paperSizesMap.keys();
-	foreach(LocaleString s, items)
+	for(const LocaleString& s : qAsConst(items))
 		CBpaperSize->addItem(s);
 	
 	if(CBpaperSize->count()>=5)
@@ -607,7 +607,7 @@ void StatisticsPrintForm::updateNamesList(){
 	
 	if(studentSubjectRB->isChecked() || studentTeacherRB->isChecked()){
 		int count=0;
-		foreach(QString student, statisticValues.allStudentsNames){
+		for(const QString& student : qAsConst(statisticValues.allStudentsNames)){
 			namesList->addItem(student);
 			QListWidgetItem* tmpItem=namesList->item(count);
 			tmpItem->setSelected(true);
@@ -616,7 +616,7 @@ void StatisticsPrintForm::updateNamesList(){
 	}
 	if(teacherSubjectRB->isChecked() || teacherStudentRB->isChecked()){
 		int count=0;
-		foreach(QString teacher, statisticValues.allTeachersNames){
+		for(const QString& teacher : qAsConst(statisticValues.allTeachersNames)){
 			namesList->addItem(teacher);
 			QListWidgetItem* tmpItem=namesList->item(count);
 			tmpItem->setSelected(true);
@@ -625,7 +625,7 @@ void StatisticsPrintForm::updateNamesList(){
 	}
 	if(subjectStudentRB->isChecked() || subjectTeacherRB->isChecked()){
 	int count=0;
-		foreach(QString subject, statisticValues.allSubjectsNames){
+		for(const QString& subject : qAsConst(statisticValues.allSubjectsNames)){
 			namesList->addItem(subject);
 			QListWidgetItem* tmpItem=namesList->item(count);
 			tmpItem->setSelected(true);

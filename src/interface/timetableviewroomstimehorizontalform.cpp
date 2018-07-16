@@ -860,7 +860,7 @@ void TimetableViewRoomsTimeHorizontalForm::lock(bool lockTime, bool lockSpace)
 				QList<TimeConstraint*> tmptc;
 				int count=0;
 
-				foreach(ConstraintActivityPreferredStartingTime* c, gt.rules.apstHash.value(act->id, QSet<ConstraintActivityPreferredStartingTime*>())){
+				for(ConstraintActivityPreferredStartingTime* c : gt.rules.apstHash.value(act->id, QSet<ConstraintActivityPreferredStartingTime*>())){
 					assert(c->activityId==act->id);
 					if(c->activityId==act->id && c->weightPercentage==100.0 && c->active && c->day>=0 && c->hour>=0){
 						count++;
@@ -914,7 +914,7 @@ void TimetableViewRoomsTimeHorizontalForm::lock(bool lockTime, bool lockSpace)
 					if(count>=2)
 						QMessageBox::warning(this, tr("FET warning"), tr("You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints").arg(tmptc.size()));
 
-					foreach(TimeConstraint* deltc, tmptc){
+					for(TimeConstraint* deltc : qAsConst(tmptc)){
 						s+=tr("The following constraint will be deleted:")+"\n"+deltc->getDetailedDescription(gt.rules)+"\n";
 						gt.rules.removeTimeConstraint(deltc);
 						idsOfLockedTime.remove(act->id);
@@ -942,7 +942,7 @@ void TimetableViewRoomsTimeHorizontalForm::lock(bool lockTime, bool lockSpace)
 				QList<SpaceConstraint*> tmpsc;
 				int count=0;
 
-				foreach(ConstraintActivityPreferredRoom* c, gt.rules.aprHash.value(act->id, QSet<ConstraintActivityPreferredRoom*>())){
+				for(ConstraintActivityPreferredRoom* c : gt.rules.aprHash.value(act->id, QSet<ConstraintActivityPreferredRoom*>())){
 					assert(c->activityId==act->id);
 
 					if(c->activityId==act->id && c->weightPercentage==100.0 && c->active){
@@ -999,7 +999,7 @@ void TimetableViewRoomsTimeHorizontalForm::lock(bool lockTime, bool lockSpace)
 					if(count>=2)
 						QMessageBox::warning(this, tr("FET warning"), tr("You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints").arg(tmpsc.size()));
 
-					foreach(SpaceConstraint* delsc, tmpsc){
+					for(SpaceConstraint* delsc : qAsConst(tmpsc)){
 						s+=tr("The following constraint will be deleted:")+"\n"+delsc->getDetailedDescription(gt.rules)+"\n";
 						gt.rules.removeSpaceConstraint(delsc);
 						idsOfLockedSpace.remove(act->id);

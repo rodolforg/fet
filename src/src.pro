@@ -1424,9 +1424,11 @@ TRANSLATIONS += \
 
 TEMPLATE = app
 
-DEFINES += QT_DEPRECATED_WARNINGS
+DEFINES += \
+	QT_DEPRECATED_WARNINGS \
+	QT_NO_FOREACH
 
-CONFIG += release warn_on
+CONFIG += release warn_on c++11
 QT += network
 
 greaterThan(QT_MAJOR_VERSION, 4){

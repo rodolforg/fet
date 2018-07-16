@@ -269,16 +269,16 @@ void SubactivitiesForm::studentsFilterChanged()
 			if(set->type==STUDENTS_YEAR){
 				StudentsYear* year=(StudentsYear*)set;
 				showedStudents.insert(year->name);
-				foreach(StudentsGroup* group, year->groupsList){
+				for(StudentsGroup* group : qAsConst(year->groupsList)){
 					showedStudents.insert(group->name);
-					foreach(StudentsSubgroup* subgroup, group->subgroupsList)
+					for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList))
 						showedStudents.insert(subgroup->name);
 				}
 			}
 			else if(set->type==STUDENTS_GROUP){
 				StudentsGroup* group=(StudentsGroup*) set;
 				showedStudents.insert(group->name);
-				foreach(StudentsSubgroup* subgroup, group->subgroupsList)
+				for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList))
 					showedStudents.insert(subgroup->name);
 			}
 			else if(set->type==STUDENTS_SUBGROUP){
@@ -290,12 +290,12 @@ void SubactivitiesForm::studentsFilterChanged()
 
 			//up
 			QString crt=studentsComboBox->currentText();
-			foreach(StudentsYear* year, gt.rules.yearsList){
-				foreach(StudentsGroup* group, year->groupsList){
+			for(StudentsYear* year : qAsConst(gt.rules.yearsList)){
+				for(StudentsGroup* group : qAsConst(year->groupsList)){
 					if(group->name==crt){
 						showedStudents.insert(year->name);
 					}
-					foreach(StudentsSubgroup* subgroup, group->subgroupsList){
+					for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList)){
 						if(subgroup->name==crt){
 							showedStudents.insert(year->name);
 							showedStudents.insert(group->name);

@@ -53,7 +53,7 @@ ConstraintTeachersActivityTagMaxHoursContinuouslyForm::ConstraintTeachersActivit
 	
 	activityTagsComboBox->clear();
 	activityTagsComboBox->addItem("");
-	foreach(ActivityTag* at, gt.rules.activityTagsList)
+	for(ActivityTag* at : qAsConst(gt.rules.activityTagsList))
 		activityTagsComboBox->addItem(at->name);
 
 	this->filterChanged();

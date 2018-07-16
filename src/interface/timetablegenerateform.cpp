@@ -219,7 +219,7 @@ void TimetableGenerateForm::stop()
 	conflictsString+=TimetableGenerateForm::tr("Conflicts listing (in decreasing order):");
 	conflictsString+="\n";
 
-	foreach(QString t, c.conflictsDescriptionList)
+	for(const QString& t : qAsConst(c.conflictsDescriptionList))
 		conflictsString+=t+"\n";
 
 	TimetableExport::writeSimulationResults(this);
@@ -372,7 +372,7 @@ void TimetableGenerateForm::stopHighest()
 	conflictsString+=TimetableGenerateForm::tr("Conflicts listing (in decreasing order):");
 	conflictsString+="\n";
 
-	foreach(QString t, c.conflictsDescriptionList)
+	for(const QString& t : qAsConst(c.conflictsDescriptionList))
 		conflictsString+=t+"\n";
 
 	TimetableExport::writeHighestStageResults(this);
@@ -503,7 +503,7 @@ void TimetableGenerateForm::impossibleToSolve()
 	conflictsString+=TimetableGenerateForm::tr("Conflicts listing (in decreasing order):");
 	conflictsString+="\n";
 
-	foreach(QString t, c.conflictsDescriptionList)
+	for(const QString& t : qAsConst(c.conflictsDescriptionList))
 		conflictsString+=t+"\n";
 
 	TimetableExport::writeSimulationResults(this);
@@ -629,7 +629,7 @@ void TimetableGenerateForm::simulationFinished()
 	conflictsString+=TimetableGenerateForm::tr("Soft conflicts listing (in decreasing order):");
 	conflictsString+="\n";
 
-	foreach(QString t, c.conflictsDescriptionList)
+	for(const QString& t : qAsConst(c.conflictsDescriptionList))
 		conflictsString+=t+"\n";
 
 	TimetableExport::writeSimulationResults(this);
@@ -809,7 +809,7 @@ void TimetableGenerateForm::write(){
 	conflictsString+=TimetableGenerateForm::tr("Conflicts listing (in decreasing order):");
 	conflictsString+="\n";
 
-	foreach(QString t, c.conflictsDescriptionList)
+	for(const QString& t : qAsConst(c.conflictsDescriptionList))
 		conflictsString+=t+"\n";
 
 	TimetableExport::writeSimulationResults(this);
@@ -858,7 +858,7 @@ void TimetableGenerateForm::writeHighestStage(){
 	conflictsString+=TimetableGenerateForm::tr("Conflicts listing (in decreasing order):");
 	conflictsString+="\n";
 
-	foreach(QString t, c.conflictsDescriptionList)
+	for(const QString& t : qAsConst(c.conflictsDescriptionList))
 		conflictsString+=t+"\n";
 
 	TimetableExport::writeHighestStageResults(this);
