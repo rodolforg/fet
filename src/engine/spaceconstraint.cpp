@@ -1270,16 +1270,6 @@ bool ConstraintStudentsSetHomeRoom::computeInternalStructure(QWidget* parent, Ru
 
 	this->_activities.clear();
 	
-	/*QSet<int> set=r.activitiesForStudentsSetHash.value(studentsName, QSet<int>());
-	foreach(int i, set){
-		const Activity& act=r.internalActivitiesList[i];
-		if(act.studentsNames.count()==1){
-			assert(act.studentsNames.at(0)==studentsName);
-			_activities.append(i);
-		}
-	}
-	qSort(_activities);*/
-	
 	for(int ac=0; ac<r.nInternalActivities; ac++){
 		act=&r.internalActivitiesList[ac];
 
@@ -1537,16 +1527,6 @@ bool ConstraintStudentsSetHomeRooms::computeInternalStructure(QWidget* parent, R
 	//which correspond to the constraint.
 	
 	this->_activities.clear();
-
-	/*QSet<int> set=r.activitiesForStudentsSetHash.value(studentsName, QSet<int>());
-	foreach(int i, set){
-		const Activity& act=r.internalActivitiesList[i];
-		if(act.studentsNames.count()==1){
-			assert(act.studentsNames.at(0)==studentsName);
-			_activities.append(i);
-		}
-	}
-	qSort(_activities);*/
 
 	//QStringList::iterator it;
 	Activity* act;
@@ -1827,16 +1807,6 @@ bool ConstraintTeacherHomeRoom::computeInternalStructure(QWidget* parent, Rules&
 
 	this->_activities.clear();
 
-	/*QSet<int> set=r.activitiesForTeacherHash.value(teacherName, QSet<int>());
-	foreach(int i, set){
-		const Activity& act=r.internalActivitiesList[i];
-		if(act.teachersNames.count()==1){
-			assert(act.teachersNames.at(0)==teacherName);
-			_activities.append(i);
-		}
-	}
-	qSort(_activities);*/
-
 	for(int ac=0; ac<r.nInternalActivities; ac++){
 		act=&r.internalActivitiesList[ac];
 
@@ -2092,16 +2062,6 @@ bool ConstraintTeacherHomeRooms::computeInternalStructure(QWidget* parent, Rules
 	//which correspond to the constraint.
 	
 	this->_activities.clear();
-
-	/*QSet<int> set=r.activitiesForTeacherHash.value(teacherName, QSet<int>());
-	foreach(int i, set){
-		const Activity& act=r.internalActivitiesList[i];
-		if(act.teachersNames.count()==1){
-			assert(act.teachersNames.at(0)==teacherName);
-			_activities.append(i);
-		}
-	}
-	qSort(_activities);*/
 
 	//QStringList::iterator it;
 	Activity* act;
@@ -2375,14 +2335,6 @@ bool ConstraintSubjectPreferredRoom::computeInternalStructure(QWidget* parent, R
 	
 	this->_activities.clear();
 
-	/*QSet<int> set=r.activitiesForSubjectHash.value(subjectName, QSet<int>());
-	foreach(int i, set){
-		const Activity& act=r.internalActivitiesList[i];
-		assert(act.subjectName==subjectName);
-		_activities.append(i);
-	}
-	qSort(_activities);*/
-
 	for(int ac=0; ac<r.nInternalActivities; ac++)
 		if(r.internalActivitiesList[ac].subjectName == this->subjectName){
 			this->_activities.append(ac);
@@ -2610,14 +2562,6 @@ bool ConstraintSubjectPreferredRooms::computeInternalStructure(QWidget* parent, 
 	//which correspond to the subject of the constraint.
 	
 	this->_activities.clear();
-
-	/*QSet<int> set=r.activitiesForSubjectHash.value(subjectName, QSet<int>());
-	foreach(int i, set){
-		const Activity& act=r.internalActivitiesList[i];
-		assert(act.subjectName==subjectName);
-		_activities.append(i);
-	}
-	qSort(_activities);*/
 
 	for(int ac=0; ac<r.nInternalActivities; ac++)
 		if(r.internalActivitiesList[ac].subjectName == this->subjectName){
@@ -2863,17 +2807,6 @@ bool ConstraintSubjectActivityTagPreferredRoom::computeInternalStructure(QWidget
 	
 	this->_activities.clear();
 	
-	/*QSet<int> set=r.activitiesForSubjectHash.value(subjectName, QSet<int>());
-	QSet<int> set2=r.activitiesForActivityTagHash.value(activityTagName, QSet<int>());
-	set.intersect(set2);
-	foreach(int i, set){
-		const Activity& act=r.internalActivitiesList[i];
-		assert(act.subjectName==subjectName);
-		assert(act.activityTagsNames.contains(activityTagName));
-		_activities.append(i);
-	}
-	qSort(_activities);*/
-	
 	for(int ac=0; ac<r.nInternalActivities; ac++)
 		if(r.internalActivitiesList[ac].subjectName == this->subjectName
 		 && r.internalActivitiesList[ac].activityTagsNames.contains(this->activityTagName)){
@@ -3107,17 +3040,6 @@ bool ConstraintSubjectActivityTagPreferredRooms::computeInternalStructure(QWidge
 	//which correspond to the subject of the constraint.
 	
 	this->_activities.clear();
-
-	/*QSet<int> set=r.activitiesForSubjectHash.value(subjectName, QSet<int>());
-	QSet<int> set2=r.activitiesForActivityTagHash.value(activityTagName, QSet<int>());
-	set.intersect(set2);
-	foreach(int i, set){
-		const Activity& act=r.internalActivitiesList[i];
-		assert(act.subjectName==subjectName);
-		assert(act.activityTagsNames.contains(activityTagName));
-		_activities.append(i);
-	}
-	qSort(_activities);*/
 
 	for(int ac=0; ac<r.nInternalActivities; ac++)
 		if(r.internalActivitiesList[ac].subjectName == this->subjectName
@@ -3367,14 +3289,6 @@ bool ConstraintActivityTagPreferredRoom::computeInternalStructure(QWidget* paren
 	
 	this->_activities.clear();
 
-	/*QSet<int> set=r.activitiesForActivityTagHash.value(activityTagName, QSet<int>());
-	foreach(int i, set){
-		const Activity& act=r.internalActivitiesList[i];
-		assert(act.activityTagsNames.contains(activityTagName));
-		_activities.append(i);
-	}
-	qSort(_activities);*/
-
 	for(int ac=0; ac<r.nInternalActivities; ac++)
 		if(r.internalActivitiesList[ac].activityTagsNames.contains(this->activityTagName)){
 		 	this->_activities.append(ac);
@@ -3603,14 +3517,6 @@ bool ConstraintActivityTagPreferredRooms::computeInternalStructure(QWidget* pare
 	//which correspond to the subject of the constraint.
 	
 	this->_activities.clear();
-
-	/*QSet<int> set=r.activitiesForActivityTagHash.value(activityTagName, QSet<int>());
-	foreach(int i, set){
-		const Activity& act=r.internalActivitiesList[i];
-		assert(act.activityTagsNames.contains(activityTagName));
-		_activities.append(i);
-	}
-	qSort(_activities);*/
 
 	for(int ac=0; ac<r.nInternalActivities; ac++)
 		if(r.internalActivitiesList[ac].activityTagsNames.contains(this->activityTagName)){
@@ -6938,19 +6844,10 @@ bool ConstraintActivitiesOccupyMaxDifferentRooms::computeInternalStructure(QWidg
 {
 	this->_activitiesIndices.clear();
 	
-/*	QSet<int> req=this->activitiesIds.toSet();
-	assert(req.count()==this->activitiesIds.count());
-	
-	//this cares about inactive activities, also, so do not assert this->_actIndices.count()==this->actIds.count()
-	int i;
-	for(i=0; i<r.nInternalActivities; i++)
-		if(req.contains(r.internalActivitiesList[i].id))
-			this->_activitiesIndices.append(i);*/
-			
 	foreach(int id, activitiesIds){
 		int index=r.activitiesHash.value(id, -1);
 		//assert(index>=0);
-		if(index>=0) //take care for inactive activities
+		if(index>=0) //take care of inactive activities
 			_activitiesIndices.append(index);
 	}
 			
@@ -7110,11 +7007,6 @@ double ConstraintActivitiesOccupyMaxDifferentRooms::fitness(
 
 void ConstraintActivitiesOccupyMaxDifferentRooms::removeUseless(Rules& r)
 {
-	/*QSet<int> validActs;
-	
-	foreach(Activity* act, r.activitiesList)
-		validActs.insert(act->id);*/
-		
 	QList<int> newActs;
 	
 	foreach(int aid, activitiesIds){
@@ -7218,17 +7110,6 @@ bool ConstraintActivitiesSameRoomIfConsecutive::computeInternalStructure(QWidget
 			_activitiesIndices.append(i);
 	}
 
-	/*this->_activitiesIndices.clear();
-	
-	QSet<int> req=this->activitiesIds.toSet();
-	assert(req.count()==this->activitiesIds.count());
-	
-	//this cares about inactive activities, also, so do not assert this->_actIndices.count()==this->actIds.count()
-	int i;
-	for(i=0; i<r.nInternalActivities; i++)
-		if(req.contains(r.internalActivitiesList[i].id))
-			this->_activitiesIndices.append(i);*/
-			
 	///////////////////////
 	
 	if(this->_activitiesIndices.count()<2){
@@ -7390,11 +7271,6 @@ double ConstraintActivitiesSameRoomIfConsecutive::fitness(
 
 void ConstraintActivitiesSameRoomIfConsecutive::removeUseless(Rules& r)
 {
-	/*QSet<int> validActs;
-	
-	foreach(Activity* act, r.activitiesList)
-		validActs.insert(act->id);*/
-		
 	QList<int> newActs;
 	
 	foreach(int aid, activitiesIds){

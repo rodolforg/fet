@@ -17976,17 +17976,11 @@ double ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::fitness(Solution& c,
 
 void ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::removeUseless(Rules& r)
 {
-	/*QSet<int> validActs;
-	
-	foreach(Activity* act, r.activitiesList)
-		validActs.insert(act->id);*/
-		
 	QList<int> newActs;
 	
 	foreach(int aid, activitiesIds){
 		Activity* act=r.activitiesPointerHash.value(aid, NULL);
 		if(act!=NULL)
-		//if(validActs.contains(aid))
 			newActs.append(aid);
 	}
 			
@@ -18343,17 +18337,11 @@ double ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::fitness(Solution&
 
 void ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::removeUseless(Rules& r)
 {
-	/*QSet<int> validActs;
-	
-	foreach(Activity* act, r.activitiesList)
-		validActs.insert(act->id);*/
-		
 	QList<int> newActs;
 	
 	foreach(int aid, activitiesIds){
 		Activity* act=r.activitiesPointerHash.value(aid, NULL);
 		if(act!=NULL)
-		//if(validActs.contains(aid))
 			newActs.append(aid);
 	}
 			

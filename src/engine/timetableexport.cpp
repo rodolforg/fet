@@ -4772,41 +4772,28 @@ void TimetableExport::computeHashForIDsTimetable(){
 //TODO This is unneeded if you use a relational data base, because we can use the primary key id of the database.
 //This is very similar to statistics compute hash. So always check it if you change something here!
 
-/*	QSet<QString> usedStudents;
-	for(int i=0; i<gt.rules.nInternalActivities; i++){
-		foreach(QString st, gt.rules.internalActivitiesList[i].studentsNames){
-			if(!usedStudents.contains(st))
-				usedStudents<<st;
-		}
-	}*/
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
 	hashStudentIDsTimetable.clear();
 	int cnt=1;
 	for(int i=0; i<gt.rules.augmentedYearsList.size(); i++){
 		StudentsYear* sty=gt.rules.augmentedYearsList[i];
-		//if(usedStudents.contains(sty->name)){
 		if(!hashStudentIDsTimetable.contains(sty->name)){
 			hashStudentIDsTimetable.insert(sty->name, CustomFETString::number(cnt));
 			cnt++;
 		}
-		//}
 		for(int j=0; j<sty->groupsList.size(); j++){
 			StudentsGroup* stg=sty->groupsList[j];
-		//	if(usedStudents.contains(stg->name)){
 			if(!hashStudentIDsTimetable.contains(stg->name)){
 				hashStudentIDsTimetable.insert(stg->name, CustomFETString::number(cnt));
 				cnt++;
 			}
-		//	}
 			for(int k=0; k<stg->subgroupsList.size(); k++){
 				StudentsSubgroup* sts=stg->subgroupsList[k];
-		//		if(usedStudents.contains(sts->name)){
 				if(!hashStudentIDsTimetable.contains(sts->name)){
 					hashStudentIDsTimetable.insert(sts->name, CustomFETString::number(cnt));
 					cnt++;
 				}
-		//		}
 			}
 		}
 	}
@@ -8657,7 +8644,7 @@ QString TimetableExport::singleSubjectsTimetableDaysHorizontalHtml(int htmlLevel
 	return tmpString;
 }
 	
-//by Volker Dirr	
+//by Volker Dirr
 QString TimetableExport::singleSubjectsTimetableDaysVerticalHtml(int htmlLevel, int subject, const QString& saveTime, bool printActivityTags, bool repeatNames){
 	assert(subject>=0);
 	assert(subject<gt.rules.nInternalSubjects);
@@ -8818,7 +8805,7 @@ QString TimetableExport::singleSubjectsTimetableTimeVerticalHtml(int htmlLevel, 
 							allActivities.append(ai);
 						}
 					
-					/* //Now get the activitiy ids. I don't run through the InternalActivitiesList, even that is faster. I run through subgroupsList, because by that the activites are sorted by that in the html-table.
+					/* //Now get the activities ids. I don't run through the InternalActivitiesList, even if that is faster. I run through subgroupsList, because by that the activites are sorted by that in the html-table.
 					for(int subgroup=0; subgroup<gt.rules.nInternalSubgroups; subgroup++){
 						if(students_timetable_weekly[subgroup][day][hour]!=UNALLOCATED_ACTIVITY){
 							Activity* act=&gt.rules.internalActivitiesList[students_timetable_weekly[subgroup][day][hour]];

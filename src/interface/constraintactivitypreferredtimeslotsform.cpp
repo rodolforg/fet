@@ -127,8 +127,8 @@ bool ConstraintActivityPreferredTimeSlotsForm::filterOk(TimeConstraint* ctr)
 		if(a->id==id)
 			act=a;
 
-	found=true;		
-		
+	found=true;
+	
 	if(act!=NULL){
 		//teacher
 		if(tn!=""){

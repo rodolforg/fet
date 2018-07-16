@@ -388,7 +388,7 @@ void SplitYearForm::ok()
 		return;
 	}
 	
-	//warn too many total subgroups - suggested by Volker Dirr
+	//warn if there are too many total subgroups - suggested by Volker Dirr
 	QSet<QString> tmpSet;
 	foreach(StudentsYear* sty, gt.rules.yearsList){
 		if(sty->name!=year){
@@ -421,37 +421,6 @@ void SplitYearForm::ok()
 	}
 	
 	QString separator=separatorLineEdit->text();
-	
-/*	StudentsYear* y=NULL;
-	foreach(StudentsYear* ty, gt.rules.yearsList)
-		if(ty->name==year){
-			y=ty;
-			break;
-		}
-	assert(y!=NULL);
-	
-	if(y->groupsList.count()>0){
-		int t=QMessageBox::question(this, tr("FET question"), tr("Year %1 is not empty and it will be emptied before adding"
-		" the divisions you selected. This means that all the activities and constraints for"
-		" the groups and subgroups in this year will be removed. It is strongly recommended to save your file before continuing."
-		" You might also want, as an alternative, to modify manually the groups/subgroups from the corresponding menu, so that"
-		" you will not lose constraints and activities referring to them."
-		" Do you really want to empty year?").arg(year),
-		 QMessageBox::Yes, QMessageBox::Cancel);
-		 
-		if(t==QMessageBox::Cancel)
-			return;
-
-		t=QMessageBox::warning(this, tr("FET warning"), tr("Year %1 will be emptied."
-		 " This means that all constraints and activities referring to groups/subgroups in year %1 will be removed."
-		 " Are you absolutely sure?").arg(year),
-		 QMessageBox::Yes, QMessageBox::Cancel);
-		 
-		if(t==QMessageBox::Cancel)
-			return;
-			
-		gt.rules.emptyYear(year);
-	}*/
 	
 	QSet<QString> tmp;
 	for(int i=0; i<categoriesSpinBox->value(); i++)

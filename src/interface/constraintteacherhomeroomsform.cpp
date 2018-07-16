@@ -58,7 +58,7 @@ ConstraintTeacherHomeRoomsForm::ConstraintTeacherHomeRoomsForm(QWidget* parent):
 	teachersComboBox->addItem("");
 	foreach(Teacher* tch, gt.rules.teachersList)
 		teachersComboBox->addItem(tch->name);
-					
+	
 	roomsComboBox->addItem("");
 	foreach(Room* rm, gt.rules.roomsList)
 		roomsComboBox->addItem(rm->name);

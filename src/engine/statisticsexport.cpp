@@ -259,7 +259,6 @@ void StatisticsExport::getNamesAndHours(FetStatistics *statisticValues){
 	foreach(Teacher* t, gt.rules.teachersList){
 		(*statisticValues).allTeachersNames<<t->name;
 	}
-
 	
 	foreach(Subject* s, gt.rules.subjectsList){
 		(*statisticValues).allSubjectsNames<<s->name;

@@ -47,15 +47,6 @@ ModifySubactivityForm::ModifySubactivityForm(QWidget* parent, int id, int activi
 		subjectNamesSet.insert(sbj->name);
 	foreach(ActivityTag* at, gt.rules.activityTagsList)
 		activityTagNamesSet.insert(at->name);
-	/*foreach(StudentsYear* year, gt.rules.yearsList){
-		numberOfStudentsHash.insert(year->name, year->numberOfStudents);
-		foreach(StudentsGroup* group, year->groupsList){
-			numberOfStudentsHash.insert(group->name, group->numberOfStudents);
-			foreach(StudentsSubgroup* subgroup, group->subgroupsList){
-				numberOfStudentsHash.insert(subgroup->name, subgroup->numberOfStudents);
-			}
-		}
-	}*/
 
 	allTeachersListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
 	selectedTeachersListWidget->setSelectionMode(QAbstractItemView::SingleSelection);

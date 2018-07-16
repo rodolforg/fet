@@ -1918,17 +1918,8 @@ bool Rules::removeYearPointerAfterSplit(StudentsYear* yearPointer)
 	assert(yearPointer!=NULL);
 	
 	//names
-	/*QSet<QString> tmpSet;
-	foreach(StudentsYear* year, yearsList){
-		tmpSet.insert(year->name);
-		foreach(StudentsGroup* group, year->groupsList){
-			tmpSet.insert(group->name);
-			foreach(StudentsSubgroup* subgroup, group->subgroupsList)
-				tmpSet.insert(subgroup->name);
-		}
-	}*/
-	
 	QSet<StudentsSet*> toBeRemoved;
+
 	//Not here, because there exists another pointer with the same name (to the new year),
 	//and I don't want to remove the activities with this year name
 	//toBeRemoved.insert(yearPointer);
@@ -2325,12 +2316,6 @@ bool Rules::addGroup(const QString& yearName, StudentsGroup* group)
 	if(!permanentStudentsHash.contains(group->name))
 		permanentStudentsHash.insert(group->name, group);
 
-	/*
-	foreach(StudentsYear* y, yearsList)
-		foreach(StudentsGroup* g, y->groupsList)
-			if(g->name==group->name)
-				g->numberOfStudents=group->numberOfStudents;*/
-
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
 	return true;
@@ -2540,13 +2525,6 @@ bool Rules::addSubgroup(const QString& yearName, const QString& groupName, Stude
 	if(!permanentStudentsHash.contains(subgroup->name))
 		permanentStudentsHash.insert(subgroup->name, subgroup);
 
-	/*
-	foreach(StudentsYear* y, yearsList)
-		foreach(StudentsGroup* g, y->groupsList)
-			foreach(StudentsSubgroup* s, g->subgroupsList)
-				if(s->name==subgroup->name)
-					s->numberOfStudents=subgroup->numberOfStudents;*/
-
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
 	return true;
@@ -2733,72 +2711,6 @@ void Rules::sortSubgroupsAlphabetically(const QString& yearName, const QString& 
 	setRulesModifiedAndOtherThings(this);
 }
 
-/*bool Rules::addSimpleActivity(
-	QWidget* parent,
-	int _id,
-	int _activityGroupId,
-	const QStringList& _teachersNames,
-	const QString& _subjectName,
-	const QStringList& _activityTagsNames,
-	const QStringList& _studentsNames,
-	int _duration,
-	int _totalDuration,
-	bool _active,
-	bool _computeNTotalStudents,
-	int _nTotalStudents)
-{
-	//check for duplicates - idea and code by Volker Dirr
-	int t=QStringList(_teachersNames).removeDuplicates();
-	if(t>0)
-		RulesReconcilableMessage::warning(parent, tr("FET warning"), tr("Activity with Id=%1 contains %2 duplicate teachers - please correct that")
-		 .arg(_id).arg(t));
-
-	t=QStringList(_studentsNames).removeDuplicates();
-	if(t>0)
-		RulesReconcilableMessage::warning(parent, tr("FET warning"), tr("Activity with Id=%1 contains %2 duplicate students sets - please correct that")
-		 .arg(_id).arg(t));
-
-	t=QStringList(_activityTagsNames).removeDuplicates();
-	if(t>0)
-		RulesReconcilableMessage::warning(parent, tr("FET warning"), tr("Activity with Id=%1 contains %2 duplicate activity tags - please correct that")
-		 .arg(_id).arg(t));
-		
-	int computedNumberOfStudents;
-	if(_computeNTotalStudents){
-		computedNumberOfStudents=0;
-		QHash<QString, int> numberOfStudentsForStudentsSet;
-		foreach(StudentsYear* year, yearsList){
-			numberOfStudentsForStudentsSet.insert(year->name, year->numberOfStudents);
-			foreach(StudentsGroup* group, year->groupsList){
-				numberOfStudentsForStudentsSet.insert(group->name, group->numberOfStudents);
-				foreach(StudentsSubgroup* subgroup, group->subgroupsList){
-					numberOfStudentsForStudentsSet.insert(subgroup->name, subgroup->numberOfStudents);
-				}
-			}
-		}
-		foreach(QString studentsSet, _studentsNames){
-			assert(numberOfStudentsForStudentsSet.contains(studentsSet));
-			computedNumberOfStudents+=numberOfStudentsForStudentsSet.value(studentsSet);
-		}
-	}
-	else{
-		computedNumberOfStudents=_nTotalStudents;
-	}
-
-	Activity *act=new Activity(*this, _id, _activityGroupId, _teachersNames, _subjectName, _activityTagsNames,
-		_studentsNames, _duration, _totalDuration, _active, _computeNTotalStudents, _nTotalStudents, computedNumberOfStudents);
-
-	this->activitiesList << act; //append
-	
-	assert(!activitiesPointerHash.contains(act->id));
-	activitiesPointerHash.insert(act->id, act);
-
-	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
-
-	return true;
-}*/
-
 bool Rules::addSimpleActivityFast(
 	QWidget* parent,
 	int _id,
@@ -2843,93 +2755,6 @@ bool Rules::addSimpleActivityFast(
 
 	return true;
 }
-
-/*bool Rules::addSplitActivity(
-	QWidget* parent,
-	int _firstActivityId,
-	int _activityGroupId,
-	const QStringList& _teachersNames,
-	const QString& _subjectName,
-	const QStringList& _activityTagsNames,
-	const QStringList& _studentsNames,
-	int _nSplits,
-	int _totalDuration,
-	int _durations[],
-	bool _active[],
-	int _minDayDistance,
-	double _weightPercentage,
-	bool _consecutiveIfSameDay,
-	bool _computeNTotalStudents,
-	int _nTotalStudents)
-{
-	//check for duplicates - idea and code by Volker Dirr
-	int t=QStringList(_teachersNames).removeDuplicates();
-	if(t>0)
-		RulesReconcilableMessage::warning(parent, tr("FET warning"), tr("Activities with group_Id=%1 contain %2 duplicate teachers - please correct that")
-		 .arg(_activityGroupId).arg(t));
-
-	t=QStringList(_studentsNames).removeDuplicates();
-	if(t>0)
-		RulesReconcilableMessage::warning(parent, tr("FET warning"), tr("Activities with group_Id=%1 contain %2 duplicate students sets - please correct that")
-		 .arg(_activityGroupId).arg(t));
-
-	t=QStringList(_activityTagsNames).removeDuplicates();
-	if(t>0)
-		RulesReconcilableMessage::warning(parent, tr("FET warning"), tr("Activities with group_Id=%1 contain %2 duplicate activity tags - please correct that")
-		 .arg(_activityGroupId).arg(t));
-
-	assert(_firstActivityId==_activityGroupId);
-
-	int computedNumberOfStudents;
-	
-	if(_computeNTotalStudents){
-		computedNumberOfStudents=0;
-		QHash<QString, int> numberOfStudentsForStudentsSet;
-		foreach(StudentsYear* year, yearsList){
-			numberOfStudentsForStudentsSet.insert(year->name, year->numberOfStudents);
-			foreach(StudentsGroup* group, year->groupsList){
-				numberOfStudentsForStudentsSet.insert(group->name, group->numberOfStudents);
-				foreach(StudentsSubgroup* subgroup, group->subgroupsList){
-					numberOfStudentsForStudentsSet.insert(subgroup->name, subgroup->numberOfStudents);
-				}
-			}
-		}
-		foreach(QString studentsSet, _studentsNames){
-			assert(numberOfStudentsForStudentsSet.contains(studentsSet));
-			computedNumberOfStudents+=numberOfStudentsForStudentsSet.value(studentsSet);
-		}
-	}
-	else{
-		computedNumberOfStudents=_nTotalStudents;
-	}
-
-	QList<int> acts;
-
-	acts.clear();
-	for(int i=0; i<_nSplits; i++){
-		Activity *act=new Activity(*this, _firstActivityId+i, _activityGroupId,
-		 _teachersNames, _subjectName, _activityTagsNames, _studentsNames,
-		 _durations[i], _totalDuration, _active[i], _computeNTotalStudents, _nTotalStudents, computedNumberOfStudents);
-
-		this->activitiesList << act; //append
-
-		assert(!activitiesPointerHash.contains(act->id));
-		activitiesPointerHash.insert(act->id, act);
-
-		acts.append(_firstActivityId+i);
-	}
-
-	if(_minDayDistance>0){
-		TimeConstraint *constr=new ConstraintMinDaysBetweenActivities(_weightPercentage, _consecutiveIfSameDay, _nSplits, acts, _minDayDistance);
-		bool tmp=this->addTimeConstraint(constr);
-		assert(tmp);
-	}
-
-	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
-
-	return true;
-}*/
 
 bool Rules::addSplitActivityFast(
 	QWidget* parent,
@@ -4061,15 +3886,6 @@ void Rules::updateConstraintsAfterRemoval()
 	foreach(Teacher* tch, teachersList)
 		existingTeachersNames.insert(tch->name);
 		
-	/*foreach(StudentsYear* sty, yearsList){
-		existingStudentsNames.insert(sty->name);
-		foreach(StudentsGroup* stg, sty->groupsList){
-			existingStudentsNames.insert(stg->name);
-			foreach(StudentsSubgroup* sts, stg->subgroupsList)
-				existingStudentsNames.insert(sts->name);
-		}
-	}*/
-	
 	foreach(Subject* sbj, subjectsList)
 		existingSubjectsNames.insert(sbj->name);
 		
@@ -5604,81 +5420,6 @@ bool Rules::read(QWidget* parent, const QString& fileName, bool commandLine, QSt
 			//reducedXmlLog+="Added "+CustomFETString::number(tsgr)+" students subgroups (see note below)\n";
 			reducedXmlLog+="Added "+CustomFETString::number(tsgr)+" students subgroups\n";
 			assert(this->yearsList.size()==ny);
-
-			//BEGIN test for number of students is the same in all sets with the same name
-			/*bool reportWrongNumberOfStudents=true;
-			foreach(StudentsYear* year, yearsList){
-				assert(studentsHash.contains(year->name));
-				StudentsSet* sy=studentsHash.value(year->name);
-				if(sy->numberOfStudents!=year->numberOfStudents){
-					if(reportWrongNumberOfStudents){
-						QString str=tr("Minor problem found and corrected: year %1 has different number of students in two places (%2 and %3)", "%2 and %3 are number of students")
-							.arg(year->name).arg(sy->numberOfStudents).arg(year->numberOfStudents)
-							+
-							"\n\n"+
-							tr("Explanation: this is a minor problem, which appears if using overlapping students set, due to a bug in FET previous to version %1."
-							" FET will now correct this problem by setting the number of students for this year, in all places where it appears,"
-							" to the number that was found in the first appearance (%2). It is advisable to check the number of students for this year.")
-							.arg("5.12.1").arg(sy->numberOfStudents);
-						int t=RulesReconcilableMessage::warning(parent, tr("FET warning"), str,
-							 tr("Skip rest"), tr("See next"), QString(),
-							 1, 0 );
-	
-						if(t==0)
-							reportWrongNumberOfStudents=false;
-					}
-					year->numberOfStudents=sy->numberOfStudents;
-				}
-				
-				foreach(StudentsGroup* group, year->groupsList){
-					assert(studentsHash.contains(group->name));
-					StudentsSet* sg=studentsHash.value(group->name);
-					if(sg->numberOfStudents!=group->numberOfStudents){
-						if(reportWrongNumberOfStudents){
-							QString str=tr("Minor problem found and corrected: group %1 has different number of students in two places (%2 and %3)", "%2 and %3 are number of students")
-								.arg(group->name).arg(sg->numberOfStudents).arg(group->numberOfStudents)
-								+
-								"\n\n"+
-								tr("Explanation: this is a minor problem, which appears if using overlapping students set, due to a bug in FET previous to version %1."
-								" FET will now correct this problem by setting the number of students for this group, in all places where it appears,"
-								" to the number that was found in the first appearance (%2). It is advisable to check the number of students for this group.")
-								.arg("5.12.1").arg(sg->numberOfStudents);
-							int t=RulesReconcilableMessage::warning(parent, tr("FET warning"), str,
-								 tr("Skip rest"), tr("See next"), QString(),
-								 1, 0 );
-		
-							if(t==0)
-								reportWrongNumberOfStudents=false;
-						}
-						group->numberOfStudents=sg->numberOfStudents;
-					}
-
-					foreach(StudentsSubgroup* subgroup, group->subgroupsList){
-						assert(studentsHash.contains(subgroup->name));
-						StudentsSet* ss=studentsHash.value(subgroup->name);
-						if(ss->numberOfStudents!=subgroup->numberOfStudents){
-							if(reportWrongNumberOfStudents){
-								QString str=tr("Minor problem found and corrected: subgroup %1 has different number of students in two places (%2 and %3)", "%2 and %3 are number of students")
-									.arg(subgroup->name).arg(ss->numberOfStudents).arg(subgroup->numberOfStudents)
-									+
-									"\n\n"+
-									tr("Explanation: this is a minor problem, which appears if using overlapping students set, due to a bug in FET previous to version %1."
-									" FET will now correct this problem by setting the number of students for this subgroup, in all places where it appears,"
-									" to the number that was found in the first appearance (%2). It is advisable to check the number of students for this subgroup.")
-									.arg("5.12.1").arg(ss->numberOfStudents);
-								int t=RulesReconcilableMessage::warning(parent, tr("FET warning"), str,
-									 tr("Skip rest"), tr("See next"), QString(),
-									 1, 0 );
-			
-								if(t==0)
-									reportWrongNumberOfStudents=false;
-							}
-							subgroup->numberOfStudents=ss->numberOfStudents;
-						}
-					}
-				}
-			}*/
-			//END test for number of students is the same in all sets with the same name
 			
 			if(okStudents){
 				//This is redundant, but I make this an additional test, just in case anything was wrong.

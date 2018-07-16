@@ -40,8 +40,6 @@ using namespace std;
 
 #include <QMutex>
 
-//#include <QDateTime>
-
 #include <QList>
 #include <QSet>
 #include <QHash>
@@ -190,16 +188,8 @@ static Matrix1D<bool> slotCanEmpty;
 static Matrix1D<QSet<int> > activitiesAtTime;
 ////////////
 
-/*inline int max(qint16 a, int b){
-	if(int(a)>=b)
-		return int(a);
-	else
-		return b;
-}*/
-
 inline void Generate::addAiToNewTimetable(int ai, const Activity* act, int d, int h)
 {
-	//foreach(int tch, act->iTeachersList){
 	foreach(int tch, mustComputeTimetableTeachers[ai]){
 		for(int dur=0; dur<act->duration; dur++){
 			oldTeachersTimetable(tch,d,h+dur)=newTeachersTimetable(tch,d,h+dur);
@@ -209,7 +199,6 @@ inline void Generate::addAiToNewTimetable(int ai, const Activity* act, int d, in
 		oldTeachersDayNGaps(tch,d)=newTeachersDayNGaps(tch,d);
 	}
 
-	//foreach(int sbg, act->iSubgroupsList){
 	foreach(int sbg, mustComputeTimetableSubgroups[ai]){
 		for(int dur=0; dur<act->duration; dur++){
 			oldSubgroupsTimetable(sbg,d,h+dur)=newSubgroupsTimetable(sbg,d,h+dur);
@@ -224,7 +213,6 @@ inline void Generate::addAiToNewTimetable(int ai, const Activity* act, int d, in
 inline void Generate::removeAiFromNewTimetable(int ai, const Activity* act, int d, int h)
 {
 	foreach(int tch, mustComputeTimetableTeachers[ai]){
-	//foreach(int tch, act->iTeachersList){
 		for(int dur=0; dur<act->duration; dur++){
 			assert(newTeachersTimetable(tch,d,h+dur)==ai);
 			newTeachersTimetable(tch,d,h+dur)=oldTeachersTimetable(tch,d,h+dur);
@@ -234,7 +222,6 @@ inline void Generate::removeAiFromNewTimetable(int ai, const Activity* act, int 
 	}
 
 	foreach(int sbg, mustComputeTimetableSubgroups[ai]){
-	//foreach(int sbg, act->iSubgroupsList){
 		for(int dur=0; dur<act->duration; dur++){
 			assert(newSubgroupsTimetable(sbg,d,h+dur)==ai);
 			newSubgroupsTimetable(sbg,d,h+dur)=oldSubgroupsTimetable(sbg,d,h+dur);
@@ -362,7 +349,6 @@ inline void Generate::updateTeachersNHoursGaps(Activity* act, int ai, int d)
 	Q_UNUSED(act);
 
 	foreach(int tch, mustComputeTimetableTeachers[ai]){
-	//foreach(int tch, act->iTeachersList){
 		int hours=0, gaps=0;
 	
 		int h;
@@ -389,7 +375,6 @@ inline void Generate::updateSubgroupsNHoursGaps(Activity* act, int ai, int d)
 	Q_UNUSED(act);
 
 	foreach(int sbg, mustComputeTimetableSubgroups[ai]){
-	//foreach(int sbg, act->iSubgroupsList){
 		int hours=0, gaps=0, nfirstgaps=0;
 
 		int h;
@@ -1971,7 +1956,7 @@ inline bool Generate::checkBuildingChanges(int sbg, int tch, const QList<int>& g
 						}
 			}
 		}
-					
+		
 		for(;;){
 			int ai2=-1;
 			QList<int> optimalRemovableActs;
@@ -1987,10 +1972,10 @@ inline bool Generate::checkBuildingChanges(int sbg, int tch, const QList<int>& g
 			}
 			else
 				optimalRemovableActs=removableActsList;
-					
+			
 			if(removableActsList.count()>0)
 				assert(optimalRemovableActs.count()>0);
-					
+			
 			if(optimalRemovableActs.count()==0)
 				return false;
 					
@@ -2560,11 +2545,6 @@ inline bool Generate::getRoom(int level, const Activity* act, int ai, int d, int
 	
 		okp=getPreferredRoom(conflActivities, level, act, ai, d, h, roomSlot, selectedSlot, localConflActivities, canBeUnspecifiedPreferredRoom);
 		if(okp && localConflActivities.count()==0){
-			/*foreach(int t, localConflActivities){
-				conflActivities.append(t);
-				nConflActivities++;
-			}
-			assert(nConflActivities==conflActivities.count());*/
 			return okp;
 		}
 		else if(okp){
@@ -3774,9 +3754,7 @@ impossiblebasictime:
 			nConflActivities[newtime]=MAX_ACTIVITIES;
 			continue;
 		}
-				
-		/*foreach(int ai2, conflActivities[newtime])
-			assert(!swappedActivities[ai2]);*/
+		
 		
 /////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -3855,9 +3833,6 @@ impossiblemindays:
 			continue;
 		}
 
-		/*foreach(int ai2, conflActivities[newtime])
-			assert(!swappedActivities[ai2]);*/
-		
 /////////////////////////////////////////////////////////////////////////////////////////////
 
 		//care about max days between activities
@@ -3894,9 +3869,6 @@ impossiblemaxdays:
 			continue;
 		}
 
-		/*foreach(int ai2, conflActivities[newtime])
-			assert(!swappedActivities[ai2]);*/
-		
 /////////////////////////////////////////////////////////////////////////////////////////////
 		//care about min gaps between activities
 		okmingapsbetweenactivities=true;
@@ -3954,9 +3926,6 @@ impossiblemingapsbetweenactivities:
 			continue;
 		}
 
-		/*foreach(int ai2, conflActivities[newtime])
-			assert(!swappedActivities[ai2]);*/
-		
 /////////////////////////////////////////////////////////////////////////////////////////////
 
 		//allowed from same starting time
@@ -4001,9 +3970,6 @@ impossiblesamestartingtime:
 			continue;
 		}
 		
-		/*foreach(int ai2, conflActivities[newtime])
-			assert(!swappedActivities[ai2]);*/
-		
 /////////////////////////////////////////////////////////////////////////////////////////////
 
 		//allowed from same starting hour
@@ -4045,9 +4011,6 @@ impossiblesamestartinghour:
 			continue;
 		}
 		
-		/*foreach(int ai2, conflActivities[newtime])
-			assert(!swappedActivities[ai2]);*/
-		
 /////////////////////////////////////////////////////////////////////////////////////////////
 
 		//allowed from same starting day
@@ -4088,9 +4051,6 @@ impossiblesamestartingday:
 			nConflActivities[newtime]=MAX_ACTIVITIES;
 			continue;
 		}
-		
-		/*foreach(int ai2, conflActivities[newtime])
-			assert(!swappedActivities[ai2]);*/
 		
 /////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -4143,9 +4103,6 @@ impossiblenotoverlapping:
 			nConflActivities[newtime]=MAX_ACTIVITIES;
 			continue;
 		}
-		
-		/*foreach(int ai2, conflActivities[newtime])
-			assert(!swappedActivities[ai2]);*/
 		
 /////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -4259,9 +4216,6 @@ impossibletwoactivitiesconsecutive:
 			continue;
 		}
 		
-		/*foreach(int ai2, conflActivities[newtime])
-			assert(!swappedActivities[ai2]);*/
-		
 /////////////////////////////////////////////////////////////////////////////////////////////
 
 		//allowed from two activities grouped
@@ -4334,9 +4288,6 @@ impossibletwoactivitiesgrouped:
 			nConflActivities[newtime]=MAX_ACTIVITIES;
 			continue;
 		}
-		
-		/*foreach(int ai2, conflActivities[newtime])
-			assert(!swappedActivities[ai2]);*/
 		
 /////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -4733,9 +4684,6 @@ impossiblethreeactivitiesgrouped:
 			continue;
 		}
 		
-		/*foreach(int ai2, conflActivities[newtime])
-			assert(!swappedActivities[ai2]);*/
-		
 /////////////////////////////////////////////////////////////////////////////////////////////
 
 		//allowed from two activities ordered
@@ -4825,9 +4773,6 @@ impossibletwoactivitiesordered:
 			continue;
 		}
 		
-		/*foreach(int ai2, conflActivities[newtime])
-			assert(!swappedActivities[ai2]);*/
-		
 /////////////////////////////////////////////////////////////////////////////////////////////
 
 		//allowed from two activities ordered if same day
@@ -4916,9 +4861,6 @@ impossibletwoactivitiesorderedifsameday:
 			nConflActivities[newtime]=MAX_ACTIVITIES;
 			continue;
 		}
-		
-		/*foreach(int ai2, conflActivities[newtime])
-			assert(!swappedActivities[ai2]);*/
 		
 /////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -5014,7 +4956,6 @@ impossibleactivityendsstudentsday:
 		//not breaking the students max days per week constraints
 		////////////////////////////BEGIN max days per week for students
 		okstudentsmaxdaysperweek=true;
-		//foreach(int tch, act->iTeachersList){
 		foreach(int st, subgroupsWithMaxDaysPerWeekForActivities[ai]){
 			if(skipRandom(subgroupsMaxDaysPerWeekWeightPercentages[st]))
 				continue;
@@ -5306,7 +5247,6 @@ impossiblestudentsmaxdaysperweek:
 							
 							for(int h2=sth; h2<endh; h2++){
 								int ai2=subgroupsTimetable(sbg,d2,h2);
-							//foreach(int ai2, teacherActivitiesOfTheDay(tch,d2)){
 								if(ai2>=0){
 									if(!conflActivities[newtime].contains(ai2)){
 										occupiedIntervalDay[d2]=true;
@@ -7522,7 +7462,6 @@ impossiblestudentsminhoursdaily:
 		//not breaking the teacher max days per week constraints
 		////////////////////////////BEGIN max days per week for teachers
 		okteachermaxdaysperweek=true;
-		//foreach(int tch, act->iTeachersList){
 		foreach(int tch, teachersWithMaxDaysPerWeekForActivities[ai]){
 			if(skipRandom(teachersMaxDaysPerWeekWeightPercentages[tch]))
 				continue;
@@ -7813,7 +7752,6 @@ impossibleteachermaxdaysperweek:
 							
 							for(int h2=sth; h2<endh; h2++){
 								int ai2=teachersTimetable(tch,d2,h2);
-							//foreach(int ai2, teacherActivitiesOfTheDay(tch,d2)){
 								if(ai2>=0){
 									if(!conflActivities[newtime].contains(ai2)){
 										occupiedIntervalDay[d2]=true;
@@ -9757,9 +9695,6 @@ impossibleactivitiesmaxsimultaneousinselectedtimeslots:
 				nConflActivities[newtime]=MAX_ACTIVITIES;
 				continue;
 			}
-
-			/*foreach(int ai2, conflActivities[newtime])
-				assert(!swappedActivities[ai2]);*/
 		}
 	
 /////////////////////////////////////////////////////////////////////////////////////////////
@@ -9902,10 +9837,6 @@ impossibleactivitiesoccupymaxtimeslotsfromselection:
 				nConflActivities[newtime]=MAX_ACTIVITIES;
 				continue;
 			}
-
-			/*foreach(int ai2, conflActivities[newtime])
-				assert(!swappedActivities[ai2]);*/
-				
 		}
 		
 /////////////////////////////////////////////////////////////////////////////////////////////
@@ -10011,54 +9942,16 @@ skip_here_if_already_allocated_in_time:
 		assert(nConflActivities[newtime]==conflActivities[newtime].count());
 	}
 	
-
-	//for(int i=0; i<gt.rules.nHoursPerWeek; i++)
-	//	conflPerm[perm[i]]=perm[i];
-		
-	//DEPRECATED
-	//Sorting - O(n^2) - should be improved?
-	//The sorting below is not stable (I hope I am not mistaking) - but this should not be a problem.
-/*	for(int i=0; i<gt.rules.nHoursPerWeek; i++)
-		for(int j=i+1; j<gt.rules.nHoursPerWeek; j++)
-			if(nConflActivities[conflPerm[perm[i]]]>nConflActivities[conflPerm[perm[j]]]
-			 || (nConflActivities[conflPerm[perm[i]]]==nConflActivities[conflPerm[perm[j]]] 
-			 && nMinDaysBroken[conflPerm[perm[i]]]>nMinDaysBroken[conflPerm[perm[j]]] )){
-				int t=conflPerm[perm[i]];
-				conflPerm[perm[i]]=conflPerm[perm[j]];
-				conflPerm[perm[j]]=t;
-			}*/
-			
 	//O(n*log(n)) stable sorting
 	currentLevel=level;
 	//qStableSort(perm+0, perm+gt.rules.nHoursPerWeek, compareFunctionGenerate);
 	std::stable_sort(perm+0, perm+gt.rules.nHoursPerWeek, compareFunctionGenerate);
-			
-	/*cout<<"perm[i]: ";
-	for(int i=0; i<gt.rules.nHoursPerWeek; i++)
-		cout<<perm[i]<<" ";
-	cout<<endl;
-	cout<<"conflPerm[perm[i]]: ";
-	for(int i=0; i<gt.rules.nHoursPerWeek; i++)
-		cout<<conflPerm[perm[i]]<<" ";
-	cout<<endl;
-	cout<<"nConflActivities[i]: ";
-	for(int i=0; i<gt.rules.nHoursPerWeek; i++)
-		cout<<nConflActivities[i]<<" ";
-	cout<<endl;
-	assert(0);*/
 			
 	for(int i=1; i<gt.rules.nHoursPerWeek; i++){
 		assert( (nConflActivities[perm[i-1]]<nConflActivities[perm[i]])
 		|| ( (nConflActivities[perm[i-1]]==nConflActivities[perm[i]]) &&
 		(nMinDaysBroken[perm[i-1]]<=nMinDaysBroken[perm[i]]) ) );
 	}
-
-	/*for(int i=0; i<gt.rules.nHoursPerWeek; i++){
-		int newtime=conflPerm[perm[i]];
-		if(nConflActivities[newtime]!=MAX_ACTIVITIES)
-			foreach(int ai2, conflActivities[newtime])
-				assert(!swappedActivities[ai2]);
-	}*/
 
 	if(level==0 && (nConflActivities[perm[0]]==MAX_ACTIVITIES)){
 		//to check if generation was stopped
@@ -10201,9 +10094,6 @@ if(this->isThreaded){
 			return;
 		}
 		else{
-			/*foreach(int ai2, conflActivities[newtime])
-				assert(!swappedActivities[ai2]);*/
-				
 			if(level==level_limit-1){
 				//cout<<"level_limit-1==level=="<<level<<", for activity with id "<<gt.rules.internalActivitiesList[ai].id<<" returning"<<endl;
 				foundGoodSwap=false;
@@ -10346,10 +10236,6 @@ if(this->isThreaded){
 				return;
 			}
 
-			/*if(1)
-				foreach(int a, conflActivities[newtime])
-					swappedActivities[a]=false;*/
-			
 			//////////////restore times from the restore list
 			for(int j=nRestore-1; j>=oldNRestore; j--){
 				//assert(c.times[ai]!=UNALLOCATED_TIME);

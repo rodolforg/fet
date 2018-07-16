@@ -598,16 +598,12 @@ void AdvancedLockUnlockForm::unlockDay(QWidget* parent)
 		return;
 	////////////
 	
-	//foreach(TimeConstraint* tc, removedTimeConstraints)
-	//	gt.rules.removeTimeConstraint(tc);
 	bool t=gt.rules.removeTimeConstraints(removedTimeConstraints);
 	assert(t);
 	
 	removedTimeConstraints.clear();
 	notRemovedTimeConstraints.clear();
 
-	//foreach(SpaceConstraint* sc, removedSpaceConstraints)
-	//	gt.rules.removeSpaceConstraint(sc);
 	t=gt.rules.removeSpaceConstraints(removedSpaceConstraints);
 	assert(t);
 	
@@ -1145,16 +1141,12 @@ void AdvancedLockUnlockForm::unlockEndStudentsDay(QWidget* parent)
 		return;
 	////////////
 	
-	//foreach(TimeConstraint* tc, removedTimeConstraints)
-	//	gt.rules.removeTimeConstraint(tc);
 	bool t=gt.rules.removeTimeConstraints(removedTimeConstraints);
 	assert(t);
 	
 	removedTimeConstraints.clear();
 	notRemovedTimeConstraints.clear();
 
-	//foreach(SpaceConstraint* sc, removedSpaceConstraints)
-	//	gt.rules.removeSpaceConstraint(sc);
 	t=gt.rules.removeSpaceConstraints(removedSpaceConstraints);
 	assert(t);
 	
@@ -1655,16 +1647,12 @@ void AdvancedLockUnlockForm::unlockAll(QWidget* parent)
 		return;
 	////////////
 	
-	//foreach(TimeConstraint* tc, removedTimeConstraints)
-	//	gt.rules.removeTimeConstraint(tc);
 	bool t=gt.rules.removeTimeConstraints(removedTimeConstraints);
 	assert(t);
 	
 	removedTimeConstraints.clear();
 	notRemovedTimeConstraints.clear();
 
-	//foreach(SpaceConstraint* sc, removedSpaceConstraints)
-	//	gt.rules.removeSpaceConstraint(sc);
 	t=gt.rules.removeSpaceConstraints(removedSpaceConstraints);
 	assert(t);
 	
@@ -1795,26 +1783,6 @@ void AdvancedLockUnlockForm::unlockAllWithoutTimetable(QWidget* parent)
 				}
 			}
 	
-	/*if(unlockTime){
-		foreach(int id, lockedActivitiesIds){
-			foreach(ConstraintActivityPreferredStartingTime* c, gt.rules.apstHash.value(id, QSet<ConstraintActivityPreferredStartingTime*>())){
-				assert(id==c->activityId);
-				if(c->weightPercentage==100.0 && c->day>=0 && c->hour>=0){
-					if(!c->permanentlyLocked){
-						removedTimeConstraints.append((TimeConstraint*)c);
-						removedTimeConstraintsString+=c->getDetailedDescription(gt.rules)+"\n";
-						removedTime++;
-					}
-					else{
-						notRemovedTimeConstraints.append((TimeConstraint*)c);
-						notRemovedTimeConstraintsString+=c->getDetailedDescription(gt.rules)+"\n";
-						notRemovedTime++;
-					}
-				}
-			}
-		}
-	}*/
-
 	if(unlockSpace)
 		foreach(SpaceConstraint* sc, gt.rules.spaceConstraintsList)
 			if(sc->type==CONSTRAINT_ACTIVITY_PREFERRED_ROOM){
@@ -1832,26 +1800,6 @@ void AdvancedLockUnlockForm::unlockAllWithoutTimetable(QWidget* parent)
 					}
 				}
 			}
-
-	/*if(unlockSpace){
-		foreach(int id, lockedActivitiesIds){
-			foreach(ConstraintActivityPreferredRoom* c, gt.rules.aprHash.value(id, QSet<ConstraintActivityPreferredRoom*>())){
-				assert(id==c->activityId);
-				if(c->weightPercentage==100.0){
-					if(!c->permanentlyLocked){
-						removedSpaceConstraints.append((SpaceConstraint*)c);
-						removedSpaceConstraintsString+=c->getDetailedDescription(gt.rules)+"\n";
-						removedSpace++;
-					}
-					else{
-						notRemovedSpaceConstraints.append((SpaceConstraint*)c);
-						notRemovedSpaceConstraintsString+=c->getDetailedDescription(gt.rules)+"\n";
-						notRemovedSpace++;
-					}
-				}
-			}
-		}
-	}*/
 
 	////////////
 	//last confirmation dialog
@@ -1933,16 +1881,12 @@ void AdvancedLockUnlockForm::unlockAllWithoutTimetable(QWidget* parent)
 		return;
 	////////////
 	
-	//foreach(TimeConstraint* tc, removedTimeConstraints)
-	//	gt.rules.removeTimeConstraint(tc);
 	bool t=gt.rules.removeTimeConstraints(removedTimeConstraints);
 	assert(t);
 	
 	removedTimeConstraints.clear();
 	notRemovedTimeConstraints.clear();
 
-	//foreach(SpaceConstraint* sc, removedSpaceConstraints)
-	//	gt.rules.removeSpaceConstraint(sc);
 	t=gt.rules.removeSpaceConstraints(removedSpaceConstraints);
 	assert(t);
 	
@@ -2100,32 +2044,6 @@ void AdvancedLockUnlockForm::unlockDayWithoutTimetable(QWidget* parent)
 				}
 			}
 			
-	/*if(unlockTime){
-		foreach(int aid, lockedActivitiesIds){
-			foreach(ConstraintActivityPreferredStartingTime* c, gt.rules.apstHash.value(aid, QSet<ConstraintActivityPreferredStartingTime*>())){
-				assert(aid==c->activityId);
-				if(c->weightPercentage==100.0 && c->day>=0 && c->hour>=0){
-//					if(c->day!=selectedDayInt){
-						//QMessageBox::warning(&taDialog, tr("FET warning"), tr("Incorrect data - time constraint is incorrect - please regenerate the timetable. Please report possible bug."));
-						//above test is not good???
-//					}
-					//assert(c->day==selectedDayInt);
-					
-					if(!c->permanentlyLocked){
-						removedTimeConstraints.append((TimeConstraint*)c);
-						removedTimeConstraintsString+=c->getDetailedDescription(gt.rules)+"\n";
-						removedTime++;
-					}
-					else{
-						notRemovedTimeConstraints.append((TimeConstraint*)c);
-						notRemovedTimeConstraintsString+=c->getDetailedDescription(gt.rules)+"\n";
-						notRemovedTime++;
-					}
-				}
-			}
-		}
-	}*/
-
 	if(unlockSpace)
 		foreach(SpaceConstraint* sc, gt.rules.spaceConstraintsList)
 			if(sc->type==CONSTRAINT_ACTIVITY_PREFERRED_ROOM){
@@ -2143,26 +2061,6 @@ void AdvancedLockUnlockForm::unlockDayWithoutTimetable(QWidget* parent)
 					}
 				}
 			}
-
-	/*if(unlockSpace){
-		foreach(int aid, lockedActivitiesIds){
-			foreach(ConstraintActivityPreferredRoom* c, gt.rules.aprHash.value(aid, QSet<ConstraintActivityPreferredRoom*>())){
-				assert(aid==c->activityId);
-				if(c->weightPercentage==100.0){
-					if(!c->permanentlyLocked){
-						removedSpaceConstraints.append((SpaceConstraint*)c);
-						removedSpaceConstraintsString+=c->getDetailedDescription(gt.rules)+"\n";
-						removedSpace++;
-					}
-					else{
-						notRemovedSpaceConstraints.append((SpaceConstraint*)c);
-						notRemovedSpaceConstraintsString+=c->getDetailedDescription(gt.rules)+"\n";
-						notRemovedSpace++;
-					}
-				}
-			}
-		}
-	}*/
 
 	////////////
 	//last confirmation dialog
@@ -2244,16 +2142,12 @@ void AdvancedLockUnlockForm::unlockDayWithoutTimetable(QWidget* parent)
 		return;
 	////////////
 	
-	//foreach(TimeConstraint* tc, removedTimeConstraints)
-	//	gt.rules.removeTimeConstraint(tc);
 	bool t=gt.rules.removeTimeConstraints(removedTimeConstraints);
 	assert(t);
 	
 	removedTimeConstraints.clear();
 	notRemovedTimeConstraints.clear();
 
-	//foreach(SpaceConstraint* sc, removedSpaceConstraints)
-	//	gt.rules.removeSpaceConstraint(sc);
 	t=gt.rules.removeSpaceConstraints(removedSpaceConstraints);
 	assert(t);
 	

@@ -381,18 +381,6 @@ void SpreadMinDaysConstraintsFiveDaysForm::wasAccepted()
 	removedList.clear();
 	constraintsToBeRemoved.clear();
 	
-	/*foreach(ConstraintMinDaysBetweenActivities* mdc, constraintsToBeRemoved){
-		int t=gt.rules.timeConstraintsList.removeAll(mdc);
-		assert(t==1);
-	}
-	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
-	
-	foreach(ConstraintMinDaysBetweenActivities* mdc, constraintsToBeRemoved)
-		delete mdc;
-		
-	constraintsToBeRemoved.clear();*/
-		
 	foreach(ConstraintMinDaysBetweenActivities* tc, addedConstraints){
 		bool t=gt.rules.addTimeConstraint(tc);
 		if(!t){

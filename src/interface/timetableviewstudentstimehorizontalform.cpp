@@ -212,10 +212,6 @@ TimetableViewStudentsTimeHorizontalForm::TimetableViewStudentsTimeHorizontalForm
 		foreach(QString students, act->studentsNames){
 			if(!usedStudentsSet.contains(students))
 				usedStudentsSet.insert(students);
-			
-			/*QList<int> list=activitiesForStudentsSet.value(students, QList<int>());
-			list.append(i);
-			activitiesForStudentsSet.insert(students, list);*/
 		}
 	}
 	
@@ -226,39 +222,6 @@ TimetableViewStudentsTimeHorizontalForm::TimetableViewStudentsTimeHorizontalForm
 			
 		it++;
 	}
-	
-	//Students not available constraints
-	/*QSet<QString> studentsSet3;
-	foreach(StudentsYear* year, gt.rules.augmentedYearsList){
-		if(!studentsSet3.contains(year->name)){
-			studentsSet3.insert(year->name);
-		}
-		foreach(StudentsGroup* group, year->groupsList){
-			if(!studentsSet3.contains(group->name)){
-				studentsSet3.insert(group->name);
-			}
-			foreach(StudentsSubgroup* subgroup, group->subgroupsList){
-				if(!studentsSet3.contains(subgroup->name)){
-					studentsSet3.insert(subgroup->name);
-				}
-			}
-		}
-	}
-	
-	//notAvailableHash.clear();
-	for(int i=0; i<gt.rules.nInternalTimeConstraints; i++){
-		TimeConstraint* ctr=gt.rules.internalTimeConstraintsList[i];
-		if(ctr->type==CONSTRAINT_STUDENTS_SET_NOT_AVAILABLE_TIMES){
-			ConstraintStudentsSetNotAvailableTimes* csna=(ConstraintStudentsSetNotAvailableTimes*)ctr;
-			assert(csna->active);
-			if(studentsSet3.contains(csna->students) && !usedStudentsSet.contains(csna->students))
-				usedStudentsSet.insert(csna->students);
-			if(studentsSet3.contains(csna->students)){
-				assert(!notAvailableHash.contains(csna->students));
-				notAvailableHash.insert(csna->students, csna);
-			}
-		}
-	}*/
 	
 	QSet<QString> studentsSet2;
 	usedStudentsList.clear();

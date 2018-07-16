@@ -177,8 +177,8 @@ void StartActivityPlanning::startActivityPlanning(QWidget* parent){
 		}
 	}
 	
-	statisticValues.allTeachersNames.clear();		// just needed, because i don't need to care about correct iTeacherList if i do it this way.
-	foreach(Teacher* t, gt.rules.teachersList){		// So i don't need gt.rules.computeInternalStructure();
+	statisticValues.allTeachersNames.clear();		// just needed, because I don't need to care about correct iTeacherList if I do it this way.
+	foreach(Teacher* t, gt.rules.teachersList){		// So I don't need gt.rules.computeInternalStructure();
 		statisticValues.allTeachersNames << t->name;
 		teachersTargetNumberOfHours << t->targetNumberOfHours;
 		teachersList<<t;
@@ -188,7 +188,7 @@ void StartActivityPlanning::startActivityPlanning(QWidget* parent){
 	for(int i=0; i<gt.rules.subjectsList.count(); i++){
 		hashSubjectID.insert(gt.rules.subjectsList[i]->name, i);
 	}
-	statisticValues.allSubjectsNames.clear();		// just done, because i always want to do it the same way + it is faster
+	statisticValues.allSubjectsNames.clear();		// just done, because I always want to do it the same way + it is faster
 	subjectListWithQualifiedTeachers.clear();
 	foreach(Subject* s, gt.rules.subjectsList){		// Also don't display empty subjects is easier
 		statisticValues.allSubjectsNames<<s->name;
@@ -2239,7 +2239,7 @@ void ActivityPlanningForm::teachersCellSelected(const QModelIndex& index){
 		} else if(RBAdd->isChecked()) {
 			AddActivityForm addActivityForm(this, statisticValues.allTeachersNames[itcol], "", "", "");
 			setParentAndOtherThings(&addActivityForm, this);
-			addActivityForm.exec();	
+			addActivityForm.exec();
 		} else if(RBModify->isChecked()) {
 			//Just enter the activity dialog, because in normal case there are too many activities related to a teacher.
 			ActivitiesForm form(this, statisticValues.allTeachersNames[itcol], "", "", "");

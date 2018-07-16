@@ -59,7 +59,7 @@ const int MEDIUM_MIN_HEIGHT=285;
 const int MEDIUM_MAX_HEIGHT=650;
 
 int LongTextMessageBox::confirmationWithDimensions
- ( QWidget * parent, const QString & title, const QString & text,
+ (QWidget* parent, const QString& title, const QString& text,
  const QString& button0Text, const QString& button1Text, const QString& button2Text,
  int defaultButton, int escapeButton, int MINW, int MAXW, int MINH, int MAXH )
 {
@@ -162,7 +162,7 @@ int LongTextMessageBox::confirmationWithDimensions
 }
 
 int LongTextMessageBox::confirmation
- ( QWidget * parent, const QString & title, const QString & text,
+ (QWidget* parent, const QString& title, const QString& text,
  const QString& button0Text, const QString& button1Text, const QString& button2Text,
  int defaultButton, int escapeButton)
 {
@@ -173,7 +173,7 @@ int LongTextMessageBox::confirmation
 }
 
 int LongTextMessageBox::largeConfirmation
- ( QWidget * parent, const QString & title, const QString & text,
+ (QWidget* parent, const QString& title, const QString& text,
  const QString& button0Text, const QString& button1Text, const QString& button2Text,
  int defaultButton, int escapeButton)
 {
@@ -184,7 +184,7 @@ int LongTextMessageBox::largeConfirmation
 }
 
 int LongTextMessageBox::mediumConfirmation
- ( QWidget * parent, const QString & title, const QString & text,
+ (QWidget* parent, const QString& title, const QString& text,
  const QString& button0Text, const QString& button1Text, const QString& button2Text,
  int defaultButton, int escapeButton)
 {
@@ -195,7 +195,7 @@ int LongTextMessageBox::mediumConfirmation
 }
 
 void LongTextMessageBox::informationWithDimensions
- ( QWidget * parent, const QString & title, const QString & text, int MINW, int MAXW, int MINH, int MAXH)
+ (QWidget* parent, const QString& title, const QString& text, int MINW, int MAXW, int MINH, int MAXH)
 {
 #ifndef FET_COMMAND_LINE
 	QDialog dialog(parent);
@@ -241,19 +241,19 @@ void LongTextMessageBox::informationWithDimensions
 }
 
 void LongTextMessageBox::information
- ( QWidget * parent, const QString & title, const QString & text)
+ (QWidget* parent, const QString& title, const QString& text)
 {
 	LongTextMessageBox::informationWithDimensions(parent, title, text, MIN_WIDTH, MAX_WIDTH, MIN_HEIGHT, MAX_HEIGHT);
 }
 
 void LongTextMessageBox::largeInformation
- ( QWidget * parent, const QString & title, const QString & text)
+ (QWidget* parent, const QString& title, const QString& text)
 {
 	LongTextMessageBox::informationWithDimensions(parent, title, text, LARGE_MIN_WIDTH, LARGE_MAX_WIDTH, LARGE_MIN_HEIGHT, LARGE_MAX_HEIGHT);
 }
 
 void LongTextMessageBox::mediumInformation
- ( QWidget * parent, const QString & title, const QString & text)
+ (QWidget* parent, const QString& title, const QString& text)
 {
 	LongTextMessageBox::informationWithDimensions(parent, title, text, MEDIUM_MIN_WIDTH, MEDIUM_MAX_WIDTH, MEDIUM_MIN_HEIGHT, MEDIUM_MAX_HEIGHT);
 }
@@ -286,7 +286,7 @@ void MyDialogWithThreeButtons::setCancel()
 }
 
 int LongTextMessageBox::largeConfirmationWithDimensionsThreeButtonsYesNoCancel
- ( QWidget * parent, const QString & title, const QString & text,
+ (QWidget* parent, const QString& title, const QString& text,
  const QString& button0Text, const QString& button1Text, const QString& button2Text,
  int defaultButton, int escapeButton )
  //Yes, No, Cancel, in this order.

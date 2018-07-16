@@ -193,24 +193,6 @@ void AddGroupActivitiesInInitialOrderItemForm::addItem()
 		ids.append(*it);
 	}
 	
-	/*
-	QSet<int> used;
-	foreach(const GroupActivitiesInInitialOrderItem& item, gt.rules.groupActivitiesInInitialOrderList){
-		foreach(int id, item.ids){
-			assert(!used.contains(id));
-			used.insert(id);
-		}
-	}
-	
-	foreach(int id, ids)
-		if(used.contains(id)){
-			QMessageBox::warning(this, tr("FET information"),
-			 tr("Activity id %1 is already used in another 'group activities in initial order' item."
-			 " Each activity id must appear at most once in all items.").arg(id));
-			return;
-		}
-	*/
-	
 	GroupActivitiesInInitialOrderItem* item=new GroupActivitiesInInitialOrderItem();
 	item->ids=ids;
 	gt.rules.groupActivitiesInInitialOrderList.append(item);

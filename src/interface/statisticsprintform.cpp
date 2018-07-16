@@ -612,7 +612,7 @@ void StatisticsPrintForm::updateNamesList(){
 			QListWidgetItem* tmpItem=namesList->item(count);
 			tmpItem->setSelected(true);
 			count++;
-		}	
+		}
 	}
 	if(teacherSubjectRB->isChecked() || teacherStudentRB->isChecked()){
 		int count=0;
@@ -621,7 +621,7 @@ void StatisticsPrintForm::updateNamesList(){
 			QListWidgetItem* tmpItem=namesList->item(count);
 			tmpItem->setSelected(true);
 			count++;
-		}	
+		}
 	}
 	if(subjectStudentRB->isChecked() || subjectTeacherRB->isChecked()){
 	int count=0;
@@ -630,8 +630,8 @@ void StatisticsPrintForm::updateNamesList(){
 			QListWidgetItem* tmpItem=namesList->item(count);
 			tmpItem->setSelected(true);
 			count++;
-		}	
-	}	
+		}
+	}
 }
 
 QString StatisticsPrintForm::updateHTMLprintString(bool printAll){
