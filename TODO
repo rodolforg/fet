@@ -33,7 +33,7 @@ Horatiu:
 I met a situation: a teacher asks for maximum 2 working days, but these
 days should not be consecutive.
 
-Is there a way to implement it in .fet?
+Is there a way to implement it in FET?
 
 The only (manual) way I could think of, is to set the teacher as
 unavailable on Tuesdays and Thursdays, thus leaving him available on
@@ -61,7 +61,7 @@ all three situations at least one of the dummy activities was the first or
 the last activity for the teacher's day. So, there is a chance that the
 teacher would end up with only one gap.
 
-Which leads me to a suggestion: An activity end (or starts) a teacher's day.
+Which leads me to a suggestion: An activity ends (or starts) a teacher's day.
 Similar to "an activity ends students's day".
 
 5----------------------------------------------------------

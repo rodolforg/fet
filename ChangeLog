@@ -2089,7 +2089,7 @@ Versions 5.36.0 - 5.36.2
 ---------------------------------------------------------------------------------
 Versions 5.37.0 - 5.37.v
 - Version 5.37.0
-	- Code update: got rid of the 'foreach' keyword (suggested by Volker Dirr). The speed of generation is improved, by 10%-20%.
-	Now you need a C++11 compiler to compile FET.
+	- Code update: removed the dependency of the obsolete Qt 'foreach' keyword (suggested by Volker Dirr). The speed of generation is improved by 5%-25%,
+	depending on the data file. Now you need a C++11 compliant compiler to compile FET.
 	- Updated the German example files from secondary school 1, by Volker Dirr.
 	- Updated all the example files to use the latest file format.

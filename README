@@ -1,4 +1,4 @@
-This is FET version 5.37.0-snapshot-16-jul-2018-19_57
+This is FET version 5.37.0
 
 
 Program description:
@@ -19,20 +19,20 @@ Requirements:
 	Valgrind 3.13.0, Coverity Scan 2017.07, Cppcheck 1.84, other great free tools.
 	FET can be run on any platform supported by the free software Qt (GNU/Linux, Windows, Mac OS X).
 
-	You will need a C++11 or newer compliant C++ compiler.
+	You will need a C++11 compliant C++ compiler to compile FET.
 
 	GNU/Linux, Mac OS X:
 	Software:
 		make 4.2.1 or similar (GNU Make)
-		gcc 8.1.1 or similar
-		g++ 8.1.1 or similar (or gcc-g++, or gcc-c++, the name may vary. This program may be included in the gcc package)
+		gcc 8.1.1 or similar.
+		g++ 8.1.1 or similar (or gcc-g++, or gcc-c++, the name may vary. This program may be included in the gcc package).
 		Qt 5.11.1 or compatible (The authors also tried to maintain backwards source compatibility with Qt 4.v.v).
 		
-		Note: You might be able to use the Clang C++ compiler or other C++ compiler instead of gcc and g++.
+		Note: You need a C++11 compliant C++ compiler. You might be able to use the Clang C++ compiler or other C++ compiler instead of gcc and g++.
 
 	Windows:
 	For running, you need only the archive of FET compiled for Windows (which contains the MinGW and Qt dlls).
-	For compiling, you need Qt and a compatible C++ compiler (MinGW is a possibility).
+	For compiling, you need Qt and a compatible C++ compiler complying with the C++11 standard (MinGW is a possibility).
 
 
 Download:
@@ -88,6 +88,8 @@ Getting - compiling - installing Qt:
 
 
 Compiling FET:
+
+	You will need a C++11 compliant C++ compiler to compile FET.
 
 	Note: if after unpacking the tar.bz2 sources archive you obtain some files with incomplete/truncated file names in the sources directories,
 	you might need to use a better (un)packer (probably a recent version of the official tar and bzip2 should be fine).
