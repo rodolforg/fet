@@ -175,7 +175,11 @@ void DaysForm::ok()
 		
 		if(res==QMessageBox::Cancel)
 			return;
-			
+
+		teachers_schedule_ready=false;
+		students_schedule_ready=false;
+		rooms_schedule_ready=false;
+		
 		int _oldDays=gt.rules.nDaysPerWeek;
 		gt.rules.nDaysPerWeek=nDays;
 
@@ -245,13 +249,20 @@ void DaysForm::ok()
 			LockUnlock::increaseCommunicationSpinBox();
 		}
 	}
-	////////////
-
-	if(gt.rules.nDaysPerWeek!=nDays){
-		students_schedule_ready=false;
+	else{
 		teachers_schedule_ready=false;
+		students_schedule_ready=false;
 		rooms_schedule_ready=false;
 	}
+	////////////
+
+	//I prefer to make these always false, because the names in the time horizontal views are not updated.
+	//Also, these assignments should be done before the LockUnlock::increaseCommunicationSpinBox() above.
+	/*if(gt.rules.nDaysPerWeek!=nDays){
+		teachers_schedule_ready=false;
+		students_schedule_ready=false;
+		rooms_schedule_ready=false;
+	}*/
 		
 	//remove old names
 	for(int i=nDays; i<gt.rules.nDaysPerWeek; i++)

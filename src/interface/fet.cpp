@@ -107,7 +107,9 @@ extern int initialOrderOfActivitiesIndices[MAX_ACTIVITIES];
 int initialOrderOfActivitiesIndices[MAX_ACTIVITIES];
 #endif
 
-extern bool students_schedule_ready, teachers_schedule_ready, rooms_schedule_ready;
+extern bool students_schedule_ready;
+extern bool teachers_schedule_ready;
+extern bool rooms_schedule_ready;
 
 #ifndef FET_COMMAND_LINE
 extern QMutex myMutex;
@@ -785,8 +787,8 @@ int main(int argc, char **argv)
 
 	terminateGeneratePointer=NULL;
 	
-	students_schedule_ready=false;
 	teachers_schedule_ready=false;
+	students_schedule_ready=false;
 	rooms_schedule_ready=false;
 
 #ifndef FET_COMMAND_LINE

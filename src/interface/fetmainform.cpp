@@ -598,8 +598,8 @@ FetMainForm::FetMainForm()
 	gt.rules.modified=true; //force update of the modified flag of the main window
 	setRulesUnmodifiedAndOtherThings(&gt.rules);
 
-	students_schedule_ready=false;
 	teachers_schedule_ready=false;
+	students_schedule_ready=false;
 	rooms_schedule_ready=false;
 	
 	settingsShowShortcutsOnMainWindowAction->setCheckable(true);
@@ -1216,8 +1216,8 @@ void FetMainForm::on_fileNewAction_triggered()
 		gt.rules.modified=true; //force update of the modified flag of the main window
 		setRulesUnmodifiedAndOtherThings(&gt.rules);
 
-		students_schedule_ready=false;
 		teachers_schedule_ready=false;
+		students_schedule_ready=false;
 		rooms_schedule_ready=false;
 
 		LockUnlock::computeLockedUnlockedActivitiesTimeSpace();
@@ -1340,8 +1340,8 @@ void FetMainForm::openFile(const QString& fileName)
 			gt.rules.modified=true; //to avoid flicker of the main form modified flag
 
 			if(gt.rules.read(this, s)){
-				students_schedule_ready=false;
 				teachers_schedule_ready=false;
+				students_schedule_ready=false;
 				rooms_schedule_ready=false;
 
 				INPUT_FILENAME_XML = s;
