@@ -536,7 +536,7 @@ void setLanguage(QApplication& qapplication, QWidget* parent)
 void setLanguage(QCoreApplication& qapplication, QWidget* parent)
 #endif
 {
-	Q_UNUSED(qapplication); //silence MSVC wrong warning
+	Q_UNUSED(qapplication); //silence wrong MSVC warning
 
 	static int cntTranslators=0;
 	
