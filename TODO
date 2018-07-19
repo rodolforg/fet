@@ -4924,6 +4924,8 @@ Liviu:
 3. Please use constraint activities preferred time slots.
 4. Activities preferred room(s) is not possible (the constraints are not correctly understood when you mix subject preferred room(s) with teacher preferred room(s)). But why don't you use subject+activity tag preferred room(s) or activity tag preferred room(s)? You can add more tags and constraints for an activity.
 
+For point 2. please see also item #364.
+
 296---------------------------------------------------------
 From Malamojka (on forum):
 
@@ -6385,3 +6387,12 @@ that actually have activities in their timetables. Also the teacher list in the 
 From pg788 (on forum):
 
 I understand this might be restrictive, but a teacher doesn't want to begin in 3rd or 4th, since there is traffic.
+
+364---------------------------------------------------------
+From Dieter Deuster and Volker Dirr:
+
+Constraints:
+- activity must start a students day
+- activity must start or end a students day
+
+Liviu: start may be possible, but start or end seems very difficult, maybe impossible. Please see also item #295, point 2.
