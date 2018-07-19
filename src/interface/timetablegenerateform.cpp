@@ -135,6 +135,8 @@ TimetableGenerateForm::~TimetableGenerateForm()
 }
 
 void TimetableGenerateForm::start(){
+	closeAllTimetableViewDialogs();
+
 	if(!gt.rules.internalStructureComputed){
 		if(!gt.rules.computeInternalStructure(this)){
 			QMessageBox::warning(this, TimetableGenerateForm::tr("FET warning"), TimetableGenerateForm::tr("Data is wrong. Please correct and try again"));

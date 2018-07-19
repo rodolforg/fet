@@ -28,8 +28,17 @@ File centerwidgetonscreen.cpp
 #ifndef FET_COMMAND_LINE
 #include "fetmainform.h"
 
+#include "timetableshowconflictsform.h"
+#include "timetableviewstudentsdayshorizontalform.h"
+#include "timetableviewstudentstimehorizontalform.h"
+#include "timetableviewteachersdayshorizontalform.h"
+#include "timetableviewteacherstimehorizontalform.h"
+#include "timetableviewroomsdayshorizontalform.h"
+#include "timetableviewroomstimehorizontalform.h"
+
 #include <QWidget>
 #include <QApplication>
+#include <QWidgetList>
 
 #if QT_VERSION >= 0x050000
 #include <QGuiApplication>
@@ -67,6 +76,8 @@ extern const QString COMPANY;
 extern const QString PROGRAM;
 
 extern FetMainForm* pFetMainForm;
+
+//extern QApplication* pqapplication;
 
 extern Timetable gt;
 
@@ -406,6 +417,58 @@ int populateStudentsComboBox(QComboBox* studentsComboBox, const QString& selecte
 	return selectedIndex;
 }
 
+void closeAllTimetableViewDialogs()
+{
+	//QList<QWidget*> tlwl=pqapplication->topLevelWidgets();
+	QWidgetList tlwl=QApplication::topLevelWidgets();
+
+	for(QWidget* wi : qAsConst(tlwl))
+		if(1 /*wi->isVisible()*/){
+			//timetable
+			TimetableViewStudentsDaysHorizontalForm* vsdf=qobject_cast<TimetableViewStudentsDaysHorizontalForm*>(wi);
+			if(vsdf!=NULL){
+				vsdf->close();
+				continue;
+			}
+
+			TimetableViewStudentsTimeHorizontalForm* vstf=qobject_cast<TimetableViewStudentsTimeHorizontalForm*>(wi);
+			if(vstf!=NULL){
+				vstf->close();
+				continue;
+			}
+
+			TimetableViewTeachersDaysHorizontalForm* vtchdf=qobject_cast<TimetableViewTeachersDaysHorizontalForm*>(wi);
+			if(vtchdf!=NULL){
+				vtchdf->close();
+				continue;
+			}
+
+			TimetableViewTeachersTimeHorizontalForm* vtchtf=qobject_cast<TimetableViewTeachersTimeHorizontalForm*>(wi);
+			if(vtchtf!=NULL){
+				vtchtf->close();
+				continue;
+			}
+
+			TimetableViewRoomsDaysHorizontalForm* vrdf=qobject_cast<TimetableViewRoomsDaysHorizontalForm*>(wi);
+			if(vrdf!=NULL){
+				vrdf->close();
+				continue;
+			}
+
+			TimetableViewRoomsTimeHorizontalForm* vrtf=qobject_cast<TimetableViewRoomsTimeHorizontalForm*>(wi);
+			if(vrtf!=NULL){
+				vrtf->close();
+				continue;
+			}
+
+			TimetableShowConflictsForm* scf=qobject_cast<TimetableShowConflictsForm*>(wi);
+			if(scf!=NULL){
+				scf->close();
+				continue;
+			}
+		}
+}
+
 #else
 
 void centerWidgetOnScreen(QWidget* widget)
@@ -486,6 +549,10 @@ void showWarningForInvisibleSubgroupActivity(QWidget* parent, const QString& ini
 void populateStudentsComboBox(QComboBox* studentsComboBox)
 {
 	Q_UNUSED(studentsComboBox);
+}
+
+void closeAllTimetableViewDialogs()
+{
 }
 
 #endif

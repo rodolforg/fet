@@ -248,6 +248,8 @@ void TimetableGenerateMultipleForm::help()
 }
 
 void TimetableGenerateMultipleForm::start(){
+	closeAllTimetableViewDialogs();
+
 	nTimetables=timetablesSpinBox->value();
 	assert(nTimetables>0);
 	timeLimit=60*minutesSpinBox->value(); //seconds
