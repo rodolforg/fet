@@ -89,7 +89,8 @@ void TimetableViewTeachersTimeHorizontalDelegate::paint(QPainter* painter, const
 	QStyledItemDelegate::paint(painter, option, index);
 
 	//int day=index.column()/gt.rules.nHoursPerDay;
-	int hour=index.column()%gt.rules.nHoursPerDay;
+	//int hour=index.column()%gt.rules.nHoursPerDay;
+	int hour=index.column()%nColumns;
 
 	/*if(day>=0 && day<gt.rules.nDaysPerWeek-1 && hour==gt.rules.nHoursPerDay-1){
 		QPen pen(painter->pen());

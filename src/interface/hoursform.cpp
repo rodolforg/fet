@@ -283,7 +283,7 @@ void HoursForm::ok()
 	}
 	////////////
 
-	//I prefer to make these always false, because the names in the time horizontal views are not updated.
+	//I prefer to make these three variables always false, because the names in the time horizontal views are not updated.
 	//Also, these assignments should be done before the LockUnlock::increaseCommunicationSpinBox() above.
 	/*if(gt.rules.nHoursPerDay!=nHours){
 		teachers_schedule_ready=false;

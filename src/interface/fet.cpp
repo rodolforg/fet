@@ -626,7 +626,8 @@ void setLanguage(QCoreApplication& qapplication, QWidget* parent)
 	QWidgetList tlwl=QApplication::topLevelWidgets();
 
 	for(QWidget* wi : qAsConst(tlwl))
-		if(1 /*wi->isVisible()*/){
+		if(1){
+		//if(wi->isVisible()){
 			FetMainForm* mainform=qobject_cast<FetMainForm*>(wi);
 			if(mainform!=NULL){
 				mainform->retranslateUi(mainform);
