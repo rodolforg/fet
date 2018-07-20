@@ -3797,7 +3797,7 @@ void FetMainForm::on_timetableGenerateAction_triggered()
 	setParentAndOtherThings(&form, this);
 	form.exec();
 	
-	LockUnlock::increaseCommunicationSpinBox();
+//	LockUnlock::increaseCommunicationSpinBox();
 }
 
 void FetMainForm::on_timetableGenerateMultipleAction_triggered()
@@ -3828,7 +3828,7 @@ void FetMainForm::on_timetableGenerateMultipleAction_triggered()
 	setParentAndOtherThings(&form, this);
 	form.exec();
 
-	LockUnlock::increaseCommunicationSpinBox();
+//	LockUnlock::increaseCommunicationSpinBox();
 }
 
 void FetMainForm::on_timetableViewStudentsDaysHorizontalAction_triggered()

@@ -56,6 +56,7 @@ private:
 
 public:
 	TimetableViewTeachersTimeHorizontalForm(QWidget* parent);
+	void newTimetableGenerated();
 	~TimetableViewTeachersTimeHorizontalForm();
 	
 	void lock(bool lockTime, bool lockSpace);

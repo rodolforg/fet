@@ -135,7 +135,7 @@ TimetableGenerateForm::~TimetableGenerateForm()
 }
 
 void TimetableGenerateForm::start(){
-	closeAllTimetableViewDialogs();
+	//closeAllTimetableViewDialogs();
 
 	if(!gt.rules.internalStructureComputed){
 		if(!gt.rules.computeInternalStructure(this)){
@@ -223,6 +223,8 @@ void TimetableGenerateForm::stop()
 
 	for(const QString& t : qAsConst(c.conflictsDescriptionList))
 		conflictsString+=t+"\n";
+	
+	updateAllTimetableViewDialogs();
 
 	TimetableExport::writeSimulationResults(this);
 
@@ -377,6 +379,8 @@ void TimetableGenerateForm::stopHighest()
 	for(const QString& t : qAsConst(c.conflictsDescriptionList))
 		conflictsString+=t+"\n";
 
+	updateAllTimetableViewDialogs();
+
 	TimetableExport::writeHighestStageResults(this);
 
 	QString s=TimetableGenerateForm::tr("Simulation interrupted! FET could not find a timetable."
@@ -508,8 +512,9 @@ void TimetableGenerateForm::impossibleToSolve()
 	for(const QString& t : qAsConst(c.conflictsDescriptionList))
 		conflictsString+=t+"\n";
 
-	TimetableExport::writeSimulationResults(this);
+	updateAllTimetableViewDialogs();
 
+	TimetableExport::writeSimulationResults(this);
 
 	QString s=TimetableGenerateForm::tr("Simulation impossible! Maybe you can consider lowering the constraints.");
 
@@ -633,6 +638,8 @@ void TimetableGenerateForm::simulationFinished()
 
 	for(const QString& t : qAsConst(c.conflictsDescriptionList))
 		conflictsString+=t+"\n";
+
+	updateAllTimetableViewDialogs();
 
 	TimetableExport::writeSimulationResults(this);
 
@@ -814,6 +821,8 @@ void TimetableGenerateForm::write(){
 	for(const QString& t : qAsConst(c.conflictsDescriptionList))
 		conflictsString+=t+"\n";
 
+	updateAllTimetableViewDialogs();
+
 	TimetableExport::writeSimulationResults(this);
 
 	myMutex.unlock();
@@ -862,6 +871,8 @@ void TimetableGenerateForm::writeHighestStage(){
 
 	for(const QString& t : qAsConst(c.conflictsDescriptionList))
 		conflictsString+=t+"\n";
+
+	updateAllTimetableViewDialogs();
 
 	TimetableExport::writeHighestStageResults(this);
 

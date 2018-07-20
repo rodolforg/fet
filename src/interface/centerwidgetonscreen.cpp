@@ -417,13 +417,14 @@ int populateStudentsComboBox(QComboBox* studentsComboBox, const QString& selecte
 	return selectedIndex;
 }
 
-void closeAllTimetableViewDialogs()
+/*void closeAllTimetableViewDialogs()
 {
 	//QList<QWidget*> tlwl=pqapplication->topLevelWidgets();
 	QWidgetList tlwl=QApplication::topLevelWidgets();
 
 	for(QWidget* wi : qAsConst(tlwl))
-		if(1 /*wi->isVisible()*/){
+		//if(wi->isVisible()){
+		if(1){
 			//timetable
 			TimetableViewStudentsDaysHorizontalForm* vsdf=qobject_cast<TimetableViewStudentsDaysHorizontalForm*>(wi);
 			if(vsdf!=NULL){
@@ -464,6 +465,58 @@ void closeAllTimetableViewDialogs()
 			TimetableShowConflictsForm* scf=qobject_cast<TimetableShowConflictsForm*>(wi);
 			if(scf!=NULL){
 				scf->close();
+				continue;
+			}
+		}
+}*/
+
+void updateAllTimetableViewDialogs()
+{
+	//QList<QWidget*> tlwl=pqapplication->topLevelWidgets();
+	QWidgetList tlwl=QApplication::topLevelWidgets();
+
+	for(QWidget* wi : qAsConst(tlwl))
+		if(1 /*wi->isVisible()*/){
+			//timetable
+			TimetableViewStudentsDaysHorizontalForm* vsdf=qobject_cast<TimetableViewStudentsDaysHorizontalForm*>(wi);
+			if(vsdf!=NULL){
+				vsdf->newTimetableGenerated();
+				continue;
+			}
+
+			TimetableViewStudentsTimeHorizontalForm* vstf=qobject_cast<TimetableViewStudentsTimeHorizontalForm*>(wi);
+			if(vstf!=NULL){
+				vstf->newTimetableGenerated();
+				continue;
+			}
+
+			TimetableViewTeachersDaysHorizontalForm* vtchdf=qobject_cast<TimetableViewTeachersDaysHorizontalForm*>(wi);
+			if(vtchdf!=NULL){
+				vtchdf->newTimetableGenerated();
+				continue;
+			}
+
+			TimetableViewTeachersTimeHorizontalForm* vtchtf=qobject_cast<TimetableViewTeachersTimeHorizontalForm*>(wi);
+			if(vtchtf!=NULL){
+				vtchtf->newTimetableGenerated();
+				continue;
+			}
+
+			TimetableViewRoomsDaysHorizontalForm* vrdf=qobject_cast<TimetableViewRoomsDaysHorizontalForm*>(wi);
+			if(vrdf!=NULL){
+				vrdf->newTimetableGenerated();
+				continue;
+			}
+
+			TimetableViewRoomsTimeHorizontalForm* vrtf=qobject_cast<TimetableViewRoomsTimeHorizontalForm*>(wi);
+			if(vrtf!=NULL){
+				vrtf->newTimetableGenerated();
+				continue;
+			}
+
+			TimetableShowConflictsForm* scf=qobject_cast<TimetableShowConflictsForm*>(wi);
+			if(scf!=NULL){
+				scf->newTimetableGenerated();
 				continue;
 			}
 		}
@@ -551,7 +604,11 @@ void populateStudentsComboBox(QComboBox* studentsComboBox)
 	Q_UNUSED(studentsComboBox);
 }
 
-void closeAllTimetableViewDialogs()
+/*void closeAllTimetableViewDialogs()
+{
+}*/
+
+void updateAllTimetableViewDialogs()
 {
 }
 

@@ -143,7 +143,8 @@ TimetableViewTeachersDaysHorizontalForm::TimetableViewTeachersDaysHorizontalForm
 	assert(backupPermanentlyLockedSpace==idsOfPermanentlyLockedSpace);
 ///////////
 
-	LockUnlock::increaseCommunicationSpinBox();
+	//Commented on 2018-07-20
+	//LockUnlock::increaseCommunicationSpinBox();
 	
 	teachersTimetableTable->setRowCount(gt.rules.nHoursPerDay);
 	teachersTimetableTable->setColumnCount(gt.rules.nDaysPerWeek);
@@ -196,6 +197,126 @@ TimetableViewTeachersDaysHorizontalForm::TimetableViewTeachersDaysHorizontalForm
 
 	//added by Volker Dirr
 	connect(&communicationSpinBox, SIGNAL(valueChanged(int)), this, SLOT(updateTeachersTimetableTable()));
+}
+
+void TimetableViewTeachersDaysHorizontalForm::newTimetableGenerated()
+{
+	/*setupUi(this);
+	
+	closePushButton->setDefault(true);
+	
+	detailsTextEdit->setReadOnly(true);
+
+	//columnResizeModeInitialized=false;
+
+	//verticalSplitter->setStretchFactor(0, 1);	//unneeded, because both have the same value
+	//verticalSplitter->setStretchFactor(1, 1);	//unneeded, because both have the same value
+	horizontalSplitter->setStretchFactor(0, 3);
+	horizontalSplitter->setStretchFactor(1, 10);
+
+	teachersTimetableTable->setSelectionMode(QAbstractItemView::ExtendedSelection);
+	
+	teachersListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
+
+	connect(closePushButton, SIGNAL(clicked()), this, SLOT(close()));
+	connect(teachersListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(teacherChanged(const QString&)));
+	connect(teachersTimetableTable, SIGNAL(currentItemChanged(QTableWidgetItem*, QTableWidgetItem*)), this, SLOT(currentItemChanged(QTableWidgetItem*, QTableWidgetItem*)));
+	connect(lockTimePushButton, SIGNAL(clicked()), this, SLOT(lockTime()));
+	connect(lockSpacePushButton, SIGNAL(clicked()), this, SLOT(lockSpace()));
+	connect(lockTimeSpacePushButton, SIGNAL(clicked()), this, SLOT(lockTimeSpace()));
+
+	connect(helpPushButton, SIGNAL(clicked()), this, SLOT(help()));
+
+	centerWidgetOnScreen(this);
+	restoreFETDialogGeometry(this);
+
+	//restore vertical splitter state
+	QSettings settings(COMPANY, PROGRAM);
+	if(settings.contains(this->metaObject()->className()+QString("/vertical-splitter-state")))
+		verticalSplitter->restoreState(settings.value(this->metaObject()->className()+QString("/vertical-splitter-state")).toByteArray());
+
+	//restore horizontal splitter state
+	//QSettings settings(COMPANY, PROGRAM);
+	if(settings.contains(this->metaObject()->className()+QString("/horizontal-splitter-state")))
+		horizontalSplitter->restoreState(settings.value(this->metaObject()->className()+QString("/horizontal-splitter-state")).toByteArray());
+*/
+
+///////////just for testing
+	QSet<int> backupLockedTime;
+	QSet<int> backupPermanentlyLockedTime;
+	QSet<int> backupLockedSpace;
+	QSet<int> backupPermanentlyLockedSpace;
+	
+	backupLockedTime=idsOfLockedTime;
+	backupPermanentlyLockedTime=idsOfPermanentlyLockedTime;
+	backupLockedSpace=idsOfLockedSpace;
+	backupPermanentlyLockedSpace=idsOfPermanentlyLockedSpace;
+	
+	//added by Volker Dirr
+	//these 2 lines are not really needed - just to be safer
+	LockUnlock::computeLockedUnlockedActivitiesTimeSpace();
+	
+	assert(backupLockedTime==idsOfLockedTime);
+	assert(backupPermanentlyLockedTime==idsOfPermanentlyLockedTime);
+	assert(backupLockedSpace==idsOfLockedSpace);
+	assert(backupPermanentlyLockedSpace==idsOfPermanentlyLockedSpace);
+///////////
+
+	//DON'T UNCOMMENT THIS CODE -> LEADS TO CRASH IF THERE ARE MORE VIEWS OPENED.
+	//LockUnlock::increaseCommunicationSpinBox();
+	
+	teachersTimetableTable->clear();
+	teachersTimetableTable->setRowCount(gt.rules.nHoursPerDay);
+	teachersTimetableTable->setColumnCount(gt.rules.nDaysPerWeek);
+	for(int j=0; j<gt.rules.nDaysPerWeek; j++){
+		QTableWidgetItem* item=new QTableWidgetItem(gt.rules.daysOfTheWeek[j]);
+		teachersTimetableTable->setHorizontalHeaderItem(j, item);
+	}
+	for(int i=0; i<gt.rules.nHoursPerDay; i++){
+		QTableWidgetItem* item=new QTableWidgetItem(gt.rules.hoursOfTheDay[i]);
+		teachersTimetableTable->setVerticalHeaderItem(i, item);
+	}
+
+	for(int j=0; j<gt.rules.nHoursPerDay; j++){
+		for(int k=0; k<gt.rules.nDaysPerWeek; k++){
+			QTableWidgetItem* item= new QTableWidgetItem();
+			item->setTextAlignment(Qt::AlignCenter);
+			item->setFlags(Qt::ItemIsSelectable|Qt::ItemIsEnabled);
+
+			teachersTimetableTable->setItem(j, k, item);
+			
+			//if(j==0 && k==0)
+				//teachersTimetableTable->setCurrentItem(item);
+		}
+	}
+	
+/*
+	//resize columns
+	//if(!columnResizeModeInitialized){
+	teachersTimetableTable->horizontalHeader()->setMinimumSectionSize(teachersTimetableTable->horizontalHeader()->defaultSectionSize());
+	//	columnResizeModeInitialized=true;
+#if QT_VERSION >= 0x050000
+	teachersTimetableTable->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+#else
+	teachersTimetableTable->horizontalHeader()->setResizeMode(QHeaderView::Stretch);
+#endif
+	//}
+	////////////////
+	
+*/
+	disconnect(teachersListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(teacherChanged(const QString&)));
+	teachersListWidget->clear();
+	connect(teachersListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(teacherChanged(const QString&)));
+
+	assert(gt.rules.nInternalTeachers==gt.rules.teachersList.count());
+	for(int i=0; i<gt.rules.nInternalTeachers; i++)
+		teachersListWidget->addItem(gt.rules.internalTeachersList[i]->name);
+
+	if(teachersListWidget->count()>0)
+		teachersListWidget->setCurrentRow(0);
+
+	//added by Volker Dirr
+	//connect(&communicationSpinBox, SIGNAL(valueChanged(int)), this, SLOT(updateTeachersTimetableTable()));
 }
 
 TimetableViewTeachersDaysHorizontalForm::~TimetableViewTeachersDaysHorizontalForm()

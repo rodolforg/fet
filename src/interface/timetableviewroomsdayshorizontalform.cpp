@@ -149,7 +149,8 @@ TimetableViewRoomsDaysHorizontalForm::TimetableViewRoomsDaysHorizontalForm(QWidg
 	assert(backupPermanentlyLockedSpace==idsOfPermanentlyLockedSpace);
 //////////
 
-	LockUnlock::increaseCommunicationSpinBox();
+	//Commented on 2018-07-20
+	//LockUnlock::increaseCommunicationSpinBox();
 
 //////////TODO
 /*
@@ -209,6 +210,143 @@ TimetableViewRoomsDaysHorizontalForm::TimetableViewRoomsDaysHorizontalForm(QWidg
 
 	//added by Volker Dirr
 	connect(&communicationSpinBox, SIGNAL(valueChanged(int)), this, SLOT(updateRoomsTimetableTable()));
+}
+
+void TimetableViewRoomsDaysHorizontalForm::newTimetableGenerated()
+{
+	/*setupUi(this);
+	
+	closePushButton->setDefault(true);
+	
+	detailsTextEdit->setReadOnly(true);
+
+	//columnResizeModeInitialized=false;
+
+	//verticalSplitter->setStretchFactor(0, 1);	//unneeded, because both have the same value
+	//verticalSplitter->setStretchFactor(1, 1);	//unneeded, because both have the same value
+	horizontalSplitter->setStretchFactor(0, 3);
+	horizontalSplitter->setStretchFactor(1, 10);
+	
+	roomsTimetableTable->setSelectionMode(QAbstractItemView::ExtendedSelection);
+
+	roomsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
+
+	connect(closePushButton, SIGNAL(clicked()), this, SLOT(close()));
+	connect(roomsListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(roomChanged(const QString&)));
+	connect(roomsTimetableTable, SIGNAL(currentItemChanged(QTableWidgetItem*, QTableWidgetItem*)), this, SLOT(currentItemChanged(QTableWidgetItem*, QTableWidgetItem*)));
+	connect(lockTimeSpacePushButton, SIGNAL(clicked()), this, SLOT(lock()));
+	connect(lockTimePushButton, SIGNAL(clicked()), this, SLOT(lockTime()));
+	connect(lockSpacePushButton, SIGNAL(clicked()), this, SLOT(lockSpace()));
+
+	connect(helpPushButton, SIGNAL(clicked()), this, SLOT(help()));
+
+	centerWidgetOnScreen(this);
+	restoreFETDialogGeometry(this);
+
+	//restore vertical splitter state
+	QSettings settings(COMPANY, PROGRAM);
+	if(settings.contains(this->metaObject()->className()+QString("/vertical-splitter-state")))
+		verticalSplitter->restoreState(settings.value(this->metaObject()->className()+QString("/vertical-splitter-state")).toByteArray());
+
+	//restore horizontal splitter state
+	//QSettings settings(COMPANY, PROGRAM);
+	if(settings.contains(this->metaObject()->className()+QString("/horizontal-splitter-state")))
+		horizontalSplitter->restoreState(settings.value(this->metaObject()->className()+QString("/horizontal-splitter-state")).toByteArray());
+*/
+
+//////////TODO
+/*    double time_start = get_time();
+*/
+//////////
+
+/////////just for testing
+	QSet<int> backupLockedTime;
+	QSet<int> backupPermanentlyLockedTime;
+	QSet<int> backupLockedSpace;
+	QSet<int> backupPermanentlyLockedSpace;
+
+	backupLockedTime=idsOfLockedTime;
+	backupPermanentlyLockedTime=idsOfPermanentlyLockedTime;
+	backupLockedSpace=idsOfLockedSpace;
+	backupPermanentlyLockedSpace=idsOfPermanentlyLockedSpace;
+
+	//added by Volker Dirr
+	//these 2 lines are not really needed - we just keep them to be safer
+	LockUnlock::computeLockedUnlockedActivitiesTimeSpace();
+	
+	assert(backupLockedTime==idsOfLockedTime);
+	assert(backupPermanentlyLockedTime==idsOfPermanentlyLockedTime);
+	assert(backupLockedSpace==idsOfLockedSpace);
+	assert(backupPermanentlyLockedSpace==idsOfPermanentlyLockedSpace);
+//////////
+
+	//DON'T UNCOMMENT THIS CODE -> LEADS TO CRASH IF THERE ARE MORE VIEWS OPENED.
+	//LockUnlock::increaseCommunicationSpinBox();
+
+//////////TODO
+/*
+    double time_end = get_time();
+    cout<<"This program has run for: "<<time_end-time_start<<" seconds."<<endl;
+*/
+//////////
+
+	roomsTimetableTable->clear();
+	roomsTimetableTable->setRowCount(gt.rules.nHoursPerDay);
+	roomsTimetableTable->setColumnCount(gt.rules.nDaysPerWeek);
+	for(int j=0; j<gt.rules.nDaysPerWeek; j++){
+		QTableWidgetItem* item=new QTableWidgetItem(gt.rules.daysOfTheWeek[j]);
+		roomsTimetableTable->setHorizontalHeaderItem(j, item);
+	}
+	for(int i=0; i<gt.rules.nHoursPerDay; i++){
+		QTableWidgetItem* item=new QTableWidgetItem(gt.rules.hoursOfTheDay[i]);
+		roomsTimetableTable->setVerticalHeaderItem(i, item);
+	}
+
+	for(int j=0; j<gt.rules.nHoursPerDay; j++){
+		for(int k=0; k<gt.rules.nDaysPerWeek; k++){
+			QTableWidgetItem* item= new QTableWidgetItem();
+			item->setTextAlignment(Qt::AlignCenter);
+			item->setFlags(Qt::ItemIsSelectable|Qt::ItemIsEnabled);
+			
+			roomsTimetableTable->setItem(j, k, item);
+			
+		//	if(j==0 && k==0)
+		//		roomsTimetableTable->setCurrentItem(item);
+		}
+	}
+	
+/*
+	//resize columns
+	//if(!columnResizeModeInitialized){
+	roomsTimetableTable->horizontalHeader()->setMinimumSectionSize(roomsTimetableTable->horizontalHeader()->defaultSectionSize());
+	//	columnResizeModeInitialized=true;
+#if QT_VERSION >= 0x050000
+	roomsTimetableTable->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+#else
+	roomsTimetableTable->horizontalHeader()->setResizeMode(QHeaderView::Stretch);
+#endif
+	//}
+	///////////////
+*/
+
+	disconnect(roomsListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(roomChanged(const QString&)));
+	roomsListWidget->clear();
+	connect(roomsListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(roomChanged(const QString&)));
+	
+	if(gt.rules.nInternalRooms!=gt.rules.roomsList.count()){
+		assert(0);
+		//QMessageBox::warning(this, tr("FET warning"), tr("Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it"));
+	}
+	else{
+		for(int i=0; i<gt.rules.nInternalRooms; i++)
+			roomsListWidget->addItem(gt.rules.internalRoomsList[i]->name);
+	}
+	
+	if(roomsListWidget->count()>0)
+		roomsListWidget->setCurrentRow(0);
+
+	//added by Volker Dirr
+	//connect(&communicationSpinBox, SIGNAL(valueChanged(int)), this, SLOT(updateRoomsTimetableTable()));
 }
 
 TimetableViewRoomsDaysHorizontalForm::~TimetableViewRoomsDaysHorizontalForm()

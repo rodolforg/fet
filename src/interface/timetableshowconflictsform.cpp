@@ -42,6 +42,23 @@ TimetableShowConflictsForm::TimetableShowConflictsForm(QWidget* parent): QDialog
 	conflictsTextEdit->setPlainText(conflictsString);
 }
 
+void TimetableShowConflictsForm::newTimetableGenerated()
+{
+	/*setupUi(this);
+	
+	closePushButton->setDefault(true);
+
+	conflictsTextEdit->setReadOnly(true);
+
+	connect(closePushButton, SIGNAL(clicked()), this, SLOT(close()));
+
+	centerWidgetOnScreen(this);
+	restoreFETDialogGeometry(this);*/
+	
+	setWindowTitle(conflictsStringTitle);
+	conflictsTextEdit->setPlainText(conflictsString);
+}
+
 TimetableShowConflictsForm::~TimetableShowConflictsForm()
 {
 	saveFETDialogGeometry(this);

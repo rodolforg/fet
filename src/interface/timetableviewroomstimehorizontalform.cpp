@@ -207,7 +207,8 @@ TimetableViewRoomsTimeHorizontalForm::TimetableViewRoomsTimeHorizontalForm(QWidg
 		return;
 	}
 
-	LockUnlock::increaseCommunicationSpinBox();
+	//Commented on 2018-07-20
+	//LockUnlock::increaseCommunicationSpinBox();
 	
 	roomsTimetableTable->setRowCount(gt.rules.nInternalRooms);
 	roomsTimetableTable->setColumnCount(gt.rules.nDaysPerWeek*gt.rules.nHoursPerDay);
@@ -368,6 +369,252 @@ TimetableViewRoomsTimeHorizontalForm::TimetableViewRoomsTimeHorizontalForm(QWidg
 	
 	//added by Volker Dirr
 	connect(&communicationSpinBox, SIGNAL(valueChanged(int)), this, SLOT(updateRoomsTimetableTable()));
+	
+	updateRoomsTimetableTable();
+}
+
+void TimetableViewRoomsTimeHorizontalForm::newTimetableGenerated()
+{
+/*	setupUi(this);
+	
+	closePushButton->setDefault(true);
+	
+	detailsTextEdit->setReadOnly(true);
+
+	//columnResizeModeInitialized=false;
+
+	verticalSplitter->setStretchFactor(0, 20);
+	verticalSplitter->setStretchFactor(1, 1);
+	horizontalSplitter->setStretchFactor(0, 5);
+	horizontalSplitter->setStretchFactor(1, 1);
+
+	roomsTimetableTable->setSelectionMode(QAbstractItemView::ExtendedSelection);
+	
+	connect(closePushButton, SIGNAL(clicked()), this, SLOT(close()));
+	connect(roomsTimetableTable, SIGNAL(currentItemChanged(QTableWidgetItem*, QTableWidgetItem*)), this, SLOT(currentItemChanged(QTableWidgetItem*, QTableWidgetItem*)));
+	connect(lockTimePushButton, SIGNAL(clicked()), this, SLOT(lockTime()));
+	connect(lockSpacePushButton, SIGNAL(clicked()), this, SLOT(lockSpace()));
+	connect(lockTimeSpacePushButton, SIGNAL(clicked()), this, SLOT(lockTimeSpace()));
+
+	connect(helpPushButton, SIGNAL(clicked()), this, SLOT(help()));
+	
+	lockRadioButton->setChecked(true);
+	unlockRadioButton->setChecked(false);
+	toggleRadioButton->setChecked(false);
+
+	centerWidgetOnScreen(this);
+	restoreFETDialogGeometry(this);
+
+	//restore vertical splitter state
+	QSettings settings(COMPANY, PROGRAM);
+	if(settings.contains(this->metaObject()->className()+QString("/vertical-splitter-state")))
+		verticalSplitter->restoreState(settings.value(this->metaObject()->className()+QString("/vertical-splitter-state")).toByteArray());
+
+	//restore horizontal splitter state
+	//QSettings settings(COMPANY, PROGRAM);
+	if(settings.contains(this->metaObject()->className()+QString("/horizontal-splitter-state")))
+		horizontalSplitter->restoreState(settings.value(this->metaObject()->className()+QString("/horizontal-splitter-state")).toByteArray());
+
+	if(settings.contains(this->metaObject()->className()+QString("/lock-radio-button")))
+		lockRadioButton->setChecked(settings.value(this->metaObject()->className()+QString("/lock-radio-button")).toBool());
+	if(settings.contains(this->metaObject()->className()+QString("/unlock-radio-button")))
+		unlockRadioButton->setChecked(settings.value(this->metaObject()->className()+QString("/unlock-radio-button")).toBool());
+	if(settings.contains(this->metaObject()->className()+QString("/toggle-radio-button")))
+		toggleRadioButton->setChecked(settings.value(this->metaObject()->className()+QString("/toggle-radio-button")).toBool());
+*/
+
+///////////just for testing
+	QSet<int> backupLockedTime;
+	QSet<int> backupPermanentlyLockedTime;
+	QSet<int> backupLockedSpace;
+	QSet<int> backupPermanentlyLockedSpace;
+	
+	backupLockedTime=idsOfLockedTime;
+	backupPermanentlyLockedTime=idsOfPermanentlyLockedTime;
+	backupLockedSpace=idsOfLockedSpace;
+	backupPermanentlyLockedSpace=idsOfPermanentlyLockedSpace;
+	
+	//added by Volker Dirr
+	//these 2 lines are not really needed - just to be safer
+	LockUnlock::computeLockedUnlockedActivitiesTimeSpace();
+	
+	assert(backupLockedTime==idsOfLockedTime);
+	assert(backupPermanentlyLockedTime==idsOfPermanentlyLockedTime);
+	assert(backupLockedSpace==idsOfLockedSpace);
+	assert(backupPermanentlyLockedSpace==idsOfPermanentlyLockedSpace);
+///////////
+
+	if(gt.rules.nInternalRooms!=gt.rules.roomsList.count()){
+		assert(0); //should be taken care of by Rules - rooms_schedule_ready is false in the Rules if adding or removing rooms.
+	}
+
+	//DON'T UNCOMMENT THIS CODE -> LEADS TO CRASH IF THERE ARE MORE VIEWS OPENED.
+	//LockUnlock::increaseCommunicationSpinBox();
+	
+	roomsTimetableTable->clear();
+	roomsTimetableTable->setRowCount(gt.rules.nInternalRooms);
+	roomsTimetableTable->setColumnCount(gt.rules.nDaysPerWeek*gt.rules.nHoursPerDay);
+	
+	newItemDelegate->nRows=roomsTimetableTable->rowCount();
+	newItemDelegate->nColumns=gt.rules.nHoursPerDay;
+	/*roomsTimetableTable->setItemDelegate(oldItemDelegate);
+	delete newItemDelegate;
+	//oldItemDelegate=roomsTimetableTable->itemDelegate();
+	newItemDelegate=new TimetableViewRoomsTimeHorizontalDelegate(NULL, roomsTimetableTable->rowCount(), gt.rules.nHoursPerDay);
+	roomsTimetableTable->setItemDelegate(newItemDelegate);*/
+	
+	bool min2letters=false;
+	for(int d=0; d<gt.rules.nDaysPerWeek; d++){
+		if(gt.rules.daysOfTheWeek[d].size()>gt.rules.nHoursPerDay){
+			min2letters=true;
+			break;
+		}
+	}
+	//QMessageBox::information(this, "", QString::number(min2letters));
+	for(int d=0; d<gt.rules.nDaysPerWeek; d++){
+		QString dayName=gt.rules.daysOfTheWeek[d];
+		int t=dayName.size();
+		int q=t/gt.rules.nHoursPerDay;
+		int r=t%gt.rules.nHoursPerDay;
+		QStringList list;
+		
+		if(q==0)
+			q=1;
+		
+		for(int i=0; i<gt.rules.nHoursPerDay; i++){
+			if(!min2letters){
+				list.append(dayName.left(1));
+				dayName.remove(0, 1);
+			}
+			else if(i<r || q<=1){
+				assert(q>=1);
+				list.append(dayName.left(q+1));
+				dayName.remove(0, q+1);
+			}
+			else{
+				list.append(dayName.left(q));
+				dayName.remove(0, q);
+			}
+		}
+	
+		for(int h=0; h<gt.rules.nHoursPerDay; h++){
+			QTableWidgetItem* item=new QTableWidgetItem(list.at(h)+"\n"+gt.rules.hoursOfTheDay[h]);
+			item->setToolTip(gt.rules.daysOfTheWeek[d]+"\n"+gt.rules.hoursOfTheDay[h]);
+			roomsTimetableTable->setHorizontalHeaderItem(d*gt.rules.nHoursPerDay+h, item);
+		}
+	}
+	for(int t=0; t<gt.rules.nInternalRooms; t++){
+		QTableWidgetItem* item=new QTableWidgetItem(gt.rules.internalRoomsList[t]->name);
+		item->setToolTip(gt.rules.internalRoomsList[t]->name);
+		roomsTimetableTable->setVerticalHeaderItem(t, item);
+	}
+
+	for(int t=0; t<gt.rules.nInternalRooms; t++){
+		for(int d=0; d<gt.rules.nDaysPerWeek; d++){
+			for(int h=0; h<gt.rules.nHoursPerDay; h++){
+				QTableWidgetItem* item= new QTableWidgetItem();
+				item->setTextAlignment(Qt::AlignCenter);
+				item->setFlags(Qt::ItemIsSelectable|Qt::ItemIsEnabled);
+
+				roomsTimetableTable->setItem(t, d*gt.rules.nHoursPerDay+h, item);
+			}
+		}
+	}
+	
+	//resize columns
+	//if(!columnResizeModeInitialized){
+//	teachersTimetableTable->horizontalHeader()->setMinimumSectionSize(teachersTimetableTable->horizontalHeader()->defaultSectionSize());
+	//	columnResizeModeInitialized=true;
+	
+	/*initialRecommendedHeight=roomsTimetableTable->verticalHeader()->sectionSizeHint(0);
+	
+	int h;
+	int w;
+
+	if(settings.contains(this->metaObject()->className()+QString("/vertical-header-size"))){
+		h=settings.value(this->metaObject()->className()+QString("/vertical-header-size")).toInt();
+		if(h==0)
+			h=MINIMUM_HEIGHT_SPIN_BOX_VALUE;
+	}
+	else{
+		h=MINIMUM_HEIGHT_SPIN_BOX_VALUE;
+	}
+//	if(h==0)
+//		h=initialRecommendedHeight;
+
+	if(settings.contains(this->metaObject()->className()+QString("/horizontal-header-size"))){
+		w=settings.value(this->metaObject()->className()+QString("/horizontal-header-size")).toInt();
+		if(w==0)
+			w=MINIMUM_WIDTH_SPIN_BOX_VALUE;
+	}
+	else{
+		w=MINIMUM_WIDTH_SPIN_BOX_VALUE;
+	}
+//	if(w==0)
+//		w=2*initialRecommendedHeight;
+		
+	widthSpinBox->setSuffix(QString(" ")+tr("px", "Abbreviation for pixels"));
+	widthSpinBox->setMinimum(MINIMUM_WIDTH_SPIN_BOX_VALUE);
+#if QT_VERSION >= 0x050200
+	widthSpinBox->setMaximum(roomsTimetableTable->verticalHeader()->maximumSectionSize());
+#else
+	widthSpinBox->setMaximum(maxScreenWidth(this));
+#endif
+	widthSpinBox->setValue(w);
+	widthSpinBox->setSpecialValueText(tr("Automatic"));
+	
+	heightSpinBox->setSuffix(QString(" ")+tr("px", "Abbreviation for pixels"));
+	heightSpinBox->setMinimum(MINIMUM_HEIGHT_SPIN_BOX_VALUE);
+#if QT_VERSION >= 0x050200
+	heightSpinBox->setMaximum(roomsTimetableTable->verticalHeader()->maximumSectionSize());
+#else
+	heightSpinBox->setMaximum(maxScreenWidth(this));
+#endif
+	heightSpinBox->setValue(h);
+	heightSpinBox->setSpecialValueText(tr("Automatic"));
+	
+	widthSpinBoxValueChanged();
+	heightSpinBoxValueChanged();
+	
+	connect(widthSpinBox, SIGNAL(valueChanged(int)), this, SLOT(widthSpinBoxValueChanged()));
+	connect(heightSpinBox, SIGNAL(valueChanged(int)), this, SLOT(heightSpinBoxValueChanged()));
+	
+//	teachersTimetableTable->verticalHeader()->setDefaultSectionSize(h);
+//	teachersTimetableTable->horizontalHeader()->setDefaultSectionSize(w);
+
+#if QT_VERSION >= 0x050000
+	roomsTimetableTable->verticalHeader()->setSectionResizeMode(QHeaderView::Interactive);
+	roomsTimetableTable->horizontalHeader()->setSectionResizeMode(QHeaderView::Interactive);
+#else
+	roomsTimetableTable->verticalHeader()->setResizeMode(QHeaderView::Interactive);
+	roomsTimetableTable->horizontalHeader()->setResizeMode(QHeaderView::Interactive);
+#endif
+	//}
+	////////////////
+	
+	teachersCheckBox->setChecked(true);
+	subjectsCheckBox->setChecked(true);
+	studentsCheckBox->setChecked(true);
+	
+	if(settings.contains(this->metaObject()->className()+QString("/teachers-check-box-state"))){
+		bool state=settings.value(this->metaObject()->className()+QString("/teachers-check-box-state")).toBool();
+		teachersCheckBox->setChecked(state);
+	}
+	if(settings.contains(this->metaObject()->className()+QString("/subjects-check-box-state"))){
+		bool state=settings.value(this->metaObject()->className()+QString("/subjects-check-box-state")).toBool();
+		subjectsCheckBox->setChecked(state);
+	}
+	if(settings.contains(this->metaObject()->className()+QString("/students-check-box-state"))){
+		bool state=settings.value(this->metaObject()->className()+QString("/students-check-box-state")).toBool();
+		studentsCheckBox->setChecked(state);
+	}
+	
+	connect(teachersCheckBox, SIGNAL(toggled(bool)), this, SLOT(updateRoomsTimetableTable()));
+	connect(subjectsCheckBox, SIGNAL(toggled(bool)), this, SLOT(updateRoomsTimetableTable()));
+	connect(studentsCheckBox, SIGNAL(toggled(bool)), this, SLOT(updateRoomsTimetableTable()));*/
+	
+	//added by Volker Dirr
+	//connect(&communicationSpinBox, SIGNAL(valueChanged(int)), this, SLOT(updateRoomsTimetableTable()));
 	
 	updateRoomsTimetableTable();
 }
