@@ -37,6 +37,10 @@
 extern const QString COMPANY;
 extern const QString PROGRAM;
 
+extern bool students_schedule_ready;
+extern bool rooms_schedule_ready;
+extern bool teachers_schedule_ready;
+
 TeachersForm::TeachersForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);
@@ -261,6 +265,10 @@ void TeachersForm::moveTeacherUp()
 	gt.rules.internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(&gt.rules);
 	
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
+
 	teachersListWidget->item(i)->setText(s2);
 	teachersListWidget->item(i-1)->setText(s1);
 	
@@ -290,6 +298,10 @@ void TeachersForm::moveTeacherDown()
 	gt.rules.internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(&gt.rules);
 	
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
+
 	teachersListWidget->item(i)->setText(s2);
 	teachersListWidget->item(i+1)->setText(s1);
 	

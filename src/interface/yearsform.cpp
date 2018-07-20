@@ -39,6 +39,10 @@
 extern const QString COMPANY;
 extern const QString PROGRAM;
 
+extern bool students_schedule_ready;
+extern bool rooms_schedule_ready;
+extern bool teachers_schedule_ready;
+
 YearsForm::YearsForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);
@@ -171,6 +175,10 @@ void YearsForm::moveYearUp()
 	gt.rules.internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(&gt.rules);
 	
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
+
 	yearsListWidget->item(i)->setText(s2);
 	yearsListWidget->item(i-1)->setText(s1);
 	
@@ -200,6 +208,10 @@ void YearsForm::moveYearDown()
 	gt.rules.internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(&gt.rules);
 	
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
+
 	yearsListWidget->item(i)->setText(s2);
 	yearsListWidget->item(i+1)->setText(s1);
 	

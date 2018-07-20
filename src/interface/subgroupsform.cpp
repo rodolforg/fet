@@ -42,6 +42,10 @@
 extern const QString COMPANY;
 extern const QString PROGRAM;
 
+extern bool students_schedule_ready;
+extern bool rooms_schedule_ready;
+extern bool teachers_schedule_ready;
+
 SubgroupsForm::SubgroupsForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);
@@ -385,6 +389,10 @@ void SubgroupsForm::moveSubgroupUp()
 	gt.rules.internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(&gt.rules);
 	
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
+
 	subgroupsListWidget->item(i)->setText(s2);
 	subgroupsListWidget->item(i-1)->setText(s1);
 	
@@ -422,6 +430,10 @@ void SubgroupsForm::moveSubgroupDown()
 	gt.rules.internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(&gt.rules);
 	
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
+
 	subgroupsListWidget->item(i)->setText(s2);
 	subgroupsListWidget->item(i+1)->setText(s1);
 	

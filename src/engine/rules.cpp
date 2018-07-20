@@ -950,6 +950,10 @@ void Rules::kill() //clears memory for the rules, destroys them
 	//done
 	this->internalStructureComputed=false;
 	this->initialized=false;
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
 }
 
 Rules::Rules()
@@ -1200,6 +1204,10 @@ bool Rules::modifyTeacher(const QString& initialTeacherName, const QString& fina
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
 
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
+
 	return true;
 }
 
@@ -1209,6 +1217,10 @@ void Rules::sortTeachersAlphabetically()
 
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
 }
 
 bool Rules::addSubject(Subject* subject)
@@ -1388,6 +1400,10 @@ bool Rules::modifySubject(const QString& initialSubjectName, const QString& fina
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
 
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
+
 	return true;
 }
 
@@ -1397,6 +1413,10 @@ void Rules::sortSubjectsAlphabetically()
 
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
 }
 
 bool Rules::addActivityTag(ActivityTag* activityTag)
@@ -1592,6 +1612,10 @@ bool Rules::modifyActivityTag(const QString& initialActivityTagName, const QStri
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
 
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
+
 	return true;
 }
 
@@ -1601,6 +1625,10 @@ void Rules::sortActivityTagsAlphabetically()
 
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
 }
 
 bool Rules::setsShareStudents(const QString& studentsSet1, const QString& studentsSet2)
@@ -1823,6 +1851,11 @@ bool Rules::addYear(StudentsYear* year)
 	
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
+
 	return true;
 }
 
@@ -1831,6 +1864,11 @@ bool Rules::addYearFast(StudentsYear* year)
 	this->yearsList << year;
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
+
 	return true;
 }
 
@@ -1909,6 +1947,11 @@ bool Rules::removeYear(const QString& yearName/*, bool removeAlsoThisYear*/)
 	
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
+
 	return true;
 }
 
@@ -1944,6 +1987,11 @@ bool Rules::removeYearPointerAfterSplit(StudentsYear* yearPointer)
 	
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
+
 	return true;
 }
 
@@ -2122,6 +2170,10 @@ bool Rules::modifyStudentsSet(const QString& initialStudentsSetName, const QStri
 	
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
 	
 	return true;
 }
@@ -2282,6 +2334,10 @@ bool Rules::modifyStudentsSets(const QHash<QString, QString>& oldAndNewStudentsS
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
 	
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
+
 	return true;
 }
 //by Volker Dirr (end) - very similar to Liviu's modifyStudentsSet
@@ -2292,6 +2348,10 @@ void Rules::sortYearsAlphabetically()
 
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
 }
 
 bool Rules::addGroup(const QString& yearName, StudentsGroup* group)
@@ -2317,6 +2377,11 @@ bool Rules::addGroup(const QString& yearName, StudentsGroup* group)
 
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
+
 	return true;
 }
 
@@ -2326,6 +2391,11 @@ bool Rules::addGroupFast(StudentsYear* year, StudentsGroup* group)
 
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
+
 	return true;
 }
 
@@ -2402,6 +2472,11 @@ bool Rules::removeGroup(const QString& yearName, const QString& groupName)
 	
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
+
 	return true;
 }
 
@@ -2458,6 +2533,11 @@ bool Rules::purgeGroup(const QString& groupName)
 	
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
+
 	return true;
 }
 
@@ -2504,6 +2584,10 @@ void Rules::sortGroupsAlphabetically(const QString& yearName)
 
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
 }
 
 bool Rules::addSubgroup(const QString& yearName, const QString& groupName, StudentsSubgroup* subgroup)
@@ -2526,6 +2610,11 @@ bool Rules::addSubgroup(const QString& yearName, const QString& groupName, Stude
 
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
+
 	return true;
 }
 
@@ -2537,6 +2626,11 @@ bool Rules::addSubgroupFast(StudentsYear* year, StudentsGroup* group, StudentsSu
 
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
+
 	return true;
 }
 
@@ -2601,6 +2695,11 @@ bool Rules::removeSubgroup(const QString& yearName, const QString& groupName, co
 	
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
+
 	return true;
 }
 
@@ -2644,6 +2743,11 @@ bool Rules::purgeSubgroup(const QString& subgroupName)
 	
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
+
 	return true;
 }
 
@@ -2708,6 +2812,10 @@ void Rules::sortSubgroupsAlphabetically(const QString& yearName, const QString& 
 	
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
 }
 
 bool Rules::addSimpleActivityFast(
@@ -2751,6 +2859,10 @@ bool Rules::addSimpleActivityFast(
 
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
 
 	return true;
 }
@@ -2816,6 +2928,10 @@ bool Rules::addSplitActivityFast(
 
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
 
 	return true;
 }
@@ -2883,6 +2999,10 @@ void Rules::removeActivities(const QList<int>& _idsList, bool updateConstraints)
 	
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
 }
 
 void Rules::modifyActivity(
@@ -2923,6 +3043,10 @@ void Rules::modifyActivity(
 	
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
 }
 
 void Rules::modifySubactivity(
@@ -2971,6 +3095,10 @@ void Rules::modifySubactivity(
 	
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
 }
 
 bool Rules::addRoom(Room* rm)
@@ -3153,6 +3281,11 @@ bool Rules::modifyRoom(const QString& initialRoomName, const QString& finalRoomN
 
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
+
 	return true;
 }
 
@@ -3162,6 +3295,10 @@ void Rules::sortRoomsAlphabetically()
 
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
 }
 
 bool Rules::addBuilding(Building* bu)
@@ -3243,6 +3380,11 @@ bool Rules::modifyBuilding(const QString& initialBuildingName, const QString& fi
 
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
+
 	return true;
 }
 
@@ -3252,6 +3394,10 @@ void Rules::sortBuildingsAlphabetically()
 
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
 }
 
 bool Rules::addTimeConstraint(TimeConstraint* ctr)
@@ -6978,6 +7124,10 @@ int Rules::activateTeacher(const QString& teacherName)
 
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
 	
 	return count;
 }
@@ -7022,6 +7172,10 @@ int Rules::activateStudents(const QString& studentsName)
 
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
 	
 	return count;
 }
@@ -7040,6 +7194,10 @@ int Rules::activateSubject(const QString& subjectName)
 
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
 	
 	return count;
 }
@@ -7058,6 +7216,10 @@ int Rules::activateActivityTag(const QString& activityTagName)
 
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
 	
 	return count;
 }
@@ -7076,6 +7238,10 @@ int Rules::deactivateTeacher(const QString& teacherName)
 
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
 	
 	return count;
 }
@@ -7120,6 +7286,10 @@ int Rules::deactivateStudents(const QString& studentsName)
 
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
 	
 	return count;
 }
@@ -7138,6 +7308,10 @@ int Rules::deactivateSubject(const QString& subjectName)
 
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
 	
 	return count;
 }
@@ -7156,6 +7330,10 @@ int Rules::deactivateActivityTag(const QString& activityTagName)
 
 	this->internalStructureComputed=false;
 	setRulesModifiedAndOtherThings(this);
+
+	teachers_schedule_ready=false;
+	students_schedule_ready=false;
+	rooms_schedule_ready=false;
 	
 	return count;
 }
