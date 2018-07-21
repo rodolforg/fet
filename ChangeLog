@@ -2094,6 +2094,6 @@ Versions 5.37.0 - 5.37.v
 	- Updated the German example files from secondary school 1, by Volker Dirr.
 	- Updated all the example files to use the latest file format.
 - Version 5.37.1
-	- Rare crash bug fixed, appearing when viewing the timetable, modifying some data without closing the view timetable dialogs, and regenerating.
-	Reported by liquid. This bug was solved in this manner: when the user starts a generation (single or multiple) all the timetable view dialogs will be
-	automatically closed. The user needs to manually open new timetable view dialogs after a successful or a partial generation.
+	- Rare crash bug fixed, appearing when viewing the timetable, then modifying some data (like increasing the number of days per week or hours per day)
+	without closing the timetable view dialogs, and then regenerating. Reported by liquid.
+	- The opened timetable view dialogs are now better updated, after a successful or unsuccessful generation (suggested by Volker Dirr).
