@@ -706,6 +706,7 @@ FetMainForm::FetMainForm()
 	connect(showWarningForSubgroupsWithTheSameActivitiesAction, SIGNAL(toggled(bool)), this, SLOT(showWarningForSubgroupsWithTheSameActivitiesToggled(bool)));
 
 	connect(checkForUpdatesAction, SIGNAL(toggled(bool)), this, SLOT(checkForUpdatesToggled(bool)));
+	connect(settingsUseColorsAction, SIGNAL(toggled(bool)), this, SLOT(useColorsToggled(bool)));
 	connect(settingsShowSubgroupsInComboBoxesAction, SIGNAL(toggled(bool)), this, SLOT(showSubgroupsInComboBoxesToggled(bool)));
 	connect(settingsShowSubgroupsInActivityPlanningAction, SIGNAL(toggled(bool)), this, SLOT(showSubgroupsInActivityPlanningToggled(bool)));
 	
@@ -837,8 +838,10 @@ void FetMainForm::checkForUpdatesToggled(bool checked)
 	checkForUpdates=checked;
 }
 
-void FetMainForm::on_settingsUseColorsAction_toggled()
+void FetMainForm::useColorsToggled(bool checked)
 {
+	Q_UNUSED(checked);
+	
 	USE_GUI_COLORS=settingsUseColorsAction->isChecked();
 	
 	LockUnlock::increaseCommunicationSpinBox();
@@ -4449,8 +4452,10 @@ void FetMainForm::on_settingsRestoreDefaultsAction_triggered()
 	SHOW_TOOLTIPS_FOR_CONSTRAINTS_WITH_TABLES=false;
 	settingsShowToolTipsForConstraintsWithTablesAction->setChecked(SHOW_TOOLTIPS_FOR_CONSTRAINTS_WITH_TABLES);
 	
+	disconnect(settingsUseColorsAction, SIGNAL(toggled(bool)), this, SLOT(useColorsToggled(bool)));
 	USE_GUI_COLORS=false;
 	settingsUseColorsAction->setChecked(USE_GUI_COLORS);
+	connect(settingsUseColorsAction, SIGNAL(toggled(bool)), this, SLOT(useColorsToggled(bool)));
 	
 	SHOW_SUBGROUPS_IN_COMBO_BOXES=true;
 	settingsShowSubgroupsInComboBoxesAction->setChecked(SHOW_SUBGROUPS_IN_COMBO_BOXES);
@@ -4567,7 +4572,8 @@ void FetMainForm::on_settingsRestoreDefaultsAction_triggered()
 	setLanguage(*pqapplication, this);
 	setCurrentFile(INPUT_FILENAME_XML);
 
-	LockUnlock::increaseCommunicationSpinBox(); //for GUI colors in timetables
+	if(teachers_schedule_ready && students_schedule_ready && rooms_schedule_ready)
+		LockUnlock::increaseCommunicationSpinBox(); //for GUI colors in timetables
 }
 
 void FetMainForm::on_settingsTimetableHtmlLevelAction_triggered()
