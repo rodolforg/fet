@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<fet version="5.37.0">
+<fet version="5.37.1">
 
 <Institution_Name>ثانوية الفارابي-حد كورت</Institution_Name>
 
@@ -9570,6 +9570,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>رياضياتءع</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Starting_Times>36</Number_of_Preferred_Starting_Times>
 	<Preferred_Starting_Time>
 		<Preferred_Starting_Day>إثنين صباحا</Preferred_Starting_Day>
@@ -9725,6 +9726,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>رياضياتءع</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Starting_Times>36</Number_of_Preferred_Starting_Times>
 	<Preferred_Starting_Time>
 		<Preferred_Starting_Day>إثنين صباحا</Preferred_Starting_Day>
@@ -10491,6 +10493,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>Pseudo</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Starting_Times>51</Number_of_Preferred_Starting_Times>
 	<Preferred_Starting_Time>
 		<Preferred_Starting_Day>إثنين صباحا</Preferred_Starting_Day>
@@ -10761,6 +10764,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>Pseudo</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>44</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>إثنين صباحا</Preferred_Day>

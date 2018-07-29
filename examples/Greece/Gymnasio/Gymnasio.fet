@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<fet version="5.37.0">
+<fet version="5.37.1">
 
 <Institution_Name>Γυμνάσιο</Institution_Name>
 
@@ -7372,6 +7372,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>Μαθημ</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Starting_Times>25</Number_of_Preferred_Starting_Times>
 	<Preferred_Starting_Time>
 		<Preferred_Starting_Day>Δευτέρα</Preferred_Starting_Day>
@@ -7483,6 +7484,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>Μαθημ</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Starting_Times>25</Number_of_Preferred_Starting_Times>
 	<Preferred_Starting_Time>
 		<Preferred_Starting_Day>Δευτέρα</Preferred_Starting_Day>
@@ -7673,6 +7675,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>Μαθημ</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Starting_Times>25</Number_of_Preferred_Starting_Times>
 	<Preferred_Starting_Time>
 		<Preferred_Starting_Day>Δευτέρα</Preferred_Starting_Day>
