@@ -19,12 +19,6 @@ File generate.cpp
  *                                                                         *
  ***************************************************************************/
 
-//Note 2018-07-28: The code for students max span per day, students early max beginnings at second hour, students/teachers max gaps per day/week,
-//students/teachers min/max hours daily can and should be theoretically corrected. But it is very risky. Many examples and variants should be tested.
-//See the directory doc/algorithm/2018-07-28-should-improve-theoretically for a better generate file, but which behaves much worse on at least a file,
-//examples/Romania/Pedagogic-High-School-Tg-Mures/2007-2008_sem1-d-test-students-max-span-per-day.fet (because of the new code in
-//students max span per day).
-
 #include <ctime>
 
 #include <QtAlgorithms>
@@ -170,6 +164,7 @@ static Matrix2D<int> sbgTimetable;
 static Matrix1D<int> sbgDayNHours;
 static Matrix1D<int> sbgDayNGaps;
 static Matrix1D<int> sbgDayNFirstGaps;
+static int sbgNFirstHourGaps;
 
 //static QList<int> teacherActivitiesOfTheDay[MAX_TEACHERS][MAX_DAYS_PER_WEEK];
 static Matrix2D<QList<int> > teacherActivitiesOfTheDay;
@@ -938,15 +933,23 @@ inline void Generate::subgroupGetNHoursGaps(int sbg)
 
 inline void Generate::sbgGetNHoursGaps(int sbg)
 {
+	sbgNFirstHourGaps=0;
+
 	for(int d=0; d<gt.rules.nDaysPerWeek; d++){
 		int hours=0, gaps=0, nfirstgaps=0;
 
 		int h;
+		
+		int nFHG=0;
+		
 		for(h=0; h<gt.rules.nHoursPerDay; h++){
 			if(sbgTimetable(d,h)>=0)
 				break;
-			else if(!breakDayHour(d,h) && !subgroupNotAvailableDayHour(sbg,d,h))
+			else if(!breakDayHour(d,h) && !subgroupNotAvailableDayHour(sbg,d,h)){
 				nfirstgaps++;
+				if(nFHG==0)
+					nFHG=1;
+			}
 		}
 		int ng=0;
 		for(; h<gt.rules.nHoursPerDay; h++){
@@ -961,8 +964,10 @@ inline void Generate::sbgGetNHoursGaps(int sbg)
 	
 		sbgDayNGaps[d]=gaps;
 		sbgDayNHours[d]=hours;
-		if(sbgDayNHours[d]>0)
+		if(sbgDayNHours[d]>0){
 			sbgDayNFirstGaps[d]=nfirstgaps;
+			sbgNFirstHourGaps+=nFHG;
+		}
 		else
 			sbgDayNFirstGaps[d]=0;
 	}
@@ -1006,6 +1011,134 @@ inline bool Generate::subgroupRemoveAnActivityFromBeginOrEnd(int sbg, int level,
 			for(h2=0; h2<gt.rules.nHoursPerDay; h2++){
 				if(sbgTimetable(d2,h2)>=0){
 					actIndexBegin=sbgTimetable(d2,h2);
+					break;
+				}
+			}
+			if(actIndexBegin>=0)
+				if(fixedTimeActivity[actIndexBegin] || swappedActivities[actIndexBegin] || actIndexBegin==ai)
+					actIndexBegin=-1;
+			for(h2=gt.rules.nHoursPerDay-1; h2>=0; h2--){
+				if(sbgTimetable(d2,h2)>=0){
+					actIndexEnd=sbgTimetable(d2,h2);
+					break;
+				}
+			}
+			if(actIndexEnd>=0)
+				if(fixedTimeActivity[actIndexEnd] || swappedActivities[actIndexEnd] || actIndexEnd==ai || actIndexEnd==actIndexBegin)
+					actIndexEnd=-1;
+
+			if(actIndexBegin>=0){
+				assert(!acts.contains(actIndexBegin));
+				possibleDays.append(d2);
+				atBeginning.append(true);
+				acts.append(actIndexBegin);
+			}
+			if(actIndexEnd>=0){
+				assert(!acts.contains(actIndexEnd));
+				possibleDays.append(d2);
+				atBeginning.append(false);
+				acts.append(actIndexEnd);
+			}
+		}
+	}
+						
+	bool possibleBeginOrEnd=true;						
+	if(possibleDays.count()==0)
+		possibleBeginOrEnd=false;
+				
+	if(possibleBeginOrEnd){
+		int t;
+						
+		if(level==0){
+			int optMinWrong=INF;
+			
+			QList<int> tl;
+
+			for(int q=0; q<acts.count(); q++){
+				int ai2=acts.at(q);
+				if(optMinWrong>triedRemovals(ai2,c.times[ai2])){
+				 	optMinWrong=triedRemovals(ai2,c.times[ai2]);
+				}
+			}
+			
+			for(int q=0; q<acts.count(); q++){
+				int ai2=acts.at(q);
+				if(optMinWrong==triedRemovals(ai2,c.times[ai2]))
+					tl.append(q);
+			}
+			
+			assert(tl.size()>=1);
+			int mpos=tl.at(randomKnuth(tl.size()));
+			
+			assert(mpos>=0 && mpos<acts.count());
+			t=mpos;
+		}
+		else{
+			t=randomKnuth(possibleDays.count());
+		}
+								
+		assert(t>=0 && t<possibleDays.count());
+							
+		int d2=possibleDays.at(t);
+		bool begin=atBeginning.at(t);
+		int ai2=acts.at(t);
+		
+		removedActivity=ai2;
+							
+		if(begin){
+			int h2;
+			for(h2=0; h2<gt.rules.nHoursPerDay; h2++)
+				if(sbgTimetable(d2,h2)>=0)
+					break;
+			assert(h2<gt.rules.nHoursPerDay);
+		
+			assert(sbgTimetable(d2,h2)==ai2);
+								
+			assert(!conflActivities.contains(ai2));
+			conflActivities.append(ai2);
+			nConflActivities++;
+			assert(nConflActivities==conflActivities.count());
+		}
+		else{
+			int h2;
+			for(h2=gt.rules.nHoursPerDay-1; h2>=0; h2--)
+				if(sbgTimetable(d2,h2)>=0)
+					break;
+			assert(h2>=0);
+			
+			assert(sbgTimetable(d2,h2)==ai2);
+							
+			assert(!conflActivities.contains(ai2));
+			conflActivities.append(ai2);
+			nConflActivities++;
+			assert(nConflActivities==conflActivities.count());
+		}
+		
+		return true;
+	}
+	else
+		return false;
+}
+
+inline bool Generate::subgroupRemoveAnActivityFromBeginOnlyFirstHourOrEnd(int sbg, int level, int ai, QList<int>& conflActivities, int& nConflActivities, int& removedActivity) //returns true if successful, false if impossible
+{
+	Q_UNUSED(sbg);
+
+	//remove an activity from begin only first available hour or from end of any day
+	QList<int> possibleDays;
+	QList<bool> atBeginning;
+	QList<int> acts;
+	for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++){
+		if(sbgDayNHours[d2]>0){
+			int actIndexBegin=-1, actIndexEnd=-1;
+			int h2;
+			for(h2=0; h2<gt.rules.nHoursPerDay; h2++){
+				if(sbgTimetable(d2,h2)>=0){
+					actIndexBegin=sbgTimetable(d2,h2);
+					break;
+				}
+				//This is the only difference from subgroupRemoveAnActivityFromBeginOrEnd
+				else if(!breakDayHour(d2,h2) && !subgroupNotAvailableDayHour(sbg,d2,h2)){
 					break;
 				}
 			}
@@ -1205,6 +1338,100 @@ inline bool Generate::subgroupRemoveAnActivityFromBegin(int sbg, int level, int 
 		return false;
 }
 
+inline bool Generate::subgroupRemoveAnActivityFromBeginOnlyFirstHour(int sbg, int level, int ai, QList<int>& conflActivities, int& nConflActivities, int& removedActivity) //returns true if successful, false if impossible
+{
+	Q_UNUSED(sbg);
+
+	//remove an activity from begin only available first hour of any day
+	QList<int> possibleDays;
+	QList<int> acts;
+	for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++){
+		if(sbgDayNHours[d2]>0){
+			int actIndexBegin=-1;
+			int h2;
+			for(h2=0; h2<gt.rules.nHoursPerDay; h2++){
+				if(sbgTimetable(d2,h2)>=0){
+					actIndexBegin=sbgTimetable(d2,h2);
+					break;
+				}
+				//This is the only difference from subgroupRemoveAnActivityFromBegin
+				else if(!breakDayHour(d2,h2) && !subgroupNotAvailableDayHour(sbg,d2,h2)){
+					break;
+				}
+			}
+			if(actIndexBegin>=0)
+				if(fixedTimeActivity[actIndexBegin] || swappedActivities[actIndexBegin] || actIndexBegin==ai)
+					actIndexBegin=-1;
+
+			if(actIndexBegin>=0){
+				assert(!acts.contains(actIndexBegin));
+				possibleDays.append(d2);
+				acts.append(actIndexBegin);
+			}
+		}
+	}
+						
+	bool possibleBegin=true;
+	if(possibleDays.count()==0)
+		possibleBegin=false;
+				
+	if(possibleBegin){
+		int t;
+						
+		if(level==0){
+			int optMinWrong=INF;
+			
+			QList<int> tl;
+
+			for(int q=0; q<acts.count(); q++){
+				int ai2=acts.at(q);
+				if(optMinWrong>triedRemovals(ai2,c.times[ai2])){
+				 	optMinWrong=triedRemovals(ai2,c.times[ai2]);
+				}
+			}
+			
+			for(int q=0; q<acts.count(); q++){
+				int ai2=acts.at(q);
+				if(optMinWrong==triedRemovals(ai2,c.times[ai2]))
+					tl.append(q);
+			}
+			
+			assert(tl.size()>=1);
+			int mpos=tl.at(randomKnuth(tl.size()));
+			
+			assert(mpos>=0 && mpos<acts.count());
+			t=mpos;
+		}
+		else{
+			t=randomKnuth(possibleDays.count());
+		}
+								
+		assert(t>=0 && t<possibleDays.count());
+							
+		int d2=possibleDays.at(t);
+		int ai2=acts.at(t);
+		
+		removedActivity=ai2;
+							
+		int h2;
+		for(h2=0; h2<gt.rules.nHoursPerDay; h2++)
+			if(sbgTimetable(d2,h2)>=0)
+				break;
+		assert(h2<gt.rules.nHoursPerDay);
+	
+		assert(sbgTimetable(d2,h2)==ai2);
+							
+		assert(!conflActivities.contains(ai2));
+		conflActivities.append(ai2);
+		nConflActivities++;
+		assert(nConflActivities==conflActivities.count());
+		
+		return true;
+	}
+	else
+		return false;
+}
+
 inline bool Generate::subgroupRemoveAnActivityFromBeginCertainDay(int sbg, int d2, int level, int ai, QList<int>& conflActivities, int& nConflActivities, int& removedActivity) //returns true if successful, false if impossible
 {
 	Q_UNUSED(sbg);
@@ -1216,6 +1443,45 @@ inline bool Generate::subgroupRemoveAnActivityFromBeginCertainDay(int sbg, int d
 		for(h2=0; h2<gt.rules.nHoursPerDay; h2++){
 			if(sbgTimetable(d2,h2)>=0){
 				actIndexBegin=sbgTimetable(d2,h2);
+				break;
+			}
+		}
+		if(actIndexBegin>=0)
+			if(fixedTimeActivity[actIndexBegin] || swappedActivities[actIndexBegin] || actIndexBegin==ai)
+				actIndexBegin=-1;
+
+		if(actIndexBegin>=0){
+			removedActivity=actIndexBegin;
+	
+			assert(!conflActivities.contains(actIndexBegin));
+			conflActivities.append(actIndexBegin);
+			nConflActivities++;
+			assert(nConflActivities==conflActivities.count());
+		
+			return true;
+		}
+		else
+			return false;
+	}
+	else
+		return false;
+}
+
+inline bool Generate::subgroupRemoveAnActivityFromBeginCertainDayOnlyFirstHour(int sbg, int d2, int level, int ai, QList<int>& conflActivities, int& nConflActivities, int& removedActivity) //returns true if successful, false if impossible
+{
+	Q_UNUSED(sbg);
+	Q_UNUSED(level);
+
+	if(sbgDayNHours[d2]>0){
+		int actIndexBegin=-1;
+		int h2;
+		for(h2=0; h2<gt.rules.nHoursPerDay; h2++){
+			if(sbgTimetable(d2,h2)>=0){
+				actIndexBegin=sbgTimetable(d2,h2);
+				break;
+			}
+			//This is the only difference from subgroupRemoveAnActivityFromBeginCertainDay
+			else if(!breakDayHour(d2,h2) && !subgroupNotAvailableDayHour(sbg,d2,h2)){
 				break;
 			}
 		}
@@ -3157,7 +3423,7 @@ if(threaded){
 //////////////////////
 		}			
 		else{ //if foundGoodSwap==true
-			nPlacedActivities=added_act+1;
+			//nPlacedActivities=added_act+1;
 			
 			if(maxActivitiesPlaced<added_act+1){
 //				generationHighestStageDateTime=QDateTime::currentDateTime();
@@ -5456,7 +5722,7 @@ impossiblestudentsintervalmaxdaysperweek:
 
 				getSbgTimetable(sbg, conflActivities[newtime]);
 				updateSbgNHoursGaps(sbg, d); //needed for subgroupRemoveAnActivityFromBeginOrEndCertainDay or
-				//subgroupRemoveAnActivityFromEndCertainDay or subgroupRemoveAnActivityFromBeginCertainDay below
+				//subgroupRemoveAnActivityFromEndCertainDay or subgroupRemoveAnActivityFromBegin(OnlyFirstHour)CertainDay below
 
 				for(;;){
 					int cnt=0;
@@ -5536,12 +5802,9 @@ impossiblestudentsintervalmaxdaysperweek:
 							bool k=subgroupRemoveAnActivityFromEndCertainDay(sbg, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
 							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
 							if(!k){
-								bool k2=false;
+								/*bool k2=false;
 
-								//The following code is theoretically better, but practically much worse on the file
-								//examples/Romania/Pedagogic-High-School-Tg-Mures/2007-2008_sem1-d-test-students-max-span-per-day.fet
-								//(it slows down with 25%-50% on average - you need to generate more timetables)
-								/*int firstAvailableHour=-1;
+								int firstAvailableHour=-1;
 								for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
 									if(!breakDayHour(d,h2) && !subgroupNotAvailableDayHour(sbg,d,h2)){
 										firstAvailableHour=h2;
@@ -5551,12 +5814,15 @@ impossiblestudentsintervalmaxdaysperweek:
 								//We could assert(firstAvailableHour>=0), because the day is not empty, because the span is too large.
 								if(firstAvailableHour>=0){
 									assert(firstAvailableHour<gt.rules.nHoursPerDay);
-									if(sbgTimetable(d, firstAvailableHour)>=0){
+									if(sbgTimetable(d, firstAvailableHour)>=0)
 										k2=subgroupRemoveAnActivityFromBeginCertainDay(sbg, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
-										assert(conflActivities[newtime].count()==nConflActivities[newtime]);
-									}
 								}*/
-								
+								//This is a problematic section of the new code. It seems that for the file
+								//examples/Romania/Pedagogic-High-School-Tg-Mures/2007-2008_sem1-d-test-students-max-span-per-day.fet
+								//the speed decreases with 25%-50%. (You need to generate multiple timetables and compare.)
+								//In practice, k2=false all the time seems the solution.
+								bool k2=subgroupRemoveAnActivityFromBeginCertainDayOnlyFirstHour(sbg, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+								assert(conflActivities[newtime].count()==nConflActivities[newtime]);
 								if(!k2){
 									if(level==0){
 										//old comment below
@@ -5883,6 +6149,8 @@ impossiblestudentsminrestinghours:
 					getSbgTimetable(sbg, conflActivities[newtime]);
 					sbgGetNHoursGaps(sbg);
 
+					bool canTakeFromAnywhere=(subgroupsMaxGapsPerWeekMaxGaps[sbg]!=0 && subgroupsMaxGapsPerDayMaxGaps[sbg]!=0); //-1 or >0
+
 					for(;;){
 						int nHours=0;
 						int nFirstGapsOne=0;
@@ -5937,15 +6205,68 @@ impossiblestudentsminrestinghours:
 						
 						if(nHours + nFirstGapsOne + nHoursGaps + nIllegalGaps > nHoursPerSubgroup[sbg]){
 							//remove an activity
-							bool k=subgroupRemoveAnActivityFromEnd(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
-							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
-							if(!k){
-								if(level==0){
-									//this should not be displayed
-									//cout<<"WARNING - maybe bug - file "<<__FILE__<<" line "<<__LINE__<<endl;
+							if(subgroupsMaxGapsPerWeekMaxGaps[sbg]>=0 || subgroupsMaxGapsPerDayMaxGaps[sbg]>=0){
+								bool k=subgroupRemoveAnActivityFromEnd(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+								assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+								if(!k){
+									bool k_anywhere;
+									if(subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]==0 &&
+									 (subgroupsMaxGapsPerWeekMaxGaps[sbg]==0 || subgroupsMaxGapsPerDayMaxGaps[sbg]==0)){
+										k_anywhere=false;
+									}
+									else if(canTakeFromAnywhere){
+										k_anywhere=subgroupRemoveAnActivityFromAnywhere(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+										assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+									}
+									else{
+										assert(subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]>=1);
+										if(sbgNFirstHourGaps < subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg])
+											k_anywhere=subgroupRemoveAnActivityFromBeginOnlyFirstHour(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+										else
+											k_anywhere=false;
+										assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+										if(k_anywhere){
+											assert(ai2>=0);
+											int d2=c.times[ai2]%gt.rules.nDaysPerWeek;
+											if(sbgDayNHours[d2] > gt.rules.internalActivitiesList[ai2].duration){
+												sbgNFirstHourGaps++;
+												assert(sbgNFirstHourGaps<=gt.rules.nDaysPerWeek);
+												assert(sbgNFirstHourGaps<=subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]);
+											}
+										}
+									}
+									
+									if(!k_anywhere){
+										if(level==0){
+											//this should not be displayed
+										//cout<<"WARNING - maybe bug - file "<<__FILE__<<" line "<<__LINE__<<endl;
+										}
+										okstudentsearlymaxbeginningsatsecondhour=false;
+										goto impossiblestudentsearlymaxbeginningsatsecondhour;
+									}
 								}
-								okstudentsearlymaxbeginningsatsecondhour=false;
-								goto impossiblestudentsearlymaxbeginningsatsecondhour;
+							}
+							else{
+								bool k_anywhere;
+								assert(canTakeFromAnywhere);
+								if(subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]==0 &&
+								 (subgroupsMaxGapsPerWeekMaxGaps[sbg]==0 || subgroupsMaxGapsPerDayMaxGaps[sbg]==0)){
+									assert(0);
+									k_anywhere=false;
+								}
+								else{
+									k_anywhere=subgroupRemoveAnActivityFromAnywhere(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+									assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+								}
+								
+								if(!k_anywhere){
+									if(level==0){
+										//this should not be displayed
+										//cout<<"WARNING - maybe bug - file "<<__FILE__<<" line "<<__LINE__<<endl;
+									}
+									okstudentsearlymaxbeginningsatsecondhour=false;
+									goto impossiblestudentsearlymaxbeginningsatsecondhour;
+								}
 							}
 						}
 						else{ //OK
@@ -6034,15 +6355,53 @@ impossiblestudentsearlymaxbeginningsatsecondhour:
 						
 						if(nGaps+nHours+nFirstHours > subgroupsMaxGapsPerWeekMaxGaps[sbg] + nHoursPerSubgroup[sbg]){
 							//remove an activity
-							bool k=subgroupRemoveAnActivityFromBeginOrEnd(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
-							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
-							if(!k){
-								if(level==0){
-									//Liviu: inactivated from version 5.12.4 (7 Feb. 2010), because it may take too long for some files
-									//cout<<"WARNING - mb - file "<<__FILE__<<" line "<<__LINE__<<endl;
+							if(subgroupsEarlyMaxBeginningsAtSecondHourPercentage[sbg]>=0){
+								bool k=subgroupRemoveAnActivityFromEnd(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+								assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+								if(!k){
+									bool kk;
+									/*if(subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]==0 &&
+									 (subgroupsMaxGapsPerWeekMaxGaps[sbg]==0 || subgroupsMaxGapsPerDayMaxGaps[sbg]==0))*/
+									if(subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]==0){
+										kk=false;
+									}
+									else if(sbgNFirstHourGaps < subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]){
+										kk=subgroupRemoveAnActivityFromBeginOnlyFirstHour(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+										assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+										if(kk){
+											assert(ai2>=0);
+											int d2=c.times[ai2]%gt.rules.nDaysPerWeek;
+											if(sbgDayNHours[d2] > gt.rules.internalActivitiesList[ai2].duration){
+												sbgNFirstHourGaps++;
+												assert(sbgNFirstHourGaps<=gt.rules.nDaysPerWeek);
+												assert(sbgNFirstHourGaps<=subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]);
+											}
+										}
+									}
+									else{
+										kk=false;
+									}
+									if(!kk){
+										if(level==0){
+											//Liviu: inactivated from version 5.12.4 (7 Feb. 2010), because it may take too long for some files
+											//cout<<"WARNING - mb - file "<<__FILE__<<" line "<<__LINE__<<endl;
+										}
+										okstudentsmaxgapsperweek=false;
+										goto impossiblestudentsmaxgapsperweek;
+									}
 								}
-								okstudentsmaxgapsperweek=false;
-								goto impossiblestudentsmaxgapsperweek;
+							}
+							else{
+								bool k=subgroupRemoveAnActivityFromBeginOrEnd(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+								assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+								if(!k){
+									if(level==0){
+										//Liviu: inactivated from version 5.12.4 (7 Feb. 2010), because it may take too long for some files
+										//cout<<"WARNING - mb - file "<<__FILE__<<" line "<<__LINE__<<endl;
+									}
+									okstudentsmaxgapsperweek=false;
+									goto impossiblestudentsmaxgapsperweek;
+								}
 							}
 						}
 						else{ //OK
@@ -6198,13 +6557,27 @@ impossiblestudentsmaxgapsperweek:
 						assert(conflActivities[newtime].count()==nConflActivities[newtime]);
 						if(!k){
 							bool kk;
-							if(subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]==0 && 
-							 (subgroupsMaxGapsPerWeekMaxGaps[sbg]==0 || subgroupsMaxGapsPerDayMaxGaps[sbg]==0))
+							/*if(subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]==0 &&
+							 (subgroupsMaxGapsPerWeekMaxGaps[sbg]==0 || subgroupsMaxGapsPerDayMaxGaps[sbg]==0))*/
+							if(subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]==0){
 								kk=false;
-							else
-								kk=subgroupRemoveAnActivityFromBegin(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
-
-							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+							}
+							else if(sbgNFirstHourGaps < subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]){
+								kk=subgroupRemoveAnActivityFromBeginOnlyFirstHour(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+								assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+								if(kk){
+									assert(ai2>=0);
+									int d2=c.times[ai2]%gt.rules.nDaysPerWeek;
+									if(sbgDayNHours[d2] > gt.rules.internalActivitiesList[ai2].duration){
+										sbgNFirstHourGaps++;
+										assert(sbgNFirstHourGaps<=gt.rules.nDaysPerWeek);
+										assert(sbgNFirstHourGaps<=subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]);
+									}
+								}
+							}
+							else{
+								kk=false;
+							}
 							if(!kk){
 								if(level==0){
 									//Liviu: inactivated from version 5.12.4 (7 Feb. 2010), because it may take too long for some files
@@ -6456,11 +6829,12 @@ impossiblestudentsmaxgapsperday:
 					//theoretically, it should be canTakeFromBegin = true all time and ctfAnywhere = true if max gaps per week is not 0.
 					//but practically, I tried these changes and it was 30% slower for a modified german sample (with max gaps per day=1,
 					//12 hours per day, removed subacts. pref. times, max hours daily 6 for students).
-					bool canTakeFromBegin=(subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]!=0); //-1 or >0
+					//bool canTakeFromBegin=true; //2018-07-24 - I think should be always true, because allowed gaps can have no limit   (subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]!=0); //-1 or >0
 					bool canTakeFromEnd=true;
+					bool canTakeFromBeginOrEnd=true;
 					bool canTakeFromAnywhere=(subgroupsMaxGapsPerWeekMaxGaps[sbg]!=0 && subgroupsMaxGapsPerDayMaxGaps[sbg]!=0); //-1 or >0
-					bool canTakeFromBeginOrEndAnyDay=(subgroupsMaxGapsPerWeekMaxGaps[sbg]>=0 ||
-					 subgroupsMaxGapsPerDayMaxGaps[sbg]>=0 || subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]>=0);
+					bool canTakeFromBeginOrEndAnyDay=(subgroupsMaxGapsPerWeekMaxGaps[sbg]>=0 || subgroupsMaxGapsPerDayMaxGaps[sbg]>=0
+					 || subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]>=0);
 		
 					for(;;){
 						//////////////////////////new
@@ -6575,21 +6949,99 @@ impossiblestudentsmaxgapsperday:
 						
 						int ai2=-1;
 
-						bool kk=false;
-						if(canTakeFromEnd)
-							kk=subgroupRemoveAnActivityFromEndCertainDay(sbg, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
-						assert(conflActivities[newtime].count()==nConflActivities[newtime]);
-						if(!kk){
-							canTakeFromEnd=false;
-							bool k=false;
-							if(canTakeFromBegin){
-								k=subgroupRemoveAnActivityFromBeginCertainDay(sbg, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
-								if(subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]>0)
-									canTakeFromBegin=false;
-							}
+						//early max beginnings >= 0 is not treated separately
+						if(subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]>=0 &&
+						 (subgroupsMaxGapsPerWeekMaxGaps[sbg]>=0 || subgroupsMaxGapsPerDayMaxGaps[sbg]>=0)){
+							bool kk=false;
+							if(canTakeFromEnd)
+								kk=subgroupRemoveAnActivityFromEndCertainDay(sbg, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
 							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
-							if(!k){
-								canTakeFromBegin=false;
+							if(!kk){
+								canTakeFromEnd=false;
+								bool ka;
+								if(subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]==0 &&
+								 (subgroupsMaxGapsPerWeekMaxGaps[sbg]==0 || subgroupsMaxGapsPerDayMaxGaps[sbg]==0)){
+									ka=false;
+								}
+								else if(subgroupsMaxGapsPerWeekMaxGaps[sbg]!=0 && subgroupsMaxGapsPerDayMaxGaps[sbg]!=0){ //-1 or >0. Also, do not test for canTakeFromAnywhere, since it may change
+									ka=false;
+									if(canTakeFromAnywhere)
+										ka=subgroupRemoveAnActivityFromAnywhereCertainDay(sbg, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+								}
+								else{
+									assert(subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]>=1);
+									if(sbgNFirstHourGaps < subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]){
+										ka=subgroupRemoveAnActivityFromBeginCertainDayOnlyFirstHour(sbg, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+										if(ka){
+											assert(ai2>=0);
+											int d2=c.times[ai2]%gt.rules.nDaysPerWeek;
+											assert(d2==d);
+											if(sbgDayNHours[d2] > gt.rules.internalActivitiesList[ai2].duration){
+												sbgNFirstHourGaps++;
+												assert(sbgNFirstHourGaps<=gt.rules.nDaysPerWeek);
+												assert(sbgNFirstHourGaps<=subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]);
+											}
+										}
+									}
+									else
+										ka=false;
+								}
+								assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+								
+								if(!ka){
+									canTakeFromAnywhere=false;
+									bool kaa=false;
+									if(canTakeFromBeginOrEndAnyDay && sbgDayNHours[d]<=limitHoursDaily){
+										//Fix on 2017-08-26, to solve Volker Dirr's bug report
+										/*if(subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]==0 &&
+										 (subgroupsMaxGapsPerWeekMaxGaps[sbg]==0 || subgroupsMaxGapsPerDayMaxGaps[sbg]==0)){*/
+										if(subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]==0 ||
+										 !(sbgNFirstHourGaps < subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg])){
+											kaa=subgroupRemoveAnActivityFromEnd(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+										}
+										else{
+											assert(subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]>=1);
+											assert(sbgNFirstHourGaps < subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]);
+											kaa=subgroupRemoveAnActivityFromBeginOnlyFirstHourOrEnd(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+											if(kaa){
+												assert(ai2>=0);
+												int d2=c.times[ai2]%gt.rules.nDaysPerWeek;
+												int h2=c.times[ai2]/gt.rules.nDaysPerWeek;
+												int h3;
+												for(h3=0; h3<gt.rules.nHoursPerDay; h3++)
+													if(!breakDayHour(d,h) && !subgroupNotAvailableDayHour(sbg,d,h))
+														break;
+												if(h2==h3){
+													if(sbgDayNHours[d2] > gt.rules.internalActivitiesList[ai2].duration){
+														sbgNFirstHourGaps++;
+														assert(sbgNFirstHourGaps<=gt.rules.nDaysPerWeek);
+														assert(sbgNFirstHourGaps<=subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]);
+													}
+												}
+											}
+										}
+									}
+									assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+									
+									if(!kaa){
+										canTakeFromBeginOrEndAnyDay=false; //useless
+										if(level==0){
+											//this should not be displayed
+											//cout<<"WARNING - file "<<__FILE__<<" line "<<__LINE__<<endl;
+										}
+										okstudentsmaxhoursdaily=false;
+										goto impossiblestudentsmaxhoursdaily;
+									}
+								}
+							}
+						}
+						else if(subgroupsMaxGapsPerWeekMaxGaps[sbg]>=0 || subgroupsMaxGapsPerDayMaxGaps[sbg]>=0){
+							bool kk=false;
+							if(canTakeFromBeginOrEnd)
+								kk=subgroupRemoveAnActivityFromBeginOrEndCertainDay(sbg, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+							if(!kk){
+								canTakeFromBeginOrEnd=false;
 								bool ka=false;
 								if(canTakeFromAnywhere)
 									ka=subgroupRemoveAnActivityFromAnywhereCertainDay(sbg, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
@@ -6606,16 +7058,6 @@ impossiblestudentsmaxgapsperday:
 									if(!kaa){
 										canTakeFromBeginOrEndAnyDay=false; //useless
 										if(level==0){
-											/*cout<<"subgroup=="<<qPrintable(gt.rules.internalSubgroupsList[sbg]->name)<<endl;
-											cout<<"d=="<<d<<endl;
-											cout<<"H="<<H<<endl;
-											cout<<"Timetable:"<<endl;
-											for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
-												for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++)
-												cout<<"\t"<<sbgTimetable(d2,h2)<<"\t";
-												cout<<endl;
-											}*/
-										
 											//this should not be displayed
 											//cout<<"WARNING - file "<<__FILE__<<" line "<<__LINE__<<endl;
 										}
@@ -6625,7 +7067,34 @@ impossiblestudentsmaxgapsperday:
 								}
 							}
 						}
-		
+						else{
+							bool ka=false;
+							if(canTakeFromAnywhere)
+								ka=subgroupRemoveAnActivityFromAnywhereCertainDay(sbg, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+							
+							if(!ka){
+								canTakeFromAnywhere=false;
+								bool kaa=false;
+								if(canTakeFromBeginOrEndAnyDay && sbgDayNHours[d]<=limitHoursDaily){
+									assert(subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]>=0);
+									//Fix on 2017-08-26, to solve Volker Dirr's bug report
+									kaa=subgroupRemoveAnActivityFromAnywhere(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+								}
+								assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+								
+								if(!kaa){
+									canTakeFromBeginOrEndAnyDay=false; //useless
+									if(level==0){
+										//this should not be displayed
+										//cout<<"WARNING - file "<<__FILE__<<" line "<<__LINE__<<endl;
+									}
+									okstudentsmaxhoursdaily=false;
+									goto impossiblestudentsmaxhoursdaily;
+								}
+							}
+						}
+
 						assert(ai2>=0);
 
 						removeAi2FromSbgTimetable(ai2);
@@ -6681,9 +7150,9 @@ impossiblestudentsmaxhoursdaily:
 					increased=true;
 				else
 					increased=false;
-					
+				
 				QList<int> removableActs;
-					
+				
 				int nc=act->duration;
 				for(h2=h-1; h2>=0; h2--){
 					int ai2=subgroupsTimetable(sbg,d,h2);
@@ -6697,7 +7166,7 @@ impossiblestudentsmaxhoursdaily:
 					}
 					else
 						break;
-				}				
+				}
 				for(h2=h+act->duration; h2<gt.rules.nHoursPerDay; h2++){
 					int ai2=subgroupsTimetable(sbg,d,h2);
 					assert(ai2==newSubgroupsTimetable(sbg,d,h2));
@@ -6711,13 +7180,13 @@ impossiblestudentsmaxhoursdaily:
 					else
 						break;
 				}
-										
+				
 				if(!increased && percentage==100.0)
 					assert(nc<=limitHoursCont);
 					
 				if(!increased || nc<=limitHoursCont) //OK
 					continue;
-					
+				
 				assert(limitHoursCont>=0);
 
 				if(!skipRandom(percentage) && increased){
@@ -6795,7 +7264,7 @@ impossiblestudentsmaxhoursdaily:
 							}
 							else
 								break;
-						}				
+						}
 						for(h2=h+act->duration; h2<gt.rules.nHoursPerDay; h2++){
 							int ai2=subgroupsTimetable(sbg,d,h2);
 							assert(ai2==newSubgroupsTimetable(sbg,d,h2));
@@ -6806,10 +7275,10 @@ impossiblestudentsmaxhoursdaily:
 								if(!removableActs.contains(ai2) && !fixedTimeActivity[ai2] && !swappedActivities[ai2])
 									removableActs.append(ai2);
 							}
-							else		
+							else
 								break;
 						}
-										
+						
 						if(nc<=limitHoursCont) //OK
 							break;
 						////////////
@@ -7046,7 +7515,7 @@ impossiblestudentsactivitytagmaxhoursdaily:
 						}
 						else
 							break;
-					}				
+					}
 					for(h2=h+act->duration; h2<gt.rules.nHoursPerDay; h2++){
 						int ai2=subgroupsTimetable(sbg,d,h2);
 						assert(ai2==newSubgroupsTimetable(sbg,d,h2));
@@ -7064,13 +7533,13 @@ impossiblestudentsactivitytagmaxhoursdaily:
 						else
 							break;
 					}
-										
+					
 					if(!increased && percentage==100.0)
 						assert(nc<=limitHoursCont);
 					
 					if(!increased || nc<=limitHoursCont) //OK
 						continue;
-						
+					
 					assert(limitHoursCont>=0);
 	
 					if(!skipRandom(percentage) && increased){
@@ -7317,6 +7786,8 @@ impossiblestudentsactivitytagmaxhourscontinuously:
 					getSbgTimetable(sbg, conflActivities[newtime]);
 					sbgGetNHoursGaps(sbg);
 		
+					bool canTakeFromAnywhere=(subgroupsMaxGapsPerWeekMaxGaps[sbg]!=0 && subgroupsMaxGapsPerDayMaxGaps[sbg]!=0); //-1 or >0
+
 					for(;;){
 						bool ok;
 						////////////////////////////
@@ -7416,37 +7887,88 @@ impossiblestudentsactivitytagmaxhourscontinuously:
 									ok=false;
 							}
 						}
-						////////////////////////////							
+						////////////////////////////
 
 						if(ok)
 							break; //ok
-													
+						
 						int ai2=-1;
 						
-						bool kk=subgroupRemoveAnActivityFromEnd(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
-						assert(conflActivities[newtime].count()==nConflActivities[newtime]);
-						if(!kk){
-							bool k=subgroupRemoveAnActivityFromBegin(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+						//early max beginnings >= 0 is not treated separately
+						if(subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]>=0 &&
+						 (subgroupsMaxGapsPerWeekMaxGaps[sbg]>=0 || subgroupsMaxGapsPerDayMaxGaps[sbg]>=0)){
+							bool kk=subgroupRemoveAnActivityFromEnd(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
 							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
-							if(!k){
-								bool ka=subgroupRemoveAnActivityFromAnywhere(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+							if(!kk){
+								bool ka;
+								if(subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]==0 &&
+								 (subgroupsMaxGapsPerWeekMaxGaps[sbg]==0 || subgroupsMaxGapsPerDayMaxGaps[sbg]==0)){
+									ka=false;
+								}
+								else if(canTakeFromAnywhere){
+									ka=subgroupRemoveAnActivityFromAnywhere(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+								}
+								else{
+									assert(subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]>=1);
+									if(sbgNFirstHourGaps < subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]){
+										ka=subgroupRemoveAnActivityFromBeginOnlyFirstHour(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+										if(ka){
+											assert(ai2>=0);
+											int d2=c.times[ai2]%gt.rules.nDaysPerWeek;
+											if(sbgDayNHours[d2] > gt.rules.internalActivitiesList[ai2].duration){
+												sbgNFirstHourGaps++;
+												assert(sbgNFirstHourGaps<=gt.rules.nDaysPerWeek);
+												assert(sbgNFirstHourGaps<=subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]);
+											}
+										}
+									}
+									else{
+										ka=false;
+									}
+								}
 								assert(conflActivities[newtime].count()==nConflActivities[newtime]);
-								
+							
 								if(!ka){
 									if(level==0){
-										/*cout<<"d=="<<d<<", h=="<<h<<", ai=="<<ai<<endl;
-										for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
-											for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++)
-												cout<<"\t"<<sbgTimetable(d2,h2);
-											cout<<endl;
-										}*/
-									
 										//this should not be displayed
 										//cout<<"WARNING - unlikely situation - file "<<__FILE__<<" line "<<__LINE__<<endl;
 									}
 									okstudentsminhoursdaily=false;
 									goto impossiblestudentsminhoursdaily;
 								}
+							}
+						}
+						else if(subgroupsMaxGapsPerWeekMaxGaps[sbg]>=0 || subgroupsMaxGapsPerDayMaxGaps[sbg]>=0){
+							bool kk=subgroupRemoveAnActivityFromBeginOrEnd(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+							if(!kk){
+								bool ka=false;
+								if(canTakeFromAnywhere)
+									ka=subgroupRemoveAnActivityFromAnywhere(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+								assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+							
+								if(!ka){
+									if(level==0){
+										//this should not be displayed
+										//cout<<"WARNING - unlikely situation - file "<<__FILE__<<" line "<<__LINE__<<endl;
+									}
+									okstudentsminhoursdaily=false;
+									goto impossiblestudentsminhoursdaily;
+								}
+							}
+						}
+						else{
+							assert(canTakeFromAnywhere);
+							bool ka=subgroupRemoveAnActivityFromAnywhere(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+							
+							if(!ka){
+								if(level==0){
+									//this should not be displayed
+									//cout<<"WARNING - unlikely situation - file "<<__FILE__<<" line "<<__LINE__<<endl;
+								}
+								okstudentsminhoursdaily=false;
+								goto impossiblestudentsminhoursdaily;
 							}
 						}
 
@@ -7470,7 +7992,6 @@ impossiblestudentsminhoursdaily:
 		}
 		
 		/////////end students(s) min hours daily
-
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////
@@ -8540,12 +9061,39 @@ impossibleteachersmaxgapsperday:
 						
 						int ai2=-1;
 						
-						bool k=false;
-						if(canTakeFromBeginOrEnd)
-							k=teacherRemoveAnActivityFromBeginOrEndCertainDay(tch, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
-						assert(conflActivities[newtime].count()==nConflActivities[newtime]);
-						if(!k){
-							canTakeFromBeginOrEnd=false;
+						if(teachersMaxGapsPerWeekMaxGaps[tch]>=0 || teachersMaxGapsPerDayMaxGaps[tch]>=0){
+							bool k=false;
+							if(canTakeFromBeginOrEnd)
+								k=teacherRemoveAnActivityFromBeginOrEndCertainDay(tch, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+							if(!k){
+								canTakeFromBeginOrEnd=false;
+								bool ka=false;
+								if(canTakeFromAnywhere)
+									ka=teacherRemoveAnActivityFromAnywhereCertainDay(tch, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+								assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+								
+								if(!ka){
+									canTakeFromAnywhere=false;
+									bool kaa=false;
+									if(canTakeFromBeginOrEndAnyDay && tchDayNHours[d]<=limitHoursDaily)
+										//Fix on 2017-08-26, to solve Volker Dirr's bug report
+										kaa=teacherRemoveAnActivityFromBeginOrEnd(tch, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+									assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+									if(!kaa){
+										canTakeFromBeginOrEndAnyDay=false; //useless
+									
+										if(level==0){
+											//Liviu: inactivated from version 5.12.4 (7 Feb. 2010), because it may take too long for some files
+											//cout<<"WARNING - mb - file "<<__FILE__<<" line "<<__LINE__<<endl;
+										}
+										okteachersmaxhoursdaily=false;
+										goto impossibleteachersmaxhoursdaily;
+									}
+								}
+							}
+						}
+						else{
 							bool ka=false;
 							if(canTakeFromAnywhere)
 								ka=teacherRemoveAnActivityFromAnywhereCertainDay(tch, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
@@ -8559,24 +9107,9 @@ impossibleteachersmaxgapsperday:
 									kaa=teacherRemoveAnActivityFromBeginOrEnd(tch, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
 								assert(conflActivities[newtime].count()==nConflActivities[newtime]);
 								if(!kaa){
-									canTakeFromBeginOrEndAnyDay=false;
+									canTakeFromBeginOrEndAnyDay=false; //useless
 								
 									if(level==0){
-										/*cout<<"d=="<<d<<", h=="<<h<<", teacher=="<<qPrintable(gt.rules.internalTeachersList[tch]->name);
-										cout<<", ai=="<<ai<<endl;
-										for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
-											for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++)
-												cout<<"\t"<<tchTimetable(d2,h2)<<"\t";
-											cout<<endl;
-										}
-										
-										cout<<endl;
-										for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
-											for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++)
-												cout<<"\t"<<newTeachersTimetable(tch,d2,h2)<<"\t";
-											cout<<endl;
-										}*/
-									
 										//Liviu: inactivated from version 5.12.4 (7 Feb. 2010), because it may take too long for some files
 										//cout<<"WARNING - mb - file "<<__FILE__<<" line "<<__LINE__<<endl;
 									}
@@ -9027,7 +9560,7 @@ impossibleteachersactivitytagmaxhoursdaily:
 						else
 							break;
 					}
-										
+					
 					if(!increased && percentage==100.0)
 						assert(nc<=limitHoursCont);
 					
@@ -9336,10 +9869,29 @@ impossibleteachersactivitytagmaxhourscontinuously:
 							break;
 							
 						int ai2=-1;
-						
-						bool k=teacherRemoveAnActivityFromBeginOrEnd(tch, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
-						assert(conflActivities[newtime].count()==nConflActivities[newtime]);
-						if(!k){
+
+						if(teachersMaxGapsPerWeekMaxGaps[tch]>=0 || teachersMaxGapsPerDayMaxGaps[tch]>=0){
+							bool k=teacherRemoveAnActivityFromBeginOrEnd(tch, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+							if(!k){
+								bool ka;
+								if(teachersMaxGapsPerWeekMaxGaps[tch]==0 || teachersMaxGapsPerDayMaxGaps[tch]==0)
+									ka=false;
+								else
+									ka=teacherRemoveAnActivityFromAnywhere(tch, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+								assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+								
+								if(!ka){
+									if(level==0){
+										//Liviu: inactivated from version 5.12.4 (7 Feb. 2010), because it may take too long for some files
+										//cout<<"WARNING - mb - file "<<__FILE__<<" line "<<__LINE__<<endl;
+									}
+									okteachersminhoursdaily=false;
+									goto impossibleteachersminhoursdaily;
+								}
+							}
+						}
+						else{
 							bool ka=teacherRemoveAnActivityFromAnywhere(tch, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
 							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
 							
@@ -9354,15 +9906,6 @@ impossibleteachersactivitytagmaxhourscontinuously:
 						}
 
 						assert(ai2>=0);
-
-						/*Activity* act2=&gt.rules.internalActivitiesList[ai2];
-						int d2=c.times[ai2]%gt.rules.nDaysPerWeek;
-						int h2=c.times[ai2]/gt.rules.nDaysPerWeek;
-						
-						for(int dur2=0; dur2<act2->duration; dur2++){
-							assert(tchTimetable(d2,h2+dur2)==ai2);
-							tchTimetable(d2,h2+dur2)=-1;
-						}*/
 
 						removeAi2FromTchTimetable(ai2);
 						updateTchNHoursGaps(tch, c.times[ai2]%gt.rules.nDaysPerWeek);
@@ -9545,10 +10088,29 @@ impossibleteachersminhoursdaily:
 							break;
 							
 						int ai2=-1;
-						
-						bool k=teacherRemoveAnActivityFromBeginOrEnd(tch, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
-						assert(conflActivities[newtime].count()==nConflActivities[newtime]);
-						if(!k){
+
+						if(teachersMaxGapsPerWeekMaxGaps[tch]>=0 || teachersMaxGapsPerDayMaxGaps[tch]>=0){
+							bool k=teacherRemoveAnActivityFromBeginOrEnd(tch, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+							if(!k){
+								bool ka;
+								if(teachersMaxGapsPerWeekMaxGaps[tch]==0 || teachersMaxGapsPerDayMaxGaps[tch]==0)
+									ka=false;
+								else
+									ka=teacherRemoveAnActivityFromAnywhere(tch, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+								assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+								
+								if(!ka){
+									if(level==0){
+										//Liviu: inactivated from version 5.12.4 (7 Feb. 2010), because it may take too long for some files
+										//cout<<"WARNING - mb - file "<<__FILE__<<" line "<<__LINE__<<endl;
+									}
+									okteachersmindaysperweek=false;
+									goto impossibleteachersmindaysperweek;
+								}
+							}
+						}
+						else{
 							bool ka=teacherRemoveAnActivityFromAnywhere(tch, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
 							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
 							
@@ -9563,15 +10125,6 @@ impossibleteachersminhoursdaily:
 						}
 
 						assert(ai2>=0);
-
-						/*Activity* act2=&gt.rules.internalActivitiesList[ai2];
-						int d2=c.times[ai2]%gt.rules.nDaysPerWeek;
-						int h2=c.times[ai2]/gt.rules.nDaysPerWeek;
-						
-						for(int dur2=0; dur2<act2->duration; dur2++){
-							assert(tchTimetable(d2,h2+dur2)==ai2);
-							tchTimetable(d2,h2+dur2)=-1;
-						}*/
 
 						removeAi2FromTchTimetable(ai2);
 						updateTchNHoursGaps(tch, c.times[ai2]%gt.rules.nDaysPerWeek);
