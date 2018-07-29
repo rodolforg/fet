@@ -9917,9 +9917,12 @@ ConstraintSubactivitiesPreferredTimeSlots::ConstraintSubactivitiesPreferredTimeS
 }
 
 ConstraintSubactivitiesPreferredTimeSlots::ConstraintSubactivitiesPreferredTimeSlots(double wp, int compNo, QString te,
-	QString st, QString su, QString sut, int nPT_L, QList<int> d_L, QList<int> h_L)
+	QString st, QString su, QString sut, int dur, int nPT_L, QList<int> d_L, QList<int> h_L)
 	: TimeConstraint(wp)
 {
+	assert(dur==-1 || dur>=1);
+	duration=dur;
+
 	assert(d_L.count()==nPT_L);
 	assert(h_L.count()==nPT_L);
 
@@ -9974,15 +9977,18 @@ bool ConstraintSubactivitiesPreferredTimeSlots::computeInternalStructure(QWidget
 		if(this->p_activityTagName!="" && !act->activityTagsNames.contains(this->p_activityTagName)){
 			continue;
 		}
+
+		if(duration>=1 && act->duration!=duration)
+			continue;
 	
-		assert(this->p_nActivities < MAX_ACTIVITIES);	
+		assert(this->p_nActivities < MAX_ACTIVITIES);
 		this->p_nActivities++;
 		this->p_activitiesIndices.append(i);
 	}
 
 	assert(this->p_nActivities==this->p_activitiesIndices.count());
 
-	//////////////////////	
+	//////////////////////
 	for(int k=0; k<p_nPreferredTimeSlots_L; k++){
 		if(this->p_days_L[k] >= r.nDaysPerWeek){
 			TimeConstraintIrreconcilableMessage::information(parent, tr("FET information"),
@@ -10065,6 +10071,9 @@ bool ConstraintSubactivitiesPreferredTimeSlots::hasInactiveActivities(Rules& r)
 		if(this->p_activityTagName!="" && !act->activityTagsNames.contains(this->p_activityTagName)){
 				continue;
 		}
+
+		if(duration>=1 && act->duration!=duration)
+			continue;
 	
 		if(!r.inactiveActivities.contains(act->id))
 			localActiveActs.append(act->id);
@@ -10087,6 +10096,10 @@ QString ConstraintSubactivitiesPreferredTimeSlots::getXmlDescription(Rules& r)
 	s+="	<Students_Name>"+protect(this->p_studentsName)+"</Students_Name>\n";
 	s+="	<Subject_Name>"+protect(this->p_subjectName)+"</Subject_Name>\n";
 	s+="	<Activity_Tag_Name>"+protect(this->p_activityTagName)+"</Activity_Tag_Name>\n";
+	if(duration>=1)
+		s+="	<Duration>"+CustomFETString::number(duration)+"</Duration>\n";
+	else
+		s+="	<Duration></Duration>\n";
 	s+="	<Number_of_Preferred_Time_Slots>"+CustomFETString::number(this->p_nPreferredTimeSlots_L)+"</Number_of_Preferred_Time_Slots>\n";
 	for(int i=0; i<p_nPreferredTimeSlots_L; i++){
 		s+="	<Preferred_Time_Slot>\n";
@@ -10114,7 +10127,7 @@ QString ConstraintSubactivitiesPreferredTimeSlots::getDescription(Rules& r)
 		
 	QString s;
 	
-	QString tc, st, su, at;
+	QString tc, st, su, at, dur;
 	
 	if(this->p_teacherName!="")
 		tc=tr("teacher=%1").arg(this->p_teacherName);
@@ -10136,8 +10149,13 @@ QString ConstraintSubactivitiesPreferredTimeSlots::getDescription(Rules& r)
 	else
 		at=tr("all activity tags");
 	
-	s+=tr("Subactivities with %1, %2, %3, %4, %5, have a set of preferred time slots:", "%1...%5 are conditions for the subactivities")
-		.arg(tr("component number=%1").arg(this->componentNumber)).arg(tc).arg(st).arg(su).arg(at);
+	if(duration>=1)
+		dur=tr("duration=%1").arg(duration);
+	else
+		dur=tr("all durations");
+
+	s+=tr("Subactivities with %1, %2, %3, %4, %5, %6, have a set of preferred time slots:", "%1...%6 are conditions for the subactivities")
+		.arg(tr("component number=%1").arg(this->componentNumber)).arg(tc).arg(st).arg(su).arg(at).arg(dur);
 		
 	s+=" ";
 	
@@ -10189,6 +10207,12 @@ QString ConstraintSubactivitiesPreferredTimeSlots::getDetailedDescription(Rules&
 		s+=tr("Activity tag=%1").arg(this->p_activityTagName);
 	else
 		s+=tr("All activity tags");
+	s+="\n";
+
+	if(duration>=1)
+		s+=tr("Duration=%1").arg(duration);
+	else
+		s+=tr("All durations");
 	s+="\n";
 
 	s+=tr("have a set of preferred time slots (all hours of each affected subactivity must be in the allowed slots):");
@@ -10318,6 +10342,9 @@ bool ConstraintSubactivitiesPreferredTimeSlots::isRelatedToActivity(Rules& r, Ac
 		return false;
 	//check if this activity has the corresponding activity tag
 	if(this->p_activityTagName!="" && !a->activityTagsNames.contains(this->p_activityTagName))
+		return false;
+
+	if(duration>=1 && a->duration!=duration)
 		return false;
 
 	return true;
@@ -11206,9 +11233,12 @@ ConstraintSubactivitiesPreferredStartingTimes::ConstraintSubactivitiesPreferredS
 }
 
 ConstraintSubactivitiesPreferredStartingTimes::ConstraintSubactivitiesPreferredStartingTimes(double wp, int compNo, QString te,
-	QString st, QString su, QString sut, int nPT_L, QList<int> d_L, QList<int> h_L)
+	QString st, QString su, QString sut, int dur, int nPT_L, QList<int> d_L, QList<int> h_L)
 	: TimeConstraint(wp)
 {
+	assert(dur==-1 || dur>=1);
+	duration=dur;
+
 	assert(d_L.count()==nPT_L);
 	assert(h_L.count()==nPT_L);
 
@@ -11263,8 +11293,11 @@ bool ConstraintSubactivitiesPreferredStartingTimes::computeInternalStructure(QWi
 		if(this->activityTagName!="" && !act->activityTagsNames.contains(this->activityTagName)){
 				continue;
 		}
+
+		if(duration>=1 && act->duration!=duration)
+			continue;
 	
-		assert(this->nActivities < MAX_ACTIVITIES);	
+		assert(this->nActivities < MAX_ACTIVITIES);
 		//this->activitiesIndices[this->nActivities++]=i;
 		this->nActivities++;
 		this->activitiesIndices.append(i);
@@ -11272,7 +11305,7 @@ bool ConstraintSubactivitiesPreferredStartingTimes::computeInternalStructure(QWi
 	
 	assert(this->activitiesIndices.count()==this->nActivities);
 
-	//////////////////////	
+	//////////////////////
 	for(int k=0; k<nPreferredStartingTimes_L; k++){
 		if(this->days_L[k] >= r.nDaysPerWeek){
 			TimeConstraintIrreconcilableMessage::information(parent, tr("FET information"),
@@ -11349,6 +11382,9 @@ bool ConstraintSubactivitiesPreferredStartingTimes::hasInactiveActivities(Rules&
 				continue;
 		}
 	
+		if(duration>=1 && act->duration!=duration)
+			continue;
+
 		if(!r.inactiveActivities.contains(act->id))
 			localActiveActs.append(act->id);
 			
@@ -11370,6 +11406,10 @@ QString ConstraintSubactivitiesPreferredStartingTimes::getXmlDescription(Rules& 
 	s+="	<Students_Name>"+protect(this->studentsName)+"</Students_Name>\n";
 	s+="	<Subject_Name>"+protect(this->subjectName)+"</Subject_Name>\n";
 	s+="	<Activity_Tag_Name>"+protect(this->activityTagName)+"</Activity_Tag_Name>\n";
+	if(duration>=1)
+		s+="	<Duration>"+CustomFETString::number(duration)+"</Duration>\n";
+	else
+		s+="	<Duration></Duration>\n";
 	s+="	<Number_of_Preferred_Starting_Times>"+CustomFETString::number(this->nPreferredStartingTimes_L)+"</Number_of_Preferred_Starting_Times>\n";
 	for(int i=0; i<nPreferredStartingTimes_L; i++){
 		s+="	<Preferred_Starting_Time>\n";
@@ -11395,7 +11435,7 @@ QString ConstraintSubactivitiesPreferredStartingTimes::getDescription(Rules& r)
 	if(!comments.isEmpty())
 		end=", "+tr("C: %1", "Comments").arg(comments);
 		
-	QString tc, st, su, at;
+	QString tc, st, su, at, dur;
 	
 	if(this->teacherName!="")
 		tc=tr("teacher=%1").arg(this->teacherName);
@@ -11417,10 +11457,15 @@ QString ConstraintSubactivitiesPreferredStartingTimes::getDescription(Rules& r)
 	else
 		at=tr("all activity tags");
 		
+	if(duration>=1)
+		dur=tr("duration=%1").arg(duration);
+	else
+		dur=tr("all durations");
+
 	QString s;
 	
-	s+=tr("Subactivities with %1, %2, %3, %4, %5, have a set of preferred starting times:", "%1...%5 are conditions for the subactivities")
-		.arg(tr("component number=%1").arg(this->componentNumber)).arg(tc).arg(st).arg(su).arg(at);
+	s+=tr("Subactivities with %1, %2, %3, %4, %5, %6, have a set of preferred starting times:", "%1...%6 are conditions for the subactivities")
+		.arg(tr("component number=%1").arg(this->componentNumber)).arg(tc).arg(st).arg(su).arg(at).arg(dur);
 	s+=" ";
 
 	for(int i=0; i<this->nPreferredStartingTimes_L; i++){
@@ -11470,6 +11515,12 @@ QString ConstraintSubactivitiesPreferredStartingTimes::getDetailedDescription(Ru
 		s+=tr("Activity tag=%1").arg(this->activityTagName);
 	else
 		s+=tr("All activity tags");
+	s+="\n";
+
+	if(duration>=1)
+		s+=tr("Duration=%1").arg(duration);
+	else
+		s+=tr("All durations");
 	s+="\n";
 
 	s+=tr("have a set of preferred starting times:");
@@ -11590,6 +11641,9 @@ bool ConstraintSubactivitiesPreferredStartingTimes::isRelatedToActivity(Rules& r
 		return false;
 	//check if this activity has the corresponding activity tag
 	if(this->activityTagName!="" && !a->activityTagsNames.contains(this->activityTagName))
+		return false;
+
+	if(duration>=1 && a->duration!=duration)
 		return false;
 
 	return true;

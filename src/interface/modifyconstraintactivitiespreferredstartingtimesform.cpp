@@ -449,5 +449,6 @@ void ModifyConstraintActivitiesPreferredStartingTimesForm::on_durationCheckBox_t
 {
 	durationSpinBox->setEnabled(durationCheckBox->isChecked());
 }
+
 #undef YES
 #undef NO

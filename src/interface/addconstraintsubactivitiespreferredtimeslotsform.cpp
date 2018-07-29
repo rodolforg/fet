@@ -38,6 +38,12 @@ AddConstraintSubactivitiesPreferredTimeSlotsForm::AddConstraintSubactivitiesPref
 {
 	setupUi(this);
 
+	durationCheckBox->setChecked(false);
+	durationSpinBox->setEnabled(false);
+	durationSpinBox->setMinimum(1);
+	durationSpinBox->setMaximum(gt.rules.nHoursPerDay);
+	durationSpinBox->setValue(1);
+
 	addConstraintPushButton->setDefault(true);
 
 	connect(preferredTimesTable, SIGNAL(itemClicked(QTableWidgetItem*)), this, SLOT(itemClicked(QTableWidgetItem*)));
@@ -240,6 +246,12 @@ void AddConstraintSubactivitiesPreferredTimeSlotsForm::addConstraint()
 {
 	TimeConstraint *ctr=NULL;
 
+	int duration=-1;
+	if(durationCheckBox->isChecked()){
+		assert(durationSpinBox->isEnabled());
+		duration=durationSpinBox->value();
+	}
+
 	double weight;
 	QString tmp=weightLineEdit->text();
 	weight_sscanf(tmp, "%lf", &weight);
@@ -287,7 +299,7 @@ void AddConstraintSubactivitiesPreferredTimeSlotsForm::addConstraint()
 				return;
 	}
 
-	ctr=new ConstraintSubactivitiesPreferredTimeSlots(weight, componentNumberSpinBox->value(),/*compulsory,*/ teacher, students, subject, activityTag, n, days_L, hours_L);
+	ctr=new ConstraintSubactivitiesPreferredTimeSlots(weight, componentNumberSpinBox->value(),/*compulsory,*/ teacher, students, subject, activityTag, duration, n, days_L, hours_L);
 
 	bool tmp2=gt.rules.addTimeConstraint(ctr);
 	if(tmp2){
@@ -301,6 +313,11 @@ void AddConstraintSubactivitiesPreferredTimeSlotsForm::addConstraint()
 			tr("Constraint NOT added - duplicate?", "'Duplicate' means that the constraint is identical to an existing constraint and cannot be added."));
 		delete ctr;
 	}
+}
+
+void AddConstraintSubactivitiesPreferredTimeSlotsForm::on_durationCheckBox_toggled()
+{
+	durationSpinBox->setEnabled(durationCheckBox->isChecked());
 }
 
 #undef YES
