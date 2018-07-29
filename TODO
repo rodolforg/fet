@@ -6389,10 +6389,15 @@ From pg788 (on forum):
 I understand this might be restrictive, but a teacher doesn't want to begin in 3rd or 4th, since there is traffic.
 
 364---------------------------------------------------------
-From Dieter Deuster and Volker Dirr:
+From Dietmar Deuster and Volker Dirr:
 
 Constraints:
 - activity must start a students day
 - activity must start or end a students day
 
 Liviu: start may be possible, but start or end seems very difficult, maybe impossible. Please see also item #295, point 2.
+
+365---------------------------------------------------------
+From Volker Dirr and Liviu Lalescu:
+
+Volker has a private file which sometimes is solvable, but sometimes may cycle. We tried to improve the code, but it runs much slower on other files.
