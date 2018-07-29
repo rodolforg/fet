@@ -132,7 +132,7 @@ rename it as fet_ar.qm, fet_fa.qm or fet_he.qm.
 
 Note: to add your translation into FET, without renaming it as an already existing language, you need to change
 these files/functions:
-- void usage(QTextStream& out, const QString& error) in the file src/interface/fet.cpp
+- void usage(QTextStream* out, const QString& error) in the file src/interface/fet.cpp
 - void initLanguagesSet() in the file src/interface/fet.cpp
 - void FetMainForm::populateLanguagesMap(QMap<QString, QString>& languagesMap) in the file src/interface/fetmainform.cpp
 - the TRANSLATIONS section of the file src/src.pro (add your language, similar to the other languages. Please see
