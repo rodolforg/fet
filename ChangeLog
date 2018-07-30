@@ -2096,4 +2096,8 @@ Versions 5.37.0 - 5.37.v
 - Version 5.37.1
 	- Rare crash bug fixed, appearing when viewing the timetable, then modifying some data (like increasing the number of days per week or hours per day)
 	without closing the timetable view dialogs, and then regenerating. Reported by liquid.
-	- The opened timetable view dialogs are now better updated, after a successful or unsuccessful generation (suggested by Volker Dirr).
+	- The opened timetable view dialogs are now better updated after a successful or unsuccessful generation (suggested by Volker Dirr).
+	- The constraints of type subactivities preferred starting times and subactivities preferred time slots now include a 'duration' filter (suggested by
+	Léo-Paul Roch and Volker Dirr).
+	- The limit for the maximum number of generated timetables in a multiple generation is increased from 100 to 1000 (suggested by Volker Dirr).
+	- Code cleanup (suggested by Volker Dirr).
