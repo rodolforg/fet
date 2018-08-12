@@ -585,7 +585,7 @@ double ConstraintRoomNotAvailableTimes::fitness(
 	QList<QString>& dl,
 	QString* conflictsString)
 {
-	//if the matrices roomsMatrix is already calculated, do not calculate it again!
+	//if the matrix roomsMatrix is already calculated, do not calculate it again!
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
@@ -593,9 +593,9 @@ double ConstraintRoomNotAvailableTimes::fitness(
 		c.changedForMatrixCalculation=false;
 	}
 
-	//Calculates the number of hours when the roomr is supposed to be occupied,
+	//Calculates the number of hours when the room is supposed to be occupied,
 	//but it is not available
-	//This function consideres all the hours, I mean if there are for example 5 weekly courses
+	//This function considers all the hours, I mean if there are for example 5 weekly courses
 	//scheduled on that hour (which is already a broken compulsory constraint - we only
 	//are allowed 1 weekly activity for a certain room at a certain hour) we calculate
 	//5 broken constraints for that function.
