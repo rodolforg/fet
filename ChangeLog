@@ -2101,3 +2101,8 @@ Versions 5.37.0 - 5.37.v
 	Léo-Paul Roch and Volker Dirr).
 	- The limit for the maximum number of generated timetables in a multiple generation is increased from 100 to 1000 (suggested by Volker Dirr).
 	- Code cleanup (suggested by Volker Dirr).
+- Version 5.37.2
+	- Fixed a compilation problem when using Qt >= 5.0.0 and < 5.7.0. Reported by yakup.
+	- Crash bug fix (usually not met in practice), when opening a file containing duplicate activities id-s. Reported by Ahmed Ben Hassan.
+	- Updated the Arabic translation, by Benahmed Abdelkrim.
+	- Volker Dirr's site now uses SSL (https protocol instead of http).
