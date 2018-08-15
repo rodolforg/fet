@@ -8,7 +8,7 @@
                              -------------------
     begin                : 2009
     copyright            : (C) 2009 by Volker Dirr
-                         : http://www.timetabling.de/
+                         : https://www.timetabling.de/
  ***************************************************************************
  *                                                                         *
  *   This program is free software: you can redistribute it and/or modify  *

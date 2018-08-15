@@ -12,7 +12,7 @@ File import.h
                              -------------------
     begin                : Mar 2008
     copyright            : (C) by Volker Dirr
-                         : http://www.timetabling.de/
+                         : https://www.timetabling.de/
  ***************************************************************************
  *                                                                         *
  *   This program is free software: you can redistribute it and/or modify  *

@@ -19,7 +19,7 @@ File solution.cpp
  *                                                                         *
  ***************************************************************************/
 
-//Teachers free periods code contributed by Volker Dirr (http://timetabling.de/)
+//Teachers free periods code contributed by Volker Dirr (https://timetabling.de/)
 
 #include <QFile>
 #include <QTextStream>
@@ -283,7 +283,7 @@ void Solution::getTeachersTimetable(Rules& r, Matrix3D<int>& a, Matrix3D<QList<i
 		}
 
 	//Prepare teachers free periods timetable.
-	//Code contributed by Volker Dirr (http://timetabling.de/) BEGIN
+	//Code contributed by Volker Dirr (https://timetabling.de/) BEGIN
 	int d,h,tch;
 	for(d=0; d<r.nDaysPerWeek; d++){
 		for(h=0; h<r.nHoursPerDay; h++){
@@ -362,7 +362,7 @@ void Solution::getTeachersTimetable(Rules& r, Matrix3D<int>& a, Matrix3D<QList<i
 			}
 		}
 	}
-	//END of Code contributed by Volker Dirr (http://timetabling.de/) END
+	//END of Code contributed by Volker Dirr (https://timetabling.de/) END
 	//bool visited[MAX_TEACHERS];
 	Matrix1D<bool> visited;
 	visited.resize(r.nInternalTeachers);

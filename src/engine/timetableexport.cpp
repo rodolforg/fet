@@ -2656,7 +2656,7 @@ void TimetableExport::writeSubgroupsTimetableDaysVerticalHtml(QWidget* parent, c
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeSubgroupsTimetableTimeVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -2812,7 +2812,7 @@ void TimetableExport::writeSubgroupsTimetableTimeHorizontalDailyHtml(QWidget* pa
 }
 
 //Now print the groups
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeGroupsTimetableDaysHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -2866,7 +2866,7 @@ void TimetableExport::writeGroupsTimetableDaysHorizontalHtml(QWidget* parent, co
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeGroupsTimetableDaysVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -2920,7 +2920,7 @@ void TimetableExport::writeGroupsTimetableDaysVerticalHtml(QWidget* parent, cons
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeGroupsTimetableTimeVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -2959,7 +2959,7 @@ void TimetableExport::writeGroupsTimetableTimeVerticalHtml(QWidget* parent, cons
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeGroupsTimetableTimeHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -2997,7 +2997,7 @@ void TimetableExport::writeGroupsTimetableTimeHorizontalHtml(QWidget* parent, co
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeGroupsTimetableTimeVerticalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -3038,7 +3038,7 @@ void TimetableExport::writeGroupsTimetableTimeVerticalDailyHtml(QWidget* parent,
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeGroupsTimetableTimeHorizontalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -3081,7 +3081,7 @@ void TimetableExport::writeGroupsTimetableTimeHorizontalDailyHtml(QWidget* paren
 
 //Now print the years
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeYearsTimetableDaysHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -3130,7 +3130,7 @@ void TimetableExport::writeYearsTimetableDaysHorizontalHtml(QWidget* parent, con
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeYearsTimetableDaysVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -3179,7 +3179,7 @@ void TimetableExport::writeYearsTimetableDaysVerticalHtml(QWidget* parent, const
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeYearsTimetableTimeVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -3218,7 +3218,7 @@ void TimetableExport::writeYearsTimetableTimeVerticalHtml(QWidget* parent, const
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeYearsTimetableTimeHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -3257,7 +3257,7 @@ void TimetableExport::writeYearsTimetableTimeHorizontalHtml(QWidget* parent, con
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeYearsTimetableTimeVerticalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -3298,7 +3298,7 @@ void TimetableExport::writeYearsTimetableTimeVerticalDailyHtml(QWidget* parent, 
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeYearsTimetableTimeHorizontalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -3341,7 +3341,7 @@ void TimetableExport::writeYearsTimetableTimeHorizontalDailyHtml(QWidget* parent
 
 //Print all activities
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeAllActivitiesTimetableDaysHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -3375,7 +3375,7 @@ void TimetableExport::writeAllActivitiesTimetableDaysHorizontalHtml(QWidget* par
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeAllActivitiesTimetableDaysVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -3409,7 +3409,7 @@ void TimetableExport::writeAllActivitiesTimetableDaysVerticalHtml(QWidget* paren
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeAllActivitiesTimetableTimeVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -3445,7 +3445,7 @@ void TimetableExport::writeAllActivitiesTimetableTimeVerticalHtml(QWidget* paren
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeAllActivitiesTimetableTimeHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -3481,7 +3481,7 @@ void TimetableExport::writeAllActivitiesTimetableTimeHorizontalHtml(QWidget* par
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeAllActivitiesTimetableTimeVerticalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -3520,7 +3520,7 @@ void TimetableExport::writeAllActivitiesTimetableTimeVerticalDailyHtml(QWidget* 
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeAllActivitiesTimetableTimeHorizontalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -3656,7 +3656,7 @@ void TimetableExport::writeTeachersTimetableDaysVerticalHtml(QWidget* parent, co
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeTeachersTimetableTimeVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -4083,7 +4083,7 @@ void TimetableExport::writeRoomsTimetableTimeHorizontalDailyHtml(QWidget* parent
 
 //Print the subjects
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeSubjectsTimetableDaysHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -4131,7 +4131,7 @@ void TimetableExport::writeSubjectsTimetableDaysHorizontalHtml(QWidget* parent, 
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeSubjectsTimetableDaysVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -4178,7 +4178,7 @@ void TimetableExport::writeSubjectsTimetableDaysVerticalHtml(QWidget* parent, co
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeSubjectsTimetableTimeVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -4214,7 +4214,7 @@ void TimetableExport::writeSubjectsTimetableTimeVerticalHtml(QWidget* parent, co
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeSubjectsTimetableTimeHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -4251,7 +4251,7 @@ void TimetableExport::writeSubjectsTimetableTimeHorizontalHtml(QWidget* parent, 
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeSubjectsTimetableTimeVerticalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -4293,7 +4293,7 @@ void TimetableExport::writeSubjectsTimetableTimeVerticalDailyHtml(QWidget* paren
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeSubjectsTimetableTimeHorizontalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -4336,7 +4336,7 @@ void TimetableExport::writeSubjectsTimetableTimeHorizontalDailyHtml(QWidget* par
 
 //Print the activity tags
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeActivityTagsTimetableDaysHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -4388,7 +4388,7 @@ void TimetableExport::writeActivityTagsTimetableDaysHorizontalHtml(QWidget* pare
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeActivityTagsTimetableDaysVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -4439,7 +4439,7 @@ void TimetableExport::writeActivityTagsTimetableDaysVerticalHtml(QWidget* parent
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeActivityTagsTimetableTimeVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -4475,7 +4475,7 @@ void TimetableExport::writeActivityTagsTimetableTimeVerticalHtml(QWidget* parent
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeActivityTagsTimetableTimeHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -4512,7 +4512,7 @@ void TimetableExport::writeActivityTagsTimetableTimeHorizontalHtml(QWidget* pare
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeActivityTagsTimetableTimeVerticalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -4554,7 +4554,7 @@ void TimetableExport::writeActivityTagsTimetableTimeVerticalDailyHtml(QWidget* p
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeActivityTagsTimetableTimeHorizontalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -4595,7 +4595,7 @@ void TimetableExport::writeActivityTagsTimetableTimeHorizontalDailyHtml(QWidget*
 	file.close();
 }
 
-//Print the teachers free periods. Code by Volker Dirr (http://timetabling.de/)
+//Print the teachers free periods. Code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeTeachersFreePeriodsTimetableDaysHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -4643,7 +4643,7 @@ void TimetableExport::writeTeachersFreePeriodsTimetableDaysHorizontalHtml(QWidge
 	file.close();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeTeachersFreePeriodsTimetableDaysVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -4691,7 +4691,7 @@ void TimetableExport::writeTeachersFreePeriodsTimetableDaysVerticalHtml(QWidget*
 	file.close();
 }
 
-//Code contributed by Volker Dirr (http://timetabling.de/)
+//Code contributed by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeTeachersStatisticsHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -4727,7 +4727,7 @@ void TimetableExport::writeTeachersStatisticsHtml(QWidget* parent, const QString
 	file.close();
 }
 
-//Code contributed by Volker Dirr (http://timetabling.de/)
+//Code contributed by Volker Dirr (https://timetabling.de/)
 void TimetableExport::writeStudentsStatisticsHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);

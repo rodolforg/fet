@@ -89,7 +89,7 @@ HelpAboutForm::HelpAboutForm(QWidget* parent): QDialog(parent)
 	QString authors=QString("");
 	authors+=QString("Liviu Lalescu (https://lalescu.ro/liviu/)");
 	authors+="<br /><br />";
-	authors+=QString("Volker Dirr (http://www.timetabling.de/)");
+	authors+=QString("Volker Dirr (https://www.timetabling.de/)");
 	authors+="<br />";
 	authors+=QString("&nbsp;&nbsp;&nbsp;&nbsp;- ")+tr("XHTML timetable export.");
 	authors+="<br />";
