@@ -5816,6 +5816,8 @@ bool Rules::read(QWidget* parent, const QString& fileName, bool commandLine, QSt
 					}
 					if(id<0)
 						xmlReader.raiseError(tr("%1 is incorrect").arg("Id"));
+					else if(activitiesPointerHash.contains(id))
+						xmlReader.raiseError(tr("%1 is incorrect (already existing)").arg("Id")); //duplicate Id
 					else if(gid<0)
 						xmlReader.raiseError(tr("%1 is incorrect").arg("Activity_Group_Id"));
 					else if(d<=0)
