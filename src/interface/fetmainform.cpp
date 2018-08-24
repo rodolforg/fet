@@ -245,7 +245,14 @@ using namespace std;
 #include <QDesktopServices>
 #include <QUrl>
 #include <QApplication>
+
+#if QT_VERSION >= 0x050000
+#include <QGuiApplication>
+#include <QScreen>
+#else
 #include <QDesktopWidget>
+#endif
+
 #include <QMenu>
 #include <QCursor>
 #include <QSettings>
@@ -511,8 +518,13 @@ FetMainForm::FetMainForm()
 	windowSettingsRect=settings.value("FetMainForm/geometry", QRect(0,0,0,0)).toRect();
 	if(!windowSettingsRect.isValid()){
 		bool ok=false;
+#if QT_VERSION >= 0x050000
+		foreach(QScreen* screen, QGuiApplication::screens()){
+			if(screen->availableGeometry().intersects(windowSettingsRect)){
+#else
 		for(int i=0; i<QApplication::desktop()->screenCount(); i++){
 			if(QApplication::desktop()->availableGeometry(i).intersects(windowSettingsRect)){
+#endif
 				ok=true;
 				break;
 			}

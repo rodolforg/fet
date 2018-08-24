@@ -166,7 +166,6 @@ private:
 	int level_limit;
 
 	int ncallsrandomswap;
-	int maxncallsrandomswap;
 	//if level==0, choose best position with lowest number
 	//of conflicting activities
 	QList<int> conflActivitiesTimeSlot;

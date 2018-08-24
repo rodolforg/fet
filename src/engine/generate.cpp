@@ -2593,7 +2593,6 @@ if(threaded){
 	c.makeUnallocated(gt.rules);
 
 	difficultActivities.resize(0);
-	maxncallsrandomswap=-1;
 
 	impossibleActivity=false;
 	

@@ -1312,6 +1312,9 @@ Suggested also by Davide Cottignoli, on the forum, on 2017-08-18.
 
 Suggested also by mercurialuser, on the forum, on 2017-09-05.
 
+Suggested also by auriolar and rodolforg, on the forum, on 2018-04-15 (they suggest to add exceptions to the general constraint).
+rodolforg: I don't think it needs to change the constraint names. Just add the 'exception' field.
+
 See also TODO item #84.
 
 83---------------------------------------------------------
@@ -5228,6 +5231,8 @@ Min simultaneous activities from a set.
 
 A set of activities occupies MIN time slots from a selection.
 
+Also suggested by auriolar, on forum: Teacher(s) max span per week.
+
 313---------------------------------------------------------
 From Silver (on forum):
 
@@ -5874,3 +5879,498 @@ one of the advantages of this suggestion is to know if the activities are consec
 
 Volker Dirr: You also need to see the duration, because you can only know then if they are
 consecutive or not.
+
+352---------------------------------------------------------
+From Volker Dirr (on forum):
+
+There are constraints like max hours daily or interval max days per week which allow their data to be redundant (they allow n_hours_per_day or
+n_days_per_week), and other constraints, like min days between activities, which don't allow their data to be redundant (they allow only
+n_days_per_week-1).
+
+Volker suggests to allow only non-redundant data (like min days between activities constraints).
+
+353---------------------------------------------------------
+From Volker Dirr:
+
+add a warning before generating (generate_pre.cpp):
+check min days between activities constraints:
+if ((number_of_activities.count() > 2*days_per_week) && 
+forceConsecutive.isEnabled()) => IMPOSSIBLE
+
+354---------------------------------------------------------
+From Volker Dirr:
+
+If there are activities in a constraint activities same starting
+time and an activity is forbidden a time slot, then all the others are
+also forbidden this time slot.
+
+Liviu: It might not be critical, as activities with same starting time constraints are placed one near the other in the initial order
+(problems might arise only if the user uses the advanced option "Group activities in the initial order").
+
+355---------------------------------------------------------
+From Volker Dirr:
+
+If an activity A has preferred room R and R is not available
+on some time slots, make A not available on these time slots.
+
+(See also item #356.)
+
+356---------------------------------------------------------
+From Volker Dirr:
+
+Take care of this potential problem: If an activity
+A with duration >=2 has preferred two rooms, and in
+the first hour R1 is available but R2 not, then in the second hour R2 is
+available but R1 not, A is impossible to place.
+
+(See also item #355.)
+
+357---------------------------------------------------------
+From Volker Dirr:
+
+The order of the activities are not always good. activities with a
+very low number of available slots might be much too late in the order.
+(for example pseudo activities "lunch".)
+
+358---------------------------------------------------------
+From Volker Dirr:
+
+Care about not available times if activities are consecutive.
+
+Volker: the code might look like the attached (be careful: not tested much 
+yet; so it might contain still bugs)
+//NEW Variant (start)
+	foundImprovement=0;	//TODO:delete
+	bool addImprovement=true;
+	//care about consecutive by Volker Dirr
+	//TODO: same starting time and consecutive might effect each other. so 
+repeat both as long as something changed?!
+	//DO THIS AS LAST
+	while(addImprovement){
+		addImprovement=false;
+		for(int i=0; i<gt.rules.nInternalTimeConstraints; i++){
+			if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_2_ACTIVITIES_CONSECUTIVE){
+				Constraint2ActivitiesConsecutive* 
+c2=(Constraint2ActivitiesConsecutive*)gt.rules.internalTimeConstraintsList[i];
+				if(gt.rules.internalTimeConstraintsList[i]->weightPercentage==100.0){
+					//if firstActivity or secondActivity has a same starting time, then 
+it must be recheeckt?!
+					int firstActivity=c2->firstActivityIndex;
+					int secondActivity=c2->secondActivityIndex;
+					for(int d=0; d<gt.rules.nDaysPerWeek; d++){
+						//get times
+						int firstPeriodOfFirstActivity=-1;
+						int lastPeriodOfFirstActivity=gt.rules.nHoursPerDay-1;
+						int firstPeriodOfSecondActivity=-1;
+						int lastPeriodOfSecondActivity=gt.rules.nHoursPerDay-1;
+						for(int h=0; h<gt.rules.nHoursPerDay; h++){
+							int currentTime=d+h*gt.rules.nDaysPerWeek;
+							if(notAllowedTimesPercentages[firstActivity][currentTime]!=100){
+								if(firstPeriodOfFirstActivity==-1)
+									firstPeriodOfFirstActivity=h;
+								lastPeriodOfFirstActivity=h;
+							}
+							if(notAllowedTimesPercentages[secondActivity][currentTime]!=100){
+								if(firstPeriodOfSecondActivity==-1)
+									firstPeriodOfSecondActivity=h;
+								lastPeriodOfSecondActivity=h;
+							}
+						}
+						assert(lastPeriodOfFirstActivity<gt.rules.nHoursPerDay);
+						assert(lastPeriodOfSecondActivity<gt.rules.nHoursPerDay);
+						assert(lastPeriodOfFirstActivity>=firstPeriodOfFirstActivity);
+						assert(lastPeriodOfSecondActivity>=firstPeriodOfSecondActivity);  
+
+						int durationFirstActivity = 
+gt.rules.internalActivitiesList[firstActivity].duration;
+
+						if((firstPeriodOfFirstActivity>=0) && 
+(firstPeriodOfSecondActivity>=0)){  
+							if(lastPeriodOfFirstActivity==lastPeriodOfSecondActivity){
+								lastPeriodOfFirstActivity--;
+							} else
+								if(lastPeriodOfFirstActivity>lastPeriodOfSecondActivity){  
+									lastPeriodOfFirstActivity=lastPeriodOfSecondActivity-1;
+								}
+							else {
+								int numberOfFollowingBreaks=0;
+								for(int i=lastPeriodOfFirstActivity+1; 
+i<=lastPeriodOfSecondActivity; i++){
+									if(!breakDayHour[d][i]){
+										break;
+									}
+									numberOfFollowingBreaks++;
+								}
+								if(firstPeriodOfFirstActivity+durationFirstActivity+numberOfFollowingBreaks>lastPeriodOfSecondActivity){  
+									firstPeriodOfFirstActivity=-1;
+									firstPeriodOfSecondActivity=-1;
+								} else {
+									if(lastPeriodOfSecondActivity>lastPeriodOfFirstActivity+durationFirstActivity+numberOfFollowingBreaks){  
+										lastPeriodOfSecondActivity=lastPeriodOfFirstActivity+durationFirstActivity+numberOfFollowingBreaks;
+										assert(!breakDayHour[d][lastPeriodOfSecondActivity]);
+									}
+								}
+							}
+
+							/*if(lastPeriodOfFirstActivity<firstPeriodOfFirstActivity
+							|| lastPeriodOfSecondActivity<firstPeriodOfSecondActivity
+							|| firstPeriodOfFirstActivity>firstPeriodOfSecondActivity
+							|| lastPeriodOfFirstActivity>lastPeriodOfSecondActivity){
+							QMessageBox::warning(NULL, QObject::tr("FET warning"), 
+QObject::tr("F1=%1   L1=%2   F2=%3   
+L2=%4").arg(firstPeriodOfFirstActivity).arg(lastPeriodOfFirstActivity).arg(firstPeriodOfSecondActivity).arg(lastPeriodOfSecondActivity));
+							}*/
+
+							assert(lastPeriodOfFirstActivity<gt.rules.nHoursPerDay);
+							assert(lastPeriodOfSecondActivity<gt.rules.nHoursPerDay);
+							//assert(firstPeriodOfFirstActivity<=firstPeriodOfSecondActivity); 
+// not correct that this position, correction is following now
+							assert(lastPeriodOfFirstActivity<=lastPeriodOfSecondActivity);
+
+							if((firstPeriodOfFirstActivity>=0) && 
+(firstPeriodOfSecondActivity>=0)){  
+								if(firstPeriodOfFirstActivity==firstPeriodOfSecondActivity){
+									firstPeriodOfSecondActivity+=durationFirstActivity;
+									assert(lastPeriodOfFirstActivity<=lastPeriodOfSecondActivity);
+								} else
+									if(firstPeriodOfFirstActivity>firstPeriodOfSecondActivity){  
+										firstPeriodOfSecondActivity=firstPeriodOfFirstActivity+durationFirstActivity;
+										assert(lastPeriodOfFirstActivity<=lastPeriodOfSecondActivity);
+									}
+								else {
+									int numberOfFollowingBreaks=0;
+									for(int i=firstPeriodOfSecondActivity-1; 
+i>=firstPeriodOfFirstActivity; i--){  
+										if(!breakDayHour[d][i]){
+											break;
+										}
+										numberOfFollowingBreaks++;
+									}
+									assert(lastPeriodOfFirstActivity<=lastPeriodOfSecondActivity);
+									if(lastPeriodOfSecondActivity-durationFirstActivity-numberOfFollowingBreaks<firstPeriodOfFirstActivity){
+										firstPeriodOfFirstActivity=-1;
+										firstPeriodOfSecondActivity=-1;
+									} else {
+										if(firstPeriodOfFirstActivity<firstPeriodOfSecondActivity-durationFirstActivity-numberOfFollowingBreaks){
+											firstPeriodOfFirstActivity=firstPeriodOfSecondActivity-durationFirstActivity-numberOfFollowingBreaks;
+											assert(!breakDayHour[d][firstPeriodOfFirstActivity]);
+										}
+									}
+								}
+							}
+							assert(lastPeriodOfFirstActivity<gt.rules.nHoursPerDay);
+							assert(lastPeriodOfSecondActivity<gt.rules.nHoursPerDay);
+							assert(firstPeriodOfFirstActivity<=firstPeriodOfSecondActivity);
+							assert(lastPeriodOfFirstActivity<=lastPeriodOfSecondActivity);
+							if(	lastPeriodOfFirstActivity<firstPeriodOfFirstActivity
+								|| lastPeriodOfSecondActivity<firstPeriodOfSecondActivity
+								|| firstPeriodOfFirstActivity>=lastPeriodOfSecondActivity
+								|| 
+firstPeriodOfFirstActivity+durationFirstActivity>lastPeriodOfSecondActivity  
+								|| 
+lastPeriodOfSecondActivity-durationFirstActivity<firstPeriodOfFirstActivity){
+									firstPeriodOfFirstActivity=-1;
+									firstPeriodOfSecondActivity=-1;
+							}
+						}
+
+						/*if(lastPeriodOfFirstActivity<firstPeriodOfFirstActivity
+						|| lastPeriodOfSecondActivity<firstPeriodOfSecondActivity
+						|| firstPeriodOfFirstActivity>firstPeriodOfSecondActivity
+						|| lastPeriodOfFirstActivity>lastPeriodOfSecondActivity){
+						QMessageBox::warning(NULL, QObject::tr("FET warning"), 
+QObject::tr("F1=%1   L1=%2   F2=%3   
+L2=%4").arg(firstPeriodOfFirstActivity).arg(lastPeriodOfFirstActivity).arg(firstPeriodOfSecondActivity).arg(lastPeriodOfSecondActivity));
+						}*/
+
+//lastPeriodOfFirstActivity>firstPeriodOfSecondActivity  
+
+						if((firstPeriodOfFirstActivity<0) || 
+(firstPeriodOfSecondActivity<0)){
+							for(int h=0; h<gt.rules.nHoursPerDay; h++){
+								int currentTime=d+h*gt.rules.nDaysPerWeek;
+								if(notAllowedTimesPercentages[firstActivity][currentTime]!=100){
+									notAllowedTimesPercentages[firstActivity][currentTime]=100;
+									addImprovement=true;
+									foundImprovement++;	//TODO delete this
+								}
+								if(notAllowedTimesPercentages[secondActivity][currentTime]!=100){
+									notAllowedTimesPercentages[secondActivity][currentTime]=100;
+									addImprovement=true;
+									foundImprovement++;	//TODO delete this
+								}
+							}
+							continue;
+						}
+
+						//TODO: only if this happen each day!!!
+						/*if(lastPeriodOfFirstActivity + durationFirstActivity < 
+firstPeriodOfSecondActivity){
+							QMessageBox::warning(NULL, QObject::tr("FET warning"), 
+QObject::tr("Activity %1 and Activity %2 can't be 
+consecutive.").arg(gt.rules.internalActivitiesList[firstActivity].id).arg(gt.rules.internalActivitiesList[secondActivity].id));
+						}
+
+
+						if(firstPeriodOfSecondActivity - durationFirstActivity < 0){
+							QMessageBox::warning(NULL, QObject::tr("FET warning"), 
+QObject::tr("*Activity %1 and Activity %2 can't be 
+consecutive.").arg(gt.rules.internalActivitiesList[firstActivity].id).arg(gt.rules.internalActivitiesList[secondActivity].id));
+							QMessageBox::warning(NULL, QObject::tr("FET warning"), 
+QObject::tr("%1 - %2 < 
+0").arg(firstPossiblePeriodForSecondActivity).arg(durationFirstActivity));
+						}*/
+
+						//lock times of first activity
+						for(int h=0; h<gt.rules.nHoursPerDay; h++){
+							int currentTime=d+h*gt.rules.nDaysPerWeek;
+							if(h<firstPeriodOfFirstActivity){
+								if(notAllowedTimesPercentages[firstActivity][currentTime]!=100){
+									notAllowedTimesPercentages[firstActivity][currentTime]=100;
+									addImprovement=true;
+									foundImprovement++;	//TODO delete this
+									//QMessageBox::warning(NULL, QObject::tr("FET warning"), 
+QObject::tr("* Lock day %1 and hour %2 of activity 
+%3.").arg(d).arg(h).arg(gt.rules.internalActivitiesList[firstActivity].id));
+								}
+							} else if(h>lastPeriodOfFirstActivity){
+								if(notAllowedTimesPercentages[firstActivity][currentTime]!=100){
+									notAllowedTimesPercentages[firstActivity][currentTime]=100;
+									addImprovement=true;
+									foundImprovement++;	//TODO delete this
+									//QMessageBox::warning(NULL, QObject::tr("FET warning"), 
+QObject::tr("* Lock day %1 and hour %2 of activity 
+%3.").arg(d).arg(h).arg(gt.rules.internalActivitiesList[firstActivity].id));
+								}
+							} else
+								if(notAllowedTimesPercentages[firstActivity][currentTime]==100 
+&& !breakDayHour[d][h]){
+									if(h+1<gt.rules.nHoursPerDay){
+										if(notAllowedTimesPercentages[secondActivity][d+(h+1)*gt.rules.nDaysPerWeek]!=100){
+											notAllowedTimesPercentages[secondActivity][d+(h+1)*gt.rules.nDaysPerWeek]=100;
+											addImprovement=true;
+											foundImprovement++;	//TODO delete this
+											//QMessageBox::warning(NULL, QObject::tr("FET warning"), 
+QObject::tr("*second* Lock day %1 and hour %2 of activity 
+%3.").arg(d).arg(h-durationFirstActivity).arg(gt.rules.internalActivitiesList[firstActivity].id));
+										}
+									}
+								}
+						}
+
+						//lock times of second activity
+						for(int h=0; h<gt.rules.nHoursPerDay; h++){
+							int currentTime=d+h*gt.rules.nDaysPerWeek;
+							if(h<firstPeriodOfSecondActivity){
+								if(notAllowedTimesPercentages[secondActivity][currentTime]!=100 
+&& !breakDayHour[d][h-1]){
+									notAllowedTimesPercentages[secondActivity][currentTime]=100;
+									//QMessageBox::warning(NULL, QObject::tr("FET warning"), 
+QObject::tr("** Lock day %1 and hour %2 of activity 
+%3.").arg(d).arg(h).arg(gt.rules.internalActivitiesList[secondActivity].id));
+									addImprovement=true;
+									foundImprovement++;	//TODO delete this
+								}
+							} else if(h>lastPeriodOfSecondActivity){
+								if(notAllowedTimesPercentages[secondActivity][currentTime]!=100){
+									notAllowedTimesPercentages[secondActivity][currentTime]=100;
+									//QMessageBox::warning(NULL, QObject::tr("FET warning"), 
+QObject::tr("*** Lock day %1 and hour %2 of activity 
+%3.").arg(d).arg(h).arg(gt.rules.internalActivitiesList[secondActivity].id));
+									addImprovement=true;
+									foundImprovement++;	//TODO delete this
+								}
+							} else
+								if(notAllowedTimesPercentages[secondActivity][currentTime]==100 
+&& !breakDayHour[d][h]){
+									if(h-durationFirstActivity>=0){
+										if(notAllowedTimesPercentages[firstActivity][d+(h-durationFirstActivity)*gt.rules.nDaysPerWeek]!=100){
+											notAllowedTimesPercentages[firstActivity][d+(h-durationFirstActivity)*gt.rules.nDaysPerWeek]=100;
+											addImprovement=true;
+											foundImprovement++;	//TODO delete this
+											//QMessageBox::warning(NULL, QObject::tr("FET warning"), 
+QObject::tr("*first* Lock day %1 and hour %2 of activity 
+%3.").arg(d).arg(h+durationFirstActivity).arg(gt.rules.internalActivitiesList[secondActivity].id));
+										}
+									}
+								}
+						}
+					}
+				}
+			}
+		}
+	}
+	//end Volker
+
+359---------------------------------------------------------
+From Volker Dirr:
+
+Care about not available times if activities are grouped (2 or 3).
+
+360---------------------------------------------------------
+From Volker Dirr:
+
+Care about not available times if students early, no gaps and max hours per day.
+
+361---------------------------------------------------------
+From Volker Dirr:
+
+The following code should be nearly perfect for CONSTRAINT_ACTIVITIES_SAME_STARTING_DAY and CONSTRAINT_ACTIVITIES_SAME_STARTING_HOUR.
+(For example 2 activities with CONSTRAINT_ACTIVITIES_SAME_STARTING_DAY.
+A1 only available at one day in the first hour and A2 is also available
+at the same day also not the same hour and A1 is conflicting with A2,
+then my code won't see that it is possible to disallow that hour also.
+
+but I think that these are very very unlikely and special cases. I don't know
+if something like that is in a real dataset and if it is useful to
+search for such improvements, since those are more critical to detect.
+This can be also improved if you care about duration.)
+
+The code also includes simplified speedups for CONSTRAINT_TWO_ACTIVITIES_GROUPED, CONSTRAINT_TWO_ACTIVITIES_CONSECUTIVE and CONSTRAINT_THREE_ACTIVITIES_GROUPED.
+These constraints can still be improved.
+
+Before computeFixedActivities in generate_pre it is useful to disallow days and hours that can't be available:
+
+QList<QSet<int> > activitiesListWithDayNotAvailableSet;
+QList<QSet<int> > activitiesListWithHourNotAvailableSet;
+for(int ai=0; ai<gt.rules.nInternalActivities; ai++){
+	QSet<int> dayNotAvailable;
+	activitiesListWithDayNotAvailableSet<<dayNotAvailable;
+}
+for(int ai=0; ai<gt.rules.nInternalActivities; ai++){
+	QSet<int> hourNotAvailable;
+	activitiesListWithHourNotAvailableSet<<hourNotAvailable;
+}
+bool notAvailableFound=computeDayOrHourNotAvailable(&activitiesListWithDayNotAvailableSet, &activitiesListWithHourNotAvailableSet);
+
+while(notAvailableFound){
+	setNotAvailable(&activitiesListWithDayNotAvailableSet, &activitiesListWithHourNotAvailableSet);
+	notAvailableFound=computeDayOrHourNotAvailable(&activitiesListWithDayNotAvailableSet, &activitiesListWithHourNotAvailableSet);
+}
+
+
+bool computeDayOrHourNotAvailable(QList<QSet<int> > *activitiesListWithDayNotAvailableSet, QList<QSet<int> > *activitiesListWithHourNotAvailableSet){
+	bool newImprovementFound=false;
+	for(int ai=0; ai<gt.rules.nInternalActivities; ai++){
+		for(int d=0; d<gt.rules.nDaysPerWeek; d++){
+			bool wholeDayNotAvailable=true;
+			for(int h=0; h<gt.rules.nHoursPerDay; h++){
+				if(notAllowedTimesPercentages[ai][d+h*gt.rules.nDaysPerWeek]!=100){
+					wholeDayNotAvailable=false;
+					break;
+				}
+			}
+			if(wholeDayNotAvailable){
+				if(!(*activitiesListWithDayNotAvailableSet).at(ai).contains(d)){
+					(*activitiesListWithDayNotAvailableSet)[ai]<<d;
+					newImprovementFound=true;
+				}
+			}
+		}
+	}
+	for(int ai=0; ai<gt.rules.nInternalActivities; ai++){
+		for(int h=0; h<gt.rules.nHoursPerDay; h++){
+			bool wholeHourNotAvailable=true;
+			for(int d=0; d<gt.rules.nDaysPerWeek; d++){
+				if(notAllowedTimesPercentages[ai][d+h*gt.rules.nDaysPerWeek]!=100){
+					wholeHourNotAvailable=false;
+					break;
+				}
+			}
+			if(wholeHourNotAvailable){
+				if(!(*activitiesListWithHourNotAvailableSet).at(ai).contains(h)){
+					(*activitiesListWithHourNotAvailableSet)[ai]<<h;
+					newImprovementFound=true;
+				}
+			}
+		}
+	}
+	return newImprovementFound;
+	
+}
+
+void setNotAvailable(QList<QSet<int> > *activitiesListWithDayNotAvailableSet, QList<QSet<int> > *activitiesListWithHourNotAvailableSet){
+	for(int i=0; i<gt.rules.nInternalTimeConstraints; i++){
+		if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_ACTIVITIES_SAME_STARTING_DAY){
+			ConstraintActivitiesSameStartingDay* sst=(ConstraintActivitiesSameStartingDay*)gt.rules.internalTimeConstraintsList[i];
+			if(sst->weightPercentage==100){
+				for(int j=0; j<sst->_n_activities; j++){
+					foreach(int d, (*activitiesListWithDayNotAvailableSet).at(j)){
+						for(int ai=0; ai<sst->_n_activities; ai++){
+							for(int h=0; h<gt.rules.nHoursPerDay; h++){
+								notAllowedTimesPercentages[ai][d+h*gt.rules.nDaysPerWeek]=100;
+							}
+						}
+					}
+				}
+			}
+		}
+		if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_TWO_ACTIVITIES_GROUPED){
+			ConstraintTwoActivitiesGrouped* c2=(ConstraintTwoActivitiesGrouped*)gt.rules.internalTimeConstraintsList[i];
+			if(c2->weightPercentage==100){
+				foreach(int d, (*activitiesListWithDayNotAvailableSet).at(c2->firstActivityIndex)){
+					for(int h=0; h<gt.rules.nHoursPerDay; h++){
+						notAllowedTimesPercentages[c2->secondActivityIndex][d+h*gt.rules.nDaysPerWeek]=100;
+					}
+				}
+				foreach(int d, (*activitiesListWithDayNotAvailableSet).at(c2->secondActivityIndex)){
+					for(int h=0; h<gt.rules.nHoursPerDay; h++){
+						notAllowedTimesPercentages[c2->firstActivityIndex][d+h*gt.rules.nDaysPerWeek]=100;
+					}
+				}
+			}
+		}
+		if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_TWO_ACTIVITIES_CONSECUTIVE){
+			ConstraintTwoActivitiesConsecutive* c2=(ConstraintTwoActivitiesConsecutive*)gt.rules.internalTimeConstraintsList[i];
+			if(c2->weightPercentage==100){
+				foreach(int d, (*activitiesListWithDayNotAvailableSet).at(c2->firstActivityIndex)){
+					for(int h=0; h<gt.rules.nHoursPerDay; h++){
+						notAllowedTimesPercentages[c2->secondActivityIndex][d+h*gt.rules.nDaysPerWeek]=100;
+					}
+				}
+				foreach(int d, (*activitiesListWithDayNotAvailableSet).at(c2->secondActivityIndex)){
+					for(int h=0; h<gt.rules.nHoursPerDay; h++){
+						notAllowedTimesPercentages[c2->firstActivityIndex][d+h*gt.rules.nDaysPerWeek]=100;
+					}
+				}
+			}
+		}
+		if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_THREE_ACTIVITIES_GROUPED){
+			ConstraintThreeActivitiesGrouped* c2=(ConstraintThreeActivitiesGrouped*)gt.rules.internalTimeConstraintsList[i];
+			if(c2->weightPercentage==100){
+				foreach(int d, (*activitiesListWithDayNotAvailableSet).at(c2->firstActivityIndex)){
+					for(int h=0; h<gt.rules.nHoursPerDay; h++){
+						notAllowedTimesPercentages[c2->secondActivityIndex][d+h*gt.rules.nDaysPerWeek]=100;
+						notAllowedTimesPercentages[c2->thirdActivityIndex][d+h*gt.rules.nDaysPerWeek]=100;
+					}
+				}
+				foreach(int d, (*activitiesListWithDayNotAvailableSet).at(c2->secondActivityIndex)){
+					for(int h=0; h<gt.rules.nHoursPerDay; h++){
+						notAllowedTimesPercentages[c2->firstActivityIndex][d+h*gt.rules.nDaysPerWeek]=100;
+						notAllowedTimesPercentages[c2->thirdActivityIndex][d+h*gt.rules.nDaysPerWeek]=100;
+					}
+				}
+				foreach(int d, (*activitiesListWithDayNotAvailableSet).at(c2->thirdActivityIndex)){
+					for(int h=0; h<gt.rules.nHoursPerDay; h++){
+						notAllowedTimesPercentages[c2->firstActivityIndex][d+h*gt.rules.nDaysPerWeek]=100;
+						notAllowedTimesPercentages[c2->secondActivityIndex][d+h*gt.rules.nDaysPerWeek]=100;
+					}
+				}
+			}
+		}
+		if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_ACTIVITIES_SAME_STARTING_HOUR){
+			ConstraintActivitiesSameStartingHour* sst=(ConstraintActivitiesSameStartingHour*)gt.rules.internalTimeConstraintsList[i];
+			if(sst->weightPercentage==100){
+				for(int j=0; j<sst->_n_activities; j++){
+					foreach(int h, (*activitiesListWithHourNotAvailableSet).at(j)){
+						for(int ai=0; ai<sst->_n_activities; ai++){
+							for(int d=0; d<gt.rules.nDaysPerWeek; d++){
+								notAllowedTimesPercentages[ai][d+h*gt.rules.nDaysPerWeek]=100;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
