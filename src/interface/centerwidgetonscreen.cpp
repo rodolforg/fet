@@ -27,9 +27,8 @@ File centerwidgetonscreen.cpp
 #if QT_VERSION >= 0x050000
 #include <QGuiApplication>
 #include <QScreen>
-#else
-#include <QDesktopWidget>
 #endif
+#include <QDesktopWidget>
 
 #include <QRect>
 
