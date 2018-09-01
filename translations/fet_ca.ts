@@ -30904,15 +30904,15 @@ La importació de dades serà més fàcil amb aquesta configuració.</translatio
         <location filename="../src/interface/fetmainform.cpp" line="3956"/>
         <location filename="../src/interface/fetmainform.cpp" line="4076"/>
         <location filename="../src/interface/fetmainform.cpp" line="4133"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4689"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4739"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4769"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4794"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4816"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4843"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4865"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4886"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4910"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4698"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4748"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4778"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4803"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4825"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4852"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4874"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4895"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4919"/>
         <source>FET warning</source>
         <translation>Avís de FET</translation>
     </message>
@@ -31091,11 +31091,11 @@ La importació de dades serà més fàcil amb aquesta configuració.</translatio
         <location filename="../src/interface/fetmainform.cpp" line="4006"/>
         <location filename="../src/interface/fetmainform.cpp" line="4019"/>
         <location filename="../src/interface/fetmainform.cpp" line="4029"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4494"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4537"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4564"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4637"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4648"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4503"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4546"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4573"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4646"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4657"/>
         <source>FET information</source>
         <translation>Informació de FET</translation>
     </message>
@@ -31152,18 +31152,18 @@ La importació de dades serà més fàcil amb aquesta configuració.</translatio
         <translation>50</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4335"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4344"/>
         <source>&amp;Yes</source>
         <translation>&amp;Sí</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4335"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4344"/>
         <source>&amp;No</source>
         <translation>&amp;No</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4576"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4597"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4585"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4606"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Cancel·la</translation>
     </message>
@@ -31302,11 +31302,11 @@ La importació de dades serà més fàcil amb aquesta configuració.</translatio
         <location filename="../src/interface/fetmainform.cpp" line="3642"/>
         <location filename="../src/interface/fetmainform.cpp" line="3743"/>
         <location filename="../src/interface/fetmainform.cpp" line="3768"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4495"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4538"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4565"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4638"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4649"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4504"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4547"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4574"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4647"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4658"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
         <translation>Col·locació en curs. Siusplau atura la simulació abans d&apos;això.</translation>
@@ -32187,17 +32187,17 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
         <translation>activitats</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4833"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4842"/>
         <source>This kind of constraint is good, but only in the right case. Adding such constraints in the wrong circumstance may make your timetable solve too slow or even impossible.</source>
         <translation>Aquesta mena de restricció és bona, però només en casos correctes. Afegir aquesta mena de restriccions en circumstàncies equivocades poden fer que el teu horari es resolgui massa lent, o fins i tot que sigui impossible.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4836"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4845"/>
         <source>Please use such constraints only if you are sure that there exists a timetable with empty days for students. If your instution requires each day for the students to be not empty, or if there does not exist a solution with empty days for students, it is IMPERATIVE (for performance reasons) that you use the standard constraint which does not allow empty days. Otherwise, the timetable may be impossible to find.</source>
         <translation>Siusplau usa aquestes restriccions si estàs segur que hi ha un horari amb diei la teva institució requereix que cap dels dies dels estudiants estigui buit, o si no hi ha una solució amb dies buits per als estudiants, és IMPERATIU (per motius d&apos;execució) que utilitzis la restricció standardque no permet dies buits. En cas contrari, l&apos;horari pot ser impossible de trobar.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4881"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4890"/>
         <source>This kind of option is good, but only in the right case. Adding such an option in the wrong circumstance may make your timetable solve too slow or even impossible.</source>
         <translation>Aquest tipus d&apos;opció és vàlida però només en el cas correcte. Afegir l&apos;opció en les circunstàncies incorrectes pot fer que el seu horari es generi molt lentament o sigui impossible de generar.</translation>
     </message>
@@ -32236,63 +32236,64 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
         <translation>No es pot mostrar l&apos;horari perquè has afegit o tret algun professor. Siusplau regenera l&apos;horari i visualitza&apos;l</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4331"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4340"/>
         <source>Students&apos; combo boxes style will be %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4331"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4333"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4340"/>
         <source>simple</source>
         <comment>It is a style for students&apos; combo boxes</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4730"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4760"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4739"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4769"/>
         <source>These kinds of constraints are good, but not perfectly optimized. Adding such constraints may make your timetable solve too slow or even impossible.</source>
         <translation>Aquest tipus de restriccions són bones, però no perfectament optimitzades. Afegir-les pot fer que el teu horari es resolgui massa lentament o fins i tot que sigui impossible.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4733"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4763"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4742"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4772"/>
         <source>It is recommended to use such constraints only at the end, after you generated successfully with all the other constraints.</source>
         <translation>Es recomana usar aquesta mena de restriccions només al final, quan ja has generat amb èxit amb totes les altres restriccions.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4735"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4765"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4744"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4774"/>
         <source>If your timetable is too difficult, it may be from these kinds of constraints, so you may need to remove them and retry.</source>
         <translation>Si el teu horari és massa difícil pot ser a causa d&apos;aquesta mena de restriccions, per tant pots necessitar treure-les i tornar-ho a intentar.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4737"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4767"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4841"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4884"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4746"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4776"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4850"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4893"/>
         <source>Continue only if you know what you are doing.</source>
         <translation>Continua només si saps el que estàs fent.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4788"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4810"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4859"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4904"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4797"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4819"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4868"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4913"/>
         <source>It is recommended to keep this warning active, but if you really want, you can disable it.</source>
         <translation>Es recomana mantenir aquest avís actiu, però si vols el pots desactivar.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4790"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4812"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4861"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4906"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4799"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4821"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4870"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4915"/>
         <source>Disable it only if you know what you are doing.</source>
         <translation>Desactiva-la només si saps el que estàs fent.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4792"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4814"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4863"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4908"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4801"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4823"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4872"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4917"/>
         <source>Are you sure you want to disable it?</source>
         <translation>Segur que vols desabilirtar-lo?</translation>
     </message>
@@ -32513,24 +32514,24 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
         <translation>Imprimir els horaris detallats dels períodes lliures del professorat: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4571"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4580"/>
         <source>You have more than 6 days per week, so probably you won&apos;t need this feature. Do you still want to continue?</source>
         <translation>Tens més de 6 dies per setmana, per tant, probablement no necessitaràs aquesta característica. Tot i això vols continuar?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4574"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4595"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4583"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4604"/>
         <source>FET question</source>
         <translation>Pregunta de FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4576"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4597"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4585"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4606"/>
         <source>&amp;Continue</source>
         <translation>&amp;Continua</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4592"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4601"/>
         <source>You have less than 5 days per week, so probably you won&apos;t need this feature. Do you still want to continue?</source>
         <translation>Tens menys de 5 dies per setmana, per tant, probablement no necessitaràs aquesta característica. Tot i això vols continuar?</translation>
     </message>
@@ -32612,17 +32613,29 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
         <translation>Cancel·la</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4331"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4335"/>
+        <source>icons</source>
+        <comment>It is a style for students&apos; combo boxes</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="4337"/>
+        <source>categorized</source>
+        <comment>It is a style for students&apos; combo boxes</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="4340"/>
         <source>51</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4680"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4689"/>
         <source>Choose results (output) directory</source>
         <translation>Tria directori de resultats (sortida)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4689"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4698"/>
         <source>You don&apos;t have write permissions in this directory</source>
         <translation>No tens permisos d&apos;escriptura en aquest directori</translation>
     </message>
@@ -32651,7 +32664,7 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
         <translation>fals</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4334"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4343"/>
         <source>FET confirmation</source>
         <translation>Confirmació de FET</translation>
     </message>
@@ -54737,7 +54750,7 @@ Inferior: %4</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1105"/>
-        <source>There is a combo box in this dialog. You can see the timetable for each year/each group/each subgroup if you select the option &apos;Years&apos;, for all years/each group/each subgroup if you select the option &apos;Groups&apos;, or for all years/all groups/each subgroup if you select the option &apos;Subgroups&apos;.</source>
+        <source>There is a combo box in this dialog. You can choose each year, group, and subgroup if you select &apos;Years&apos;, each group and subgroup if you select &apos;Groups&apos;, or each subgroup if you select &apos;Subgroups&apos;.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -55459,7 +55472,7 @@ Please stop simulation before this.</source>
         <translation>Un possible problema seria que tinguessis 2 o més restriccions del tipus aula preferida d&apos;activitat amb ponderació 100% fent referència a l&apos;activitat amb id %1, siusplau, deixa&apos;n només una</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1110"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1109"/>
         <source>FET help</source>
         <translation>Ajuda de FET</translation>
     </message>

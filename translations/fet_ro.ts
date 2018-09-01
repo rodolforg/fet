@@ -30929,15 +30929,15 @@ A avea un subgrup cu prea puține ore de lucru pe săptămână înseamnă că a
         <location filename="../src/interface/fetmainform.cpp" line="3956"/>
         <location filename="../src/interface/fetmainform.cpp" line="4076"/>
         <location filename="../src/interface/fetmainform.cpp" line="4133"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4689"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4739"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4769"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4794"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4816"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4843"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4865"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4886"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4910"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4698"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4748"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4778"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4803"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4825"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4852"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4874"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4895"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4919"/>
         <source>FET warning</source>
         <translation>FET - avertisment</translation>
     </message>
@@ -31116,11 +31116,11 @@ A avea un subgrup cu prea puține ore de lucru pe săptămână înseamnă că a
         <location filename="../src/interface/fetmainform.cpp" line="4006"/>
         <location filename="../src/interface/fetmainform.cpp" line="4019"/>
         <location filename="../src/interface/fetmainform.cpp" line="4029"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4494"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4537"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4564"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4637"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4648"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4503"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4546"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4573"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4646"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4657"/>
         <source>FET information</source>
         <translation>FET - informație</translation>
     </message>
@@ -31178,22 +31178,18 @@ A avea un subgrup cu prea puține ore de lucru pe săptămână înseamnă că a
         <translation>FET - ieșind</translation>
     </message>
     <message>
-        <source>Students combo boxes style will be %1</source>
-        <translation type="vanished">Stilul combo box-urilor studenților va fi %1</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4335"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4344"/>
         <source>&amp;Yes</source>
         <translation>&amp;Da</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4335"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4344"/>
         <source>&amp;No</source>
         <translation>&amp;Nu</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4576"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4597"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4585"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4606"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Anulează</translation>
     </message>
@@ -31332,11 +31328,11 @@ A avea un subgrup cu prea puține ore de lucru pe săptămână înseamnă că a
         <location filename="../src/interface/fetmainform.cpp" line="3642"/>
         <location filename="../src/interface/fetmainform.cpp" line="3743"/>
         <location filename="../src/interface/fetmainform.cpp" line="3768"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4495"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4538"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4565"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4638"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4649"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4504"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4547"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4574"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4647"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4658"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
         <translation>Alocare în curs.
@@ -31652,67 +31648,74 @@ Vă rog opriți simularea înainte de aceasta.</translation>
         <translation>50</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4331"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4335"/>
+        <source>icons</source>
+        <comment>It is a style for students&apos; combo boxes</comment>
+        <translation>iconițe</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="4337"/>
+        <source>categorized</source>
+        <comment>It is a style for students&apos; combo boxes</comment>
+        <translation>clasificat</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="4340"/>
         <source>51</source>
         <translation>51</translation>
     </message>
     <message>
-        <source>simple</source>
-        <comment>It is a style for students combo boxes</comment>
-        <translation type="vanished">simplu</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4730"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4760"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4739"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4769"/>
         <source>These kinds of constraints are good, but not perfectly optimized. Adding such constraints may make your timetable solve too slow or even impossible.</source>
         <translation>Aceste tipuri de constrângeri sunt bune, dar nu perfect optimizate. Adăugarea unor astfel de constrângeri ar putea face orarul dvs. să se rezolve prea încet sau chiar imposibil.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4733"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4763"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4742"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4772"/>
         <source>It is recommended to use such constraints only at the end, after you generated successfully with all the other constraints.</source>
         <translation>Este recomandat să folosiți așa constrângeri doar la sfârșit, după ce ați generat cu succes cu toate celelalte constrângeri.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4735"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4765"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4744"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4774"/>
         <source>If your timetable is too difficult, it may be from these kinds of constraints, so you may need to remove them and retry.</source>
         <translation>Dacă orarul dvs. este prea dificil, poate fi de la aceste feluri de constrângeri, așa că poate veți fi nevoit să le ștergeți și să reîncercați.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4737"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4767"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4841"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4884"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4746"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4776"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4850"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4893"/>
         <source>Continue only if you know what you are doing.</source>
         <translation>Continuați doar dacă știți ceea ce faceți.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4788"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4810"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4859"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4904"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4797"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4819"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4868"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4913"/>
         <source>It is recommended to keep this warning active, but if you really want, you can disable it.</source>
         <translation>Este recomandat să păstrați acest avertisment activ, dar dacă chiar vreți, puteți să îl dezactivați.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4790"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4812"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4861"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4906"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4799"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4821"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4870"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4915"/>
         <source>Disable it only if you know what you are doing.</source>
         <translation>Dezactivați aceasta doar dacă știți ce faceți.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4792"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4814"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4863"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4908"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4801"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4823"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4872"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4917"/>
         <source>Are you sure you want to disable it?</source>
         <translation>Sunteți sigur că vreți să îl dezactivați?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4881"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4890"/>
         <source>This kind of option is good, but only in the right case. Adding such an option in the wrong circumstance may make your timetable solve too slow or even impossible.</source>
         <translation>Acest tip de opțiune este bun, dar doar în cazul potrivit. Adăugarea unei asemenea opțiuni în mod greșit poate face orarul dvs. să fie rezolvat prea încet sau chiar imposibil de rezolvat.</translation>
     </message>
@@ -31967,35 +31970,36 @@ Vă rog opriți simularea înainte de aceasta.</translation>
         <translation>Tipărește orarele detaliate ale perioadelor libere ale profesorilor va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4331"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4340"/>
         <source>Students&apos; combo boxes style will be %1</source>
         <translation>Stilul combo box-urilor studenților va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4331"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4333"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4340"/>
         <source>simple</source>
         <comment>It is a style for students&apos; combo boxes</comment>
         <translation>simplu</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4571"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4580"/>
         <source>You have more than 6 days per week, so probably you won&apos;t need this feature. Do you still want to continue?</source>
         <translation>Aveți mai mult de 6 zile pe săptămână, așa că probabil nu aveți nevoie de această facilitate. Doriți să continuați?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4574"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4595"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4583"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4604"/>
         <source>FET question</source>
         <translation>FET - întrebare</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4576"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4597"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4585"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4606"/>
         <source>&amp;Continue</source>
         <translation>&amp;Continuă</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4592"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4601"/>
         <source>You have less than 5 days per week, so probably you won&apos;t need this feature. Do you still want to continue?</source>
         <translation>Aveți mai puțin de 5 zile pe săptămână, așa că probabil nu aveți nevoie de această facilitate. Doriți să continuați?</translation>
     </message>
@@ -32618,22 +32622,22 @@ Vă rog opriți simularea înainte de aceasta.</translation>
         <translation>activități</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4833"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4842"/>
         <source>This kind of constraint is good, but only in the right case. Adding such constraints in the wrong circumstance may make your timetable solve too slow or even impossible.</source>
         <translation>Acest gen de constrângere este bun, dar doar în cazul potrivit. Dacă adăugați așa constrângeri în cazurile greșite se poate să obțineți un orar care se rezolvă prea greu sau chiar imposibil de rezolvat.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4836"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4845"/>
         <source>Please use such constraints only if you are sure that there exists a timetable with empty days for students. If your instution requires each day for the students to be not empty, or if there does not exist a solution with empty days for students, it is IMPERATIVE (for performance reasons) that you use the standard constraint which does not allow empty days. Otherwise, the timetable may be impossible to find.</source>
         <translation>Vă rugăm folosiți acest gen de constrângeri doar dacă sunteți sigur că există un orar cu zile libere pentru studenți. Dacă instituția dvs. cere ca fiecare zi pentru studenți să nu fie goala, sau dacă nu există o soluție cu zile libere pentru studenți, este IMPERATIV (pentru motive de performanță) să folosiți constrângerea standard care nu permite zile libere. Altfel, orarul s-ar putea să fie imposibil de găsit.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4680"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4689"/>
         <source>Choose results (output) directory</source>
         <translation>Alegeți directorul de ieșire (rezultate)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4689"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4698"/>
         <source>You don&apos;t have write permissions in this directory</source>
         <translation>Nu aveți permisiune de scriere în acest director</translation>
     </message>
@@ -32662,7 +32666,7 @@ Vă rog opriți simularea înainte de aceasta.</translation>
         <translation>fals</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4334"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4343"/>
         <source>FET confirmation</source>
         <translation>FET - confirmare</translation>
     </message>
@@ -33953,10 +33957,6 @@ Vă rog opriți simularea înainte de aceasta.</translation>
         <location filename="../src/interface/fetmainform_template.ui" line="2567"/>
         <source>Students&apos; combo boxes style</source>
         <translation>Stilul combo box-urilor studenților</translation>
-    </message>
-    <message>
-        <source>Students combo boxes style</source>
-        <translation type="vanished">Stilul combo box-urilor studenților</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2489"/>
@@ -50937,10 +50937,6 @@ Jos: %4</translation>
 <context>
     <name>StudentsComboBoxesStyleForm_template</name>
     <message>
-        <source>Students combo boxes style</source>
-        <translation type="vanished">Stilul combo box-urilor studenților</translation>
-    </message>
-    <message>
         <location filename="../src/interface/studentscomboboxesstyleform_template.ui" line="14"/>
         <location filename="../src/interface/studentscomboboxesstyleform_template.ui" line="20"/>
         <source>Students&apos; combo boxes style</source>
@@ -54760,8 +54756,8 @@ Jos: %4</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1105"/>
-        <source>There is a combo box in this dialog. You can see the timetable for each year/each group/each subgroup if you select the option &apos;Years&apos;, for all years/each group/each subgroup if you select the option &apos;Groups&apos;, or for all years/all groups/each subgroup if you select the option &apos;Subgroups&apos;.</source>
-        <translation>Există un combo box în acest dialog. Puteți vedea orarul pentru fiecare an/fiecare grup/fiecare subgrup dacă selectați opțiunea &apos;Ani&apos;, pentru toți anii/fiecare grup/fiecare subgrup dacă selectați opțiunea &apos;Grupuri&apos;, sau pentru toți anii/toate grupurile/fiecare subgrup dacă selectați opțiunea &apos;Subgrupuri&apos;.</translation>
+        <source>There is a combo box in this dialog. You can choose each year, group, and subgroup if you select &apos;Years&apos;, each group and subgroup if you select &apos;Groups&apos;, or each subgroup if you select &apos;Subgroups&apos;.</source>
+        <translation>Există un combo box în acest dialog. Puteți alege fiecare an, grup, și subgrup dacă selectați &apos;Ani&apos;, fiecare grup și subgrup dacă selectați &apos;Grupuri&apos;, sau fiecare subgrup dacă selectați &apos;Subgrupuri&apos;.</translation>
     </message>
 </context>
 <context>
@@ -55485,7 +55481,7 @@ Vă rog opriți simularea înainte de aceasta.</translation>
         <translation>O posibilă problemă poate fi că aveți 2 sau mai multe constrângeri de tip activitate sală preferată cu importanța 100% pentru activitatea cu id %1, vă rog lăsați doar una dintre ele</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1110"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1109"/>
         <source>FET help</source>
         <translation>FET - Ajutor</translation>
     </message>

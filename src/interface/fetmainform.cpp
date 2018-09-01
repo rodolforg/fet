@@ -2931,6 +2931,15 @@ void FetMainForm::on_settingsRestoreDefaultsAction_triggered()
 	s+="\n";
 	s+=tr("50")+QString(". ")+tr("Print detailed teachers' free periods timetables will be %1", "%1 is true or false").arg(tr("true"));
 	s+="\n";
+	
+	//Just to have them translated, in case I need them.
+	QString t1=tr("simple", "It is a style for students' combo boxes");
+	Q_UNUSED(t1);
+	QString t2=tr("icons", "It is a style for students' combo boxes");
+	Q_UNUSED(t2);
+	QString t3=tr("categorized", "It is a style for students' combo boxes");
+	Q_UNUSED(t3);
+	
 	s+=tr("51")+QString(". ")+tr("Students' combo boxes style will be %1").arg(tr("simple", "It is a style for students' combo boxes"));
 	s+="\n";
 	

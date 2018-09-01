@@ -7090,13 +7090,13 @@ Bemerkung: „Nicht verfügbare Zeiten einer Schülergruppe“ und Pausen werden
         <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform_template.ui" line="14"/>
         <source>Add students set not available times</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Hinzufügen von nicht verfügbaren Zeiten einer Schülergruppe</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform_template.ui" line="127"/>
         <source>X=not allowed, empty=allowed</source>
         <extracomment>This is an explanation in a dialog for a constraint. It says that symbol X means that this slot is not allowed, and an empty cell means that the slot is allowed</extracomment>
-        <translation type="unfinished">X=nicht erlaubt, leer=erlaubt</translation>
+        <translation>X=nicht erlaubt, leer=erlaubt</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform_template.ui" line="76"/>
@@ -30945,15 +30945,15 @@ Wenn eine Teilgruppe zuwenig Lektionen pro Woche aufweist, bedeutet es wohl, das
         <location filename="../src/interface/fetmainform.cpp" line="3956"/>
         <location filename="../src/interface/fetmainform.cpp" line="4076"/>
         <location filename="../src/interface/fetmainform.cpp" line="4133"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4689"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4739"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4769"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4794"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4816"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4843"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4865"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4886"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4910"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4698"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4748"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4778"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4803"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4825"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4852"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4874"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4895"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4919"/>
         <source>FET warning</source>
         <translation>FET-Warnung</translation>
     </message>
@@ -31132,11 +31132,11 @@ Wenn eine Teilgruppe zuwenig Lektionen pro Woche aufweist, bedeutet es wohl, das
         <location filename="../src/interface/fetmainform.cpp" line="4006"/>
         <location filename="../src/interface/fetmainform.cpp" line="4019"/>
         <location filename="../src/interface/fetmainform.cpp" line="4029"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4494"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4537"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4564"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4637"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4648"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4503"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4546"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4573"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4646"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4657"/>
         <source>FET information</source>
         <translation>FET-Information</translation>
     </message>
@@ -31177,18 +31177,18 @@ Wenn eine Teilgruppe zuwenig Lektionen pro Woche aufweist, bedeutet es wohl, das
         <translation>FET - Beenden</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4335"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4344"/>
         <source>&amp;Yes</source>
         <translation>&amp;Ja</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4335"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4344"/>
         <source>&amp;No</source>
         <translation>&amp;Nein</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4576"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4597"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4585"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4606"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Abbrechen</translation>
     </message>
@@ -31327,11 +31327,11 @@ Wenn eine Teilgruppe zuwenig Lektionen pro Woche aufweist, bedeutet es wohl, das
         <location filename="../src/interface/fetmainform.cpp" line="3642"/>
         <location filename="../src/interface/fetmainform.cpp" line="3743"/>
         <location filename="../src/interface/fetmainform.cpp" line="3768"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4495"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4538"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4565"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4638"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4649"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4504"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4547"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4574"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4647"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4658"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
         <translation>Berechnung läuft.
@@ -31571,57 +31571,69 @@ Bitte stoppe vorher die Berechnung.</translation>
         <translation>50</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4331"/>
-        <source>51</source>
+        <location filename="../src/interface/fetmainform.cpp" line="4335"/>
+        <source>icons</source>
+        <comment>It is a style for students&apos; combo boxes</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4730"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4760"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4337"/>
+        <source>categorized</source>
+        <comment>It is a style for students&apos; combo boxes</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="4340"/>
+        <source>51</source>
+        <translation>51</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="4739"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4769"/>
         <source>These kinds of constraints are good, but not perfectly optimized. Adding such constraints may make your timetable solve too slow or even impossible.</source>
         <translation>Diese Einschränkungen sind möglich, aber wurden nicht perfekt implementiert. Solche Einschränkungen machen das Lösen der Pläne sehr langsam oder unmöglich.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4733"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4763"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4742"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4772"/>
         <source>It is recommended to use such constraints only at the end, after you generated successfully with all the other constraints.</source>
         <translation>Es wird empfohlen, solche Einschränkungen erst am Schluß, nach erfolgreicher Generierung mit allen anderen Einschränkungen einzusetzen.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4735"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4765"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4744"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4774"/>
         <source>If your timetable is too difficult, it may be from these kinds of constraints, so you may need to remove them and retry.</source>
         <translation>Wenn der Stundenplan zu schwierig wird, kann es an diesen Einschränkungen liegen. Entfernen Sie diese und versuchen Sie es erneut.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4737"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4767"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4841"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4884"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4746"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4776"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4850"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4893"/>
         <source>Continue only if you know what you are doing.</source>
         <translation>Bitte, diesen Vorgang nur mit Bedacht fortsetzen!</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4788"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4810"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4859"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4904"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4797"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4819"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4868"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4913"/>
         <source>It is recommended to keep this warning active, but if you really want, you can disable it.</source>
         <translation>Es wird empfohlen, diese Warnung aktiviert zu lassen. Sie können sie aber auch deaktivieren, wenn Sie es wirklich möchten.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4790"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4812"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4861"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4906"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4799"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4821"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4870"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4915"/>
         <source>Disable it only if you know what you are doing.</source>
         <translation>Bitte, nur mit Bedacht deaktivieren!</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4792"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4814"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4863"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4908"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4801"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4823"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4872"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4917"/>
         <source>Are you sure you want to disable it?</source>
         <translation>Sind Sie sicher, dass Sie sie deaktivieren möchten?</translation>
     </message>
@@ -31900,35 +31912,36 @@ Bitte stoppe vorher die Berechnung.</translation>
         <translation>Detaillierte Lehrerfreistundenpläne = „%1“</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4331"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4340"/>
         <source>Students&apos; combo boxes style will be %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Stil der Schülerauswahlbox wird %1 sein</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4331"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4333"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4340"/>
         <source>simple</source>
         <comment>It is a style for students&apos; combo boxes</comment>
-        <translation type="unfinished"></translation>
+        <translation>einfach</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4571"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4580"/>
         <source>You have more than 6 days per week, so probably you won&apos;t need this feature. Do you still want to continue?</source>
         <translation>Sie haben mehr als 6 Tage pro Woche, daher benötigen Sie diese Option wahrscheinlich nicht. Möchten Sie trotzdem fortfahren?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4574"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4595"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4583"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4604"/>
         <source>FET question</source>
         <translation>FET-Frage</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4576"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4597"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4585"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4606"/>
         <source>&amp;Continue</source>
         <translation>&amp;Weiter</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4592"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4601"/>
         <source>You have less than 5 days per week, so probably you won&apos;t need this feature. Do you still want to continue?</source>
         <translation>Sie haben weniger als 5 Tage pro Woche, daher benötigen Sie diese Option wahrscheinlich nicht. Möchten Sie trotzdem fortfahren?</translation>
     </message>
@@ -32624,27 +32637,27 @@ Dieses Menü zeigt Aktivitäten an, die Raumeinschränkungen mit einer Gewichtun
         <translation>Aktivitäten</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4833"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4842"/>
         <source>This kind of constraint is good, but only in the right case. Adding such constraints in the wrong circumstance may make your timetable solve too slow or even impossible.</source>
         <translation>Diese Art von Einschränkung ist nur in bestimmten Fällen zu empfehlen. Bei ungeeignetem Einsatz kann die Stundenplanberechnung verlangsamt oder sogar verunmöglicht werden.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4836"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4845"/>
         <source>Please use such constraints only if you are sure that there exists a timetable with empty days for students. If your instution requires each day for the students to be not empty, or if there does not exist a solution with empty days for students, it is IMPERATIVE (for performance reasons) that you use the standard constraint which does not allow empty days. Otherwise, the timetable may be impossible to find.</source>
         <translation>Setzen Sie solche Einschränkungen nur dann ein, wenn Ihre Bildungsstätte auch freie (leere) Tage bei Schülerstundenplänen zulässt. Sonst sollte man aus Performance-Gründen AUF JEDEN FALL die Standardeinschränkung einsetzen, die keine freien Tage erlaubt. Andernfalls könnte FET evtl. keine Stundenplan-Lösung finden.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4881"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4890"/>
         <source>This kind of option is good, but only in the right case. Adding such an option in the wrong circumstance may make your timetable solve too slow or even impossible.</source>
         <translation>Diese Option ist nur unter bestimmten Bedingungen zu empfehlen. Ein ungeeigneter Einsatz könnte die Stundenplanberechnung verlangsamen oder sogar verunmöglichen.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4680"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4689"/>
         <source>Choose results (output) directory</source>
         <translation>Wähle das Ausgabeverzeichnis</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4689"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4698"/>
         <source>You don&apos;t have write permissions in this directory</source>
         <translation>Sie haben keine Schreibberechtigung für das Verzeichnis</translation>
     </message>
@@ -32673,7 +32686,7 @@ Dieses Menü zeigt Aktivitäten an, die Raumeinschränkungen mit einer Gewichtun
         <translation>falsch</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4334"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4343"/>
         <source>FET confirmation</source>
         <translation>FET-Rückmeldung</translation>
     </message>
@@ -33491,7 +33504,7 @@ Dieses Menü zeigt Aktivitäten an, die Raumeinschränkungen mit einer Gewichtun
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2567"/>
         <source>Students&apos; combo boxes style</source>
-        <translation type="unfinished"></translation>
+        <translation>Stil der Schülerauswahlbox</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2489"/>
@@ -49618,12 +49631,12 @@ nicht hinzugefügt - Duplikat</translation>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="821"/>
         <source>The generation time of the timetable is directly proportional with the total number of subgroups!</source>
-        <translation type="unfinished"></translation>
+        <translation>Die benötigte Zeit zum Erstellen eines Planes ist proportional zur Anzahl an Teilgruppen!</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="823"/>
         <source>For instance, by reducing the total number of subgroups from 10000 to 100 the generation time might decrease 100 times!</source>
-        <translation type="unfinished"></translation>
+        <translation>Wenn die Anzahl der Teilgruppen z.B. von 10000 auf 100 gesenkt wird, dann könnte die Berechnung 100 mal schneller sein!</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="829"/>
@@ -49898,7 +49911,7 @@ nicht hinzugefügt - Duplikat</translation>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="26"/>
         <source>VERY IMPORTANT: For generation feasibility, keep the number of categories and the number of subgroups to a minimum! It is recommended that no more than 2, 3 or maximum 4 categories to be used. The generation time of the timetable is directly proportional with the total number of subgroups! Press Help for details.</source>
-        <translation type="unfinished"></translation>
+        <translation>SEHR WICHTIG: Halten Sie die Anzahl van Kategorien und Teilgruppen so gering wie möglich! Am besten nicht mehr als 4 Kategorien benutzen. Die Zeit zum Erstellen eines Planes hängt direkt davon ab! Drücke &apos;Hilfe&apos; für mehr Details.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="360"/>
@@ -50936,32 +50949,32 @@ Unten: %4</translation>
         <location filename="../src/interface/studentscomboboxesstyleform_template.ui" line="14"/>
         <location filename="../src/interface/studentscomboboxesstyleform_template.ui" line="20"/>
         <source>Students&apos; combo boxes style</source>
-        <translation type="unfinished"></translation>
+        <translation>Stil der Schülerauswahlbox</translation>
     </message>
     <message>
         <location filename="../src/interface/studentscomboboxesstyleform_template.ui" line="26"/>
         <source>Simple</source>
-        <translation type="unfinished"></translation>
+        <translation>einfach</translation>
     </message>
     <message>
         <location filename="../src/interface/studentscomboboxesstyleform_template.ui" line="33"/>
         <source>Icons</source>
-        <translation type="unfinished"></translation>
+        <translation>Symbol</translation>
     </message>
     <message>
         <location filename="../src/interface/studentscomboboxesstyleform_template.ui" line="40"/>
         <source>Categorized</source>
-        <translation type="unfinished"></translation>
+        <translation>kategorisiert</translation>
     </message>
     <message>
         <location filename="../src/interface/studentscomboboxesstyleform_template.ui" line="78"/>
         <source>Cancel</source>
-        <translation type="unfinished">Abbrechen</translation>
+        <translation>Abbrechen</translation>
     </message>
     <message>
         <location filename="../src/interface/studentscomboboxesstyleform_template.ui" line="85"/>
         <source>OK</source>
-        <translation type="unfinished">Ok</translation>
+        <translation>Ok</translation>
     </message>
 </context>
 <context>
@@ -54751,8 +54764,8 @@ Unten: %4</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1105"/>
-        <source>There is a combo box in this dialog. You can see the timetable for each year/each group/each subgroup if you select the option &apos;Years&apos;, for all years/each group/each subgroup if you select the option &apos;Groups&apos;, or for all years/all groups/each subgroup if you select the option &apos;Subgroups&apos;.</source>
-        <translation type="unfinished"></translation>
+        <source>There is a combo box in this dialog. You can choose each year, group, and subgroup if you select &apos;Years&apos;, each group and subgroup if you select &apos;Groups&apos;, or each subgroup if you select &apos;Subgroups&apos;.</source>
+        <translation>In diesem Dialog gibt es eine Auswhlbox. Mit &apos;Jahrgänge&apos; können Sie alle Jährgänge, Gruppen und Teilgruppen auswählen; mit &apos;Gruppen&apos; können Sie alle Gruppen und Teilgruppen auswählen und mit &apos;Teilgruppen&apos; können Sie alle Teilgruppen aussuchen.</translation>
     </message>
 </context>
 <context>
@@ -55321,37 +55334,37 @@ Bitte reduzieren Sie dies auf eine Einschränkung</translation>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="202"/>
         <source>Years</source>
-        <translation type="unfinished">Jahrgänge</translation>
+        <translation>Jahrgänge</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="203"/>
         <source>Groups</source>
-        <translation type="unfinished">Gruppen</translation>
+        <translation>Gruppen</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="204"/>
         <source>Subgroups</source>
-        <translation type="unfinished">Teilgruppen</translation>
+        <translation>Teilgruppen</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="364"/>
         <source>Inexistent group - please reload this dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Gruppe existiert nicht. Öffnen Sie den Dialog erneut</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="368"/>
         <source>Incorrect group settings - please reload this dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Falsche Gruppe. Öffnen Sie den Dialog erneut</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="446"/>
         <source>Inexistent subgroup - please reload this dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Teilgruppe existiert nicht. Öffnen Sie den Dialog erneut</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="450"/>
         <source>Incorrect subgroup settings - please reload this dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Falsche Teilgruppe. Öffnen Sie den Dialog erneut</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="649"/>
@@ -55482,7 +55495,7 @@ Bitte reduzieren Sie dies auf eine Einschränkung</translation>
 Bitte reduzieren Sie dies auf eine Einschränkung</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1110"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1109"/>
         <source>FET help</source>
         <translation>FET-Hilfe</translation>
     </message>
