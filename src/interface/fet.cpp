@@ -341,6 +341,11 @@ static void readSimulationParameters()
 	WRITE_TIMETABLES_SUBJECTS=newSettings.value("write-timetables-subjects", "true").toBool();
 	WRITE_TIMETABLES_ACTIVITY_TAGS=newSettings.value("write-timetables-activity-tags", "true").toBool();
 	WRITE_TIMETABLES_ACTIVITIES=newSettings.value("write-timetables-activities", "true").toBool();
+	
+	if(newSettings.contains("students-combo-boxes-style"))
+		STUDENTS_COMBO_BOXES_STYLE=newSettings.value("students-combo-boxes-style").toInt();
+	else
+		STUDENTS_COMBO_BOXES_STYLE=STUDENTS_COMBO_BOXES_STYLE_SIMPLE;
 
 	ENABLE_ACTIVITY_TAG_MAX_HOURS_DAILY=newSettings.value("enable-activity-tag-max-hours-daily", "false").toBool();
 	ENABLE_STUDENTS_MAX_GAPS_PER_DAY=newSettings.value("enable-students-max-gaps-per-day", "false").toBool();
@@ -404,6 +409,8 @@ static void writeSimulationParameters()
 	settings.setValue("write-timetables-subjects", WRITE_TIMETABLES_SUBJECTS);
 	settings.setValue("write-timetables-activity-tags", WRITE_TIMETABLES_ACTIVITY_TAGS);
 	settings.setValue("write-timetables-activities", WRITE_TIMETABLES_ACTIVITIES);
+	
+	settings.setValue("students-combo-boxes-style", STUDENTS_COMBO_BOXES_STYLE);
 
 	settings.setValue("enable-activity-tag-max-hours-daily", ENABLE_ACTIVITY_TAG_MAX_HOURS_DAILY);
 	settings.setValue("enable-students-max-gaps-per-day", ENABLE_STUDENTS_MAX_GAPS_PER_DAY);

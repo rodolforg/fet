@@ -129,6 +129,8 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 
 	studentsComboBox->addItem("");
 	studentsComboBox->addItem(" [[ no students ]]");
+	int cist=populateStudentsComboBox(studentsComboBox, studentsSetName, true);
+	/*studentsComboBox->addItem("");
 	int cist=0;
 	int currentID=0;
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
@@ -151,7 +153,7 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 					cist=currentID;
 			}
 		}
-	}
+	}*/
 	studentsComboBox->setCurrentIndex(cist);
 	
 	if(studentsSetName!=""){

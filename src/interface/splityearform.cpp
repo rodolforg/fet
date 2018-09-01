@@ -816,6 +816,10 @@ void SplitYearForm::help()
 	s+=" ";
 	s+=tr("Maybe a reasonable number of categories could be 2, 3 or maximum 4. The divide year dialog allows much higher values, but"
 		" these are not at all recommended.");
+	s+=" ";
+	s+=tr("The generation time of the timetable is directly proportional with the total number of subgroups!");
+	s+=" ";
+	s+=tr("For instance, by reducing the total number of subgroups from 10000 to 100 the generation time might decrease 100 times!");
 	s+="\n";
 	s+=tr("Maybe an alternative to dividing a year into many categories/subgroups would be to enter individual students as FET subgroups and add into"
 		" each group the corresponding subgroups. But this is hard to do from the FET interface - maybe a solution would be to use an automatic"

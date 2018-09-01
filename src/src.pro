@@ -503,6 +503,8 @@ SOURCES += \
 	interface/errorrenderer.cpp \
 	interface/fetguisettings.cpp \
 	interface/invisiblesubgrouphelper.cpp \
+	\
+	interface/studentscomboboxesstyleform.cpp
 
 HEADERS += \
 	engine/timetableexport.h \
@@ -1012,6 +1014,8 @@ HEADERS += \
 	interface/errorrenderer.h \
 	interface/fetguisettings.h \
 	interface/invisiblesubgrouphelper.h \
+	\
+	interface/studentscomboboxesstyleform.h
 
 FORMS += \
 	interface/fetmainform_template.ui \
@@ -1348,7 +1352,9 @@ FORMS += \
 	interface/teacherstudentsetsubjectactivitytag_filterwidget.ui \
 	interface/addconstraintteachersmincontinuousgapinintervalform_template.ui \
 	interface/addconstraintstudentsmincontinuousgapinintervalform_template.ui \
-	interface/editcommentsform_template.ui
+	interface/editcommentsform_template.ui \
+	\
+	interface/studentscomboboxesstyleform_template.ui
 
 TRANSLATIONS += \
 	../translations/fet_ar.ts \

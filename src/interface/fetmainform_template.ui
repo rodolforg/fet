@@ -852,7 +852,7 @@
      <x>0</x>
      <y>0</y>
      <width>560</width>
-     <height>25</height>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="helpMenu">
@@ -1280,6 +1280,8 @@
      <addaction name="separator"/>
      <addaction name="settingsShowSubgroupsInComboBoxesAction"/>
      <addaction name="settingsShowSubgroupsInActivityPlanningAction"/>
+     <addaction name="separator"/>
+     <addaction name="studentsComboBoxesStyleAction"/>
     </widget>
     <widget class="QMenu" name="menuTimetables">
      <property name="title">
@@ -2582,6 +2584,11 @@
   <action name="timetableViewRoomsTimeHorizontalAction">
    <property name="text">
     <string>Time horizontal</string>
+   </property>
+  </action>
+  <action name="studentsComboBoxesStyleAction">
+   <property name="text">
+    <string>Students' combo boxes style</string>
    </property>
   </action>
  </widget>

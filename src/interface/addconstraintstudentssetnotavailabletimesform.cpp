@@ -33,7 +33,7 @@ AddConstraintStudentsSetNotAvailableTimesForm::AddConstraintStudentsSetNotAvaila
 
 	connect(addConstraintPushButton, SIGNAL(clicked()), this, SLOT(addCurrentConstraint()));
 	connect(closePushButton, SIGNAL(clicked()), this, SLOT(close()));
-	connect(pushButton8, SIGNAL(clicked()), this, SLOT(help()));
+	connect(helpPushButton, SIGNAL(clicked()), this, SLOT(help()));
 	connect(setAllAvailablePushButton, SIGNAL(clicked()), this, SLOT(setAllAvailable()));
 	connect(setAllNotAvailablePushButton, SIGNAL(clicked()), this, SLOT(setAllNotAvailable()));
 
@@ -65,19 +65,7 @@ void AddConstraintStudentsSetNotAvailableTimesForm::setAllNotAvailable()
 
 void AddConstraintStudentsSetNotAvailableTimesForm::updateStudentsSetComboBox()
 {
-	studentsComboBox->clear();	
-	for(int i=0; i<gt.rules.yearsList.size(); i++){
-		StudentsYear* sty=gt.rules.yearsList[i];
-		studentsComboBox->addItem(sty->name);
-		for(int j=0; j<sty->groupsList.size(); j++){
-			StudentsGroup* stg=sty->groupsList[j];
-			studentsComboBox->addItem(stg->name);
-			if(SHOW_SUBGROUPS_IN_COMBO_BOXES) for(int k=0; k<stg->subgroupsList.size(); k++){
-				StudentsSubgroup* sts=stg->subgroupsList[k];
-				studentsComboBox->addItem(sts->name);
-			}
-		}
-	}
+	populateStudentsComboBox(studentsComboBox);
 }
 
 void AddConstraintStudentsSetNotAvailableTimesForm::addCurrentConstraint()

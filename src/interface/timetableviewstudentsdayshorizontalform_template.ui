@@ -80,6 +80,9 @@
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_2">
            <item>
+            <widget class="QComboBox" name="shownComboBox"/>
+           </item>
+           <item>
             <widget class="QPushButton" name="helpPushButton">
              <property name="text">
               <string>Help</string>
@@ -103,7 +106,7 @@
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
       </property>
-      <widget class="QWidget" name="layoutWidget2">
+      <widget class="QWidget" name="">
        <layout class="QVBoxLayout" name="verticalLayout">
         <item>
          <widget class="QLabel" name="classNameTextLabel">

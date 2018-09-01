@@ -123,6 +123,8 @@ public slots:
 	void on_settingsShowToolTipsForConstraintsWithTablesAction_toggled();
 	
 	void on_timetablesToWriteOnDiskAction_triggered();
+	
+	void on_studentsComboBoxesStyleAction_triggered();
 	///
 
 	void showWarningForSubgroupsWithTheSameActivitiesToggled(bool checked);
