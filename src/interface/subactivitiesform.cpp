@@ -26,6 +26,7 @@
 
 #include "centerwidgetonscreen.h"
 #include "invisiblesubgrouphelper.h"
+#include "studentscomboboxhelper.h"
 
 #include <QString>
 #include <QMessageBox>
@@ -113,7 +114,7 @@ SubactivitiesForm::SubactivitiesForm(QWidget* parent, const QString& teacherName
 	}
 	activityTagsComboBox->setCurrentIndex(ciat);
 
-	int cist=populateStudentsComboBox(studentsComboBox, studentsSetName, true);
+	int cist=StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox, studentsSetName, true);
 	/*studentsComboBox->addItem("");
 	int cist=0;
 	int currentID=0;

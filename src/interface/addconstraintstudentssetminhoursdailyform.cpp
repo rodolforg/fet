@@ -24,6 +24,7 @@
 #include "timeconstraint.h"
 
 #include "fetguisettings.h"
+#include "studentscomboboxhelper.h"
 
 AddConstraintStudentsSetMinHoursDailyForm::AddConstraintStudentsSetMinHoursDailyForm(QWidget* parent): QDialog(parent)
 {
@@ -59,7 +60,7 @@ AddConstraintStudentsSetMinHoursDailyForm::~AddConstraintStudentsSetMinHoursDail
 
 void AddConstraintStudentsSetMinHoursDailyForm::updateStudentsSetComboBox()
 {
-	populateStudentsComboBox(studentsComboBox);
+	StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox);
 	/*studentsComboBox->clear();
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];

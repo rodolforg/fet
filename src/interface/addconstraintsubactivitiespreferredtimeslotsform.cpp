@@ -24,6 +24,7 @@
 #include "timeconstraint.h"
 
 #include "fetguisettings.h"
+#include "studentscomboboxhelper.h"
 
 AddConstraintSubactivitiesPreferredTimeSlotsForm::AddConstraintSubactivitiesPreferredTimeSlotsForm(QWidget* parent): QDialog(parent)
 {
@@ -85,7 +86,7 @@ void AddConstraintSubactivitiesPreferredTimeSlotsForm::updateTeachersComboBox(){
 }
 
 void AddConstraintSubactivitiesPreferredTimeSlotsForm::updateStudentsComboBox(){
-	populateStudentsComboBox(studentsComboBox, QString(""), true);
+	StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox, QString(""), true);
 	/*studentsComboBox->clear();
 	studentsComboBox->addItem("");
 	for(int i=0; i<gt.rules.yearsList.size(); i++){

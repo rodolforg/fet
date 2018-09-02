@@ -24,6 +24,7 @@
 #include "lockunlock.h"
 
 #include "fetguisettings.h"
+#include "studentscomboboxhelper.h"
 
 ModifyConstraintActivityPreferredStartingTimeForm::ModifyConstraintActivityPreferredStartingTimeForm(QWidget* parent, ConstraintActivityPreferredStartingTime* ctr): QDialog(parent)
 {
@@ -84,7 +85,7 @@ ModifyConstraintActivityPreferredStartingTimeForm::ModifyConstraintActivityPrefe
 	}
 	activityTagsComboBox->setCurrentIndex(0);
 
-	populateStudentsComboBox(studentsComboBox, QString(""), true);
+	StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox, QString(""), true);
 	/*studentsComboBox->addItem("");
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];

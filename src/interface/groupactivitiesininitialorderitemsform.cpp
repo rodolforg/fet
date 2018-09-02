@@ -32,6 +32,7 @@
 using namespace std;
 
 #include "fetguisettings.h"
+#include "studentscomboboxhelper.h"
 
 GroupActivitiesInInitialOrderItemsForm::GroupActivitiesInInitialOrderItemsForm(QWidget* parent): QDialog(parent)
 {
@@ -94,7 +95,7 @@ GroupActivitiesInInitialOrderItemsForm::GroupActivitiesInInitialOrderItemsForm(Q
 	}
 	activityTagsComboBox->setCurrentIndex(0);
 
-	populateStudentsComboBox(studentsComboBox, QString(""), true);
+	StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox, QString(""), true);
 	/*studentsComboBox->addItem("");
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];

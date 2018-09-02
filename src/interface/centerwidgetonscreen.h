@@ -24,8 +24,6 @@ File centerwidgetonscreen.h
 
 #include <QString>
 
-class QComboBox;
-
 class QWidget;
 class QTableWidget;
 
@@ -39,7 +37,5 @@ void saveFETDialogGeometry(QWidget* widget, const QString& alternativeName=QStri
 void restoreFETDialogGeometry(QWidget* widget, const QString& alternativeName=QString());
 
 void setStretchAvailabilityTableNicely(QTableWidget* notAllowedTimesTable);
-
-int populateStudentsComboBox(QComboBox* studentsComboBox, const QString& selectedStudentsSet=QString(""), bool addEmptyAtBeginning=false);
 
 #endif

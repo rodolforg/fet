@@ -24,6 +24,7 @@
 #include "timeconstraint.h"
 
 #include "fetguisettings.h"
+#include "studentscomboboxhelper.h"
 
 AddConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::AddConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm(QWidget* parent): QDialog(parent)
 {
@@ -40,7 +41,7 @@ AddConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::AddConstraintStudent
 	QSize tmp2=studentsComboBox->minimumSizeHint();
 	Q_UNUSED(tmp2);
 	
-	populateStudentsComboBox(studentsComboBox);
+	StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox);
 	/*studentsComboBox->clear();
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];

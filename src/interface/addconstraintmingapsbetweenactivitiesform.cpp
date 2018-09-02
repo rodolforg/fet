@@ -29,6 +29,7 @@
 #include <QScrollBar>
 
 #include "fetguisettings.h"
+#include "studentscomboboxhelper.h"
 
 AddConstraintMinGapsBetweenActivitiesForm::AddConstraintMinGapsBetweenActivitiesForm(QWidget* parent): QDialog(parent)
 {
@@ -89,7 +90,7 @@ AddConstraintMinGapsBetweenActivitiesForm::AddConstraintMinGapsBetweenActivities
 	}
 	activityTagsComboBox->setCurrentIndex(0);
 
-	populateStudentsComboBox(studentsComboBox, QString(""), true);
+	StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox, QString(""), true);
 	/*studentsComboBox->addItem("");
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];

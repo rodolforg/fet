@@ -506,6 +506,7 @@ SOURCES += \
 	interface/errorrenderer.cpp \
 	interface/fetguisettings.cpp \
 	interface/invisiblesubgrouphelper.cpp \
+	interface/studentscomboboxhelper.cpp \
 	\
 	interface/studentscomboboxesstyleform.cpp
 
@@ -1020,6 +1021,7 @@ HEADERS += \
 	interface/errorrenderer.h \
 	interface/fetguisettings.h \
 	interface/invisiblesubgrouphelper.h \
+	interface/studentscomboboxhelper.h \
 	\
 	interface/studentscomboboxesstyleform.h
 

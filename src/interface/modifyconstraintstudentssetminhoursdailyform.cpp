@@ -23,6 +23,7 @@
 #include "timeconstraint.h"
 
 #include "fetguisettings.h"
+#include "studentscomboboxhelper.h"
 
 ModifyConstraintStudentsSetMinHoursDailyForm::ModifyConstraintStudentsSetMinHoursDailyForm(QWidget* parent, ConstraintStudentsSetMinHoursDaily* ctr): QDialog(parent)
 {
@@ -65,7 +66,7 @@ ModifyConstraintStudentsSetMinHoursDailyForm::~ModifyConstraintStudentsSetMinHou
 }
 
 void ModifyConstraintStudentsSetMinHoursDailyForm::updateStudentsComboBox(){
-	int j=populateStudentsComboBox(studentsComboBox, this->_ctr->students, true);
+	int j=StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox, this->_ctr->students, true);
 	if(j<0)
 		InvisibleSubgroupHelper::showWarningForConstraintCase(this, this->_ctr->students);
 	studentsComboBox->setCurrentIndex(j);

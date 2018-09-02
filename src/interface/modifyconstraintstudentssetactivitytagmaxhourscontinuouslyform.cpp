@@ -23,6 +23,7 @@
 #include "timeconstraint.h"
 
 #include "fetguisettings.h"
+#include "studentscomboboxhelper.h"
 
 ModifyConstraintStudentsSetActivityTagMaxHoursContinuouslyForm::ModifyConstraintStudentsSetActivityTagMaxHoursContinuouslyForm(QWidget* parent, ConstraintStudentsSetActivityTagMaxHoursContinuously* ctr): QDialog(parent)
 {
@@ -59,7 +60,7 @@ ModifyConstraintStudentsSetActivityTagMaxHoursContinuouslyForm::~ModifyConstrain
 }
 
 void ModifyConstraintStudentsSetActivityTagMaxHoursContinuouslyForm::updateStudentsComboBox(){
-	int j=populateStudentsComboBox(studentsComboBox, this->_ctr->students, true);
+	int j=StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox, this->_ctr->students, true);
 	if(j<0)
 		InvisibleSubgroupHelper::showWarningForConstraintCase(this, this->_ctr->students);
 	studentsComboBox->setCurrentIndex(j);

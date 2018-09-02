@@ -26,6 +26,7 @@
 #include <QAbstractItemView>
 
 #include "fetguisettings.h"
+#include "studentscomboboxhelper.h"
 
 AddConstraintStudentsSetHomeRoomsForm::AddConstraintStudentsSetHomeRoomsForm(QWidget* parent): QDialog(parent)
 {
@@ -50,7 +51,7 @@ AddConstraintStudentsSetHomeRoomsForm::AddConstraintStudentsSetHomeRoomsForm(QWi
 
 	updateRoomsListWidget();
 
-	populateStudentsComboBox(studentsComboBox);
+	StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox);
 	/*studentsComboBox->clear();
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];

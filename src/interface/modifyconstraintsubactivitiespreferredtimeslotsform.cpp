@@ -23,6 +23,7 @@
 #include "timeconstraint.h"
 
 #include "fetguisettings.h"
+#include "studentscomboboxhelper.h"
 
 ModifyConstraintSubactivitiesPreferredTimeSlotsForm::ModifyConstraintSubactivitiesPreferredTimeSlotsForm(QWidget* parent, ConstraintSubactivitiesPreferredTimeSlots* ctr): QDialog(parent)
 {
@@ -101,7 +102,7 @@ void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::updateTeachersComboBox
 }
 
 void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::updateStudentsComboBox(){
-	int j=populateStudentsComboBox(studentsComboBox, this->_ctr->p_studentsName, true);
+	int j=StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox, this->_ctr->p_studentsName, true);
 	if(j<0)
 		InvisibleSubgroupHelper::showWarningForConstraintCase(this, this->_ctr->p_studentsName);
 	studentsComboBox->setCurrentIndex(j);

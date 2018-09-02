@@ -23,6 +23,7 @@
 #include "spaceconstraint.h"
 
 #include "fetguisettings.h"
+#include "studentscomboboxhelper.h"
 
 ModifyConstraintStudentsSetMinGapsBetweenBuildingChangesForm::ModifyConstraintStudentsSetMinGapsBetweenBuildingChangesForm(QWidget* parent, ConstraintStudentsSetMinGapsBetweenBuildingChanges* ctr): QDialog(parent)
 {
@@ -56,7 +57,7 @@ ModifyConstraintStudentsSetMinGapsBetweenBuildingChangesForm::~ModifyConstraintS
 }
 
 void ModifyConstraintStudentsSetMinGapsBetweenBuildingChangesForm::updateStudentsComboBox(){
-	int j=populateStudentsComboBox(studentsComboBox, this->_ctr->studentsName, true);
+	int j=StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox, this->_ctr->studentsName, true);
 	if(j<0)
 		InvisibleSubgroupHelper::showWarningForConstraintCase(this, this->_ctr->studentsName);
 	studentsComboBox->setCurrentIndex(j);

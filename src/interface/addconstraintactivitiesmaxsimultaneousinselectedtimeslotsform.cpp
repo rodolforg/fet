@@ -28,6 +28,7 @@
 #include <QScrollBar>
 
 #include "fetguisettings.h"
+#include "studentscomboboxhelper.h"
 
 AddConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::AddConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm(QWidget* parent): QDialog(parent)
 {
@@ -93,7 +94,7 @@ AddConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::AddConstraintActi
 	}
 	activityTagsComboBox->setCurrentIndex(0);
 
-	populateStudentsComboBox(studentsComboBox, QString(""), true);
+	StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox, QString(""), true);
 	/*studentsComboBox->addItem("");
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];

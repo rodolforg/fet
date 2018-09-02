@@ -28,6 +28,7 @@
 #include <QScrollBar>
 
 #include "fetguisettings.h"
+#include "studentscomboboxhelper.h"
 
 AddConstraintMinDaysBetweenActivitiesForm::AddConstraintMinDaysBetweenActivitiesForm(QWidget* parent): QDialog(parent)
 {
@@ -86,7 +87,7 @@ AddConstraintMinDaysBetweenActivitiesForm::AddConstraintMinDaysBetweenActivities
 	}
 	activityTagsComboBox->setCurrentIndex(0);
 
-	populateStudentsComboBox(studentsComboBox, QString(""), true);
+	StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox, QString(""), true);
 	/*studentsComboBox->addItem("");
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];

@@ -24,6 +24,7 @@
 #include "timeconstraint.h"
 
 #include "fetguisettings.h"
+#include "studentscomboboxhelper.h"
 
 AddConstraintStudentsSetMaxGapsPerDayForm::AddConstraintStudentsSetMaxGapsPerDayForm(QWidget* parent): QDialog(parent)
 {
@@ -56,7 +57,7 @@ AddConstraintStudentsSetMaxGapsPerDayForm::~AddConstraintStudentsSetMaxGapsPerDa
 
 void AddConstraintStudentsSetMaxGapsPerDayForm::updateStudentsSetComboBox()
 {
-	populateStudentsComboBox(studentsComboBox);
+	StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox);
 	/*studentsComboBox->clear();
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];

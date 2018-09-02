@@ -24,6 +24,7 @@
 #include "timeconstraint.h"
 
 #include "fetguisettings.h"
+#include "studentscomboboxhelper.h"
 
 AddConstraintStudentsSetNotAvailableTimesForm::AddConstraintStudentsSetNotAvailableTimesForm(QWidget* parent): QDialog(parent)
 {
@@ -65,7 +66,7 @@ void AddConstraintStudentsSetNotAvailableTimesForm::setAllNotAvailable()
 
 void AddConstraintStudentsSetNotAvailableTimesForm::updateStudentsSetComboBox()
 {
-	populateStudentsComboBox(studentsComboBox);
+	StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox);
 
 	/*studentsComboBox->clear();
 	for(int i=0; i<gt.rules.yearsList.size(); i++){

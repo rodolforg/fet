@@ -23,6 +23,7 @@
 #include "timeconstraint.h"
 
 #include "fetguisettings.h"
+#include "studentscomboboxhelper.h"
 
 ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm(QWidget* parent, ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour* ctr): QDialog(parent)
 {
@@ -43,7 +44,7 @@ ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::ModifyConstraintS
 	
 	weightLineEdit->setText(CustomFETString::number(ctr->weightPercentage));
 
-	int j=populateStudentsComboBox(studentsComboBox, this->_ctr->students);
+	int j=StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox, this->_ctr->students);
 	/*studentsComboBox->clear();
 	int i=0, j=-1;
 	for(int m=0; m<gt.rules.yearsList.size(); m++){

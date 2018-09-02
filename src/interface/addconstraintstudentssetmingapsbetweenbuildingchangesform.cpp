@@ -24,6 +24,7 @@
 #include "spaceconstraint.h"
 
 #include "fetguisettings.h"
+#include "studentscomboboxhelper.h"
 
 AddConstraintStudentsSetMinGapsBetweenBuildingChangesForm::AddConstraintStudentsSetMinGapsBetweenBuildingChangesForm(QWidget* parent): QDialog(parent)
 {
@@ -54,7 +55,7 @@ AddConstraintStudentsSetMinGapsBetweenBuildingChangesForm::~AddConstraintStudent
 
 void AddConstraintStudentsSetMinGapsBetweenBuildingChangesForm::updateStudentsSetComboBox()
 {
-	populateStudentsComboBox(studentsComboBox);
+	StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox);
 	/*studentsComboBox->clear();
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];

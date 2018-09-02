@@ -28,6 +28,7 @@
 #include <QScrollBar>
 
 #include "fetguisettings.h"
+#include "studentscomboboxhelper.h"
 
 ModifyConstraintActivitiesSameStartingTimeForm::ModifyConstraintActivitiesSameStartingTimeForm(QWidget* parent, ConstraintActivitiesSameStartingTime* ctr): QDialog(parent)
 {
@@ -103,7 +104,7 @@ ModifyConstraintActivitiesSameStartingTimeForm::ModifyConstraintActivitiesSameSt
 	}
 	activityTagsComboBox->setCurrentIndex(0);
 
-	populateStudentsComboBox(studentsComboBox, QString(""), true);
+	StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox, QString(""), true);
 	/*studentsComboBox->addItem("");
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];

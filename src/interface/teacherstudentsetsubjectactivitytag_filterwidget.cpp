@@ -3,6 +3,7 @@
 #include <QDebug>
 
 #include "fetguisettings.h"
+#include "studentscomboboxhelper.h"
 
 #include "centerwidgetonscreen.h"
 
@@ -206,7 +207,7 @@ void TeacherStudentSetSubjectActivityTag_FilterWidget::populateTeachers(const Ru
 
 void TeacherStudentSetSubjectActivityTag_FilterWidget::populateStudentsSets(const Rules &rules)
 {
-	populateStudentsComboBox(ui->studentsComboBox, QString(""), true);
+	StudentsComboBoxHelper::populateStudentsComboBox(ui->studentsComboBox, QString(""), true);
 }
 
 void TeacherStudentSetSubjectActivityTag_FilterWidget::populateSubjects(const Rules &rules)
