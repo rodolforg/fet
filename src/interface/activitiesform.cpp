@@ -410,7 +410,11 @@ void ActivitiesForm::addActivity()
 	int nInitialActs=gt.rules.activitiesList.count();
 
 	QString tn=teachersComboBox->currentText();
+	if (teachersComboBox->currentIndex() == noneItemIndex)
+		tn.clear();
 	QString stn=studentsComboBox->currentText();
+	if (studentsComboBox->currentIndex() == noneItemIndex)
+		stn.clear();
 	QString sn=subjectsComboBox->currentText();
 	QString atn=activityTagsComboBox->currentText();
 	
