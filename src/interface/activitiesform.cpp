@@ -133,31 +133,6 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 	if (cist > 0)
 		cist++;
 	
-	/*studentsComboBox->addItem("");
-	studentsComboBox->addItem(" [[ no students ]]");
-	int cist=0;
-	int currentID=0;
-	for(int i=0; i<gt.rules.yearsList.size(); i++){
-		const StudentsYear* sty=gt.rules.yearsList[i];
-		studentsComboBox->addItem(sty->name);
-		currentID++;
-		if(sty->name==studentsSetName)
-			cist=currentID;
-		for(int j=0; j<sty->groupsList.size(); j++){
-			const StudentsGroup* stg=sty->groupsList[j];
-			studentsComboBox->addItem(stg->name);
-			currentID++;
-			if(stg->name==studentsSetName)
-				cist=currentID;
-			if(SHOW_SUBGROUPS_IN_COMBO_BOXES) for(int k=0; k<stg->subgroupsList.size(); k++){
-				const StudentsSubgroup* sts=stg->subgroupsList[k];
-				studentsComboBox->addItem(sts->name);
-				currentID++;
-				if(sts->name==studentsSetName)
-					cist=currentID;
-			}
-		}
-	}*/
 	if(studentsSetName==""){
 		assert(cist==0);
 		studentsComboBox->setCurrentIndex(0);
@@ -186,28 +161,6 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 			this->studentsFilterChanged();
 		}
 	}
-
-	/*studentsComboBox->setCurrentIndex(cist);
-	
-	if(studentsSetName!=""){
-		if(cist==0){
-			InvisibleSubgroupHelper::showWarningForActivityCase(parent, studentsSetName);
-
-			showedStudents.clear();
-			showedStudents.insert("");
-	
-			filterChanged();
-		}
-		else{
-			this->studentsFilterChanged();
-		}
-	}
-	else{
-		showedStudents.clear();
-		showedStudents.insert("");
-	
-		filterChanged();
-	}*/
 }
 
 ActivitiesForm::~ActivitiesForm()
