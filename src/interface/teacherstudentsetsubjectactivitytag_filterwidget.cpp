@@ -4,6 +4,8 @@
 
 #include "fetguisettings.h"
 
+#include "centerwidgetonscreen.h"
+
 TeacherStudentSetSubjectActivityTag_FilterWidget::TeacherStudentSetSubjectActivityTag_FilterWidget(const Rules &rules) :
 	QWidget(),
 	ui(new Ui::TeacherStudentSetSubjectActivityTag_FilterWidget)
@@ -204,19 +206,7 @@ void TeacherStudentSetSubjectActivityTag_FilterWidget::populateTeachers(const Ru
 
 void TeacherStudentSetSubjectActivityTag_FilterWidget::populateStudentsSets(const Rules &rules)
 {
-	ui->studentsComboBox->addItem("");
-	for(int i=0; i<rules.yearsList.size(); i++){
-		StudentsYear* sty=rules.yearsList[i];
-		ui->studentsComboBox->addItem(sty->name);
-		for(int j=0; j<sty->groupsList.size(); j++){
-			StudentsGroup* stg=sty->groupsList[j];
-			ui->studentsComboBox->addItem(stg->name);
-			if(SHOW_SUBGROUPS_IN_COMBO_BOXES) for(int k=0; k<stg->subgroupsList.size(); k++){
-				StudentsSubgroup* sts=stg->subgroupsList[k];
-				ui->studentsComboBox->addItem(sts->name);
-			}
-		}
-	}
+	populateStudentsComboBox(ui->studentsComboBox, QString(""), true);
 }
 
 void TeacherStudentSetSubjectActivityTag_FilterWidget::populateSubjects(const Rules &rules)

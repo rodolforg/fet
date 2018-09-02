@@ -66,7 +66,8 @@ void AddConstraintActivitiesEndStudentsDayForm::updateTeachersComboBox(){
 }
 
 void AddConstraintActivitiesEndStudentsDayForm::updateStudentsComboBox(){
-	studentsComboBox->clear();
+	populateStudentsComboBox(studentsComboBox, QString(""), true);
+	/*studentsComboBox->clear();
 	studentsComboBox->addItem("");
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];
@@ -79,7 +80,7 @@ void AddConstraintActivitiesEndStudentsDayForm::updateStudentsComboBox(){
 				studentsComboBox->addItem(sts->name);
 			}
 		}
-	}
+	}*/
 }
 
 void AddConstraintActivitiesEndStudentsDayForm::updateSubjectsComboBox(){

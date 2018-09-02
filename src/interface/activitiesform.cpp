@@ -127,10 +127,13 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 	}
 	activityTagsComboBox->setCurrentIndex(ciat);
 
-	studentsComboBox->addItem("");
-	studentsComboBox->addItem(" [[ no students ]]");
 	int cist=populateStudentsComboBox(studentsComboBox, studentsSetName, true);
+	studentsComboBox->insertItem(1, " [[ no students ]]");
+	if (cist > 0)
+		cist++;
+	
 	/*studentsComboBox->addItem("");
+	studentsComboBox->addItem(" [[ no students ]]");
 	int cist=0;
 	int currentID=0;
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
@@ -154,7 +157,36 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 			}
 		}
 	}*/
-	studentsComboBox->setCurrentIndex(cist);
+	if(studentsSetName==""){
+		assert(cist==0);
+		studentsComboBox->setCurrentIndex(0);
+
+		showedStudents.clear();
+		showedStudents.insert("");
+	
+		filterChanged();
+	}
+	else{
+		assert(cist!=0);
+
+		if(cist==-1){
+			studentsComboBox->setCurrentIndex(0);
+
+			InvisibleSubgroupHelper::showWarningForActivityCase(parent, studentsSetName);
+
+			showedStudents.clear();
+			showedStudents.insert("");
+	
+			filterChanged();
+		}
+		else{
+			studentsComboBox->setCurrentIndex(cist);
+
+			this->studentsFilterChanged();
+		}
+	}
+
+	/*studentsComboBox->setCurrentIndex(cist);
 	
 	if(studentsSetName!=""){
 		if(cist==0){
@@ -174,7 +206,7 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 		showedStudents.insert("");
 	
 		filterChanged();
-	}
+	}*/
 }
 
 ActivitiesForm::~ActivitiesForm()

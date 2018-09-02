@@ -40,7 +40,8 @@ AddConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::AddConstraintStudent
 	QSize tmp2=studentsComboBox->minimumSizeHint();
 	Q_UNUSED(tmp2);
 	
-	studentsComboBox->clear();	
+	populateStudentsComboBox(studentsComboBox);
+	/*studentsComboBox->clear();
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];
 		studentsComboBox->addItem(sty->name);
@@ -52,7 +53,7 @@ AddConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::AddConstraintStudent
 				studentsComboBox->addItem(sts->name);
 			}
 		}
-	}
+	}*/
 
 	maxBeginningsSpinBox->setMinimum(0);
 	maxBeginningsSpinBox->setMaximum(gt.rules.nDaysPerWeek);

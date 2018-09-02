@@ -101,23 +101,10 @@ void ModifyConstraintSubactivitiesPreferredStartingTimesForm::updateTeachersComb
 }
 
 void ModifyConstraintSubactivitiesPreferredStartingTimesForm::updateStudentsComboBox(){
-	studentsComboBox->clear();
-	studentsComboBox->addItem("");
-	for(int i=0; i<gt.rules.yearsList.size(); i++){
-		StudentsYear* sty=gt.rules.yearsList[i];
-		studentsComboBox->addItem(sty->name);
-		for(int j=0; j<sty->groupsList.size(); j++){
-			StudentsGroup* stg=sty->groupsList[j];
-			studentsComboBox->addItem(stg->name);
-			if(SHOW_SUBGROUPS_IN_COMBO_BOXES) for(int k=0; k<stg->subgroupsList.size(); k++){
-				StudentsSubgroup* sts=stg->subgroupsList[k];
-				studentsComboBox->addItem(sts->name);
-			}
-		}
-	}
-	if (studentsComboBox->findText(this->_ctr->studentsName) < 0)
+	int j=populateStudentsComboBox(studentsComboBox, this->_ctr->studentsName, true);
+	if(j<0)
 		InvisibleSubgroupHelper::showWarningForConstraintCase(this, this->_ctr->studentsName);
-	studentsComboBox->setCurrentText(this->_ctr->studentsName);
+	studentsComboBox->setCurrentIndex(j);
 }
 
 void ModifyConstraintSubactivitiesPreferredStartingTimesForm::updateSubjectsComboBox(){

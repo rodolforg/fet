@@ -54,7 +54,8 @@ AddConstraintStudentsSetMaxBuildingChangesPerDayForm::~AddConstraintStudentsSetM
 
 void AddConstraintStudentsSetMaxBuildingChangesPerDayForm::updateStudentsSetComboBox()
 {
-	studentsComboBox->clear();	
+	populateStudentsComboBox(studentsComboBox);
+	/*studentsComboBox->clear();
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];
 		studentsComboBox->addItem(sty->name);
@@ -66,7 +67,7 @@ void AddConstraintStudentsSetMaxBuildingChangesPerDayForm::updateStudentsSetComb
 				studentsComboBox->addItem(sts->name);
 			}
 		}
-	}
+	}*/
 
 	constraintChanged();
 }

@@ -85,7 +85,8 @@ void AddConstraintSubactivitiesPreferredStartingTimesForm::updateTeachersComboBo
 }
 
 void AddConstraintSubactivitiesPreferredStartingTimesForm::updateStudentsComboBox(){
-	studentsComboBox->clear();
+	populateStudentsComboBox(studentsComboBox, QString(""), true);
+	/*studentsComboBox->clear();
 	studentsComboBox->addItem("");
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];
@@ -98,7 +99,7 @@ void AddConstraintSubactivitiesPreferredStartingTimesForm::updateStudentsComboBo
 				studentsComboBox->addItem(sts->name);
 			}
 		}
-	}
+	}*/
 }
 
 void AddConstraintSubactivitiesPreferredStartingTimesForm::updateSubjectsComboBox(){
