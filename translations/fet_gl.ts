@@ -34406,66 +34406,66 @@ Deteña a simulación antes disto.</translation>
 <context>
     <name>FetTranslate</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="294"/>
-        <location filename="../src/interface/fet.cpp" line="853"/>
+        <location filename="../src/interface/fet.cpp" line="295"/>
+        <location filename="../src/interface/fet.cpp" line="854"/>
         <source>FET warning</source>
         <translation>FET advertencia</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="294"/>
+        <location filename="../src/interface/fet.cpp" line="295"/>
         <source>Output directory %1 does not exist and cannot be created - output directory will be made the default value %2</source>
         <translation>O directorio de saída %1 non existe e non se puido crear - será o directorio por omisión %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="814"/>
-        <location filename="../src/interface/fet.cpp" line="823"/>
+        <location filename="../src/interface/fet.cpp" line="815"/>
+        <location filename="../src/interface/fet.cpp" line="824"/>
         <source>FET critical</source>
         <translation>FET crítico</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="853"/>
+        <location filename="../src/interface/fet.cpp" line="854"/>
         <source>To start FET in interface mode, please do not give any command-line parameters to the FET executable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1193"/>
+        <location filename="../src/interface/fet.cpp" line="1198"/>
         <source>This is the list of max placed activities, chronologically. If FET could reach maximum n-th activity, look at the n+1-st activity in the initial order of the activities</source>
         <translation>Esta é a lista de máximo de actividades localizadas, cronoloxicamente. Se FET acadara como máximo a actividade n, mire na n+1 na orde inicial das actividades</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1487"/>
+        <location filename="../src/interface/fet.cpp" line="1492"/>
         <source>FET managed to schedule correctly the first %1 most difficult activities. You can see initial order of placing the activities in the corresponding output file. The activity which might cause problems might be the next activity in the initial order of evaluation. This activity is listed below:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1494"/>
-        <location filename="../src/interface/fet.cpp" line="1514"/>
+        <location filename="../src/interface/fet.cpp" line="1499"/>
+        <location filename="../src/interface/fet.cpp" line="1519"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
         <translation>Id: %1 (%2)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1499"/>
+        <location filename="../src/interface/fet.cpp" line="1504"/>
         <source>Difficult activity cannot be computed - please report possible bug</source>
         <translation>A dificultade das actividades non pode ser avaliada - informe dun posible erro</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1503"/>
+        <location filename="../src/interface/fet.cpp" line="1508"/>
         <source>Here are the placed activities which lead to an inconsistency, in order from the first one to the last (the last one FET failed to schedule and the last ones are most likely impossible):</source>
         <translation>Aquí se indican actividades que poderían resultar inconsistentes, en orde de primeira a última (a última na que FET errou ao planificar semella ser imposible):</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1510"/>
+        <location filename="../src/interface/fet.cpp" line="1515"/>
         <source>No: %1</source>
         <translation>Nº: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="814"/>
+        <location filename="../src/interface/fet.cpp" line="815"/>
         <source>Cannot create or use %1 directory (where the results should be stored) - you can continue operation, but you might not be able to work with FET. Maybe you can try to change the output directory from the &apos;Settings&apos; menu. If this is a bug - please report it.</source>
         <translation>Non se pode crear ou usar o directorio %1 (onde se almacenan os resultados) - pode continuar a operación, pero podería non ser capaz de traballar con FET. Podería tentar cambiar o directorio de saída dende o menú &apos;Opcións&apos;. Se isto é un erro - por favor informe do mesmo.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="823"/>
+        <location filename="../src/interface/fet.cpp" line="824"/>
         <source>You don&apos;t have write permissions in the output directory (FET cannot open or create file %1) - you might not be able to work correctly with FET. Maybe you can try to change the output directory from the &apos;Settings&apos; menu. If this is a bug - please report it.</source>
         <translation>Non ten permisos no directorio de saída (FET non pode abrir ou crear o arquivo %1) - podería non ser capaz de traballar correctamente con FET. Podería tentar cambiar o directorio de saída dende o menú &apos;Opcións&apos;. Se isto é un erro - por favor informe do mesmo.</translation>
     </message>
@@ -47664,52 +47664,52 @@ Nota: as horas non dispoñibles e as pausas dun profesor non se contan como ocos
 <context>
     <name>QDialogButtonBox</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="716"/>
+        <location filename="../src/interface/fet.cpp" line="717"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Vale</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="718"/>
+        <location filename="../src/interface/fet.cpp" line="719"/>
         <source>OK</source>
         <translation>Vale</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="721"/>
+        <location filename="../src/interface/fet.cpp" line="722"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Cancelar</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="723"/>
+        <location filename="../src/interface/fet.cpp" line="724"/>
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="726"/>
+        <location filename="../src/interface/fet.cpp" line="727"/>
         <source>&amp;Yes</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Si</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="728"/>
+        <location filename="../src/interface/fet.cpp" line="729"/>
         <source>Yes to &amp;All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>Si a &amp;todo</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="732"/>
+        <location filename="../src/interface/fet.cpp" line="733"/>
         <source>N&amp;o to All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>Non a to&amp;do</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="735"/>
+        <location filename="../src/interface/fet.cpp" line="736"/>
         <source>Help</source>
         <translation type="unfinished">Axuda</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="730"/>
+        <location filename="../src/interface/fet.cpp" line="731"/>
         <source>&amp;No</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Non</translation>
@@ -47718,13 +47718,13 @@ Nota: as horas non dispoñibles e as pausas dun profesor non se contan como ocos
 <context>
     <name>QGnomeTheme</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="761"/>
+        <location filename="../src/interface/fet.cpp" line="762"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation type="unfinished">&amp;Vale</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="763"/>
+        <location filename="../src/interface/fet.cpp" line="764"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation type="unfinished">&amp;Cancelar</translation>
@@ -47733,53 +47733,53 @@ Nota: as horas non dispoñibles e as pausas dun profesor non se contan como ocos
 <context>
     <name>QPlatformTheme</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="739"/>
+        <location filename="../src/interface/fet.cpp" line="740"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation type="unfinished">&amp;Vale</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="741"/>
+        <location filename="../src/interface/fet.cpp" line="742"/>
         <source>OK</source>
         <translation type="unfinished">Vale</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="744"/>
+        <location filename="../src/interface/fet.cpp" line="745"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation type="unfinished">&amp;Cancelar</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="746"/>
+        <location filename="../src/interface/fet.cpp" line="747"/>
         <source>Cancel</source>
         <translation type="unfinished">Cancelar</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="749"/>
+        <location filename="../src/interface/fet.cpp" line="750"/>
         <source>&amp;Yes</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation type="unfinished">&amp;Si</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="751"/>
+        <location filename="../src/interface/fet.cpp" line="752"/>
         <source>Yes to &amp;All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation type="unfinished">Si a &amp;todo</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="753"/>
+        <location filename="../src/interface/fet.cpp" line="754"/>
         <source>&amp;No</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation type="unfinished">&amp;Non</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="755"/>
+        <location filename="../src/interface/fet.cpp" line="756"/>
         <source>N&amp;o to All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation type="unfinished">Non a to&amp;do</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="758"/>
+        <location filename="../src/interface/fet.cpp" line="759"/>
         <source>Help</source>
         <translation type="unfinished">Axuda</translation>
     </message>
@@ -53522,17 +53522,17 @@ Bottom: %4</source>
         <translation>sennome</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1380"/>
+        <location filename="../src/interface/fet.cpp" line="1385"/>
         <source>Please check the constraints related to the activity below, which might be impossible to schedule:</source>
         <translation type="unfinished">Por favor, comprobe as regras relacionadas coa actividade seguinte, xa que podería ser imposible de planificar:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1386"/>
+        <location filename="../src/interface/fet.cpp" line="1391"/>
         <source>No: %1</source>
         <translation type="unfinished">Nº: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1390"/>
+        <location filename="../src/interface/fet.cpp" line="1395"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
         <translation type="unfinished">Id: %1 (%2)</translation>

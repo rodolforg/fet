@@ -840,15 +840,13 @@ there won&apos;t be removed an additional number of %1 activities
         <location filename="../src/interface/activityplanningform.cpp" line="888"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1274"/>
         <source>Delete %1 activities of students set %2?</source>
-        <translatorcomment>Cancella %1 attività degli studenti %2?</translatorcomment>
-        <translation></translation>
+        <translation>Cancella %1 attività degli studenti %2?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="922"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1240"/>
         <source>Delete %1 activities of subject %2?</source>
-        <translatorcomment>Cancella %1 attività della materia %2?</translatorcomment>
-        <translation></translation>
+        <translation>Cancella %1 attività della materia %2?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1778"/>
@@ -864,8 +862,7 @@ there won&apos;t be removed an additional number of %1 activities
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2911"/>
         <source>Are you absolutely sure you want to remove ALL activities and related constraints from your data?</source>
-        <translatorcomment>Sei assolutamente certo divoler cancellare TUTTE le attività e i relativi vincoli dai tuoi dati?</translatorcomment>
-        <translation></translation>
+        <translation>Sei assolutamente certo divoler cancellare TUTTE le attività e i relativi vincoli dai tuoi dati?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="901"/>
@@ -10778,8 +10775,7 @@ Notare che indisponibilità di insegnanti e interruzioni non sono considerate or
     <message>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="95"/>
         <source>Note: the number of students for the added group will be the number of students of the already existing group (you can modify the number of students in the modify group dialog).</source>
-        <translatorcomment>Nota: il numero di studenti per il gruppo aggiunto sarà il numero di studenti del gruppo già esistente (puoi modificare il numero di studenti nella finestra di dialogo per la modifica dei gruppi).</translatorcomment>
-        <translation></translation>
+        <translation>Nota: il numero di studenti per il gruppo aggiunto sarà il numero di studenti del gruppo già esistente (puoi modificare il numero di studenti nella finestra di dialogo per la modifica dei gruppi).</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="97"/>
@@ -10823,7 +10819,7 @@ Notare che indisponibilità di insegnanti e interruzioni non sono considerate or
     <message>
         <location filename="../src/interface/addstudentsgroupform_template.ui" line="60"/>
         <source>Number of students</source>
-        <translation></translation>
+        <translation type="unfinished">Numero di studenti</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform_template.ui" line="22"/>
@@ -13351,7 +13347,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10984"/>
         <source>All subjects</source>
-        <translation></translation>
+        <translation type="unfinished">Tutte le materie</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10988"/>
@@ -14022,7 +14018,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12204"/>
         <source>Conflicts factor increase=%1</source>
-        <translation></translation>
+        <translation type="unfinished">Incremento dei conflitti= %1</translation>
     </message>
 </context>
 <context>
@@ -15245,7 +15241,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8956"/>
         <source>Hour=%1</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -26769,8 +26765,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14216"/>
         <source>Constraint is:</source>
-        <translatorcomment>Il vincolo è:</translatorcomment>
-        <translation></translation>
+        <translation>Il vincolo è:</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14217"/>
@@ -34453,66 +34448,66 @@ Se hai un sottogruppo con poche ore di lavoro alla settimana significa che hai i
 <context>
     <name>FetTranslate</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="294"/>
-        <location filename="../src/interface/fet.cpp" line="853"/>
+        <location filename="../src/interface/fet.cpp" line="295"/>
+        <location filename="../src/interface/fet.cpp" line="854"/>
         <source>FET warning</source>
         <translation>FET - Avvertenza</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="294"/>
+        <location filename="../src/interface/fet.cpp" line="295"/>
         <source>Output directory %1 does not exist and cannot be created - output directory will be made the default value %2</source>
         <translation>La cartella di output %1 non esiste e non può essere creata - la cartella di output sarà quella di default %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="814"/>
-        <location filename="../src/interface/fet.cpp" line="823"/>
+        <location filename="../src/interface/fet.cpp" line="815"/>
+        <location filename="../src/interface/fet.cpp" line="824"/>
         <source>FET critical</source>
         <translation>FET - criticità</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="853"/>
+        <location filename="../src/interface/fet.cpp" line="854"/>
         <source>To start FET in interface mode, please do not give any command-line parameters to the FET executable</source>
         <translation>Per avviare FET in moldalità interattiva non fornire alcun parametro di linea di comando all&apos;eseguibile di FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1193"/>
+        <location filename="../src/interface/fet.cpp" line="1198"/>
         <source>This is the list of max placed activities, chronologically. If FET could reach maximum n-th activity, look at the n+1-st activity in the initial order of the activities</source>
         <translation>Questa è la lista del massimo numero di attività piazzate, in ordine cronologico. Se FET ha raggiunto al massimo la ennesima attività, esamina l&apos;attività numero enne+1 nell&apos;ordine iniziale delle attività</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1487"/>
+        <location filename="../src/interface/fet.cpp" line="1492"/>
         <source>FET managed to schedule correctly the first %1 most difficult activities. You can see initial order of placing the activities in the corresponding output file. The activity which might cause problems might be the next activity in the initial order of evaluation. This activity is listed below:</source>
         <translation>FET ha organizzato di ordinare correttamente le prime %1 attività più difficili. Si può osservare l&apos;ordine iniziale di piazzamento delle attività nella finestra di generazione. Le attività che poptrebbero creare problemi potrebbero essere le attività successive nell&apos;iniziale ordine di valutazione. Questa attività è indicata di seguito:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1494"/>
-        <location filename="../src/interface/fet.cpp" line="1514"/>
+        <location filename="../src/interface/fet.cpp" line="1499"/>
+        <location filename="../src/interface/fet.cpp" line="1519"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
         <translation>Id:%1 (%2)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1499"/>
+        <location filename="../src/interface/fet.cpp" line="1504"/>
         <source>Difficult activity cannot be computed - please report possible bug</source>
         <translation>Una attività difficile non riesce ad essere sistemata - per favore riporta un possibile bug all&apos;autore</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1503"/>
+        <location filename="../src/interface/fet.cpp" line="1508"/>
         <source>Here are the placed activities which lead to an inconsistency, in order from the first one to the last (the last one FET failed to schedule and the last ones are most likely impossible):</source>
         <translation>Qui si trovano attività che portano ad una incoerenza, in ordine dalla prima all&apos;ultima (FET ha fallito la sistemazione dell&apos;ultima e il gruppo delle ultime è, probabilmente, impossibile da collocare): </translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1510"/>
+        <location filename="../src/interface/fet.cpp" line="1515"/>
         <source>No: %1</source>
         <translation>No: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="814"/>
+        <location filename="../src/interface/fet.cpp" line="815"/>
         <source>Cannot create or use %1 directory (where the results should be stored) - you can continue operation, but you might not be able to work with FET. Maybe you can try to change the output directory from the &apos;Settings&apos; menu. If this is a bug - please report it.</source>
         <translation>Impossibile creare o usare la cartella %1 (destinazione dei file risultanti) - puoi continuare l&apos;elaborazione, ma probabilmente non riuscirai a lavorare correttamente con FET. Prova a cambiare la cartella di output dal menù Opzioni. Se hai incontrato un bug, per favore avvisa dell&apos;errore.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="823"/>
+        <location filename="../src/interface/fet.cpp" line="824"/>
         <source>You don&apos;t have write permissions in the output directory (FET cannot open or create file %1) - you might not be able to work correctly with FET. Maybe you can try to change the output directory from the &apos;Settings&apos; menu. If this is a bug - please report it.</source>
         <translation>Non hai privilegi di scrittura nella cartella di output (FET non può aprire o creare il file %1) - potresti non riuscire a lavorare correttamente con FET. Prova a cambiare la cartella di output dal menù Opzioni. Se hai incontrato un bug, per favore avvisa.</translation>
     </message>
@@ -35067,8 +35062,7 @@ Modifica i tuoi dati secondo le istruzioni e riprova.</translation>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2401"/>
         <source>For subgroup %1 you have too little activities to respect the constraint(s) of type min hours daily (the constraint(s) do not allow empty days). Please modify your data accordingly and try again.</source>
-        <translatorcomment>Per il sottogruppo %1 si hanno troppo poche attività per poter rispettare i vincoli del tipo Numero minimo di ore al giorno (i vincoli non permettono di avere giorni vuoti). Correggi i dati e riprova.</translatorcomment>
-        <translation></translation>
+        <translation>Per il sottogruppo %1 si hanno troppo poche attività per poter rispettare i vincoli del tipo Numero minimo di ore al giorno (i vincoli non permettono di avere giorni vuoti). Correggi i dati e riprova.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2420"/>
@@ -35226,8 +35220,7 @@ Modifica i tuoi dati secondo le istruzioni e riprova.</translation>
         <location filename="../src/engine/generate_pre.cpp" line="5994"/>
         <location filename="../src/engine/generate_pre.cpp" line="7203"/>
         <source>Each time you create a new file, it contains an automatically added constraint of this type.</source>
-        <translatorcomment>Ogni volta che crei un nuovo file, esso conterrà un vincolo di questo tipo aggiunto automaticamente.</translatorcomment>
-        <translation></translation>
+        <translation>Ogni volta che crei un nuovo file, esso conterrà un vincolo di questo tipo aggiunto automaticamente.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="6797"/>
@@ -35352,8 +35345,7 @@ Modifica i tuoi dati secondo le istruzioni e riprova.</translation>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="931"/>
         <source>Your data contains constraints students max gaps per day and/or activity tag max hours daily.</source>
-        <translatorcomment>I tuoi dati contengono vincoli N massimo di ore buche al giorno per studenti e / o di ore al giorno di attività con chiave.</translatorcomment>
-        <translation></translation>
+        <translation>I tuoi dati contengono vincoli N massimo di ore buche al giorno per studenti e / o di ore al giorno di attività con chiave.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="935"/>
@@ -35374,7 +35366,7 @@ Modifica i tuoi dati secondo le istruzioni e riprova.</translation>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="537"/>
         <source>There are %1 subgroups (from the total of %2 subgroups) which have the same activities as other subgroups. They are listed below. If the constraints relating to these subgroups are also the same, you can make the generation (directly proportional) faster by completely removing the subgroups which are equivalent to other subgroups (leaving only one representant for each equivalence set). (The generation algorithm will not completely remove the equivalent subgroups automatically.)</source>
-        <translation>Ci sono%1 sottogruppi (dal totale di %2 sottogruppi) che hanno le stesse attività di altri sottogruppi. Essi sono elencati di seguito. Se i vincoli relativi a tali sottogruppi sono anche gli stessi, è possibile effettuare la generazione (direttamente proporzionale) più veloce , eliminando completamente i sottogruppi equivalenti ad altri sottogruppi (lasciando solo un representant per ogni set equivalente) . ( L&apos;algoritmo di generazione non rimuoverà completamente i sottogruppi equivalenti automaticamente)</translation>
+        <translation>Ci sono %1 sottogruppi (dal totale di %2 sottogruppi) che hanno le stesse attività di altri sottogruppi. Essi sono elencati di seguito. Se i vincoli relativi a tali sottogruppi sono anche gli stessi, è possibile effettuare la generazione (direttamente proporzionale) più veloce , eliminando completamente i sottogruppi equivalenti ad altri sottogruppi (lasciando solo un representant per ogni set equivalente) . ( L&apos;algoritmo di generazione non rimuoverà completamente i sottogruppi equivalenti automaticamente)</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="545"/>
@@ -35600,8 +35592,7 @@ Modifica i dati e prova di nuovo</translation>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9497"/>
         <source>End - the order of activities (id-s)</source>
-        <translatorcomment>Fine - ordine delle attività (id)</translatorcomment>
-        <translation></translation>
+        <translation>Fine - ordine delle attività (id)</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="8047"/>
@@ -47597,53 +47588,53 @@ Nota: insegnanti non disponibili e interruzioni non sono ore buche.</translation
 <context>
     <name>QDialogButtonBox</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="716"/>
+        <location filename="../src/interface/fet.cpp" line="717"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;OK</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="718"/>
+        <location filename="../src/interface/fet.cpp" line="719"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="721"/>
+        <location filename="../src/interface/fet.cpp" line="722"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Annulla</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="723"/>
+        <location filename="../src/interface/fet.cpp" line="724"/>
         <source>Cancel</source>
         <translation>Annulla</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="726"/>
+        <location filename="../src/interface/fet.cpp" line="727"/>
         <source>&amp;Yes</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Si</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="728"/>
+        <location filename="../src/interface/fet.cpp" line="729"/>
         <source>Yes to &amp;All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>Si s&amp;empre</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="730"/>
+        <location filename="../src/interface/fet.cpp" line="731"/>
         <source>&amp;No</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;No</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="732"/>
+        <location filename="../src/interface/fet.cpp" line="733"/>
         <source>N&amp;o to All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>No se&amp;mpre</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="735"/>
+        <location filename="../src/interface/fet.cpp" line="736"/>
         <source>Help</source>
         <translation>Aiuto</translation>
     </message>
@@ -47651,13 +47642,13 @@ Nota: insegnanti non disponibili e interruzioni non sono ore buche.</translation
 <context>
     <name>QGnomeTheme</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="761"/>
+        <location filename="../src/interface/fet.cpp" line="762"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;OK</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="763"/>
+        <location filename="../src/interface/fet.cpp" line="764"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Annulla</translation>
@@ -47666,53 +47657,53 @@ Nota: insegnanti non disponibili e interruzioni non sono ore buche.</translation
 <context>
     <name>QPlatformTheme</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="739"/>
+        <location filename="../src/interface/fet.cpp" line="740"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;OK</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="741"/>
+        <location filename="../src/interface/fet.cpp" line="742"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="744"/>
+        <location filename="../src/interface/fet.cpp" line="745"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Annulla</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="746"/>
+        <location filename="../src/interface/fet.cpp" line="747"/>
         <source>Cancel</source>
         <translation>Annulla</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="749"/>
+        <location filename="../src/interface/fet.cpp" line="750"/>
         <source>&amp;Yes</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Si</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="751"/>
+        <location filename="../src/interface/fet.cpp" line="752"/>
         <source>Yes to &amp;All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>Si s&amp;empre</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="753"/>
+        <location filename="../src/interface/fet.cpp" line="754"/>
         <source>&amp;No</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;No</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="755"/>
+        <location filename="../src/interface/fet.cpp" line="756"/>
         <source>N&amp;o to All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>No se&amp;mpre</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="758"/>
+        <location filename="../src/interface/fet.cpp" line="759"/>
         <source>Help</source>
         <translation>Aiuto</translation>
     </message>
@@ -49996,7 +49987,7 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="298"/>
         <source>0</source>
-        <translation></translation>
+        <translation>0</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="431"/>
@@ -53460,17 +53451,17 @@ Sotto %4</translation>
         <translation>senzanome</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1380"/>
+        <location filename="../src/interface/fet.cpp" line="1385"/>
         <source>Please check the constraints related to the activity below, which might be impossible to schedule:</source>
         <translation type="unfinished">Controlla i vincoli connessi alle attività sottostanti, che sembrerebbe impossibile sistemare:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1386"/>
+        <location filename="../src/interface/fet.cpp" line="1391"/>
         <source>No: %1</source>
         <translation type="unfinished">No: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1390"/>
+        <location filename="../src/interface/fet.cpp" line="1395"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
         <translation type="unfinished">Id:%1 (%2)</translation>
@@ -54077,7 +54068,7 @@ Sotto %4</translation>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform_template.ui" line="108"/>
         <source>Stop</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform_template.ui" line="122"/>
@@ -54922,13 +54913,13 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="698"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="710"/>
         <source>Small problem detected</source>
-        <translation type="unfinished">Individuata una piccola anomalia </translation>
+        <translation type="unfinished">Individuata una piccola anomalia</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="626"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="638"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere Orario di inizio preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
+        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere Orario di inizio preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="627"/>
@@ -54980,7 +54971,7 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="699"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="711"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
+        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="900"/>
@@ -55145,13 +55136,13 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="946"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="960"/>
         <source>Small problem detected</source>
-        <translation type="unfinished">Individuata una piccola anomalia </translation>
+        <translation type="unfinished">Individuata una piccola anomalia</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="864"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="878"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere Orario di inizio preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
+        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere Orario di inizio preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="865"/>
@@ -55215,7 +55206,7 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="947"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="961"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
+        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1186"/>
@@ -55470,13 +55461,13 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="903"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="915"/>
         <source>Small problem detected</source>
-        <translation type="unfinished">Individuata una piccola anomalia </translation>
+        <translation type="unfinished">Individuata una piccola anomalia</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="831"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="843"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere Orario di inizio preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
+        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere Orario di inizio preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="832"/>
@@ -55528,7 +55519,7 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="904"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="916"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
+        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="1109"/>
@@ -55684,13 +55675,13 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1140"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1154"/>
         <source>Small problem detected</source>
-        <translation type="unfinished">Individuata una piccola anomalia </translation>
+        <translation type="unfinished">Individuata una piccola anomalia</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1058"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1072"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere Orario di inizio preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
+        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere Orario di inizio preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1059"/>
@@ -55754,7 +55745,7 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1141"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1155"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
+        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1380"/>
@@ -55963,13 +55954,13 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="691"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="703"/>
         <source>Small problem detected</source>
-        <translation type="unfinished">Individuata una piccola anomalia </translation>
+        <translation type="unfinished">Individuata una piccola anomalia</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="618"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="630"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere Orario di inizio preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
+        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere Orario di inizio preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="619"/>
@@ -56021,7 +56012,7 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="692"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="704"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
+        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="893"/>
@@ -56180,13 +56171,13 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="912"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="926"/>
         <source>Small problem detected</source>
-        <translation type="unfinished">Individuata una piccola anomalia </translation>
+        <translation type="unfinished">Individuata una piccola anomalia</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="830"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="844"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere Orario di inizio preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
+        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere Orario di inizio preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="831"/>
@@ -56250,7 +56241,7 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="913"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="927"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
+        <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1152"/>

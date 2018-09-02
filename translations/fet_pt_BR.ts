@@ -1643,122 +1643,122 @@ Você pode escolher a distância mínima em dias entre cada par de atividades. P
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="991"/>
         <source>12</source>
-        <translation></translation>
+        <translation>12</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="1055"/>
         <source>13</source>
-        <translation></translation>
+        <translation>13</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="1119"/>
         <source>14</source>
-        <translation></translation>
+        <translation>14</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="1183"/>
         <source>15</source>
-        <translation></translation>
+        <translation>15</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="1247"/>
         <source>16</source>
-        <translation></translation>
+        <translation>16</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="1311"/>
         <source>17</source>
-        <translation></translation>
+        <translation>17</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="1375"/>
         <source>18</source>
-        <translation></translation>
+        <translation>18</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="1439"/>
         <source>19</source>
-        <translation></translation>
+        <translation>19</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="1503"/>
         <source>20</source>
-        <translation></translation>
+        <translation>20</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="1567"/>
         <source>21</source>
-        <translation></translation>
+        <translation>21</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="1631"/>
         <source>22</source>
-        <translation></translation>
+        <translation>22</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="1695"/>
         <source>23</source>
-        <translation></translation>
+        <translation>23</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="1759"/>
         <source>24</source>
-        <translation></translation>
+        <translation>24</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="1823"/>
         <source>25</source>
-        <translation></translation>
+        <translation>25</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="1887"/>
         <source>26</source>
-        <translation></translation>
+        <translation>26</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="1951"/>
         <source>27</source>
-        <translation></translation>
+        <translation>27</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="2015"/>
         <source>28</source>
-        <translation></translation>
+        <translation>28</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="2079"/>
         <source>29</source>
-        <translation></translation>
+        <translation>29</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="2143"/>
         <source>30</source>
-        <translation></translation>
+        <translation>30</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="2207"/>
         <source>31</source>
-        <translation></translation>
+        <translation>31</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="2271"/>
         <source>32</source>
-        <translation></translation>
+        <translation>32</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="2335"/>
         <source>33</source>
-        <translation></translation>
+        <translation>33</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="2399"/>
         <source>34</source>
-        <translation></translation>
+        <translation>34</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="2463"/>
         <source>35</source>
-        <translation></translation>
+        <translation>35</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="2535"/>
@@ -6847,7 +6847,7 @@ Nota: turmas não disponíveis e pausas não são contados como lacunas.</transl
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="126"/>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="145"/>
         <source>FET information</source>
-        <translation>FET informação</translation>
+        <translation>Informação FET</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="90"/>
@@ -10442,33 +10442,33 @@ Nota: docente não disponível e intervalo não são contados como lacunas.</tra
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="226"/>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="229"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>Informação FET</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="188"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Peso percentual inválido</translation>
+        <translation>Peso percentual inválido</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="198"/>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="210"/>
         <source>Invalid activity</source>
-        <translation type="unfinished">Atividade inválida</translation>
+        <translation>Atividade inválida</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="218"/>
         <source>Same activities - impossible</source>
-        <translation type="unfinished"></translation>
+        <translation>Mesmas atividades - impossível</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="227"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Restrição adicionada:</translation>
+        <translation>Restrição adicionada:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="230"/>
         <source>Constraint NOT added - error?</source>
-        <translation type="unfinished">Restrição NÃO adicionada - erro?</translation>
+        <translation>Restrição NÃO adicionada - erro?</translation>
     </message>
 </context>
 <context>
@@ -10477,64 +10477,65 @@ Nota: docente não disponível e intervalo não são contados como lacunas.</tra
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="14"/>
         <source>Add two activities ordered if same day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Adição de atividades sequenciais, se forem no mesmo dia</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="20"/>
         <source>Filter</source>
-        <translation type="unfinished">Filtro</translation>
+        <translation>Filtro</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="26"/>
         <source>Teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>Docente</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation type="unfinished">Turma</translation>
+        <translation>Turma</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="52"/>
         <source>Subject</source>
-        <translation type="unfinished">Disciplina</translation>
+        <translation>Disciplina</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="62"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Marcador de atividade</translation>
+        <translation>Marcador de atividade</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="89"/>
         <source>First activity</source>
-        <translation type="unfinished">Primeira atividade</translation>
+        <translation>Primeira atividade</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="125"/>
         <source>Second activity</source>
-        <translation type="unfinished"></translation>
+        <translation>Segunda atividade</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="177"/>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
-        <translation type="unfinished"></translation>
+        <translation>Peso percentual
+(recomendado: 0.0%-100%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="199"/>
         <source>Swap</source>
         <comment>Interchange (swap) the two selected activities in the dialog</comment>
-        <translation type="unfinished">Trocar</translation>
+        <translation>Trocar</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="206"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Incluir restrição</translation>
+        <translation>Incluir restrição</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="213"/>
         <source>Close</source>
-        <translation type="unfinished">Fechar</translation>
+        <translation>Fechar</translation>
     </message>
 </context>
 <context>
@@ -13514,7 +13515,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="9618"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation></translation>
+        <translation>C: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9625"/>
@@ -15378,7 +15379,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="10507"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation></translation>
+        <translation>C: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10510"/>
@@ -17359,7 +17360,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="488"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation></translation>
+        <translation>C: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="490"/>
@@ -22794,7 +22795,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="925"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation></translation>
+        <translation>C: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="928"/>
@@ -22997,7 +22998,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="11396"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation></translation>
+        <translation>C: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11401"/>
@@ -23307,7 +23308,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="10113"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation></translation>
+        <translation>C: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10120"/>
@@ -27088,7 +27089,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="562"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation></translation>
+        <translation>C: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="564"/>
@@ -30206,7 +30207,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13332"/>
         <source>Two activities ordered (the second activity must begin at any time in the week later than the first activity has finished)</source>
-        <translation type="unfinished"></translation>
+        <translation>Duas atividades sequenciais (a segunda atividade deve iniciar a qualquer momento na semana, desde que após encerrada a primeira)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13317"/>
@@ -30329,7 +30330,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="26"/>
         <source>This constraint forces two activities A1 and A2: A2 to begin later than A1 has finished, separated by any time interval in the week</source>
-        <translation type="unfinished"></translation>
+        <translation>Esta restrição força duas atividades A1 e A2: A2 inicia após A1 ter terminado, separadas por qualquer intervalo de tempo na semana</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="153"/>
@@ -30359,94 +30360,95 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="13521"/>
         <location filename="../src/engine/timeconstraint.cpp" line="13530"/>
         <source>FET error in data</source>
-        <translation type="unfinished">Dados com erro - FET</translation>
+        <translation>Dados com erro - FET</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13503"/>
         <location filename="../src/engine/timeconstraint.cpp" line="13522"/>
         <source>Following constraint is wrong (refers to inexistent activity ids):
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>A restrição a seguir está errada (refere-se à atividade com id inexistente):
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13531"/>
         <source>Following constraint is wrong (refers to same activities):
 %1</source>
-        <translation type="unfinished">A restrição a seguir está errada (refere-se às mesmas atividades):
+        <translation>A restrição a seguir está errada (refere-se às mesmas atividades):
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13572"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">C: %1</translation>
+        <translation>C: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13576"/>
         <source>Two activities ordered if same day:</source>
-        <translation type="unfinished"></translation>
+        <translation>Duas atividades sequenciais, se no mesmo dia:</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13579"/>
         <source>first act. id: %1</source>
         <comment>act.=activity</comment>
-        <translation type="unfinished">id da primeira ativ.: %1</translation>
+        <translation>id da primeira ativ.: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13581"/>
         <source>second act. id: %1</source>
         <comment>act.=activity</comment>
-        <translation type="unfinished">id da segunda ativ.: %1</translation>
+        <translation>id da segunda ativ.: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13583"/>
         <source>WP:%1%</source>
         <comment>Weight percentage</comment>
-        <translation type="unfinished"></translation>
+        <translation>PP:%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13590"/>
         <source>Time constraint</source>
-        <translation type="unfinished">Restrição de tempo</translation>
+        <translation>Restrição de tempo</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13591"/>
         <source>Two activities are ordered if they are on the same day (the second activity must begin later than the first activity has finished if they are on the same day)</source>
-        <translation type="unfinished"></translation>
+        <translation>Duas atividades são sequenciais, se ocorrerem no mesmo dia (a segunda atividade deve iniciar após a primeira atividade terminar, se estiverem no mesmo dia)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13595"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">Peso percentual=%1%</translation>
+        <translation>Peso percentual=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13598"/>
         <source>First activity id=%1 (%2)</source>
         <comment>%1 is the id, %2 is the detailed description of the activity.</comment>
-        <translation type="unfinished">Id da primeira atividade=%1 (%2)</translation>
+        <translation>Id da primeira atividade=%1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13603"/>
         <source>Second activity id=%1 (%2)</source>
         <comment>%1 is the id, %2 is the detailed description of the activity.</comment>
-        <translation type="unfinished">Id da segunda atividade=%1 (%2)</translation>
+        <translation>Id da segunda atividade=%1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13609"/>
         <source>Active=%1</source>
         <comment>Refers to a constraint</comment>
-        <translation type="unfinished">Ativa=%1</translation>
+        <translation>Ativa=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13613"/>
         <source>Comments=%1</source>
-        <translation type="unfinished">Comentários=%1</translation>
+        <translation>Comentários=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13651"/>
         <source>Time constraint two activities ordered if on the same day broken for first activity with id=%1 (%2) and second activity with id=%3 (%4), increases conflicts total by %5</source>
         <comment>%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Restrição de tempo não atendida para duas atividades sequenciais, se no primeiro dia: a primeira com id=%1 (%2) e a segunda com id=%3 (%4), aumenta total de conflitos em %5</translation>
     </message>
 </context>
 <context>
@@ -30455,33 +30457,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="242"/>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="267"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>Informação FET</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="242"/>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="267"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished"></translation>
+        <translation>Restrição selecionada inválida</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="272"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished"></translation>
+        <translation>Remover restrição?</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="278"/>
         <source>FET confirmation</source>
-        <translation type="unfinished"></translation>
+        <translation>Confirmação - FET</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="279"/>
         <source>Yes</source>
-        <translation type="unfinished">Sim</translation>
+        <translation>Sim</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="279"/>
         <source>No</source>
-        <translation type="unfinished">Não</translation>
+        <translation>Não</translation>
     </message>
 </context>
 <context>
@@ -30490,67 +30492,67 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="14"/>
         <source>Constraints two activies ordered if same day</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Restrições para duas atividades sequenciais, se no mesmo dia</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="26"/>
         <source>This constraint forces two activities A1 and A2: if they are on the same day, A2 needs to begin later than A1 has finished.</source>
-        <translation type="unfinished"></translation>
+        <translation>Esta restrição força duas atividades A1 e A2: se ocorrerem no mesmo dia, A2 só inicia após A1 terminar.</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="44"/>
         <source>Constraints</source>
-        <translation type="unfinished">Restrições</translation>
+        <translation>Restrições</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="61"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Detalhes</translation>
+        <translation>Detalhes</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="74"/>
         <source>Filter</source>
-        <translation type="unfinished">Filtro</translation>
+        <translation>Filtro</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="80"/>
         <source>Teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>Docente</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="93"/>
         <source>Students set</source>
-        <translation type="unfinished">Turma</translation>
+        <translation>Turma</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="106"/>
         <source>Subject</source>
-        <translation type="unfinished">Disciplina</translation>
+        <translation>Disciplina</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="119"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Marcador de atividade</translation>
+        <translation>Marcador de atividade</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="139"/>
         <source>Add</source>
-        <translation type="unfinished">Incluir</translation>
+        <translation>Incluir</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="146"/>
         <source>Modify</source>
-        <translation type="unfinished">Alterar</translation>
+        <translation>Alterar</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="153"/>
         <source>Remove</source>
-        <translation type="unfinished">Remover</translation>
+        <translation>Remover</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="160"/>
         <source>Close</source>
-        <translation type="unfinished">Fechar</translation>
+        <translation>Fechar</translation>
     </message>
 </context>
 <context>
@@ -31991,7 +31993,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4173"/>
         <source>1</source>
-        <translation></translation>
+        <translation>1</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4176"/>
@@ -32002,7 +32004,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4176"/>
         <source>2</source>
-        <translation></translation>
+        <translation>2</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4179"/>
@@ -32013,17 +32015,17 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4179"/>
         <source>3</source>
-        <translation></translation>
+        <translation>3</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4183"/>
         <source>4</source>
-        <translation></translation>
+        <translation>4</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4186"/>
         <source>5</source>
-        <translation></translation>
+        <translation>5</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4190"/>
@@ -32036,7 +32038,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
         <location filename="../src/interface/fetmainform.cpp" line="4190"/>
         <location filename="../src/interface/fetmainform.cpp" line="4211"/>
         <source>6</source>
-        <translation></translation>
+        <translation>6</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4215"/>
@@ -32046,52 +32048,52 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4215"/>
         <source>7</source>
-        <translation></translation>
+        <translation>7</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4218"/>
         <source>8</source>
-        <translation></translation>
+        <translation>8</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4221"/>
         <source>9</source>
-        <translation></translation>
+        <translation>9</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4224"/>
         <source>10</source>
-        <translation></translation>
+        <translation>10</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4227"/>
         <source>11</source>
-        <translation></translation>
+        <translation>11</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4230"/>
         <source>12</source>
-        <translation></translation>
+        <translation>12</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4233"/>
         <source>13</source>
-        <translation></translation>
+        <translation>13</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4236"/>
         <source>14</source>
-        <translation></translation>
+        <translation>14</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4239"/>
         <source>15</source>
-        <translation></translation>
+        <translation>15</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4242"/>
         <source>16</source>
-        <translation></translation>
+        <translation>16</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4245"/>
@@ -32102,27 +32104,27 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4245"/>
         <source>17</source>
-        <translation></translation>
+        <translation>17</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4248"/>
         <source>18</source>
-        <translation></translation>
+        <translation>18</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4251"/>
         <source>19</source>
-        <translation></translation>
+        <translation>19</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4254"/>
         <source>20</source>
-        <translation></translation>
+        <translation>20</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4257"/>
         <source>21</source>
-        <translation></translation>
+        <translation>21</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4260"/>
@@ -32133,7 +32135,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4260"/>
         <source>22</source>
-        <translation></translation>
+        <translation>22</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4265"/>
@@ -32155,7 +32157,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4267"/>
         <source>24</source>
-        <translation></translation>
+        <translation>24</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4269"/>
@@ -32166,12 +32168,12 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4269"/>
         <source>25</source>
-        <translation></translation>
+        <translation>25</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4271"/>
         <source>26</source>
-        <translation></translation>
+        <translation>26</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4275"/>
@@ -32182,7 +32184,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4275"/>
         <source>27</source>
-        <translation></translation>
+        <translation>27</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4277"/>
@@ -32193,12 +32195,12 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4277"/>
         <source>28</source>
-        <translation></translation>
+        <translation>28</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4281"/>
         <source>29</source>
-        <translation></translation>
+        <translation>29</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4281"/>
@@ -32209,7 +32211,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4283"/>
         <source>30</source>
-        <translation></translation>
+        <translation>30</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4283"/>
@@ -32220,7 +32222,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4287"/>
         <source>31</source>
-        <translation></translation>
+        <translation>31</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4287"/>
@@ -32266,7 +32268,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4291"/>
         <source>32</source>
-        <translation></translation>
+        <translation>32</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4298"/>
@@ -32276,7 +32278,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4294"/>
         <source>33</source>
-        <translation></translation>
+        <translation>33</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4301"/>
@@ -32286,7 +32288,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4297"/>
         <source>34</source>
-        <translation></translation>
+        <translation>34</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4304"/>
@@ -32296,7 +32298,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4300"/>
         <source>35</source>
-        <translation></translation>
+        <translation>35</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4307"/>
@@ -32306,7 +32308,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4303"/>
         <source>36</source>
-        <translation></translation>
+        <translation>36</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4311"/>
@@ -32316,7 +32318,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4306"/>
         <source>37</source>
-        <translation></translation>
+        <translation>37</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4314"/>
@@ -32326,7 +32328,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4310"/>
         <source>38</source>
-        <translation></translation>
+        <translation>38</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4317"/>
@@ -32336,7 +32338,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4313"/>
         <source>39</source>
-        <translation></translation>
+        <translation>39</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4320"/>
@@ -32346,7 +32348,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4316"/>
         <source>40</source>
-        <translation></translation>
+        <translation>40</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4323"/>
@@ -32356,7 +32358,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4319"/>
         <source>41</source>
-        <translation></translation>
+        <translation>41</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4326"/>
@@ -32366,7 +32368,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4322"/>
         <source>42</source>
-        <translation></translation>
+        <translation>42</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4329"/>
@@ -32376,7 +32378,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4325"/>
         <source>43</source>
-        <translation></translation>
+        <translation>43</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4335"/>
@@ -32721,7 +32723,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4354"/>
         <source>51</source>
-        <translation></translation>
+        <translation>51</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4703"/>
@@ -32902,12 +32904,12 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4328"/>
         <source>44</source>
-        <translation></translation>
+        <translation>44</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4331"/>
         <source>45</source>
-        <translation></translation>
+        <translation>45</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4332"/>
@@ -32923,7 +32925,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4334"/>
         <source>46</source>
-        <translation></translation>
+        <translation>46</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4339"/>
@@ -32934,7 +32936,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4337"/>
         <source>47</source>
-        <translation></translation>
+        <translation>47</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4339"/>
@@ -33723,7 +33725,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1884"/>
         <source>Two activities are ordered if they are on the same day</source>
-        <translation type="unfinished"></translation>
+        <translation>Duas atividades sequenciais, se no mesmo dia</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1889"/>
@@ -34423,7 +34425,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1879"/>
         <source>Two activities are ordered</source>
-        <translation>Duas atividades são sequenciais (na semana)</translation>
+        <translation>Duas atividades são sequenciais</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2030"/>
@@ -34439,66 +34441,66 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
 <context>
     <name>FetTranslate</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="294"/>
-        <location filename="../src/interface/fet.cpp" line="853"/>
+        <location filename="../src/interface/fet.cpp" line="295"/>
+        <location filename="../src/interface/fet.cpp" line="854"/>
         <source>FET warning</source>
         <translation>Aviso FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="294"/>
+        <location filename="../src/interface/fet.cpp" line="295"/>
         <source>Output directory %1 does not exist and cannot be created - output directory will be made the default value %2</source>
         <translation>Pasta de saída %1 não existe, nem pode ser criada. A pasta de saída padrão será %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="814"/>
-        <location filename="../src/interface/fet.cpp" line="823"/>
+        <location filename="../src/interface/fet.cpp" line="815"/>
+        <location filename="../src/interface/fet.cpp" line="824"/>
         <source>FET critical</source>
         <translation>Crítico - FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="853"/>
+        <location filename="../src/interface/fet.cpp" line="854"/>
         <source>To start FET in interface mode, please do not give any command-line parameters to the FET executable</source>
         <translation>Para iniciar FET no modo de interface, por favor, não dê qualquer parâmetros de linha de comando para o executável FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1193"/>
+        <location filename="../src/interface/fet.cpp" line="1198"/>
         <source>This is the list of max placed activities, chronologically. If FET could reach maximum n-th activity, look at the n+1-st activity in the initial order of the activities</source>
         <translation>Esta é a lista com o máximo de atividades alocadas, em ordem cronológica. Se FET conseguiu até a enésima atividade, olhe para a enésima primeira atividade na ordem inicial das atividades</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1487"/>
+        <location filename="../src/interface/fet.cpp" line="1492"/>
         <source>FET managed to schedule correctly the first %1 most difficult activities. You can see initial order of placing the activities in the corresponding output file. The activity which might cause problems might be the next activity in the initial order of evaluation. This activity is listed below:</source>
         <translation>FET conseguiu alocar corretamente as primeiras %1 atividades mais difíceis. Você pode ver a ordem inicial de alocação das atividades no arquivo de saída correspondente. A atividade que pode causar problemas pode ser a próxima atividade na ordem inicial de avaliação. Esta atividade é listada abaixo:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1494"/>
-        <location filename="../src/interface/fet.cpp" line="1514"/>
+        <location filename="../src/interface/fet.cpp" line="1499"/>
+        <location filename="../src/interface/fet.cpp" line="1519"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
         <translation>Id: %1 (%2)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1499"/>
+        <location filename="../src/interface/fet.cpp" line="1504"/>
         <source>Difficult activity cannot be computed - please report possible bug</source>
         <translation>Atividade difícil não pode ser calculada. Por favor, relate possível bug</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1503"/>
+        <location filename="../src/interface/fet.cpp" line="1508"/>
         <source>Here are the placed activities which lead to an inconsistency, in order from the first one to the last (the last one FET failed to schedule and the last ones are most likely impossible):</source>
-        <translation>Seguem atividades que poderiam levar a inconsistências, ordenadas da primeira à última (a última é a que FET falhou ao organizar e as últimas são aquelas com alguma impossibilidade):</translation>
+        <translation>Seguem atividades que poderiam levar a inconsistências, sequenciais da primeira à última (a última é a que FET falhou ao organizar e as últimas são aquelas com alguma impossibilidade):</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1510"/>
+        <location filename="../src/interface/fet.cpp" line="1515"/>
         <source>No: %1</source>
         <translation>Nº: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="814"/>
+        <location filename="../src/interface/fet.cpp" line="815"/>
         <source>Cannot create or use %1 directory (where the results should be stored) - you can continue operation, but you might not be able to work with FET. Maybe you can try to change the output directory from the &apos;Settings&apos; menu. If this is a bug - please report it.</source>
         <translation>Não foi possível criar ou usar a pasta %1 (onde os resultados deveriam ser guardados) - você pode continuar a operação, mas você poderá não conseguir trabalhar com FET. Pode ser que resolva mudar a pasta de saída no menu &quot;Configurações&quot;. Se for um bug, favor relatá-lo.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="823"/>
+        <location filename="../src/interface/fet.cpp" line="824"/>
         <source>You don&apos;t have write permissions in the output directory (FET cannot open or create file %1) - you might not be able to work correctly with FET. Maybe you can try to change the output directory from the &apos;Settings&apos; menu. If this is a bug - please report it.</source>
         <translation>Você não tem permissão de escrita na pasta de saída (FET não pôde abrir ou criar arquivo %1) - é possível que não consiga trabalhar corretamente com FET. Talvez resolva se você mudar a pasta de saída no menu &quot;Configurações&quot;. Se for um bug, favor relatá-lo.</translation>
     </message>
@@ -36008,12 +36010,12 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9483"/>
         <source>nIncompatible: %1</source>
-        <translation></translation>
+        <translation>nIncompatível: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9486"/>
         <source>nMinDaysConstraintsBroken: %1</source>
-        <translation></translation>
+        <translation>nMínDiasNãoAtendidas: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9491"/>
@@ -38727,7 +38729,7 @@ Provavelmente, na prática, esse problema não aparecerá e você não precisa s
     <message>
         <location filename="../src/interface/hoursform_template.ui" line="859"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/hoursform_template.ui" line="14"/>
@@ -39059,7 +39061,7 @@ Provavelmente, na prática, esse problema não aparecerá e você não precisa s
     <message>
         <location filename="../src/engine/import.cpp" line="690"/>
         <source>OK</source>
-        <translation></translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="526"/>
@@ -39748,7 +39750,7 @@ Por favor, primeiro encerre a simulação</translation>
     <message>
         <location filename="../src/interface/modifyactivityform.cpp" line="577"/>
         <source>OK</source>
-        <translation></translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -39768,7 +39770,7 @@ Por favor, primeiro encerre a simulação</translation>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="288"/>
         <source>1</source>
-        <translation></translation>
+        <translation>1</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="299"/>
@@ -39812,7 +39814,7 @@ Por favor, primeiro encerre a simulação</translation>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="352"/>
         <source>2</source>
-        <translation></translation>
+        <translation>2</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="339"/>
@@ -39857,172 +39859,172 @@ Por favor, primeiro encerre a simulação</translation>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="416"/>
         <source>3</source>
-        <translation></translation>
+        <translation>3</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="480"/>
         <source>4</source>
-        <translation></translation>
+        <translation>4</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="544"/>
         <source>5</source>
-        <translation></translation>
+        <translation>5</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="608"/>
         <source>6</source>
-        <translation></translation>
+        <translation>6</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="672"/>
         <source>7</source>
-        <translation></translation>
+        <translation>7</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="736"/>
         <source>8</source>
-        <translation></translation>
+        <translation>8</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="800"/>
         <source>9</source>
-        <translation></translation>
+        <translation>9</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="864"/>
         <source>10</source>
-        <translation></translation>
+        <translation>10</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="928"/>
         <source>11</source>
-        <translation></translation>
+        <translation>11</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="992"/>
         <source>12</source>
-        <translation></translation>
+        <translation>12</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="1056"/>
         <source>13</source>
-        <translation></translation>
+        <translation>13</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="1120"/>
         <source>14</source>
-        <translation></translation>
+        <translation>14</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="1184"/>
         <source>15</source>
-        <translation></translation>
+        <translation>15</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="1248"/>
         <source>16</source>
-        <translation></translation>
+        <translation>16</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="1312"/>
         <source>17</source>
-        <translation></translation>
+        <translation>17</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="1376"/>
         <source>18</source>
-        <translation></translation>
+        <translation>18</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="1440"/>
         <source>19</source>
-        <translation></translation>
+        <translation>19</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="1504"/>
         <source>20</source>
-        <translation></translation>
+        <translation>20</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="1568"/>
         <source>21</source>
-        <translation></translation>
+        <translation>21</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="1632"/>
         <source>22</source>
-        <translation></translation>
+        <translation>22</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="1696"/>
         <source>23</source>
-        <translation></translation>
+        <translation>23</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="1760"/>
         <source>24</source>
-        <translation></translation>
+        <translation>24</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="1824"/>
         <source>25</source>
-        <translation></translation>
+        <translation>25</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="1888"/>
         <source>26</source>
-        <translation></translation>
+        <translation>26</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="1952"/>
         <source>27</source>
-        <translation></translation>
+        <translation>27</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="2016"/>
         <source>28</source>
-        <translation></translation>
+        <translation>28</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="2080"/>
         <source>29</source>
-        <translation></translation>
+        <translation>29</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="2144"/>
         <source>30</source>
-        <translation></translation>
+        <translation>30</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="2208"/>
         <source>31</source>
-        <translation></translation>
+        <translation>31</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="2272"/>
         <source>32</source>
-        <translation></translation>
+        <translation>32</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="2336"/>
         <source>33</source>
-        <translation></translation>
+        <translation>33</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="2400"/>
         <source>34</source>
-        <translation></translation>
+        <translation>34</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="2464"/>
         <source>35</source>
-        <translation></translation>
+        <translation>35</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="2540"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="2547"/>
@@ -40318,7 +40320,7 @@ Por favor, primeiro encerre a simulação</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="220"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="227"/>
@@ -40356,7 +40358,7 @@ Por favor, primeiro encerre a simulação</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="190"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="197"/>
@@ -40509,7 +40511,7 @@ Por favor, primeiro encerre a simulação</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="156"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="163"/>
@@ -40628,7 +40630,7 @@ Por favor, primeiro encerre a simulação</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="220"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="227"/>
@@ -40767,7 +40769,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform_template.ui" line="143"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform_template.ui" line="150"/>
@@ -40906,7 +40908,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform_template.ui" line="143"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform_template.ui" line="150"/>
@@ -40980,7 +40982,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui" line="110"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui" line="117"/>
@@ -41034,7 +41036,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="174"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="181"/>
@@ -41130,7 +41132,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform_template.ui" line="174"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform_template.ui" line="181"/>
@@ -41226,7 +41228,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform_template.ui" line="174"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform_template.ui" line="181"/>
@@ -41343,7 +41345,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
     <message>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform_template.ui" line="179"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform_template.ui" line="186"/>
@@ -41397,7 +41399,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomform_template.ui" line="89"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomform_template.ui" line="96"/>
@@ -41477,7 +41479,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomsform_template.ui" line="115"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomsform_template.ui" line="122"/>
@@ -41578,7 +41580,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="231"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="238"/>
@@ -41673,7 +41675,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform_template.ui" line="167"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform_template.ui" line="174"/>
@@ -41768,7 +41770,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform_template.ui" line="167"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform_template.ui" line="174"/>
@@ -41869,7 +41871,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomform_template.ui" line="106"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomform_template.ui" line="14"/>
@@ -41918,7 +41920,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomsform_template.ui" line="115"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomsform_template.ui" line="122"/>
@@ -41977,7 +41979,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
     <message>
         <location filename="../src/interface/modifyconstraintbasiccompulsoryspaceform_template.ui" line="50"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintbasiccompulsoryspaceform_template.ui" line="57"/>
@@ -42083,7 +42085,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
     <message>
         <location filename="../src/interface/modifyconstraintbreaktimesform_template.ui" line="89"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintbreaktimesform_template.ui" line="96"/>
@@ -42137,7 +42139,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
     <message>
         <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform_template.ui" line="197"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform_template.ui" line="204"/>
@@ -42342,7 +42344,7 @@ mesmo dia, forçar consecutivas</translation>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform_template.ui" line="238"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform_template.ui" line="245"/>
@@ -42385,7 +42387,7 @@ mesmo dia, forçar consecutivas</translation>
     <message>
         <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform_template.ui" line="197"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform_template.ui" line="204"/>
@@ -42505,7 +42507,7 @@ mesmo dia, forçar consecutivas</translation>
     <message>
         <location filename="../src/interface/modifyconstraintroomnotavailabletimesform_template.ui" line="116"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintroomnotavailabletimesform_template.ui" line="123"/>
@@ -42621,7 +42623,7 @@ mesmo dia, forçar consecutivas</translation>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsactivitytagmaxhoursdailyform_template.ui" line="151"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsactivitytagmaxhoursdailyform_template.ui" line="158"/>
@@ -42742,7 +42744,7 @@ Nota: turmas não disponíveis e intervalos não são contados como lacunas (int
     <message>
         <location filename="../src/interface/modifyconstraintstudentsintervalmaxdaysperweekform_template.ui" line="22"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsintervalmaxdaysperweekform_template.ui" line="29"/>
@@ -43469,7 +43471,7 @@ Nota: turmas não disponíveis e intervalos não são contados como lacunas.</tr
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="183"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="190"/>
@@ -43797,7 +43799,7 @@ Nota: turmas não disponíveis e intervalos não são contados como lacunas (int
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperdayform_template.ui" line="101"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperdayform_template.ui" line="108"/>
@@ -43850,7 +43852,7 @@ Nota: turmas não disponíveis e intervalos não são contados como lacunas (int
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperweekform_template.ui" line="101"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperweekform_template.ui" line="108"/>
@@ -44022,7 +44024,7 @@ IMPORTANTE: se não deseja lacunas, recomenda-se enfaticamente NÃO utilizar est
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform_template.ui" line="141"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform_template.ui" line="148"/>
@@ -44103,7 +44105,7 @@ Nota: turmas não disponíveis e intervalos não são contados como lacunas.</tr
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxhourscontinuouslyform_template.ui" line="148"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxhourscontinuouslyform_template.ui" line="77"/>
@@ -44508,7 +44510,7 @@ Nota: turmas não disponíveis e intervalos não são contados como lacunas.</tr
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform_template.ui" line="141"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform_template.ui" line="148"/>
@@ -44585,7 +44587,7 @@ Nota: turmas não disponíveis e intervalos não são contados como lacunas.</tr
     <message>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredstartingtimesform_template.ui" line="166"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredstartingtimesform_template.ui" line="173"/>
@@ -44658,7 +44660,7 @@ Nota: turmas não disponíveis e intervalos não são contados como lacunas.</tr
     <message>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredtimeslotsform_template.ui" line="166"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredtimeslotsform_template.ui" line="173"/>
@@ -44764,7 +44766,7 @@ Nota: turmas não disponíveis e intervalos não são contados como lacunas.</tr
     <message>
         <location filename="../src/interface/modifyconstraintsubjectactivitytagpreferredroomform_template.ui" line="122"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectactivitytagpreferredroomform_template.ui" line="14"/>
@@ -44819,7 +44821,7 @@ Nota: turmas não disponíveis e intervalos não são contados como lacunas.</tr
     <message>
         <location filename="../src/interface/modifyconstraintsubjectactivitytagpreferredroomsform_template.ui" line="128"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectactivitytagpreferredroomsform_template.ui" line="135"/>
@@ -44889,7 +44891,7 @@ Nota: turmas não disponíveis e intervalos não são contados como lacunas.</tr
     <message>
         <location filename="../src/interface/modifyconstraintsubjectpreferredroomform_template.ui" line="104"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectpreferredroomform_template.ui" line="111"/>
@@ -44953,7 +44955,7 @@ Nota: turmas não disponíveis e intervalos não são contados como lacunas.</tr
     <message>
         <location filename="../src/interface/modifyconstraintsubjectpreferredroomsform_template.ui" line="115"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectpreferredroomsform_template.ui" line="122"/>
@@ -45022,7 +45024,7 @@ Nota: turmas não disponíveis e intervalos não são contados como lacunas.</tr
     <message>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhourscontinuouslyform_template.ui" line="183"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhourscontinuouslyform_template.ui" line="190"/>
@@ -45120,7 +45122,7 @@ Nota: turmas não disponíveis e intervalos não são contados como lacunas.</tr
     <message>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhoursdailyform_template.ui" line="183"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhoursdailyform_template.ui" line="190"/>
@@ -45163,7 +45165,7 @@ Nota: turmas não disponíveis e intervalos não são contados como lacunas.</tr
     <message>
         <location filename="../src/interface/modifyconstraintteacherhomeroomform_template.ui" line="27"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherhomeroomform_template.ui" line="40"/>
@@ -45210,7 +45212,7 @@ Nota: turmas não disponíveis e intervalos não são contados como lacunas.</tr
     <message>
         <location filename="../src/interface/modifyconstraintteacherhomeroomsform_template.ui" line="115"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherhomeroomsform_template.ui" line="122"/>
@@ -45377,7 +45379,7 @@ Nota: turmas não disponíveis e intervalos não são contados como lacunas.</tr
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxbuildingchangesperdayform_template.ui" line="101"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxbuildingchangesperdayform_template.ui" line="108"/>
@@ -45430,7 +45432,7 @@ Nota: turmas não disponíveis e intervalos não são contados como lacunas.</tr
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxbuildingchangesperweekform_template.ui" line="101"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxbuildingchangesperweekform_template.ui" line="108"/>
@@ -45532,7 +45534,7 @@ Nota: turmas não disponíveis e intervalos não são contados como lacunas.</tr
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperdayform_template.ui" line="141"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperdayform_template.ui" line="148"/>
@@ -45712,7 +45714,7 @@ Nota: Docente indisponível e pausas não são contados como lacunas.</translati
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxhoursdailyform_template.ui" line="148"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxhoursdailyform_template.ui" line="155"/>
@@ -45852,7 +45854,7 @@ Nota: Docente indisponível e pausas não são contados como lacunas.</translati
     <message>
         <location filename="../src/interface/modifyconstraintteachermindaysperweekform_template.ui" line="109"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermindaysperweekform_template.ui" line="116"/>
@@ -45900,7 +45902,7 @@ Nota: Docente indisponível e pausas não são contados como lacunas.</translati
     <message>
         <location filename="../src/interface/modifyconstraintteachermingapsbetweenbuildingchangesform_template.ui" line="101"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermingapsbetweenbuildingchangesform_template.ui" line="108"/>
@@ -46116,7 +46118,7 @@ Nota: Docente indisponível e pausas não são contados como lacunas.</translati
     <message>
         <location filename="../src/interface/modifyconstraintteachernotavailabletimesform_template.ui" line="141"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachernotavailabletimesform_template.ui" line="148"/>
@@ -46163,7 +46165,7 @@ Nota: Docente indisponível e pausas não são contados como lacunas.</translati
     <message>
         <location filename="../src/interface/modifyconstraintteachersactivitytagmaxhourscontinuouslyform_template.ui" line="151"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersactivitytagmaxhourscontinuouslyform_template.ui" line="158"/>
@@ -46244,7 +46246,7 @@ Nota: Docente indisponível e pausas não são contados como lacunas.</translati
     <message>
         <location filename="../src/interface/modifyconstraintteachersactivitytagmaxhoursdailyform_template.ui" line="151"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersactivitytagmaxhoursdailyform_template.ui" line="158"/>
@@ -46305,7 +46307,7 @@ Nota: Docente indisponível e pausas não são contados como lacunas.</translati
     <message>
         <location filename="../src/interface/modifyconstraintteachersintervalmaxdaysperweekform_template.ui" line="22"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersintervalmaxdaysperweekform_template.ui" line="29"/>
@@ -46499,7 +46501,7 @@ Nota: Docente indisponível e pausas não são contados como lacunas.</translati
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxgapsperdayform_template.ui" line="105"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxgapsperdayform_template.ui" line="112"/>
@@ -46597,7 +46599,7 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxhourscontinuouslyform_template.ui" line="73"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxhourscontinuouslyform_template.ui" line="80"/>
@@ -46640,7 +46642,7 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxhoursdailyform_template.ui" line="73"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxhoursdailyform_template.ui" line="80"/>
@@ -46755,7 +46757,7 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
     <message>
         <location filename="../src/interface/modifyconstraintteachersmindaysperweekform_template.ui" line="73"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmindaysperweekform_template.ui" line="80"/>
@@ -46792,7 +46794,7 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
     <message>
         <location filename="../src/interface/modifyconstraintteachersmingapsbetweenbuildingchangesform_template.ui" line="49"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmingapsbetweenbuildingchangesform_template.ui" line="56"/>
@@ -46997,7 +46999,7 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
     <message>
         <location filename="../src/interface/modifyconstraintthreeactivitiesgroupedform_template.ui" line="174"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintthreeactivitiesgroupedform_template.ui" line="181"/>
@@ -47052,7 +47054,7 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="29"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="36"/>
@@ -47192,7 +47194,7 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="29"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="36"/>
@@ -47225,27 +47227,27 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform.cpp" line="144"/>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform.cpp" line="151"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>Informação FET</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform.cpp" line="126"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Peso percentual inválido</translation>
+        <translation>Peso percentual inválido</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform.cpp" line="135"/>
         <source>Invalid first activity</source>
-        <translation type="unfinished">Primeira atividade inválida</translation>
+        <translation>Primeira atividade inválida</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform.cpp" line="145"/>
         <source>Invalid second activity</source>
-        <translation type="unfinished">Segunda atividade inválida</translation>
+        <translation>Segunda atividade inválida</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform.cpp" line="152"/>
         <source>Same activities - impossible</source>
-        <translation type="unfinished"></translation>
+        <translation>Mesmas atividades - impossível</translation>
     </message>
 </context>
 <context>
@@ -47254,39 +47256,40 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="14"/>
         <source>Modify two activities ordered if same day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Alterar duas atividades sequenciais, se no mesmo dia</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="22"/>
         <source>Swap</source>
         <comment>Interchange (swap) the two selected activities in the dialog</comment>
-        <translation type="unfinished">Trocar</translation>
+        <translation>Trocar</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="29"/>
         <source>Ok</source>
-        <translation type="unfinished"></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="36"/>
         <source>Cancel</source>
-        <translation type="unfinished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="53"/>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
-        <translation type="unfinished"></translation>
+        <translation>Peso percentual
+(recomendado: 0.0%-100%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="97"/>
         <source>First activity</source>
-        <translation type="unfinished">Primeira atividade</translation>
+        <translation>Primeira atividade</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="133"/>
         <source>Second activity</source>
-        <translation type="unfinished"></translation>
+        <translation>Segunda atividade</translation>
     </message>
 </context>
 <context>
@@ -47702,7 +47705,7 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
     <message>
         <location filename="../src/interface/modifysubactivityform.cpp" line="449"/>
         <source>OK</source>
-        <translation></translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform.cpp" line="87"/>
@@ -47782,7 +47785,7 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
     <message>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="372"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="379"/>
@@ -47884,52 +47887,52 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
 <context>
     <name>QDialogButtonBox</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="716"/>
+        <location filename="../src/interface/fet.cpp" line="717"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;OK</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="718"/>
+        <location filename="../src/interface/fet.cpp" line="719"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="721"/>
+        <location filename="../src/interface/fet.cpp" line="722"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Cancelar</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="723"/>
+        <location filename="../src/interface/fet.cpp" line="724"/>
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="726"/>
+        <location filename="../src/interface/fet.cpp" line="727"/>
         <source>&amp;Yes</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Sim</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="728"/>
+        <location filename="../src/interface/fet.cpp" line="729"/>
         <source>Yes to &amp;All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>&amp;Todos</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="732"/>
+        <location filename="../src/interface/fet.cpp" line="733"/>
         <source>N&amp;o to All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>Nen&amp;hum</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="735"/>
+        <location filename="../src/interface/fet.cpp" line="736"/>
         <source>Help</source>
         <translation>Ajuda</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="730"/>
+        <location filename="../src/interface/fet.cpp" line="731"/>
         <source>&amp;No</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Não</translation>
@@ -47938,13 +47941,13 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
 <context>
     <name>QGnomeTheme</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="761"/>
+        <location filename="../src/interface/fet.cpp" line="762"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;OK</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="763"/>
+        <location filename="../src/interface/fet.cpp" line="764"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Cancelar</translation>
@@ -47953,53 +47956,53 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
 <context>
     <name>QPlatformTheme</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="739"/>
+        <location filename="../src/interface/fet.cpp" line="740"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;OK</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="741"/>
+        <location filename="../src/interface/fet.cpp" line="742"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="744"/>
+        <location filename="../src/interface/fet.cpp" line="745"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Cancelar</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="746"/>
+        <location filename="../src/interface/fet.cpp" line="747"/>
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="749"/>
+        <location filename="../src/interface/fet.cpp" line="750"/>
         <source>&amp;Yes</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Sim</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="751"/>
+        <location filename="../src/interface/fet.cpp" line="752"/>
         <source>Yes to &amp;All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>&amp;Todos</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="753"/>
+        <location filename="../src/interface/fet.cpp" line="754"/>
         <source>&amp;No</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Não</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="755"/>
+        <location filename="../src/interface/fet.cpp" line="756"/>
         <source>N&amp;o to All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>Nen&amp;hum</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="758"/>
+        <location filename="../src/interface/fet.cpp" line="759"/>
         <source>Help</source>
         <translation>Ajuda</translation>
     </message>
@@ -48032,7 +48035,7 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="364"/>
         <source>OK</source>
-        <translation></translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="366"/>
@@ -48345,7 +48348,7 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
     <message>
         <location filename="../src/interface/roomsform.cpp" line="132"/>
         <source>FET</source>
-        <translation></translation>
+        <translation>FET</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform.cpp" line="133"/>
@@ -50110,7 +50113,7 @@ não foi adicionada - deve estar duplicada</translation>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="843"/>
         <source>OK</source>
-        <translation></translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -50133,12 +50136,12 @@ não foi adicionada - deve estar duplicada</translation>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="63"/>
         <source>1</source>
-        <translation></translation>
+        <translation>1</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="73"/>
         <source>2</source>
-        <translation></translation>
+        <translation>2</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="83"/>
@@ -50148,57 +50151,57 @@ não foi adicionada - deve estar duplicada</translation>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="93"/>
         <source>4</source>
-        <translation></translation>
+        <translation>4</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="103"/>
         <source>5</source>
-        <translation></translation>
+        <translation>5</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="113"/>
         <source>6</source>
-        <translation></translation>
+        <translation>6</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="123"/>
         <source>7</source>
-        <translation></translation>
+        <translation>7</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="133"/>
         <source>8</source>
-        <translation></translation>
+        <translation>8</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="143"/>
         <source>9</source>
-        <translation></translation>
+        <translation>9</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="153"/>
         <source>10</source>
-        <translation></translation>
+        <translation>10</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="163"/>
         <source>11</source>
-        <translation></translation>
+        <translation>11</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="173"/>
         <source>12</source>
-        <translation></translation>
+        <translation>12</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="183"/>
         <source>13</source>
-        <translation></translation>
+        <translation>13</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="193"/>
         <source>14</source>
-        <translation></translation>
+        <translation>14</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="208"/>
@@ -50264,7 +50267,7 @@ não foi adicionada - deve estar duplicada</translation>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="298"/>
         <source>0</source>
-        <translation></translation>
+        <translation>0</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="431"/>
@@ -50541,17 +50544,17 @@ Por favor, relate o erro. FET abortará a operação atual</translation>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="257"/>
         <source>1</source>
-        <translation></translation>
+        <translation>1</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="273"/>
         <source>3</source>
-        <translation></translation>
+        <translation>3</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="286"/>
         <source>2</source>
-        <translation></translation>
+        <translation>2</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="299"/>
@@ -50968,19 +50971,19 @@ Por favor, relate o erro. FET abortará a operação atual</translation>
         <location filename="../src/interface/statisticsprintform.cpp" line="195"/>
         <source>A1</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>A1</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="196"/>
         <source>A2</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>A2</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="197"/>
         <source>A3</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>A3</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="198"/>
@@ -50992,7 +50995,7 @@ Por favor, relate o erro. FET abortará a operação atual</translation>
         <location filename="../src/interface/statisticsprintform.cpp" line="199"/>
         <source>A5</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>A5</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="200"/>
@@ -51058,55 +51061,55 @@ Por favor, relate o erro. FET abortará a operação atual</translation>
         <location filename="../src/interface/statisticsprintform.cpp" line="210"/>
         <source>B6</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>B6</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="211"/>
         <source>B7</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>B7</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="212"/>
         <source>B8</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>B8</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="213"/>
         <source>B9</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>B9</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="214"/>
         <source>B10</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>B10</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="215"/>
         <source>C5E</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>C5E</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="216"/>
         <source>Comm10E</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>Comm10E</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="217"/>
         <source>DLE</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>DLE</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="218"/>
         <source>Executive</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>Executive</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="219"/>
@@ -51118,13 +51121,13 @@ Por favor, relate o erro. FET abortará a operação atual</translation>
         <location filename="../src/interface/statisticsprintform.cpp" line="220"/>
         <source>Ledger</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>Ledger</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="221"/>
         <source>Legal</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>Legal</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="222"/>
@@ -51609,7 +51612,7 @@ Base: %4</translation>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="476"/>
         <source>OK</source>
-        <translation></translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="478"/>
@@ -51781,7 +51784,7 @@ Base: %4</translation>
         <location filename="../src/interface/subgroupsform.cpp" line="183"/>
         <location filename="../src/interface/subgroupsform.cpp" line="265"/>
         <source>FET confirmation</source>
-        <translation>FET confirmação</translation>
+        <translation>Confirmação FET</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform.cpp" line="254"/>
@@ -53728,17 +53731,17 @@ Base: %4</translation>
         <translation>sem nome</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1380"/>
+        <location filename="../src/interface/fet.cpp" line="1385"/>
         <source>Please check the constraints related to the activity below, which might be impossible to schedule:</source>
         <translation>Por favor, verifique as regras relacionadas à atividade abaixo que, talvez, seja impossível organizar:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1386"/>
+        <location filename="../src/interface/fet.cpp" line="1391"/>
         <source>No: %1</source>
         <translation>Nº: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1390"/>
+        <location filename="../src/interface/fet.cpp" line="1395"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
         <translation>Id: %1 (%2)</translation>
@@ -53886,7 +53889,7 @@ Base: %4</translation>
         <location filename="../src/interface/timetablegenerateform.cpp" line="741"/>
         <source>%1 s</source>
         <comment>seconds</comment>
-        <translation></translation>
+        <translation>%1 s</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="756"/>
@@ -53896,7 +53899,7 @@ Base: %4</translation>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="758"/>
         <source>Activities are placed in order, most difficult ones first</source>
-        <translation>As atividades estão ordenadas com as mais difíceis em primeiro</translation>
+        <translation>As atividades estão sequenciais com as mais difíceis em primeiro</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="760"/>
@@ -54000,7 +54003,7 @@ Base: %4</translation>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="283"/>
         <source>Here are the placed activities which lead to an inconsistency, in order from the first one to the last (the last one FET failed to schedule and the last ones are most likely impossible):</source>
-        <translation>Seguem as atividades que poderiam levar a inconsistências, ordenadas da primeira ä última (a última é a que FET falhou ao organizar e as últimas são aquelas com alguma impossibilidade):</translation>
+        <translation>Seguem as atividades que poderiam levar a inconsistências, ordenadas da primeira à última (a última é a que FET falhou ao organizar e as últimas são aquelas com alguma impossibilidade):</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="535"/>
@@ -54626,49 +54629,49 @@ Base: %4</translation>
         <location filename="../src/interface/timetableprintform.cpp" line="276"/>
         <source>B6</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>B6</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="277"/>
         <source>B7</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>B7</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="278"/>
         <source>B8</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>B8</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="279"/>
         <source>B9</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>B9</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="280"/>
         <source>B10</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>B10</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="281"/>
         <source>C5E</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>C5E</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="282"/>
         <source>Comm10E</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>Comm10E</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="283"/>
         <source>DLE</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>DLE</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="284"/>
@@ -54686,13 +54689,13 @@ Base: %4</translation>
         <location filename="../src/interface/timetableprintform.cpp" line="286"/>
         <source>Ledger</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>Ledger</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="287"/>
         <source>Legal</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>Legal</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="288"/>

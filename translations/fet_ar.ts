@@ -11664,7 +11664,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="953"/>
         <source>You have found a bug in FET. Please report it. This kind of constraint is not correctly recognized in all time constraints dialog. FET will skip this error, so that you can continue work. Probably the constraint can be modified from the specific constraint dialog.</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="996"/>
@@ -34520,66 +34520,66 @@ G1 ستظهر مرتين في الجدول</translation>
 <context>
     <name>FetTranslate</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="294"/>
-        <location filename="../src/interface/fet.cpp" line="853"/>
+        <location filename="../src/interface/fet.cpp" line="295"/>
+        <location filename="../src/interface/fet.cpp" line="854"/>
         <source>FET warning</source>
         <translation>FET تحذير</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="294"/>
+        <location filename="../src/interface/fet.cpp" line="295"/>
         <source>Output directory %1 does not exist and cannot be created - output directory will be made the default value %2</source>
         <translation>مجلد الخروج %1 غير موجود و لايمكن انشاؤه - مجلد الخروج سينتج قيمة مفترضة %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="814"/>
-        <location filename="../src/interface/fet.cpp" line="823"/>
+        <location filename="../src/interface/fet.cpp" line="815"/>
+        <location filename="../src/interface/fet.cpp" line="824"/>
         <source>FET critical</source>
         <translation>FET - حرج</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="853"/>
+        <location filename="../src/interface/fet.cpp" line="854"/>
         <source>To start FET in interface mode, please do not give any command-line parameters to the FET executable</source>
         <translation>لإطلاق FET في وضغ الواجهة، يرجى عدم اعطاء أي معطيات سطر-الأمر ل FET القابل للتنفيذ</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1193"/>
+        <location filename="../src/interface/fet.cpp" line="1198"/>
         <source>This is the list of max placed activities, chronologically. If FET could reach maximum n-th activity, look at the n+1-st activity in the initial order of the activities</source>
         <translation>هذه قائمة الأنشطة القصوى التي وُضعت في الجدول، حسب ترتيبها الزمني. إذا FET استطاع أن يصل إلى أقصى n-th نشاط أعد النظر في النشاط n+1، وذلك في الترتيب الأولي لوضع الأنشطة</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1487"/>
+        <location filename="../src/interface/fet.cpp" line="1492"/>
         <source>FET managed to schedule correctly the first %1 most difficult activities. You can see initial order of placing the activities in the corresponding output file. The activity which might cause problems might be the next activity in the initial order of evaluation. This activity is listed below:</source>
         <translation>تمكن FET بشكل صحيح من جدولة أولى %1 أصعب الأنشطة. يمكنك النظر في الترتيب الأولي لوضع الأنشطة في مربع الحوار للانتاج. النشاط الذي من المحتمل أنه يسبّب مشاكل يمكن أن يكون النشاط الموالي في الترتيب الأولي لتقدير الأنشطة. هذا النشاط مدرج أدناه:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1494"/>
-        <location filename="../src/interface/fet.cpp" line="1514"/>
+        <location filename="../src/interface/fet.cpp" line="1499"/>
+        <location filename="../src/interface/fet.cpp" line="1519"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
         <translation>Id: %1 (%2)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1499"/>
+        <location filename="../src/interface/fet.cpp" line="1504"/>
         <source>Difficult activity cannot be computed - please report possible bug</source>
         <translation>نشاط صعبة لا يمكن معالجتها - فضلاً ابلغنا بالمشكلة</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1503"/>
+        <location filename="../src/interface/fet.cpp" line="1508"/>
         <source>Here are the placed activities which lead to an inconsistency, in order from the first one to the last (the last one FET failed to schedule and the last ones are most likely impossible):</source>
         <translation>وهنا وضعت الأنشطة التي تؤدي إلى عدم التناسق في الجدول ، مرتبة من الاول إلى الاخير (النشاط الأخير فشل FET في جدولته و الأنشطة الأخيرة هي على الأرجح جدّ صعبة):</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1510"/>
+        <location filename="../src/interface/fet.cpp" line="1515"/>
         <source>No: %1</source>
         <translation>رقم: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="814"/>
+        <location filename="../src/interface/fet.cpp" line="815"/>
         <source>Cannot create or use %1 directory (where the results should be stored) - you can continue operation, but you might not be able to work with FET. Maybe you can try to change the output directory from the &apos;Settings&apos; menu. If this is a bug - please report it.</source>
         <translation>لا يمكن انشاء أو استخدام %1 المجلد (حيث يجب أن تكون النتائج محفوظة) - تستطيع متابعة العملية، لكن قد لايمكن أن تكون قادرا على العمل بواسطة FET. ربما في استطاعتك أن تحاول تغيير مجلد الخروج، من قائمة &quot;اعدادا ت&quot;. إذا كان هذا خطأ برمجي - يرجى رفع تقرير عنه.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="823"/>
+        <location filename="../src/interface/fet.cpp" line="824"/>
         <source>You don&apos;t have write permissions in the output directory (FET cannot open or create file %1) - you might not be able to work correctly with FET. Maybe you can try to change the output directory from the &apos;Settings&apos; menu. If this is a bug - please report it.</source>
         <translation>ليس لديك إذن الكتابة في مجلد الخروج (FET لا يمكنه فتح أو انشاء الملف %1) - قد لا تكون قادرا على العمل بشكل صحيح بواسطة FET. ربما تستطيع المحاولة لتغيير مجلد الخروج من قائمة &quot;اعدادات&quot;. إذا كان هذا عبارة عن خطإ برمجي - يرجى رفع تقرير عنه.</translation>
     </message>
@@ -38305,7 +38305,7 @@ ATS = affected teacher or students set
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="130"/>
         <source>9) Even if it takes a long time to generate your timetable with a set of constraints, strengthening the constraints might not slow the generation too much. You are advised to try with stronger constraints after you obtain timetables, because you can obtain better timetables this way.</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="134"/>
@@ -45843,7 +45843,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxspanperdayform.cpp" line="93"/>
         <source>Invalid teacher</source>
-        <translation></translation>
+        <translation type="unfinished">لم يتم اختيار مدرس</translation>
     </message>
 </context>
 <context>
@@ -47969,53 +47969,53 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>QDialogButtonBox</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="716"/>
+        <location filename="../src/interface/fet.cpp" line="717"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;موافق</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="718"/>
+        <location filename="../src/interface/fet.cpp" line="719"/>
         <source>OK</source>
         <translation>موافق</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="721"/>
+        <location filename="../src/interface/fet.cpp" line="722"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;الغاء</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="723"/>
+        <location filename="../src/interface/fet.cpp" line="724"/>
         <source>Cancel</source>
         <translation>الغاء</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="726"/>
+        <location filename="../src/interface/fet.cpp" line="727"/>
         <source>&amp;Yes</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;نعم</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="728"/>
+        <location filename="../src/interface/fet.cpp" line="729"/>
         <source>Yes to &amp;All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>نعم &amp;للكل</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="730"/>
+        <location filename="../src/interface/fet.cpp" line="731"/>
         <source>&amp;No</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;لا</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="732"/>
+        <location filename="../src/interface/fet.cpp" line="733"/>
         <source>N&amp;o to All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>لا للك&amp;ل</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="735"/>
+        <location filename="../src/interface/fet.cpp" line="736"/>
         <source>Help</source>
         <translation>مساعدة</translation>
     </message>
@@ -48023,13 +48023,13 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>QGnomeTheme</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="761"/>
+        <location filename="../src/interface/fet.cpp" line="762"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;موافق</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="763"/>
+        <location filename="../src/interface/fet.cpp" line="764"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;الغاء</translation>
@@ -48038,53 +48038,53 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>QPlatformTheme</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="739"/>
+        <location filename="../src/interface/fet.cpp" line="740"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;موافق</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="741"/>
+        <location filename="../src/interface/fet.cpp" line="742"/>
         <source>OK</source>
         <translation>موافق</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="744"/>
+        <location filename="../src/interface/fet.cpp" line="745"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;الغاء</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="746"/>
+        <location filename="../src/interface/fet.cpp" line="747"/>
         <source>Cancel</source>
         <translation>الغاء</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="749"/>
+        <location filename="../src/interface/fet.cpp" line="750"/>
         <source>&amp;Yes</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;نعم</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="751"/>
+        <location filename="../src/interface/fet.cpp" line="752"/>
         <source>Yes to &amp;All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>نعم &amp;للكل</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="753"/>
+        <location filename="../src/interface/fet.cpp" line="754"/>
         <source>&amp;No</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;لا</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="755"/>
+        <location filename="../src/interface/fet.cpp" line="756"/>
         <source>N&amp;o to All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>لا للك&amp;ل</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="758"/>
+        <location filename="../src/interface/fet.cpp" line="759"/>
         <source>Help</source>
         <translation>مساعدة</translation>
     </message>
@@ -53836,17 +53836,17 @@ N1 ( C1(G1,G2), C2(G1, G3) )
         <translation>غير مسمى</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1380"/>
+        <location filename="../src/interface/fet.cpp" line="1385"/>
         <source>Please check the constraints related to the activity below, which might be impossible to schedule:</source>
         <translation>يرجى التحقق من القيود المتصلة بالنشاط أدناه ، والتي قد يكون من المستحيل جدواتها زمنيا:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1386"/>
+        <location filename="../src/interface/fet.cpp" line="1391"/>
         <source>No: %1</source>
         <translation>رقم: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1390"/>
+        <location filename="../src/interface/fet.cpp" line="1395"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
         <translation>Id: %1 (%2)</translation>
@@ -54763,37 +54763,37 @@ N1 ( C1(G1,G2), C2(G1, G3) )
         <location filename="../src/interface/timetableprintform.cpp" line="284"/>
         <source>Executive</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>Executive</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="285"/>
         <source>Folio</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>Folio</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="286"/>
         <source>Ledger</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>Ledger</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="287"/>
         <source>Legal</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>Legal</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="288"/>
         <source>Letter</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>Letter</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="289"/>
         <source>Tabloid</source>
         <comment>Type of paper size</comment>
-        <translation></translation>
+        <translation>Tabloid</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="314"/>

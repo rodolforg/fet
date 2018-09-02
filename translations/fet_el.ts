@@ -779,8 +779,7 @@ there won&apos;t be removed an additional number of %1 activities
         <location filename="../src/interface/activityplanningform.cpp" line="1865"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1889"/>
         <source>Modify %1 activities from selected cell?</source>
-        <translatorcomment>Να τροποποιθούν %1 δραστηριότητες από το επιλεγμένο κελί;</translatorcomment>
-        <translation></translation>
+        <translation>Να τροποποιηθούν %1 δραστηριότητες από το επιλεγμένο κελί;</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1919"/>
@@ -1771,7 +1770,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addactivityform_template.ui" line="2535"/>
         <source>Min days</source>
         <comment>Refers to min days between the components of a larger split activity. Please keep translation short</comment>
-        <translation></translation>
+        <translation>Ελάχιστες ημέρες</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="2555"/>
@@ -2553,7 +2552,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="392"/>
         <source>Constraint NOT added - duplicate?</source>
         <comment>&apos;Duplicate&apos; means that the constraint is identical to an existing constraint and cannot be added.</comment>
-        <translation>Περιορισμός δεν προστέθηκε - υπάρχει ήδη;</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - υπάρχει ήδη;</translation>
     </message>
 </context>
 <context>
@@ -2705,7 +2704,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="392"/>
         <source>Constraint NOT added - duplicate?</source>
         <comment>&apos;Duplicate&apos; means that the constraint is identical to an existing constraint and cannot be added.</comment>
-        <translation>Περιορισμός δεν προστέθηκε - υπάρχει ήδη;</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - υπάρχει ήδη;</translation>
     </message>
 </context>
 <context>
@@ -3581,7 +3580,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="230"/>
         <source>Constraint NOT added - duplicate</source>
         <comment>&apos;Duplicate&apos; means that the constraint is identical to an existing constraint and cannot be added.</comment>
-        <translation>Περιορισμός δεν προστέθηκε - υπάρχει ήδη</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - υπάρχει ήδη</translation>
     </message>
 </context>
 <context>
@@ -3702,7 +3701,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="395"/>
         <source>Constraint NOT added - duplicate?</source>
         <comment>&apos;Duplicate&apos; means that the constraint is identical to an existing constraint and cannot be added.</comment>
-        <translation>Περιορισμός δεν προστέθηκε - υπάρχει ήδη;</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - υπάρχει ήδη;</translation>
     </message>
 </context>
 <context>
@@ -3816,7 +3815,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="394"/>
         <source>Constraint NOT added - duplicate?</source>
         <comment>&apos;Duplicate&apos; means that the constraint is identical to an existing constraint and cannot be added.</comment>
-        <translation>Περιορισμός δεν προστέθηκε - υπάρχει ήδη;</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - υπάρχει ήδη;</translation>
     </message>
 </context>
 <context>
@@ -3925,7 +3924,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitytagpreferredroomform.cpp" line="118"/>
         <source>Constraint NOT added - error ?</source>
-        <translation>Περιορισμός δεν προστέθηκε - σφάλμα;</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - σφάλμα;</translation>
     </message>
 </context>
 <context>
@@ -5985,7 +5984,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/addconstraintstudentssethomeroomform.cpp" line="113"/>
         <source>Constraint NOT added - error ?</source>
-        <translation></translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - σφάλμα;</translation>
     </message>
 </context>
 <context>
@@ -7165,7 +7164,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform.cpp" line="300"/>
         <source>Constraint NOT added - duplicate?</source>
         <comment>&apos;Duplicate&apos; means that the constraint is identical to an existing constraint and cannot be added.</comment>
-        <translation>Περιορισμός δεν προστέθηκε - υπάρχει ήδη;</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - υπάρχει ήδη;</translation>
     </message>
 </context>
 <context>
@@ -7273,7 +7272,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform.cpp" line="301"/>
         <source>Constraint NOT added - duplicate?</source>
         <comment>&apos;Duplicate&apos; means that the constraint is identical to an existing constraint and cannot be added.</comment>
-        <translation>Περιορισμός δεν προστέθηκε - υπάρχει ήδη;</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - υπάρχει ήδη;</translation>
     </message>
 </context>
 <context>
@@ -7388,7 +7387,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintsubjectactivitytagpreferredroomform.cpp" line="130"/>
         <source>Constraint NOT added - error ?</source>
-        <translation>Περιορισμός δεν προστέθηκε - σφάλμα;</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - σφάλμα;</translation>
     </message>
 </context>
 <context>
@@ -7557,7 +7556,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomform.cpp" line="110"/>
         <source>Constraint NOT added - error ?</source>
-        <translation>Περιορισμός δεν προστέθηκε - σφάλμα;</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - σφάλμα;</translation>
     </message>
 </context>
 <context>
@@ -7868,7 +7867,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomform.cpp" line="102"/>
         <source>Constraint NOT added - error ?</source>
-        <translation>Περιορισμός δεν προστέθηκε - σφάλμα;</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - σφάλμα;</translation>
     </message>
 </context>
 <context>
@@ -10067,7 +10066,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="243"/>
         <source>Constraint NOT added - error?</source>
-        <translation>Περιορισμός δεν προστέθηκε - σφάλμα;</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - σφάλμα;</translation>
     </message>
 </context>
 <context>
@@ -10172,7 +10171,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="230"/>
         <source>Constraint NOT added - error?</source>
-        <translation>Περιορισμός δεν προστέθηκε - σφάλμα;</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - σφάλμα;</translation>
     </message>
 </context>
 <context>
@@ -10278,7 +10277,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="228"/>
         <source>Constraint NOT added - error?</source>
-        <translation>Περιορισμός δεν προστέθηκε - σφάλμα;</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - σφάλμα;</translation>
     </message>
 </context>
 <context>
@@ -10378,7 +10377,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="230"/>
         <source>Constraint NOT added - error?</source>
-        <translation>Περιορισμός δεν προστέθηκε - σφάλμα;</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - σφάλμα;</translation>
     </message>
 </context>
 <context>
@@ -10458,33 +10457,33 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="226"/>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="229"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="188"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="198"/>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="210"/>
         <source>Invalid activity</source>
-        <translation type="unfinished">Μη αποδεκτή δραστηριότητα</translation>
+        <translation>Μη αποδεκτή δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="218"/>
         <source>Same activities - impossible</source>
-        <translation type="unfinished">Ίδιες δραστηριότητες - αδύνατον</translation>
+        <translation>Ίδιες δραστηριότητες - αδύνατον</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="227"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="230"/>
         <source>Constraint NOT added - error?</source>
-        <translation type="unfinished">Περιορισμός δεν προστέθηκε - σφάλμα;</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - σφάλμα;</translation>
     </message>
 </context>
 <context>
@@ -10493,64 +10492,65 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="14"/>
         <source>Add two activities ordered if same day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Δύο δραστηριότητες - διατεταγμένες αν την ίδια ημέρα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="20"/>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="26"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation type="unfinished">Ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="52"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="62"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="89"/>
         <source>First activity</source>
-        <translation type="unfinished">Πρώτη δραστηριότητα</translation>
+        <translation>Πρώτη δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="125"/>
         <source>Second activity</source>
-        <translation type="unfinished">Δεύτερη δραστηριότητα</translation>
+        <translation>Δεύτερη δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="177"/>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
-        <translation type="unfinished"></translation>
+        <translation>Βαρύτητα
+(προτεινόμενο ποσοστό: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="199"/>
         <source>Swap</source>
         <comment>Interchange (swap) the two selected activities in the dialog</comment>
-        <translation type="unfinished">Αντιμετάθεση</translation>
+        <translation>Αντιμετάθεση</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="206"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="213"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
 </context>
 <context>
@@ -24152,7 +24152,8 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="2681"/>
         <source>S:%1</source>
         <comment>Subject</comment>
-        <translation></translation>
+        <translatorcomment>Αντικείμενο</translatorcomment>
+        <translation>Α:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2684"/>
@@ -30260,7 +30261,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13332"/>
         <source>Two activities ordered (the second activity must begin at any time in the week later than the first activity has finished)</source>
-        <translation type="unfinished"></translation>
+        <translation>Δύο δραστηριότητες - διατεταγμένες (η δεύτερη δραστηριότητα οφείλει να ξεκινά σε οποιαδήποτε ώρα (περίοδο) μέσα στην εβδομάδα μετά την ολοκλήρωση της πρώτης δραστηριότητας)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13317"/>
@@ -30383,7 +30384,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="26"/>
         <source>This constraint forces two activities A1 and A2: A2 to begin later than A1 has finished, separated by any time interval in the week</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο περιορισμός αυτός επιβάλει σε δύο δραστηριότητες Δ1 και Δ2 το εξής: Η Δ2 οφείλει να ξεκινά σε κάποια ώρα (περίοδο) μετά την ολοκλήρωση της Δ1. Ανάμεσα στις δραστηριότητες Δ1 και Δ2 μπορεί να μεσολαβεί οποιοδήποτε χρονικό διάστημα μέσα στην εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="153"/>
@@ -30413,95 +30414,95 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="13521"/>
         <location filename="../src/engine/timeconstraint.cpp" line="13530"/>
         <source>FET error in data</source>
-        <translation type="unfinished">FET - Σφάλμα στα δεδομένα</translation>
+        <translation>FET - Σφάλμα στα δεδομένα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13503"/>
         <location filename="../src/engine/timeconstraint.cpp" line="13522"/>
         <source>Following constraint is wrong (refers to inexistent activity ids):
 %1</source>
-        <translation type="unfinished">Ο παρακάτω περιορισμός παρουσιάζει σφάλμα (σχετίζεται με ανύπαρκτους ατ δραστηριότητας). Παρακαλώ διορθώστε τον:
+        <translation>Ο παρακάτω περιορισμός παρουσιάζει σφάλμα (σχετίζεται με ανύπαρκτους ατ δραστηριότητας). Παρακαλώ διορθώστε τον:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13531"/>
         <source>Following constraint is wrong (refers to same activities):
 %1</source>
-        <translation type="unfinished">Ο παρακάτω περιορισμός παρουσιάζει σφάλμα (σχετίζεται με τις ίδιες δραστηριότητες). Παρακαλώ διορθώστε τον:
+        <translation>Ο παρακάτω περιορισμός παρουσιάζει σφάλμα (σχετίζεται με τις ίδιες δραστηριότητες). Παρακαλώ διορθώστε τον:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13572"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">Σ: %1</translation>
+        <translation>Σ: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13576"/>
         <source>Two activities ordered if same day:</source>
-        <translation type="unfinished"></translation>
+        <translation>Δύο δραστηριότητες - διατεταγμένες αν την ίδια ημέρα:</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13579"/>
         <source>first act. id: %1</source>
         <comment>act.=activity</comment>
-        <translation type="unfinished">ατ πρώτης δρα.: %1</translation>
+        <translation>ατ πρώτης δρα.: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13581"/>
         <source>second act. id: %1</source>
         <comment>act.=activity</comment>
-        <translation type="unfinished">ατ δεύτερης δρα.: %1</translation>
+        <translation>ατ δεύτερης δρα.: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13583"/>
         <source>WP:%1%</source>
         <comment>Weight percentage</comment>
-        <translation type="unfinished">ΠΒ:%1%</translation>
+        <translation>ΠΒ:%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13590"/>
         <source>Time constraint</source>
-        <translation type="unfinished">Χρονικός περιορισμός</translation>
+        <translation>Χρονικός περιορισμός</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13591"/>
         <source>Two activities are ordered if they are on the same day (the second activity must begin later than the first activity has finished if they are on the same day)</source>
-        <translation type="unfinished"></translation>
+        <translation>Δύο δραστηριότητες είναι διατεταγμένες αν πραγματοποιούνται την ίδια ημέρα (η δεύτερη δραστηριότητα πρέπει να ξεκινά σε κάποια ώρα (περίοδο) μεταγενέστερη από την ολοκλήρωση της πρώτης δραστηριότητας, αν οι δραστηριότητες αυτές πραγματοποιούνται την ίδια ημέρα)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13595"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">Βαρύτητα (ποσοστό)=%1%</translation>
+        <translation>Βαρύτητα (ποσοστό)=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13598"/>
         <source>First activity id=%1 (%2)</source>
         <comment>%1 is the id, %2 is the detailed description of the activity.</comment>
-        <translation type="unfinished">Aτ πρώτης δραστηριότητας: %1 (%2)</translation>
+        <translation>Aτ πρώτης δραστηριότητας: %1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13603"/>
         <source>Second activity id=%1 (%2)</source>
         <comment>%1 is the id, %2 is the detailed description of the activity.</comment>
-        <translation type="unfinished">Aτ δεύτερης δραστηριότητας: %1 (%2)</translation>
+        <translation>Aτ δεύτερης δραστηριότητας: %1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13609"/>
         <source>Active=%1</source>
         <comment>Refers to a constraint</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ενεργή=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13613"/>
         <source>Comments=%1</source>
-        <translation type="unfinished">Σχόλια=%1</translation>
+        <translation>Σχόλια=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13651"/>
         <source>Time constraint two activities ordered if on the same day broken for first activity with id=%1 (%2) and second activity with id=%3 (%4), increases conflicts total by %5</source>
         <comment>%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;δύο δραστηριότητες - διατεταγμένες αν την ίδια ημέρα&quot; για πρώτη δραστηριότητα αυτήν με ατ=%1 (%2) και δεύτερη δραστηριότητα αυτήν με ατ=%3 (%4). Το σύνολο των συγκρούσεων αυξάνεται κατά %5</translation>
     </message>
 </context>
 <context>
@@ -30510,33 +30511,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="242"/>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="267"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="242"/>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="267"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Μη αποδεκτή επιλογή περιορισμού</translation>
+        <translation>Μη αποδεκτή επιλογή περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="272"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Διαγραφή περιορισμού;</translation>
+        <translation>Διαγραφή περιορισμού;</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="278"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">FET - Επιβεβαίωση</translation>
+        <translation>FET - Επιβεβαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="279"/>
         <source>Yes</source>
-        <translation type="unfinished">Ναι</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="279"/>
         <source>No</source>
-        <translation type="unfinished">Όχι</translation>
+        <translation>Όχι</translation>
     </message>
 </context>
 <context>
@@ -30545,67 +30546,67 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="14"/>
         <source>Constraints two activies ordered if same day</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Περιορισμοί: &quot;Δύο δραστηριότητες - διατεταγμένες αν την ίδια ημέρα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="26"/>
         <source>This constraint forces two activities A1 and A2: if they are on the same day, A2 needs to begin later than A1 has finished.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο περιορισμός αυτός αφορά δύο δραστηριότητες Δ1 και Δ2 οι οποίες αν πραγματοποιούνται την ίδια ημέρα, η Δ2 οφείλει να ξεκινά σε κάποια ώρα (περίοδο) μετά την ολοκλήρωση της Δ1.</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="44"/>
         <source>Constraints</source>
-        <translation type="unfinished">Περιορισμοί</translation>
+        <translation>Περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="61"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Τρέχων περιορισμός</translation>
+        <translation>Τρέχων περιορισμός</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="74"/>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="80"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="93"/>
         <source>Students set</source>
-        <translation type="unfinished">Ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="106"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="119"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="139"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="146"/>
         <source>Modify</source>
-        <translation type="unfinished">Τροποποίηση</translation>
+        <translation>Τροποποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="153"/>
         <source>Remove</source>
-        <translation type="unfinished">Διαγραφή</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="160"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
 </context>
 <context>
@@ -33792,7 +33793,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1884"/>
         <source>Two activities are ordered if they are on the same day</source>
-        <translation type="unfinished"></translation>
+        <translation>Δύο δραστηριότητες είναι διατεταγμένες αν πραγματοποιούνται την ίδια ημέρα</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1889"/>
@@ -34496,66 +34497,66 @@ Having a subgroup with too little working hours per week means that you inputted
 <context>
     <name>FetTranslate</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="294"/>
-        <location filename="../src/interface/fet.cpp" line="853"/>
+        <location filename="../src/interface/fet.cpp" line="295"/>
+        <location filename="../src/interface/fet.cpp" line="854"/>
         <source>FET warning</source>
         <translation>FET - Προειδοποίηση</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="294"/>
+        <location filename="../src/interface/fet.cpp" line="295"/>
         <source>Output directory %1 does not exist and cannot be created - output directory will be made the default value %2</source>
         <translation>Ο κατάλογος εξαγωγής %1 είναι ανύπαρκτος και δεν μπορεί να δημιουργηθεί - θα χρησιμοποιηθεί ο προκαθορισμένος κατάλογος εξαγωγής: %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="814"/>
-        <location filename="../src/interface/fet.cpp" line="823"/>
+        <location filename="../src/interface/fet.cpp" line="815"/>
+        <location filename="../src/interface/fet.cpp" line="824"/>
         <source>FET critical</source>
         <translation>FET - Κρίσιμο σφάλμα</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="853"/>
+        <location filename="../src/interface/fet.cpp" line="854"/>
         <source>To start FET in interface mode, please do not give any command-line parameters to the FET executable</source>
         <translation>Για να εκκινήσετε το FET σε λειτουργία διεπαφής, παρακαλώ να μην δώσετε καμία παράμετρο γραμμής εντολών στο εκτελέσιμο αρχείο του FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1193"/>
+        <location filename="../src/interface/fet.cpp" line="1198"/>
         <source>This is the list of max placed activities, chronologically. If FET could reach maximum n-th activity, look at the n+1-st activity in the initial order of the activities</source>
         <translation>Αυτή είναι η λίστα των μέγιστων τοποθετημένων δραστηριοτήτων, σε χρονική σειρά. Αν το FET κατάφερε να φτάσει κατά μέγιστο στην n δραστηριότητα, εξετάστε την (n+1) δραστηριότητα στην αρχική σειρά των δραστηριοτήτων</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1487"/>
+        <location filename="../src/interface/fet.cpp" line="1492"/>
         <source>FET managed to schedule correctly the first %1 most difficult activities. You can see initial order of placing the activities in the corresponding output file. The activity which might cause problems might be the next activity in the initial order of evaluation. This activity is listed below:</source>
         <translation>Το FET κατάφερε να προγραμματίσει (τοποθετήσει) σωστά τις πρώτες %1 δύσκολες δραστηριότητες. Μπορείτε να δείτε την αρχική σειρά τοποθέτησης των δραστηριοτήτων στο αντίστοιχο αρχείο εξόδου. Η δραστηριότητα η οποία ενδέχεται να προξενεί προβλήματα πιθανώς να είναι η επόμενη δραστηριότητα στην αρχική σειρά επεξεργασίας των δραστηριοτήτων. Η δραστηριότητα αυτή παρατίθεται παρακάτω:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1494"/>
-        <location filename="../src/interface/fet.cpp" line="1514"/>
+        <location filename="../src/interface/fet.cpp" line="1499"/>
+        <location filename="../src/interface/fet.cpp" line="1519"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
         <translation>Ατ: %1 (%2)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1499"/>
+        <location filename="../src/interface/fet.cpp" line="1504"/>
         <source>Difficult activity cannot be computed - please report possible bug</source>
         <translation>Υπολογισμός δύσκολης δραστηριότητας αδύνατος - παρακαλώ να αναφέρετε πιθανό σφάλμα λογισμικού (bug)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1503"/>
+        <location filename="../src/interface/fet.cpp" line="1508"/>
         <source>Here are the placed activities which lead to an inconsistency, in order from the first one to the last (the last one FET failed to schedule and the last ones are most likely impossible):</source>
         <translation>Εδώ παρατίθενται οι τοποθετημένες (προγραμματισμένες) δραστηριότητες οι οποίες οδήγησαν σε ασυνέπεια, σε σειρά από την πρώτη δραστηριότητα μέχρι την τελευταία (Το FET δεν μπόρεσε να τοποθετήσει την τελευταία δραστηριότητα. Οι τελευταίες δραστηριότητες κατά πάσα πιθανότητα είναι αδύνατον να τοποθετηθούν):</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1510"/>
+        <location filename="../src/interface/fet.cpp" line="1515"/>
         <source>No: %1</source>
         <translation>Αρ.: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="814"/>
+        <location filename="../src/interface/fet.cpp" line="815"/>
         <source>Cannot create or use %1 directory (where the results should be stored) - you can continue operation, but you might not be able to work with FET. Maybe you can try to change the output directory from the &apos;Settings&apos; menu. If this is a bug - please report it.</source>
         <translation>Αδύνατη η δημιουργία ή χρήση του καταλόγου %1 (όπου θα έπρεπε να αποθηκευτούν τα αποτελέσματα) - μπορείτε να συνεχίσετε την λειτουργία, αλλά ενδεχομένως να μην μπορέσετε να δουλέψετε με το FET. Πιθανώς, μπορείτε να δοκιμάσετε να αλλάξετε τον κατάλογο εξαγωγής από το μενού &quot;Ρυθμίσεις&quot;. Αν αυτό είναι κάποια σφάλμα λογισμικού (bug), παρακαλώ να το αναφέρετε.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="823"/>
+        <location filename="../src/interface/fet.cpp" line="824"/>
         <source>You don&apos;t have write permissions in the output directory (FET cannot open or create file %1) - you might not be able to work correctly with FET. Maybe you can try to change the output directory from the &apos;Settings&apos; menu. If this is a bug - please report it.</source>
         <translation>Δεν έχετε δικαιώματα εγγραφής στον κατάλογο εξαγωγής (το FET δεν μπορεί να ανοίξει ή να δημιουργήσει το αρχείο %1) - ενδεχομένως να μην μπορέσετε να δουλέψετε κανονικά με το FET. Πιθανώς, μπορείτε να δοκιμάσετε να αλλάξετε τον κατάλογο εξαγωγής από το μενού &quot;Ρυθμίσεις&quot;. Αν αυτό είναι κάποια σφάλμα λογισμικού (bug), παρακαλώ να το αναφέρετε.</translation>
     </message>
@@ -41544,7 +41545,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomsform_template.ui" line="64"/>
         <source>Selected</source>
         <comment>It refers to a list of selected rooms</comment>
-        <translation></translation>
+        <translation>Επιλεγμένες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomsform_template.ui" line="94"/>
@@ -47313,27 +47314,27 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform.cpp" line="144"/>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform.cpp" line="151"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform.cpp" line="126"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform.cpp" line="135"/>
         <source>Invalid first activity</source>
-        <translation type="unfinished">Πρώτη δραστηριότητα - μη αποδεκτή</translation>
+        <translation>Πρώτη δραστηριότητα - μη αποδεκτή</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform.cpp" line="145"/>
         <source>Invalid second activity</source>
-        <translation type="unfinished">Δεύτερη δραστηριότητα - μη αποδεκτή</translation>
+        <translation>Δεύτερη δραστηριότητα - μη αποδεκτή</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform.cpp" line="152"/>
         <source>Same activities - impossible</source>
-        <translation type="unfinished">Ίδιες δραστηριότητες - αδύνατον</translation>
+        <translation>Ίδιες δραστηριότητες - αδύνατον</translation>
     </message>
 </context>
 <context>
@@ -47342,39 +47343,40 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="14"/>
         <source>Modify two activities ordered if same day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Τροποποίηση: &quot;Δύο δραστηριότητες - διατεταγμένες αν την ίδια ημέρα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="22"/>
         <source>Swap</source>
         <comment>Interchange (swap) the two selected activities in the dialog</comment>
-        <translation type="unfinished">Αντιμετάθεση</translation>
+        <translation>Αντιμετάθεση</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="29"/>
         <source>Ok</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="36"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="53"/>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
-        <translation type="unfinished"></translation>
+        <translation>Βαρύτητα
+(προτεινόμενο ποσοστό: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="97"/>
         <source>First activity</source>
-        <translation type="unfinished">Πρώτη δραστηριότητα</translation>
+        <translation>Πρώτη δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="133"/>
         <source>Second activity</source>
-        <translation type="unfinished">Δεύτερη δραστηριότητα</translation>
+        <translation>Δεύτερη δραστηριότητα</translation>
     </message>
 </context>
 <context>
@@ -47972,52 +47974,52 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>QDialogButtonBox</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="716"/>
+        <location filename="../src/interface/fet.cpp" line="717"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;ΟΚ</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="718"/>
+        <location filename="../src/interface/fet.cpp" line="719"/>
         <source>OK</source>
         <translation>ΟΚ</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="721"/>
+        <location filename="../src/interface/fet.cpp" line="722"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Άκυρο</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="723"/>
+        <location filename="../src/interface/fet.cpp" line="724"/>
         <source>Cancel</source>
         <translation>Άκυρο</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="726"/>
+        <location filename="../src/interface/fet.cpp" line="727"/>
         <source>&amp;Yes</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Ναι</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="728"/>
+        <location filename="../src/interface/fet.cpp" line="729"/>
         <source>Yes to &amp;All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>Ν&amp;αι σε Όλα</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="732"/>
+        <location filename="../src/interface/fet.cpp" line="733"/>
         <source>N&amp;o to All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>Ό&amp;χι σε Όλα</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="735"/>
+        <location filename="../src/interface/fet.cpp" line="736"/>
         <source>Help</source>
         <translation>Βοήθεια</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="730"/>
+        <location filename="../src/interface/fet.cpp" line="731"/>
         <source>&amp;No</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Όχι</translation>
@@ -48026,13 +48028,13 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>QGnomeTheme</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="761"/>
+        <location filename="../src/interface/fet.cpp" line="762"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;ΟΚ</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="763"/>
+        <location filename="../src/interface/fet.cpp" line="764"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Άκυρο</translation>
@@ -48041,53 +48043,53 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>QPlatformTheme</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="739"/>
+        <location filename="../src/interface/fet.cpp" line="740"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;ΟΚ</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="741"/>
+        <location filename="../src/interface/fet.cpp" line="742"/>
         <source>OK</source>
         <translation>ΟΚ</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="744"/>
+        <location filename="../src/interface/fet.cpp" line="745"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Άκυρο</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="746"/>
+        <location filename="../src/interface/fet.cpp" line="747"/>
         <source>Cancel</source>
         <translation>Άκυρο</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="749"/>
+        <location filename="../src/interface/fet.cpp" line="750"/>
         <source>&amp;Yes</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Ναι</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="751"/>
+        <location filename="../src/interface/fet.cpp" line="752"/>
         <source>Yes to &amp;All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>Ν&amp;αι σε Όλα</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="753"/>
+        <location filename="../src/interface/fet.cpp" line="754"/>
         <source>&amp;No</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Όχι</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="755"/>
+        <location filename="../src/interface/fet.cpp" line="756"/>
         <source>N&amp;o to All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>Ό&amp;χι σε Όλα</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="758"/>
+        <location filename="../src/interface/fet.cpp" line="759"/>
         <source>Help</source>
         <translation>Βοήθεια</translation>
     </message>
@@ -53841,17 +53843,17 @@ Bottom: %4</source>
         <translation>χωρίς όνομα</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1380"/>
+        <location filename="../src/interface/fet.cpp" line="1385"/>
         <source>Please check the constraints related to the activity below, which might be impossible to schedule:</source>
         <translation>Παρακαλώ ελέγξτε τους περιορισμούς που σχετίζονται με την παρακάτω δραστηριότητα, η οποία πιθανώς να είναι αδύνατον να τοποθετηθεί στο ωρολόγιο πρόγραμμα:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1386"/>
+        <location filename="../src/interface/fet.cpp" line="1391"/>
         <source>No: %1</source>
         <translation>Αρ.: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1390"/>
+        <location filename="../src/interface/fet.cpp" line="1395"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
         <translation>Ατ: %1 (%2)</translation>

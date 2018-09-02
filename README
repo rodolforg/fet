@@ -1,4 +1,4 @@
-This is FET version 5.36.0-snapshot-14-jun-2018-00_22
+This is FET version 5.36.0
 
 
 Program description:
@@ -247,7 +247,7 @@ Running FET:
 	 [--writetimetablesrooms=wt13] [--writetimetablessubjects=wt14] [--writetimetablesactivitytags=wt15] [--writetimetablesactivities=wt16]
 	 [--printactivitytags=a] [--printnotavailable=u] [--printbreak=b] [--dividetimeaxisbydays=v] [--duplicateverticalheaders=e]
 	 [--printsimultaneousactivities=w] [--randomseedx=rx --randomseedy=ry] [--warnifusingnotperfectconstraints=s]
-	 [--warnifusingstudentsminhoursdailywithallowemptydays=p] [--warnsubgroupswiththesameactivities=ssa]
+	 [--warnifusingstudentsminhoursdailywithallowemptydays=p] [--warnifusinggroupactivitiesininitialorder=g] [--warnsubgroupswiththesameactivities=ssa]
 	 [--printdetailedtimetables=pdt] [--printdetailedteachersfreeperiodstimetables=pdtfp]
 	 [--exportcsv=ecsv] [--overwritecsv=ocsv] [--firstlineisheadingcsv=flhcsv] [--quotescsv=qcsv] [--fieldseparatorcsv=fscsv]
 	 [--verbose=r]",
@@ -261,9 +261,9 @@ Running FET:
 				uk, uz, vi, zh_CN, zh_TW (default en_US).
 			wt1 to wt16 are either true or false and represent whether you want the corresponding timetables to be written on the disk (default true).
 			a is either true or false and represets if you want activity tags to be present in the final HTML timetables (default true).
-			u is either "true" or "false" and represents if you want -x- (for true) or --- (for false) in the generated timetables for the
+			u is either true or false and represents if you want -x- (for true) or --- (for false) in the generated timetables for the
 				not available slots (default true).
-			b is either "true" or "false" and represents if you want -X- (for true) or --- (for false) in the generated timetables for the
+			b is either true or false and represents if you want -X- (for true) or --- (for false) in the generated timetables for the
 				break slots (default true).
 			v is either true or false, represents if you want the HTML timetables with time-axis divided by days (default false).
 			e is either true or false, represents if you want the HTML timetables to duplicate vertical headers to the right of the tables,
@@ -277,6 +277,8 @@ Running FET:
 				(activity tag max hours daily or students max gaps per day) (default true).
 			p is either true or false, represents whether you want a message box to be shown, with a warning, if the input file contains nonstandard constraints
 				students min hours daily with allow empty days (default true).
+			g is either true or false, represents whether you want a message box to be shown, with a warning, if the input file contains nonstandard timetable
+				generation options to group activities in the initial order (default true).
 			ssa is either true or false, represents whether you want a message box to be show, with a warning, if your input file contains subgroups which have
 				the same activities (default true).
 			pdt is either true or false, represents whether you want to show the detailed (true) or less detailed (false) years and groups timetables (default true).

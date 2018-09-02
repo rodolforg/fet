@@ -10455,33 +10455,33 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="226"/>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="229"/>
         <source>FET information</source>
-        <translation type="unfinished">FET información</translation>
+        <translation>FET información</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="188"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Peso (%) inválido</translation>
+        <translation>Peso (%) inválido</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="198"/>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="210"/>
         <source>Invalid activity</source>
-        <translation type="unfinished">Actividad inválida</translation>
+        <translation>Actividad inválida</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="218"/>
         <source>Same activities - impossible</source>
-        <translation type="unfinished"></translation>
+        <translation>Mismas actividades - imposible</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="227"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Restricción añadida:</translation>
+        <translation>Restricción añadida:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform.cpp" line="230"/>
         <source>Constraint NOT added - error?</source>
-        <translation type="unfinished"></translation>
+        <translation>Restricción no añadida- ¿error?</translation>
     </message>
 </context>
 <context>
@@ -10490,64 +10490,65 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="14"/>
         <source>Add two activities ordered if same day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Añadir dos actividades ordenadas si están en el mismo día</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="20"/>
         <source>Filter</source>
-        <translation type="unfinished">Filtro</translation>
+        <translation>Filtro</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="26"/>
         <source>Teacher</source>
-        <translation type="unfinished">Profesor</translation>
+        <translation>Profesor</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation type="unfinished"></translation>
+        <translation>Grupos</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="52"/>
         <source>Subject</source>
-        <translation type="unfinished">Materia</translation>
+        <translation>Materia</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="62"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Código de actividad</translation>
+        <translation>Código de actividad</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="89"/>
         <source>First activity</source>
-        <translation type="unfinished">Primera actividad</translation>
+        <translation>Primera actividad</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="125"/>
         <source>Second activity</source>
-        <translation type="unfinished">Segunda actividad</translation>
+        <translation>Segunda actividad</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="177"/>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
-        <translation type="unfinished"></translation>
+        <translation>Peso
+(recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="199"/>
         <source>Swap</source>
         <comment>Interchange (swap) the two selected activities in the dialog</comment>
-        <translation type="unfinished">Intercambiar</translation>
+        <translation>Intercambiar</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="206"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Añadir restricción</translation>
+        <translation>Añadir restricción</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui" line="213"/>
         <source>Close</source>
-        <translation type="unfinished">Cerrar</translation>
+        <translation>Cerrar</translation>
     </message>
 </context>
 <context>
@@ -30219,7 +30220,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13332"/>
         <source>Two activities ordered (the second activity must begin at any time in the week later than the first activity has finished)</source>
-        <translation type="unfinished"></translation>
+        <translation>Dos actividades ordenadas (la segunda debe empezar a cualquier hora, una semana después que la primera actividad termina)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13317"/>
@@ -30342,7 +30343,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="26"/>
         <source>This constraint forces two activities A1 and A2: A2 to begin later than A1 has finished, separated by any time interval in the week</source>
-        <translation type="unfinished"></translation>
+        <translation>Esta restricción limita dos actividades A1 y A2: A2 empieza una vez que A1 termina, ambas separadas en cualquier intervalo en la semana</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="153"/>
@@ -30372,95 +30373,95 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="13521"/>
         <location filename="../src/engine/timeconstraint.cpp" line="13530"/>
         <source>FET error in data</source>
-        <translation type="unfinished"></translation>
+        <translation>FET error en datos</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13503"/>
         <location filename="../src/engine/timeconstraint.cpp" line="13522"/>
         <source>Following constraint is wrong (refers to inexistent activity ids):
 %1</source>
-        <translation type="unfinished">La siguiente restricción es incorrecta (se refiere a una id de actividad inexistente):
+        <translation>La siguiente restricción es incorrecta (se refiere a una id de actividad inexistente):
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13531"/>
         <source>Following constraint is wrong (refers to same activities):
 %1</source>
-        <translation type="unfinished">La siguiente restricción es incorrecta (se refiere a las mismas actividades):
+        <translation>La siguiente restricción es incorrecta (se refiere a las mismas actividades):
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13572"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">C: %1</translation>
+        <translation>C: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13576"/>
         <source>Two activities ordered if same day:</source>
-        <translation type="unfinished"></translation>
+        <translation>Dos actividades ordenadas si son en el mismo día:</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13579"/>
         <source>first act. id: %1</source>
         <comment>act.=activity</comment>
-        <translation type="unfinished">1era act. id: %1</translation>
+        <translation>1era act. id: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13581"/>
         <source>second act. id: %1</source>
         <comment>act.=activity</comment>
-        <translation type="unfinished">2da act. id: %1</translation>
+        <translation>2da act. id: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13583"/>
         <source>WP:%1%</source>
         <comment>Weight percentage</comment>
-        <translation type="unfinished">PP:%1%</translation>
+        <translation>PP:%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13590"/>
         <source>Time constraint</source>
-        <translation type="unfinished">Restricción de tiempo</translation>
+        <translation>Restricción de tiempo</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13591"/>
         <source>Two activities are ordered if they are on the same day (the second activity must begin later than the first activity has finished if they are on the same day)</source>
-        <translation type="unfinished"></translation>
+        <translation>Dos actividades se consideran ordenadas si están en el mismo día (la segunda debe empezar después que la primera termina si están en el mismo día)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13595"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">Peso (%)=%1%</translation>
+        <translation>Peso (%)=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13598"/>
         <source>First activity id=%1 (%2)</source>
         <comment>%1 is the id, %2 is the detailed description of the activity.</comment>
-        <translation type="unfinished">1era actividad id=%1 (%2)</translation>
+        <translation>1era actividad id=%1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13603"/>
         <source>Second activity id=%1 (%2)</source>
         <comment>%1 is the id, %2 is the detailed description of the activity.</comment>
-        <translation type="unfinished">2da actividad id=%1 (%2)</translation>
+        <translation>2da actividad id=%1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13609"/>
         <source>Active=%1</source>
         <comment>Refers to a constraint</comment>
-        <translation type="unfinished">Activa=%1</translation>
+        <translation>Activa=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13613"/>
         <source>Comments=%1</source>
-        <translation type="unfinished">Comentarios=%1</translation>
+        <translation>Comentarios=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13651"/>
         <source>Time constraint two activities ordered if on the same day broken for first activity with id=%1 (%2) and second activity with id=%3 (%4), increases conflicts total by %5</source>
         <comment>%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Restricción de tiempo de dos actividades ordenadas en el mismo día incorrecta para la primera con id=%1 (%2) y la segunda con id=%3 (%4), esto aumenta el total de conflictos en un %5</translation>
     </message>
 </context>
 <context>
@@ -30469,33 +30470,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="242"/>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="267"/>
         <source>FET information</source>
-        <translation type="unfinished">FET información</translation>
+        <translation>FET información</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="242"/>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="267"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Restricción seleccionada inválida</translation>
+        <translation>Restricción seleccionada inválida</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="272"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">¿Eliminar restricción?</translation>
+        <translation>¿Eliminar restricción?</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="278"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">FET confirmación</translation>
+        <translation>FET confirmación</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="279"/>
         <source>Yes</source>
-        <translation type="unfinished">Sí</translation>
+        <translation>Sí</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform.cpp" line="279"/>
         <source>No</source>
-        <translation type="unfinished">No</translation>
+        <translation>No</translation>
     </message>
 </context>
 <context>
@@ -30504,67 +30505,67 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="14"/>
         <source>Constraints two activies ordered if same day</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Restricciones de dos actividades ordenadas si están en el mismo día</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="26"/>
         <source>This constraint forces two activities A1 and A2: if they are on the same day, A2 needs to begin later than A1 has finished.</source>
-        <translation type="unfinished"></translation>
+        <translation>Esta restricción limita dos actividades A1 y A2: si están en el mismo día, A2 debe empezar una vez que A1 termina.</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="44"/>
         <source>Constraints</source>
-        <translation type="unfinished">Restricciones</translation>
+        <translation>Restricciones</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="61"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Restricción actual</translation>
+        <translation>Restricción actual</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="74"/>
         <source>Filter</source>
-        <translation type="unfinished">Filtro</translation>
+        <translation>Filtro</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="80"/>
         <source>Teacher</source>
-        <translation type="unfinished">Profesor</translation>
+        <translation>Profesor</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="93"/>
         <source>Students set</source>
-        <translation type="unfinished"></translation>
+        <translation>Grupos</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="106"/>
         <source>Subject</source>
-        <translation type="unfinished">Materia</translation>
+        <translation>Materia</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="119"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Código de actividad</translation>
+        <translation>Código de actividad</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="139"/>
         <source>Add</source>
-        <translation type="unfinished">Añadir</translation>
+        <translation>Añadir</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="146"/>
         <source>Modify</source>
-        <translation type="unfinished">Modificar</translation>
+        <translation>Modificar</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="153"/>
         <source>Remove</source>
-        <translation type="unfinished">Eliminar</translation>
+        <translation>Eliminar</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="160"/>
         <source>Close</source>
-        <translation type="unfinished">Cerrar</translation>
+        <translation>Cerrar</translation>
     </message>
 </context>
 <context>
@@ -33587,7 +33588,7 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1884"/>
         <source>Two activities are ordered if they are on the same day</source>
-        <translation type="unfinished"></translation>
+        <translation>Dos actividades se consideran ordenadas si están en el mismo día</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2101"/>
@@ -34453,66 +34454,66 @@ Detenga la simulación antes de esto.</translation>
 <context>
     <name>FetTranslate</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="294"/>
-        <location filename="../src/interface/fet.cpp" line="853"/>
+        <location filename="../src/interface/fet.cpp" line="295"/>
+        <location filename="../src/interface/fet.cpp" line="854"/>
         <source>FET warning</source>
         <translation>FET advertencia</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="294"/>
+        <location filename="../src/interface/fet.cpp" line="295"/>
         <source>Output directory %1 does not exist and cannot be created - output directory will be made the default value %2</source>
         <translation>El directorio de salida %1 no existe y no se pudo crear -  el directorio de salida será el valor predefinido %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="814"/>
-        <location filename="../src/interface/fet.cpp" line="823"/>
+        <location filename="../src/interface/fet.cpp" line="815"/>
+        <location filename="../src/interface/fet.cpp" line="824"/>
         <source>FET critical</source>
         <translation>FET crítico</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="853"/>
+        <location filename="../src/interface/fet.cpp" line="854"/>
         <source>To start FET in interface mode, please do not give any command-line parameters to the FET executable</source>
         <translation>Para iniciar FET en modo de interfaz, no use ningún parámetro en la línea de comandos al ejecutar FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1193"/>
+        <location filename="../src/interface/fet.cpp" line="1198"/>
         <source>This is the list of max placed activities, chronologically. If FET could reach maximum n-th activity, look at the n+1-st activity in the initial order of the activities</source>
         <translation>Esta es la lista de actividades máximas colocadas, cronológicamente. Si FET alcanzase la actividad enésima máxima, observe la actividad n+1era en el orden inicial de las actividades</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1487"/>
+        <location filename="../src/interface/fet.cpp" line="1492"/>
         <source>FET managed to schedule correctly the first %1 most difficult activities. You can see initial order of placing the activities in the corresponding output file. The activity which might cause problems might be the next activity in the initial order of evaluation. This activity is listed below:</source>
         <translation>FET logró programar correctamente las primeras %1 actividades más difíciles. Puede ver el orden inicial en que se colocaron las actividades en el archivo de salida correspondiente. La actividad que podría causar problemas podría ser la siguiente actividad en el orden inicial de evaluación. Esta actividad se muestra a continuación:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1494"/>
-        <location filename="../src/interface/fet.cpp" line="1514"/>
+        <location filename="../src/interface/fet.cpp" line="1499"/>
+        <location filename="../src/interface/fet.cpp" line="1519"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
         <translation>Id: %1 (%2)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1499"/>
+        <location filename="../src/interface/fet.cpp" line="1504"/>
         <source>Difficult activity cannot be computed - please report possible bug</source>
         <translation>La actividad difícil no se pudo evaluar - informe de un posible error</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1503"/>
+        <location filename="../src/interface/fet.cpp" line="1508"/>
         <source>Here are the placed activities which lead to an inconsistency, in order from the first one to the last (the last one FET failed to schedule and the last ones are most likely impossible):</source>
         <translation>Aquí están las actividades colocadas que conducen a una incoherencia, en orden de primera a última (en la última FET falló al programarla y las últimas son probable imposibles):</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1510"/>
+        <location filename="../src/interface/fet.cpp" line="1515"/>
         <source>No: %1</source>
         <translation>No: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="814"/>
+        <location filename="../src/interface/fet.cpp" line="815"/>
         <source>Cannot create or use %1 directory (where the results should be stored) - you can continue operation, but you might not be able to work with FET. Maybe you can try to change the output directory from the &apos;Settings&apos; menu. If this is a bug - please report it.</source>
         <translation>No se puede crear o usar el directorio %1 (donde los resultados deben almacenarse) - puede continuar con la operación, pero es posible que no pueda trabajar con FET. Quizá puede intentar cambiar el directorio de salida desde el menú &apos;Configuración&apos;. Si se trata de un error, infórmelo.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="823"/>
+        <location filename="../src/interface/fet.cpp" line="824"/>
         <source>You don&apos;t have write permissions in the output directory (FET cannot open or create file %1) - you might not be able to work correctly with FET. Maybe you can try to change the output directory from the &apos;Settings&apos; menu. If this is a bug - please report it.</source>
         <translation>No tiene permiso de escritura en el directorio de salida (FET no puede abrir o crear el archivo %1) - puede que no pueda trabajar correctamente con FET. Quizá puede intentar cambiar el directorio de salida desde el menú &apos;Configuración&apos;. Si se trata de un error, infórmelo.</translation>
     </message>
@@ -47255,27 +47256,27 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform.cpp" line="144"/>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform.cpp" line="151"/>
         <source>FET information</source>
-        <translation type="unfinished">FET información</translation>
+        <translation>FET información</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform.cpp" line="126"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Peso (%) inválido</translation>
+        <translation>Peso (%) inválido</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform.cpp" line="135"/>
         <source>Invalid first activity</source>
-        <translation type="unfinished">Primera actividad inválida</translation>
+        <translation>Primera actividad inválida</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform.cpp" line="145"/>
         <source>Invalid second activity</source>
-        <translation type="unfinished">Segunda actividad inválida</translation>
+        <translation>Segunda actividad inválida</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform.cpp" line="152"/>
         <source>Same activities - impossible</source>
-        <translation type="unfinished"></translation>
+        <translation>Mismas actividades - imposible</translation>
     </message>
 </context>
 <context>
@@ -47284,39 +47285,40 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="14"/>
         <source>Modify two activities ordered if same day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Modificar dos actividades ordenadas si están en el mismo día</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="22"/>
         <source>Swap</source>
         <comment>Interchange (swap) the two selected activities in the dialog</comment>
-        <translation type="unfinished">Intercambiar</translation>
+        <translation>Intercambiar</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="29"/>
         <source>Ok</source>
-        <translation type="unfinished">Aceptar</translation>
+        <translation>Aceptar</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="36"/>
         <source>Cancel</source>
-        <translation type="unfinished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="53"/>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
-        <translation type="unfinished"></translation>
+        <translation>Peso
+(recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="97"/>
         <source>First activity</source>
-        <translation type="unfinished">Primera actividad</translation>
+        <translation>Primera actividad</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui" line="133"/>
         <source>Second activity</source>
-        <translation type="unfinished">Segunda actividad</translation>
+        <translation>Segunda actividad</translation>
     </message>
 </context>
 <context>
@@ -47914,52 +47916,52 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
 <context>
     <name>QDialogButtonBox</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="716"/>
+        <location filename="../src/interface/fet.cpp" line="717"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Aceptar</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="718"/>
+        <location filename="../src/interface/fet.cpp" line="719"/>
         <source>OK</source>
         <translation>Aceptar</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="721"/>
+        <location filename="../src/interface/fet.cpp" line="722"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Cancelar</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="723"/>
+        <location filename="../src/interface/fet.cpp" line="724"/>
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="726"/>
+        <location filename="../src/interface/fet.cpp" line="727"/>
         <source>&amp;Yes</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Si</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="728"/>
+        <location filename="../src/interface/fet.cpp" line="729"/>
         <source>Yes to &amp;All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>Sí a &amp;todo</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="732"/>
+        <location filename="../src/interface/fet.cpp" line="733"/>
         <source>N&amp;o to All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>N&amp;o a todo</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="735"/>
+        <location filename="../src/interface/fet.cpp" line="736"/>
         <source>Help</source>
         <translation>Ayuda</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="730"/>
+        <location filename="../src/interface/fet.cpp" line="731"/>
         <source>&amp;No</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;No</translation>
@@ -47968,13 +47970,13 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
 <context>
     <name>QGnomeTheme</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="761"/>
+        <location filename="../src/interface/fet.cpp" line="762"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Aceptar</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="763"/>
+        <location filename="../src/interface/fet.cpp" line="764"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Cancelar</translation>
@@ -47983,53 +47985,53 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
 <context>
     <name>QPlatformTheme</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="739"/>
+        <location filename="../src/interface/fet.cpp" line="740"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Aceptar</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="741"/>
+        <location filename="../src/interface/fet.cpp" line="742"/>
         <source>OK</source>
         <translation>Aceptar</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="744"/>
+        <location filename="../src/interface/fet.cpp" line="745"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Cancelar</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="746"/>
+        <location filename="../src/interface/fet.cpp" line="747"/>
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="749"/>
+        <location filename="../src/interface/fet.cpp" line="750"/>
         <source>&amp;Yes</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Si</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="751"/>
+        <location filename="../src/interface/fet.cpp" line="752"/>
         <source>Yes to &amp;All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>Sí a &amp;todo</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="753"/>
+        <location filename="../src/interface/fet.cpp" line="754"/>
         <source>&amp;No</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;No</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="755"/>
+        <location filename="../src/interface/fet.cpp" line="756"/>
         <source>N&amp;o to All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>N&amp;o a todo</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="758"/>
+        <location filename="../src/interface/fet.cpp" line="759"/>
         <source>Help</source>
         <translation>Ayuda</translation>
     </message>
@@ -53777,17 +53779,17 @@ Abajo: %4</translation>
         <translation>sinnombre</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1380"/>
+        <location filename="../src/interface/fet.cpp" line="1385"/>
         <source>Please check the constraints related to the activity below, which might be impossible to schedule:</source>
         <translation>Compruebe las restricciones relacionadas con la siguiente actividad, que podría ser imposible programar:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1386"/>
+        <location filename="../src/interface/fet.cpp" line="1391"/>
         <source>No: %1</source>
         <translation>No: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1390"/>
+        <location filename="../src/interface/fet.cpp" line="1395"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
         <translation>Id: %1 (%2)</translation>

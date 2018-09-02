@@ -173,7 +173,8 @@ static void usage(QTextStream* out, const QString& error)
 		"[--writetimetablesteachersfreeperiods=wt12] "
 		"[--writetimetablesrooms=wt13] "
 		"[--writetimetablessubjects=wt14] "
-		"[--writetimetablesactivities=wt15] "
+		"[--writetimetablesactivitytags=wt15] "
+		"[--writetimetablesactivities=wt16] "
 		"[--printactivitytags=a] [--printnotavailable=u] [--printbreak=b] [--dividetimeaxisbydays=v] [--duplicateverticalheaders=e] "
 		"[--printsimultaneousactivities=w] [--randomseedx=rx --randomseedy=ry] [--warnifusingnotperfectconstraints=s] "
 		"[--warnifusingstudentsminhoursdailywithallowemptydays=p] [--warnifusinggroupactivitiesininitialorder=g] [--warnsubgroupswiththesameactivities=ssa]\n"
@@ -188,7 +189,7 @@ static void usage(QTextStream* out, const QString& error)
 		"(default 2, larger values have more details/facilities and larger file sizes).\n"
 		"t is one of ar, ca, cs, da, de, el, en_GB, en_US, es, eu, fa, fr, gl, he, hu, id, it, ja, lt, mk, ms, nl, pl, pt_BR, ro, ru, si, sk, sq, sr, tr, "
 		"uk, uz, vi, zh_CN, zh_TW (default en_US).\n"
-		"wt1 to wt15 are either true or false and represent whether you want the corresponding timetables to be written on the disk (default true).\n"
+		"wt1 to wt16 are either true or false and represent whether you want the corresponding timetables to be written on the disk (default true).\n"
 		"a is either true or false and represets if you want activity tags to be present in the final HTML timetables (default true).\n"
 		"u is either true or false and represents if you want -x- (for true) or --- (for false) in the generated timetables for the "
 		"not available slots (default true).\n"
@@ -219,10 +220,10 @@ static void usage(QTextStream* out, const QString& error)
 		"fscsv is one value from the set [comma|semicolon|verticalbar] (write a single value from these three exactly as it is written here). The default value is "
 		"comma.\n"
 		"r is either true or false, represents whether you want additional generation messages and other messages to be shown on the command line (default false).\n"
-		"Alternatively, you can run \"fet-cl --version [--outputdir=d]\" to get the current FET version. "
-		"where:\nd is the path to results directory, without trailing slash or backslash (default is current working path). "
+		"Alternatively, you can run \"fet-cl --version [--outputdir=d]\" to get the current FET version, "
+		"where\nd is the path to results directory, without trailing slash or backslash (default is current working path). "
 		"Make sure you have write permissions there.\n"
-		"(If you specify the --version argument, FET just prints version number on the command line prompt and in the output directory and exits.)\n"
+		"(If you specify the \"--version argument\", FET just prints version number on the command line prompt and in the output directory and exits.)\n"
 		"\n"
 		"You can ask the FET command line process to stop the timetable generation, by sending it the SIGTERM (or SIGBREAK, on Windows) signal. "
 		"FET will then write the current timetable and the highest stage timetable and exit. "
@@ -924,6 +925,10 @@ int main(int argc, char **argv)
 			else if(s.left(37)=="--warnsubgroupswiththesameactivities="){
 				if(s.right(5)=="false")
 					SHOW_WARNING_FOR_SUBGROUPS_WITH_THE_SAME_ACTIVITIES=false;
+			}
+			else if(s.left(43)=="--warnifusinggroupactivitiesininitialorder="){
+				if(s.right(5)=="false")
+					SHOW_WARNING_FOR_GROUP_ACTIVITIES_IN_INITIAL_ORDER=false;
 			}
 			else if(s.left(53)=="--warnifusingstudentsminhoursdailywithallowemptydays="){
 				if(s.right(5)=="false")
