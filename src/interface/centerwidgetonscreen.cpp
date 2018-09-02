@@ -20,7 +20,6 @@ File centerwidgetonscreen.cpp
  ***************************************************************************/
 
 #include "centerwidgetonscreen.h"
-#include "studentsset.h"
 
 #include <QWidget>
 #include <QApplication>
