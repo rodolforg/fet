@@ -418,7 +418,9 @@ void ActivitiesForm::addActivity()
 		stn.clear();
 	QString sn=subjectsComboBox->currentText();
 	QString atn=activityTagsComboBox->currentText();
-	
+	if (activityTagsComboBox->currentIndex() == noneItemIndex)
+		atn.clear();
+
 	AddActivityForm addActivityForm(this, tn, stn, sn, atn);
 	addActivityForm.exec();
 
