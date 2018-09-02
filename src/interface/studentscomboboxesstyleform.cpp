@@ -15,7 +15,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#include "timetable_defs.h"
+#include "fetguisettings.h"
 
 #include "centerwidgetonscreen.h"
 

@@ -215,11 +215,6 @@ const int TEACHER_IS_NOT_AVAILABLE = 8;
 
 const int TEACHERS_FREE_PERIODS_N_CATEGORIES = 9;
 
-const int STUDENTS_COMBO_BOXES_STYLE_SIMPLE=0;
-const int STUDENTS_COMBO_BOXES_STYLE_ICONS=1;
-const int STUDENTS_COMBO_BOXES_STYLE_CATEGORIZED=2;
-extern int STUDENTS_COMBO_BOXES_STYLE;
-
 ///////tricks to save work to reconvert old code
 const int CUSTOM_DOUBLE_PRECISION=6; //number of digits after the decimal dot for the weights
 
