@@ -83,6 +83,7 @@ using namespace std;
 #include "constrainttwoactivitiesgroupedform.h"
 #include "constraintthreeactivitiesgroupedform.h"
 #include "constrainttwoactivitiesorderedform.h"
+#include "constrainttwoactivitiesorderedifsamedayform.h"
 #include "constraintactivitiespreferredtimeslotsform.h"
 #include "constraintactivitiespreferredstartingtimesform.h"
 
@@ -344,6 +345,7 @@ const ConstraintDialogHelper::Mapping ConstraintDialogHelper::constraintActions[
 	{"TimeConstraintsTwoActivitiesGrouped", fCreate<ConstraintTwoActivitiesGroupedForm>},
 	{"TimeConstraintsThreeActivitiesGrouped", fCreate<ConstraintThreeActivitiesGroupedForm>},
 	{"TimeConstraintsTwoActivitiesOrdered", fCreate<ConstraintTwoActivitiesOrderedForm>},
+	{"TimeConstraintsTwoActivitiesOrderedIfSameDay", fCreate<ConstraintTwoActivitiesOrderedIfSameDayForm>},
 	{"TimeConstraintsActivityPreferredStartingTime", fCreate<ConstraintActivityPreferredStartingTimeForm>},
 	{"TimeConstraintsActivityPreferredTimeSlots", fCreate<ConstraintActivityPreferredTimeSlotsForm>},
 	{"TimeConstraintsActivitiesPreferredTimeSlots", fCreate<ConstraintActivitiesPreferredTimeSlotsForm>},

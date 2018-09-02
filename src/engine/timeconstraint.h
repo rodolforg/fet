@@ -141,10 +141,13 @@ const int CONSTRAINT_STUDENTS_MAX_SPAN_PER_DAY							=72;
 const int CONSTRAINT_STUDENTS_SET_MIN_RESTING_HOURS						=73;
 const int CONSTRAINT_STUDENTS_MIN_RESTING_HOURS							=74;
 
-const int CONSTRAINT_TEACHER_MIN_CONTINUOUS_GAP_IN_INTERVAL             =75;
-const int CONSTRAINT_TEACHERS_MIN_CONTINUOUS_GAP_IN_INTERVAL            =76;
-const int CONSTRAINT_STUDENTSSET_MIN_CONTINUOUS_GAP_IN_INTERVAL         =77;
-const int CONSTRAINT_STUDENTS_MIN_CONTINUOUS_GAP_IN_INTERVAL            =78;
+//2018-06-13
+const int CONSTRAINT_TWO_ACTIVITIES_ORDERED_IF_SAME_DAY					=75;
+
+const int CONSTRAINT_TEACHER_MIN_CONTINUOUS_GAP_IN_INTERVAL             =201;
+const int CONSTRAINT_TEACHERS_MIN_CONTINUOUS_GAP_IN_INTERVAL            =202;
+const int CONSTRAINT_STUDENTSSET_MIN_CONTINUOUS_GAP_IN_INTERVAL         =203;
+const int CONSTRAINT_STUDENTS_MIN_CONTINUOUS_GAP_IN_INTERVAL            =204;
 
 QString getActivityDetailedDescription(const Rules &r, int id);
 
@@ -2884,6 +2887,62 @@ public:
 	ConstraintTwoActivitiesOrdered();
 
 	ConstraintTwoActivitiesOrdered(double wp, int firstActId, int secondActId);
+
+	ErrorCode computeInternalStructure(const Rules& r);
+
+	bool hasInactiveActivities(const Rules& r) const;
+
+	QString getXmlDescription(const Rules& r) const;
+
+	QString getDescription(const Rules& r) const;
+
+	QString getDetailedDescription(const Rules& r) const;
+
+	double fitness(Solution& c, const Rules& r, ConflictInfo* conflictInfo = NULL);
+
+	bool isRelatedToActivity(const Rules& r, const Activity* a) const;
+	
+	bool isRelatedToTeacher(const Teacher* t) const;
+
+	bool isRelatedToSubject(const Subject* s) const;
+
+	bool isRelatedToActivityTag(const ActivityTag* s) const;
+	
+	bool isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const;
+
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
+	bool repairWrongDayOrHour(Rules& r);
+};
+
+class ConstraintTwoActivitiesOrderedIfSameDay: public TimeConstraint{
+	Q_DECLARE_TR_FUNCTIONS(ConstraintTwoActivitiesOrderedIfSameDay)
+
+public:
+	/**
+	First activity id
+	*/
+	int firstActivityId;
+
+	/**
+	Second activity id
+	*/
+	int secondActivityId;
+
+	//internal variables
+	/**
+	The index of the first activity in the rules (from 0 to rules.nActivities-1) - it is not the id of the activity
+	*/
+	int firstActivityIndex;
+
+	/**
+	The index of the second activity in the rules (from 0 to rules.nActivities-1) - it is not the id of the activity
+	*/
+	int secondActivityIndex;
+
+	ConstraintTwoActivitiesOrderedIfSameDay();
+
+	ConstraintTwoActivitiesOrderedIfSameDay(double wp, int firstActId, int secondActId);
 
 	ErrorCode computeInternalStructure(const Rules& r);
 

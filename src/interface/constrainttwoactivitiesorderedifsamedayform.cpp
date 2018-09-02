@@ -1,8 +1,8 @@
 /***************************************************************************
-                          constrainttwoactivitiesorderedform.cpp  -  description
+                          constrainttwoactivitiesorderedifsamedayform.cpp  -  description
                              -------------------
-    begin                : Aug 21, 2007
-    copyright            : (C) 2007 by Lalescu Liviu
+    begin                : 2018
+    copyright            : (C) 2018 by Lalescu Liviu
     email                : Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
  ***************************************************************************/
 
@@ -15,20 +15,20 @@
  *                                                                         *
  ***************************************************************************/
 
-#include "constrainttwoactivitiesorderedform.h"
-#include "addconstrainttwoactivitiesorderedform.h"
-#include "modifyconstrainttwoactivitiesorderedform.h"
+#include "constrainttwoactivitiesorderedifsamedayform.h"
+#include "addconstrainttwoactivitiesorderedifsamedayform.h"
+#include "modifyconstrainttwoactivitiesorderedifsamedayform.h"
 
 #include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
 #include "centerwidgetonscreen.h"
 
-ConstraintTwoActivitiesOrderedForm::ConstraintTwoActivitiesOrderedForm(QWidget* parent): TimeConstraintBaseDialog(parent)
+ConstraintTwoActivitiesOrderedIfSameDayForm::ConstraintTwoActivitiesOrderedIfSameDayForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
-	setWindowTitle(QCoreApplication::translate("ConstraintTwoActivitiesOrderedForm_template", "Constraints two activies ordered"));
+	setWindowTitle(QCoreApplication::translate("ConstraintTwoActivitiesOrderedIfSameDayForm_template", "Constraints two activies ordered"));
 
-	QString instruction = QCoreApplication::translate("ConstraintTwoActivitiesOrderedForm_template", "This constraint forces two activities A1 and A2: A2 to begin later than A1 has finished, separated by any time interval in the week");
+	QString instruction = QCoreApplication::translate("ConstraintTwoActivitiesOrderedIfSameDayForm_template", "This constraint forces two activities A1 and A2: if they are on the same day, A2 needs to begin later than A1 has finished.");
 	setInstructionText(instruction);
 
 	restoreFETDialogGeometry(this);
@@ -39,22 +39,22 @@ ConstraintTwoActivitiesOrderedForm::ConstraintTwoActivitiesOrderedForm(QWidget* 
 	filterWidget->setSubjectsVisible(true);
 	filterWidget->setActivityTagsVisible(true);
 	setFilterWidget(filterWidget);
-	connect(filterWidget, &TeacherStudentSetSubjectActivityTag_FilterWidget::FilterChanged, this, &ConstraintTwoActivitiesOrderedForm::filterChanged);
+	connect(filterWidget, &TeacherStudentSetSubjectActivityTag_FilterWidget::FilterChanged, this, &ConstraintTwoActivitiesOrderedIfSameDayForm::filterChanged);
 
 	this->filterChanged();
 }
 
-ConstraintTwoActivitiesOrderedForm::~ConstraintTwoActivitiesOrderedForm()
+ConstraintTwoActivitiesOrderedIfSameDayForm::~ConstraintTwoActivitiesOrderedIfSameDayForm()
 {
 	saveFETDialogGeometry(this);
 }
 
-bool ConstraintTwoActivitiesOrderedForm::filterOk(const TimeConstraint* ctr) const
+bool ConstraintTwoActivitiesOrderedIfSameDayForm::filterOk(const TimeConstraint* ctr) const
 {
-	if(ctr->type!=CONSTRAINT_TWO_ACTIVITIES_ORDERED)
+	if(ctr->type!=CONSTRAINT_TWO_ACTIVITIES_ORDERED_IF_SAME_DAY)
 		return false;
 
-	const ConstraintTwoActivitiesOrdered* c=(const ConstraintTwoActivitiesOrdered*) ctr;
+	ConstraintTwoActivitiesOrderedIfSameDay* c=(ConstraintTwoActivitiesOrderedIfSameDay*) ctr;
 	QSet<int> activitiesIds;
 	activitiesIds << c->firstActivityId << c->secondActivityId;
 
@@ -72,12 +72,12 @@ bool ConstraintTwoActivitiesOrderedForm::filterOk(const TimeConstraint* ctr) con
 	return filter_widget->filterActivitySet(activities);
 }
 
-QDialog * ConstraintTwoActivitiesOrderedForm::createAddDialog()
+QDialog * ConstraintTwoActivitiesOrderedIfSameDayForm::createAddDialog()
 {
-	return new AddConstraintTwoActivitiesOrderedForm(this);
+	return new AddConstraintTwoActivitiesOrderedIfSameDayForm(this);
 }
 
-QDialog * ConstraintTwoActivitiesOrderedForm::createModifyDialog(TimeConstraint *ctr)
+QDialog * ConstraintTwoActivitiesOrderedIfSameDayForm::createModifyDialog(TimeConstraint *ctr)
 {
-	return new ModifyConstraintTwoActivitiesOrderedForm(this, (ConstraintTwoActivitiesOrdered*)ctr);
+	return new ModifyConstraintTwoActivitiesOrderedIfSameDayForm(this, (ConstraintTwoActivitiesOrderedIfSameDay*)ctr);
 }

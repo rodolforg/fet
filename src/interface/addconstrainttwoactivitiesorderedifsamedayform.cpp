@@ -1,8 +1,8 @@
 /***************************************************************************
-                          addconstrainttwoactivitiesorderedform.cpp  -  description
+                          addconstrainttwoactivitiesorderedifsamedayform.cpp  -  description
                              -------------------
-    begin                : Aug 21, 2007
-    copyright            : (C) 2007 by Lalescu Liviu
+    begin                : 2018
+    copyright            : (C) 2018 by Lalescu Liviu
     email                : Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
  ***************************************************************************/
 
@@ -20,12 +20,12 @@
 #include "longtextmessagebox.h"
 #include "centerwidgetonscreen.h"
 
-#include "addconstrainttwoactivitiesorderedform.h"
+#include "addconstrainttwoactivitiesorderedifsamedayform.h"
 #include "timeconstraint.h"
 
 #include "fetguisettings.h"
 
-AddConstraintTwoActivitiesOrderedForm::AddConstraintTwoActivitiesOrderedForm(QWidget* parent): QDialog(parent)
+AddConstraintTwoActivitiesOrderedIfSameDayForm::AddConstraintTwoActivitiesOrderedIfSameDayForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);
 
@@ -100,12 +100,12 @@ AddConstraintTwoActivitiesOrderedForm::AddConstraintTwoActivitiesOrderedForm(QWi
 	updateActivitiesComboBox();
 }
 
-AddConstraintTwoActivitiesOrderedForm::~AddConstraintTwoActivitiesOrderedForm()
+AddConstraintTwoActivitiesOrderedIfSameDayForm::~AddConstraintTwoActivitiesOrderedIfSameDayForm()
 {
 	saveFETDialogGeometry(this);
 }
 
-bool AddConstraintTwoActivitiesOrderedForm::filterOk(Activity* act)
+bool AddConstraintTwoActivitiesOrderedIfSameDayForm::filterOk(Activity* act)
 {
 	QString tn=teachersComboBox->currentText();
 	QString stn=studentsComboBox->currentText();
@@ -148,7 +148,7 @@ bool AddConstraintTwoActivitiesOrderedForm::filterOk(Activity* act)
 	return ok;
 }
 
-void AddConstraintTwoActivitiesOrderedForm::updateActivitiesComboBox(){
+void AddConstraintTwoActivitiesOrderedIfSameDayForm::updateActivitiesComboBox(){
 	firstActivitiesComboBox->clear();
 	firstActivitiesList.clear();
 
@@ -170,16 +170,16 @@ void AddConstraintTwoActivitiesOrderedForm::updateActivitiesComboBox(){
 	constraintChanged();
 }
 
-void AddConstraintTwoActivitiesOrderedForm::filterChanged()
+void AddConstraintTwoActivitiesOrderedIfSameDayForm::filterChanged()
 {
 	this->updateActivitiesComboBox();
 }
 
-void AddConstraintTwoActivitiesOrderedForm::constraintChanged()
+void AddConstraintTwoActivitiesOrderedIfSameDayForm::constraintChanged()
 {
 }
 
-void AddConstraintTwoActivitiesOrderedForm::addCurrentConstraint()
+void AddConstraintTwoActivitiesOrderedIfSameDayForm::addCurrentConstraint()
 {
 	TimeConstraint *ctr=NULL;
 
@@ -222,7 +222,7 @@ void AddConstraintTwoActivitiesOrderedForm::addCurrentConstraint()
 		return;
 	}
 	
-	ctr=new ConstraintTwoActivitiesOrdered(weight, fid, sid);
+	ctr=new ConstraintTwoActivitiesOrderedIfSameDay(weight, fid, sid);
 
 	bool tmp4=gt.rules.addTimeConstraint(ctr);
 	if(tmp4)
@@ -235,7 +235,7 @@ void AddConstraintTwoActivitiesOrderedForm::addCurrentConstraint()
 	}
 }
 
-void AddConstraintTwoActivitiesOrderedForm::swap()
+void AddConstraintTwoActivitiesOrderedIfSameDayForm::swap()
 {
 	int t1=firstActivitiesComboBox->currentIndex();
 	int t2=secondActivitiesComboBox->currentIndex();

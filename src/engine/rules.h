@@ -827,6 +827,7 @@ private:
 	TimeConstraint* readTwoActivitiesGrouped(QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readThreeActivitiesGrouped(QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readTwoActivitiesOrdered(QXmlStreamReader& xml, XmlLog &log);
+	TimeConstraint* readTwoActivitiesOrderedIfSameDay(QXmlStreamReader& xml, XmlLog &log);
 	
 	TimeConstraint* readActivityPreferredTimes(QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readActivityPreferredTimeSlots(QXmlStreamReader& xml, XmlLog &log);

@@ -402,6 +402,9 @@ SOURCES += \
 	interface/constrainttwoactivitiesorderedform.cpp \
 	interface/addconstrainttwoactivitiesorderedform.cpp \
 	interface/modifyconstrainttwoactivitiesorderedform.cpp \
+	interface/constrainttwoactivitiesorderedifsamedayform.cpp \
+	interface/addconstrainttwoactivitiesorderedifsamedayform.cpp \
+	interface/modifyconstrainttwoactivitiesorderedifsamedayform.cpp \
 	\
 	interface/constraintmindaysbetweenactivitiesform.cpp \
 	interface/addconstraintmindaysbetweenactivitiesform.cpp \
@@ -910,6 +913,9 @@ HEADERS += \
 	interface/constrainttwoactivitiesorderedform.h \
 	interface/addconstrainttwoactivitiesorderedform.h \
 	interface/modifyconstrainttwoactivitiesorderedform.h \
+	interface/constrainttwoactivitiesorderedifsamedayform.h \
+	interface/addconstrainttwoactivitiesorderedifsamedayform.h \
+	interface/modifyconstrainttwoactivitiesorderedifsamedayform.h \
 	\
 	interface/constraintmindaysbetweenactivitiesform.h \
 	interface/addconstraintmindaysbetweenactivitiesform.h \
@@ -1299,6 +1305,9 @@ FORMS += \
 	\
 	interface/addconstrainttwoactivitiesorderedform_template.ui \
 	interface/modifyconstrainttwoactivitiesorderedform_template.ui \
+	interface/constrainttwoactivitiesorderedifsamedayform_template.ui \
+	interface/addconstrainttwoactivitiesorderedifsamedayform_template.ui \
+	interface/modifyconstrainttwoactivitiesorderedifsamedayform_template.ui \
 	\
 	interface/addconstraintmindaysbetweenactivitiesform_template.ui \
 	interface/modifyconstraintmindaysbetweenactivitiesform_template.ui \

@@ -4224,6 +4224,12 @@ void Rules::updateConstraintsAfterRemoval()
 			 !existingActivitiesIds.contains(c->secondActivityId) )
 				toBeRemovedTime.append(tc);
 		}
+		else if(tc->type==CONSTRAINT_TWO_ACTIVITIES_ORDERED_IF_SAME_DAY){
+			ConstraintTwoActivitiesOrderedIfSameDay* c=(ConstraintTwoActivitiesOrderedIfSameDay*)tc;
+			if( !existingActivitiesIds.contains(c->firstActivityId) ||
+			 !existingActivitiesIds.contains(c->secondActivityId) )
+				toBeRemovedTime.append(tc);
+		}
 		else if(tc->type==CONSTRAINT_ACTIVITY_ENDS_STUDENTS_DAY){
 			ConstraintActivityEndsStudentsDay* c=(ConstraintActivityEndsStudentsDay*)tc;
 			if(!existingActivitiesIds.contains(c->activityId))
@@ -6211,6 +6217,9 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 				}
 				else if(xmlReader.name()=="ConstraintTwoActivitiesOrdered"){
 					crt_constraint=readTwoActivitiesOrdered(xmlReader, log);
+				}
+				else if(xmlReader.name()=="ConstraintTwoActivitiesOrderedIfSameDay"){
+					crt_constraint=readTwoActivitiesOrderedIfSameDay(xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintActivityEndsDay" && !skipDeprecatedConstraints ){
 					errors << ErrorCode(ErrorCode::Warning,
@@ -9976,6 +9985,32 @@ TimeConstraint* Rules::readTwoActivitiesOrdered(QXmlStreamReader& xmlReader, Xml
 		}
 		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
 			continue;
+		}
+		else{
+			xmlReader.skipCurrentElement();
+			log.numberOfUnrecognizedFields++;
+		}
+	}
+	return cn;
+}
+
+TimeConstraint* Rules::readTwoActivitiesOrderedIfSameDay(QXmlStreamReader& xmlReader, XmlLog& log){
+	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintTwoActivitiesOrderedIfSameDay");
+	ConstraintTwoActivitiesOrderedIfSameDay* cn=new ConstraintTwoActivitiesOrderedIfSameDay();
+	while(xmlReader.readNextStartElement()){
+		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
+		}
+		else if(xmlReader.name()=="First_Activity_Id"){
+			QString text=xmlReader.readElementText();
+			cn->firstActivityId=text.toInt();
+			log.verbose("    Read first activity id="+CustomFETString::number(cn->firstActivityId)+"\n");
+		}
+		else if(xmlReader.name()=="Second_Activity_Id"){
+			QString text=xmlReader.readElementText();
+			cn->secondActivityId=text.toInt();
+			log.verbose("    Read second activity id="+CustomFETString::number(cn->secondActivityId)+"\n");
 		}
 		else{
 			xmlReader.skipCurrentElement();

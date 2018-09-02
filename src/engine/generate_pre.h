@@ -347,6 +347,17 @@ extern Matrix1D<QList<double> > inverseConstrTwoActivitiesOrderedPercentages;
 extern Matrix1D<QList<int> > inverseConstrTwoActivitiesOrderedActivities;
 //////////////END   2 activities ordered
 
+//////////////BEGIN 2 activities ordered if same day
+//index represents the first activity, value in array represents the second activity
+extern Matrix1D<QList<double> > constrTwoActivitiesOrderedIfSameDayPercentages;
+extern Matrix1D<QList<int> > constrTwoActivitiesOrderedIfSameDayActivities;
+void computeConstrTwoActivitiesOrderedIfSameDay();
+
+//index represents the second activity, value in array represents the first activity
+extern Matrix1D<QList<double> > inverseConstrTwoActivitiesOrderedIfSameDayPercentages;
+extern Matrix1D<QList<int> > inverseConstrTwoActivitiesOrderedIfSameDayActivities;
+//////////////END   2 activities ordered if same day
+
 
 ////////////BEGIN activity ends students day
 extern double activityEndsStudentsDayPercentages[MAX_ACTIVITIES]; //-1 for not existing

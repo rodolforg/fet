@@ -31,6 +31,7 @@
 #include "modifyconstrainttwoactivitiesgroupedform.h"
 #include "modifyconstraintthreeactivitiesgroupedform.h"
 #include "modifyconstrainttwoactivitiesorderedform.h"
+#include "modifyconstrainttwoactivitiesorderedifsamedayform.h"
 
 #include "modifyconstraintactivitiespreferredtimeslotsform.h"
 #include "modifyconstraintactivitiespreferredstartingtimesform.h"
@@ -867,22 +868,28 @@ void AllTimeConstraintsForm::modifyConstraint()
 		ModifyConstraintStudentsMinRestingHoursForm form(this, (ConstraintStudentsMinRestingHours*)ctr);
 		form.exec();
 	}
+	//2018-06-13
 	//75
+	else if(ctr->type==CONSTRAINT_TWO_ACTIVITIES_ORDERED_IF_SAME_DAY){
+		ModifyConstraintTwoActivitiesOrderedIfSameDayForm form(this, (ConstraintTwoActivitiesOrderedIfSameDay*)ctr);
+		form.exec();
+	}
+	//201
 	else if(ctr->type==CONSTRAINT_TEACHER_MIN_CONTINUOUS_GAP_IN_INTERVAL){
 		AddConstraintTeachersMinContinuousGapInIntervalForm form(this, (ConstraintTeacherMinContinuousGapInInterval*)ctr);
 		form.exec();
 	}
-	//76
+	//202
 	else if(ctr->type==CONSTRAINT_TEACHERS_MIN_CONTINUOUS_GAP_IN_INTERVAL){
 		AddConstraintTeachersMinContinuousGapInIntervalForm form(this, (ConstraintTeachersMinContinuousGapInInterval*)ctr);
 		form.exec();
 	}
-	//77
+	//203
 	else if(ctr->type==CONSTRAINT_STUDENTSSET_MIN_CONTINUOUS_GAP_IN_INTERVAL){
 		AddConstraintStudentsMinContinuousGapInIntervalForm form(this, (ConstraintStudentsSetMinContinuousGapInInterval*)ctr);
 		form.exec();
 	}
-	//78
+	//204
 	else if(ctr->type==CONSTRAINT_STUDENTS_MIN_CONTINUOUS_GAP_IN_INTERVAL){
 		AddConstraintStudentsMinContinuousGapInIntervalForm form(this, (ConstraintStudentsMinContinuousGapInInterval*)ctr);
 		form.exec();

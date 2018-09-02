@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<fet version="5.35.5">
+<fet version="5.36.0">
 
 <Institution_Name>Default institution</Institution_Name>
 
@@ -75,6 +75,7 @@
 <Activity_Tags_List>
 <Activity_Tag>
 	<Name>at1</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 </Activity_Tags_List>
@@ -1674,6 +1675,13 @@
 	<Active>true</Active>
 	<Comments></Comments>
 </ConstraintStudentsMaxDaysPerWeek>
+<ConstraintTwoActivitiesOrderedIfSameDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<First_Activity_Id>2</First_Activity_Id>
+	<Second_Activity_Id>1</Second_Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTwoActivitiesOrderedIfSameDay>
 <ConstraintTeacherMinContinuousGapInInterval>
 	<Weight_Percentage>100</Weight_Percentage>
 	<Teacher_Name>t1</Teacher_Name>
