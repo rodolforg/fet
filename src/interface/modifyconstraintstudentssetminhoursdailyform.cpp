@@ -66,7 +66,7 @@ ModifyConstraintStudentsSetMinHoursDailyForm::~ModifyConstraintStudentsSetMinHou
 }
 
 void ModifyConstraintStudentsSetMinHoursDailyForm::updateStudentsComboBox(){
-	int j=StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox, this->_ctr->students, true);
+	int j=StudentsComboBoxHelper::populateStudentsComboBox(gt.rules, studentsComboBox, this->_ctr->students, true);
 	if(j<0)
 		InvisibleSubgroupHelper::showWarningForConstraintCase(this, this->_ctr->students);
 	studentsComboBox->setCurrentIndex(j);

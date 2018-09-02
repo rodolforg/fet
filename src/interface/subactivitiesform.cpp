@@ -114,7 +114,7 @@ SubactivitiesForm::SubactivitiesForm(QWidget* parent, const QString& teacherName
 	}
 	activityTagsComboBox->setCurrentIndex(ciat);
 
-	int cist=StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox, studentsSetName, true);
+	int cist=StudentsComboBoxHelper::populateStudentsComboBox(gt.rules, studentsComboBox, studentsSetName, true);
 	/*studentsComboBox->addItem("");
 	int cist=0;
 	int currentID=0;

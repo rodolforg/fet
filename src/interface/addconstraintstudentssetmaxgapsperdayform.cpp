@@ -57,7 +57,7 @@ AddConstraintStudentsSetMaxGapsPerDayForm::~AddConstraintStudentsSetMaxGapsPerDa
 
 void AddConstraintStudentsSetMaxGapsPerDayForm::updateStudentsSetComboBox()
 {
-	StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox);
+	StudentsComboBoxHelper::populateStudentsComboBox(gt.rules, studentsComboBox);
 	/*studentsComboBox->clear();
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];

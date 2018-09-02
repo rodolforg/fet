@@ -41,7 +41,7 @@ AddConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::AddConstraintStudent
 	QSize tmp2=studentsComboBox->minimumSizeHint();
 	Q_UNUSED(tmp2);
 	
-	StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox);
+	StudentsComboBoxHelper::populateStudentsComboBox(gt.rules, studentsComboBox);
 	/*studentsComboBox->clear();
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];

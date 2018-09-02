@@ -128,7 +128,7 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 	}
 	activityTagsComboBox->setCurrentIndex(ciat);
 
-	int cist=StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox, studentsSetName, true);
+	int cist=StudentsComboBoxHelper::populateStudentsComboBox(gt.rules, studentsComboBox, studentsSetName, true);
 	studentsComboBox->insertItem(noneItemIndex, " [[ no students ]]");
 	if (cist > 0)
 		cist++;

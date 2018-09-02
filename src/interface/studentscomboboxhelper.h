@@ -13,10 +13,12 @@
 #include <QComboBox>
 #include <QString>
 
+class Rules;
+
 class StudentsComboBoxHelper
 {
 public:
-	static int populateStudentsComboBox(QComboBox* studentsComboBox, const QString& selectedStudentsSet=QString(""), bool addEmptyAtBeginning=false);
+	static int populateStudentsComboBox(const Rules& rules, QComboBox* studentsComboBox, const QString& selectedStudentsSet=QString(""), bool addEmptyAtBeginning=false);
 };
 
 #endif // STUDENTSCOMBOBOXHELPER_H

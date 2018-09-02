@@ -9,13 +9,13 @@
 
 #include "studentscomboboxhelper.h"
 
-#include "timetable_defs.h"
 #include "fetguisettings.h"
-#include "fet.h"
 
 #include <QSet>
 
-int StudentsComboBoxHelper::populateStudentsComboBox(QComboBox* studentsComboBox, const QString& selectedStudentsSet, bool addEmptyAtBeginning)
+#include "rules.h"
+
+int StudentsComboBoxHelper::populateStudentsComboBox(const Rules& rules, QComboBox* studentsComboBox, const QString& selectedStudentsSet, bool addEmptyAtBeginning)
 {
 	studentsComboBox->clear();
 
@@ -27,7 +27,7 @@ int StudentsComboBoxHelper::populateStudentsComboBox(QComboBox* studentsComboBox
 		if(selectedStudentsSet==QString(""))
 			selectedIndex=currentIndex;
 		currentIndex++;
-		if(STUDENTS_COMBO_BOXES_STYLE==STUDENTS_COMBO_BOXES_STYLE_CATEGORIZED && gt.rules.yearsList.count()>0){
+		if(STUDENTS_COMBO_BOXES_STYLE==STUDENTS_COMBO_BOXES_STYLE_CATEGORIZED && rules.yearsList.count()>0){
 #if QT_VERSION >= 0x040400
 			studentsComboBox->insertSeparator(studentsComboBox->count());
 			currentIndex++;
@@ -36,7 +36,7 @@ int StudentsComboBoxHelper::populateStudentsComboBox(QComboBox* studentsComboBox
 	}
 
 	if(STUDENTS_COMBO_BOXES_STYLE==STUDENTS_COMBO_BOXES_STYLE_SIMPLE){
-		foreach(StudentsYear* sty, gt.rules.yearsList){
+		foreach(StudentsYear* sty, rules.yearsList){
 			studentsComboBox->addItem(sty->name);
 			if(sty->name==selectedStudentsSet)
 				selectedIndex=currentIndex;
@@ -58,7 +58,7 @@ int StudentsComboBoxHelper::populateStudentsComboBox(QComboBox* studentsComboBox
 		}
 	}
 	else if(STUDENTS_COMBO_BOXES_STYLE==STUDENTS_COMBO_BOXES_STYLE_ICONS){
-		foreach(StudentsYear* sty, gt.rules.yearsList){
+		foreach(StudentsYear* sty, rules.yearsList){
 			studentsComboBox->addItem(sty->name);
 			if(sty->name==selectedStudentsSet)
 				selectedIndex=currentIndex;
@@ -84,7 +84,7 @@ int StudentsComboBoxHelper::populateStudentsComboBox(QComboBox* studentsComboBox
 
 		bool haveGroups=false;
 
-		foreach(StudentsYear* sty, gt.rules.yearsList){
+		foreach(StudentsYear* sty, rules.yearsList){
 			assert(!years.contains(sty->name));
 			years.insert(sty->name);
 			studentsComboBox->addItem(sty->name);
@@ -105,7 +105,7 @@ int StudentsComboBoxHelper::populateStudentsComboBox(QComboBox* studentsComboBox
 
 			bool haveSubgroups=false;
 
-			foreach(StudentsYear* sty, gt.rules.yearsList){
+			foreach(StudentsYear* sty, rules.yearsList){
 				foreach(StudentsGroup* stg, sty->groupsList){
 					if(!groups.contains(stg->name)){
 						groups.insert(stg->name);
@@ -128,7 +128,7 @@ int StudentsComboBoxHelper::populateStudentsComboBox(QComboBox* studentsComboBox
 
 				QSet<QString> subgroups;
 
-				foreach(StudentsYear* sty, gt.rules.yearsList){
+				foreach(StudentsYear* sty, rules.yearsList){
 					foreach(StudentsGroup* stg, sty->groupsList){
 						foreach(StudentsSubgroup* sts, stg->subgroupsList){
 							if(!subgroups.contains(sts->name)){

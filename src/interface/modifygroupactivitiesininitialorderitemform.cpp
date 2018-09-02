@@ -102,7 +102,7 @@ ModifyGroupActivitiesInInitialOrderItemForm::ModifyGroupActivitiesInInitialOrder
 	}
 	activityTagsComboBox->setCurrentIndex(0);
 
-	StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox, QString(""), true);
+	StudentsComboBoxHelper::populateStudentsComboBox(gt.rules, studentsComboBox, QString(""), true);
 	/*studentsComboBox->addItem("");
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];

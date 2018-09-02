@@ -102,7 +102,7 @@ void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::updateTeachersComboBox
 }
 
 void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::updateStudentsComboBox(){
-	int j=StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox, this->_ctr->p_studentsName, true);
+	int j=StudentsComboBoxHelper::populateStudentsComboBox(gt.rules, studentsComboBox, this->_ctr->p_studentsName, true);
 	if(j<0)
 		InvisibleSubgroupHelper::showWarningForConstraintCase(this, this->_ctr->p_studentsName);
 	studentsComboBox->setCurrentIndex(j);

@@ -86,7 +86,7 @@ void AddConstraintSubactivitiesPreferredTimeSlotsForm::updateTeachersComboBox(){
 }
 
 void AddConstraintSubactivitiesPreferredTimeSlotsForm::updateStudentsComboBox(){
-	StudentsComboBoxHelper::populateStudentsComboBox(studentsComboBox, QString(""), true);
+	StudentsComboBoxHelper::populateStudentsComboBox(gt.rules, studentsComboBox, QString(""), true);
 	/*studentsComboBox->clear();
 	studentsComboBox->addItem("");
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
