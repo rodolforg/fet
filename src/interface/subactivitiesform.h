@@ -30,7 +30,8 @@ class SubactivitiesForm : public QDialog, Ui::SubactivitiesForm_template  {
 	
 private:
 	QSet<QString> showedStudents;
-	
+	static const int noneItemIndex = 1;
+
 public:
 	ActivitiesList visibleSubactivitiesList;
 
