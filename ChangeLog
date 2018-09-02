@@ -2063,8 +2063,9 @@ Versions 5.35.0 - 5.35.7
 ---------------------------------------------------------------------------------
 Versions 5.36.0 - 5.36.v
 -Version 5.36.0
-	- The students' combo boxes can be shown in three styles: simple, with icons or categorized (suggested by math).
+	- The students' combo boxes can now be shown in three styles: simple (the old style), with icons, or categorized (suggested by math).
 	- The view students' timetable days horizontal dialog was improved. Now the user can see the timetable for each year/each group/each subgroup (as before),
-	for all years/each group/each subgroup, or all years/all groups/each subgroup. Suggested by math.
+	for all years/each group/each subgroup, or for all years/all groups/each subgroup. Suggested by math.
 	- The languages dialog now contains the untranslated description of each language (suggested by Volker Dirr).
+	- Corrected two compiler warnings (reported by Innocent De Marchi).
 	- Corrected two bugs in the German translation (reported by math).

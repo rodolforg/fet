@@ -179,7 +179,7 @@ int populateStudentsComboBox(QComboBox* studentsComboBox, const QString& selecte
 		if(selectedStudentsSet==QString(""))
 			selectedIndex=currentIndex;
 		currentIndex++;
-		if(STUDENTS_COMBO_BOXES_STYLE==STUDENTS_COMBO_BOXES_STYLE_CATEGORIZED){
+		if(STUDENTS_COMBO_BOXES_STYLE==STUDENTS_COMBO_BOXES_STYLE_CATEGORIZED && gt.rules.yearsList.count()>0){
 #if QT_VERSION >= 0x040400
 			studentsComboBox->insertSeparator(studentsComboBox->count());
 			currentIndex++;
@@ -233,8 +233,8 @@ int populateStudentsComboBox(QComboBox* studentsComboBox, const QString& selecte
 	}
 	else if(STUDENTS_COMBO_BOXES_STYLE==STUDENTS_COMBO_BOXES_STYLE_CATEGORIZED){
 		QSet<QString> years;
-		QSet<QString> groups;
-		QSet<QString> subgroups;
+		
+		bool haveGroups=false;
 	
 		foreach(StudentsYear* sty, gt.rules.yearsList){
 			assert(!years.contains(sty->name));
@@ -243,40 +243,53 @@ int populateStudentsComboBox(QComboBox* studentsComboBox, const QString& selecte
 			if(sty->name==selectedStudentsSet)
 				selectedIndex=currentIndex;
 			currentIndex++;
+			
+			if(!haveGroups && sty->groupsList.count()>0)
+				haveGroups=true;
 		}
 		
+		if(haveGroups){
 #if QT_VERSION >= 0x040400
-		studentsComboBox->insertSeparator(studentsComboBox->count());
-		currentIndex++;
+			studentsComboBox->insertSeparator(studentsComboBox->count());
+			currentIndex++;
 #endif
-
-		foreach(StudentsYear* sty, gt.rules.yearsList){
-			foreach(StudentsGroup* stg, sty->groupsList){
-				if(!groups.contains(stg->name)){
-					groups.insert(stg->name);
-					studentsComboBox->addItem(stg->name);
-					if(stg->name==selectedStudentsSet)
-						selectedIndex=currentIndex;
-					currentIndex++;
-				}
-			}
-		}
-
-#if QT_VERSION >= 0x040400
-		studentsComboBox->insertSeparator(studentsComboBox->count());
-		currentIndex++;
-#endif
-
-		if(SHOW_SUBGROUPS_IN_COMBO_BOXES){
+			QSet<QString> groups;
+		
+			bool haveSubgroups=false;
+	
 			foreach(StudentsYear* sty, gt.rules.yearsList){
 				foreach(StudentsGroup* stg, sty->groupsList){
-					foreach(StudentsSubgroup* sts, stg->subgroupsList){
-						if(!subgroups.contains(sts->name)){
-							subgroups.insert(sts->name);
-							studentsComboBox->addItem(sts->name);
-							if(sts->name==selectedStudentsSet)
-								selectedIndex=currentIndex;
-							currentIndex++;
+					if(!groups.contains(stg->name)){
+						groups.insert(stg->name);
+						studentsComboBox->addItem(stg->name);
+						if(stg->name==selectedStudentsSet)
+							selectedIndex=currentIndex;
+						currentIndex++;
+						
+						if(!haveSubgroups && stg->subgroupsList.count()>0)
+							haveSubgroups=true;
+					}
+				}
+			}
+
+			if(SHOW_SUBGROUPS_IN_COMBO_BOXES && haveSubgroups){
+#if QT_VERSION >= 0x040400
+				studentsComboBox->insertSeparator(studentsComboBox->count());
+				currentIndex++;
+#endif
+
+				QSet<QString> subgroups;
+
+				foreach(StudentsYear* sty, gt.rules.yearsList){
+					foreach(StudentsGroup* stg, sty->groupsList){
+						foreach(StudentsSubgroup* sts, stg->subgroupsList){
+							if(!subgroups.contains(sts->name)){
+								subgroups.insert(sts->name);
+								studentsComboBox->addItem(sts->name);
+								if(sts->name==selectedStudentsSet)
+									selectedIndex=currentIndex;
+								currentIndex++;
+							}
 						}
 					}
 				}
