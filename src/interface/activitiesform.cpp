@@ -102,7 +102,7 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 		const Teacher* tch=gt.rules.teachersList[i];
 		teachersComboBox->addItem(tch->name);
 		if(tch->name==teacherName)
-			cit=i+1;
+			cit=i+2;
 	}
 	teachersComboBox->setCurrentIndex(cit);
 
@@ -123,7 +123,7 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 		const ActivityTag* st=gt.rules.activityTagsList[i];
 		activityTagsComboBox->addItem(st->name);
 		if(st->name==activityTagName)
-			ciat=i+1;
+			ciat=i+2;
 	}
 	activityTagsComboBox->setCurrentIndex(ciat);
 
