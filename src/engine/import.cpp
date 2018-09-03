@@ -1004,7 +1004,7 @@ int Import::readFields(QWidget* parent){
 									} else {
 										int totalInt=itemOfField[FIELD_TOTAL_DURATION].toInt(&ok, 10);
 										if(totalInt!=tmpInt){
-											warnText+=Import::tr("Skipped line %1: Fields '%2' and '%3' haven't the same value.").arg(lineNumber).arg(fieldName[i]).arg(fieldName[FIELD_TOTAL_DURATION])+"\n";
+											warnText+=Import::tr("Skipped line %1: Fields '%2' and '%3' do not have the same value.").arg(lineNumber).arg(fieldName[i]).arg(fieldName[FIELD_TOTAL_DURATION])+"\n";
 											ok=false;
 										}
 									}
@@ -1044,7 +1044,7 @@ int Import::readFields(QWidget* parent){
 								warnText+=Import::tr("Skipped line %1: Field '%2' doesn't contain a number (double) value.").arg(lineNumber).arg(fieldName[i])+"\n";
 							else {
 								if(weight<0.0 || weight>100.0){
-									warnText+=Import::tr("Skipped line %1: Field '%2' contains an number (double) value.").arg(lineNumber).arg(fieldName[i])+"\n";
+									warnText+=Import::tr("Skipped line %1: Field '%2' contains an invalid number (double) value.").arg(lineNumber).arg(fieldName[i])+"\n";
 									ok=false;
 								}
 							}
@@ -1060,7 +1060,7 @@ int Import::readFields(QWidget* parent){
 							else
 								ok=false;
 							if(!ok)
-								warnText+=Import::tr("Skipped line %1: Field '%2' contain an unknown value.").arg(lineNumber).arg(fieldName[i])+"\n";
+								warnText+=Import::tr("Skipped line %1: Field '%2' contains an unknown value.").arg(lineNumber).arg(fieldName[i])+"\n";
 						}
 					} else if(fieldNumber[i]==IMPORT_DEFAULT_ITEM){
 						itemOfField[i].clear();
