@@ -15,3 +15,5 @@ SUBDIRS += \
     ParadoxMinGapsVs3Grouped \
     ParadoxOrderedVsReversedConsecutive \
     ParadoxConsecutiveVsConsecutive \
+    ParadoxOrderedIfOnSameDayVsReversedConsecutive \
+    ParadoxOrderedIfOnSameDayVsReversedOrdered

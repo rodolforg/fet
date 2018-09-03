@@ -38,6 +38,8 @@ SOURCES += \
 	engine/constraints/paradoxmingapsvs3grouped.cpp \
 	engine/constraints/paradoxorderedvsreversedconsecutive.cpp \
 	engine/constraints/paradoxconsecutivevsconsecutive.cpp \
+	engine/constraints/paradoxorderedifsamedayvsconsecutive.cpp \
+	engine/constraints/paradoxorderedifsamedayvsreversed.cpp \
 	\
 	interface/fet.cpp \
 	interface/longtextmessagebox.cpp \
@@ -82,6 +84,8 @@ HEADERS += \
 	engine/constraints/paradoxmingapsvs3grouped.h \
 	engine/constraints/paradoxorderedvsreversedconsecutive.h \
 	engine/constraints/paradoxconsecutivevsconsecutive.h \
+	engine/constraints/paradoxorderedifsamedayvsconsecutive.h \
+	engine/constraints/paradoxorderedifsamedayvsreversed.h \
 	\
 	interface/fet.h \
 	interface/longtextmessagebox.h \
