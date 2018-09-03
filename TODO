@@ -4472,12 +4472,7 @@ From Benahmed Abdelkrim (on forum):
 write directly into cells Activity planning, especially for the activities which are not divided(not split).
 for the activities that are divided, we can momentarily kept the weight by fefaut (95%), and later change it if we want.
 
-260---------------------------------------------------------
-From Volker Dirr:
-
-Add teachers target number of hours.
-
-Add teachers teaching qualification.
+260----------------------DONE-------------------------------
 
 261---------------------------------------------------------
 From Volker Dirr:
@@ -6374,3 +6369,21 @@ void setNotAvailable(QList<QSet<int> > *activitiesListWithDayNotAvailableSet, QL
 		}
 	}
 }
+
+362--------------------------------------------------------
+From math (on forum):
+
+When I start preparing a new timetable for the next semester, I do not start from scratch but from some kind of base configuration file. This file
+contains general information about rooms, times of blocks, teachers, lecture titles, etc. So I can directly start with creating activities etc.
+
+The list of teachers is quite long and encompasses both internal and external teachers. Internal teachers have a full contract with our university
+while external teachers are external experts that are hired only for one specific lecture, project or seminar in that particular semester.
+If somebody new is giving a lecture for the first time, I add him or her to this base configuration file, no matter if he/she will ever give a course
+in one of the following semesters. Hence, only a small subset of configured teachers is actually teaching within that semester. When printing timetables
+for teachers, I either have to create lots of empty timetables or I have to carefully select all the "active" teachers from the list. To be honest,
+I usually take the easier way.
+
+So here's my suggestion: wouldn't it be possible to add another option to the settings dialog? (e.g. Settings -> Timetables -> Hide teachers without activities)
+When this option is disabled (standard behaviour), FET acts like it currently does.
+When this option is enabled, the list of teachers in the timetabling dialogs (Timetable -> Teachers -> ...) is filtered, so that it only contains teachers
+that actually have activities in their timetables. Also the teacher list in the printing dialog (Timetable -> Print -> Teachers) is filtered in this way.

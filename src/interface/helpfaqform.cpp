@@ -615,6 +615,12 @@ void HelpFaqForm::setText()
 		"A: It is recommended to enable automatic search for updates. I didn't set it as default because people might be annoyed if I "
 		"release too fast new versions. But if you can cope with that, it is recommended to always have the latest version and enable "
 		"searching for updates at startup.");
+	s+="\n\n";
+	s+=tr("Please note that, by enabling this option, each time you start FET it will get the file %1 from the FET homepage, so the request for "
+		"this file will be visible on the server, along with your IP address and access time.")
+		.arg("https://lalescu.ro/liviu/fet/crtversion/crtversion.txt");
+	s+=" ";
+	s+=tr("Thus, it could be deduced if and when you use FET.");
 
 	s+="\n\n";
 	s+="--------------------";

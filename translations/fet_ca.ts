@@ -4,187 +4,187 @@
 <context>
     <name>ActivitiesForm</name>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="388"/>
-        <location filename="../src/interface/activitiesform.cpp" line="439"/>
-        <location filename="../src/interface/activitiesform.cpp" line="500"/>
-        <location filename="../src/interface/activitiesform.cpp" line="605"/>
+        <location filename="../src/interface/activitiesform.cpp" line="391"/>
+        <location filename="../src/interface/activitiesform.cpp" line="442"/>
+        <location filename="../src/interface/activitiesform.cpp" line="503"/>
+        <location filename="../src/interface/activitiesform.cpp" line="608"/>
         <source>FET information</source>
         <translation>Informació de FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="388"/>
-        <location filename="../src/interface/activitiesform.cpp" line="500"/>
-        <location filename="../src/interface/activitiesform.cpp" line="605"/>
+        <location filename="../src/interface/activitiesform.cpp" line="391"/>
+        <location filename="../src/interface/activitiesform.cpp" line="503"/>
+        <location filename="../src/interface/activitiesform.cpp" line="608"/>
         <source>Invalid selected activity</source>
         <translation>Activitat seleccionada no vàlida</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="440"/>
+        <location filename="../src/interface/activitiesform.cpp" line="443"/>
         <source>Cannot modify this large activity, because it contains more than %1 activities.</source>
         <translation>No es pot modificar aquesta activitat gran perquè conté més de %1 activitats.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="513"/>
+        <location filename="../src/interface/activitiesform.cpp" line="516"/>
         <source>Remove activity?</source>
         <translation>Treure activitat?</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="516"/>
+        <location filename="../src/interface/activitiesform.cpp" line="519"/>
         <source>There will also be removed the related activities from the same larger split activity</source>
         <translation>També es treuran les activitats que formen part del grup d&apos;activitats dividides</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="521"/>
+        <location filename="../src/interface/activitiesform.cpp" line="524"/>
         <source>FET confirmation</source>
         <translation>Confirmació de FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="522"/>
+        <location filename="../src/interface/activitiesform.cpp" line="525"/>
         <source>Yes</source>
         <translation>Sí</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="522"/>
+        <location filename="../src/interface/activitiesform.cpp" line="525"/>
         <source>No</source>
         <translation>No</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="348"/>
+        <location filename="../src/interface/activitiesform.cpp" line="351"/>
         <source>No: %1 / %2</source>
         <comment>No means number, %1 is the number of active activities, %2 is the number of total activities. Please leave spaces between fields, so that they are better visible</comment>
         <translation>No: %1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="350"/>
+        <location filename="../src/interface/activitiesform.cpp" line="353"/>
         <source>Dur: %1 / %2</source>
         <comment>Dur means duration, %1 is the duration of active activities, %2 is the duration of total activities. Please leave spaces between fields, so that they are better visible</comment>
         <translation>Dur: %1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="449"/>
+        <location filename="../src/interface/activitiesform.cpp" line="452"/>
         <source>different teachers</source>
         <translation>professors diferents</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="451"/>
+        <location filename="../src/interface/activitiesform.cpp" line="454"/>
         <source>different subject</source>
         <translation>matèria diferent</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="453"/>
+        <location filename="../src/interface/activitiesform.cpp" line="456"/>
         <source>different activity tags</source>
         <translation>etiquetes d&apos;activitat diferents</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="455"/>
+        <location filename="../src/interface/activitiesform.cpp" line="458"/>
         <source>different students</source>
         <translation>estudiants diferents</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="457"/>
+        <location filename="../src/interface/activitiesform.cpp" line="460"/>
         <source>different boolean variable &apos;must compute n total students&apos;</source>
         <translation>variable booleana diferent &quot;cal comptabilitzar n estudiants totals</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="459"/>
+        <location filename="../src/interface/activitiesform.cpp" line="462"/>
         <source>different number of students</source>
         <translation>nombre d&apos;estudiants diferent</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="462"/>
+        <location filename="../src/interface/activitiesform.cpp" line="465"/>
         <source>The current split activity has subactivities which were individually modified. It is recommended to abort now and modify individual subactivities from the corresponding menu. Otherwise you will modify the fields for all the subactivities from this larger split activity.</source>
         <translation>L&apos;actual activitat dividida té subactivitats que han estat modificades individualment. Es recomana cancel·lar ara i modificar les subactivitats individuals des del menú corresponent. Si ho modifiques des d&apos;aquí afectarà a totes les subactivitats que formen part d&apos;aquesta activitat dividida.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="466"/>
+        <location filename="../src/interface/activitiesform.cpp" line="469"/>
         <source>The fields which are different are: %1</source>
         <translation>Els camps que són diferents són: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="468"/>
+        <location filename="../src/interface/activitiesform.cpp" line="471"/>
         <source>FET warning</source>
         <translation>Avís de FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="468"/>
+        <location filename="../src/interface/activitiesform.cpp" line="471"/>
         <source>Abort</source>
         <translation>Cancel·la</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="468"/>
+        <location filename="../src/interface/activitiesform.cpp" line="471"/>
         <source>Continue</source>
         <translation>Continua</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="566"/>
+        <location filename="../src/interface/activitiesform.cpp" line="569"/>
         <source>Useful instructions/tips:</source>
         <translation>Instruccions/consells útils:</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="569"/>
+        <location filename="../src/interface/activitiesform.cpp" line="572"/>
         <source>Above the (sub)activities list, we have 2 labels, containing 4 numbers. The first label contains text: No: a / b. The first number a is the number of active (sub)activities (we number each individual subactivity as 1), while the second number b is the number of total (sub)activities. The second label contains text: Dur: c / d. The third number c is the duration of active (sub)activities, in periods (or FET hours), while the fourth number d is the duration of total (sub)activities, in periods (or FET hours). So, No means number and Dur means duration.</source>
         <translation>Sobre la llista de (sub)activitats tenim dues etiquetes que contenen 4 nombres. La primera etiqueta conté text: No: a / b. El primer nombre a és el nombre de (sub)activitats actives (a cada subactivitat individual li posem 1), mentre que el segon nombre és el total de (sub)activitats. La segona etiqueta conté text: Dur: c / d. El tercer nombre c és la durada de les (sub)activitats actives, en períodes (o hores de FET), mentre que el quart nombre és la durada del total de (sub)activitats) en períodes (o hores de FET). Per tant, No significa nombre i Dur significa durada.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="575"/>
+        <location filename="../src/interface/activitiesform.cpp" line="578"/>
         <source>Example: No: 100 / 102, Dur: 114 / 117. They represent: 100 - the number of active (sub)activities, then 102 - the number of total (sub)activities, 114 - the duration of active activities (in periods or FET hours) and 117 - the duration of total activities (in periods or FET hours). In this example we have 2 inactive activities with their combined duration being 3 periods.</source>
         <translation>Exemple: No: 100 / 102, Dur: 114 / 117. representen: 100 - el nombre de (sub)activitats actives, i 102 - el nombre total de (sub)activitats, 114 - la durada de les activitats actives (en períodes o hores FET) i 117 - la durada de les activitats totals (en períodes o hores FET). En aquest exemple tenim 2 activitats no actives amb una durada combinada de 3 períodes.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="581"/>
+        <location filename="../src/interface/activitiesform.cpp" line="584"/>
         <source>Explanation of the short description of an activity: first comes the id. If the activity is inactive, an X follows. Then the duration. Then, if the activity is split, a slash and the total duration. Then teachers, subject, activity tag (if it is not void) and students. Then the number of students (if specified).</source>
         <translation>Explicació de la descripció curta d&apos;una activitat: primer ve la id. Si l&apos;activitat és inactiva, segueix una X. Llavors la durada. Després, si l&apos;activitat està auto dividida, una barra i la durada total. Llavors el professorat, matèria, etiqueta d&apos;activitat (si no està buida) i els estudiants. A continuació el nombre d&apos;estudiants (si s&apos;especifica).</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="585"/>
+        <location filename="../src/interface/activitiesform.cpp" line="588"/>
         <source>The activities which are inactive:</source>
         <comment>This is the help for activities which are inactive, after this field there come explanations for how inactive activities are displayed.</comment>
         <translation>Les activitats que no estan actives:</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="588"/>
+        <location filename="../src/interface/activitiesform.cpp" line="591"/>
         <source>have an X mark after the id.</source>
         <comment>It refers to inactive activities, which have this mark after the id.</comment>
         <translation>té una marca X després de l&apos;id.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="591"/>
+        <location filename="../src/interface/activitiesform.cpp" line="594"/>
         <source>if you use colors in interface (see Settings/Interface menu), they will appear with different background color.</source>
         <comment>It refers to inactive activities</comment>
         <translation>Si fas servir colors a la interfície (vegeu el menú Configuració/Interfície), apareixeran amb diferent color de fons.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="593"/>
+        <location filename="../src/interface/activitiesform.cpp" line="596"/>
         <source>To modify an activity, you can also double click it.</source>
         <translation>Per modificar una activitat també hi pots fer doble click al damunt.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="595"/>
+        <location filename="../src/interface/activitiesform.cpp" line="598"/>
         <source>Show related: if you select this, there will be listed activities for groups and subgroups contained also in the current set (if the current set is a year or a group) and also higher ranked year or group (if the current set is a group or a subgroup).</source>
         <translation>Mostra les relacionades: si selecciones això, hi haurà llistades les activitats per als grups i subgrups que contingui el conjunt actual (si el conjunt actual és un curs o un grup) i també les de curs o grup de rang superior (si l&apos;actual conjunt és un grup o subgrup).</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="598"/>
+        <location filename="../src/interface/activitiesform.cpp" line="601"/>
         <source>FET Help</source>
         <translation>Ajuda de FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="616"/>
+        <location filename="../src/interface/activitiesform.cpp" line="619"/>
         <source>Activity comments</source>
         <translation>Comentaris d&apos;activitat</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="618"/>
+        <location filename="../src/interface/activitiesform.cpp" line="621"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="620"/>
+        <location filename="../src/interface/activitiesform.cpp" line="623"/>
         <source>Cancel</source>
         <translation>Cancel·la</translation>
     </message>
     <message>
-        <location filename="../src/interface/activitiesform.cpp" line="550"/>
+        <location filename="../src/interface/activitiesform.cpp" line="553"/>
         <source>Invalid activity</source>
         <translation>Activitat no vàlida</translation>
     </message>
@@ -1253,233 +1253,239 @@ no es poden eliminar %1 activitats addicionals
 <context>
     <name>AddActivityForm</name>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="574"/>
-        <location filename="../src/interface/addactivityform.cpp" line="649"/>
-        <location filename="../src/interface/addactivityform.cpp" line="691"/>
-        <location filename="../src/interface/addactivityform.cpp" line="693"/>
-        <location filename="../src/interface/addactivityform.cpp" line="771"/>
-        <location filename="../src/interface/addactivityform.cpp" line="776"/>
+        <location filename="../src/interface/addactivityform.cpp" line="629"/>
+        <location filename="../src/interface/addactivityform.cpp" line="704"/>
+        <location filename="../src/interface/addactivityform.cpp" line="746"/>
+        <location filename="../src/interface/addactivityform.cpp" line="748"/>
+        <location filename="../src/interface/addactivityform.cpp" line="826"/>
+        <location filename="../src/interface/addactivityform.cpp" line="831"/>
         <source>FET information</source>
         <translation>Informació de FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="575"/>
+        <location filename="../src/interface/addactivityform.cpp" line="630"/>
         <source>Invalid weight (percentage) for added constraint min days between activities</source>
         <translation>Pes (percentatge) no vàlid per a la restricció afegida de mínim de dies entre activitats</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="582"/>
-        <location filename="../src/interface/addactivityform.cpp" line="619"/>
-        <location filename="../src/interface/addactivityform.cpp" line="676"/>
+        <location filename="../src/interface/addactivityform.cpp" line="655"/>
+        <location filename="../src/interface/addactivityform.cpp" line="674"/>
+        <location filename="../src/interface/addactivityform.cpp" line="731"/>
         <source>FET question</source>
         <translation>Pregunta de FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="603"/>
+        <location filename="../src/interface/addactivityform.cpp" line="640"/>
         <source>FET warning</source>
         <translation>Avís de FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="604"/>
+        <location filename="../src/interface/addactivityform.cpp" line="641"/>
         <source>Invalid subject</source>
         <translation>Matèria no vàlida</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="650"/>
+        <location filename="../src/interface/addactivityform.cpp" line="705"/>
         <source>Invalid duration</source>
         <translation>Durada no vàlida</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="679"/>
-        <location filename="../src/interface/addactivityform.cpp" line="716"/>
+        <location filename="../src/interface/addactivityform.cpp" line="734"/>
+        <location filename="../src/interface/addactivityform.cpp" line="771"/>
         <source>Yes</source>
         <translation>Sí</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="679"/>
-        <location filename="../src/interface/addactivityform.cpp" line="716"/>
+        <location filename="../src/interface/addactivityform.cpp" line="734"/>
+        <location filename="../src/interface/addactivityform.cpp" line="771"/>
         <source>No</source>
         <translation>No</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="691"/>
+        <location filename="../src/interface/addactivityform.cpp" line="746"/>
         <source>Activity added</source>
         <translation>Activitat afegida</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="693"/>
+        <location filename="../src/interface/addactivityform.cpp" line="748"/>
         <source>Activity NOT added - please report error</source>
         <translation>Activitat NO afegida - siusplau comunica&apos;ns l&apos;error</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="699"/>
+        <location filename="../src/interface/addactivityform.cpp" line="754"/>
         <source>You want to add a container activity split into more than the number of days per week and also add a constraint min days between activities. This is a very bad practice from the way the algorithm of generation works (it slows down the generation and makes it harder to find a solution).</source>
         <translation>Estàs intentant afegir una activitat gran dividida en més subactivitats que dies té la setmana i a més afegint una restricció de mínim n dies entre activitats. Això no està recomanat degut a la manera en què treballa l&apos;algoritme que genera el fitxer (ralentitza la generació i fa que trobar una solució sigui més difícil).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="704"/>
+        <location filename="../src/interface/addactivityform.cpp" line="759"/>
         <source>1. If you add &apos;force consecutive if same day&apos;, then couple extra activities in pairs to obtain a number of activities equal to the number of days per week. Example: 7 activities with duration 1 in a 5 days week, then transform into 5 activities with durations: 2,2,1,1,1 and add a single container activity with these 5 components (possibly raising the weight of added constraint min days between activities up to 100%)</source>
         <translation>1. Si afegeixes &quot;posa-les consecutives si són el mateix dia&quot;, agrupa les activitats sobrants en parelles per obtenir un nombre d&apos;activitats igual al nombre  de dies per setmana. Exemple: 7 activitats amb durada 1 en una setmana de 5 dies. transforma aquestes activitats en 5 activitats amb durades 2,2,1,1,1 i afegeix una única activitat contenidor amb aquests 5 components (possiblement augmentant fins al 100% el pes de la restricció &quot;mín n dies entre activitats&quot;)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="708"/>
+        <location filename="../src/interface/addactivityform.cpp" line="763"/>
         <source>2. If you don&apos;t add &apos;force consecutive if same day&apos;, then add a larger activity split into a number of activities equal with the number of days per week and the remaining components into other larger split activity. For example, suppose you need to add 7 activities with duration 1 in a 5 days week. Add 2 larger container activities, first one split into 5 activities with duration 1 and second one split into 2 activities with duration 1 (possibly raising the weight of added constraints min days between activities for each of the 2 containers up to 100%)</source>
         <translation>2. Si no afegeixes &quot;posa-les consecutives si són el mateix dia&quot;, afegeix una activitat més gran dividida en un nombre d&apos;activitats igual al nombre de dies per setmana, i els components restants en una altra activitat dividida. Per exemple: suposa que necessites afegir 7 activitats amb durada 1 en una setmana de 5 dies. Afegeix 2 activitats contenidor més grans, primer una dividida  en 5 activitats amb durada 1 i la segona dividida en dues activitats amb durada 1 (possiblement augmentant fins al 100% el pes de la restricció &quot;mín n dies entre activitats&quot; per a cadascun dels dos contenidors)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="771"/>
+        <location filename="../src/interface/addactivityform.cpp" line="826"/>
         <source>Split activity added. Please note that FET currently cannot check for duplicates when adding split activities. It is advisable to check the statistics after adding all the activities</source>
         <translation>Activitat dividida afegida. Siusplau tingues en compte que actualment FET no pot comprovar si hi ha duplicats quan s&apos;afegeix una activitat dividida. És aconsellable comprovar les estadístiques un cop s&apos;hagin afegit totes les activitats</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="776"/>
+        <location filename="../src/interface/addactivityform.cpp" line="831"/>
         <source>Split activity NOT added - error???</source>
         <translation>Activitat dividida NO afegida-error???</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="801"/>
+        <location filename="../src/interface/addactivityform.cpp" line="856"/>
         <source>Abbreviations in this dialog:</source>
         <translation>Abreviatures en aquest quadre de diàleg:</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="803"/>
+        <location filename="../src/interface/addactivityform.cpp" line="858"/>
         <source>&apos;Students&apos; (the text near the spin box), means &apos;Number of students (-1 for automatic)&apos;</source>
         <translation>&apos;Estudiants&apos; (el text al costat de la casella giratòria), significa &apos;Nombre d&apos;estudiants (´1 per automàtic)&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="805"/>
+        <location filename="../src/interface/addactivityform.cpp" line="860"/>
         <source>&apos;Split&apos; means &apos;Split into ... activities per week&apos;</source>
         <translation>&apos;Divideix&apos; significa &apos;Divideix entre ... activitats per setmana&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="807"/>
+        <location filename="../src/interface/addactivityform.cpp" line="862"/>
         <source>&apos;Min days&apos; means &apos;The minimum required distance in days between each pair of activities&apos;</source>
         <translation>&apos;Min dies&apos; significa &apos;La mínima distància requerida en dies entre cada parell d&apos;activitats&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="809"/>
+        <location filename="../src/interface/addactivityform.cpp" line="864"/>
         <source>&apos;Weight %&apos; means &apos;Percentage of added constraint (min days between activities constraint). Recommended: 95.0%-100.0%&apos;</source>
         <translation>&apos;Ponderació %&apos; significa &apos;Percentatge de la restricció afegida (restricció min dies entre activitats). Recomanat: 95.0%-100.0%&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="811"/>
+        <location filename="../src/interface/addactivityform.cpp" line="866"/>
         <source>&apos;Consecutive&apos; means &apos;If activities on same day, force consecutive?&apos;</source>
         <translation>&apos;Consecutives&apos; significa &apos;Si les activitats cauen en el mateix dia, força que siguin consecutives?&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="813"/>
+        <location filename="../src/interface/addactivityform.cpp" line="868"/>
         <source>The &apos;Duration&apos; spin box and the &apos;Active&apos; check box refer to each component of current activity, you can change them for each component, separately, by selecting the corresponding tab in the tab widget.</source>
         <translation>La casella giratòria de &apos;Durada&apos; i la casella de selecció &apos;Activa&apos; fan referència a cada component de l&apos;actual activitat, pots canviar-les per a cada component, separadament, seleccionant la pestanya corresponent a la pestanya de widget.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="824"/>
+        <location filename="../src/interface/addactivityform.cpp" line="871"/>
+        <source>&apos;Qualified&apos; means that only the teachers who are qualified to teach the selected subject will be shown in the &apos;Teachers&apos; list.</source>
+        <comment>Qualified refers to teachers</comment>
+        <translation>«Qualificat» significa que només el professorat qualificat per ensenyar l&apos;assignatura seleccionada es mostrarà a la llista &quot;Professorat&quot;.</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addactivityform.cpp" line="882"/>
         <source>You can select a teacher from all the teachers with the mouse or with the keyboard tab/up/down, then double click it to add it to the selected teachers for current activity. You can then choose to remove a teacher from the selected teachers. You can highlight it with the mouse or with the keyboard, then double click it to remove this teacher from the selected teachers.</source>
         <translation>Pots seleccionar un professor d&apos;entre tots el professorat amb el ratolí o amb el teclat tabulació/amunt/avall, després fes-hi doble click per afegir-lo als professors seleccionats per a la activitat actual. Llavors pots escollir treure un professor d&apos;entre els seleccionats. El pots destacar amb el ratolí o el teclat, i després fer-hi doble click per treure aquest professor d&apos;entre els seleccionats.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="831"/>
+        <location filename="../src/interface/addactivityform.cpp" line="889"/>
         <source>The same procedure (double click) applies to students sets and activity tags.</source>
         <translation>El mateix procediment (doble click) s&apos;aplica a etiquetes de conjunts d&apos;estudiants i d&apos;activitat.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="903"/>
+        <location filename="../src/interface/addactivityform.cpp" line="961"/>
         <source>If you select a number of min days above 1 (say this number is n), you will get the possibility to add a second constraint min days between activities, with min days = n-1 and a percentage of your choice. Just click Add activities</source>
         <translation>Si seleccionau un nombre minim de dies major a 1 (diguem-ne n), tendreu la possibilitat d&apos;afegir una segona restricció, número mínim de dies entre activitats, amb número mínim de dies = n-1 i un percentatge a la vostra elecció. Només heu de clicar «Afegir activitats»</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="817"/>
+        <location filename="../src/interface/addactivityform.cpp" line="875"/>
         <source>A first notice: If you use a 5 days week: when adding an activity split into only 2 components per week, the best practice is to add min days between activities to be 2. If you split an activity into 3 components per week - please read FAQ question Q1-5-September-2008</source>
         <translation>Avís inicial: si fas servir 5 dies per setmana, quan afegeixes una activitat dividida en només 2 components per setmana, el millor és que el mínim de dies entre activitats sigui 2. Si divideixes una activitat en 3 components per setmana siusplau llegeix la pregunta de les PMF (Preguntes Més Freqüents) Q1-5-setembre-2008</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="835"/>
+        <location filename="../src/interface/addactivityform.cpp" line="893"/>
         <source>You can check/uncheck show years, show groups or show subgroups.</source>
         <translation>Pots marcar/desmarcar les caselles de mostrar cursos, mostrar grups o mostrar subgrups.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="838"/>
+        <location filename="../src/interface/addactivityform.cpp" line="896"/>
         <source>If you split a larger activity into more activities per week, you have a multitude of choices:
 You can choose the minimum distance in days between each pair of activities. Please note that a minimum distance of 1 means that the activities must not be in the same day, a minimum distance of 2 means that the activities must be separated by one day (distance from Monday to Wednesday for instance is 2 days), etc.</source>
         <translation>Si divideixes una activitat més gran en més activitats per setmana, tens una multitud d&apos;eleccions:
 pots escollir la distància mínima en dies entre cada parell d&apos;activitats. Siusplau tingues en compte que una distància mínima d&apos;1 significa que les activitats no han d&apos;estar en el mateix dia, una distància mínima de 2 significa que les activitats han d&apos;estar separades per un dia (la distància de dilluns a dimecres, per exemple, és de 2 dies), etc.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="846"/>
+        <location filename="../src/interface/addactivityform.cpp" line="904"/>
         <source>If you have for instance an activity with 2 lessons per week and you want to spread them to at least 2 days distance, you can add a constraint min days with min days = 2 and weight 95% (or higher). If you want also to ensure that activities will be separated by at least one day, you can use this feature: add a constraint min days with minimum days 2 and weight 95% or lower, and after that you&apos;ll get the possibility to add another constraint with min 1 days and weight 95% or higher. It works if you first select in the dialog the min days &gt;= 2 and click Add activities. Or you can add manually the constraints (difficult this way). Important: it is best practice to consider both constraints to have 95% weight. The combination assures that the resultant is 99.75% weight</source>
         <translation>Si tens per exemple una activitat amb dues classes per setmana i vols repartir-les amb almenys 2 dies de distància, pots afegir una restricció de mín dies=2 amb una ponderació de 95% (o més). Si també et vols assegurar que les activitats estaran separades per almenys un dia pots usar aquesta característica: afegeix una restricció de mín dies 2 i ponderació 95% o menys, i després tindràs la possibilitat d&apos;afegir una altra restricció amb mín dies 1 i una ponderació del 95% o més. Funciona si primer selecciones al quadre de diàleg el mín dies&gt;=2 i cliques a Afegir activitats. També pots afegir manualment les restriccions (així és més difícil). Important: és millor que les dues restriccions tinguin una ponderació del 95%. La combinació assegura que el resultat tindrà una ponderació del 99,75%</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="859"/>
+        <location filename="../src/interface/addactivityform.cpp" line="917"/>
         <source>Please note that the min days distance is a time constraint and you can only see/modify it in the time constraints dialogs, not in the modify activity dialog. Additionally, you can see the constraints for each activity in the details text box of each activity</source>
         <translation>Siusplau tingues en compte que la separació de mín dies és una restricció de temps i només la pots veure/modificar des dels diàlegs de restriccions de temps, no en el diàleg de modifica activitat. A més, pots veure les restriccions per a cada activitat en el quadre de text que mostra els detalls de cada activitat</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="865"/>
+        <location filename="../src/interface/addactivityform.cpp" line="923"/>
         <source>If you choose a value greater or equal with 1 for min days, a time constraint min days between activities will be added automatically (you can see this constraint in the time constraints list or you can see this constraint in the detailed description of the activity). You can select a weight percentage for this constraint. If you select 100%, the constraint must be respected all the time. If you select 95%, there is a small chance that the timetable will not respect this constraint. Recommended values are 95.0%-100.0% (maybe you could try with 95%, then 99.75%, or even 100.0%, but the generation time might be larger). Generally, 99.75% might be a good value. Note: if you put a value less than 100% and the constraint is too tough, FET is able to find that this constraint is impossible and will break it. 99.75% might be better than 95% but possibly slower. The percentage is subjective (if you put 95% you may get 6 soft conflicts and if you put 99.75% you may get 3 soft conflicts). Starting with FET-5.3.6, it is possible to change this value for all constraints in one click, in constraint min days between activities dialog.</source>
         <translation>Si tries un valor igual o més gran que 1 pels mín dies, s&apos;afegirà automàticament una restricció de temps de mín dies entre activitats (pots veure aquesta restricció a la llista de restriccions de tempso a la descripció detallada de l&apos;activitat). Pots escollir un percentatge de pes per aquesta restricció. Si tries q00% la restricció ha de ser respectada sempre. Si tries 95% hi ha una petita possibilitat que l&apos;horari no respecti aquesta restricció. Els valors recomanats són entre 95% i 100% (potser podries probar amb 95%, després 99,75%, o inclús 100.0%, però el temps de generació de l&apos;horari podria ser més gran. Generalment 99,75% seria un bon valor. Nota: si poses un valor inferior a 100% i la restricció és massa dura, FET pot trobar que aquesta restricció és impossible i la trencarà. 99,75% podria ser millor que 95% però probablement més lenta. El percentatge és subjectiu (si poses 95% pots obtenir 6 conflictes suaus i si poses 99,75% pots obtenir 3 conflictes suaus). A partir de FET-5.3.6 és possible canviar aquest valor per totes les restriccions amb un click al diàleg de restriccions min dies entre activitats.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="879"/>
+        <location filename="../src/interface/addactivityform.cpp" line="937"/>
         <source>There is another option, if the activities are in the same day, force consecutive activities. You can select this option for instance if you have 5 lessons of math in 5 days, and there is no timetable which respects fully the days separation. Then, you can set the weight percent of the min days constraint to 95% and add consecutive if same day. You will have as results say 3 lessons with duration 1 and a 2 hours lesson in another day. Please be careful: if the activities are on the same day, even if the constraint has 0% weight, then the activities are forced to be consecutive.</source>
         <translation>Hi ha una altra opció; si les activitats son el mateix dia, força que les posi consecutives. Pots triar aquesta opció per exemple si tens 5 classes de mates en 5 dies, i no hi ha cap horari que respecti completament els dies de separació. Llavors pots posar el pes del percentatge de la restricció de  mín dies en 95% i consecutiva si és en el mateix dia. Tindràs com a resultat 3 classes amb durada 1 i una classe de durada 2 un altre dia. Ves amb compte si les activitats són en el mateix dia, inclús si la restricció té un pes del 0%, perquè les activitats seran posades consecutives.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="888"/>
+        <location filename="../src/interface/addactivityform.cpp" line="946"/>
         <source>Current algorithm cannot schedule 3 activities in the same day if consecutive is checked, so you will get no solution in such extreme cases (for instance, if you have 3 lessons and a teacher which works only 1 day per week, and select &apos;force consecutive if same day&apos;, you will get an imposssible timetable. But these are extremely unlikely cases).</source>
         <translation>L&apos;actual algoritme no pot programar 3 activitats en el mateix dia si està seleccionat &quot;consecutives&quot;, per tant no obtindràs cap solució en casos extrems com aquest (per exemple, si tens 3 classes i un professor que només treballa 1 dia per setmana i marques &quot;posa-les consecutives si són el mateix dia&quot; obtindràs un horari impossible. Però aquests casos són força improbables).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="894"/>
+        <location filename="../src/interface/addactivityform.cpp" line="952"/>
         <source>Note: You cannot add &apos;consecutive if same day&apos; with min days=0. If you want this, you have to add min days at least 1 (and any weight percentage).</source>
         <translation>Nota: no pots afegir &quot;posa-les consecutives si són el mateix dia&quot; amb mín dies=0. Si vols això has d&apos;afegir mín dies almenys 1 (i qualsevol percentatge).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="899"/>
+        <location filename="../src/interface/addactivityform.cpp" line="957"/>
         <source>Starting with version 5.0.0, it is possible to add activities with no students or no teachers</source>
         <translation>A partir de la versió 5.0.0 és possible afegir activitats sense estudiants ni professors</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="910"/>
+        <location filename="../src/interface/addactivityform.cpp" line="968"/>
         <source>FET - help on adding activity(ies)</source>
         <translation>FET - ajuda sobre l&apos;addició d&apos;activitat(s)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="916"/>
+        <location filename="../src/interface/addactivityform.cpp" line="974"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="714"/>
+        <location filename="../src/interface/addactivityform.cpp" line="769"/>
         <source>Do you want to add current activities as they are now (not recommended) or cancel and edit them as instructed?</source>
         <translation>Vols afegir les activitats actuals tal i com estan (no recomanat) o cancel·lar i editar-les tal i con se&apos;t recomana?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="702"/>
+        <location filename="../src/interface/addactivityform.cpp" line="757"/>
         <source>The best way to add the activities would be:</source>
         <translation>La millor manera d&apos;afegir les activitats seria:</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="678"/>
+        <location filename="../src/interface/addactivityform.cpp" line="733"/>
         <source>A similar activity already exists. Do you want to insert current activity?</source>
         <translation>Ja existeix una activitat similar. Vols inserir l&apos;actual activitat?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="583"/>
+        <location filename="../src/interface/addactivityform.cpp" line="656"/>
         <source>Do you really want to add an activity without teacher(s)?</source>
         <translation>Segur que vols afegir una activitat sense professor?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="620"/>
+        <location filename="../src/interface/addactivityform.cpp" line="675"/>
         <source>Do you really want to add an activity without student set(s)?</source>
         <translation>Segur que vols afegir una activitat sense grup(s) d&apos;estudiants?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="697"/>
+        <location filename="../src/interface/addactivityform.cpp" line="752"/>
         <source>FET confirmation</source>
         <translation>Confirmació de FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="698"/>
+        <location filename="../src/interface/addactivityform.cpp" line="753"/>
         <source>Possible incorrect setting. Are you sure you want to add current activity? See details below:</source>
         <translation>Possible composició incorrecta. Estàs segur que vols afegir l&apos;actual activitat? Vegeu els detalls a sota:</translation>
     </message>
@@ -1493,18 +1499,18 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="56"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="101"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="184"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="119"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="202"/>
         <source>Clear</source>
         <translation>Esborra</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="204"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="222"/>
         <source>Subject</source>
         <translation>Matèria</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="88"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="106"/>
         <source>Selected</source>
         <comment>It refers to a list of selected students (in fact, students sets, but translate selected as in &apos;selected students&apos;)</comment>
         <translation>Selecionat</translation>
@@ -1516,277 +1522,289 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
         <translation>Afegeix activitat</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="71"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="69"/>
+        <source>All</source>
+        <comment>It refers to teachers. It will show all the teachers.</comment>
+        <translation>Tot el professorat</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addactivityform_template.ui" line="76"/>
+        <source>Qualified</source>
+        <comment>It refers to teachers. It will show only the teachers qualified for the selected subject.</comment>
+        <translation>Professorat qualificat</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addactivityform_template.ui" line="89"/>
         <source>Students</source>
         <comment>It refers to sets of students, but I want to keep text short</comment>
         <translation>Estudiants</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="114"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="132"/>
         <source>Years</source>
         <translation>Cursos</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="124"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="142"/>
         <source>Groups</source>
         <translation>Grups</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="134"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="152"/>
         <source>Subgroups</source>
         <translation>Subgrups</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="235"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="253"/>
         <source>Students</source>
         <comment>It refers to the number of students, but I want to keep text small</comment>
         <translation>Estudiants</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="257"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="275"/>
         <source>Split</source>
         <comment>Refers to the number of components in an activity split into more components</comment>
         <translation>Dividides</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="287"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="305"/>
         <source>1</source>
         <translation>1</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="298"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="362"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="426"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="490"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="554"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="618"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="682"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="746"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="810"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="874"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="938"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1002"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1066"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1130"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1194"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1258"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1322"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1386"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1450"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1514"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1578"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1642"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1706"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1770"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1834"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1898"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1962"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2026"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2090"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2154"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2218"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2282"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2346"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2410"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2474"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="316"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="380"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="444"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="508"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="572"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="636"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="700"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="764"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="828"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="892"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="956"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1020"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1084"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1148"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1212"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1276"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1340"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1404"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1468"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1532"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1596"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1660"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1724"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1788"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1852"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1916"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1980"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2044"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2108"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2172"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2236"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2300"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2364"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2428"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2492"/>
         <source>Duration</source>
         <translation>Durada</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="351"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="369"/>
         <source>2</source>
         <translation>2</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="415"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="433"/>
         <source>3</source>
         <translation>3</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="479"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="497"/>
         <source>4</source>
         <translation>4</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="543"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="561"/>
         <source>5</source>
         <translation>5</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="607"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="625"/>
         <source>6</source>
         <translation>6</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="671"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="689"/>
         <source>7</source>
         <translation>7</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="735"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="753"/>
         <source>8</source>
         <translation>8</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="799"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="817"/>
         <source>9</source>
         <translation>9</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="863"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="881"/>
         <source>10</source>
         <translation>10</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="927"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="945"/>
         <source>11</source>
         <translation>11</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="991"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1009"/>
         <source>12</source>
         <translation>12</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1055"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1073"/>
         <source>13</source>
         <translation>13</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1119"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1137"/>
         <source>14</source>
         <translation>14</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1183"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1201"/>
         <source>15</source>
         <translation>15</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1247"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1265"/>
         <source>16</source>
         <translation>16</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1311"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1329"/>
         <source>17</source>
         <translation>17</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1375"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1393"/>
         <source>18</source>
         <translation>18</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1439"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1457"/>
         <source>19</source>
         <translation>19</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1503"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1521"/>
         <source>20</source>
         <translation>20</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1567"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1585"/>
         <source>21</source>
         <translation>21</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1631"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1649"/>
         <source>22</source>
         <translation>22</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1695"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1713"/>
         <source>23</source>
         <translation>23</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1759"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1777"/>
         <source>24</source>
         <translation>24</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1823"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1841"/>
         <source>25</source>
         <translation>25</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1887"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1905"/>
         <source>26</source>
         <translation>26</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="1951"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1969"/>
         <source>27</source>
         <translation>27</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2015"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2033"/>
         <source>28</source>
         <translation>28</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2079"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2097"/>
         <source>29</source>
         <translation>29</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2143"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2161"/>
         <source>30</source>
         <translation>30</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2207"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2225"/>
         <source>31</source>
         <translation>31</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2271"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2289"/>
         <source>32</source>
         <translation>32</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2335"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2353"/>
         <source>33</source>
         <translation>33</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2399"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2417"/>
         <source>34</source>
         <translation>34</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2463"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2481"/>
         <source>35</source>
         <translation>35</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2535"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2553"/>
         <source>Min days</source>
         <comment>Refers to min days between the components of a larger split activity. Please keep translation short</comment>
         <translation>Mín dies</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2555"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2573"/>
         <source>Weight %</source>
         <comment>Please keep translation short</comment>
         <translation>Ponderació %</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2584"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2602"/>
         <source>Consecutive</source>
         <comment>Refers to forcing component activities consecutive if they are in the same day. Please keep translation short</comment>
         <translation>Consecutives</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2616"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2634"/>
         <source>Help</source>
         <translation>Ajuda</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2623"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2641"/>
         <source>Close</source>
         <translation>Tanca</translation>
     </message>
@@ -1797,58 +1815,58 @@ pots escollir la distància mínima en dies entre cada parell d&apos;activitats.
         <translation>Seleccionat</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="171"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="189"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activity tags</comment>
         <translation>Seleccionat</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="154"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="172"/>
         <source>Activity tags</source>
         <translation>Etiquetes d&apos;activitat</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="338"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="402"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="466"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="530"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="594"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="658"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="722"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="786"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="850"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="914"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="978"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1042"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1106"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1170"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1234"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1298"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1362"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1426"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1490"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1554"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1618"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1682"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1746"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1810"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1874"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="1938"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2002"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2066"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2130"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2194"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2258"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2322"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2386"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2450"/>
-        <location filename="../src/interface/addactivityform_template.ui" line="2514"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="356"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="420"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="484"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="548"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="612"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="676"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="740"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="804"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="868"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="932"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="996"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1060"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1124"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1188"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1252"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1316"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1380"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1444"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1508"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1572"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1636"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1700"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1764"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1828"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1892"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="1956"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2020"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2084"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2148"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2212"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2276"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2340"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2404"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2468"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2532"/>
         <source>Active</source>
         <comment>It refers to a subactivity</comment>
         <translation>Activa</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform_template.ui" line="2609"/>
+        <location filename="../src/interface/addactivityform_template.ui" line="2627"/>
         <source>Add</source>
         <translation>Afegeix</translation>
     </message>
@@ -31188,674 +31206,679 @@ La importació de dades serà més fàcil amb aquesta configuració.</translatio
     <name>FetMainForm</name>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="641"/>
-        <location filename="../src/interface/fetmainform.cpp" line="830"/>
         <location filename="../src/interface/fetmainform.cpp" line="851"/>
-        <location filename="../src/interface/fetmainform.cpp" line="944"/>
-        <location filename="../src/interface/fetmainform.cpp" line="961"/>
-        <location filename="../src/interface/fetmainform.cpp" line="987"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1652"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3680"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3690"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3700"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3817"/>
+        <location filename="../src/interface/fetmainform.cpp" line="872"/>
+        <location filename="../src/interface/fetmainform.cpp" line="965"/>
+        <location filename="../src/interface/fetmainform.cpp" line="982"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1008"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1673"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3701"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3711"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3721"/>
         <location filename="../src/interface/fetmainform.cpp" line="3838"/>
         <location filename="../src/interface/fetmainform.cpp" line="3859"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3863"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3880"/>
         <location filename="../src/interface/fetmainform.cpp" line="3884"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3888"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3924"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3905"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3909"/>
         <location filename="../src/interface/fetmainform.cpp" line="3945"/>
         <location filename="../src/interface/fetmainform.cpp" line="3966"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3970"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4090"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4147"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4712"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4762"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4792"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4817"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4839"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4866"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4888"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3987"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3991"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4111"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4168"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4733"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4783"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4813"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4838"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4860"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4887"/>
         <location filename="../src/interface/fetmainform.cpp" line="4909"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4933"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4930"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4954"/>
         <source>FET warning</source>
         <translation>Avís de FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="807"/>
-        <location filename="../src/interface/fetmainform.cpp" line="910"/>
-        <location filename="../src/interface/fetmainform.cpp" line="923"/>
-        <location filename="../src/interface/fetmainform.cpp" line="982"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1075"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1136"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1148"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1220"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1266"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1279"/>
+        <location filename="../src/interface/fetmainform.cpp" line="808"/>
+        <location filename="../src/interface/fetmainform.cpp" line="931"/>
+        <location filename="../src/interface/fetmainform.cpp" line="944"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1003"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1096"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1157"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1169"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1241"/>
         <location filename="../src/interface/fetmainform.cpp" line="1287"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1293"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1299"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1373"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1392"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1396"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1403"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1408"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1300"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1308"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1314"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1320"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1394"/>
         <location filename="../src/interface/fetmainform.cpp" line="1413"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1456"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1465"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1474"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1483"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1498"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1507"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1516"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1593"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1612"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1616"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1623"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1628"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1417"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1424"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1429"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1434"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1477"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1486"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1495"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1504"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1519"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1528"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1537"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1614"/>
         <location filename="../src/interface/fetmainform.cpp" line="1633"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1762"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1837"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1850"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1863"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1876"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1889"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1909"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1929"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1942"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1955"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1968"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2034"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2139"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2192"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2205"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2218"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2231"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2244"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2257"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2270"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2283"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2296"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2309"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2322"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2335"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2348"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2361"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2374"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2387"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2400"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2413"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2426"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2439"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2452"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2465"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2478"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2491"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2504"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2517"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2530"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2543"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2556"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2569"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2582"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2595"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2609"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2622"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2636"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2649"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2663"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2676"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2689"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2702"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2715"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2728"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2741"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2753"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2766"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2779"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2792"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2805"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2818"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2831"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2844"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2857"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2870"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2883"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2896"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2909"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2922"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2935"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2948"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2961"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2974"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2987"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3000"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3013"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3026"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3039"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3052"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3065"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3078"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3096"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3114"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3127"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3140"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3153"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3166"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3179"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3191"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3204"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3222"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3240"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3253"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3266"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3279"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3292"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3305"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3318"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3331"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3344"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3357"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3370"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3383"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3396"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3414"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3432"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3445"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3458"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3471"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3484"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3497"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3510"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3523"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3536"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3549"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3562"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3575"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3588"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3601"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3614"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3627"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3641"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3655"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3756"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3768"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3781"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3787"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3799"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3812"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1637"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1644"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1649"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1654"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1783"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1858"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1871"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1884"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1897"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1910"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1930"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1950"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1963"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1976"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1989"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2055"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2160"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2213"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2226"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2239"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2252"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2265"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2278"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2291"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2304"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2317"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2330"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2343"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2356"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2369"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2382"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2395"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2408"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2421"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2434"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2447"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2460"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2473"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2486"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2499"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2512"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2525"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2538"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2551"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2564"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2577"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2590"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2603"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2616"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2630"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2643"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2657"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2670"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2684"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2697"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2710"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2723"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2736"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2749"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2762"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2774"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2787"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2800"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2813"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2826"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2839"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2852"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2865"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2878"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2891"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2904"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2917"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2930"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2943"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2956"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2969"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2982"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2995"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3008"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3021"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3034"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3047"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3060"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3073"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3086"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3099"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3117"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3135"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3148"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3161"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3174"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3187"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3200"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3212"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3225"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3243"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3261"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3274"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3287"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3300"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3313"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3326"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3339"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3352"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3365"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3378"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3391"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3404"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3417"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3435"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3453"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3466"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3479"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3492"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3505"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3518"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3531"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3544"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3557"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3570"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3583"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3596"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3609"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3622"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3635"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3648"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3662"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3676"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3777"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3789"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3802"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3808"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3820"/>
         <location filename="../src/interface/fetmainform.cpp" line="3833"/>
         <location filename="../src/interface/fetmainform.cpp" line="3854"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3879"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3904"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3919"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3875"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3900"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3925"/>
         <location filename="../src/interface/fetmainform.cpp" line="3940"/>
         <location filename="../src/interface/fetmainform.cpp" line="3961"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3985"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3996"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4009"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4020"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4033"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4043"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4517"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4560"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4587"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4660"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4671"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3982"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4006"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4017"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4030"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4041"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4054"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4064"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4538"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4581"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4608"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4681"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4692"/>
         <source>FET information</source>
         <translation>Informació de FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="799"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3187"/>
+        <location filename="../src/interface/fetmainform.cpp" line="800"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3208"/>
         <source>Explanation:</source>
         <translation>Explicació:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="801"/>
+        <location filename="../src/interface/fetmainform.cpp" line="802"/>
         <source>Constraints of this type are good, working, but they are not perfectly optimized.</source>
         <translation>Les restriccions d&apos;aquesta mena són bones, funcionen, però no estan perfectament optimitzades.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="803"/>
+        <location filename="../src/interface/fetmainform.cpp" line="804"/>
         <source>For some situations, the generation of the timetable may take too long or be impossible.</source>
         <translation>Per algunes situacions, la generació de l&apos;horari pot trigar massa o ser impossible.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="805"/>
+        <location filename="../src/interface/fetmainform.cpp" line="806"/>
         <source>Use with caution.</source>
         <translation>Usa amb precaució.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="939"/>
+        <location filename="../src/interface/fetmainform.cpp" line="960"/>
         <source>Searching for file %1.</source>
         <translation>Cercant fitxer %1.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="954"/>
+        <location filename="../src/interface/fetmainform.cpp" line="975"/>
         <source>The file %1 from the FET homepage, indicating the current FET version, is incorrect.</source>
         <translation>L&apos;arxiu %1 de la pàgina d&apos;inici de FET, que indica la versió, és incorrecte.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="979"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1000"/>
         <source>Additional comments: %1</source>
         <translation>Comentaris addicionals: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1016"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1037"/>
         <source>FET - exiting</source>
         <translation>FET - sortint</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4239"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4260"/>
         <source>Duplicate vertical headers to the right will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Duplicar els encapçalaments verticals a la dreta: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4343"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4364"/>
         <source>50</source>
         <translation>50</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4358"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4379"/>
         <source>&amp;Yes</source>
         <translation>&amp;Sí</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4358"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4379"/>
         <source>&amp;No</source>
         <translation>&amp;No</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4599"/>
         <location filename="../src/interface/fetmainform.cpp" line="4620"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4641"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Cancel·la</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="911"/>
-        <location filename="../src/interface/fetmainform.cpp" line="924"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1076"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1137"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1149"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1221"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1457"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1466"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1475"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1484"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1499"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1508"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1517"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1838"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1851"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1864"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1877"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1890"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1910"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1930"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1943"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1956"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1969"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2193"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2206"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2219"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2232"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2245"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2258"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2271"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2284"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2297"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2310"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2323"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2336"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2349"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2362"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2375"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2388"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2401"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2414"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2427"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2440"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2453"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2466"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2479"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2492"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2505"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2518"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2531"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2544"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2557"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2570"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2583"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2596"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2610"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2623"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2637"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2650"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2664"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2677"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2690"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2703"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2716"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2729"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2742"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2754"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2767"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2780"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2793"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2806"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2819"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2832"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2845"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2858"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2871"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2884"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2897"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2910"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2923"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2936"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2949"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2962"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2975"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2988"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3001"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3014"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3027"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3040"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3053"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3066"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3079"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3097"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3115"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3128"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3141"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3154"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3167"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3180"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3205"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3223"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3241"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3254"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3267"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3280"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3293"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3306"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3319"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3332"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3345"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3358"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3371"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3384"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3397"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3415"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3433"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3446"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3459"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3472"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3485"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3498"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3511"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3524"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3537"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3550"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3563"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3576"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3589"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3602"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3615"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3628"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3642"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3656"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3757"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3782"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4518"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4561"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4588"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4661"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4672"/>
+        <location filename="../src/interface/fetmainform.cpp" line="932"/>
+        <location filename="../src/interface/fetmainform.cpp" line="945"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1097"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1158"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1170"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1242"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1478"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1487"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1496"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1505"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1520"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1529"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1538"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1859"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1872"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1885"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1898"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1911"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1931"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1951"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1964"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1977"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1990"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2214"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2227"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2240"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2253"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2266"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2279"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2292"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2305"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2318"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2331"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2344"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2357"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2370"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2383"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2396"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2409"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2422"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2435"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2448"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2461"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2474"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2487"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2500"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2513"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2526"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2539"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2552"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2565"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2578"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2591"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2604"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2617"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2631"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2644"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2658"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2671"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2685"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2698"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2711"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2724"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2737"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2750"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2763"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2775"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2788"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2801"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2814"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2827"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2840"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2853"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2866"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2879"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2892"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2905"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2918"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2931"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2944"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2957"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2970"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2983"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2996"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3009"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3022"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3035"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3048"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3061"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3074"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3087"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3100"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3118"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3136"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3149"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3162"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3175"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3188"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3201"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3226"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3244"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3262"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3275"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3288"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3301"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3314"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3327"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3340"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3353"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3366"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3379"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3392"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3405"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3418"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3436"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3454"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3467"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3480"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3493"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3506"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3519"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3532"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3545"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3558"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3571"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3584"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3597"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3610"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3623"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3636"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3649"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3663"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3677"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3778"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3803"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4539"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4582"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4609"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4682"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4693"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
         <translation>Col·locació en curs. Siusplau atura la simulació abans d&apos;això.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="825"/>
+        <location filename="../src/interface/fetmainform.cpp" line="815"/>
+        <source>Please note that, by enabling this option, each time you start FET it will get the file %1 from the FET homepage, so the request for this file will be visible on the server, along with your IP address and access time.</source>
+        <translation>Tingueu en compte que, si activeu aquesta opció, cada vegada que inicieu FET baixareu el fitxer %1 de la pàgina web d&apos;inici de FET, de manera que la sol·licitud d&apos;aquest fitxer serà visible al servidor, juntament amb la vostra adreça IP i el temps d&apos;accés.</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="846"/>
         <source>Note: if you disable this option, you will not be able to add/modify constraints for subgroups, and you will not be able to make filters using a particular subgroup, when selecting activities.</source>
         <translation>Nota: si desactivau aquesta opció, no podreu afegir/modificar restriccions dels subgrups y tampoc establir filtres fent servir un subgrup particular en seleccionar activitats.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="937"/>
+        <location filename="../src/interface/fetmainform.cpp" line="958"/>
         <source>Could not search for possible updates on the internet - error message is: %1.</source>
         <translation>No ha estat possible cercar actualitzacions a la xarxa. El missatge d&apos;error és: %1.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="941"/>
+        <location filename="../src/interface/fetmainform.cpp" line="962"/>
         <source>Possible actions: check your network connection, try again later, try to visit FET homepage: %1, or try to search for the new FET page on the internet (maybe it has changed).</source>
         <translation>Accions possibles: comprobau la conexió a la xarxa, tornau a provar-ho més tard, comprovau si la pàgina web de FET (%1) està activa o intentau cercar la nova pàgina de FET a la xarxa (tal vegada ha canviat la seva adreça).</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="956"/>
+        <location filename="../src/interface/fetmainform.cpp" line="977"/>
         <source>Maybe the FET homepage has some temporary problems, so try again later. Or maybe the current structure on FET homepage was changed. You may visit FET homepage: %1, and get latest version or, if it does not work, try to search for the new FET page on the internet (maybe it has changed).</source>
         <translation>És possible que la pàgina principal de FET estigui temporalment inactiva: intentau-ho més tard. És possible que l&apos;estructura actual de la pàgina principal de FET hagi canviat. Podeu visitar la pàgina principal de FET (%1) i obtenir la darrera versió o, si no funciona, intentau cercar la nova pàgina de FET a la xarxa (pot haver canviat).</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="987"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3680"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3690"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3700"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1008"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3701"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3711"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3721"/>
         <source>Could not start the default internet browser (trying to open the link %1). Maybe you can try to manually start your browser and open this link.</source>
         <translation>No ha esta possible iniciar el navegador de xarxa predeterminat en el sistema (quan s&apos;ha intentat accedir a l&apos;adreça %1). Podeu provar d&apos;engegar el vostres navegador manualment i accedir a l&apos;adreça.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1158"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1230"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1179"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1251"/>
         <source>FET application</source>
         <translation>Aplicació de FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1288"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1309"/>
         <source>Please do not use quotation marks &quot; in filename, the html css code does not work. File was not loaded. Please rename it, removing not allowed characters and open it after that with FET.</source>
         <translation>Siusplau no utilitzis cometes &quot; en el nom del fitxer, el codi css html no funciona. No s&apos;ha carregat el fitxer. Siusplau reanomena&apos;l treient els caràcters no permesos i torna&apos;l a obrir amb FET.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1294"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1315"/>
         <source>Please do not use semicolon ; in filename, the html css code does not work. File was not loaded. Please rename it, removing not allowed characters and open it after that with FET.</source>
         <translation>Siusplau no utilitzis punt i coma ; en el nom del fitxer, el codi css html no funciona. No s&apos;ha carregat el fitxer. Siusplau reanomena&apos;l treient els caràcters no permesos i torna&apos;l a obrir amb FET.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1300"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1321"/>
         <source>Please do not use # in filename, the html css code does not work. File was not loaded. Please rename it, removing not allowed characters and open it after that with FET.</source>
         <translation>Siusplau no utilitzis coixinet # en el nom del fitxer, el codi css html no funciona. No s&apos;ha carregat el fitxer. Siusplau reanomena&apos;l treient els caràcters no permesos i torna&apos;l a obrir amb FET.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1311"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1332"/>
         <source>Loading...</source>
         <comment>This is a message in the status bar, that we are loading the file</comment>
         <translation>Carregant...</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1361"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1382"/>
         <source>Choose a filename to save under</source>
         <translation>Escull un nom de fitxer amb el qual desar-lo</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1374"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1594"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1395"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1615"/>
         <source>Please do not use a filename starting with white space(s), the html css code does not work.</source>
         <translation>No faceu servir un espai en el començament del nom d&apos;arxiu; el codi HTML/CSS no funcionarà.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1393"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1613"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1414"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1634"/>
         <source>Please do not use a filename ending with white space(s) before the &apos;.fet&apos; termination, problems might arise.</source>
         <translation>No faceu servir un espai(s) al final del nom d&apos;arxiu abans de la terminació «.fet»; pot produir errors.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1403"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1623"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1424"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1644"/>
         <source>Please do not use quotation marks &quot; in filename, the html css code does not work</source>
         <translation>Siusplau no utilitzis cometes &quot; en el nom del fitxer, el codi css html no funciona</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1408"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1628"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1429"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1649"/>
         <source>Please do not use semicolon ; in filename, the html css code does not work</source>
         <translation>Siusplau no utilitzis punt i coma ; en el nom del fitxer, el codi css html no funciona</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1413"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1633"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1434"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1654"/>
         <source>Please do not use # in filename, the html css code does not work</source>
         <translation>Siusplau no utilitzis coixinet # en el nom del fitxer, el codi css html no funciona</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1425"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1446"/>
         <source>FET</source>
         <translation>FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1426"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1447"/>
         <source>File %1 exists - are you sure you want to overwrite it?</source>
         <translation>L&apos;arxiu %1 ja existeix. De debó voleu sobreescriure l&apos;arxiu existent?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1581"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1602"/>
         <source>Choose a filename for data and timetable</source>
         <translation>Escull un nom de fitxer per a les dades i l&apos;horari</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1726"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1751"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1747"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1772"/>
         <source>Added to the saved file:</source>
         <comment>It refers to a constraint</comment>
         <translation>Afegida al fitxer desat:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1728"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1753"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1749"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1774"/>
         <source>NOT added to the saved file (already existing):</source>
         <comment>It refers to a constraint</comment>
         <translation>NO afegida al fitxer desat (ja existent):</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1762"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1783"/>
         <source>Added %1 locking time constraints and %2 locking space constraints to saved file, ignored %3 activities which were already fixed in time and %4 activities which were already fixed in space.</source>
         <translation>S&apos;ha afegit %1 restriccions de bloqueix de temps i %2 de bloqueix de espai a l&apos;arxiu desat; s&apos;han ingorat %3 activitats ja bloquejades en temps i %4 activitats bloquejades en espai.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1764"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1785"/>
         <source>Detailed information about each locking constraint which was added or not (if already existing) to the saved file:</source>
         <translation>Informació detallada sobre les restriccions de bloqueix afegidas o no (si ja existien) a l&apos;arxiu desat:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1765"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1786"/>
         <source>Your current data file remained untouched (no locking constraints were added), so you can save it also, or generate different timetables.</source>
         <translation>El seu arxiu de dades actual no ha canviat (no s&apos;ha afegit restriccions de bloqueig). Per tant, podeu desar-ho o generar horaris distints.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2024"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2045"/>
         <source>Teacher %1 is not qualified to teach subject %2.</source>
         <translation>El professor %1 no està qualificat per impartir la matèria %2.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2031"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2052"/>
         <source>All the teachers are qualified to teach their activities.</source>
         <translation>Tot el professorat està qualificat per impartir les seves activitats.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2055"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2076"/>
         <source>Seed of random number generator: please read the help in the dialog of this option</source>
         <translation>Llavor de generador de nombre aleatori: siusplau llegeix l&apos;ajuda en el quadre de diàleg d&apos;aquesta opció</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2058"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2079"/>
         <source>Interface - use colors: the places with colors in FET interface are in:</source>
         <translation>Interfície - usa colors: els espais amb colors a la interfície del FET estan en:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2065"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2086"/>
         <source>activities and subactivities dialogs, the inactive activities will have a distinctive background color</source>
         <translation>quadres de diàleg d&apos;activitats i subactivitats, les activitats no actives tindran un color de fons distintiu</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2068"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2089"/>
         <source>all time constraints and all space constraints dialogs, the inactive constraints will have a distinctive background color</source>
         <translation>en tots el diàlegs de restricció de temps i espais, les restriccions inactives presentaran un color de fons distintiu</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2071"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2092"/>
         <source>group activities in initial order items, the inactive items will have a distinctive background color</source>
         <translation>agrupar les activitats en el seu ordre inicial, els elements inactius tendran un color de fons distintiu</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2074"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2095"/>
         <source>the three timetable view dialogs</source>
         <translation>els diàlegs de vista de tres horaris</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2077"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2098"/>
         <source>Enable activity tag max hours daily:</source>
         <translation>Habilita max hores diàries per etiqueta d&apos;activitat:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2079"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2100"/>
         <source>This will enable the menu for 4 constraints: teacher(s) or students (set) activity tag max hours daily. These 4 constraints are good, but not perfect and may bring slow down of generation or impossible timetables if used unproperly. Select only if you know what you&apos;re doing.</source>
         <translation>Això habilitarà el menú per 4 restriccions: etiqueta d&apos;activitat per (professor(s) o (conjunt de)estudiants max hores diàries. Aquestes 4 restriccions són bones, però no perfectes, i poden ralentir la generació, o trobar horaris impossibles si no s&apos;usen apropiadament. Tria-les només si saps el que estàs fent.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2082"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2103"/>
         <source>Enable students max gaps per day:</source>
         <translation>Habilita max buits per dia per tots els estudiants:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2084"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2105"/>
         <source>This will enable the menu for 2 constraints: students (set) max gaps per day. These 2 constraints are good, but not perfect and may bring slow down of generation or impossible timetables if used unproperly. Select only if you know what you&apos;re doing.</source>
         <translation>Això habilitarà el menú per 2 restriccions: (conjunt de)estudiants max buits diaris. Aquestes 2 restriccions són bones, però no perfectes, i poden ralentir la generació, o trobar horaris impossibles si no s&apos;usen apropiadament. Tria-les només si saps el que estàs fent.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2088"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2109"/>
         <source>Warn if using not perfect constraints:</source>
         <comment>this is a warning if user uses not perfect constraints</comment>
         <translation>Avisa si no s&apos;usen restriccions perfectes:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2094"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2115"/>
         <source>Enable students min hours daily with empty days:</source>
         <translation>Habilita min hores diàries amb dies buits per tots els estudiants:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2096"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2117"/>
         <source>This will enable you to modify the students min hours daily constraints, to allow empty days. It is IMPERATIVE (for performance reasons) to allow empty days for students min hours daily only if your institution allows empty days for students and if a solution with empty days is possible. Select only if you know what you&apos;re doing.</source>
         <translation>Això et permetrà modificar les restriccions min hores diàries per tots els estudiants, per poder permetre dies buits. És IMPERATIU (per motius de rendiment) permetre dies buits per tots els estudiants min hores diàries només si la teva institució permet dies buits pels estudiants i si una solució amb dies buits és possible. selecciona-la només si saps el que estàs fent.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2100"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2121"/>
         <source>Warn if using students min hours daily with empty days:</source>
         <comment>this is a warning if user has constraints min hours daily for students with allowed empty days</comment>
         <translation>Avisa si s&apos;usa min hores diàries amb dies buits per tots els estudiants:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2102"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2123"/>
         <source>If you use constraints students min hours daily with allowed empty days, you&apos;ll get a warning before generating. Uncheck this option to get rid of that warning (it is recommended to keep the warning).</source>
         <translation>Si uses restriccions min hores diàries per tots els estudiants amb dies buits permesos, rebràs un avís abans de generar. Desmarca aquesta opció per desfer-te d&apos;aquest avís (es recomana deixar l&apos;avís).</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2107"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2128"/>
         <source>Confirmations: unselect the corresponding check boxes if you want to skip introduction and confirmation to various advanced dialogs.</source>
         <translation>Confirmacions: deselecciona les corresponents caselles de verificació si vols saltar-te la introducció i confirmació de diversos quadres de diàleg avançats.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2111"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2132"/>
         <source>Duplicate vertical headers to the right (in timetable settings) - select this if you want the timetables to duplicate the table left vertical headers to the right part of the tables</source>
         <translation>Duplicar els encapçalaments verticals a la dreta (en la configuració d&apos;horari) - seleccioni si desitjeu duplicar els encapçalaments verticals de l&apos;esquerra de la taula a la part dreta de les taules</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2146"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2167"/>
         <source>You will find in the statistics only active activities count. The inactive ones are not counted.</source>
         <translation>Veuràs a les estadístiques que només compten les activitats actives. Les inactives no es compten.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2150"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2171"/>
         <source>Statistics for students might be the most difficult to understand. If you are using divisions of years: probably the most relevant statistics are the ones for each subgroup (so you may check only subgroups check box). You may see more hours for the years or groups, but these are not significant, please ignore them, because each year or group will count also activities of all contained subgroups.
 
 Each subgroup should have a number of hours per week close to the average of all subgroups and close to the normal number of working hours of each students set. If a subgroup has a much lower value, maybe you used incorrectly the years/groups/subgroups for activities.
@@ -31869,53 +31892,53 @@ Cada subgrup hauria de tenir un nombre d&apos;hores per setmana semblant a la mi
 Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has introduit les activitats de manera incorrecta, i també que algunes restriccions com cap buit, d&apos;hora, o min hores diàries per aquest subgrup són interpretades de manera errònia (si el subgrup només té 2 activitats s&apos;hauran de col·locar a les primeres hores, la qual cosa és massa difícil i incorrecta).</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2179"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2200"/>
         <source>Activities rooms statistics: this menu will show the activities which may be scheduled in an unspecified room, if they are referred to by space constraints with weight under 100.0%, and the activities which will certainly be scheduled in an unspecified room, if they are not referred to by any space constraints. Remember that home rooms constraints are effective only on activities which have only the exact specified teacher or students set (activities with more teachers or students sets are not affected by home rooms constraints, you need to have preferred rooms constraints for such activities to ensure they will not end up in an unspecified room).</source>
         <translation>Estadítiques de les aules d&apos;activitats: aquest menú mostrarà activitats que poden programar-se a una aula no especificada, si estan subjectes a restriccions d&apos;espai amb una ponderació inferior al 100% i activitats que, sens dubtem es programaran a una aula no especificada si no es refereixen a cap restricció d&apos;espai. Recordau que algunes limitacions d&apos;espai només són efectives amb activitats que tenen exactament un professor o grup específic (per les activitats amb múltiples professors o grups no afectades per les restriccions d&apos;aula de base cal fer servir restriccions d&apos;aules preferides per tal d&apos;assegurar-se que no acaben asignades a una aula no especificada).</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2186"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2207"/>
         <source>FET - information about statistics</source>
         <translation>FET - Informació sobre estadístiques</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3185"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3206"/>
         <source>Feature is not enabled. To use this type of feature you must enable it from the Settings-&gt;Advanced menu.</source>
         <translation>Funció deshabilitada. Per fer servir aquest tipus de funció, cal activar-la en el menú Configuració-&gt;Avançada.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3189"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3210"/>
         <source>The feature must be used with caution, by experienced users.</source>
         <translation>Aquest característica s&apos;ha de fer servir amb precaució per usuaris avançats.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3716"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3737"/>
         <source>Additionally, you may find on the FET homepage other contact information.</source>
         <translation>Podeu trobar més informació de contacte en la pàgina principal de FET.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3718"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3739"/>
         <source>In case these addresses do not function, maybe the FET webpage has temporary problems, so try again later. Or maybe the FET webpage has changed, so search for the new page on the internet.</source>
         <translation>Si l&apos;adreça no funciona, tal vegada té problemes temporals, intentau-ho més tards. També és possible que la pàgina de FET hagi canviat d&apos;adreça: en aquest cas feu una cerca a la xarxa per trobar la nova pàgina.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3788"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3809"/>
         <source>Your current data has no name. Please save it as a file with a certain name before proceeding.</source>
         <translation>Les seves dades actuals no tenen asignat un nom. Si us plau, desau l&apos;arxiu amb un nom abans de continuar.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3996"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4020"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4017"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4041"/>
         <source>The timetable is not generated, but anyway FET will proceed now</source>
         <translation>No s&apos;ha generat l&apos;horari, però FET procederà igualment</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4058"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4079"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4190"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4211"/>
         <source>US English</source>
         <translation>Anglès americà</translation>
     </message>
@@ -31925,1073 +31948,1084 @@ Tenir un subgrup amb massa poques hores laborables per setmana vol dir que has i
         <translation>SSL no està disponible (pot ésser degut a què les biblioteques SSL no estan instal·lades). Per això, FET no pot cercar actualitzacions en iniciar-se (no es pot obtindre l&apos;arxiu %1).</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="846"/>
+        <location filename="../src/interface/fetmainform.cpp" line="819"/>
+        <source>Thus, it could be deduced if and when you use FET.</source>
+        <translation>Per tant, es podria saber si i quan feu servir FET.</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="821"/>
+        <source>Do you agree?</source>
+        <translation>Estau d&apos;acord?</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="867"/>
         <source>Note: if you disable this option, you will not be able to view activities for subgroups in the activity planning dialog.</source>
         <translation>Nota: si desactivau aquesta opció, no podreu veure les activitats per als subgrups en el diàleg de planificació d&apos;activitats.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="976"/>
+        <location filename="../src/interface/fetmainform.cpp" line="997"/>
         <source>You have to manually download and install.</source>
         <translation>Haureu de descarragar-al manualment i instal·lar-la.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1375"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1394"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1398"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1404"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1409"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1414"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1595"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1614"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1618"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1624"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1629"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1634"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1396"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1415"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1419"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1425"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1430"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1435"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1616"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1635"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1639"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1645"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1650"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1655"/>
         <source>File was not saved.</source>
         <translation>No s&apos;ha desat l&apos;arxiu.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1397"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1617"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1418"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1638"/>
         <source>Please do not use a filename ending with white space(s), problems might arise.</source>
         <translation>Si us plau, no faceu servir un nom d&apos;arxiu acabat amb espais, pot originar errors.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2001"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2022"/>
         <source>The teachers who are not qualified to teach a certain activity (in activities order):</source>
         <translation>Professorat que no està qualificat per impartir una determinada activitat (ordenat per activitat):</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2019"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2040"/>
         <source>For activity: %1</source>
         <translation>Per a l&apos;activitat: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2116"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2137"/>
         <source>If you have many subgroups and you don&apos;t explicitly use them, it is recommended to use the three global settings: hide subgroups in combo boxes, hide subgroups in activity planning, and do not write subgroups timetables on hard disk.</source>
         <translation>Si teniu molts subgrups i no els feu servir explicitament, es recomana fer servir aquestes tres configuracions globals: ocultar subgrups en les llistes desplegables, ocultar subgrups en la planificació d&apos;activitats i no desar els horaris de subgrups en el disc dur.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2119"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2140"/>
         <source>Note that using the global menu setting to hide subgroups in activity planning is a different thing from the check box in the activity planning dialog, and the global setting works better and faster.</source>
         <translation>Teniu present que fer servir l&apos;opció de menú global per ocultar els subgrups en la planificació d&apos;activitats és distint a l&apos;opció del diàleg de planificació d&apos;activitats, la funció global funciona millor i és més ràpida.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2122"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2143"/>
         <source>If you hide subgroups in combo boxes, the affected dialogs (like the activities dialog or the add constraint students set not available times dialog) will load much faster if you have many subgroups.</source>
         <translation>Si amagau els subgrups en les llistes desplegables, els diàlegs afectats (p. ex. el diàleg d&apos;activitats o el d&apos;afegir restriccions de temps, hores no disponibles dels grups) es carregaran més aviat si teniu molts grups.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2127"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2148"/>
         <source>If you are only working on a timetable, and you do not need to publish it, you may want to disable writing some categories of timetables on the hard disk, for operativity (the generation speed is not affected, only the overhead to write the partial/complete timetables when stopping/finishing the simulation). The timetables taking the longest time are the subgroups, groups AND years ones.</source>
         <translation>Si només treballau en un horari i no necessitau publicar-ho, per operativitat, podeu optar per desactivat l&apos;escriptura d&apos;algunes categories d&apos;horaris en el disc dur (la velocitat de generació no es veu afectada, només el cost que genera l&apos;escriptura dels horaris parcials/complets en aturar/finalitzar la simulació). Els horaris que requereixen més temps són els dels subgrups, grups i anys.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2131"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2152"/>
         <source>(Also the conflicts timetable might take long to write, if the file is large.)</source>
         <translation>(També l&apos;horari dels conflictes pot trigar molt a escriure&apos;s, si el fitxer és gran)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2133"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2154"/>
         <source>After that, you can re-enable writing of the timetables and re-generate.</source>
         <translation>Després d&apos;això, pot tornar a habilitar l&apos;escriptura dels horaris i tornar a generar-los.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2136"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2157"/>
         <source>Show tool tips for constraints with tables: in the add/modify constraint dialogs which use tables, like the &apos;not available times&apos; ones, each table cell will have a tool tip to show the current day/hour (column/row name).</source>
         <translation>Mostrar el texts d&apos;ajuda en les eines per a les restriccions amb taules: en els diàlegs d&apos;afegir/modificar restriccions que fan servir taules, com les «hores no disponibles», cada cel·la de taula mostrarà un text d&apos;ajuda amb el dia/hora actual (nom de columna/fila).</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3710"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3731"/>
         <source>FET homepage: %1</source>
         <comment>%1 is FET homepage, begins with https://...</comment>
         <translation>Pàgina principal de FET: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3712"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3733"/>
         <source>Documentation (online help contents): %1</source>
         <comment>%1 is web page of FET Doc(umentation), which is the contents of the online help, it begins with https://...</comment>
         <translation>Documentació (continguts d&apos;ajuda en línia): %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3714"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3735"/>
         <source>Forum: %1</source>
         <comment>%1 is web page of FET forum, begins with https://...</comment>
         <translation>Fòrum: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4090"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4111"/>
         <source>Invalid current language - making it en_US (US English)</source>
         <translation>Idioma actual no vàlid - convertint-lo en en_US (anglès americà)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4147"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4168"/>
         <source>Invalid language selected - making it en_US (US English)</source>
         <translation>Idioma seleccionat no vàlid - convertint-lo en en_US (anglès americà)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4170"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4191"/>
         <source>That means:</source>
         <translation>Això significa:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4173"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4194"/>
         <source>The geometry and any other saved settings of all the windows and dialogs will be reset to default</source>
         <translation>Les dimensions i qualsevol altra configuració desada de les finestres i diàlegs tornaran al valors predeterminats</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4173"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4194"/>
         <source>1</source>
         <translation>1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4176"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4197"/>
         <source>Show shortcut buttons in main window will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Mostra els botons de drecera a la finestra principal serà %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4176"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4197"/>
         <source>2</source>
         <translation>2</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4179"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4200"/>
         <source>In the shortcuts tab from the main window, the first section will be selected/shown</source>
         <comment>Option refers to the main window tab widget for shortcuts, which currently contains 5 tabs: File, Data, Time, Space, Timetable (so it will select/show File tab).</comment>
         <translation>En la pestanya de dreceres de la finestra principal, la primera secció estarà seleccionada/mostrada</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4179"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4200"/>
         <source>3</source>
         <translation>3</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4183"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4204"/>
         <source>Check for updates at startup will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>La comprovació d&apos;actualitzacions a l&apos;inici serà %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4183"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4204"/>
         <source>4</source>
         <translation>4</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4186"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4207"/>
         <source>5</source>
         <translation>5</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4190"/>
         <location filename="../src/interface/fetmainform.cpp" line="4211"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4232"/>
         <source>6</source>
         <translation>6</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4215"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4236"/>
         <source>The list of recently used files will be cleared</source>
         <translation>S&apos;eliminarà la llista de fitxers usats recentment</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4215"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4236"/>
         <source>7</source>
         <translation>7</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4218"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4239"/>
         <source>Working directory will be %1</source>
         <comment>%1 is the directory</comment>
         <translation>El directori de treball serà %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4218"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4239"/>
         <source>8</source>
         <translation>8</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4221"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4242"/>
         <source>Output directory will be %1</source>
         <comment>%1 is the directory</comment>
         <translation>El directori de destinació serà %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4221"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4242"/>
         <source>9</source>
         <translation>9</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4224"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4245"/>
         <source>Import directory will be %1</source>
         <comment>%1 is the directory</comment>
         <translation>El directori d&apos;importació serà %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4224"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4245"/>
         <source>10</source>
         <translation>10</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4227"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4248"/>
         <source>Html level of the timetables will be %1</source>
         <comment>%1 is default html level</comment>
         <translation>El nivell d&apos;HTML dels horaris serà %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4227"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4248"/>
         <source>11</source>
         <translation>11</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4230"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4251"/>
         <source>Mark not available slots with -x- in timetables will be %1</source>
         <comment>%1 is true or false. Lowercase -x-</comment>
         <translation>Marca les franges no disponibles amb una -x- als horaris serà %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4230"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4251"/>
         <source>12</source>
         <translation>12</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4233"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4254"/>
         <source>Mark break slots with -X- in timetables will be %1</source>
         <comment>%1 is true or false. Uppercase -X-</comment>
         <translation>Marca les franges de pausa amb una -X- als horaris serà %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4233"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4254"/>
         <source>13</source>
         <translation>13</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4236"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4257"/>
         <source>Divide html timetables with time-axis by days will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Divideix horaris en html amb un eix temporal per dies serà %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4236"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4257"/>
         <source>14</source>
         <translation>14</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4239"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4260"/>
         <source>15</source>
         <translation>15</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4242"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4263"/>
         <source>Print activities with same starting time will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Imprimeix activitats amb mateix temps d&apos;inici serà %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4242"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4263"/>
         <source>16</source>
         <translation>16</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4245"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4266"/>
         <source>Print activities tags will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Imprimir el codi d&apos;activitats: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4245"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4266"/>
         <source>17</source>
         <translation>17</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4248"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4269"/>
         <source>Enable activity tag max hours daily will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Habilita max hores diàries per etiqueta d&apos;activitat serà %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4248"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4269"/>
         <source>18</source>
         <translation>18</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4251"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4272"/>
         <source>Enable students max gaps per day will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Habilita max buits per dia per tots els estudiants serà %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4251"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4272"/>
         <source>19</source>
         <translation>19</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4254"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4275"/>
         <source>20</source>
         <translation>20</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4257"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4278"/>
         <source>21</source>
         <translation>21</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4260"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4281"/>
         <source>22</source>
         <translation>22</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4265"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4286"/>
         <source>Confirm activity planning will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Confirma planificació d&apos;activitats serà %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4265"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4286"/>
         <source>23</source>
         <translation>23</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4267"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4288"/>
         <source>Confirm spread activities over the week will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Confirma distribueix les activitats al llarg de la setmana serà %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4267"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4288"/>
         <source>24</source>
         <translation>24</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4269"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4290"/>
         <source>Confirm remove redundant constraints will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Confirma treu restriccions redundants serà %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4269"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4290"/>
         <source>25</source>
         <translation>25</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4271"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4292"/>
         <source>Confirm save data and timetable as will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Confirmar guardar les dades i els horaris %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4271"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4292"/>
         <source>26</source>
         <translation>26</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4275"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4296"/>
         <source>Enable group activities in the initial order of generation will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Activar les activitats de grup en l&apos;ordre inicial de generació: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4275"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4296"/>
         <source>27</source>
         <translation>27</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4277"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4298"/>
         <source>Warn if using group activities in the initial order of generation will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Advertir si es fa servir activitats de grup en l&apos;ordre inicial de generació: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4277"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4298"/>
         <source>28</source>
         <translation>28</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4281"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4302"/>
         <source>29</source>
         <translation>29</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4281"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4302"/>
         <source>Show subgroups in combo boxes will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Mostrar subgrups en les llistes desplegables: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4283"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4304"/>
         <source>30</source>
         <translation>30</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4283"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4304"/>
         <source>Show subgroups in activity planning will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Mostrar subgrups en la planificació d&apos;activitats: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4287"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4308"/>
         <source>31</source>
         <translation>31</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4287"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4308"/>
         <source>Write on disk the %1 timetable will be %2</source>
         <comment>%1 is a category of timetables, like conflicts, %2 is true or false</comment>
         <translation>Escriure al disc dur l&apos;horari %1: %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4288"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4309"/>
         <source>conflicts</source>
         <translation>conflictes</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4291"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4294"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4297"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4300"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4303"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4306"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4310"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4313"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4316"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4319"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4322"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4325"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4328"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4312"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4315"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4318"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4321"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4324"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4327"/>
         <location filename="../src/interface/fetmainform.cpp" line="4331"/>
         <location filename="../src/interface/fetmainform.cpp" line="4334"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4337"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4340"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4343"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4346"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4349"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4352"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4355"/>
         <source>Write on disk the %1 timetables will be %2</source>
         <comment>%1 is a category of timetables, like XML or subgroups timetables, %2 is true or false</comment>
         <translation>Escriure al disc dur els horaris %1: %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4292"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4313"/>
         <source>statistics</source>
         <translation>estadístiques</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4295"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4316"/>
         <source>XML</source>
         <translation>XML</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4291"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4312"/>
         <source>32</source>
         <translation>32</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4298"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4319"/>
         <source>days horizontal</source>
         <translation>dias horitzontal</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4294"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4315"/>
         <source>33</source>
         <translation>33</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4301"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4322"/>
         <source>days vertical</source>
         <translation>dias vertical</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4297"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4318"/>
         <source>34</source>
         <translation>34</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4304"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4325"/>
         <source>time horizontal</source>
         <translation>hores horitzontal</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4300"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4321"/>
         <source>35</source>
         <translation>35</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4307"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4328"/>
         <source>time vertical</source>
         <translation>hores vertical</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4303"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4324"/>
         <source>36</source>
         <translation>36</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4311"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4332"/>
         <source>subgroups</source>
         <translation>subgrups</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4306"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4327"/>
         <source>37</source>
         <translation>37</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4314"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4335"/>
         <source>groups</source>
         <translation>grups</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4310"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4331"/>
         <source>38</source>
         <translation>38</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4317"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4338"/>
         <source>years</source>
         <translation>anys</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4313"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4334"/>
         <source>39</source>
         <translation>39</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4320"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4341"/>
         <source>teachers</source>
         <translation>professors</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4316"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4337"/>
         <source>40</source>
         <translation>40</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4323"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4344"/>
         <source>teachers free periods</source>
         <translation>períodes lliures del professorat</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4319"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4340"/>
         <source>41</source>
         <translation>41</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4326"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4347"/>
         <source>rooms</source>
         <translation>aules</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4322"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4343"/>
         <source>42</source>
         <translation>42</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4329"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4350"/>
         <source>subjects</source>
         <translation>matèries</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4325"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4346"/>
         <source>43</source>
         <translation>43</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4335"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4356"/>
         <source>activities</source>
         <translation>activitats</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4856"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4877"/>
         <source>This kind of constraint is good, but only in the right case. Adding such constraints in the wrong circumstance may make your timetable solve too slow or even impossible.</source>
         <translation>Aquesta mena de restricció és bona, però només en casos correctes. Afegir aquesta mena de restriccions en circumstàncies equivocades poden fer que el teu horari es resolgui massa lent, o fins i tot que sigui impossible.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4859"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4880"/>
         <source>Please use such constraints only if you are sure that there exists a timetable with empty days for students. If your instution requires each day for the students to be not empty, or if there does not exist a solution with empty days for students, it is IMPERATIVE (for performance reasons) that you use the standard constraint which does not allow empty days. Otherwise, the timetable may be impossible to find.</source>
         <translation>Siusplau usa aquestes restriccions si estàs segur que hi ha un horari amb diei la teva institució requereix que cap dels dies dels estudiants estigui buit, o si no hi ha una solució amb dies buits per als estudiants, és IMPERATIU (per motius d&apos;execució) que utilitzis la restricció standardque no permet dies buits. En cas contrari, l&apos;horari pot ser impossible de trobar.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4904"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4925"/>
         <source>This kind of option is good, but only in the right case. Adding such an option in the wrong circumstance may make your timetable solve too slow or even impossible.</source>
         <translation>Aquest tipus d&apos;opció és vàlida però només en el cas correcte. Afegir l&apos;opció en les circunstàncies incorrectes pot fer que el seu horari es generi molt lentament o sigui impossible de generar.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3812"/>
         <location filename="../src/interface/fetmainform.cpp" line="3833"/>
         <location filename="../src/interface/fetmainform.cpp" line="3854"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3879"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3904"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3919"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3875"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3900"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3925"/>
         <location filename="../src/interface/fetmainform.cpp" line="3940"/>
         <location filename="../src/interface/fetmainform.cpp" line="3961"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3985"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4009"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4033"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4043"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3982"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4006"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4030"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4054"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4064"/>
         <source>Please generate, firstly</source>
         <translation>Siusplau, genera primer</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3817"/>
         <location filename="../src/interface/fetmainform.cpp" line="3838"/>
         <location filename="../src/interface/fetmainform.cpp" line="3859"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3884"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3924"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3880"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3905"/>
         <location filename="../src/interface/fetmainform.cpp" line="3945"/>
         <location filename="../src/interface/fetmainform.cpp" line="3966"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3987"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
         <translation>No es pot mostrar l&apos;horari perquè has afegit o tret alguna aula. Siusplau regenera l&apos;horari i visualitza&apos;l</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3863"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3888"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3970"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3884"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3909"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3991"/>
         <source>Cannot display the timetable, because you added or removed some teachers. Please regenerate the timetable and then view it</source>
         <translation>No es pot mostrar l&apos;horari perquè has afegit o tret algun professor. Siusplau regenera l&apos;horari i visualitza&apos;l</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4354"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4375"/>
         <source>Students&apos; combo boxes style will be %1</source>
         <translation>L&apos;estil dels selectors múltiples dels alumnes serà %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4347"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4354"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4368"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4375"/>
         <source>simple</source>
         <comment>It is a style for students&apos; combo boxes</comment>
         <translation>simple</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4753"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4783"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4774"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4804"/>
         <source>These kinds of constraints are good, but not perfectly optimized. Adding such constraints may make your timetable solve too slow or even impossible.</source>
         <translation>Aquest tipus de restriccions són bones, però no perfectament optimitzades. Afegir-les pot fer que el teu horari es resolgui massa lentament o fins i tot que sigui impossible.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4756"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4786"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4777"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4807"/>
         <source>It is recommended to use such constraints only at the end, after you generated successfully with all the other constraints.</source>
         <translation>Es recomana usar aquesta mena de restriccions només al final, quan ja has generat amb èxit amb totes les altres restriccions.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4758"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4788"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4779"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4809"/>
         <source>If your timetable is too difficult, it may be from these kinds of constraints, so you may need to remove them and retry.</source>
         <translation>Si el teu horari és massa difícil pot ser a causa d&apos;aquesta mena de restriccions, per tant pots necessitar treure-les i tornar-ho a intentar.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4760"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4790"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4864"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4907"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4781"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4811"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4885"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4928"/>
         <source>Continue only if you know what you are doing.</source>
         <translation>Continua només si saps el que estàs fent.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4811"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4833"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4882"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4927"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4832"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4854"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4903"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4948"/>
         <source>It is recommended to keep this warning active, but if you really want, you can disable it.</source>
         <translation>Es recomana mantenir aquest avís actiu, però si vols el pots desactivar.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4813"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4835"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4884"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4929"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4834"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4856"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4905"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4950"/>
         <source>Disable it only if you know what you are doing.</source>
         <translation>Desactiva-la només si saps el que estàs fent.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4815"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4837"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4886"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4931"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4836"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4858"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4907"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4952"/>
         <source>Are you sure you want to disable it?</source>
         <translation>Segur que vols desabilirtar-lo?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3768"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3789"/>
         <source>Please input at least one active activity before generating</source>
         <translation>Siusplau posa almenys una activitat activa abans de generar</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3799"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3820"/>
         <source>Please input at least one active activity before generating multiple</source>
         <translation>Siusplau entra almenys una activitat activa abans de generar múltiples</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1527"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1537"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1545"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1548"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1558"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1566"/>
         <source>FET - Warning</source>
         <translation>FET - Avís</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1105"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1126"/>
         <source>%1[*] - FET</source>
         <comment>The title of the main window, %1 is the name of the current file. Please keep the string [*] unmodified (three characters) - it is used to make the difference between modified files and unmodified files.</comment>
         <translation>%1[*] - FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1527"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1548"/>
         <source>You have not yet generated a timetable - please generate firstly</source>
         <translation>Encara no has generat cap horari - siusplau, genera primer</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1537"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1545"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1558"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1566"/>
         <source>It seems that you have an incomplete timetable. Saving of timetable does not work for incomplete timetables. Please generate a complete timetable</source>
         <translation>Sembla ser que tens un horari incomplet. Desar els horaris no funciona per horaris incomplets. Siusplau genera un horari complet</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1645"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1666"/>
         <source>File exists</source>
         <translation>El fitxer existeix</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1647"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1668"/>
         <source>For safety (so you don&apos;t lose work), it is not allowed to overwrite an existing file with locking and saving a current data+timetable</source>
         <translation>Per seguretat (que no perdis feina), no està permès sobreescriure un fitxer existent amb blocatges i desant les actuals dades+horari</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1650"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1671"/>
         <source>Please choose a non-existing name</source>
         <translation>Siusplau tria un nom que no existeixi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4167"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4188"/>
         <source>Are you sure you want to reset all settings to defaults?</source>
         <translation>Segur que vols restaurar totes les configuracions predeterminades?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1201"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1222"/>
         <source>New file generated</source>
         <translation>Nou fitxer generat</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1267"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1288"/>
         <source>Please do not use a filename starting with white space(s), the html css code does not work. File was not loaded. Please rename it, removing the white space(s) from the beginning and open it after that with FET.</source>
         <translation>No faci servir espais a l&apos;inici del nom de l&apos;arxiu, el codi HTML CSS no funcionarà. L&apos;arxiu no s&apos;ha carregat. Canviau el nom, eliminant els espais buits del principi i obrint-lo de nou amb FET.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1280"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1301"/>
         <source>Please do not use a filename ending with white space(s) before the &apos;.fet&apos; termination or at the end of the filename, problems might arise. File was not loaded. Please rename it, removing the white space(s) at the end and open it after that with FET.</source>
         <translation>No faci servir espais a final del nom de l&apos;arxiu, el codi HTML CSS no funcionarà. L&apos;arxiu no s&apos;ha carregat. Canviau el nom, eliminant els espais buits del principi i obrint-lo de nou amb FET.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1327"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1348"/>
         <source>File opened</source>
         <translation>Fitxer obert</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1439"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1820"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1460"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1841"/>
         <source>File saved</source>
         <translation>Fitxer desat</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2090"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2111"/>
         <source>If you use a not perfect constraint (activity tag max hours daily or students max gaps per day), you&apos;ll get a warning before generating. Uncheck this option to get rid of that warning (it is recommended to keep the warning).</source>
         <translation>Si utilitzes una restricció imperfecta (max hores diàries per etiqueta d&apos;activitat o max buits per dia per tots els estudiants), obtindràs un avís abans de generar. Desactiva aquesta opció per desfer-te d&apos;aquest avís (es recomana mantenir l&apos;avís).</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3708"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3729"/>
         <source>In case the Help/Online menus do not function, please write down these addresses and open them in an internet browser:</source>
         <translation>Si els menus d&apos;Ajuda/en línia no funcionen, anoteu aquestes adreces i accediu-hi amb un navegador de la xarxa:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4176"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4230"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4233"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4245"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4197"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4251"/>
         <location filename="../src/interface/fetmainform.cpp" line="4254"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4261"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4265"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4267"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4269"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4271"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4277"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4281"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4283"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4266"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4275"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4282"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4286"/>
         <location filename="../src/interface/fetmainform.cpp" line="4288"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4290"/>
         <location filename="../src/interface/fetmainform.cpp" line="4292"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4295"/>
         <location filename="../src/interface/fetmainform.cpp" line="4298"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4301"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4302"/>
         <location filename="../src/interface/fetmainform.cpp" line="4304"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4307"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4311"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4314"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4317"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4320"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4323"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4326"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4329"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4309"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4313"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4316"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4319"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4322"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4325"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4328"/>
         <location filename="../src/interface/fetmainform.cpp" line="4332"/>
         <location filename="../src/interface/fetmainform.cpp" line="4335"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4339"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4338"/>
         <location filename="../src/interface/fetmainform.cpp" line="4341"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4343"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4344"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4347"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4350"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4353"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4356"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4360"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4362"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4364"/>
         <source>true</source>
         <translation>cert</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4186"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4207"/>
         <source>Use colors in FET graphical user interface will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>L&apos;ús de colors en la interfície gràfica d&apos;usuari de FET serà %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4190"/>
         <location filename="../src/interface/fetmainform.cpp" line="4211"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4232"/>
         <source>Language will be %1</source>
         <comment>%1 is the default language</comment>
         <translation>L&apos;idioma es posarà en %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4254"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4275"/>
         <source>Warn if using not perfect constraints will be %1</source>
         <comment>%1 is true or false. This is a warning if user uses not perfect constraints</comment>
         <translation>L&apos;avís si no s&apos;usen restriccions perfectes serà %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4257"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4278"/>
         <source>Enable constraints students min hours daily with empty days will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Habilita min hores diàries amb dies buits per tots els estudiants serà %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4260"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4281"/>
         <source>Warn if using constraints students min hours daily with empty days will be %1</source>
         <comment>%1 is true or false. This is a warning if user uses a nonstandard constraint students min hours daily with allowed empty days</comment>
         <translation>Avisa si l&apos;ús de restriccions min hores diàries amb dies buits per tots els estudiants és %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4328"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4349"/>
         <source>44</source>
         <translation>44</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4331"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4352"/>
         <source>45</source>
         <translation>45</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4332"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4353"/>
         <source>activity tags</source>
         <translation>etiquetes d&apos;activitat</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4337"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4358"/>
         <source>Show tool tips for constraints with tables will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Mostrar els suggeriments per a les restriccions amb taules: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4334"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4355"/>
         <source>46</source>
         <translation>46</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4339"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4360"/>
         <source>Show warning for subgroups with the same activities will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Mostrar les advertències dels subgrups amb les mateixes activitats: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4337"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4358"/>
         <source>47</source>
         <translation>47</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4339"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4360"/>
         <source>48</source>
         <translation>48</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4341"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4362"/>
         <source>Print detailed timetables will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Imprimir horaris detallats: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4341"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4362"/>
         <source>49</source>
         <translation>49</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4343"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4364"/>
         <source>Print detailed teachers&apos; free periods timetables will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Imprimir els horaris detallats dels períodes lliures del professorat: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4594"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4615"/>
         <source>You have more than 6 days per week, so probably you won&apos;t need this feature. Do you still want to continue?</source>
         <translation>Tens més de 6 dies per setmana, per tant, probablement no necessitaràs aquesta característica. Tot i això vols continuar?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4597"/>
+        <location filename="../src/interface/fetmainform.cpp" line="823"/>
         <location filename="../src/interface/fetmainform.cpp" line="4618"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4639"/>
         <source>FET question</source>
         <translation>Pregunta de FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4599"/>
         <location filename="../src/interface/fetmainform.cpp" line="4620"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4641"/>
         <source>&amp;Continue</source>
         <translation>&amp;Continua</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4615"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4636"/>
         <source>You have less than 5 days per week, so probably you won&apos;t need this feature. Do you still want to continue?</source>
         <translation>Tens menys de 5 dies per setmana, per tant, probablement no necessitaràs aquesta característica. Tot i això vols continuar?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1255"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1363"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1583"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1276"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1384"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1604"/>
         <source>All files</source>
         <translation>Tots els fitxers</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1254"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1362"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1582"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1275"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1383"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1603"/>
         <source>FET XML files</source>
         <comment>Instructions for translators: FET XML is a type of file format (using text mode). So this field means files in the FET XML format</comment>
         <translation>Fitxers FET XML</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="797"/>
+        <location filename="../src/interface/fetmainform.cpp" line="798"/>
         <source>Constraint is not enabled. To use this type of constraint you must enable it from the Settings-&gt;Advanced menu.</source>
         <translation>La restricció no està habilitada. Per usar aquesta mena de restricció has d&apos;habilitar-la manualment des del menú Configuració-&gt;Avançat.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="974"/>
+        <location filename="../src/interface/fetmainform.cpp" line="995"/>
         <source>Another version: %1, is available on the FET homepage: %2</source>
         <comment>%1 is new version, %2 is FET homepage</comment>
         <translation>Una altra versió: %1 està disponible a la pàgina principal de FET: %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="976"/>
+        <location filename="../src/interface/fetmainform.cpp" line="997"/>
         <source>You may need to hit Refresh in your web browser.</source>
         <translation>Pot ser que hagis de clicar Recarrega al teu navegador.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="976"/>
+        <location filename="../src/interface/fetmainform.cpp" line="997"/>
         <source>Would you like to open the FET homepage now?</source>
         <translation>Vols obrir la pàgina principal de FET ara?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1017"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1038"/>
         <source>Your data file has been modified - do you want to save it?</source>
         <translation>S&apos;ha modificat el teu fitxer de dades - vols desar-lo?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1159"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1180"/>
         <source>Your current data file has been modified. Are you sure you want to reset to new empty data?</source>
         <translation>El seu arxiu actual de dades s&apos;ha modificat. Esteu segur que voleu tornar a començar amb un arxiu nou sense dades?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1231"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1252"/>
         <source>Your current data file has been modified. Are you sure you want to open another data file?</source>
         <translation>El seu arxiu actual de dades s&apos;ha modificat. Esteu segur que voleu obrir un altre arxiu?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1252"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1273"/>
         <source>Choose a file to open</source>
         <translation>Escull fitxer per obrir</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2061"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2082"/>
         <source>add/modify constraints break, not available, preferred starting times or time slots, occupy max time slots from selection or max simultaneous in selected time slots (the table cells will have green or red colors).</source>
         <translation>afegir/modificar les restriccions de descans, no disponible, franges horàries o hores d&apos;inici preferides, ocupar un màxim de franges horàries per a una selecció o el màxim de franges horàries seleccionades (les cel·les de taula tendran colors verds o vermells).</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3720"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3741"/>
         <source>FET web addresses</source>
         <translation>Adreces web de FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4053"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4096"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4074"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4117"/>
         <source>Please select FET language</source>
         <translation>Siusplau selecciona l&apos;idioma de FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4057"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4078"/>
         <source>Cancel</source>
         <translation>Cancel·la</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4349"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4370"/>
         <source>icons</source>
         <comment>It is a style for students&apos; combo boxes</comment>
         <translation>icones</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4351"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4372"/>
         <source>categorized</source>
         <comment>It is a style for students&apos; combo boxes</comment>
         <translation>categoritzat</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4354"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4375"/>
         <source>51</source>
         <translation>51</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4703"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4724"/>
         <source>Choose results (output) directory</source>
         <translation>Tria directori de resultats (sortida)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4712"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4733"/>
         <source>You don&apos;t have write permissions in this directory</source>
         <translation>No tens permisos d&apos;escriptura en aquest directori</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2172"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2193"/>
         <source>Students&apos; statistics form contains a check box named &apos;%1&apos;. This has effect only if you have overlapping groups/years, and means that FET will show the complete tree structure, even if that means that some subgroups/groups will appear twice or more in the table, with the same information. For instance, if you have year Y1, groups G1 and G2, subgroups S1, S2, S3, with structure: Y1 (G1 (S1, S2), G2 (S1, S3)), S1 will appear twice in the table</source>
         <translation>El formulari d&apos;estadístiques dels estudiants conté una casella de verificació anomenada &quot;%1&quot;. Això només té efecte si tens grups/cursos superposats, i significa que FET mostrarà l&apos;estructura d&apos;arbre completa, inclús si això significa que alguns subgrups/grups apareixeran dues o més vegades en la taula, amb la mateixa informació. Per exemple, si tens un curs C1, grups G1 i G2, subgrups S1, S2, S3, amb l&apos;estructura C1(G1(S1, S2), G2 (S1, S3)), S1 apareixerà dues vegades a la taula</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2176"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2197"/>
         <source>Show duplicates</source>
         <translation>Mostra duplicats</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4183"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4186"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4236"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4239"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4242"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4248"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4251"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4204"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4207"/>
         <location filename="../src/interface/fetmainform.cpp" line="4257"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4275"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4337"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4260"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4263"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4269"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4272"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4278"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4296"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4358"/>
         <source>false</source>
         <translation>fals</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4357"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4378"/>
         <source>FET confirmation</source>
         <translation>Confirmació de FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2050"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2071"/>
         <source>Option &apos;Print activities with same starting time in timetables&apos;: selecting it means that the html timetables will contain for each slot all the activities which have the same starting time (fact specified by your constraints) as the activity(ies) which are normally shown in this slot. If you don&apos;t use constraints activities same starting time, this option has no effect for you.</source>
         <translation>Opció &quot;Imprimeix les activitats amb mateixa hora d&apos;inici en els horaris&quot;: seleccionar-la vol dir que els horaris html contindran en cada franja totes les activitats que tenen la mateixa hora d&apos;inici (fet especificat per les teves restriccions), juntament amb les que es mostrin de manera normal en aquest espai. Si no utilitzes restriccions de mateixa hora d&apos;inici, aquesta opció no tindrà efecte per tu.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2043"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2064"/>
         <source>Option &apos;Divide html timetables with time-axis by days&apos;: This means simply that the html timetables of type &apos;time horizontal&apos; or &apos;time vertical&apos; (see the generated html timetables) should be or not divided according to the days.</source>
         <translation>Opció &quot;Divideix horaris html amb eix temporal per dies&quot;: això només vol dir que els horaris html de tipus &quot;hores horitzontals&quot; o &quot;hores verticals&quot; (vegeu horaris html generats) no s&apos;hauria de dividir segons els dies.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2047"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2068"/>
         <source>If the &apos;time horizontal&apos; or &apos;time vertical&apos; html timetables are too large for you, then you might need to select this option</source>
         <translation>Si els horaris html &quot;hores horitzontals&quot; o &quot;hores verticals&quot; són massa grans per tu, pot ser que necessitis seleccionar aquesta opció</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2041"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2062"/>
         <source>Probably some settings which are more difficult to understand are these ones:</source>
         <translation>Probablement les coses més difícils d&apos;entendre són aquestes:</translation>
     </message>
@@ -37204,6 +37238,11 @@ Un altra qüestió: si teniu 1 o 2 sessions setmanals d&apos;una matèria, biolo
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="622"/>
+        <source>Thus, it could be deduced if and when you use FET.</source>
+        <translation>Per tant, es podria saber si i quan feu servir FET.</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpfaqform.cpp" line="628"/>
         <source>Q: I have a double duration activity. Is it possible that it is spread over the break period, like:
 
 Activity Math, duration 2, id say 100
@@ -37224,12 +37263,12 @@ Hora 12:00 Matemàtiques (segona hora de l&apos;act. 100)?
 R: No, cal que l&apos;activitat respecti el descans, de manera que l&apos;activitat es col·locarà abans o desprès del descans amb totes les seves hores.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="629"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="635"/>
         <source>Alternative solutions: either you can split that activity into two subactivities with duration 1 (without a min days constraint between them), and add a two activities consecutive constraint, or you can choose to not add the break constraint in your file.</source>
         <translation>Solucions alternatives: podeu dividir l&apos;activitat en dues subactivitats amb 1 hora de durada (sense restricció de «min. de dies» entre elles) i afagir una restricció de «dues activitats consecutives» o podeu optar per no afegir la restricció de descans en el vostre arxiu.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="662"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="668"/>
         <source>Q: (by Horatiu Halmajan) I met a situation: a teacher asks for maximum 2 working days, but these days should not be consecutive. Is there a way to implement it in .fet?
 
 The only (manual) way I could think of is to set the teacher as unavailable on Tuesdays and Thursdays, thus leaving him available on Monday, Wednesday and Friday (any two of these are unconsecutive).
@@ -37250,17 +37289,17 @@ R: Jo tenc una altra idea: seleccionar 2 activitats d&apos;aquest docent que no 
 O podeu afegir una activitat fictícia per a aquest docente, dividida en 2 setmanals, amb «min. de dies» a 2 i 100% de ponderació. Només heu d&apos;anar en cura de que hi hagi espai per a aquestes activitats fictícies (prou franges horàries al dia) i considerar aquestes activitats fictícies com a espais buits, de manera que si el docent té «max. buits» a 2, llavors establir el valor a 0.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="743"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="749"/>
         <source>The first hint for other users is to start with minimum number of constraints and if FET would generate the plan then thinking about adding the next ones.</source>
         <translation>El primer consell per a altres usuaris és començar amb el mínim nombre de restriccions i, si FET genera un horari correcte, llavors pensar en afegir les següents.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="746"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="752"/>
         <source>The second hint is not to change too many constraints in one simulation as it may lead to impossible timetable and then it is difficult to say which particular constraint was too much.</source>
         <translation>El segon consell és no canviar massa restriccions a la vegada en una simulació degut a que pot fer impossible la generació d&apos;un horari i que sigui difícil arribar a saber quina és la restricció que imposibilitat la generació.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="797"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="803"/>
         <source>Q: This is a problem that probably will never appear in practice, but it is possible. Say the user generates a timetable successfully, locks a few activities, then tries to generate again, but FET stops at a certain activity and reports impossible timetable.
 
 A: Indeed, this is a potential problem in FET (but probably will never show up in practice). It may happen if you have constraints with weight under 100%, which may be broken when you generate the timetable.
@@ -37295,12 +37334,12 @@ Aquest és un exemple d&apos;aquesta situació (és un cas poc pràctic però si
 Solució pràctica del cas 2)? Redueix les ponderacions de les restriccions que tenen una ponderació inferior al 100% o bloqueig (a una franja horària adequada) l&apos;activitat que correspon a A1 en el vostre fitxer de dades.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="823"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="829"/>
         <source>Q: I tried to work on a fixed timetable, to move an activity to another time slot. Now I got stuck - FET says: impossible to generate.</source>
         <translation>R: Vaig intentar treballar en un horari fixat, per moure una activitat a un altre franja horària. I em vaig quedar atrapat - FET diu: és impossible generar l&apos;horari.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="825"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="831"/>
         <source>A: There is this potential problem. Suppose you have max hours daily for students = 4 hours, 99%. You generated successfully (maybe you got some days with more than 4 hours, it does not matter for our discussion). Now, if you have a day with 4 hours and try to move another activity to this day, some students will have 5 hours in this day. If in this day all activities have more students sets, FET may report an impossible timetable. Why? Because if you have an activity with say 4 subgroups, 99% is assumed for each subgroup, resulting in a very strong constraint for this activity. (100%-(1%^4)). Even if FET retries more times for each activity, it is not enough.
 
  A solution: lower the weight of this constraint from 99% to 90% or less.</source>
@@ -37309,27 +37348,27 @@ Solució pràctica del cas 2)? Redueix les ponderacions de les restriccions que 
 Una solució: baixau la ponderació de la restricció del 99% al 90% o menys.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="839"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="845"/>
         <source>Q: A trick to deal with fortnightly activities (my institution has a lot of fortnightly activities):</source>
         <translation>P: Un truc per a activitats quincenals (el meu centre en té moltes):</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="841"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="847"/>
         <source>A: I divided hours in two, the first half (8.00 to 8.30, 9.00 to 9.30, ...) represents week A, the second half (8.30 to 9.00, 9.30 to 10.00, ...) represents week B, fortnightly activities have duration 1, weekly activities have duration 2.</source>
         <translation>R: Dividiu les hores en dues, la primera meitat (8.00 a 8.30, de 9.00 a 9.30, ...) representen la setmana A, la segona meitat (de 8.30 a 9.00, de 9.30 a 10.00, ...) representen la setmana B, les activitats quinzenals tenen durada 1, les activitats setmanals tenen durada 2.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="845"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="851"/>
         <source>I created an activity tag &apos;Start hour&apos;. It should be added to each weekly activity to make sure they start at the same time (same day + same hour) on each week. Otherwise, an activity with duration 2 can start on a second half of hour in the timetable, so this activity is placed on a certain day and at a certain hour on week A, and on the same day but at the next hour on week B.</source>
         <translation>Afagiu una etiqueta d&apos;activitat «Hora d&apos;inici». Cal afegir-la per a cada activitat setmanal per assegurar-se l&apos;inici a la mateix hora (mateix dia + mateixa hora) cada setmana. En cas contrari, una activitat amb durada 2 podria començar a la segona meitat de l&apos;hora a l&apos;horari, de manera que l&apos;activitat es col·locarà en un dia i hora determinats a la setmana A i al mateix dia, però a l&apos;hora següent a la setmana B.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="859"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="865"/>
         <source>Q: I need to add a split activity with total duration 4, which can be either 2+2 or 2+1+1 (two hours in a day and two hours in another day, or two hours in a day, one hour in another day and one hour in another day).</source>
         <translation>P: He d&apos;afegir una activitat dividida amb una durada total de 4, que pot ser 2 + 2 o 2 + 1 + 1 (dues hores un dia i dues hores en un altre dia o dues hores un dia, i les altres dues en dos dies distints).</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="862"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="868"/>
         <source>A: Add 3 activities (let us assume that their id-s are 1, 2 and 3), with durations respectively 2, 1 and 1. It is preferable to add them as 3 single/independent activities (see note below).
 
 Add two constraints min 1 day between activities with id-s 1 and 2 and between activities with id-s 1 and 3, 100% weight percentage.
@@ -37342,175 +37381,175 @@ Afegiu dues restriccions «min. 1 dia entre activitats» amb id. 1 i 2 i «entre
 Afegiu una altra restricció: «min. 1 dia entre les activitats» amb id. 2 i 3, «consecutives si mateix dia» = sí, 0% de ponderació.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="867"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="873"/>
         <source>Note: It is advisable to add the 3 activities as single/independent ones (not a larger split activity with 3 components). The reason is that if you want to apply spreading of activities over the week, this operation won&apos;t add/remove constraints of type min days between activities for these 3 activities. Also, if you add a split activity, you need to take care not to add a default constraint min days between the 3 components.</source>
         <translation>Nota: És aconsellable afegir les 3 activitats com a individuals/independents (no una activitat dividida més gran amb 3 components). El motiu és que si voleu aplicar la distribució d&apos;activitats durant la setmana, aquesta operació no afegirà ni eliminarà les restriccions de tipus «min de dies entre les activitats» d&apos;aquestes 3 activitats. A més, si afegiu una activitat dividida, heu de tenir cura de no afegir una restricció predeterminada «mín. de dies» entre els 3 components.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="877"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="883"/>
         <source>Q: I would like to specify that a teacher should have activities in certain time slots, no matter which activities.</source>
         <translation>P: M&apos;agradaria especificar que un professor hauria de tenir activitats en certes franges horàries, independentment de les activitats.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="879"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="885"/>
         <source>A: Please use constraint activities occupy max time slots from selection (the exact menu entry is &apos;A set of activities occupies max time slots from selection&apos;. See that constraint&apos;s Help button for more details.</source>
         <translation>R: si us plau, utilitzeu la restricció «max. de franges horàries»per a les activitats seleccinades (amb l&apos;opció del menú «Un conjunt d&apos;activitats ocupa el màxim de períodes de temps de la selecció&quot;. Vegeu el botó d&apos;Ajuda de la restricció per obtenir més detalls.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="886"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="892"/>
         <source>Q: How to easily find the activities with unspecified room in the timetable (after the timetable was generated)?</source>
         <translation>P: Com trobar fàcilment les activitats amb amb aula no especificada en el horari (després de generar l&apos;horari)?</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="888"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="894"/>
         <source>A: A trick is this: open the file representing the activities timetable in XML form (this file can be found in the results directory, with a name like: file_activities.xml) with a text editor, and search for the text &lt;Room&gt;&lt;/Room&gt;</source>
         <translation>A: Un truc: obre el fitxer que representa l&apos;horari d&apos;activitats en format XML (aquest fitxer es pot trobar al directori de resultats, amb un nom com: file_activities.xml) amb un editor de text i cerca el text &lt;Room&gt;&lt;/Room&gt;</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="895"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="901"/>
         <source>Q: The students and/or teachers should have in each day some activities without interruption, then some continuous gaps, then again some activities without interruption. This situation can appear in these cases: schools in Morocco and Algeria, which have morning and afternoon shifts, and also in some universities in which students would prefer to have at most a single cluster of gaps, no matter how long, in each day. How to treat such situations in FET?</source>
         <translation>P: Els estudiants i/o professorat haurien de tenir cada dia algunes activitats sense interrupcions, després d&apos;alguns espais buits, i de nou, algunes activitats sense interrupcions. Aquesta situació pot aparèixer en aquests casos: escoles al Marroc i Algèria, que tenen torns al matí i a la tarda, i també en algunes universitats en què els estudiants prefereixen tenir com a màxim un sol grup d&apos;espais buits, per molt de temps, cada dia. Com tractar aquestes situacions amb FET?</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="901"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="907"/>
         <source>A: A nice way to treat such situations would be to consider the number of FET days = 2 * the number of real days. Each real day corresponds to two FET days, one for the morning and one for the afternoon. Then, add constraints max zero gaps, and maybe min two hours daily with allow empty days true. You may need to devise some other tricks, in addition.</source>
         <translation>R: Una bona manera de tractar aquestes situacions seria considerar el nombre de dies FET = 2 * el nombre de dies reals. Cada dia real correspon a dos dies FET, un per al matí i un per a la tarda. A continuació, afegiu restriccions «màx. espais buits» a zero, i potser «min de dues hores diàries» amb «permetre dies buits» a vertader. És possible que necessiteu idear altres trucs, addicionals.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="909"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="915"/>
         <source>Q: How can I add a comment to a (sub)activity or to a constraint?</source>
         <translation>P: Com afegir un comentari a una (sub)activitat o a una restricció?</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="911"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="917"/>
         <source>A: You can add a comment to a (sub)activity by clicking the &apos;Comments&apos; button in the (sub)activities dialog. You can add a comment to a constraint by clicking the &apos;Comments&apos; button in the all time/space constraints dialogs.</source>
         <translation>R: Podeu afegir un comentari a una (sub)activitat clicant el botó «Comentaris» del diàleg d&apos;(sub)activitats. Podeu afegir un comentari a una restricció clicant el botó «Comentaris» en els diàlegs de restriccions de temps/espai.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="918"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="924"/>
         <source>Q: How can I activate/deactivate a constraint?</source>
         <translation>P: Com puc activar/desactivar una restricció?</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="920"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="926"/>
         <source>A: You can activate/deactivate a constraint by clicking the &apos;Activate&apos;/&apos;Deactivate&apos; buttons in the all time/space constraints dialogs.</source>
         <translation>A: Podeu activar/desactivar una restricció clicant els botons «Activar/Desactiva» en els diàlegs de restriccions de temps/espai.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="937"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="943"/>
         <source>Q: How can I specify that some activities must be in the same room (at different time slots, of course, because a single room can hold a single activity in a certain time slot)? This is needed for instance to constrain the Physics activities of a certain students set to take place in the same room, be it Lab-1 or Lab-2</source>
         <translation>P: Com puc especificar que algunes activitats han d&apos;estar a la mateixa aula (en diferents espais horaris, per descomptat, perquè una sola aula pot realitzar una única activitat en un temps determinat)? Això es necessita, per exemple, per restringir les activitats de física d&apos;un determinat alumne que se celebra a la mateixa sala, ja sigui Lab-1 o Lab-2</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="941"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="947"/>
         <source>A: You can use the constraint activities occupy max different rooms, with max different rooms = 1.</source>
         <translation>R: Podeu utilitzar la restricció «activitats que ocupen un màxim d&apos;aules diferents», amb màxim d&apos;aules diferents = 1.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="947"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="953"/>
         <source>Q: How can I backup/restore the FET settings on a computer, or share them between different computers?</source>
         <translation>P: Com puc fer una còpia de seguretat/restauració de la configuració  de FET en una computadora o compartir-les entre ordinadors diferents?</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="949"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="955"/>
         <source>A: GNU/Linux: Usually, in your %1 directory you will find a directory &quot;%2&quot; containing the file &quot;%3&quot;. If you copy this file to another computer, the FET settings will be copied. You can also make a backup of this file and copy it on the same computer, later, to restore the previous settings. If you remove this file, all FET settings on this computer will be reset to defaults.</source>
         <translation>R: GNU/Linux: en general, al vostre directori %1 trobareu un directori &quot;%2&quot; que conté el fitxer &quot;%3&quot;. Si copieu aquest fitxer a un altre ordinador, es copiaran els paràmetres de FET. També podeu fer una còpia de seguretat d&apos;aquest fitxer i copiar-lo a la mateixa computadora, més tard, per restaurar la configuració anterior. Si elimineu aquest fitxer, tota la configuració FET d&apos;aquesta computadora es restablirà als valors predeterminats.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="955"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="961"/>
         <source>Mac OS X: It seems that the configuration file might be %1</source>
         <translation>Mac OS X: sembla que el fitxer de configuració pot ser %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="957"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="963"/>
         <source>Windows: Run regedit.exe (Registry Editor) and search for the key &quot;%1&quot;. You will find a section with this name, with the subsection &quot;%2&quot;. You can export this section to a file, and import it from this file on the same or another computer. If you remove this section, all FET settings will be reset to defaults.</source>
         <translation>Windows: executeu «regedit.exe» (editor del registre) i cerqueu la clau &quot;%1&quot;. Trobareu una secció amb aquest nom, amb la subsecció &quot;%2&quot;. Podeu exportar aquesta secció a un fitxer i importar-lo des d&apos;aquest fitxer a la mateixa o en una altra computadora. Si elimineu aquesta secció, tota la configuració de FET es restablirà als valors predeterminats.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="965"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="971"/>
         <source>Q: I have many subgroups and I don&apos;t explicitly use them. Can I hide them in the combo boxes, to add easier the constraints? Also, can I make the FET interface work faster?</source>
         <translation>P: Tinc molts subgrups i no els ús explícitament. Puc ocultar-los a les llistes desplegables, per afegir més fàcilment les restriccions? A més, puc fer que la interfície  de FET funcioni més ràpidament?</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="968"/>
-        <location filename="../src/interface/helpfaqform.cpp" line="995"/>
-        <location filename="../src/interface/helpfaqform.cpp" line="1019"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="974"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="1001"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="1025"/>
         <source>A:</source>
         <comment>Answer</comment>
         <translation>R:</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="970"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="976"/>
         <source>If you have many subgroups and you don&apos;t explicitly use them, it is recommended to use the three global settings: hide subgroups in combo boxes, hide subgroups in activity planning, and do not write subgroups timetables on hard disk.</source>
         <translation>Si teniu molts subgrups i no els feu servir explicitament, es recomana fer servir aquestes tres configuracions globals: ocultar subgrups en les llistes desplegables, ocultar subgrups en la planificació d&apos;activitats i no desar els horaris de subgrups en el disc dur.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="973"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="979"/>
         <source>Note that using the global menu setting to hide subgroups in activity planning is a different thing from the check box in the activity planning dialog, and the global setting works better and faster.</source>
         <translation>Teniu present que fer servir l&apos;opció de menú global per ocultar els subgrups en la planificació d&apos;activitats és distint a l&apos;opció del diàleg de planificació d&apos;activitats, la funció global funciona millor i és més ràpida.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="976"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="982"/>
         <source>If you hide subgroups in combo boxes, the affected dialogs (like the activities dialog or the add constraint students set not available times dialog) will load much faster if you have many subgroups.</source>
         <translation>Si amagau els subgrups en les llistes desplegables, els diàlegs afectats (p. ex. el diàleg d&apos;activitats o el d&apos;afegir restriccions de temps, hores no disponibles dels grups) es carregaran més aviat si teniu molts grups.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="981"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="987"/>
         <source>If you are only working on a timetable, and you do not need to publish it, you may want to disable writing some categories of timetables on the hard disk, for operativity (the generation speed is not affected, only the overhead to write the partial/complete timetables when stopping/finishing the simulation). The timetables taking the longest time are the subgroups, groups AND years ones.</source>
         <translation>Si només treballau en un horari i no necessitau publicar-ho, per operativitat, podeu optar per desactivat l&apos;escriptura d&apos;algunes categories d&apos;horaris en el disc dur (la velocitat de generació no es veu afectada, només el cost que genera l&apos;escriptura dels horaris parcials/complets en aturar/finalitzar la simulació). Els horaris que requereixen més temps són els dels subgrups, grups i anys.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="985"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="991"/>
         <source>(Also the conflicts timetable might take long to write, if the file is large.)</source>
         <translation>(També l&apos;horari dels conflictes pot trigar molt a escriure&apos;s, si el fitxer és gran)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="987"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="993"/>
         <source>After that, you can re-enable writing of the timetables and re-generate.</source>
         <translation>Després d&apos;això, pot tornar a habilitar l&apos;escriptura dels horaris i tornar a generar-los.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="993"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="999"/>
         <source>Q: How about dividing a students year automatically into many subgroups?</source>
         <translation>P: Què significa dividir un any d&apos;estudiants automàticament en molts subgrups?</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="997"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="1003"/>
         <source>About using a large number of categories, divisions per category and subgroups: it is highly recommended to keep these to a minimum, especially the number of categories, by using any kind of tricks. Otherwise the timetable might become impossible (taking too much time to generate).</source>
         <translation>Respecte a l&apos;ús d&apos;un nombre elevat de categories, divisions per categories i subgrups, es recomana fer-ne servir el mínim possible, especialement en el nombre de categories, fent servir qualsevol truc. D&apos;altra manera, pot ésser que no sigui possible generar els horaris (o que faci falta molt de temps).</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="1001"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="1007"/>
         <source>Maybe a reasonable number of categories could be 2, 3 or maximum 4. The divide year dialog allows much higher values, but these are not at all recommended.</source>
         <translation>Tal vegada, un nombre raonable de categories és 2, 3 o 4 com a màxim. El diàleg de divisió d&apos;any permet valors més alts, però no és recomanable fer-los servir.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="1004"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="1010"/>
         <source>Maybe an alternative to dividing a year into many categories/subgroups would be to enter individual students as FET subgroups and add into each group the corresponding subgroups. But this is hard to do from the FET interface - maybe a solution would be to use an automatic tool to convert your institution data into a file in .fet format.</source>
         <translation>Una alternativa a dividir un any en moltes categories/subgrups és afegir els estudiants individualment com a subgrups FET i afegir, en cada grup, els subgrups corresponents. Però això és difícil de fer amb la interfície de FET - una possible solució és fer servir una eina automàtica per a convertir les seves dades en un arxiu en format .fet.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="1008"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="1014"/>
         <source>Or you might use the FET feature to import students sets from comma separated values (CSV) files.</source>
         <translation>Podeu, també, fer servir la funció FET per a importar grups d&apos;arxius CSV (valors separats per delimitadors).</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="1010"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="1016"/>
         <source>In such cases (individual students as FET subgroups), remember that a smaller number of total subgroups means faster generation time, so you might want to consider a single subgroup for two or more students who have the exact same activities and constraints.</source>
         <translation>En aquests casos (estudiants individuals com a subgrups FET), recordau que el número menor del total de subgrups suposa una generació d&apos;horaris més ràpida, per la qual cosa, és possible que desitjeu considerar un únic subgrup per a dos o més estudiants que tenen exactament les mateixes activitats i restriccions.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="1017"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="1023"/>
         <source>Q: Does the order of constraints have influence on their importance while generating the timetable?</source>
         <translation>P: De quina manera l&apos;ordre de les restriccions influeix en la seva importància quan es genera l&apos;horari?</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="1021"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="1027"/>
         <source>The order of the constraints is only important to the interaction with the user. It is only the weight percentage which counts while generating the timetable. Note however that you may get different timetables for different constraints order.</source>
         <translation>L&apos;order de les restriccions només és important en la interacció amb l&apos;usuari. Només la ponderació es té en consideració en la generació dels horaris. Teniu present que podeu generar diferents horaris amb ordenacions distintes de les restriccions.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="850"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="856"/>
         <source>Add time constraint: activities with all teachers, all students, all subjects, activity tag = &apos;Start hour&apos; have a set of preferred starting times: Monday 8.00, Monday 9.00, ...</source>
         <translation>Afegir restriccions de temps: activitats amb tot el professorat, estudiants, matèries, etiquetes d&apos;activitats = «Hora d&apos;inici» amb un conjunt d&apos;hores d&apos;inici preferides: dilluns 8:00, dimarts 9:00,...</translation>
     </message>
@@ -37520,17 +37559,17 @@ Afegiu una altra restricció: «min. 1 dia entre les activitats» amb id. 2 i 3,
         <translation>Preguntes més freqüents.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="837"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="843"/>
         <source>-- This entry by Regis Bouguin --</source>
         <translation>-- Aquest texte és de Regis Bouguin --</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="853"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="859"/>
         <source>It works fine and I got good timetables with strong teachers time constraints.</source>
         <translation>Funciona bé i tinc bons horaris amb restriccions de temps del professorat estrictes.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="871"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="877"/>
         <source>There may be other solutions possible, but this one seems perfect with respect to efficiency.</source>
         <translation>Hi pot haver altres solucions, però aquesta sembla perfecte en relació a la eficàcia.</translation>
     </message>
@@ -37991,17 +38030,22 @@ R: Hi ha un truc per això: afegiu una activitat fictícia, amb 1 hora de durada
 Aquesta opció l&apos;he pensant mentre estava escrivint una manera més complicada de fer-ho (afagir restriccions per a cada docent)</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="741"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="618"/>
+        <source>Please note that, by enabling this option, each time you start FET it will get the file %1 from the FET homepage, so the request for this file will be visible on the server, along with your IP address and access time.</source>
+        <translation>Tingueu en compte que, si activeu aquesta opció, cada vegada que inicieu FET baixareu el fitxer %1 de la pàgina web d&apos;inici de FET, de manera que la sol·licitud d&apos;aquest fitxer serà visible al servidor, juntament amb la vostra adreça IP i el temps d&apos;accés.</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpfaqform.cpp" line="747"/>
         <source>3 hints from an anonymous Polish user, who uses FET for very large data:</source>
         <translation>3 suggeriments d&apos;un usuari anònim de Polònia que fa servir FET amb moltes dades:</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="749"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="755"/>
         <source>For instance even when two consecutive activities are placed at one day (the same group and the same teacher) sometimes they are placed at different rooms what would force them to needless changing room. I guess that FET is focused on fulfilling constraints but not on optimizing timetable. Sometimes simple changing of two activities makes plan better both for students and teachers. I think that manually improving generated plan is faster than creating many many more constraints and repeating simulations. And this is the third hint.</source>
         <translation>Per exemple, fins i tot quan dues activitats consecutives es col·loquen en un dia (el mateix grup i el mateix professor) de vegades es col·loquen a diferents aules, el que  obligaria a canviar d&apos;aula innecessàriament. Suposo que FET se centra a complir restriccions però no a optimitzar l&apos;horari. De vegades el simple canvi de dues activitats fa que l&apos;horari sigui millor tant per als estudiants com per als professors. Crec que millorar manualment l&apos;horari generat és més ràpid que crear moltes més restriccions i repetir simulacions. I aquesta és la tercera pista.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="795"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="801"/>
         <source>This is an advanced question which probably will never appear in practice, you may skip it at first reading.</source>
         <translation>Aquesta és una pregunta difícil que planteja una situació poc freqüent i que podeu deixar en la primera lectura.</translation>
     </message>
@@ -38045,7 +38089,7 @@ R: Si teniu un horari impossible de generar, és possible que les restriccions d
         <translation>Q-1-6-Juny-2008</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="636"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="642"/>
         <source>Q and A From Anestis Vovos: A very difficult to diagnose unresolved case
 
 Since I started working on our school&apos;s timetable I had a problem with a specific day and teacher. No matter what I tried in FET I couldn&apos;t reduce the in-school hours for this specific teacher and day down from 7 (7 hours is the full school day, so he had 6 teaching hours and 1 gap). It was too much (other teachers have 5 teaching hours max) but he didn&apos;t mind so we kept FET solution.Just a month ago this teacher had some major operation and couldn&apos;t teach so much hours in one day anymore. So I started again to experiment with the timetable and what was wrong. After a LOT of test and failures the idea hit me just as I was waking up to go to school; I hadn&apos;t enough teachers for early and late hours! I checked and it was true! Let me explain. We have 6 classes in total and every class has 7 hours per day. This means that I need 6 teachers for the first hour and 6 teachers for the 7th hour, a total of 12 teachers. But I only had 11 teachers to cover first and last hour! I had 16 teachers in total for that day but their restrictions prevented 6 of them to teach first and last hours (and it wasn&apos;t just cases of teacher not available but usually restrictions on teaching on specific hours and max gaps, so it was very difficult to look through it). So this specific teacher (because of the restrictions on the other teachers and the loose restrictions on himself) had to teach 6 hours with 1 gap so that he could cover a first and a last hour!
@@ -38056,7 +38100,7 @@ Since I started working on our school&apos;s timetable I had a problem with a sp
 Des que vaig començar a treballar a l&apos;horari de l&apos;escola vaig tenir un problema amb un dia concret i un professor. No importa el que he provat a FET, no he pogut reduir les hores presencials d&apos;aquest professor específic i dia de les 7 (7 hores és la jornada completa de l&apos;escola, així que ha tingut 6 hores lectives i 1 bretxa). Era massa (altres professors tenien 5 hores lectives com a màxim.) Però no li importava, així que vam mantenir la solució FET. Fa un mes, aquest professor tenia una operació important i ja no podia ensenyar tantes hores en un dia. Així que vaig tornar a començar a experimentar amb l&apos;horari i aquest dia. Després d&apos;un munt de proves i fracassos, la idea em va colpejar a mesura que m&apos;estava despertant per anar a l&apos;escola; no tenia professors suficients per a les primeres i darreres hores. Ho vaig comprovar i era veritat! Deixa&apos;m explicar. Tenim 6 classes en total i cada classe té 7 hores diàries. Això vol dir que necessito 6 professors per primera hora i 6 professors per a la 7a hora, un total de 12 professors. Però només tinc 11 professors per cobrir primera i última hora! Vaig tenir 16 professors en total per a aquell dia, però les seves restriccions impedien que 6 d&apos;ells ensenyessin les primeres i últimes hores (i no només es tractava de casos de docents no disponibles, sinó que generalment eren restriccions en l&apos;ensenyament en hores específiques i en els màxims espais, per la qual cosa era molt difícil d&apos;arreglar-ho). Així, doncs, aquest professor específic (a causa de les restriccions als altres professors i les restriccions soltes a si mateix) va haver d&apos;ensenyar 6 hores amb 1 espai per poder cobrir una primera i una última hora.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="654"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="660"/>
         <source>Q: I want to define hard subjects (Math, Physics and Chemistry) and I want students not to have more than 1 (or another variant 2) difficult subjects in a row.
 
 A: Define activity tag &apos;Difficult&apos; and add it to all MA, PH and CH lessons. Then add constraint maximum 1 (or 2) hours continuously for all students and an activity tag &apos;Difficult&apos;. Please take care if you may have double lessons.</source>
@@ -38065,7 +38109,7 @@ A: Define activity tag &apos;Difficult&apos; and add it to all MA, PH and CH les
 A: defineix l&apos;etiqueta d&apos;activitat «Difícil» i afegeix-la a totes les lliçons MAT, F i Q. A continuació, afegiu una restricció de «màxim 1 (o 2) hores de manera contínua» per a tots els grups i una etiqueta d&apos;activitat «Difícil». Tingueu cura si podeu tenir sessions dobles.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="678"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="684"/>
         <source>Q: (by Horatiu Halmajan) The students must have max 4 gaps per week, maximum 2 per day, continuous gaps. How to solve this?
 
 A: Add for each subgroup a dummy activity (no teachers) split into 4 per week, duration 1, min days between activities 1, weight 0%, select consecutive if same day. FET will never put more than 2 of these dummy activities in a day. Add max gaps for students = 0 per week.</source>
@@ -38074,12 +38118,12 @@ A: Add for each subgroup a dummy activity (no teachers) split into 4 per week, d
 A: Afegiu per a cada subgrup una activitat fictícia (sense professors) dividida en 4 per setmana, durada 1, mínim entre les activitats 1, i ponderació 0%, seleccioneu «consecutives en el mateix dia». FET mai no posarà més de 2 d&apos;aquestes activitats simulades en un dia. Afegiu un màxim de buits per a estudiants = 0 per setmana.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="687"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="693"/>
         <source>Advice: to treat gaps for students or teachers, if FET constraints are not enough, you can use dummy activities. For instance, if a students set can have maximum 3 gaps, add an activity split into 3 per week, with no teachers.</source>
         <translation>Consell: per a tractar buits dels estudiants o el professorat, si les restriccions de FET no són suficients, podeu fer servir activitats fictícies. Per exemple, si un grup pot tenir un màxim de 3 buits, afegiu una activitat dividida en 3 semanals, sense professorat.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="694"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="700"/>
         <source>Question 1/16 August 2009: How to add constraint two activities grouped, two activities consecutive and three activities grouped if the activities are constrained not to be in the same day by constraints min days between activities?
 
 If A1 and A2 are constrained not to be in the same day with 95% weight or any other weight, it is a bad practice to add a constraint grouped or consecutive to them. If they are constrained with weight 100% not to be in the same day, the timetable is impossible; if the weight is under 100%, the timetable is more difficult to find than using the correct way.
@@ -38092,7 +38136,7 @@ Si A1 i A2 no poden coincidir en el mateix dia amb una ponderació del 95% o amb
 Probablement, la manera correcta seria considerar A1 i A2 = una única activitat A12&apos;, o modificar els límits de restricció «min. de dies entre les activitats». O potser vostè pot trobar altres maneres.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="707"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="713"/>
         <source>Question 1/25 September 2009: An observation for constraint teacher(s) or students (set) activity tag max hours daily:
 
 This constraint is implemented correctly and is working good, but it is not perfect, which means that in unusual, extreme cases the time needed to generate a timetable might be longer or much longer than really necessary. You should give FET a hand in these extreme situations.
@@ -38129,42 +38173,42 @@ Per tant, és una mala idea fer que totes les activitats (d&apos;un professor o 
 Probablement, a la pràctica, aquest problema no apareixerà i no haureu de preocupar-vos. Però, teòricament, pot passar.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="759"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="765"/>
         <source>Q: Why the constraints activity tag max hours daily and students max gaps per day are disabled in the FET menu?</source>
         <translation>P: Per què les restriccions de etiquetes d&apos;activitats del tipus «max. d&apos;hores diàries» i «max. de buits diaris» de l&apos;alumnat estan deshabilitades en el menu de FET?</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="761"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="767"/>
         <source>A: These 6 constraints (4 for activity tag and 2 for students max gaps per day) are the only ones which are not perfectly optimized in FET. For some combinations of constraints, they may slow down the generation or even make the timetable impossible. That is why they are not enabled by default. You need to activate them from the advanced settings menu. It is recommended to add such constraints at the end of your work, after you added all the other constraints and verified that your timetable is possible.</source>
         <translation>R: Aquestes 6 restriccions (4 per a l&apos;«etiqueta d&apos;activitat» i 2 per a «max. de buits per dia» dels estudiants) són les úniques que no estan perfectament optimitzats a FET. Per a algunes combinacions de restriccions, poden frenar la generació o fins i tot fer impossible l&apos;horari. És per això que no estan habilitades per defecte. Cal activar-les des del menú de configuració avançada. Es recomana afegir aquestes restriccions al final del treball, després d&apos;haver afegit totes les restriccions restants i verificar que el vostre horari és possible.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="766"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="772"/>
         <source>If these constraints are disabled, they have an icon attached in the menu to signify that. If they are enabled, they have another icon attached to them, to signify that they are enabled, but must be used with caution.</source>
         <translation>Si aquestes restriccions estan desactivades, tenen un icone adjunt en el menu per a indicar-ho. Si estan activades, tenen un altra tipus d&apos;icone que ho indica, però cal fer-les sevir amb precaució.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="769"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="775"/>
         <source>Use these constraints with caution, not to obtain impossible timetables.</source>
         <translation>Feu servir aquestes restriccions amb molta cura, per a no fer impossible la generació d&apos;horaris.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="775"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="781"/>
         <source>Q: Why don&apos;t you implement the not perfect constraints (activity tag max hours daily and students max gaps per day) in a perfect way?</source>
         <translation>P: Per què no implementar les restriccions no optimitzades («max. d&apos;hores diaries» per a etiquetes d&apos;activitats i «max. de buits diaris» per a grups) de la manera correcte?</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="777"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="783"/>
         <source>A: Activity tag max hours daily cannot be implemented perfectly, generation would take too much (because of complexity of checks). Students max gaps per day can be implemented perfectly, but it would change the algorithm for students a lot and I am afraid to change something that is working well. Very much testing would be needed, and I have not enough sample files. While changing the algorithm, it would be easy to make critical bugs and some files may not solve anymore.</source>
         <translation>R: l&apos;etiqueta d&apos;activitat «max. d&apos;hores diàries» no es pot implementar a la perfecció, la generació trigaria massa (a causa de la complexitat dels controls). La restricció «max. de buits per dia» dels estudiants es pot implementar a la perfecció, però canviaria molt l&apos;algoritme dels estudiants i cal ésser prudent en canviar alguna cosa que funciona bé. Es necessitaran moltes proves, i no tinc prou fitxers de mostra. Si canvies l&apos;algoritme, seria fàcil fer errors crítics i alguns fitxers poden no resoldre&apos;s més.</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="788"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="794"/>
         <source>A: More users asked for shortcut buttons for the most commonly used functions. It is possible to show such buttons, if you select the corresponding option from the Settings-&gt;Interface menu (shortcuts are shown, by default).</source>
         <translation>R: Molts usuaris demanen tecles ràpides per a les funcions d&apos;ús freqüent. És possible activar-les seleccionant l&apos;opció corresponent en el menú Configuració-&gt;Interfície (les tecles ràpides es mostren per defecte).</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpfaqform.cpp" line="786"/>
+        <location filename="../src/interface/helpfaqform.cpp" line="792"/>
         <source>Q: Help on shortcut buttons in the main form.</source>
         <translation>P: Ajuda sobre les tecles ràpides del formulari principal.</translation>
     </message>
@@ -39722,58 +39766,64 @@ Siusplau atura la simulació abans</translation>
 <context>
     <name>ModifyActivityForm</name>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="446"/>
-        <location filename="../src/interface/modifyactivityform.cpp" line="484"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="518"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="537"/>
         <source>FET question</source>
         <translation>Pregunta de FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="447"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="519"/>
         <source>Do you really want to have the activity without teacher(s)?</source>
         <translation>Segur que vols tenir una activitat sense professor(s)?</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="467"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="502"/>
         <source>FET information</source>
         <translation>Informació de FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="468"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="503"/>
         <source>Invalid subject</source>
         <translation>Matèria no vàlida</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="485"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="538"/>
         <source>Do you really want to have the activity without student set(s)?</source>
         <translation>Segur que vols tenir una activitat sense grup(s) d&apos;estudiants?</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="558"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="611"/>
         <source>Abbreviations in this dialog:</source>
         <translation>Abreviatures en aquest quadre de diàleg:</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="560"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="613"/>
         <source>&apos;Students&apos; (the text near the spin box), means &apos;Number of students (-1 for automatic)&apos;</source>
         <translation>&apos;Estudiants&apos; (el text al costat de la casella giratòria), significa &apos;Nombre d&apos;estudiants (´1 per automàtic)&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="562"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="615"/>
         <source>&apos;Split&apos; means &apos;Is split into ... activities per week&apos;. This value cannot be changed. If you need to modify it, please remove the corresponding activities and add a new split activity.</source>
         <translation>&apos;Dividit/des&apos; significa &apos;està dividit en ... activitats per setmana&apos;. Aquest valor no es pot canviar. Si necessites modificar-lo, siusplau treu les activitats corresponents i afegeix una nova activitat dividida.</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="565"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="618"/>
         <source>The &apos;Duration&apos; spin box and the &apos;Active&apos; check box refer to each component of current activity, you can change them for each component, separately, by selecting the corresponding tab in the tab widget.</source>
         <translation>La casella giratòria de &apos;Durada&apos; i la casella de selecció &apos;Activa&apos; fan referència a cada component de l&apos;actual activitat, pots canviar-les per a cada component, separadament, seleccionant la pestanya corresponent a la pestanya de widget.</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="571"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="621"/>
+        <source>&apos;Qualified&apos; means that only the teachers who are qualified to teach the selected subject will be shown in the &apos;Teachers&apos; list.</source>
+        <comment>Qualified refers to teachers</comment>
+        <translation>«Qualificat» significa que només el professorat qualificat per ensenyar l&apos;assignatura seleccionada es mostrarà a la llista &quot;Professorat&quot;.</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyactivityform.cpp" line="627"/>
         <source>FET - help on modifying activity(ies)</source>
         <translation>FET - ajuda sobre modificació d&apos;activitat(s)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform.cpp" line="577"/>
+        <location filename="../src/interface/modifyactivityform.cpp" line="633"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
@@ -39781,304 +39831,316 @@ Siusplau atura la simulació abans</translation>
 <context>
     <name>ModifyActivityForm_template</name>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="88"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="106"/>
         <source>Selected</source>
         <comment>It refers to a list of selected students (in fact, students sets, but translate selected as in &apos;selected students&apos;)</comment>
         <translation>Seleccionat</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="114"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="132"/>
         <source>Years</source>
         <translation>Cursos</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="124"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="142"/>
         <source>Groups</source>
         <translation>Grups</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="134"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="152"/>
         <source>Subgroups</source>
         <translation>Subgrups</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="232"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="250"/>
         <source>Students</source>
         <comment>This refers to the number of students, but I want to keep the text short</comment>
         <translation>Estudiants</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="257"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="275"/>
         <source>Split</source>
         <comment>Refers to the number of components in an activity split into more components</comment>
         <translation>Dividides</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="288"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="306"/>
         <source>1</source>
         <translation>1</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="299"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="363"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="427"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="491"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="555"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="619"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="683"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="747"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="811"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="875"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="939"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1003"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1067"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1131"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1195"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1259"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1323"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1387"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1451"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1515"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1579"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1643"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1707"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1771"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1835"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1899"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1963"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2027"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2091"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2155"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2219"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2283"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2347"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2411"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2475"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="317"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="381"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="445"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="509"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="573"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="637"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="701"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="765"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="829"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="893"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="957"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1021"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1085"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1149"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1213"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1277"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1341"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1405"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1469"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1533"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1597"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1661"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1725"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1789"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1853"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1917"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1981"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2045"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2109"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2173"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2237"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2301"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2365"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2429"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2493"/>
         <source>Duration</source>
         <translation>Durada</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="352"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="370"/>
         <source>2</source>
         <translation>2</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="339"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="403"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="467"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="531"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="595"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="659"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="723"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="787"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="851"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="915"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="979"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1043"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1107"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1171"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1235"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1299"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1363"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1427"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1491"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1555"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1619"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1683"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1747"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1811"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1875"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1939"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2003"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2067"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2131"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2195"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2259"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2323"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2387"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2451"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2515"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="357"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="421"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="485"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="549"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="613"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="677"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="741"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="805"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="869"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="933"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="997"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1061"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1125"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1189"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1253"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1317"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1381"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1445"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1509"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1573"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1637"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1701"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1765"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1829"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1893"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1957"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2021"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2085"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2149"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2213"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2277"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2341"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2405"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2469"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2533"/>
         <source>Active</source>
         <comment>It refers to a subactivity</comment>
         <translation>Activa</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="416"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="69"/>
+        <source>All</source>
+        <comment>It refers to teachers. It will show all the teachers.</comment>
+        <translation>Tot el professorat</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="76"/>
+        <source>Qualified</source>
+        <comment>It refers to teachers. It will show only the teachers qualified for the selected subject.</comment>
+        <translation>Imparteixen la matèria</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="434"/>
         <source>3</source>
         <translation>3</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="480"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="498"/>
         <source>4</source>
         <translation>4</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="544"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="562"/>
         <source>5</source>
         <translation>5</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="608"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="626"/>
         <source>6</source>
         <translation>6</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="672"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="690"/>
         <source>7</source>
         <translation>7</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="736"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="754"/>
         <source>8</source>
         <translation>8</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="800"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="818"/>
         <source>9</source>
         <translation>9</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="864"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="882"/>
         <source>10</source>
         <translation>10</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="928"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="946"/>
         <source>11</source>
         <translation>11</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="992"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1010"/>
         <source>12</source>
         <translation>12</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1056"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1074"/>
         <source>13</source>
         <translation>13</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1120"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1138"/>
         <source>14</source>
         <translation>14</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1184"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1202"/>
         <source>15</source>
         <translation>15</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1248"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1266"/>
         <source>16</source>
         <translation>16</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1312"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1330"/>
         <source>17</source>
         <translation>17</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1376"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1394"/>
         <source>18</source>
         <translation>18</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1440"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1458"/>
         <source>19</source>
         <translation>19</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1504"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1522"/>
         <source>20</source>
         <translation>20</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1568"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1586"/>
         <source>21</source>
         <translation>21</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1632"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1650"/>
         <source>22</source>
         <translation>22</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1696"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1714"/>
         <source>23</source>
         <translation>23</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1760"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1778"/>
         <source>24</source>
         <translation>24</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1824"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1842"/>
         <source>25</source>
         <translation>25</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1888"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1906"/>
         <source>26</source>
         <translation>26</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="1952"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="1970"/>
         <source>27</source>
         <translation>27</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2016"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2034"/>
         <source>28</source>
         <translation>28</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2080"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2098"/>
         <source>29</source>
         <translation>29</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2144"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2162"/>
         <source>30</source>
         <translation>30</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2208"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2226"/>
         <source>31</source>
         <translation>31</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2272"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2290"/>
         <source>32</source>
         <translation>32</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2336"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2354"/>
         <source>33</source>
         <translation>33</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2400"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2418"/>
         <source>34</source>
         <translation>34</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2464"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2482"/>
         <source>35</source>
         <translation>35</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2540"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2558"/>
         <source>Ok</source>
         <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2547"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2565"/>
         <source>Help</source>
         <translation>Ajuda</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="2554"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="2572"/>
         <source>Cancel</source>
         <translation>Cancel·la</translation>
     </message>
@@ -40095,30 +40157,30 @@ Siusplau atura la simulació abans</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="56"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="101"/>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="181"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="119"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="199"/>
         <source>Clear</source>
         <translation>Esborra</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="71"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="89"/>
         <source>Students</source>
         <comment>Refers to sets of students, but I want to keep text short</comment>
         <translation>Estudiants</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="201"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="219"/>
         <source>Subject</source>
         <translation>Matèria</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="168"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="186"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activity tags</comment>
         <translation>Seleccionat</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyactivityform_template.ui" line="151"/>
+        <location filename="../src/interface/modifyactivityform_template.ui" line="169"/>
         <source>Activity tags</source>
         <translation>Etiquetes d&apos;activitat</translation>
     </message>
@@ -47699,58 +47761,64 @@ Nota: els no disponibles i les pauses no se&apos;ls compten als professors com a
 <context>
     <name>ModifySubactivityForm</name>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="336"/>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="374"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="408"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="427"/>
         <source>FET question</source>
         <translation>Pregunta de FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="337"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="409"/>
         <source>Do you really want to have the subactivity without teacher(s)?</source>
         <translation>Segur que vols tenir la subactivitat sense professor(s)?</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="357"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="392"/>
         <source>FET information</source>
         <translation>Informació de FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="358"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="393"/>
         <source>Invalid subject</source>
         <translation>Matèria no vàlida</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="375"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="428"/>
         <source>Do you really want to have the subactivity without student set(s)?</source>
         <translation>Segur que vols tenir una subactivitat sense conjunt(s) d&apos;estudiants?</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="435"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="488"/>
         <source>Abbreviations in this dialog:</source>
         <translation>Abreviatures en aquest quadre de diàleg:</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="437"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="490"/>
         <source>&apos;Students&apos; (the text near the spin box), means &apos;Number of students (-1 for automatic)&apos;</source>
         <translation>&apos;Estudiants&apos; (el text al costat de la casella giratòria), significa &apos;Nombre d&apos;estudiants (´1 per automàtic)&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="443"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="492"/>
+        <source>&apos;Qualified&apos; means that only the teachers who are qualified to teach the selected subject will be shown in the &apos;Teachers&apos; list.</source>
+        <comment>Qualified refers to teachers</comment>
+        <translation>«Qualificat» significa que només el professorat qualificat per ensenyar l&apos;assignatura seleccionada es mostrarà a la llista &quot;Professorat&quot;.</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="498"/>
         <source>FET - help on modifying subactivity(ies)</source>
         <translation>FET - ajuda sobre modificació de subactivitat(s)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="449"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="504"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="87"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="119"/>
         <source>Current subactivity has split index %1 out of %2</source>
         <translation>La subactivitat actual té un index de divisió %1 sobre %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform.cpp" line="88"/>
+        <location filename="../src/interface/modifysubactivityform.cpp" line="120"/>
         <source>The current data applies only to this subactivity</source>
         <translation>Les dades actuals només s&apos;apliquen a aquesta subactivitat</translation>
     </message>
@@ -47758,78 +47826,90 @@ Nota: els no disponibles i les pauses no se&apos;ls compten als professors com a
 <context>
     <name>ModifySubactivityForm_template</name>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="29"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="26"/>
         <source>Teachers</source>
         <translation>Professorat</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="59"/>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="104"/>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="187"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="56"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="119"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="202"/>
         <source>Clear</source>
         <translation>Esborra</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="74"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="89"/>
         <source>Students</source>
         <comment>This refers to sets of students, but I want to keep the string short</comment>
         <translation>Estudiants</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="207"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="222"/>
         <source>Subject</source>
         <translation>Matèria</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="117"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="132"/>
         <source>Years</source>
         <translation>Cursos</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="127"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="69"/>
+        <source>All</source>
+        <comment>It refers to teachers. It will show all the teachers.</comment>
+        <translation>Tot el professorat</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="76"/>
+        <source>Qualified</source>
+        <comment>It refers to teachers. It will show only the teachers qualified for the selected subject.</comment>
+        <translation>Professorat qualificat</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="142"/>
         <source>Groups</source>
         <translation>Grups</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="137"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="152"/>
         <source>Subgroups</source>
         <translation>Subgrups</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="174"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="189"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activity tags</comment>
         <translation>Seleccionat</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="236"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="251"/>
         <source>Students</source>
         <comment>This refers to the number of students, but I want to keep string short</comment>
         <translation>Estudiants</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="312"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="327"/>
         <source>Active</source>
         <comment>It refers to a subactivity</comment>
         <translation>Activa</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="372"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="387"/>
         <source>Ok</source>
         <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="379"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="394"/>
         <source>Help</source>
         <translation>Ajuda</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="386"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="401"/>
         <source>Cancel</source>
         <translation>Cancel·la</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="157"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="172"/>
         <source>Activity tags</source>
         <translation>Etiquetes d&apos;activitat</translation>
     </message>
@@ -47840,18 +47920,18 @@ Nota: els no disponibles i les pauses no se&apos;ls compten als professors com a
         <translation>Modifica subactivitat</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="46"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="43"/>
         <source>Selected</source>
         <comment>It refers to a list of selected teachers</comment>
         <translation>Seleccionat</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="272"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="287"/>
         <source>Duration</source>
         <translation>Durada</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifysubactivityform_template.ui" line="91"/>
+        <location filename="../src/interface/modifysubactivityform_template.ui" line="106"/>
         <source>Selected</source>
         <comment>It refers to a list of selected students (in fact, students sets, but translate selected as in &apos;selected students&apos;)</comment>
         <translation>Seleccionat</translation>
@@ -49670,47 +49750,47 @@ sense afegir - deu ser un duplicat</translation>
 <context>
     <name>SecondMinDaysDialog</name>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="477"/>
+        <location filename="../src/interface/addactivityform.cpp" line="532"/>
         <source>Add a second constraint or not?</source>
         <translation>Afegeix una segona restricció o no?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="487"/>
+        <location filename="../src/interface/addactivityform.cpp" line="542"/>
         <source>Yes</source>
         <translation>Sí</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="490"/>
+        <location filename="../src/interface/addactivityform.cpp" line="545"/>
         <source>No</source>
         <translation>No</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="560"/>
+        <location filename="../src/interface/addactivityform.cpp" line="615"/>
         <source>FET information</source>
         <translation>Informació de FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="561"/>
+        <location filename="../src/interface/addactivityform.cpp" line="616"/>
         <source>Invalid weight (percentage) - must be &gt;=0 and &lt;=100.0</source>
         <translation>Ponderació no vàlida (percentatge) - ha de ser &gt;=0 i &lt;=100,0</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="459"/>
+        <location filename="../src/interface/addactivityform.cpp" line="514"/>
         <source>You selected min days between activities %1 (above 1) and weight %2 (under 100.0). Would you like to add also a second constraint to ensure that almost certainly the distance between activities is at least %3 (%1-1) days? If yes, please select weight (recommended 95.0%-100.0%) and click Yes. If no, please click No (only one constraint will be added)</source>
         <translation>Has seleccionat min dies entre activitats %1 (per sobre d&apos;1) i ponderació %2 (per sota del 100,0). Voldries afegir una segona restricció per assegurar-te que gairebé segur la distància entre activitats és com a mínim %3 (%1-1) dies? Si és que sí, siusplau escull ponderació (recomanada 95,0%-100,0%) i clica Sí. Si és que no, siusplau clica NO (només s&apos;afegirà una restricció)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="475"/>
+        <location filename="../src/interface/addactivityform.cpp" line="530"/>
         <source>Recommended answer is Yes, 95% (or higher).</source>
         <translation>La resposta recomanada és Sí, 95% (o més).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="464"/>
+        <location filename="../src/interface/addactivityform.cpp" line="519"/>
         <source>(Yes means to add an additional constraint min %1 days between activities, weight 0.0%-100.0%. If you say Yes, you will have 2 constraints min days added for current activities. Adding the second constraint might lead to impossible timetables if the condition is too tight, but you can remove the second constraint at any time).</source>
         <translation>(Sí vol dir afegir una restricció addicional min %1 dies entre activitats, ponderació 0,0%-100,0%. Si dius Sí tindràs dues restriccions afegides de min dies per les activitats actuals. Afegir la segona restricció podria portar a horaris impossibles si la condició és massa estricta, però pots treure la segona restricció en qualsevol moment).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="469"/>
+        <location filename="../src/interface/addactivityform.cpp" line="524"/>
         <source>Note: 95% is usually enough for min days constraints referring to same activities. The weights are cumulated if referring to the same activities. If you have 2 constraints with say 95% (say min n days and min n-1 days), the min n days constraint is skipped with probability 5%, then min n-1 days constraint is skipped with probability 0.25%=5%*5%, so you&apos;ll get in 99.75% cases the min n-1 days constraint respected.</source>
         <translation>Nota: 95% normalment és suficient per les restriccions de min dies que fan referència a les mateixes activitats. Les ponderacions s&apos;acumulen si es refereixen a les mateixes activitats. Si tens 2 restriccions amb, posem, 95% (per min dies i min n-1 dies), la restricció min n dies serà saltada amb probabilitat del 5%, la restricció min n-1 dies serà saltada amb probabilitat 0,25%=5%*5%, per tant es respectarà en el 99,75% dels casos la restricció min n-1 dies.</translation>
     </message>
@@ -51612,91 +51692,91 @@ Inferior: %4</translation>
 <context>
     <name>SubactivitiesForm</name>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="346"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="349"/>
         <source>No: %1 / %2</source>
         <comment>No means number, %1 is the number of active activities, %2 is the number of total activities.Please leave space between fields, so that they are better visible</comment>
         <translation>No: %1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="348"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="351"/>
         <source>Dur: %1 / %2</source>
         <comment>Dur means duration, %1 is the duration of active activities, %2 is the duration of total activities.Please leave space between fields, so that they are better visible</comment>
         <translation>Dur: %1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="361"/>
-        <location filename="../src/interface/subactivitiesform.cpp" line="463"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="364"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="466"/>
         <source>FET information</source>
         <translation>Informació de FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="361"/>
-        <location filename="../src/interface/subactivitiesform.cpp" line="463"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="364"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="466"/>
         <source>Invalid selected subactivity</source>
         <translation>Subactivitat seleccionada no vàlida</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="421"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="424"/>
         <source>Useful instructions/tips:</source>
         <translation>Instruccions/consells útils:</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="424"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="427"/>
         <source>Above the (sub)activities list, we have 2 labels, containing 4 numbers. The first label contains text: No: a / b. The first number a is the number of active (sub)activities (we number each individual subactivity as 1), while the second number b is the number of total (sub)activities. The second label contains text: Dur: c / d. The third number c is the duration of active (sub)activities, in periods (or FET hours), while the fourth number d is the duration of total (sub)activities, in periods (or FET hours). So, No means number and Dur means duration.</source>
         <translation>Sobre la llista de (sub)activitats tenim dues etiquetes que contenen 4 nombres. La primera etiqueta conté text: No: a / b. El primer nombre a és el nombre de (sub)activitats actives (a cada subactivitat individual li posem 1), mentre que el segon nombre és el total de (sub)activitats. La segona etiqueta conté text: Dur: c / d. El tercer nombre c és la durada de les (sub)activitats actives, en períodes (o hores de FET), mentre que el quart nombre és la durada del total de (sub)activitats) en períodes (o hores de FET). Per tant, No significa nombre i Dur significa durada.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="430"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="433"/>
         <source>Example: No: 100 / 102, Dur: 114 / 117. They represent: 100 - the number of active (sub)activities, then 102 - the number of total (sub)activities, 114 - the duration of active activities (in periods or FET hours) and 117 - the duration of total activities (in periods or FET hours). In this example we have 2 inactive activities with their combined duration being 3 periods.</source>
         <translation>Exemple: No: 100 / 102, Dur: 114 / 117. representen: 100 - el nombre de (sub)activitats actives, i 102 - el nombre total de (sub)activitats, 114 - la durada de les activitats actives (en períodes o hores FET) i 117 - la durada de les activitats totals (en períodes o hores FET). En aquest exemple tenim 2 activitats no actives amb una durada combinada de 3 períodes.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="436"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="439"/>
         <source>Explanation of the short description of an activity: first comes the id. If the activity is inactive, an X follows. Then the duration. Then, if the activity is split, a slash and the total duration. Then teachers, subject, activity tag (if it is not void) and students. Then the number of students (if specified).</source>
         <translation>Explicació de la descripció curta d&apos;una activitat: primer ve la id. Si l&apos;activitat és inactiva, segueix una X. Llavors la durada. Després, si l&apos;activitat està auto dividida, una barra i la durada total. Llavors el professorat, matèria, etiqueta d&apos;activitat (si no està buida) i els estudiants. A continuació el nombre d&apos;estudiants (si s&apos;especifica).</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="440"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="443"/>
         <source>The activities which are inactive:</source>
         <translation>Les activitats que no estan actives:</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="443"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="446"/>
         <source>have an X mark after the id.</source>
         <translation>té una marca X després de l&apos;id.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="449"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="452"/>
         <source>if you use colors in interface (see Settings/Interface menu), they will appear with different background color.</source>
         <translation>Si fas servir colors a la interfície (vegeu el menu Configuració/Interfície), apareixeran amb diferent color de fons.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="451"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="454"/>
         <source>To modify a subactivity, you can also double click it.</source>
         <translation>Per modificar una subactivitat també hi pots fer doble click al damunt.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="453"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="456"/>
         <source>Show related: if you select this, there will be listed subactivities for groups and subgroups contained also in the current set (if the current set is a year or a group) and also higher ranked year or group (if the current set is a group or a subgroup).</source>
         <translation>Mostra les relacionades: si selecciones això, hi haurà llistades les subactivitats per als grups i subgrups que depenguin del grup actual (si el grup actual és un curs o un grup) i també les de cursos o grup de rang superior (si l&apos;actual és un subgrup).</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="456"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="459"/>
         <source>FET Help</source>
         <translation>Ajuda de FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="474"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="477"/>
         <source>Subactivity comments</source>
         <translation>Comentaris de subactivitat</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="476"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="479"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="478"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="481"/>
         <source>Cancel</source>
         <translation>Cancel·la</translation>
     </message>

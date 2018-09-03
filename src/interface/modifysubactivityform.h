@@ -50,11 +50,14 @@ public:
 	~ModifySubactivityForm();
 
 	void updateStudentsListWidget();
-	void updateTeachersListWidget();
 	void updateSubjectsComboBox();
 	void updateActivityTagsListWidget();
 	
 public slots:
+	void allTeachersRadioButtonToggled(bool checked);
+	void qualifiedTeachersRadioButtonToggled(bool checked);
+	void updateAllTeachersListWidget();
+
 	void ok();
 	
 	void addTeacher();

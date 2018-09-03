@@ -648,6 +648,7 @@ FetMainForm::FetMainForm()
 	
 	connect(showWarningForSubgroupsWithTheSameActivitiesAction, SIGNAL(toggled(bool)), this, SLOT(showWarningForSubgroupsWithTheSameActivitiesToggled(bool)));
 
+	connect(checkForUpdatesAction, SIGNAL(toggled(bool)), this, SLOT(checkForUpdatesToggled(bool)));
 	connect(settingsShowSubgroupsInComboBoxesAction, SIGNAL(toggled(bool)), this, SLOT(showSubgroupsInComboBoxesToggled(bool)));
 	connect(settingsShowSubgroupsInActivityPlanningAction, SIGNAL(toggled(bool)), this, SLOT(showSubgroupsInActivityPlanningToggled(bool)));
 	
@@ -814,9 +815,29 @@ void FetMainForm::enableNotPerfectMessage()
 	QMessageBox::information(this, tr("FET information"), s);
 }
 
-void FetMainForm::on_checkForUpdatesAction_toggled()
+void FetMainForm::checkForUpdatesToggled(bool checked)
 {
-	checkForUpdates=checkForUpdatesAction->isChecked();
+	if(checked==true){
+		QString s;
+		s+=tr("Please note that, by enabling this option, each time you start FET it will get the file %1 from the FET homepage, so the "
+			"request for this file will be visible on the server, along with your IP address and access time.")
+			.arg("https://lalescu.ro/liviu/fet/crtversion/crtversion.txt");
+		s+=" ";
+		s+=tr("Thus, it could be deduced if and when you use FET.");
+		s+="\n\n";
+		s+=tr("Do you agree?");
+
+		QMessageBox::StandardButton b=QMessageBox::question(this, tr("FET question"), s, QMessageBox::Yes | QMessageBox::No, QMessageBox::Yes);
+
+		if(b!=QMessageBox::Yes){
+			disconnect(checkForUpdatesAction, SIGNAL(toggled(bool)), this, SLOT(checkForUpdatesToggled(bool)));
+			checkForUpdatesAction->setChecked(false);
+			connect(checkForUpdatesAction, SIGNAL(toggled(bool)), this, SLOT(checkForUpdatesToggled(bool)));
+			return;
+		}
+	}
+
+	checkForUpdates=checked;
 }
 
 void FetMainForm::on_settingsUseColorsAction_toggled()

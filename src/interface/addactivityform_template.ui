@@ -15,7 +15,7 @@
   </property>
   <layout class="QGridLayout" name="gridLayout_5">
    <item row="0" column="0">
-    <layout class="QVBoxLayout" name="verticalLayout_9">
+    <layout class="QVBoxLayout" name="verticalLayout_8">
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_8">
        <item>
@@ -58,6 +58,24 @@
           </widget>
          </item>
         </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_79">
+       <item>
+        <widget class="QRadioButton" name="allTeachersRadioButton">
+         <property name="text">
+          <string comment="It refers to teachers. It will show all the teachers.">All</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="qualifiedTeachersRadioButton">
+         <property name="text">
+          <string comment="It refers to teachers. It will show only the teachers qualified for the selected subject.">Qualified</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </item>

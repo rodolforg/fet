@@ -6,17 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>790</width>
-    <height>599</height>
+    <width>810</width>
+    <height>644</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string extracomment="Title of dialog to modify a subactivity">Modify subactivity</string>
   </property>
   <layout class="QGridLayout" name="gridLayout_4">
-   <property name="sizeConstraint">
-    <enum>QLayout::SetMinimumSize</enum>
-   </property>
    <item row="0" column="0">
     <layout class="QVBoxLayout" name="verticalLayout_5">
      <item>
@@ -61,6 +58,24 @@
           </widget>
          </item>
         </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_79">
+       <item>
+        <widget class="QRadioButton" name="allTeachersRadioButton">
+         <property name="text">
+          <string comment="It refers to teachers. It will show all the teachers.">All</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="qualifiedTeachersRadioButton">
+         <property name="text">
+          <string comment="It refers to teachers. It will show only the teachers qualified for the selected subject.">Qualified</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </item>

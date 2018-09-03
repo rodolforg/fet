@@ -35,6 +35,10 @@
 #include <QAbstractItemView>
 #include <QScrollBar>
 
+#include <QSettings>
+#include <QObject>
+#include <QMetaObject>
+
 QSpinBox* ModifyActivityForm::dur(int i)
 {
 	assert(i>=0 && i<durList.count());
@@ -52,6 +56,22 @@ QCheckBox* ModifyActivityForm::activ(int i)
 ModifyActivityForm::ModifyActivityForm(QWidget* parent, int id, int activityGroupId): QDialog(parent)
 {
 	setupUi(this);
+
+	foreach(Teacher* tch, gt.rules.teachersList)
+		teacherNamesSet.insert(tch->name);
+	foreach(Subject* sbj, gt.rules.subjectsList)
+		subjectNamesSet.insert(sbj->name);
+	foreach(ActivityTag* at, gt.rules.activityTagsList)
+		activityTagNamesSet.insert(at->name);
+	/*foreach(StudentsYear* year, gt.rules.yearsList){
+		numberOfStudentsHash.insert(year->name, year->numberOfStudents);
+		foreach(StudentsGroup* group, year->groupsList){
+			numberOfStudentsHash.insert(group->name, group->numberOfStudents);
+			foreach(StudentsSubgroup* subgroup, group->subgroupsList){
+				numberOfStudentsHash.insert(subgroup->name, subgroup->numberOfStudents);
+			}
+		}
+	}*/
 
 	durList.clear();
 	durList.append(duration1SpinBox);
@@ -137,6 +157,15 @@ ModifyActivityForm::ModifyActivityForm(QWidget* parent, int id, int activityGrou
 	allActivityTagsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
 	selectedActivityTagsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
 
+	QSettings settings;
+
+	showSubgroupsCheckBox->setChecked(settings.value(this->metaObject()->className()+QString("/show-subgroups-check-box-state"), "false").toBool());
+	showGroupsCheckBox->setChecked(settings.value(this->metaObject()->className()+QString("/show-groups-check-box-state"), "true").toBool());
+	showYearsCheckBox->setChecked(settings.value(this->metaObject()->className()+QString("/show-years-check-box-state"), "true").toBool());
+
+	allTeachersRadioButton->setChecked(settings.value(this->metaObject()->className()+QString("/all-teachers-radio-button-state"), "true").toBool());
+	qualifiedTeachersRadioButton->setChecked(settings.value(this->metaObject()->className()+QString("/qualified-teachers-radio-button-state"), "false").toBool());
+
 	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(reject()));
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
 	connect(clearTeacherPushButton, SIGNAL(clicked()), this, SLOT(clearTeachers()));
@@ -211,9 +240,18 @@ ModifyActivityForm::ModifyActivityForm(QWidget* parent, int id, int activityGrou
 		nStudentsSpinBox->setValue(this->_activity->nTotalStudents);
 	
 	updateStudentsListWidget();
-	updateTeachersListWidget();
 	updateSubjectsComboBox();
 	updateActivityTagsListWidget();
+
+	//after updateSubjectsComboBox
+	connect(subjectsComboBox, SIGNAL(activated(QString)), this, SLOT(updateAllTeachersListWidget()));
+	connect(allTeachersRadioButton, SIGNAL(toggled(bool)), this, SLOT(allTeachersRadioButtonToggled(bool)));
+	connect(qualifiedTeachersRadioButton, SIGNAL(toggled(bool)), this, SLOT(qualifiedTeachersRadioButtonToggled(bool)));
+	updateAllTeachersListWidget();
+	
+	selectedTeachersListWidget->clear();
+	for(QStringList::Iterator it=this->_teachers.begin(); it!=this->_teachers.end(); it++)
+		selectedTeachersListWidget->addItem(*it);
 	
 	selectedStudentsListWidget->clear();
 	for(QStringList::Iterator it=this->_students.begin(); it!=this->_students.end(); it++)
@@ -227,40 +265,52 @@ ModifyActivityForm::ModifyActivityForm(QWidget* parent, int id, int activityGrou
 			
 	okPushButton->setDefault(true);
 	okPushButton->setFocus();
-
-	foreach(Teacher* tch, gt.rules.teachersList)
-		teacherNamesSet.insert(tch->name);
-	foreach(Subject* sbj, gt.rules.subjectsList)
-		subjectNamesSet.insert(sbj->name);
-	foreach(ActivityTag* at, gt.rules.activityTagsList)
-		activityTagNamesSet.insert(at->name);
-	/*foreach(StudentsYear* year, gt.rules.yearsList){
-		numberOfStudentsHash.insert(year->name, year->numberOfStudents);
-		foreach(StudentsGroup* group, year->groupsList){
-			numberOfStudentsHash.insert(group->name, group->numberOfStudents);
-			foreach(StudentsSubgroup* subgroup, group->subgroupsList){
-				numberOfStudentsHash.insert(subgroup->name, subgroup->numberOfStudents);
-			}
-		}
-	}*/
 }
 
 ModifyActivityForm::~ModifyActivityForm()
 {
 	saveFETDialogGeometry(this);
+
+	QSettings settings;
+
+	settings.setValue(this->metaObject()->className()+QString("/show-subgroups-check-box-state"), showSubgroupsCheckBox->isChecked());
+	settings.setValue(this->metaObject()->className()+QString("/show-groups-check-box-state"), showGroupsCheckBox->isChecked());
+	settings.setValue(this->metaObject()->className()+QString("/show-years-check-box-state"), showYearsCheckBox->isChecked());
+
+	settings.setValue(this->metaObject()->className()+QString("/qualified-teachers-radio-button-state"), qualifiedTeachersRadioButton->isChecked());
+	settings.setValue(this->metaObject()->className()+QString("/all-teachers-radio-button-state"), allTeachersRadioButton->isChecked());
 }
 
-void ModifyActivityForm::updateTeachersListWidget()
+void ModifyActivityForm::allTeachersRadioButtonToggled(bool toggled)
+{
+	if(toggled)
+		updateAllTeachersListWidget();
+}
+
+void ModifyActivityForm::qualifiedTeachersRadioButtonToggled(bool toggled)
+{
+	if(toggled)
+		updateAllTeachersListWidget();
+}
+
+void ModifyActivityForm::updateAllTeachersListWidget()
 {
 	allTeachersListWidget->clear();
+	
 	for(int i=0; i<gt.rules.teachersList.size(); i++){
 		Teacher* tch=gt.rules.teachersList[i];
-		allTeachersListWidget->addItem(tch->name);
+		if(allTeachersRadioButton->isChecked() || subjectsComboBox->currentIndex()==-1){
+			allTeachersListWidget->addItem(tch->name);
+		}
+		else{
+			assert(qualifiedTeachersRadioButton->isChecked());
+			assert(subjectsComboBox->currentText()!="");
+			assert(subjectNamesSet.contains(subjectsComboBox->currentText()));
+			if(tch->qualifiedSubjectsHash.contains(subjectsComboBox->currentText())){
+				allTeachersListWidget->addItem(tch->name);
+			}
+		}
 	}
-	
-	selectedTeachersListWidget->clear();
-	for(QStringList::Iterator it=this->_teachers.begin(); it!=this->_teachers.end(); it++)
-		selectedTeachersListWidget->addItem(*it);
 }
 
 void ModifyActivityForm::addTeacher()
@@ -434,24 +484,6 @@ void ModifyActivityForm::updateStudentsListWidget()
 
 void ModifyActivityForm::ok()
 {
-	//teachers
-	QStringList teachers_names;
-	if(selectedTeachersListWidget->count()<=0){
-		int t=QMessageBox::question(this, tr("FET question"),
-		 tr("Do you really want to have the activity without teacher(s)?"),
-		 QMessageBox::Yes|QMessageBox::No, QMessageBox::Yes);
-
-		if(t==QMessageBox::No)
-			return;
-	}
-	else{
-		for(int i=0; i<selectedTeachersListWidget->count(); i++){
-			//assert(gt.rules.searchTeacher(selectedTeachersListWidget->item(i)->text())>=0);
-			assert(teacherNamesSet.contains(selectedTeachersListWidget->item(i)->text()));
-			teachers_names.append(selectedTeachersListWidget->item(i)->text());
-		}
-	}
-
 	//subject
 	QString subject_name=subjectsComboBox->currentText();
 	/*int subject_index=gt.rules.searchSubject(subject_name);
@@ -469,6 +501,24 @@ void ModifyActivityForm::ok()
 		//assert(gt.rules.searchActivityTag(selectedActivityTagsListWidget->item(i)->text())>=0);
 		assert(activityTagNamesSet.contains(selectedActivityTagsListWidget->item(i)->text()));
 		activity_tags_names.append(selectedActivityTagsListWidget->item(i)->text());
+	}
+
+	//teachers
+	QStringList teachers_names;
+	if(selectedTeachersListWidget->count()<=0){
+		int t=QMessageBox::question(this, tr("FET question"),
+		 tr("Do you really want to have the activity without teacher(s)?"),
+		 QMessageBox::Yes|QMessageBox::No, QMessageBox::Yes);
+
+		if(t==QMessageBox::No)
+			return;
+	}
+	else{
+		for(int i=0; i<selectedTeachersListWidget->count(); i++){
+			//assert(gt.rules.searchTeacher(selectedTeachersListWidget->item(i)->text())>=0);
+			assert(teacherNamesSet.contains(selectedTeachersListWidget->item(i)->text()));
+			teachers_names.append(selectedTeachersListWidget->item(i)->text());
+		}
 	}
 
 	//students
@@ -558,6 +608,9 @@ void ModifyActivityForm::help()
 	s+="\n";
 	s+=tr("The 'Duration' spin box and the 'Active' check box refer to each component of current activity, you can change "
 	 "them for each component, separately, by selecting the corresponding tab in the tab widget.");
+	s+="\n";
+	s+=tr("'Qualified' means that only the teachers who are qualified to teach the selected subject will be shown in the 'Teachers' list.",
+	 "Qualified refers to teachers");
 	
 	//show the message in a dialog
 	QDialog dialog(this);

@@ -115,6 +115,7 @@ public slots:
 	void on_dataTeachersSubjectsQualificationsStatisticsAction_triggered();
 	void on_dataHelpOnStatisticsAction_triggered();
 	
+	void checkForUpdatesToggled(bool checked);
 	void on_helpSettingsAction_triggered();
 	void on_settingsUseColorsAction_toggled();
 	void showSubgroupsInComboBoxesToggled(bool checked);
@@ -195,8 +196,6 @@ public slots:
 	void on_randomSeedAction_triggered();
 	
 	void on_languageAction_triggered();
-	
-	void on_checkForUpdatesAction_toggled();
 	
 	void on_settingsDivideTimetablesByDaysAction_toggled();
 	void on_settingsDuplicateVerticalNamesAction_toggled();

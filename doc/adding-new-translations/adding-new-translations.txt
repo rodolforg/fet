@@ -49,6 +49,8 @@ From Qt Linguist, release the translation as "fet-v.v.v/translations/fet_**.qm"
 STEP 4.
 
 Send all the three modified files to the FET authors (the important file is fet_**.ts, you may omit the others).
+The first time you send your file(s), please also send the name of your language, written in your language
+(for instance, for the Romanian translation this name is: Română).
 
 
 Of course, anyone can redo/improve current translations. The best variants will be chosen.
