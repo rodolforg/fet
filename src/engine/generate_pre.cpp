@@ -1031,6 +1031,7 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 	ParadoxConsecutiveVsConsecutive paradoxConsecutiveVsConsecutive;
 	ParadoxOrderedIfSameDayVsConsecutive paradoxOrderedIfSameDayVsConsecutive;
 	ParadoxOrderedIfSameDayVsReversed paradoxOrderedIfSameDayVsReversed;
+
 	QList<ConstraintPre*> paradoxes;
 	paradoxes << &paradox2consecutive << &paradox2grouped << &paradox3grouped;
 	paradoxes << &paradoxSameDay;
@@ -1038,12 +1039,16 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 	paradoxes << &paradoxMinGapsConsecutive << &paradoxMinGaps2Grouped << &paradoxMinGaps3Grouped;
 	paradoxes << &paradoxOrderedConsecutive << &paradoxConsecutiveVsConsecutive;
 	paradoxes << &paradoxOrderedIfSameDayVsConsecutive << &paradoxOrderedIfSameDayVsReversed;
+
+	bool paradoxesFound = false;
 	foreach (ConstraintPre* paradox, paradoxes) {
 		if (!paradox->prepare(gt.rules)) {
 			reportSkippableErrors(parent, paradox->getErrors());
-			return false;
+			paradoxesFound = true;
 		}
 	}
+	if (paradoxesFound)
+		return false;
 
 	return true;
 }
