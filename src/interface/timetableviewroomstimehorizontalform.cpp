@@ -643,6 +643,12 @@ void TimetableViewRoomsTimeHorizontalForm::detailActivity(QTableWidgetItem* item
 				if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
 					s+="\n";
 					s+=tr("Room: %1").arg(gt.rules.internalRoomsList[r]->name);
+					if(gt.rules.internalRoomsList[r]->building!=""){
+						s+="\n";
+						s+=tr("Building=%1").arg(gt.rules.internalRoomsList[r]->building);
+					}
+					s+="\n";
+					s+=tr("Capacity=%1").arg(gt.rules.internalRoomsList[r]->capacity);
 				}
 
 				//int r=rooms_timetable_weekly[teacher][k][j];

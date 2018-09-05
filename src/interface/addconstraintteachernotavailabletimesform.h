@@ -31,7 +31,7 @@ public:
 
 	void updateTeachersComboBox();
 
-public slots:	
+public slots:
 	void addCurrentConstraint();
 
 	void help();

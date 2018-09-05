@@ -2559,18 +2559,18 @@ void Import::importCSVActivities(QWidget* parent){
 				bool force;
 				
 				if(fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="YES" ||
-				fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="Y" ||
-				fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="TRUE" ||
-				fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="T" ||
-				fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="1"
+					fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="Y" ||
+					fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="TRUE" ||
+					fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="T" ||
+					fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="1"
 				)
 					force=true;
 				else if(
-				fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="NO" ||
-				fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="N" ||
-				fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="FALSE" ||
-				fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="F" ||
-				fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="0"
+					fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="NO" ||
+					fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="N" ||
+					fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="FALSE" ||
+					fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="F" ||
+					fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="0"
 				)
 					force=false;
 				else{

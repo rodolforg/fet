@@ -30,7 +30,7 @@ File timetable_defs.cpp
 /**
 FET version
 */
-const QString FET_VERSION="5.36.1";
+const QString FET_VERSION="5.36.2";
 
 /**
 FET language

@@ -2080,3 +2080,9 @@ Versions 5.36.0 - 5.36.v
 	and restore their state (suggested by Volker Dirr).
 	- Added information about potential privacy issues if enabling the 'Search for updates on startup' option.
 	- Updated the Arabic translation, by Benahmed Abdelkrim.
+- Version 5.36.2
+	- When viewing the activity details in the timetable view dialogs, if a room is allocated for this activity, there will also be shown the
+	building and the capacity of this room (suggested by Diego Froner).
+	- Added the feature of locking and unlocking all the activities having attached a certain activity tag (suggested by Diego Froner).
+	- Bug fix in the unlocking of activities of a certain day if the timetable was not generated: If the user selected only space unlocking, no activities
+	were unlocked.

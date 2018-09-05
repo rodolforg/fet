@@ -513,6 +513,10 @@ FetMainForm::FetMainForm()
 	shortcutTimetableLockingMenu->addSeparator();
 	shortcutTimetableLockingMenu->addAction(timetableLockActivitiesEndStudentsDayAction);
 	shortcutTimetableLockingMenu->addAction(timetableUnlockActivitiesEndStudentsDayAction);
+	//2018-06-26
+	shortcutTimetableLockingMenu->addSeparator();
+	shortcutTimetableLockingMenu->addAction(timetableLockActivitiesWithASpecifiedActivityTagAction);
+	shortcutTimetableLockingMenu->addAction(timetableUnlockActivitiesWithASpecifiedActivityTagAction);
 	
 	shortcutTimetableAdvancedMenu=new QMenu();
 	shortcutTimetableAdvancedMenu->addAction(groupActivitiesInInitialOrderAction);
@@ -2676,6 +2680,40 @@ void FetMainForm::on_timetableUnlockActivitiesEndStudentsDayAction_triggered()
 	}
 
 	AdvancedLockUnlockForm::unlockEndStudentsDay(this);
+}
+
+void FetMainForm::on_timetableLockActivitiesWithASpecifiedActivityTagAction_triggered()
+{
+	if(gt.rules.activityTagsList.count()==0){
+		QMessageBox::information(this, tr("FET information"), tr("You have no activity tags defined in your data."));
+		return;
+	}
+
+	if(!CachedSchedule::isValid()){
+		QMessageBox::information(this, tr("FET information"), tr("Please generate, firstly"));
+		return;
+	}
+
+	AdvancedLockUnlockForm::lockActivityTag(this);
+}
+
+void FetMainForm::on_timetableUnlockActivitiesWithASpecifiedActivityTagAction_triggered()
+{
+	if(gt.rules.activityTagsList.count()==0){
+		QMessageBox::information(this, tr("FET information"), tr("You have no activity tags defined in your data."));
+		return;
+	}
+
+	if(!CachedSchedule::isValid()){
+		//QMessageBox::information(this, tr("FET information"), tr("Please generate, firstly"));
+		QMessageBox::information(this, tr("FET information"), tr("The timetable is not generated, but anyway FET will proceed now"));
+		
+		AdvancedLockUnlockForm::unlockActivityTagWithoutTimetable(this);
+		
+		return;
+	}
+
+	AdvancedLockUnlockForm::unlockActivityTag(this);
 }
 
 void FetMainForm::on_languageAction_triggered()

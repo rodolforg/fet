@@ -38,6 +38,11 @@ public:
 	
 	static void lockEndStudentsDay(QWidget* parent);
 	static void unlockEndStudentsDay(QWidget* parent);
+	
+	static void lockActivityTag(QWidget* parent);
+	static void unlockActivityTag(QWidget* parent);
+
+	static void unlockActivityTagWithoutTimetable(QWidget* parent);
 };
 
 #endif
