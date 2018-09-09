@@ -121,13 +121,15 @@ HoursForm::HoursForm(QWidget* parent): QDialog(parent)
 	hoursSpinBox->setMaximum(60);
 	hoursSpinBox->setValue(gt.rules.nHoursPerDay);
 
-	for(int i=0; i<60; i++)
+	for(int i=0; i<60; i++){
 		if(i<nHours){
 			hoursNames[i]->setEnabled(true);
 			hoursNames[i]->setText(gt.rules.hoursOfTheDay[i]);
 		}
-		else
+		else{
 			hoursNames[i]->setDisabled(true);
+		}
+	}
 }
 
 HoursForm::~HoursForm()
