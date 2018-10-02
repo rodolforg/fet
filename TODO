@@ -1214,11 +1214,8 @@ From Zsolt Udvari (on forum):
 
 It would be nice when can filter in activities list by "no teacher" and "no students".
 
-74---------------------------------------------------------
+74---------------------------DONE--------------------------
 From Zsolt Udvari (on forum):
-
-It would be nice when can pair teachers with his/her subjects and can filter in the activity dialog.
-So, what do I think? I'm teaching Math and Physics. So to my name can add these subjects and when I add a new activity and select Literature, my name will not shown, only those teachers who teaches Literature. 
 
 75---------------------------------------------------------
 From Chafik Graiguer (on forum):
@@ -1692,6 +1689,8 @@ Also suggested by Anton Anthofer, and dasa on the forum.
 
 Also suggested by sln_rj, on the forum: I request the developers to kindly update the FET software with the provision to add two rooms for a single
 activity. It is utmost important for practical classes where more numbers of rooms are required together.
+
+Also suggested by amin, on the forum: https://lalescu.ro/liviu/fet/forum/index.php?topic=3872.msg20731#msg20731
 
 Additional correspondence with Anton Anthofer:
 
@@ -6383,6 +6382,22 @@ When this option is disabled (standard behaviour), FET acts like it currently do
 When this option is enabled, the list of teachers in the timetabling dialogs (Timetable -> Teachers -> ...) is filtered, so that it only contains teachers
 that actually have activities in their timetables. Also the teacher list in the printing dialog (Timetable -> Print -> Teachers) is filtered in this way.
 
+---
+
+Additional suggestion from math on this subject:
+
+When selecting "Timetable -> Print" a dialog opens that has a dropdown list with potential printing types (e.g. rooms, teachers, subjects, ...). When selecting an
+item from that dropdown list, the listbox on the left hand side is filled with all items of that type, e.g. all rooms. Below that listbox there are two buttons "All"
+and "None". By pressing these buttons I can select/deselect all items of that list.
+
+I thought of adding a third button (e.g. "used") here. When pressing that button only those items are selected that are actually used in the recently generated
+timetable. For example:
+- if pressing the "used" button in "teacher" mode, only the teachers from the list are selected that have at least one activity planned (i.e. omitting all teachers
+with empty timetables)
+- if pressing the "used" button in "room" mode, only rooms from the list are selected that are used for at least one activity
+- if pressing the "used" button in "subgroup" mode, only student subgroups are selected where at least one activity is assigned (i.e. omitting all subgroups without
+activities, e.g. due to internship semesters)
+
 363---------------------------------------------------------
 From pg788 (on forum):
 
@@ -6401,3 +6416,89 @@ Liviu: start may be possible, but start or end seems very difficult, maybe impos
 From Volker Dirr and Liviu Lalescu:
 
 Volker has a private file which sometimes is solvable, but sometimes may cycle. We tried to improve the code, but it runs much slower on other files.
+
+366---------------------------------------------------------
+From Benahmed Abdelkrim (on forum):
+
+My idea concerns this particular case and I fear that it can not be generalized because of the problem of specialized rooms and activities of 1 hour duration.
+
+This idea is feasible for a limited number of student sets that do not have fixed rooms, and when teachers have to move from one building to another.
+
+The following space constraint is very useful for very particular cases like the one mentioned above: min gaps between room changes for a students sets
+
+367---------------------------------------------------------
+From Anthony Siaudeau:
+
+Is there a possibility to have tags to constraints (for example to activate/inactivate a group of constraints with one click) ?
+
+Is there a possibility to activate/inactivate activities with one click in the activities windows ?
+
+Volker Dirr:
+
+I fear a bit that adding such a constraint into official version might mislead several FET users to do hasty action. So I guess such a feature will make
+it only much more complicated to users with low skills since they won't understand their bugs anymore if the enable/disable several constraint at once.
+
+Anthony Siaudeau:
+
+I understand the risks for soft users. Is it possible to add in advanced settings an unlock button for active check boxes ?
+
+368---------------------------------------------------------
+From Anthony Siaudeau:
+
+I know an undo button isn't possible but is it possible to have a change 
+history ?
+When I work hard to optimize a timetable the generation time could be 
+high. And few times, when I break the generation or when the generation 
+is succesfull, I forget my last modification. With a change history it 
+could be easier.
+Maybe such history needs discusssion about the level of details 
+integrated for each actions. For example said "activity n° 1234 had been 
+changed" had a lack of information while "teacher alpha had available 
+time changed monday hour1, monday hour 2, .... friday hour 7" will 
+probably be too much detail.
+
+369---------------------------------------------------------
+From George Milliotis (Corfiot) - on forum:
+
+I would like to be able to group activities (maybe via tags) and be able to save html only for one or more of those groups.
+
+I generate schedules for undergrads, postgrads and some special course sets and I have to generate them together so the rooms/teachers work out.
+Then I need to copy FET output to separate tables manually to distribute. I would like to have the ability to just output different schedules.
+
+It would possibly be easier to be able to export a new FET file with only the rules and activities relevant to this group/tag. I could then
+generate schedule html from those files. Although that would require some extra steps.
+
+370---------------------------------------------------------
+From George Milliotis (Corfiot) - on forum:
+
+I would like to have activities that do not count towards time or space rules. I have breaks that have to be within a specific time range so that
+students can eat while the restaurant is open.
+
+If I put an activity for that FET finds places for me, which is a great help but then rules like students max hours continuously trigger and my
+schedule breaks.
+
+What I'm after are "soft" breaks.
+
+371---------------------------------------------------------
+From George Milliotis (Corfiot) - on forum:
+
+I make schedules and then save them locked in a new FET file. This leaves the general constraints in the file alongside the newly added specific
+locking rules. If I later make a change to the placement of an activity (time or space) FET only says that it can't be placed.
+
+I would like FET to list me all the rules conflicting with the two locked time/space rules for the activity so I can pinpoint which "general"
+constraint is the problem. This would save me A LOT of time.
+
+Eg:
+Activity #111: Blah blah, teacher blah, students blah
+  TIME LOCK (day X - time Y) PLACEMENT  FAILED BECAUSE:
+      this rule
+      that rule
+  SPACE LOCK (room Z) PLACEMENT FAILED BECAUSE:
+     this rule
+     that rule
+
+For example, it should be obvious that a rule max students hours daily that blocks a set of locked activities on the same day for that student set
+is easily detectable as the culprit.
+
+Or, a max teachers gaps per week rule when all other relevant activities to a teacher are placed, would also be easy to identify if we're placing
+a time-locked activity.
