@@ -54,7 +54,7 @@ bool ConstraintActivityEndsStudentsDayForm::filterOk(const TimeConstraint* ctr) 
 	const ConstraintActivityEndsStudentsDay* c=(const ConstraintActivityEndsStudentsDay*) ctr;
 	int id=c->activityId;
 	const Activity* act=NULL;
-	foreach(const Activity* a, gt.rules.activitiesList) {
+	for(const Activity* a : qAsConst(gt.rules.activitiesList)) {
 		if(a->id==id) {
 			act=a;
 			break;

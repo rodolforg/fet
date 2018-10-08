@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<fet version="5.30.3">
+<fet version="5.37.0">
 
 <Institution_Name>GYR</Institution_Name>
 
@@ -219,98 +219,122 @@
 <Activity_Tags_List>
 <Activity_Tag>
 	<Name>vofna</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>snchD</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>mpau</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>std1</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>rBC</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>rBA</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>rBK</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>rCH</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>rCA</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>rCK</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>rCÜ</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>rNT</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>rPH</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>rPA</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>rPK</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>rPÜ</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>rZE</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>rMU</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>rSP</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>rIF</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>rMS</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>rKO</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>rKA</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>rKZ</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 </Activity_Tags_List>

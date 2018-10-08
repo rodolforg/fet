@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<fet version="5.30.3">
+<fet version="5.37.0">
 
 <Institution_Name>ПГ &quot;Найден Геров&quot; - Лом</Institution_Name>
 
@@ -200,26 +200,32 @@
 <Activity_Tags_List>
 <Activity_Tag>
 	<Name>Тежък1</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>Среден1</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>Лек1</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>Тежък2</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>Среден2</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>Лек2</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 </Activity_Tags_List>

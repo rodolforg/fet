@@ -54,7 +54,7 @@ bool MinContinuousGapInIntervalForStudents::prepare(const Rules &rules)
 			continue;
 		}
 
-		foreach(int sbg, sbgs){
+		for(int sbg : qAsConst(sbgs)){
 			bool fits = false;
 			for (int j = 0; j < MAX; j++) {
 				if (data[sbg][j].weightPercentage < 0) {

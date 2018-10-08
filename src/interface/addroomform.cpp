@@ -44,7 +44,7 @@ AddRoomForm::AddRoomForm(QWidget* parent): QDialog(parent)
 	
 	buildingsComboBox->clear();
 	buildingsComboBox->addItem("");
-	foreach (const Building *building, gt.rules.buildingsList)
+	for (const Building *building : qAsConst(gt.rules.buildingsList))
 		buildingsComboBox->addItem(building->name);
 		
 	capacitySpinBox->setMinimum(1);

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<fet version="5.30.3">
+<fet version="5.37.0">
 
 <Institution_Name>Nile Theological College, Khartoum North - Bahri</Institution_Name>
 
@@ -156,18 +156,22 @@
 <Activity_Tags_List>
 <Activity_Tag>
 	<Name>(small group)</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>&lt;4</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>singing</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 <Activity_Tag>
 	<Name>office</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 </Activity_Tags_List>

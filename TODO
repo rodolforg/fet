@@ -33,7 +33,7 @@ Horatiu:
 I met a situation: a teacher asks for maximum 2 working days, but these
 days should not be consecutive.
 
-Is there a way to implement it in .fet?
+Is there a way to implement it in FET?
 
 The only (manual) way I could think of, is to set the teacher as
 unavailable on Tuesdays and Thursdays, thus leaving him available on
@@ -61,7 +61,7 @@ all three situations at least one of the dummy activities was the first or
 the last activity for the teacher's day. So, there is a chance that the
 teacher would end up with only one gap.
 
-Which leads me to a suggestion: An activity end (or starts) a teacher's day.
+Which leads me to a suggestion: An activity ends (or starts) a teacher's day.
 Similar to "an activity ends students's day".
 
 5----------------------------------------------------------
@@ -1315,6 +1315,8 @@ Suggested also by mercurialuser, on the forum, on 2017-09-05.
 Suggested also by auriolar and rodolforg, on the forum, on 2018-04-15 (they suggest to add exceptions to the general constraint).
 rodolforg: I don't think it needs to change the constraint names. Just add the 'exception' field.
 
+Suggested also by pg788, on the forum, on 2018-07-02
+
 See also TODO item #84.
 
 83---------------------------------------------------------
@@ -1336,7 +1338,7 @@ works
 
 2. the max num of hours for day is 4 for ALL teachers, the max num for teacher X is 5: this
 NOT works as expected. FET simply refuse the exception. The exception does
-not override the global in any case. 
+not override the global in any case.
 
 I remember we discussed this "strange" logic (imho an exception is an
 exception and always override a global condition) last year, it seems that
@@ -2720,6 +2722,9 @@ It would be very nice if the border between different days was thicker.
 
 Or, as suggested by Matsumoto (on forum): A common point my colleagues present is that there's very little emphasis between different days
 (like on Teacher's Time table), and it'd be good to have a way to maybe add a thicker line between the different days to separate them better, is it achievable?
+
+Or, as suggested by liquid (on forum): I suggest (please) to divide days with bolder or thicker lines. For me, it would enhance clarity when viewing or
+printing a schedule, both in printable and viewable versions.
 
 181------DONE since FET-5.21.0 - 3 December 2013------------
 
@@ -4352,19 +4357,7 @@ not to.
 (4) - .doc and .pdf - you could print the timetable to a pdf file, or
 copy/paste the HTML code to a doc file.
 
-250---------------------------------------------------------
-From Vangelis Karafillidis (on forum):
-
-After generating a timetable and pressing the "Teachers" tab, the generated timetable appears in a teachers-days-horizontal-like
-form. Of course we can lock and unlock activities on this type of timetable. I wonder if it's easy (for you) to add an alternative form.
-I think that the teachers-time-horizontal-like form is easier to use for locking/unlocking activities, since it presents the whole
-timetable at once. What do you think?
-
-Liviu: The table might be too large.
-
-Vangelis: I think that it would be easier if this teachers-time-horizontal-like timetable had just the necessary information and nothing more.
-I.e. just the teachers' names and the student groups (and the locked/unlocked indication). This would result in a far more "compact" timetable
-than including information such as subject titles and tags.
+250--------------------------DONE---------------------------
 
 251---------------------------------------------------------
 From Bobby Wise:
@@ -5482,7 +5475,7 @@ Your suggestions are not so easy to implement.
 322---------------------------------------------------------
 From Vangelis Karafillidis:
 
-After testing the new display (mainly teachers time horizontal) for partially modifying an existing timetable, I thought of a suggestion.Most likely, it's
+After testing the new display (mainly teachers time horizontal) for partially modifying an existing timetable, I thought of a suggestion. Most likely, it's
 similar to "remove redundant constraints". The suggestion is to add a (percentage) multiplication factor for each one of the "groups" or time constraints.
 This means that the user should be able to add a different multiplication factor for each one of the following groups of constraints: Teachers' time constraints
 (for example 98%)Students' time constraints (for example 90%)Activities time constraints (for example 20%) This would affect ONLY the constraints that can have
@@ -6387,3 +6380,8 @@ So here's my suggestion: wouldn't it be possible to add another option to the se
 When this option is disabled (standard behaviour), FET acts like it currently does.
 When this option is enabled, the list of teachers in the timetabling dialogs (Timetable -> Teachers -> ...) is filtered, so that it only contains teachers
 that actually have activities in their timetables. Also the teacher list in the printing dialog (Timetable -> Print -> Teachers) is filtered in this way.
+
+363---------------------------------------------------------
+From pg788 (on forum):
+
+I understand this might be restrictive, but a teacher doesn't want to begin in 3rd or 4th, since there is traffic.

@@ -124,27 +124,27 @@ ErrorList Rules::computeInternalStructure()
 	QList<StudentsYear*> ayears;
 	QList<StudentsGroup*> agroups;
 	QList<StudentsSubgroup*> asubgroups;
-	foreach(StudentsYear* year, augmentedYearsList){
+	for(StudentsYear* year : qAsConst(augmentedYearsList)){
 		if(!ayears.contains(year))
 			ayears.append(year);
-		foreach(StudentsGroup* group, year->groupsList){
+		for(StudentsGroup* group : qAsConst(year->groupsList)){
 			if(!agroups.contains(group))
 				agroups.append(group);
-			foreach(StudentsSubgroup* subgroup, group->subgroupsList){
+			for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList)){
 				if(!asubgroups.contains(subgroup))
 					asubgroups.append(subgroup);
 			}
 		}
 	}
-	foreach(StudentsYear* year, ayears){
+	for(StudentsYear* year : qAsConst(ayears)){
 		assert(year!=NULL);
 		delete year;
 	}
-	foreach(StudentsGroup* group, agroups){
+	for(StudentsGroup* group : qAsConst(agroups)){
 		assert(group!=NULL);
 		delete group;
 	}
-	foreach(StudentsSubgroup* subgroup, asubgroups){
+	for(StudentsSubgroup* subgroup : qAsConst(asubgroups)){
 		assert(subgroup!=NULL);
 		delete subgroup;
 	}
@@ -154,7 +154,7 @@ ErrorList Rules::computeInternalStructure()
 	//copy list of students sets into augmented list
 	QHash<QString, StudentsSet*> augmentedHash;
 	
-	foreach(StudentsYear* y, yearsList){
+	for(StudentsYear* y : qAsConst(yearsList)){
 		StudentsYear* ay=new StudentsYear();
 		ay->name=y->name;
 		ay->numberOfStudents=y->numberOfStudents;
@@ -164,7 +164,7 @@ ErrorList Rules::computeInternalStructure()
 		assert(!augmentedHash.contains(ay->name));
 		augmentedHash.insert(ay->name, ay);
 		
-		foreach(StudentsGroup* g, y->groupsList){
+		for(StudentsGroup* g : qAsConst(y->groupsList)){
 			if(augmentedHash.contains(g->name)){
 				StudentsSet* tmpg=augmentedHash.value(g->name);
 				assert(tmpg->type==STUDENTS_GROUP);
@@ -180,7 +180,7 @@ ErrorList Rules::computeInternalStructure()
 				assert(!augmentedHash.contains(ag->name));
 				augmentedHash.insert(ag->name, ag);
 			
-				foreach(StudentsSubgroup* s, g->subgroupsList){
+				for(StudentsSubgroup* s : qAsConst(g->subgroupsList)){
 					if(augmentedHash.contains(s->name)){
 						StudentsSet* tmps=augmentedHash.value(s->name);
 						assert(tmps->type==STUDENTS_SUBGROUP);
@@ -357,11 +357,11 @@ ErrorList Rules::computeInternalStructure()
 	}
 	
 	studentsHash.clear();
-	foreach(StudentsYear* year, augmentedYearsList){
+	for(StudentsYear* year : qAsConst(augmentedYearsList)){
 		studentsHash.insert(year->name, year);
-		foreach(StudentsGroup* group, year->groupsList){
+		for(StudentsGroup* group : qAsConst(year->groupsList)){
 			studentsHash.insert(group->name, group);
-			foreach(StudentsSubgroup* subgroup, group->subgroupsList)
+			for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList))
 				studentsHash.insert(subgroup->name, subgroup);
 		}
 	}
@@ -490,7 +490,7 @@ ErrorList Rules::computeInternalStructure()
 			for(int k=0; k<stg->subgroupsList.size(); k++){
 				StudentsSubgroup* sts=stg->subgroupsList[k];
 				
-				foreach(int ai, internalSubgroupsList[sts->indexInInternalSubgroupsList]->activitiesForSubgroup)
+				for(int ai : qAsConst(internalSubgroupsList[sts->indexInInternalSubgroupsList]->activitiesForSubgroup))
 					if(!activitiesForSubjectSet[internalActivitiesList[ai].subjectIndex].contains(ai)){
 						activitiesForSubjectList[internalActivitiesList[ai].subjectIndex].append(ai);
 						activitiesForSubjectSet[internalActivitiesList[ai].subjectIndex].insert(ai);
@@ -500,7 +500,7 @@ ErrorList Rules::computeInternalStructure()
 	}
 	
 	for(int i=0; i<nInternalTeachers; i++){
-		foreach(int ai, internalTeachersList[i]->activitiesForTeacher)
+		for(int ai : qAsConst(internalTeachersList[i]->activitiesForTeacher))
 			if(!activitiesForSubjectSet[internalActivitiesList[ai].subjectIndex].contains(ai)){
 				activitiesForSubjectList[internalActivitiesList[ai].subjectIndex].append(ai);
 				activitiesForSubjectSet[internalActivitiesList[ai].subjectIndex].insert(ai);
@@ -534,8 +534,8 @@ ErrorList Rules::computeInternalStructure()
 			for(int k=0; k<stg->subgroupsList.size(); k++){
 				StudentsSubgroup* sts=stg->subgroupsList[k];
 				
-				foreach(int ai, internalSubgroupsList[sts->indexInInternalSubgroupsList]->activitiesForSubgroup)
-					foreach(int activityTagInt, internalActivitiesList[ai].iActivityTagsSet)
+				for(int ai : qAsConst(internalSubgroupsList[sts->indexInInternalSubgroupsList]->activitiesForSubgroup))
+					for(int activityTagInt : qAsConst(internalActivitiesList[ai].iActivityTagsSet))
 						if(!activitiesForActivityTagSet[activityTagInt].contains(ai)){
 							activitiesForActivityTagList[activityTagInt].append(ai);
 							activitiesForActivityTagSet[activityTagInt].insert(ai);
@@ -545,8 +545,8 @@ ErrorList Rules::computeInternalStructure()
 	}
 	
 	for(int i=0; i<nInternalTeachers; i++){
-		foreach(int ai, internalTeachersList[i]->activitiesForTeacher)
-			foreach(int activityTagInt, internalActivitiesList[ai].iActivityTagsSet)
+		for(int ai : qAsConst(internalTeachersList[i]->activitiesForTeacher))
+			for(int activityTagInt : qAsConst(internalActivitiesList[ai].iActivityTagsSet))
 				if(!activitiesForActivityTagSet[activityTagInt].contains(ai)){
 					activitiesForActivityTagList[activityTagInt].append(ai);
 					activitiesForActivityTagSet[activityTagInt].insert(ai);
@@ -555,7 +555,7 @@ ErrorList Rules::computeInternalStructure()
 
 	//for activities without students or teachers
 	for(int ai=0; ai<nInternalActivities; ai++){
-		foreach(int ati, internalActivitiesList[ai].iActivityTagsSet){
+		for(int ati : qAsConst(internalActivitiesList[ai].iActivityTagsSet)){
 			if(!activitiesForActivityTagSet[ati].contains(ai)){
 				activitiesForActivityTagList[ati].append(ai);
 				activitiesForActivityTagSet[ati].insert(ai);
@@ -610,7 +610,7 @@ ErrorList Rules::computeInternalStructure()
 			}
 
 			item->indices.clear();
-			foreach(int id, item->ids){
+			for(int id : qAsConst(item->ids)){
 				if(visitedIds.contains(id)){
 					userErrors.append(tr("All 'group activities in the initial order for timetable generation' items should have different activities ids."
 					 " (Each activity id must appear at most once in all the items.) This is not true for item number %1 and activity id %2.").arg(j+1).arg(id));
@@ -815,27 +815,27 @@ void Rules::kill() //clears memory for the rules, destroys them
 	QSet<StudentsYear*> iyears;
 	QSet<StudentsGroup*> igroups;
 	QSet<StudentsSubgroup*> isubgroups;
-	foreach(StudentsYear* year, yearsList){
+	for(StudentsYear* year : qAsConst(yearsList)){
 		if(!iyears.contains(year))
 			iyears.insert(year);
-		foreach(StudentsGroup* group, year->groupsList){
+		for(StudentsGroup* group : qAsConst(year->groupsList)){
 			if(!igroups.contains(group))
 				igroups.insert(group);
-			foreach(StudentsSubgroup* subgroup, group->subgroupsList){
+			for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList)){
 				if(!isubgroups.contains(subgroup))
 					isubgroups.insert(subgroup);
 			}
 		}
 	}
-	foreach(StudentsYear* year, iyears){
+	for(StudentsYear* year : qAsConst(iyears)){
 		assert(year!=NULL);
 		delete year;
 	}
-	foreach(StudentsGroup* group, igroups){
+	for(StudentsGroup* group : qAsConst(igroups)){
 		assert(group!=NULL);
 		delete group;
 	}
-	foreach(StudentsSubgroup* subgroup, isubgroups){
+	for(StudentsSubgroup* subgroup : qAsConst(isubgroups)){
 		assert(subgroup!=NULL);
 		delete subgroup;
 	}
@@ -848,27 +848,27 @@ void Rules::kill() //clears memory for the rules, destroys them
 	QList<StudentsYear*> ayears;
 	QList<StudentsGroup*> agroups;
 	QList<StudentsSubgroup*> asubgroups;
-	foreach(StudentsYear* year, augmentedYearsList){
+	for(StudentsYear* year : qAsConst(augmentedYearsList)){
 		if(!ayears.contains(year))
 			ayears.append(year);
-		foreach(StudentsGroup* group, year->groupsList){
+		for(StudentsGroup* group : qAsConst(year->groupsList)){
 			if(!agroups.contains(group))
 				agroups.append(group);
-			foreach(StudentsSubgroup* subgroup, group->subgroupsList){
+			for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList)){
 				if(!asubgroups.contains(subgroup))
 					asubgroups.append(subgroup);
 			}
 		}
 	}
-	foreach(StudentsYear* year, ayears){
+	for(StudentsYear* year : qAsConst(ayears)){
 		assert(year!=NULL);
 		delete year;
 	}
-	foreach(StudentsGroup* group, agroups){
+	for(StudentsGroup* group : qAsConst(agroups)){
 		assert(group!=NULL);
 		delete group;
 	}
-	foreach(StudentsSubgroup* subgroup, asubgroups){
+	for(StudentsSubgroup* subgroup : qAsConst(asubgroups)){
 		assert(subgroup!=NULL);
 		delete subgroup;
 	}	
@@ -1003,7 +1003,7 @@ int Rules::searchTeacher(const QString& teacherName) const
 bool Rules::removeTeacher(const QString& teacherName)
 {
 	QList<int> idsToBeRemoved;
-	foreach(Activity* act, activitiesList){
+	for(Activity* act : qAsConst(activitiesList)){
 		bool t=act->removeTeacher(teacherName);
 		if(t && act->teachersNames.count()==0)
 			idsToBeRemoved.append(act->id);
@@ -1036,7 +1036,7 @@ bool Rules::modifyTeacher(const QString& initialTeacherName, const QString& fina
 	for(int i=0; i<this->activitiesList.size(); i++)
 		this->activitiesList.at(i)->renameTeacher(initialTeacherName, finalTeacherName);
 		
-	foreach(TimeConstraint* ctr, timeConstraintsList){
+	for(TimeConstraint* ctr : qAsConst(timeConstraintsList)){
 		if(ctr->type==CONSTRAINT_TEACHER_NOT_AVAILABLE_TIMES){
 			ConstraintTeacherNotAvailableTimes* crt_constraint=(ConstraintTeacherNotAvailableTimes*)ctr;
 			if(initialTeacherName == crt_constraint->teacher)
@@ -1135,7 +1135,7 @@ bool Rules::modifyTeacher(const QString& initialTeacherName, const QString& fina
 		}
 	}
 	
-	foreach(SpaceConstraint* ctr, spaceConstraintsList){
+	for(SpaceConstraint* ctr : qAsConst(spaceConstraintsList)){
 		if(ctr->type==CONSTRAINT_TEACHER_HOME_ROOM){
 			ConstraintTeacherHomeRoom* crt_constraint=(ConstraintTeacherHomeRoom*)ctr;
 			if(initialTeacherName == crt_constraint->teacherName)
@@ -1228,7 +1228,7 @@ int Rules::searchSubject(const QString& subjectName) const
 bool Rules::removeSubject(const QString& subjectName)
 {
 	//check the qualified subjects for teachers
-	foreach(Teacher* tch, teachersList){
+	for(Teacher* tch : qAsConst(teachersList)){
 		if(tch->qualifiedSubjectsHash.contains(subjectName)){
 			QLinkedList<QString>::Iterator it=tch->qualifiedSubjectsHash.value(subjectName);
 			assert((*it)==subjectName);
@@ -1240,7 +1240,7 @@ bool Rules::removeSubject(const QString& subjectName)
 	}
 
 	QList<int> idsToBeRemoved;
-	foreach(Activity* act, activitiesList){
+	for(Activity* act : qAsConst(activitiesList)){
 		if(act->subjectName==subjectName)
 			idsToBeRemoved.append(act->id);
 	}
@@ -1271,7 +1271,7 @@ bool Rules::modifySubject(const QString& initialSubjectName, const QString& fina
 	assert(this->searchSubject(initialSubjectName)>=0);
 
 	//check the qualified subjects for teachers
-	foreach(Teacher* tch, teachersList){
+	for(Teacher* tch : qAsConst(teachersList)){
 		if(tch->qualifiedSubjectsHash.contains(initialSubjectName)){
 			QLinkedList<QString>::Iterator it=tch->qualifiedSubjectsHash.value(initialSubjectName);
 			assert((*it)==initialSubjectName);
@@ -1292,7 +1292,7 @@ bool Rules::modifySubject(const QString& initialSubjectName, const QString& fina
 	}
 	
 	//modify the time constraints related to this subject
-	foreach(TimeConstraint* ctr, timeConstraintsList){
+	for(TimeConstraint* ctr : qAsConst(timeConstraintsList)){
 		if(ctr->type==CONSTRAINT_ACTIVITIES_PREFERRED_TIME_SLOTS){
 			ConstraintActivitiesPreferredTimeSlots* crt_constraint=(ConstraintActivitiesPreferredTimeSlots*)ctr;
 			if(initialSubjectName == crt_constraint->p_subjectName)
@@ -1321,7 +1321,7 @@ bool Rules::modifySubject(const QString& initialSubjectName, const QString& fina
 	}
 	
 	//modify the space constraints related to this subject
-	foreach(SpaceConstraint* ctr, spaceConstraintsList){
+	for(SpaceConstraint* ctr : qAsConst(spaceConstraintsList)){
 		if(ctr->type==CONSTRAINT_SUBJECT_PREFERRED_ROOM){
 			ConstraintSubjectPreferredRoom* c=(ConstraintSubjectPreferredRoom*)ctr;
 			if(c->subjectName == initialSubjectName)
@@ -1400,7 +1400,7 @@ int Rules::searchActivityTag(const QString& activityTagName) const
 
 bool Rules::removeActivityTag(const QString& activityTagName)
 {
-	foreach(Activity* act, activitiesList)
+	for(Activity* act : qAsConst(activitiesList))
 		if(act->activityTagsNames.contains(activityTagName))
 			act->activityTagsNames.removeAll(activityTagName);
 
@@ -1438,7 +1438,7 @@ bool Rules::modifyActivityTag(const QString& initialActivityTagName, const QStri
 	}
 	
 	//modify the constraints related to this activity tag
-	foreach(TimeConstraint* ctr, timeConstraintsList){
+	for(TimeConstraint* ctr : qAsConst(timeConstraintsList)){
 		if(ctr->type==CONSTRAINT_TEACHER_ACTIVITY_TAG_MAX_HOURS_CONTINUOUSLY){
 			ConstraintTeacherActivityTagMaxHoursContinuously* crt_constraint=(ConstraintTeacherActivityTagMaxHoursContinuously*)ctr;
 			if(initialActivityTagName == crt_constraint->activityTagName)
@@ -1507,7 +1507,7 @@ bool Rules::modifyActivityTag(const QString& initialActivityTagName, const QStri
 	}
 
 	//modify the space constraints related to this subject tag
-	foreach(SpaceConstraint* ctr, spaceConstraintsList){
+	for(SpaceConstraint* ctr : qAsConst(spaceConstraintsList)){
 		if(ctr->type==CONSTRAINT_SUBJECT_ACTIVITY_TAG_PREFERRED_ROOM){
 			ConstraintSubjectActivityTagPreferredRoom* c=(ConstraintSubjectActivityTagPreferredRoom*)ctr;
 			if(c->activityTagName == initialActivityTagName)
@@ -1570,16 +1570,16 @@ bool Rules::setsShareStudents(const QString& studentsSet1, const QString& studen
 	if(s1->type==STUDENTS_YEAR){
 		StudentsYear* year1=(StudentsYear*)s1;
 		downwardSets1.insert(year1->name);
-		foreach(StudentsGroup* group1, year1->groupsList){
+		for(StudentsGroup* group1 : qAsConst(year1->groupsList)){
 			downwardSets1.insert(group1->name);
-			foreach(StudentsSubgroup* subgroup1, group1->subgroupsList)
+			for(StudentsSubgroup* subgroup1 : qAsConst(group1->subgroupsList))
 				downwardSets1.insert(subgroup1->name);
 		}
 	}
 	else if(s1->type==STUDENTS_GROUP){
 		StudentsGroup* group1=(StudentsGroup*)s1;
 		downwardSets1.insert(group1->name);
-		foreach(StudentsSubgroup* subgroup1, group1->subgroupsList)
+		for(StudentsSubgroup* subgroup1 : qAsConst(group1->subgroupsList))
 			downwardSets1.insert(subgroup1->name);
 	}
 	else if(s1->type==STUDENTS_SUBGROUP){
@@ -1593,10 +1593,10 @@ bool Rules::setsShareStudents(const QString& studentsSet1, const QString& studen
 		StudentsYear* year2=(StudentsYear*)s2;
 		if(downwardSets1.contains(year2->name))
 			return true;
-		foreach(StudentsGroup* group2, year2->groupsList){
+		for(StudentsGroup* group2 : qAsConst(year2->groupsList)){
 			if(downwardSets1.contains(group2->name))
 				return true;
-			foreach(StudentsSubgroup* subgroup2, group2->subgroupsList)
+			for(StudentsSubgroup* subgroup2 : qAsConst(group2->subgroupsList))
 				if(downwardSets1.contains(subgroup2->name))
 					return true;
 		}
@@ -1605,7 +1605,7 @@ bool Rules::setsShareStudents(const QString& studentsSet1, const QString& studen
 		StudentsGroup* group2=(StudentsGroup*)s2;
 		if(downwardSets1.contains(group2->name))
 			return true;
-		foreach(StudentsSubgroup* subgroup2, group2->subgroupsList)
+		for(StudentsSubgroup* subgroup2 : qAsConst(group2->subgroupsList))
 			if(downwardSets1.contains(subgroup2->name))
 				return true;
 	}
@@ -1635,16 +1635,16 @@ bool Rules::augmentedSetsShareStudentsFaster(const QString& studentsSet1, const 
 	if(s1->type==STUDENTS_YEAR){
 		StudentsYear* year1=(StudentsYear*)s1;
 		downwardSets1.insert(year1->name);
-		foreach(StudentsGroup* group1, year1->groupsList){
+		for(StudentsGroup* group1 : qAsConst(year1->groupsList)){
 			downwardSets1.insert(group1->name);
-			foreach(StudentsSubgroup* subgroup1, group1->subgroupsList)
+			for(StudentsSubgroup* subgroup1 : qAsConst(group1->subgroupsList))
 				downwardSets1.insert(subgroup1->name);
 		}
 	}
 	else if(s1->type==STUDENTS_GROUP){
 		StudentsGroup* group1=(StudentsGroup*)s1;
 		downwardSets1.insert(group1->name);
-		foreach(StudentsSubgroup* subgroup1, group1->subgroupsList)
+		for(StudentsSubgroup* subgroup1 : qAsConst(group1->subgroupsList))
 			downwardSets1.insert(subgroup1->name);
 	}
 	else if(s1->type==STUDENTS_SUBGROUP){
@@ -1658,10 +1658,10 @@ bool Rules::augmentedSetsShareStudentsFaster(const QString& studentsSet1, const 
 		StudentsYear* year2=(StudentsYear*)s2;
 		if(downwardSets1.contains(year2->name))
 			return true;
-		foreach(StudentsGroup* group2, year2->groupsList){
+		for(StudentsGroup* group2 : qAsConst(year2->groupsList)){
 			if(downwardSets1.contains(group2->name))
 				return true;
-			foreach(StudentsSubgroup* subgroup2, group2->subgroupsList)
+			for(StudentsSubgroup* subgroup2 : qAsConst(group2->subgroupsList))
 				if(downwardSets1.contains(subgroup2->name))
 					return true;
 		}
@@ -1670,7 +1670,7 @@ bool Rules::augmentedSetsShareStudentsFaster(const QString& studentsSet1, const 
 		StudentsGroup* group2=(StudentsGroup*)s2;
 		if(downwardSets1.contains(group2->name))
 			return true;
-		foreach(StudentsSubgroup* subgroup2, group2->subgroupsList)
+		for(StudentsSubgroup* subgroup2 : qAsConst(group2->subgroupsList))
 			if(downwardSets1.contains(subgroup2->name))
 				return true;
 	}
@@ -1691,13 +1691,13 @@ void Rules::computePermanentStudentsHash()
 	//The commented tests are good, but bring a somewhat slowdown.
 	permanentStudentsHash.clear();
 	
-	foreach(StudentsYear* year, yearsList){
+	for(StudentsYear* year : qAsConst(yearsList)){
 		assert(!permanentStudentsHash.contains(year->name));
 		permanentStudentsHash.insert(year->name, year);
 		
 		//QSet<QString> groupsInYear;
 		
-		foreach(StudentsGroup* group, year->groupsList){
+		for(StudentsGroup* group : qAsConst(year->groupsList)){
 			//assert(!groupsInYear.contains(group->name));
 			//groupsInYear.insert(group->name);
 		
@@ -1708,7 +1708,7 @@ void Rules::computePermanentStudentsHash()
 			
 			//QSet<QString> subgroupsInGroup;
 			
-			foreach(StudentsSubgroup* subgroup, group->subgroupsList){
+			for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList)){
 				//assert(!subgroupsInGroup.contains(subgroup->name));
 				//subgroupsInGroup.insert(subgroup->name);
 			
@@ -1766,7 +1766,7 @@ StudentsSet* Rules::searchAugmentedStudentsSet(const QString& setName)
 bool Rules::addYear(StudentsYear* year)
 {
 	//already existing?
-	foreach(StudentsYear* ty, yearsList)
+	for(StudentsYear* ty : qAsConst(yearsList))
 		if(ty->name==year->name)
 			return false;
 	//if(this->searchStudentsSet(year->name)!=NULL)
@@ -1804,7 +1804,7 @@ bool Rules::removeYear(const QString& yearName/*, bool removeAlsoThisYear*/)
 	const bool removeAlsoThisYear=true;
 
 	StudentsYear* yearPointer=NULL;
-	foreach(StudentsYear* ty, this->yearsList){
+	for(StudentsYear* ty : qAsConst(this->yearsList)){
 		if(ty->name==yearName){
 			yearPointer=ty;
 			break;
@@ -1815,12 +1815,12 @@ bool Rules::removeYear(const QString& yearName/*, bool removeAlsoThisYear*/)
 	
 	//pointers
 	QSet<StudentsSet*> tmpSet;
-	foreach(StudentsYear* year, yearsList)
+	for(StudentsYear* year : qAsConst(yearsList))
 		if(year->name!=yearName){
 			tmpSet.insert(year);
-			foreach(StudentsGroup* group, year->groupsList){
+			for(StudentsGroup* group : qAsConst(year->groupsList)){
 				tmpSet.insert(group);
-				foreach(StudentsSubgroup* subgroup, group->subgroupsList)
+				for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList))
 					tmpSet.insert(subgroup);
 			}
 		}
@@ -1828,11 +1828,11 @@ bool Rules::removeYear(const QString& yearName/*, bool removeAlsoThisYear*/)
 	QSet<StudentsSet*> toBeRemoved;
 	if(removeAlsoThisYear)
 		toBeRemoved.insert(yearPointer);
-	foreach(StudentsGroup* group, yearPointer->groupsList){
+	for(StudentsGroup* group : qAsConst(yearPointer->groupsList)){
 		assert(!toBeRemoved.contains(group));
 		if(!tmpSet.contains(group))
 			toBeRemoved.insert(group);
-		foreach(StudentsSubgroup* subgroup, group->subgroupsList){
+		for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList)){
 			//assert(!toBeRemoved.contains(subgroup));
 			if(!tmpSet.contains(subgroup) && !toBeRemoved.contains(subgroup))
 				toBeRemoved.insert(subgroup);
@@ -1852,7 +1852,7 @@ bool Rules::removeYear(const QString& yearName/*, bool removeAlsoThisYear*/)
 		yearPointer->groupsList.clear();
 	}
 	
-	foreach(StudentsSet* studentsSet, toBeRemoved){
+	for(StudentsSet* studentsSet : qAsConst(toBeRemoved)){
 		assert(permanentStudentsHash.contains(studentsSet->name));
 		permanentStudentsHash.remove(studentsSet->name);
 	
@@ -1872,25 +1872,16 @@ bool Rules::removeYearPointerAfterSplit(StudentsYear* yearPointer)
 	assert(yearPointer!=NULL);
 	
 	//names
-	/*QSet<QString> tmpSet;
-	foreach(StudentsYear* year, yearsList){
-		tmpSet.insert(year->name);
-		foreach(StudentsGroup* group, year->groupsList){
-			tmpSet.insert(group->name);
-			foreach(StudentsSubgroup* subgroup, group->subgroupsList)
-				tmpSet.insert(subgroup->name);
-		}
-	}*/
-	
 	QSet<StudentsSet*> toBeRemoved;
+
 	//Not here, because there exists another pointer with the same name (to the new year),
 	//and I don't want to remove the activities with this year name
 	//toBeRemoved.insert(yearPointer);
-	foreach(StudentsGroup* group, yearPointer->groupsList){
+	for(StudentsGroup* group : qAsConst(yearPointer->groupsList)){
 		assert(!toBeRemoved.contains(group));
 		if(!permanentStudentsHash.contains(group->name))
 			toBeRemoved.insert(group);
-		foreach(StudentsSubgroup* subgroup, group->subgroupsList){
+		for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList)){
 			//assert(!toBeRemoved.contains(subgroup));
 			if(!permanentStudentsHash.contains(subgroup->name) && !toBeRemoved.contains(subgroup))
 				toBeRemoved.insert(subgroup);
@@ -1900,7 +1891,7 @@ bool Rules::removeYearPointerAfterSplit(StudentsYear* yearPointer)
 	updateActivitiesWhenRemovingStudents(toBeRemoved, false);
 	
 	toBeRemoved.insert(yearPointer);
-	foreach(StudentsSet* studentsSet, toBeRemoved)
+	for(StudentsSet* studentsSet : qAsConst(toBeRemoved))
 		delete studentsSet;
 		
 	if(toBeRemoved.count()>1)
@@ -1937,11 +1928,11 @@ bool Rules::modifyStudentsSet(const QString& initialStudentsSetName, const QStri
 		assert(searchStudentsSet(finalStudentsSetName)==NULL);
 	int initialNumberOfStudents=studentsSet->numberOfStudents;
 	
-	foreach(Activity* act, activitiesList)
+	for(Activity* act : qAsConst(activitiesList))
 		act->renameStudents(*this, initialStudentsSetName, finalStudentsSetName, initialNumberOfStudents, finalNumberOfStudents);
 	
 	if(initialStudentsSetName!=finalStudentsSetName){
-		foreach(TimeConstraint* ctr, timeConstraintsList){
+		for(TimeConstraint* ctr : qAsConst(timeConstraintsList)){
 			if(ctr->type==CONSTRAINT_STUDENTS_SET_NOT_AVAILABLE_TIMES){
 				ConstraintStudentsSetNotAvailableTimes* crt_constraint=(ConstraintStudentsSetNotAvailableTimes*)ctr;
 				if(initialStudentsSetName == crt_constraint->students)
@@ -2040,7 +2031,7 @@ bool Rules::modifyStudentsSet(const QString& initialStudentsSetName, const QStri
 			}
 		}
 
-		foreach(SpaceConstraint* ctr, spaceConstraintsList){
+		for(SpaceConstraint* ctr : qAsConst(spaceConstraintsList)){
 			if(ctr->type==CONSTRAINT_STUDENTS_SET_HOME_ROOM){
 				ConstraintStudentsSetHomeRoom* crt_constraint=(ConstraintStudentsSetHomeRoom*)ctr;
 				if(initialStudentsSetName == crt_constraint->studentsName)
@@ -2100,13 +2091,13 @@ bool Rules::modifyStudentsSets(const QHash<QString, QString>& oldAndNewStudentsS
 	if(oldAndNewStudentsSetNames.isEmpty())
 		return true;
 
-	foreach(Activity* act, activitiesList){
+	for(Activity* act : qAsConst(activitiesList)){
 		for(int i=0; i<act->studentsNames.count(); i++)
 			if(oldAndNewStudentsSetNames.contains(act->studentsNames.at(i)))
 				act->studentsNames[i]=oldAndNewStudentsSetNames.value(act->studentsNames.at(i));
 	}
 	
-	foreach(TimeConstraint* ctr, timeConstraintsList){
+	for(TimeConstraint* ctr : qAsConst(timeConstraintsList)){
 		if(ctr->type==CONSTRAINT_STUDENTS_SET_NOT_AVAILABLE_TIMES){
 			ConstraintStudentsSetNotAvailableTimes* crt_constraint=(ConstraintStudentsSetNotAvailableTimes*)ctr;
 			if(oldAndNewStudentsSetNames.contains(crt_constraint->students))
@@ -2205,7 +2196,7 @@ bool Rules::modifyStudentsSets(const QHash<QString, QString>& oldAndNewStudentsS
 		}
 	}
 
-	foreach(SpaceConstraint* ctr, spaceConstraintsList){
+	for(SpaceConstraint* ctr : qAsConst(spaceConstraintsList)){
 		if(ctr->type==CONSTRAINT_STUDENTS_SET_HOME_ROOM){
 			ConstraintStudentsSetHomeRoom* crt_constraint=(ConstraintStudentsSetHomeRoom*)ctr;
 			if(oldAndNewStudentsSetNames.contains(crt_constraint->studentsName))
@@ -2289,12 +2280,6 @@ bool Rules::addGroup(const QString& yearName, StudentsGroup* group)
 	if(!permanentStudentsHash.contains(group->name))
 		permanentStudentsHash.insert(group->name, group);
 
-	/*
-	foreach(StudentsYear* y, yearsList)
-		foreach(StudentsGroup* g, y->groupsList)
-			if(g->name==group->name)
-				g->numberOfStudents=group->numberOfStudents;*/
-
 	this->internalStructureComputed=false;
 	setModified(true);
 	return true;
@@ -2312,7 +2297,7 @@ bool Rules::addGroupFast(StudentsYear* year, StudentsGroup* group)
 bool Rules::removeGroup(const QString& yearName, const QString& groupName)
 {
 	StudentsYear* yearPointer=NULL;
-	foreach(StudentsYear* ty, this->yearsList){
+	for(StudentsYear* ty : qAsConst(this->yearsList)){
 		if(ty->name==yearName){
 			yearPointer=ty;
 			break;
@@ -2322,7 +2307,7 @@ bool Rules::removeGroup(const QString& yearName, const QString& groupName)
 	assert(yearPointer!=NULL);
 	
 	StudentsGroup* groupPointer=NULL;
-	foreach(StudentsGroup* tg, yearPointer->groupsList){
+	for(StudentsGroup* tg : qAsConst(yearPointer->groupsList)){
 		if(tg->name==groupName){
 			groupPointer=tg;
 			break;
@@ -2333,21 +2318,21 @@ bool Rules::removeGroup(const QString& yearName, const QString& groupName)
 
 	//pointers
 	QSet<StudentsSet*> tmpSet;
-	foreach(StudentsYear* year, yearsList){
+	for(StudentsYear* year : qAsConst(yearsList)){
 		if(year->name!=yearName){
 			//tmpSet.insert(year); useless
-			foreach(StudentsGroup* group, year->groupsList){
+			for(StudentsGroup* group : qAsConst(year->groupsList)){
 				if(group->name==groupName) //we shall not purge groupName, because it still exists in the current year
 					tmpSet.insert(group);
-				foreach(StudentsSubgroup* subgroup, group->subgroupsList)
+				for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList))
 					tmpSet.insert(subgroup);
 			}
 		}
 		else{
-			foreach(StudentsGroup* group, year->groupsList)
+			for(StudentsGroup* group : qAsConst(year->groupsList))
 				if(group->name!=groupName){
 					//tmpSet.insert(group); //useless
-					foreach(StudentsSubgroup* subgroup, group->subgroupsList)
+					for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList))
 						tmpSet.insert(subgroup);
 				}
 		}
@@ -2356,7 +2341,7 @@ bool Rules::removeGroup(const QString& yearName, const QString& groupName)
 	QSet<StudentsSet*> toBeRemoved;
 	if(!tmpSet.contains(groupPointer))
 		toBeRemoved.insert(groupPointer);
-	foreach(StudentsSubgroup* subgroup, groupPointer->subgroupsList){
+	for(StudentsSubgroup* subgroup : qAsConst(groupPointer->subgroupsList)){
 		assert(!toBeRemoved.contains(subgroup));
 		if(!tmpSet.contains(subgroup))
 			toBeRemoved.insert(subgroup);
@@ -2370,7 +2355,7 @@ bool Rules::removeGroup(const QString& yearName, const QString& groupName)
 			break;
 		}
 	
-	foreach(StudentsSet* studentsSet, toBeRemoved){
+	for(StudentsSet* studentsSet : qAsConst(toBeRemoved)){
 		assert(permanentStudentsHash.contains(studentsSet->name));
 		permanentStudentsHash.remove(studentsSet->name);
 	
@@ -2388,7 +2373,7 @@ bool Rules::removeGroup(const QString& yearName, const QString& groupName)
 bool Rules::purgeGroup(const QString& groupName)
 {
 	StudentsGroup* groupPointer=NULL;
-	foreach(StudentsYear* year, yearsList){
+	for(StudentsYear* year : qAsConst(yearsList)){
 		int j=-1;
 		for(int i=0; i<year->groupsList.count(); i++){
 			if(year->groupsList.at(i)->name==groupName){
@@ -2408,9 +2393,9 @@ bool Rules::purgeGroup(const QString& groupName)
 
 	//pointers
 	QSet<StudentsSet*> tmpSet;
-	foreach(StudentsYear* year, yearsList)
-		foreach(StudentsGroup* group, year->groupsList)
-			foreach(StudentsSubgroup* subgroup, group->subgroupsList)
+	for(StudentsYear* year : qAsConst(yearsList))
+		for(StudentsGroup* group : qAsConst(year->groupsList))
+			for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList))
 				tmpSet.insert(subgroup);
 	
 	QSet<StudentsSet*> toBeRemoved;
@@ -2418,7 +2403,7 @@ bool Rules::purgeGroup(const QString& groupName)
 		toBeRemoved.insert(groupPointer);
 	else
 		assert(0);
-	foreach(StudentsSubgroup* subgroup, groupPointer->subgroupsList){
+	for(StudentsSubgroup* subgroup : qAsConst(groupPointer->subgroupsList)){
 		assert(!toBeRemoved.contains(subgroup));
 		if(!tmpSet.contains(subgroup))
 			toBeRemoved.insert(subgroup);
@@ -2426,7 +2411,7 @@ bool Rules::purgeGroup(const QString& groupName)
 	
 	updateActivitiesWhenRemovingStudents(toBeRemoved, false);
 	
-	foreach(StudentsSet* studentsSet, toBeRemoved){
+	for(StudentsSet* studentsSet : qAsConst(toBeRemoved)){
 		assert(permanentStudentsHash.contains(studentsSet->name));
 		permanentStudentsHash.remove(studentsSet->name);
 	
@@ -2444,7 +2429,7 @@ bool Rules::purgeGroup(const QString& groupName)
 int Rules::searchGroup(const QString& yearName, const QString& groupName) const
 {
 	StudentsYear* sty=NULL;
-	foreach(StudentsYear* ty, yearsList)
+	for(StudentsYear* ty : qAsConst(yearsList))
 		if(ty->name==yearName){
 			sty=ty;
 			break;
@@ -2461,7 +2446,7 @@ int Rules::searchGroup(const QString& yearName, const QString& groupName) const
 int Rules::searchAugmentedGroup(const QString& yearName, const QString& groupName) const
 {
 	StudentsYear* sty=NULL;
-	foreach(StudentsYear* ty, augmentedYearsList)
+	for(StudentsYear* ty : qAsConst(augmentedYearsList))
 		if(ty->name==yearName){
 			sty=ty;
 			break;
@@ -2504,13 +2489,6 @@ bool Rules::addSubgroup(const QString& yearName, const QString& groupName, Stude
 	if(!permanentStudentsHash.contains(subgroup->name))
 		permanentStudentsHash.insert(subgroup->name, subgroup);
 
-	/*
-	foreach(StudentsYear* y, yearsList)
-		foreach(StudentsGroup* g, y->groupsList)
-			foreach(StudentsSubgroup* s, g->subgroupsList)
-				if(s->name==subgroup->name)
-					s->numberOfStudents=subgroup->numberOfStudents;*/
-
 	this->internalStructureComputed=false;
 	setModified(true);
 	return true;
@@ -2530,7 +2508,7 @@ bool Rules::addSubgroupFast(StudentsYear* year, StudentsGroup* group, StudentsSu
 bool Rules::removeSubgroup(const QString& yearName, const QString& groupName, const QString& subgroupName)
 {
 	StudentsYear* yearPointer=NULL;
-	foreach(StudentsYear* ty, this->yearsList){
+	for(StudentsYear* ty : qAsConst(this->yearsList)){
 		if(ty->name==yearName){
 			yearPointer=ty;
 			break;
@@ -2540,7 +2518,7 @@ bool Rules::removeSubgroup(const QString& yearName, const QString& groupName, co
 	assert(yearPointer!=NULL);
 	
 	StudentsGroup* groupPointer=NULL;
-	foreach(StudentsGroup* tg, yearPointer->groupsList){
+	for(StudentsGroup* tg : qAsConst(yearPointer->groupsList)){
 		if(tg->name==groupName){
 			groupPointer=tg;
 			break;
@@ -2550,7 +2528,7 @@ bool Rules::removeSubgroup(const QString& yearName, const QString& groupName, co
 	assert(groupPointer!=NULL);
 	
 	StudentsSubgroup* subgroupPointer=NULL;
-	foreach(StudentsSubgroup* ts, groupPointer->subgroupsList){
+	for(StudentsSubgroup* ts : qAsConst(groupPointer->subgroupsList)){
 		if(ts->name==subgroupName){
 			subgroupPointer=ts;
 			break;
@@ -2562,9 +2540,9 @@ bool Rules::removeSubgroup(const QString& yearName, const QString& groupName, co
 	//pointers
 	QSet<StudentsSet*> toBeRemoved;
 	toBeRemoved.insert(subgroupPointer);
-	foreach(StudentsYear* year, yearsList)
-		foreach(StudentsGroup* group, year->groupsList)
-			foreach(StudentsSubgroup* subgroup, group->subgroupsList)
+	for(StudentsYear* year : qAsConst(yearsList))
+		for(StudentsGroup* group : qAsConst(year->groupsList))
+			for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList))
 				if(subgroup->name==subgroupName && (year->name!=yearName || group->name!=groupName))
 					toBeRemoved.remove(subgroupPointer);
 					
@@ -2576,7 +2554,7 @@ bool Rules::removeSubgroup(const QString& yearName, const QString& groupName, co
 			break;
 		}
 	
-	foreach(StudentsSet* studentsSet, toBeRemoved){
+	for(StudentsSet* studentsSet : qAsConst(toBeRemoved)){
 		assert(permanentStudentsHash.contains(studentsSet->name));
 		permanentStudentsHash.remove(studentsSet->name);
 	
@@ -2594,8 +2572,8 @@ bool Rules::removeSubgroup(const QString& yearName, const QString& groupName, co
 bool Rules::purgeSubgroup(const QString& subgroupName)
 {
 	StudentsSubgroup* subgroupPointer=NULL;
-	foreach(StudentsYear* year, yearsList)
-		foreach(StudentsGroup* group, year->groupsList){
+	for(StudentsYear* year : qAsConst(yearsList))
+		for(StudentsGroup* group : qAsConst(year->groupsList)){
 			int j=-1;
 			for(int i=0; i<group->subgroupsList.count(); i++){
 				if(group->subgroupsList.at(i)->name==subgroupName){
@@ -2619,7 +2597,7 @@ bool Rules::purgeSubgroup(const QString& subgroupName)
 	
 	updateActivitiesWhenRemovingStudents(toBeRemoved, false);
 	
-	foreach(StudentsSet* studentsSet, toBeRemoved){
+	for(StudentsSet* studentsSet : qAsConst(toBeRemoved)){
 		assert(permanentStudentsHash.contains(studentsSet->name));
 		permanentStudentsHash.remove(studentsSet->name);
 	
@@ -2637,7 +2615,7 @@ bool Rules::purgeSubgroup(const QString& subgroupName)
 int Rules::searchSubgroup(const QString& yearName, const QString& groupName, const QString& subgroupName) const
 {
 	StudentsYear* sty=NULL;
-	foreach(StudentsYear* ty, yearsList)
+	for(StudentsYear* ty : qAsConst(yearsList))
 		if(ty->name==yearName){
 			sty=ty;
 			break;
@@ -2645,7 +2623,7 @@ int Rules::searchSubgroup(const QString& yearName, const QString& groupName, con
 	assert(sty!=NULL);
 
 	StudentsGroup* stg=NULL;
-	foreach(StudentsGroup* tg, sty->groupsList)
+	for(StudentsGroup* tg : qAsConst(sty->groupsList))
 		if(tg->name==groupName){
 			stg=tg;
 			break;
@@ -2662,7 +2640,7 @@ int Rules::searchSubgroup(const QString& yearName, const QString& groupName, con
 int Rules::searchAugmentedSubgroup(const QString& yearName, const QString& groupName, const QString& subgroupName) const
 {
 	StudentsYear* sty=NULL;
-	foreach(StudentsYear* ty, augmentedYearsList)
+	for(StudentsYear* ty : qAsConst(augmentedYearsList))
 		if(ty->name==yearName){
 			sty=ty;
 			break;
@@ -2670,7 +2648,7 @@ int Rules::searchAugmentedSubgroup(const QString& yearName, const QString& group
 	assert(sty!=NULL);
 
 	StudentsGroup* stg=NULL;
-	foreach(StudentsGroup* tg, sty->groupsList)
+	for(StudentsGroup* tg : qAsConst(sty->groupsList))
 		if(tg->name==groupName){
 			stg=tg;
 			break;
@@ -2696,72 +2674,6 @@ void Rules::sortSubgroupsAlphabetically(const QString& yearName, const QString& 
 	this->internalStructureComputed=false;
 	setModified(true);
 }
-
-/*bool Rules::addSimpleActivity(
-	QWidget* parent,
-	int _id,
-	int _activityGroupId,
-	const QStringList& _teachersNames,
-	const QString& _subjectName,
-	const QStringList& _activityTagsNames,
-	const QStringList& _studentsNames,
-	int _duration,
-	int _totalDuration,
-	bool _active,
-	bool _computeNTotalStudents,
-	int _nTotalStudents)
-{
-	//check for duplicates - idea and code by Volker Dirr
-	int t=QStringList(_teachersNames).removeDuplicates();
-	if(t>0)
-		RulesReconcilableMessage::warning(parent, tr("FET warning"), tr("Activity with Id=%1 contains %2 duplicate teachers - please correct that")
-		 .arg(_id).arg(t));
-
-	t=QStringList(_studentsNames).removeDuplicates();
-	if(t>0)
-		RulesReconcilableMessage::warning(parent, tr("FET warning"), tr("Activity with Id=%1 contains %2 duplicate students sets - please correct that")
-		 .arg(_id).arg(t));
-
-	t=QStringList(_activityTagsNames).removeDuplicates();
-	if(t>0)
-		RulesReconcilableMessage::warning(parent, tr("FET warning"), tr("Activity with Id=%1 contains %2 duplicate activity tags - please correct that")
-		 .arg(_id).arg(t));
-		
-	int computedNumberOfStudents;
-	if(_computeNTotalStudents){
-		computedNumberOfStudents=0;
-		QHash<QString, int> numberOfStudentsForStudentsSet;
-		foreach(StudentsYear* year, yearsList){
-			numberOfStudentsForStudentsSet.insert(year->name, year->numberOfStudents);
-			foreach(StudentsGroup* group, year->groupsList){
-				numberOfStudentsForStudentsSet.insert(group->name, group->numberOfStudents);
-				foreach(StudentsSubgroup* subgroup, group->subgroupsList){
-					numberOfStudentsForStudentsSet.insert(subgroup->name, subgroup->numberOfStudents);
-				}
-			}
-		}
-		foreach(QString studentsSet, _studentsNames){
-			assert(numberOfStudentsForStudentsSet.contains(studentsSet));
-			computedNumberOfStudents+=numberOfStudentsForStudentsSet.value(studentsSet);
-		}
-	}
-	else{
-		computedNumberOfStudents=_nTotalStudents;
-	}
-
-	Activity *act=new Activity(*this, _id, _activityGroupId, _teachersNames, _subjectName, _activityTagsNames,
-		_studentsNames, _duration, _totalDuration, _active, _computeNTotalStudents, _nTotalStudents, computedNumberOfStudents);
-
-	this->activitiesList << act; //append
-	
-	assert(!activitiesPointerHash.contains(act->id));
-	activitiesPointerHash.insert(act->id, act);
-
-	this->internalStructureComputed=false;
-	setModified(true);
-
-	return true;
-}*/
 
 ErrorList Rules::addSimpleActivityFast(int _id,
 	int _activityGroupId,
@@ -2806,93 +2718,6 @@ ErrorList Rules::addSimpleActivityFast(int _id,
 
 	return errors;
 }
-
-/*bool Rules::addSplitActivity(
-	QWidget* parent,
-	int _firstActivityId,
-	int _activityGroupId,
-	const QStringList& _teachersNames,
-	const QString& _subjectName,
-	const QStringList& _activityTagsNames,
-	const QStringList& _studentsNames,
-	int _nSplits,
-	int _totalDuration,
-	int _durations[],
-	bool _active[],
-	int _minDayDistance,
-	double _weightPercentage,
-	bool _consecutiveIfSameDay,
-	bool _computeNTotalStudents,
-	int _nTotalStudents)
-{
-	//check for duplicates - idea and code by Volker Dirr
-	int t=QStringList(_teachersNames).removeDuplicates();
-	if(t>0)
-		RulesReconcilableMessage::warning(parent, tr("FET warning"), tr("Activities with group_Id=%1 contain %2 duplicate teachers - please correct that")
-		 .arg(_activityGroupId).arg(t));
-
-	t=QStringList(_studentsNames).removeDuplicates();
-	if(t>0)
-		RulesReconcilableMessage::warning(parent, tr("FET warning"), tr("Activities with group_Id=%1 contain %2 duplicate students sets - please correct that")
-		 .arg(_activityGroupId).arg(t));
-
-	t=QStringList(_activityTagsNames).removeDuplicates();
-	if(t>0)
-		RulesReconcilableMessage::warning(parent, tr("FET warning"), tr("Activities with group_Id=%1 contain %2 duplicate activity tags - please correct that")
-		 .arg(_activityGroupId).arg(t));
-
-	assert(_firstActivityId==_activityGroupId);
-
-	int computedNumberOfStudents;
-	
-	if(_computeNTotalStudents){
-		computedNumberOfStudents=0;
-		QHash<QString, int> numberOfStudentsForStudentsSet;
-		foreach(StudentsYear* year, yearsList){
-			numberOfStudentsForStudentsSet.insert(year->name, year->numberOfStudents);
-			foreach(StudentsGroup* group, year->groupsList){
-				numberOfStudentsForStudentsSet.insert(group->name, group->numberOfStudents);
-				foreach(StudentsSubgroup* subgroup, group->subgroupsList){
-					numberOfStudentsForStudentsSet.insert(subgroup->name, subgroup->numberOfStudents);
-				}
-			}
-		}
-		foreach(QString studentsSet, _studentsNames){
-			assert(numberOfStudentsForStudentsSet.contains(studentsSet));
-			computedNumberOfStudents+=numberOfStudentsForStudentsSet.value(studentsSet);
-		}
-	}
-	else{
-		computedNumberOfStudents=_nTotalStudents;
-	}
-
-	QList<int> acts;
-
-	acts.clear();
-	for(int i=0; i<_nSplits; i++){
-		Activity *act=new Activity(*this, _firstActivityId+i, _activityGroupId,
-		 _teachersNames, _subjectName, _activityTagsNames, _studentsNames,
-		 _durations[i], _totalDuration, _active[i], _computeNTotalStudents, _nTotalStudents, computedNumberOfStudents);
-
-		this->activitiesList << act; //append
-
-		assert(!activitiesPointerHash.contains(act->id));
-		activitiesPointerHash.insert(act->id, act);
-
-		acts.append(_firstActivityId+i);
-	}
-
-	if(_minDayDistance>0){
-		TimeConstraint *constr=new ConstraintMinDaysBetweenActivities(_weightPercentage, _consecutiveIfSameDay, _nSplits, acts, _minDayDistance);
-		bool tmp=this->addTimeConstraint(constr);
-		assert(tmp);
-	}
-
-	this->internalStructureComputed=false;
-	setModified(true);
-
-	return true;
-}*/
 
 ErrorList Rules::addSplitActivityFast(
 	int _firstActivityId,
@@ -2969,7 +2794,7 @@ ErrorList Rules::addSplitActivityFast(
 void Rules::removeActivity(int _id, int _activityGroupId)
 {
 	QList<int> tmpList;
-	foreach(Activity* act, activitiesList)
+	for(Activity* act : qAsConst(activitiesList))
 		if(_id==act->id || (_activityGroupId>0 && _activityGroupId==act->activityGroupId))
 			tmpList.append(act->id);
 	removeActivities(tmpList, true);
@@ -2983,10 +2808,10 @@ void Rules::removeActivities(const QList<int>& _idsList, bool updateConstraints)
 	QSet<int> _removedIdsSet=_idsList.toSet();
 	
 	QSet<int> _groupIdsSet;
-	foreach(Activity* act, activitiesList)
+	for(Activity* act : qAsConst(activitiesList))
 		if(act->activityGroupId>0 && _removedIdsSet.contains(act->id))
 			_groupIdsSet.insert(act->activityGroupId);
-	foreach(Activity* act, activitiesList)
+	for(Activity* act : qAsConst(activitiesList))
 		if(act->activityGroupId>0 && _groupIdsSet.contains(act->activityGroupId))
 			_removedIdsSet.insert(act->id);
 	
@@ -3079,7 +2904,7 @@ void Rules::modifySubactivity(
 	QList<Activity*> actsList;
 	Activity* crtAct=NULL;
 	
-	foreach(Activity* act, this->activitiesList){
+	for(Activity* act : qAsConst(this->activitiesList)){
 		if(act->id==_id && act->activityGroupId==_activityGroupId){
 			crtAct=act;
 			//actsList.append(act);
@@ -3092,10 +2917,10 @@ void Rules::modifySubactivity(
 	assert(crtAct!=NULL);
 	
 	int td=0;
-	foreach(Activity* act, actsList)
+	for(Activity* act : qAsConst(actsList))
 		td+=act->duration;
 	td+=_duration; //crtAct->duration;
-	foreach(Activity* act, actsList)
+	for(Activity* act : qAsConst(actsList))
 		act->totalDuration=td;
 
 	crtAct->teachersNames=_teachersNames;
@@ -3171,7 +2996,7 @@ bool Rules::modifyRoom(const QString& initialRoomName, const QString& finalRoomN
 	Room* searchedRoom=this->roomsList[i];
 	assert(searchedRoom->name==initialRoomName);
 
-	foreach(SpaceConstraint* ctr, spaceConstraintsList){
+	for(SpaceConstraint* ctr : qAsConst(spaceConstraintsList)){
 		if(ctr->type==CONSTRAINT_ROOM_NOT_AVAILABLE_TIMES){
 			ConstraintRoomNotAvailableTimes* crna=(ConstraintRoomNotAvailableTimes*)ctr;
 			if(crna->room==initialRoomName)
@@ -3325,7 +3150,7 @@ bool Rules::removeBuilding(const QString& buildingName)
 	if(i<0)
 		return false;
 
-	foreach(Room* rm, this->roomsList)
+	for(Room* rm : qAsConst(this->roomsList))
 		if(rm->building==buildingName)
 			rm->building="";
 
@@ -3349,7 +3174,7 @@ bool Rules::modifyBuilding(const QString& initialBuildingName, const QString& fi
 	if(i<0)
 		return false;
 
-	foreach(Room* rm, roomsList)
+	for(Room* rm : qAsConst(roomsList))
 		if(rm->building==initialBuildingName)
 			rm->building=finalBuildingName;
 
@@ -3380,7 +3205,7 @@ bool Rules::addTimeConstraint(TimeConstraint* ctr)
 	if(ctr->type==CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIME){
 		ConstraintActivityPreferredStartingTime* c=(ConstraintActivityPreferredStartingTime*) ctr;
 		QSet<ConstraintActivityPreferredStartingTime*> cs=apstHash.value(c->activityId, QSet<ConstraintActivityPreferredStartingTime*>());
-		foreach(ConstraintActivityPreferredStartingTime* oldc, cs){
+		for(ConstraintActivityPreferredStartingTime* oldc : qAsConst(cs)){
 			if((*oldc)==(*c)){
 				ok=false;
 				break;
@@ -3406,9 +3231,9 @@ bool Rules::addTimeConstraint(TimeConstraint* ctr)
 	//check if this constraint is already added, for ConstraintMinDaysBetweenActivities
 	else if(ctr->type==CONSTRAINT_MIN_DAYS_BETWEEN_ACTIVITIES){
 		ConstraintMinDaysBetweenActivities* c=(ConstraintMinDaysBetweenActivities*) ctr;
-		foreach(int aid, c->activitiesId){
+		for(int aid : qAsConst(c->activitiesId)){
 			QSet<ConstraintMinDaysBetweenActivities*> cs=mdbaHash.value(aid, QSet<ConstraintMinDaysBetweenActivities*>());
-			foreach(ConstraintMinDaysBetweenActivities* oldc, cs){
+			for(ConstraintMinDaysBetweenActivities* oldc : qAsConst(cs)){
 				if((*oldc)==(*c)){
 					ok=false;
 					break;
@@ -3437,7 +3262,7 @@ bool Rules::addTimeConstraint(TimeConstraint* ctr)
 	else if(ctr->type==CONSTRAINT_STUDENTS_SET_NOT_AVAILABLE_TIMES){
 		ConstraintStudentsSetNotAvailableTimes* c=(ConstraintStudentsSetNotAvailableTimes*) ctr;
 		QSet<ConstraintStudentsSetNotAvailableTimes*> cs=ssnatHash.value(c->students, QSet<ConstraintStudentsSetNotAvailableTimes*>());
-		foreach(ConstraintStudentsSetNotAvailableTimes* oldc, cs){
+		for(ConstraintStudentsSetNotAvailableTimes* oldc : qAsConst(cs)){
 			if(oldc->students==c->students){
 				ok=false;
 				break;
@@ -3462,7 +3287,7 @@ bool Rules::addTimeConstraint(TimeConstraint* ctr)
 	else if(ctr->type==CONSTRAINT_TEACHER_NOT_AVAILABLE_TIMES){
 		ConstraintTeacherNotAvailableTimes* c=(ConstraintTeacherNotAvailableTimes*) ctr;
 		QSet<ConstraintTeacherNotAvailableTimes*> cs=tnatHash.value(c->teacher, QSet<ConstraintTeacherNotAvailableTimes*>());
-		foreach(ConstraintTeacherNotAvailableTimes* oldc, cs){
+		for(ConstraintTeacherNotAvailableTimes* oldc : qAsConst(cs)){
 			if(oldc->teacher==c->teacher){
 				ok=false;
 				break;
@@ -3529,7 +3354,7 @@ bool Rules::addTimeConstraint(TimeConstraint* ctr)
 
 		else if(ctr->type==CONSTRAINT_MIN_DAYS_BETWEEN_ACTIVITIES){
 			ConstraintMinDaysBetweenActivities* c=(ConstraintMinDaysBetweenActivities*) ctr;
-			foreach(int aid, c->activitiesId){
+			for(int aid : qAsConst(c->activitiesId)){
 				QSet<ConstraintMinDaysBetweenActivities*> cs=mdbaHash.value(aid, QSet<ConstraintMinDaysBetweenActivities*>());
 				assert(!cs.contains(c));
 				cs.insert(c);
@@ -3593,7 +3418,7 @@ bool Rules::removeTimeConstraint(TimeConstraint* ctr)
 
 			else if(ctr->type==CONSTRAINT_MIN_DAYS_BETWEEN_ACTIVITIES){
 				ConstraintMinDaysBetweenActivities* c=(ConstraintMinDaysBetweenActivities*) ctr;
-				foreach(int aid, c->activitiesId){
+				for(int aid : qAsConst(c->activitiesId)){
 					QSet<ConstraintMinDaysBetweenActivities*> cs=mdbaHash.value(aid, QSet<ConstraintMinDaysBetweenActivities*>());
 					assert(cs.contains(c));
 					cs.remove(c);
@@ -3685,7 +3510,7 @@ bool Rules::removeTimeConstraints(QList<TimeConstraint*> _tcl)
 
 			else if(ctr->type==CONSTRAINT_MIN_DAYS_BETWEEN_ACTIVITIES){
 				ConstraintMinDaysBetweenActivities* c=(ConstraintMinDaysBetweenActivities*) ctr;
-				foreach(int aid, c->activitiesId){
+				for(int aid : qAsConst(c->activitiesId)){
 					QSet<ConstraintMinDaysBetweenActivities*> cs=mdbaHash.value(aid, QSet<ConstraintMinDaysBetweenActivities*>());
 					assert(cs.contains(c));
 					cs.remove(c);
@@ -3773,7 +3598,7 @@ bool Rules::addSpaceConstraint(SpaceConstraint* ctr)
 	if(ctr->type==CONSTRAINT_ACTIVITY_PREFERRED_ROOM){
 		ConstraintActivityPreferredRoom* c=(ConstraintActivityPreferredRoom*) ctr;
 		QSet<ConstraintActivityPreferredRoom*> cs=aprHash.value(c->activityId, QSet<ConstraintActivityPreferredRoom*>());
-		foreach(ConstraintActivityPreferredRoom* oldc, cs){
+		for(ConstraintActivityPreferredRoom* oldc : qAsConst(cs)){
 			if((*oldc)==(*c)){
 				ok=false;
 				break;
@@ -3934,7 +3759,7 @@ void Rules::updateGroupActivitiesInInitialOrderAfterRemoval()
 	GroupActivitiesInInitialOrderList newList;
 	GroupActivitiesInInitialOrderList toBeRemovedList;
 	
-	foreach(GroupActivitiesInInitialOrderItem* item, groupActivitiesInInitialOrderList){
+	for(GroupActivitiesInInitialOrderItem* item : qAsConst(groupActivitiesInInitialOrderList)){
 		item->removeUseless(*this);
 		if(item->ids.count()<2)
 			toBeRemovedList.append(item);
@@ -3956,12 +3781,12 @@ void Rules::updateActivitiesWhenRemovingStudents(const QSet<StudentsSet*>& stude
 
 	QHash<QString, int> numberOfStudentsPerSet;
 	
-	foreach(StudentsSet* studentsSet, studentsSets)
+	for(StudentsSet* studentsSet : qAsConst(studentsSets))
 		numberOfStudentsPerSet.insert(studentsSet->name, studentsSet->numberOfStudents);
 		
-	foreach(Activity* act, activitiesList){
+	for(Activity* act : qAsConst(activitiesList)){
 		QStringList newStudents;
-		foreach(QString st, act->studentsNames){
+		for(const QString& st : qAsConst(act->studentsNames)){
 			if(!numberOfStudentsPerSet.contains(st)){
 				newStudents.append(st);
 			}
@@ -3996,31 +3821,22 @@ void Rules::updateConstraintsAfterRemoval()
 	QList<TimeConstraint*> toBeRemovedTime;
 	QList<SpaceConstraint*> toBeRemovedSpace;
 	
-	foreach(Activity* act, activitiesList)
+	for(Activity* act : qAsConst(activitiesList))
 		existingActivitiesIds.insert(act->id);
 		
-	foreach(Teacher* tch, teachersList)
+	for(Teacher* tch : qAsConst(teachersList))
 		existingTeachersNames.insert(tch->name);
 		
-	/*foreach(StudentsYear* sty, yearsList){
-		existingStudentsNames.insert(sty->name);
-		foreach(StudentsGroup* stg, sty->groupsList){
-			existingStudentsNames.insert(stg->name);
-			foreach(StudentsSubgroup* sts, stg->subgroupsList)
-				existingStudentsNames.insert(sts->name);
-		}
-	}*/
-	
-	foreach(Subject* sbj, subjectsList)
+	for(Subject* sbj : qAsConst(subjectsList))
 		existingSubjectsNames.insert(sbj->name);
 		
-	foreach(ActivityTag* at, activityTagsList)
+	for(ActivityTag* at : qAsConst(activityTagsList))
 		existingActivityTagsNames.insert(at->name);
 		
-	foreach(Room* rm, roomsList)
+	for(Room* rm : qAsConst(roomsList))
 		existingRoomsNames.insert(rm->name);
 		
-	foreach(TimeConstraint* tc, timeConstraintsList){
+	for(TimeConstraint* tc : qAsConst(timeConstraintsList)){
 		if(tc->type==CONSTRAINT_TEACHER_NOT_AVAILABLE_TIMES){
 			ConstraintTeacherNotAvailableTimes* c=(ConstraintTeacherNotAvailableTimes*)tc;
 			if(!existingTeachersNames.contains(c->teacher))
@@ -4333,7 +4149,7 @@ void Rules::updateConstraintsAfterRemoval()
 		}
 	}
 
-	foreach(SpaceConstraint* sc, spaceConstraintsList){
+	for(SpaceConstraint* sc : qAsConst(spaceConstraintsList)){
 		if(sc->type==CONSTRAINT_ROOM_NOT_AVAILABLE_TIMES){
 			ConstraintRoomNotAvailableTimes* c=(ConstraintRoomNotAvailableTimes*)sc;
 			if(!existingRoomsNames.contains(c->room))
@@ -4354,7 +4170,7 @@ void Rules::updateConstraintsAfterRemoval()
 				toBeRemovedSpace.append(sc);
 			else{
 				QStringList newRooms;
-				foreach(QString room, c->roomsNames)
+				for(const QString& room : qAsConst(c->roomsNames))
 					if(existingRoomsNames.contains(room))
 						newRooms.append(room);
 				c->roomsNames=newRooms;
@@ -4373,7 +4189,7 @@ void Rules::updateConstraintsAfterRemoval()
 				toBeRemovedSpace.append(sc);
 			else{
 				QStringList newRooms;
-				foreach(QString room, c->roomsNames)
+				for(const QString& room : qAsConst(c->roomsNames))
 					if(existingRoomsNames.contains(room))
 						newRooms.append(room);
 				c->roomsNames=newRooms;
@@ -4392,7 +4208,7 @@ void Rules::updateConstraintsAfterRemoval()
 				toBeRemovedSpace.append(sc);
 			else{
 				QStringList newRooms;
-				foreach(QString room, c->roomsNames)
+				for(const QString& room : qAsConst(c->roomsNames))
 					if(existingRoomsNames.contains(room))
 						newRooms.append(room);
 				c->roomsNames=newRooms;
@@ -4411,7 +4227,7 @@ void Rules::updateConstraintsAfterRemoval()
 				toBeRemovedSpace.append(sc);
 			else{
 				QStringList newRooms;
-				foreach(QString room, c->roomsNames)
+				for(const QString& room : qAsConst(c->roomsNames))
 					if(existingRoomsNames.contains(room))
 						newRooms.append(room);
 				c->roomsNames=newRooms;
@@ -4431,7 +4247,7 @@ void Rules::updateConstraintsAfterRemoval()
 				toBeRemovedSpace.append(sc);
 			else{
 				QStringList newRooms;
-				foreach(QString room, c->roomsNames)
+				for(const QString& room : qAsConst(c->roomsNames))
 					if(existingRoomsNames.contains(room))
 						newRooms.append(room);
 				c->roomsNames=newRooms;
@@ -4450,7 +4266,7 @@ void Rules::updateConstraintsAfterRemoval()
 				toBeRemovedSpace.append(sc);
 			else{
 				QStringList newRooms;
-				foreach(QString room, c->roomsNames)
+				for(const QString& room : qAsConst(c->roomsNames))
 					if(existingRoomsNames.contains(room))
 						newRooms.append(room);
 				c->roomsNames=newRooms;
@@ -4909,7 +4725,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 			QSet<QString> teachersRead;
 			
 			QSet<QString> subjectsRead; //we assume that the reading of the subjects is done before the reading of the teachers
-			foreach(Subject* sbj, subjectsList)
+			for(Subject* sbj : qAsConst(subjectsList))
 				subjectsRead.insert(sbj->name);
 		
 			int tmp=0;
@@ -5289,7 +5105,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 									groupsInYear.insert(text);
 
 									if(currentStudentsHash.contains(text)){
-										foreach(StudentsSubgroup* sts, allocatedSubgroups){
+										for(StudentsSubgroup* sts : qAsConst(allocatedSubgroups)){
 											assert(currentStudentsHash.contains(sts->name));
 											currentStudentsHash.remove(sts->name);
 											
@@ -5456,81 +5272,6 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 			log.minimum("Added "+CustomFETString::number(tgr)+" students groups\n");
 			log.minimum("Added "+CustomFETString::number(tsgr)+" students subgroups\n");
 			assert(this->yearsList.size()==ny);
-
-			//BEGIN test for number of students is the same in all sets with the same name
-			/*bool reportWrongNumberOfStudents=true;
-			foreach(StudentsYear* year, yearsList){
-				assert(studentsHash.contains(year->name));
-				StudentsSet* sy=studentsHash.value(year->name);
-				if(sy->numberOfStudents!=year->numberOfStudents){
-					if(reportWrongNumberOfStudents){
-						QString str=tr("Minor problem found and corrected: year %1 has different number of students in two places (%2 and %3)", "%2 and %3 are number of students")
-							.arg(year->name).arg(sy->numberOfStudents).arg(year->numberOfStudents)
-							+
-							"\n\n"+
-							tr("Explanation: this is a minor problem, which appears if using overlapping students set, due to a bug in FET previous to version %1."
-							" FET will now correct this problem by setting the number of students for this year, in all places where it appears,"
-							" to the number that was found in the first appearance (%2). It is advisable to check the number of students for this year.")
-							.arg("5.12.1").arg(sy->numberOfStudents);
-						int t=RulesReconcilableMessage::warning(parent, tr("FET warning"), str,
-							 tr("Skip rest"), tr("See next"), QString(),
-							 1, 0 );
-	
-						if(t==0)
-							reportWrongNumberOfStudents=false;
-					}
-					year->numberOfStudents=sy->numberOfStudents;
-				}
-				
-				foreach(StudentsGroup* group, year->groupsList){
-					assert(studentsHash.contains(group->name));
-					StudentsSet* sg=studentsHash.value(group->name);
-					if(sg->numberOfStudents!=group->numberOfStudents){
-						if(reportWrongNumberOfStudents){
-							QString str=tr("Minor problem found and corrected: group %1 has different number of students in two places (%2 and %3)", "%2 and %3 are number of students")
-								.arg(group->name).arg(sg->numberOfStudents).arg(group->numberOfStudents)
-								+
-								"\n\n"+
-								tr("Explanation: this is a minor problem, which appears if using overlapping students set, due to a bug in FET previous to version %1."
-								" FET will now correct this problem by setting the number of students for this group, in all places where it appears,"
-								" to the number that was found in the first appearance (%2). It is advisable to check the number of students for this group.")
-								.arg("5.12.1").arg(sg->numberOfStudents);
-							int t=RulesReconcilableMessage::warning(parent, tr("FET warning"), str,
-								 tr("Skip rest"), tr("See next"), QString(),
-								 1, 0 );
-		
-							if(t==0)
-								reportWrongNumberOfStudents=false;
-						}
-						group->numberOfStudents=sg->numberOfStudents;
-					}
-
-					foreach(StudentsSubgroup* subgroup, group->subgroupsList){
-						assert(studentsHash.contains(subgroup->name));
-						StudentsSet* ss=studentsHash.value(subgroup->name);
-						if(ss->numberOfStudents!=subgroup->numberOfStudents){
-							if(reportWrongNumberOfStudents){
-								QString str=tr("Minor problem found and corrected: subgroup %1 has different number of students in two places (%2 and %3)", "%2 and %3 are number of students")
-									.arg(subgroup->name).arg(ss->numberOfStudents).arg(subgroup->numberOfStudents)
-									+
-									"\n\n"+
-									tr("Explanation: this is a minor problem, which appears if using overlapping students set, due to a bug in FET previous to version %1."
-									" FET will now correct this problem by setting the number of students for this subgroup, in all places where it appears,"
-									" to the number that was found in the first appearance (%2). It is advisable to check the number of students for this subgroup.")
-									.arg("5.12.1").arg(ss->numberOfStudents);
-								int t=RulesReconcilableMessage::warning(parent, tr("FET warning"), str,
-									 tr("Skip rest"), tr("See next"), QString(),
-									 1, 0 );
-			
-								if(t==0)
-									reportWrongNumberOfStudents=false;
-							}
-							subgroup->numberOfStudents=ss->numberOfStudents;
-						}
-					}
-				}
-			}*/
-			//END test for number of students is the same in all sets with the same name
 			
 			if(okStudents){
 				//This is redundant, but I make this an additional test, just in case anything was wrong.
@@ -5538,7 +5279,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 				assert(permanentStudentsHash==currentStudentsHash);
 			}
 			else{
-				foreach(StudentsSet* studentsSet, allAllocatedStudentsSets)
+				for(StudentsSet* studentsSet : qAsConst(allAllocatedStudentsSets))
 					delete studentsSet;
 				yearsList.clear();
 			}
@@ -5549,30 +5290,30 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 			QSet<QString> allSubjects;
 			QSet<QString> allActivityTags;
 			
-			foreach(Teacher* tch, this->teachersList)
+			for(Teacher* tch : qAsConst(this->teachersList))
 				allTeachers.insert(tch->name);
 
-			foreach(Subject* sbj, this->subjectsList)
+			for(Subject* sbj : qAsConst(this->subjectsList))
 				allSubjects.insert(sbj->name);
 
-			foreach(ActivityTag* at, this->activityTagsList)
+			for(ActivityTag* at : qAsConst(this->activityTagsList))
 				allActivityTags.insert(at->name);
 
-			foreach(StudentsYear* year, this->yearsList){
+			for(StudentsYear* year : qAsConst(this->yearsList)){
 				if(!studentsSetsCount.contains(year->name))
 					studentsSetsCount.insert(year->name, year->numberOfStudents);
 				else if(studentsSetsCount.value(year->name)!=year->numberOfStudents){
 					//cout<<"Mistake: year "<<qPrintable(year->name)<<" appears in more places with different number of students"<<endl;
 				}
 
-				foreach(StudentsGroup* group, year->groupsList){
+				for(StudentsGroup* group : qAsConst(year->groupsList)){
 					if(!studentsSetsCount.contains(group->name))
 						studentsSetsCount.insert(group->name, group->numberOfStudents);
 					else if(studentsSetsCount.value(group->name)!=group->numberOfStudents){
 						//cout<<"Mistake: group "<<qPrintable(group->name)<<" appears in more places with different number of students"<<endl;
 					}
 			
-					foreach(StudentsSubgroup* subgroup, group->subgroupsList){
+					for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList)){
 						if(!studentsSetsCount.contains(subgroup->name))
 							studentsSetsCount.insert(subgroup->name, subgroup->numberOfStudents);
 						else if(studentsSetsCount.value(subgroup->name)!=subgroup->numberOfStudents){
@@ -5801,13 +5542,13 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 						if(cnos==true){
 							assert(nos==-1);
 							int _ns=0;
-							foreach(QString _s, stl){
+							for(const QString& _s : qAsConst(stl)){
 								assert(studentsSetsCount.contains(_s));
 								_ns+=studentsSetsCount.value(_s);
 							}
 							errors << this->addSimpleActivityFast(id, gid, tl, sjn, atl, stl,
 								d, td, ac, cnos, nos, _ns);
-							foreach (const ErrorCode& erc, errors) {
+							for (const ErrorCode& erc : qAsConst(errors)) {
 								if (erc.isError()) {
 									xmlReader.raiseError(erc.message);
 									break;
@@ -5817,7 +5558,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 						else{
 							errors << this->addSimpleActivityFast(id, gid, tl, sjn, atl, stl,
 								d, td, ac, cnos, nos, nos);
-							foreach (const ErrorCode& erc, errors) {
+							for (const ErrorCode& erc : qAsConst(errors)) {
 								if (erc.isError()) {
 									xmlReader.raiseError(erc.message);
 									break;
@@ -6972,15 +6713,15 @@ int Rules::activateStudents(const QString& studentsName)
 	else if(studentsSet->type==STUDENTS_GROUP){
 		allSets.insert(studentsName);
 		StudentsGroup* g=(StudentsGroup*)studentsSet;
-		foreach(StudentsSubgroup* s, g->subgroupsList)
+		for(StudentsSubgroup* s : qAsConst(g->subgroupsList))
 			allSets.insert(s->name);
 	}
 	else if(studentsSet->type==STUDENTS_YEAR){
 		allSets.insert(studentsName);
 		StudentsYear* y=(StudentsYear*)studentsSet;
-		foreach(StudentsGroup* g, y->groupsList){
+		for(StudentsGroup* g : qAsConst(y->groupsList)){
 			allSets.insert(g->name);
-			foreach(StudentsSubgroup* s, g->subgroupsList)
+			for(StudentsSubgroup* s : qAsConst(g->subgroupsList))
 				allSets.insert(s->name);
 		}
 	}
@@ -6989,7 +6730,7 @@ int Rules::activateStudents(const QString& studentsName)
 	for(int i=0; i<this->activitiesList.size(); i++){
 		Activity* act=this->activitiesList[i];
 		if(!act->active){
-			foreach(QString studentsSetName, act->studentsNames){
+			for(const QString& studentsSetName : qAsConst(act->studentsNames)){
 				if(allSets.contains(studentsSetName)){
 					count++;
 					act->active=true;
@@ -7070,15 +6811,15 @@ int Rules::deactivateStudents(const QString& studentsName)
 	else if(studentsSet->type==STUDENTS_GROUP){
 		allSets.insert(studentsName);
 		StudentsGroup* g=(StudentsGroup*)studentsSet;
-		foreach(StudentsSubgroup* s, g->subgroupsList)
+		for(StudentsSubgroup* s : qAsConst(g->subgroupsList))
 			allSets.insert(s->name);
 	}
 	else if(studentsSet->type==STUDENTS_YEAR){
 		allSets.insert(studentsName);
 		StudentsYear* y=(StudentsYear*)studentsSet;
-		foreach(StudentsGroup* g, y->groupsList){
+		for(StudentsGroup* g : qAsConst(y->groupsList)){
 			allSets.insert(g->name);
-			foreach(StudentsSubgroup* s, g->subgroupsList)
+			for(StudentsSubgroup* s : qAsConst(g->subgroupsList))
 				allSets.insert(s->name);
 		}
 	}
@@ -7087,7 +6828,7 @@ int Rules::deactivateStudents(const QString& studentsName)
 	for(int i=0; i<this->activitiesList.size(); i++){
 		Activity* act=this->activitiesList[i];
 		if(act->active){
-			foreach(QString studentsSetName, act->studentsNames){
+			for(const QString& studentsSetName : qAsConst(act->studentsNames)){
 				if(allSets.contains(studentsSetName)){
 					count++;
 					act->active=false;
@@ -7349,7 +7090,7 @@ TimeConstraint* Rules::readTeacherNotAvailable(QXmlStreamReader& xmlReader, XmlL
 	ConstraintTeacherNotAvailableTimes* cn = NULL;
 
 	bool found=false;
-	foreach(TimeConstraint* c, this->timeConstraintsList)
+	for(TimeConstraint* c : qAsConst(this->timeConstraintsList))
 		if(c->type==CONSTRAINT_TEACHER_NOT_AVAILABLE_TIMES){
 			ConstraintTeacherNotAvailableTimes* tna=(ConstraintTeacherNotAvailableTimes*) c;
 			if(tna->teacher==teacher){
@@ -8059,7 +7800,7 @@ TimeConstraint* Rules::readStudentsSetNotAvailable(QXmlStreamReader& xmlReader, 
 	ConstraintStudentsSetNotAvailableTimes* cn = NULL;
 
 	bool found=false;
-	foreach(TimeConstraint* c, this->timeConstraintsList)
+	for(TimeConstraint* c : qAsConst(this->timeConstraintsList))
 		if(c->type==CONSTRAINT_STUDENTS_SET_NOT_AVAILABLE_TIMES){
 			ConstraintStudentsSetNotAvailableTimes* ssna=(ConstraintStudentsSetNotAvailableTimes*) c;
 			if(ssna->students==students){
@@ -10415,7 +10156,7 @@ TimeConstraint* Rules::readBreak(QXmlStreamReader& xmlReader, XmlLog &log){
 	ConstraintBreakTimes* cn = NULL;
 
 	bool found=false;
-	foreach(TimeConstraint* c, this->timeConstraintsList)
+	for(TimeConstraint* c : qAsConst(this->timeConstraintsList))
 		if(c->type==CONSTRAINT_BREAK_TIMES){
 			ConstraintBreakTimes* tna=(ConstraintBreakTimes*) c;
 			if(true){
@@ -12360,7 +12101,7 @@ SpaceConstraint* Rules::readRoomNotAvailable(QXmlStreamReader& xmlReader, XmlLog
 	ConstraintRoomNotAvailableTimes* cn = NULL;
 
 	bool found=false;
-	foreach(SpaceConstraint* c, this->spaceConstraintsList)
+	for(SpaceConstraint* c : qAsConst(this->spaceConstraintsList))
 		if(c->type==CONSTRAINT_ROOM_NOT_AVAILABLE_TIMES){
 			ConstraintRoomNotAvailableTimes* tna=(ConstraintRoomNotAvailableTimes*) c;
 			if(tna->room==room){

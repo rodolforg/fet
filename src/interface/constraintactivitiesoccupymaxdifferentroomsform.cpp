@@ -59,8 +59,8 @@ bool ConstraintActivitiesOccupyMaxDifferentRoomsForm::filterOk(const SpaceConstr
 	const ConstraintActivitiesOccupyMaxDifferentRooms* c=(const ConstraintActivitiesOccupyMaxDifferentRooms*) ctr;
 
 	QSet<const Activity *> activities;
-	foreach(int id, c->activitiesIds){
-		foreach(const Activity* a, gt.rules.activitiesList) {
+	for(int id : qAsConst(c->activitiesIds)){
+		for(const Activity* a : qAsConst(gt.rules.activitiesList)) {
 			if(a->id==id) {
 				activities << a;
 				break;

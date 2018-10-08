@@ -387,20 +387,20 @@ void SplitYearForm::ok()
 		return;
 	}
 	
-	//warn too many total subgroups - suggested by Volker Dirr
+	//warn if there are too many total subgroups - suggested by Volker Dirr
 	QSet<QString> tmpSet;
-	foreach(StudentsYear* sty, gt.rules.yearsList){
+	for(StudentsYear* sty : qAsConst(gt.rules.yearsList)){
 		if(sty->name!=year){
 			if(sty->groupsList.count()==0){
 				tmpSet.insert(sty->name);
 			}
 			else{
-				foreach(StudentsGroup* stg, sty->groupsList){
+				for(StudentsGroup* stg : qAsConst(sty->groupsList)){
 					if(stg->subgroupsList.count()==0){
 						tmpSet.insert(stg->name);
 					}
 					else{
-						foreach(StudentsSubgroup* sts, stg->subgroupsList)
+						for(StudentsSubgroup* sts : qAsConst(stg->subgroupsList))
 							tmpSet.insert(sts->name);
 					}
 				}
@@ -421,37 +421,6 @@ void SplitYearForm::ok()
 	
 	QString separator=separatorLineEdit->text();
 	
-/*	StudentsYear* y=NULL;
-	foreach(StudentsYear* ty, gt.rules.yearsList)
-		if(ty->name==year){
-			y=ty;
-			break;
-		}
-	assert(y!=NULL);
-	
-	if(y->groupsList.count()>0){
-		int t=QMessageBox::question(this, tr("FET question"), tr("Year %1 is not empty and it will be emptied before adding"
-		" the divisions you selected. This means that all the activities and constraints for"
-		" the groups and subgroups in this year will be removed. It is strongly recommended to save your file before continuing."
-		" You might also want, as an alternative, to modify manually the groups/subgroups from the corresponding menu, so that"
-		" you will not lose constraints and activities referring to them."
-		" Do you really want to empty year?").arg(year),
-		 QMessageBox::Yes, QMessageBox::Cancel);
-		 
-		if(t==QMessageBox::Cancel)
-			return;
-
-		t=QMessageBox::warning(this, tr("FET warning"), tr("Year %1 will be emptied."
-		 " This means that all constraints and activities referring to groups/subgroups in year %1 will be removed."
-		 " Are you absolutely sure?").arg(year),
-		 QMessageBox::Yes, QMessageBox::Cancel);
-		 
-		if(t==QMessageBox::Cancel)
-			return;
-			
-		gt.rules.emptyYear(year);
-	}*/
-	
 	QSet<QString> tmp;
 	for(int i=0; i<categoriesSpinBox->value(); i++)
 		for(int j=0; j<listWidgets[i]->count(); j++){
@@ -468,14 +437,14 @@ void SplitYearForm::ok()
 		}
 		
 	QSet<QString> existingNames;
-	foreach(StudentsYear* sty, gt.rules.yearsList){
+	for(StudentsYear* sty : qAsConst(gt.rules.yearsList)){
 		assert(!existingNames.contains(sty->name));
 		existingNames.insert(sty->name);
 		if(sty->name!=year){
-			foreach(StudentsGroup* group, sty->groupsList){
+			for(StudentsGroup* group : qAsConst(sty->groupsList)){
 				if(!existingNames.contains(group->name))
 					existingNames.insert(group->name);
-				foreach(StudentsSubgroup* subgroup, group->subgroupsList){
+				for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList)){
 					if(!existingNames.contains(subgroup->name))
 						existingNames.insert(subgroup->name);
 				}
@@ -546,12 +515,12 @@ again_here_1:
 	QSet<QString> notExistingSubgroupsSet;
 	QStringList notExistingGroupsList;
 	QStringList notExistingSubgroupsList;
-	foreach(StudentsGroup* group, yearPointer->groupsList){
+	for(StudentsGroup* group : qAsConst(yearPointer->groupsList)){
 		if(!existingNames.contains(group->name) && !newStudentsSets.contains(group->name) && !notExistingGroupsSet.contains(group->name)){
 			notExistingGroupsSet.insert(group->name);
 			notExistingGroupsList.append(group->name);
 		}
-		foreach(StudentsSubgroup* subgroup, group->subgroupsList){
+		for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList)){
 			if(!existingNames.contains(subgroup->name) && !newStudentsSets.contains(subgroup->name) && !notExistingSubgroupsSet.contains(subgroup->name)){
 				notExistingSubgroupsSet.insert(subgroup->name);
 				notExistingSubgroupsList.append(subgroup->name);
@@ -629,9 +598,9 @@ again_here_1:
 	newYear->indexInAugmentedYearsList=yearPointer->indexInAugmentedYearsList;
 	
 	QHash<QString, int> numberOfStudents;
-	foreach(StudentsGroup* group, yearPointer->groupsList){
+	for(StudentsGroup* group : qAsConst(yearPointer->groupsList)){
 		numberOfStudents.insert(group->name, group->numberOfStudents);
-		foreach(StudentsSubgroup* subgroup, group->subgroupsList)
+		for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList))
 			numberOfStudents.insert(subgroup->name, subgroup->numberOfStudents);
 	}
 	

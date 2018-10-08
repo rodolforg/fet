@@ -94,9 +94,10 @@ TEMPLATE = app
 
 DEFINES += \
 	FET_COMMAND_LINE \
-	QT_DEPRECATED_WARNINGS
+	QT_DEPRECATED_WARNINGS \
+	QT_NO_FOREACH
 
-CONFIG += release warn_on
+CONFIG += release warn_on c++11
 win32 {
 	CONFIG += console
 }

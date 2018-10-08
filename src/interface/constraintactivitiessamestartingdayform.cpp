@@ -71,7 +71,7 @@ bool ConstraintActivitiesSameStartingDayForm::filterOk(const TimeConstraint* ctr
 
 		int id=c->activitiesId[i];
 		const Activity* act=NULL;
-		foreach(const Activity* a, gt.rules.activitiesList) {
+		for(const Activity* a : qAsConst(gt.rules.activitiesList)) {
 			if(a->id==id) {
 				act=a;
 				break;

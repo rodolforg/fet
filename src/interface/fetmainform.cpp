@@ -527,7 +527,7 @@ FetMainForm::FetMainForm()
 	if(!windowSettingsRect.isValid()){
 		bool ok=false;
 #if QT_VERSION >= 0x050000
-		foreach(QScreen* screen, QGuiApplication::screens()){
+		for(QScreen* screen : QGuiApplication::screens()){
 			if(screen->availableGeometry().intersects(windowSettingsRect)){
 #else
 		for(int i=0; i<QApplication::desktop()->screenCount(); i++){
@@ -1006,7 +1006,7 @@ void FetMainForm::closeOtherWindows()
 {
 	QList<QWidget*> tlwl=qApp->topLevelWidgets();
 	
-	foreach(QWidget* wi, tlwl)
+	for(QWidget* wi : qAsConst(tlwl))
 		if(wi->isVisible() && wi!=this)
 			wi->close();
 }
@@ -1905,7 +1905,7 @@ void FetMainForm::on_dataTeachersSubjectsQualificationsStatisticsAction_triggere
 {
 	QHash<QString, Teacher*> teachersHash;
 	
-	foreach(Teacher* tch, gt.rules.teachersList)
+	for(Teacher* tch : qAsConst(gt.rules.teachersList))
 		teachersHash.insert(tch->name, tch);
 		
 	bool unqualifiedExist=false;
@@ -1915,10 +1915,10 @@ void FetMainForm::on_dataTeachersSubjectsQualificationsStatisticsAction_triggere
 	
 	bool begin=true;
 
-	foreach(Activity* act, gt.rules.activitiesList){
+	for(Activity* act : qAsConst(gt.rules.activitiesList)){
 		bool alreadyAdded=false;
 		QString subject=act->subjectName;
-		foreach(QString teacher, act->teachersNames){
+		for(const QString& teacher : qAsConst(act->teachersNames)){
 			Teacher* tch=teachersHash.value(teacher, NULL);
 			assert(tch!=NULL);
 			if(!tch->qualifiedSubjectsHash.contains(subject)){

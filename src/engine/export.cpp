@@ -568,7 +568,7 @@ bool Export::exportCSVActivityTags(){
 	if(header)
 		tosExport<<textquote<<"Activity Tag"<<textquote<<endl;
 
-	foreach(ActivityTag* a, gt.rules.activityTagsList){
+	for(ActivityTag* a : qAsConst(gt.rules.activityTagsList)){
 		tosExport<<textquote<<protectCSV(a->name)<<textquote<<endl;
 		if(!checkSetSeparator(a->name, setSeparator))
 			lastWarnings+=Export::tr("Warning! Import of activities will fail, because %1 includes set separator +.").arg(a->name)+"\n";
@@ -612,7 +612,7 @@ bool Export::exportCSVRoomsAndBuildings(){
 				<<textquote<<"Building"<<textquote<<endl;
 
 	QStringList checkBuildings;
-	foreach(Room* r, gt.rules.roomsList){
+	for(Room* r : qAsConst(gt.rules.roomsList)){
 		tosExport	<<textquote<<protectCSV(r->name)<<textquote<<fieldSeparator
 				<<CustomFETString::number(r->capacity)<<fieldSeparator
 				<<textquote<<protectCSV(r->building)<<textquote<<endl;
@@ -659,11 +659,11 @@ bool Export::exportCSVSubjects(){
 	if(header)
 		tosExport<<textquote<<"Subject"<<textquote<<endl;
 
-	foreach(Subject* s, gt.rules.subjectsList){
+	for(Subject* s : qAsConst(gt.rules.subjectsList)){
 		tosExport<<textquote<<protectCSV(s->name)<<textquote<<endl;
 	}
 
-	lastWarnings+=Export::tr("%1 subjects exported.").arg(gt.rules.subjectsList.size())+"\n";	
+	lastWarnings+=Export::tr("%1 subjects exported.").arg(gt.rules.subjectsList.size())+"\n";
 	if(fileExport.error()>0){
 		lastWarnings+=Export::tr("FET critical. Writing %1 gave error code %2, which means saving is compromised. Please check your disk's free space.").arg(file).arg(fileExport.error())+QString("\n");
 		return false;
@@ -698,7 +698,7 @@ bool Export::exportCSVTeachers(){
 	if(header)
 		tosExport<<textquote<<"Teacher"<<textquote<<endl;
 
-	foreach(Teacher* t, gt.rules.teachersList){
+	for(Teacher* t : qAsConst(gt.rules.teachersList)){
 		tosExport<<textquote<<protectCSV(t->name)<<textquote<<endl;
 		if(!checkSetSeparator(t->name, setSeparator))
 			lastWarnings+=Export::tr("Warning! Import of activities will fail, because %1 includes set separator +.").arg(t->name)+"\n";
@@ -746,12 +746,12 @@ bool Export::exportCSVStudents(){
 
 	int ig=0;
 	int is=0;
-	foreach(StudentsYear* sty, gt.rules.yearsList){
+	for(StudentsYear* sty : qAsConst(gt.rules.yearsList)){
 		tosExport<<textquote<<protectCSV(sty->name)<<textquote<<fieldSeparator
 					<<CustomFETString::number(sty->numberOfStudents)<<fieldSeparator<<fieldSeparator<<fieldSeparator<<fieldSeparator<<endl;
 		if(!checkSetSeparator(sty->name, setSeparator))
 			lastWarnings+=Export::tr("Warning! Import of activities will fail, because %1 includes set separator +.").arg(sty->name)+"\n";
-		foreach(StudentsGroup* stg, sty->groupsList){
+		for(StudentsGroup* stg : qAsConst(sty->groupsList)){
 			ig++;
 			tosExport	<<textquote<<protectCSV(sty->name)<<textquote<<fieldSeparator
 					<<CustomFETString::number(sty->numberOfStudents)<<fieldSeparator
@@ -759,7 +759,7 @@ bool Export::exportCSVStudents(){
 					<<CustomFETString::number(stg->numberOfStudents)<<fieldSeparator<<fieldSeparator<<endl;
 			if(!checkSetSeparator(stg->name, setSeparator))
 				lastWarnings+=Export::tr("Warning! Import of activities will fail, because %1 includes set separator +.").arg(stg->name)+"\n";
-			foreach(StudentsSubgroup* sts, stg->subgroupsList){
+			for(StudentsSubgroup* sts : qAsConst(stg->subgroupsList)){
 				is++;
 				tosExport	<<textquote<<protectCSV(sty->name)<<textquote<<fieldSeparator
 						<<CustomFETString::number(sty->numberOfStudents)<<fieldSeparator
@@ -828,7 +828,7 @@ bool Export::exportCSVActivities(){
 	activitiesNumberOfSubactivities.clear();
 	activitiesConstraints.clear();
 	
-	foreach(Activity* act, gt.rules.activitiesList){
+	for(Activity* act : qAsConst(gt.rules.activitiesList)){
 		assert(!activitiesRepresentant.contains(act->id));
 		activitiesRepresentant.insert(act->id, act->activityGroupId); //act->id is key, act->agid is value
 	
@@ -838,7 +838,7 @@ bool Export::exportCSVActivities(){
 			activitiesNumberOfSubactivities.insert(act->activityGroupId, n); //overwrites old value
 		}
 	}
-	foreach(TimeConstraint* tc, gt.rules.timeConstraintsList){
+	for(TimeConstraint* tc : qAsConst(gt.rules.timeConstraintsList)){
 		if(tc->type==CONSTRAINT_MIN_DAYS_BETWEEN_ACTIVITIES && tc->active){
 			ConstraintMinDaysBetweenActivities* c=(ConstraintMinDaysBetweenActivities*) tc;
 	
@@ -858,7 +858,7 @@ bool Export::exportCSVActivities(){
 			if(repres>0){
 				if(aset.count()==activitiesNumberOfSubactivities.value(repres, 0)){
 					oktmp=true;
-					foreach(int aid, aset)
+					for(int aid : qAsConst(aset))
 						if(activitiesRepresentant.value(aid, 0)!=repres){
 							oktmp=false;
 							break;

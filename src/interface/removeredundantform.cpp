@@ -61,7 +61,7 @@ void RemoveRedundantForm::wasAccepted()
 {
 	QMultiHash<int, int> adjMatrix;
 
-	foreach(TimeConstraint* tc, gt.rules.timeConstraintsList){
+	for(TimeConstraint* tc : qAsConst(gt.rules.timeConstraintsList)){
 		if(tc->weightPercentage==100.0){
 			if(tc->type==CONSTRAINT_ACTIVITIES_SAME_STARTING_TIME){
 				ConstraintActivitiesSameStartingTime* cst=(ConstraintActivitiesSameStartingTime*) tc;
@@ -86,7 +86,7 @@ void RemoveRedundantForm::wasAccepted()
 	
 	QQueue<int> queue;
 
-	foreach(Activity* act, gt.rules.activitiesList){
+	for(Activity* act : qAsConst(gt.rules.activitiesList)){
 		int start=act->id;
 		
 		if(repr.value(start, -1)==-1){ //not visited
@@ -96,7 +96,7 @@ void RemoveRedundantForm::wasAccepted()
 				int crtHead=queue.dequeue();
 				assert(repr.value(crtHead, -1)==start);
 				QList<int> neighList=adjMatrix.values(crtHead);
-				foreach(int neigh, neighList){
+				for(int neigh : qAsConst(neighList)){
 					if(repr.value(neigh, -1)==-1){
 						queue.enqueue(neigh);
 						repr.insert(neigh, start);
@@ -111,7 +111,7 @@ void RemoveRedundantForm::wasAccepted()
 	
 	QList<ConstraintMinDaysBetweenActivities*> mdcList;
 	
-	foreach(TimeConstraint* tc, gt.rules.timeConstraintsList){
+	for(TimeConstraint* tc : qAsConst(gt.rules.timeConstraintsList)){
 		if(tc->type==CONSTRAINT_MIN_DAYS_BETWEEN_ACTIVITIES){
 			mdcList.prepend((ConstraintMinDaysBetweenActivities*)tc); //inverse order, so earlier activities are not removed (the older ones are)
 		}
@@ -231,7 +231,7 @@ void RemoveRedundantForm::wasAccepted()
 	
 	QString s=tr("The following time constraints will be inactivated (their weight will be made 0%):");
 	s+="\n\n";
-	foreach(ConstraintMinDaysBetweenActivities* ctr, toBeRemovedList){
+	for(ConstraintMinDaysBetweenActivities* ctr : qAsConst(toBeRemovedList)){
 		if(ctr->weightPercentage>0.0){
 			s+=ctr->getDetailedDescription(gt.rules);
 			s+="\n";
@@ -272,7 +272,7 @@ void RemoveRedundantForm::wasAccepted()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	foreach(ConstraintMinDaysBetweenActivities* mdc, toBeRemovedList)
+	for(ConstraintMinDaysBetweenActivities* mdc : qAsConst(toBeRemovedList))
 		mdc->weightPercentage=0.0;
 		
 	toBeRemovedList.clear();

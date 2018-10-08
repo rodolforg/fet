@@ -287,7 +287,7 @@ ChangeRowCommand::ChangeRowCommand(SelectableTimeTable *table, int row, bool mar
 void ChangeRowCommand::undo()
 {
 	int column = 0;
-	foreach(bool mark, rowData){
+	for(bool mark : qAsConst(rowData)){
 		tableWidget->setMarked(row, column, mark);
 		column++;
 	}
@@ -315,7 +315,7 @@ ChangeColumnCommand::ChangeColumnCommand(SelectableTimeTable *table, int column,
 void ChangeColumnCommand::undo()
 {
 	int row = 0;
-	foreach(bool mark, columnData){
+	for(bool mark : qAsConst(columnData)){
 		tableWidget->setMarked(row, column, mark);
 		row++;
 	}

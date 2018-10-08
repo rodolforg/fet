@@ -121,7 +121,7 @@ void DaysForm::ok()
 	int oldDays=gt.rules.nDaysPerWeek;
 	gt.rules.nDaysPerWeek=nDays;
 	
-	foreach(TimeConstraint* tc, gt.rules.timeConstraintsList)
+	for(TimeConstraint* tc : qAsConst(gt.rules.timeConstraintsList))
 		if(tc->hasWrongDayOrHour(gt.rules)){
 			if(tc->canRepairWrongDayOrHour(gt.rules))
 				modifiableTimeConstraints << tc;
@@ -129,7 +129,7 @@ void DaysForm::ok()
 				toBeRemovedTimeConstraints << tc;
 		}
 
-	foreach(SpaceConstraint* sc, gt.rules.spaceConstraintsList)
+	for(SpaceConstraint* sc : qAsConst(gt.rules.spaceConstraintsList))
 		if(sc->hasWrongDayOrHour(gt.rules)){
 			if(sc->canRepairWrongDayOrHour(gt.rules))
 				modifiableSpaceConstraints << sc;
@@ -162,13 +162,13 @@ void DaysForm::ok()
 		gt.rules.nDaysPerWeek=nDays;
 
 		//time
-		foreach(TimeConstraint* tc, modifiableTimeConstraints){
+		for(TimeConstraint* tc : qAsConst(modifiableTimeConstraints)){
 			int tmp=tc->repairWrongDayOrHour(gt.rules);
 			assert(tmp);
 		}
 		bool recomputeTime=false;
 
-		foreach(TimeConstraint* tc, toBeRemovedTimeConstraints){
+		for(TimeConstraint* tc : qAsConst(toBeRemovedTimeConstraints)){
 			if(tc->type==CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIME)
 				recomputeTime=true;
 			bool tmp=gt.rules.removeTimeConstraint(tc);
@@ -177,14 +177,14 @@ void DaysForm::ok()
 		//////
 
 		//space
-		foreach(SpaceConstraint* sc, modifiableSpaceConstraints){
+		for(SpaceConstraint* sc : qAsConst(modifiableSpaceConstraints)){
 			int tmp=sc->repairWrongDayOrHour(gt.rules);
 			assert(tmp);
 		}
 		
 		bool recomputeSpace=false;
 
-		foreach(SpaceConstraint* sc, toBeRemovedSpaceConstraints){
+		for(SpaceConstraint* sc : qAsConst(toBeRemovedSpaceConstraints)){
 			if(sc->type==CONSTRAINT_ACTIVITY_PREFERRED_ROOM)
 				recomputeSpace=true;
 			bool tmp=gt.rules.removeSpaceConstraint(sc);

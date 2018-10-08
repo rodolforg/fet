@@ -67,7 +67,7 @@ ErrorCode::operator bool() const
 
 bool ErrorList::hasError() const
 {
-	foreach (const ErrorCode& erc, *this) {
+	for (const ErrorCode& erc : qAsConst(*this)) {
 		if (erc.isError())
 			return true;
 	}
@@ -76,7 +76,7 @@ bool ErrorList::hasError() const
 
 bool ErrorList::hasFatal() const
 {
-	foreach (const ErrorCode& erc, *this) {
+	for (const ErrorCode& erc : qAsConst(*this)) {
 		if (erc.severity == ErrorCode::Fatal)
 			return true;
 	}

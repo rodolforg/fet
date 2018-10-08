@@ -41,7 +41,7 @@ AddConstraintTeachersActivityTagMaxHoursDailyForm::AddConstraintTeachersActivity
 	updateMaxHoursSpinBox();
 
 	activityTagsComboBox->clear();
-	foreach(ActivityTag* at, gt.rules.activityTagsList)
+	for(ActivityTag* at : qAsConst(gt.rules.activityTagsList))
 		activityTagsComboBox->addItem(at->name);
 
 	constraintChanged();

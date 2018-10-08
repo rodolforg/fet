@@ -87,7 +87,7 @@ void ErrorRenderer::renderErrorList(QWidget* parent, const ErrorList& errors, Er
 {
 	QSet<int> ignoredGroupIds;
 	ignoredGroupIds << -1;
-	foreach (const ErrorCode& erc, errors) {
+	for (const ErrorCode& erc : qAsConst(errors)) {
 		if (erc.severity > severity)
 			continue;
 		if (!erc.groupId) {

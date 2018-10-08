@@ -245,7 +245,7 @@ void TimetableViewStudentsDaysHorizontalForm::shownComboBoxChanged(QString shown
 		QSet<QString> groupsSet;
 		for(int i=0; i<gt.rules.augmentedYearsList.size(); i++){
 			StudentsYear* sty=gt.rules.augmentedYearsList[i];
-			foreach(StudentsGroup* stg, sty->groupsList)
+			for(StudentsGroup* stg : qAsConst(sty->groupsList))
 				if(!groupsSet.contains(stg->name)){
 					groupsListWidget->addItem(stg->name);
 					groupsSet.insert(stg->name);
@@ -268,8 +268,8 @@ void TimetableViewStudentsDaysHorizontalForm::shownComboBoxChanged(QString shown
 		QSet<QString> subgroupsSet;
 		for(int i=0; i<gt.rules.augmentedYearsList.size(); i++){
 			StudentsYear* sty=gt.rules.augmentedYearsList[i];
-			foreach(StudentsGroup* stg, sty->groupsList)
-				foreach(StudentsSubgroup* sts, stg->subgroupsList)
+			for(StudentsGroup* stg : qAsConst(sty->groupsList))
+				for(StudentsSubgroup* sts : qAsConst(stg->subgroupsList))
 					if(!subgroupsSet.contains(sts->name)){
 						subgroupsListWidget->addItem(sts->name);
 						subgroupsSet.insert(sts->name);
@@ -740,7 +740,7 @@ void TimetableViewStudentsDaysHorizontalForm::lock(bool lockTime, bool lockSpace
 	int addedS=0, unlockedS=0;
 
 	//lock selected activities
-	foreach (const QTableWidgetItem *item, studentsTimetableTable->selectedItems()) {
+	for (const QTableWidgetItem *item : studentsTimetableTable->selectedItems()) {
 		int j = item->row();
 		int k = item->column();
 				int ai=CachedSchedule::students_timetable_weekly[i][k][j];

@@ -233,7 +233,7 @@ void ModifyConstraintActivityPreferredStartingTimeForm::ok()
 		
 		bool duplicate=false;
 		
-		foreach(TimeConstraint* tc, gt.rules.timeConstraintsList)
+		for(TimeConstraint* tc : qAsConst(gt.rules.timeConstraintsList))
 			if(tc!=this->_ctr && tc->type==CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIME)
 				if( ( *((ConstraintActivityPreferredStartingTime*)tc) ) == apst){
 					duplicate=true;

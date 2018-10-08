@@ -100,7 +100,7 @@ void ModifyConstraintTeacherNotAvailableTimesForm::ok()
 		return;
 	}
 
-	foreach(TimeConstraint* c, gt.rules.timeConstraintsList)
+	for(TimeConstraint* c : qAsConst(gt.rules.timeConstraintsList))
 		if(c!=this->_ctr && c->type==CONSTRAINT_TEACHER_NOT_AVAILABLE_TIMES){
 			ConstraintTeacherNotAvailableTimes* cc=(ConstraintTeacherNotAvailableTimes*)c;
 			if(cc->teacher==teacher_name){

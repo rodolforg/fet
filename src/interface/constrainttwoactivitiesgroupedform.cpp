@@ -60,8 +60,8 @@ bool ConstraintTwoActivitiesGroupedForm::filterOk(const TimeConstraint* ctr) con
 	activitiesIds << c->firstActivityId << c->secondActivityId;
 
 	QSet<const Activity *> activities;
-	foreach(int id, activitiesIds){
-		foreach(const Activity* a, gt.rules.activitiesList) {
+	for(int id : qAsConst(activitiesIds)){
+		for(const Activity* a : qAsConst(gt.rules.activitiesList)) {
 			if(a->id==id) {
 				activities << a;
 				break;

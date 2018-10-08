@@ -54,7 +54,7 @@ void LockUnlock::computeLockedUnlockedActivitiesOnlyTime(const Rules* rules)
 	idsOfLockedTime.clear();
 	idsOfPermanentlyLockedTime.clear();
 
-	foreach(const TimeConstraint* tc, rules->timeConstraintsList){
+	for(TimeConstraint* tc : qAsConst(rules->timeConstraintsList)){
 		if(tc->type==CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIME && tc->weightPercentage==100.0 && tc->active){
 			const ConstraintActivityPreferredStartingTime* c=(const ConstraintActivityPreferredStartingTime*) tc;
 			if(c->day >= 0  &&  c->hour >= 0) {
@@ -73,7 +73,7 @@ void LockUnlock::computeLockedUnlockedActivitiesOnlySpace(const Rules* rules)
 	idsOfLockedSpace.clear();
 	idsOfPermanentlyLockedSpace.clear();
 
-	foreach(const SpaceConstraint* sc, rules->spaceConstraintsList){
+	for(const SpaceConstraint* sc : qAsConst(rules->spaceConstraintsList)){
 		if(sc->type==CONSTRAINT_ACTIVITY_PREFERRED_ROOM && sc->weightPercentage==100.0 && sc->active){
 			const ConstraintActivityPreferredRoom* c=(const ConstraintActivityPreferredRoom*) sc;
 
@@ -134,7 +134,7 @@ ErrorList LockUnlock::unlockTime(Rules* rules, int activityId, int& nUnlocked)
 	tmptc.clear();
 	int count=0;
 
-	foreach(ConstraintActivityPreferredStartingTime* c, rules->apstHash.value(activityId, QSet<ConstraintActivityPreferredStartingTime*>())){
+	for(ConstraintActivityPreferredStartingTime* c : rules->apstHash.value(activityId, QSet<ConstraintActivityPreferredStartingTime*>())){
 		assert(c->activityId == activityId);
 		if(c->activityId==activityId && c->weightPercentage==100.0 && c->active && c->day>=0 && c->hour>=0){
 			count++;
@@ -173,7 +173,7 @@ ErrorList LockUnlock::unlockTime(Rules* rules, int activityId, int& nUnlocked)
 							QCoreApplication::translate("TimetableViewForm", "You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints").arg(tmptc.size()));
 
 	nUnlocked = 0;
-	foreach(TimeConstraint* deltc, tmptc){
+	for(TimeConstraint* deltc : qAsConst(tmptc)){
 		errors << ErrorCode(ErrorCode::Info,
 							QCoreApplication::translate("TimetableViewForm", "The following constraint will be deleted:")+"\n"+deltc->getDetailedDescription(*rules)+"\n");
 		bool ruleWasAlreadyComputed = rules->internalStructureComputed;
@@ -220,7 +220,7 @@ ErrorList LockUnlock::unlockSpace(Rules* rules, int activityId, int& nUnlocked)
 	tmpsc.clear();
 	int count=0;
 
-	foreach(ConstraintActivityPreferredRoom* c, rules->aprHash.value(activityId, QSet<ConstraintActivityPreferredRoom*>())){
+	for(ConstraintActivityPreferredRoom* c : rules->aprHash.value(activityId, QSet<ConstraintActivityPreferredRoom*>())){
 		assert(c->activityId==activityId);
 		if(c->activityId==activityId && c->weightPercentage==100.0 && c->active){
 			count++;
@@ -259,7 +259,7 @@ ErrorList LockUnlock::unlockSpace(Rules* rules, int activityId, int& nUnlocked)
 							QCoreApplication::translate("TimetableViewForm", "You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints").arg(tmpsc.size()));
 
 	nUnlocked = 0;
-	foreach(SpaceConstraint* delsc, tmpsc){
+	for(SpaceConstraint* delsc : tmpsc){
 		errors << ErrorCode(ErrorCode::Info,
 							QCoreApplication::translate("TimetableViewForm", "The following constraint will be deleted:")+"\n"+delsc->getDetailedDescription(*rules)+"\n");
 		bool ruleWasAlreadyComputed = rules->internalStructureComputed;

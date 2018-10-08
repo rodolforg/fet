@@ -69,21 +69,12 @@ AddActivityForm::AddActivityForm(QWidget* parent, const QString& teacherName, co
 {
 	setupUi(this);
 
-	foreach(Teacher* tch, gt.rules.teachersList)
+	for(Teacher* tch : qAsConst(gt.rules.teachersList))
 		teacherNamesSet.insert(tch->name);
-	foreach(Subject* sbj, gt.rules.subjectsList)
+	for(Subject* sbj : qAsConst(gt.rules.subjectsList))
 		subjectNamesSet.insert(sbj->name);
-	foreach(ActivityTag* at, gt.rules.activityTagsList)
+	for(ActivityTag* at : qAsConst(gt.rules.activityTagsList))
 		activityTagNamesSet.insert(at->name);
-	/*foreach(StudentsYear* year, gt.rules.yearsList){
-		numberOfStudentsHash.insert(year->name, year->numberOfStudents);
-		foreach(StudentsGroup* group, year->groupsList){
-			numberOfStudentsHash.insert(group->name, group->numberOfStudents);
-			foreach(StudentsSubgroup* subgroup, group->subgroupsList){
-				numberOfStudentsHash.insert(subgroup->name, subgroup->numberOfStudents);
-			}
-		}
-	}*/
 	
 	allTeachersListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
 	selectedTeachersListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
@@ -785,7 +776,7 @@ void AddActivityForm::addActivity()
 		ErrorList errors = gt.rules.addSimpleActivityFast(activityid, 0, teachers_names, subject_name, activity_tags_names,
 			students_names, duration, duration, active,
 			(nStudentsSpinBox->value()==-1), nStudentsSpinBox->value(), numberOfStudents);
-		foreach (const ErrorCode& erc, errors) {
+		for (const ErrorCode& erc : qAsConst(errors)) {
 			if (erc.isError())
 				QMessageBox::critical(this, erc.getSeverityTitle(), erc.message);
 			else
@@ -854,7 +845,7 @@ void AddActivityForm::addActivity()
 			nsplit, totalduration, durations,
 			active, minD, weight, forceConsecutiveCheckBox->isChecked(),
 			(nStudentsSpinBox->value()==-1), nStudentsSpinBox->value(), numberOfStudents);
-		foreach (const ErrorCode& erc, errors) {
+		for (const ErrorCode& erc : qAsConst(errors)) {
 			if (erc.isError())
 				QMessageBox::critical(this, erc.getSeverityTitle(), erc.message);
 			else

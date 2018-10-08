@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<fet version="5.30.3">
+<fet version="5.37.0">
 
 <Institution_Name>German Secondary School</Institution_Name>
 
@@ -132,6 +132,7 @@ The teachers&apos; names are replaced by other random names.
 <Activity_Tags_List>
 <Activity_Tag>
 	<Name>1,3,5</Name>
+	<Printable>true</Printable>
 	<Comments></Comments>
 </Activity_Tag>
 </Activity_Tags_List>
@@ -139,232 +140,326 @@ The teachers&apos; names are replaced by other random names.
 <Teachers_List>
 <Teacher>
 	<Name>Agnes</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>15</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>AG</Qualified_Subject>
+		<Qualified_Subject>DE</Qualified_Subject>
+		<Qualified_Subject>MU</Qualified_Subject>
+		<Qualified_Subject>PK</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Alex</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>26</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>MA</Qualified_Subject>
+		<Qualified_Subject>SP</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Alina</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>19</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>FR</Qualified_Subject>
+		<Qualified_Subject>RE</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Anita</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>20</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>AG</Qualified_Subject>
+		<Qualified_Subject>BI</Qualified_Subject>
+		<Qualified_Subject>CH</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Anna</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>25</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>DE</Qualified_Subject>
+		<Qualified_Subject>EN</Qualified_Subject>
+		<Qualified_Subject>GE</Qualified_Subject>
+		<Qualified_Subject>PK</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>David</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>25</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>EN</Qualified_Subject>
+		<Qualified_Subject>SP</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Diana</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>27</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>EN</Qualified_Subject>
+		<Qualified_Subject>RE</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Greta</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>25</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>EN</Qualified_Subject>
+		<Qualified_Subject>EK</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Jan</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>9</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>PH</Qualified_Subject>
+		<Qualified_Subject>TC</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Jana</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>22</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>CH</Qualified_Subject>
+		<Qualified_Subject>MA</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Jenny</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>28</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>BI</Qualified_Subject>
+		<Qualified_Subject>MA</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Julia</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>6</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>EK</Qualified_Subject>
+		<Qualified_Subject>EN</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Knut</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>27</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>FU</Qualified_Subject>
+		<Qualified_Subject>MA</Qualified_Subject>
+		<Qualified_Subject>PH</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Kyra</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>17</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>MA</Qualified_Subject>
+		<Qualified_Subject>SP</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Laura</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>16</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>BI</Qualified_Subject>
+		<Qualified_Subject>DE</Qualified_Subject>
+		<Qualified_Subject>PK</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Lina</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>25</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>AG</Qualified_Subject>
+		<Qualified_Subject>BI</Qualified_Subject>
+		<Qualified_Subject>TX</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Linda</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>18</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>DE</Qualified_Subject>
+		<Qualified_Subject>FU</Qualified_Subject>
+		<Qualified_Subject>PK</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Lisa</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>22</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>DE</Qualified_Subject>
+		<Qualified_Subject>FU</Qualified_Subject>
+		<Qualified_Subject>RE</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Luisa</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>27</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>EN</Qualified_Subject>
+		<Qualified_Subject>MU</Qualified_Subject>
+		<Qualified_Subject>FR</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Maren</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>16</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>AG</Qualified_Subject>
+		<Qualified_Subject>DE</Qualified_Subject>
+		<Qualified_Subject>KU</Qualified_Subject>
+		<Qualified_Subject>PK</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Marie</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>20</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>DE</Qualified_Subject>
+		<Qualified_Subject>FR</Qualified_Subject>
+		<Qualified_Subject>PK</Qualified_Subject>
+		<Qualified_Subject>RE</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Mario</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>26</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>DE</Qualified_Subject>
+		<Qualified_Subject>MU</Qualified_Subject>
+		<Qualified_Subject>RE</Qualified_Subject>
+		<Qualified_Subject>PK</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Max</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>24</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>AG</Qualified_Subject>
+		<Qualified_Subject>MA</Qualified_Subject>
+		<Qualified_Subject>PH</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Mona</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>13</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>KU</Qualified_Subject>
+		<Qualified_Subject>MA</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Nils</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>26</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>DE</Qualified_Subject>
+		<Qualified_Subject>FU</Qualified_Subject>
+		<Qualified_Subject>GE</Qualified_Subject>
+		<Qualified_Subject>MA</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Otto</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>16</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>DE</Qualified_Subject>
+		<Qualified_Subject>GE</Qualified_Subject>
+		<Qualified_Subject>RE</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Pia</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>27</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>DE</Qualified_Subject>
+		<Qualified_Subject>KU</Qualified_Subject>
+		<Qualified_Subject>RE</Qualified_Subject>
+		<Qualified_Subject>PK</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Rene</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>12</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>AG</Qualified_Subject>
+		<Qualified_Subject>PH</Qualified_Subject>
+		<Qualified_Subject>TC</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Sepp</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>8</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>DE</Qualified_Subject>
+		<Qualified_Subject>EN</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Simon</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>22</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>EN</Qualified_Subject>
+		<Qualified_Subject>GE</Qualified_Subject>
+		<Qualified_Subject>SW</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Stacy</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>27</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>PK</Qualified_Subject>
+		<Qualified_Subject>SP</Qualified_Subject>
+		<Qualified_Subject>SW</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Tanja</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>19</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>MA</Qualified_Subject>
+		<Qualified_Subject>TC</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
 	<Name>Ute</Name>
-	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Target_Number_of_Hours>25</Target_Number_of_Hours>
 	<Qualified_Subjects>
+		<Qualified_Subject>AG</Qualified_Subject>
+		<Qualified_Subject>EK</Qualified_Subject>
+		<Qualified_Subject>EN</Qualified_Subject>
+		<Qualified_Subject>FU</Qualified_Subject>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
@@ -8141,7 +8236,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintStudentsMaxGapsPerWeek>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>21</Activity_Id>
@@ -8153,7 +8248,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>25</Activity_Id>
@@ -8165,7 +8260,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>29</Activity_Id>
@@ -8177,7 +8272,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>33</Activity_Id>
@@ -8189,7 +8284,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>5</Number_of_Activities>
 	<Activity_Id>37</Activity_Id>
@@ -8202,7 +8297,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>5</Number_of_Activities>
 	<Activity_Id>42</Activity_Id>
@@ -8215,7 +8310,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>5</Number_of_Activities>
 	<Activity_Id>47</Activity_Id>
@@ -8228,7 +8323,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>0</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>5</Number_of_Activities>
 	<Activity_Id>52</Activity_Id>
@@ -8241,7 +8336,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>57</Activity_Id>
@@ -8251,7 +8346,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>59</Activity_Id>
@@ -8261,7 +8356,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>61</Activity_Id>
@@ -8271,7 +8366,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>63</Activity_Id>
@@ -8281,7 +8376,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>73</Activity_Id>
@@ -8291,7 +8386,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>75</Activity_Id>
@@ -8301,7 +8396,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>87</Activity_Id>
@@ -8311,7 +8406,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>97</Activity_Id>
@@ -8323,7 +8418,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>101</Activity_Id>
@@ -8335,7 +8430,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>105</Activity_Id>
@@ -8347,7 +8442,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>109</Activity_Id>
@@ -8359,7 +8454,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>113</Activity_Id>
@@ -8371,7 +8466,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>117</Activity_Id>
@@ -8383,7 +8478,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>121</Activity_Id>
@@ -8395,7 +8490,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>125</Activity_Id>
@@ -8407,7 +8502,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>5</Number_of_Activities>
 	<Activity_Id>129</Activity_Id>
@@ -8420,7 +8515,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>5</Number_of_Activities>
 	<Activity_Id>134</Activity_Id>
@@ -8433,7 +8528,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>5</Number_of_Activities>
 	<Activity_Id>144</Activity_Id>
@@ -8446,7 +8541,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>149</Activity_Id>
@@ -8456,7 +8551,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>151</Activity_Id>
@@ -8466,7 +8561,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>153</Activity_Id>
@@ -8476,7 +8571,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>155</Activity_Id>
@@ -8486,7 +8581,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>161</Activity_Id>
@@ -8496,7 +8591,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>163</Activity_Id>
@@ -8506,7 +8601,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>165</Activity_Id>
@@ -8516,7 +8611,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>167</Activity_Id>
@@ -8526,7 +8621,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>169</Activity_Id>
@@ -8536,7 +8631,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>171</Activity_Id>
@@ -8546,7 +8641,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>173</Activity_Id>
@@ -8556,7 +8651,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>175</Activity_Id>
@@ -8566,7 +8661,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>177</Activity_Id>
@@ -8576,7 +8671,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>179</Activity_Id>
@@ -8586,7 +8681,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>181</Activity_Id>
@@ -8596,7 +8691,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>183</Activity_Id>
@@ -8606,7 +8701,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>185</Activity_Id>
@@ -8616,7 +8711,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>187</Activity_Id>
@@ -8626,7 +8721,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>189</Activity_Id>
@@ -8636,7 +8731,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>191</Activity_Id>
@@ -8646,7 +8741,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>197</Activity_Id>
@@ -8656,7 +8751,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>203</Activity_Id>
@@ -8668,7 +8763,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>207</Activity_Id>
@@ -8680,7 +8775,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>211</Activity_Id>
@@ -8692,7 +8787,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>215</Activity_Id>
@@ -8704,7 +8799,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>219</Activity_Id>
@@ -8716,7 +8811,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>223</Activity_Id>
@@ -8728,7 +8823,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>227</Activity_Id>
@@ -8740,7 +8835,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>231</Activity_Id>
@@ -8752,7 +8847,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>235</Activity_Id>
@@ -8764,7 +8859,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>239</Activity_Id>
@@ -8776,7 +8871,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>243</Activity_Id>
@@ -8788,7 +8883,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>247</Activity_Id>
@@ -8800,7 +8895,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>251</Activity_Id>
@@ -8810,7 +8905,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>253</Activity_Id>
@@ -8820,7 +8915,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>255</Activity_Id>
@@ -8830,7 +8925,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>257</Activity_Id>
@@ -8840,7 +8935,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>263</Activity_Id>
@@ -8850,7 +8945,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>265</Activity_Id>
@@ -8860,7 +8955,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>267</Activity_Id>
@@ -8870,7 +8965,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>269</Activity_Id>
@@ -8880,7 +8975,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>3</Number_of_Activities>
 	<Activity_Id>275</Activity_Id>
@@ -8891,7 +8986,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>3</Number_of_Activities>
 	<Activity_Id>278</Activity_Id>
@@ -8902,7 +8997,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>3</Number_of_Activities>
 	<Activity_Id>281</Activity_Id>
@@ -8913,7 +9008,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>3</Number_of_Activities>
 	<Activity_Id>284</Activity_Id>
@@ -8924,7 +9019,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>303</Activity_Id>
@@ -8934,7 +9029,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>313</Activity_Id>
@@ -8946,7 +9041,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>317</Activity_Id>
@@ -8958,7 +9053,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>321</Activity_Id>
@@ -8970,7 +9065,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>325</Activity_Id>
@@ -8982,7 +9077,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>329</Activity_Id>
@@ -8994,7 +9089,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>333</Activity_Id>
@@ -9006,7 +9101,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>337</Activity_Id>
@@ -9018,7 +9113,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>341</Activity_Id>
@@ -9030,7 +9125,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>345</Activity_Id>
@@ -9042,7 +9137,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>349</Activity_Id>
@@ -9052,7 +9147,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>351</Activity_Id>
@@ -9062,7 +9157,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>353</Activity_Id>
@@ -9072,7 +9167,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>361</Activity_Id>
@@ -9082,7 +9177,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>363</Activity_Id>
@@ -9092,7 +9187,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>365</Activity_Id>
@@ -9102,7 +9197,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>367</Activity_Id>
@@ -9112,7 +9207,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>369</Activity_Id>
@@ -9122,7 +9217,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>371</Activity_Id>
@@ -9132,7 +9227,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>373</Activity_Id>
@@ -9142,7 +9237,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>375</Activity_Id>
@@ -9152,7 +9247,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>377</Activity_Id>
@@ -9162,7 +9257,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>379</Activity_Id>
@@ -9172,7 +9267,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>3</Number_of_Activities>
 	<Activity_Id>389</Activity_Id>
@@ -9183,7 +9278,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>3</Number_of_Activities>
 	<Activity_Id>392</Activity_Id>
@@ -9194,7 +9289,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>3</Number_of_Activities>
 	<Activity_Id>395</Activity_Id>
@@ -9205,7 +9300,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>3</Number_of_Activities>
 	<Activity_Id>398</Activity_Id>
@@ -9216,7 +9311,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>3</Number_of_Activities>
 	<Activity_Id>401</Activity_Id>
@@ -9227,7 +9322,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>404</Activity_Id>
@@ -9239,7 +9334,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>408</Activity_Id>
@@ -9251,7 +9346,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>412</Activity_Id>
@@ -9263,7 +9358,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>416</Activity_Id>
@@ -9275,7 +9370,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>420</Activity_Id>
@@ -9287,7 +9382,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>424</Activity_Id>
@@ -9299,7 +9394,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>428</Activity_Id>
@@ -9311,7 +9406,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>432</Activity_Id>
@@ -9323,7 +9418,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>436</Activity_Id>
@@ -9335,7 +9430,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>440</Activity_Id>
@@ -9347,7 +9442,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>444</Activity_Id>
@@ -9359,7 +9454,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>448</Activity_Id>
@@ -9371,7 +9466,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>452</Activity_Id>
@@ -9381,7 +9476,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>454</Activity_Id>
@@ -9391,7 +9486,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>456</Activity_Id>
@@ -9401,7 +9496,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>458</Activity_Id>
@@ -9411,7 +9506,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>468</Activity_Id>
@@ -9421,7 +9516,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>470</Activity_Id>
@@ -9431,7 +9526,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>472</Activity_Id>
@@ -9441,7 +9536,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>474</Activity_Id>
@@ -9451,7 +9546,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>476</Activity_Id>
@@ -9461,7 +9556,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>479</Activity_Id>
@@ -9471,7 +9566,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>0</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>481</Activity_Id>
@@ -9483,7 +9578,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>485</Activity_Id>
@@ -9493,7 +9588,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>487</Activity_Id>
@@ -9503,7 +9598,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>489</Activity_Id>
@@ -9513,7 +9608,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>491</Activity_Id>
@@ -9523,7 +9618,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>493</Activity_Id>
@@ -9535,7 +9630,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>497</Activity_Id>
@@ -9547,7 +9642,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>0</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>501</Activity_Id>
@@ -9559,7 +9654,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>505</Activity_Id>
@@ -9571,7 +9666,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>509</Activity_Id>
@@ -9583,7 +9678,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>513</Activity_Id>
@@ -9595,7 +9690,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>517</Activity_Id>
@@ -9607,7 +9702,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>521</Activity_Id>
@@ -9619,7 +9714,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>525</Activity_Id>
@@ -9631,7 +9726,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>529</Activity_Id>
@@ -9643,7 +9738,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>533</Activity_Id>
@@ -9655,7 +9750,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>537</Activity_Id>
@@ -9667,7 +9762,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>541</Activity_Id>
@@ -9679,7 +9774,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>551</Activity_Id>
@@ -9689,7 +9784,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>553</Activity_Id>
@@ -9699,7 +9794,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>555</Activity_Id>
@@ -9709,7 +9804,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>560</Activity_Id>
@@ -9846,7 +9941,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintTeacherMaxDaysPerWeek>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>562</Activity_Id>
@@ -9858,7 +9953,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>566</Activity_Id>
@@ -9870,7 +9965,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>570</Activity_Id>
@@ -9882,7 +9977,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>574</Activity_Id>
@@ -9894,7 +9989,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>578</Activity_Id>
@@ -9977,7 +10072,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintActivitiesPreferredStartingTimes>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>594</Activity_Id>
@@ -9987,7 +10082,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>596</Activity_Id>
@@ -9997,7 +10092,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>0</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>598</Activity_Id>
@@ -10009,7 +10104,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>602</Activity_Id>
@@ -10019,7 +10114,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>604</Activity_Id>
@@ -10029,7 +10124,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>606</Activity_Id>
@@ -10039,7 +10134,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>608</Activity_Id>
@@ -10051,7 +10146,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>612</Activity_Id>
@@ -10063,7 +10158,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>0</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>616</Activity_Id>
@@ -10075,7 +10170,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintMinDaysBetweenActivities>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>4</Number_of_Activities>
 	<Activity_Id>620</Activity_Id>
@@ -10114,7 +10209,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintActivityPreferredStartingTimes>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>624</Activity_Id>
@@ -10151,7 +10246,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintActivityPreferredStartingTimes>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>626</Activity_Id>
@@ -10188,7 +10283,7 @@ The teachers&apos; names are replaced by other random names.
 	<Comments></Comments>
 </ConstraintActivityPreferredStartingTimes>
 <ConstraintMinDaysBetweenActivities>
-	<Weight_Percentage>95</Weight_Percentage>
+	<Weight_Percentage>100</Weight_Percentage>
 	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
 	<Number_of_Activities>2</Number_of_Activities>
 	<Activity_Id>628</Activity_Id>
@@ -11875,6 +11970,18 @@ The teachers&apos; names are replaced by other random names.
 	<Active>true</Active>
 	<Comments></Comments>
 </ConstraintSubactivitiesPreferredTimeSlots>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>4</Number_of_Activities>
+	<Activity_Id>52</Activity_Id>
+	<Activity_Id>53</Activity_Id>
+	<Activity_Id>54</Activity_Id>
+	<Activity_Id>55</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
 </Time_Constraints_List>
 
 <Space_Constraints_List>

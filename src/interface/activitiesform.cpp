@@ -255,16 +255,16 @@ void ActivitiesForm::studentsFilterChanged()
 			if(set->type==STUDENTS_YEAR){
 				const StudentsYear* year=(const StudentsYear*)set;
 				showedStudents.insert(year->name);
-				foreach(const StudentsGroup* group, year->groupsList){
+				for(const StudentsGroup* group : qAsConst(year->groupsList)){
 					showedStudents.insert(group->name);
-					foreach(const StudentsSubgroup* subgroup, group->subgroupsList)
+					for(const StudentsSubgroup* subgroup : qAsConst(group->subgroupsList))
 						showedStudents.insert(subgroup->name);
 				}
 			}
 			else if(set->type==STUDENTS_GROUP){
 				const StudentsGroup* group=(const StudentsGroup*) set;
 				showedStudents.insert(group->name);
-				foreach(const StudentsSubgroup* subgroup, group->subgroupsList)
+				for(const StudentsSubgroup* subgroup : qAsConst(group->subgroupsList))
 					showedStudents.insert(subgroup->name);
 			}
 			else if(set->type==STUDENTS_SUBGROUP){
@@ -276,12 +276,12 @@ void ActivitiesForm::studentsFilterChanged()
 				
 			//up
 			QString crt=studentsComboBox->currentText();
-			foreach(const StudentsYear* year, gt.rules.yearsList){
-				foreach(const StudentsGroup* group, year->groupsList){
+			for(const StudentsYear* year : qAsConst(gt.rules.yearsList)){
+				for(const StudentsGroup* group : qAsConst(year->groupsList)){
 					if(group->name==crt){
 						showedStudents.insert(year->name);
 					}
-					foreach(const StudentsSubgroup* subgroup, group->subgroupsList){
+					for(const StudentsSubgroup* subgroup : qAsConst(group->subgroupsList)){
 						if(subgroup->name==crt){
 							showedStudents.insert(year->name);
 							showedStudents.insert(group->name);
@@ -317,7 +317,7 @@ void ActivitiesForm::filterChanged()
 	
 	const bool hideInactiveActivities = hideInactiveCheckBox->isChecked();
 
-	foreach(Activity* act, gt.rules.activitiesList) {
+	for(Activity* act : qAsConst(gt.rules.activitiesList)) {
 		if (hideInactiveActivities && !act->active)
 			continue;
 		if(this->filterOk(act)){

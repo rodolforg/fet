@@ -1349,7 +1349,7 @@ void Import::importCSVActivityTags(QWidget* parent){
 
 	//add activity tags (start) - similar to teachersform.cpp by Liviu modified by Volker
 	tmpSet.clear();
-	foreach(ActivityTag* at, gt.rules.activityTagsList)
+	for(ActivityTag* at : qAsConst(gt.rules.activityTagsList))
 		tmpSet.insert(at->name);
 	int count=0;
 	for(int i=0; i<fieldList[FIELD_ACTIVITY_TAG_NAME].size(); i++){
@@ -1463,7 +1463,7 @@ void Import::importCSVRoomsAndBuildings(QWidget* parent){
 
 	//add buildings (start) - similar to teachersform.cpp by Liviu modified by Volker
 	tmpSet.clear();
-	foreach(Building* bu, gt.rules.buildingsList)
+	for(Building* bu : qAsConst(gt.rules.buildingsList))
 		tmpSet.insert(bu->name);
 	int count=0;
 	for(int i=0; i<fieldList[FIELD_BUILDING_NAME].size(); i++){
@@ -1481,7 +1481,7 @@ void Import::importCSVRoomsAndBuildings(QWidget* parent){
 
 	//add rooms (start) - similar to teachersform.cpp by Liviu modified by Volker
 	tmpSet.clear();
-	foreach(Room* rm, gt.rules.roomsList)
+	for(Room* rm : qAsConst(gt.rules.roomsList))
 		tmpSet.insert(rm->name);
 	int countroom=0;
 	for(int i=0; i<fieldList[FIELD_ROOM_NAME].size(); i++){
@@ -1569,7 +1569,7 @@ void Import::importCSVSubjects(QWidget* parent){
 
 	//add subjects (start) - similar to teachersform.cpp by Liviu modified by Volker
 	tmpSet.clear();
-	foreach(Subject* sbj, gt.rules.subjectsList)
+	for(Subject* sbj : qAsConst(gt.rules.subjectsList))
 		tmpSet.insert(sbj->name);
 	int count=0;
 	for(int i=0; i<fieldList[FIELD_SUBJECT_NAME].size(); i++){
@@ -1645,7 +1645,7 @@ void Import::importCSVTeachers(QWidget* parent){
 
 	//add teachers (start) - similar to teachersform.cpp by Liviu modified by Volker
 	tmpSet.clear();
-	foreach(Teacher* tch, gt.rules.teachersList)
+	for(Teacher* tch : qAsConst(gt.rules.teachersList))
 		tmpSet.insert(tch->name);
 	int count=0;
 	for(int i=0; i<fieldList[FIELD_TEACHER_NAME].size(); i++){
@@ -1854,12 +1854,12 @@ void Import::importCSVStudents(QWidget* parent){
 	QHash<QString, StudentsSet*> studentsHash;
 	QSet<QPair<QString, QString> > groupsInYearSet; //first year, then group
 	QSet<QPair<QString, QString> > subgroupsInGroupSet; //first group, then subgroup
-	foreach(StudentsYear* year, gt.rules.yearsList){
+	for(StudentsYear* year : qAsConst(gt.rules.yearsList)){
 		studentsHash.insert(year->name, year);
-		foreach(StudentsGroup* group, year->groupsList){
+		for(StudentsGroup* group : qAsConst(year->groupsList)){
 			studentsHash.insert(group->name, group);
 			groupsInYearSet.insert(QPair<QString, QString> (year->name, group->name));
-			foreach(StudentsSubgroup* subgroup, group->subgroupsList){
+			for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList)){
 				studentsHash.insert(subgroup->name, subgroup);
 				subgroupsInGroupSet.insert(QPair<QString, QString> (group->name, subgroup->name));
 			}
@@ -2213,11 +2213,11 @@ void Import::importCSVActivities(QWidget* parent){
 	//check if already in memory (start)
 	//check if students set is in memory
 	/*QHash<QString, StudentsSet*> studentsHash;
-	foreach(StudentsYear* year, gt.rules.yearsList){
+	for(StudentsYear* year : qAsConst(gt.rules.yearsList)){
 		studentsHash.insert(year->name, year);
-		foreach(StudentsGroup* group, year->groupsList){
+		for(StudentsGroup* group : qAsConst(year->groupsList)){
 			studentsHash.insert(group->name, group);
-			foreach(StudentsSubgroup* subgroup, group->subgroupsList){
+			for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList)){
 				studentsHash.insert(subgroup->name, subgroup);
 			}
 		}
@@ -2340,7 +2340,7 @@ void Import::importCSVActivities(QWidget* parent){
 	//add teachers
 	//maybe TODO write a function, so also import teacher csv can share this code
 	tmpSet.clear();
-	foreach(Teacher* tch, gt.rules.teachersList)
+	for(Teacher* tch : qAsConst(gt.rules.teachersList))
 		tmpSet.insert(tch->name);
 	int count=0;
 	for(int i=0; i<fieldList[FIELD_TEACHER_NAME].size(); i++){
@@ -2362,7 +2362,7 @@ void Import::importCSVActivities(QWidget* parent){
 	//add subjects
 	//maybe TODO write a function, so also import subjects csv can share this code
 	tmpSet.clear();
-	foreach(Subject* sbj, gt.rules.subjectsList)
+	for(Subject* sbj : qAsConst(gt.rules.subjectsList))
 		tmpSet.insert(sbj->name);
 	count=0;
 	for(int i=0; i<fieldList[FIELD_SUBJECT_NAME].size(); i++){
@@ -2383,7 +2383,7 @@ void Import::importCSVActivities(QWidget* parent){
 	//add activity tags
 	//maybe TODO write a function, so also import activity tags csv can share this code
 	tmpSet.clear();
-	foreach(ActivityTag* at, gt.rules.activityTagsList)
+	for(ActivityTag* at : qAsConst(gt.rules.activityTagsList))
 		tmpSet.insert(at->name);
 	count=0;
 	for(int i=0; i<fieldList[FIELD_ACTIVITY_TAG_NAME].size(); i++){
@@ -2443,7 +2443,7 @@ void Import::importCSVActivities(QWidget* parent){
 		
 		QStringList teachers_names;
 		QSet<QString> _teachersSet;
-		foreach(QString teacherName, teachers_namesFromFile){
+		for(const QString& teacherName : qAsConst(teachers_namesFromFile)){
 			//assert(teachersHash.contains(teacherName));
 			if(!_teachersSet.contains(teacherName)){
 				_teachersSet.insert(teacherName);
@@ -2461,7 +2461,7 @@ void Import::importCSVActivities(QWidget* parent){
 		
 		QStringList activity_tags_names;
 		QSet<QString> _activityTagsSet;
-		foreach(QString activityTag, activity_tags_namesFromFile){
+		for(const QString& activityTag : qAsConst(activity_tags_namesFromFile)){
 			//assert(activityTagsHash.contains(activityTag));
 			if(!_activityTagsSet.contains(activityTag)){
 				_activityTagsSet.insert(activityTag);
@@ -2478,7 +2478,7 @@ void Import::importCSVActivities(QWidget* parent){
 		int numberOfStudents=0;
 		QStringList students_names;
 		QSet<QString> _studentsSet;
-		foreach(QString studentsSet, students_namesFromFile){
+		for(const QString& studentsSet : qAsConst(students_namesFromFile)){
 			assert(studentsHash.contains(studentsSet));
 			if(!_studentsSet.contains(studentsSet)){
 				_studentsSet.insert(studentsSet);
@@ -2517,7 +2517,7 @@ void Import::importCSVActivities(QWidget* parent){
 			if(duration>0){
 				ErrorList errors = gt.rules.addSimpleActivityFast(activityid, 0, teachers_names, subject_name, activity_tags_names,
 					students_names, duration, duration, active, true, -1, numberOfStudents);
-				foreach (const ErrorCode& erc, errors) {
+				for (const ErrorCode& erc : qAsConst(errors)) {
 					if (erc.isError())
 						QMessageBox::critical(newParent, erc.getSeverityTitle(), erc.message);
 					else
@@ -2585,7 +2585,7 @@ void Import::importCSVActivities(QWidget* parent){
 					teachers_names, subject_name, activity_tags_names, students_names,
 					nsplit, totalduration, durations,
 					active, minD, weight, force, true, -1, numberOfStudents);
-				foreach (const ErrorCode& erc, errors) {
+				for (const ErrorCode& erc : qAsConst(errors)) {
 					if (erc.isError())
 						QMessageBox::critical(newParent, erc.getSeverityTitle(), erc.message);
 					else

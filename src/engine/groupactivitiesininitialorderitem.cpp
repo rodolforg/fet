@@ -16,7 +16,7 @@ void GroupActivitiesInInitialOrderItem::removeUseless(const Rules& r)
 {
 	QList<int> tmpList;
 
-	foreach(int id, ids){
+	for(int id : qAsConst(ids)){
 		Activity* act=r.activitiesPointerHash.value(id, NULL);
 		if(act!=NULL)
 			tmpList.append(id);
@@ -31,7 +31,7 @@ QString GroupActivitiesInInitialOrderItem::getXmlDescription() const
 
 	s+="<GroupActivitiesInInitialOrder>\n";
 	s+="	<Number_of_Activities>"+CustomFETString::number(ids.count())+"</Number_of_Activities>\n";
-	foreach(int id, ids)
+	for(int id : qAsConst(ids))
 		s+=QString("	<Activity_Id>")+CustomFETString::number(id)+QString("</Activity_Id>\n");
 
 	s+="	<Active>";
@@ -57,7 +57,7 @@ QString GroupActivitiesInInitialOrderItem::getDescription() const
 	s+=tr("Group activities in initial order item");
 	s+=QString(", ");
 	s+=tr("NA:%1", "Number of activities").arg(ids.count());
-	foreach(int id, ids)
+	for(int id : qAsConst(ids))
 		s+=QString(", ")+tr("Id:%1", "Id of activity").arg(id);
 
 	if(!comments.isEmpty())
@@ -71,7 +71,7 @@ QString GroupActivitiesInInitialOrderItem::getDetailedDescription(const Rules &r
 	QString s=tr("Timetable generation option"); s+=QString("\n");
 	s+=tr("Group activities in initial order item"); s+=QString("\n");
 	s+=tr("Number of activities=%1").arg(ids.count()); s+=QString("\n");
-	foreach(int id, ids){
+	for(int id : qAsConst(ids)){
 		s+=tr("Activity with id=%1 (%2)", "%1 is the id, %2 is the detailed description of the activity")
 		 .arg(id)
 		 .arg(getActivityDetailedDescription(r, id));

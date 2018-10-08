@@ -36,18 +36,18 @@ int StudentsComboBoxHelper::populateStudentsComboBox(const Rules& rules, QComboB
 	}
 
 	if(STUDENTS_COMBO_BOXES_STYLE==STUDENTS_COMBO_BOXES_STYLE_SIMPLE){
-		foreach(StudentsYear* sty, rules.yearsList){
+		for(StudentsYear* sty : qAsConst(rules.yearsList)){
 			studentsComboBox->addItem(sty->name);
 			if(sty->name==selectedStudentsSet)
 				selectedIndex=currentIndex;
 			currentIndex++;
-			foreach(StudentsGroup* stg, sty->groupsList){
+			for(StudentsGroup* stg : qAsConst(sty->groupsList)){
 				studentsComboBox->addItem(stg->name);
 				if(stg->name==selectedStudentsSet)
 					selectedIndex=currentIndex;
 				currentIndex++;
 				if(SHOW_SUBGROUPS_IN_COMBO_BOXES){
-					foreach(StudentsSubgroup* sts, stg->subgroupsList){
+					for(StudentsSubgroup* sts : qAsConst(stg->subgroupsList)){
 						studentsComboBox->addItem(sts->name);
 						if(sts->name==selectedStudentsSet)
 							selectedIndex=currentIndex;
@@ -58,18 +58,18 @@ int StudentsComboBoxHelper::populateStudentsComboBox(const Rules& rules, QComboB
 		}
 	}
 	else if(STUDENTS_COMBO_BOXES_STYLE==STUDENTS_COMBO_BOXES_STYLE_ICONS){
-		foreach(StudentsYear* sty, rules.yearsList){
+		for (StudentsYear* sty : qAsConst(rules.yearsList)){
 			studentsComboBox->addItem(sty->name);
 			if(sty->name==selectedStudentsSet)
 				selectedIndex=currentIndex;
 			currentIndex++;
-			foreach(StudentsGroup* stg, sty->groupsList){
+			for(StudentsGroup* stg : qAsConst(sty->groupsList)){
 				studentsComboBox->addItem(QIcon(":/images/group.png"), stg->name);
 				if(stg->name==selectedStudentsSet)
 					selectedIndex=currentIndex;
 				currentIndex++;
 				if(SHOW_SUBGROUPS_IN_COMBO_BOXES){
-					foreach(StudentsSubgroup* sts, stg->subgroupsList){
+					for(StudentsSubgroup* sts : qAsConst(stg->subgroupsList)){
 						studentsComboBox->addItem(QIcon(":/images/subgroup.png"), sts->name);
 						if(sts->name==selectedStudentsSet)
 							selectedIndex=currentIndex;
@@ -84,7 +84,7 @@ int StudentsComboBoxHelper::populateStudentsComboBox(const Rules& rules, QComboB
 
 		bool haveGroups=false;
 
-		foreach(StudentsYear* sty, rules.yearsList){
+		for (StudentsYear* sty : qAsConst(rules.yearsList)){
 			assert(!years.contains(sty->name));
 			years.insert(sty->name);
 			studentsComboBox->addItem(sty->name);
@@ -105,8 +105,8 @@ int StudentsComboBoxHelper::populateStudentsComboBox(const Rules& rules, QComboB
 
 			bool haveSubgroups=false;
 
-			foreach(StudentsYear* sty, rules.yearsList){
-				foreach(StudentsGroup* stg, sty->groupsList){
+			for (StudentsYear* sty : qAsConst(rules.yearsList)){
+				for(StudentsGroup* stg : qAsConst(sty->groupsList)){
 					if(!groups.contains(stg->name)){
 						groups.insert(stg->name);
 						studentsComboBox->addItem(stg->name);
@@ -128,9 +128,9 @@ int StudentsComboBoxHelper::populateStudentsComboBox(const Rules& rules, QComboB
 
 				QSet<QString> subgroups;
 
-				foreach(StudentsYear* sty, rules.yearsList){
-					foreach(StudentsGroup* stg, sty->groupsList){
-						foreach(StudentsSubgroup* sts, stg->subgroupsList){
+				for (StudentsYear* sty : qAsConst(rules.yearsList)){
+					for(StudentsGroup* stg : qAsConst(sty->groupsList)){
+						for(StudentsSubgroup* sts : qAsConst(stg->subgroupsList)){
 							if(!subgroups.contains(sts->name)){
 								subgroups.insert(sts->name);
 								studentsComboBox->addItem(sts->name);

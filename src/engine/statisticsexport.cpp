@@ -221,17 +221,17 @@ void StatisticsExport::getNamesAndHours(FetStatistics *statisticValues){
 	assert((*statisticValues).teachersActivities.isEmpty());
 	
 	QSet<QString> allStudentsNamesSet;
-	foreach(StudentsYear* sty, gt.rules.yearsList){
+	for(StudentsYear* sty : qAsConst(gt.rules.yearsList)){
 		if(!allStudentsNamesSet.contains(sty->name)){
 			(*statisticValues).allStudentsNames<<sty->name;
 			allStudentsNamesSet.insert(sty->name);
 		}
-		foreach(StudentsGroup* stg, sty->groupsList){
+		for(StudentsGroup* stg : qAsConst(sty->groupsList)){
 			if(!allStudentsNamesSet.contains(stg->name)){
 				(*statisticValues).allStudentsNames<<stg->name;
 				allStudentsNamesSet.insert(stg->name);
 			}
-			foreach(StudentsSubgroup* sts, stg->subgroupsList){
+			for(StudentsSubgroup* sts : qAsConst(stg->subgroupsList)){
 				if(!allStudentsNamesSet.contains(sts->name)){
 					(*statisticValues).allStudentsNames<<sts->name;
 					allStudentsNamesSet.insert(sts->name);
@@ -240,12 +240,11 @@ void StatisticsExport::getNamesAndHours(FetStatistics *statisticValues){
 		}
 	}
 
-	foreach(Teacher* t, gt.rules.teachersList){
+	for(Teacher* t : qAsConst(gt.rules.teachersList)){
 		(*statisticValues).allTeachersNames<<t->name;
 	}
-
 	
-	foreach(Subject* s, gt.rules.subjectsList){
+	for(Subject* s : qAsConst(gt.rules.subjectsList)){
 		(*statisticValues).allSubjectsNames<<s->name;
 	}
 
@@ -263,24 +262,24 @@ void StatisticsExport::getNamesAndHours(FetStatistics *statisticValues){
 				(*statisticValues).subjectsActivities.insert(act->subjectName, ai);
 				int tmp=(*statisticValues).subjectsTotalNumberOfHours.value(act->subjectName)+act->duration;
 				(*statisticValues).subjectsTotalNumberOfHours.insert(act->subjectName, tmp);						// (1) so teamlearning-teaching is not counted twice!
-				foreach(QString t, act->teachersNames){
+				for(const QString& t : qAsConst(act->teachersNames)){
 					(*statisticValues).teachersActivities.insert(t, ai);
 					tmp=(*statisticValues).teachersTotalNumberOfHours.value(t)+act->duration;
 					(*statisticValues).teachersTotalNumberOfHours.insert(t, tmp);							// (3)
 					//subjectstTotalNumberOfHours2[act->subjectIndex]+=duration;				// (1) so teamteaching is counted twice!
 				}
-				foreach(QString st, act->studentsNames){
+				for(const QString& st : qAsConst(act->studentsNames)){
 					(*statisticValues).studentsActivities.insert(st, ai);
 					tmp=(*statisticValues).studentsTotalNumberOfHours.value(st)+act->duration;
 					(*statisticValues).studentsTotalNumberOfHours.insert(st, tmp);							// (2)
 					//subjectstTotalNumberOfHours3[act->subjectIndex]+=duration;				// (1) so teamlearning is counted twice!
 				}
-				foreach(QString t, act->teachersNames){
+				for(const QString& t : qAsConst(act->teachersNames)){
 					tmp=(*statisticValues).teachersTotalNumberOfHours2.value(t);
 					tmp += act->duration * act->studentsNames.count();
 					(*statisticValues).teachersTotalNumberOfHours2.insert(t, tmp);						// (3)
 				}
-				foreach(QString st, act->studentsNames){
+				for(const QString& st : qAsConst(act->studentsNames)){
 					tmp=(*statisticValues).studentsTotalNumberOfHours2.value(st);
 					tmp += act->duration * act->teachersNames.count();
 					(*statisticValues).studentsTotalNumberOfHours2.insert(st, tmp);					// (2)
@@ -293,7 +292,7 @@ void StatisticsExport::getNamesAndHours(FetStatistics *statisticValues){
 	//progress.setValue(gt.rules.activitiesList.count());
 	QStringList tmp;
 	tmp.clear();
-	foreach(QString students, (*statisticValues).allStudentsNames){
+	for(const QString& students : qAsConst((*statisticValues).allStudentsNames)){
 		if((*statisticValues).studentsTotalNumberOfHours.value(students)==0 && (*statisticValues).studentsTotalNumberOfHours2.value(students)==0){
 			(*statisticValues).studentsTotalNumberOfHours.remove(students);
 			(*statisticValues).studentsTotalNumberOfHours2.remove(students);
@@ -302,7 +301,7 @@ void StatisticsExport::getNamesAndHours(FetStatistics *statisticValues){
 	}
 	(*statisticValues).allStudentsNames=tmp;
 	tmp.clear();
-	foreach(QString teachers, (*statisticValues).allTeachersNames){
+	for(const QString& teachers : qAsConst((*statisticValues).allTeachersNames)){
 		if((*statisticValues).teachersTotalNumberOfHours.value(teachers)==0 && (*statisticValues).teachersTotalNumberOfHours2.value(teachers)==0){
 				(*statisticValues).teachersTotalNumberOfHours.remove(teachers);
 				(*statisticValues).teachersTotalNumberOfHours2.remove(teachers);
@@ -311,7 +310,7 @@ void StatisticsExport::getNamesAndHours(FetStatistics *statisticValues){
 	}
 	(*statisticValues).allTeachersNames=tmp;
 	tmp.clear();
-	foreach(QString subjects, (*statisticValues).allSubjectsNames){
+	for(const QString& subjects : qAsConst((*statisticValues).allSubjectsNames)){
 		if((*statisticValues).subjectsTotalNumberOfHours.value(subjects)==0 && (*statisticValues).subjectsTotalNumberOfHours4.value(subjects)==0){
 			(*statisticValues).subjectsTotalNumberOfHours.remove(subjects);
 			(*statisticValues).subjectsTotalNumberOfHours4.remove(subjects);
@@ -352,7 +351,7 @@ bool StatisticsExport::exportStatisticsStylesheetCss(QWidget* parent, QString sa
 	//get used students	//similar to timetableexport.cpp, so maybe use a function?
 	QSet<QString> usedStudents;
 	for(int i=0; i<gt.rules.activitiesList.size(); i++){
-		foreach(QString st, gt.rules.activitiesList[i]->studentsNames){
+		for(const QString& st : qAsConst(gt.rules.activitiesList[i]->studentsNames)){
 			if(gt.rules.activitiesList[i]->active){
 				if(!usedStudents.contains(st))
 					usedStudents<<st;
@@ -426,7 +425,7 @@ bool StatisticsExport::exportStatisticsStylesheetCss(QWidget* parent, QString sa
 		tos<<"span.subject {\n\n}\n\n";
 		if(TIMETABLE_HTML_PRINT_ACTIVITY_TAGS){
 			bool havePrintableActivityTag=false;
-			foreach(ActivityTag* at, gt.rules.activityTagsList){
+			for(ActivityTag* at : qAsConst(gt.rules.activityTagsList)){
 				if(at->printable){
 					havePrintableActivityTag=true;
 					break;
@@ -690,7 +689,7 @@ QString StatisticsExport::exportStatisticsTeachersSubjectsHtml(QWidget* parent, 
 	
 	int ttt=0;
 	
-	foreach(QString subjects, statisticValues.allSubjectsNames){
+	for(const QString& subjects : qAsConst(statisticValues.allSubjectsNames)){
 		progress.setValue(ttt);
 		//pqapplication->processEvents();
 		if(progress.wasCanceled()){
@@ -705,9 +704,9 @@ QString StatisticsExport::exportStatisticsTeachersSubjectsHtml(QWidget* parent, 
 		tmpSubjects.clear();
 		tmpTeachers.clear();
 		tmpSubjects=statisticValues.subjectsActivities.values(subjects);
-		foreach(int aidx, tmpSubjects){
+		for(int aidx : qAsConst(tmpSubjects)){
 			Activity* act=gt.rules.activitiesList.at(aidx);
-			foreach(QString teacher, act->teachersNames){
+			for(const QString& teacher : qAsConst(act->teachersNames)){
 				tmpTeachers.insert(teacher, aidx);
 			}
 		}
@@ -735,14 +734,14 @@ QString StatisticsExport::exportStatisticsTeachersSubjectsHtml(QWidget* parent, 
 				} else {
 					//optimized by Liviu Lalescu - 1
 					QMap<StringListPair, int> durationMap;
-					foreach(int tmpAct, tmpActivities){
+					for(int tmpAct : qAsConst(tmpActivities)){
 						Activity* act=gt.rules.activitiesList.at(tmpAct);
 						StringListPair slp;
 						slp.list1=act->studentsNames;
 
 						slp.list2.clear();
 						if(printActivityTags){
-							foreach(QString at, act->activityTagsNames){
+							for(const QString& at : qAsConst(act->activityTagsNames)){
 								int id=statisticValues.hashActivityTagIDsStatistics.value(at, "0").toInt()-1;
 								assert(id>=0);
 								assert(id<gt.rules.activityTagsList.count());
@@ -988,7 +987,7 @@ QString StatisticsExport::exportStatisticsSubjectsTeachersHtml(QWidget* parent, 
 	
 	int ttt=0;
 	
-	foreach(QString teachers, statisticValues.allTeachersNames){
+	for(const QString& teachers : qAsConst(statisticValues.allTeachersNames)){
 		progress.setValue(ttt);
 		//pqapplication->processEvents();
 		if(progress.wasCanceled()){
@@ -1003,7 +1002,7 @@ QString StatisticsExport::exportStatisticsSubjectsTeachersHtml(QWidget* parent, 
 		tmpTeachers.clear();
 		tmpSubjects.clear();
 		tmpTeachers=statisticValues.teachersActivities.values(teachers);
-		foreach(int aidx, tmpTeachers){
+		for(int aidx : qAsConst(tmpTeachers)){
 			Activity* act=gt.rules.activitiesList.at(aidx);
 			tmpSubjects.insert(act->subjectName, aidx);
 		}
@@ -1031,14 +1030,14 @@ QString StatisticsExport::exportStatisticsSubjectsTeachersHtml(QWidget* parent, 
 				} else {
 					//optimized by Liviu Lalescu - 2
 					QMap<StringListPair, int> durationMap;
-					foreach(int tmpAct, tmpActivities){
+					for(int tmpAct : qAsConst(tmpActivities)){
 						Activity* act=gt.rules.activitiesList.at(tmpAct);
 						StringListPair slp;
 						slp.list1=act->studentsNames;
 
 						slp.list2.clear();
 						if(printActivityTags){
-							foreach(QString at, act->activityTagsNames){
+							for(const QString& at : qAsConst(act->activityTagsNames)){
 								int id=statisticValues.hashActivityTagIDsStatistics.value(at, "0").toInt()-1;
 								assert(id>=0);
 								assert(id<gt.rules.activityTagsList.count());
@@ -1284,7 +1283,7 @@ QString StatisticsExport::exportStatisticsTeachersStudentsHtml(QWidget* parent, 
 	
 	int ttt=0;
 	
-	foreach(QString students, statisticValues.allStudentsNames){
+	for(const QString& students : qAsConst(statisticValues.allStudentsNames)){
 		progress.setValue(ttt);
 		//pqapplication->processEvents();
 		if(progress.wasCanceled()){
@@ -1299,9 +1298,9 @@ QString StatisticsExport::exportStatisticsTeachersStudentsHtml(QWidget* parent, 
 		tmpStudents.clear();
 		tmpTeachers.clear();
 		tmpStudents=statisticValues.studentsActivities.values(students);
-		foreach(int aidx, tmpStudents){
+		for(int aidx : qAsConst(tmpStudents)){
 			Activity* act=gt.rules.activitiesList.at(aidx);
-			foreach(QString teacher, act->teachersNames){
+			for(const QString& teacher : qAsConst(act->teachersNames)){
 				tmpTeachers.insert(teacher, aidx);
 			}
 		}
@@ -1329,14 +1328,14 @@ QString StatisticsExport::exportStatisticsTeachersStudentsHtml(QWidget* parent, 
 				} else {
 					//optimized by Liviu Lalescu - 3
 					QMap<StringListPair, int> durationMap;
-					foreach(int tmpAct, tmpActivities){
+					for(int tmpAct : qAsConst(tmpActivities)){
 						Activity* act=gt.rules.activitiesList.at(tmpAct);
 						StringListPair slp;
 						slp.list1=QStringList(act->subjectName);
 
 						slp.list2.clear();
 						if(printActivityTags){
-							foreach(QString at, act->activityTagsNames){
+							for(const QString& at : qAsConst(act->activityTagsNames)){
 								int id=statisticValues.hashActivityTagIDsStatistics.value(at, "0").toInt()-1;
 								assert(id>=0);
 								assert(id<gt.rules.activityTagsList.count());
@@ -1581,7 +1580,7 @@ QString StatisticsExport::exportStatisticsStudentsTeachersHtml(QWidget* parent, 
 	
 	int ttt=0;
 	
-	foreach(QString teachers, statisticValues.allTeachersNames){
+	for(const QString& teachers : qAsConst(statisticValues.allTeachersNames)){
 		progress.setValue(ttt);
 		//pqapplication->processEvents();
 		if(progress.wasCanceled()){
@@ -1596,9 +1595,9 @@ QString StatisticsExport::exportStatisticsStudentsTeachersHtml(QWidget* parent, 
 		tmpTeachers.clear();
 		tmpStudents.clear();
 		tmpTeachers=statisticValues.teachersActivities.values(teachers);
-		foreach(int aidx, tmpTeachers){
+		for(int aidx : qAsConst(tmpTeachers)){
 			Activity* act=gt.rules.activitiesList.at(aidx);
-			foreach(QString students, act->studentsNames){
+			for(const QString& students : qAsConst(act->studentsNames)){
 				tmpStudents.insert(students, aidx);
 			}
 		}
@@ -1626,14 +1625,14 @@ QString StatisticsExport::exportStatisticsStudentsTeachersHtml(QWidget* parent, 
 				} else {
 					//optimized by Liviu Lalescu - 4
 					QMap<StringListPair, int> durationMap;
-					foreach(int tmpAct, tmpActivities){
+					for(int tmpAct : qAsConst(tmpActivities)){
 						Activity* act=gt.rules.activitiesList.at(tmpAct);
 						StringListPair slp;
 						slp.list1=QStringList(act->subjectName);
 
 						slp.list2.clear();
 						if(printActivityTags){
-							foreach(QString at, act->activityTagsNames){
+							for(const QString& at : qAsConst(act->activityTagsNames)){
 								int id=statisticValues.hashActivityTagIDsStatistics.value(at, "0").toInt()-1;
 								assert(id>=0);
 								assert(id<gt.rules.activityTagsList.count());
@@ -1878,7 +1877,7 @@ QString StatisticsExport::exportStatisticsSubjectsStudentsHtml(QWidget* parent, 
 	
 	int ttt=0;
 	
-	foreach(QString students, statisticValues.allStudentsNames){
+	for(const QString& students : qAsConst(statisticValues.allStudentsNames)){
 		progress.setValue(ttt);
 		//pqapplication->processEvents();
 		if(progress.wasCanceled()){
@@ -1893,7 +1892,7 @@ QString StatisticsExport::exportStatisticsSubjectsStudentsHtml(QWidget* parent, 
 		tmpStudents.clear();
 		tmpSubjects.clear();
 		tmpStudents=statisticValues.studentsActivities.values(students);
-		foreach(int aidx, tmpStudents){
+		for(int aidx : qAsConst(tmpStudents)){
 			Activity* act=gt.rules.activitiesList.at(aidx);
 			tmpSubjects.insert(act->subjectName, aidx);
 		}
@@ -1921,14 +1920,14 @@ QString StatisticsExport::exportStatisticsSubjectsStudentsHtml(QWidget* parent, 
 				} else {
 					//optimized by Liviu Lalescu - 5
 					QMap<StringListPair, int> durationMap;
-					foreach(int tmpAct, tmpActivities){
+					for(int tmpAct : qAsConst(tmpActivities)){
 						Activity* act=gt.rules.activitiesList.at(tmpAct);
 						StringListPair slp;
 						slp.list1=act->teachersNames;
 
 						slp.list2.clear();
 						if(printActivityTags){
-							foreach(QString at, act->activityTagsNames){
+							for(const QString& at : qAsConst(act->activityTagsNames)){
 								int id=statisticValues.hashActivityTagIDsStatistics.value(at, "0").toInt()-1;
 								assert(id>=0);
 								assert(id<gt.rules.activityTagsList.count());
@@ -2174,7 +2173,7 @@ QString StatisticsExport::exportStatisticsStudentsSubjectsHtml(QWidget* parent, 
 	
 	int ttt=0;
 	
-	foreach(QString subjects, statisticValues.allSubjectsNames){
+	for(const QString& subjects : qAsConst(statisticValues.allSubjectsNames)){
 		progress.setValue(ttt);
 		//pqapplication->processEvents();
 		if(progress.wasCanceled()){
@@ -2189,9 +2188,9 @@ QString StatisticsExport::exportStatisticsStudentsSubjectsHtml(QWidget* parent, 
 		tmpSubjects.clear();
 		tmpStudents.clear();
 		tmpSubjects=statisticValues.subjectsActivities.values(subjects);
-		foreach(int aidx, tmpSubjects){
+		for(int aidx : qAsConst(tmpSubjects)){
 			Activity* act=gt.rules.activitiesList.at(aidx);
-			foreach(QString students, act->studentsNames){
+			for(const QString& students : qAsConst(act->studentsNames)){
 				tmpStudents.insert(students, aidx);
 			}
 		}
@@ -2219,14 +2218,14 @@ QString StatisticsExport::exportStatisticsStudentsSubjectsHtml(QWidget* parent, 
 				} else {
 					//optimized by Liviu Lalescu - 6
 					QMap<StringListPair, int> durationMap;
-					foreach(int tmpAct, tmpActivities){
+					for(int tmpAct : qAsConst(tmpActivities)){
 						Activity* act=gt.rules.activitiesList.at(tmpAct);
 						StringListPair slp;
 						slp.list1=act->teachersNames;
 
 						slp.list2.clear();
 						if(printActivityTags){
-							foreach(QString at, act->activityTagsNames){
+							for(const QString& at : qAsConst(act->activityTagsNames)){
 								int id=statisticValues.hashActivityTagIDsStatistics.value(at, "0").toInt()-1;
 								assert(id>=0);
 								assert(id<gt.rules.activityTagsList.count());

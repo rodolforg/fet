@@ -57,21 +57,12 @@ ModifyActivityForm::ModifyActivityForm(QWidget* parent, int id, int activityGrou
 {
 	setupUi(this);
 
-	foreach(Teacher* tch, gt.rules.teachersList)
+	for(Teacher* tch : qAsConst(gt.rules.teachersList))
 		teacherNamesSet.insert(tch->name);
-	foreach(Subject* sbj, gt.rules.subjectsList)
+	for(Subject* sbj : qAsConst(gt.rules.subjectsList))
 		subjectNamesSet.insert(sbj->name);
-	foreach(ActivityTag* at, gt.rules.activityTagsList)
+	for(ActivityTag* at : qAsConst(gt.rules.activityTagsList))
 		activityTagNamesSet.insert(at->name);
-	/*foreach(StudentsYear* year, gt.rules.yearsList){
-		numberOfStudentsHash.insert(year->name, year->numberOfStudents);
-		foreach(StudentsGroup* group, year->groupsList){
-			numberOfStudentsHash.insert(group->name, group->numberOfStudents);
-			foreach(StudentsSubgroup* subgroup, group->subgroupsList){
-				numberOfStudentsHash.insert(subgroup->name, subgroup->numberOfStudents);
-			}
-		}
-	}*/
 
 	durList.clear();
 	durList.append(duration1SpinBox);

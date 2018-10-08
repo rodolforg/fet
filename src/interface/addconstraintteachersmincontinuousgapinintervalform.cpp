@@ -108,7 +108,7 @@ void AddConstraintTeachersMinContinuousGapInIntervalForm::fillCommomUiData(Rules
 	connect(ui->startHourComboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(hourIntervalChanged()));
 	connect(ui->endHourComboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(hourIntervalChanged()));
 
-	foreach (Teacher *tch, rules.teachersList)
+	for (Teacher *tch : qAsConst(rules.teachersList))
 		ui->teacherComboBox->addItem(tch->name);
 }
 

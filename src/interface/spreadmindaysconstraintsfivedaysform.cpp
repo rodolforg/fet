@@ -113,7 +113,7 @@ void SpreadMinDaysConstraintsFiveDaysForm::wasAccepted()
 	
 	int nActs=0;
 	
-	foreach(Activity* act, gt.rules.activitiesList){
+	for(Activity* act : qAsConst(gt.rules.activitiesList)){
 		if(act->activityGroupId==0){
 			assert(!activitiesRepresentantIds.contains(act->id));
 			activitiesRepresentantIds.insert(act->id, nActs);
@@ -140,7 +140,7 @@ void SpreadMinDaysConstraintsFiveDaysForm::wasAccepted()
 	
 	QHash<int, int> activityGroupIdHash;
 	
-	foreach(Activity* act, gt.rules.activitiesList)
+	for(Activity* act : qAsConst(gt.rules.activitiesList))
 		activityGroupIdHash.insert(act->id, act->activityGroupId);
 	
 	for(int i=0; i<nActs; i++){
@@ -158,7 +158,7 @@ void SpreadMinDaysConstraintsFiveDaysForm::wasAccepted()
 	
 	QList<ConstraintMinDaysBetweenActivities*> constraintsToBeRemoved;
 	
-	foreach(TimeConstraint* tc, gt.rules.timeConstraintsList){
+	for(TimeConstraint* tc : qAsConst(gt.rules.timeConstraintsList)){
 		if(tc->type==CONSTRAINT_MIN_DAYS_BETWEEN_ACTIVITIES){
 			ConstraintMinDaysBetweenActivities* mdc=(ConstraintMinDaysBetweenActivities*) tc;
 			
@@ -321,7 +321,7 @@ void SpreadMinDaysConstraintsFiveDaysForm::wasAccepted()
 	
 	QString s=tr("The following time constraints will be removed:");
 	s+="\n\n";
-	foreach(ConstraintMinDaysBetweenActivities* ctr, constraintsToBeRemoved){
+	for(ConstraintMinDaysBetweenActivities* ctr : qAsConst(constraintsToBeRemoved)){
 		s+=ctr->getDetailedDescription(gt.rules);
 		s+="\n";
 	}
@@ -331,7 +331,7 @@ void SpreadMinDaysConstraintsFiveDaysForm::wasAccepted()
 	
 	s=tr("The following time constraints will be added:");
 	s+="\n\n";
-	foreach(ConstraintMinDaysBetweenActivities* ctr, addedConstraints){
+	for(ConstraintMinDaysBetweenActivities* ctr : qAsConst(addedConstraints)){
 		s+=ctr->getDetailedDescription(gt.rules);
 		s+="\n";
 	}
@@ -361,7 +361,7 @@ void SpreadMinDaysConstraintsFiveDaysForm::wasAccepted()
 	if(res==QDialog::Rejected){
 		constraintsToBeRemoved.clear();
 
-		foreach(ConstraintMinDaysBetweenActivities* ctr, addedConstraints){
+		for(ConstraintMinDaysBetweenActivities* ctr : qAsConst(addedConstraints)){
 			delete ctr;
 		}
 		addedConstraints.clear();
@@ -373,26 +373,14 @@ void SpreadMinDaysConstraintsFiveDaysForm::wasAccepted()
 	
 	//better
 	QList<TimeConstraint*> removedList;
-	foreach(ConstraintMinDaysBetweenActivities* mdc, constraintsToBeRemoved)
+	for(ConstraintMinDaysBetweenActivities* mdc : qAsConst(constraintsToBeRemoved))
 		removedList.append((TimeConstraint*)mdc);
 	bool t=gt.rules.removeTimeConstraints(removedList);
 	assert(t);
 	removedList.clear();
 	constraintsToBeRemoved.clear();
 	
-	/*foreach(ConstraintMinDaysBetweenActivities* mdc, constraintsToBeRemoved){
-		int t=gt.rules.timeConstraintsList.removeAll(mdc);
-		assert(t==1);
-	}
-	gt.rules.internalStructureComputed=false;
-	gt.rules.setModified(true);
-	
-	foreach(ConstraintMinDaysBetweenActivities* mdc, constraintsToBeRemoved)
-		delete mdc;
-		
-	constraintsToBeRemoved.clear();*/
-		
-	foreach(ConstraintMinDaysBetweenActivities* tc, addedConstraints){
+	for(ConstraintMinDaysBetweenActivities* tc : qAsConst(addedConstraints)){
 		bool t=gt.rules.addTimeConstraint(tc);
 		if(!t){
 			QMessageBox::critical(this, tr("FET bug"), tr("You found a probable bug in FET - trying to add constraint %1, "

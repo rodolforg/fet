@@ -36,23 +36,6 @@ StudentsYear::StudentsYear()
 
 StudentsYear::~StudentsYear()
 {
-	//it is possible that the removed group to be in another year
-
-	/*while(!groupsList.isEmpty()){
-		StudentsGroup* g=groupsList[0];
-		
-		foreach(StudentsYear* year, gt.rules.yearsList)
-			if(year!=this)
-				for(int i=0; i<year->groupsList.size(); i++)
-					if(year->groupsList[i]==g)
-						year->groupsList[i]=NULL;
-	
-		if(g!=NULL){
-			delete groupsList.takeFirst();
-		}
-		else
-			groupsList.removeFirst();
-	}*/
 }
 
 QString StudentsYear::getXmlDescription() const
@@ -142,27 +125,6 @@ StudentsGroup::StudentsGroup()
 
 StudentsGroup::~StudentsGroup()
 {
-	/*while(!subgroupsList.isEmpty()){
-		StudentsSubgroup* s=subgroupsList[0];
-		
-		foreach(StudentsYear* year, gt.rules.yearsList)
-			foreach(StudentsGroup* group, year->groupsList)
-				if(group!=this)
-					for(int i=0; i<group->subgroupsList.size(); i++)
-						if(group->subgroupsList[i]==s){
-							cout<<"making NULL group->subgroupsList[i]->name=="<<qPrintable(group->subgroupsList[i]->name)<<endl;
-							group->subgroupsList[i]=NULL;
-						}
-						else
-							cout<<"ignoring group->subgroupsList[i]->name=="<<qPrintable(group->subgroupsList[i]->name)<<endl;
-	
-		if(s!=NULL){
-			assert(subgroupsList[0]!=NULL);
-			delete subgroupsList.takeFirst();
-		}
-		else
-			subgroupsList.removeFirst();
-	}*/
 }
 
 QString StudentsGroup::getXmlDescription() const

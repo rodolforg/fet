@@ -236,7 +236,7 @@ void Activity::computeInternalStructure(const Rules& r)
 
 	//activity tags
 	this->iActivityTagsSet.clear();
-	foreach(QString tag, this->activityTagsNames){
+	for(const QString& tag : qAsConst(this->activityTagsNames)){
 		assert(tag!="");
 		int index=r.activityTagsHash.value(tag, -1); //r.searchActivityTag(tag);
 		assert(index>=0);
@@ -358,7 +358,7 @@ QString Activity::getXmlDescription() const
 
 	s+="	<Subject>" + protect(this->subjectName) + "</Subject>\n";
 
-	foreach(QString tag, this->activityTagsNames)
+	for(const QString& tag : qAsConst(this->activityTagsNames))
 		s+="	<Activity_Tag>" + protect(tag) + "</Activity_Tag>\n";
 
 	for(QStringList::ConstIterator it=this->studentsNames.begin(); it!=this->studentsNames.end(); it++)
@@ -522,7 +522,7 @@ QString Activity::getDetailedDescription() const
 
 	s+=tr("Subject=%1").arg(this->subjectName);
 	s+="\n";
-	foreach(QString tag, this->activityTagsNames){
+	for(const QString& tag : qAsConst(this->activityTagsNames)){
 		assert(tag!="");
 		s+=tr("Activity tag=%1").arg(tag);
 		s+="\n";

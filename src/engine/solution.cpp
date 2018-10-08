@@ -135,7 +135,7 @@ double Solution::fitness(const Rules &r, QString* conflictsString){
 	}
 		
 	this->conflictsTotal=0;
-	foreach(double cn, conflictsWeightList){
+	for(double cn : qAsConst(conflictsWeightList)){
 		//cout<<"cn=="<<cn<<endl;
 		conflictsTotal+=cn;
 	}
@@ -381,7 +381,7 @@ void Solution::getTeachersTimetable(const Rules &r, Matrix3D<int>& a, Matrix3D<Q
 			for(tch=0; tch<r.nInternalTeachers; tch++)
 				visited[tch]=false;
 			for(int tfp=0; tfp<TEACHERS_FREE_PERIODS_N_CATEGORIES; tfp++){
-				foreach(int tch, b[tfp][d][h]){
+				for(int tch : qAsConst(b[tfp][d][h])){
 					assert(!visited[tch]);
 					visited[tch]=true;
 				}

@@ -51,9 +51,9 @@ TeachersStatisticsForm::TeachersStatisticsForm(QWidget* parent): QDialog(parent)
 	
 	QHash<QString, QSet<Activity*> > activitiesForTeacher;
 	
-	foreach(Activity* act, gt.rules.activitiesList)
+	for(Activity* act : qAsConst(gt.rules.activitiesList))
 		if(act->active)
-			foreach(QString teacherName, act->teachersNames){
+			for(const QString& teacherName : qAsConst(act->teachersNames)){
 				QSet<Activity*> acts=activitiesForTeacher.value(teacherName, QSet<Activity*>());
 				acts.insert(act);
 				activitiesForTeacher.insert(teacherName, acts);
@@ -67,7 +67,7 @@ TeachersStatisticsForm::TeachersStatisticsForm(QWidget* parent): QDialog(parent)
 		
 		QSet<Activity*> acts=activitiesForTeacher.value(t->name, QSet<Activity*>());
 		
-		foreach(Activity* act, acts){
+		for(Activity* act : qAsConst(acts)){
 			if(act->active){
 				nSubActivities++;
 				nHours+=act->duration;
@@ -101,7 +101,7 @@ void TeachersStatisticsForm::hideFullTeachersCheckBoxModified()
 	tableWidget->clear();
 	
 	int n_rows=0;
-	foreach(bool b, hideFullTeacher)
+	for(bool b : qAsConst(hideFullTeacher))
 		if(!(hideFullTeachersCheckBox->isChecked() && b))
 			n_rows++;
 

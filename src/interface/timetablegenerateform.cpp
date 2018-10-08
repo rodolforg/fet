@@ -245,11 +245,11 @@ void TimetableGenerateForm::stop()
 	conflictsString+=TimetableGenerateForm::tr("Conflicts listing (in decreasing order):");
 	conflictsString+="\n";
 
-	foreach(QString t, c.conflictsDescriptionList)
+	for(const QString& t : qAsConst(c.conflictsDescriptionList))
 		conflictsString+=t+"\n";
 
 	ErrorList errors = TimetableExport::writeSimulationResults();
-	foreach (ErrorCode erc, errors) {
+	for (const ErrorCode& erc : qAsConst(errors)) {
 		QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
 	}
 
@@ -351,11 +351,11 @@ void TimetableGenerateForm::stopHighest()
 	conflictsString+=TimetableGenerateForm::tr("Conflicts listing (in decreasing order):");
 	conflictsString+="\n";
 
-	foreach(QString t, c.conflictsDescriptionList)
+	for(const QString& t : qAsConst(c.conflictsDescriptionList))
 		conflictsString+=t+"\n";
 
 	ErrorList errors = TimetableExport::writeHighestStageResults();
-	foreach (ErrorCode erc, errors) {
+	for (const ErrorCode& erc : qAsConst(errors)) {
 		QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
 	}
 
@@ -455,11 +455,11 @@ void TimetableGenerateForm::impossibleToSolve()
 	conflictsString+=TimetableGenerateForm::tr("Conflicts listing (in decreasing order):");
 	conflictsString+="\n";
 
-	foreach(QString t, c.conflictsDescriptionList)
+	for(const QString& t : qAsConst(c.conflictsDescriptionList))
 		conflictsString+=t+"\n";
 
 	ErrorList errors = TimetableExport::writeSimulationResults();
-	foreach (ErrorCode erc, errors) {
+	for (const ErrorCode& erc : qAsConst(errors)) {
 		QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
 	}
 
@@ -533,11 +533,11 @@ void TimetableGenerateForm::simulationFinished()
 	conflictsString+=TimetableGenerateForm::tr("Soft conflicts listing (in decreasing order):");
 	conflictsString+="\n";
 
-	foreach(QString t, c.conflictsDescriptionList)
+	for(const QString& t : qAsConst(c.conflictsDescriptionList))
 		conflictsString+=t+"\n";
 
 	ErrorList errors = TimetableExport::writeSimulationResults();
-	foreach (ErrorCode erc, errors) {
+	for (const ErrorCode& erc : qAsConst(errors)) {
 		QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
 	}
 
@@ -718,11 +718,11 @@ void TimetableGenerateForm::write(){
 	conflictsString+=TimetableGenerateForm::tr("Conflicts listing (in decreasing order):");
 	conflictsString+="\n";
 
-	foreach(QString t, c.conflictsDescriptionList)
+	for(const QString& t : qAsConst(c.conflictsDescriptionList))
 		conflictsString+=t+"\n";
 
 	ErrorList errors = TimetableExport::writeSimulationResults();
-	foreach (ErrorCode erc, errors) {
+	for (const ErrorCode& erc : qAsConst(errors)) {
 		QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
 	}
 
@@ -761,11 +761,11 @@ void TimetableGenerateForm::writeHighestStage(){
 	conflictsString+=TimetableGenerateForm::tr("Conflicts listing (in decreasing order):");
 	conflictsString+="\n";
 
-	foreach(QString t, c.conflictsDescriptionList)
+	for(const QString& t : qAsConst(c.conflictsDescriptionList))
 		conflictsString+=t+"\n";
 
 	ErrorList errors = TimetableExport::writeHighestStageResults();
-	foreach (ErrorCode erc, errors) {
+	for (const ErrorCode& erc : qAsConst(errors)) {
 		QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
 	}
 

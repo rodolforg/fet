@@ -48,13 +48,13 @@ ActivitiesRoomsStatisticsForm::ActivitiesRoomsStatisticsForm(QWidget* parent): Q
 	QSet<int> activitiesWith100;
 	QSet<int> activitiesWithUnder100;
 	
-	foreach(Activity* act, gt.rules.activitiesList){
+	for(Activity* act : qAsConst(gt.rules.activitiesList)){
 		if(!act->active)
 			continue;
 	
 		QSet<QString> currentActivityTagsSet=act->activityTagsNames.toSet();
 	
-		foreach(SpaceConstraint* genericConstraint, gt.rules.spaceConstraintsList){
+		for(SpaceConstraint* genericConstraint : qAsConst(gt.rules.spaceConstraintsList)){
 			if(!genericConstraint->active)
 				continue;
 		
@@ -277,7 +277,7 @@ ActivitiesRoomsStatisticsForm::ActivitiesRoomsStatisticsForm(QWidget* parent): Q
 	QList<int> certainlyWithUnspecifiedRoom;
 	QList<int> possiblyWithUnspecifiedRoom;
 	
-	foreach(Activity* act, gt.rules.activitiesList){
+	for(Activity* act : qAsConst(gt.rules.activitiesList)){
 		if(!act->active)
 			continue;
 

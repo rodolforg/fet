@@ -506,7 +506,7 @@ void TimetableViewRoomsDaysHorizontalForm::lock(bool lockTime, bool lockSpace)
 	int addedS=0, unlockedS=0;
 
 	//lock selected activities
-	foreach (const QTableWidgetItem *item, roomsTimetableTable->selectedItems()) {
+	for (const QTableWidgetItem *item : roomsTimetableTable->selectedItems()) {
 		int j = item->row();
 		int k = item->column();
 				int ai=CachedSchedule::rooms_timetable_weekly[i][k][j];

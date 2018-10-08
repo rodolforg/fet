@@ -373,7 +373,7 @@ void TimetableGenerateMultipleForm::timetableGenerated(int timetable, const QStr
 		const Solution& best_solution=CachedSchedule::getCachedSolution();
 
 		ErrorList errors = TimetableExport::writeSimulationResults(timetable);
-		foreach (ErrorCode erc, errors) {
+		for (const ErrorCode& erc : qAsConst(errors)) {
 			QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
 		}
 
@@ -390,7 +390,7 @@ void TimetableGenerateMultipleForm::timetableGenerated(int timetable, const QStr
 		conflictsString+="\n";
 		conflictsString += tr("Soft conflicts listing (in decreasing order):")+"\n";
 
-		foreach(QString t, best_solution.conflictsDescriptionList)
+		for(const QString& t : qAsConst(best_solution.conflictsDescriptionList))
 			conflictsString+=t+"\n";
 	}
 

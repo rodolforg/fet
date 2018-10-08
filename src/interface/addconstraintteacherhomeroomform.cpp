@@ -52,7 +52,7 @@ AddConstraintTeacherHomeRoomForm::~AddConstraintTeacherHomeRoomForm()
 
 void AddConstraintTeacherHomeRoomForm::updateTeachersComboBox(){
 	teachersComboBox->clear();
-	foreach(Teacher* tch, gt.rules.teachersList)
+	for(Teacher* tch : qAsConst(gt.rules.teachersList))
 		teachersComboBox->addItem(tch->name);
 }
 

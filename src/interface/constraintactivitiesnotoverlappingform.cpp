@@ -56,8 +56,8 @@ bool ConstraintActivitiesNotOverlappingForm::filterOk(const TimeConstraint* ctr)
 	const ConstraintActivitiesNotOverlapping* c=(const ConstraintActivitiesNotOverlapping*) ctr;
 
 	QSet<const Activity *> activities;
-	foreach(int id, c->activitiesId){
-		foreach(const Activity* a, gt.rules.activitiesList) {
+	for(int id : qAsConst(c->activitiesId)){
+		for(const Activity* a : qAsConst(gt.rules.activitiesList)) {
 			if(a->id==id) {
 				activities << a;
 				break;

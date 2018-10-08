@@ -449,7 +449,7 @@ int fatherActivityInInitialOrder[MAX_ACTIVITIES];
 // TODO move this away from engine
 static void reportSkippableErrors(QWidget *parent, const ErrorList& errorList)
 {
-	foreach (ErrorCode error, errorList) {
+	for (const ErrorCode& error : qAsConst(errorList)) {
 		int r=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
 			   error.message,
 			   GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
@@ -1041,7 +1041,7 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 	paradoxes << &paradoxOrderedIfSameDayVsConsecutive << &paradoxOrderedIfSameDayVsReversed;
 
 	bool paradoxesFound = false;
-	foreach (ConstraintPre* paradox, paradoxes) {
+	for (ConstraintPre* paradox : qAsConst(paradoxes)) {
 		if (!paradox->prepare(gt.rules)) {
 			reportSkippableErrors(parent, paradox->getErrors());
 			paradoxesFound = true;
@@ -1347,7 +1347,7 @@ bool computeSubgroupsMaxSpanPerDay(QWidget* parent)
 		if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_STUDENTS_SET_MAX_SPAN_PER_DAY){
 			ConstraintStudentsSetMaxSpanPerDay* ssmsd=(ConstraintStudentsSetMaxSpanPerDay*)gt.rules.internalTimeConstraintsList[i];
 			
-			foreach(int sbg, ssmsd->iSubgroupsList)
+			for(int sbg : qAsConst(ssmsd->iSubgroupsList))
 				if(subgroupsMaxSpanPerDayPercentages[sbg]==-1
 				 || (subgroupsMaxSpanPerDayPercentages[sbg]>=0 && subgroupsMaxSpanPerDayMaxSpan[sbg]>ssmsd->maxSpanPerDay)){
 					subgroupsMaxSpanPerDayPercentages[sbg]=100.0;
@@ -1550,7 +1550,7 @@ bool computeStudentsMaxHoursContinuously(QWidget* parent)
 	}
 	
 	for(int ai=0; ai<gt.rules.nInternalActivities; ai++){
-		foreach(int sbg, gt.rules.internalActivitiesList[ai].iSubgroupsList){
+		for(int sbg : qAsConst(gt.rules.internalActivitiesList[ai].iSubgroupsList)){
 			if(subgroupsMaxHoursContinuouslyPercentages1[sbg]>=0 && gt.rules.internalActivitiesList[ai].duration > subgroupsMaxHoursContinuouslyMaxHours1[sbg]){
 				QString s;
 				s=GeneratePreTranslate::tr("Cannot optimize for subgroup %1, because there is a constraint of type"
@@ -1611,7 +1611,7 @@ bool computeStudentsActivityTagMaxHoursDaily(QWidget* parent)
 
 			ConstraintStudentsActivityTagMaxHoursDaily* samc=(ConstraintStudentsActivityTagMaxHoursDaily*)gt.rules.internalTimeConstraintsList[i];
 			
-			foreach(int sb, samc->canonicalSubgroupsList){
+			for(int sb : qAsConst(samc->canonicalSubgroupsList)){
 				int pos1=-1, pos2=-1;
 				
 				for(int j=0; j<subgroupsActivityTagMaxHoursDailyMaxHours[sb].count(); j++){
@@ -1692,7 +1692,7 @@ bool computeStudentsActivityTagMaxHoursDaily(QWidget* parent)
 
 			ConstraintStudentsSetActivityTagMaxHoursDaily* samc=(ConstraintStudentsSetActivityTagMaxHoursDaily*)gt.rules.internalTimeConstraintsList[i];
 			
-			foreach(int sb, samc->canonicalSubgroupsList){
+			for(int sb : qAsConst(samc->canonicalSubgroupsList)){
 				int pos1=-1, pos2=-1;
 				
 				for(int j=0; j<subgroupsActivityTagMaxHoursDailyMaxHours[sb].count(); j++){
@@ -1787,7 +1787,7 @@ bool computeStudentsActivityTagMaxHoursDaily(QWidget* parent)
 			int at=subgroupsActivityTagMaxHoursDailyActivityTag[i].at(j);
 			if(perc==100.0){
 				int totalAt=0;
-				foreach(int ai, gt.rules.internalSubgroupsList[i]->activitiesForSubgroup)
+				for(int ai : qAsConst(gt.rules.internalSubgroupsList[i]->activitiesForSubgroup))
 					if(gt.rules.internalActivitiesList[ai].iActivityTagsSet.contains(at))
 						totalAt+=gt.rules.internalActivitiesList[ai].duration;
 						
@@ -1834,7 +1834,7 @@ bool computeStudentsActivityTagMaxHoursContinuously(QWidget* parent)
 
 			ConstraintStudentsActivityTagMaxHoursContinuously* samc=(ConstraintStudentsActivityTagMaxHoursContinuously*)gt.rules.internalTimeConstraintsList[i];
 			
-			foreach(int sb, samc->canonicalSubgroupsList){
+			for(int sb : qAsConst(samc->canonicalSubgroupsList)){
 				int pos1=-1, pos2=-1;
 				
 				for(int j=0; j<subgroupsActivityTagMaxHoursContinuouslyMaxHours[sb].count(); j++){
@@ -1915,7 +1915,7 @@ bool computeStudentsActivityTagMaxHoursContinuously(QWidget* parent)
 
 			ConstraintStudentsSetActivityTagMaxHoursContinuously* samc=(ConstraintStudentsSetActivityTagMaxHoursContinuously*)gt.rules.internalTimeConstraintsList[i];
 			
-			foreach(int sb, samc->canonicalSubgroupsList){
+			for(int sb : qAsConst(samc->canonicalSubgroupsList)){
 				int pos1=-1, pos2=-1;
 				
 				for(int j=0; j<subgroupsActivityTagMaxHoursContinuouslyMaxHours[sb].count(); j++){
@@ -2004,7 +2004,7 @@ bool checkMaxHoursForActivityDuration(QWidget* parent)
 		Activity* act=&gt.rules.internalActivitiesList[i];
 		
 		//teachers
-		foreach(int tch, act->iTeachersList){
+		for(int tch : qAsConst(act->iTeachersList)){
 			if(teachersMaxHoursDailyPercentages1[tch]==100.0){
 				int m=teachersMaxHoursDailyMaxHours1[tch];
 				if(act->duration > m){
@@ -2141,7 +2141,7 @@ bool checkMaxHoursForActivityDuration(QWidget* parent)
 		}
 
 		//students
-		foreach(int sbg, act->iSubgroupsList){
+		for(int sbg : qAsConst(act->iSubgroupsList)){
 			if(subgroupsMaxHoursDailyPercentages1[sbg]==100.0){
 				int m=subgroupsMaxHoursDailyMaxHours1[sbg];
 				if(act->duration > m){
@@ -3042,7 +3042,7 @@ bool computeTeachersMaxHoursContinuously(QWidget* parent)
 	}
 	
 	for(int ai=0; ai<gt.rules.nInternalActivities; ai++){
-		foreach(int tch, gt.rules.internalActivitiesList[ai].iTeachersList){
+		for(int tch : qAsConst(gt.rules.internalActivitiesList[ai].iTeachersList)){
 			if(teachersMaxHoursContinuouslyPercentages1[tch]>=0 && gt.rules.internalActivitiesList[ai].duration > teachersMaxHoursContinuouslyMaxHours1[tch]){
 				QString s;
 				s=GeneratePreTranslate::tr("Cannot optimize for teacher %1, because there is a constraint of type"
@@ -3103,7 +3103,7 @@ bool computeTeachersActivityTagMaxHoursDaily(QWidget* parent)
 
 			ConstraintTeachersActivityTagMaxHoursDaily* samc=(ConstraintTeachersActivityTagMaxHoursDaily*)gt.rules.internalTimeConstraintsList[i];
 			
-			foreach(int tc, samc->canonicalTeachersList){
+			for(int tc : qAsConst(samc->canonicalTeachersList)){
 				int pos1=-1, pos2=-1;
 				
 				for(int j=0; j<teachersActivityTagMaxHoursDailyMaxHours[tc].count(); j++){
@@ -3184,7 +3184,7 @@ bool computeTeachersActivityTagMaxHoursDaily(QWidget* parent)
 
 			ConstraintTeacherActivityTagMaxHoursDaily* samc=(ConstraintTeacherActivityTagMaxHoursDaily*)gt.rules.internalTimeConstraintsList[i];
 			
-			foreach(int tc, samc->canonicalTeachersList){
+			for(int tc : qAsConst(samc->canonicalTeachersList)){
 				int pos1=-1, pos2=-1;
 				
 				for(int j=0; j<teachersActivityTagMaxHoursDailyMaxHours[tc].count(); j++){
@@ -3279,7 +3279,7 @@ bool computeTeachersActivityTagMaxHoursDaily(QWidget* parent)
 			int at=teachersActivityTagMaxHoursDailyActivityTag[i].at(j);
 			if(perc==100.0){
 				int totalAt=0;
-				foreach(int ai, gt.rules.internalTeachersList[i]->activitiesForTeacher)
+				for(int ai : qAsConst(gt.rules.internalTeachersList[i]->activitiesForTeacher))
 					if(gt.rules.internalActivitiesList[ai].iActivityTagsSet.contains(at))
 						totalAt+=gt.rules.internalActivitiesList[ai].duration;
 						
@@ -3326,7 +3326,7 @@ bool computeTeachersActivityTagMaxHoursContinuously(QWidget* parent)
 
 			ConstraintTeachersActivityTagMaxHoursContinuously* samc=(ConstraintTeachersActivityTagMaxHoursContinuously*)gt.rules.internalTimeConstraintsList[i];
 			
-			foreach(int tc, samc->canonicalTeachersList){
+			for(int tc : qAsConst(samc->canonicalTeachersList)){
 				int pos1=-1, pos2=-1;
 				
 				for(int j=0; j<teachersActivityTagMaxHoursContinuouslyMaxHours[tc].count(); j++){
@@ -3407,7 +3407,7 @@ bool computeTeachersActivityTagMaxHoursContinuously(QWidget* parent)
 
 			ConstraintTeacherActivityTagMaxHoursContinuously* samc=(ConstraintTeacherActivityTagMaxHoursContinuously*)gt.rules.internalTimeConstraintsList[i];
 			
-			foreach(int tc, samc->canonicalTeachersList){
+			for(int tc : qAsConst(samc->canonicalTeachersList)){
 				int pos1=-1, pos2=-1;
 				
 				for(int j=0; j<teachersActivityTagMaxHoursContinuouslyMaxHours[tc].count(); j++){
@@ -4012,7 +4012,7 @@ bool computeSubgroupsMinRestingHours(QWidget* parent)
 			}
 			//////////
 
-			foreach(int sbg, smrh->iSubgroupsList){
+			for(int sbg : qAsConst(smrh->iSubgroupsList)){
 				if(smrh->circular==true){
 					if(subgroupsMinRestingHoursCircularMinHours[sbg]==-1 ||
 					 (subgroupsMinRestingHoursCircularMinHours[sbg]>=0 && subgroupsMinRestingHoursCircularMinHours[sbg]<smrh->minRestingHours)){
@@ -4248,7 +4248,7 @@ bool computeActivitiesSameStartingTime(QWidget* parent, QHash<int, int> & reprSa
 				int crtHead=queue.dequeue();
 				assert(repr.value(crtHead, -1)==start);
 				QList<int> neighList=adjMatrix.values(crtHead);
-				foreach(int neigh, neighList){
+				for(int neigh : qAsConst(neighList)){
 					if(repr.value(neigh, -1)==-1){
 						queue.enqueue(neigh);
 						repr.insert(neigh, start);
@@ -5056,7 +5056,7 @@ bool computeMaxDaysPerWeekForStudents(QWidget* parent)
 					return false;
 			}
 
-			foreach(int sb, cn->iSubgroupsList){
+			for(int sb : qAsConst(cn->iSubgroupsList)){
 				if(subgroupsMaxDaysPerWeekMaxDays[sb]==-1 ||
 				 (subgroupsMaxDaysPerWeekMaxDays[sb]>=0 && subgroupsMaxDaysPerWeekMaxDays[sb] > cn->maxDaysPerWeek)){
 					subgroupsMaxDaysPerWeekMaxDays[sb]=cn->maxDaysPerWeek;
@@ -5898,8 +5898,8 @@ bool computeActivitiesConflictingPercentage(QWidget* parent)
 		
 		ttt++;
 		
-		foreach(int i, gt.rules.internalTeachersList[t]->activitiesForTeacher)
-			foreach(int j, gt.rules.internalTeachersList[t]->activitiesForTeacher)
+		for(int i : qAsConst(gt.rules.internalTeachersList[t]->activitiesForTeacher))
+			for(int j : qAsConst(gt.rules.internalTeachersList[t]->activitiesForTeacher))
 				activitiesConflictingPercentage[i].insert(j, 100);
 	}
 	
@@ -5913,8 +5913,8 @@ bool computeActivitiesConflictingPercentage(QWidget* parent)
 		
 		ttt++;
 		
-		foreach(int i, gt.rules.internalSubgroupsList[s]->activitiesForSubgroup)
-			foreach(int j, gt.rules.internalSubgroupsList[s]->activitiesForSubgroup)
+		for(int i : qAsConst(gt.rules.internalSubgroupsList[s]->activitiesForSubgroup))
+			for(int j : qAsConst(gt.rules.internalSubgroupsList[s]->activitiesForSubgroup))
 				activitiesConflictingPercentage[i].insert(j, 100);
 	}
 
@@ -5957,97 +5957,6 @@ bool computeActivitiesConflictingPercentage(QWidget* parent)
 
 	return true;
 }
-
-//old
-/*
-#if 0
-bool computeActivitiesConflictingPercentage()
-{
-	//get maximum weight percent of a basic time constraint
-	double m=-1;
-	
-	bool ok=false;
-	for(int i=0; i<gt.rules.nInternalTimeConstraints; i++)
-		if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_BASIC_COMPULSORY_TIME){
-			ok=true;
-			if(gt.rules.internalTimeConstraintsList[i]->weightPercentage>m)
-				m=gt.rules.internalTimeConstraintsList[i]->weightPercentage;
-		}
-		
-	if(m<100)
-		ok=false;
-		
-	if(!ok || m<100){
-		QMessageBox::warning(parent, GeneratePreTranslate::tr("FET warning"),
-		 GeneratePreTranslate::tr("Cannot optimize, because you have no basic time constraints or its weight is lower than 100.0%. "
-		 "Please add a basic time constraint (100% weight)"));
-		return false;
-	}
-	
-	assert(m>=0 && m<=100);
-	assert(m==100);
-
-	//compute conflictig
-	for(int i=0; i<gt.rules.nInternalActivities; i++)
-		activitiesConflictingPercentage[i][i]=100;
-		
-	QProgressDialog progress(parent);
-	progress.setLabelText(GeneratePreTranslate::tr("Precomputing ... please wait"));
-	progress.setRange(0, gt.rules.nInternalActivities*(gt.rules.nInternalActivities-1)/2);
-	progress.setModal(true);
-	
-	int ttt=0;
-		
-	for(int i=0; i<gt.rules.nInternalActivities; i++){
-		progress.setValue(ttt);
-		pqapplication->processEvents();
-		if(progress.wasCanceled()){
-			QMessageBox::information(parent, GeneratePreTranslate::tr("FET information"), GeneratePreTranslate::tr("Canceled"));
-			return false;
-		}
-			
-		for(int j=i+1; j<gt.rules.nInternalActivities; j++){
-			ttt++;
-		
-			//see if they share a teacher
-			bool shareTeacher=false;
-			foreach(QString tni, gt.rules.internalActivitiesList[i].teachersNames){
-				foreach(QString tnj, gt.rules.internalActivitiesList[j].teachersNames){
-					if(tni==tnj){
-						shareTeacher=true;
-						break;
-					}
-				}
-				if(shareTeacher)
-					break;
-			}
-			
-			bool shareStudentsSet=false;
-			foreach(QString ssi, gt.rules.internalActivitiesList[i].studentsNames){
-				foreach(QString ssj, gt.rules.internalActivitiesList[j].studentsNames){
-					if(gt.rules.studentsSetsRelated(ssi, ssj)){
-						shareStudentsSet=true;
-						break;
-					}
-				}
-				if(shareStudentsSet)
-					break;
-			}
-			
-			if(shareTeacher||shareStudentsSet)
-				activitiesConflictingPercentage[i][j]=activitiesConflictingPercentage[j][i]=100;
-			else
-				activitiesConflictingPercentage[i][j]=activitiesConflictingPercentage[j][i]=-1;
-		}
-	}
-
-	progress.setValue(gt.rules.nInternalActivities*(gt.rules.nInternalActivities-1)/2);
-		
-	return true;
-}
-#endif
-//endif 0
-*/
 
 void computeConstrTwoActivitiesConsecutive()
 {
@@ -6769,7 +6678,7 @@ bool computeSubgroupsIntervalMaxDaysPerWeek(QWidget* parent)
 					return false;
 			}
 			
-			foreach(int sbg, cn->iSubgroupsList){
+			for(int sbg : qAsConst(cn->iSubgroupsList)){
 				if(subgroupsIntervalMaxDaysPerWeekPercentages1[sbg]==-1){
 					subgroupsIntervalMaxDaysPerWeekPercentages1[sbg]=cn->weightPercentage;
 					subgroupsIntervalMaxDaysPerWeekMaxDays1[sbg]=cn->maxDaysPerWeek;
@@ -6824,7 +6733,6 @@ bool computeSubgroupsIntervalMaxDaysPerWeek(QWidget* parent)
 			}
 			
 			for(int sbg=0; sbg<gt.rules.nInternalSubgroups; sbg++){
-			//foreach(int sbg, cn->iSubgroupsList){
 				if(subgroupsIntervalMaxDaysPerWeekPercentages1[sbg]==-1){
 					subgroupsIntervalMaxDaysPerWeekPercentages1[sbg]=cn->weightPercentage;
 					subgroupsIntervalMaxDaysPerWeekMaxDays1[sbg]=cn->maxDaysPerWeek;
@@ -6904,7 +6812,7 @@ bool computeActivitiesOccupyMaxTimeSlotsFromSelection(QWidget* parent)
 			
 			aomtsList.append(item);
 			ActivitiesOccupyMaxTimeSlotsFromSelection_item* p_item=&aomtsList[aomtsList.count()-1];
-			foreach(int ai, cn->_activitiesIndices)
+			for(int ai : qAsConst(cn->_activitiesIndices))
 				aomtsListForActivity[ai].append(p_item);
 		}
 	}
@@ -6952,7 +6860,7 @@ bool computeActivitiesMaxSimultaneousInSelectedTimeSlots(QWidget* parent)
 			
 			amsistsList.append(item);
 			ActivitiesMaxSimultaneousInSelectedTimeSlots_item* p_item=&amsistsList[amsistsList.count()-1];
-			foreach(int ai, cn->_activitiesIndices)
+			for(int ai : qAsConst(cn->_activitiesIndices))
 				amsistsListForActivity[ai].append(p_item);
 		}
 	}
@@ -6994,7 +6902,7 @@ bool computeActivitiesOccupyMaxDifferentRooms(QWidget* parent)
 			
 			aomdrList.append(item);
 			ActivitiesOccupyMaxDifferentRooms_item* p_item=&aomdrList[aomdrList.count()-1];
-			foreach(int ai, cn->_activitiesIndices)
+			for(int ai : qAsConst(cn->_activitiesIndices))
 				aomdrListForActivity[ai].append(p_item);
 		}
 	}
@@ -7035,7 +6943,7 @@ bool computeActivitiesSameRoomIfConsecutive(QWidget* parent)
 			
 			asricList.append(item);
 			ActivitiesSameRoomIfConsecutive_item* p_item=&asricList[asricList.count()-1];
-			foreach(int ai, cn->_activitiesIndices)
+			for(int ai : qAsConst(cn->_activitiesIndices))
 				asricListForActivity[ai].append(p_item);
 		}
 	}
@@ -7152,10 +7060,7 @@ bool computeActivitiesRoomsPreferences(QWidget* parent)
 			}
 			studentsSetHomeRoom.insert(spr->studentsName);
 		
-			foreach(int a, spr->_activities){
-			//for(int j=0; j<spr->_nActivities; j++){
-			//	int a=spr->_activities[j];
-				
+			for(int a : qAsConst(spr->_activities)){
 				if(unspecifiedHomeRoom[a]){
 					unspecifiedHomeRoom[a]=false;
 					activitiesHomeRoomsPercentage[a]=spr->weightPercentage;
@@ -7190,25 +7095,18 @@ bool computeActivitiesRoomsPreferences(QWidget* parent)
 			}
 			studentsSetHomeRoom.insert(spr->studentsName);
 		
-			foreach(int a, spr->_activities){	
-		//	for(int j=0; j<spr->_nActivities; j++){
-		//		int a=spr->_activities[j];
-				
+			for(int a : qAsConst(spr->_activities)){
 				if(unspecifiedHomeRoom[a]){
 					unspecifiedHomeRoom[a]=false;
 					activitiesHomeRoomsPercentage[a]=spr->weightPercentage;
 					assert(activitiesHomeRoomsHomeRooms[a].count()==0);
-					//for(int k=0; k<spr->_n_preferred_rooms; k++){
-					//	int rm=spr->_rooms[k];
-					foreach(int rm, spr->_rooms){
+					for(int rm : qAsConst(spr->_rooms)){
 						activitiesHomeRoomsHomeRooms[a].append(rm);
 					}
 				}
 				else{
 					QList<int> shared;
-					//for(int k=0; k<spr->_n_preferred_rooms; k++){
-					//	int rm=spr->_rooms[k];
-					foreach(int rm, spr->_rooms){
+					for(int rm : qAsConst(spr->_rooms)){
 						if(activitiesHomeRoomsHomeRooms[a].indexOf(rm)!=-1)
 							shared.append(rm);
 					}
@@ -7235,10 +7133,7 @@ bool computeActivitiesRoomsPreferences(QWidget* parent)
 			}
 			teachersHomeRoom.insert(spr->teacherName);
 		
-			foreach(int a, spr->_activities){
-			//for(int j=0; j<spr->_nActivities; j++){
-			//	int a=spr->_activities[j];
-				
+			for(int a : qAsConst(spr->_activities)){
 				if(unspecifiedHomeRoom[a]){
 					unspecifiedHomeRoom[a]=false;
 					activitiesHomeRoomsPercentage[a]=spr->weightPercentage;
@@ -7273,25 +7168,18 @@ bool computeActivitiesRoomsPreferences(QWidget* parent)
 			}
 			teachersHomeRoom.insert(spr->teacherName);
 		
-			foreach(int a, spr->_activities){	
-		//	for(int j=0; j<spr->_nActivities; j++){
-		//		int a=spr->_activities[j];
-				
+			for(int a : qAsConst(spr->_activities)){
 				if(unspecifiedHomeRoom[a]){
 					unspecifiedHomeRoom[a]=false;
 					activitiesHomeRoomsPercentage[a]=spr->weightPercentage;
 					assert(activitiesHomeRoomsHomeRooms[a].count()==0);
-					//for(int k=0; k<spr->_n_preferred_rooms; k++){
-					//	int rm=spr->_rooms[k];
-					foreach(int rm, spr->_rooms){
+					for(int rm : qAsConst(spr->_rooms)){
 						activitiesHomeRoomsHomeRooms[a].append(rm);
 					}
 				}
 				else{
 					QList<int> shared;
-					//for(int k=0; k<spr->_n_preferred_rooms; k++){
-					//	int rm=spr->_rooms[k];
-					foreach(int rm, spr->_rooms){
+					for(int rm : qAsConst(spr->_rooms)){
 						if(activitiesHomeRoomsHomeRooms[a].indexOf(rm)!=-1)
 							shared.append(rm);
 					}
@@ -7318,9 +7206,7 @@ bool computeActivitiesRoomsPreferences(QWidget* parent)
 			}
 			subjectsPreferredRoom.insert(spr->subjectName);*/
 		
-			//for(int j=0; j<spr->_nActivities; j++){
-			//	int a=spr->_activities[j];
-			foreach(int a, spr->_activities){
+			for(int a : qAsConst(spr->_activities)){
 				if(spr->weightPercentage==100.0){
 					constraintsForActivity[a].append(gt.rules.internalSpaceConstraintsList[i]);
 				}
@@ -7367,9 +7253,7 @@ bool computeActivitiesRoomsPreferences(QWidget* parent)
 			}
 			subjectsPreferredRoom.insert(spr->subjectName);*/
 		
-			//for(int j=0; j<spr->_nActivities; j++){
-			//	int a=spr->_activities[j];
-			foreach(int a, spr->_activities){
+			for(int a : qAsConst(spr->_activities)){
 				if(spr->weightPercentage==100.0){
 					constraintsForActivity[a].append(gt.rules.internalSpaceConstraintsList[i]);
 				}
@@ -7377,7 +7261,7 @@ bool computeActivitiesRoomsPreferences(QWidget* parent)
 					PreferredRoomsItem it;
 				
 					it.percentage=spr->weightPercentage;
-					foreach(int k, spr->_rooms)
+					for(int k : qAsConst(spr->_rooms))
 						it.preferredRooms.insert(k);
 				
 					if(unspecifiedPreferredRoom[a])
@@ -7385,28 +7269,6 @@ bool computeActivitiesRoomsPreferences(QWidget* parent)
 				
 					activitiesPreferredRoomsList[a].append(it);
 				}
-
-				/*if(unspecifiedPreferredRoom[a]){
-					unspecifiedPreferredRoom[a]=false;
-					activitiesPreferredRoomsPercentage[a]=spr->weightPercentage;
-					assert(activitiesPreferredRoomsPreferredRooms[a].count()==0);
-					//for(int k=0; k<spr->_n_preferred_rooms; k++){
-					//	int rm=spr->_rooms[k];
-					foreach(int rm, spr->_rooms){
-						activitiesPreferredRoomsPreferredRooms[a].append(rm);
-					}
-				}
-				else{
-					QList<int> shared;
-					//for(int k=0; k<spr->_n_preferred_rooms; k++){
-					//	int rm=spr->_rooms[k];
-					foreach(int rm, spr->_rooms){
-						if(activitiesPreferredRoomsPreferredRooms[a].indexOf(rm)!=-1)
-							shared.append(rm);
-					}
-					activitiesPreferredRoomsPercentage[a]=max(activitiesPreferredRoomsPercentage[a], spr->weightPercentage);
-					activitiesPreferredRoomsPreferredRooms[a]=shared;
-				}*/
 			}
 		}
 		else if(gt.rules.internalSpaceConstraintsList[i]->type==CONSTRAINT_SUBJECT_ACTIVITY_TAG_PREFERRED_ROOM){
@@ -7431,7 +7293,7 @@ bool computeActivitiesRoomsPreferences(QWidget* parent)
 		
 			//for(int j=0; j<spr->_nActivities; j++){
 			//	int a=spr->_activities[j];
-			foreach(int a, spr->_activities){
+			for(int a : qAsConst(spr->_activities)){
 				if(spr->weightPercentage==100.0){
 					constraintsForActivity[a].append(gt.rules.internalSpaceConstraintsList[i]);
 				}
@@ -7483,9 +7345,7 @@ bool computeActivitiesRoomsPreferences(QWidget* parent)
 			}
 			subjectsActivityTagsPreferredRoom.insert(pair);*/
 		
-			//for(int j=0; j<spr->_nActivities; j++){
-			//	int a=spr->_activities[j];
-			foreach(int a, spr->_activities){
+			for(int a : qAsConst(spr->_activities)){
 				if(spr->weightPercentage==100.0){
 					constraintsForActivity[a].append(gt.rules.internalSpaceConstraintsList[i]);
 				}
@@ -7493,7 +7353,7 @@ bool computeActivitiesRoomsPreferences(QWidget* parent)
 					PreferredRoomsItem it;
 					
 					it.percentage=spr->weightPercentage;
-					foreach(int k, spr->_rooms)
+					for(int k : qAsConst(spr->_rooms))
 						it.preferredRooms.insert(k);
 				
 					if(unspecifiedPreferredRoom[a])
@@ -7501,35 +7361,13 @@ bool computeActivitiesRoomsPreferences(QWidget* parent)
 					
 					activitiesPreferredRoomsList[a].append(it);
 				}
-				
-				/*if(unspecifiedPreferredRoom[a]){
-					unspecifiedPreferredRoom[a]=false;
-					activitiesPreferredRoomsPercentage[a]=spr->weightPercentage;
-					assert(activitiesPreferredRoomsPreferredRooms[a].count()==0);
-					//for(int k=0; k<spr->_n_preferred_rooms; k++){
-					//	int rm=spr->_rooms[k];
-					foreach(int rm, spr->_rooms){
-						activitiesPreferredRoomsPreferredRooms[a].append(rm);
-					}
-				}
-				else{
-					QList<int> shared;
-					//for(int k=0; k<spr->_n_preferred_rooms; k++){
-					//	int rm=spr->_rooms[k];
-					foreach(int rm, spr->_rooms){
-						if(activitiesPreferredRoomsPreferredRooms[a].indexOf(rm)!=-1)
-							shared.append(rm);
-					}
-					activitiesPreferredRoomsPercentage[a]=max(activitiesPreferredRoomsPercentage[a], spr->weightPercentage);
-					activitiesPreferredRoomsPreferredRooms[a]=shared;
-				}*/
 			}
 		}
 
 		else if(gt.rules.internalSpaceConstraintsList[i]->type==CONSTRAINT_ACTIVITY_TAG_PREFERRED_ROOM){
 			ConstraintActivityTagPreferredRoom* spr=(ConstraintActivityTagPreferredRoom*)gt.rules.internalSpaceConstraintsList[i];
 
-			foreach(int a, spr->_activities){
+			for(int a : qAsConst(spr->_activities)){
 				if(spr->weightPercentage==100.0){
 					constraintsForActivity[a].append(gt.rules.internalSpaceConstraintsList[i]);
 				}
@@ -7549,7 +7387,7 @@ bool computeActivitiesRoomsPreferences(QWidget* parent)
 		else if(gt.rules.internalSpaceConstraintsList[i]->type==CONSTRAINT_ACTIVITY_TAG_PREFERRED_ROOMS){
 			ConstraintActivityTagPreferredRooms* spr=(ConstraintActivityTagPreferredRooms*)gt.rules.internalSpaceConstraintsList[i];
 
-			foreach(int a, spr->_activities){
+			for(int a : qAsConst(spr->_activities)){
 				if(spr->weightPercentage==100.0){
 					constraintsForActivity[a].append(gt.rules.internalSpaceConstraintsList[i]);
 				}
@@ -7557,7 +7395,7 @@ bool computeActivitiesRoomsPreferences(QWidget* parent)
 					PreferredRoomsItem it;
 				
 					it.percentage=spr->weightPercentage;
-					foreach(int k, spr->_rooms)
+					for(int k : qAsConst(spr->_rooms))
 						it.preferredRooms.insert(k);
 			
 					if(unspecifiedPreferredRoom[a])
@@ -7644,7 +7482,7 @@ bool computeActivitiesRoomsPreferences(QWidget* parent)
 				PreferredRoomsItem it;
 					
 				it.percentage=apr->weightPercentage;
-				foreach(int k, apr->_rooms)
+				for(int k : qAsConst(apr->_rooms))
 					it.preferredRooms.insert(k);
 				
 				if(unspecifiedPreferredRoom[a])
@@ -7652,28 +7490,6 @@ bool computeActivitiesRoomsPreferences(QWidget* parent)
 					
 				activitiesPreferredRoomsList[a].append(it);
 			}
-				
-			/*if(unspecifiedPreferredRoom[a]){
-				unspecifiedPreferredRoom[a]=false;
-				activitiesPreferredRoomsPercentage[a]=apr->weightPercentage;
-				assert(activitiesPreferredRoomsPreferredRooms[a].count()==0);
-				foreach(int rm, apr->_rooms){
-				//for(int k=0; k<apr->_n_preferred_rooms; k++){
-				//	int rm=apr->_rooms[k];
-					activitiesPreferredRoomsPreferredRooms[a].append(rm);
-				}
-			}
-			else{
-				QList<int> shared;
-				foreach(int rm, apr->_rooms){
-				//for(int k=0; k<apr->_n_preferred_rooms; k++){
-				//	int rm=apr->_rooms[k];
-					if(activitiesPreferredRoomsPreferredRooms[a].indexOf(rm)!=-1)
-						shared.append(rm);
-				}
-				activitiesPreferredRoomsPercentage[a]=max(activitiesPreferredRoomsPercentage[a], apr->weightPercentage);
-				activitiesPreferredRoomsPreferredRooms[a]=shared;
-			}*/
 		}
 	}
 	
@@ -7692,7 +7508,7 @@ bool computeActivitiesRoomsPreferences(QWidget* parent)
 			it.preferredRooms.clear();
 	
 			bool begin=true;
-			foreach(SpaceConstraint* ctr, scl){
+			for(SpaceConstraint* ctr : qAsConst(scl)){
 				if(ctr->type==CONSTRAINT_SUBJECT_PREFERRED_ROOM){
 					ConstraintSubjectPreferredRoom* spr=(ConstraintSubjectPreferredRoom*)ctr;
 					
@@ -7830,7 +7646,6 @@ bool computeActivitiesRoomsPreferences(QWidget* parent)
 	for(int i=0; i<gt.rules.nInternalActivities; i++){
 		if(!unspecifiedPreferredRoom[i]){
 			for(int kk=0; kk<activitiesPreferredRoomsList[i].count(); kk++){
-			//foreach(PreferredRoomsItem it, activitiesPreferredRoomsList[i]){
 				PreferredRoomsItem& it=activitiesPreferredRoomsList[i][kk];
 		
 				bool okinitial=true;
@@ -7852,7 +7667,7 @@ bool computeActivitiesRoomsPreferences(QWidget* parent)
 					//assert(0);
 				}
 				QSet<int> tmp=it.preferredRooms;
-				foreach(int r, tmp){
+				for(int r : qAsConst(tmp)){
 					if(gt.rules.internalRoomsList[r]->capacity < gt.rules.internalActivitiesList[i].nTotalStudents){
 						it.preferredRooms.remove(r);
 					}
@@ -7871,27 +7686,6 @@ bool computeActivitiesRoomsPreferences(QWidget* parent)
 						goto jumpOverPrefRoomsNStudents;
 				}		
 			}
-			/*bool okinitial=true;
-			if(activitiesPreferredRoomsPreferredRooms[i].count()==0)
-				okinitial=false;
-			foreach(int r, activitiesPreferredRoomsPreferredRooms[i]){
-				if(gt.rules.internalRoomsList[r]->capacity < gt.rules.internalActivitiesList[i].nTotalStudents){
-					activitiesPreferredRoomsPreferredRooms[i].removeAll(r);
-				}
-			}
-			if(okinitial && activitiesPreferredRoomsPreferredRooms[i].count()==0){
-				ok=false;
-				
-				int t=QMessageBox::warning(parent, GeneratePreTranslate::tr("FET warning"),
-				 GeneratePreTranslate::tr("Cannot generate timetable, because for activity with id==%1 "
-				 "you have no allowed room (from the allowed number of students)")
-				 .arg(gt.rules.internalActivitiesList[i].id),
-				 GeneratePreTranslate::tr("Skip rest of activities without rooms"), GeneratePreTranslate::tr("See next problem"), QString(),
-				 1, 0 );
-	
-				if(t==0)
-					break;
-			}*/
 		}
 	}
 jumpOverPrefRoomsNStudents:
@@ -7902,7 +7696,7 @@ jumpOverPrefRoomsNStudents:
 			if(activitiesHomeRoomsHomeRooms[i].count()==0)
 				okinitial=false;
 			QList<int> tmp=activitiesHomeRoomsHomeRooms[i];
-			foreach(int r, tmp){
+			for(int r : qAsConst(tmp)){
 				if(gt.rules.internalRoomsList[r]->capacity < gt.rules.internalActivitiesList[i].nTotalStudents){
 					activitiesHomeRoomsHomeRooms[i].removeAll(r);
 				}
@@ -7989,7 +7783,7 @@ bool computeMaxBuildingChangesPerDayForStudents(QWidget* parent)
 					return false;
 			}
 			
-			foreach(int sbg, spr->iSubgroupsList){
+			for(int sbg : qAsConst(spr->iSubgroupsList)){
 				maxBuildingChangesPerDayForStudentsPercentages[sbg]=100;
 				if(maxBuildingChangesPerDayForStudentsMaxChanges[sbg]<0)
 					maxBuildingChangesPerDayForStudentsMaxChanges[sbg]=spr->maxBuildingChangesPerDay;
@@ -8052,7 +7846,7 @@ bool computeMaxBuildingChangesPerWeekForStudents(QWidget* parent)
 					return false;
 			}
 			
-			foreach(int sbg, spr->iSubgroupsList){
+			for(int sbg : qAsConst(spr->iSubgroupsList)){
 				maxBuildingChangesPerWeekForStudentsPercentages[sbg]=100;
 				if(maxBuildingChangesPerWeekForStudentsMaxChanges[sbg]<0)
 					maxBuildingChangesPerWeekForStudentsMaxChanges[sbg]=spr->maxBuildingChangesPerWeek;
@@ -8115,7 +7909,7 @@ bool computeMinGapsBetweenBuildingChangesForStudents(QWidget* parent)
 					return false;
 			}
 			
-			foreach(int sbg, spr->iSubgroupsList){
+			for(int sbg : qAsConst(spr->iSubgroupsList)){
 				minGapsBetweenBuildingChangesForStudentsPercentages[sbg]=100;
 				if(minGapsBetweenBuildingChangesForStudentsMinGaps[sbg]<0)
 					minGapsBetweenBuildingChangesForStudentsMinGaps[sbg]=spr->minGapsBetweenBuildingChanges;
@@ -8346,7 +8140,7 @@ void computeMustComputeTimetableSubgroups()
 	
 		mustComputeTimetableSubgroups[ai].clear();
 		
-		foreach(int sbg, act->iSubgroupsList)
+		for(int sbg : qAsConst(act->iSubgroupsList))
 			if(subgroupsMaxGapsPerWeekPercentage[sbg]>=0 ||
 			  subgroupsMaxGapsPerDayPercentage[sbg]>=0 ||
 			  subgroupsEarlyMaxBeginningsAtSecondHourPercentage[sbg]>=0 ||
@@ -8390,7 +8184,7 @@ void computeMustComputeTimetableTeachers()
 	
 		mustComputeTimetableTeachers[ai].clear();
 		
-		foreach(int tch, act->iTeachersList)
+		for(int tch : qAsConst(act->iTeachersList))
 			if(teachersMaxGapsPerWeekPercentage[tch]>=0 ||
 			  teachersMaxGapsPerDayPercentage[tch]>=0 ||
 			  teachersMaxHoursDailyPercentages1[tch]>=0 ||
@@ -8425,7 +8219,6 @@ void computeMustComputeTimetableTeachers()
 	}
 }
 
-
 bool computeFixedActivities(QWidget* parent)
 {
 	bool ok=true;
@@ -8454,7 +8247,7 @@ bool computeFixedActivities(QWidget* parent)
 			
 		//space
 		fixedSpaceActivity[ai]=false;
-		foreach(PreferredRoomsItem it, activitiesPreferredRoomsList[ai])
+		for(const PreferredRoomsItem& it : qAsConst(activitiesPreferredRoomsList[ai]))
 			if(it.percentage==100.0 && it.preferredRooms.count()==1){
 				fixedSpaceActivity[ai]=true;
 				break;
@@ -8463,123 +8256,6 @@ bool computeFixedActivities(QWidget* parent)
 	
 	return ok;
 }
-
-
-/*
-This should be better, but in practice it is not :-)
-void sortActivities()
-{
-	//const double THRESHOLD=80.0;
-	
-	double nIncompatible[MAX_ACTIVITIES];
-	
-		
-	//rooms init
-	double nRoomsIncompat[MAX_ROOMS];
-	for(int j=0; j<gt.rules.nInternalRooms; j++){
-		nRoomsIncompat[j]=0;
-		for(int k=0; k<gt.rules.nHoursPerWeek; k++)
-			if(allowedRoomTimePercentages[j][k]>=0)
-				nRoomsIncompat[j]+=allowedRoomTimePercentages[j][k]/100.0;
-	}
-	double nHoursForRoom[MAX_ROOMS];
-
-	for(int j=0; j<gt.rules.nInternalRooms; j++)
-		nHoursForRoom[j]=0;
-
-	for(int j=0; j<gt.rules.nInternalActivities; j++)
-		if(activitiesPreferredRoomsPercentage[j]>=0){
-			assert(!unspecifiedPreferredRoom[j]);
-			foreach(int rm, activitiesPreferredRoomsPreferredRooms[j])
-				nHoursForRoom[rm]+=gt.rules.internalActivitiesList[j].duration/activitiesPreferredRoomsPreferredRooms[j].count()
-				  *activitiesPreferredRoomsPercentage[j]/100.0;
-		}
-
-	
-
-	for(int i=0; i<gt.rules.nInternalActivities; i++){
-		nIncompatible[i]=0;
-		
-		//basic
-		for(int j=0; j<gt.rules.nInternalActivities; j++)
-			if(i!=j && activitiesConflictingPercentage[i][j]>=0){
-				assert(activitiesConflictingPercentage[i][j]==100.0);
-				nIncompatible[i]+=gt.rules.internalActivitiesList[j].duration; // *100/100.0
-			}
-				
-		//not available, break, preferred time(s)
-		for(int j=0; j<gt.rules.nHoursPerWeek; j++)
-			if(notAllowedTimesPercentages[i][j]>=0)
-				nIncompatible[i]+=notAllowedTimesPercentages[i][j]/100.0;
-		
-		//min days - no
-		
-
-		//teachers max days per week
-		//foreach(int t, teachersWithMaxDaysPerWeekForActivities[i]){
-		foreach(int t, gt.rules.internalActivitiesList[i].iTeachersList){
-			if(teachersMaxDaysPerWeekWeightPercentages[t]>=0){
-				assert(gt.rules.nDaysPerWeek-teachersMaxDaysPerWeekMaxDays[t] >=0 );
-				nIncompatible[i]+=(gt.rules.nDaysPerWeek-teachersMaxDaysPerWeekMaxDays[t])*gt.rules.nHoursPerDay
-				  *teachersMaxDaysPerWeekWeightPercentages[t]/100.0;
-			}
-		}
-
-		
-		//rooms
-		if(activitiesPreferredRoomsPercentage[i]>=0){
-			double cnt=0;
-			assert(!unspecifiedPreferredRoom[i]);
-			foreach(int rm, activitiesPreferredRoomsPreferredRooms[i])
-				cnt+=(nRoomsIncompat[rm]+nHoursForRoom[rm]-gt.rules.internalActivitiesList[i].duration)
-				  *activitiesPreferredRoomsPercentage[i]/100.0;
-				  //- because we considered also current activity
-				
-			nIncompatible[i] += cnt / activitiesPreferredRoomsPreferredRooms[i].count(); //average for all the rooms
-		}
-				
-		
-
-		nIncompatible[i]*=gt.rules.internalActivitiesList[i].duration;
-	}
-
-	//same starting time - not computing, the algo takes care even without correct sorting
-	//it is difficult to sort about same starting time
-	
-	//Sort activities in in-creasing order of number of the other activities with which
-	//this activity does not conflict
-	//Selection sort, based on a permutation
-	for(int i=0; i<gt.rules.nInternalActivities; i++)
-		permutation[i]=i;
-		
-	for(int i=0; i<gt.rules.nInternalActivities; i++){
-		for(int j=i+1; j<gt.rules.nInternalActivities; j++){
-			if(nIncompatible[permutation[i]]<nIncompatible[permutation[j]]){
-				int t=permutation[i];
-				permutation[i]=permutation[j];
-				permutation[j]=t;
-			}
-		}
-	}
-	
-	cout<<"The order of activities (id-s):"<<endl;
-	for(int i=0; i<gt.rules.nInternalActivities; i++){
-		cout<<"No: "<<i+1<<", nIncompatible[permutation[i]]=="<<nIncompatible[permutation[i]]<<", ";
-	
-		Activity* act=&gt.rules.internalActivitiesList[permutation[i]];
-		cout<<"id=="<<act->id;
-		cout<<", teachers: ";
-		foreach(QString s, act->teachersNames)
-			cout<<qPrintable(s)<<" ";
-		cout<<", subj=="<<qPrintable(act->subjectName);
-		cout<<", students: ";
-		foreach(QString s, act->studentsNames)
-			cout<<qPrintable(s)<<" ";
-		cout<<endl;
-	}
-	cout<<"End - the order of activities (id-s):"<<endl;
-}
-*/
 
 bool homeRoomsAreOk(QWidget* parent)
 {
@@ -8660,7 +8336,7 @@ void sortActivities(QWidget* parent, const QHash<int, int> & reprSameStartingTim
 	
 		double maxPercentage=-1;
 		double minNRooms=INF;
-		foreach(PreferredRoomsItem it, activitiesPreferredRoomsList[j])
+		for(const PreferredRoomsItem& it : qAsConst(activitiesPreferredRoomsList[j]))
 			if(maxPercentage<it.percentage || (maxPercentage==it.percentage && minNRooms>it.preferredRooms.count())){
 				maxPercentage=it.percentage;
 				minNRooms=it.preferredRooms.count();
@@ -8672,7 +8348,7 @@ void sortActivities(QWidget* parent, const QHash<int, int> & reprSameStartingTim
 		PreferredRoomsItem it=maxPercentagePrefRooms[j];
 		if(it.percentage>=THRESHOLD){
 			assert(!unspecifiedPreferredRoom[j]);
-			foreach(int rm, it.preferredRooms)
+			for(int rm : qAsConst(it.preferredRooms))
 				nHoursForRoom[rm]+=double(gt.rules.internalActivitiesList[j].duration)/double(it.preferredRooms.count());
 		}
 	}
@@ -8684,10 +8360,10 @@ void sortActivities(QWidget* parent, const QHash<int, int> & reprSameStartingTim
 	//idea of Volker Dirr, implementation of Liviu
 	
 	QSet<int> allRepresentants;
-	foreach(int r, reprSameStartingTime) //only values, which are representants
+	for(int r : qAsConst(reprSameStartingTime)) //only values, which are representants
 		allRepresentants.insert(r);
 	
-	foreach(int r, allRepresentants){
+	for(int r : qAsConst(allRepresentants)){
 		assert(reprSameActivitiesSet.contains(r));
 		QSet<int> s=reprSameActivitiesSet.value(r);
 		
@@ -8696,7 +8372,7 @@ void sortActivities(QWidget* parent, const QHash<int, int> & reprSameStartingTim
 			//Faster
 			QHash<int, int> conflHash;
 			
-			foreach(int i, s){
+			for(int i : qAsConst(s)){
 				QHashIterator<int, int> it(activitiesConflictingPercentage[i]);
 				while(it.hasNext()){
 					it.next();
@@ -8707,7 +8383,7 @@ void sortActivities(QWidget* parent, const QHash<int, int> & reprSameStartingTim
 				}
 			}
 			
-			foreach(int i, s){
+			for(int i : qAsConst(s)){
 				QHashIterator<int, int> it(conflHash);
 				while(it.hasNext()){
 					it.next();
@@ -8720,33 +8396,6 @@ void sortActivities(QWidget* parent, const QHash<int, int> & reprSameStartingTim
 						activitiesConflictingPercentage[j].insert(i, weight);
 				}
 			}
-
-			/*for(int i=0; i<gt.rules.nInternalActivities; i++){
-				crth[i]=-1; //horizontal
-				crtv[i]=-1; //vertical
-			}
-		
-			foreach(int j, s){
-				for(int i=0; i<gt.rules.nInternalActivities; i++){
-					if(crth[i]<activitiesConflictingPercentage[j].value(i, -1))
-						crth[i]=activitiesConflictingPercentage[j].value(i, -1);
-					if(crtv[i]<activitiesConflictingPercentage[i].value(j, -1))
-						crtv[i]=activitiesConflictingPercentage[i].value(j, -1);
-				}
-			}
-
-			for(int i=0; i<gt.rules.nInternalActivities; i++)
-				assert(crth[i]==crtv[i]);
-		
-			foreach(int j, s){
-				for(int i=0; i<gt.rules.nInternalActivities; i++){
-					assert(activitiesConflictingPercentage[j].value(i, -1)<=crth[i]);
-					activitiesConflictingPercentage[j].insert(i, crth[i]);
-
-					assert(activitiesConflictingPercentage[i].value(j, -1)<=crtv[i]);
-					activitiesConflictingPercentage[i].insert(j, crtv[i]);
-				}
-			}*/
 		}
 	}
 	//end same starting time
@@ -8762,29 +8411,16 @@ void sortActivities(QWidget* parent, const QHash<int, int> & reprSameStartingTim
 		QHashIterator<int, int> iter(hashConfl);
 		while(iter.hasNext()){
 			iter.next();
-			//cout<<it.key()<<": "<<it.value()<<endl;
 			int j=iter.key();
 			assert(reprSameStartingTime.contains(j));
 
 			if(reprSameStartingTime.value(i)!=reprSameStartingTime.value(j)){
-				//if(i!=j && activitiesConflictingPercentage[i].value(j, -1)>=THRESHOLD){
 				if(i!=j && iter.value()>=THRESHOLD){
 					nIncompatible[i]+=gt.rules.internalActivitiesList[j].duration;
 				}
 			}
 		}
 
-		/*for(int j=0; j<gt.rules.nInternalActivities; j++){
-			assert(reprSameStartingTime.contains(j));
-			
-			if(reprSameStartingTime.value(i)!=reprSameStartingTime.value(j)){
-				if(i!=j && activitiesConflictingPercentage[i].value(j, -1)>=THRESHOLD){
-					//assert(activitiesConflictingPercentage[i][j]==100);
-					nIncompatible[i]+=gt.rules.internalActivitiesList[j].duration;
-				}
-			}
-		}*/
-		
 		//not available, break, preferred time(s)
 		for(int j=0; j<gt.rules.nHoursPerWeek; j++)
 			if(notAllowedTimesPercentages[i][j]>=THRESHOLD)
@@ -8792,9 +8428,8 @@ void sortActivities(QWidget* parent, const QHash<int, int> & reprSameStartingTim
 		
 		//min days - no
 		
-
 		//students max days per week
-		foreach(int s, gt.rules.internalActivitiesList[i].iSubgroupsList){
+		for(int s : qAsConst(gt.rules.internalActivitiesList[i].iSubgroupsList)){
 			if(subgroupsMaxDaysPerWeekWeightPercentages[s]>=THRESHOLD){
 				assert(gt.rules.nDaysPerWeek-subgroupsMaxDaysPerWeekMaxDays[s] >=0 );
 				nIncompatible[i]+=(gt.rules.nDaysPerWeek-subgroupsMaxDaysPerWeekMaxDays[s])*gt.rules.nHoursPerDay;
@@ -8802,8 +8437,7 @@ void sortActivities(QWidget* parent, const QHash<int, int> & reprSameStartingTim
 		}
 
 		//teachers max days per week
-		//foreach(int t, teachersWithMaxDaysPerWeekForActivities[i]){
-		foreach(int t, gt.rules.internalActivitiesList[i].iTeachersList){
+		for(int t : qAsConst(gt.rules.internalActivitiesList[i].iTeachersList)){
 			if(teachersMaxDaysPerWeekWeightPercentages[t]>=THRESHOLD){
 				assert(gt.rules.nDaysPerWeek-teachersMaxDaysPerWeekMaxDays[t] >=0 );
 				nIncompatible[i]+=(gt.rules.nDaysPerWeek-teachersMaxDaysPerWeekMaxDays[t])*gt.rules.nHoursPerDay;
@@ -8816,7 +8450,7 @@ void sortActivities(QWidget* parent, const QHash<int, int> & reprSameStartingTim
 		if(it.percentage>=THRESHOLD){
 			double cnt=0.0;
 			assert(!unspecifiedPreferredRoom[i]);
-			foreach(int rm, it.preferredRooms)
+			for(int rm : qAsConst(it.preferredRooms))
 				cnt+=double(nRoomsIncompat[rm])+nHoursForRoom[rm]-(double(gt.rules.internalActivitiesList[i].duration)/double(it.preferredRooms.count()));
 				 //-duration because we considered also current activity
 			
@@ -8906,7 +8540,7 @@ void sortActivities(QWidget* parent, const QHash<int, int> & reprSameStartingTim
 				int crtHead=queue.dequeue();
 				assert(repr.value(crtHead, -1)==start);
 				QList<int> neighList=adjMatrix.values(crtHead);
-				foreach(int neigh, neighList){
+				for(int neigh : qAsConst(neighList)){
 					if(repr.value(neigh, -1)==-1){
 						queue.enqueue(neigh);
 						repr.insert(neigh, start);
@@ -9057,7 +8691,7 @@ void sortActivities(QWidget* parent, const QHash<int, int> & reprSameStartingTim
 		bool report=true;
 		int j=0;
 		
-		foreach(GroupActivitiesInInitialOrderItem* item, gt.rules.groupActivitiesInInitialOrderList){
+		for(GroupActivitiesInInitialOrderItem* item : qAsConst(gt.rules.groupActivitiesInInitialOrderList)){
 			j++;
 			
 			if(!item->active)
@@ -9295,8 +8929,6 @@ void sortActivities(QWidget* parent, const QHash<int, int> & reprSameStartingTim
 			cout<<", id="<<act->id;
 			cout<<", teachers: ";
 			QString tj=act->teachersNames.join(" ");
-			//foreach(QString s, act->teachersNames)
-			//	cout<<qPrintable(s)<<" ";
 			cout<<qPrintable(tj);
 			cout<<", subject: "<<qPrintable(act->subjectName);
 			if(act->activityTagsNames.count()>0){
@@ -9305,8 +8937,6 @@ void sortActivities(QWidget* parent, const QHash<int, int> & reprSameStartingTim
 			}
 			cout<<", students: ";
 			QString sj=act->studentsNames.join(" ");
-			//foreach(QString s, act->studentsNames)
-			//	cout<<qPrintable(s)<<" ";
 			cout<<qPrintable(sj);
 			
 			cout<<", nIncompatible[permutation[i]]="<<nIncompatible[permutation[i]];

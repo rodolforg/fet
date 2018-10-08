@@ -77,11 +77,11 @@ void ModifyStudentsYearForm::ok()
 		//rename groups and subgroups by Volker Dirr (start)
 		//prepare checks
 		QSet<QString> oldNames;
-		foreach(StudentsYear* year, gt.rules.yearsList){
+		for(StudentsYear* year : qAsConst(gt.rules.yearsList)){
 			oldNames<<year->name;
-			foreach(StudentsGroup* group, year->groupsList){
+			for(StudentsGroup* group : qAsConst(year->groupsList)){
 				oldNames<<group->name;
-				foreach(StudentsSubgroup* subgroup, group->subgroupsList){
+				for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList)){
 					oldNames<<subgroup->name;
 				}
 			}
@@ -94,14 +94,14 @@ void ModifyStudentsYearForm::ok()
 		QString willBeRenamed;
 		QSet<QString> alreadyRenamed;
 		QHash<QString, QString> oldAndNewStudentsSetNamesForRenaming;
-		foreach(StudentsYear* year, gt.rules.yearsList){
+		for(StudentsYear* year : qAsConst(gt.rules.yearsList)){
 			if(this->_initialYearName != year->name){
-				foreach(StudentsGroup* group, year->groupsList){
+				for(StudentsGroup* group : qAsConst(year->groupsList)){
 					if(group->name.left(this->_initialYearName.count())==this->_initialYearName){
 						wontBeRenamed1+=tr("%1 in %2", "For instance group '1 a' in year '1'").arg(group->name).arg(year->name)+"\n";
 						//It's correct for example if there is year "1" and year "10"
 					}
-					foreach(StudentsSubgroup* subgroup, group->subgroupsList){
+					for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList)){
 						if(subgroup->name.left(this->_initialYearName.count())==this->_initialYearName){
 							wontBeRenamed1+=tr("%1 in %2 in %3", "For instance subgroup '1 a DE' in group '1 a' in year '1'").arg(subgroup->name).arg(group->name).arg(year->name)+"\n";
 							//It's correct for example if there is year "1" and year "10"
@@ -109,8 +109,8 @@ void ModifyStudentsYearForm::ok()
 					}
 				}
 			} else {
-				foreach(StudentsGroup* group, year->groupsList){
-					foreach(StudentsSubgroup* subgroup, group->subgroupsList){
+				for(StudentsGroup* group : qAsConst(year->groupsList)){
+					for(StudentsSubgroup* subgroup : qAsConst(group->subgroupsList)){
 						if(subgroup->name.left(this->_initialYearName.count())!=this->_initialYearName){
 							wontBeRenamed2+=tr("%1 in %2 in %3", "For instance subgroup '1 a DE' in group '1 a' in year '1'").arg(subgroup->name).arg(group->name).arg(year->name)+"\n";
 						} else {

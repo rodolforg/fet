@@ -106,7 +106,7 @@ void restoreFETDialogGeometry(QWidget* widget, const QString& alternativeName)
 		if(rect.isValid()){
 			bool ok=false;
 #if QT_VERSION >= 0x050000
-			foreach(QScreen* screen, QGuiApplication::screens()){
+			for(QScreen* screen : QGuiApplication::screens()){
 				if(screen->availableGeometry().intersects(rect)){
 #else
 			for(int i=0; i<QApplication::desktop()->screenCount(); i++){

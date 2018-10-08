@@ -39,7 +39,7 @@ void TimeConstraintBaseDialog::doRemoveConstraint(void *ctr)
 
 void TimeConstraintBaseDialog::fillConstraintList(QList<void *> &list)
 {
-	foreach (TimeConstraint *ctr, gt.rules.timeConstraintsList){
+	for (TimeConstraint *ctr : qAsConst(gt.rules.timeConstraintsList)){
 		if(filterOk(ctr)){
 			QString s=ctr->getDescription(gt.rules);
 			list.append(ctr);

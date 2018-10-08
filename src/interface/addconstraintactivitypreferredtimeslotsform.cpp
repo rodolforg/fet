@@ -224,7 +224,7 @@ void AddConstraintActivityPreferredTimeSlotsForm::addConstraint()
 				return;
 	}
 
-	/*foreach(TimeConstraint* tc, gt.rules.timeConstraintsList){
+	/*for(TimeConstraint* tc : qAsConst(gt.rules.timeConstraintsList)){
 		if(tc->type==CONSTRAINT_ACTIVITY_PREFERRED_TIMES){
 			ConstraintActivityPreferredTimes* c=(ConstraintActivityPreferredTimes*) tc;
 			if(c->activityId==id){

@@ -56,7 +56,7 @@ bool ConstraintActivityPreferredTimeSlotsForm::filterOk(const TimeConstraint* ct
 	const ConstraintActivityPreferredTimeSlots* c=(const ConstraintActivityPreferredTimeSlots*) ctr;
 	int id=c->p_activityId;
 	const Activity* act=NULL;
-	foreach(const Activity* a, gt.rules.activitiesList) {
+	for(const Activity* a : qAsConst(gt.rules.activitiesList)) {
 		if(a->id==id) {
 			act=a;
 			break;

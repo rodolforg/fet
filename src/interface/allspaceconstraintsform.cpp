@@ -234,14 +234,14 @@ bool AllSpaceConstraintsForm::filterOk(SpaceConstraint* ctr)
 	
 	if(all){
 		bool ok=true;
-		foreach(bool b, okPartial)
+		for(bool b : qAsConst(okPartial))
 			ok = ok && b;
 			
 		return ok;
 	}
 	else{ //any
 		bool ok=false;
-		foreach(bool b, okPartial)
+		for(bool b : qAsConst(okPartial))
 			ok = ok || b;
 			
 		return ok;
@@ -373,14 +373,14 @@ void AllSpaceConstraintsForm::filterChanged()
 	visibleSpaceConstraintsList.clear();
 	constraintsListWidget->clear();
 	int n_active=0;
-	foreach(SpaceConstraint* ctr, gt.rules.spaceConstraintsList)
+	for(SpaceConstraint* ctr : qAsConst(gt.rules.spaceConstraintsList))
 		if(filterOk(ctr))
 			visibleSpaceConstraintsList.append(ctr);
 			
 	if(sortedCheckBox->isChecked())
 		std::stable_sort(visibleSpaceConstraintsList.begin(), visibleSpaceConstraintsList.end(), spaceConstraintsAscendingByDescription);
 	
-	foreach(SpaceConstraint* ctr, visibleSpaceConstraintsList){
+	for(SpaceConstraint* ctr : qAsConst(visibleSpaceConstraintsList)){
 		assert(filterOk(ctr));
 		constraintsListWidget->addItem(ctr->getDescription(gt.rules));
 
@@ -759,7 +759,7 @@ void AllSpaceConstraintsForm::activateConstraint()
 		}
 	
 		int n_active=0;
-		foreach(SpaceConstraint* ctr2, gt.rules.spaceConstraintsList)
+		for(SpaceConstraint* ctr2 : qAsConst(gt.rules.spaceConstraintsList))
 			if(filterOk(ctr2)){
 				if(ctr2->active)
 					n_active++;
@@ -809,7 +809,7 @@ void AllSpaceConstraintsForm::deactivateConstraint()
 		}
 	
 		int n_active=0;
-		foreach(SpaceConstraint* ctr2, gt.rules.spaceConstraintsList)
+		for(SpaceConstraint* ctr2 : qAsConst(gt.rules.spaceConstraintsList))
 			if(filterOk(ctr2)){
 				if(ctr2->active)
 					n_active++;

@@ -36,8 +36,8 @@ bool ParadoxMinDaysVsThreeGrouped::prepare(const Rules& rules)
 				groups << g;
 				QList<QPair<int, int> > pairs;
 				pairs << QPair<int, int>(ai1, ai2) << QPair<int, int>(ai1, ai3) << QPair<int, int>(ai2, ai3);
-				QPair<int, int> pair;
-				foreach (pair, pairs) {
+
+				for (QPair<int, int> pair : qAsConst(pairs)) {
 					// search for contradictory constraints Min days between paired activities
 					int pai1 = pair.first;
 					int pai2 = pair.second;

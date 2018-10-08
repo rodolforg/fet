@@ -49,7 +49,7 @@ AddConstraintTeacherHomeRoomsForm::AddConstraintTeacherHomeRoomsForm(QWidget* pa
 	updateRoomsListWidget();
 
 	teachersComboBox->clear();
-	foreach(Teacher* tch, gt.rules.teachersList)
+	for(Teacher* tch : qAsConst(gt.rules.teachersList))
 		teachersComboBox->addItem(tch->name);
 }
 

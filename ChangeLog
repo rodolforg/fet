@@ -2061,7 +2061,7 @@ Versions 5.35.0 - 5.35.7
 	- Improved the command-line operation on Windows (since this platform misses/ignores SIGTERM, we use instead SIGBREAK to write the current and
 	highest-stage timetables, then stop the program). Suggested by svenvanhal.
 ---------------------------------------------------------------------------------
-Versions 5.36.0 - 5.36.v
+Versions 5.36.0 - 5.36.2
 -Version 5.36.0
 	- Added a new constraint, two activities are ordered if they are on the same day (suggested by math).
 	- The students' combo boxes can now be shown in three styles: simple (the old style), with icons, or categorized (suggested by math).
@@ -2086,3 +2086,10 @@ Versions 5.36.0 - 5.36.v
 	- Added the feature of locking and unlocking all the activities having attached a certain activity tag (suggested by Diego Froner).
 	- Bug fix in the unlocking of activities of a certain day if the timetable was not generated: If the user selected only space unlocking, no activities
 	were unlocked.
+---------------------------------------------------------------------------------
+Versions 5.37.0 - 5.37.v
+- Version 5.37.0
+	- Code update: removed the dependency of the obsolete Qt 'foreach' keyword (suggested by Volker Dirr). The speed of generation is improved by 5%-25%,
+	depending on the data file. Now you need a C++11 compliant compiler to compile FET.
+	- Updated the German example files from secondary school 1, by Volker Dirr.
+	- Updated all the example files to use the latest file format.

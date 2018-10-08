@@ -296,14 +296,14 @@ bool AllTimeConstraintsForm::filterOk(TimeConstraint* ctr)
 	
 	if(all){
 		bool ok=true;
-		foreach(bool b, okPartial)
+		for(bool b : qAsConst(okPartial))
 			ok = ok && b;
 			
 		return ok;
 	}
 	else{ //any
 		bool ok=false;
-		foreach(bool b, okPartial)
+		for(bool b : qAsConst(okPartial))
 			ok = ok || b;
 			
 		return ok;
@@ -437,14 +437,14 @@ void AllTimeConstraintsForm::filterChanged()
 	visibleTimeConstraintsList.clear();
 	constraintsListWidget->clear();
 	int n_active=0;
-	foreach(TimeConstraint* ctr, gt.rules.timeConstraintsList)
+	for(TimeConstraint* ctr : qAsConst(gt.rules.timeConstraintsList))
 		if(filterOk(ctr))
 			visibleTimeConstraintsList.append(ctr);
 		
 	if(sortedCheckBox->isChecked())
 		std::stable_sort(visibleTimeConstraintsList.begin(), visibleTimeConstraintsList.end(), timeConstraintsAscendingByDescription);
 
-	foreach(TimeConstraint* ctr, visibleTimeConstraintsList){
+	for(TimeConstraint* ctr : qAsConst(visibleTimeConstraintsList)){
 		assert(filterOk(ctr));
 		constraintsListWidget->addItem(ctr->getDescription(gt.rules));
 			
@@ -1083,7 +1083,7 @@ void AllTimeConstraintsForm::activateConstraint()
 		}
 		
 		int n_active=0;
-		foreach(TimeConstraint* ctr2, gt.rules.timeConstraintsList)
+		for(TimeConstraint* ctr2 : qAsConst(gt.rules.timeConstraintsList))
 			if(filterOk(ctr2)){
 				if(ctr2->active)
 					n_active++;
@@ -1133,7 +1133,7 @@ void AllTimeConstraintsForm::deactivateConstraint()
 		}
 
 		int n_active=0;
-		foreach(TimeConstraint* ctr2, gt.rules.timeConstraintsList)
+		for(TimeConstraint* ctr2 : qAsConst(gt.rules.timeConstraintsList))
 			if(filterOk(ctr2)){
 				if(ctr2->active)
 					n_active++;

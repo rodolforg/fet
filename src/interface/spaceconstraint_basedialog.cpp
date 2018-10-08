@@ -39,7 +39,7 @@ void SpaceConstraintBaseDialog::doRemoveConstraint(void *ctr)
 
 void SpaceConstraintBaseDialog::fillConstraintList(QList<void *> &list)
 {
-	foreach (SpaceConstraint *ctr, gt.rules.spaceConstraintsList){
+	for (SpaceConstraint *ctr : qAsConst(gt.rules.spaceConstraintsList)){
 		if(filterOk(ctr)){
 			QString s=ctr->getDescription(gt.rules);
 			list.append(ctr);
