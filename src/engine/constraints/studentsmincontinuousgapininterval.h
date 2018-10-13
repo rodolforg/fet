@@ -23,9 +23,10 @@ public:
 		int startHour;
 		int endHour;
 		double weightPercentage;
-	} data[MAX_TOTAL_SUBGROUPS][MAX];
+	} **data;
 
 	MinContinuousGapInIntervalForStudents();
+	virtual ~MinContinuousGapInIntervalForStudents();
 
 	bool prepare(const Rules &rules);
 };

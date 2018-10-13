@@ -12,7 +12,17 @@
 
 MinContinuousGapInIntervalForStudents::MinContinuousGapInIntervalForStudents()
 {
+	data = new Data*[MAX];
+	for (int i = 0; i < MAX; i++)
+		data[i] = new Data[MAX_TOTAL_SUBGROUPS];
+}
 
+MinContinuousGapInIntervalForStudents::~MinContinuousGapInIntervalForStudents()
+{
+	for (int i = 0; i < MAX; i++)
+		delete [] data[i];
+
+	delete [] data;
 }
 
 bool MinContinuousGapInIntervalForStudents::prepare(const Rules &rules)
