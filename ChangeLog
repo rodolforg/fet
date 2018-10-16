@@ -2106,3 +2106,6 @@ Versions 5.37.0 - 5.37.v
 	- Crash bug fix (usually not met in practice), when opening a file containing duplicate activities id-s. Reported by Ahmed Ben Hassan.
 	- Updated the Arabic translation, by Benahmed Abdelkrim.
 	- Volker Dirr's site now uses SSL (https protocol instead of http).
+- Version 5.37.3
+	- Updated to Qt 5.11.2.
+	- Minor string fixes in the CSV import/export dialogs.
