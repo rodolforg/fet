@@ -30728,40 +30728,40 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>DaysForm</name>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="126"/>
-        <location filename="../src/interface/daysform.cpp" line="133"/>
+        <location filename="../src/interface/daysform.cpp" line="128"/>
+        <location filename="../src/interface/daysform.cpp" line="135"/>
         <source>FET information</source>
         <translation>FET - informație</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="127"/>
+        <location filename="../src/interface/daysform.cpp" line="129"/>
         <source>Empty names not allowed</source>
         <translation>Numele vide nu sunt admise</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="134"/>
+        <location filename="../src/interface/daysform.cpp" line="136"/>
         <source>Duplicates not allowed</source>
         <translation>Duplicatele nu sunt admise</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="165"/>
+        <location filename="../src/interface/daysform.cpp" line="167"/>
         <source>%1 constraints will be removed.</source>
         <comment>%1 is the number of constraints</comment>
         <translation>%1 constrângeri vor fi șterse.</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="169"/>
+        <location filename="../src/interface/daysform.cpp" line="171"/>
         <source>%1 constraints will be modified.</source>
         <comment>%1 is the number of constraints</comment>
         <translation>%1 constrângeri vor fi modificate.</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="172"/>
+        <location filename="../src/interface/daysform.cpp" line="174"/>
         <source>Do you want to continue?</source>
         <translation>Doriți să continuați?</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="174"/>
+        <location filename="../src/interface/daysform.cpp" line="176"/>
         <source>FET warning</source>
         <translation>FET - avertisment</translation>
     </message>
@@ -31023,8 +31023,8 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/export.cpp" line="738"/>
         <location filename="../src/engine/export.cpp" line="789"/>
         <location filename="../src/engine/export.cpp" line="870"/>
-        <location filename="../src/engine/export.cpp" line="1158"/>
-        <location filename="../src/engine/export.cpp" line="1242"/>
+        <location filename="../src/engine/export.cpp" line="1162"/>
+        <location filename="../src/engine/export.cpp" line="1246"/>
         <source>FET critical. Cannot open file %1 for writing. Please check your disk&apos;s free space. Saving of %1 aborted.</source>
         <translation>FET - critic. Nu pot deschide fișierul %1 pentru scriere. Vă rog verificați spațiul liber al discului dvs. Salvarea %1 abandonată.</translation>
     </message>
@@ -31048,9 +31048,9 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/export.cpp" line="705"/>
         <location filename="../src/engine/export.cpp" line="756"/>
         <location filename="../src/engine/export.cpp" line="837"/>
-        <location filename="../src/engine/export.cpp" line="1125"/>
-        <location filename="../src/engine/export.cpp" line="1209"/>
-        <location filename="../src/engine/export.cpp" line="1325"/>
+        <location filename="../src/engine/export.cpp" line="1129"/>
+        <location filename="../src/engine/export.cpp" line="1213"/>
+        <location filename="../src/engine/export.cpp" line="1329"/>
         <source>FET critical. Writing %1 gave error code %2, which means saving is compromised. Please check your disk&apos;s free space.</source>
         <translation>FET - critic. Scrierea %1 a dat codul de eroare %2, ceea ce înseamnă că salvarea este compromisă. Vă rog verificați spațiul liber al discului dvs.</translation>
     </message>
@@ -31106,45 +31106,22 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <translation>%1 subgrupuri exportate.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="937"/>
-        <source>was skipped, because it refers not to a whole larger container activity</source>
-        <translation>a fost ignorată, pentru că nu se referă la o activitate container mai mare</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/export.cpp" line="946"/>
-        <location filename="../src/engine/export.cpp" line="950"/>
-        <source>was skipped, because there exists another constraint of this type with larger weight percentage, referring to the same activities</source>
-        <translation>a fost ignorată, pentru că există o altă constrângere de acest tip cu importanța procentuală mai mare, care se referă la aceleași activități</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/export.cpp" line="956"/>
-        <location filename="../src/engine/export.cpp" line="961"/>
-        <source>was skipped, because there exists another constraint of this type with same weight percentage and higher number of min days, referring to the same activities</source>
-        <translation>a fost ignorată, pentru că există o altă constrângere de acest tip cu aceeași importanță procentuală și un număr mai mare de min zile, care se referă la aceleași activități</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/export.cpp" line="967"/>
-        <location filename="../src/engine/export.cpp" line="973"/>
-        <source>was skipped, because there exists another constraint of this type with same weight percentage and same number of min days and consecutive if same day true, referring to the same activities</source>
-        <translation>a fost ignorată, pentru că există o altă constrângere de acest tip cu aceeași importanță procentuală și același număr de min zile și consecutiv dacă aceeași zi adevărat, care se referă la aceleași activități</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/export.cpp" line="1013"/>
+        <location filename="../src/engine/export.cpp" line="1017"/>
         <source>different active flag</source>
         <translation>stare activă diferită</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1023"/>
+        <location filename="../src/engine/export.cpp" line="1027"/>
         <source>Activity with id %1 has disabled active flag but it is exported.</source>
         <translation>Activitatea cu id %1 are dezactivată starea activă dar este exportată.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1025"/>
+        <location filename="../src/engine/export.cpp" line="1029"/>
         <source>Subactivities with activity group id %1 have disabled active flag but they are exported.</source>
         <translation>Subactivitățile cu id de grup %1 au dezactivată starea activă dar sunt exportate.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1123"/>
+        <location filename="../src/engine/export.cpp" line="1127"/>
         <source>%1 activities exported.</source>
         <translation>%1 activități exportate.</translation>
     </message>
@@ -31176,71 +31153,72 @@ Importul datelor va fi mai simplu cu aceste setări.</translation>
         <translation>Export abandonat</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1320"/>
+        <location filename="../src/engine/export.cpp" line="1324"/>
         <source>%1 scheduled activities exported.</source>
         <translation>%1 activități programate exportate.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1322"/>
+        <location filename="../src/engine/export.cpp" line="1326"/>
         <source>0 scheduled activities exported, because no timetable was generated.</source>
         <translation>0 activități programate exportate, pentru că nu a fost generat un orar.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="937"/>
-        <location filename="../src/engine/export.cpp" line="946"/>
-        <location filename="../src/engine/export.cpp" line="950"/>
-        <location filename="../src/engine/export.cpp" line="956"/>
-        <location filename="../src/engine/export.cpp" line="961"/>
-        <location filename="../src/engine/export.cpp" line="967"/>
-        <location filename="../src/engine/export.cpp" line="973"/>
-        <source>Note: Constraint</source>
-        <translation>Notă: constrângerea</translation>
-    </message>
-    <message>
         <location filename="../src/engine/export.cpp" line="121"/>
-        <location filename="../src/engine/export.cpp" line="1105"/>
-        <location filename="../src/engine/export.cpp" line="1116"/>
+        <location filename="../src/engine/export.cpp" line="1109"/>
+        <location filename="../src/engine/export.cpp" line="1120"/>
         <source>FET warning</source>
         <translation>FET - avertisment</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1017"/>
+        <location filename="../src/engine/export.cpp" line="1021"/>
         <source>Subactivities with activity group id %1 are different between themselves (they were separately edited), so the export will not be very accurate. The fields which are different will be considered those of the representative subactivity. Fields which were different are: %2</source>
         <translation>Subactivitățile cu grupul id %1 sunt diferite între ele (au fost editate separat), așa că exportul nu va fi cu o bună acuratețe. Câmpurile care sunt diferite vor fi considerate acelea ale subactivității reprezentative. Câmpurile diferite sunt: %2</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1107"/>
-        <location filename="../src/engine/export.cpp" line="1117"/>
+        <location filename="../src/engine/export.cpp" line="1111"/>
+        <location filename="../src/engine/export.cpp" line="1121"/>
         <source>There are subactivities which were modified separately - so the components had different values for subject, activity tags, teachers, students or number of students from the representative subactivity. The export was done, but it is not very accurate.</source>
         <translation>Există subactivități care au fost modificate separat - așa că componentele au valori diferite pentru disciplină, etichete activitate, profesori, studenți sau număr de studenți din subactivitatea reprezentativă. Exportul a fost făcut, dar nu este foarte exact.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1001"/>
+        <location filename="../src/engine/export.cpp" line="1005"/>
         <source>different teachers</source>
         <translation>profesori diferiți</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1003"/>
+        <location filename="../src/engine/export.cpp" line="958"/>
+        <location filename="../src/engine/export.cpp" line="964"/>
+        <source>Note: Constraint %1 was skipped, because there exists another constraint of this type with the same weight percentage and higher number of min days, referring to the same activities</source>
+        <translation>Notă: Constrângerea %1 a fost ignorată, pentru că există o altă constrângere de acest tip cu aceeași importanță procentuală și un număr mai mare de de min zile, care se referă la aceleași activități</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/export.cpp" line="971"/>
+        <location filename="../src/engine/export.cpp" line="977"/>
+        <source>Note: Constraint %1 was skipped, because there exists another constraint of this type with the same weight percentage and same number of min days and consecutive if same day true, referring to the same activities</source>
+        <translation>Notă: Constrângerera %1 a fost ignorată, pentru că există o altă constrângere de acest tip cu aceeași importanță procentuală și același număr de min zile și consecutiv dacă aceeași zi adevărat, care se referă la aceleași activități</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/export.cpp" line="1007"/>
         <source>different subject</source>
         <translation>discipline diferite</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1007"/>
+        <location filename="../src/engine/export.cpp" line="1011"/>
         <source>different students</source>
         <translation>studenți diferiți</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1011"/>
+        <location filename="../src/engine/export.cpp" line="1015"/>
         <source>different number of students</source>
         <translation>număr de studenți diferit</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1005"/>
+        <location filename="../src/engine/export.cpp" line="1009"/>
         <source>different activity tags</source>
         <translation>etichete activitate diferite</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1009"/>
+        <location filename="../src/engine/export.cpp" line="1013"/>
         <source>different boolean variable &apos;must compute n total students&apos;</source>
         <translation>variabilă booleană &apos;trebuie să calculeze n total studenți&apos; diferită</translation>
     </message>
@@ -31265,7 +31243,18 @@ Importul datelor va fi mai simplu cu aceste setări.</translation>
         <translation>Anulează</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1207"/>
+        <location filename="../src/engine/export.cpp" line="937"/>
+        <source>Note: Constraint %1 was skipped, because it does not refer to a whole larger container activity</source>
+        <translation>Notă: Constrângerea %1 a fost ignorată, pentru că nu se referă la o activitate container întreagă mai mare</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/export.cpp" line="946"/>
+        <location filename="../src/engine/export.cpp" line="951"/>
+        <source>Note: Constraint %1 was skipped, because there exists another constraint of this type with larger weight percentage, referring to the same activities</source>
+        <translation>Notă: Constrângerea %1 a fost ignorată, pentru că există o altă constrângere de acest tip cu importanță procentuală mai mare, care se referă la aceleași activități</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/export.cpp" line="1211"/>
         <source>%1 active activities statistics exported.</source>
         <translation>%1 activități active exportate.</translation>
     </message>
@@ -38764,40 +38753,40 @@ Probabil, în practică această problemă nu va apărea și nu trebuie să vă 
 <context>
     <name>HoursForm</name>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="153"/>
-        <location filename="../src/interface/hoursform.cpp" line="160"/>
+        <location filename="../src/interface/hoursform.cpp" line="155"/>
+        <location filename="../src/interface/hoursform.cpp" line="162"/>
         <source>FET information</source>
         <translation>FET - informație</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="154"/>
+        <location filename="../src/interface/hoursform.cpp" line="156"/>
         <source>Empty names not allowed</source>
         <translation>Numele vide nu sunt admise</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="161"/>
+        <location filename="../src/interface/hoursform.cpp" line="163"/>
         <source>Duplicates not allowed</source>
         <translation>Duplicatele nu sunt admise</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="192"/>
+        <location filename="../src/interface/hoursform.cpp" line="194"/>
         <source>%1 constraints will be removed.</source>
         <comment>%1 is the number of constraints</comment>
         <translation>%1 constrângeri vor fi șterse.</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="196"/>
+        <location filename="../src/interface/hoursform.cpp" line="198"/>
         <source>%1 constraints will be modified.</source>
         <comment>%1 is the number of constraints</comment>
         <translation>%1 constrângeri vor fi modificate.</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="199"/>
+        <location filename="../src/interface/hoursform.cpp" line="201"/>
         <source>Do you want to continue?</source>
         <translation>Doriți să continuați?</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="201"/>
+        <location filename="../src/interface/hoursform.cpp" line="203"/>
         <source>FET warning</source>
         <translation>FET - avertisment</translation>
     </message>
@@ -39366,9 +39355,24 @@ Probabil, în practică această problemă nu va apărea și nu trebuie să vă 
         <translation>Încărcare abandonată de utilizator.</translation>
     </message>
     <message>
+        <location filename="../src/engine/import.cpp" line="1007"/>
+        <source>Skipped line %1: Fields &apos;%2&apos; and &apos;%3&apos; do not have the same value.</source>
+        <translation>Ignorat linia %1: câmpurile &apos;%2&apos; și &apos;%3&apos; nu au aceeași valoare.</translation>
+    </message>
+    <message>
         <location filename="../src/engine/import.cpp" line="1018"/>
         <source>Warning in line %1: Field with building name doesn&apos;t relate to a room</source>
         <translation>Avertisment în linia %1: câmpul cu numele clădirii nu are legătură cu o sală</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/import.cpp" line="1047"/>
+        <source>Skipped line %1: Field &apos;%2&apos; contains an invalid number (double) value.</source>
+        <translation>Ignorat linia %1: Câmpul &apos;%2&apos; conține număr (double) invalid.</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/import.cpp" line="1063"/>
+        <source>Skipped line %1: Field &apos;%2&apos; contains an unknown value.</source>
+        <translation>Ignorat linia %1: Câmpul &apos;%2&apos; conține o valoare necunoscută.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1139"/>
@@ -39602,11 +39606,6 @@ Probabil, în practică această problemă nu va apărea și nu trebuie să vă 
         <translation>Ignorat linia %1: câmpul &apos;%2&apos; nu conține valoare întreagă.</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1063"/>
-        <source>Skipped line %1: Field &apos;%2&apos; contain an unknown value.</source>
-        <translation>Ignorat linia %1: câmpul &apos;%2&apos; conține valoare necunoscută.</translation>
-    </message>
-    <message>
         <location filename="../src/engine/import.cpp" line="1082"/>
         <source>Skipped line %1: Data was already in a previous line.</source>
         <translation>Ignorat linia %1: data există deja pe o linie anterioară.</translation>
@@ -39620,7 +39619,7 @@ Probabil, în practică această problemă nu va apărea și nu trebuie să vă 
         <location filename="../src/engine/import.cpp" line="1405"/>
         <location filename="../src/engine/import.cpp" line="1414"/>
         <source>Skipped line %1: Field &apos;%2&apos; is already in a previous line.</source>
-        <translation>Ignorat linia %1: câmpul &apos;%2&apos; există deja pe o linie precedentă.</translation>
+        <translation>Ignorat linia %1: Câmpul &apos;%2&apos; există deja pe o linie precedentă.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1504"/>
@@ -39701,11 +39700,6 @@ Probabil, în practică această problemă nu va apărea și nu trebuie să vă 
         <translation>%1 activități container (%2 activități totale) adăugate. Vă rog verificați dialogul activităților.</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1007"/>
-        <source>Skipped line %1: Fields &apos;%2&apos; and &apos;%3&apos; haven&apos;t the same value.</source>
-        <translation>Ignorat linia %1: câmpurile &apos;%2&apos; și &apos;%3&apos; nu au aceeași valoare.</translation>
-    </message>
-    <message>
         <location filename="../src/engine/import.cpp" line="1744"/>
         <source>Problem in line %1: Group name %2 is taken for a year - please consider another name</source>
         <translation>Problemă în linia %1: grupul %2 este luat de un an - vă rog considerați un alt nume</translation>
@@ -39771,17 +39765,12 @@ Probabil, în practică această problemă nu va apărea și nu trebuie să vă 
     <message>
         <location filename="../src/engine/import.cpp" line="1027"/>
         <source>Skipped line %1: Field &apos;%2&apos; contains an invalid integer value.</source>
-        <translation>Ignorat linia %1: câmpul &apos;%2&apos; conține valoare întreaga invalidă.</translation>
+        <translation>Ignorat linia %1: Câmpul &apos;%2&apos; conține valoare întreaga invalidă.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1044"/>
         <source>Skipped line %1: Field &apos;%2&apos; doesn&apos;t contain a number (double) value.</source>
-        <translation>Ignorat linia %1: câmpul &apos;%2&apos; nu conține un număr (double).</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/import.cpp" line="1047"/>
-        <source>Skipped line %1: Field &apos;%2&apos; contains an number (double) value.</source>
-        <translation>Ignorat linia %1: câmpul &apos;%2&apos; conține număr (double) invalid.</translation>
+        <translation>Ignorat linia %1: Câmpul &apos;%2&apos; nu conține un număr (double).</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="646"/>
@@ -39809,12 +39798,12 @@ este:</translation>
     <message>
         <location filename="../src/engine/import.cpp" line="1012"/>
         <source>Skipped line %1: Field &apos;%2&apos; contains too many subactivities.</source>
-        <translation>Am ignorat linia %1: câmpul &apos;%2&apos; conține prea multe subactivități.</translation>
+        <translation>Am ignorat linia %1: Câmpul &apos;%2&apos; conține prea multe subactivități.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="979"/>
         <source>Skipped line %1: Field &apos;%2&apos; produces too many subactivities.</source>
-        <translation>Am ignorat linia %1: câmpul &apos;%2&apos; produce prea multe subactivități.</translation>
+        <translation>Am ignorat linia %1: Câmpul &apos;%2&apos; produce prea multe subactivități.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="123"/>
@@ -39903,13 +39892,13 @@ Vă rog opriți simularea înainte de aceasta</translation>
 <context>
     <name>LastWarningsDialogE</name>
     <message>
-        <location filename="../src/engine/export.cpp" line="1335"/>
+        <location filename="../src/engine/export.cpp" line="1339"/>
         <source>FET - export comment</source>
         <comment>The comment of the exporting operation</comment>
         <translation>FET - comentariu export</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1346"/>
+        <location filename="../src/engine/export.cpp" line="1350"/>
         <source>&amp;Ok</source>
         <translation>&amp;Bine</translation>
     </message>
@@ -48155,7 +48144,6 @@ Notă: profesor indisponibil și pauză nu sunt socotite ca ferestre.</translati
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="63"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>August</source>
         <translation>August</translation>
     </message>
@@ -48166,6 +48154,7 @@ Notă: profesor indisponibil și pauză nu sunt socotite ca ferestre.</translati
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="67"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>October</source>
         <translation>Octombrie</translation>
     </message>
@@ -51875,91 +51864,91 @@ Jos: %4</translation>
 <context>
     <name>SubactivitiesForm</name>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="349"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="348"/>
         <source>No: %1 / %2</source>
         <comment>No means number, %1 is the number of active activities, %2 is the number of total activities.Please leave space between fields, so that they are better visible</comment>
         <translation>Nr: %1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="351"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="350"/>
         <source>Dur: %1 / %2</source>
         <comment>Dur means duration, %1 is the duration of active activities, %2 is the duration of total activities.Please leave space between fields, so that they are better visible</comment>
         <translation>Dur: %1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="364"/>
-        <location filename="../src/interface/subactivitiesform.cpp" line="466"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="363"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="465"/>
         <source>FET information</source>
         <translation>FET - informație</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="364"/>
-        <location filename="../src/interface/subactivitiesform.cpp" line="466"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="363"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="465"/>
         <source>Invalid selected subactivity</source>
         <translation>Subactivitate selectată invalidă</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="424"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="423"/>
         <source>Useful instructions/tips:</source>
         <translation>Instrucțiuni/trucuri utile:</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="427"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="426"/>
         <source>Above the (sub)activities list, we have 2 labels, containing 4 numbers. The first label contains text: No: a / b. The first number a is the number of active (sub)activities (we number each individual subactivity as 1), while the second number b is the number of total (sub)activities. The second label contains text: Dur: c / d. The third number c is the duration of active (sub)activities, in periods (or FET hours), while the fourth number d is the duration of total (sub)activities, in periods (or FET hours). So, No means number and Dur means duration.</source>
         <translation>Deasupra listei (sub)activităților, avem 2 etichete, conținând 4 numere. Prima etichetă conține textul: Nr: a / b. Primul număr a este numărul de (sub)activități active (numărăm fiecare subactivitate individuală ca 1), în timp ce al doilea număr b este numărul de (sub)activități totale. A doua etichetă conține textul: Dur: c / d. Al treilea număr c este durata (sub)activităților active, în perioade (sau ore FET), în timp ce al patrulea număr d este durata totală a (sub)activităților, în perioade (sau ore FET). Deci, Nr înseamnă număr și Dur înseamnă durată.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="433"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="432"/>
         <source>Example: No: 100 / 102, Dur: 114 / 117. They represent: 100 - the number of active (sub)activities, then 102 - the number of total (sub)activities, 114 - the duration of active activities (in periods or FET hours) and 117 - the duration of total activities (in periods or FET hours). In this example we have 2 inactive activities with their combined duration being 3 periods.</source>
         <translation>Exemplu: Nr: 100 / 102, Dur: 114 / 117. Reprezintă: 100 - numărul de (sub)activități active, apoi 102 - numărul de (sub)activități totale, 114 - durata activităților active (în perioade sau ore FET) și 117 - durata activităților totale (în perioade sau ore FET). În acest exemplu avem 2 activități inactive cu durata lor combinată fiind de 3 perioade.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="439"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="438"/>
         <source>Explanation of the short description of an activity: first comes the id. If the activity is inactive, an X follows. Then the duration. Then, if the activity is split, a slash and the total duration. Then teachers, subject, activity tag (if it is not void) and students. Then the number of students (if specified).</source>
         <translation>Explicația descrierii scurte a unei activități: întâi vine id-ul. Dacă activitatea este inactivă, urmează un X. Apoi durata. Apoi, dacă activitatea este împărțită, un slash și durata totală. Apoi profesorii, disciplina, eticheta activitate (dacă nu este vidă) și studenții. Apoi numărul de studenți (dacă este specificat).</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="446"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="445"/>
         <source>have an X mark after the id.</source>
         <translation>au un semn X după id..</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="477"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="476"/>
         <source>Subactivity comments</source>
         <translation>Comentarii subactivitate</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="479"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="478"/>
         <source>OK</source>
         <translation>Bine</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="481"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="480"/>
         <source>Cancel</source>
         <translation>Anulează</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="443"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="442"/>
         <source>The activities which are inactive:</source>
         <translation>Activitățile care sunt inactive:</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="452"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="451"/>
         <source>if you use colors in interface (see Settings/Interface menu), they will appear with different background color.</source>
         <translation>dacă folosiți culori în interfață (vedeți meniul Setări/Interfață), ele vor apărea cu o culoare de fond diferită.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="454"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="453"/>
         <source>To modify a subactivity, you can also double click it.</source>
         <translation>Pentru a modifica o subactivitate, puteți de asemenea să faceți dublu click pe ea.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="456"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="455"/>
         <source>Show related: if you select this, there will be listed subactivities for groups and subgroups contained also in the current set (if the current set is a year or a group) and also higher ranked year or group (if the current set is a group or a subgroup).</source>
         <translation>Arată înrudite: dacă selectați aceasta, vor fi listate subactivitățile pentru grupuri și subgrupuri conținute de asemenea în setul curent (dacă setul curent este un an sau un grup) și de asemenea anul sau grupul cu rang mai înalt (dacă setul curent este un grup sau un subgrup).</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="459"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="458"/>
         <source>FET Help</source>
         <translation>FET - Ajutor</translation>
     </message>

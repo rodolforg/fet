@@ -30680,40 +30680,40 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>DaysForm</name>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="126"/>
-        <location filename="../src/interface/daysform.cpp" line="133"/>
+        <location filename="../src/interface/daysform.cpp" line="128"/>
+        <location filename="../src/interface/daysform.cpp" line="135"/>
         <source>FET information</source>
         <translation>FET información</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="127"/>
+        <location filename="../src/interface/daysform.cpp" line="129"/>
         <source>Empty names not allowed</source>
         <translation>Non se permiten nomes baleiros</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="134"/>
+        <location filename="../src/interface/daysform.cpp" line="136"/>
         <source>Duplicates not allowed</source>
         <translation>Non se permiten duplicados</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="165"/>
+        <location filename="../src/interface/daysform.cpp" line="167"/>
         <source>%1 constraints will be removed.</source>
         <comment>%1 is the number of constraints</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="169"/>
+        <location filename="../src/interface/daysform.cpp" line="171"/>
         <source>%1 constraints will be modified.</source>
         <comment>%1 is the number of constraints</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="172"/>
+        <location filename="../src/interface/daysform.cpp" line="174"/>
         <source>Do you want to continue?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="174"/>
+        <location filename="../src/interface/daysform.cpp" line="176"/>
         <source>FET warning</source>
         <translation type="unfinished"></translation>
     </message>
@@ -30990,8 +30990,8 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/export.cpp" line="738"/>
         <location filename="../src/engine/export.cpp" line="789"/>
         <location filename="../src/engine/export.cpp" line="870"/>
-        <location filename="../src/engine/export.cpp" line="1158"/>
-        <location filename="../src/engine/export.cpp" line="1242"/>
+        <location filename="../src/engine/export.cpp" line="1162"/>
+        <location filename="../src/engine/export.cpp" line="1246"/>
         <source>FET critical. Cannot open file %1 for writing. Please check your disk&apos;s free space. Saving of %1 aborted.</source>
         <translation>FET error crítico. Non se puido abrir o arquivo %1 para escritura. Comprobe no disco o espazo libre dispoñible. Gardado de %1 cancelado.</translation>
     </message>
@@ -31015,9 +31015,9 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/export.cpp" line="705"/>
         <location filename="../src/engine/export.cpp" line="756"/>
         <location filename="../src/engine/export.cpp" line="837"/>
-        <location filename="../src/engine/export.cpp" line="1125"/>
-        <location filename="../src/engine/export.cpp" line="1209"/>
-        <location filename="../src/engine/export.cpp" line="1325"/>
+        <location filename="../src/engine/export.cpp" line="1129"/>
+        <location filename="../src/engine/export.cpp" line="1213"/>
+        <location filename="../src/engine/export.cpp" line="1329"/>
         <source>FET critical. Writing %1 gave error code %2, which means saving is compromised. Please check your disk&apos;s free space.</source>
         <translation>FET error crítico. A escritura %1 deu un erro código %2, o que implica que non foi gardado. Comprobe o espazo en disco.</translation>
     </message>
@@ -31073,45 +31073,22 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <translation>%1 subgrupos exportados.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="937"/>
-        <source>was skipped, because it refers not to a whole larger container activity</source>
-        <translation>saltada, porque non se refire a un contenedor maior de actividades</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/export.cpp" line="946"/>
-        <location filename="../src/engine/export.cpp" line="950"/>
-        <source>was skipped, because there exists another constraint of this type with larger weight percentage, referring to the same activities</source>
-        <translation>saltada, porque existe outra restrición deste tipo con maior porcentaxe de ponderación, con respecto das mesmas actividades</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/export.cpp" line="956"/>
-        <location filename="../src/engine/export.cpp" line="961"/>
-        <source>was skipped, because there exists another constraint of this type with same weight percentage and higher number of min days, referring to the same activities</source>
-        <translation>saltada, porque existe outra restrición deste tipo con igual porcentaxe de ponderación e maior número de días míninmo, con respecto ás mesmas actividades</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/export.cpp" line="967"/>
-        <location filename="../src/engine/export.cpp" line="973"/>
-        <source>was skipped, because there exists another constraint of this type with same weight percentage and same number of min days and consecutive if same day true, referring to the same activities</source>
-        <translation>saltada, porque existe outra restrición deste tipo coa mesma porcentaxe de ponderación e o mesmo número de días mínimo e consecutivo se é o mesmo, con respecto ás mesmas actividades</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/export.cpp" line="1013"/>
+        <location filename="../src/engine/export.cpp" line="1017"/>
         <source>different active flag</source>
         <translation>Idicador activo diferente</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1023"/>
+        <location filename="../src/engine/export.cpp" line="1027"/>
         <source>Activity with id %1 has disabled active flag but it is exported.</source>
         <translation>Actividade con id %1 ten o indicador de activa desactivado pero foi exportada.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1025"/>
+        <location filename="../src/engine/export.cpp" line="1029"/>
         <source>Subactivities with activity group id %1 have disabled active flag but they are exported.</source>
         <translation>Subactividades con identificador de grupo de activadade %1 teñen o indicador de actividade desactivado pero son exportadas.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1123"/>
+        <location filename="../src/engine/export.cpp" line="1127"/>
         <source>%1 activities exported.</source>
         <translation>%1 actividades exportadas.</translation>
     </message>
@@ -31143,76 +31120,88 @@ A importación será máis doada con eles.</translation>
         <translation>Exportación incompleta</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1207"/>
+        <location filename="../src/engine/export.cpp" line="937"/>
+        <source>Note: Constraint %1 was skipped, because it does not refer to a whole larger container activity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/export.cpp" line="946"/>
+        <location filename="../src/engine/export.cpp" line="951"/>
+        <source>Note: Constraint %1 was skipped, because there exists another constraint of this type with larger weight percentage, referring to the same activities</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/export.cpp" line="1211"/>
         <source>%1 active activities statistics exported.</source>
         <translation>%1 estatísticas de actividades activas exportadas.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1320"/>
+        <location filename="../src/engine/export.cpp" line="1324"/>
         <source>%1 scheduled activities exported.</source>
         <translation>%1 actividades programadas exportadas.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1322"/>
+        <location filename="../src/engine/export.cpp" line="1326"/>
         <source>0 scheduled activities exported, because no timetable was generated.</source>
         <translation>0 actividades programadas exportadas, porque non se xerou o horario previamente.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="937"/>
-        <location filename="../src/engine/export.cpp" line="946"/>
-        <location filename="../src/engine/export.cpp" line="950"/>
-        <location filename="../src/engine/export.cpp" line="956"/>
-        <location filename="../src/engine/export.cpp" line="961"/>
-        <location filename="../src/engine/export.cpp" line="967"/>
-        <location filename="../src/engine/export.cpp" line="973"/>
-        <source>Note: Constraint</source>
-        <translation>Nota: Restrición</translation>
-    </message>
-    <message>
         <location filename="../src/engine/export.cpp" line="121"/>
-        <location filename="../src/engine/export.cpp" line="1105"/>
-        <location filename="../src/engine/export.cpp" line="1116"/>
+        <location filename="../src/engine/export.cpp" line="1109"/>
+        <location filename="../src/engine/export.cpp" line="1120"/>
         <source>FET warning</source>
         <translation>FET advertencia</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1017"/>
+        <location filename="../src/engine/export.cpp" line="1021"/>
         <source>Subactivities with activity group id %1 are different between themselves (they were separately edited), so the export will not be very accurate. The fields which are different will be considered those of the representative subactivity. Fields which were different are: %2</source>
         <translation>As subactividades con id %1 son diferentes entre si (foron editadas por separado), polo que a exportación non será exacta. Os campos que son diferentes serán considerados aqueles da subactividade máis importante. Os campos que son direntes son: %2</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1107"/>
-        <location filename="../src/engine/export.cpp" line="1117"/>
+        <location filename="../src/engine/export.cpp" line="1111"/>
+        <location filename="../src/engine/export.cpp" line="1121"/>
         <source>There are subactivities which were modified separately - so the components had different values for subject, activity tags, teachers, students or number of students from the representative subactivity. The export was done, but it is not very accurate.</source>
         <translation>As subactividades foron modificadas por separado - polo que os compoñentes teñen diferentes valores para materia, tipos de actividade, profesores, estudantes ou número de estudantes na subactividade principal. A exportación completouse, pero non é moi exacta.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1001"/>
+        <location filename="../src/engine/export.cpp" line="1005"/>
         <source>different teachers</source>
         <translation>profesores diferentes</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1003"/>
+        <location filename="../src/engine/export.cpp" line="958"/>
+        <location filename="../src/engine/export.cpp" line="964"/>
+        <source>Note: Constraint %1 was skipped, because there exists another constraint of this type with the same weight percentage and higher number of min days, referring to the same activities</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/export.cpp" line="971"/>
+        <location filename="../src/engine/export.cpp" line="977"/>
+        <source>Note: Constraint %1 was skipped, because there exists another constraint of this type with the same weight percentage and same number of min days and consecutive if same day true, referring to the same activities</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/export.cpp" line="1007"/>
         <source>different subject</source>
         <translation>materia diferente</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1007"/>
+        <location filename="../src/engine/export.cpp" line="1011"/>
         <source>different students</source>
         <translation>estudantes diferentes</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1011"/>
+        <location filename="../src/engine/export.cpp" line="1015"/>
         <source>different number of students</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1005"/>
+        <location filename="../src/engine/export.cpp" line="1009"/>
         <source>different activity tags</source>
         <translation>tipos de actividade diferentes</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1009"/>
+        <location filename="../src/engine/export.cpp" line="1013"/>
         <source>different boolean variable &apos;must compute n total students&apos;</source>
         <translation>variable booleana diferente &apos;debe calcularse n total de estudantes&apos;</translation>
     </message>
@@ -38502,40 +38491,40 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
 <context>
     <name>HoursForm</name>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="153"/>
-        <location filename="../src/interface/hoursform.cpp" line="160"/>
+        <location filename="../src/interface/hoursform.cpp" line="155"/>
+        <location filename="../src/interface/hoursform.cpp" line="162"/>
         <source>FET information</source>
         <translation>FET información</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="154"/>
+        <location filename="../src/interface/hoursform.cpp" line="156"/>
         <source>Empty names not allowed</source>
         <translation>Non se permiten nombres baleiros</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="161"/>
+        <location filename="../src/interface/hoursform.cpp" line="163"/>
         <source>Duplicates not allowed</source>
         <translation>Non se permiten duplicados</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="192"/>
+        <location filename="../src/interface/hoursform.cpp" line="194"/>
         <source>%1 constraints will be removed.</source>
         <comment>%1 is the number of constraints</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="196"/>
+        <location filename="../src/interface/hoursform.cpp" line="198"/>
         <source>%1 constraints will be modified.</source>
         <comment>%1 is the number of constraints</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="199"/>
+        <location filename="../src/interface/hoursform.cpp" line="201"/>
         <source>Do you want to continue?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="201"/>
+        <location filename="../src/interface/hoursform.cpp" line="203"/>
         <source>FET warning</source>
         <translation type="unfinished"></translation>
     </message>
@@ -39109,8 +39098,23 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <translation>Carga cancelada polo usuario.</translation>
     </message>
     <message>
+        <location filename="../src/engine/import.cpp" line="1007"/>
+        <source>Skipped line %1: Fields &apos;%2&apos; and &apos;%3&apos; do not have the same value.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/engine/import.cpp" line="1018"/>
         <source>Warning in line %1: Field with building name doesn&apos;t relate to a room</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/import.cpp" line="1047"/>
+        <source>Skipped line %1: Field &apos;%2&apos; contains an invalid number (double) value.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/import.cpp" line="1063"/>
+        <source>Skipped line %1: Field &apos;%2&apos; contains an unknown value.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -39345,11 +39349,6 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <translation>Ignorada liña %1: o campo &apos;%2&apos; non contén valores enteros.</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1063"/>
-        <source>Skipped line %1: Field &apos;%2&apos; contain an unknown value.</source>
-        <translation>Ignorada liña %1: o campo &apos;%2&apos; contén un valor descoñecido.</translation>
-    </message>
-    <message>
         <location filename="../src/engine/import.cpp" line="1082"/>
         <source>Skipped line %1: Data was already in a previous line.</source>
         <translation>Ignorada liña %1: os datos xa estaban nunha liña previa.</translation>
@@ -39454,11 +39453,6 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <translation>Aviso: atopáronse etiquetas para o campo &apos;consecutivo&apos; de mínimo d ías que non teñen un valor válido (%1) - fanse %2</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1007"/>
-        <source>Skipped line %1: Fields &apos;%2&apos; and &apos;%3&apos; haven&apos;t the same value.</source>
-        <translation>Ignorada liña %1: Os campos &apos;%2&apos; e &apos;%3&apos; non teñen o mesmo valor.</translation>
-    </message>
-    <message>
         <location filename="../src/engine/import.cpp" line="1744"/>
         <source>Problem in line %1: Group name %2 is taken for a year - please consider another name</source>
         <translation>Problema na liña %1: o grupo con nome %2 usouse para un curso - probe outro nome</translation>
@@ -39525,11 +39519,6 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <location filename="../src/engine/import.cpp" line="1044"/>
         <source>Skipped line %1: Field &apos;%2&apos; doesn&apos;t contain a number (double) value.</source>
         <translation>Ignorada liña %1: o campo &apos;%2&apos; non contén un valor númerico (doble).</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/import.cpp" line="1047"/>
-        <source>Skipped line %1: Field &apos;%2&apos; contains an number (double) value.</source>
-        <translation>Ignorada liña %1: o campo &apos;%2&apos; contén un valor numerico (doble).</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="646"/>
@@ -39641,13 +39630,13 @@ a simulación. Detéñaa antes</translation>
 <context>
     <name>LastWarningsDialogE</name>
     <message>
-        <location filename="../src/engine/export.cpp" line="1335"/>
+        <location filename="../src/engine/export.cpp" line="1339"/>
         <source>FET - export comment</source>
         <comment>The comment of the exporting operation</comment>
         <translation>FET - comentario exportación</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1346"/>
+        <location filename="../src/engine/export.cpp" line="1350"/>
         <source>&amp;Ok</source>
         <translation>&amp;Vale</translation>
     </message>
@@ -47889,7 +47878,6 @@ Nota: as horas non dispoñibles e as pausas dun profesor non se contan como ocos
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="63"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>August</source>
         <translation type="unfinished"></translation>
     </message>
@@ -47900,6 +47888,7 @@ Nota: as horas non dispoñibles e as pausas dun profesor non se contan como ocos
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="67"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>October</source>
         <translation type="unfinished"></translation>
     </message>
@@ -51605,91 +51594,91 @@ Bottom: %4</source>
 <context>
     <name>SubactivitiesForm</name>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="349"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="348"/>
         <source>No: %1 / %2</source>
         <comment>No means number, %1 is the number of active activities, %2 is the number of total activities.Please leave space between fields, so that they are better visible</comment>
         <translation>Nº: %1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="351"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="350"/>
         <source>Dur: %1 / %2</source>
         <comment>Dur means duration, %1 is the duration of active activities, %2 is the duration of total activities.Please leave space between fields, so that they are better visible</comment>
         <translation>Dur: %1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="364"/>
-        <location filename="../src/interface/subactivitiesform.cpp" line="466"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="363"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="465"/>
         <source>FET information</source>
         <translation>FET información</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="364"/>
-        <location filename="../src/interface/subactivitiesform.cpp" line="466"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="363"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="465"/>
         <source>Invalid selected subactivity</source>
         <translation>Subactividade seleccionada non válida</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="424"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="423"/>
         <source>Useful instructions/tips:</source>
         <translation>Instrucións/suxestións utis:</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="427"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="426"/>
         <source>Above the (sub)activities list, we have 2 labels, containing 4 numbers. The first label contains text: No: a / b. The first number a is the number of active (sub)activities (we number each individual subactivity as 1), while the second number b is the number of total (sub)activities. The second label contains text: Dur: c / d. The third number c is the duration of active (sub)activities, in periods (or FET hours), while the fourth number d is the duration of total (sub)activities, in periods (or FET hours). So, No means number and Dur means duration.</source>
         <translation>Enriba da lista de actividades temos dúas etiquetas que conteñen 4 números. A primeira etiqueta contén texto: Nº: a / b. O primeiro número a é o número de actividades activas (numeramos cada subactividade individual como 1), metras que o segundo número b é o número total de actividades. A segunda etiqueta contén o texto: Duración: c / d. O número c é a duración das actividades en períodos (ou horas FET), mentras que o número d é a duración total das actividades, en perídoso (ou horas FET). É dicir, Nº significa Número.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="433"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="432"/>
         <source>Example: No: 100 / 102, Dur: 114 / 117. They represent: 100 - the number of active (sub)activities, then 102 - the number of total (sub)activities, 114 - the duration of active activities (in periods or FET hours) and 117 - the duration of total activities (in periods or FET hours). In this example we have 2 inactive activities with their combined duration being 3 periods.</source>
         <translation>Por exemplo: Nº: 100 / 102, Duración: 114 / 117. Representa: 100 - número de actividades activdas, entón 102 - número de actividades total, 114 - duración das actividades activas (en períodos de horas FET) e 117 - duración do total de actividades (en períodos de horas FET). Neste exemplo temos 2 actividades inactivas que combinadas duran 3 períodos.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="439"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="438"/>
         <source>Explanation of the short description of an activity: first comes the id. If the activity is inactive, an X follows. Then the duration. Then, if the activity is split, a slash and the total duration. Then teachers, subject, activity tag (if it is not void) and students. Then the number of students (if specified).</source>
         <translation>Explicación da descrición dunha actividade: primeiro ven o id. Se a actividade está inactiva, segue unha X. A continuación a duración. Entón, se a actividade está dividida, unha barra e duración total. Entón profesores, materia, actividade (se non está baleira) e estudantes. Entón o número de estudantes (se se especifica).</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="446"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="445"/>
         <source>have an X mark after the id.</source>
         <translation>ten unha marca X despois do id.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="477"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="476"/>
         <source>Subactivity comments</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="479"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="478"/>
         <source>OK</source>
         <translation type="unfinished">Vale</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="481"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="480"/>
         <source>Cancel</source>
         <translation type="unfinished">Cancelar</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="443"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="442"/>
         <source>The activities which are inactive:</source>
         <translation>Actividades inactivas:</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="452"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="451"/>
         <source>if you use colors in interface (see Settings/Interface menu), they will appear with different background color.</source>
         <translation>se usa a interfaz en cor (ver menú Opcións/Interfaz), aparecerá con diferente cor de fondo.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="454"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="453"/>
         <source>To modify a subactivity, you can also double click it.</source>
         <translation>Para modificar unha subactividade, prema dobre clic nela.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="456"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="455"/>
         <source>Show related: if you select this, there will be listed subactivities for groups and subgroups contained also in the current set (if the current set is a year or a group) and also higher ranked year or group (if the current set is a group or a subgroup).</source>
         <translation>Amosar relacionadas: se o selecciona, enumeraranse as subactividades de grupos e subgrupos no actual conxunto (se o conxunto actual é un curso ou grupo) e tamén a valoración máis alta dun curso ou grupo (se o conxunto actual é un grupo ou subgrupo=.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="459"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="458"/>
         <source>FET Help</source>
         <translation>Axuda FET</translation>
     </message>

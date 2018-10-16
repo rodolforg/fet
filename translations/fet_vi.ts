@@ -30556,40 +30556,40 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>DaysForm</name>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="126"/>
-        <location filename="../src/interface/daysform.cpp" line="133"/>
+        <location filename="../src/interface/daysform.cpp" line="128"/>
+        <location filename="../src/interface/daysform.cpp" line="135"/>
         <source>FET information</source>
         <translation>Thông tin</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="127"/>
+        <location filename="../src/interface/daysform.cpp" line="129"/>
         <source>Empty names not allowed</source>
         <translation>Không cho phép để trống tên</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="134"/>
+        <location filename="../src/interface/daysform.cpp" line="136"/>
         <source>Duplicates not allowed</source>
         <translation>Không cho phép trùng tên</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="165"/>
+        <location filename="../src/interface/daysform.cpp" line="167"/>
         <source>%1 constraints will be removed.</source>
         <comment>%1 is the number of constraints</comment>
         <translation>%1 RB sẽ bị xóa.</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="169"/>
+        <location filename="../src/interface/daysform.cpp" line="171"/>
         <source>%1 constraints will be modified.</source>
         <comment>%1 is the number of constraints</comment>
         <translation>%1 RB sẽ bị thay đổi.</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="172"/>
+        <location filename="../src/interface/daysform.cpp" line="174"/>
         <source>Do you want to continue?</source>
         <translation>Bạn có muốn tiếp tục?</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="174"/>
+        <location filename="../src/interface/daysform.cpp" line="176"/>
         <source>FET warning</source>
         <translation>Cảnh báo</translation>
     </message>
@@ -30877,8 +30877,8 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/export.cpp" line="738"/>
         <location filename="../src/engine/export.cpp" line="789"/>
         <location filename="../src/engine/export.cpp" line="870"/>
-        <location filename="../src/engine/export.cpp" line="1158"/>
-        <location filename="../src/engine/export.cpp" line="1242"/>
+        <location filename="../src/engine/export.cpp" line="1162"/>
+        <location filename="../src/engine/export.cpp" line="1246"/>
         <source>FET critical. Cannot open file %1 for writing. Please check your disk&apos;s free space. Saving of %1 aborted.</source>
         <translation>Chương trình gặp lỗi nghiêm trọng. Không thể ghi tệp %1. Hãy kiểm tra lại dung lượng đĩa. Lưu tệp %1 bị hủy bỏ.</translation>
     </message>
@@ -30902,9 +30902,9 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/export.cpp" line="705"/>
         <location filename="../src/engine/export.cpp" line="756"/>
         <location filename="../src/engine/export.cpp" line="837"/>
-        <location filename="../src/engine/export.cpp" line="1125"/>
-        <location filename="../src/engine/export.cpp" line="1209"/>
-        <location filename="../src/engine/export.cpp" line="1325"/>
+        <location filename="../src/engine/export.cpp" line="1129"/>
+        <location filename="../src/engine/export.cpp" line="1213"/>
+        <location filename="../src/engine/export.cpp" line="1329"/>
         <source>FET critical. Writing %1 gave error code %2, which means saving is compromised. Please check your disk&apos;s free space.</source>
         <translation>Chương trình gặp lỗi nghiêm trọng. Không thể ghi tệp %1 vì có lỗi %2. Hãy kiểm tra lại dung lượng đĩa.</translation>
     </message>
@@ -30939,45 +30939,22 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <translation>%1 nhóm con đã được xuất ra.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="937"/>
-        <source>was skipped, because it refers not to a whole larger container activity</source>
-        <translation>bị bỏ qua vì không tham chiếu tới một tiết giảng tổng hợp bao hàm</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/export.cpp" line="946"/>
-        <location filename="../src/engine/export.cpp" line="950"/>
-        <source>was skipped, because there exists another constraint of this type with larger weight percentage, referring to the same activities</source>
-        <translation>bị bỏ qua vì tồn tại một RB khác cùng loại với trọng số lớn hơn tham chiếu tới cùng các tiết giảng</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/export.cpp" line="956"/>
-        <location filename="../src/engine/export.cpp" line="961"/>
-        <source>was skipped, because there exists another constraint of this type with same weight percentage and higher number of min days, referring to the same activities</source>
-        <translation>bị bỏ qua vì tồn tại một RB khác cùng loại với cùng trọng số với số ngày tối thiểu lớn hơn, tham chiếu tới cùng các tiết giảng</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/export.cpp" line="967"/>
-        <location filename="../src/engine/export.cpp" line="973"/>
-        <source>was skipped, because there exists another constraint of this type with same weight percentage and same number of min days and consecutive if same day true, referring to the same activities</source>
-        <translation>bị bỏ qua vì tồn tại một RB khác cùng loại với cùng trọng số, cùng số ngày tối thiểu và xếp liền nếu xuất hiện cùng ngày, tham chiếu tới cùng các tiết giảng</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/export.cpp" line="1013"/>
+        <location filename="../src/engine/export.cpp" line="1017"/>
         <source>different active flag</source>
         <translation>cờ kích hoạt khác nhau</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1023"/>
+        <location filename="../src/engine/export.cpp" line="1027"/>
         <source>Activity with id %1 has disabled active flag but it is exported.</source>
         <translation>Tiết giảng với id = %1 đã được xuất ra dù cờ kích hoạt đã bị vô hiệu hóa.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1025"/>
+        <location filename="../src/engine/export.cpp" line="1029"/>
         <source>Subactivities with activity group id %1 have disabled active flag but they are exported.</source>
         <translation>Các tiết giảng con với nhóm tiết giảng id %1 đã được xuất ra dù cờ kích hoạt đã bị vô hiệu hóa.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1123"/>
+        <location filename="../src/engine/export.cpp" line="1127"/>
         <source>%1 activities exported.</source>
         <translation>%1 tiết giảng đã được xuất ra.</translation>
     </message>
@@ -31018,76 +30995,88 @@ Import of data will be easier with these settings.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1207"/>
+        <location filename="../src/engine/export.cpp" line="937"/>
+        <source>Note: Constraint %1 was skipped, because it does not refer to a whole larger container activity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/export.cpp" line="946"/>
+        <location filename="../src/engine/export.cpp" line="951"/>
+        <source>Note: Constraint %1 was skipped, because there exists another constraint of this type with larger weight percentage, referring to the same activities</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/export.cpp" line="1211"/>
         <source>%1 active activities statistics exported.</source>
         <translation>thống kê của %1 tiết giảng đang kích hoạt đã được xuất ra.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1320"/>
+        <location filename="../src/engine/export.cpp" line="1324"/>
         <source>%1 scheduled activities exported.</source>
         <translation>%1 tiết giảng xếp xong TKB đã được xuất ra.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1322"/>
+        <location filename="../src/engine/export.cpp" line="1326"/>
         <source>0 scheduled activities exported, because no timetable was generated.</source>
         <translation>Không tiết giảng nào được xuất ra vì không tạo được TKB nào cả.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="937"/>
-        <location filename="../src/engine/export.cpp" line="946"/>
-        <location filename="../src/engine/export.cpp" line="950"/>
-        <location filename="../src/engine/export.cpp" line="956"/>
-        <location filename="../src/engine/export.cpp" line="961"/>
-        <location filename="../src/engine/export.cpp" line="967"/>
-        <location filename="../src/engine/export.cpp" line="973"/>
-        <source>Note: Constraint</source>
-        <translation>Lưu ý: RB</translation>
-    </message>
-    <message>
         <location filename="../src/engine/export.cpp" line="121"/>
-        <location filename="../src/engine/export.cpp" line="1105"/>
-        <location filename="../src/engine/export.cpp" line="1116"/>
+        <location filename="../src/engine/export.cpp" line="1109"/>
+        <location filename="../src/engine/export.cpp" line="1120"/>
         <source>FET warning</source>
         <translation>Cảnh báo</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1017"/>
+        <location filename="../src/engine/export.cpp" line="1021"/>
         <source>Subactivities with activity group id %1 are different between themselves (they were separately edited), so the export will not be very accurate. The fields which are different will be considered those of the representative subactivity. Fields which were different are: %2</source>
         <translation>Các tiết giảng con với nhóm tiết giảng id %1 bị nhập liệu riêng biệt. Vì thế, dữ liệu xuất ra sẽ không chính xác. Các trường khác nhau sẽ được coi như là thông tin đại diện của tiết giảng con. Các trường khác nhau là: %2</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1107"/>
-        <location filename="../src/engine/export.cpp" line="1117"/>
+        <location filename="../src/engine/export.cpp" line="1111"/>
+        <location filename="../src/engine/export.cpp" line="1121"/>
         <source>There are subactivities which were modified separately - so the components had different values for subject, activity tags, teachers, students or number of students from the representative subactivity. The export was done, but it is not very accurate.</source>
         <translation>Có những tiết giảng con được sửa đổi riêng biệt. Vì thế, các thành phần có giá trị môn học, thông tin bổ trợ, giáo viên, lớp học và số học sinh khác nhau đại diện cho tiết giảng con. Việc xuất dữ liệu đã xong nhưng có thể không chính xác.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1001"/>
+        <location filename="../src/engine/export.cpp" line="1005"/>
         <source>different teachers</source>
         <translation>giáo viên khác nhau</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1003"/>
+        <location filename="../src/engine/export.cpp" line="958"/>
+        <location filename="../src/engine/export.cpp" line="964"/>
+        <source>Note: Constraint %1 was skipped, because there exists another constraint of this type with the same weight percentage and higher number of min days, referring to the same activities</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/export.cpp" line="971"/>
+        <location filename="../src/engine/export.cpp" line="977"/>
+        <source>Note: Constraint %1 was skipped, because there exists another constraint of this type with the same weight percentage and same number of min days and consecutive if same day true, referring to the same activities</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/export.cpp" line="1007"/>
         <source>different subject</source>
         <translation>môn học khác nhau</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1007"/>
+        <location filename="../src/engine/export.cpp" line="1011"/>
         <source>different students</source>
         <translation>lớp học khác nhau</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1011"/>
+        <location filename="../src/engine/export.cpp" line="1015"/>
         <source>different number of students</source>
         <translation>số lượng học sinh khác nhau</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1005"/>
+        <location filename="../src/engine/export.cpp" line="1009"/>
         <source>different activity tags</source>
         <translation>thông tin bổ trợ khác nhau</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1009"/>
+        <location filename="../src/engine/export.cpp" line="1013"/>
         <source>different boolean variable &apos;must compute n total students&apos;</source>
         <translation>biến logic dùng để tính cho tổng số học sinh</translation>
     </message>
@@ -38239,40 +38228,40 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
 <context>
     <name>HoursForm</name>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="153"/>
-        <location filename="../src/interface/hoursform.cpp" line="160"/>
+        <location filename="../src/interface/hoursform.cpp" line="155"/>
+        <location filename="../src/interface/hoursform.cpp" line="162"/>
         <source>FET information</source>
         <translation>Thông tin</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="154"/>
+        <location filename="../src/interface/hoursform.cpp" line="156"/>
         <source>Empty names not allowed</source>
         <translation>Không cho phép để trống tên</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="161"/>
+        <location filename="../src/interface/hoursform.cpp" line="163"/>
         <source>Duplicates not allowed</source>
         <translation>Không cho phép trùng tên</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="192"/>
+        <location filename="../src/interface/hoursform.cpp" line="194"/>
         <source>%1 constraints will be removed.</source>
         <comment>%1 is the number of constraints</comment>
         <translation>%1 RB sẽ bị xóa.</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="196"/>
+        <location filename="../src/interface/hoursform.cpp" line="198"/>
         <source>%1 constraints will be modified.</source>
         <comment>%1 is the number of constraints</comment>
         <translation>%1 RB sẽ bị thay đổi.</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="199"/>
+        <location filename="../src/interface/hoursform.cpp" line="201"/>
         <source>Do you want to continue?</source>
         <translation>Bạn có muốn tiếp tục?</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="201"/>
+        <location filename="../src/interface/hoursform.cpp" line="203"/>
         <source>FET warning</source>
         <translation>Cảnh báo</translation>
     </message>
@@ -38836,8 +38825,23 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <translation>Người dùng hủy nhập dữ liệu.</translation>
     </message>
     <message>
+        <location filename="../src/engine/import.cpp" line="1007"/>
+        <source>Skipped line %1: Fields &apos;%2&apos; and &apos;%3&apos; do not have the same value.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/engine/import.cpp" line="1018"/>
         <source>Warning in line %1: Field with building name doesn&apos;t relate to a room</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/import.cpp" line="1047"/>
+        <source>Skipped line %1: Field &apos;%2&apos; contains an invalid number (double) value.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/import.cpp" line="1063"/>
+        <source>Skipped line %1: Field &apos;%2&apos; contains an unknown value.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -39072,11 +39076,6 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <translation>Bỏ qua dòng %1: Trường &apos;%2&apos; không có giá trị nguyên.</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1063"/>
-        <source>Skipped line %1: Field &apos;%2&apos; contain an unknown value.</source>
-        <translation>Bỏ qua dòng %1: Trường &apos;%2&apos; chứa giá trị không xác định.</translation>
-    </message>
-    <message>
         <location filename="../src/engine/import.cpp" line="1082"/>
         <source>Skipped line %1: Data was already in a previous line.</source>
         <translation>Bỏ qua dòng %1: Dữ liệu đã có ở 1 dòng phía trước.</translation>
@@ -39176,11 +39175,6 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <translation>Cảnh báo: thuộc tính &apos;xếp liền&apos; của số ngày tối thiểu không phải là giá tri logic (%1) - đặt chúng là %2</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1007"/>
-        <source>Skipped line %1: Fields &apos;%2&apos; and &apos;%3&apos; haven&apos;t the same value.</source>
-        <translation>Bỏ qua dòng %1: Trường &apos;%2&apos; và &apos;%3&apos; không có cùng giá trị.</translation>
-    </message>
-    <message>
         <location filename="../src/engine/import.cpp" line="1744"/>
         <source>Problem in line %1: Group name %2 is taken for a year - please consider another name</source>
         <translation>Lỗi ở dòng %1: Tên nhóm %2 đã được dùng ở một khối. Hãy nhập tên khác</translation>
@@ -39247,11 +39241,6 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <location filename="../src/engine/import.cpp" line="1044"/>
         <source>Skipped line %1: Field &apos;%2&apos; doesn&apos;t contain a number (double) value.</source>
         <translation>Bỏ qua dòng %1: Trường &apos;%2&apos; không có giá trị kiểu số (double).</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/import.cpp" line="1047"/>
-        <source>Skipped line %1: Field &apos;%2&apos; contains an number (double) value.</source>
-        <translation>Bỏ qua dòng %1: Trường &apos;%2&apos; chứa giá trị kiểu số (double) không phù hợp.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="646"/>
@@ -39373,13 +39362,13 @@ Please stop simulation before this</source>
 <context>
     <name>LastWarningsDialogE</name>
     <message>
-        <location filename="../src/engine/export.cpp" line="1335"/>
+        <location filename="../src/engine/export.cpp" line="1339"/>
         <source>FET - export comment</source>
         <comment>The comment of the exporting operation</comment>
         <translation>Xuất ra ghi chú</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1346"/>
+        <location filename="../src/engine/export.cpp" line="1350"/>
         <source>&amp;Ok</source>
         <translation>&amp;Đồng ý</translation>
     </message>
@@ -47566,7 +47555,6 @@ Lưu ý: giáo viên bận và nghỉ giải lao không được tính vào ti�
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="63"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>August</source>
         <translation type="unfinished"></translation>
     </message>
@@ -47577,6 +47565,7 @@ Lưu ý: giáo viên bận và nghỉ giải lao không được tính vào ti�
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="67"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>October</source>
         <translation type="unfinished"></translation>
     </message>
@@ -51244,91 +51233,91 @@ Bottom: %4</source>
 <context>
     <name>SubactivitiesForm</name>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="349"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="348"/>
         <source>No: %1 / %2</source>
         <comment>No means number, %1 is the number of active activities, %2 is the number of total activities.Please leave space between fields, so that they are better visible</comment>
         <translation>Số lượng: %1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="351"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="350"/>
         <source>Dur: %1 / %2</source>
         <comment>Dur means duration, %1 is the duration of active activities, %2 is the duration of total activities.Please leave space between fields, so that they are better visible</comment>
         <translation>Thời gian: %1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="364"/>
-        <location filename="../src/interface/subactivitiesform.cpp" line="466"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="363"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="465"/>
         <source>FET information</source>
         <translation>Thông tin</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="364"/>
-        <location filename="../src/interface/subactivitiesform.cpp" line="466"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="363"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="465"/>
         <source>Invalid selected subactivity</source>
         <translation>Tiết giảng con không phù hợp</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="424"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="423"/>
         <source>Useful instructions/tips:</source>
         <translation>Vài hướng dẫn hữu ích:</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="427"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="426"/>
         <source>Above the (sub)activities list, we have 2 labels, containing 4 numbers. The first label contains text: No: a / b. The first number a is the number of active (sub)activities (we number each individual subactivity as 1), while the second number b is the number of total (sub)activities. The second label contains text: Dur: c / d. The third number c is the duration of active (sub)activities, in periods (or FET hours), while the fourth number d is the duration of total (sub)activities, in periods (or FET hours). So, No means number and Dur means duration.</source>
         <translation>Với 2 đại lượng được tính từ 4 giá trị, (1) tỉ lệ các tiết giảng đã được xếp / tổng số tiết giảng, và (2) tỉ lệ tổng thời gian của các tiết giảng đã được xếp / tổng thời gian của toàn bộ các tiết giảng.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="433"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="432"/>
         <source>Example: No: 100 / 102, Dur: 114 / 117. They represent: 100 - the number of active (sub)activities, then 102 - the number of total (sub)activities, 114 - the duration of active activities (in periods or FET hours) and 117 - the duration of total activities (in periods or FET hours). In this example we have 2 inactive activities with their combined duration being 3 periods.</source>
         <translation>Ví dụ: No: 100 / 102 với 100 - số lượng các tiết giảng đã được xếp trên tổng số 102 tiết giảng; Dur: 114 / 117 - tổng thời gian 114 tiết giảng đã được xếp trên tổng số 117 tiết giảng tổng số. Như vậy, có 2 tiết giảng không được xếp với tổng thời gian là 3 tiết.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="439"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="438"/>
         <source>Explanation of the short description of an activity: first comes the id. If the activity is inactive, an X follows. Then the duration. Then, if the activity is split, a slash and the total duration. Then teachers, subject, activity tag (if it is not void) and students. Then the number of students (if specified).</source>
         <translation>Giải thích: đầu tiên là tiết giảng id; tiếp theo là thuộc tính kích hoạt tiết giảng ( X nếu tiết giảng không được kích hoạt); sau đó là thời gian; nếu tiết giảng tổng hợp thì đi kèm với nó là dấu / và tổng thời gian; cuối cùng là giáo viên, môn học, thông tin bổ trợ và học sinh.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="446"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="445"/>
         <source>have an X mark after the id.</source>
         <translation>có dấu X theo sau id.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="477"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="476"/>
         <source>Subactivity comments</source>
         <translation>Ghi chú</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="479"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="478"/>
         <source>OK</source>
         <translation>Đồng ý</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="481"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="480"/>
         <source>Cancel</source>
         <translation>Thoát</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="443"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="442"/>
         <source>The activities which are inactive:</source>
         <translation>Tiết giảng không kích hoạt:</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="452"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="451"/>
         <source>if you use colors in interface (see Settings/Interface menu), they will appear with different background color.</source>
         <translation>nếu sử dụng giao diện màu (bởi menu &apos;Cấu hình&apos;/&apos;Giao diện&apos;), màu nền khác sẽ xuất hiện.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="454"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="453"/>
         <source>To modify a subactivity, you can also double click it.</source>
         <translation>Có thể nhấn đúp một tiết giảng con để thay đổi nó.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="456"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="455"/>
         <source>Show related: if you select this, there will be listed subactivities for groups and subgroups contained also in the current set (if the current set is a year or a group) and also higher ranked year or group (if the current set is a group or a subgroup).</source>
         <translation>Hiển thị những tiết giảng con liên quan của cùng nhóm lớp.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="459"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="458"/>
         <source>FET Help</source>
         <translation>Trợ giúp</translation>
     </message>

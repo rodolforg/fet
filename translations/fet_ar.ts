@@ -4473,7 +4473,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform_template.ui" line="153"/>
         <source>Min days</source>
         <comment>Keep translation short. It refers to the minimum number of days between activities.</comment>
-        <translation>اقل أيام</translation>
+        <translation>أدنى أيام</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform_template.ui" line="183"/>
@@ -5531,7 +5531,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="50"/>
         <source>Min gaps between building changes</source>
-        <translation>اقل فجوات بين تغيير البنايات</translation>
+        <translation>ادنى فجوات بين تغيير البنايات</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="67"/>
@@ -8804,7 +8804,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachermingapsbetweenbuildingchangesform_template.ui" line="103"/>
         <source>Min gaps between building changes</source>
-        <translation>اقل فجوات بين تغيير البنايات</translation>
+        <translation>ادنى فجوات بين تغيير البنايات</translation>
     </message>
 </context>
 <context>
@@ -9899,7 +9899,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersmingapsbetweenbuildingchangesform_template.ui" line="67"/>
         <source>Min gaps between building changes</source>
-        <translation>اقل فجوات بين تغيير البنايات</translation>
+        <translation>ادنى فجوات بين تغيير البنايات</translation>
     </message>
 </context>
 <context>
@@ -17333,7 +17333,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="2571"/>
         <source>mG:%1</source>
         <comment>Minimum number of gaps</comment>
-        <translation>اقل فجوات بين الأنشطة:%1</translation>
+        <translation>أدنى فجوات بين الأنشطة:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2577"/>
@@ -17343,7 +17343,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2578"/>
         <source>Minimum gaps between activities (if activities on the same day)</source>
-        <translation>اقل عدد من الفجوات بين الأنشطة (اذا كانت الأنشطة في نفس اليوم)</translation>
+        <translation>أدنى عدد من الفجوات بين الأنشطة (اذا كانت الأنشطة في نفس اليوم)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2579"/>
@@ -19513,7 +19513,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="5148"/>
         <source>mG:%1</source>
         <comment>mG means min gaps</comment>
-        <translation>اقل فجوات بين الأنشطة:%1</translation>
+        <translation>أدنى فجوات بين الأنشطة:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5157"/>
@@ -19533,7 +19533,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5163"/>
         <source>Minimum gaps between building changes=%1</source>
-        <translation>اقل فجوات بين تغيير البنايات=%1</translation>
+        <translation>أدنى فجوات بين تغيير البنايات=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5166"/>
@@ -22422,7 +22422,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="4899"/>
         <source>mG:%1</source>
         <comment>mG means min gaps</comment>
-        <translation>اقل فجوات بين الأنشطة:%1</translation>
+        <translation>أدنى فجوات بين الأنشطة:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4908"/>
@@ -22447,7 +22447,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4916"/>
         <source>Minimum gaps between building changes=%1</source>
-        <translation>اقل فجوات بين تغيير البنايات=%1</translation>
+        <translation>أدنى فجوات بين تغيير البنايات=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4919"/>
@@ -26648,7 +26648,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="14542"/>
         <source>mD:%1</source>
         <comment>Minimum days per week</comment>
-        <translation>اقل أيام بين الأنشطة:%1</translation>
+        <translation>أدنى أيام:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14550"/>
@@ -26817,7 +26817,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="6386"/>
         <source>mG:%1</source>
         <comment>mG means min gaps</comment>
-        <translation>اقل فجوات بين الأنشطة:%1</translation>
+        <translation>أدنى فجوات بين الأنشطة:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6395"/>
@@ -26842,7 +26842,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6403"/>
         <source>Minimum gaps between building changes=%1</source>
-        <translation>اقل فجوات بين تغيير البنايات=%1</translation>
+        <translation>أدنى فجوات بين تغيير البنايات=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6406"/>
@@ -29294,7 +29294,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="6636"/>
         <source>mG:%1</source>
         <comment>mG means min gaps</comment>
-        <translation>اقل فجوات بين الأنشطة:%1</translation>
+        <translation>أدنى فجوات بين الأنشطة:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6645"/>
@@ -29314,7 +29314,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6651"/>
         <source>Minimum gaps between building changes=%1</source>
-        <translation>اقل فجوات بين تغيير البنايات=%1</translation>
+        <translation>أدنى فجوات بين تغيير البنايات=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6654"/>
@@ -30770,40 +30770,40 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>DaysForm</name>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="126"/>
-        <location filename="../src/interface/daysform.cpp" line="133"/>
+        <location filename="../src/interface/daysform.cpp" line="128"/>
+        <location filename="../src/interface/daysform.cpp" line="135"/>
         <source>FET information</source>
         <translation>FET معلومات</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="127"/>
+        <location filename="../src/interface/daysform.cpp" line="129"/>
         <source>Empty names not allowed</source>
         <translation>لا يسمح بالاسم الفارغ</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="134"/>
+        <location filename="../src/interface/daysform.cpp" line="136"/>
         <source>Duplicates not allowed</source>
         <translation>الاسماء المتطابقة غير مسموحة</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="165"/>
+        <location filename="../src/interface/daysform.cpp" line="167"/>
         <source>%1 constraints will be removed.</source>
         <comment>%1 is the number of constraints</comment>
         <translation>%1 عدد الأنشطة المحذوفة.</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="169"/>
+        <location filename="../src/interface/daysform.cpp" line="171"/>
         <source>%1 constraints will be modified.</source>
         <comment>%1 is the number of constraints</comment>
         <translation>%1 عدد الأنشطة المعدلة.</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="172"/>
+        <location filename="../src/interface/daysform.cpp" line="174"/>
         <source>Do you want to continue?</source>
         <translation>هل ترغب بالاستمرار؟</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="174"/>
+        <location filename="../src/interface/daysform.cpp" line="176"/>
         <source>FET warning</source>
         <translation>FET تحذير</translation>
     </message>
@@ -31086,8 +31086,8 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/export.cpp" line="738"/>
         <location filename="../src/engine/export.cpp" line="789"/>
         <location filename="../src/engine/export.cpp" line="870"/>
-        <location filename="../src/engine/export.cpp" line="1158"/>
-        <location filename="../src/engine/export.cpp" line="1242"/>
+        <location filename="../src/engine/export.cpp" line="1162"/>
+        <location filename="../src/engine/export.cpp" line="1246"/>
         <source>FET critical. Cannot open file %1 for writing. Please check your disk&apos;s free space. Saving of %1 aborted.</source>
         <translation>حرح FET. لا يمكن فتح الملف %1 لأجل الكتابة. فضلا تحقق من مساحة القرص. حفظ %1 قد تم احباطه.</translation>
     </message>
@@ -31111,9 +31111,9 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/export.cpp" line="705"/>
         <location filename="../src/engine/export.cpp" line="756"/>
         <location filename="../src/engine/export.cpp" line="837"/>
-        <location filename="../src/engine/export.cpp" line="1125"/>
-        <location filename="../src/engine/export.cpp" line="1209"/>
-        <location filename="../src/engine/export.cpp" line="1325"/>
+        <location filename="../src/engine/export.cpp" line="1129"/>
+        <location filename="../src/engine/export.cpp" line="1213"/>
+        <location filename="../src/engine/export.cpp" line="1329"/>
         <source>FET critical. Writing %1 gave error code %2, which means saving is compromised. Please check your disk&apos;s free space.</source>
         <translation>كتابة %1 تجلب شفرة الخطأ %2 و التي تعني أن الحفظ لم يُكتمل. فضلا تحقق من مساحة القرص.</translation>
     </message>
@@ -31148,45 +31148,22 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <translation>صدرت المجموعات الفرعية %1.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="937"/>
-        <source>was skipped, because it refers not to a whole larger container activity</source>
-        <translation>تم تخطيها، لأنها تشير إلى حاوية نشاط كبير جدا</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/export.cpp" line="946"/>
-        <location filename="../src/engine/export.cpp" line="950"/>
-        <source>was skipped, because there exists another constraint of this type with larger weight percentage, referring to the same activities</source>
-        <translation>تم تخطيه، لأنه يوجد قيد آخر من هذ االنوع مع وزن نسبي كبير، مشيرا إلى نفس الأنشطة</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/export.cpp" line="956"/>
-        <location filename="../src/engine/export.cpp" line="961"/>
-        <source>was skipped, because there exists another constraint of this type with same weight percentage and higher number of min days, referring to the same activities</source>
-        <translation>تم تخطيه، لأنه يوجد قيد آخر من هذ االنوع مع وزن نسبي مماثل، و عدد أعلى من قيود أدنى أيام، مشيرا إلى نفس الأنشطة</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/export.cpp" line="967"/>
-        <location filename="../src/engine/export.cpp" line="973"/>
-        <source>was skipped, because there exists another constraint of this type with same weight percentage and same number of min days and consecutive if same day true, referring to the same activities</source>
-        <translation>تم تخطيه، لأنه يوجد قيد آخر من هذ االنوع مع وزن نسبي مماثل، و عدد مماثل من قيود أدنى أيام و متصلة إذا كانت في نفس اليوم، مشيرا إلى نفس الأنشطة</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/export.cpp" line="1013"/>
+        <location filename="../src/engine/export.cpp" line="1017"/>
         <source>different active flag</source>
         <translation>عَلَمٌ نشط مختلف</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1023"/>
+        <location filename="../src/engine/export.cpp" line="1027"/>
         <source>Activity with id %1 has disabled active flag but it is exported.</source>
         <translation>نشاط بمعرفه.مع %1 له علم نشط معطل لكن قد تم تصديره.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1025"/>
+        <location filename="../src/engine/export.cpp" line="1029"/>
         <source>Subactivities with activity group id %1 have disabled active flag but they are exported.</source>
         <translation>أنشطة فرعية مع مجموعة أنشطة معرفها.مع %1 لها علم نشط معطل لكن قد تم تصديرها.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1123"/>
+        <location filename="../src/engine/export.cpp" line="1127"/>
         <source>%1 activities exported.</source>
         <translation>صدرت الأنشطة %1.</translation>
     </message>
@@ -31232,76 +31209,88 @@ Import of data will be easier with these settings.</source>
         <translation>السطر الأول يشتمل على البيانات. لا تصدر الرأسية.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1207"/>
+        <location filename="../src/engine/export.cpp" line="937"/>
+        <source>Note: Constraint %1 was skipped, because it does not refer to a whole larger container activity</source>
+        <translation>لاحظ: القيد %1 تم تخطيه، لأنه لا يشير إلى حاوية تامة لنشاط واسع</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/export.cpp" line="946"/>
+        <location filename="../src/engine/export.cpp" line="951"/>
+        <source>Note: Constraint %1 was skipped, because there exists another constraint of this type with larger weight percentage, referring to the same activities</source>
+        <translation>لاحظ: القيد%1 تم تخطيه لأنه يوجد هناك قيد آخر من هذا النوع مع وزن نسبي أكبر ، يشير إلى نفس الأنشطة</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/export.cpp" line="958"/>
+        <location filename="../src/engine/export.cpp" line="964"/>
+        <source>Note: Constraint %1 was skipped, because there exists another constraint of this type with the same weight percentage and higher number of min days, referring to the same activities</source>
+        <translation>لاحظ: القيد%1 تم تخطيه لأنه يوجد هناك قيد آخر من هذا النوع مع نفس الوزن النسبي و عدد أكبر لأدنى أيام، يشير إلى نفس الأنشطة</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/export.cpp" line="971"/>
+        <location filename="../src/engine/export.cpp" line="977"/>
+        <source>Note: Constraint %1 was skipped, because there exists another constraint of this type with the same weight percentage and same number of min days and consecutive if same day true, referring to the same activities</source>
+        <translation>لاحظ: القيد%1 تم تخطيه لأنه يوجد هناك قيد آخر من هذا النوع مع نفس الوزن النسبي و نفس العدد لأدنى أيام مع القيد متصلة إذا كانت نفس اليوم صحيح، يشير إلى نفس الأنشطة</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/export.cpp" line="1211"/>
         <source>%1 active activities statistics exported.</source>
         <translation>احصاءات الأنشطة المفعّلة %1 تم تصديرها.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1320"/>
+        <location filename="../src/engine/export.cpp" line="1324"/>
         <source>%1 scheduled activities exported.</source>
         <translation>الأنشطة المجدولة %1 تم تصديرها.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1322"/>
+        <location filename="../src/engine/export.cpp" line="1326"/>
         <source>0 scheduled activities exported, because no timetable was generated.</source>
         <translation>تم تصدير 0 أنشطة، لأنه لا جدول زمني تم انتاجه.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="937"/>
-        <location filename="../src/engine/export.cpp" line="946"/>
-        <location filename="../src/engine/export.cpp" line="950"/>
-        <location filename="../src/engine/export.cpp" line="956"/>
-        <location filename="../src/engine/export.cpp" line="961"/>
-        <location filename="../src/engine/export.cpp" line="967"/>
-        <location filename="../src/engine/export.cpp" line="973"/>
-        <source>Note: Constraint</source>
-        <translation>لاحظ: القيد</translation>
-    </message>
-    <message>
         <location filename="../src/engine/export.cpp" line="121"/>
-        <location filename="../src/engine/export.cpp" line="1105"/>
-        <location filename="../src/engine/export.cpp" line="1116"/>
+        <location filename="../src/engine/export.cpp" line="1109"/>
+        <location filename="../src/engine/export.cpp" line="1120"/>
         <source>FET warning</source>
         <translation>FET تحذير</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1017"/>
+        <location filename="../src/engine/export.cpp" line="1021"/>
         <source>Subactivities with activity group id %1 are different between themselves (they were separately edited), so the export will not be very accurate. The fields which are different will be considered those of the representative subactivity. Fields which were different are: %2</source>
         <translation>الأنشطة الفرعية مع مجموعة الأنشطة ذات المعرف. مع %1 تختلف في ما بينها (إنها كتبت بشكل منفصل)، وبالتالي التصدير لن يكون دقيقا. الحقول التي هي مختلفة ستُعتبر كممثلة للنشاط الفرعية. الحقول التي كانت مختلفة هي: %2</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1107"/>
-        <location filename="../src/engine/export.cpp" line="1117"/>
+        <location filename="../src/engine/export.cpp" line="1111"/>
+        <location filename="../src/engine/export.cpp" line="1121"/>
         <source>There are subactivities which were modified separately - so the components had different values for subject, activity tags, teachers, students or number of students from the representative subactivity. The export was done, but it is not very accurate.</source>
         <translation>إنها الأنشطة الفرعية التي تم تغييرها بشكل منفصل - فالعناصر لها قيم مختلفة من مادة، وسم مشترك، مدرسين، طلاب أو عدد الطلاب من النشاط الممثلة. التصدير قد تم، لكنه ليس دقيقا.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1001"/>
+        <location filename="../src/engine/export.cpp" line="1005"/>
         <source>different teachers</source>
         <translation>مدرسين آخرين</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1003"/>
+        <location filename="../src/engine/export.cpp" line="1007"/>
         <source>different subject</source>
         <translation>موضوع آخر</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1007"/>
+        <location filename="../src/engine/export.cpp" line="1011"/>
         <source>different students</source>
         <translation>طلاب آخرين</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1011"/>
+        <location filename="../src/engine/export.cpp" line="1015"/>
         <source>different number of students</source>
         <translation>اعداد طلاب أخرى</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1005"/>
+        <location filename="../src/engine/export.cpp" line="1009"/>
         <source>different activity tags</source>
         <translation>وسوم مشتركة أخرى</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1009"/>
+        <location filename="../src/engine/export.cpp" line="1013"/>
         <source>different boolean variable &apos;must compute n total students&apos;</source>
         <translation>متغيرات بولية (boolean) مختلفة &apos;يتوجب حساب n مجموع الطلاب&apos;</translation>
     </message>
@@ -38790,40 +38779,40 @@ ATS = affected teacher or students set
 <context>
     <name>HoursForm</name>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="153"/>
-        <location filename="../src/interface/hoursform.cpp" line="160"/>
+        <location filename="../src/interface/hoursform.cpp" line="155"/>
+        <location filename="../src/interface/hoursform.cpp" line="162"/>
         <source>FET information</source>
         <translation>FET معلومات</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="154"/>
+        <location filename="../src/interface/hoursform.cpp" line="156"/>
         <source>Empty names not allowed</source>
         <translation>لا يسمح بالاسم الفارغ</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="161"/>
+        <location filename="../src/interface/hoursform.cpp" line="163"/>
         <source>Duplicates not allowed</source>
         <translation>الاسماء المتطابقة غير مسموحة</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="192"/>
+        <location filename="../src/interface/hoursform.cpp" line="194"/>
         <source>%1 constraints will be removed.</source>
         <comment>%1 is the number of constraints</comment>
         <translation>%1 عدد الأنشطة التي ستحذف.</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="196"/>
+        <location filename="../src/interface/hoursform.cpp" line="198"/>
         <source>%1 constraints will be modified.</source>
         <comment>%1 is the number of constraints</comment>
         <translation>%1 عدد الأنشطة التي ستعدل.</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="199"/>
+        <location filename="../src/interface/hoursform.cpp" line="201"/>
         <source>Do you want to continue?</source>
         <translation>هل ترغب بالاستمرار؟</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="201"/>
+        <location filename="../src/interface/hoursform.cpp" line="203"/>
         <source>FET warning</source>
         <translation>FET تحذير</translation>
     </message>
@@ -39382,9 +39371,24 @@ ATS = affected teacher or students set
         <translation>التحميل ملغى من طرف المستخدم.</translation>
     </message>
     <message>
+        <location filename="../src/engine/import.cpp" line="1007"/>
+        <source>Skipped line %1: Fields &apos;%2&apos; and &apos;%3&apos; do not have the same value.</source>
+        <translation>تخطي السطر %1:الحقلان %2 و %3 لا يحتويان على  نفس.القيمة .</translation>
+    </message>
+    <message>
         <location filename="../src/engine/import.cpp" line="1018"/>
         <source>Warning in line %1: Field with building name doesn&apos;t relate to a room</source>
         <translation>تحذير في السطر %1:الحقل ذو اسم البناية لا يتعلق بقاعة</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/import.cpp" line="1047"/>
+        <source>Skipped line %1: Field &apos;%2&apos; contains an invalid number (double) value.</source>
+        <translation>تخطي السطر %1:الحقل %2 يحتوي على قيمةعدد غير صالح(ضعف).</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/import.cpp" line="1063"/>
+        <source>Skipped line %1: Field &apos;%2&apos; contains an unknown value.</source>
+        <translation>تخطي السطر %1:الحقل %2 يحتوي على .قيمة مجهولة.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1139"/>
@@ -39623,11 +39627,6 @@ ATS = affected teacher or students set
         <translation>تخطي السطر %1:الحقل %2 لا يحتوي على .قيمة عدد صحيح.</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1063"/>
-        <source>Skipped line %1: Field &apos;%2&apos; contain an unknown value.</source>
-        <translation>تخطي السطر %1:الحقل %2 يحتوي على .قيمة مجهولة.</translation>
-    </message>
-    <message>
         <location filename="../src/engine/import.cpp" line="1082"/>
         <source>Skipped line %1: Data was already in a previous line.</source>
         <translation>تخطي السطر %1: البيانات كانت موجودة أصلا في سطر سابق.</translation>
@@ -39727,11 +39726,6 @@ ATS = affected teacher or students set
         <translation>تحذير: العثور على وسوم للحقل &quot;المتتابع&quot; من أدنى أيام و التي ليست لها قيمة بولية(boolean) صالحة ( %1) - مما يجعلها %2</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1007"/>
-        <source>Skipped line %1: Fields &apos;%2&apos; and &apos;%3&apos; haven&apos;t the same value.</source>
-        <translation>تخطي السطر %1:الحقل %2 و الحقل %3 لديهما نفس القيم.</translation>
-    </message>
-    <message>
         <location filename="../src/engine/import.cpp" line="1744"/>
         <source>Problem in line %1: Group name %2 is taken for a year - please consider another name</source>
         <translation>مشكل في السطر %1: اسم المجموعة %2 مأخوذ لمستوى - يرجى النظر في اسم آخر</translation>
@@ -39798,11 +39792,6 @@ ATS = affected teacher or students set
         <location filename="../src/engine/import.cpp" line="1044"/>
         <source>Skipped line %1: Field &apos;%2&apos; doesn&apos;t contain a number (double) value.</source>
         <translation>تخطي السطر %1:الحقل %2 لا يحتوي على عدد (ضعف).</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/import.cpp" line="1047"/>
-        <source>Skipped line %1: Field &apos;%2&apos; contains an number (double) value.</source>
-        <translation>تخطي السطر %1:الحقل %2 يحتوي على عدد (ضعف).</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="646"/>
@@ -39927,13 +39916,13 @@ Please stop simulation before this</source>
 <context>
     <name>LastWarningsDialogE</name>
     <message>
-        <location filename="../src/engine/export.cpp" line="1335"/>
+        <location filename="../src/engine/export.cpp" line="1339"/>
         <source>FET - export comment</source>
         <comment>The comment of the exporting operation</comment>
         <translation>FET - تصدير تعليق</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1346"/>
+        <location filename="../src/engine/export.cpp" line="1350"/>
         <source>&amp;Ok</source>
         <translation>&amp;موافق</translation>
     </message>
@@ -42596,7 +42585,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform_template.ui" line="153"/>
         <source>Min days</source>
         <comment>Keep translation short. It refers to the minimum number of days between a set of activities</comment>
-        <translation>اقل أيام</translation>
+        <translation>أدنى أيام</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform_template.ui" line="183"/>
@@ -43470,7 +43459,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="67"/>
         <source>Min gaps between building changes</source>
-        <translation>اقل فجوات بين تغيير البنايات</translation>
+        <translation>أدنى فجوات بين تغيير البنايات</translation>
     </message>
 </context>
 <context>
@@ -44553,7 +44542,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="119"/>
         <source>Min gaps between building changes</source>
-        <translation>اقل فجوات بين تغيير البنايات</translation>
+        <translation>أدنى فجوات بين تغيير البنايات</translation>
     </message>
 </context>
 <context>
@@ -46136,7 +46125,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachermindaysperweekform_template.ui" line="94"/>
         <source>Min days per week</source>
-        <translation>اقل أيام في الأسبوع</translation>
+        <translation>أدنى أيام في الأسبوع</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermindaysperweekform_template.ui" line="109"/>
@@ -46199,7 +46188,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachermingapsbetweenbuildingchangesform_template.ui" line="119"/>
         <source>Min gaps between building changes</source>
-        <translation>اقل فجوات بين تغيير البنايات</translation>
+        <translation>ادنى فجوات بين تغيير البنايات</translation>
     </message>
 </context>
 <context>
@@ -47095,7 +47084,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmingapsbetweenbuildingchangesform_template.ui" line="67"/>
         <source>Min gaps between building changes</source>
-        <translation>اقل فجوات بين تغيير البنايات</translation>
+        <translation>ادنى فجوات بين تغيير البنايات</translation>
     </message>
 </context>
 <context>
@@ -48169,7 +48158,6 @@ Note: teacher not available and break are not counted as gaps.</source>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="63"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>August</source>
         <translation>أوت</translation>
     </message>
@@ -48180,6 +48168,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="67"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>October</source>
         <translation>أكتوبر</translation>
     </message>
@@ -51893,91 +51882,91 @@ N1 ( C1(G1,G2), C2(G1, G3) )
 <context>
     <name>SubactivitiesForm</name>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="349"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="348"/>
         <source>No: %1 / %2</source>
         <comment>No means number, %1 is the number of active activities, %2 is the number of total activities.Please leave space between fields, so that they are better visible</comment>
         <translation>رقم: %1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="351"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="350"/>
         <source>Dur: %1 / %2</source>
         <comment>Dur means duration, %1 is the duration of active activities, %2 is the duration of total activities.Please leave space between fields, so that they are better visible</comment>
         <translation>فترة: %1 / %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="364"/>
-        <location filename="../src/interface/subactivitiesform.cpp" line="466"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="363"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="465"/>
         <source>FET information</source>
         <translation>FET معلومات</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="364"/>
-        <location filename="../src/interface/subactivitiesform.cpp" line="466"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="363"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="465"/>
         <source>Invalid selected subactivity</source>
         <translation>اختيار غير صحيح لنشاط فرعي</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="424"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="423"/>
         <source>Useful instructions/tips:</source>
         <translation>تعليمات/نصائح مفيدة:</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="427"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="426"/>
         <source>Above the (sub)activities list, we have 2 labels, containing 4 numbers. The first label contains text: No: a / b. The first number a is the number of active (sub)activities (we number each individual subactivity as 1), while the second number b is the number of total (sub)activities. The second label contains text: Dur: c / d. The third number c is the duration of active (sub)activities, in periods (or FET hours), while the fourth number d is the duration of total (sub)activities, in periods (or FET hours). So, No means number and Dur means duration.</source>
         <translation>فوق قائمة الأنشطة(الفرعية)، لدينا علامتان. العلامة الأولى تحتوي النص: &quot; رقم: a/ b &quot; أول عدد a هو عدد الأنشطة (الفرعية) المفعلة (نحسب على انفراد كل نشاط فرعي 1)، بينما ثاني عدد b هو العدد الاجمالي للأنشطة(الفرعية). العلامة الثانية تحتوي النص: المدة الزمنية &quot; فترة: c / d &quot; العدد الثالث c هو مدة الأنشطة (الفرعية) المفعلة، في الفترات الزمنية (أو حصص FET)، بينما العدد الرابع d هو المدة الاجمالية للأنشطة(الفرعية) في الفترات الزمنية (أو حصص FET). إذن، No تعني عدد أو رقم و Dur تعني مدة زمنية.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="433"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="432"/>
         <source>Example: No: 100 / 102, Dur: 114 / 117. They represent: 100 - the number of active (sub)activities, then 102 - the number of total (sub)activities, 114 - the duration of active activities (in periods or FET hours) and 117 - the duration of total activities (in periods or FET hours). In this example we have 2 inactive activities with their combined duration being 3 periods.</source>
         <translation>مثال: رقم: 100/102، فترة: 114/117. تمثل: 100 - عدد الأنشطة(الفرعية) المفعلة، و 102 - العدد الاجمالي للأنشطة(الفرعية)، 114 - مدة الأنشطة(الفرعية) (في الفترات الزمنية أو حصص FET) و 117 - مدة الأنشطة الاجمالية (في الفترات الزمنية أو حصص FET). في هذا المثال لدينا نشاطين غير مفعلين مع كون مدتهما معا 3 فترات زمنية(أو 3 حصص FET).</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="439"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="438"/>
         <source>Explanation of the short description of an activity: first comes the id. If the activity is inactive, an X follows. Then the duration. Then, if the activity is split, a slash and the total duration. Then teachers, subject, activity tag (if it is not void) and students. Then the number of students (if specified).</source>
         <translation>شرح لوصف مختصر لنشاط: يأتي أولا id. إذا كان النشاط غير مفعلا تتبع  بحرف X . ثم المدة الزمنية. ثم، إذا كان النشاط مقسما، خط مائل(/) و المدة الاجمالية. ثم المدرسون، المادة، وسم مشترك(في حالة ما استعمل) و الطلاب ثم عدد الطلاب(إذا تم تحديده).</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="446"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="445"/>
         <source>have an X mark after the id.</source>
         <translation>يوضع حرف X بعد معرفها .</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="477"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="476"/>
         <source>Subactivity comments</source>
         <translation>تعليقات النشاط الفرعي</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="479"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="478"/>
         <source>OK</source>
         <translation>موافق</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="481"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="480"/>
         <source>Cancel</source>
         <translation>الغاء</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="443"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="442"/>
         <source>The activities which are inactive:</source>
         <translation>الأنشطة التي هي غير مفعلة:</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="452"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="451"/>
         <source>if you use colors in interface (see Settings/Interface menu), they will appear with different background color.</source>
         <translation>اذا كنت تستخدم الالوان في واجهة البرنامج (انظر اعدادات/واجهة المستخدم)، فإنها ستظهر لك بخلفيات ذات ألوان مختلفة.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="454"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="453"/>
         <source>To modify a subactivity, you can also double click it.</source>
         <translation>لتعديل النشاط الفرعي، يمكنك أيضا بالنقر عليها نقرتين.</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="456"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="455"/>
         <source>Show related: if you select this, there will be listed subactivities for groups and subgroups contained also in the current set (if the current set is a year or a group) and also higher ranked year or group (if the current set is a group or a subgroup).</source>
         <translation>عرض الارتباط : عند اختيارك سيتم عرض الأنشطة الفرعية للمجموعات و المجموعات الفرعية .المتواجدة أيضا في المجموعة الحالية (إذا كانت المجموعة الحالية هي مستوى أو مجموعة) و كذلك أعلى ترتيبا لقم أو مستوى (إذا كانت المجموعة الحالية عبارة عن مجموعة أو مجموعة فرعية).</translation>
     </message>
     <message>
-        <location filename="../src/interface/subactivitiesform.cpp" line="459"/>
+        <location filename="../src/interface/subactivitiesform.cpp" line="458"/>
         <source>FET Help</source>
         <translation>FET مساعدة</translation>
     </message>
