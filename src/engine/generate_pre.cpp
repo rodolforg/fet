@@ -8154,7 +8154,7 @@ void computeMustComputeTimetableSubgroups()
 			  subgroupsMinRestingHoursCircularPercentages[sbg]>=0 ||
 			  subgroupsMinRestingHoursNotCircularPercentages[sbg]>=0 ||
 			  
-			  minContinuousGapInIntervalForStudentsList.data[sbg][0].weightPercentage >=0 ||
+			  minContinuousGapInIntervalForStudentsList.data[0][sbg].weightPercentage >=0 ||
 
 			  subgroupsIntervalMaxDaysPerWeekPercentages1[sbg]>=0 ||
 			  subgroupsIntervalMaxDaysPerWeekPercentages2[sbg]>=0 ||

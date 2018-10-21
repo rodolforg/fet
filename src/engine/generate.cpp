@@ -5857,13 +5857,13 @@ impossiblestudentsearlymaxbeginningsatsecondhour:
 		okstudentsmincontinuousgapininterval = true;
 		for(int sbg : qAsConst(act->iSubgroupsList)) {
 			for (int iv = 0; iv < MinContinuousGapInIntervalForStudents::MAX; iv++) {
-				if (minContinuousGapInIntervalForStudentsList.data[sbg][iv].weightPercentage < 0)
+				if (minContinuousGapInIntervalForStudentsList.data[iv][sbg].weightPercentage < 0)
 					break;
-				if(skipRandom(minContinuousGapInIntervalForStudentsList.data[sbg][iv].weightPercentage))
+				if(skipRandom(minContinuousGapInIntervalForStudentsList.data[iv][sbg].weightPercentage))
 					continue;
-				const int startHour = minContinuousGapInIntervalForStudentsList.data[sbg][iv].startHour;
-				const int endHour = minContinuousGapInIntervalForStudentsList.data[sbg][iv].endHour;
-				const int minRequiredGap = minContinuousGapInIntervalForStudentsList.data[sbg][iv].minGapDuration;
+				const int startHour = minContinuousGapInIntervalForStudentsList.data[iv][sbg].startHour;
+				const int endHour = minContinuousGapInIntervalForStudentsList.data[iv][sbg].endHour;
+				const int minRequiredGap = minContinuousGapInIntervalForStudentsList.data[iv][sbg].minGapDuration;
 				if (h+act->duration < startHour || h >= endHour )
 					continue;
 

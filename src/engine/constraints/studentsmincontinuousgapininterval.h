@@ -23,7 +23,7 @@ public:
 		int startHour;
 		int endHour;
 		double weightPercentage;
-	} **data;
+	} (*data)[MAX];
 
 	MinContinuousGapInIntervalForStudents();
 	virtual ~MinContinuousGapInIntervalForStudents();
