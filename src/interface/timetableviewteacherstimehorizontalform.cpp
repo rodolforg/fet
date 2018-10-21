@@ -75,11 +75,6 @@ extern bool simulation_running;
 extern Matrix3D<bool> teacherNotAvailableDayHour;
 extern Matrix2D<bool> breakDayHour;
 
-extern QSet<int> idsOfLockedTime;		//care about locked activities in view forms
-extern QSet<int> idsOfLockedSpace;		//care about locked activities in view forms
-extern QSet<int> idsOfPermanentlyLockedTime;	//care about locked activities in view forms
-extern QSet<int> idsOfPermanentlyLockedSpace;	//care about locked activities in view forms
-
 extern const int MINIMUM_WIDTH_SPIN_BOX_VALUE;
 extern const int MINIMUM_HEIGHT_SPIN_BOX_VALUE;
 

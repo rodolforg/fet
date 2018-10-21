@@ -80,11 +80,6 @@ extern bool simulation_running;
 extern Matrix2D<bool> breakDayHour;
 extern QHash<QString, QSet<QPair<int, int> > > studentsSetNotAvailableDayHour;
 
-extern QSet<int> idsOfLockedTime;		//care about locked activities in view forms
-extern QSet<int> idsOfLockedSpace;		//care about locked activities in view forms
-extern QSet<int> idsOfPermanentlyLockedTime;	//care about locked activities in view forms
-extern QSet<int> idsOfPermanentlyLockedSpace;	//care about locked activities in view forms
-
 extern const int MINIMUM_WIDTH_SPIN_BOX_VALUE; //trick found on the internet, so that these two constants are visible in timetableviewteacherstimehorizontalform.cpp
 extern const int MINIMUM_HEIGHT_SPIN_BOX_VALUE;
 const int MINIMUM_WIDTH_SPIN_BOX_VALUE=9;
