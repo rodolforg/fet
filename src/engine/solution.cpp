@@ -376,7 +376,7 @@ void Solution::getTeachersTimetable(const Rules &r, Matrix3D<int>& a, Matrix3D<Q
 								b[TEACHER_IS_NOT_AVAILABLE][d][h]<<tch;
 						}
 					}
-					assert(removed==1);
+//					assert(removed==1);
 				}
 			}
 		}
