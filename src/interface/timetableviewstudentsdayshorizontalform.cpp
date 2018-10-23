@@ -570,13 +570,28 @@ QColor TimetableViewStudentsDaysHorizontalForm::stringToColor(QString s)
 
 void TimetableViewStudentsDaysHorizontalForm::updateNotPlacedActivities()
 {
+	StudentsSubgroup *subgroup = static_cast<StudentsSubgroup*>(subgroupsListWidget->currentItem() ? gt.rules.searchAugmentedStudentsSet(subgroupsListWidget->currentItem()->text()) : nullptr);
+	StudentsGroup *group = static_cast<StudentsGroup*>(subgroupsListWidget->currentItem() ? gt.rules.searchAugmentedStudentsSet(groupsListWidget->currentItem()->text()) : nullptr);
+	StudentsYear *year = static_cast<StudentsYear*>(subgroupsListWidget->currentItem() ? gt.rules.searchStudentsSet(yearsListWidget->currentItem()->text()) : nullptr);
+	if (!group || !group->subgroupsList.contains(subgroup) || !year || !year->groupsList.contains(group)) {
+		for(StudentsYear* tmp_year : qAsConst(gt.rules.augmentedYearsList)){
+			for(StudentsGroup* tmp_group : qAsConst(tmp_year->groupsList)){
+				if (tmp_group->subgroupsList.contains(subgroup)) {
+					group = tmp_group;
+					year = tmp_year;
+				}
+			}
+		}
+	}
+
 	notPlacedActivitiesListWidget->clear();
 	for(int ai : CachedSchedule::getCachedSolution().getUnallocatedActivities(gt.rules)) {
 		const Activity& activity = gt.rules.internalActivitiesList[ai];
-		if ((yearsListWidget->currentItem() && activity.studentsNames.contains(yearsListWidget->currentItem()->text()))
-			|| (groupsListWidget->currentItem() && activity.studentsNames.contains(groupsListWidget->currentItem()->text()))
-			|| (subgroupsListWidget->currentItem() && activity.studentsNames.contains(subgroupsListWidget->currentItem()->text())))
-		notPlacedActivitiesListWidget->addItem(activity.getDescription());
+		if ((year && activity.studentsNames.contains(year->name))
+			|| (group && activity.studentsNames.contains(group->name))
+			|| (subgroup && activity.studentsNames.contains(subgroup->name)))
+			notPlacedActivitiesListWidget->addItem(activity.getDescription());
+//		studentsTimetableTable->tempRemovedActivities.insert(ai);
 	}
 }
 
