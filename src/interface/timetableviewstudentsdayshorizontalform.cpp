@@ -189,6 +189,8 @@ TimetableViewStudentsDaysHorizontalForm::TimetableViewStudentsDaysHorizontalForm
 	shownComboBoxChanged(shownComboBox->currentText());
 	studentsTimetableTable->setSolution(&gt.rules, CachedSchedule::getCachedSolution());
 	connect(studentsTimetableTable, SIGNAL(solution_changed()), &LockUnlock::communicationSpinBox, SLOT(increaseValue()));
+
+	connect(studentsTimetableTable, SIGNAL(activityRemoved(int)), this, SLOT(newActivityNotPlaced(int)));
 }
 
 TimetableViewStudentsDaysHorizontalForm::~TimetableViewStudentsDaysHorizontalForm()
@@ -537,6 +539,12 @@ void TimetableViewStudentsDaysHorizontalForm::updateStudentsTimetableTable(){
 
 	updateNotPlacedActivities();
 	updateBrokenConstraints();
+}
+
+void TimetableViewStudentsDaysHorizontalForm::newActivityNotPlaced(int ai)
+{
+	//notPlacedActivitiesListWidget->addItem(gt.rules.internalActivitiesList[ai].getDescription());
+	updateNotPlacedActivities();
 }
 
 //begin by Marco Vassura

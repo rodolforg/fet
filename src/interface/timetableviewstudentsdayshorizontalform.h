@@ -44,6 +44,8 @@ public slots:
 	void lockTimeSpace();
 	void updateStudentsTimetableTable();
 
+	void newActivityNotPlaced(int ai);
+
 	void yearChanged(const QString& yearName);
 	void groupChanged(const QString& groupName);
 	void subgroupChanged(const QString& subgroupName);
