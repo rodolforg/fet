@@ -96,7 +96,7 @@ void EditableTimetableWidget::contextMenuEvent(QContextMenuEvent* event)
 	}
 
 	QMenu* placeMenu = contextMenu.addMenu(tr("Place Activity…"));
-	QSet<int> all_placeable = tempRemovedActivities + placed_activity_ids_but_clicked;
+	QList<int> all_placeable = tempRemovedActivities.toList() + placed_activity_ids_but_clicked.toList();
 	bool changed_to_not_removed = false;
 	for (int ai : qAsConst(all_placeable)) {
 		if (h0 + rules->internalActivitiesList[ai].duration > rules->nHoursPerDay)
