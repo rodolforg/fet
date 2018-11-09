@@ -2108,4 +2108,5 @@ Versions 5.37.0 - 5.37.v
 	- Volker Dirr's site now uses SSL (https protocol instead of http).
 - Version 5.37.3
 	- Updated to Qt 5.11.2.
+	- Crash bug fixed if adding a constraint min days between activities and the number of the days per week was 1 (probably very rare).
 	- Minor string fixes in the CSV import/export dialogs.
