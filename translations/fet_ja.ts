@@ -4360,9 +4360,10 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="187"/>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="193"/>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="198"/>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="250"/>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="253"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="199"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="204"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="256"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="259"/>
         <source>FET information</source>
         <translation>ＦＥＴ情報</translation>
     </message>
@@ -4373,51 +4374,56 @@ You can choose the minimum distance in days between each pair of activities. Ple
     </message>
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="194"/>
+        <source>Invalid number of min days between activities - it must be greater than 0.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="200"/>
         <source>Empty list of selected activities</source>
         <translation>選択されたアクティビティのリストを空にする</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="199"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="205"/>
         <source>Only one selected activity</source>
         <translation>唯一選択されたアクティビティ</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="205"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="211"/>
         <source>You want to add a constraint min days between activities for more activities than the number of days per week. This is a very bad practice from the way the algorithm of generation works (it slows down the generation and makes it harder to find a solution).</source>
         <translation>1週間あたりの日数よりも多くのアクティビティのために、アクティビティ間に最小限の日数の制約を追加したいとします。 これは世代のアルゴリズムが動作する方法（世代が遅くなり、解決策を見つけるのが難しくなる）から非常に悪い習慣です。</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="208"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="214"/>
         <source>The best way to add the activities would be:</source>
         <translation>アクティビティを追加する最善の方法は次のとおりです：</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="211"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="217"/>
         <source>1. If you add &apos;force consecutive if same day&apos;, then couple extra activities in pairs to obtain a number of activities equal to the number of days per week. Example: 7 activities with duration 1 in a 5 days week, then transform into 5 activities with durations: 2,2,1,1,1 and add a single container activity with these 5 components (possibly raising the weight of added constraint min days between activities up to 100%)</source>
         <translation>1.「同じ日に連続して強制する」を追加する場合は、余分なアクティビティをペアにして週あたりの日数に等しい数のアクティビティを取得します。 例：5日間の週に期間1のアクティビティを7つ作成し、期間が2,2,1,1,1の5つのアクティビティに変換し、5つのコンポーネントで1つのコンテナアクティビティを追加します（100％までのアクティビティ間で追加された制約最小日の重みを上げる可能性があります）</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="217"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="223"/>
         <source>2. If you don&apos;t add &apos;force consecutive if same day&apos;, then add a larger activity split into a number of activities equal with the number of days per week and the remaining components into other larger split activity. For example, suppose you need to add 7 activities with duration 1 in a 5 days week. Add 2 larger container activities, first one split into 5 activities with duration 1 and second one split into 2 activities with duration 1 (possibly raising the weight of added constraints min days between activities for each of the 2 containers up to 100%)</source>
         <translation>2.同じ日に連続して強制的に追加しない場合は、1週間あたりの日数に等しい数のアクティビティーに大きなアクティビティ・スプリットを追加し、残りのコンポーネントを他のより大きなスプリット・アクティビティーに追加します。 たとえば、期間5の7つのアクティビティを5日間の週に追加する必要があるとします。 2つの大きなコンテナアクティビティを追加し、最初に1つを期間1の5つのアクティビティに分割し、2つ目を1つのアクティビティに分割します（おそらく2つのコンテナのそれぞれのアクティビティ間の追加された制約の最小日数を最大100％まで上げます）</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="225"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="231"/>
         <source>Do you want to add current constraint as it is now (not recommended) or cancel and edit as instructed?</source>
         <translation>現在の制約を現在のように追加する（推奨しません）か、指示どおりにキャンセルして編集しますか？</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="227"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="233"/>
         <source>FET warning</source>
         <translation>ＦＥＴ注意</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="247"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="253"/>
         <source>Constraint added:</source>
         <translation>追加された制約：</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="254"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="260"/>
         <source>Constraint NOT added - it must be a duplicate</source>
         <translation>制約は追加されませんでした。重複している必要があります</translation>
     </message>
@@ -42057,8 +42063,9 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="198"/>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="204"/>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="209"/>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="269"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="210"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="215"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="275"/>
         <source>FET information</source>
         <translation>FET 情報</translation>
     </message>
@@ -42069,46 +42076,51 @@ Please stop simulation before this</source>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="205"/>
+        <source>Invalid number of min days between activities - it must be greater than 0.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="211"/>
         <source>Empty list of selected activities</source>
         <translation>選択されたアクティビティのリストを空にする</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="210"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="216"/>
         <source>Only one selected activity</source>
         <translation>唯一選択されたアクティビティ</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="216"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="222"/>
         <source>You want to add a constraint min days between activities for more activities than the number of days per week. This is a very bad practice from the way the algorithm of generation works (it slows down the generation and makes it harder to find a solution).</source>
         <translation type="unfinished">1週間あたりの日数よりも多くのアクティビティのために、アクティビティ間に最小限の日数の制約を追加したいとします。 これは世代のアルゴリズムが動作する方法（世代が遅くなり、解決策を見つけるのが難しくなる）から非常に悪い習慣です。</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="219"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="225"/>
         <source>The best way to add the activities would be:</source>
         <translation>アクティビティを追加する最善の方法：</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="222"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="228"/>
         <source>1. If you add &apos;force consecutive if same day&apos;, then couple extra activities in pairs to obtain a number of activities equal to the number of days per week. Example: 7 activities with duration 1 in a 5 days week, then transform into 5 activities with durations: 2,2,1,1,1 and add a single container activity with these 5 components (possibly raising the weight of added constraint min days between activities up to 100%)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="228"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="234"/>
         <source>2. If you don&apos;t add &apos;force consecutive if same day&apos;, then add a larger activity split into a number of activities equal with the number of days per week and the remaining components into other larger split activity. For example, suppose you need to add 7 activities with duration 1 in a 5 days week. Add 2 larger container activities, first one split into 5 activities with duration 1 and second one split into 2 activities with duration 1 (possibly raising the weight of added constraints min days between activities for each of the 2 containers up to 100%)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="235"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="241"/>
         <source>Do you want to add current constraint as it is now (not recommended) or cancel and edit as instructed?</source>
         <translation type="unfinished">現在の制約を現在のように追加する（推奨しません）か、指示どおりにキャンセルして編集しますか？</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="237"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="243"/>
         <source>FET warning</source>
         <translation>FETの注意</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="269"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="275"/>
         <source>Cannot proceed, current constraint is equal to another one (it is duplicated)</source>
         <translation type="unfinished">操作を続行できません、現在の制約は別のものと同じになります（重複しています）</translation>
     </message>
@@ -47724,12 +47736,12 @@ Note: teacher not available and break are not counted as gaps.</source>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="67"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>October</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="69"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>November</source>
         <translation type="unfinished"></translation>
     </message>

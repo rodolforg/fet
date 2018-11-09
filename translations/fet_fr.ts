@@ -4363,9 +4363,10 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="187"/>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="193"/>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="198"/>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="250"/>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="253"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="199"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="204"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="256"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="259"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
@@ -4376,51 +4377,56 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
     </message>
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="194"/>
+        <source>Invalid number of min days between activities - it must be greater than 0.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="200"/>
         <source>Empty list of selected activities</source>
         <translation>Liste d&apos;activités sélectionnées vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="199"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="205"/>
         <source>Only one selected activity</source>
         <translation>Une seule activité sélectionnée</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="205"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="211"/>
         <source>You want to add a constraint min days between activities for more activities than the number of days per week. This is a very bad practice from the way the algorithm of generation works (it slows down the generation and makes it harder to find a solution).</source>
         <translation>Vous souhaitez ajouter une contrainte jours minimum entre activités pour davantage d&apos;activités que le nombre de jours dans la semaine. C&apos;est une très mauvaise pratique compte tenu du mode de fonctionnement de l&apos;algorithme de génération (cela ralentit la génération et rend plus difficile la découverte d&apos;une solution).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="208"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="214"/>
         <source>The best way to add the activities would be:</source>
         <translation>La meilleure méthode pour ajouter les activités serait :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="211"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="217"/>
         <source>1. If you add &apos;force consecutive if same day&apos;, then couple extra activities in pairs to obtain a number of activities equal to the number of days per week. Example: 7 activities with duration 1 in a 5 days week, then transform into 5 activities with durations: 2,2,1,1,1 and add a single container activity with these 5 components (possibly raising the weight of added constraint min days between activities up to 100%)</source>
         <translation>1. Si vous ajoutez &quot;forcer consécutives si même jour&quot; alors coller les activités excédentaires par paires pour obtenir un nombre d&apos;activités égal au nombre de jours de la semaine. Exemple : 7 activités d&apos;une durée de 1 dans une semaine de 5 jours sont transformées en 5 activités avec les durées : 2, 2, 1, 1, 1 et ajoutez une seule activité conteneur avec ces 5 composants (augmentation possible du poids de la contrainte ajoutée &quot;jours minimum entre activités&quot; jusqu&apos;à 100.0 %)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="217"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="223"/>
         <source>2. If you don&apos;t add &apos;force consecutive if same day&apos;, then add a larger activity split into a number of activities equal with the number of days per week and the remaining components into other larger split activity. For example, suppose you need to add 7 activities with duration 1 in a 5 days week. Add 2 larger container activities, first one split into 5 activities with duration 1 and second one split into 2 activities with duration 1 (possibly raising the weight of added constraints min days between activities for each of the 2 containers up to 100%)</source>
         <translation>2. Si vous n&apos;ajoutez pas &quot;forcer consécutives si même jour&quot; alors ajoutez une grande activité fractionnée en un nombre d&apos;activités égal au nombre de jours de la semaine et les composants restants dans une autre grande activité fractionnée. Par exemple, supposons que vous ayez besoin d&apos;ajouter 7 activités d&apos;une durée de 1 dans une semaine de 5 jours. Ajoutez 2 grandes activités conteneur, la première fractionnée en 5 activités d&apos;une durée de 1 et la seconde fractionnée en 2 activités d&apos;une durée de 1 (augmentation possible du poids des contraintes ajoutées &quot;jours minimum entre activités&quot; pour chacun des 2 conteneurs jusqu&apos;à 100.0 %)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="225"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="231"/>
         <source>Do you want to add current constraint as it is now (not recommended) or cancel and edit as instructed?</source>
         <translation>Voulez-vous ajouter la contrainte en cours telle quelle (non recommandé) ou annuler et éditer selon les instructions ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="227"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="233"/>
         <source>FET warning</source>
         <translation>FET avertissement</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="247"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="253"/>
         <source>Constraint added:</source>
         <translation>Contrainte ajoutée :</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="254"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="260"/>
         <source>Constraint NOT added - it must be a duplicate</source>
         <translation>Contrainte NON ajoutée - doit être un doublon</translation>
     </message>
@@ -42457,8 +42463,9 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="198"/>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="204"/>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="209"/>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="269"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="210"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="215"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="275"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
@@ -42469,46 +42476,51 @@ Si vous avez besoin d&apos;un poids inférieur à 100.0 %, alors vous pouvez uti
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="205"/>
+        <source>Invalid number of min days between activities - it must be greater than 0.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="211"/>
         <source>Empty list of selected activities</source>
         <translation>Liste d&apos;activités sélectionnées vide</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="210"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="216"/>
         <source>Only one selected activity</source>
         <translation>Une seule activité sélectionnée</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="216"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="222"/>
         <source>You want to add a constraint min days between activities for more activities than the number of days per week. This is a very bad practice from the way the algorithm of generation works (it slows down the generation and makes it harder to find a solution).</source>
         <translation>Vous souhaitez ajouter une contrainte jours minimum entre activités pour davantage d&apos;activités que le nombre de jours dans la semaine. C&apos;est une très mauvaise pratique compte tenu du mode de fonctionnement de l&apos;algorithme de génération (cela ralentit la génération et rend plus difficile la découverte d&apos;une solution).</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="219"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="225"/>
         <source>The best way to add the activities would be:</source>
         <translation>La meilleure méthode pour ajouter les activités serait :</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="222"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="228"/>
         <source>1. If you add &apos;force consecutive if same day&apos;, then couple extra activities in pairs to obtain a number of activities equal to the number of days per week. Example: 7 activities with duration 1 in a 5 days week, then transform into 5 activities with durations: 2,2,1,1,1 and add a single container activity with these 5 components (possibly raising the weight of added constraint min days between activities up to 100%)</source>
         <translation>1. Si vous ajoutez &quot;forcer consécutives si même jour&quot; alors coller les activités excédentaires par paires pour obtenir un nombre d&apos;activités égal au nombre de jours de la semaine. Exemple : 7 activités d&apos;une durée de 1 dans une semaine de 5 jours sont transformées en 5 activités avec les durées : 2, 2, 1, 1, 1 et ajoutez une seule activité conteneur avec ces 5 composants (augmentation possible du poids de la contrainte ajoutée &quot;jours minimum entre activités&quot; jusqu&apos;à 100.0 %)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="228"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="234"/>
         <source>2. If you don&apos;t add &apos;force consecutive if same day&apos;, then add a larger activity split into a number of activities equal with the number of days per week and the remaining components into other larger split activity. For example, suppose you need to add 7 activities with duration 1 in a 5 days week. Add 2 larger container activities, first one split into 5 activities with duration 1 and second one split into 2 activities with duration 1 (possibly raising the weight of added constraints min days between activities for each of the 2 containers up to 100%)</source>
         <translation>2. Si vous n&apos;ajoutez pas &quot;forcer consécutives si même jour&quot; alors ajoutez une grande activité fractionnée en un nombre d&apos;activités égal au nombre de jours de la semaine et les composants restants dans une autre grande activité fractionnée. Par exemple, supposons que vous ayez besoin d&apos;ajouter 7 activités d&apos;une durée de 1 dans une semaine de 5 jours. Ajoutez 2 grandes activités conteneur, la première fractionnée en 5 activités d&apos;une durée de 1 et la seconde fractionnée en 2 activités d&apos;une durée de 1 (augmentation possible du poids des contraintes ajoutées &quot;jours minimum entre activités&quot; pour chacun des 2 conteneurs jusqu&apos;à 100.0 %)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="235"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="241"/>
         <source>Do you want to add current constraint as it is now (not recommended) or cancel and edit as instructed?</source>
         <translation>Voulez-vous ajouter la contrainte en cours telle quelle (non recommandé) ou annuler et éditer selon les instructions ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="237"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="243"/>
         <source>FET warning</source>
         <translation>FET avertissement</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="269"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="275"/>
         <source>Cannot proceed, current constraint is equal to another one (it is duplicated)</source>
         <translation>Impossible de procéder, la contrainte en cours est égale à une autre (c&apos;est un doublon)</translation>
     </message>
@@ -48153,12 +48165,12 @@ Note : enseignant non disponible et pause ne sont pas comptés comme vides.</tra
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="67"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>October</source>
         <translation>Octobre</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="69"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>November</source>
         <translation>Novembre</translation>
     </message>

@@ -4357,9 +4357,10 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="187"/>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="193"/>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="198"/>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="250"/>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="253"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="199"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="204"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="256"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="259"/>
         <source>FET information</source>
         <translation>FET معلومات</translation>
     </message>
@@ -4370,51 +4371,56 @@ You can choose the minimum distance in days between each pair of activities. Ple
     </message>
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="194"/>
+        <source>Invalid number of min days between activities - it must be greater than 0.</source>
+        <translation>عدد غير صحيح لأدنى أيام بين الأنشطة - يجب أن يكون أكبر من 0.</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="200"/>
         <source>Empty list of selected activities</source>
         <translation>قائمة الأنشطة فارغة</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="199"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="205"/>
         <source>Only one selected activity</source>
         <translation>اختيار نشاط واحد فقط</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="205"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="211"/>
         <source>You want to add a constraint min days between activities for more activities than the number of days per week. This is a very bad practice from the way the algorithm of generation works (it slows down the generation and makes it harder to find a solution).</source>
         <translation>ترغب في اضافة قيد &quot;أدنى أيام بين الأنشطة&quot; لأنشطة يتجاوز عددها عدد الأيام في الأسبوع. هذا تصرف سيء للغاية بالنظر إلى الطريقة التي تعمل بها الخوارزمية (تؤدي إلى ابطاء الانتاج، و تجله مقعدا و صعبا للعثور على حلّ).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="208"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="214"/>
         <source>The best way to add the activities would be:</source>
         <translation>أفضل طريقة لاضافة الأنشطة تتمثل في:</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="211"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="217"/>
         <source>1. If you add &apos;force consecutive if same day&apos;, then couple extra activities in pairs to obtain a number of activities equal to the number of days per week. Example: 7 activities with duration 1 in a 5 days week, then transform into 5 activities with durations: 2,2,1,1,1 and add a single container activity with these 5 components (possibly raising the weight of added constraint min days between activities up to 100%)</source>
         <translation>إذا أضفت متصلة إذا كانت في نفس اليوم، فزَاوِج الأنشطة الفائضة في ثنائيات للحصول على عدد من الأنشطة يساوي عدد الأيام في الأسبوع. مثال: 7 أنشطة بمدة 1 في 5 أيام من الأسبوع، ثم قم بتحويلها إلى 5 أنشطة بمَدَدٍ: 2، 2، 1، 1، 1 ثم أضف حاوية نشاط واحدة مع هذه العناصر الخمس (يمكن تقوية وزن القيد أدنى أيام بين الأنشطة و رفعه إلى 100%)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="217"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="223"/>
         <source>2. If you don&apos;t add &apos;force consecutive if same day&apos;, then add a larger activity split into a number of activities equal with the number of days per week and the remaining components into other larger split activity. For example, suppose you need to add 7 activities with duration 1 in a 5 days week. Add 2 larger container activities, first one split into 5 activities with duration 1 and second one split into 2 activities with duration 1 (possibly raising the weight of added constraints min days between activities for each of the 2 containers up to 100%)</source>
         <translation>2. إذا لم تضف &apos;متصلة إذا كانت في نفس اليوم&apos;، إذن أضف نشاطا كبيرا مقسما بعدد من الأنشطة مساوٍ لعدد الأيام في الأسبوع، و العناصر المتبقية داخل نشاط كبير مقسم. على سبيل المثال، لنفرض أنك تحتاج إلى اضافة 7 أنشطة بمدة 1 في 5 أيام من الأسبوع. أضف 2 حاوية أنشطة، الحاوية الأولى مقسمة في 5 أنشطة بمدة 1، و الحاوية الثانية مقسمة في نشاطين (2) بمدة 1 (يمكن تقوية وزن القيد أدنى أيام بين الأنشطة لكلا الحاوتين و رفعه إلى 100%)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="225"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="231"/>
         <source>Do you want to add current constraint as it is now (not recommended) or cancel and edit as instructed?</source>
         <translation>هل ترغب في اضافة القيد الحالي كما هو الآن (غير مستحسن)، أو الالغاء و تعديله حسب التعليمات؟</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="227"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="233"/>
         <source>FET warning</source>
         <translation>FET تحذير</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="247"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="253"/>
         <source>Constraint added:</source>
         <translation>القيد أُضيف:</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="254"/>
+        <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="260"/>
         <source>Constraint NOT added - it must be a duplicate</source>
         <translation>تعذر اضافة القيد - حتما هو مكرر</translation>
     </message>
@@ -4473,7 +4479,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform_template.ui" line="153"/>
         <source>Min days</source>
         <comment>Keep translation short. It refers to the minimum number of days between activities.</comment>
-        <translation>أدنى أيام</translation>
+        <translation>اقل أيام</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform_template.ui" line="183"/>
@@ -5531,7 +5537,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="50"/>
         <source>Min gaps between building changes</source>
-        <translation>ادنى فجوات بين تغيير البنايات</translation>
+        <translation>اقل فجوات بين تغيير البنايات</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="67"/>
@@ -8804,7 +8810,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachermingapsbetweenbuildingchangesform_template.ui" line="103"/>
         <source>Min gaps between building changes</source>
-        <translation>ادنى فجوات بين تغيير البنايات</translation>
+        <translation>اقل فجوات بين تغيير البنايات</translation>
     </message>
 </context>
 <context>
@@ -9899,7 +9905,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersmingapsbetweenbuildingchangesform_template.ui" line="67"/>
         <source>Min gaps between building changes</source>
-        <translation>ادنى فجوات بين تغيير البنايات</translation>
+        <translation>اقل فجوات بين تغيير البنايات</translation>
     </message>
 </context>
 <context>
@@ -17333,7 +17339,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="2571"/>
         <source>mG:%1</source>
         <comment>Minimum number of gaps</comment>
-        <translation>أدنى فجوات بين الأنشطة:%1</translation>
+        <translation>اقل فجوات بين الأنشطة:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2577"/>
@@ -17343,7 +17349,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2578"/>
         <source>Minimum gaps between activities (if activities on the same day)</source>
-        <translation>أدنى عدد من الفجوات بين الأنشطة (اذا كانت الأنشطة في نفس اليوم)</translation>
+        <translation>اقل عدد من الفجوات بين الأنشطة (اذا كانت الأنشطة في نفس اليوم)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2579"/>
@@ -19513,7 +19519,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="5148"/>
         <source>mG:%1</source>
         <comment>mG means min gaps</comment>
-        <translation>أدنى فجوات بين الأنشطة:%1</translation>
+        <translation>اقل فجوات بين الأنشطة:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5157"/>
@@ -19533,7 +19539,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5163"/>
         <source>Minimum gaps between building changes=%1</source>
-        <translation>أدنى فجوات بين تغيير البنايات=%1</translation>
+        <translation>اقل فجوات بين تغيير البنايات=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5166"/>
@@ -22422,7 +22428,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="4899"/>
         <source>mG:%1</source>
         <comment>mG means min gaps</comment>
-        <translation>أدنى فجوات بين الأنشطة:%1</translation>
+        <translation>اقل فجوات بين الأنشطة:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4908"/>
@@ -22447,7 +22453,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4916"/>
         <source>Minimum gaps between building changes=%1</source>
-        <translation>أدنى فجوات بين تغيير البنايات=%1</translation>
+        <translation>اقل فجوات بين تغيير البنايات=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4919"/>
@@ -26648,7 +26654,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="14542"/>
         <source>mD:%1</source>
         <comment>Minimum days per week</comment>
-        <translation>أدنى أيام:%1</translation>
+        <translation>اقل أيام بين الأنشطة:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14550"/>
@@ -26817,7 +26823,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="6386"/>
         <source>mG:%1</source>
         <comment>mG means min gaps</comment>
-        <translation>أدنى فجوات بين الأنشطة:%1</translation>
+        <translation>اقل فجوات بين الأنشطة:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6395"/>
@@ -26842,7 +26848,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6403"/>
         <source>Minimum gaps between building changes=%1</source>
-        <translation>أدنى فجوات بين تغيير البنايات=%1</translation>
+        <translation>اقل فجوات بين تغيير البنايات=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6406"/>
@@ -29294,7 +29300,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="6636"/>
         <source>mG:%1</source>
         <comment>mG means min gaps</comment>
-        <translation>أدنى فجوات بين الأنشطة:%1</translation>
+        <translation>اقل فجوات بين الأنشطة:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6645"/>
@@ -29314,7 +29320,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6651"/>
         <source>Minimum gaps between building changes=%1</source>
-        <translation>أدنى فجوات بين تغيير البنايات=%1</translation>
+        <translation>اقل فجوات بين تغيير البنايات=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6654"/>
@@ -30502,7 +30508,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="14"/>
         <source>Constraints two activies ordered</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>قيود نشاطين متعاقبين</translation>
+        <translation>قيود نشاطان متعاقبان</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="160"/>
@@ -30537,7 +30543,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="26"/>
         <source>This constraint forces two activities A1 and A2: A2 to begin later than A1 has finished, separated by any time interval in the week</source>
-        <translation>هذا الفيد يرغم نشاطين A1 و A2: إذا كانا في نفس اليوم، ، A2 يحتاج إلى البدء في وقت لاحق بعد انتهاء A1، مفصولين بأي وقت خلال الأسبوع</translation>
+        <translation>هذا الفيد يرغم نشاطين A1 و A2 : A2 يحتاج إلى البدء في وقت لاحق بعد انتهاء A1، مفصولين بأي مجال زمني خلال الأسبوع</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="74"/>
@@ -30626,7 +30632,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13645"/>
         <source>Two activities are ordered if they are on the same day (the second activity must begin later than the first activity has finished if they are on the same day)</source>
-        <translation>نشاطان متعاقبان إذا نفس اليوم ( النشاط الثاني ينبغي أن يبدأ متأخرا بعد انتهاء النشاط الأول إذا كانا في نفس اليوم )</translation>
+        <translation>نشاطان متعاقبان إذا كانا في نفس اليوم ( النشاط الثاني ينبغي أن يبدأ متأخرا بعد انتهاء النشاط الأول إذا كانا في نفس اليوم )</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13649"/>
@@ -30704,7 +30710,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="14"/>
         <source>Constraints two activies ordered if same day</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>قيد نشاطين متعاقبين إذا نفس اليوم</translation>
+        <translation>قيود نشاطان متعاقبان إذا نفس اليوم</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedifsamedayform_template.ui" line="26"/>
@@ -31211,25 +31217,13 @@ Import of data will be easier with these settings.</source>
     <message>
         <location filename="../src/engine/export.cpp" line="937"/>
         <source>Note: Constraint %1 was skipped, because it does not refer to a whole larger container activity</source>
-        <translation>لاحظ: القيد %1 تم تخطيه، لأنه لا يشير إلى حاوية تامة لنشاط واسع</translation>
+        <translation>لاحظ: القيد %1 تم تخطيه، لأنه لا يشير إلى حاوية نشاط كبيرة جدا</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="946"/>
         <location filename="../src/engine/export.cpp" line="951"/>
         <source>Note: Constraint %1 was skipped, because there exists another constraint of this type with larger weight percentage, referring to the same activities</source>
-        <translation>لاحظ: القيد%1 تم تخطيه لأنه يوجد هناك قيد آخر من هذا النوع مع وزن نسبي أكبر ، يشير إلى نفس الأنشطة</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/export.cpp" line="958"/>
-        <location filename="../src/engine/export.cpp" line="964"/>
-        <source>Note: Constraint %1 was skipped, because there exists another constraint of this type with the same weight percentage and higher number of min days, referring to the same activities</source>
-        <translation>لاحظ: القيد%1 تم تخطيه لأنه يوجد هناك قيد آخر من هذا النوع مع نفس الوزن النسبي و عدد أكبر لأدنى أيام، يشير إلى نفس الأنشطة</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/export.cpp" line="971"/>
-        <location filename="../src/engine/export.cpp" line="977"/>
-        <source>Note: Constraint %1 was skipped, because there exists another constraint of this type with the same weight percentage and same number of min days and consecutive if same day true, referring to the same activities</source>
-        <translation>لاحظ: القيد%1 تم تخطيه لأنه يوجد هناك قيد آخر من هذا النوع مع نفس الوزن النسبي و نفس العدد لأدنى أيام مع القيد متصلة إذا كانت نفس اليوم صحيح، يشير إلى نفس الأنشطة</translation>
+        <translation>لاحظ: القيد %1 تم تخطيه، لأنه يوجد قيد آخر من هذ االنوع مع وزن نسبي أكبر، و الذي يشير إلى نفس الأنشطة</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="1211"/>
@@ -31268,6 +31262,18 @@ Import of data will be easier with these settings.</source>
         <location filename="../src/engine/export.cpp" line="1005"/>
         <source>different teachers</source>
         <translation>مدرسين آخرين</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/export.cpp" line="958"/>
+        <location filename="../src/engine/export.cpp" line="964"/>
+        <source>Note: Constraint %1 was skipped, because there exists another constraint of this type with the same weight percentage and higher number of min days, referring to the same activities</source>
+        <translation>لاحظ: القيد %1 تم تخطيه، لأنه يوجد قيد آخر من هذ االنوع مع وزن نسبي مماثل، و عدد أكبر من قيود أدنى أيام و الذي يشير إلى نفس الأنشطة</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/export.cpp" line="971"/>
+        <location filename="../src/engine/export.cpp" line="977"/>
+        <source>Note: Constraint %1 was skipped, because there exists another constraint of this type with the same weight percentage and same number of min days and consecutive if same day true, referring to the same activities</source>
+        <translation>لاحظ: القيد %1 تم تخطيه، لأنه يوجد قيد آخر من هذ االنوع مع وزن نسبي مماثل، و عدد مماثل من قيود أدنى أيام و متصلة إذا كانت في نفس اليوم، و الذي يشير إلى نفس الأنشطة</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="1007"/>
@@ -39373,7 +39379,7 @@ ATS = affected teacher or students set
     <message>
         <location filename="../src/engine/import.cpp" line="1007"/>
         <source>Skipped line %1: Fields &apos;%2&apos; and &apos;%3&apos; do not have the same value.</source>
-        <translation>تخطي السطر %1:الحقلان %2 و %3 لا يحتويان على  نفس.القيمة .</translation>
+        <translation>تخطي السطر %1:الحقل %2 و الحقل %3 ليس لديهما نفس القيم.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1018"/>
@@ -39383,7 +39389,7 @@ ATS = affected teacher or students set
     <message>
         <location filename="../src/engine/import.cpp" line="1047"/>
         <source>Skipped line %1: Field &apos;%2&apos; contains an invalid number (double) value.</source>
-        <translation>تخطي السطر %1:الحقل %2 يحتوي على قيمةعدد غير صالح(ضعف).</translation>
+        <translation>تخطي السطر %1:الحقل %2  يحتوي قيمة عددية (مضاعفة) غير صحيحة.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1063"/>
@@ -42475,8 +42481,9 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="198"/>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="204"/>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="209"/>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="269"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="210"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="215"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="275"/>
         <source>FET information</source>
         <translation>FET معلومات</translation>
     </message>
@@ -42487,46 +42494,51 @@ Please stop simulation before this</source>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="205"/>
+        <source>Invalid number of min days between activities - it must be greater than 0.</source>
+        <translation>عدد غير صحيح لأدنى أيام بين الأنشطة - يجب أن يكون أكبر من 0.</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="211"/>
         <source>Empty list of selected activities</source>
         <translation>قائمة الأنشطة فارغة</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="210"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="216"/>
         <source>Only one selected activity</source>
         <translation>اختيار نشاط واحد فقط</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="216"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="222"/>
         <source>You want to add a constraint min days between activities for more activities than the number of days per week. This is a very bad practice from the way the algorithm of generation works (it slows down the generation and makes it harder to find a solution).</source>
         <translation>ترغب في اضافة قيد &quot;أدنى أيام بين الأنشطة&quot; لأنشطة يتجاوز عددها عدد الأيام في الأسبوع. هذا تصرف سيء للغاية بالنظر إلى الطريقة التي تعمل بها الخوارزمية (تؤدي إلى ابطاء الانتاج، و تجله معقدا و صعبا للعثور على حلّ).</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="219"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="225"/>
         <source>The best way to add the activities would be:</source>
         <translation>أفضل طريقة لاضافة الأنشطة هي:</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="222"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="228"/>
         <source>1. If you add &apos;force consecutive if same day&apos;, then couple extra activities in pairs to obtain a number of activities equal to the number of days per week. Example: 7 activities with duration 1 in a 5 days week, then transform into 5 activities with durations: 2,2,1,1,1 and add a single container activity with these 5 components (possibly raising the weight of added constraint min days between activities up to 100%)</source>
         <translation>1.إذا أضفت متصلة إذا كانت في نفس اليوم، إذن زَاوِج الأنشطة الفائضة في ثنائيات للحصول على عدد الأنشطة مساوٍ لعدد الأيام في الأسبوع. مثال: 7 أنشطة بمدة 1 في 5 أيام من الأسبوع، ثم قم بتحويلها إلى 5 أنشطة بمَدَدٍ: 2، 2، 1، 1، 1 ثم أضف حاوية نشاط واحدة مع هذه العناصر الخمس (يمكن تقوية وزن القيد أدنى أيام بين الأنشطة و رفعه إلى 100%)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="228"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="234"/>
         <source>2. If you don&apos;t add &apos;force consecutive if same day&apos;, then add a larger activity split into a number of activities equal with the number of days per week and the remaining components into other larger split activity. For example, suppose you need to add 7 activities with duration 1 in a 5 days week. Add 2 larger container activities, first one split into 5 activities with duration 1 and second one split into 2 activities with duration 1 (possibly raising the weight of added constraints min days between activities for each of the 2 containers up to 100%)</source>
         <translation>2. إذا لم تضف &apos;متصلة إذا كانت في نفس اليوم&apos;، إذن أضف نشاطا كبيرا مقسما بعدد من الأنشطة مساوٍ لعدد الأيام في الأسبوع، و العناصر المتبقية داخل نشاط كبير مقسم. على سبيل المثال، لنفرض أنك تحتاج إلى اضافة 7 أنشطة بمدة 1 في 5 أيام من الأسبوع. أضف 2 حاوية أنشطة، الحاوية الأولى مقسمة في 5 أنشطة بمدة 1، و الحاوية الثانية مقسمة في 2 نشاط بمدة 1 (يمكن تقوية وزن القيد أدنى أيام بين الأنشطة لكلا الحاوتين و رفعه إلى 100%)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="235"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="241"/>
         <source>Do you want to add current constraint as it is now (not recommended) or cancel and edit as instructed?</source>
         <translation>إن اضافة هذا التقييد بالشكل الحالي غير مقبول هل ترغب بالغائه أو تحريره ؟</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="237"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="243"/>
         <source>FET warning</source>
         <translation>FET تحذير</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="269"/>
+        <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="275"/>
         <source>Cannot proceed, current constraint is equal to another one (it is duplicated)</source>
         <translation>تعذرت المعالجة، القيد الحالي هو مماثل لقيد آخر (إنه مكرّر)</translation>
     </message>
@@ -42585,7 +42597,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform_template.ui" line="153"/>
         <source>Min days</source>
         <comment>Keep translation short. It refers to the minimum number of days between a set of activities</comment>
-        <translation>أدنى أيام</translation>
+        <translation>اقل أيام</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform_template.ui" line="183"/>
@@ -43459,7 +43471,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="67"/>
         <source>Min gaps between building changes</source>
-        <translation>أدنى فجوات بين تغيير البنايات</translation>
+        <translation>اقل فجوات بين تغيير البنايات</translation>
     </message>
 </context>
 <context>
@@ -44542,7 +44554,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="119"/>
         <source>Min gaps between building changes</source>
-        <translation>أدنى فجوات بين تغيير البنايات</translation>
+        <translation>اقل فجوات بين تغيير البنايات</translation>
     </message>
 </context>
 <context>
@@ -46125,7 +46137,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachermindaysperweekform_template.ui" line="94"/>
         <source>Min days per week</source>
-        <translation>أدنى أيام في الأسبوع</translation>
+        <translation>اقل أيام في الأسبوع</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermindaysperweekform_template.ui" line="109"/>
@@ -46188,7 +46200,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachermingapsbetweenbuildingchangesform_template.ui" line="119"/>
         <source>Min gaps between building changes</source>
-        <translation>ادنى فجوات بين تغيير البنايات</translation>
+        <translation>اقل فجوات بين تغيير البنايات</translation>
     </message>
 </context>
 <context>
@@ -47084,7 +47096,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmingapsbetweenbuildingchangesform_template.ui" line="67"/>
         <source>Min gaps between building changes</source>
-        <translation>ادنى فجوات بين تغيير البنايات</translation>
+        <translation>اقل فجوات بين تغيير البنايات</translation>
     </message>
 </context>
 <context>
@@ -48168,12 +48180,12 @@ Note: teacher not available and break are not counted as gaps.</source>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="67"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>October</source>
         <translation>أكتوبر</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="69"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>November</source>
         <translation>نوفمبر</translation>
     </message>
