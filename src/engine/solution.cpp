@@ -60,7 +60,8 @@ void Solution::copy(const Rules &r, const Solution &c){
 	conflictsDescriptionList=c.conflictsDescriptionList;
 	conflictsTotal=c.conflictsTotal;
 	severeConflictList = c.severeConflictList;
-	
+	conflictsConstraintList = c.conflictsConstraintList;
+
 	teachersMatrixReady=c.teachersMatrixReady;
 	subgroupsMatrixReady=c.subgroupsMatrixReady;
 	roomsMatrixReady=c.roomsMatrixReady;
@@ -107,7 +108,8 @@ double Solution::fitness(const Rules &r, QString* conflictsString){
 	this->conflictsDescriptionList.clear();
 	this->conflictsWeightList.clear();
 	this->severeConflictList.clear();
-	
+	this->conflictsConstraintList.clear();
+
 	this->teachersMatrixReady=false;
 	this->subgroupsMatrixReady=false;
 	this->roomsMatrixReady=false;
@@ -129,6 +131,12 @@ double Solution::fitness(const Rules &r, QString* conflictsString){
 		
 		conflictsWeightList += info.weights;
 		conflictsDescriptionList += info.descriptions;
+		GeneralConstraint ctr;
+		ctr.type = GeneralConstraint::TIME;
+		for (int n = 0; n < info.weights.count(); n++) {
+			ctr.constraint.time = r.internalTimeConstraintsList[i];
+			conflictsConstraintList.append(ctr);
+		}
 	}	
 	for(int i=0; i<r.nInternalSpaceConstraints; i++){
 		ConflictInfo info;
@@ -142,6 +150,12 @@ double Solution::fitness(const Rules &r, QString* conflictsString){
 
 		conflictsWeightList += info.weights;
 		conflictsDescriptionList += info.descriptions;
+		GeneralConstraint ctr;
+		ctr.type = GeneralConstraint::SPACE;
+		for (int n = 0; n < info.weights.count(); n++) {
+			ctr.constraint.space = r.internalSpaceConstraintsList[i];
+			conflictsConstraintList.append(ctr);
+		}
 	}
 		
 	this->conflictsTotal=0;

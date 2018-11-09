@@ -31,6 +31,14 @@ File solution.h
 
 class Rules;
 
+class TimeConstraint;
+class SpaceConstraint;
+
+struct GeneralConstraint {
+	enum {TIME, SPACE} type;
+	union {TimeConstraint* time; SpaceConstraint* space;} constraint;
+};
+
 /**
 This class represents a solution (time and space allocation for the activities).
 */
@@ -44,6 +52,7 @@ public:
 	double conflictsTotal;
 
 	QStringList severeConflictList;
+	QList<GeneralConstraint> conflictsConstraintList;
 
 	int nPlacedActivities;
 
