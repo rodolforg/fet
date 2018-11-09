@@ -88,7 +88,7 @@ double Solution::fitness(const Rules &r, QString* conflictsString){
 	assert(r.initialized);
 	assert(r.internalStructureComputed);
 
-	if(this->_fitness>=0 && conflictsString==NULL)
+	if(this->_fitness>=0 && conflictsString==nullptr)
 	//If you want to see the log, you have to recompute the fitness, even if it is
 	//already computed
 		return this->_fitness;
@@ -116,9 +116,9 @@ double Solution::fitness(const Rules &r, QString* conflictsString){
 		
 	for(int i=0; i<r.nInternalTimeConstraints; i++){
 		ConflictInfo info;
-		ConflictInfo* pInfo = conflictsString != NULL? &info : NULL;
+		ConflictInfo* pInfo = conflictsString != nullptr? &info : nullptr;
 		double cur_fitness = r.internalTimeConstraintsList[i]->fitness(*this, r, pInfo);
-		if ((cur_fitness != 0 && r.internalTimeConstraintsList[i]->weightPercentage >= 100.0)
+		if ((cur_fitness != 0.0 && r.internalTimeConstraintsList[i]->weightPercentage >= 100.0)
 			|| cur_fitness >= 10000) {
 			severeConflictList += info.descriptions;
 		}
@@ -135,9 +135,9 @@ double Solution::fitness(const Rules &r, QString* conflictsString){
 	}	
 	for(int i=0; i<r.nInternalSpaceConstraints; i++){
 		ConflictInfo info;
-		ConflictInfo* pInfo = conflictsString != NULL? &info : NULL;
+		ConflictInfo* pInfo = conflictsString != nullptr? &info : nullptr;
 		double cur_fitness = r.internalSpaceConstraintsList[i]->fitness(*this, r, pInfo);
-		if ((cur_fitness != 0 && r.internalSpaceConstraintsList[i]->weightPercentage >= 100.0)
+		if ((cur_fitness != 0.0 && r.internalSpaceConstraintsList[i]->weightPercentage >= 100.0)
 			|| cur_fitness >= 10000) {
 			severeConflictList += info.descriptions;
 		}
@@ -192,7 +192,7 @@ double Solution::fitness(const Rules &r, QString* conflictsString){
 	assert(conflictsWeightList.count()==conflictsDescriptionList.count());
 	assert(conflictsWeightList.count()==ttt);
 	
-	if (conflictsString != NULL)
+	if (conflictsString != nullptr)
 		*conflictsString += conflictsDescriptionList.join("\n");
 
 	return this->_fitness;
