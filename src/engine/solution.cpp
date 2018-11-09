@@ -49,12 +49,9 @@ void Solution::copy(const Rules &r, const Solution &c){
 
 	assert(r.internalStructureComputed);
 
-	for(int i=0; i<r.nInternalActivities; i++){
-		this->times[i] = c.times[i];
-		this->rooms[i]=c.rooms[i];
-	}
-	//memcpy(times, c.times, r.nActivities * sizeof(times[0]));
-	
+	std::copy_n(c.times, MAX_ACTIVITIES, times);
+	std::copy_n(c.rooms, MAX_ACTIVITIES, rooms);
+
 	//added in version 5.2.0
 	conflictsWeightList=c.conflictsWeightList;
 	conflictsDescriptionList=c.conflictsDescriptionList;
@@ -73,10 +70,8 @@ void Solution::makeUnallocated(const Rules &r){
 	assert(r.initialized);
 	assert(r.internalStructureComputed);
 
-	for(int i=0; i<r.nInternalActivities; i++){
-		this->times[i]=UNALLOCATED_TIME;
-		this->rooms[i]=UNALLOCATED_SPACE;
-	}
+	std::fill_n(times, MAX_ACTIVITIES, UNALLOCATED_TIME);
+	std::fill_n(rooms, MAX_ACTIVITIES, UNALLOCATED_SPACE);
 
 	resetFitness();
 }
@@ -635,4 +630,18 @@ QList<int> Solution::getHomelessActivities(const Rules& rules) const
 		if (rooms[ai] == UNALLOCATED_SPACE)
 			answer.append(ai);
 	return answer;
+}
+
+bool Solution::operator ==(const Solution& s2) const
+{
+	if (nPlacedActivities != s2.nPlacedActivities)
+		return false;
+
+	if (memcmp(times, s2.times, MAX_ACTIVITIES * sizeof(times[0])) != 0)
+		return false;
+
+	if (memcmp(rooms, s2.rooms, MAX_ACTIVITIES * sizeof(rooms[0])) != 0)
+		return false;
+
+	return true;
 }

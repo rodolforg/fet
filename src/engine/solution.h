@@ -126,6 +126,8 @@ public:
 	QList<int> getUnallocatedActivities(const Rules& rules) const;
 	QList<int> getHomelessActivities(const Rules& rules) const;
 
+	bool operator ==(const Solution& s2) const;
+
 private:
 	/**
 	Fitness; it is calculated only at the initialization or
