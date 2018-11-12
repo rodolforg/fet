@@ -45,6 +45,9 @@ void EditableTimetableWidget::setSolution(const Rules* rules, const Solution& so
 	this->rules = rules;
 	if (this->solution == NULL)
 		this->solution = new Solution();
+	else if (solution == *this->solution)
+		return;
+	undoStack.clear();
 	this->solution->copy(*rules, solution);
 }
 
