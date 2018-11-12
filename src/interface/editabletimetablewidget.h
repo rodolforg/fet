@@ -69,6 +69,8 @@ private:
 
 	QUndoStack undoStack;
 
+	void colorizePossibleActions(QTableWidgetItem *item);
+
 protected slots:
 	void placeActivity(const QTableWidgetItem* item, int ai);
 	void removeActivity(const QTableWidgetItem* item);

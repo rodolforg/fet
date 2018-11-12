@@ -28,6 +28,9 @@ EditableTimetableWidget::EditableTimetableWidget(QWidget *parent)
 	: QTableWidget(parent), rules(NULL), solution(NULL), timetableDirection(DAYS_HORIZONTAL)
 {
 	setContextMenuPolicy(Qt::DefaultContextMenu);
+	connect(this, &QTableWidget::currentItemChanged, [this](QTableWidgetItem* item, QTableWidgetItem*) {
+		this->colorizePossibleActions(item);
+	});
 }
 
 EditableTimetableWidget::EditableTimetableWidget(int rows, int cols, QWidget* parent)
@@ -325,6 +328,63 @@ QList<int> EditableTimetableWidget::getPossibleSwaps(const QList<int> &activity_
 		possible_swaps << dst_ai;
 	}
 	return possible_swaps;
+}
+
+void EditableTimetableWidget::colorizePossibleActions(QTableWidgetItem* item)
+{
+	if (!item->data(Qt::UserRole).isValid())
+		return;
+
+	const int src_ai = item->data(Qt::UserRole).toInt();
+
+	QSet<int> placed_activity_ids_but_clicked = getPlacedActivities(item);
+	if (item->data(Qt::UserRole).isValid()) {
+		if (src_ai != UNALLOCATED_ACTIVITY)
+			placed_activity_ids_but_clicked.remove(src_ai);
+	}
+
+	const int time = getTime(item->row(), item->column());
+	const int h0 = getHour(item->row(), item->column());
+
+	QList<int> all_placeable = tempRemovedActivities.toList() + placed_activity_ids_but_clicked.toList();
+	for (int ai : all_placeable) {
+		if (h0 + rules->internalActivitiesList[ai].duration > rules->nHoursPerDay) {
+			all_placeable.removeOne(ai);
+			continue;
+		}
+		ConstraintBasicCompulsoryTime tctr(100);
+		Solution tmpSolution;
+		tmpSolution.copy(*rules, *solution);
+		if (src_ai != UNALLOCATED_ACTIVITY)
+			tmpSolution.unsetTime(src_ai);
+		tmpSolution.setTime(ai, time);
+		ConflictInfo conflictInfo;
+		if (tctr.fitness(tmpSolution, *rules, true, &conflictInfo) > 0) {
+			all_placeable.removeOne(ai);
+		}
+	}
+
+	QList<int> swaps;
+	if (src_ai != UNALLOCATED_ACTIVITY) {
+		swaps = getPossibleSwaps(placed_activity_ids_but_clicked.toList(), src_ai);
+	}
+
+	QList<QTableWidgetItem*> allItems = findItems("*", Qt::MatchWildcard);
+	for (QTableWidgetItem* tmp_item : qAsConst(allItems)) {
+		int tmp_ai = tmp_item->data(Qt::UserRole).toInt();
+		if (tmp_ai == UNALLOCATED_ACTIVITY)
+			continue;
+		if (swaps.contains(tmp_ai)) {
+			tmp_item->setBackground(QBrush(Qt::darkGreen));
+			tmp_item->setForeground(QBrush(Qt::white));
+		} else if (all_placeable.contains(tmp_ai)) {
+			tmp_item->setBackground(QBrush(Qt::darkBlue));
+			tmp_item->setForeground(QBrush(Qt::white));
+		} else {
+			tmp_item->setBackground(QBrush(Qt::gray));
+			tmp_item->setForeground(QBrush(Qt::black));
+		}
+	}
 }
 
 void EditableTimetableWidget::placeActivity(const QTableWidgetItem* item, int ai)
