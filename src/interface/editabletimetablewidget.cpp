@@ -307,7 +307,6 @@ QList<int> EditableTimetableWidget::getPossibleSwaps(const QList<int> &activity_
 		}
 
 		if (src_act->duration != dst_act->duration) {
-			qWarning() << "\t\tignoring [different length]" << dst_act->subjectName << "-" << dst_act->studentsNames;
 			continue;
 		}
 
@@ -320,11 +319,9 @@ QList<int> EditableTimetableWidget::getPossibleSwaps(const QList<int> &activity_
 
 		ProposalStatus status = checkSolutionChange(proposed_solution);
 		if (status == AN_IMPOSSIBLE_PROPOSAL) {
-			qWarning() << "\t\t Impossible: " << dst_act->subjectName << "-" << dst_act->studentsNames;
 			continue;
 		}
 
-		qWarning() << "\t" << dst_act->subjectName << "-" << dst_act->studentsNames;
 		possible_swaps << dst_ai;
 	}
 	return possible_swaps;
