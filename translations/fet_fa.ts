@@ -38767,87 +38767,87 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="481"/>
-        <location filename="../src/engine/import.cpp" line="1268"/>
+        <location filename="../src/engine/import.cpp" line="1355"/>
         <source>activity tags</source>
         <translation>توضیحات کلاس</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="485"/>
-        <location filename="../src/engine/import.cpp" line="1270"/>
+        <location filename="../src/engine/import.cpp" line="1357"/>
         <source>buildings and rooms</source>
         <translation>ساختمان ها واتاق ها</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="489"/>
-        <location filename="../src/engine/import.cpp" line="1272"/>
+        <location filename="../src/engine/import.cpp" line="1359"/>
         <source>teachers</source>
         <translation>اساتید</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="493"/>
-        <location filename="../src/engine/import.cpp" line="1274"/>
+        <location filename="../src/engine/import.cpp" line="1361"/>
         <source>subjects</source>
         <translation>درس ها</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="497"/>
-        <location filename="../src/engine/import.cpp" line="1276"/>
+        <location filename="../src/engine/import.cpp" line="1363"/>
         <source>years, groups and subgroups</source>
         <translation>سال ها, وگروه ها وزیرگروه ها</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="501"/>
-        <location filename="../src/engine/import.cpp" line="1278"/>
+        <location filename="../src/engine/import.cpp" line="1365"/>
         <source>activities</source>
         <translation>کلاس ها</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="505"/>
-        <location filename="../src/engine/import.cpp" line="637"/>
+        <location filename="../src/engine/import.cpp" line="724"/>
         <source>FET - Import %1 from CSV file</source>
         <translation>فت - وارد کردن %1 از فایل CSV</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="653"/>
+        <location filename="../src/engine/import.cpp" line="740"/>
         <source>Please specify the used separator between fields:</source>
         <translation>لطفا جدا کننده بین فیلد ها را تعیین کنید :</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="660"/>
+        <location filename="../src/engine/import.cpp" line="747"/>
         <source>Used field separator:</source>
         <translation>استفاده از جداکننده فیلد :</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="667"/>
+        <location filename="../src/engine/import.cpp" line="754"/>
         <source>Please specify the used text quote of text fields:</source>
         <translation>لطفا کامای فیلد های متنی را مشخص کنید :</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="674"/>
+        <location filename="../src/engine/import.cpp" line="761"/>
         <source>Used textquote:</source>
         <translation>استفاده از علامت کاما :</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="683"/>
+        <location filename="../src/engine/import.cpp" line="770"/>
         <source>The first line is the heading. Don&apos;t import that line.</source>
         <translation>خط اول عنوان است . آن خط وارد نشد .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="684"/>
+        <location filename="../src/engine/import.cpp" line="771"/>
         <source>The first line contains data. Import that line.</source>
         <translation>خط ابتدا شامل اطلاعات است . آن خط وارد شد .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="690"/>
+        <location filename="../src/engine/import.cpp" line="777"/>
         <source>OK</source>
         <translation>موافق</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="526"/>
-        <location filename="../src/engine/import.cpp" line="775"/>
-        <location filename="../src/engine/import.cpp" line="784"/>
-        <location filename="../src/engine/import.cpp" line="833"/>
-        <location filename="../src/engine/import.cpp" line="2107"/>
+        <location filename="../src/engine/import.cpp" line="862"/>
+        <location filename="../src/engine/import.cpp" line="871"/>
+        <location filename="../src/engine/import.cpp" line="920"/>
+        <location filename="../src/engine/import.cpp" line="2194"/>
         <source>FET warning</source>
         <translation>اخطار فت</translation>
     </message>
@@ -38867,414 +38867,414 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="833"/>
+        <location filename="../src/engine/import.cpp" line="920"/>
         <source>Empty filename.</source>
         <translation>نام فایل تهی.</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="837"/>
+        <location filename="../src/engine/import.cpp" line="924"/>
         <source>Error! Can&apos;t open file.</source>
         <translation>خطأ! فایل نمی تواند باز شود.</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="846"/>
-        <location filename="../src/engine/import.cpp" line="1710"/>
-        <location filename="../src/engine/import.cpp" line="1769"/>
-        <location filename="../src/engine/import.cpp" line="1842"/>
-        <location filename="../src/engine/import.cpp" line="2411"/>
+        <location filename="../src/engine/import.cpp" line="933"/>
+        <location filename="../src/engine/import.cpp" line="1797"/>
+        <location filename="../src/engine/import.cpp" line="1856"/>
+        <location filename="../src/engine/import.cpp" line="1929"/>
+        <location filename="../src/engine/import.cpp" line="2498"/>
         <source>Importing</source>
         <comment>Title of a progress dialog</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="847"/>
+        <location filename="../src/engine/import.cpp" line="934"/>
         <source>Loading file</source>
         <translation>بارگذاری فایل</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="863"/>
+        <location filename="../src/engine/import.cpp" line="950"/>
         <source>Loading canceled by user.</source>
         <translation>لغو بارگذاری توسط کاربر.</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1007"/>
+        <location filename="../src/engine/import.cpp" line="1094"/>
         <source>Skipped line %1: Fields &apos;%2&apos; and &apos;%3&apos; do not have the same value.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1018"/>
+        <location filename="../src/engine/import.cpp" line="1105"/>
         <source>Warning in line %1: Field with building name doesn&apos;t relate to a room</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1047"/>
+        <location filename="../src/engine/import.cpp" line="1134"/>
         <source>Skipped line %1: Field &apos;%2&apos; contains an invalid number (double) value.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1063"/>
+        <location filename="../src/engine/import.cpp" line="1150"/>
         <source>Skipped line %1: Field &apos;%2&apos; contains an unknown value.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1139"/>
+        <location filename="../src/engine/import.cpp" line="1226"/>
         <source>FET import %1 question</source>
         <translation>فت %1 سوال وارد کرد</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1175"/>
+        <location filename="../src/engine/import.cpp" line="1262"/>
         <source>Following data found in the file:</source>
         <translation>داده های رو به رو در فایل یافت شدند:</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1177"/>
+        <location filename="../src/engine/import.cpp" line="1264"/>
         <source>There is no usable data in the file.</source>
         <translation>داده قابل توجهی در فایل وجود ندارد.</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1189"/>
+        <location filename="../src/engine/import.cpp" line="1276"/>
         <source>%1</source>
         <translation>%1</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1217"/>
+        <location filename="../src/engine/import.cpp" line="1304"/>
         <source>FET noticed %1 warnings with the current data.</source>
         <translation>فت %1 هشدار را برای داده های کنونی صادر کرد .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1228"/>
+        <location filename="../src/engine/import.cpp" line="1315"/>
         <source>&amp;Import</source>
         <translation>&amp;وارد کردن</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1229"/>
+        <location filename="../src/engine/import.cpp" line="1316"/>
         <source>&amp;Cancel</source>
         <translation>&amp;لغو</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1335"/>
-        <location filename="../src/engine/import.cpp" line="1437"/>
-        <location filename="../src/engine/import.cpp" line="1447"/>
-        <location filename="../src/engine/import.cpp" line="1554"/>
-        <location filename="../src/engine/import.cpp" line="1630"/>
+        <location filename="../src/engine/import.cpp" line="1422"/>
+        <location filename="../src/engine/import.cpp" line="1524"/>
+        <location filename="../src/engine/import.cpp" line="1534"/>
+        <location filename="../src/engine/import.cpp" line="1641"/>
+        <location filename="../src/engine/import.cpp" line="1717"/>
         <source>%1 is already in FET data.</source>
         <translation>%1 در داده های فت موجود است .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1360"/>
-        <location filename="../src/engine/import.cpp" line="1503"/>
-        <location filename="../src/engine/import.cpp" line="1581"/>
-        <location filename="../src/engine/import.cpp" line="1656"/>
-        <location filename="../src/engine/import.cpp" line="2520"/>
-        <location filename="../src/engine/import.cpp" line="2582"/>
+        <location filename="../src/engine/import.cpp" line="1447"/>
+        <location filename="../src/engine/import.cpp" line="1590"/>
+        <location filename="../src/engine/import.cpp" line="1668"/>
+        <location filename="../src/engine/import.cpp" line="1743"/>
+        <location filename="../src/engine/import.cpp" line="2607"/>
+        <location filename="../src/engine/import.cpp" line="2669"/>
         <source>FET information</source>
         <translation>اطلاعات فت</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1504"/>
+        <location filename="../src/engine/import.cpp" line="1591"/>
         <source>%1 rooms added. Please check rooms form.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1581"/>
-        <location filename="../src/engine/import.cpp" line="2376"/>
+        <location filename="../src/engine/import.cpp" line="1668"/>
+        <location filename="../src/engine/import.cpp" line="2463"/>
         <source>%1 subjects added. Please check subjects form.</source>
         <translation>%1 درس اضافه شد . لطفا فرم درس ها را بررسی کنید .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1656"/>
-        <location filename="../src/engine/import.cpp" line="2355"/>
+        <location filename="../src/engine/import.cpp" line="1743"/>
+        <location filename="../src/engine/import.cpp" line="2442"/>
         <source>%1 teachers added. Please check teachers form.</source>
         <translation>%1 استاد اضافه شد . لطفا فرم اساتید را بررسی کنید .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1712"/>
+        <location filename="../src/engine/import.cpp" line="1799"/>
         <source>Checking CSV</source>
         <translation>کنترل CSV</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1719"/>
+        <location filename="../src/engine/import.cpp" line="1806"/>
         <source>Checking CSV canceled by user.</source>
         <translation>لغو کنترل csv توسط کاربر.</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1770"/>
+        <location filename="../src/engine/import.cpp" line="1857"/>
         <source>Checking data</source>
         <translation>کنترل داده ها</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1780"/>
-        <location filename="../src/engine/import.cpp" line="1795"/>
-        <location filename="../src/engine/import.cpp" line="1812"/>
+        <location filename="../src/engine/import.cpp" line="1867"/>
+        <location filename="../src/engine/import.cpp" line="1882"/>
+        <location filename="../src/engine/import.cpp" line="1899"/>
         <source>Checking data canceled by user.</source>
         <translation>لغو کنترل داده ها توسط کاربر.</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1785"/>
+        <location filename="../src/engine/import.cpp" line="1872"/>
         <source>Year %1 is already in FET data.</source>
         <translation>سال %1 در داده های فت موجوود است .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1787"/>
+        <location filename="../src/engine/import.cpp" line="1874"/>
         <source>Can&apos;t import group %1. Name is already taken for a year.</source>
         <translation>گروه %1 وارد نشد . این نام در یک سال از قبل موجود است .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1789"/>
+        <location filename="../src/engine/import.cpp" line="1876"/>
         <source>Can&apos;t import subgroup %1. Name is already taken for a year.</source>
         <translation>زیرگروه %1 وارد نشد . این نام در یک سال از قبل موجود است .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1801"/>
+        <location filename="../src/engine/import.cpp" line="1888"/>
         <source>Can&apos;t import year %1. Name is already taken for a group.</source>
         <translation>سال %1 وارد نشد  . این نام در یک گروه از قبل موجود است .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1805"/>
+        <location filename="../src/engine/import.cpp" line="1892"/>
         <source>Can&apos;t import subgroup %1. Name is already taken for a group.</source>
         <translation>زیرگروه %1 وارد نشد . این نام در یک گروه از قبل موجود است .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1818"/>
+        <location filename="../src/engine/import.cpp" line="1905"/>
         <source>Can&apos;t import year %1. Name is already taken for a subgroup.</source>
         <translation>سال %1 وارد نشد . این نام در یک زیرگروه از قبل موجود است .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1820"/>
+        <location filename="../src/engine/import.cpp" line="1907"/>
         <source>Can&apos;t import group %1. Name is taken for a subgroup.</source>
         <translation>گروه %1 وارد نشد . این نام در یک زیرگروه از قبل موجود است .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1843"/>
+        <location filename="../src/engine/import.cpp" line="1930"/>
         <source>Importing data</source>
         <translation>وارد کردن داده ها</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1867"/>
-        <location filename="../src/engine/import.cpp" line="2422"/>
+        <location filename="../src/engine/import.cpp" line="1954"/>
+        <location filename="../src/engine/import.cpp" line="2509"/>
         <source>Importing data canceled by user.</source>
         <translation>لغو وارد کردن داده ها توسط کاربر.</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="2107"/>
+        <location filename="../src/engine/import.cpp" line="2194"/>
         <source>FET needs to know %1 or %2 if you import %3.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="2412"/>
+        <location filename="../src/engine/import.cpp" line="2499"/>
         <source>Importing activities</source>
         <translation>وارد کردن کلاس ها</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="2446"/>
+        <location filename="../src/engine/import.cpp" line="2533"/>
         <source>Line %1: Activity contains duplicate teacher %2 - please correct that</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="2464"/>
+        <location filename="../src/engine/import.cpp" line="2551"/>
         <source>Line %1: Activity contains duplicate activity tag %2 - please correct that</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="2481"/>
+        <location filename="../src/engine/import.cpp" line="2568"/>
         <source>Line %1: Activity contains duplicate students set %2 - please correct that</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="2520"/>
+        <location filename="../src/engine/import.cpp" line="2607"/>
         <source>Activity NOT added - please report error</source>
         <translation>کلاس اضافه نشد - لطفا خطا را گزارش دهید</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="2522"/>
-        <location filename="../src/engine/import.cpp" line="2584"/>
+        <location filename="../src/engine/import.cpp" line="2609"/>
+        <location filename="../src/engine/import.cpp" line="2671"/>
         <source>Line %1: Activity duration is lower than 1 - please correct that</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="2582"/>
+        <location filename="../src/engine/import.cpp" line="2669"/>
         <source>Split activity NOT added - error???</source>
         <translation>کلاس تقسیم شده اضافه نشد - خطأ؟؟؟</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="2599"/>
+        <location filename="../src/engine/import.cpp" line="2686"/>
         <source>%1 container activities (%2 total activities) added. Please check activities form.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="681"/>
+        <location filename="../src/engine/import.cpp" line="768"/>
         <source>Please specify the contents of the first line:</source>
         <translation>لطفا متن خط اول را تعیین کنید :</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="775"/>
+        <location filename="../src/engine/import.cpp" line="862"/>
         <source>Missing field separator or text quote in first line. Import might be incorrect.</source>
         <translation>جدا کننده فیلد ها یا علامت کامای خط اول گم شده است . وارد کردن ممکن است نادرست باشد .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="784"/>
+        <location filename="../src/engine/import.cpp" line="871"/>
         <source>Missing closing text quote in first line. Import might be incorrect.</source>
         <translation>علامت کامای بسته خط اول گم شده است . وارد کردن ممکن است نادرست باشد .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="888"/>
+        <location filename="../src/engine/import.cpp" line="975"/>
         <source>Warning: FET expected field separator or text separator in line %1. Import might be incorrect.</source>
         <translation>هشدار : فت انتظار جداکننده ی فیلد یا متن در خط %1 بود . وارد کردن ممکن است نادرست باشد .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="896"/>
+        <location filename="../src/engine/import.cpp" line="983"/>
         <source>Warning: FET expected closing text separator in line %1. Import might be incorrect.</source>
         <translation>هشدار : فت انتظار جداکننده ی متن در خط %1 بود . وارد کردن ممکن است نادرست باشد .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="922"/>
+        <location filename="../src/engine/import.cpp" line="1009"/>
         <source>Skipped line %1: FET expected %2 fields but found %3 fields.</source>
         <translation>پرش از خط %1 : فت منتظر %2 فیلد بود اما %3 فیلد پیدا شد .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="931"/>
-        <location filename="../src/engine/import.cpp" line="949"/>
-        <location filename="../src/engine/import.cpp" line="956"/>
-        <location filename="../src/engine/import.cpp" line="962"/>
-        <location filename="../src/engine/import.cpp" line="987"/>
-        <location filename="../src/engine/import.cpp" line="1326"/>
-        <location filename="../src/engine/import.cpp" line="1423"/>
-        <location filename="../src/engine/import.cpp" line="1429"/>
-        <location filename="../src/engine/import.cpp" line="1545"/>
-        <location filename="../src/engine/import.cpp" line="1621"/>
+        <location filename="../src/engine/import.cpp" line="1018"/>
+        <location filename="../src/engine/import.cpp" line="1036"/>
+        <location filename="../src/engine/import.cpp" line="1043"/>
+        <location filename="../src/engine/import.cpp" line="1049"/>
+        <location filename="../src/engine/import.cpp" line="1074"/>
+        <location filename="../src/engine/import.cpp" line="1413"/>
+        <location filename="../src/engine/import.cpp" line="1510"/>
+        <location filename="../src/engine/import.cpp" line="1516"/>
+        <location filename="../src/engine/import.cpp" line="1632"/>
+        <location filename="../src/engine/import.cpp" line="1708"/>
         <source>Skipped line %1: Field &apos;%2&apos; is empty.</source>
         <translation>پرش از خط %1 : فیلد %2 خالی است .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1000"/>
-        <location filename="../src/engine/import.cpp" line="1024"/>
-        <location filename="../src/engine/import.cpp" line="1035"/>
+        <location filename="../src/engine/import.cpp" line="1087"/>
+        <location filename="../src/engine/import.cpp" line="1111"/>
+        <location filename="../src/engine/import.cpp" line="1122"/>
         <source>Skipped line %1: Field &apos;%2&apos; doesn&apos;t contain an integer value.</source>
         <translation>پرش از خط %1 : فیلد %2 حاوی یک مقدار integer نیست .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1082"/>
+        <location filename="../src/engine/import.cpp" line="1169"/>
         <source>Skipped line %1: Data was already in a previous line.</source>
         <translation>پرش از خط %1 : داده ها در خط قبل موجود بودند .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1098"/>
+        <location filename="../src/engine/import.cpp" line="1185"/>
         <source>Line %1 is: %2</source>
         <translation>خط %1 هست : %2</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1405"/>
-        <location filename="../src/engine/import.cpp" line="1414"/>
+        <location filename="../src/engine/import.cpp" line="1492"/>
+        <location filename="../src/engine/import.cpp" line="1501"/>
         <source>Skipped line %1: Field &apos;%2&apos; is already in a previous line.</source>
         <translation>پرش از خط %1 : فیلد %2 در خط قبل موجود بود .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1504"/>
+        <location filename="../src/engine/import.cpp" line="1591"/>
         <source>%1 buildings added. Please check buildings form.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1746"/>
+        <location filename="../src/engine/import.cpp" line="1833"/>
         <source>Problem in line %1: Year name %2 is taken for a group - please consider another name</source>
         <translation>مشکل در خط %1 : نام سال %2 برای یک گروه بکار رفته است - لطفا نام دیگری انتخاب کنید </translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1754"/>
+        <location filename="../src/engine/import.cpp" line="1841"/>
         <source>Problem in line %1: Subgroup name %2 is taken for a year - please consider another name</source>
         <translation>مشکل در خط %1 : نام زیرگروه %2 برای یک سال بکار رفته است - لطفا نام دیگری انتخاب کنید </translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1756"/>
+        <location filename="../src/engine/import.cpp" line="1843"/>
         <source>Problem in line %1: Subgroup name %2 is taken for a group - please consider another name</source>
         <translation>مشکل در خط %1 : نام زیرگروه %2 برای یک گروه بکار رفته است - لطفا نام دیگری انتخاب کنید </translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1758"/>
+        <location filename="../src/engine/import.cpp" line="1845"/>
         <source>Problem in line %1: Group name %2 is taken for a subgroup - please consider another name</source>
         <translation>مشکل در خط %1 : نام گروه %2 برای یک زیرگروه بکار رفته است - لطفا نام دیگری انتخاب کنید </translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1760"/>
+        <location filename="../src/engine/import.cpp" line="1847"/>
         <source>Problem in line %1: Year name %2 is taken for a subgroup - please consider another name</source>
         <translation>مشکل در خط %1 : نام سال %2 برای یک زیرگروه بکار رفته است - لطفا نام دیگری انتخاب کنید </translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1803"/>
+        <location filename="../src/engine/import.cpp" line="1890"/>
         <source>Group name %1 is already in FET data (in the same or in another year).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1822"/>
+        <location filename="../src/engine/import.cpp" line="1909"/>
         <source>Subgroup name %1 is already in FET data (in the same or in another group).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1949"/>
-        <location filename="../src/engine/import.cpp" line="1952"/>
+        <location filename="../src/engine/import.cpp" line="2036"/>
+        <location filename="../src/engine/import.cpp" line="2039"/>
         <source>Group name %1 exists in another year. It means that some years share the same group.</source>
         <translation>نام گروه %1 در سال دیگری موجود است .این بدین معناست که بعضی سال ها گروه های مشابهی به اشتراک گذاشته اند .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="2005"/>
+        <location filename="../src/engine/import.cpp" line="2092"/>
         <source>Subgroup name %1 exists in another group. It means that some groups share the same subgroup.</source>
         <translation>نام زیرگروه %1 در گروه دیگری موجود است .این بدین معناست که بعضی گروه ها زیرگروه های مشابهی به اشتراک گذاشته اند .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="2050"/>
-        <location filename="../src/engine/import.cpp" line="2597"/>
+        <location filename="../src/engine/import.cpp" line="2137"/>
+        <location filename="../src/engine/import.cpp" line="2684"/>
         <source>Notes:</source>
         <translation>ملاحظات:</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="2051"/>
+        <location filename="../src/engine/import.cpp" line="2138"/>
         <source>%1 subgroups added. Please check subgroups form.</source>
         <translation>%1 زیرگروه اضافه شد . لطفا فرم زیرگروه ها را بررسی کنید .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="2052"/>
+        <location filename="../src/engine/import.cpp" line="2139"/>
         <source>%1 groups added. Please check groups form.</source>
         <translation>%1 گروه اضافه شد . لطفا فرم .گروه ها را بررسی کنید .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="2053"/>
+        <location filename="../src/engine/import.cpp" line="2140"/>
         <source>%1 years added. Please check years form.</source>
         <translation>%1 سال اضافه شد . لطفا فرم .سال ها را بررسی کنید .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1360"/>
-        <location filename="../src/engine/import.cpp" line="2397"/>
+        <location filename="../src/engine/import.cpp" line="1447"/>
+        <location filename="../src/engine/import.cpp" line="2484"/>
         <source>%1 activity tags added. Please check activity tags form.</source>
         <translation>%1 توضیح کلاس اضافه شد . لطفا فرم توضیح کلاس را بررسی کنید .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="2593"/>
+        <location filename="../src/engine/import.cpp" line="2680"/>
         <source>Warning: found tags for the &apos;consecutive&apos; field of min days which are not a valid boolean value (%1) - making them %2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1744"/>
+        <location filename="../src/engine/import.cpp" line="1831"/>
         <source>Problem in line %1: Group name %2 is taken for a year - please consider another name</source>
         <translation>مشکل در خط %1 : نام گروه %2 برای یک سال بکار رفته است - لطفا نام دیگری انتخاب کنید </translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="2236"/>
+        <location filename="../src/engine/import.cpp" line="2323"/>
         <source>FET can&apos;t import activities, because FET needs to know the structure of the students sets. You must add (or import) years, groups and subgroups first.</source>
         <translation>فت نمی تواند کلاس ها را وارد کند ، زیرا زیرا فت نیاز دارد ساختار گروه های دانشجویان را بشناسد . شما ابتدا باید سال ها ، گروه ها و زیرگروه ها را اضافه ( وارد ) کنید .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="2238"/>
+        <location filename="../src/engine/import.cpp" line="2325"/>
         <source>It is recommended to import also teachers, rooms, buildings, subjects and activity tags before importing activities. It is not needed, because FET will automatically do it, but you can check the activity csv file by that.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="2243"/>
+        <location filename="../src/engine/import.cpp" line="2330"/>
         <source>Students set %1 doesn&apos;t exist. You must add (or import) years, groups and subgroups first.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="2280"/>
-        <location filename="../src/engine/import.cpp" line="2297"/>
-        <location filename="../src/engine/import.cpp" line="2319"/>
+        <location filename="../src/engine/import.cpp" line="2367"/>
+        <location filename="../src/engine/import.cpp" line="2384"/>
+        <location filename="../src/engine/import.cpp" line="2406"/>
         <source>%1 %2 will be added.</source>
         <comment>For instance &apos;Subject Math will be added&apos;, so use singular</comment>
         <translation>%1 %2  اضافه خواهند شد .</translation>
@@ -39290,7 +39290,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <translation>اساتید</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1080"/>
+        <location filename="../src/engine/import.cpp" line="1167"/>
         <source>Note about line %1: Data was already in a previous line. So this data will be imported once again.</source>
         <translation>نکته درباره خط %1 : داده ها در خط قبل موجود بودند . بنابراین این داده ها یک بار دیگر وارد خواهند شد .</translation>
     </message>
@@ -39310,17 +39310,17 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <translation>تعداد دانشجویان در هر زیرگروه </translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1027"/>
+        <location filename="../src/engine/import.cpp" line="1114"/>
         <source>Skipped line %1: Field &apos;%2&apos; contains an invalid integer value.</source>
         <translation>پرش از خط %1 : فیلد %2 حاوی یک مقدار integer غیرمجاز است.</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1044"/>
+        <location filename="../src/engine/import.cpp" line="1131"/>
         <source>Skipped line %1: Field &apos;%2&apos; doesn&apos;t contain a number (double) value.</source>
         <translation>پرش از خط %1 : فیلد %2 حاوی یک مقدار عددی نیست .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="646"/>
+        <location filename="../src/engine/import.cpp" line="733"/>
         <source>The first line of file
 %1
 is:</source>
@@ -39329,7 +39329,7 @@ is:</source>
 هست:</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1150"/>
+        <location filename="../src/engine/import.cpp" line="1237"/>
         <source>There are several problems in file
 %1</source>
         <translation>چندین مشکل در فایل 
@@ -39337,7 +39337,7 @@ is:</source>
 وجود دارد</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1152"/>
+        <location filename="../src/engine/import.cpp" line="1239"/>
         <source>There are no problems in file
 %1</source>
         <translation>مشکلی در فایل 
@@ -39345,12 +39345,12 @@ is:</source>
 وجود ندارد</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="1012"/>
+        <location filename="../src/engine/import.cpp" line="1099"/>
         <source>Skipped line %1: Field &apos;%2&apos; contains too many subactivities.</source>
         <translation>پرش از خط %1 : فیلد %2 حاوی تعداد بسیار زیادی زیرکلاس است .</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="979"/>
+        <location filename="../src/engine/import.cpp" line="1066"/>
         <source>Skipped line %1: Field &apos;%2&apos; produces too many subactivities.</source>
         <translation>پرش از خط %1 : فیلد %2 تعداد بسیار زیادی زیرکلاس ارائه داده است .</translation>
     </message>
@@ -39380,12 +39380,12 @@ is:</source>
         <translation>بدون نقل قول</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="691"/>
+        <location filename="../src/engine/import.cpp" line="778"/>
         <source>Cancel</source>
         <translation>لغو</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="983"/>
+        <location filename="../src/engine/import.cpp" line="1070"/>
         <source>Skipped line %1: Field &apos;%2&apos; contain incorrect data.</source>
         <translation>پرش از خط %1 : فیلد %2 حاوی داده ی ناصحیح است .</translation>
     </message>
