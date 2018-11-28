@@ -6502,3 +6502,26 @@ is easily detectable as the culprit.
 
 Or, a max teachers gaps per week rule when all other relevant activities to a teacher are placed, would also be easy to identify if we're placing
 a time-locked activity.
+
+372---------------------------------------------------------
+From satellite2 - on forum:
+
+FET has the option for selecting buildings of the rooms and assigning very useful constraints for the teachers/students such as min gaps
+between building changes and max building changes per day/week. Our university has 3 different campuses in the city and they are really
+far away from each other. Sometimes teachers and students need to visit more than one campus a week for different courses. So with the
+current options, I am considering to use each campus name as a building and assign the max building changes per day to ZERO since it is
+not that easy for teachers/students to change their campus in a day. However, this time I will not be able to use the actual building names
+inside each campus. I will not be able to assign min gaps between building changes since building names are used for the campus names. Actual
+buildings are also needed since some of the buildings also have some distance between them on foot and at least 1 period gap is needed.
+
+What I want to ask is that is it difficult to add an additional hierarchical level above building variable to the current code and call it
+"campus" or something else? Also similar space constraint for the campus variable such as max campus changes a day?
+
+Liviu and satellite2: maybe add each building in its own campus.
+
+373---------------------------------------------------------
+From Jude G:
+
+  *   Importing comments to activities / students / teachers.
+  *   Option for having full names and codes.
+(so teachers, students, ..., will have two names: a long name and a short name).
