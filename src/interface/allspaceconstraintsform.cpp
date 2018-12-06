@@ -63,7 +63,12 @@
 
 #include <QPlainTextEdit>
 
+#if QT_VERSION >= 0x050000
+#include <QRegularExpression>
+#include <QRegularExpressionMatch>
+#else
 #include <QRegExp>
+#endif
 
 #include <QListWidget>
 #include <QScrollBar>
@@ -216,6 +221,20 @@ bool AllSpaceConstraintsForm::filterOk(SpaceConstraint* ctr)
 		else if(contains.at(i)==DOESNOTCONTAIN){
 			okPartial.append(!(s.contains(t, csens)));
 		}
+#if QT_VERSION >= 0x050000
+		else if(contains.at(i)==REGEXP){
+			QRegularExpression regExp(t);
+			if(!caseSensitive)
+				regExp.setPatternOptions(QRegularExpression::CaseInsensitiveOption);
+			okPartial.append((regExp.match(s)).hasMatch());
+		}
+		else if(contains.at(i)==NOTREGEXP){
+			QRegularExpression regExp(t);
+			if(!caseSensitive)
+				regExp.setPatternOptions(QRegularExpression::CaseInsensitiveOption);
+			okPartial.append(!(regExp.match(s)).hasMatch());
+		}
+#else
 		else if(contains.at(i)==REGEXP){
 			QRegExp regExp(t);
 			regExp.setCaseSensitivity(csens);
@@ -226,6 +245,7 @@ bool AllSpaceConstraintsForm::filterOk(SpaceConstraint* ctr)
 			regExp.setCaseSensitivity(csens);
 			okPartial.append(regExp.indexIn(s)<0);
 		}
+#endif
 		else
 			assert(0);
 	}
