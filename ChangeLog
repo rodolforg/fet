@@ -2107,7 +2107,11 @@ Versions 5.37.0 - 5.37.v
 	- Updated the Arabic translation, by Benahmed Abdelkrim.
 	- Volker Dirr's site now uses SSL (https protocol instead of http).
 - Version 5.37.3
-	- Updated to Qt 5.11.2.
-	- Crash bug fixed if adding a constraint min days between activities and the number of the days per week was 1 (probably very rare).
-	- Improved the import: the automatic selection of fields will work now even if the text quote is void (suggested by Jude G, implemented by Volker Dirr).
+	- Updated to Qt 5.12.0.
+	- When compiling with Qt 5, FET uses the better QRegularExpression class instead of the deprecated QRegExp class (which is only used if the user
+	compiles with the old Qt 4).
+	- Crash bug fixed when adding a constraint min days between activities and the number of the days per week is 1 (probably very rare).
+	- Improved the import: the automatic selection of fields will now work even if there is no text quote around the fields (suggested by Jude G,
+	implemented by Volker Dirr).
 	- Minor string fixes in the CSV import/export dialogs.
+	- Minor improvement: the attributes of the file fet.desktop, found in the sources archive of FET, were corrected.
