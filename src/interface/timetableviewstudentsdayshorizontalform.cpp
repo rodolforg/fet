@@ -571,8 +571,8 @@ QColor TimetableViewStudentsDaysHorizontalForm::stringToColor(QString s)
 void TimetableViewStudentsDaysHorizontalForm::updateNotPlacedActivities()
 {
 	StudentsSubgroup *subgroup = static_cast<StudentsSubgroup*>(subgroupsListWidget->currentItem() ? gt.rules.searchAugmentedStudentsSet(subgroupsListWidget->currentItem()->text()) : nullptr);
-	StudentsGroup *group = static_cast<StudentsGroup*>(subgroupsListWidget->currentItem() ? gt.rules.searchAugmentedStudentsSet(groupsListWidget->currentItem()->text()) : nullptr);
-	StudentsYear *year = static_cast<StudentsYear*>(subgroupsListWidget->currentItem() ? gt.rules.searchStudentsSet(yearsListWidget->currentItem()->text()) : nullptr);
+	StudentsGroup *group = static_cast<StudentsGroup*>(groupsListWidget->currentItem() ? gt.rules.searchAugmentedStudentsSet(groupsListWidget->currentItem()->text()) : nullptr);
+	StudentsYear *year = static_cast<StudentsYear*>(yearsListWidget->currentItem() ? gt.rules.searchStudentsSet(yearsListWidget->currentItem()->text()) : nullptr);
 	if (!group || !group->subgroupsList.contains(subgroup) || !year || !year->groupsList.contains(group)) {
 		for(StudentsYear* tmp_year : qAsConst(gt.rules.augmentedYearsList)){
 			for(StudentsGroup* tmp_group : qAsConst(tmp_year->groupsList)){
