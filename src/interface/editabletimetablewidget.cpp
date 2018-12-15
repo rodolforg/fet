@@ -102,7 +102,7 @@ void EditableTimetableWidget::contextMenuEvent(QContextMenuEvent* event)
 			placed_activity_ids_but_clicked.remove(src_ai);
 	}
 
-	QMenu* placeMenu = contextMenu.addMenu(tr("Place Activity…"));
+	QMenu* placeMenu = contextMenu.addMenu(tr("Place Activity..."));
 	QList<int> all_placeable = tempRemovedActivities.toList() + placed_activity_ids_but_clicked.toList();
 	bool changed_to_not_removed = false;
 	for (int ai : qAsConst(all_placeable)) {
@@ -148,7 +148,7 @@ void EditableTimetableWidget::contextMenuEvent(QContextMenuEvent* event)
 		}
 	}
 
-	QMenu* swapMenu = contextMenu.addMenu(tr("Swap Activity…"));
+	QMenu* swapMenu = contextMenu.addMenu(tr("Swap Activity..."));
 	if (src_ai != UNALLOCATED_ACTIVITY) {
 		const QList<int> possibleSwaps = getPossibleSwaps(placed_activity_ids_but_clicked.toList(), src_ai);
 		for (int ai : possibleSwaps) {
