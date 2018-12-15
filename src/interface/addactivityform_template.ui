@@ -214,7 +214,7 @@
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_80">
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_79">
+         <layout class="QHBoxLayout" name="subjectHorizontalLayout">
           <item>
            <widget class="QComboBox" name="subjectsComboBox">
             <property name="editable">
