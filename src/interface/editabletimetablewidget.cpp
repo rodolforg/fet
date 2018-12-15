@@ -52,6 +52,7 @@ void EditableTimetableWidget::setSolution(const Rules* rules, const Solution& so
 		return;
 	undoStack.clear();
 	this->solution->copy(*rules, solution);
+	this->tempRemovedActivities.clear();
 }
 
 const Rules* EditableTimetableWidget::getRules() const

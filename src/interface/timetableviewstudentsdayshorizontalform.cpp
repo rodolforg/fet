@@ -189,6 +189,9 @@ TimetableViewStudentsDaysHorizontalForm::TimetableViewStudentsDaysHorizontalForm
 	shownComboBoxChanged(shownComboBox->currentText());
 	studentsTimetableTable->setSolution(&gt.rules, CachedSchedule::getCachedSolution());
 	connect(studentsTimetableTable, SIGNAL(solution_changed()), &LockUnlock::communicationSpinBox, SLOT(increaseValue()));
+	connect(&LockUnlock::communicationSpinBox, &CommunicationSpinBox::valueChanged, [=](){
+		this->studentsTimetableTable->setSolution(&gt.rules, CachedSchedule::getCachedSolution());
+	});
 
 	connect(studentsTimetableTable, SIGNAL(activityRemoved(int)), this, SLOT(newActivityNotPlaced(int)));
 }
