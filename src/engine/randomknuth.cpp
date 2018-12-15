@@ -49,7 +49,7 @@ int RandomKnuth::getMM()
 
 void RandomKnuth::init()
 {
-	qint64 tt = QDateTime::currentMSecsSinceEpoch();
+	qint64 tt = QDateTime::currentSecsSinceEpoch();
 
 	//XX is the current time
 	//XX = 1 + ( (unsigned(tt)) % (unsigned(MM-1)) );
