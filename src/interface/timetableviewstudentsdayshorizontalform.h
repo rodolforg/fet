@@ -56,6 +56,8 @@ public slots:
 	
 	void shownComboBoxChanged(QString shownCategory);
 
+	void updateSolution();
+
 protected:
 	void resizeEvent(QResizeEvent* event);
 	QColor stringToColor(QString s); //by Marco Vassura

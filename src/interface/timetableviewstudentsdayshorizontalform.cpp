@@ -189,9 +189,7 @@ TimetableViewStudentsDaysHorizontalForm::TimetableViewStudentsDaysHorizontalForm
 	shownComboBoxChanged(shownComboBox->currentText());
 	studentsTimetableTable->setSolution(&gt.rules, CachedSchedule::getCachedSolution());
 	connect(studentsTimetableTable, SIGNAL(solution_changed()), &LockUnlock::communicationSpinBox, SLOT(increaseValue()));
-	connect(&LockUnlock::communicationSpinBox, &CommunicationSpinBox::valueChanged, [=](){
-		this->studentsTimetableTable->setSolution(&gt.rules, CachedSchedule::getCachedSolution());
-	});
+	connect(&LockUnlock::communicationSpinBox, &CommunicationSpinBox::valueChanged, this, &TimetableViewStudentsDaysHorizontalForm::updateSolution);
 
 	connect(studentsTimetableTable, SIGNAL(activityRemoved(int)), this, SLOT(newActivityNotPlaced(int)));
 }
@@ -291,6 +289,11 @@ void TimetableViewStudentsDaysHorizontalForm::shownComboBoxChanged(QString shown
 	else{
 		assert(0);
 	}
+}
+
+void TimetableViewStudentsDaysHorizontalForm::updateSolution()
+{
+	studentsTimetableTable->setSolution(&gt.rules, CachedSchedule::getCachedSolution());
 }
 
 void TimetableViewStudentsDaysHorizontalForm::yearChanged(const QString &yearName)
