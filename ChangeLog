@@ -2115,3 +2115,5 @@ Versions 5.37.0 - 5.37.v
 	implemented by Volker Dirr).
 	- Minor string fixes in the CSV import/export dialogs.
 	- Minor improvement: the attributes of the file fet.desktop, found in the sources archive of FET, were corrected.
+- Version 5.37.4
+	- Automatic check for updates on startup is working correctly now (using fixes found on Stack Overflow and on Amin Ahmadi's site).
