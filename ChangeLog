@@ -2117,3 +2117,7 @@ Versions 5.37.0 - 5.37.v
 	- Minor improvement: the attributes of the file fet.desktop, found in the sources archive of FET, were corrected.
 - Version 5.37.4
 	- Automatic check for updates on startup is working correctly now (using fixes found on Stack Overflow and on Amin Ahmadi's site).
+- Version 5.37.5
+	- Minor improvement (automatic check for updates also sends to the server the user's processor architecture type, as other programs usually do) - suggested
+	and implemented by Volker Dirr.
+	- Updated the translations.
