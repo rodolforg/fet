@@ -32057,7 +32057,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="843"/>
         <source>Also, there will be visible on the server your current FET version, your operating system name and version, and your processor architecture type.</source>
-        <translation type="unfinished"></translation>
+        <translation>Além disso, ficará no servidor sua versão atual do FET, nome e versão de seu sistema operacional, e o tipo de arquitetura do seu processador.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="845"/>
@@ -48089,6 +48089,7 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
     <name>MonthsNames</name>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="49"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>January</source>
         <translation>janeiro</translation>
     </message>
@@ -48144,7 +48145,6 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="71"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>December</source>
         <translation>dezembro</translation>
     </message>

@@ -31806,10 +31806,6 @@ Please stop simulation before this.</source>
 Vă rog opriți simularea înainte de aceasta.</translation>
     </message>
     <message>
-        <source>Also, there will be visible on the server your current FET version and your operating system name and version.</source>
-        <translation type="vanished">De asemenea, vor fi vizibile pe server versiunea actuală FET a dvs. și numele și versiunea sistemului dvs. de operare.</translation>
-    </message>
-    <message>
         <location filename="../src/interface/fetmainform.cpp" line="874"/>
         <source>Note: if you disable this option, you will not be able to add/modify constraints for subgroups, and you will not be able to make filters using a particular subgroup, when selecting activities.</source>
         <translation>Notă: dacă dezactivați această opțiune, nu veți putea să adăugați/modificați constrângeri pentru subgrupuri, și nu veți putea face filtre folosind un subgrup anume, când selectați activitățile.</translation>
@@ -48133,6 +48129,7 @@ Notă: profesor indisponibil și pauză nu sunt socotite ca ferestre.</translati
     <name>MonthsNames</name>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="49"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>January</source>
         <translation>Ianuarie</translation>
     </message>
@@ -48188,7 +48185,6 @@ Notă: profesor indisponibil și pauză nu sunt socotite ca ferestre.</translati
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="71"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>December</source>
         <translation>Decembrie</translation>
     </message>

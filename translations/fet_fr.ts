@@ -31930,10 +31930,6 @@ Merci d&apos;arrêter la simulation avant.</translation>
         <translation>SSL n&apos;est pas disponible (peut-être à cause de bibliothèques SSL manquantes). Pour cette raison, FET ne peut pas vérifier les mises à jour au démarrage (il ne peut pas obtenir le fichier %1).</translation>
     </message>
     <message>
-        <source>Also, there will be visible on the server your current FET version and your operating system name and version.</source>
-        <translation type="vanished">De plus, votre version actuelle de FET ainsi que le nom et la version de votre système d&apos;exploitation seront visibles sur le serveur.</translation>
-    </message>
-    <message>
         <location filename="../src/interface/fetmainform.cpp" line="847"/>
         <source>Do you agree?</source>
         <translation>Êtes-vous d&apos;accord ?</translation>
@@ -33009,7 +33005,7 @@ Avoir un sous-groupe avec trop peu d&apos;heures de travail par semaine signifie
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="843"/>
         <source>Also, there will be visible on the server your current FET version, your operating system name and version, and your processor architecture type.</source>
-        <translation type="unfinished"></translation>
+        <translation>De plus, votre version actuelle de FET, le nom et la version de votre système d&apos;exploitation ainsi que votre type d&apos;architecture de processeur seront visibles sur le serveur.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="3780"/>
@@ -48132,6 +48128,7 @@ Note : enseignant non disponible et pause ne sont pas comptés comme vides.</tra
     <name>MonthsNames</name>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="49"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>January</source>
         <translation>Janvier</translation>
     </message>
@@ -48187,7 +48184,6 @@ Note : enseignant non disponible et pause ne sont pas comptés comme vides.</tra
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="71"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>December</source>
         <translation>Décembre</translation>
     </message>

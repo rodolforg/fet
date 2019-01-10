@@ -47863,6 +47863,7 @@ Nota: as horas non dispoñibles e as pausas dun profesor non se contan como ocos
     <name>MonthsNames</name>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="49"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>January</source>
         <translation type="unfinished"></translation>
     </message>
@@ -47918,7 +47919,6 @@ Nota: as horas non dispoñibles e as pausas dun profesor non se contan como ocos
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="71"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>December</source>
         <translation type="unfinished"></translation>
     </message>

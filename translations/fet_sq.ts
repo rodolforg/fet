@@ -47710,6 +47710,7 @@ Shënim: mësues jo të gatshëm dhe ndërprerje nuk janë orë dritare.</transl
     <name>MonthsNames</name>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="49"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>January</source>
         <translation type="unfinished"></translation>
     </message>
@@ -47765,7 +47766,6 @@ Shënim: mësues jo të gatshëm dhe ndërprerje nuk janë orë dritare.</transl
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="71"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>December</source>
         <translation type="unfinished"></translation>
     </message>

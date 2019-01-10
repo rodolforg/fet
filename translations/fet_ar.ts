@@ -32157,7 +32157,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="843"/>
         <source>Also, there will be visible on the server your current FET version, your operating system name and version, and your processor architecture type.</source>
-        <translation type="unfinished"></translation>
+        <translation>أيضا، سيكون ظاهرًا على الخادم إصدار FET الحالي، واسم نظام التشغيل وإصداره ، ونوع بنية المعالج.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="845"/>
@@ -48143,6 +48143,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <name>MonthsNames</name>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="49"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>January</source>
         <translation>جانفي</translation>
     </message>
@@ -48198,7 +48199,6 @@ Note: teacher not available and break are not counted as gaps.</source>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="71"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>December</source>
         <translation>دسيمبر</translation>
     </message>

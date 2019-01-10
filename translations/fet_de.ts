@@ -32634,7 +32634,7 @@ Dieses Menü zeigt Aktivitäten an, die Raumeinschränkungen mit einer Gewichtun
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="843"/>
         <source>Also, there will be visible on the server your current FET version, your operating system name and version, and your processor architecture type.</source>
-        <translation type="unfinished"></translation>
+        <translation>Dabei erfährt der Server ihre FET-Version, ihr Betriebsystem (Name und Version) und ihre Prozessorarchitektur.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="845"/>
@@ -48156,6 +48156,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <name>MonthsNames</name>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="49"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>January</source>
         <translation>Januar</translation>
     </message>
@@ -48211,7 +48212,6 @@ Note: teacher not available and break are not counted as gaps.</source>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="71"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>December</source>
         <translation>Dezember</translation>
     </message>

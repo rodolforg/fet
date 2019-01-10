@@ -31799,7 +31799,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="843"/>
         <source>Also, there will be visible on the server your current FET version, your operating system name and version, and your processor architecture type.</source>
-        <translation type="unfinished"></translation>
+        <translation>Επίσης, ο εξυπηρετητής (σέρβερ) θα λάβει από τον υπολογιστή σας τα εξής στοιχεία: την έκδοση του FET που χρησιμοποιείτε στην παρούσα φάση, την ονομασία και έκδοση του λειτουργικού σας συστήματος καθώς και τον τύπο της αρχιτεκτονικής του επεξεργαστή σας.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="845"/>
@@ -48173,6 +48173,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <name>MonthsNames</name>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="49"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>January</source>
         <translation>Ιανουάριος</translation>
     </message>
@@ -48228,7 +48229,6 @@ Note: teacher not available and break are not counted as gaps.</source>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="71"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>December</source>
         <translation>Δεκέμβριος</translation>
     </message>
