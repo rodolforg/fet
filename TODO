@@ -6549,3 +6549,9 @@ From satellite2 (on forum): (https://lalescu.ro/liviu/fet/forum/index.php?topic=
 The other constraint is "max hours per day for a teacher (or all teachers)". Is there a way to add another constraint like "max activities per day for a
 teacher (or all teachers)" ? The hours of the activities change from 1 to 4 but teachers see them as an activity and let's say some of them don't want more
 than two activities a day etc.
+
+376---------------------------------------------------------
+From Volker Dirr:
+
+Disable energy saving mode, because FET won't calculate anymore if
+the computer falls into save mode after x minutes.
