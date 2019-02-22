@@ -15,9 +15,9 @@ C2) Lots of other constraints (excluded here, for simplicity).
 
 
 The timetabling algorithm (which I named "recursive swapping", though it might be related to the algorithm known
-as "ejection chain"):
+as "ejection chain" or the more generalized "ejection tree"):
 
-1) Sort activities, most difficult first. Not critical step, but speeds up the algorithm maybe 10 times or more.
+1) Sort the activities, most difficult first. Not critical step, but speeds up the algorithm maybe 10 times or more.
 
 2) Try to place each activity (A_i) in an allowed time slot, following the above order, one at a time.
 Search for an available slot (T_j) for A_i, in which this activity can be placed respecting the constraints.
