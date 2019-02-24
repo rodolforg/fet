@@ -2121,3 +2121,6 @@ Versions 5.37.0 - 5.37.v
 	- Minor improvement (automatic check for updates also sends to the server the user's processor architecture type, as other programs usually do) - suggested
 	and implemented by Volker Dirr.
 	- Updated the translations.
+- Version 5.37.6
+	- Upgraded to Qt 5.12.1.
+	- Added two new example files from Hungary, by Madas Pál.

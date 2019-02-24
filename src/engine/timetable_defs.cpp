@@ -36,7 +36,7 @@ int STUDENTS_COMBO_BOXES_STYLE=STUDENTS_COMBO_BOXES_STYLE_SIMPLE;
 /**
 FET version
 */
-const QString FET_VERSION="5.37.5";
+const QString FET_VERSION="5.37.6-snapshot-24-feb-2019-20_05";
 
 /**
 FET language
