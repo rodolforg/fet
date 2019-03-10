@@ -926,6 +926,10 @@ signals:
 	void contentsChanged();
 	/// Added or removed Days, Hours, Teachers, StudentsSets, Subject, Activities, Activity tags, Buildings or Rooms
 	void basicDataResized();
+	/// Sorted Teachers, StudentsSets, Subject, Activity tags, Buildings or Rooms
+	void basicDataSorted();
+	/// Edited Teachers, StudentsSets, Subject, Activities, Activity tags, Buildings or Rooms
+	void basicDataEdited();
 
 	/**
 	 * Emitted when computeInternalStructure() is called.

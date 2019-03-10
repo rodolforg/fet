@@ -23,6 +23,8 @@
 #include "teachersubjectsqualificationsform.h"
 #include "interface/editcommentsform.h"
 
+#include "timetableexport.h"
+
 #include "centerwidgetonscreen.h"
 
 #include <QInputDialog>
@@ -260,6 +262,7 @@ void TeachersForm::moveTeacherUp()
 	gt.rules.teachersList.swap(i, i-1);
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
+	CachedSchedule::invalidate();
 
 	teachersListWidget->setCurrentRow(i-1);
 }
@@ -283,6 +286,7 @@ void TeachersForm::moveTeacherDown()
 	gt.rules.teachersList.swap(i, i+1);
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
+	CachedSchedule::invalidate();
 
 	teachersListWidget->setCurrentRow(i+1);
 }

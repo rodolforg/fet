@@ -23,6 +23,8 @@
 #include "fet.h"
 #include "interface/editcommentsform.h"
 
+#include "timetableexport.h"
+
 #include "longtextmessagebox.h"
 #include "centerwidgetonscreen.h"
 
@@ -383,6 +385,7 @@ void SubgroupsForm::moveSubgroupUp()
 	sg->subgroupsList.swap(i, i-1);
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
+	CachedSchedule::invalidate();
 
 	subgroupsListWidget->setCurrentRow(i-1);
 }
@@ -414,6 +417,7 @@ void SubgroupsForm::moveSubgroupDown()
 	sg->subgroupsList.swap(i, i+1);
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
+	CachedSchedule::invalidate();
 
 	subgroupsListWidget->setCurrentRow(i+1);
 }

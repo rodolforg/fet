@@ -556,6 +556,7 @@ FetMainForm::FetMainForm()
 
 	connect(&gt.rules, SIGNAL(contentsChanged()), this, SLOT(rules_contentsChanged()));
 	connect(&gt.rules, SIGNAL(basicDataResized()), this, SLOT(rules_basicDataResized()));
+	connect(&gt.rules, SIGNAL(basicDataEdited()), this, SLOT(rules_basicDataEdited()));
 
 	bool tmp=gt.rules.addTimeConstraint(new ConstraintBasicCompulsoryTime(100));
 	assert(tmp);
@@ -653,6 +654,7 @@ FetMainForm::FetMainForm()
 	connect(showWarningForSubgroupsWithTheSameActivitiesAction, SIGNAL(toggled(bool)), this, SLOT(showWarningForSubgroupsWithTheSameActivitiesToggled(bool)));
 
 	connect(checkForUpdatesAction, SIGNAL(toggled(bool)), this, SLOT(checkForUpdatesToggled(bool)));
+	connect(settingsUseColorsAction, SIGNAL(toggled(bool)), this, SLOT(useColorsToggled(bool)));
 	connect(settingsShowSubgroupsInComboBoxesAction, SIGNAL(toggled(bool)), this, SLOT(showSubgroupsInComboBoxesToggled(bool)));
 	connect(settingsShowSubgroupsInActivityPlanningAction, SIGNAL(toggled(bool)), this, SLOT(showSubgroupsInActivityPlanningToggled(bool)));
 	
@@ -844,8 +846,10 @@ void FetMainForm::checkForUpdatesToggled(bool checked)
 	checkForUpdates=checked;
 }
 
-void FetMainForm::on_settingsUseColorsAction_toggled()
+void FetMainForm::useColorsToggled(bool checked)
 {
+	Q_UNUSED(checked);
+	
 	USE_GUI_COLORS=settingsUseColorsAction->isChecked();
 	
 	LockUnlock::increaseCommunicationSpinBox();
@@ -2408,7 +2412,7 @@ void FetMainForm::on_timetableGenerateAction_triggered()
 	TimetableGenerateForm form(this);
 	form.exec();
 	
-	LockUnlock::increaseCommunicationSpinBox();
+//	LockUnlock::increaseCommunicationSpinBox();
 }
 
 void FetMainForm::on_timetableGenerateMultipleAction_triggered()
@@ -2438,7 +2442,7 @@ void FetMainForm::on_timetableGenerateMultipleAction_triggered()
 	TimetableGenerateMultipleForm form(this);
 	form.exec();
 
-	LockUnlock::increaseCommunicationSpinBox();
+//	LockUnlock::increaseCommunicationSpinBox();
 }
 
 void FetMainForm::on_timetableViewStudentsDaysHorizontalAction_triggered()
@@ -3035,8 +3039,10 @@ void FetMainForm::on_settingsRestoreDefaultsAction_triggered()
 	SHOW_TOOLTIPS_FOR_CONSTRAINTS_WITH_TABLES=false;
 	settingsShowToolTipsForConstraintsWithTablesAction->setChecked(SHOW_TOOLTIPS_FOR_CONSTRAINTS_WITH_TABLES);
 	
+	disconnect(settingsUseColorsAction, SIGNAL(toggled(bool)), this, SLOT(useColorsToggled(bool)));
 	USE_GUI_COLORS=false;
 	settingsUseColorsAction->setChecked(USE_GUI_COLORS);
+	connect(settingsUseColorsAction, SIGNAL(toggled(bool)), this, SLOT(useColorsToggled(bool)));
 	
 	SHOW_SUBGROUPS_IN_COMBO_BOXES=true;
 	settingsShowSubgroupsInComboBoxesAction->setChecked(SHOW_SUBGROUPS_IN_COMBO_BOXES);
@@ -3141,7 +3147,8 @@ void FetMainForm::on_settingsRestoreDefaultsAction_triggered()
 	setLanguage(this);
 	setCurrentFile(INPUT_FILENAME_XML);
 
-	LockUnlock::increaseCommunicationSpinBox(); //for GUI colors in timetables
+	if (CachedSchedule::isValid())
+		LockUnlock::increaseCommunicationSpinBox(); //for GUI colors in timetables
 }
 
 void FetMainForm::on_settingsTimetableHtmlLevelAction_triggered()
@@ -3780,6 +3787,12 @@ void FetMainForm::rules_contentsChanged()
 }
 
 void FetMainForm::rules_basicDataResized()
+{
+	// TODO Put this directly in Solution (connect Rules::contentsChanged signal internally and update these properties)
+	CachedSchedule::invalidate();
+}
+
+void FetMainForm::rules_basicDataEdited()
 {
 	// TODO Put this directly in Solution (connect Rules::contentsChanged signal internally and update these properties)
 	CachedSchedule::invalidate();

@@ -19,6 +19,12 @@ File generate.cpp
  *                                                                         *
  ***************************************************************************/
 
+//Note 2018-07-28: The code for students max span per day, students early max beginnings at second hour, students/teachers max gaps per day/week,
+//students/teachers min/max hours daily can and should be theoretically corrected. But it is very risky. Many examples and variants should be tested.
+//See the directory doc/algorithm/2018-07-28-should-improve-theoretically for a better generate file, but which behaves much worse on at least a file,
+//examples/Romania/Pedagogic-High-School-Tg-Mures/2007-2008_sem1-d-test-students-max-span-per-day.fet (because of the new code in
+//students max span per day).
+
 #include <ctime>
 
 #include <QtAlgorithms>
@@ -5431,12 +5437,27 @@ impossiblestudentsintervalmaxdaysperweek:
 							bool k=subgroupRemoveAnActivityFromEndCertainDay(sbg, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
 							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
 							if(!k){
-								bool k2;
-								if(sbgTimetable(d, 0)>=0)
-									k2=subgroupRemoveAnActivityFromBeginCertainDay(sbg, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
-								else
-									k2=false;
-								assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+								bool k2=false;
+
+								//The following code is theoretically better, but practically much worse on the file
+								//examples/Romania/Pedagogic-High-School-Tg-Mures/2007-2008_sem1-d-test-students-max-span-per-day.fet
+								//(it slows down with 25%-50% on average - you need to generate more timetables)
+								/*int firstAvailableHour=-1;
+								for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
+									if(!breakDayHour(d,h2) && !subgroupNotAvailableDayHour(sbg,d,h2)){
+										firstAvailableHour=h2;
+										break;
+									}
+								}
+								//We could assert(firstAvailableHour>=0), because the day is not empty, because the span is too large.
+								if(firstAvailableHour>=0){
+									assert(firstAvailableHour<gt.rules.nHoursPerDay);
+									if(sbgTimetable(d, firstAvailableHour)>=0){
+										k2=subgroupRemoveAnActivityFromBeginCertainDay(sbg, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+										assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+									}
+								}*/
+								
 								if(!k2){
 									if(level==0){
 										//old comment below

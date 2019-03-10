@@ -1367,7 +1367,7 @@ void Import::importCSVActivityTags(QWidget* parent){
 	//add activity tags (end) - similar to teachersform.cpp by Liviu modified by Volker
 	int tmp=fileName.lastIndexOf(FILE_SEP);
 	IMPORT_DIRECTORY=fileName.left(tmp);
-	gt.rules.internalStructureComputed=false;
+	//gt.rules.internalStructureComputed=false;
 }
 
 void Import::importCSVRoomsAndBuildings(QWidget* parent){
@@ -1511,7 +1511,7 @@ void Import::importCSVRoomsAndBuildings(QWidget* parent){
 
 	int tmp=fileName.lastIndexOf(FILE_SEP);
 	IMPORT_DIRECTORY=fileName.left(tmp);
-	gt.rules.internalStructureComputed=false;
+	//gt.rules.internalStructureComputed=false;
 }
 
 void Import::importCSVSubjects(QWidget* parent){
@@ -1587,7 +1587,7 @@ void Import::importCSVSubjects(QWidget* parent){
 	QMessageBox::information(newParent, tr("FET information"), Import::tr("%1 subjects added. Please check subjects form.").arg(count));
 	int tmp=fileName.lastIndexOf(FILE_SEP);
 	IMPORT_DIRECTORY=fileName.left(tmp);
-	gt.rules.internalStructureComputed=false;
+	//gt.rules.internalStructureComputed=false;
 }
 
 void Import::importCSVTeachers(QWidget* parent){
@@ -1663,7 +1663,7 @@ void Import::importCSVTeachers(QWidget* parent){
 	//add teachers (end) - similar to teachersform.cpp by Liviu modified by Volker
 	int tmp=fileName.lastIndexOf(FILE_SEP);
 	IMPORT_DIRECTORY=fileName.left(tmp);
-	gt.rules.internalStructureComputed=false;
+	//gt.rules.internalStructureComputed=false;
 }
 
 void Import::importCSVStudents(QWidget* parent){
@@ -2070,7 +2070,7 @@ ifUserCanceledProgress3:
 
 	int tmp=fileName.lastIndexOf(FILE_SEP);
 	IMPORT_DIRECTORY=fileName.left(tmp);
-	gt.rules.internalStructureComputed=false;
+	//gt.rules.internalStructureComputed=false;
 }
 
 void Import::importCSVActivities(QWidget* parent){
@@ -2629,5 +2629,5 @@ ifUserCanceledProgress4:
 
 	int tmp=fileName.lastIndexOf(FILE_SEP);
 	IMPORT_DIRECTORY=fileName.left(tmp);
-	gt.rules.internalStructureComputed=false;
+	//gt.rules.internalStructureComputed=false;
 }

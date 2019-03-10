@@ -91,6 +91,8 @@ void Rules::init() //initializes the rules (empty, but with default hours and da
 	this->initialized=true;
 
 	shouldAbortInternalStructureComputation = false;
+
+	emit contentsChanged();
 }
 
 ErrorList Rules::computeInternalStructure()
@@ -928,6 +930,8 @@ void Rules::kill() //clears memory for the rules, destroys them
 	nInternalBuildings = 0;
 	nInternalTimeConstraints = 0;
 	nInternalSpaceConstraints = 0;
+
+	emit basicDataResized();
 }
 
 Rules::Rules()
@@ -1183,6 +1187,7 @@ bool Rules::modifyTeacher(const QString& initialTeacherName, const QString& fina
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataEdited();
 
 	return true;
 }
@@ -1193,6 +1198,7 @@ void Rules::sortTeachersAlphabetically()
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataSorted();
 }
 
 bool Rules::addSubject(Subject* subject)
@@ -1358,6 +1364,7 @@ bool Rules::modifySubject(const QString& initialSubjectName, const QString& fina
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataEdited();
 
 	return true;
 }
@@ -1368,6 +1375,7 @@ void Rules::sortSubjectsAlphabetically()
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataSorted();
 }
 
 bool Rules::addActivityTag(ActivityTag* activityTag)
@@ -1546,6 +1554,7 @@ bool Rules::modifyActivityTag(const QString& initialActivityTagName, const QStri
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataEdited();
 
 	return true;
 }
@@ -1556,6 +1565,7 @@ void Rules::sortActivityTagsAlphabetically()
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataSorted();
 }
 
 bool Rules::setsShareStudents(const QString& studentsSet1, const QString& studentsSet2) const
@@ -1778,6 +1788,7 @@ bool Rules::addYear(StudentsYear* year)
 	
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataResized();
 	return true;
 }
 
@@ -1786,6 +1797,7 @@ bool Rules::addYearFast(StudentsYear* year)
 	this->yearsList << year;
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataResized();
 	return true;
 }
 
@@ -1864,6 +1876,7 @@ bool Rules::removeYear(const QString& yearName/*, bool removeAlsoThisYear*/)
 	
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataResized();
 	return true;
 }
 
@@ -1899,6 +1912,7 @@ bool Rules::removeYearPointerAfterSplit(StudentsYear* yearPointer)
 	
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataResized();
 	return true;
 }
 
@@ -2082,6 +2096,7 @@ bool Rules::modifyStudentsSet(const QString& initialStudentsSetName, const QStri
 	
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataEdited();
 
 	return true;
 }
@@ -2246,6 +2261,7 @@ bool Rules::modifyStudentsSets(const QHash<QString, QString>& oldAndNewStudentsS
 	
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataEdited();
 	
 	return true;
 }
@@ -2257,6 +2273,7 @@ void Rules::sortYearsAlphabetically()
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataSorted();
 }
 
 bool Rules::addGroup(const QString& yearName, StudentsGroup* group)
@@ -2282,6 +2299,7 @@ bool Rules::addGroup(const QString& yearName, StudentsGroup* group)
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataResized();
 	return true;
 }
 
@@ -2291,6 +2309,7 @@ bool Rules::addGroupFast(StudentsYear* year, StudentsGroup* group)
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataResized();
 	return true;
 }
 
@@ -2367,6 +2386,7 @@ bool Rules::removeGroup(const QString& yearName, const QString& groupName)
 	
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataResized();
 	return true;
 }
 
@@ -2423,6 +2443,7 @@ bool Rules::purgeGroup(const QString& groupName)
 	
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataResized();
 	return true;
 }
 
@@ -2469,6 +2490,7 @@ void Rules::sortGroupsAlphabetically(const QString& yearName)
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataSorted();
 }
 
 bool Rules::addSubgroup(const QString& yearName, const QString& groupName, StudentsSubgroup* subgroup)
@@ -2491,6 +2513,7 @@ bool Rules::addSubgroup(const QString& yearName, const QString& groupName, Stude
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataResized();
 	return true;
 }
 
@@ -2502,6 +2525,7 @@ bool Rules::addSubgroupFast(StudentsYear* year, StudentsGroup* group, StudentsSu
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataResized();
 	return true;
 }
 
@@ -2566,6 +2590,7 @@ bool Rules::removeSubgroup(const QString& yearName, const QString& groupName, co
 	
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataResized();
 	return true;
 }
 
@@ -2609,6 +2634,7 @@ bool Rules::purgeSubgroup(const QString& subgroupName)
 	
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataResized();
 	return true;
 }
 
@@ -2673,6 +2699,7 @@ void Rules::sortSubgroupsAlphabetically(const QString& yearName, const QString& 
 	
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataSorted();
 }
 
 ErrorList Rules::addSimpleActivityFast(int _id,
@@ -2715,6 +2742,7 @@ ErrorList Rules::addSimpleActivityFast(int _id,
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataResized();
 
 	return errors;
 }
@@ -2780,6 +2808,7 @@ ErrorList Rules::addSplitActivityFast(
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataResized();
 
 	return errors;
 }
@@ -2847,6 +2876,7 @@ void Rules::removeActivities(const QList<int>& _idsList, bool updateConstraints)
 	
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataResized();
 }
 
 void Rules::modifyActivity(
@@ -2887,6 +2917,7 @@ void Rules::modifyActivity(
 	
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataEdited();
 }
 
 void Rules::modifySubactivity(
@@ -2935,6 +2966,7 @@ void Rules::modifySubactivity(
 	
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataEdited();
 }
 
 bool Rules::addRoom(Room* rm)
@@ -3106,6 +3138,7 @@ bool Rules::modifyRoom(const QString& initialRoomName, const QString& finalRoomN
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataEdited();
 	return true;
 }
 
@@ -3115,6 +3148,7 @@ void Rules::sortRoomsAlphabetically()
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataSorted();
 }
 
 bool Rules::addBuilding(Building* bu)
@@ -3184,6 +3218,7 @@ bool Rules::modifyBuilding(const QString& initialBuildingName, const QString& fi
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataEdited();
 	return true;
 }
 
@@ -3193,6 +3228,7 @@ void Rules::sortBuildingsAlphabetically()
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataSorted();
 }
 
 bool Rules::addTimeConstraint(TimeConstraint* ctr)
@@ -6698,6 +6734,7 @@ int Rules::activateTeacher(const QString& teacherName)
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataResized();
 	
 	return count;
 }
@@ -6742,6 +6779,7 @@ int Rules::activateStudents(const QString& studentsName)
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataResized();
 	
 	return count;
 }
@@ -6760,6 +6798,7 @@ int Rules::activateSubject(const QString& subjectName)
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataResized();
 	
 	return count;
 }
@@ -6778,6 +6817,7 @@ int Rules::activateActivityTag(const QString& activityTagName)
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataResized();
 	
 	return count;
 }
@@ -6796,6 +6836,7 @@ int Rules::deactivateTeacher(const QString& teacherName)
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataResized();
 	
 	return count;
 }
@@ -6840,6 +6881,7 @@ int Rules::deactivateStudents(const QString& studentsName)
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataResized();
 	
 	return count;
 }
@@ -6858,6 +6900,7 @@ int Rules::deactivateSubject(const QString& subjectName)
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataResized();
 	
 	return count;
 }
@@ -6876,6 +6919,7 @@ int Rules::deactivateActivityTag(const QString& activityTagName)
 
 	this->internalStructureComputed=false;
 	setModified(true);
+	emit basicDataResized();
 
 	return count;
 }
@@ -6897,14 +6941,18 @@ void Rules::setDays(QStringList dayList)
 	int nDays = dayList.size();
 
 	bool sizeChanged = nDaysPerWeek!=nDays;
+	bool nameChanged = false;
 
 	//remove old names
 	for(int i=nDays; i<nDaysPerWeek; i++)
 		daysOfTheWeek[i]="";
 
 	nDaysPerWeek=nDays;
-	for(int i=0; i<nDays; i++)
+	for(int i=0; i<nDays; i++) {
+		if (daysOfTheWeek[i] != dayList[i])
+			nameChanged = true;
 		daysOfTheWeek[i]=dayList[i];
+	}
 
 	nHoursPerWeek=nDaysPerWeek*nHoursPerDay; //not needed
 	internalStructureComputed=false;
@@ -6912,27 +6960,37 @@ void Rules::setDays(QStringList dayList)
 	if (sizeChanged) {
 		emit basicDataResized();
 	}
+	if (nameChanged) {
+		emit basicDataEdited();
+	}
 }
 
 void Rules::setHours(QStringList hourList)
 {
 	int nHours = hourList.size();
 
-	bool sizeChanged = nDaysPerWeek!=nHours;
+	bool sizeChanged = nHoursPerWeek!=nHours;
+	bool nameChanged = false;
 
 	//remove old names
 	for(int i=nHours; i<nHoursPerDay; i++)
 		hoursOfTheDay[i]="";
 
 	nHoursPerDay=nHours;
-	for(int i=0; i<nHours; i++)
+	for(int i=0; i<nHours; i++) {
+		if (hoursOfTheDay[i] != hourList[i])
+			nameChanged = true;
 		hoursOfTheDay[i]=hourList[i];
+	}
 
 	nHoursPerWeek=nDaysPerWeek*nHoursPerDay; //not needed
 	internalStructureComputed=false;
 	setModified(true);
 	if (sizeChanged) {
 		emit basicDataResized();
+	}
+	if (nameChanged) {
+		emit basicDataEdited();
 	}
 }
 
@@ -11107,6 +11165,7 @@ TimeConstraint* Rules::readActivitiesPreferredStartingTimes(QXmlStreamReader& xm
 TimeConstraint* Rules::readSubactivitiesPreferredTimeSlots(QXmlStreamReader& xmlReader, XmlLog &log){
 	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintSubactivitiesPreferredTimeSlots");
 	ConstraintSubactivitiesPreferredTimeSlots* cn=new ConstraintSubactivitiesPreferredTimeSlots();
+	cn->duration=-1;
 	cn->p_nPreferredTimeSlots_L=0;
 	cn->componentNumber=0;
 	int i;
@@ -11153,6 +11212,16 @@ TimeConstraint* Rules::readSubactivitiesPreferredTimeSlots(QXmlStreamReader& xml
 			QString text=xmlReader.readElementText();
 			cn->p_activityTagName=text;
 			log.verbose("    Read activity tag name="+cn->p_activityTagName+"\n");
+		}
+		else if(xmlReader.name()=="Duration"){
+			QString text=xmlReader.readElementText();
+			if(!text.isEmpty()){
+				cn->duration=text.toInt();
+				log.verbose("    Read duration="+CustomFETString::number(cn->duration)+"\n");
+			}
+			else{
+				cn->duration=-1;
+			}
 		}
 		else if(xmlReader.name()=="Number_of_Preferred_Time_Slots"){
 			QString text=xmlReader.readElementText();
@@ -11237,6 +11306,7 @@ TimeConstraint* Rules::readSubactivitiesPreferredTimeSlots(QXmlStreamReader& xml
 TimeConstraint* Rules::readSubactivitiesPreferredStartingTimes(QXmlStreamReader& xmlReader, XmlLog &log){
 	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintSubactivitiesPreferredStartingTimes");
 	ConstraintSubactivitiesPreferredStartingTimes* cn=new ConstraintSubactivitiesPreferredStartingTimes();
+	cn->duration=-1;
 	cn->nPreferredStartingTimes_L=0;
 	cn->componentNumber=0;
 	int i;
@@ -11283,6 +11353,16 @@ TimeConstraint* Rules::readSubactivitiesPreferredStartingTimes(QXmlStreamReader&
 			QString text=xmlReader.readElementText();
 			cn->activityTagName=text;
 			log.verbose("    Read activity tag name="+cn->activityTagName+"\n");
+		}
+		else if(xmlReader.name()=="Duration"){
+			QString text=xmlReader.readElementText();
+			if(!text.isEmpty()){
+				cn->duration=text.toInt();
+				log.verbose("    Read duration="+CustomFETString::number(cn->duration)+"\n");
+			}
+			else{
+				cn->duration=-1;
+			}
 		}
 		else if(xmlReader.name()=="Number_of_Preferred_Starting_Times"){
 			QString text=xmlReader.readElementText();

@@ -76,6 +76,7 @@ static QSet<QString> languagesSet;
 
 #ifndef FET_COMMAND_LINE
 #include <QApplication>
+#include <QWidgetList>
 
 #include <QSettings>
 #include <QRect>
@@ -556,10 +557,11 @@ void setLanguage(QWidget* parent)
 		QGuiApplication::setLayoutDirection(Qt::RightToLeft);
 	
 	//retranslate
-	QList<QWidget*> tlwl = QApplication::topLevelWidgets();
+	QWidgetList tlwl=QApplication::topLevelWidgets();
 
 	for(QWidget* wi : qAsConst(tlwl))
-		if(wi->isVisible()){
+		if(1){
+		//if(wi->isVisible()){
 			FetMainForm* mainform=qobject_cast<FetMainForm*>(wi);
 			if(mainform!=NULL){
 				mainform->retranslateUi(mainform);

@@ -26,6 +26,8 @@
 
 #include "splityearform.h"
 
+#include "timetableexport.h"
+
 #include <QMessageBox>
 #include "centerwidgetonscreen.h"
 
@@ -169,7 +171,7 @@ void YearsForm::moveYearUp()
 	gt.rules.yearsList.swap(i, i-1);
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
-
+	CachedSchedule::invalidate();
 
 	yearsListWidget->setCurrentRow(i-1);
 }
@@ -193,6 +195,7 @@ void YearsForm::moveYearDown()
 	gt.rules.yearsList.swap(i, i+1);
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
+	CachedSchedule::invalidate();
 
 	yearsListWidget->setCurrentRow(i+1);
 }

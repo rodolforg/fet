@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<fet version="5.37.0">
+<fet version="5.37.1">
 
 <Institution_Name>German Secondary School</Institution_Name>
 
@@ -10430,6 +10430,7 @@ The teachers&apos; names are replaced by other random names.
 	<Students_Name></Students_Name>
 	<Subject_Name>DE</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>20</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>Monday</Preferred_Day>
@@ -10521,6 +10522,7 @@ The teachers&apos; names are replaced by other random names.
 	<Students_Name></Students_Name>
 	<Subject_Name>DE</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>20</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>Monday</Preferred_Day>
@@ -10612,6 +10614,7 @@ The teachers&apos; names are replaced by other random names.
 	<Students_Name></Students_Name>
 	<Subject_Name>DE</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>20</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>Monday</Preferred_Day>
@@ -10703,6 +10706,7 @@ The teachers&apos; names are replaced by other random names.
 	<Students_Name></Students_Name>
 	<Subject_Name>MA</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>20</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>Monday</Preferred_Day>
@@ -10794,6 +10798,7 @@ The teachers&apos; names are replaced by other random names.
 	<Students_Name></Students_Name>
 	<Subject_Name>MA</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>20</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>Monday</Preferred_Day>
@@ -10885,6 +10890,7 @@ The teachers&apos; names are replaced by other random names.
 	<Students_Name></Students_Name>
 	<Subject_Name>MA</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>20</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>Monday</Preferred_Day>
@@ -10976,6 +10982,7 @@ The teachers&apos; names are replaced by other random names.
 	<Students_Name></Students_Name>
 	<Subject_Name>EN</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>20</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>Monday</Preferred_Day>
@@ -11067,6 +11074,7 @@ The teachers&apos; names are replaced by other random names.
 	<Students_Name></Students_Name>
 	<Subject_Name>EN</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>20</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>Monday</Preferred_Day>
@@ -11158,6 +11166,7 @@ The teachers&apos; names are replaced by other random names.
 	<Students_Name></Students_Name>
 	<Subject_Name>EN</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>20</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>Monday</Preferred_Day>
@@ -11249,6 +11258,7 @@ The teachers&apos; names are replaced by other random names.
 	<Students_Name></Students_Name>
 	<Subject_Name>BI</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>20</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>Monday</Preferred_Day>
@@ -11340,6 +11350,7 @@ The teachers&apos; names are replaced by other random names.
 	<Students_Name></Students_Name>
 	<Subject_Name>BI</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>20</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>Monday</Preferred_Day>
@@ -11431,6 +11442,7 @@ The teachers&apos; names are replaced by other random names.
 	<Students_Name></Students_Name>
 	<Subject_Name>TC</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>20</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>Monday</Preferred_Day>
@@ -11522,6 +11534,7 @@ The teachers&apos; names are replaced by other random names.
 	<Students_Name></Students_Name>
 	<Subject_Name>TC</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>20</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>Monday</Preferred_Day>
@@ -11613,6 +11626,7 @@ The teachers&apos; names are replaced by other random names.
 	<Students_Name></Students_Name>
 	<Subject_Name>FR</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>20</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>Monday</Preferred_Day>
@@ -11704,6 +11718,7 @@ The teachers&apos; names are replaced by other random names.
 	<Students_Name></Students_Name>
 	<Subject_Name>FR</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>20</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>Monday</Preferred_Day>
@@ -11795,6 +11810,7 @@ The teachers&apos; names are replaced by other random names.
 	<Students_Name></Students_Name>
 	<Subject_Name>SW</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>20</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>Monday</Preferred_Day>
@@ -11886,6 +11902,7 @@ The teachers&apos; names are replaced by other random names.
 	<Students_Name></Students_Name>
 	<Subject_Name>SW</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>20</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>Monday</Preferred_Day>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<fet version="5.37.0">
+<fet version="5.37.1">
 
 <Institution_Name>Liceo scientifico</Institution_Name>
 
@@ -8634,6 +8634,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>FISICA</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Starting_Times>18</Number_of_Preferred_Starting_Times>
 	<Preferred_Starting_Time>
 		<Preferred_Starting_Day>Lunedì</Preferred_Starting_Day>
@@ -8717,6 +8718,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>FISICA</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Starting_Times>24</Number_of_Preferred_Starting_Times>
 	<Preferred_Starting_Time>
 		<Preferred_Starting_Day>Lunedì</Preferred_Starting_Day>
@@ -10781,6 +10783,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>ITALIANO</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Starting_Times>12</Number_of_Preferred_Starting_Times>
 	<Preferred_Starting_Time>
 		<Preferred_Starting_Day>Lunedì</Preferred_Starting_Day>
@@ -10840,6 +10843,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>MATEMATICA</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Starting_Times>12</Number_of_Preferred_Starting_Times>
 	<Preferred_Starting_Time>
 		<Preferred_Starting_Day>Lunedì</Preferred_Starting_Day>
@@ -10899,6 +10903,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>MATEMATICA</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Starting_Times>24</Number_of_Preferred_Starting_Times>
 	<Preferred_Starting_Time>
 		<Preferred_Starting_Day>Lunedì</Preferred_Starting_Day>
@@ -11006,6 +11011,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>ITALIANO</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Starting_Times>24</Number_of_Preferred_Starting_Times>
 	<Preferred_Starting_Time>
 		<Preferred_Starting_Day>Lunedì</Preferred_Starting_Day>
@@ -11113,6 +11119,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>INGLESE</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Starting_Times>18</Number_of_Preferred_Starting_Times>
 	<Preferred_Starting_Time>
 		<Preferred_Starting_Day>Lunedì</Preferred_Starting_Day>
@@ -11196,6 +11203,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>SCIENZE</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Starting_Times>18</Number_of_Preferred_Starting_Times>
 	<Preferred_Starting_Time>
 		<Preferred_Starting_Day>Lunedì</Preferred_Starting_Day>
@@ -12080,6 +12088,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>LATINO</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Starting_Times>18</Number_of_Preferred_Starting_Times>
 	<Preferred_Starting_Time>
 		<Preferred_Starting_Day>Lunedì</Preferred_Starting_Day>
@@ -12163,6 +12172,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>LATINO</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Starting_Times>24</Number_of_Preferred_Starting_Times>
 	<Preferred_Starting_Time>
 		<Preferred_Starting_Day>Lunedì</Preferred_Starting_Day>
@@ -12270,6 +12280,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>GEOSTO</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Starting_Times>18</Number_of_Preferred_Starting_Times>
 	<Preferred_Starting_Time>
 		<Preferred_Starting_Day>Lunedì</Preferred_Starting_Day>
@@ -12353,6 +12364,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>INFORMATICA</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Starting_Times>18</Number_of_Preferred_Starting_Times>
 	<Preferred_Starting_Time>
 		<Preferred_Starting_Day>Lunedì</Preferred_Starting_Day>
@@ -12436,6 +12448,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>STORIA</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Starting_Times>18</Number_of_Preferred_Starting_Times>
 	<Preferred_Starting_Time>
 		<Preferred_Starting_Day>Lunedì</Preferred_Starting_Day>
@@ -12519,6 +12532,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>ARTE</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Starting_Times>18</Number_of_Preferred_Starting_Times>
 	<Preferred_Starting_Time>
 		<Preferred_Starting_Day>Lunedì</Preferred_Starting_Day>
@@ -12602,6 +12616,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>FILOSOFIA</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Starting_Times>18</Number_of_Preferred_Starting_Times>
 	<Preferred_Starting_Time>
 		<Preferred_Starting_Day>Lunedì</Preferred_Starting_Day>

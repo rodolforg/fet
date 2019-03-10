@@ -21,6 +21,8 @@
 #include "subject.h"
 #include "interface/editcommentsform.h"
 
+#include "timetableexport.h"
+
 #include "centerwidgetonscreen.h"
 
 #include <QInputDialog>
@@ -206,6 +208,7 @@ void SubjectsForm::moveSubjectUp()
 	gt.rules.subjectsList.swap(i, i-1);
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
+	CachedSchedule::invalidate();
 
 	subjectsListWidget->setCurrentRow(i-1);
 }
@@ -229,6 +232,7 @@ void SubjectsForm::moveSubjectDown()
 	gt.rules.subjectsList.swap(i, i+1);
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
+	CachedSchedule::invalidate();
 
 	subjectsListWidget->setCurrentRow(i+1);
 }

@@ -26,6 +26,7 @@ class TimetableShowConflictsForm : public QDialog, public Ui::TimetableShowConfl
 	
 public:
 	TimetableShowConflictsForm(QWidget* parent);
+	void newTimetableGenerated();
 	~TimetableShowConflictsForm();
 };
 

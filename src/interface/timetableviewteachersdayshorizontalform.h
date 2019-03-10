@@ -30,6 +30,7 @@ class TimetableViewTeachersDaysHorizontalForm : public QDialog, public Ui::Timet
 
 public:
 	TimetableViewTeachersDaysHorizontalForm(QWidget* parent);
+	void newTimetableGenerated();
 	~TimetableViewTeachersDaysHorizontalForm();
 	
 	void lock(bool lockTime, bool lockSpace);

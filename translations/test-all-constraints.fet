@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<fet version="5.36.3">
+<fet version="5.37.1">
 
 <Institution_Name>Default institution</Institution_Name>
 
@@ -1050,6 +1050,7 @@
 	<Students_Name>y1 c</Students_Name>
 	<Subject_Name>s1</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration>1</Duration>
 	<Number_of_Preferred_Starting_Times>57</Number_of_Preferred_Starting_Times>
 	<Preferred_Starting_Time>
 		<Preferred_Starting_Day>Monday</Preferred_Starting_Day>
@@ -1289,6 +1290,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>s1</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>2</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>Monday</Preferred_Day>

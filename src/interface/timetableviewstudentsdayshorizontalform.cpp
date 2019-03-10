@@ -124,7 +124,8 @@ TimetableViewStudentsDaysHorizontalForm::TimetableViewStudentsDaysHorizontalForm
 
 	LockUnlock::assertIsUpdated(&gt.rules);
 
-	LockUnlock::increaseCommunicationSpinBox();
+	//Commented on 2018-07-20
+	//LockUnlock::increaseCommunicationSpinBox();
 
 	studentsTimetableTable->setRowCount(gt.rules.nHoursPerDay);
 	studentsTimetableTable->setColumnCount(gt.rules.nDaysPerWeek);
@@ -185,6 +186,135 @@ TimetableViewStudentsDaysHorizontalForm::TimetableViewStudentsDaysHorizontalForm
 
 	//added by Volker Dirr
 	connect(&LockUnlock::communicationSpinBox, SIGNAL(valueChanged()), this, SLOT(updateStudentsTimetableTable()));
+
+	shownComboBoxChanged(shownComboBox->currentText());
+}
+
+void TimetableViewStudentsDaysHorizontalForm::newTimetableGenerated()
+{
+	/*setupUi(this);
+	
+	closePushButton->setDefault(true);
+	
+	detailsTextEdit->setReadOnly(true);
+
+	//columnResizeModeInitialized=false;
+
+	verticalStudentsTableDetailsSplitter->setStretchFactor(0, 4);
+	verticalStudentsTableDetailsSplitter->setStretchFactor(1, 1);
+	horizontalSplitter->setStretchFactor(0, 3);
+	horizontalSplitter->setStretchFactor(1, 10);
+	
+	studentsTimetableTable->setSelectionMode(QAbstractItemView::ExtendedSelection);
+	
+	yearsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
+	groupsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
+	subgroupsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);*/
+
+	disconnect(groupsListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(groupChanged(const QString&)));
+	disconnect(subgroupsListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(subgroupChanged(const QString&)));
+	groupsListWidget->clear();
+	subgroupsListWidget->clear();
+	connect(groupsListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(groupChanged(const QString&)));
+	connect(subgroupsListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(subgroupChanged(const QString&)));
+	
+	//This connect should be lower in the code
+	//connect(yearsListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(yearChanged(const QString&)));
+	/*connect(groupsListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(groupChanged(const QString&)));
+	connect(subgroupsListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(subgroupChanged(const QString&)));
+	connect(closePushButton, SIGNAL(clicked()), this, SLOT(close()));
+	connect(studentsTimetableTable, SIGNAL(currentItemChanged(QTableWidgetItem*, QTableWidgetItem*)), this, SLOT(currentItemChanged(QTableWidgetItem*, QTableWidgetItem*)));
+	connect(lockTimePushButton, SIGNAL(clicked()), this, SLOT(lockTime()));
+	connect(lockSpacePushButton, SIGNAL(clicked()), this, SLOT(lockSpace()));
+	connect(lockTimeSpacePushButton, SIGNAL(clicked()), this, SLOT(lockTimeSpace()));
+	connect(helpPushButton, SIGNAL(clicked()), this, SLOT(help()));
+
+	centerWidgetOnScreen(this);
+	restoreFETDialogGeometry(this);
+
+	//restore vertical students list splitter state
+	QSettings settings(COMPANY, PROGRAM);
+	if(settings.contains(this->metaObject()->className()+QString("/vertical-students-list-splitter-state")))
+		verticalStudentsListSplitter->restoreState(settings.value(this->metaObject()->className()+QString("/vertical-students-list-splitter-state")).toByteArray());
+
+	//restore vertical students table details splitter state
+	//QSettings settings(COMPANY, PROGRAM);
+	if(settings.contains(this->metaObject()->className()+QString("/vertical-students-table-details-splitter-state")))
+		verticalStudentsTableDetailsSplitter->restoreState(settings.value(this->metaObject()->className()+QString("/vertical-students-table-details-splitter-state")).toByteArray());
+
+	//restore horizontal splitter state
+	//QSettings settings(COMPANY, PROGRAM);
+	if(settings.contains(this->metaObject()->className()+QString("/horizontal-splitter-state")))
+		horizontalSplitter->restoreState(settings.value(this->metaObject()->className()+QString("/horizontal-splitter-state")).toByteArray());*/
+
+	LockUnlock::assertIsUpdated(&gt.rules);
+
+	//DON'T UNCOMMENT THIS CODE -> LEADS TO CRASH IF THERE ARE MORE VIEWS OPENED.
+	//LockUnlock::increaseCommunicationSpinBox();
+
+	studentsTimetableTable->clear();
+	studentsTimetableTable->setRowCount(gt.rules.nHoursPerDay);
+	studentsTimetableTable->setColumnCount(gt.rules.nDaysPerWeek);
+	for(int j=0; j<gt.rules.nDaysPerWeek; j++){
+		QTableWidgetItem* item=new QTableWidgetItem(gt.rules.daysOfTheWeek[j]);
+		studentsTimetableTable->setHorizontalHeaderItem(j, item);
+	}
+	for(int i=0; i<gt.rules.nHoursPerDay; i++){
+		QTableWidgetItem* item=new QTableWidgetItem(gt.rules.hoursOfTheDay[i]);
+		studentsTimetableTable->setVerticalHeaderItem(i, item);
+	}
+	for(int j=0; j<gt.rules.nHoursPerDay; j++){
+		for(int k=0; k<gt.rules.nDaysPerWeek; k++){
+			QTableWidgetItem* item= new QTableWidgetItem();
+			item->setTextAlignment(Qt::AlignCenter);
+			item->setFlags(Qt::ItemIsSelectable|Qt::ItemIsEnabled);
+
+			studentsTimetableTable->setItem(j, k, item);
+
+			//if(j==0 && k==0)
+			//	teachersTimetableTable->setCurrentItem(item);
+		}
+	}
+	
+	//resize columns
+	//if(!columnResizeModeInitialized){
+/*	studentsTimetableTable->horizontalHeader()->setMinimumSectionSize(studentsTimetableTable->horizontalHeader()->defaultSectionSize());
+	//	columnResizeModeInitialized=true;
+#if QT_VERSION >= 0x050000
+	studentsTimetableTable->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+#else
+	studentsTimetableTable->horizontalHeader()->setResizeMode(QHeaderView::Stretch);
+#endif
+	//}
+	///////////////
+*/
+	
+	disconnect(yearsListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(yearChanged(const QString&)));
+	yearsListWidget->clear();
+	for(int i=0; i<gt.rules.augmentedYearsList.size(); i++){
+		StudentsYear* sty=gt.rules.augmentedYearsList[i];
+		yearsListWidget->addItem(sty->name);
+	}
+	if(yearsListWidget->count()>0)
+		yearsListWidget->setCurrentRow(0);
+	connect(yearsListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(yearChanged(const QString&)));
+		
+/*	shownComboBox->addItem(tr("Years"));
+	shownComboBox->addItem(tr("Groups"));
+	shownComboBox->addItem(tr("Subgroups"));
+
+	shownComboBox->setCurrentIndex(-1);
+
+	if(settings.contains(this->metaObject()->className()+QString("/shown-categories")))
+		shownComboBox->setCurrentIndex(settings.value(this->metaObject()->className()+QString("/shown-categories")).toInt());
+	else
+		shownComboBox->setCurrentIndex(0);
+
+	connect(shownComboBox, SIGNAL(activated(QString)), this, SLOT(shownComboBoxChanged(QString)));
+*/
+
+	//added by Volker Dirr
+	//connect(&communicationSpinBox, SIGNAL(valueChanged(int)), this, SLOT(updateStudentsTimetableTable()));
 
 	shownComboBoxChanged(shownComboBox->currentText());
 }

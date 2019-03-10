@@ -31,7 +31,7 @@ class TimetableViewTeachersTimeHorizontalDelegate: public QStyledItemDelegate
 {
 	Q_OBJECT
 	
-private:
+public:
 	int nRows;
 	int nColumns; //The number of columns after which a line is drawn.
 	
@@ -56,6 +56,7 @@ private:
 
 public:
 	TimetableViewTeachersTimeHorizontalForm(QWidget* parent);
+	void newTimetableGenerated();
 	~TimetableViewTeachersTimeHorizontalForm();
 	
 	void lock(bool lockTime, bool lockSpace);

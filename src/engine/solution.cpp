@@ -261,8 +261,8 @@ int Solution::getSubgroupsMatrix(const Rules& r, const Matrix3D<int>** p_a) cons
 	return conflicts;
 }
 
-//The following 2 functions (GetTeachersTimetable & GetSubgroupsTimetable)
-//are very similar to the above 2 ones (GetTeachersMatrix & GetSubgroupsMatrix)
+//The following 2 functions (getTeachersTimetable & getSubgroupsTimetable)
+//are very similar to the above 2 ones (getTeachersMatrix & getSubgroupsMatrix)
 void Solution::getTeachersTimetable(const Rules &r, Matrix3D<int>& a, Matrix3D<QList<int> >& b) const {
 	assert(r.initialized);
 	assert(r.internalStructureComputed);

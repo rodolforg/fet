@@ -2313,6 +2313,8 @@ public:
 	*/
 	QString p_activityTagName;
 
+	int duration; //if -1, neglected. Otherwise, >=1.
+
 	/**
 	The number of preferred times
 	*/
@@ -2349,7 +2351,7 @@ public:
 	//ConstraintSubactivitiesPreferredTimeSlots(double wp, int compNo, QString te,
 	//	QString st, QString su, QString sut, int nPT, int d[], int h[]);
 	ConstraintSubactivitiesPreferredTimeSlots(double wp, int compNo, QString te,
-		QString st, QString su, QString sut, int nPT_L, QList<int> d_L, QList<int> h_L);
+		QString st, QString su, QString sut, int dur, int nPT_L, QList<int> d_L, QList<int> h_L);
 
 	ErrorCode computeInternalStructure(const Rules& r);
 
@@ -2495,6 +2497,8 @@ public:
 	*/
 	QString activityTagName;
 
+	int duration; //if -1, neglected. Otherwise, >=1.
+
 	/**
 	The number of preferred times
 	*/
@@ -2529,7 +2533,7 @@ public:
 	ConstraintSubactivitiesPreferredStartingTimes();
 
 	ConstraintSubactivitiesPreferredStartingTimes(double wp, int compNo, QString te,
-		QString st, QString su, QString sut, int nPT_L, QList<int> d_L, QList<int> h_L);
+		QString st, QString su, QString sut, int dur, int nPT_L, QList<int> d_L, QList<int> h_L);
 
 	ErrorCode computeInternalStructure(const Rules& r);
 

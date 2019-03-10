@@ -29,6 +29,16 @@ ModifyConstraintSubactivitiesPreferredTimeSlotsForm::ModifyConstraintSubactiviti
 {
 	setupUi(this);
 
+	int duration=ctr->duration;
+	durationCheckBox->setChecked(duration>=1);
+	durationSpinBox->setEnabled(duration>=1);
+	durationSpinBox->setMinimum(1);
+	durationSpinBox->setMaximum(gt.rules.nHoursPerDay);
+	if(duration>=1)
+		durationSpinBox->setValue(duration);
+	else
+		durationSpinBox->setValue(1);
+
 	okPushButton->setDefault(true);
 
 	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
@@ -130,6 +140,12 @@ void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::updateActivityTagsComb
 
 void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::ok()
 {
+	int duration=-1;
+	if(durationCheckBox->isChecked()){
+		assert(durationSpinBox->isEnabled());
+		duration=durationSpinBox->value();
+	}
+
 	if(studentsComboBox->currentIndex()<0){
 		InvisibleSubgroupHelper::showWarningCannotModifyConstraintCase(this, this->_ctr->p_studentsName);
 		return;
@@ -194,8 +210,16 @@ void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::ok()
 	this->_ctr->p_days_L=days_L;
 	this->_ctr->p_hours_L=hours_L;
 
+	this->_ctr->duration=duration;
+
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
 	this->close();
 }
+
+void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::on_durationCheckBox_toggled()
+{
+	durationSpinBox->setEnabled(durationCheckBox->isChecked());
+}
+

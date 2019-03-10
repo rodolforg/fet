@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string extracomment="This is the title of the dialog to modify a constraint of this type">Modify subactivities preferred time slots</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout_2">
+  <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
     <layout class="QHBoxLayout" name="componentBoxLayout">
      <item>
@@ -108,9 +108,23 @@
     </layout>
    </item>
    <item row="2" column="0">
-    <widget class="SelectableTimeTable" name="preferredTimesTable"/>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QCheckBox" name="durationCheckBox">
+       <property name="text">
+        <string>Duration</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="durationSpinBox"/>
+     </item>
+    </layout>
    </item>
    <item row="3" column="0">
+    <widget class="SelectableTimeTable" name="preferredTimesTable"/>
+   </item>
+   <item row="4" column="0">
     <layout class="QHBoxLayout" name="weightBoxLayout">
      <item>
       <widget class="QLabel" name="weightTextLabel">
@@ -137,7 +151,7 @@
      </item>
     </layout>
    </item>
-   <item row="4" column="0">
+   <item row="5" column="0">
     <layout class="QGridLayout" name="buttonsGridLayout">
      <item row="0" column="0">
       <widget class="QPushButton" name="setAllAllowedPushButton">

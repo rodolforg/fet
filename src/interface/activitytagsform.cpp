@@ -21,6 +21,8 @@
 #include "activitytag.h"
 #include "interface/editcommentsform.h"
 
+#include "timetableexport.h"
+
 #include "centerwidgetonscreen.h"
 
 #include <QInputDialog>
@@ -38,7 +40,7 @@
 ActivityTagsForm::ActivityTagsForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);
-	
+
 	currentActivityTagTextEdit->setReadOnly(true);
 
 	renameActivityTagPushButton->setDefault(true);
@@ -71,13 +73,13 @@ ActivityTagsForm::ActivityTagsForm(QWidget* parent): QDialog(parent)
 	QSettings settings;
 	if(settings.contains(this->metaObject()->className()+QString("/splitter-state")))
 		splitter->restoreState(settings.value(this->metaObject()->className()+QString("/splitter-state")).toByteArray());
-		
+
 	activityTagsListWidget->clear();
 	for(int i=0; i<gt.rules.activityTagsList.size(); i++){
 		ActivityTag* sbt=gt.rules.activityTagsList[i];
 		activityTagsListWidget->addItem(sbt->name);
 	}
-		
+
 	if(activityTagsListWidget->count()>0)
 		activityTagsListWidget->setCurrentRow(0);
 }
@@ -144,7 +146,7 @@ void ActivityTagsForm::removeActivityTag()
 		QListWidgetItem* item;
 		item=activityTagsListWidget->takeItem(i);
 		delete item;
-		
+
 		if(i>=activityTagsListWidget->count())
 			i=activityTagsListWidget->count()-1;
 		if(i>=0)
@@ -161,7 +163,7 @@ void ActivityTagsForm::renameActivityTag()
 		QMessageBox::information(this, tr("FET information"), tr("Invalid selected activity tag"));
 		return;
 	}
-	
+
 	QString initialActivityTagName=activityTagsListWidget->currentItem()->text();
 
 	int activity_tag_ID=gt.rules.searchActivityTag(initialActivityTagName);
@@ -198,16 +200,17 @@ void ActivityTagsForm::moveActivityTagUp()
 		return;
 	if(i==0)
 		return;
-		
+
 	QString s1=activityTagsListWidget->item(i)->text();
 	QString s2=activityTagsListWidget->item(i-1)->text();
-	
+
 	activityTagsListWidget->item(i)->setText(s2);
 	activityTagsListWidget->item(i-1)->setText(s1);
-	
+
 	gt.rules.activityTagsList.swap(i, i-1);
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
+	CachedSchedule::invalidate();
 
 	activityTagsListWidget->setCurrentRow(i-1);
 }
@@ -221,16 +224,17 @@ void ActivityTagsForm::moveActivityTagDown()
 		return;
 	if(i==activityTagsListWidget->count()-1)
 		return;
-		
+
 	QString s1=activityTagsListWidget->item(i)->text();
 	QString s2=activityTagsListWidget->item(i+1)->text();
-	
+
 	activityTagsListWidget->item(i)->setText(s2);
 	activityTagsListWidget->item(i+1)->setText(s1);
-	
+
 	gt.rules.activityTagsList.swap(i, i+1);
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
+	CachedSchedule::invalidate();
 
 	activityTagsListWidget->setCurrentRow(i+1);
 }
@@ -255,7 +259,7 @@ void ActivityTagsForm::activityTagChanged(int index)
 		currentActivityTagTextEdit->setPlainText(QString(""));
 		return;
 	}
-	
+
 	ActivityTag* st=gt.rules.activityTagsList.at(index);
 	assert(st);
 	QString s=st->getDetailedDescriptionWithConstraints(gt.rules);
@@ -294,7 +298,7 @@ void ActivityTagsForm::printableActivityTag()
 	}
 
 	QString text=activityTagsListWidget->currentItem()->text();
-	
+
 	gt.rules.makeActivityTagPrintable(text);
 
 	activityTagChanged(activityTagsListWidget->currentRow());
@@ -308,7 +312,7 @@ void ActivityTagsForm::notPrintableActivityTag()
 	}
 
 	QString text=activityTagsListWidget->currentItem()->text();
-	
+
 	gt.rules.makeActivityTagNotPrintable(text);
 
 	activityTagChanged(activityTagsListWidget->currentRow());
@@ -329,7 +333,7 @@ void ActivityTagsForm::comments()
 		QMessageBox::information(this, tr("FET information"), tr("Invalid selected activity tag"));
 		return;
 	}
-	
+
 	ActivityTag* at=gt.rules.activityTagsList[ind];
 	assert(at!=NULL);
 
@@ -340,7 +344,7 @@ void ActivityTagsForm::comments()
 
 	if(t==QDialog::Accepted){
 		at->comments=dialog.getComments();
-	
+
 		gt.rules.internalStructureComputed=false;
 		gt.rules.setModified(true);
 

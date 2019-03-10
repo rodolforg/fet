@@ -22,6 +22,8 @@
 #include "modifyroomform.h"
 #include "interface/editcommentsform.h"
 
+#include "timetableexport.h"
+
 #include <QMessageBox>
 #include "centerwidgetonscreen.h"
 
@@ -182,6 +184,7 @@ void RoomsForm::moveRoomUp()
 	gt.rules.roomsList.swap(i, i-1);
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
+	CachedSchedule::invalidate();
 
 	visibleRoomsList.swap(i, i-1);
 
@@ -207,6 +210,7 @@ void RoomsForm::moveRoomDown()
 	gt.rules.roomsList.swap(i, i+1);
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
+	CachedSchedule::invalidate();
 
 	visibleRoomsList.swap(i, i+1);
 

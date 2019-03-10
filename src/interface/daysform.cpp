@@ -27,6 +27,8 @@
 #include <QMessageBox>
 #include "centerwidgetonscreen.h"
 
+#include "timetableexport.h"
+
 static QLineEdit* daysNames[MAX_DAYS_PER_WEEK];
 static int nDays;
 
@@ -139,7 +141,7 @@ void DaysForm::ok()
 	
 	gt.rules.nDaysPerWeek=oldDays;
 			
-	int cnt_mod = modifiableTimeConstraints.count() + modifiableTimeConstraints.count();
+	int cnt_mod = modifiableTimeConstraints.count() + modifiableSpaceConstraints.count();
 	int cnt_rem = toBeRemovedTimeConstraints.count() + toBeRemovedSpaceConstraints.count();
 	if(cnt_mod>0 || cnt_rem>0){
 		QString s;
@@ -157,7 +159,7 @@ void DaysForm::ok()
 		
 		if(res==QMessageBox::Cancel)
 			return;
-			
+		
 		int _oldDays=gt.rules.nDaysPerWeek;
 		gt.rules.nDaysPerWeek=nDays;
 
@@ -204,6 +206,9 @@ void DaysForm::ok()
 		if(recomputeTime || recomputeSpace){
 			LockUnlock::increaseCommunicationSpinBox();
 		}
+	}
+	else{
+		CachedSchedule::invalidate();
 	}
 	////////////
 

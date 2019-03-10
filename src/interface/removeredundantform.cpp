@@ -205,9 +205,6 @@ void RemoveRedundantForm::wasAccepted()
 		}
 	}
 
-
-
-
 	///////////
 	QDialog dialog(this);
 	dialog.setWindowTitle(tr("Last confirmation needed"));

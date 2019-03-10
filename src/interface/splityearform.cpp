@@ -713,6 +713,8 @@ again_here_2:
 			_divisions[i].append(listWidgets[i]->item(j)->text());
 	}
 	
+	//No need for gt.rules.internalStructureComputed=false and the rest of it, because there are invoked addGroupFast and addSubgroupFast
+	
 	this->close();
 }
 

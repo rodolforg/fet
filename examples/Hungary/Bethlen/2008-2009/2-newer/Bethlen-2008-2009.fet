@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<fet version="5.37.0">
+<fet version="5.37.1">
 
 <Institution_Name>Bethlen Gábor Református Gimnázium</Institution_Name>
 
@@ -14824,6 +14824,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>Matematika</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>20</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>Hétfő</Preferred_Day>
@@ -14915,6 +14916,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>Magyar</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>20</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>Hétfő</Preferred_Day>
@@ -15006,6 +15008,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>Történelem</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>20</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>Hétfő</Preferred_Day>
@@ -15760,6 +15763,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>1. nyelv</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>20</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>Hétfő</Preferred_Day>
@@ -15899,6 +15903,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>2. sáv</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>24</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>Hétfő</Preferred_Day>
@@ -16006,6 +16011,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>1. sáv</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>24</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>Hétfő</Preferred_Day>
@@ -16113,6 +16119,7 @@
 	<Students_Name></Students_Name>
 	<Subject_Name>1. sáv</Subject_Name>
 	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
 	<Number_of_Preferred_Time_Slots>24</Number_of_Preferred_Time_Slots>
 	<Preferred_Time_Slot>
 		<Preferred_Day>Hétfő</Preferred_Day>

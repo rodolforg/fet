@@ -38,4 +38,6 @@ void restoreFETDialogGeometry(QWidget* widget, const QString& alternativeName=QS
 
 void setStretchAvailabilityTableNicely(QTableWidget* notAllowedTimesTable);
 
+void updateAllTimetableViewDialogs();
+
 #endif

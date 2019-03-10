@@ -130,6 +130,8 @@ TimetableGenerateForm::~TimetableGenerateForm()
 }
 
 void TimetableGenerateForm::start(){
+	//closeAllTimetableViewDialogs();
+
 	if(!gt.rules.internalStructureComputed){
 		QProgressDialog progress(this);
 		progress.setWindowTitle(QCoreApplication::translate("Rules", "Computing internal structure", "Title of a progress dialog"));
@@ -247,6 +249,8 @@ void TimetableGenerateForm::stop()
 
 	for(const QString& t : qAsConst(c.conflictsDescriptionList))
 		conflictsString+=t+"\n";
+	
+	updateAllTimetableViewDialogs();
 
 	ErrorList errors = TimetableExport::writeSimulationResults();
 	for (const ErrorCode& erc : qAsConst(errors)) {
@@ -354,6 +358,8 @@ void TimetableGenerateForm::stopHighest()
 	for(const QString& t : qAsConst(c.conflictsDescriptionList))
 		conflictsString+=t+"\n";
 
+	updateAllTimetableViewDialogs();
+
 	ErrorList errors = TimetableExport::writeHighestStageResults();
 	for (const ErrorCode& erc : qAsConst(errors)) {
 		QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
@@ -458,6 +464,8 @@ void TimetableGenerateForm::impossibleToSolve()
 	for(const QString& t : qAsConst(c.conflictsDescriptionList))
 		conflictsString+=t+"\n";
 
+	updateAllTimetableViewDialogs();
+
 	ErrorList errors = TimetableExport::writeSimulationResults();
 	for (const ErrorCode& erc : qAsConst(errors)) {
 		QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
@@ -535,6 +543,8 @@ void TimetableGenerateForm::simulationFinished()
 
 	for(const QString& t : qAsConst(c.conflictsDescriptionList))
 		conflictsString+=t+"\n";
+
+	updateAllTimetableViewDialogs();
 
 	ErrorList errors = TimetableExport::writeSimulationResults();
 	for (const ErrorCode& erc : qAsConst(errors)) {
@@ -721,6 +731,8 @@ void TimetableGenerateForm::write(){
 	for(const QString& t : qAsConst(c.conflictsDescriptionList))
 		conflictsString+=t+"\n";
 
+	updateAllTimetableViewDialogs();
+
 	ErrorList errors = TimetableExport::writeSimulationResults();
 	for (const ErrorCode& erc : qAsConst(errors)) {
 		QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
@@ -763,6 +775,8 @@ void TimetableGenerateForm::writeHighestStage(){
 
 	for(const QString& t : qAsConst(c.conflictsDescriptionList))
 		conflictsString+=t+"\n";
+
+	updateAllTimetableViewDialogs();
 
 	ErrorList errors = TimetableExport::writeHighestStageResults();
 	for (const ErrorCode& erc : qAsConst(errors)) {

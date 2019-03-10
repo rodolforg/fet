@@ -24,6 +24,8 @@
 #include "studentsset.h"
 #include "interface/editcommentsform.h"
 
+#include "timetableexport.h"
+
 #include "longtextmessagebox.h"
 #include "centerwidgetonscreen.h"
 
@@ -314,6 +316,7 @@ void GroupsForm::moveGroupUp()
 	sy->groupsList.swap(i, i-1);
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
+	CachedSchedule::invalidate();
 
 	groupsListWidget->setCurrentRow(i-1);
 }
@@ -341,6 +344,7 @@ void GroupsForm::moveGroupDown()
 	sy->groupsList.swap(i, i+1);
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
+	CachedSchedule::invalidate();
 
 	groupsListWidget->setCurrentRow(i+1);
 }

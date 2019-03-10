@@ -23,6 +23,8 @@
 #include "modifybuildingform.h"
 #include "interface/editcommentsform.h"
 
+#include "timetableexport.h"
+
 #include <QMessageBox>
 #include "centerwidgetonscreen.h"
 
@@ -182,6 +184,7 @@ void BuildingsForm::moveBuildingUp()
 	gt.rules.buildingsList.swap(i, i-1);
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
+	CachedSchedule::invalidate();
 
 	visibleBuildingsList.swap(i, i-1);
 	buildingsListWidget->setCurrentRow(i-1);
@@ -206,6 +209,7 @@ void BuildingsForm::moveBuildingDown()
 	gt.rules.buildingsList.swap(i, i+1);
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
+	CachedSchedule::invalidate();
 
 	visibleBuildingsList.swap(i, i+1);
 	buildingsListWidget->setCurrentRow(i+1);

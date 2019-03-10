@@ -15,6 +15,8 @@
  *                                                                         *
  ***************************************************************************/
 
+#include "timetableexport.h"
+
 #include <QMessageBox>
 #include "centerwidgetonscreen.h"
 
@@ -143,7 +145,7 @@ void HoursForm::ok()
 
 	gt.rules.nHoursPerDay=oldHours;
 			
-	int cnt_mod = modifiableTimeConstraints.count() + modifiableTimeConstraints.count();
+	int cnt_mod = modifiableTimeConstraints.count() + modifiableSpaceConstraints.count();
 	int cnt_rem = toBeRemovedTimeConstraints.count() + toBeRemovedSpaceConstraints.count();
 	if(cnt_mod>0 || cnt_rem>0){
 		QString s=QString("");
@@ -208,6 +210,9 @@ void HoursForm::ok()
 		if(recomputeTime || recomputeSpace){
 			LockUnlock::increaseCommunicationSpinBox();
 		}
+	}
+	else{
+		CachedSchedule::invalidate();
 	}
 	////////////
 
