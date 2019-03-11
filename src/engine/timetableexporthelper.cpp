@@ -76,7 +76,7 @@ void TimetableExportHelper::getBasicTimetable(Table &table, GetStuffIndexMethod 
 			const Activity &act = rules.internalActivitiesList[idxAct];
 			QList<int> indexes = (this->*getStuffIndex)(act);
 			for (int h=hour; h < hour+act.duration; h++) {
-				foreach (int idx, indexes)
+				for (int idx : qAsConst(indexes))
 					table.data[idx][day][h].elements << Element::SubElement(&act, hour+act.duration-h);
 			}
 		}
@@ -87,7 +87,7 @@ void TimetableExportHelper::getBasicTimetable(Table &table, GetStuffIndexMethod 
 
 void TimetableExportHelper::fillTimetableForActivities(Element** timetable, const QList<int>& activities) const
 {
-	foreach(int idxAct, activities) {
+	for(int idxAct : qAsConst(activities)) {
 		const int time = solution.times[idxAct];
 		if(time != UNALLOCATED_TIME) {
 			int hour = time / rules.nDaysPerWeek;
@@ -103,7 +103,7 @@ void TimetableExportHelper::fillTimetableForActivities(Element** timetable, cons
 QList<int> TimetableExportHelper::getTeacherIndex(const Activity &act) const
 {
 	QList<int> results;
-	foreach (QString teacherName, act.teachersNames)
+	for (const QString& teacherName : qAsConst(act.teachersNames))
 		results << rules.teachersHash.value(teacherName);
 	return results;
 }
@@ -118,7 +118,7 @@ QList<int> TimetableExportHelper::getSubjectIndex(const Activity &act) const
 QList<int> TimetableExportHelper::getActivityTagIndex(const Activity &act) const
 {
 	QList<int> results;
-	foreach (QString activityTagName, act.activityTagsNames)
+	for (const QString& activityTagName : qAsConst(act.activityTagsNames))
 		results << rules.activityTagsHash.value(activityTagName);
 	return results;
 }
@@ -145,12 +145,12 @@ QList<int> TimetableExportHelper::getYearIndex(const Activity &act) const
 {
 	QSet<int> results;
 	QSet<int> subgroupsVisited;
-	foreach (int idxSubgroup, act.iSubgroupsList) {
+	for (int idxSubgroup : qAsConst(act.iSubgroupsList)) {
 		if (subgroupsVisited.contains(idxSubgroup))
 			continue;
 		subgroupsVisited << idxSubgroup;
-		foreach (StudentsYear *year, rules.augmentedYearsList) {
-			foreach (StudentsGroup *group, year->groupsList) {
+		for (StudentsYear *year : qAsConst(rules.augmentedYearsList)) {
+			for (StudentsGroup *group : qAsConst(year->groupsList)) {
 				if (group->subgroupsList.contains(rules.internalSubgroupsList[idxSubgroup])) {
 					results << year->indexInAugmentedYearsList;
 					break;
@@ -165,11 +165,11 @@ QList<int> TimetableExportHelper::getGroupIndex(const Activity &act) const
 {
 	QSet<int> results;
 	QSet<int> subgroupsVisited;
-	foreach (int idxSubgroup, act.iSubgroupsList) {
+	for (int idxSubgroup : qAsConst(act.iSubgroupsList)) {
 		if (subgroupsVisited.contains(idxSubgroup))
 			continue;
 		subgroupsVisited << idxSubgroup;
-		foreach (StudentsGroup *group, rules.internalGroupsList) {
+		for (StudentsGroup *group : qAsConst(rules.internalGroupsList)) {
 			if (group->subgroupsList.contains(rules.internalSubgroupsList[idxSubgroup])) {
 				results << group->indexInInternalGroupsList;
 				break;
@@ -235,7 +235,7 @@ void TimetableExportHelper::Table::computeExtraInfo()
 
 bool TimetableExportHelper::Element::contains(const Activity* activity) const
 {
-	foreach (const SubElement& element, elements) {
+	for (const SubElement& element : qAsConst(elements)) {
 		if (element.activity == activity)
 			return true;
 	}

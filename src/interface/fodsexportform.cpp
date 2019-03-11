@@ -9,6 +9,8 @@
 
 #include <QFileDialog>
 
+#include <QTabBar>
+
 FOdsExportForm::FOdsExportForm(const Rules &rules, const Solution& solution, QWidget *parent) :
 	QDialog(parent),
 	ui(new Ui::FOdsExportForm),
@@ -310,7 +312,7 @@ QString FOdsExportForm::getActivityText(const Activity *act, const Styles& style
 	}
 	if (flags & ActivityFlags::ACTIVITY_TAG) {
 		QStringList printableActivityTagNames;
-		foreach (QString name, act->activityTagsNames) {
+		for (const QString& name : qAsConst(act->activityTagsNames)) {
 			int tagId = rules.searchActivityTag(name);
 			if (tagId < 0)
 				continue;
@@ -366,7 +368,7 @@ int FOdsExportForm::getRowSpan(int start_hour, int end_hour, const QList<int>& v
 void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, const TimetableExportHelper::Table &table, const int tblIdx, const QString &tableName, const Styles& styles, int whatShow) const
 {
 	QList<int> validHoursId;
-	foreach (QString hour, filter.validHours) {
+	for (const QString& hour : qAsConst(filter.validHours)) {
 		for (int i = 0; i < rules.nHoursPerDay; i++) {
 			if (rules.hoursOfTheDay[i] == hour) {
 				validHoursId << i;
@@ -482,14 +484,14 @@ void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, con
 							const Activity* a = suba.activity;
 							const Activity* b = subb.activity;
 							QList<int> a_groups;
-							foreach (QString g, a->studentsNames) {
+							for (const QString& g : qAsConst(a->studentsNames)) {
 								int groupIdx = rules.searchGroup(yearName, g);
 								if (groupIdx >= 0)
 									a_groups << groupIdx;
 							}
 
 							QList<int> b_groups;
-							foreach (QString g, b->studentsNames) {
+							for (const QString& g : qAsConst(b->studentsNames)) {
 								int groupIdx = rules.searchGroup(yearName, g);
 								if (groupIdx >= 0)
 									b_groups << groupIdx;
@@ -502,7 +504,7 @@ void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, con
 						const QString &yearName;
 					} customLess(rules, tableName);
 					std::sort(elements.begin(), elements.end(), customLess);
-					foreach (const TimetableExportHelper::Element::SubElement sub, elements) {
+					for (const TimetableExportHelper::Element::SubElement& sub : qAsConst(elements)) {
 						const Activity* act = sub.activity;
 						int endHour = getEndHour(h, sub.timeSpan, filter);
 						int rowspan = getRowSpan(h, endHour, validHoursId);
