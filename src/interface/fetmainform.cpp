@@ -614,7 +614,8 @@ FetMainForm::FetMainForm()
 			//and http://amin-ahmadi.com/2016/06/13/fix-modsecurity-issues-in-qt-network-module-download-functionality/ ,
 			//to avoid code 406 from the server.
 #if QT_VERSION >= 0x050400
-			req.setHeader(QNetworkRequest::UserAgentHeader, QString("FET")+QString(" ")+FET_VERSION+QString(" (")+QSysInfo::prettyProductName()+QString(")"));
+			req.setHeader(QNetworkRequest::UserAgentHeader, QString("FET")+QString(" ")+FET_VERSION+
+			 QString(" (")+QSysInfo::prettyProductName()+QString("; ")+QSysInfo::currentCpuArchitecture()+QString(")"));
 #elif QT_VERSION >= 0x050000
 			req.setHeader(QNetworkRequest::UserAgentHeader, QString("FET")+QString(" ")+FET_VERSION);
 #else
@@ -847,7 +848,7 @@ void FetMainForm::checkForUpdatesToggled(bool checked)
 			"request for this file will be visible on the server, along with your IP address and access time.")
 			.arg("https://lalescu.ro/liviu/fet/crtversion/crtversion.txt");
 		s+=" ";
-		s+=tr("Also, there will be visible on the server your current FET version and your operating system name and version.");
+		s+=tr("Also, there will be visible on the server your current FET version, your operating system name and version, and your processor architecture type.");
 		s+=" ";
 		s+=tr("Thus, it could be deduced if and when you use FET.");
 		s+="\n\n";

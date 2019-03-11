@@ -76,10 +76,10 @@ HelpAboutForm::HelpAboutForm(QWidget* parent): QDialog(parent)
 	about+=tr("FET is free software for automatically scheduling the timetable of a school, high-school or university.");
 	about+="<br /><br />";
 	about+=tr("Copyright (C) %1-%2 %3.", "%1 is the year of the first FET release, %2 is the current release year, %3 are the FET authors")
-	 .arg(2002).arg(2018).arg("Liviu Lalescu, Volker Dirr");
+	 .arg(2002).arg(2019).arg("Liviu Lalescu, Volker Dirr");
 	about+="<br /><br />";
 	about+=tr("Version: %1 (%2 %3).", "%1 is the current FET version, %2 is the current release month, %3 is the current release year").arg(FET_VERSION)
-	 .arg(QCoreApplication::translate("MonthsNames", "December")).arg(2018);
+	 .arg(QCoreApplication::translate("MonthsNames", "January")).arg(2019);
 	about+="<br /><br />";
 	about+=tr("Licensed under the GNU Affero General Public License version 3 or later.");
 	about+="<br /><br />";
