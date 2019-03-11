@@ -46,7 +46,12 @@ using namespace std;
 #include "lockunlock.h"
 #endif
 
+#if QT_VERSION >= 0x050000
+#include <QRegularExpression>
+#include <QRegularExpressionMatch>
+#else
 #include <QRegExp>
+#endif
 
 void Rules::init() //initializes the rules (empty, but with default hours and days)
 {
@@ -4469,9 +4474,60 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 			
 			QString version=a.value();
 			file_version=version;*/
-
+			
+#if QT_VERSION >= 0x050000
+			QRegularExpression fileVerReCap("^(\\d+)\\.(\\d+)\\.(\\d+)(.*)$");
+			QRegularExpressionMatch match=fileVerReCap.match(file_version);
+			filev[0]=filev[1]=filev[2]=-1;
+			if(!match.hasMatch()){
+				errors << ErrorCode(ErrorCode::Warning, tr("File contains a version numbering scheme which"
+				" is not matched by v.v.va (3 numbers separated by points, followed by any string a, which may be empty). File will be opened, but you are advised"
+				" to check the version of the .fet file (in the beginning of the file). If this is a FET bug, please report it")+"\n\n"+
+				tr("If you are opening a file older than FET format version 5, it will be converted to latest FET data format"));
+				if(VERBOSE){
+					cout<<"Opened file version not matched by regexp"<<endl;
+				}
+			}
+			else{
+				bool ok;
+				filev[0]=match.captured(1).toInt(&ok);
+				assert(ok);
+				filev[1]=match.captured(2).toInt(&ok);
+				assert(ok);
+				filev[2]=match.captured(3).toInt(&ok);
+				assert(ok);
+				if(VERBOSE){
+					cout<<"Opened file version matched by regexp: major="<<filev[0]<<", minor="<<filev[1]<<", revision="<<filev[2];
+					cout<<", additional text="<<qPrintable(match.captured(4))<<"."<<endl;
+				}
+			}
+		
+			QRegularExpression fetVerReCap("^(\\d+)\\.(\\d+)\\.(\\d+)(.*)$");
+			match=fetVerReCap.match(FET_VERSION);
+			
+			fetv[0]=fetv[1]=fetv[2]=-1;
+			if(!match.hasMatch()){
+				errors << ErrorCode(ErrorCode::Warning, tr("FET version does not respect the format v.v.va"
+				" (3 numbers separated by points, followed by any string a, which may be empty). This is probably a bug in FET - please report it"));
+				if(VERBOSE){
+					cout<<"FET version not matched by regexp"<<endl;
+				}
+			}
+			else{
+				bool ok;
+				fetv[0]=match.captured(1).toInt(&ok);
+				assert(ok);
+				fetv[1]=match.captured(2).toInt(&ok);
+				assert(ok);
+				fetv[2]=match.captured(3).toInt(&ok);
+				assert(ok);
+				if(VERBOSE){
+					cout<<"FET version matched by regexp: major="<<fetv[0]<<", minor="<<fetv[1]<<", revision="<<fetv[2];
+					cout<<", additional text="<<qPrintable(match.captured(4))<<"."<<endl;
+				}
+			}
+#else
 			QRegExp fileVerReCap("^(\\d+)\\.(\\d+)\\.(\\d+)(.*)$");
-
 			int tfile=fileVerReCap.indexIn(file_version);
 			filev[0]=filev[1]=filev[2]=-1;
 			if(tfile!=0){
@@ -4498,7 +4554,6 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 			}
 		
 			QRegExp fetVerReCap("^(\\d+)\\.(\\d+)\\.(\\d+)(.*)$");
-
 			int tfet=fetVerReCap.indexIn(FET_VERSION);
 			fetv[0]=fetv[1]=fetv[2]=-1;
 			if(tfet!=0){
@@ -4521,6 +4576,7 @@ ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 					cout<<", additional text="<<qPrintable(fetVerReCap.cap(4))<<"."<<endl;
 				}
 			}
+#endif
 			
 			if(filev[0]>=0 && fetv[0]>=0 && filev[1]>=0 && fetv[1]>=0 && filev[2]>=0 && fetv[2]>=0){
 				if(filev[0]>fetv[0] || (filev[0]==fetv[0] && filev[1]>fetv[1]) || (filev[0]==fetv[0]&&filev[1]==fetv[1]&&filev[2]>fetv[2])){

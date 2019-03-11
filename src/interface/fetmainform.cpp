@@ -267,7 +267,12 @@ using namespace std;
 #include <QNetworkReply>
 #include <QSslSocket>
 
+#if QT_VERSION >= 0x050000
+#include <QRegularExpression>
+#include <QRegularExpressionMatch>
+#else
 #include <QRegExp>
+#endif
 
 //for the icons of not perfect constraints
 #include <QIcon>
@@ -958,6 +963,24 @@ void FetMainForm::replyFinished(QNetworkReply* networkReply)
 		QString internetVersion;
 		QString additionalComments;
 		
+#if QT_VERSION >= 0x050000
+		QRegularExpression regExp("^\\s*(\\S+)(.*)$");
+		QRegularExpressionMatch match=regExp.match(QString(networkReply->readAll()));
+		if(!match.hasMatch()){
+			QString s=QString("");
+			s+=tr("The file %1 from the FET homepage, indicating the current FET version, is incorrect.").arg("https://lalescu.ro/liviu/fet/crtversion/crtversion.txt");
+			s+=QString("\n\n");
+			s+=tr("Maybe the FET homepage has some temporary problems, so try again later."
+			 " Or maybe the current structure on FET homepage was changed. You may visit FET homepage: %1, and get latest version or,"
+			 " if it does not work, try to search for the new FET page on the internet (maybe it has changed).")
+			  .arg("https://lalescu.ro/liviu/fet/");
+
+			QMessageBox::warning(this, tr("FET warning"), s);
+		}
+		else{
+			internetVersion=match.captured(1);
+			additionalComments=match.captured(2).trimmed();
+#else
 		QRegExp regExp("^\\s*(\\S+)(.*)$");
 		int t=regExp.indexIn(QString(networkReply->readAll()));
 		if(t!=0){
@@ -974,6 +997,7 @@ void FetMainForm::replyFinished(QNetworkReply* networkReply)
 		else{
 			internetVersion=regExp.cap(1);
 			additionalComments=regExp.cap(2).trimmed();
+#endif
 
 			if(VERBOSE){
 				cout<<"Your current version: '";

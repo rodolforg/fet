@@ -62,13 +62,15 @@ DaysForm::DaysForm(QWidget* parent): QDialog(parent)
     daysSpinBox->setMaximum(MAX_DAYS_PER_WEEK);
 	daysSpinBox->setValue(gt.rules.nDaysPerWeek);
 
-    for(int i=0; i<MAX_DAYS_PER_WEEK; i++)
+    for(int i=0; i<MAX_DAYS_PER_WEEK; i++) {
 		if(i<nDays){
 			daysNames[i]->setEnabled(true);
 			daysNames[i]->setText(gt.rules.daysOfTheWeek[i]);
 		}
-		else
+		else{
 			daysNames[i]->setDisabled(true);
+		}
+	}
 }
 
 DaysForm::~DaysForm()

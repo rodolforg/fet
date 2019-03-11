@@ -286,7 +286,6 @@ void SubactivitiesForm::filterChanged()
 	int nacts=0, nsubacts=0, nh=0;
 	int ninact=0, ninacth=0;
 
-
 	QString s;
 	subactivitiesListWidget->clear();
 	visibleSubactivitiesList.clear();

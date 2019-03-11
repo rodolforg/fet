@@ -544,6 +544,18 @@ int Import::getFileSeparatorFieldsAndHead(QWidget* parent, QDialog* &newParent){
 		fields<<line;
 		return true;
 	}
+	
+	if(fieldNumber[FIELD_ACTIVITY_TAG_NAME]==IMPORT_DEFAULT_ITEM
+		&& line.contains("Activity Tag")
+		&& line.size()<=QString("Activity Tag").length()+1
+		&& line.size()>=QString("Activity Tag").length()){
+		fieldNumber[FIELD_ACTIVITY_TAG_NAME]=0;
+		head=true;
+		fieldSeparator=",";
+		textquote="";
+		fields<<line;
+		return true;
+	}
 
 	if(fieldNumber[FIELD_ROOM_NAME]==IMPORT_DEFAULT_ITEM
 		&& line.contains("\"Room\",\"Room Capacity\",\"Building\"")
@@ -555,6 +567,20 @@ int Import::getFileSeparatorFieldsAndHead(QWidget* parent, QDialog* &newParent){
 		head=true;
 		fieldSeparator=",";
 		textquote="\"";
+		fields=line.split(fieldSeparator);
+		return true;
+	}
+	
+	if(fieldNumber[FIELD_ROOM_NAME]==IMPORT_DEFAULT_ITEM
+		&& line.contains("Room,Room Capacity,Building")
+		&& line.size()<=QString("Room,Room Capacity,Building").length()+1
+		&& line.size()>=QString("Room,Room Capacity,Building").length()){
+		fieldNumber[FIELD_BUILDING_NAME]=2;
+		fieldNumber[FIELD_ROOM_NAME]=0;
+		fieldNumber[FIELD_ROOM_CAPACITY]=1;
+		head=true;
+		fieldSeparator=",";
+		textquote="";
 		fields=line.split(fieldSeparator);
 		return true;
 	}
@@ -570,6 +596,18 @@ int Import::getFileSeparatorFieldsAndHead(QWidget* parent, QDialog* &newParent){
 		fields<<line;
 		return true;
 	}
+	
+	if(fieldNumber[FIELD_TEACHER_NAME]==IMPORT_DEFAULT_ITEM
+		&& line.contains("Teacher")
+		&& line.size()<=QString("Teacher").length()+1
+		&& line.size()>=QString("Teacher").length()){
+		fieldNumber[FIELD_TEACHER_NAME]=0;
+		head=true;
+		fieldSeparator=",";
+		textquote="";
+		fields<<line;
+		return true;
+	}
 
 	if(fieldNumber[FIELD_SUBJECT_NAME]==IMPORT_DEFAULT_ITEM
 		&& line.contains("\"Subject\"")
@@ -579,6 +617,18 @@ int Import::getFileSeparatorFieldsAndHead(QWidget* parent, QDialog* &newParent){
 		head=true;
 		fieldSeparator=",";
 		textquote="\"";
+		fields<<line;
+		return true;
+	}
+	
+	if(fieldNumber[FIELD_SUBJECT_NAME]==IMPORT_DEFAULT_ITEM
+		&& line.contains("Subject")
+		&& line.size()<=QString("Subject").length()+1
+		&& line.size()>=QString("Subject").length()){
+		fieldNumber[FIELD_SUBJECT_NAME]=0;
+		head=true;
+		fieldSeparator=",";
+		textquote="";
 		fields<<line;
 		return true;
 	}
@@ -599,6 +649,23 @@ int Import::getFileSeparatorFieldsAndHead(QWidget* parent, QDialog* &newParent){
 		fields=line.split(fieldSeparator);
 		return true;
 	}
+	
+	if(fieldNumber[FIELD_YEAR_NAME]==IMPORT_DEFAULT_ITEM
+		&& line.contains("Year,Number of Students per Year,Group,Number of Students per Group,Subgroup,Number of Students per Subgroup")
+		&& line.size()<=QString("Year,Number of Students per Year,Group,Number of Students per Group,Subgroup,Number of Students per Subgroup").length()+1
+		&& line.size()>=QString("Year,Number of Students per Year,Group,Number of Students per Group,Subgroup,Number of Students per Subgroup").length()){
+		fieldNumber[FIELD_YEAR_NAME]=0;
+		fieldNumber[FIELD_YEAR_NUMBER_OF_STUDENTS]=1;
+		fieldNumber[FIELD_GROUP_NAME]=2;
+		fieldNumber[FIELD_GROUP_NUMBER_OF_STUDENTS]=3;
+		fieldNumber[FIELD_SUBGROUP_NAME]=4;
+		fieldNumber[FIELD_SUBGROUP_NUMBER_OF_STUDENTS]=5;
+		head=true;
+		fieldSeparator=",";
+		textquote="";
+		fields=line.split(fieldSeparator);
+		return true;
+	}
 
 	if(fieldNumber[FIELD_STUDENTS_SET]==IMPORT_DEFAULT_ITEM
 		&& line.contains("\"Students Sets\",\"Subject\",\"Teachers\",\"Activity Tags\",\"Total Duration\",\"Split Duration\",\"Min Days\",\"Weight\",\"Consecutive\"")
@@ -616,6 +683,26 @@ int Import::getFileSeparatorFieldsAndHead(QWidget* parent, QDialog* &newParent){
 		head=true;
 		fieldSeparator=",";
 		textquote="\"";
+		fields=line.split(fieldSeparator);
+		return true;
+	}
+	
+	if(fieldNumber[FIELD_STUDENTS_SET]==IMPORT_DEFAULT_ITEM
+		&& line.contains("Students Sets,Subject,Teachers,Activity Tags,Total Duration,Split Duration,Min Days,Weight,Consecutive")
+		&& line.size()<=QString("Students Sets,Subject,Teachers,Activity Tags,Total Duration,Split Duration,Min Days,Weight,Consecutive").length()+1
+		&& line.size()>=QString("Students Sets,Subject,Teachers,Activity Tags,Total Duration,Split Duration,Min Days,Weight,Consecutive").length()){
+		fieldNumber[FIELD_ACTIVITY_TAGS_SET]=3;
+		fieldNumber[FIELD_SUBJECT_NAME]=1;
+		fieldNumber[FIELD_STUDENTS_SET]=0;
+		fieldNumber[FIELD_TEACHERS_SET]=2;
+		fieldNumber[FIELD_TOTAL_DURATION]=4;
+		fieldNumber[FIELD_SPLIT_DURATION]=5;
+		fieldNumber[FIELD_MIN_DAYS]=6;
+		fieldNumber[FIELD_MIN_DAYS_WEIGHT]=7;
+		fieldNumber[FIELD_MIN_DAYS_CONSECUTIVE]=8;
+		head=true;
+		fieldSeparator=",";
+		textquote="";
 		fields=line.split(fieldSeparator);
 		return true;
 	}
@@ -1010,7 +1097,7 @@ int Import::readFields(QWidget* parent){
 									} else {
 										int totalInt=itemOfField[FIELD_TOTAL_DURATION].toInt(&ok, 10);
 										if(totalInt!=tmpInt){
-											warnText+=Import::tr("Skipped line %1: Fields '%2' and '%3' haven't the same value.").arg(lineNumber).arg(fieldName[i]).arg(fieldName[FIELD_TOTAL_DURATION])+"\n";
+											warnText+=Import::tr("Skipped line %1: Fields '%2' and '%3' do not have the same value.").arg(lineNumber).arg(fieldName[i]).arg(fieldName[FIELD_TOTAL_DURATION])+"\n";
 											ok=false;
 										}
 									}
@@ -1050,7 +1137,7 @@ int Import::readFields(QWidget* parent){
 								warnText+=Import::tr("Skipped line %1: Field '%2' doesn't contain a number (double) value.").arg(lineNumber).arg(fieldName[i])+"\n";
 							else {
 								if(weight<0.0 || weight>100.0){
-									warnText+=Import::tr("Skipped line %1: Field '%2' contains an number (double) value.").arg(lineNumber).arg(fieldName[i])+"\n";
+									warnText+=Import::tr("Skipped line %1: Field '%2' contains an invalid number (double) value.").arg(lineNumber).arg(fieldName[i])+"\n";
 									ok=false;
 								}
 							}
@@ -1066,7 +1153,7 @@ int Import::readFields(QWidget* parent){
 							else
 								ok=false;
 							if(!ok)
-								warnText+=Import::tr("Skipped line %1: Field '%2' contain an unknown value.").arg(lineNumber).arg(fieldName[i])+"\n";
+								warnText+=Import::tr("Skipped line %1: Field '%2' contains an unknown value.").arg(lineNumber).arg(fieldName[i])+"\n";
 						}
 					} else if(fieldNumber[i]==IMPORT_DEFAULT_ITEM){
 						itemOfField[i].clear();

@@ -191,6 +191,12 @@ void ModifyConstraintMinDaysBetweenActivitiesForm::ok()
 		return;
 	}
 
+	if(minDaysSpinBox->value()<=0){
+		QMessageBox::warning(this, tr("FET information"),
+			tr("Invalid number of min days between activities - it must be greater than 0."));
+		return;
+	}
+
 	if(this->selectedActivitiesList.size()==0){
 		QMessageBox::warning(this, tr("FET information"),
 			tr("Empty list of selected activities"));
