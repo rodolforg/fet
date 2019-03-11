@@ -1996,7 +1996,7 @@ ErrorCode TimetableExport::writeSubgroupsTimetableDaysVerticalHtml(const QString
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeSubgroupsTimetableTimeVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -2152,7 +2152,7 @@ ErrorCode TimetableExport::writeSubgroupsTimetableTimeHorizontalDailyHtml(const 
 }
 
 //Now print the groups
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeGroupsTimetableDaysHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -2206,7 +2206,7 @@ ErrorCode TimetableExport::writeGroupsTimetableDaysHorizontalHtml(const QString&
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeGroupsTimetableDaysVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -2260,7 +2260,7 @@ ErrorCode TimetableExport::writeGroupsTimetableDaysVerticalHtml(const QString& h
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeGroupsTimetableTimeVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -2299,7 +2299,7 @@ ErrorCode TimetableExport::writeGroupsTimetableTimeVerticalHtml(const QString& h
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeGroupsTimetableTimeHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -2337,7 +2337,7 @@ ErrorCode TimetableExport::writeGroupsTimetableTimeHorizontalHtml(const QString&
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeGroupsTimetableTimeVerticalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -2378,7 +2378,7 @@ ErrorCode TimetableExport::writeGroupsTimetableTimeVerticalDailyHtml(const QStri
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeGroupsTimetableTimeHorizontalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -2421,7 +2421,7 @@ ErrorCode TimetableExport::writeGroupsTimetableTimeHorizontalDailyHtml(const QSt
 
 //Now print the years
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeYearsTimetableDaysHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -2470,7 +2470,7 @@ ErrorCode TimetableExport::writeYearsTimetableDaysHorizontalHtml(const QString& 
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeYearsTimetableDaysVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -2519,7 +2519,7 @@ ErrorCode TimetableExport::writeYearsTimetableDaysVerticalHtml(const QString& ht
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeYearsTimetableTimeVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -2558,7 +2558,7 @@ ErrorCode TimetableExport::writeYearsTimetableTimeVerticalHtml(const QString& ht
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeYearsTimetableTimeHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -2597,7 +2597,7 @@ ErrorCode TimetableExport::writeYearsTimetableTimeHorizontalHtml(const QString& 
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeYearsTimetableTimeVerticalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -2638,7 +2638,7 @@ ErrorCode TimetableExport::writeYearsTimetableTimeVerticalDailyHtml(const QStrin
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeYearsTimetableTimeHorizontalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -2681,7 +2681,7 @@ ErrorCode TimetableExport::writeYearsTimetableTimeHorizontalDailyHtml(const QStr
 
 //Print all activities
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeAllActivitiesTimetableDaysHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -2715,7 +2715,7 @@ ErrorCode TimetableExport::writeAllActivitiesTimetableDaysHorizontalHtml(const Q
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeAllActivitiesTimetableDaysVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -2749,7 +2749,7 @@ ErrorCode TimetableExport::writeAllActivitiesTimetableDaysVerticalHtml(const QSt
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeAllActivitiesTimetableTimeVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -2785,7 +2785,7 @@ ErrorCode TimetableExport::writeAllActivitiesTimetableTimeVerticalHtml(const QSt
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeAllActivitiesTimetableTimeHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -2821,7 +2821,7 @@ ErrorCode TimetableExport::writeAllActivitiesTimetableTimeHorizontalHtml(const Q
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeAllActivitiesTimetableTimeVerticalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -2860,7 +2860,7 @@ ErrorCode TimetableExport::writeAllActivitiesTimetableTimeVerticalDailyHtml(cons
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeAllActivitiesTimetableTimeHorizontalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -2996,7 +2996,7 @@ ErrorCode TimetableExport::writeTeachersTimetableDaysVerticalHtml(const QString&
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeTeachersTimetableTimeVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -3421,7 +3421,7 @@ ErrorCode TimetableExport::writeRoomsTimetableTimeHorizontalDailyHtml(const QStr
 
 //Print the subjects
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeSubjectsTimetableDaysHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -3469,7 +3469,7 @@ ErrorCode TimetableExport::writeSubjectsTimetableDaysHorizontalHtml(const QStrin
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeSubjectsTimetableDaysVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -3516,7 +3516,7 @@ ErrorCode TimetableExport::writeSubjectsTimetableDaysVerticalHtml(const QString&
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeSubjectsTimetableTimeVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -3552,7 +3552,7 @@ ErrorCode TimetableExport::writeSubjectsTimetableTimeVerticalHtml(const QString&
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeSubjectsTimetableTimeHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -3589,7 +3589,7 @@ ErrorCode TimetableExport::writeSubjectsTimetableTimeHorizontalHtml(const QStrin
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeSubjectsTimetableTimeVerticalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -3631,7 +3631,7 @@ ErrorCode TimetableExport::writeSubjectsTimetableTimeVerticalDailyHtml(const QSt
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeSubjectsTimetableTimeHorizontalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -3674,7 +3674,7 @@ ErrorCode TimetableExport::writeSubjectsTimetableTimeHorizontalDailyHtml(const Q
 
 //Print the activity tags
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeActivityTagsTimetableDaysHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -3726,7 +3726,7 @@ ErrorCode TimetableExport::writeActivityTagsTimetableDaysHorizontalHtml(const QS
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeActivityTagsTimetableDaysVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -3777,7 +3777,7 @@ ErrorCode TimetableExport::writeActivityTagsTimetableDaysVerticalHtml(const QStr
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeActivityTagsTimetableTimeVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -3813,7 +3813,7 @@ ErrorCode TimetableExport::writeActivityTagsTimetableTimeVerticalHtml(const QStr
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeActivityTagsTimetableTimeHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -3850,7 +3850,7 @@ ErrorCode TimetableExport::writeActivityTagsTimetableTimeHorizontalHtml(const QS
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeActivityTagsTimetableTimeVerticalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -3892,7 +3892,7 @@ ErrorCode TimetableExport::writeActivityTagsTimetableTimeVerticalDailyHtml(const
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeActivityTagsTimetableTimeHorizontalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -3933,7 +3933,7 @@ ErrorCode TimetableExport::writeActivityTagsTimetableTimeHorizontalDailyHtml(con
 	return ErrorCode();
 }
 
-//Print the teachers free periods. Code by Volker Dirr (http://timetabling.de/)
+//Print the teachers free periods. Code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeTeachersFreePeriodsTimetableDaysHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -3981,7 +3981,7 @@ ErrorCode TimetableExport::writeTeachersFreePeriodsTimetableDaysHorizontalHtml(c
 	return ErrorCode();
 }
 
-//XHTML generation code by Volker Dirr (http://timetabling.de/)
+//XHTML generation code by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeTeachersFreePeriodsTimetableDaysVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -4029,7 +4029,7 @@ ErrorCode TimetableExport::writeTeachersFreePeriodsTimetableDaysVerticalHtml(con
 	return ErrorCode();
 }
 
-//Code contributed by Volker Dirr (http://timetabling.de/)
+//Code contributed by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeTeachersStatisticsHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());
@@ -4065,7 +4065,7 @@ ErrorCode TimetableExport::writeTeachersStatisticsHtml(const QString& htmlfilena
 	return ErrorCode();
 }
 
-//Code contributed by Volker Dirr (http://timetabling.de/)
+//Code contributed by Volker Dirr (https://timetabling.de/)
 ErrorCode TimetableExport::writeStudentsStatisticsHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(CachedSchedule::isValid());

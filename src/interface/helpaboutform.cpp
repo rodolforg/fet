@@ -79,7 +79,7 @@ HelpAboutForm::HelpAboutForm(QWidget* parent): QDialog(parent)
 	 .arg(2002).arg(2018).arg("Liviu Lalescu, Volker Dirr");
 	about+="<br /><br />";
 	about+=tr("Version: %1 (%2 %3).", "%1 is the current FET version, %2 is the current release month, %3 is the current release year").arg(FET_VERSION)
-	 .arg(QCoreApplication::translate("MonthsNames", "July")).arg(2018);
+	 .arg(QCoreApplication::translate("MonthsNames", "August")).arg(2018);
 	about+="<br /><br />";
 	about+=tr("Licensed under the GNU Affero General Public License version 3 or later.");
 	about+="<br /><br />";
@@ -90,7 +90,7 @@ HelpAboutForm::HelpAboutForm(QWidget* parent): QDialog(parent)
 	QString authors=QString("");
 	authors+=QString("Liviu Lalescu (https://lalescu.ro/liviu/)");
 	authors+="<br /><br />";
-	authors+=QString("Volker Dirr (http://www.timetabling.de/)");
+	authors+=QString("Volker Dirr (https://www.timetabling.de/)");
 	authors+="<br />";
 	authors+=QString("&nbsp;&nbsp;&nbsp;&nbsp;- ")+tr("XHTML timetable export.");
 	authors+="<br />";
@@ -140,7 +140,7 @@ HelpAboutForm::HelpAboutForm(QWidget* parent): QDialog(parent)
 
 	translators+=QString("de - ")+tr("German translation");
 	translators+=QString("<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;");
-	translators+=tr("former translator: %1 (%2)", "%1 is the name of the translator, %2 is his email or web address").arg("Volker Dirr").arg("http://www.timetabling.de/");
+	translators+=tr("former translator: %1 (%2)", "%1 is the name of the translator, %2 is his email or web address").arg("Volker Dirr").arg("https://www.timetabling.de/");
 	translators+=QString("<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;");
 	translators+=tr("current translator: %1 (%2)", "%1 is the name of the translator, %2 is his email or web address").arg("Robert Hairgrove").arg("code AT roberthairgrove.com");
 	translators+=QString("<br /><br /><br />");
@@ -901,6 +901,8 @@ HelpAboutForm::HelpAboutForm(QWidget* parent): QDialog(parent)
 	thanksTo+=QString("pg788");
 	thanksTo+=QString("<br />");
 	thanksTo+=QString("Dietmar Deuster");
+	thanksTo+=QString("<br />");
+	thanksTo+=QString("Ahmed Ben Hassan");
 	thanksTo+=QString("<br />");
 	thanksToTextBrowser->setHtml(thanksTo);
 }

@@ -2,13 +2,13 @@
                                 FET
                           -------------------
    copyright             : (C) by Liviu Lalescu, Volker Dirr
-    email                : Liviu Lalescu: see https://lalescu.ro/liviu/ , Volker Dirr: see http://www.timetabling.de/
+    email                : Liviu Lalescu: see https://lalescu.ro/liviu/ , Volker Dirr: see https://www.timetabling.de/
  ***************************************************************************
                           timetableprintform.h  -  description
                              -------------------
     begin                : March 2010
     copyright            : (C) by Volker Dirr
-                         : http://www.timetabling.de/
+                         : https://www.timetabling.de/
  ***************************************************************************
  *                                                                         *
  *   This program is free software: you can redistribute it and/or modify  *

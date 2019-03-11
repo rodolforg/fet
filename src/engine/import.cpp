@@ -12,7 +12,7 @@ File import.cpp
                              -------------------
     begin                : Mar 2008
     copyright            : (C) by Volker Dirr
-                         : http://www.timetabling.de/
+                         : https://www.timetabling.de/
  ***************************************************************************
  *                                                                         *
  *   This program is free software: you can redistribute it and/or modify  *
@@ -22,7 +22,7 @@ File import.cpp
  *                                                                         *
  ***************************************************************************/
 
-// Code contributed by Volker Dirr ( http://www.timetabling.de/ )
+// Code contributed by Volker Dirr ( https://www.timetabling.de/ )
 
 //TODO: import days per week
 //TODO: import hours per day

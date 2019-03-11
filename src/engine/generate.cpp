@@ -3665,7 +3665,7 @@ impossiblebasictime:
 		
 /////////////////////////////////////////////////////////////////////////////////////////////
 
-		//care about min days
+		//care about min days between activities
 		okmindays=true;
 		
 		for(int i=0; i<minDaysBetweenActivitiesList.activities[ai].count(); i++){

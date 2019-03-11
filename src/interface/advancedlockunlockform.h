@@ -7,7 +7,7 @@
                           advancedlockunlockform.h  -  description
                              -------------------
     begin                : Dec 2008
-    copyright            : (C) by Liviu Lalescu (https://lalescu.ro/liviu/) and Volker Dirr (http://www.timetabling.de/)
+    copyright            : (C) by Liviu Lalescu (https://lalescu.ro/liviu/) and Volker Dirr (https://www.timetabling.de/)
  ***************************************************************************
  *                                                                         *
  *   This program is free software: you can redistribute it and/or modify  *

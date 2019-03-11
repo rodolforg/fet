@@ -12,7 +12,7 @@ File export.cpp
                              -------------------
     begin                : Mar 2008
     copyright            : (C) by Volker Dirr
-                         : http://www.timetabling.de/
+                         : https://www.timetabling.de/
  ***************************************************************************
  *                                                                         *
  *   This program is free software: you can redistribute it and/or modify  *
@@ -22,7 +22,7 @@ File export.cpp
  *                                                                         *
  ***************************************************************************/
 
-// Code contributed by Volker Dirr ( http://www.timetabling.de/ )
+// Code contributed by Volker Dirr ( https://www.timetabling.de/ )
 
 //TODO: protect export strings. textquote must be doubled
 //TODO: count skipped min days constraints?
