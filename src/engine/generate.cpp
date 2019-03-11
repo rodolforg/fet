@@ -5287,6 +5287,8 @@ impossiblestudentsintervalmaxdaysperweek:
 /////////////////////////////////////////////////////////////////////////////////////////////
 
 		////////////////////////////BEGIN students max span per day
+		
+		//rodolforg's code was a source of inspiration for the following constraint.
 
 		okstudentsmaxspanperday=true;
 		for(int sbg : qAsConst(act->iSubgroupsList))
@@ -5508,6 +5510,9 @@ impossiblestudentsmaxspanperday:
 /////////////////////////////////////////////////////////////////////////////////////////////
 
 		////////////////////////////BEGIN students min resting hours
+
+		//rodolforg's code was a source of inspiration for the following constraint.
+
 		okstudentsminrestinghours=true;
 
 		for(int sbg : qAsConst(act->iSubgroupsList)){
@@ -7891,6 +7896,8 @@ impossibleteachersintervalmaxdaysperweek:
 
 		////////////////////////////BEGIN teachers max span per day
 
+		//rodolforg's code was a source of inspiration for the following constraint.
+
 		okteachersmaxspanperday=true;
 		for(int tch : qAsConst(act->iTeachersList))
 			if(teachersMaxSpanPerDayPercentages[tch]>=0){
@@ -7984,6 +7991,9 @@ impossibleteachersmaxspanperday:
 /////////////////////////////////////////////////////////////////////////////////////////////
 
 		////////////////////////////BEGIN teachers min resting hours
+
+		//rodolforg's code was a source of inspiration for the following constraint.
+
 		okteachersminrestinghours=true;
 
 		for(int tch : qAsConst(act->iTeachersList)){

@@ -249,6 +249,8 @@ using namespace std;
 #include <QUrl>
 #include <QApplication>
 
+#include <QSysInfo>
+
 #if QT_VERSION >= 0x050000
 #include <QGuiApplication>
 #include <QScreen>
@@ -607,7 +609,18 @@ FetMainForm::FetMainForm()
 				cout<<"New version checking host: "<<qPrintable(url.host())<<endl;
 				cout<<"New version checking path: "<<qPrintable(url.path())<<endl;
 			}
-			networkManager->get(QNetworkRequest(url));
+			QNetworkRequest req=QNetworkRequest(url);
+			//As on https://stackoverflow.com/questions/14416786/webpage-returning-http-406-error-only-when-connecting-from-qt
+			//and http://amin-ahmadi.com/2016/06/13/fix-modsecurity-issues-in-qt-network-module-download-functionality/ ,
+			//to avoid code 406 from the server.
+#if QT_VERSION >= 0x050400
+			req.setHeader(QNetworkRequest::UserAgentHeader, QString("FET")+QString(" ")+FET_VERSION+QString(" (")+QSysInfo::prettyProductName()+QString(")"));
+#elif QT_VERSION >= 0x050000
+			req.setHeader(QNetworkRequest::UserAgentHeader, QString("FET")+QString(" ")+FET_VERSION);
+#else
+			req.setRawHeader("User-Agent", (QString("FET")+QString(" ")+FET_VERSION).toUtf8());
+#endif
+			networkManager->get(req);
 		}
 	}
 	
@@ -833,6 +846,8 @@ void FetMainForm::checkForUpdatesToggled(bool checked)
 		s+=tr("Please note that, by enabling this option, each time you start FET it will get the file %1 from the FET homepage, so the "
 			"request for this file will be visible on the server, along with your IP address and access time.")
 			.arg("https://lalescu.ro/liviu/fet/crtversion/crtversion.txt");
+		s+=" ";
+		s+=tr("Also, there will be visible on the server your current FET version and your operating system name and version.");
 		s+=" ";
 		s+=tr("Thus, it could be deduced if and when you use FET.");
 		s+="\n\n";

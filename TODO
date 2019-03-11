@@ -1314,6 +1314,13 @@ rodolforg: I don't think it needs to change the constraint names. Just add the '
 
 Suggested also by pg788, on the forum, on 2018-07-02
 
+Suggested also by satellite2, on the forum, on 19 December 2018 (https://lalescu.ro/liviu/fet/forum/index.php?topic=3996.0):
+	There are very useful time constraints for me concerning teachers (or students) such as "max days per week for a teacher (or for all teachers)".
+I want to use this constraint for the majority of teachers but not all of them. We have some teachers that have to teach 5 days a week because their
+course load is impossible for less days. I wonder whether there is a way to adapt this constraint like "max days per week for the selected teachers"
+or "max days per week except these teachers" instead of entering all of the teachers one by one. Is this difficult to implement? (Because there are
+lots of teachers in the university).
+
 See also TODO item #84.
 
 83---------------------------------------------------------
@@ -1369,7 +1376,7 @@ If we have tags for teachers (and rooms) it will even more easier
 
 This concept is already used in FET in two places:
 - Set all available, set all not available
-- subject has a set of prefered rooms 
+- subject has a set of prefered rooms
 
 See also TODO item #82.
 
@@ -2138,7 +2145,7 @@ is unchecked).
 if you use click, then something is called only once.
 
 130---------------------------------------------------------
-From Daniel (on forum, see https://lalescu.ro/liviu/fet/forum/index.php?topic=1224):
+From Daniel (on forum, see https://lalescu.ro/liviu/fet/forum/index.php?topic=1224.0):
 
 Allow activities to span over breaks. (For the moment, a solution is to split activities
 and add constraints two (or three) activities grouped. Another solution is to not
@@ -3081,7 +3088,7 @@ Vanyo Georgiev: May be there must be a setting: 'Remember current page' and each
 (Vanyo Georgiev provided the necessary code changes to do this.)
 
 205---------------------------------------------------------
-From bharatstank (on forum): ( https://lalescu.ro/liviu/fet/forum/index.php?topic=1826 )
+From bharatstank (on forum): ( https://lalescu.ro/liviu/fet/forum/index.php?topic=1826.0 )
 
 bharatstank:
 
@@ -6525,3 +6532,19 @@ From Jude G:
   *   Importing comments to activities / students / teachers.
   *   Option for having full names and codes.
 (so teachers, students, ..., will have two names: a long name and a short name).
+
+374---------------------------------------------------------
+From bharatstank (on forum): (https://lalescu.ro/liviu/fet/forum/index.php?topic=3989.0)
+
+Room not available constraint - wherein (X) crossing the specific slot means No activity is placed in that (X) slot.
+
+Please suggest - if there is any option, wherein I can Define multiple type of Room not available constraints, so that Instead of (X) slot - we have better meaningful Message to display.
+
+There are few Activities, which are not time tabled and are communicated back to the concern department by simply (X) the Class rooms slot.
+
+375---------------------------------------------------------
+From satellite2 (on forum): (https://lalescu.ro/liviu/fet/forum/index.php?topic=3996.0)
+
+The other constraint is "max hours per day for a teacher (or all teachers)". Is there a way to add another constraint like "max activities per day for a
+teacher (or all teachers)" ? The hours of the activities change from 1 to 4 but teachers see them as an activity and let's say some of them don't want more
+than two activities a day etc.
