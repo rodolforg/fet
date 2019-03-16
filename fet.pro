@@ -1,5 +1,6 @@
 TEMPLATE = subdirs
-SUBDIRS = src/src.pro \
+SUBDIRS = src/libfet.pro \
+          src/src.pro \
           src/src-cl.pro \
           tests
 
