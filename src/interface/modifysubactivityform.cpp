@@ -38,6 +38,33 @@
 #include <QObject>
 #include <QMetaObject>
 
+void ModifySubactivityForm::setupAddRemoveKeyFilters()
+{
+	addRemoveTeacherKeyFilter = new AddRemoveByKeyPress(this);
+	addRemoveTeacherKeyFilter->setAddDstCallback("addTeacher");
+	allTeachersListWidget->installEventFilter(addRemoveTeacherKeyFilter);
+
+	addRemoveSelectedTeacherKeyFilter = new AddRemoveByKeyPress(this);
+	addRemoveSelectedTeacherKeyFilter->setRemoveDstCallback("removeTeacher");
+	selectedTeachersListWidget->installEventFilter(addRemoveSelectedTeacherKeyFilter);
+
+	addRemoveStudentKeyFilter = new AddRemoveByKeyPress(this);
+	addRemoveStudentKeyFilter->setAddDstCallback("addStudents");
+	allStudentsListWidget->installEventFilter(addRemoveStudentKeyFilter);
+
+	addRemoveSelectedStudentKeyFilter = new AddRemoveByKeyPress(this);
+	addRemoveSelectedStudentKeyFilter->setRemoveDstCallback("removeStudents");
+	selectedStudentsListWidget->installEventFilter(addRemoveSelectedStudentKeyFilter);
+
+	addRemoveActivityTagKeyFilter = new AddRemoveByKeyPress(this);
+	addRemoveActivityTagKeyFilter->setAddDstCallback("addActivityTag");
+	allActivityTagsListWidget->installEventFilter(addRemoveActivityTagKeyFilter);
+
+	addRemoveSelectedActivityTagKeyFilter = new AddRemoveByKeyPress(this);
+	addRemoveSelectedActivityTagKeyFilter->setRemoveDstCallback("removeActivityTag");
+	selectedActivityTagsListWidget->installEventFilter(addRemoveSelectedActivityTagKeyFilter);
+}
+
 ModifySubactivityForm::ModifySubactivityForm(QWidget* parent, int id, int activityGroupId): QDialog(parent)
 {
 	setupUi(this);
@@ -80,6 +107,8 @@ ModifySubactivityForm::ModifySubactivityForm(QWidget* parent, int id, int activi
 	connect(showGroupsCheckBox, SIGNAL(toggled(bool)), this, SLOT(showGroupsChanged()));
 	connect(showSubgroupsCheckBox, SIGNAL(toggled(bool)), this, SLOT(showSubgroupsChanged()));
 	connect(helpPushButton, SIGNAL(clicked()), this, SLOT(help()));
+
+	setupAddRemoveKeyFilters();
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);

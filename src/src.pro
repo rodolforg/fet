@@ -471,7 +471,8 @@ SOURCES += \
 	interface/invisiblesubgrouphelper.cpp \
 	interface/studentscomboboxhelper.cpp \
 	\
-	interface/studentscomboboxesstyleform.cpp
+	interface/studentscomboboxesstyleform.cpp \
+	interface/addremovebykeypress.cpp \
 
 HEADERS += \
 	engine/import.h \
@@ -948,7 +949,8 @@ HEADERS += \
 	interface/invisiblesubgrouphelper.h \
 	interface/studentscomboboxhelper.h \
 	\
-	interface/studentscomboboxesstyleform.h
+	interface/studentscomboboxesstyleform.h \
+	interface/addremovebykeypress.h \
 
 FORMS += \
 	interface/fetmainform_template.ui \

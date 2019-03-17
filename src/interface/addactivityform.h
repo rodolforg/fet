@@ -24,6 +24,8 @@
 //#include <QHash>
 #include <QList>
 
+#include "addremovebykeypress.h"
+
 class AddActivityForm : public QDialog, Ui::AddActivityForm_template  {
 	Q_OBJECT
 	
@@ -38,6 +40,15 @@ private:
 	QSet<QString> subjectNamesSet;
 	QSet<QString> activityTagNamesSet;
 	//QHash<QString, int> numberOfStudentsHash;
+
+	AddRemoveByKeyPress * addRemoveTeacherKeyFilter;
+	AddRemoveByKeyPress * addRemoveSelectedTeacherKeyFilter;
+	AddRemoveByKeyPress * addRemoveStudentKeyFilter;
+	AddRemoveByKeyPress * addRemoveSelectedStudentKeyFilter;
+	AddRemoveByKeyPress * addRemoveActivityTagKeyFilter;
+	AddRemoveByKeyPress * addRemoveSelectedActivityTagKeyFilter;
+
+	void setupAddRemoveKeyFilters();
 
 public:
 	QList<QString> canonicalStudentsSetsNames;

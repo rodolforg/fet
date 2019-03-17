@@ -65,6 +65,33 @@ QCheckBox* AddActivityForm::activ(int i)
 	return activList.at(i);
 }
 
+void AddActivityForm::setupAddRemoveKeyFilters()
+{
+	addRemoveTeacherKeyFilter = new AddRemoveByKeyPress(this);
+	addRemoveTeacherKeyFilter->setAddDstCallback("addTeacher");
+	allTeachersListWidget->installEventFilter(addRemoveTeacherKeyFilter);
+
+	addRemoveSelectedTeacherKeyFilter = new AddRemoveByKeyPress(this);
+	addRemoveSelectedTeacherKeyFilter->setRemoveDstCallback("removeTeacher");
+	selectedTeachersListWidget->installEventFilter(addRemoveSelectedTeacherKeyFilter);
+
+	addRemoveStudentKeyFilter = new AddRemoveByKeyPress(this);
+	addRemoveStudentKeyFilter->setAddDstCallback("addStudents");
+	allStudentsListWidget->installEventFilter(addRemoveStudentKeyFilter);
+
+	addRemoveSelectedStudentKeyFilter = new AddRemoveByKeyPress(this);
+	addRemoveSelectedStudentKeyFilter->setRemoveDstCallback("removeStudents");
+	selectedStudentsListWidget->installEventFilter(addRemoveSelectedStudentKeyFilter);
+
+	addRemoveActivityTagKeyFilter = new AddRemoveByKeyPress(this);
+	addRemoveActivityTagKeyFilter->setAddDstCallback("addActivityTag");
+	allActivityTagsListWidget->installEventFilter(addRemoveActivityTagKeyFilter);
+
+	addRemoveSelectedActivityTagKeyFilter = new AddRemoveByKeyPress(this);
+	addRemoveSelectedActivityTagKeyFilter->setRemoveDstCallback("removeActivityTag");
+	selectedActivityTagsListWidget->installEventFilter(addRemoveSelectedActivityTagKeyFilter);
+}
+
 AddActivityForm::AddActivityForm(QWidget* parent, const QString& teacherName, const QString& studentsSetName, const QString& subjectName, const QString& activityTagName): QDialog(parent)
 {
 	setupUi(this);
@@ -189,6 +216,7 @@ AddActivityForm::AddActivityForm(QWidget* parent, const QString& teacherName, co
 	connect(selectedStudentsListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(removeStudents()));
 	connect(allActivityTagsListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(addActivityTag()));
 	connect(selectedActivityTagsListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(removeActivityTag()));
+	setupAddRemoveKeyFilters();
 
 	connect(clearActivityTagPushButton, SIGNAL(clicked()), this, SLOT(clearActivityTags()));
 	connect(clearStudentsPushButton, SIGNAL(clicked()), this, SLOT(clearStudents()));
@@ -279,6 +307,10 @@ AddActivityForm::AddActivityForm(QWidget* parent, const QString& teacherName, co
 
 AddActivityForm::~AddActivityForm()
 {
+	delete addRemoveTeacherKeyFilter;
+	delete addRemoveStudentKeyFilter;
+	delete addRemoveActivityTagKeyFilter;
+
 	saveFETDialogGeometry(this);
 	
 	QSettings settings;
