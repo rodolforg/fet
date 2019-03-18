@@ -114,7 +114,7 @@ void EditableTimetableWidget::contextMenuEvent(QContextMenuEvent* event)
 	QList<int> placed_activity_ids_but_clicked_list = placed_activity_ids_but_clicked.toList();
 	std::sort(placed_activity_ids_but_clicked_list.begin(), placed_activity_ids_but_clicked_list.end());
 
-	QMenu* placeMenu = contextMenu.addMenu(tr("Place Activity..."));
+	QMenu* placeMenu = contextMenu.addMenu(tr("Place Activity...") + (src_act_is_locked ? (" " + tr("(locked)")) : ""));
 	QList<int> all_placeable = temp_removed_activities_list + placed_activity_ids_but_clicked_list;
 	bool changed_to_not_removed = false;
 	for (int ai : qAsConst(all_placeable)) {
@@ -137,6 +137,11 @@ void EditableTimetableWidget::contextMenuEvent(QContextMenuEvent* event)
 		if (tctr.fitness(tmpSolution, *rules, true, &conflictInfo) > 0) {
 			action->setEnabled(false);
 			action->setText(action->text() + " (" + conflictInfo.descriptions.join("; ")+ ")");
+		} else if (isActivityLocked(ai)) {
+			action->setEnabled(false);
+			action->setText(action->text() + " " + tr("(locked)"));
+		} else if (src_act_is_locked) {
+			action->setEnabled(false);
 		}
 	}
 	int num_all_activity_ids_but_clicked = temp_removed_activities.count() + placed_activity_ids_but_clicked.count();
@@ -153,7 +158,7 @@ void EditableTimetableWidget::contextMenuEvent(QContextMenuEvent* event)
 		actionRemove.setText(actionRemove.text() + " " + tr("(locked)"));
 	}
 
-	QMenu* swapMenu = contextMenu.addMenu(tr("Swap Activity..."));
+	QMenu* swapMenu = contextMenu.addMenu(tr("Swap Activity...") + (src_act_is_locked ? (" " + tr("(locked)")) : ""));
 	if (src_ai != UNALLOCATED_ACTIVITY) {
 		QList<int> possibleSwaps = getPossibleSwaps(placed_activity_ids_but_clicked.toList(), src_ai);
 		std::sort(possibleSwaps.begin(), possibleSwaps.end());
@@ -164,6 +169,12 @@ void EditableTimetableWidget::contextMenuEvent(QContextMenuEvent* event)
 			QAction* action = new QAction(rules->internalActivitiesList[ai].getDescription(), this);
 			swapMenu->addAction(action);
 			connect(action, &QAction::triggered, [this,item, ai](){ swapActivity(item, ai); });
+			if (isActivityLocked(ai)) {
+				action->setEnabled(false);
+				action->setText(action->text() + " " + tr("(locked)"));
+			} else if (src_act_is_locked) {
+				action->setEnabled(false);
+			}
 		}
 		if (possibleSwaps.count() < 1)
 			swapMenu->setEnabled(false);
@@ -399,6 +410,8 @@ void EditableTimetableWidget::colorizePossibleActions(QTableWidgetItem* item)
 bool EditableTimetableWidget::isActivityLocked(int ai) const
 {
 	bool is_locked = false;
+	if (ai == UNALLOCATED_ACTIVITY)
+		return false;
 	const int id = rules->internalActivitiesList[ai].id;
 	if (rules->apstHash.contains(id)) {
 		QSet<ConstraintActivityPreferredStartingTime*> cs = rules->apstHash.value(id);
