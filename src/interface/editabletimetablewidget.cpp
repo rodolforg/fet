@@ -88,11 +88,11 @@ void EditableTimetableWidget::contextMenuEvent(QContextMenuEvent* event)
 		return;
 
 	const int src_ai = item->data(Qt::UserRole).toInt();
-	const Activity& src_act = rules->internalActivitiesList[src_ai];
 
-	const int day = getDay(item->row(), item->column());
 	const int h0 = getHour(item->row(), item->column());
 	const int time = getTime(item->row(), item->column());
+
+	bool src_act_is_locked = isActivityLocked(src_ai);
 
 	QMenu contextMenu(tr("Context menu"), this);
 
@@ -136,16 +136,9 @@ void EditableTimetableWidget::contextMenuEvent(QContextMenuEvent* event)
 	contextMenu.addAction(&actionRemove);
 	if (src_ai == UNALLOCATED_ACTIVITY)
 		actionRemove.setEnabled(false);
-	else if (rules->apstHash.contains(src_act.id)) {
-		QSet<ConstraintActivityPreferredStartingTime*> cs = rules->apstHash.value(src_act.id);
-		for (ConstraintActivityPreferredStartingTime* ctr : qAsConst(cs)) {
-			if (ctr->active && ctr->weightPercentage >= 100) {
-				assert(ctr->day == day);
-				assert(ctr->hour == h0);
-				actionRemove.setEnabled(false);
-				actionRemove.setText(actionRemove.text() + " " + tr("(locked)"));
-			}
-		}
+	else if (src_act_is_locked) {
+		actionRemove.setEnabled(false);
+		actionRemove.setText(actionRemove.text() + " " + tr("(locked)"));
 	}
 
 	QMenu* swapMenu = contextMenu.addMenu(tr("Swap Activity..."));
@@ -383,6 +376,22 @@ void EditableTimetableWidget::colorizePossibleActions(QTableWidgetItem* item)
 			tmp_item->setForeground(QBrush(Qt::black));
 		}
 	}
+}
+
+bool EditableTimetableWidget::isActivityLocked(int ai) const
+{
+	bool is_locked = false;
+	const int id = rules->internalActivitiesList[ai].id;
+	if (rules->apstHash.contains(id)) {
+		QSet<ConstraintActivityPreferredStartingTime*> cs = rules->apstHash.value(id);
+		for (ConstraintActivityPreferredStartingTime* ctr : qAsConst(cs)) {
+			if (ctr->active && ctr->weightPercentage >= 100) {
+				is_locked = true;
+				break;
+			}
+		}
+	}
+	return is_locked;
 }
 
 void EditableTimetableWidget::placeActivity(const QTableWidgetItem* item, int ai)

@@ -71,6 +71,8 @@ private:
 
 	void colorizePossibleActions(QTableWidgetItem *item);
 
+	bool isActivityLocked(int ai) const;
+
 protected slots:
 	void placeActivity(const QTableWidgetItem* item, int ai);
 	void removeActivity(const QTableWidgetItem* item);
