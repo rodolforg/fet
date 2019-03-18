@@ -36,11 +36,16 @@ EditableTimetableWidget::EditableTimetableWidget(QWidget *parent)
 EditableTimetableWidget::EditableTimetableWidget(int rows, int cols, QWidget* parent)
 	: QTableWidget(rows, cols, parent), rules(NULL), solution(NULL), timetableDirection(DAYS_HORIZONTAL)
 {
+	setContextMenuPolicy(Qt::DefaultContextMenu);
+	connect(this, &QTableWidget::currentItemChanged, [this](QTableWidgetItem* item, QTableWidgetItem*) {
+		this->colorizePossibleActions(item);
+	});
 }
 
 EditableTimetableWidget::~EditableTimetableWidget()
 {
 	delete solution;
+	solution = NULL;
 }
 
 void EditableTimetableWidget::setSolution(const Rules* rules, const Solution& solution)
@@ -73,6 +78,8 @@ TimetableDirection EditableTimetableWidget::getTimetableDirection() const
 void EditableTimetableWidget::setTimetableDirection(const TimetableDirection& value)
 {
 	timetableDirection = value;
+
+	tempRemovedActivities.clear();
 }
 
 void EditableTimetableWidget::contextMenuEvent(QContextMenuEvent* event)
@@ -101,14 +108,19 @@ void EditableTimetableWidget::contextMenuEvent(QContextMenuEvent* event)
 		if (src_ai != UNALLOCATED_ACTIVITY)
 			placed_activity_ids_but_clicked.remove(src_ai);
 	}
+	QSet<int> temp_removed_activities = getRemovedActivities();
+	QList<int> temp_removed_activities_list = temp_removed_activities.toList();
+	std::sort(temp_removed_activities_list.begin(), temp_removed_activities_list.end());
+	QList<int> placed_activity_ids_but_clicked_list = placed_activity_ids_but_clicked.toList();
+	std::sort(placed_activity_ids_but_clicked_list.begin(), placed_activity_ids_but_clicked_list.end());
 
 	QMenu* placeMenu = contextMenu.addMenu(tr("Place Activity..."));
-	QList<int> all_placeable = tempRemovedActivities.toList() + placed_activity_ids_but_clicked.toList();
+	QList<int> all_placeable = temp_removed_activities_list + placed_activity_ids_but_clicked_list;
 	bool changed_to_not_removed = false;
 	for (int ai : qAsConst(all_placeable)) {
 		if (h0 + rules->internalActivitiesList[ai].duration > rules->nHoursPerDay)
 			continue;
-		if (!changed_to_not_removed && !tempRemovedActivities.contains(ai)) {
+		if (!changed_to_not_removed && !temp_removed_activities.contains(ai)) {
 			placeMenu->addSeparator();
 			changed_to_not_removed = true;
 		}
@@ -127,7 +139,7 @@ void EditableTimetableWidget::contextMenuEvent(QContextMenuEvent* event)
 			action->setText(action->text() + " (" + conflictInfo.descriptions.join("; ")+ ")");
 		}
 	}
-	int num_all_activity_ids_but_clicked = tempRemovedActivities.count() + placed_activity_ids_but_clicked.count();
+	int num_all_activity_ids_but_clicked = temp_removed_activities.count() + placed_activity_ids_but_clicked.count();
 	if (num_all_activity_ids_but_clicked < 1)
 		placeMenu->setEnabled(false);
 
@@ -143,7 +155,8 @@ void EditableTimetableWidget::contextMenuEvent(QContextMenuEvent* event)
 
 	QMenu* swapMenu = contextMenu.addMenu(tr("Swap Activity..."));
 	if (src_ai != UNALLOCATED_ACTIVITY) {
-		const QList<int> possibleSwaps = getPossibleSwaps(placed_activity_ids_but_clicked.toList(), src_ai);
+		QList<int> possibleSwaps = getPossibleSwaps(placed_activity_ids_but_clicked.toList(), src_ai);
+		std::sort(possibleSwaps.begin(), possibleSwaps.end());
 		for (int ai : possibleSwaps) {
 			if (h0 + rules->internalActivitiesList[ai].duration > rules->nHoursPerDay)
 				continue;
@@ -275,6 +288,11 @@ QSet<int> EditableTimetableWidget::getPlacedActivities(const QTableWidgetItem* i
 		}
 	}
 	return activity_ids;
+}
+
+QSet<int> EditableTimetableWidget::getRemovedActivities() const
+{
+	return tempRemovedActivities;
 }
 
 QList<int> EditableTimetableWidget::getPossibleSwaps(const QList<int> &activity_ids, int src_ai) const
