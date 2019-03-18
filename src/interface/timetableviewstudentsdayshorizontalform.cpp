@@ -161,6 +161,14 @@ TimetableViewStudentsDaysHorizontalForm::TimetableViewStudentsDaysHorizontalForm
 	//}
 	///////////////
 	
+	studentsTimetableTable->setSolution(&gt.rules, CachedSchedule::getCachedSolution());
+	connect(studentsTimetableTable, SIGNAL(solution_changed()), &LockUnlock::communicationSpinBox, SLOT(increaseValue()));
+	connect(&LockUnlock::communicationSpinBox, &CommunicationSpinBox::valueChanged, this, &TimetableViewStudentsDaysHorizontalForm::updateSolution);
+	connect(studentsTimetableTable, SIGNAL(activityRemoved(int)), this, SLOT(newActivityNotPlaced(int)));
+
+	//added by Volker Dirr
+	connect(&LockUnlock::communicationSpinBox, SIGNAL(valueChanged()), this, SLOT(updateStudentsTimetableTable()));
+
 	yearsListWidget->clear();
 	for(int i=0; i<gt.rules.augmentedYearsList.size(); i++){
 		StudentsYear* sty=gt.rules.augmentedYearsList[i];
@@ -182,16 +190,7 @@ TimetableViewStudentsDaysHorizontalForm::TimetableViewStudentsDaysHorizontalForm
 		shownComboBox->setCurrentIndex(0);
 
 	connect(shownComboBox, SIGNAL(activated(QString)), this, SLOT(shownComboBoxChanged(QString)));
-
-	//added by Volker Dirr
-	connect(&LockUnlock::communicationSpinBox, SIGNAL(valueChanged()), this, SLOT(updateStudentsTimetableTable()));
-
 	shownComboBoxChanged(shownComboBox->currentText());
-	studentsTimetableTable->setSolution(&gt.rules, CachedSchedule::getCachedSolution());
-	connect(studentsTimetableTable, SIGNAL(solution_changed()), &LockUnlock::communicationSpinBox, SLOT(increaseValue()));
-	connect(&LockUnlock::communicationSpinBox, &CommunicationSpinBox::valueChanged, this, &TimetableViewStudentsDaysHorizontalForm::updateSolution);
-
-	connect(studentsTimetableTable, SIGNAL(activityRemoved(int)), this, SLOT(newActivityNotPlaced(int)));
 }
 
 TimetableViewStudentsDaysHorizontalForm::~TimetableViewStudentsDaysHorizontalForm()
