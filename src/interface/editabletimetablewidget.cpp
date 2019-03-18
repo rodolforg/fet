@@ -60,6 +60,21 @@ void EditableTimetableWidget::setSolution(const Rules* rules, const Solution& so
 	this->tempRemovedActivities.clear();
 }
 
+void EditableTimetableWidget::addNotPlacedActivity(int ai, int row)
+{
+	if (ai == UNALLOCATED_ACTIVITY)
+		return;
+	if (solution->time(ai) != UNALLOCATED_TIME)
+		return;
+
+	tempRemovedActivities.insert(ai);
+}
+
+void EditableTimetableWidget::clearNotPlacedActivities()
+{
+	tempRemovedActivities.clear();
+}
+
 const Rules* EditableTimetableWidget::getRules() const
 {
 	return rules;

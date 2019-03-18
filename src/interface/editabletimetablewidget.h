@@ -33,6 +33,9 @@ public:
 
 	void setSolution(const Rules* rules, const Solution& solution);
 
+	void addNotPlacedActivity(int ai, int row);
+	void clearNotPlacedActivities();
+
 	const Rules* getRules() const;
 	const Solution& getSolution() const;
 

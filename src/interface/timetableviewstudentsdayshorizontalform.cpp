@@ -590,13 +590,15 @@ void TimetableViewStudentsDaysHorizontalForm::updateNotPlacedActivities()
 	}
 
 	notPlacedActivitiesListWidget->clear();
+	studentsTimetableTable->clearNotPlacedActivities();
 	for(int ai : CachedSchedule::getCachedSolution().getUnallocatedActivities(gt.rules)) {
 		const Activity& activity = gt.rules.internalActivitiesList[ai];
 		if ((year && activity.studentsNames.contains(year->name))
 			|| (group && activity.studentsNames.contains(group->name))
-			|| (subgroup && activity.studentsNames.contains(subgroup->name)))
+			|| (subgroup && activity.studentsNames.contains(subgroup->name))) {
 			notPlacedActivitiesListWidget->addItem(activity.getDescription());
-//		studentsTimetableTable->tempRemovedActivities.insert(ai);
+			studentsTimetableTable->addNotPlacedActivity(ai, 0);
+		}
 	}
 }
 
