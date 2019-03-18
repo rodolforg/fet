@@ -886,6 +886,7 @@
       <string>Export</string>
      </property>
      <addaction name="fileExportCSVAction"/>
+     <addaction name="fileExportFOdsAction"/>
     </widget>
     <widget class="QMenu" name="menuImport">
      <property name="title">
@@ -2608,6 +2609,11 @@
   <action name="timetableUnlockActivitiesWithASpecifiedActivityTagAction">
    <property name="text">
     <string comment="It means unlock all the activities which have attached a specified activity tag">Unlock all activities with a specified activity tag</string>
+   </property>
+  </action>
+  <action name="fileExportFOdsAction">
+   <property name="text">
+    <string>Flat OpenDocument Spreadsheet (fods)</string>
    </property>
   </action>
  </widget>

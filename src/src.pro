@@ -473,6 +473,10 @@ SOURCES += \
 	\
 	interface/studentscomboboxesstyleform.cpp \
 	interface/addremovebykeypress.cpp \
+	\
+	engine/timetableexporthelper.cpp \
+	interface/fodsexportform.cpp \
+
 
 HEADERS += \
 	engine/import.h \
@@ -951,6 +955,9 @@ HEADERS += \
 	\
 	interface/studentscomboboxesstyleform.h \
 	interface/addremovebykeypress.h \
+	\
+	engine/timetableexporthelper.h \
+	interface/fodsexportform.h \
 
 FORMS += \
 	interface/fetmainform_template.ui \
@@ -1292,7 +1299,9 @@ FORMS += \
 	interface/addconstraintstudentsmincontinuousgapinintervalform_template.ui \
 	interface/editcommentsform_template.ui \
 	\
-	interface/studentscomboboxesstyleform_template.ui
+	interface/studentscomboboxesstyleform_template.ui \
+	\
+	interface/fodsexportform_template.ui \
 
 TRANSLATIONS += \
 	../translations/fet_ar.ts \
