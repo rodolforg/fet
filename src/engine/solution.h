@@ -31,10 +31,19 @@ File solution.h
 
 class Rules;
 
+class TimeConstraint;
+class SpaceConstraint;
+
+struct GeneralConstraint {
+	enum {TIME, SPACE} type;
+	union {TimeConstraint* time; SpaceConstraint* space;} constraint;
+};
+
 /**
 This class represents a solution (time and space allocation for the activities).
 */
 class Solution{
+	friend class Generate;
 public:
 	Solution();
 
@@ -42,8 +51,12 @@ public:
 	QList<QString> conflictsDescriptionList;
 	double conflictsTotal;
 
+	QStringList severeConflictList;
+	QList<GeneralConstraint> conflictsConstraintList;
+
 	int nPlacedActivities;
 
+private:
 	/**
 	This array represents every activity's start time
 	(time is a unified representation of hour and day,
@@ -55,6 +68,7 @@ public:
 	
 	int rooms[MAX_ACTIVITIES];
 
+public:
 	/**
 	Assignment method. We need to have access to the Rules instantiation
 	to know the number of activities.
@@ -97,6 +111,22 @@ public:
 	int getTeachersMatrix(const Rules &r, const Matrix3D<int>** p_a) const;
 
 	int getRoomsMatrix(const Rules &r, const Matrix3D<int>** p_a) const;
+
+	int time(int ai) const;
+	int hour(int ai, const Rules &rules) const;
+	int day(int ai, const Rules &rules) const;
+	int room(int ai) const;
+
+	void setTime(int ai, int time);
+	void unsetTime(int ai);
+	void setRoom(int ai, int room);
+	void unspecifyRoom(int ai);
+	void unallocateRoom(int ai);
+
+	QList<int> getUnallocatedActivities(const Rules& rules) const;
+	QList<int> getHomelessActivities(const Rules& rules) const;
+
+	bool operator ==(const Solution& s2) const;
 
 private:
 	/**

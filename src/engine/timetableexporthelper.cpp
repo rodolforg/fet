@@ -69,7 +69,7 @@ void TimetableExportHelper::getBasicTimetable(Table &table, GetStuffIndexMethod 
 	// Fill table activities
 	table.data.resize(numStuff, rules.nDaysPerWeek, rules.nHoursPerDay);
 	for(int idxAct=0; idxAct < rules.nInternalActivities; idxAct++) {
-		const int time = solution.times[idxAct];
+		const int time = solution.time(idxAct);
 		if(time != UNALLOCATED_TIME) {
 			int hour = time / rules.nDaysPerWeek;
 			int day = time % rules.nDaysPerWeek;
@@ -88,7 +88,7 @@ void TimetableExportHelper::getBasicTimetable(Table &table, GetStuffIndexMethod 
 void TimetableExportHelper::fillTimetableForActivities(Element** timetable, const QList<int>& activities) const
 {
 	for(int idxAct : qAsConst(activities)) {
-		const int time = solution.times[idxAct];
+		const int time = solution.time(idxAct);
 		if(time != UNALLOCATED_TIME) {
 			int hour = time / rules.nDaysPerWeek;
 			int day = time % rules.nDaysPerWeek;
@@ -127,7 +127,7 @@ QList<int> TimetableExportHelper::getRoomIndex(const Activity &act) const
 {
 	QList<int> results;
 	int idxAct = rules.activitiesHash.value(act.id);
-	int idxRoom = solution.rooms[idxAct];
+	int idxRoom = solution.room(idxAct);
 	if (idxRoom != UNALLOCATED_SPACE && idxRoom != UNSPECIFIED_ROOM)
 		results << idxRoom;
 	return results;

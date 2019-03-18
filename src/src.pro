@@ -470,6 +470,8 @@ SOURCES += \
 	interface/fetguisettings.cpp \
 	interface/invisiblesubgrouphelper.cpp \
 	interface/studentscomboboxhelper.cpp \
+	interface/timetabletimehorizontalitemdelegate.cpp \
+	interface/editabletimetablewidget.cpp \
 	\
 	interface/studentscomboboxesstyleform.cpp \
 	interface/addremovebykeypress.cpp \
@@ -952,6 +954,8 @@ HEADERS += \
 	interface/fetguisettings.h \
 	interface/invisiblesubgrouphelper.h \
 	interface/studentscomboboxhelper.h \
+	interface/timetabletimehorizontalitemdelegate.h \
+	interface/editabletimetablewidget.h \
 	\
 	interface/studentscomboboxesstyleform.h \
 	interface/addremovebykeypress.h \

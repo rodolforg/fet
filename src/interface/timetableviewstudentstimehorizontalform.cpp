@@ -85,44 +85,6 @@ extern const int MINIMUM_HEIGHT_SPIN_BOX_VALUE;
 const int MINIMUM_WIDTH_SPIN_BOX_VALUE=9;
 const int MINIMUM_HEIGHT_SPIN_BOX_VALUE=9;
 
-void TimetableViewStudentsTimeHorizontalDelegate::paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const
-{
-	QStyledItemDelegate::paint(painter, option, index);
-
-	//int day=index.column()/gt.rules.nHoursPerDay;
-	//int hour=index.column()%gt.rules.nHoursPerDay;
-	int hour=index.column()%nColumns;
-
-	/*if(day>=0 && day<gt.rules.nDaysPerWeek-1 && hour==gt.rules.nHoursPerDay-1){
-		QPen pen(painter->pen());
-		pen.setWidth(2);
-		painter->setPen(pen);
-		painter->drawLine(option.rect.topRight(), option.rect.bottomRight());
-	}*/
-	
-	/*assert(table!=NULL);
-	QBrush bg(table->item(index.row(), index.column())->background());
-	QPen pen(painter->pen());
-
-	double brightness = bg.color().redF()*0.299 + bg.color().greenF()*0.587 + bg.color().blueF()*0.114;
-	if (brightness<0.5)
-		pen.setColor(Qt::white);
-	else
-		pen.setColor(Qt::black);
-
-	painter->setPen(pen);*/
-	
-	if(hour==0)
-		painter->drawLine(option.rect.topLeft(), option.rect.bottomLeft());
-	if(hour==nColumns-1)
-		painter->drawLine(option.rect.topRight(), option.rect.bottomRight());
-
-	if(index.row()==0)
-		painter->drawLine(option.rect.topLeft(), option.rect.topRight());
-	if(index.row()==nRows-1)
-		painter->drawLine(option.rect.bottomLeft(), option.rect.bottomRight());
-}
-
 
 TimetableViewStudentsTimeHorizontalForm::TimetableViewStudentsTimeHorizontalForm(QWidget* parent): QDialog(parent)
 {
@@ -225,7 +187,7 @@ TimetableViewStudentsTimeHorizontalForm::TimetableViewStudentsTimeHorizontalForm
 	studentsTimetableTable->setColumnCount(gt.rules.nDaysPerWeek*gt.rules.nHoursPerDay);
 	
 	oldItemDelegate=studentsTimetableTable->itemDelegate();
-	newItemDelegate=new TimetableViewStudentsTimeHorizontalDelegate(NULL, studentsTimetableTable->rowCount(), gt.rules.nHoursPerDay);
+	newItemDelegate=new TimetableTimeHorizontalItemDelegate(NULL, studentsTimetableTable->rowCount(), gt.rules.nHoursPerDay);
 	studentsTimetableTable->setItemDelegate(newItemDelegate);
 	
 	bool min2letters=false;
@@ -784,7 +746,7 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 						s+=act->studentsNames.join(", ");
 					}
 					
-					int r=CachedSchedule::getCachedSolution().rooms[ai];
+					int r=CachedSchedule::getCachedSolution().room(ai);
 					if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
 						//s+=" ";
 						//s+=tr("R:%1", "Room").arg(gt.rules.internalRoomsList[r]->name);
@@ -992,7 +954,7 @@ void TimetableViewStudentsTimeHorizontalForm::detailActivity(QTableWidgetItem* i
 			s += act->getDetailedDescription();
 
 			//int r=rooms_timetable_weekly[teacher][k][j];
-			int r=CachedSchedule::getCachedSolution().rooms[ai];
+			int r=CachedSchedule::getCachedSolution().room(ai);
 			if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
 				s+="\n";
 				s+=tr("Room: %1").arg(gt.rules.internalRoomsList[r]->name);
@@ -1082,8 +1044,8 @@ void TimetableViewStudentsTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 	QSet<int> dummyActivities;
 	for(int ai=0; ai<gt.rules.nInternalActivities; ai++){
 		if(gt.rules.internalActivitiesList[ai].iSubgroupsList.count()==0){
-			if(tc->times[ai]!=UNALLOCATED_TIME){
-					if(dummyActivitiesColumn.contains(tc->times[ai]))
+			if(tc->time(ai)!=UNALLOCATED_TIME){
+					if(dummyActivitiesColumn.contains(tc->time(ai)))
 						dummyActivities.insert(ai);
 			}
 		}
@@ -1114,9 +1076,9 @@ void TimetableViewStudentsTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 	allSelectedActivities.unite(dummyActivities);
 
 	for (int ai : qAsConst(allSelectedActivities)) {
-			assert(tc->times[ai]!=UNALLOCATED_TIME);
-			int day=tc->times[ai]%gt.rules.nDaysPerWeek;
-			int hour=tc->times[ai]/gt.rules.nDaysPerWeek;
+			assert(tc->time(ai)!=UNALLOCATED_TIME);
+			int day=tc->day(ai, gt.rules);
+			int hour=tc->hour(ai, gt.rules);
 
 			const Activity* act=&gt.rules.internalActivitiesList[ai];
 			
@@ -1142,7 +1104,7 @@ void TimetableViewStudentsTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 					break;
 			}
 			
-			int ri=tc->rooms[ai];
+			int ri=tc->room(ai);
 			if(ri!=UNALLOCATED_SPACE && ri!=UNSPECIFIED_ROOM && lockSpace){
 				bool lock = !LockUnlock::isActivitySpaceLocked(act->id) && (lockRadioButton->isChecked() || toggleRadioButton->isChecked());
 

@@ -78,45 +78,6 @@ extern Matrix2D<bool> breakDayHour;
 extern const int MINIMUM_WIDTH_SPIN_BOX_VALUE;
 extern const int MINIMUM_HEIGHT_SPIN_BOX_VALUE;
 
-void TimetableViewRoomsTimeHorizontalDelegate::paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const
-{
-	QStyledItemDelegate::paint(painter, option, index);
-
-	//int day=index.column()/gt.rules.nHoursPerDay;
-	//int hour=index.column()%gt.rules.nHoursPerDay;
-	int hour=index.column()%nColumns;
-
-	/*if(day>=0 && day<gt.rules.nDaysPerWeek-1 && hour==gt.rules.nHoursPerDay-1){
-		QPen pen(painter->pen());
-		pen.setWidth(2);
-		painter->setPen(pen);
-		painter->drawLine(option.rect.topRight(), option.rect.bottomRight());
-	}*/
-	
-	/*assert(table!=NULL);
-	QBrush bg(table->item(index.row(), index.column())->background());
-	QPen pen(painter->pen());
-
-	double brightness = bg.color().redF()*0.299 + bg.color().greenF()*0.587 + bg.color().blueF()*0.114;
-	if (brightness<0.5)
-		pen.setColor(Qt::white);
-	else
-		pen.setColor(Qt::black);
-
-	painter->setPen(pen);*/
-	
-	if(hour==0)
-		painter->drawLine(option.rect.topLeft(), option.rect.bottomLeft());
-	if(hour==nColumns-1)
-		painter->drawLine(option.rect.topRight(), option.rect.bottomRight());
-
-	if(index.row()==0)
-		painter->drawLine(option.rect.topLeft(), option.rect.topRight());
-	if(index.row()==nRows-1)
-		painter->drawLine(option.rect.bottomLeft(), option.rect.bottomRight());
-}
-
-
 TimetableViewRoomsTimeHorizontalForm::TimetableViewRoomsTimeHorizontalForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);
@@ -174,7 +135,7 @@ TimetableViewRoomsTimeHorizontalForm::TimetableViewRoomsTimeHorizontalForm(QWidg
 		initialRecommendedHeight=10;
 
 		oldItemDelegate=roomsTimetableTable->itemDelegate();
-		newItemDelegate=new TimetableViewRoomsTimeHorizontalDelegate(NULL, 1, 1);
+		newItemDelegate=new TimetableTimeHorizontalItemDelegate(NULL, 1, 1);
 		roomsTimetableTable->setItemDelegate(newItemDelegate);
 
 		QMessageBox::warning(this, tr("FET warning"), tr("Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it"));
@@ -188,7 +149,7 @@ TimetableViewRoomsTimeHorizontalForm::TimetableViewRoomsTimeHorizontalForm(QWidg
 	roomsTimetableTable->setColumnCount(gt.rules.nDaysPerWeek*gt.rules.nHoursPerDay);
 	
 	oldItemDelegate=roomsTimetableTable->itemDelegate();
-	newItemDelegate=new TimetableViewRoomsTimeHorizontalDelegate(NULL, roomsTimetableTable->rowCount(), gt.rules.nHoursPerDay);
+	newItemDelegate=new TimetableTimeHorizontalItemDelegate(NULL, roomsTimetableTable->rowCount(), gt.rules.nHoursPerDay);
 	roomsTimetableTable->setItemDelegate(newItemDelegate);
 	
 	bool min2letters=false;
@@ -703,8 +664,8 @@ void TimetableViewRoomsTimeHorizontalForm::updateRoomsTimetableTable(){
 						shortString+=act->subjectName;
 					}
 					
-					assert(best_solution.rooms[ai]!=UNALLOCATED_SPACE && best_solution.rooms[ai]!=UNSPECIFIED_ROOM);
-					/*int r=best_solution.rooms[ai];
+					assert(best_solution.room(ai)!=UNALLOCATED_SPACE && best_solution.room(ai)!=UNSPECIFIED_ROOM);
+					/*int r=best_solution.room(ai);
 					if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
 						//s+=" ";
 						//s+=tr("R:%1", "Room").arg(gt.rules.internalRoomsList[r]->name);
@@ -863,7 +824,7 @@ void TimetableViewRoomsTimeHorizontalForm::detailActivity(QTableWidgetItem* item
 				//s += act->getDetailedDescriptionWithConstraints(gt.rules);
 				s += act->getDetailedDescription();
 
-				int r=CachedSchedule::getCachedSolution().rooms[ai];
+				int r=CachedSchedule::getCachedSolution().room(ai);
 				if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
 					s+="\n";
 					s+=tr("Room: %1").arg(gt.rules.internalRoomsList[r]->name);
@@ -876,7 +837,7 @@ void TimetableViewRoomsTimeHorizontalForm::detailActivity(QTableWidgetItem* item
 				}
 
 				//int r=rooms_timetable_weekly[teacher][k][j];
-				/*int r=best_solution.rooms[ai];
+				/*int r=best_solution.room(ai);
 				if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
 					s+="\n";
 					s+=tr("Room: %1").arg(gt.rules.internalRoomsList[r]->name);
@@ -981,9 +942,9 @@ void TimetableViewRoomsTimeHorizontalForm::lock(bool lockTime, bool lockSpace)
 //	allSelectedActivities.unite(dummyActivities);
 
 	for (int ai : qAsConst(allSelectedActivities)) {
-			assert(tc->times[ai]!=UNALLOCATED_TIME);
-			int day=tc->times[ai]%gt.rules.nDaysPerWeek;
-			int hour=tc->times[ai]/gt.rules.nDaysPerWeek;
+			assert(tc->time(ai)!=UNALLOCATED_TIME);
+			int day=tc->day(ai, gt.rules);
+			int hour=tc->hour(ai, gt.rules);
 
 			const Activity* act=&gt.rules.internalActivitiesList[ai];
 			
@@ -1009,7 +970,7 @@ void TimetableViewRoomsTimeHorizontalForm::lock(bool lockTime, bool lockSpace)
 					break;
 			}
 			
-			int ri=tc->rooms[ai];
+			int ri=tc->room(ai);
 			if(ri!=UNALLOCATED_SPACE && ri!=UNSPECIFIED_ROOM && lockSpace){
 				bool lock = !LockUnlock::isActivitySpaceLocked(act->id) && (lockRadioButton->isChecked() || toggleRadioButton->isChecked());
 

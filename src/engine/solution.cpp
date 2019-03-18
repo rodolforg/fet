@@ -49,17 +49,16 @@ void Solution::copy(const Rules &r, const Solution &c){
 
 	assert(r.internalStructureComputed);
 
-	for(int i=0; i<r.nInternalActivities; i++){
-		this->times[i] = c.times[i];
-		this->rooms[i]=c.rooms[i];
-	}
-	//memcpy(times, c.times, r.nActivities * sizeof(times[0]));
-	
+	std::copy_n(c.times, MAX_ACTIVITIES, times);
+	std::copy_n(c.rooms, MAX_ACTIVITIES, rooms);
+
 	//added in version 5.2.0
 	conflictsWeightList=c.conflictsWeightList;
 	conflictsDescriptionList=c.conflictsDescriptionList;
 	conflictsTotal=c.conflictsTotal;
-	
+	severeConflictList = c.severeConflictList;
+	conflictsConstraintList = c.conflictsConstraintList;
+
 	teachersMatrixReady=c.teachersMatrixReady;
 	subgroupsMatrixReady=c.subgroupsMatrixReady;
 	roomsMatrixReady=c.roomsMatrixReady;
@@ -71,10 +70,8 @@ void Solution::makeUnallocated(const Rules &r){
 	assert(r.initialized);
 	assert(r.internalStructureComputed);
 
-	for(int i=0; i<r.nInternalActivities; i++){
-		this->times[i]=UNALLOCATED_TIME;
-		this->rooms[i]=UNALLOCATED_SPACE;
-	}
+	std::fill_n(times, MAX_ACTIVITIES, UNALLOCATED_TIME);
+	std::fill_n(rooms, MAX_ACTIVITIES, UNALLOCATED_SPACE);
 
 	resetFitness();
 }
@@ -91,7 +88,7 @@ double Solution::fitness(const Rules &r, QString* conflictsString){
 	assert(r.initialized);
 	assert(r.internalStructureComputed);
 
-	if(this->_fitness>=0 && conflictsString==NULL)
+	if(this->_fitness>=0 && conflictsString==nullptr)
 	//If you want to see the log, you have to recompute the fitness, even if it is
 	//already computed
 		return this->_fitness;
@@ -105,7 +102,9 @@ double Solution::fitness(const Rules &r, QString* conflictsString){
 	
 	this->conflictsDescriptionList.clear();
 	this->conflictsWeightList.clear();
-	
+	this->severeConflictList.clear();
+	this->conflictsConstraintList.clear();
+
 	this->teachersMatrixReady=false;
 	this->subgroupsMatrixReady=false;
 	this->roomsMatrixReady=false;
@@ -117,21 +116,41 @@ double Solution::fitness(const Rules &r, QString* conflictsString){
 		
 	for(int i=0; i<r.nInternalTimeConstraints; i++){
 		ConflictInfo info;
-		ConflictInfo* pInfo = conflictsString != NULL? &info : NULL;
+		ConflictInfo* pInfo = conflictsString != nullptr? &info : nullptr;
 		double cur_fitness = r.internalTimeConstraintsList[i]->fitness(*this, r, pInfo);
+		if ((cur_fitness != 0.0 && r.internalTimeConstraintsList[i]->weightPercentage >= 100.0)
+			|| cur_fitness >= 10000) {
+			severeConflictList += info.descriptions;
+		}
 		this->_fitness += cur_fitness;
 		
 		conflictsWeightList += info.weights;
 		conflictsDescriptionList += info.descriptions;
+		GeneralConstraint ctr;
+		ctr.type = GeneralConstraint::TIME;
+		for (int n = 0; n < info.weights.count(); n++) {
+			ctr.constraint.time = r.internalTimeConstraintsList[i];
+			conflictsConstraintList.append(ctr);
+		}
 	}	
 	for(int i=0; i<r.nInternalSpaceConstraints; i++){
 		ConflictInfo info;
-		ConflictInfo* pInfo = conflictsString != NULL? &info : NULL;
+		ConflictInfo* pInfo = conflictsString != nullptr? &info : nullptr;
 		double cur_fitness = r.internalSpaceConstraintsList[i]->fitness(*this, r, pInfo);
+		if ((cur_fitness != 0.0 && r.internalSpaceConstraintsList[i]->weightPercentage >= 100.0)
+			|| cur_fitness >= 10000) {
+			severeConflictList += info.descriptions;
+		}
 		this->_fitness += cur_fitness;
 
 		conflictsWeightList += info.weights;
 		conflictsDescriptionList += info.descriptions;
+		GeneralConstraint ctr;
+		ctr.type = GeneralConstraint::SPACE;
+		for (int n = 0; n < info.weights.count(); n++) {
+			ctr.constraint.space = r.internalSpaceConstraintsList[i];
+			conflictsConstraintList.append(ctr);
+		}
 	}
 		
 	this->conflictsTotal=0;
@@ -173,7 +192,7 @@ double Solution::fitness(const Rules &r, QString* conflictsString){
 	assert(conflictsWeightList.count()==conflictsDescriptionList.count());
 	assert(conflictsWeightList.count()==ttt);
 	
-	if (conflictsString != NULL)
+	if (conflictsString != nullptr)
 		*conflictsString += conflictsDescriptionList.join("\n");
 
 	return this->_fitness;
@@ -286,7 +305,6 @@ void Solution::getTeachersTimetable(const Rules &r, Matrix3D<int>& a, Matrix3D<Q
 				assert(hour+dd<r.nHoursPerDay);
 				for(int ti=0; ti<act->iTeachersList.count(); ti++){
 					int tch = act->iTeachersList.at(ti); //teacher index
-					assert(a[tch][day][hour+dd]==UNALLOCATED_ACTIVITY);
 					a[tch][day][hour+dd]=i;
 				}
 			}
@@ -367,7 +385,7 @@ void Solution::getTeachersTimetable(const Rules &r, Matrix3D<int>& a, Matrix3D<Q
 								b[TEACHER_IS_NOT_AVAILABLE][d][h]<<tch;
 						}
 					}
-					assert(removed==1);
+//					assert(removed==1);
 				}
 			}
 		}
@@ -413,7 +431,6 @@ void Solution::getSubgroupsTimetable(const Rules &r, Matrix3D<int>& a) const {
 			
 				for(int isg=0; isg < act->iSubgroupsList.count(); isg++){ //isg -> index subgroup
 					int sg = act->iSubgroupsList.at(isg); //sg -> subgroup
-					assert(a[sg][day][hour+dd]==UNALLOCATED_ACTIVITY);
 					a[sg][day][hour+dd]=i;
 				}
 			}
@@ -492,9 +509,139 @@ void Solution::getRoomsTimetable(const Rules &r,
 			for(int dd=0; dd < act->duration; dd++){
 				assert(hour+dd<r.nHoursPerDay);
 			
-				assert(a[room][day][hour+dd]==UNALLOCATED_ACTIVITY);
 				a[room][day][hour+dd]=i;
 			}
 		}
 	}
+}
+
+
+int Solution::time(int ai) const
+{
+	assert(ai >= 0 && ai < MAX_ACTIVITIES);
+
+	return times[ai];
+}
+
+int Solution::hour(int ai, const Rules& rules) const
+{
+	assert(ai >= 0 && ai < MAX_ACTIVITIES);
+
+	if (times[ai] == UNALLOCATED_TIME)
+		return -1;
+
+	return times[ai] / rules.nDaysPerWeek;
+}
+
+int Solution::day(int ai, const Rules& rules) const
+{
+	assert(ai >= 0 && ai < MAX_ACTIVITIES);
+
+	if (times[ai] == UNALLOCATED_TIME)
+		return -1;
+
+	return times[ai] % rules.nDaysPerWeek;
+}
+
+int Solution::room(int ai) const
+{
+	return rooms[ai];
+}
+
+void Solution::setTime(int ai, int time)
+{
+	assert(ai >= 0 && ai < MAX_ACTIVITIES);
+	assert(time >= 0 && time < MAX_HOURS_PER_WEEK);
+
+	if (times[ai] == time)
+		return;
+	if (time == UNALLOCATED_TIME) {
+		unsetTime(ai);
+		return;
+	}
+
+	if (times[ai] == UNALLOCATED_TIME)
+		nPlacedActivities++;
+
+	resetFitness();
+	times[ai] = time;
+}
+
+void Solution::unsetTime(int ai)
+{
+	assert(ai >= 0 && ai < MAX_ACTIVITIES);
+
+	if (times[ai] == UNALLOCATED_TIME)
+		return;
+
+	nPlacedActivities--;
+	resetFitness();
+	times[ai] = UNALLOCATED_TIME;
+}
+
+void Solution::setRoom(int ai, int room)
+{
+	assert(ai >= 0 && ai < MAX_ACTIVITIES);
+	assert(room >= 0 && room < MAX_ROOMS);
+
+	if (rooms[ai] == room)
+		return;
+
+	resetFitness();
+	rooms[ai] = room;
+}
+
+void Solution::unspecifyRoom(int ai)
+{
+	assert(ai >= 0 && ai < MAX_ACTIVITIES);
+
+	if (rooms[ai] == UNSPECIFIED_ROOM)
+		return;
+
+	resetFitness();
+	rooms[ai] = UNSPECIFIED_ROOM;
+}
+
+void Solution::unallocateRoom(int ai)
+{
+	assert(ai >= 0 && ai < MAX_ACTIVITIES);
+
+	if (rooms[ai] == UNALLOCATED_SPACE)
+		return;
+
+	resetFitness();
+	rooms[ai] = UNALLOCATED_SPACE;
+}
+
+QList<int> Solution::getUnallocatedActivities(const Rules& rules) const
+{
+	QList<int> answer;
+	for(int ai=0; ai < rules.nInternalActivities; ai++)
+		if (times[ai] == UNALLOCATED_TIME)
+			answer.append(ai);
+	assert (rules.nInternalActivities - answer.count() == nPlacedActivities);
+	return answer;
+}
+
+QList<int> Solution::getHomelessActivities(const Rules& rules) const
+{
+	QList<int> answer;
+	for(int ai=0; ai < rules.nInternalActivities; ai++)
+		if (rooms[ai] == UNALLOCATED_SPACE)
+			answer.append(ai);
+	return answer;
+}
+
+bool Solution::operator ==(const Solution& s2) const
+{
+	if (nPlacedActivities != s2.nPlacedActivities)
+		return false;
+
+	if (memcmp(times, s2.times, MAX_ACTIVITIES * sizeof(times[0])) != 0)
+		return false;
+
+	if (memcmp(rooms, s2.rooms, MAX_ACTIVITIES * sizeof(rooms[0])) != 0)
+		return false;
+
+	return true;
 }

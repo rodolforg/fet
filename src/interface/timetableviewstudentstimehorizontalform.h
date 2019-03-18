@@ -18,11 +18,6 @@
 #ifndef TIMETABLEVIEWSTUDENTSTIMEHORIZONTALFORM_H
 #define TIMETABLEVIEWSTUDENTSTIMEHORIZONTALFORM_H
 
-#include <QResizeEvent>
-
-#include <QAbstractItemDelegate>
-#include <QStyledItemDelegate>
-
 #include <QString>
 #include <QSet>
 //#include <QHash>
@@ -30,26 +25,8 @@
 
 class QColor; //by Marco Vassura
 
-//class ConstraintStudentsSetNotAvailableTimes;
-
 #include "ui_timetableviewstudentstimehorizontalform_template.h"
-
-class TimetableViewStudentsTimeHorizontalDelegate: public QStyledItemDelegate
-{
-	Q_OBJECT
-	
-public:
-	int nRows;
-	int nColumns; //The number of columns after which a line is drawn
-	
-public:
-	TimetableViewStudentsTimeHorizontalDelegate(QWidget* parent, int _nRows, int _nColumns): QStyledItemDelegate(parent){
-		nRows=_nRows;
-		nColumns=_nColumns;
-	}
-	
-	void paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const;
-};
+#include "timetabletimehorizontalitemdelegate.h"
 
 class TimetableViewStudentsTimeHorizontalForm : public QDialog, public Ui::TimetableViewStudentsTimeHorizontalForm_template
 {
@@ -65,7 +42,7 @@ private:
 	//QHash<QString, ConstraintStudentsSetNotAvailableTimes*> notAvailableHash;
 
 	QAbstractItemDelegate* oldItemDelegate;
-	TimetableViewStudentsTimeHorizontalDelegate* newItemDelegate;
+	TimetableTimeHorizontalItemDelegate* newItemDelegate;
 
 public:
 	TimetableViewStudentsTimeHorizontalForm(QWidget* parent);

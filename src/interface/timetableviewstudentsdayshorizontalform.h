@@ -45,6 +45,8 @@ public slots:
 	void lockTimeSpace();
 	void updateStudentsTimetableTable();
 
+	void newActivityNotPlaced(int ai);
+
 	void yearChanged(const QString& yearName);
 	void groupChanged(const QString& groupName);
 	void subgroupChanged(const QString& subgroupName);
@@ -55,9 +57,14 @@ public slots:
 	
 	void shownComboBoxChanged(QString shownCategory);
 
+	void updateSolution();
+
 protected:
 	void resizeEvent(QResizeEvent* event);
 	QColor stringToColor(QString s); //by Marco Vassura
+
+	void updateNotPlacedActivities();
+	void updateBrokenConstraints();
 };
 
 #endif
