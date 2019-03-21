@@ -376,7 +376,7 @@ void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, con
 			}
 		}
 	}
-	qSort(validHoursId);
+	std::sort(validHoursId.begin(), validHoursId.end());
 
 	text << QString(table_open_tag).arg(tableName).arg(styles.table);
 	text << table_column_tag.arg(styles.hour_column).arg(styles.hour_cell);
