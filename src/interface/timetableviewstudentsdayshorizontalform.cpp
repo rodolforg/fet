@@ -740,7 +740,7 @@ void TimetableViewStudentsDaysHorizontalForm::updateBrokenConstraints()
 	for(const QString& item : qAsConst(solution.conflictsDescriptionList)) {
 		QListWidgetItem * list_item = new QListWidgetItem(item);
 		if (solution.severeConflictList.contains(item)) {
-			QString unallocatedActivityConflictText = tr("Time constraint basic compulsory broken: unallocated activity with id=%1 (%2)").arg("_-ID-_").arg("");
+			QString unallocatedActivityConflictText = ConstraintBasicCompulsoryTime::tr("Time constraint basic compulsory broken: unallocated activity with id=%1 (%2)").arg("_-ID-_").arg("");
 			unallocatedActivityConflictText = unallocatedActivityConflictText.left(unallocatedActivityConflictText.indexOf("_-ID-_"));
 			if (!item.startsWith(unallocatedActivityConflictText))
 				list_item ->setIcon(QIcon(":/images/error.png"));

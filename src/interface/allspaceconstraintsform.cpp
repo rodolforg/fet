@@ -452,158 +452,10 @@ void AllSpaceConstraintsForm::modifyConstraint()
 	assert(i<visibleSpaceConstraintsList.count());
 	SpaceConstraint* ctr=visibleSpaceConstraintsList.at(i);
 	
-	//1
-	if(ctr->type==CONSTRAINT_BASIC_COMPULSORY_SPACE){
-		ModifyConstraintBasicCompulsorySpaceForm form(this, (ConstraintBasicCompulsorySpace*)ctr);
-		form.exec();
-	}
-	//2
-	else if(ctr->type==CONSTRAINT_ROOM_NOT_AVAILABLE_TIMES){
-		ModifyConstraintRoomNotAvailableTimesForm form(this, (ConstraintRoomNotAvailableTimes*)ctr);
-		form.exec();
-	}
-	//3
-	else if(ctr->type==CONSTRAINT_ACTIVITY_PREFERRED_ROOM){
-		ModifyConstraintActivityPreferredRoomForm form(this, (ConstraintActivityPreferredRoom*)ctr);
-		form.exec();
-	}
-	//4
-	else if(ctr->type==CONSTRAINT_ACTIVITY_PREFERRED_ROOMS){
-		ModifyConstraintActivityPreferredRoomsForm form(this, (ConstraintActivityPreferredRooms*)ctr);
-		form.exec();
-	}
-	//5
-	else if(ctr->type==CONSTRAINT_STUDENTS_SET_HOME_ROOM){
-		ModifyConstraintStudentsSetHomeRoomForm form(this, (ConstraintStudentsSetHomeRoom*)ctr);
-		form.exec();
-	}
-	//6
-	else if(ctr->type==CONSTRAINT_STUDENTS_SET_HOME_ROOMS){
-		ModifyConstraintStudentsSetHomeRoomsForm form(this, (ConstraintStudentsSetHomeRooms*)ctr);
-		form.exec();
-	}
-	//7
-	else if(ctr->type==CONSTRAINT_TEACHER_HOME_ROOM){
-		ModifyConstraintTeacherHomeRoomForm form(this, (ConstraintTeacherHomeRoom*)ctr);
-		form.exec();
-	}
-	//8
-	else if(ctr->type==CONSTRAINT_TEACHER_HOME_ROOMS){
-		ModifyConstraintTeacherHomeRoomsForm form(this, (ConstraintTeacherHomeRooms*)ctr);
-		form.exec();
-	}
-	//9
-	else if(ctr->type==CONSTRAINT_SUBJECT_PREFERRED_ROOM){
-		ModifyConstraintSubjectPreferredRoomForm form(this, (ConstraintSubjectPreferredRoom*)ctr);
-		form.exec();
-	}
-	//10
-	else if(ctr->type==CONSTRAINT_SUBJECT_PREFERRED_ROOMS){
-		ModifyConstraintSubjectPreferredRoomsForm form(this, (ConstraintSubjectPreferredRooms*)ctr);
-		form.exec();
-	}
-	//11
-	else if(ctr->type==CONSTRAINT_SUBJECT_ACTIVITY_TAG_PREFERRED_ROOM){
-		ModifyConstraintSubjectActivityTagPreferredRoomForm form(this, (ConstraintSubjectActivityTagPreferredRoom*)ctr);
-		form.exec();
-	}
-	//12
-	else if(ctr->type==CONSTRAINT_SUBJECT_ACTIVITY_TAG_PREFERRED_ROOMS){
-		ModifyConstraintSubjectActivityTagPreferredRoomsForm form(this, (ConstraintSubjectActivityTagPreferredRooms*)ctr);
-		form.exec();
-	}
-	///6 apr 2009
-	//13
-	else if(ctr->type==CONSTRAINT_ACTIVITY_TAG_PREFERRED_ROOM){
-		ModifyConstraintActivityTagPreferredRoomForm form(this, (ConstraintActivityTagPreferredRoom*)ctr);
-		form.exec();
-	}
-	//14
-	else if(ctr->type==CONSTRAINT_ACTIVITY_TAG_PREFERRED_ROOMS){
-		ModifyConstraintActivityTagPreferredRoomsForm form(this, (ConstraintActivityTagPreferredRooms*)ctr);
-		form.exec();
-	}
-	///
-	//15
-	else if(ctr->type==CONSTRAINT_STUDENTS_SET_MAX_BUILDING_CHANGES_PER_DAY){
-		ModifyConstraintStudentsSetMaxBuildingChangesPerDayForm form(this, (ConstraintStudentsSetMaxBuildingChangesPerDay*)ctr);
-		form.exec();
-	}
-	//16
-	else if(ctr->type==CONSTRAINT_STUDENTS_MAX_BUILDING_CHANGES_PER_DAY){
-		ModifyConstraintStudentsMaxBuildingChangesPerDayForm form(this, (ConstraintStudentsMaxBuildingChangesPerDay*)ctr);
-		form.exec();
-	}
-	//17
-	else if(ctr->type==CONSTRAINT_STUDENTS_SET_MAX_BUILDING_CHANGES_PER_WEEK){
-		ModifyConstraintStudentsSetMaxBuildingChangesPerWeekForm form(this, (ConstraintStudentsSetMaxBuildingChangesPerWeek*)ctr);
-		form.exec();
-	}
-	//18
-	else if(ctr->type==CONSTRAINT_STUDENTS_MAX_BUILDING_CHANGES_PER_WEEK){
-		ModifyConstraintStudentsMaxBuildingChangesPerWeekForm form(this, (ConstraintStudentsMaxBuildingChangesPerWeek*)ctr);
-		form.exec();
-	}
-	//19
-	else if(ctr->type==CONSTRAINT_STUDENTS_SET_MIN_GAPS_BETWEEN_BUILDING_CHANGES){
-		ModifyConstraintStudentsSetMinGapsBetweenBuildingChangesForm form(this, (ConstraintStudentsSetMinGapsBetweenBuildingChanges*)ctr);
-		form.exec();
-	}
-	//20
-	else if(ctr->type==CONSTRAINT_STUDENTS_MIN_GAPS_BETWEEN_BUILDING_CHANGES){
-		ModifyConstraintStudentsMinGapsBetweenBuildingChangesForm form(this, (ConstraintStudentsMinGapsBetweenBuildingChanges*)ctr);
-		form.exec();
-	}
-	//21
-	else if(ctr->type==CONSTRAINT_TEACHER_MAX_BUILDING_CHANGES_PER_DAY){
-		ModifyConstraintTeacherMaxBuildingChangesPerDayForm form(this, (ConstraintTeacherMaxBuildingChangesPerDay*)ctr);
-		form.exec();
-	}
-	//22
-	else if(ctr->type==CONSTRAINT_TEACHERS_MAX_BUILDING_CHANGES_PER_DAY){
-		ModifyConstraintTeachersMaxBuildingChangesPerDayForm form(this, (ConstraintTeachersMaxBuildingChangesPerDay*)ctr);
-		form.exec();
-	}
-	//23
-	else if(ctr->type==CONSTRAINT_TEACHER_MAX_BUILDING_CHANGES_PER_WEEK){
-		ModifyConstraintTeacherMaxBuildingChangesPerWeekForm form(this, (ConstraintTeacherMaxBuildingChangesPerWeek*)ctr);
-		form.exec();
-	}
-	//24
-	else if(ctr->type==CONSTRAINT_TEACHERS_MAX_BUILDING_CHANGES_PER_WEEK){
-		ModifyConstraintTeachersMaxBuildingChangesPerWeekForm form(this, (ConstraintTeachersMaxBuildingChangesPerWeek*)ctr);
-		form.exec();
-	}
-	//25
-	else if(ctr->type==CONSTRAINT_TEACHER_MIN_GAPS_BETWEEN_BUILDING_CHANGES){
-		ModifyConstraintTeacherMinGapsBetweenBuildingChangesForm form(this, (ConstraintTeacherMinGapsBetweenBuildingChanges*)ctr);
-		form.exec();
-	}
-	//26
-	else if(ctr->type==CONSTRAINT_TEACHERS_MIN_GAPS_BETWEEN_BUILDING_CHANGES){
-		ModifyConstraintTeachersMinGapsBetweenBuildingChangesForm form(this, (ConstraintTeachersMinGapsBetweenBuildingChanges*)ctr);
-		form.exec();
-	}
-	//27
-	else if(ctr->type==CONSTRAINT_ACTIVITIES_OCCUPY_MAX_DIFFERENT_ROOMS){
-		ModifyConstraintActivitiesOccupyMaxDifferentRoomsForm form(this, (ConstraintActivitiesOccupyMaxDifferentRooms*)ctr);
-		form.exec();
-	}
-	//28
-	else if(ctr->type==CONSTRAINT_ACTIVITIES_SAME_ROOM_IF_CONSECUTIVE){
-		ModifyConstraintActivitiesSameRoomIfConsecutiveForm form(this, (ConstraintActivitiesSameRoomIfConsecutive*)ctr);
-		form.exec();
-	}
-	else{
-		QMessageBox::critical(this, tr("FET critical"), tr("You have found a bug in FET. Please report it. This kind of constraint"
-		 " is not correctly recognized in all space constraints dialog. FET will skip this error, so that you can continue work."
-		 " Probably the constraint can be modified from the specific constraint dialog."));
-//		assert(0);
-//		exit(1);
-	}
+	launchModifyConstraintDialog(this, ctr);
 
 	filterChanged();
-	
+
 	constraintsListWidget->verticalScrollBar()->setValue(valv);
 	constraintsListWidget->horizontalScrollBar()->setValue(valh);
 
@@ -612,8 +464,163 @@ void AllSpaceConstraintsForm::modifyConstraint()
 
 	if(i>=0)
 		constraintsListWidget->setCurrentRow(i);
-	
+
 	constraintsListWidget->setFocus();
+}
+
+bool AllSpaceConstraintsForm::launchModifyConstraintDialog(QWidget* parent, SpaceConstraint* ctr)
+{
+	//1
+	if(ctr->type==CONSTRAINT_BASIC_COMPULSORY_SPACE){
+		ModifyConstraintBasicCompulsorySpaceForm form(parent, (ConstraintBasicCompulsorySpace*)ctr);
+		form.exec();
+	}
+	//2
+	else if(ctr->type==CONSTRAINT_ROOM_NOT_AVAILABLE_TIMES){
+		ModifyConstraintRoomNotAvailableTimesForm form(parent, (ConstraintRoomNotAvailableTimes*)ctr);
+		form.exec();
+	}
+	//3
+	else if(ctr->type==CONSTRAINT_ACTIVITY_PREFERRED_ROOM){
+		ModifyConstraintActivityPreferredRoomForm form(parent, (ConstraintActivityPreferredRoom*)ctr);
+		form.exec();
+	}
+	//4
+	else if(ctr->type==CONSTRAINT_ACTIVITY_PREFERRED_ROOMS){
+		ModifyConstraintActivityPreferredRoomsForm form(parent, (ConstraintActivityPreferredRooms*)ctr);
+		form.exec();
+	}
+	//5
+	else if(ctr->type==CONSTRAINT_STUDENTS_SET_HOME_ROOM){
+		ModifyConstraintStudentsSetHomeRoomForm form(parent, (ConstraintStudentsSetHomeRoom*)ctr);
+		form.exec();
+	}
+	//6
+	else if(ctr->type==CONSTRAINT_STUDENTS_SET_HOME_ROOMS){
+		ModifyConstraintStudentsSetHomeRoomsForm form(parent, (ConstraintStudentsSetHomeRooms*)ctr);
+		form.exec();
+	}
+	//7
+	else if(ctr->type==CONSTRAINT_TEACHER_HOME_ROOM){
+		ModifyConstraintTeacherHomeRoomForm form(parent, (ConstraintTeacherHomeRoom*)ctr);
+		form.exec();
+	}
+	//8
+	else if(ctr->type==CONSTRAINT_TEACHER_HOME_ROOMS){
+		ModifyConstraintTeacherHomeRoomsForm form(parent, (ConstraintTeacherHomeRooms*)ctr);
+		form.exec();
+	}
+	//9
+	else if(ctr->type==CONSTRAINT_SUBJECT_PREFERRED_ROOM){
+		ModifyConstraintSubjectPreferredRoomForm form(parent, (ConstraintSubjectPreferredRoom*)ctr);
+		form.exec();
+	}
+	//10
+	else if(ctr->type==CONSTRAINT_SUBJECT_PREFERRED_ROOMS){
+		ModifyConstraintSubjectPreferredRoomsForm form(parent, (ConstraintSubjectPreferredRooms*)ctr);
+		form.exec();
+	}
+	//11
+	else if(ctr->type==CONSTRAINT_SUBJECT_ACTIVITY_TAG_PREFERRED_ROOM){
+		ModifyConstraintSubjectActivityTagPreferredRoomForm form(parent, (ConstraintSubjectActivityTagPreferredRoom*)ctr);
+		form.exec();
+	}
+	//12
+	else if(ctr->type==CONSTRAINT_SUBJECT_ACTIVITY_TAG_PREFERRED_ROOMS){
+		ModifyConstraintSubjectActivityTagPreferredRoomsForm form(parent, (ConstraintSubjectActivityTagPreferredRooms*)ctr);
+		form.exec();
+	}
+	///6 apr 2009
+	//13
+	else if(ctr->type==CONSTRAINT_ACTIVITY_TAG_PREFERRED_ROOM){
+		ModifyConstraintActivityTagPreferredRoomForm form(parent, (ConstraintActivityTagPreferredRoom*)ctr);
+		form.exec();
+	}
+	//14
+	else if(ctr->type==CONSTRAINT_ACTIVITY_TAG_PREFERRED_ROOMS){
+		ModifyConstraintActivityTagPreferredRoomsForm form(parent, (ConstraintActivityTagPreferredRooms*)ctr);
+		form.exec();
+	}
+	///
+	//15
+	else if(ctr->type==CONSTRAINT_STUDENTS_SET_MAX_BUILDING_CHANGES_PER_DAY){
+		ModifyConstraintStudentsSetMaxBuildingChangesPerDayForm form(parent, (ConstraintStudentsSetMaxBuildingChangesPerDay*)ctr);
+		form.exec();
+	}
+	//16
+	else if(ctr->type==CONSTRAINT_STUDENTS_MAX_BUILDING_CHANGES_PER_DAY){
+		ModifyConstraintStudentsMaxBuildingChangesPerDayForm form(parent, (ConstraintStudentsMaxBuildingChangesPerDay*)ctr);
+		form.exec();
+	}
+	//17
+	else if(ctr->type==CONSTRAINT_STUDENTS_SET_MAX_BUILDING_CHANGES_PER_WEEK){
+		ModifyConstraintStudentsSetMaxBuildingChangesPerWeekForm form(parent, (ConstraintStudentsSetMaxBuildingChangesPerWeek*)ctr);
+		form.exec();
+	}
+	//18
+	else if(ctr->type==CONSTRAINT_STUDENTS_MAX_BUILDING_CHANGES_PER_WEEK){
+		ModifyConstraintStudentsMaxBuildingChangesPerWeekForm form(parent, (ConstraintStudentsMaxBuildingChangesPerWeek*)ctr);
+		form.exec();
+	}
+	//19
+	else if(ctr->type==CONSTRAINT_STUDENTS_SET_MIN_GAPS_BETWEEN_BUILDING_CHANGES){
+		ModifyConstraintStudentsSetMinGapsBetweenBuildingChangesForm form(parent, (ConstraintStudentsSetMinGapsBetweenBuildingChanges*)ctr);
+		form.exec();
+	}
+	//20
+	else if(ctr->type==CONSTRAINT_STUDENTS_MIN_GAPS_BETWEEN_BUILDING_CHANGES){
+		ModifyConstraintStudentsMinGapsBetweenBuildingChangesForm form(parent, (ConstraintStudentsMinGapsBetweenBuildingChanges*)ctr);
+		form.exec();
+	}
+	//21
+	else if(ctr->type==CONSTRAINT_TEACHER_MAX_BUILDING_CHANGES_PER_DAY){
+		ModifyConstraintTeacherMaxBuildingChangesPerDayForm form(parent, (ConstraintTeacherMaxBuildingChangesPerDay*)ctr);
+		form.exec();
+	}
+	//22
+	else if(ctr->type==CONSTRAINT_TEACHERS_MAX_BUILDING_CHANGES_PER_DAY){
+		ModifyConstraintTeachersMaxBuildingChangesPerDayForm form(parent, (ConstraintTeachersMaxBuildingChangesPerDay*)ctr);
+		form.exec();
+	}
+	//23
+	else if(ctr->type==CONSTRAINT_TEACHER_MAX_BUILDING_CHANGES_PER_WEEK){
+		ModifyConstraintTeacherMaxBuildingChangesPerWeekForm form(parent, (ConstraintTeacherMaxBuildingChangesPerWeek*)ctr);
+		form.exec();
+	}
+	//24
+	else if(ctr->type==CONSTRAINT_TEACHERS_MAX_BUILDING_CHANGES_PER_WEEK){
+		ModifyConstraintTeachersMaxBuildingChangesPerWeekForm form(parent, (ConstraintTeachersMaxBuildingChangesPerWeek*)ctr);
+		form.exec();
+	}
+	//25
+	else if(ctr->type==CONSTRAINT_TEACHER_MIN_GAPS_BETWEEN_BUILDING_CHANGES){
+		ModifyConstraintTeacherMinGapsBetweenBuildingChangesForm form(parent, (ConstraintTeacherMinGapsBetweenBuildingChanges*)ctr);
+		form.exec();
+	}
+	//26
+	else if(ctr->type==CONSTRAINT_TEACHERS_MIN_GAPS_BETWEEN_BUILDING_CHANGES){
+		ModifyConstraintTeachersMinGapsBetweenBuildingChangesForm form(parent, (ConstraintTeachersMinGapsBetweenBuildingChanges*)ctr);
+		form.exec();
+	}
+	//27
+	else if(ctr->type==CONSTRAINT_ACTIVITIES_OCCUPY_MAX_DIFFERENT_ROOMS){
+		ModifyConstraintActivitiesOccupyMaxDifferentRoomsForm form(parent, (ConstraintActivitiesOccupyMaxDifferentRooms*)ctr);
+		form.exec();
+	}
+	//28
+	else if(ctr->type==CONSTRAINT_ACTIVITIES_SAME_ROOM_IF_CONSECUTIVE){
+		ModifyConstraintActivitiesSameRoomIfConsecutiveForm form(parent, (ConstraintActivitiesSameRoomIfConsecutive*)ctr);
+		form.exec();
+	}
+	else{
+		QMessageBox::critical(parent, tr("FET critical"), tr("You have found a bug in FET. Please report it. This kind of constraint"
+		 " is not correctly recognized in all space constraints dialog. FET will skip parent error, so that you can continue work."
+		 " Probably the constraint can be modified from the specific constraint dialog."));
+//		assert(0);
+//		exit(1);
+		return false;
+	}
+	return true;
 }
 
 void AllSpaceConstraintsForm::removeConstraint()

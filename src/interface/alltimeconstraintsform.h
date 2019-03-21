@@ -44,6 +44,8 @@ public:
 	bool filterOk(TimeConstraint* ctr);
 	
 	void filterChanged();
+
+	static bool launchModifyConstraintDialog(QWidget * parent, TimeConstraint * ctr);
 	
 public slots:
 	void constraintChanged();

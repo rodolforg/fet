@@ -1,9 +1,10 @@
-<!DOCTYPE RCC><RCC version="1.0">
-<qresource>
-	<file>images/locked.png</file>
-	<file>images/unlocked.png</file>
-	<file>images/group.png</file>
-	<file>images/subgroup.png</file>
-	<file alias="images/appicon.png">../../icons/fet.png</file>
-</qresource>
+<RCC>
+    <qresource prefix="/">
+        <file>images/locked.png</file>
+        <file>images/unlocked.png</file>
+        <file>images/group.png</file>
+        <file>images/subgroup.png</file>
+        <file alias="images/appicon.png">../../icons/fet.png</file>
+        <file>images/error.png</file>
+    </qresource>
 </RCC>
