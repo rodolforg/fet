@@ -726,7 +726,7 @@ const QString FOdsExportForm::template_1 = "<?xml version=\"1.0\" encoding=\"UTF
 										   "   <style:graphic-properties draw:stroke=\"none\" svg:stroke-width=\"0mm\" draw:fill=\"none\" draw:textarea-horizontal-align=\"center\" draw:textarea-vertical-align=\"top\" draw:auto-grow-height=\"false\" fo:padding-top=\"1.25mm\" fo:padding-bottom=\"1.25mm\" fo:padding-left=\"2.5mm\" fo:padding-right=\"2.5mm\" fo:wrap-option=\"wrap\" draw:color-mode=\"standard\" draw:luminance=\"0%\" draw:contrast=\"0%\" draw:gamma=\"100%\" draw:red=\"0%\" draw:green=\"0%\" draw:blue=\"0%\" fo:clip=\"rect(0mm, 0mm, 0mm, 0mm)\" draw:image-opacity=\"100%\" style:mirror=\"none\" style:protect=\"size\"/>\n"
 										   "  </style:style>\n"
 										   "  <style:page-layout style:name=\"pm1\">\n"
-										   "   <style:page-layout-properties fo:page-width=\"297mm\" fo:page-height=\"210.01mm\" style:num-format=\"1\" style:print-orientation=\"landscape\" fo:margin-top=\"4.99mm\" fo:margin-bottom=\"4.99mm\" fo:margin-left=\"4.99mm\" fo:margin-right=\"4.99mm\" style:shadow=\"none\" style:table-centering=\"both\" style:writing-mode=\"lr-tb\"/>\n"
+										   "   <style:page-layout-properties fo:page-width=\"297mm\" fo:page-height=\"210.01mm\" style:num-format=\"1\" style:print-orientation=\"landscape\" fo:margin-top=\"4.99mm\" fo:margin-bottom=\"4.99mm\" fo:margin-left=\"4.99mm\" fo:margin-right=\"4.99mm\" style:shadow=\"none\" loext:scale-to-X=\"1\" loext:scale-to-Y=\"1\" style:table-centering=\"both\" style:writing-mode=\"lr-tb\"/>\n"
 										   "   <style:header-style>\n"
 										   "    <style:header-footer-properties fo:min-height=\"4.99mm\" fo:margin-left=\"0mm\" fo:margin-right=\"0mm\" fo:margin-bottom=\"0mm\"/>\n"
 										   "   </style:header-style>\n"
