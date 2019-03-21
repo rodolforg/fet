@@ -44,7 +44,9 @@ public:
 	bool filterOk(SpaceConstraint* ctr);
 	
 	void filterChanged();
-	
+
+	static bool launchModifyConstraintDialog(QWidget* parent, SpaceConstraint* ctr);
+
 public slots:
 	void constraintChanged();
 	void modifyConstraint();
