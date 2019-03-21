@@ -304,11 +304,14 @@ QString FOdsExportForm::getActivityText(const Activity *act, const Styles& style
 	} else if (flags & ActivityFlags::TEACHERS) {
 		text += text_par_tag.arg(text_span_tag.arg(styles.teachers_span).arg(act->teachersNames.join(", ")));
 	}
-	if (flags & ActivityFlags::STUDENTS_ONLY_IF_DIFFERENT) {
-		if (!act->studentsNames.contains(rules.yearsList[tblIdx]->name))
-			text += text_par_tag.arg(text_span_tag.arg(styles.students_span).arg(act->studentsNames.join(", ")));
-	} else if (flags & ActivityFlags::STUDENTS) {
-		text += text_par_tag.arg(text_span_tag.arg(styles.students_span).arg(act->studentsNames.join(", ")));
+	QString studentNameList = act->studentsNames.join(", ");
+	if (!studentNameList.isEmpty()) {
+		if (flags & ActivityFlags::STUDENTS_ONLY_IF_DIFFERENT) {
+			if (!act->studentsNames.contains(rules.yearsList[tblIdx]->name))
+				text += text_par_tag.arg(text_span_tag.arg(styles.students_span).arg(studentNameList));
+		} else if (flags & ActivityFlags::STUDENTS) {
+			text += text_par_tag.arg(text_span_tag.arg(styles.students_span).arg(studentNameList));
+		}
 	}
 	if (flags & ActivityFlags::ACTIVITY_TAG) {
 		QStringList printableActivityTagNames;
