@@ -29,7 +29,7 @@ public:
 	EditableTimetableWidget(QWidget* parent = nullptr);
 	EditableTimetableWidget(int rows, int cols, QWidget* parent = nullptr);
 
-	virtual ~EditableTimetableWidget();
+	virtual ~EditableTimetableWidget() override;
 
 	void setSolution(const Rules* rules, const Solution& solution);
 
