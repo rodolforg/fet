@@ -31,6 +31,8 @@ EditableTimetableWidget::EditableTimetableWidget(QWidget *parent)
 	connect(this, &QTableWidget::currentItemChanged, [this](QTableWidgetItem* item, QTableWidgetItem*) {
 		this->colorizePossibleActions(item);
 	});
+
+	tempRemovedActivityCollection.append(QSet<int>());
 }
 
 EditableTimetableWidget::EditableTimetableWidget(int rows, int cols, QWidget* parent)
@@ -40,6 +42,9 @@ EditableTimetableWidget::EditableTimetableWidget(int rows, int cols, QWidget* pa
 	connect(this, &QTableWidget::currentItemChanged, [this](QTableWidgetItem* item, QTableWidgetItem*) {
 		this->colorizePossibleActions(item);
 	});
+
+	for (int r = 0; r < rows; r++)
+		tempRemovedActivityCollection.append(QSet<int>());
 }
 
 EditableTimetableWidget::~EditableTimetableWidget()
@@ -57,7 +62,10 @@ void EditableTimetableWidget::setSolution(const Rules* rules, const Solution& so
 		return;
 	undoStack.clear();
 	this->solution->copy(*rules, solution);
-	this->tempRemovedActivities.clear();
+
+	this->tempRemovedActivityCollection.clear();
+	for (int r = 0; r < rowCount(); r++)
+		tempRemovedActivityCollection.append(QSet<int>());
 }
 
 void EditableTimetableWidget::addNotPlacedActivity(int ai, int row)
@@ -67,12 +75,14 @@ void EditableTimetableWidget::addNotPlacedActivity(int ai, int row)
 	if (solution->time(ai) != UNALLOCATED_TIME)
 		return;
 
-	tempRemovedActivities.insert(ai);
+	int collection = timetableDirection == DAYS_HORIZONTAL ? 0 : row;
+	tempRemovedActivityCollection[collection].insert(ai);
 }
 
 void EditableTimetableWidget::clearNotPlacedActivities()
 {
-	tempRemovedActivities.clear();
+	for (int i = 0; i < rowCount(); i++)
+		tempRemovedActivityCollection[i].clear();
 }
 
 const Rules* EditableTimetableWidget::getRules() const
@@ -94,7 +104,10 @@ void EditableTimetableWidget::setTimetableDirection(const TimetableDirection& va
 {
 	timetableDirection = value;
 
-	tempRemovedActivities.clear();
+	tempRemovedActivityCollection.clear();
+	int nCollections = timetableDirection == DAYS_HORIZONTAL ? 1 : rowCount();
+	for (int r = 0; r < nCollections; r++)
+		tempRemovedActivityCollection.append(QSet<int>());
 }
 
 void EditableTimetableWidget::contextMenuEvent(QContextMenuEvent* event)
@@ -123,7 +136,7 @@ void EditableTimetableWidget::contextMenuEvent(QContextMenuEvent* event)
 		if (src_ai != UNALLOCATED_ACTIVITY)
 			placed_activity_ids_but_clicked.remove(src_ai);
 	}
-	QSet<int> temp_removed_activities = getRemovedActivities();
+	QSet<int> temp_removed_activities = getRemovedActivities(item);
 	QList<int> temp_removed_activities_list = temp_removed_activities.toList();
 	std::sort(temp_removed_activities_list.begin(), temp_removed_activities_list.end());
 	QList<int> placed_activity_ids_but_clicked_list = placed_activity_ids_but_clicked.toList();
@@ -316,9 +329,15 @@ QSet<int> EditableTimetableWidget::getPlacedActivities(const QTableWidgetItem* i
 	return activity_ids;
 }
 
-QSet<int> EditableTimetableWidget::getRemovedActivities() const
+QSet<int> EditableTimetableWidget::getRemovedActivities(const QTableWidgetItem* item) const
 {
-	return tempRemovedActivities;
+	if (timetableDirection == DAYS_HORIZONTAL) {
+		return tempRemovedActivityCollection[0];
+	} else if (timetableDirection == TIMES_HORIZONTAL) {
+		int collection = item->row();
+		return tempRemovedActivityCollection[collection];
+	} else
+		return QSet<int>();
 }
 
 QList<int> EditableTimetableWidget::getPossibleSwaps(const QList<int> &activity_ids, int src_ai) const
@@ -381,7 +400,9 @@ void EditableTimetableWidget::colorizePossibleActions(QTableWidgetItem* item)
 	const int time = getTime(item->row(), item->column());
 	const int h0 = getHour(item->row(), item->column());
 
-	QList<int> all_placeable = tempRemovedActivities.toList() + placed_activity_ids_but_clicked.toList();
+	QSet<int> temp_removed_activities = getRemovedActivities(item);
+
+	QList<int> all_placeable = temp_removed_activities.toList() + placed_activity_ids_but_clicked.toList();
 	for (int ai : all_placeable) {
 		if (h0 + rules->internalActivitiesList[ai].duration > rules->nHoursPerDay) {
 			all_placeable.removeOne(ai);
@@ -457,11 +478,13 @@ void EditableTimetableWidget::placeActivity(const QTableWidgetItem* item, int ai
 			continue;
 
 		solution->unsetTime(removableActIdx);
-		tempRemovedActivities.insert(removableActIdx);
+		int collection = timetableDirection == DAYS_HORIZONTAL ? 0 : item->row();
+		tempRemovedActivityCollection[collection].insert(removableActIdx);
 		removedNow.insert(removableActIdx);
 	}
 
-	tempRemovedActivities.remove(ai);
+	int collection = timetableDirection == DAYS_HORIZONTAL ? 0 : item->row();
+	tempRemovedActivityCollection[collection].remove(ai);
 
 	solution->setTime(ai, getTime(item->row(), item->column()));
 
@@ -488,7 +511,8 @@ void EditableTimetableWidget::removeActivity(const QTableWidgetItem* item)
 		return;
 
 	solution->unsetTime(src_ai);
-	tempRemovedActivities.insert(src_ai);
+	int collection = timetableDirection == DAYS_HORIZONTAL ? 0 : item->row();
+	tempRemovedActivityCollection[collection].insert(src_ai);
 
 	QString useless;
 	solution->fitness(*rules, &useless);

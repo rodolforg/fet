@@ -66,10 +66,10 @@ private:
 	ProposalStatus checkSolutionChange(Solution &proposal) const;
 
 	QSet<int> getPlacedActivities(const QTableWidgetItem* item) const;
-	QSet<int> getRemovedActivities() const;
+	QSet<int> getRemovedActivities(const QTableWidgetItem* item) const;
 	QList<int> getPossibleSwaps(const QList<int>& activity_ids, int src_ai) const;
 
-	QSet<int> tempRemovedActivities;
+	QList<QSet<int>> tempRemovedActivityCollection;
 
 	QUndoStack undoStack;
 
