@@ -25,7 +25,7 @@ extern bool simulation_running;
 #include <QDebug>
 
 EditableTimetableWidget::EditableTimetableWidget(QWidget *parent)
-	: QTableWidget(parent), rules(NULL), solution(NULL), timetableDirection(DAYS_HORIZONTAL)
+	: QTableWidget(parent), rules(nullptr), solution(nullptr), timetableDirection(DAYS_HORIZONTAL)
 {
 	setContextMenuPolicy(Qt::DefaultContextMenu);
 	connect(this, &QTableWidget::currentItemChanged, [this](QTableWidgetItem* item, QTableWidgetItem*) {
@@ -36,7 +36,7 @@ EditableTimetableWidget::EditableTimetableWidget(QWidget *parent)
 }
 
 EditableTimetableWidget::EditableTimetableWidget(int rows, int cols, QWidget* parent)
-	: QTableWidget(rows, cols, parent), rules(NULL), solution(NULL), timetableDirection(DAYS_HORIZONTAL)
+	: QTableWidget(rows, cols, parent), rules(nullptr), solution(nullptr), timetableDirection(DAYS_HORIZONTAL)
 {
 	setContextMenuPolicy(Qt::DefaultContextMenu);
 	connect(this, &QTableWidget::currentItemChanged, [this](QTableWidgetItem* item, QTableWidgetItem*) {
@@ -50,13 +50,13 @@ EditableTimetableWidget::EditableTimetableWidget(int rows, int cols, QWidget* pa
 EditableTimetableWidget::~EditableTimetableWidget()
 {
 	delete solution;
-	solution = NULL;
+	solution = nullptr;
 }
 
 void EditableTimetableWidget::setSolution(const Rules* rules, const Solution& solution)
 {
 	this->rules = rules;
-	if (this->solution == NULL)
+	if (this->solution == nullptr)
 		this->solution = new Solution();
 	else if (solution == *this->solution)
 		return;
@@ -119,7 +119,7 @@ void EditableTimetableWidget::contextMenuEvent(QContextMenuEvent* event)
 
 	QTableWidgetItem *item = itemAt(event->pos());
 
-	if (item == NULL)
+	if (item == nullptr)
 		return;
 
 	const int src_ai = item->data(Qt::UserRole).toInt();

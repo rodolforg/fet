@@ -26,8 +26,8 @@ class EditableTimetableWidget : public QTableWidget
 	Q_OBJECT
 
 public:
-	EditableTimetableWidget(QWidget* parent = NULL);
-	EditableTimetableWidget(int rows, int cols, QWidget* parent = NULL);
+	EditableTimetableWidget(QWidget* parent = nullptr);
+	EditableTimetableWidget(int rows, int cols, QWidget* parent = nullptr);
 
 	virtual ~EditableTimetableWidget();
 
