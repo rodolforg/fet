@@ -42,6 +42,7 @@ public:
 	TimetableDirection getTimetableDirection() const;
 	void setTimetableDirection(const TimetableDirection& value);
 
+	void colorizeWherePlaceable(int ai, int row);
 signals:
 	void solution_changed();
 
@@ -76,6 +77,8 @@ private:
 	void colorizePossibleActions(QTableWidgetItem *item);
 
 	bool isActivityLocked(int ai) const;
+
+	bool activityCanBePlacedAt(int ai, int time, int row) const;
 
 protected slots:
 	void placeActivity(const QTableWidgetItem* item, int ai);

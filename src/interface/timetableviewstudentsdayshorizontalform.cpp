@@ -191,6 +191,16 @@ TimetableViewStudentsDaysHorizontalForm::TimetableViewStudentsDaysHorizontalForm
 
 	connect(shownComboBox, SIGNAL(activated(QString)), this, SLOT(shownComboBoxChanged(QString)));
 	shownComboBoxChanged(shownComboBox->currentText());
+
+	connect(notPlacedActivitiesListWidget, &QListWidget::itemClicked, [=](QListWidgetItem * current) {
+		if (current == nullptr)
+			return;
+		int ai = current->data(Qt::UserRole).toInt();
+		studentsTimetableTable->colorizeWherePlaceable(ai, 0);
+		studentsTimetableTable->clearSelection();
+		studentsTimetableTable->setCurrentItem(nullptr);
+		detailActivity(ai);
+	});
 }
 
 TimetableViewStudentsDaysHorizontalForm::~TimetableViewStudentsDaysHorizontalForm()
@@ -596,7 +606,8 @@ void TimetableViewStudentsDaysHorizontalForm::updateNotPlacedActivities()
 		if ((year && activity.studentsNames.contains(year->name))
 			|| (group && activity.studentsNames.contains(group->name))
 			|| (subgroup && activity.studentsNames.contains(subgroup->name))) {
-			notPlacedActivitiesListWidget->addItem(activity.getDescription());
+			QListWidgetItem * item = new QListWidgetItem(activity.getDescription(), notPlacedActivitiesListWidget);
+			item->setData(Qt::UserRole, ai);
 			studentsTimetableTable->addNotPlacedActivity(ai, 0);
 		}
 	}
@@ -620,6 +631,35 @@ void TimetableViewStudentsDaysHorizontalForm::updateBrokenConstraints()
 	}
 }
 
+void TimetableViewStudentsDaysHorizontalForm::detailActivity(int ai)
+{
+	if (ai == UNALLOCATED_ACTIVITY || ai < 0 || ai > gt.rules.nInternalActivities) {
+		detailsTextEdit->clear();
+		return;
+	}
+	Activity* act=&gt.rules.internalActivitiesList[ai];
+	assert(act!=NULL);
+	//s+=act->getDetailedDescriptionWithConstraints(gt.rules);
+	QString s = act->getDetailedDescription();
+
+	//int r=rooms_timetable_weekly[i][k][j];
+	int r=CachedSchedule::getCachedSolution().room(ai);
+	if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
+		s+="\n";
+		s+=tr("Room: %1").arg(gt.rules.internalRoomsList[r]->name);
+		if(gt.rules.internalRoomsList[r]->building!=""){
+			s+="\n";
+			s+=tr("Building=%1").arg(gt.rules.internalRoomsList[r]->building);
+		}
+		s+="\n";
+		s+=tr("Capacity=%1").arg(gt.rules.internalRoomsList[r]->capacity);
+	}
+
+	s+=LockUnlock::getActivityLockDetailsString(act->id);
+
+	detailsTextEdit->setPlainText(s);
+}
+
 void TimetableViewStudentsDaysHorizontalForm::resizeEvent(QResizeEvent* event)
 {
 	QDialog::resizeEvent(event);
@@ -631,6 +671,10 @@ void TimetableViewStudentsDaysHorizontalForm::currentItemChanged(QTableWidgetIte
 {
 	Q_UNUSED(previous);
 	
+	if (current != nullptr) {
+		notPlacedActivitiesListWidget->clearSelection();
+		notPlacedActivitiesListWidget->setCurrentItem(nullptr);
+	}
 	detailActivity(current);
 }
 
@@ -695,25 +739,8 @@ void TimetableViewStudentsDaysHorizontalForm::detailActivity(QTableWidgetItem* i
 		int ai=CachedSchedule::students_timetable_weekly[i][k][j]; //activity index
 		//Activity* act=gt.rules.activitiesList.at(ai);
 		if(ai!=UNALLOCATED_ACTIVITY){
-			Activity* act=&gt.rules.internalActivitiesList[ai];
-			assert(act!=NULL);
-			//s+=act->getDetailedDescriptionWithConstraints(gt.rules);
-			s+=act->getDetailedDescription();
-
-			//int r=rooms_timetable_weekly[i][k][j];
-			int r=CachedSchedule::getCachedSolution().room(ai);
-			if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
-				s+="\n";
-				s+=tr("Room: %1").arg(gt.rules.internalRoomsList[r]->name);
-				if(gt.rules.internalRoomsList[r]->building!=""){
-					s+="\n";
-					s+=tr("Building=%1").arg(gt.rules.internalRoomsList[r]->building);
-				}
-				s+="\n";
-				s+=tr("Capacity=%1").arg(gt.rules.internalRoomsList[r]->capacity);
-			}
-
-			s+=LockUnlock::getActivityLockDetailsString(act->id);
+			detailActivity(ai);
+			return;
 		}
 		else{
 			if(subgroupNotAvailableDayHour[i][k][j]){
