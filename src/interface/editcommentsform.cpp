@@ -13,6 +13,8 @@ EditCommentsForm::EditCommentsForm(const QString &settingsName, QWidget *parent,
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this, settingsName);
+
+	ui->commentsPT->installEventFilter(this);
 }
 
 EditCommentsForm::~EditCommentsForm()
@@ -31,4 +33,18 @@ void EditCommentsForm::setComments(const QString &comments)
 QString EditCommentsForm::getComments() const
 {
 	return ui->commentsPT->toPlainText();
+}
+
+bool EditCommentsForm::eventFilter(QObject* watched, QEvent* event)
+{
+	if (watched == ui->commentsPT && event->type() == QEvent::KeyPress) {
+		QKeyEvent *keyEvent = static_cast<QKeyEvent *>(event);
+		if (keyEvent->modifiers() == Qt::CTRL) {
+			if (keyEvent->key() == Qt::Key_Enter || keyEvent->key() == Qt::Key_Return) {
+				accept();
+				return true;
+			}
+        }
+    }
+	return false;
 }
