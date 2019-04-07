@@ -959,6 +959,11 @@ void TimetableViewTeachersTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 	QSet<int> allSelectedActivities(realActivities);
 	allSelectedActivities.unite(dummyActivities);
 
+	// speeding up loop
+	bool ruleWasAlreadyComputed = gt.rules.internalStructureComputed;
+	if (allSelectedActivities.count() > 1)
+		gt.rules.internalStructureComputed = false;
+
 	for (int ai : qAsConst(allSelectedActivities)) {
 			assert(tc->times[ai]!=UNALLOCATED_TIME);
 			int day=tc->times[ai]%gt.rules.nDaysPerWeek;
@@ -1013,6 +1018,13 @@ void TimetableViewTeachersTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 			}
 	}
 	ErrorRenderer::renderErrorList(this, errors, report ? ErrorCode::Verbose : ErrorCode::Warning);
+
+	if (ruleWasAlreadyComputed && !gt.rules.internalStructureComputed) {
+		int nComputedItems = 0;
+		bool canceled = false;
+		gt.rules.computeInternalTimeConstraintList(nComputedItems, canceled);
+		gt.rules.internalStructureComputed = true;
+	}
 
 	QStringList added;
 	QStringList removed;
