@@ -128,10 +128,6 @@ The import directory
 */
 QString IMPORT_DIRECTORY;
 
-#ifndef FET_COMMAND_LINE
-QApplication* pqapplication=NULL;
-#endif
-
 #ifdef FET_COMMAND_LINE
 #include "export.h"
 #endif
