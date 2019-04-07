@@ -626,6 +626,11 @@ void TimetableViewTeachersDaysHorizontalForm::lock(bool lockTime, bool lockSpace
 	int addedT=0, unlockedT=0;
 	int addedS=0, unlockedS=0;
 
+	// speeding up loop
+	bool ruleWasAlreadyComputed = gt.rules.internalStructureComputed;
+	if (teachersTimetableTable->selectedItems().count() > 1)
+		gt.rules.internalStructureComputed = false;
+
 	//lock selected activities
 	for (const QTableWidgetItem *item : teachersTimetableTable->selectedItems()) {
 		int j = item->row();
@@ -670,6 +675,13 @@ void TimetableViewTeachersDaysHorizontalForm::lock(bool lockTime, bool lockSpace
 				}
 	}
 	ErrorRenderer::renderErrorList(this, errors, report ? ErrorCode::Verbose : ErrorCode::Warning);
+
+	if (ruleWasAlreadyComputed && !gt.rules.internalStructureComputed) {
+		int nComputedItems = 0;
+		bool canceled = false;
+		gt.rules.computeInternalTimeConstraintList(nComputedItems, canceled);
+		gt.rules.internalStructureComputed = true;
+	}
 
 	QStringList added;
 	QStringList removed;

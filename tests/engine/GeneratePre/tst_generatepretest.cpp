@@ -922,12 +922,12 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_InactiveConstraintIsIgn
 	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, -1.0);
-	QCOMPARE(mcgi.data[1][0].weightPercentage, -1.0);
-	QCOMPARE(mcgi.data[2][0].weightPercentage, -1.0);
-
 	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
+
+	QCOMPARE(mcgi.data[1][0].weightPercentage, -1.0);
 	QCOMPARE(mcgi.data[1][1].weightPercentage, -1.0);
-	QCOMPARE(mcgi.data[2][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[1][2].weightPercentage, -1.0);
 
 	ConstraintTeacherMinContinuousGapInInterval *ctr2 = new ConstraintTeacherMinContinuousGapInInterval(100.0, 2, "t2", 1, 5);
 	mock.rules.addTimeConstraint(ctr2);
@@ -939,12 +939,12 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_InactiveConstraintIsIgn
 	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, -1.0);
-	QCOMPARE(mcgi.data[1][0].weightPercentage, -1.0);
-	QCOMPARE(mcgi.data[2][0].weightPercentage, -1.0);
-
 	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
+
+	QCOMPARE(mcgi.data[1][0].weightPercentage, -1.0);
 	QCOMPARE(mcgi.data[1][1].weightPercentage, -1.0);
-	QCOMPARE(mcgi.data[2][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[1][2].weightPercentage, -1.0);
 }
 
 void GeneratePreTest::TeachersMinContinuousGapInInterval_TeachersAffectAll()
@@ -963,12 +963,12 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TeachersAffectAll()
 	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
-	QCOMPARE(mcgi.data[1][0].weightPercentage, -1.0);
-	QCOMPARE(mcgi.data[2][0].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
 
-	QCOMPARE(mcgi.data[0][1].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[1][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[1][1].weightPercentage, -1.0);
-	QCOMPARE(mcgi.data[2][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[1][2].weightPercentage, -1.0);
 
 //	QCOMPARE(mcgi.data[0][0].minGapDuration, 2);
 //	QCOMPARE(mcgi.data[0][0].startHour, 1);
@@ -995,16 +995,16 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TeacherAffectOnlyOne()
 	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, -1.0);
-	QCOMPARE(mcgi.data[1][0].weightPercentage, -1.0);
-	QCOMPARE(mcgi.data[2][0].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
 
-	QCOMPARE(mcgi.data[0][1].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[1][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[1][1].weightPercentage, -1.0);
-	QCOMPARE(mcgi.data[2][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[1][2].weightPercentage, -1.0);
 
-	QCOMPARE(mcgi.data[0][1].minGapDuration, 2);
-	QCOMPARE(mcgi.data[0][1].startHour, 1);
-	QCOMPARE(mcgi.data[0][1].endHour, 5);
+	QCOMPARE(mcgi.data[1][0].minGapDuration, 2);
+	QCOMPARE(mcgi.data[1][0].startHour, 1);
+	QCOMPARE(mcgi.data[1][0].endHour, 5);
 }
 
 void GeneratePreTest::TeachersMinContinuousGapInInterval_TeacherHasMoreThanOneOfThisConstraint()
@@ -1025,16 +1025,16 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TeacherHasMoreThanOneOf
 	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
-	QCOMPARE(mcgi.data[1][0].weightPercentage, 100.0);
-	QCOMPARE(mcgi.data[2][0].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
 
 	QCOMPARE(mcgi.data[0][0].minGapDuration, 2);
 	QCOMPARE(mcgi.data[0][0].startHour, 1);
 	QCOMPARE(mcgi.data[0][0].endHour, 5);
 
-	QCOMPARE(mcgi.data[1][0].minGapDuration, 3);
-	QCOMPARE(mcgi.data[1][0].startHour, 3);
-	QCOMPARE(mcgi.data[1][0].endHour, 7);
+	QCOMPARE(mcgi.data[0][1].minGapDuration, 3);
+	QCOMPARE(mcgi.data[0][1].startHour, 3);
+	QCOMPARE(mcgi.data[0][1].endHour, 7);
 
 	ConstraintTeachersMinContinuousGapInInterval *ctr2 = new ConstraintTeachersMinContinuousGapInInterval(100.0, 2, 4, 9);
 	mock.rules.addTimeConstraint(ctr2);
@@ -1045,12 +1045,12 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TeacherHasMoreThanOneOf
 	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
-	QCOMPARE(mcgi.data[1][0].weightPercentage, 100.0);
-	QCOMPARE(mcgi.data[2][0].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, 100.0);
 
-	QCOMPARE(mcgi.data[2][0].minGapDuration, 2);
-	QCOMPARE(mcgi.data[2][0].startHour, 4);
-	QCOMPARE(mcgi.data[2][0].endHour, 9);
+	QCOMPARE(mcgi.data[0][2].minGapDuration, 2);
+	QCOMPARE(mcgi.data[0][2].startHour, 4);
+	QCOMPARE(mcgi.data[0][2].endHour, 9);
 }
 
 void GeneratePreTest::TeachersMinContinuousGapInInterval_NumErrorMsgs_WhenPreparationOfTeachersMinContinuousGapInIntervalFails()
@@ -1094,16 +1094,16 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TwoTotallyDifferentOnes
 	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
-	QCOMPARE(mcgi.data[1][0].weightPercentage, 100.0);
-	QCOMPARE(mcgi.data[2][0].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
 
 	QCOMPARE(mcgi.data[0][0].minGapDuration, 2);
 	QCOMPARE(mcgi.data[0][0].startHour, 1);
 	QCOMPARE(mcgi.data[0][0].endHour, 5);
 
-	QCOMPARE(mcgi.data[1][0].minGapDuration, 2);
-	QCOMPARE(mcgi.data[1][0].startHour, 6);
-	QCOMPARE(mcgi.data[1][0].endHour, 9);
+	QCOMPARE(mcgi.data[0][1].minGapDuration, 2);
+	QCOMPARE(mcgi.data[0][1].startHour, 6);
+	QCOMPARE(mcgi.data[0][1].endHour, 9);
 }
 
 void GeneratePreTest::TeachersMinContinuousGapInInterval_TwoTotallyDifferentOnesToAllTeachers_StoresBoth()
@@ -1124,24 +1124,24 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TwoTotallyDifferentOnes
 	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
-	QCOMPARE(mcgi.data[1][0].weightPercentage, 100.0);
-	QCOMPARE(mcgi.data[2][0].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
 
 	QCOMPARE(mcgi.data[0][0].minGapDuration, 2);
 	QCOMPARE(mcgi.data[0][0].startHour, 1);
 	QCOMPARE(mcgi.data[0][0].endHour, 4);
 
-	QCOMPARE(mcgi.data[1][0].minGapDuration, 2);
-	QCOMPARE(mcgi.data[1][0].startHour, 6);
-	QCOMPARE(mcgi.data[1][0].endHour, 9);
-
-	QCOMPARE(mcgi.data[0][1].weightPercentage, 100.0);
-	QCOMPARE(mcgi.data[1][1].weightPercentage, 100.0);
-	QCOMPARE(mcgi.data[2][1].weightPercentage, -1.0);
-
 	QCOMPARE(mcgi.data[0][1].minGapDuration, 2);
-	QCOMPARE(mcgi.data[0][1].startHour, 1);
-	QCOMPARE(mcgi.data[0][1].endHour, 4);
+	QCOMPARE(mcgi.data[0][1].startHour, 6);
+	QCOMPARE(mcgi.data[0][1].endHour, 9);
+
+	QCOMPARE(mcgi.data[1][0].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[1][1].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[1][2].weightPercentage, -1.0);
+
+	QCOMPARE(mcgi.data[1][0].minGapDuration, 2);
+	QCOMPARE(mcgi.data[1][0].startHour, 1);
+	QCOMPARE(mcgi.data[1][0].endHour, 4);
 
 	QCOMPARE(mcgi.data[1][1].minGapDuration, 2);
 	QCOMPARE(mcgi.data[1][1].startHour, 6);
@@ -1188,8 +1188,8 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_MoreThanOneToSameTeache
 	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 90.0);
-	QCOMPARE(mcgi.data[1][0].weightPercentage, -1.0);
-	QCOMPARE(mcgi.data[2][0].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
 
 	QCOMPARE(mcgi.data[0][0].minGapDuration, 2);
 	QCOMPARE(mcgi.data[0][0].startHour, 1);
@@ -1204,17 +1204,17 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_MoreThanOneToSameTeache
 	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
-	QCOMPARE(mcgi.data[1][0].weightPercentage, -1.0);
-	QCOMPARE(mcgi.data[2][0].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
 
 	QCOMPARE(mcgi.data[0][0].minGapDuration, 2);
 	QCOMPARE(mcgi.data[0][0].startHour, 1);
 	QCOMPARE(mcgi.data[0][0].endHour, 5);
 
-	QCOMPARE(mcgi.data[0][1].weightPercentage, 100.0);
-	QCOMPARE(mcgi.data[0][1].minGapDuration, 2);
-	QCOMPARE(mcgi.data[0][1].startHour, 1);
-	QCOMPARE(mcgi.data[0][1].endHour, 5);
+	QCOMPARE(mcgi.data[1][0].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[1][0].minGapDuration, 2);
+	QCOMPARE(mcgi.data[1][0].startHour, 1);
+	QCOMPARE(mcgi.data[1][0].endHour, 5);
 }
 
 void GeneratePreTest::TeachersMinContinuousGapInInterval_OneThatIncludesAnotherOfSameTeacher_StoresMostRestrictiveCase()
@@ -1235,8 +1235,8 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_OneThatIncludesAnotherO
 	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
-	QCOMPARE(mcgi.data[1][0].weightPercentage, -1.0);
-	QCOMPARE(mcgi.data[2][0].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
 
 	QCOMPARE(mcgi.data[0][0].minGapDuration, 2);
 	QCOMPARE(mcgi.data[0][0].startHour, 2);
@@ -1251,8 +1251,8 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_OneThatIncludesAnotherO
 	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
-	QCOMPARE(mcgi.data[1][0].weightPercentage, -1.0);
-	QCOMPARE(mcgi.data[2][0].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
 
 	QCOMPARE(mcgi.data[0][0].minGapDuration, 2);
 	QCOMPARE(mcgi.data[0][0].startHour, 2);
@@ -1267,8 +1267,8 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_OneThatIncludesAnotherO
 	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
-	QCOMPARE(mcgi.data[1][0].weightPercentage, -1.0);
-	QCOMPARE(mcgi.data[2][0].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
 
 	QCOMPARE(mcgi.data[0][0].minGapDuration, 2);
 	QCOMPARE(mcgi.data[0][0].startHour, 3);
@@ -1293,16 +1293,16 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_WithSameIntervalOfSameT
 	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
-	QCOMPARE(mcgi.data[1][0].weightPercentage, 90.0);
-	QCOMPARE(mcgi.data[2][0].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, 90.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
 
 	QCOMPARE(mcgi.data[0][0].minGapDuration, 3);
 	QCOMPARE(mcgi.data[0][0].startHour, 1);
 	QCOMPARE(mcgi.data[0][0].endHour, 7);
 
-	QCOMPARE(mcgi.data[1][0].minGapDuration, 2);
-	QCOMPARE(mcgi.data[1][0].startHour, 1);
-	QCOMPARE(mcgi.data[1][0].endHour, 7);
+	QCOMPARE(mcgi.data[0][1].minGapDuration, 2);
+	QCOMPARE(mcgi.data[0][1].startHour, 1);
+	QCOMPARE(mcgi.data[0][1].endHour, 7);
 
 	ctr = new ConstraintTeacherMinContinuousGapInInterval(100.0, 4, "t1", 1, 7);
 	mock.rules.addTimeConstraint(ctr);
@@ -1312,16 +1312,16 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_WithSameIntervalOfSameT
 	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
-	QCOMPARE(mcgi.data[1][0].weightPercentage, 90.0);
-	QCOMPARE(mcgi.data[2][0].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, 90.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
 
 	QCOMPARE(mcgi.data[0][0].minGapDuration, 4);
 	QCOMPARE(mcgi.data[0][0].startHour, 1);
 	QCOMPARE(mcgi.data[0][0].endHour, 7);
 
-	QCOMPARE(mcgi.data[1][0].minGapDuration, 2);
-	QCOMPARE(mcgi.data[1][0].startHour, 1);
-	QCOMPARE(mcgi.data[1][0].endHour, 7);
+	QCOMPARE(mcgi.data[0][1].minGapDuration, 2);
+	QCOMPARE(mcgi.data[0][1].startHour, 1);
+	QCOMPARE(mcgi.data[0][1].endHour, 7);
 }
 
 void GeneratePreTest::TeachersMinContinuousGapInInterval_OneThatIncludesAnotherOfSameTeacher_WithWeightNot100_StoresBoth()
@@ -1342,16 +1342,16 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_OneThatIncludesAnotherO
 	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
-	QCOMPARE(mcgi.data[1][0].weightPercentage, 90.0);
-	QCOMPARE(mcgi.data[2][0].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, 90.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
 
 	QCOMPARE(mcgi.data[0][0].minGapDuration, 2);
 	QCOMPARE(mcgi.data[0][0].startHour, 1);
 	QCOMPARE(mcgi.data[0][0].endHour, 7);
 
-	QCOMPARE(mcgi.data[1][0].minGapDuration, 2);
-	QCOMPARE(mcgi.data[1][0].startHour, 2);
-	QCOMPARE(mcgi.data[1][0].endHour, 6);
+	QCOMPARE(mcgi.data[0][1].minGapDuration, 2);
+	QCOMPARE(mcgi.data[0][1].startHour, 2);
+	QCOMPARE(mcgi.data[0][1].endHour, 6);
 }
 
 void GeneratePreTest::TeachersMinContinuousGapInInterval_OneThatIncludesAnotherOfSameTeacher_WithDiffMinGap_StoresBoth()
@@ -1372,8 +1372,8 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_OneThatIncludesAnotherO
 	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
-	QCOMPARE(mcgi.data[1][0].weightPercentage, 100.0);
-	QCOMPARE(mcgi.data[2][0].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
 
 	QCOMPARE(mcgi.data[0][0].minGapDuration, 2);
 	QCOMPARE(mcgi.data[0][0].startHour, 1);
