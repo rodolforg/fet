@@ -26,10 +26,10 @@ class EditableTimetableWidget : public QTableWidget
 	Q_OBJECT
 
 public:
-	EditableTimetableWidget(QWidget* parent = NULL);
-	EditableTimetableWidget(int rows, int cols, QWidget* parent = NULL);
+	EditableTimetableWidget(QWidget* parent = nullptr);
+	EditableTimetableWidget(int rows, int cols, QWidget* parent = nullptr);
 
-	virtual ~EditableTimetableWidget();
+	virtual ~EditableTimetableWidget() override;
 
 	void setSolution(const Rules* rules, const Solution& solution);
 
@@ -42,6 +42,7 @@ public:
 	TimetableDirection getTimetableDirection() const;
 	void setTimetableDirection(const TimetableDirection& value);
 
+	void colorizeWherePlaceable(int ai, int row);
 signals:
 	void solution_changed();
 
@@ -66,16 +67,18 @@ private:
 	ProposalStatus checkSolutionChange(Solution &proposal) const;
 
 	QSet<int> getPlacedActivities(const QTableWidgetItem* item) const;
-	QSet<int> getRemovedActivities() const;
+	QSet<int> getRemovedActivities(const QTableWidgetItem* item) const;
 	QList<int> getPossibleSwaps(const QList<int>& activity_ids, int src_ai) const;
 
-	QSet<int> tempRemovedActivities;
+	QList<QSet<int>> tempRemovedActivityCollection;
 
 	QUndoStack undoStack;
 
 	void colorizePossibleActions(QTableWidgetItem *item);
 
 	bool isActivityLocked(int ai) const;
+
+	bool activityCanBePlacedAt(int ai, int time, int row) const;
 
 protected slots:
 	void placeActivity(const QTableWidgetItem* item, int ai);

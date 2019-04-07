@@ -65,6 +65,8 @@ protected:
 
 	void updateNotPlacedActivities();
 	void updateBrokenConstraints();
+
+	void detailActivity(int ai);
 };
 
 #endif
