@@ -3129,13 +3129,9 @@ if(threaded){
 	time_t end_time;
 	time(&end_time);
 	searchTime=int(end_time-starting_time);
-#if FET_COMMAND_LINE
-	cout<<"Total searching time (seconds): "<<int(end_time-starting_time)<<endl;
-#else
 	if(VERBOSE){
 		cout<<"Total searching time (seconds): "<<int(end_time-starting_time)<<endl;
 	}
-#endif
 
 	emit(simulationFinished());
 
