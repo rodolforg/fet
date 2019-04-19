@@ -1,4 +1,4 @@
-This is FET version 5.37.6-snapshot-24-feb-2019-20_05
+This is FET version 5.37.6-snapshot-19-apr-2019-07_37
 
 
 Program description:
@@ -14,7 +14,7 @@ Program description:
 
 Requirements:
 
-	FET is created in the following environment: openSUSE Tumbleweed GNU/Linux distribution, Linux 4.20.7, Xfce 4.12,
+	FET is created in the following environment: openSUSE Tumbleweed GNU/Linux distribution, Linux 5.0.7, Xfce 4.12,
 	Midnight Commander 4.8.22, KDiff3 0.9.98, Qt 5.12.1, gcc 8.2.1, g++ 8.2.1, make 4.2.1, sed 4.5,
 	Valgrind 3.14.0, Coverity Scan 2017.07, Cppcheck 1.87, other great free tools.
 	FET can be run on any platform supported by the free software Qt (GNU/Linux, Windows, Mac OS X).
