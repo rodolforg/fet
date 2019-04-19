@@ -47825,7 +47825,6 @@ Note: teacher not available and break are not counted as gaps.</source>
     <name>MonthsNames</name>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="49"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>January</source>
         <translation type="unfinished"></translation>
     </message>
@@ -47841,6 +47840,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="55"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>April</source>
         <translation type="unfinished"></translation>
     </message>

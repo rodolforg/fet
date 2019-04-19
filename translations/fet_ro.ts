@@ -38181,7 +38181,7 @@ R: Este recomandat să activați căutarea automată pentru aduceri la zi. Nu am
         <source>Q: Can I work with fortnightly activities like in older FET versions?
 
 A: You have to use some tricks. It would be difficult to consider fortnightly activities into the new FET algorithm (from 5.0.0 up). But I think you can apply this: for instance, I suppose that you would like the first week to have activity A1 (teacher T1, student S1) and A2 (T2, S2), and second week A3 (T1, S2) and A4 (T2, S1) (simultaneously). You could define a weekly activity A (T1, T2, S1, S2). If you need 2 rooms for A, then you can define dummy A&apos; (no teachers, no students) and constraint activities same starting time A and A&apos; and add rooms for A and A&apos; .</source>
-        <translation>Î: Pot lucra cu activități la două săptămână, ca în versiunile FET mai vechi?
+        <translation>Î: Pot lucra cu activități la două săptămâni, ca în versiunile FET mai vechi?
 
 R: Trebuie să folosiți niște trucuri. Ar fi dificil de considerat activitățile la două săptămâni în noul algoritm FET (de la 5.0.0 în sus). Dar cred că puteți aplica aceasta: de exemplu, presupun că ați dori prima săptămână să aibă activitatea A1 (profesor T1, studenți S1) și A2 (T2, S2), și a doua săptămână A3 (T1, S2) și A4 (T2, S1) (simultane). Ați putea defini o activitate săptămânală A (T1, T2, S1, S2). Dacă aveți nevoie de 2 săli pentru A, atunci puteți defini fictiva A&apos; (fără profesori, fără studenți) și constrângerea activități același timp de start A și A&apos; și adăugați săli pentru A și A&apos;.</translation>
     </message>
@@ -48129,7 +48129,6 @@ Notă: profesor indisponibil și pauză nu sunt socotite ca ferestre.</translati
     <name>MonthsNames</name>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="49"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>January</source>
         <translation>Ianuarie</translation>
     </message>
@@ -48145,6 +48144,7 @@ Notă: profesor indisponibil și pauză nu sunt socotite ca ferestre.</translati
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="55"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>April</source>
         <translation>Aprilie</translation>
     </message>

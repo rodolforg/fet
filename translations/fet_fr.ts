@@ -48128,7 +48128,6 @@ Note : enseignant non disponible et pause ne sont pas comptés comme vides.</tra
     <name>MonthsNames</name>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="49"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>January</source>
         <translation>Janvier</translation>
     </message>
@@ -48144,6 +48143,7 @@ Note : enseignant non disponible et pause ne sont pas comptés comme vides.</tra
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="55"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>April</source>
         <translation>Avril</translation>
     </message>

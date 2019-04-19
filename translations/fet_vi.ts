@@ -47540,7 +47540,6 @@ Lưu ý: giáo viên bận và nghỉ giải lao không được tính vào ti�
     <name>MonthsNames</name>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="49"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>January</source>
         <translation type="unfinished"></translation>
     </message>
@@ -47556,6 +47555,7 @@ Lưu ý: giáo viên bận và nghỉ giải lao không được tính vào ti�
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="55"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>April</source>
         <translation type="unfinished"></translation>
     </message>

@@ -48049,7 +48049,6 @@ Catata: Guru tidak ada dan pecah tidakdihitung jam kosong.</translation>
     <name>MonthsNames</name>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="49"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>January</source>
         <translation type="unfinished"></translation>
     </message>
@@ -48065,6 +48064,7 @@ Catata: Guru tidak ada dan pecah tidakdihitung jam kosong.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="55"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>April</source>
         <translation type="unfinished"></translation>
     </message>

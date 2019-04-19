@@ -48089,7 +48089,6 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
     <name>MonthsNames</name>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="49"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>January</source>
         <translation>janeiro</translation>
     </message>
@@ -48105,6 +48104,7 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="55"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>April</source>
         <translation>abril</translation>
     </message>

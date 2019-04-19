@@ -48123,7 +48123,6 @@ Nota: els no disponibles i les pauses no se&apos;ls compten als professors com a
     <name>MonthsNames</name>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="49"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>January</source>
         <translation>Gener</translation>
     </message>
@@ -48139,6 +48138,7 @@ Nota: els no disponibles i les pauses no se&apos;ls compten als professors com a
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="55"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>April</source>
         <translation>Abril</translation>
     </message>
