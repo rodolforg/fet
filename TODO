@@ -6555,3 +6555,22 @@ From Volker Dirr:
 
 Disable energy saving mode, because FET won't calculate anymore if
 the computer falls into save mode after x minutes.
+
+377---------------------------------------------------------
+From Nagendra (on forum):
+
+- Multiselection of constraints to activate/deactivate/delete them
+
+378---------------------------------------------------------
+From CarolStott and Volker Dirr (on forum):
+
+- A teacher-subject matrix to enter teacher qualified subjects (so you 
+only need to enable/disable a cell in a table)
+
+379---------------------------------------------------------
+From Volker Dirr:
+
+In the "Add activity" dialog:
+Under the word "duration" (so left from the "active" checkbox) there is still
+enough place to add some useful information.
+I suggest to add the currently computed "Total duration".
