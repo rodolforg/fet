@@ -2122,6 +2122,6 @@ Versions 5.37.0 - 5.37.v
 	and implemented by Volker Dirr.
 	- Updated the translations.
 - Version 5.37.6
-	- Upgraded to Qt 5.12.1.
+	- Upgraded to Qt 5.12.3.
 	- Added two new example files from Hungary, by Madas Pál.
 	- Added a new example file from Tunisia, by fourat.
