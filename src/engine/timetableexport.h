@@ -130,7 +130,7 @@ private:
 	//this function must be called before export html files, because it is needed for the allActivities tables
 	static void computeActivitiesAtTime();
 	
-	//this function must be called before export html files, because it is needed to add activities with same starting time (simultanious activities)
+	//this function must be called before export html files, because it is needed to add activities with same starting time (simultaneous activities)
 	static void computeActivitiesWithSameStartingTime();
 	//this function add activities with same starting time into the allActivities list
 	static bool addActivitiesWithSameStartingTime(QList<int>& allActivities, int hour);
