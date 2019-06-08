@@ -7172,10 +7172,10 @@ impossiblestudentsactivitytagmaxhoursdaily:
 									if(!removableActs.contains(ai2) && !fixedTimeActivity[ai2] && !swappedActivities[ai2])
 										removableActs.append(ai2);
 								}
-								else		
+								else
 									break;
 							}
-											
+							
 							if(nc<=limitHoursCont) //OK
 								break;
 							////////////
@@ -7421,11 +7421,11 @@ impossiblestudentsactivitytagmaxhourscontinuously:
 									ok=false;
 							}
 						}
-						////////////////////////////							
+						////////////////////////////
 
 						if(ok)
 							break; //ok
-													
+						
 						int ai2=-1;
 						
 						bool kk=subgroupRemoveAnActivityFromEnd(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
