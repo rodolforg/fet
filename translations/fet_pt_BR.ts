@@ -48109,12 +48109,12 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="57"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>May</source>
         <translation>maio</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="59"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>June</source>
         <translation>junho</translation>
     </message>

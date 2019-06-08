@@ -47730,12 +47730,12 @@ Shënim: mësues jo të gatshëm dhe ndërprerje nuk janë orë dritare.</transl
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="57"/>
-        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>May</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform.cpp" line="59"/>
+        <location filename="../src/interface/helpaboutform.cpp" line="81"/>
         <source>June</source>
         <translation type="unfinished"></translation>
     </message>
