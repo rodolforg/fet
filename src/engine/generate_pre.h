@@ -547,6 +547,41 @@ bool computeActivitiesMaxSimultaneousInSelectedTimeSlots(QWidget* parent);
 
 extern bool haveActivitiesOccupyOrSimultaneousConstraints;
 
+//2019-06-08 - Constraint students (set) min gaps between ordered pair of activity tags
+
+class StudentsMinGapsBetweenOrderedPairOfActivityTags_item{
+public:
+	//double weight; -> must be 100.0%
+	//QList<int> listOfSubgroups;
+	QSet<int> setOfSubgroups;
+	int minGaps;
+	int firstActivityTag;
+	int secondActivityTag;
+};
+
+extern QList<StudentsMinGapsBetweenOrderedPairOfActivityTags_item> smgbopoatList;
+extern Matrix1D<QList<StudentsMinGapsBetweenOrderedPairOfActivityTags_item*> > smgbopoatListForActivity;
+
+bool computeStudentsMinGapsBetweenOrderedPairOfActivityTags(QWidget* parent);
+
+//2019-06-08 - Constraint teacher(s) min gaps between ordered pair of activity tags
+
+class TeachersMinGapsBetweenOrderedPairOfActivityTags_item{
+public:
+	//double weight; -> must be 100.0%
+	//QList<int> listOfTeachers;
+	//QSet<int> setOfTeachers;
+	int teacherIndex; //if -1, then all teachers
+	int minGaps;
+	int firstActivityTag;
+	int secondActivityTag;
+};
+
+extern QList<TeachersMinGapsBetweenOrderedPairOfActivityTags_item> tmgbopoatList;
+extern Matrix1D<QList<TeachersMinGapsBetweenOrderedPairOfActivityTags_item*> > tmgbopoatListForActivity;
+
+bool computeTeachersMinGapsBetweenOrderedPairOfActivityTags(QWidget* parent);
+
 //2012-04-29 - Constraint activities occupy max different rooms
 
 class ActivitiesOccupyMaxDifferentRooms_item

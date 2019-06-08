@@ -387,6 +387,16 @@ Matrix1D<QList<ActivitiesMaxSimultaneousInSelectedTimeSlots_item*> > amsistsList
 
 bool haveActivitiesOccupyOrSimultaneousConstraints;
 
+//2019-06-08 - Constraint students (set) min gaps between ordered pair of activity tags
+QList<StudentsMinGapsBetweenOrderedPairOfActivityTags_item> smgbopoatList;
+Matrix1D<QList<StudentsMinGapsBetweenOrderedPairOfActivityTags_item*> > smgbopoatListForActivity;
+//bool computeStudentsMinGapsBetweenOrderedPairOfActivityTags(QWidget* parent);
+
+//2019-06-08 - Constraint teachers(s) min gaps between ordered pair of activity tags
+QList<TeachersMinGapsBetweenOrderedPairOfActivityTags_item> tmgbopoatList;
+Matrix1D<QList<TeachersMinGapsBetweenOrderedPairOfActivityTags_item*> > tmgbopoatListForActivity;
+//bool computeTeachersMinGapsBetweenOrderedPairOfActivityTags(QWidget* parent);
+
 //2012-04-29 - Constraint activities occupy max different rooms
 QList<ActivitiesOccupyMaxDifferentRooms_item> aomdrList;
 Matrix1D<QList<ActivitiesOccupyMaxDifferentRooms_item*> > aomdrListForActivity;
@@ -656,6 +666,11 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 	aomtsListForActivity.resize(gt.rules.nInternalActivities);
 	//2011-09-30
 	amsistsListForActivity.resize(gt.rules.nInternalActivities);
+	
+	//2019-06-08
+	smgbopoatListForActivity.resize(gt.rules.nInternalActivities);
+	//2019-06-08
+	tmgbopoatListForActivity.resize(gt.rules.nInternalActivities);
 
 	//2012-04-29
 	aomdrListForActivity.resize(gt.rules.nInternalActivities);
@@ -860,6 +875,18 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 	
 	//2011-09-30
 	t=computeActivitiesMaxSimultaneousInSelectedTimeSlots(parent);
+	if(!t)
+		return false;
+	////////////////
+
+	//2019-06-08
+	t=computeStudentsMinGapsBetweenOrderedPairOfActivityTags(parent);
+	if(!t)
+		return false;
+	////////////////
+
+	//2019-06-08
+	t=computeTeachersMinGapsBetweenOrderedPairOfActivityTags(parent);
 	if(!t)
 		return false;
 	////////////////
@@ -6995,6 +7022,304 @@ bool computeActivitiesMaxSimultaneousInSelectedTimeSlots(QWidget* parent)
 			ActivitiesMaxSimultaneousInSelectedTimeSlots_item* p_item=&amsistsList[amsistsList.count()-1];
 			for(int ai : qAsConst(cn->_activitiesIndices))
 				amsistsListForActivity[ai].append(p_item);
+		}
+	}
+	
+	return ok;
+}
+
+//2019-06-08
+bool computeStudentsMinGapsBetweenOrderedPairOfActivityTags(QWidget* parent)
+{
+	bool ok=true;
+	
+	smgbopoatList.clear();
+	for(int i=0; i<gt.rules.nInternalActivities; i++)
+		smgbopoatListForActivity[i].clear();
+
+	for(int i=0; i<gt.rules.nInternalTimeConstraints; i++){
+		if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_STUDENTS_SET_MIN_GAPS_BETWEEN_ORDERED_PAIR_OF_ACTIVITY_TAGS){
+			ConstraintStudentsSetMinGapsBetweenOrderedPairOfActivityTags* cn=(ConstraintStudentsSetMinGapsBetweenOrderedPairOfActivityTags*)gt.rules.internalTimeConstraintsList[i];
+
+			if(cn->weightPercentage!=100.0){
+				ok=false;
+
+				int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
+				 GeneratePreTranslate::tr("Cannot optimize, because you have constraint(s) of type 'students set min gaps between ordered pair of activity tags'"
+				 " with weight (percentage) below 100.0%. Please make the weight 100.0% and try again")
+				 ,
+				 GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+				 1, 0 );
+			 	
+				if(t==0)
+					return false;
+			}
+			
+			StudentsMinGapsBetweenOrderedPairOfActivityTags_item item;
+			item->setOfSubgroups=cn->iSubgroupsList.toSet();
+			item->minGaps=cn->minGaps;
+			item->firstActivityTag=cn->_firstActivityTagIndex;
+			item->secondActivityTag=cn->_secondActivityTagIndex;
+			
+			smgbopoatList.append(item);
+			StudentsMinGapsBetweenOrderedPairOfActivityTags_item* p_item=&smgbopoatList[smgbopoatList.count()-1];
+			
+			for(int ai=0; ai<gt.rules.nInternalActivities; ai++){
+				bool hasStudents;
+				QSet<int> studentsSet=act->iSubgroupsList.toSet();
+				studentsSet.intersect(item->setOfSubgroups);
+				if(studentsSet.isEmpty())
+					continue;
+			
+				bool first, second;
+			
+				Activity* act=&gt.rules.internalActivitiesList[ai];
+
+				if(act->iActivityTagsSet.contains(cn->firstActivityTagIndex))
+					first=true;
+				else
+					first=false;
+
+				if(act->iActivityTagsSet.contains(cn->secondActivityTagIndex))
+					second=true;
+				else
+					second=false;
+					
+				if(first && second){
+					ok=false;
+
+					int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
+					 GeneratePreTranslate::tr("Cannot optimize, because the activity with id %1 has both the first and the second activity tags"
+					 " of the constraint of type 'students set min %2 gaps between ordered pair of activity tags %3 and %4'. Please"
+					 " correct and try again.").arg(act->id).arg(cn->minGaps).arg(cn->firstActivityTag).arg(cn->secondActivityTag)
+					 ,
+					 GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+					 1, 0 );
+					
+					if(t==0)
+						return false;
+				}
+				else if(first || second){
+					smgbopoatListForActivity[ai].append(p_item);
+				}
+				else{
+					//do nothing
+				}
+			}
+		}
+		else if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_STUDENTS_MIN_GAPS_BETWEEN_ORDERED_PAIR_OF_ACTIVITY_TAGS){
+			ConstraintStudentsMinGapsBetweenOrderedPairOfActivityTags* cn=(ConstraintStudentsMinGapsBetweenOrderedPairOfActivityTags*)gt.rules.internalTimeConstraintsList[i];
+
+			if(cn->weightPercentage!=100.0){
+				ok=false;
+
+				int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
+				 GeneratePreTranslate::tr("Cannot optimize, because you have constraint(s) of type 'students min gaps between ordered pair of activity tags'"
+				 " with weight (percentage) below 100.0%. Please make the weight 100.0% and try again")
+				 ,
+				 GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+				 1, 0 );
+			 	
+				if(t==0)
+					return false;
+			}
+			
+			StudentsMinGapsBetweenOrderedPairOfActivityTags_item item;
+			for(int sbg=0; sbg<gt.rules.nInternalSubgroups; sbg++)
+				item->setOfSubgroups.insert(sbg);
+			item->minGaps=cn->minGaps;
+			item->firstActivityTag=cn->_firstActivityTagIndex;
+			item->secondActivityTag=cn->_secondActivityTagIndex;
+			
+			smgbopoatList.append(item);
+			StudentsMinGapsBetweenOrderedPairOfActivityTags_item* p_item=&smgbopoatList[smgbopoatList.count()-1];
+			
+			for(int ai=0; ai<gt.rules.nInternalActivities; ai++){
+				if(act->iSubgroupsList.isEmpty())
+					continue;
+
+				bool first, second;
+			
+				Activity* act=&gt.rules.internalActivitiesList[ai];
+
+				if(act->iActivityTagsSet.contains(cn->firstActivityTagIndex))
+					first=true;
+				else
+					first=false;
+
+				if(act->iActivityTagsSet.contains(cn->secondActivityTagIndex))
+					second=true;
+				else
+					second=false;
+					
+				if(first && second){
+					ok=false;
+
+					int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
+					 GeneratePreTranslate::tr("Cannot optimize, because the activity with id %1 has both the first and the second activity tags"
+					 " of the constraint of type 'students min %2 gaps between ordered pair of activity tags %3 and %4'. Please"
+					 " correct and try again.").arg(act->id).arg(cn->minGaps).arg(cn->firstActivityTag).arg(cn->secondActivityTag)
+					 ,
+					 GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+					 1, 0 );
+					
+					if(t==0)
+						return false;
+				}
+				else if(first || second){
+					smgbopoatListForActivity[ai].append(p_item);
+				}
+				else{
+					//do nothing
+				}
+			}
+		}
+	}
+	
+	return ok;
+}
+
+//2019-06-08
+bool computeTeachersMinGapsBetweenOrderedPairOfActivityTags(QWidget* parent)
+{
+	bool ok=true;
+	
+	tmgbopoatList.clear();
+	for(int i=0; i<gt.rules.nInternalActivities; i++)
+		tmgbopoatListForActivity[i].clear();
+
+	for(int i=0; i<gt.rules.nInternalTimeConstraints; i++){
+		if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_TEACHER_MIN_GAPS_BETWEEN_ORDERED_PAIR_OF_ACTIVITY_TAGS){
+			ConstraintTeacherMinGapsBetweenOrderedPairOfActivityTags* cn=(ConstraintTeacherMinGapsBetweenOrderedPairOfActivityTags*)gt.rules.internalTimeConstraintsList[i];
+
+			if(cn->weightPercentage!=100.0){
+				ok=false;
+
+				int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
+				 GeneratePreTranslate::tr("Cannot optimize, because you have constraint(s) of type 'teacher min gaps between ordered pair of activity tags'"
+				 " with weight (percentage) below 100.0%. Please make the weight 100.0% and try again")
+				 ,
+				 GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+				 1, 0 );
+			 	
+				if(t==0)
+					return false;
+			}
+			
+			TeachersMinGapsBetweenOrderedPairOfActivityTags_item item;
+			item->teacherIndex=cn->_teacherIndex;
+			item->minGaps=cn->minGaps;
+			item->firstActivityTag=cn->_firstActivityTagIndex;
+			item->secondActivityTag=cn->_secondActivityTagIndex;
+			
+			tmgbopoatList.append(item);
+			TeachersMinGapsBetweenOrderedPairOfActivityTags_item* p_item=&tmgbopoatList[tmgbopoatList.count()-1];
+			
+			for(int ai=0; ai<gt.rules.nInternalActivities; ai++){
+				if(!act->iTeachersList.contains(cn->_teacherIndex))
+					continue;
+
+				bool first, second;
+			
+				Activity* act=&gt.rules.internalActivitiesList[ai];
+
+				if(act->iActivityTagsSet.contains(cn->firstActivityTagIndex))
+					first=true;
+				else
+					first=false;
+
+				if(act->iActivityTagsSet.contains(cn->secondActivityTagIndex))
+					second=true;
+				else
+					second=false;
+					
+				if(first && second){
+					ok=false;
+
+					int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
+					 GeneratePreTranslate::tr("Cannot optimize, because the activity with id %1 has both the first and the second activity tags"
+					 " of the constraint of type 'teacher min %2 gaps between ordered pair of activity tags %3 and %4'. Please"
+					 " correct and try again.").arg(act->id).arg(cn->minGaps).arg(cn->firstActivityTag).arg(cn->secondActivityTag)
+					 ,
+					 GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+					 1, 0 );
+					
+					if(t==0)
+						return false;
+				}
+				else if(first || second){
+					tmgbopoatListForActivity[ai].append(p_item);
+				}
+				else{
+					//do nothing
+				}
+			}
+		}
+		else if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_TEACHERS_MIN_GAPS_BETWEEN_ORDERED_PAIR_OF_ACTIVITY_TAGS){
+			ConstraintTeachersMinGapsBetweenOrderedPairOfActivityTags* cn=(ConstraintTeachersMinGapsBetweenOrderedPairOfActivityTags*)gt.rules.internalTimeConstraintsList[i];
+
+			if(cn->weightPercentage!=100.0){
+				ok=false;
+
+				int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
+				 GeneratePreTranslate::tr("Cannot optimize, because you have constraint(s) of type 'teachers min gaps between ordered pair of activity tags'"
+				 " with weight (percentage) below 100.0%. Please make the weight 100.0% and try again")
+				 ,
+				 GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+				 1, 0 );
+			 	
+				if(t==0)
+					return false;
+			}
+			
+			TeachersMinGapsBetweenOrderedPairOfActivityTags_item item;
+			item->teacherIndex=-1;
+			item->minGaps=cn->minGaps;
+			item->firstActivityTag=cn->_firstActivityTagIndex;
+			item->secondActivityTag=cn->_secondActivityTagIndex;
+			
+			tmgbopoatList.append(item);
+			TeachersMinGapsBetweenOrderedPairOfActivityTags_item* p_item=&tmgbopoatList[tmgbopoatList.count()-1];
+			
+			for(int ai=0; ai<gt.rules.nInternalActivities; ai++){
+				if(act->iTeachersList.isEmpty())
+					continue;
+			
+				bool first, second;
+			
+				Activity* act=&gt.rules.internalActivitiesList[ai];
+
+				if(act->iActivityTagsSet.contains(cn->firstActivityTagIndex))
+					first=true;
+				else
+					first=false;
+
+				if(act->iActivityTagsSet.contains(cn->secondActivityTagIndex))
+					second=true;
+				else
+					second=false;
+					
+				if(first && second){
+					ok=false;
+
+					int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
+					 GeneratePreTranslate::tr("Cannot optimize, because the activity with id %1 has both the first and the second activity tags"
+					 " of the constraint of type 'teachers min %2 gaps between ordered pair of activity tags %3 and %4'. Please"
+					 " correct and try again.").arg(act->id).arg(cn->minGaps).arg(cn->firstActivityTag).arg(cn->secondActivityTag)
+					 ,
+					 GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+					 1, 0 );
+					
+					if(t==0)
+						return false;
+				}
+				else if(first || second){
+					tmgbopoatListForActivity[ai].append(p_item);
+				}
+				else{
+					//do nothing
+				}
+			}
 		}
 	}
 	
