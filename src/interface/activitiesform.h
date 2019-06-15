@@ -31,7 +31,7 @@ class ActivitiesForm : public QDialog, Ui::ActivitiesForm_template{
 private:
 	QSet<QString> showedStudents;
 	static const int noneItemIndex = 1;
-	enum {SORT_BY_ID, SORT_BY_SUBJECT};
+	enum {SORT_BY_ID, SORT_BY_SUBJECT, SORT_BY_TEACHER};
 	
 public:
 	ActivitiesList visibleActivitiesList;

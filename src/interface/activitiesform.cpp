@@ -96,6 +96,7 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 
 	sortComboBox->addItem(tr("Sort by Id"), QVariant(SORT_BY_ID));
 	sortComboBox->addItem(tr("Sort by Subject"), QVariant(SORT_BY_SUBJECT));
+	sortComboBox->addItem(tr("Sort by Teacher"), QVariant(SORT_BY_TEACHER));
 
 	teachersComboBox->addItem("");
 	teachersComboBox->addItem(tr(" [[ no teachers ]]"));
@@ -307,6 +308,42 @@ bool compareIdOrder(const Activity *act1, const Activity *act2)
 	return act1->id < act2->id;
 }
 
+bool compareLocaleString(const QString &s1, const QString &s2) {
+	return s1.localeAwareCompare(s2) < 0;
+}
+
+bool compareTeacherOrder(const Activity *act1, const Activity *act2)
+{
+	if (act1->teachersNames == act2->teachersNames)
+		return compareSubjectOrder(act1, act2);
+
+	if (act1->teachersNames.count() == 1 && act2->teachersNames.count() == 1)
+		return act1->teachersNames[0].localeAwareCompare(act2->teachersNames[0]) < 0;
+
+	if (act1->teachersNames.count() == act2->teachersNames.count()) {
+		if (act1->teachersNames.count() == 0)
+			return compareSubjectOrder(act1, act2);
+
+		QStringList teachers1;
+		for (const QString & s : qAsConst(act1->teachersNames))
+			teachers1.append(s);
+		QStringList teachers2;
+		for (const QString & s : qAsConst(act2->teachersNames))
+			teachers2.append(s);
+		std::sort(teachers1.begin(), teachers1.end(), compareLocaleString);
+		std::sort(teachers2.begin(), teachers2.end(), compareLocaleString);
+		if (teachers1 == teachers2)
+			return compareSubjectOrder(act1, act2);
+	}
+
+	if (act1->teachersNames.count() == 0)
+		return true;
+	if (act2->teachersNames.count() == 0)
+		return false;
+
+	return act1->teachersNames.count() < act2->teachersNames.count();
+}
+
 void ActivitiesForm::filterChanged()
 {
 	int nacts=0, nsubacts=0, nh=0;
@@ -340,6 +377,8 @@ void ActivitiesForm::filterChanged()
 		std::sort(visibleActivitiesList.begin(), visibleActivitiesList.end(), compareIdOrder);
 	else if (sortComboBox->currentIndex() == SORT_BY_SUBJECT)
 		std::sort(visibleActivitiesList.begin(), visibleActivitiesList.end(), compareSubjectOrder);
+	else if (sortComboBox->currentIndex() == SORT_BY_TEACHER)
+		std::sort(visibleActivitiesList.begin(), visibleActivitiesList.end(), compareTeacherOrder);
 
 	for (int k=0; k < visibleActivitiesList.count(); k++) {
 		const Activity *act = visibleActivitiesList[k];
