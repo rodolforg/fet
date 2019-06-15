@@ -824,10 +824,6 @@ bool Export::exportCSVActivities(){
 	QHash<int, int> activitiesNumberOfSubactivities;
 	QHash<int, ConstraintMinDaysBetweenActivities*>activitiesConstraints;
 	
-	activitiesRepresentant.clear();
-	activitiesNumberOfSubactivities.clear();
-	activitiesConstraints.clear();
-	
 	for(Activity* act : qAsConst(gt.rules.activitiesList)){
 		assert(!activitiesRepresentant.contains(act->id));
 		activitiesRepresentant.insert(act->id, act->activityGroupId); //act->id is key, act->agid is value
